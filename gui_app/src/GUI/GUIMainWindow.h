@@ -22,6 +22,7 @@ public:
 	GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height);
 	void OnMenuImportObj(wxCommandEvent &event);
 	void OnMenuImportSD(wxCommandEvent &event);
+	void OnMenuImportTSD(wxCommandEvent &event);
 	void OnMenuFileQuit(wxCommandEvent &event);
 	void OnMenuHelpAbout(wxCommandEvent &event);
 	void OnRecalcBtClick(wxCommandEvent &event);

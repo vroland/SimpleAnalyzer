@@ -41,6 +41,7 @@ public:
 	ObjectData();
 	int loadFromFile(wxString &path);
 	int addSensorData(wxString &path);
+	int addTimedData(wxString &path);
 	int calculateIO();
 	int current_sensor_index;
 	string name;
@@ -49,6 +50,7 @@ public:
 	double quality;
 	vector<MaterialData> materials;
 	vector<SensorData> sensordatalist;
+	vector<TimedSensorData> timedsensors;
 	virtual ~ObjectData();
 };
 

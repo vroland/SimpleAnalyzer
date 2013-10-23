@@ -40,6 +40,12 @@ namespace Utils {
 		vector<SensorPoint> points;
 		string name;
 	};
+	struct TimedSensorData {
+		vector<SensorData> data;
+		vector<int> timestamps;
+		int current_index;
+		string name;
+	};
 	struct SensorPointComparator {
 		double meshpoint[3];
 		bool operator() (SensorPoint p1,SensorPoint p2) {return (getDistance_d(meshpoint,p1.coords)<getDistance_d(meshpoint,p2.coords));}

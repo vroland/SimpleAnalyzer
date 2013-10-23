@@ -17,6 +17,7 @@ class Importer {
 public:
 	Importer();
 	int LoadSensorData(const char* filename,ObjectData* data);
+	int LoadTimedData(const char* filename,ObjectData* data);
 	int ImportObj(const char* filename,vector<MaterialData>* matDataList);
 	virtual ~Importer();
 };

@@ -73,6 +73,11 @@ int ObjectData::addSensorData(wxString &path) {
 	importer.LoadSensorData(path.ToAscii(),this);
 	return OD_SUCCESS;
 }
+int ObjectData::addTimedData(wxString &path) {
+	Importer importer;
+	importer.LoadTimedData(path.ToAscii(),this);
+	return OD_SUCCESS;
+}
 int ObjectData::calculateIO() {
 	setlocale(LC_NUMERIC, "C");
 	for (unsigned int i=0;i<materials.size();i++) {

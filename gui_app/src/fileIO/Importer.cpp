@@ -233,6 +233,48 @@ int Importer::LoadSensorData(const char* filename,ObjectData* data) {
 	}
 	return OD_SUCCESS;
 }
+int Importer::LoadTimedData(const char* filename,ObjectData* data) {
+	ifstream file;
+	file.open(filename);
+	cout << "open: " << filename << endl;
+	if (!file.is_open()) {
+		cout << "could not open file: "<<filename<<endl;
+		return OD_FAILURE;
+	}
+	string line;
+	data->timedsensors.resize(data->timedsensors.size()+1);
+	TimedSensorData* sd = &data->timedsensors.at(data->timedsensors.size()-1);
+	string fn = string(filename);
+	size_t lastps = fn.find_last_of(PATH_SEPARATOR);
+	if (lastps!=fn.npos) {
+		sd->name = fn.substr(fn.find_last_of(PATH_SEPARATOR)+1,fn.size()-fn.find_last_of(PATH_SEPARATOR));
+	} else {
+		sd->name = fn;
+	}
+	SensorData* currentData = NULL;
+	while (file.good()) {
+		getline(file,line);
+		string type = line.substr(0,1);
+		if (type=="t") { 	//Zeitstempel
+			sd->data.resize(sd->data.size()+1);
+			currentData = &sd->data.at(sd->data.size()-1);
+			sd->timestamps.resize(sd->timestamps.size()+1,atoi(getTextBlock(line,1).c_str()));
+			cout << "timestamp:" << atoi(getTextBlock(line,1).c_str()) << endl;
+		}
+		if (type=="s") {	//Sensordaten
+			currentData->points.resize(currentData->points.size()+1);
+			SensorPoint* newpoint = &currentData->points.at(currentData->points.size()-1);
+			for (int i=0;i<3;i++) {
+				newpoint->coords[i]= atof(getTextBlock(line,i+1).c_str());
+			}
+			newpoint->temperature = atof(getTextBlock(line,4).c_str());
+		}
+	}
+	if (data->current_sensor_index<0) {
+		data->current_sensor_index = 0;
+	}
+	return OD_SUCCESS;
+}
 Importer::~Importer() {
 }
 

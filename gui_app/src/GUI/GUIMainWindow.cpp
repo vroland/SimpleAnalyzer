@@ -41,6 +41,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_MENU(ID_ANALYZE_POINT,GUIMainWindow::OnAnalyzePoint)
 	EVT_MENU(ID_RENDER_CUT,GUIMainWindow::OnRenderCut)
 	EVT_MENU(ID_DELETE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectDelete)
+	EVT_MENU(ID_IMPORT_TSD,GUIMainWindow::OnMenuImportTSD)
 END_EVENT_TABLE()
 
 GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height):
@@ -55,6 +56,7 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	mwImportMenu = new wxMenu();
 	mwImportMenu->Append(ID_IMPORT_OBJ, wxT("&Modell und Sensordaten..."));
 	mwImportMenu->Append(ID_IMPORT_SD, wxT("&Sensordaten..."));
+	mwImportMenu->Append(ID_IMPORT_TSD, wxT("&Sensordaten-Paket..."));
 	mwFileMenu->AppendSubMenu(mwImportMenu,wxT("Import"));
 	//Export menu
 	mwExportMenu = new wxMenu();
@@ -89,7 +91,8 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	wxImage::AddHandler( new wxPNGHandler );
 	toolbar = new wxToolBar(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORZ_TEXT, _T("ID_TOOLBAR1"));
 	toolbar->AddTool(ID_IMPORT_OBJ,wxArtProvider::GetBitmap(wxART_FOLDER_OPEN, wxART_TOOLBAR), wxT("Objekt importieren"));
-	toolbar->AddTool(ID_IMPORT_SD, wxArtProvider::GetBitmap(wxART_FILE_OPEN, wxART_TOOLBAR), wxT("Sensordaten importieren"));
+	toolbar->AddTool(ID_IMPORT_SD, wxArtProvider::GetBitmap(wxART_NORMAL_FILE , wxART_TOOLBAR), wxT("Sensordaten importieren"));
+	toolbar->AddTool(ID_IMPORT_TSD, wxArtProvider::GetBitmap(wxART_FILE_OPEN , wxART_TOOLBAR), wxT("Sensordatenpaket importieren"));
 	toolbar->AddSeparator();
 	toolbar->AddTool(ID_CHANGE_ACTIVE_OBJ,wxT("aktives Objekt"),wxArtProvider::GetBitmap(wxART_LIST_VIEW  ,wxART_TOOLBAR) , wxT("Aktives Objekt wählen"));
 	toolbar->AddTool(ID_DELETE_ACTIVE_OBJ,wxArtProvider::GetBitmap(wxART_DELETE, wxART_TOOLBAR),wxT("aktives Objekt löschen"));
@@ -336,12 +339,24 @@ void GUIMainWindow::OnMenuImportObj(wxCommandEvent &event)
 	propbox->uptodatetext->Hide();
 }
 void GUIMainWindow::OnMenuImportSD(wxCommandEvent &event) {
-	wxFileDialog *OpenDialog= new wxFileDialog(this, wxT("Datei öffnen..."), _(""), _(""), _("Wavefront-Objektdateien (*.sd)|*.sd"), wxFD_OPEN);
+	wxFileDialog *OpenDialog= new wxFileDialog(this, wxT("Datei öffnen..."), _(""), _(""), _("Sensordaten (*.sd)|*.sd"), wxFD_OPEN);
 	if ( OpenDialog->ShowModal() == wxID_OK )
 	{
 		ObjectData* obj = data_objects.at(current_data_object_index);
 		wxString path = OpenDialog->GetPath();
 		obj->addSensorData(path);
+		updateObjectPropGUI();
+	}
+	OpenDialog->Close();
+	OpenDialog->Destroy();
+}
+void GUIMainWindow::OnMenuImportTSD(wxCommandEvent &event) {
+	wxFileDialog *OpenDialog= new wxFileDialog(this, wxT("Datei öffnen..."), _(""), _(""), _("Sensordaten-Pakete (*.tsd)|*.tsd"), wxFD_OPEN);
+	if ( OpenDialog->ShowModal() == wxID_OK )
+	{
+		ObjectData* obj = data_objects.at(current_data_object_index);
+		wxString path = OpenDialog->GetPath();
+		obj->addTimedData(path);
 		updateObjectPropGUI();
 	}
 	OpenDialog->Close();
