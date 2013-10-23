@@ -40,6 +40,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_MENU(ID_CHANGE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectChange)
 	EVT_MENU(ID_ANALYZE_POINT,GUIMainWindow::OnAnalyzePoint)
 	EVT_MENU(ID_RENDER_CUT,GUIMainWindow::OnRenderCut)
+	EVT_MENU(ID_DELETE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectDelete)
 END_EVENT_TABLE()
 
 GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height):
@@ -61,6 +62,9 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	mwFileMenu->AppendSeparator();
 	mwFileMenu->Append(wxID_EXIT, wxT("&Beenden"));
 	mwMenuBar->Append(mwFileMenu, wxT("&Datei"));
+	// Edit menu
+	mwEditMenu = new wxMenu();
+	mwEditMenu->Append(ID_DELETE_ACTIVE_OBJ,wxT("&Aktives Objekt löschen"));
 	// Analyze menu
 	mwAnalyzeMenu = new wxMenu();
 	mwAnalyzeMenu->Append(ID_ANALYZE,wxT("Übersicht..."));
@@ -88,6 +92,8 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	toolbar->AddTool(ID_IMPORT_SD, wxArtProvider::GetBitmap(wxART_FILE_OPEN, wxART_TOOLBAR), wxT("Sensordaten importieren"));
 	toolbar->AddSeparator();
 	toolbar->AddTool(ID_CHANGE_ACTIVE_OBJ,wxT("aktives Objekt"),wxArtProvider::GetBitmap(wxART_LIST_VIEW  ,wxART_TOOLBAR) , wxT("Aktives Objekt wählen"));
+	toolbar->AddTool(ID_DELETE_ACTIVE_OBJ,wxArtProvider::GetBitmap(wxART_DELETE, wxART_TOOLBAR),wxT("aktives Objekt löschen"));
+	toolbar->AddSeparator();
 	wxImage analyze_point(wxT("icons/analyze_point.png"), wxBITMAP_TYPE_PNG);
 	analyze_point = analyze_point.Scale(toolbar->GetToolBitmapSize().x,toolbar->GetToolBitmapSize().y,wxIMAGE_QUALITY_HIGH);
 	toolbar->AddTool(ID_ANALYZE_POINT,analyze_point,wxT("Punkt analysieren"));
@@ -121,6 +127,20 @@ void GUIMainWindow::setActiveObject(int index) {
 	gl_context->setRenderObject(data_objects.at(current_data_object_index));
 	updateObjectPropGUI();
 	updateViewPropGUI();
+}
+void GUIMainWindow::OnActiveObjectDelete(wxCommandEvent&event) {
+	if (data_objects.size()>1) {
+		cout << "deleting" << endl;
+		delete data_objects.at(current_data_object_index);
+		data_objects.erase(data_objects.begin()+current_data_object_index);
+		current_data_object_index--;
+		if (current_data_object_index<0) {
+			current_data_object_index = 0;
+		}
+		setActiveObject(current_data_object_index);
+	} else {
+		wxMessageBox( wxT("Das aktuelle Objekt ist das Einzige, kann also nicht gelöscht werden!"), wxT("Fehler"), wxICON_ERROR);
+	}
 }
 void GUIMainWindow::OnResize(wxSizeEvent &event) {
 	// 3d-view

@@ -33,6 +33,7 @@ public:
 	void OnViewPropChange(wxCommandEvent &event);
 	void OnActiveObjectChangePopup(wxCommandEvent &event);
 	void OnActiveObjectChange(wxCommandEvent &event);
+	void OnActiveObjectDelete(wxCommandEvent&event);
 	void OnAnalyzePoint(wxCommandEvent &event);
 	void OnRenderCut(wxCommandEvent &event);
 	void addObject(ObjectData* obj);
@@ -52,6 +53,7 @@ private:
 	wxMenu* mwImportMenu;
 	wxMenu* mwExportMenu;
 	wxMenu* mwAnalyzeMenu;
+	wxMenu* mwEditMenu;
 	PropertiesBox *propbox;
 	ViewpropBox* viewbox;
 	GUIAnalyzeOutputWindow* analyzerframe;

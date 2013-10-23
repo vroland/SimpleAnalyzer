@@ -33,7 +33,7 @@ bool contains( std::vector<int>& Vec, const int& Element )
 
     return false;
 }
-int parseLine(string line,vector<string> &out,vector<string>* times,vector<int>* valid_cols) {
+int parseLine(string line,vector<string> &out,vector<string>* timestamps,vector<int>* valid_cols) {
 	string workstr = line.substr(0,line.length());
 	out.clear();
 	size_t sep_pos = workstr.find(opts.separator);
@@ -47,8 +47,8 @@ int parseLine(string line,vector<string> &out,vector<string>* times,vector<int>*
 				out.resize(out.size()+1,substr);
 			}
 		}
-		if (count==opts.timecol && times!=NULL) {
-			times->resize(times->size()+1,substr);
+		if (count==opts.timecol && timestamps!=NULL) {
+			timestamps->resize(timestamps->size()+1,substr);
 		}
 		count++;
 	}
@@ -67,7 +67,7 @@ int main(int argc, char *argv[]) {
 	opts.startcol = 4;
 	opts.separator = ';';
 	opts.replace_comma_with_point = true;
-	opts.timecol = 1;
+	opts.timecol = 2;
 	bool names_read = false;
 
 	ifstream deffile;			//Sensor definitions
@@ -108,7 +108,7 @@ int main(int argc, char *argv[]) {
 	}
 	vector<int> valid_cols;
 	vector<vector<string> > values(0);
-	vector<string> times;
+	vector<string> timestamps;
 	while (file.good()) {
 		getline(file,line);
 		if (line==("")) continue;
@@ -128,20 +128,23 @@ int main(int argc, char *argv[]) {
 				replaceAll(line,",", ".");
 			}
 			values.resize(values.size()+1);
-			parseLine(line,values.at(values.size()-1),&times,&valid_cols);
+			parseLine(line,values.at(values.size()-1),&timestamps,&valid_cols);
 		}
 	}
 	file.close();
-
+	ofstream outfile;					// output
+	outfile.open(string("temperatur.tsd").c_str());
+	outfile << "sensors:\n";
+	for (size_t i=0;i<sensor_names.size();i++) {
+		outfile << "#" << sensor_names.at(i) <<"\n";
+	}
 	for (size_t j=0;j<values.size();j++) {
-		ofstream outfile;					// output
-		outfile.open((string("data_files/")+string("temperatur_")+times.at(j)+string(".sd")).c_str());
+		outfile << "t " << timestamps.at(j) << endl;
 		for (size_t i=0;i<sensor_names.size();i++) {
-			outfile << "#" << sensor_names.at(i) <<"\n";
 			outfile << "s "<< sensor_data.at(i) << " " << values.at(j).at(i) << "\n";
 		}
-		outfile.close();
 	}
+	outfile.close();
 	cout << "files successfully created." << endl;
 	return 0;
 };

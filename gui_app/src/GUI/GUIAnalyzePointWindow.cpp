@@ -59,7 +59,7 @@ void GUIAnalyzePointWindow::analyzePoint(wxCommandEvent &event) {
 	message.Append(floattowxstr(data.value));
 	message.Append(wxT("\nExtrapoliert: "));
 	data.extrapolated?message.Append(wxT("ja")):message.Append(wxT("nein"));
-	//wxMessageBox( message, wxT("Punktanalyse"), wxICON_INFORMATION);
+	wxMessageBox( message, wxT("Punktanalyse"), wxICON_INFORMATION);
 }
 
 GUIAnalyzePointWindow::~GUIAnalyzePointWindow() {

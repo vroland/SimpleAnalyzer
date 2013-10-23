@@ -36,13 +36,14 @@ GUITimeline::GUITimeline(wxWindow *parent,
 	maxdigits = 1;
 	delta_v_view = 0;
 	prev_mouse_x = -10000;
-	cout << "timeline init..." << endl;
 }
 void GUITimeline::OnMouseWheel(wxMouseEvent &event) {
 	float delta = -event.m_wheelRotation/1000.;
 	zoom*=exp(delta);
+
 	if (zoom<1./exp10(int(log10(maxvalue*zoom))+1)) {	//Minimal 1-er Schritte
 		zoom = 1./exp10(int(log10(maxvalue*zoom)+1));
+
 	}
 	if (zoom>2) {
 		zoom = 2.;
@@ -89,7 +90,7 @@ void GUITimeline::OnMouseMove(wxMouseEvent &event) {	// Ermöglicht ziehen
 	}
 	if (event.m_middleDown) {
 		if (prev_mouse_x>-10000) {
-			delta_v_view+=(event.m_x-prev_mouse_x)*.1;
+			delta_v_view+=(event.m_x-prev_mouse_x);
 		}
 		prev_mouse_x = event.m_x;
 		Refresh(false,NULL);
@@ -105,6 +106,7 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 	int h = 0;
 	GetSize(&w,&h);
 	wxPaintDC dc(this);
+	SetDoubleBuffered(true);
 	// Create graphics context from it
 	wxGraphicsContext *gc = wxGraphicsContext::Create( dc );
 	int width = 0;
@@ -117,7 +119,7 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 		float pixelsperstep = (float)width/((maxvalue-minvalue)*zoom);
 		float stepwidth = calcStepWidth();
 		cout << stepwidth << endl;
-		int viewstart = int(delta_v_view*1./pixelsperstep*width/stepwidth);
+		int viewstart = int(delta_v_view/zoom);
 		int start_index = -int(viewstart/pixelsperstep/stepwidth);
 		// Clear BG
 		gc->SetPen( wxSystemSettings::GetColour(wxSYS_COLOUR_BACKGROUND) );

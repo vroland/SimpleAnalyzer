@@ -30,6 +30,7 @@ enum {
 	ID_RENDER_CUT,
 	ID_RENDER_CUT_BT,
 	ID_CUT_TRI_EDIT,
+	ID_DELETE_ACTIVE_OBJ,
 };
 // IDs > wxID_HIGHEST for temporary uses
 
