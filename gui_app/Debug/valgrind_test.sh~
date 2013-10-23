@@ -1,0 +1,2 @@
+
+valgrind --tool=memcheck --leak-check=full --track-origins=yes --gen-suppressions=all --log-file=valgrind.log $(which ./gui_app)
