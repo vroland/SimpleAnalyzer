@@ -134,7 +134,7 @@ int main(int argc, char *argv[]) {
 	file.close();
 	ofstream outfile;					// output
 	outfile.open(string("temperatur.tsd").c_str());
-	outfile << "sensors:\n";
+	outfile << "#sensors:\n";
 	for (size_t i=0;i<sensor_names.size();i++) {
 		outfile << "#" << sensor_names.at(i) <<"\n";
 	}
