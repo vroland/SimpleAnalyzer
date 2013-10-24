@@ -209,6 +209,8 @@ int Importer::LoadSensorData(const char* filename,ObjectData* data) {
 
 	data->sensordatalist.resize(data->sensordatalist.size()+1);
 	SensorData* sd = &data->sensordatalist.at(data->sensordatalist.size()-1);
+	sd->timed = false;
+	sd->current_time_index = 0;
 	string fn = string(filename);
 	size_t lastps = fn.find_last_of(PATH_SEPARATOR);
 	if (lastps!=fn.npos) {
@@ -216,12 +218,14 @@ int Importer::LoadSensorData(const char* filename,ObjectData* data) {
 	} else {
 		sd->name = fn;
 	}
+	sd->data.resize(1);
+	vector<SensorPoint> *points = &sd->data.at(0);
 	while (file.good()) {
 		getline(file,line);
 		string type = line.substr(0,1);
 		if (type=="s") {	//Sensordaten
-			sd->points.resize(sd->points.size()+1);
-			SensorPoint* newpoint = &sd->points.at(sd->points.size()-1);
+			points->resize(points->size()+1);
+			SensorPoint* newpoint = &points->at(points->size()-1);
 			for (int i=0;i<3;i++) {
 				newpoint->coords[i]= atof(getTextBlock(line,i+1).c_str());
 			}
@@ -242,8 +246,10 @@ int Importer::LoadTimedData(const char* filename,ObjectData* data) {
 		return OD_FAILURE;
 	}
 	string line;
-	data->timedsensors.resize(data->timedsensors.size()+1);
-	TimedSensorData* sd = &data->timedsensors.at(data->timedsensors.size()-1);
+	data->sensordatalist.resize(data->sensordatalist.size()+1);
+	SensorData* sd = &data->sensordatalist.at(data->sensordatalist.size()-1);
+	sd->timed = true;
+	sd->current_time_index = 0;
 	string fn = string(filename);
 	size_t lastps = fn.find_last_of(PATH_SEPARATOR);
 	if (lastps!=fn.npos) {
@@ -251,7 +257,7 @@ int Importer::LoadTimedData(const char* filename,ObjectData* data) {
 	} else {
 		sd->name = fn;
 	}
-	SensorData* currentData = NULL;
+	vector<SensorPoint>* currentData = NULL;
 	while (file.good()) {
 		getline(file,line);
 		string type = line.substr(0,1);
@@ -259,11 +265,13 @@ int Importer::LoadTimedData(const char* filename,ObjectData* data) {
 			sd->data.resize(sd->data.size()+1);
 			currentData = &sd->data.at(sd->data.size()-1);
 			sd->timestamps.resize(sd->timestamps.size()+1,atoi(getTextBlock(line,1).c_str()));
-			cout << "timestamp:" << atoi(getTextBlock(line,1).c_str()) << endl;
+		}
+		if (type=="n") { 	//Zeitstempel
+			sd->subnames.resize(sd->subnames.size()+1,getTextBlock(line,1).c_str());
 		}
 		if (type=="s") {	//Sensordaten
-			currentData->points.resize(currentData->points.size()+1);
-			SensorPoint* newpoint = &currentData->points.at(currentData->points.size()-1);
+			currentData->resize(currentData->size()+1);
+			SensorPoint* newpoint = &currentData->at(currentData->size()-1);
 			for (int i=0;i<3;i++) {
 				newpoint->coords[i]= atof(getTextBlock(line,i+1).c_str());
 			}

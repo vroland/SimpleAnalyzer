@@ -401,7 +401,8 @@ void Renderer::setObject(ObjectData* obj) {
 			renderMaterial(&object->materials.at(i));
 		}
 		if (viewport.show_sensordata) {
-			renderSensorData(&object->sensordatalist.at(object->current_sensor_index).points);
+			SensorData* sd = &object->sensordatalist.at(object->current_sensor_index);
+			renderSensorData(&sd->data.at(sd->current_time_index));
 		}
 	}
 	glEndList();

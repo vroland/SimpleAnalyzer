@@ -8,9 +8,14 @@
 #include "PropertiesBox.h"
 #include "constants.h"
 #include <iostream>
+#include "../processing/utils.h"
+#include "../processing/ObjectData.h"
 
+using namespace Utils;
 
 wxString sdfilestring[] = {wxT("")};
+extern std::vector<ObjectData*> data_objects;
+extern int current_data_object_index;
 
 PropertiesBox::PropertiesBox(wxWindow *parent):
 	wxStaticBox(parent, wxID_ANY, wxT("Objekteigenschaften")) {
@@ -24,7 +29,7 @@ PropertiesBox::PropertiesBox(wxWindow *parent):
 	maxvolumetext = new wxStaticText(parent,wxID_ANY,wxT("Maximales Tetraedervolumen:"));
 	qualityedit   = new wxTextCtrl(parent,ID_GENERAL_PROP,wxT(""));
 	qualitytext	  = new wxStaticText(parent,wxID_ANY,wxT("Min. Radius-Kantenlänge-Verhältnis:"));
-	sensordatalist = new wxComboBox(parent,ID_GENERAL_PROP,wxT(""),wxDefaultPosition,wxDefaultSize,1,sdfilestring,wxCB_READONLY | wxCB_DROPDOWN);
+	sensordatalist = new wxComboBox(parent,ID_SD_BOX,wxT(""),wxDefaultPosition,wxDefaultSize,1,sdfilestring,wxCB_READONLY | wxCB_DROPDOWN);
 	sensordatatext= new wxStaticText(parent,wxID_ANY,wxT("Sensordaten:"));
 	matlistbox 	  = new wxListBox(parent,ID_MATERIALBOX);
 	matlistboxtext= new wxStaticText(parent,wxID_ANY,wxT("Materialien:"));
@@ -37,7 +42,7 @@ PropertiesBox::PropertiesBox(wxWindow *parent):
 	densitytext	  = new wxStaticText(parent,wxID_ANY,wxT("Dichte in kg/m³:"));
 	cspecedit	  = new wxTextCtrl(parent,ID_GENERAL_PROP,wxT(""));
 	cspectext	  = new wxStaticText(parent,wxID_ANY,wxT("Spez. Wärmekapazität in kJ/(kg*K):"));
-	sdtimeline 	  = new GUITimeline(parent,wxID_ANY,wxT("Zeitleiste"));
+	sdtimeline 	  = new GUITimeline(parent,ID_SD_TIMELINE,wxT("Zeitleiste"));
 	current_material = 0;
 }
 void PropertiesBox::resize() {
@@ -54,18 +59,31 @@ void PropertiesBox::resize() {
 	qualityedit->SetSize(x+10,y+160,150,20,0);
 	sensordatatext->SetSize(x+10,y+180,300,20,0);
 	sensordatalist->SetSize(x+10,y+200,150,20,0);
-	matlistboxtext->SetSize(x+10,y+220,300,110,0);
-	matlistbox->SetSize(x+10,y+240,270,60,0);
-	matpropbox->SetSize(x+10,y+310,270,250,0);
-	matnametext->SetSize(x+20,y+330,300,20,0);
-	matnameedit->SetSize(x+20,y+350,150,20,0);
-	interpolationmodetext->SetSize(x+20,y+370,300,20,0);
-	interpolationmodelist->SetSize(x+20,y+390,150,20,0);
-	densitytext->SetSize(x+20,y+410,240,20,0);
-	densityedit->SetSize(x+20,y+430,150,20,0);
-	cspectext->SetSize(x+20,y+450,300,20,0);
-	cspecedit->SetSize(x+20,y+470,150,20,0);
-	sdtimeline->SetSize(x+20,y+500,250,100,0);
+	ObjectData* object = data_objects.at(current_data_object_index);
+	SensorData* sd = &object->sensordatalist.at(sensordatalist->GetSelection());
+	int sdheight = 0;
+	if (sd->timed) {
+		sdtimeline->Show(true);
+		sdtimeline->SetSize(x+20,y+230,250,80,0);
+		sdtimeline->setValue(sd->current_time_index);
+		sdtimeline->setMinValue(0);
+		sdtimeline->setMaxValue(sd->timestamps.size()-1);
+		sdtimeline->setNameList(&sd->subnames);
+		sdheight = 100;
+	} else {
+		sdtimeline->Hide();
+	}
+	matlistboxtext->SetSize(x+10,y+220+sdheight,300,110,0);
+	matlistbox->SetSize(x+10,y+240+sdheight,270,60,0);
+	matpropbox->SetSize(x+10,y+310+sdheight,270,250,0);
+	matnametext->SetSize(x+20,y+330+sdheight,300,20,0);
+	matnameedit->SetSize(x+20,y+350+sdheight,150,20,0);
+	interpolationmodetext->SetSize(x+20,y+370+sdheight,300,20,0);
+	interpolationmodelist->SetSize(x+20,y+390+sdheight,150,20,0);
+	densitytext->SetSize(x+20,y+410+sdheight,240,20,0);
+	densityedit->SetSize(x+20,y+430+sdheight,150,20,0);
+	cspectext->SetSize(x+20,y+450+sdheight,300,20,0);
+	cspecedit->SetSize(x+20,y+470+sdheight,150,20,0);
 }
 PropertiesBox::~PropertiesBox() {
 }

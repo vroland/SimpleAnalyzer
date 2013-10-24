@@ -101,7 +101,6 @@ int ObjectData::calculateIO() {
 	return OD_SUCCESS;
 }
 ObjectData::~ObjectData() {
-	cout << "deleting object data..." << endl;
 	for (unsigned int i=0;i<materials.size();i++) {
 			MaterialData* data = &materials.at(i);
 			delete data->tetgeninput;

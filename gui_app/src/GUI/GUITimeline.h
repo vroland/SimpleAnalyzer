@@ -9,10 +9,15 @@
 #define TIMELINE_H_
 
 #include <wx-2.8/wx/wx.h>
+#include <string>
+#include <vector>
+using namespace std;
 
 enum GUI_TIMELINE_STYLE {
 	GTL_DEFAULT = 0,
 };
+DECLARE_EVENT_TYPE(wxEVT_TIMELINE, -1)
+
 class GUITimeline: public wxPanel {
 public:
 	GUITimeline(wxWindow *parent,
@@ -28,6 +33,7 @@ public:
 	void setValue(int val);
 	void setMaxValue(int val);
 	void setMinValue(int val);
+	void setNameList(vector<string>* namelist);
 	virtual ~GUITimeline();
 protected:
 	int value;
@@ -37,6 +43,7 @@ protected:
 	float zoom;
 	float delta_v_view;
 	int prev_mouse_x;
+	vector<string>* names;
 	virtual wxSize DoGetBestSize() const {
 		return wxSize(100,100);
 	}
@@ -45,7 +52,9 @@ protected:
 	void OnMouseMove(wxMouseEvent &event);
 	void OnResize(wxSizeEvent &event);
 	void OnMouseDown(wxMouseEvent &event);
+	void OnKeyDown(wxKeyEvent &event);
 	void posToVal(int mouse_x);
+	void sendTimelineEvent();
 	int calcStepWidth();
 private:
 	DECLARE_EVENT_TABLE()

@@ -67,7 +67,8 @@ void GUIRenderCutCanvas::renderImage(wxImage& image) {
 				if (found) {
 					int status = 0;
 					interpolator.setMode(mat->interpolation_mode);
-					double value = getPointValue(status,&obj->sensordatalist.at(obj->current_sensor_index).points,p->getXYZ(),&interpolator);
+					SensorData* sd = &obj->sensordatalist.at(obj->current_sensor_index);
+					double value = getPointValue(status,&sd->data.at(sd->current_time_index),p->getXYZ(),&interpolator);
 					if (value>100) {
 						value = 100;
 					}

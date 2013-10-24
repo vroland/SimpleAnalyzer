@@ -42,6 +42,8 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_MENU(ID_RENDER_CUT,GUIMainWindow::OnRenderCut)
 	EVT_MENU(ID_DELETE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectDelete)
 	EVT_MENU(ID_IMPORT_TSD,GUIMainWindow::OnMenuImportTSD)
+	EVT_COMBOBOX(ID_SD_BOX,GUIMainWindow::OnSensorDataChange)
+	EVT_COMMAND(ID_SD_TIMELINE, wxEVT_TIMELINE, GUIMainWindow::OnGeneralPropChange)
 END_EVENT_TABLE()
 
 GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height):
@@ -133,7 +135,6 @@ void GUIMainWindow::setActiveObject(int index) {
 }
 void GUIMainWindow::OnActiveObjectDelete(wxCommandEvent&event) {
 	if (data_objects.size()>1) {
-		cout << "deleting" << endl;
 		delete data_objects.at(current_data_object_index);
 		data_objects.erase(data_objects.begin()+current_data_object_index);
 		current_data_object_index--;
@@ -159,7 +160,11 @@ string floattostr(double val) {
 	ss << val;
 	return ss.str();
 }
-
+void GUIMainWindow::OnSensorDataChange(wxCommandEvent &event) {
+	OnGeneralPropChange(event);
+	propbox->resize();
+	propbox->Update();
+}
 void GUIMainWindow::assignCurrentObjectProps() {	//GUI -> object
 	if (current_data_object_index>-1) {
 		ObjectData* obj = data_objects.at(current_data_object_index);
@@ -168,6 +173,11 @@ void GUIMainWindow::assignCurrentObjectProps() {	//GUI -> object
 		obj->maxvolume = atof(propbox->maxvolumeedit->GetValue().ToAscii());
 		obj->quality   = atof(propbox->qualityedit->GetValue().ToAscii());
 		obj->current_sensor_index = propbox->sensordatalist->GetSelection();
+		ObjectData* object = data_objects.at(current_data_object_index);
+		SensorData* sd = &object->sensordatalist.at(propbox->sensordatalist->GetSelection());
+		if (sd->timed) {
+			sd->current_time_index = propbox->sdtimeline->getValue();
+		}
 		MaterialData* mat = &obj->materials.at(propbox->current_material);
 		mat->name				  = propbox->matnameedit->GetValue().ToAscii();
 		mat->interpolation_mode   = (InterpolationMode) propbox->interpolationmodelist->GetSelection();
@@ -201,8 +211,10 @@ void GUIMainWindow::updateObjectPropGUI() {		//object -> GUI
 		propbox->densityedit->SetValue(wxString::FromAscii(floattostr(mat->density).c_str()));
 		propbox->cspecedit->SetValue(wxString::FromAscii(floattostr(mat->specificheatcapacity).c_str()));
 		propbox->matnameedit->SetValue(wxString::FromAscii(mat->name.c_str()));
+		propbox->resize();
 		updating = false;
 		propbox->uptodatetext->Hide();
+
 
 		int nPos = toolbar->GetToolPos(ID_CHANGE_ACTIVE_OBJ);
 		wxToolBarToolBase* pTool = toolbar->RemoveTool(ID_CHANGE_ACTIVE_OBJ);

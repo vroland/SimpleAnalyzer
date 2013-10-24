@@ -17,6 +17,7 @@ struct Options {
 	char separator;
 	bool replace_comma_with_point;
 	size_t timecol;
+	size_t namecol;
 } opts;
 
 bool contains( std::vector<string>& Vec, const string& Element )
@@ -33,7 +34,7 @@ bool contains( std::vector<int>& Vec, const int& Element )
 
     return false;
 }
-int parseLine(string line,vector<string> &out,vector<string>* timestamps,vector<int>* valid_cols) {
+int parseLine(string line,vector<string> &out,vector<string>* timestamps,vector<string>* names,vector<int>* valid_cols) {
 	string workstr = line.substr(0,line.length());
 	out.clear();
 	size_t sep_pos = workstr.find(opts.separator);
@@ -49,6 +50,9 @@ int parseLine(string line,vector<string> &out,vector<string>* timestamps,vector<
 		}
 		if (count==opts.timecol && timestamps!=NULL) {
 			timestamps->resize(timestamps->size()+1,substr);
+		}
+		if (count==opts.namecol && names!=NULL) {
+			names->resize(names->size()+1,substr);
 		}
 		count++;
 	}
@@ -68,6 +72,7 @@ int main(int argc, char *argv[]) {
 	opts.separator = ';';
 	opts.replace_comma_with_point = true;
 	opts.timecol = 2;
+	opts.namecol = 1;
 	bool names_read = false;
 
 	ifstream deffile;			//Sensor definitions
@@ -109,12 +114,13 @@ int main(int argc, char *argv[]) {
 	vector<int> valid_cols;
 	vector<vector<string> > values(0);
 	vector<string> timestamps;
+	vector<string> names;
 	while (file.good()) {
 		getline(file,line);
 		if (line==("")) continue;
 		if (!names_read) {
 			vector<string> col_names;
-			parseLine(line,col_names,NULL,NULL);
+			parseLine(line,col_names,NULL,NULL,NULL);
 			for (size_t i=0;i<col_names.size();i++) {
 				if (contains(sensor_names,col_names.at(i))) {
 					valid_cols.resize(valid_cols.size()+1,i);
@@ -128,7 +134,7 @@ int main(int argc, char *argv[]) {
 				replaceAll(line,",", ".");
 			}
 			values.resize(values.size()+1);
-			parseLine(line,values.at(values.size()-1),&timestamps,&valid_cols);
+			parseLine(line,values.at(values.size()-1),&timestamps,&names,&valid_cols);
 		}
 	}
 	file.close();
@@ -140,6 +146,7 @@ int main(int argc, char *argv[]) {
 	}
 	for (size_t j=0;j<values.size();j++) {
 		outfile << "t " << timestamps.at(j) << endl;
+		outfile << "n " << names.at(j) << endl;
 		for (size_t i=0;i<sensor_names.size();i++) {
 			outfile << "s "<< sensor_data.at(i) << " " << values.at(j).at(i) << "\n";
 		}

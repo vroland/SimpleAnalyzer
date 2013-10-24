@@ -37,13 +37,11 @@ namespace Utils {
 		double temperature;
 	};
 	struct SensorData {
-		vector<SensorPoint> points;
-		string name;
-	};
-	struct TimedSensorData {
-		vector<SensorData> data;
+		vector<vector<SensorPoint> > data;
+		vector<string> subnames;
 		vector<int> timestamps;
-		int current_index;
+		bool timed;
+		int current_time_index;
 		string name;
 	};
 	struct SensorPointComparator {

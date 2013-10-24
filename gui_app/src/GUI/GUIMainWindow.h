@@ -32,6 +32,7 @@ public:
 	void OnImmUpPropChange(wxCommandEvent &event);
 	void OnGeneralPropChange(wxCommandEvent &event);
 	void OnViewPropChange(wxCommandEvent &event);
+	void OnSensorDataChange(wxCommandEvent &event);
 	void OnActiveObjectChangePopup(wxCommandEvent &event);
 	void OnActiveObjectChange(wxCommandEvent &event);
 	void OnActiveObjectDelete(wxCommandEvent&event);

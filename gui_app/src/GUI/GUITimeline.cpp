@@ -12,14 +12,19 @@
 using namespace std;
 using namespace Utils;
 
+DEFINE_EVENT_TYPE(wxEVT_TIMELINE)
+
 BEGIN_EVENT_TABLE(GUITimeline, wxPanel)
     EVT_PAINT    (GUITimeline::OnPaint)
     EVT_MOUSEWHEEL(GUITimeline::OnMouseWheel)
     EVT_MOTION   (GUITimeline::OnMouseMove)
     EVT_SIZE   (GUITimeline::OnResize)
     EVT_LEFT_DOWN(GUITimeline::OnMouseDown)
+    EVT_KEY_DOWN(GUITimeline::OnKeyDown)
 END_EVENT_TABLE()
 
+#define REFINE_STEPS 3
+const float refine_factors[REFINE_STEPS] = {.5,.2,.1};
 GUITimeline::GUITimeline(wxWindow *parent,
 	wxWindowID id,
 	const wxString& title,
@@ -36,13 +41,20 @@ GUITimeline::GUITimeline(wxWindow *parent,
 	maxdigits = 1;
 	delta_v_view = 0;
 	prev_mouse_x = -10000;
+	names = NULL;
+}
+void GUITimeline::sendTimelineEvent() {
+	wxCommandEvent event( wxEVT_TIMELINE, GetId() );
+	event.SetEventObject( this );
+	GetEventHandler()->ProcessEvent( event );
 }
 void GUITimeline::OnMouseWheel(wxMouseEvent &event) {
+	SetFocus();
 	float delta = -event.m_wheelRotation/1000.;
 	zoom*=exp(delta);
 
-	if (zoom<1./exp10(int(log10(maxvalue*zoom))+1)) {	//Minimal 1-er Schritte
-		zoom = 1./exp10(int(log10(maxvalue*zoom)+1));
+	if (zoom<.000001) {	//Minimal 1-er Schritte
+		zoom = .000001;
 
 	}
 	if (zoom>2) {
@@ -51,21 +63,48 @@ void GUITimeline::OnMouseWheel(wxMouseEvent &event) {
 	Refresh(false,NULL);
 }
 void GUITimeline::OnMouseDown(wxMouseEvent &event) {
+	SetFocus();
 	posToVal(event.m_x);
+}
+void GUITimeline::OnKeyDown(wxKeyEvent &event) {
+	if (event.m_keyCode==WXK_LEFT) {
+		value--;
+		if (value<minvalue) {
+			value = minvalue;
+		}
+		sendTimelineEvent();
+	}
+	if (event.m_keyCode==WXK_RIGHT) {
+		value++;
+		if (value>maxvalue) {
+			value = maxvalue;
+		}
+		sendTimelineEvent();
+	}
+	Refresh(false,NULL);
 }
 int GUITimeline::calcStepWidth() {
 	int to_ten = int(exp10(int(log10(maxvalue*zoom))));
-	int part = int((maxvalue*zoom)/to_ten);
 	float refine_factor = 1;
-	if (part<=5) {
-		refine_factor = 1/2.;
+	wxPaintDC dc(this);
+	float pixelsperstep = (float)GetSize().x/((maxvalue-minvalue)*zoom);
+	for (int i=0;i<REFINE_STEPS;i++) {		// go until Text is unreadable
+		int stepwidth = to_ten*refine_factors[i];
+		int viewstart = int(delta_v_view/zoom);
+		int start_index = -int(viewstart/pixelsperstep/stepwidth);
+
+		int curr_max = start_index+1./pixelsperstep*GetSize().x/stepwidth;
+		curr_max = curr_max*stepwidth;
+
+		wxString str = floattowxstr(curr_max);
+		int text_extend = dc.GetTextExtent(str).x;
+		if (stepwidth*pixelsperstep>text_extend+2) {
+			refine_factor = refine_factors[i];
+		} else {
+			break;
+		}
 	}
-	if (part<=2) {
-		refine_factor = 1/5.;
-	}
-	if (part==1) {
-		refine_factor = 1/10.;
-	}
+
 	return to_ten*refine_factor;
 }
 void GUITimeline::posToVal(int mouse_x) {
@@ -73,8 +112,7 @@ void GUITimeline::posToVal(int mouse_x) {
 	int height = 0;
 	GetSize(&width,&height);
 	float pixelsperstep = (float)width/((maxvalue-minvalue)*zoom);
-	float stepwidth = calcStepWidth();
-	int viewstart = int(delta_v_view*1./pixelsperstep*width/stepwidth);
+	int viewstart = int(delta_v_view/zoom);
 	value = int((mouse_x-viewstart)/pixelsperstep);
 	if (value<minvalue) {
 		value = minvalue;
@@ -82,9 +120,11 @@ void GUITimeline::posToVal(int mouse_x) {
 	if (value>maxvalue) {
 		value = maxvalue;
 	}
+	sendTimelineEvent();
 	Refresh(false,NULL);
 }
 void GUITimeline::OnMouseMove(wxMouseEvent &event) {	// Ermöglicht ziehen
+	SetFocus();
 	if (event.m_leftDown) {
 		posToVal(event.m_x);
 	}
@@ -115,10 +155,8 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 	GetSize(&width,&height);
 	if (gc)
 	{
-		cout << "draw! delta_view: "<<delta_v_view<< " zoom: "<<zoom << endl;
 		float pixelsperstep = (float)width/((maxvalue-minvalue)*zoom);
 		float stepwidth = calcStepWidth();
-		cout << stepwidth << endl;
 		int viewstart = int(delta_v_view/zoom);
 		int start_index = -int(viewstart/pixelsperstep/stepwidth);
 		// Clear BG
@@ -133,7 +171,6 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 		// Unavailable areas
 		gc->SetPen( *wxTRANSPARENT_PEN);
 		gc->SetBrush( wxBrush(wxSystemSettings::GetColour(wxSYS_COLOUR_GRAYTEXT),wxSOLID));
-		cout << -viewstart << " " <<minvalue*pixelsperstep<<endl;
 		if (-viewstart<minvalue*pixelsperstep) {
 			gc->DrawRectangle(0,1,viewstart+minvalue*pixelsperstep,height);
 		}
@@ -162,7 +199,21 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 		gc->SetPen( *wxGREEN_PEN);
 		gc->StrokeLine(viewstart+(float)value*pixelsperstep,0,viewstart+(float)value*pixelsperstep,height-captionheight);
 		dc.SetTextForeground(*wxGREEN);
-		dc.DrawText(floattowxstr(value),viewstart+(float)value*pixelsperstep,height/2);
+		if (names==NULL) {
+			dc.DrawText(floattowxstr(value),viewstart+(float)value*pixelsperstep,height/2);
+		} else {
+			if (int(names->size())<(maxvalue-minvalue)) {
+				cerr << "name vector has wrong size!" << endl;
+			} else {
+				wxString str = wxString::FromAscii((names->at(value-minvalue)).c_str())+wxT(" (")+floattowxstr(value)+wxT(")");
+				int text_width = dc.GetTextExtent(str).x;
+				int text_x = viewstart+(float)value*pixelsperstep;
+				if (text_x+text_width>width) {
+					text_x -= text_width+10;
+				}
+				dc.DrawText(str,text_x,height/2);
+			}
+		}
 		delete gc;
 	}
 }
@@ -192,7 +243,9 @@ void GUITimeline::setMaxValue(int val) {
 void GUITimeline::setMinValue(int val) {
 	minvalue = val;
 }
-
+void GUITimeline::setNameList(vector<string>* namelist) {
+	names = namelist;
+}
 GUITimeline::~GUITimeline() {
 
 }

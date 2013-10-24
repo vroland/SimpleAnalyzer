@@ -41,7 +41,8 @@ void MeshProcessor::process(ObjectData* object) {
 		Interpolator interpolator;
 		interpolator.setMode(mat->interpolation_mode);
 		for (int i=0;i<io->numberofpoints;i++) {
-			interpolatePoint(mat,&object->sensordatalist.at(object->current_sensor_index).points,i,&interpolator);
+			SensorData* sd = &object->sensordatalist.at(object->current_sensor_index);
+			interpolatePoint(mat,&sd->data.at(sd->current_time_index),i,&interpolator);
 		}
 	}
 }

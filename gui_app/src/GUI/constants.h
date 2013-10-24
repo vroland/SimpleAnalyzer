@@ -32,6 +32,9 @@ enum {
 	ID_CUT_TRI_EDIT,
 	ID_DELETE_ACTIVE_OBJ,
 	ID_IMPORT_TSD,
+	ID_SD_BOX,
+	ID_SD_TIMELINE,
+
 };
 // IDs > wxID_HIGHEST for temporary uses
 

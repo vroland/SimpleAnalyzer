@@ -77,7 +77,8 @@ void Analyzer::analyzeObject(ObjectData* obj,AnalyzerData_object* out) {
 }
 
 void Analyzer::analyzePoint(ObjectData* obj,Vector3D* point,AnalyzerData_point* point_data,Interpolator* interpolator) {
-	vector<SensorPoint>* sensorpoints = &obj->sensordatalist.at(obj->current_sensor_index).points;
+	SensorData* sd = &obj->sensordatalist.at(obj->current_sensor_index);
+	vector<SensorPoint>* sensorpoints = &sd->data.at(sd->current_time_index);
 	int found = 0;
 	double interval = getPointValue(found,sensorpoints,point->getXYZ(),interpolator);
 	point_data->value = interval;

@@ -50,7 +50,6 @@ public:
 	double quality;
 	vector<MaterialData> materials;
 	vector<SensorData> sensordatalist;
-	vector<TimedSensorData> timedsensors;
 	virtual ~ObjectData();
 };
 
