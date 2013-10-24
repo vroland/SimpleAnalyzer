@@ -33,6 +33,11 @@ public:
 	void OnGeneralPropChange(wxCommandEvent &event);
 	void OnViewPropChange(wxCommandEvent &event);
 	void OnSensorDataChange(wxCommandEvent &event);
+	void OnSDTimelineChange(wxCommandEvent &event);
+	void OnSDTLMarkerClear(wxCommandEvent &event);
+	void OnSDTLNextMarker(wxCommandEvent &event);
+	void OnSDTLPrevMarker(wxCommandEvent &event);
+	void OnAnalyzeMarkerChange(wxCommandEvent &event);
 	void OnActiveObjectChangePopup(wxCommandEvent &event);
 	void OnActiveObjectChange(wxCommandEvent &event);
 	void OnActiveObjectDelete(wxCommandEvent&event);

@@ -43,7 +43,11 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_MENU(ID_DELETE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectDelete)
 	EVT_MENU(ID_IMPORT_TSD,GUIMainWindow::OnMenuImportTSD)
 	EVT_COMBOBOX(ID_SD_BOX,GUIMainWindow::OnSensorDataChange)
-	EVT_COMMAND(ID_SD_TIMELINE, wxEVT_TIMELINE, GUIMainWindow::OnGeneralPropChange)
+	EVT_COMMAND(ID_SD_TIMELINE, wxEVT_TIMELINE,GUIMainWindow::OnSDTimelineChange)
+	EVT_CHECKBOX(ID_ANALYZE_MARKER_CB,GUIMainWindow::OnAnalyzeMarkerChange)
+	EVT_BUTTON(ID_CLEAR_MARKER_BT,GUIMainWindow::OnSDTLMarkerClear)
+	EVT_BUTTON(ID_MARKER_NEXT_BT,GUIMainWindow::OnSDTLNextMarker)
+	EVT_BUTTON(ID_MARKER_PREV_BT,GUIMainWindow::OnSDTLPrevMarker)
 END_EVENT_TABLE()
 
 GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height):
@@ -108,8 +112,8 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	ObjectData* newobj = new ObjectData();
 	wxString path2 = wxT("../examples/haus.obj");
 	newobj->loadFromFile(path2);
-	wxString sdpath = wxT("../examples/haus_2.sd");
-	newobj->addSensorData(sdpath);
+	wxString sdpath = wxT("../../csvtosd/temperatur.tsd");
+	newobj->addTimedData(sdpath);
 	addObject(newobj);
 	/*newobj = new ObjectData();
 	wxString path = wxT("../examples/cylinder.obj");
@@ -133,7 +137,7 @@ void GUIMainWindow::setActiveObject(int index) {
 	updateObjectPropGUI();
 	updateViewPropGUI();
 }
-void GUIMainWindow::OnActiveObjectDelete(wxCommandEvent&event) {
+void GUIMainWindow::OnActiveObjectDelete(wxCommandEvent &event) {
 	if (data_objects.size()>1) {
 		delete data_objects.at(current_data_object_index);
 		data_objects.erase(data_objects.begin()+current_data_object_index);
@@ -146,6 +150,7 @@ void GUIMainWindow::OnActiveObjectDelete(wxCommandEvent&event) {
 		wxMessageBox( wxT("Das aktuelle Objekt ist das Einzige, kann also nicht gelöscht werden!"), wxT("Fehler"), wxICON_ERROR);
 	}
 }
+
 void GUIMainWindow::OnResize(wxSizeEvent &event) {
 	// 3d-view
 	gl_context->SetSize(VIEWBOXWIDTH,0,GetSize().x-PROPBOXWIDTH-VIEWBOXWIDTH,GetSize().y,0);
@@ -160,10 +165,58 @@ string floattostr(double val) {
 	ss << val;
 	return ss.str();
 }
+void GUIMainWindow::OnSDTimelineChange(wxCommandEvent &event) {
+	OnGeneralPropChange(event);
+	updating = true;
+	propbox->analyzemarkercb->SetValue(propbox->sdtimeline->isMarked(propbox->sdtimeline->getValue()));
+	updating = false;
+}
 void GUIMainWindow::OnSensorDataChange(wxCommandEvent &event) {
 	OnGeneralPropChange(event);
 	propbox->resize();
 	propbox->Update();
+}
+void GUIMainWindow::OnSDTLMarkerClear(wxCommandEvent &event) {
+	propbox->sdtimeline->clearMarkers();
+	updating = true;
+	propbox->analyzemarkercb->SetValue(false);
+	updating = false;
+}
+void GUIMainWindow::OnAnalyzeMarkerChange(wxCommandEvent &event) {
+	if (!updating) {
+		int val = propbox->sdtimeline->getValue();
+		propbox->sdtimeline->setMarked(val,propbox->analyzemarkercb->GetValue());
+	}
+}
+void GUIMainWindow::OnSDTLNextMarker(wxCommandEvent &event) {
+	vector<int>* markers = propbox->sdtimeline->getMarkers();
+	if (markers->size()==0) {
+		wxMessageBox(wxT("Es sind keine Analyze-Marker gesetzt!"),wxT("Hinweis"),wxICON_INFORMATION);
+	} else {
+		for (size_t i=0;i<markers->size();i++) {
+			if (markers->at(i)>propbox->sdtimeline->getValue()) {
+				propbox->sdtimeline->setValue(markers->at(i));
+				break;
+			}
+		}
+	}
+}
+void GUIMainWindow::OnSDTLPrevMarker(wxCommandEvent &event) {
+	vector<int>* markers = propbox->sdtimeline->getMarkers();
+	if (markers->size()==0) {
+		wxMessageBox(wxT("Es sind keine Analyze-Marker gesetzt!"),wxT("Hinweis"),wxICON_INFORMATION);
+	} else {
+		for (size_t i=0;i<markers->size();i++) {
+			if (markers->at(i)>=propbox->sdtimeline->getValue()) {
+				if (i>0) {
+					propbox->sdtimeline->setValue(markers->at(i-1));
+				} else {
+					propbox->sdtimeline->setValue(markers->at(0));
+				}
+				break;
+			}
+		}
+	}
 }
 void GUIMainWindow::assignCurrentObjectProps() {	//GUI -> object
 	if (current_data_object_index>-1) {

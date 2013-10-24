@@ -40,6 +40,7 @@ namespace Utils {
 		vector<vector<SensorPoint> > data;
 		vector<string> subnames;
 		vector<int> timestamps;
+		vector<int> markers;
 		bool timed;
 		int current_time_index;
 		string name;

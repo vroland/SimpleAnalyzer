@@ -34,6 +34,12 @@ public:
 	void setMaxValue(int val);
 	void setMinValue(int val);
 	void setNameList(vector<string>* namelist);
+	void setMarked(int pos,bool state);
+	bool isMarked(int pos);
+	void clearMarkers();
+	void setMarkerList(vector<int>* mlist);
+	vector<int>* getMarkers();
+	void setMarkers(vector<int>* mlist);
 	virtual ~GUITimeline();
 protected:
 	int value;
@@ -44,6 +50,7 @@ protected:
 	float delta_v_view;
 	int prev_mouse_x;
 	vector<string>* names;
+	vector<int>* markers;
 	virtual wxSize DoGetBestSize() const {
 		return wxSize(100,100);
 	}

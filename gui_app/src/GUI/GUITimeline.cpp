@@ -9,6 +9,7 @@
 #include <iostream>
 #include "../processing/utils.h"
 #include <cmath>
+#include <algorithm>
 using namespace std;
 using namespace Utils;
 
@@ -42,6 +43,7 @@ GUITimeline::GUITimeline(wxWindow *parent,
 	delta_v_view = 0;
 	prev_mouse_x = -10000;
 	names = NULL;
+	markers = NULL;
 }
 void GUITimeline::sendTimelineEvent() {
 	wxCommandEvent event( wxEVT_TIMELINE, GetId() );
@@ -130,7 +132,7 @@ void GUITimeline::OnMouseMove(wxMouseEvent &event) {	// Ermöglicht ziehen
 	}
 	if (event.m_middleDown) {
 		if (prev_mouse_x>-10000) {
-			delta_v_view+=(event.m_x-prev_mouse_x);
+			delta_v_view+=(event.m_x-prev_mouse_x)*zoom;
 		}
 		prev_mouse_x = event.m_x;
 		Refresh(false,NULL);
@@ -198,9 +200,18 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 		gc->StrokePath(linepath);
 		gc->SetPen( *wxGREEN_PEN);
 		gc->StrokeLine(viewstart+(float)value*pixelsperstep,0,viewstart+(float)value*pixelsperstep,height-captionheight);
+		// Markers
+		if (markers!=NULL) {
+			gc->SetPen( wxColour (255,100,0,255));
+			for (size_t i=0;i<markers->size();i++) {
+				gc->StrokeLine(viewstart+(minvalue+markers->at(i))*pixelsperstep,0,viewstart+(minvalue+markers->at(i))*pixelsperstep,height-captionheight);
+			}
+		} else {
+			cerr << "marker list should not be NULL!" << endl;
+		}
 		dc.SetTextForeground(*wxGREEN);
 		if (names==NULL) {
-			dc.DrawText(floattowxstr(value),viewstart+(float)value*pixelsperstep,height/2);
+			dc.DrawText(floattowxstr(value),viewstart+(float)value*pixelsperstep,10);
 		} else {
 			if (int(names->size())<(maxvalue-minvalue)) {
 				cerr << "name vector has wrong size!" << endl;
@@ -211,7 +222,7 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 				if (text_x+text_width>width) {
 					text_x -= text_width+10;
 				}
-				dc.DrawText(str,text_x,height/2);
+				dc.DrawText(str,text_x,10);
 			}
 		}
 		delete gc;
@@ -236,6 +247,8 @@ void GUITimeline::setValue(int val) {
 		value = minvalue;
 		cerr << "Timeline value must not be smaller than the maximum value!"<<cout;
 	}
+	sendTimelineEvent();
+	Refresh(true,NULL);
 }
 void GUITimeline::setMaxValue(int val) {
 	maxvalue = val;
@@ -245,6 +258,55 @@ void GUITimeline::setMinValue(int val) {
 }
 void GUITimeline::setNameList(vector<string>* namelist) {
 	names = namelist;
+	Refresh(false,NULL);
+}
+void GUITimeline::setMarkerList(vector<int>* mlist) {
+	markers = mlist;
+	Refresh(false,NULL);
+}
+void GUITimeline::setMarked(int pos,bool state) {
+	if (markers!=NULL) {
+		vector<int>::iterator p = find(markers->begin(),markers->end(),pos);
+		if (p==markers->end() && state) {
+			markers->resize(markers->size()+1,pos);
+		}
+		if (p!=markers->end() && !state)  {
+			markers->erase(p);
+		}
+		sort(markers->begin(), markers->end());
+		Refresh(false,NULL);
+	} else {
+		cerr << "marker list must not be NULL!" << endl;
+	}
+}
+bool GUITimeline::isMarked(int pos) {
+	if (markers!=NULL) {
+		return (find(markers->begin(),markers->end(),pos)!=markers->end());
+	} else {
+		cerr << "marker list must not be NULL!" << endl;
+		return false;
+	}
+}
+void GUITimeline::clearMarkers() {
+	markers->clear();
+	Refresh(false,NULL);
+}
+vector<int>* GUITimeline::getMarkers() {
+	return markers;
+}
+void GUITimeline::setMarkers(vector<int>* mlist) {
+	if (markers!=NULL) {
+		markers->resize(mlist->size());
+		for (size_t i=0;i<markers->size();i++) {
+			if (markers->at(i)) {
+				markers->at(i) = mlist->at(i);
+			}
+		}
+		sort(markers->begin(), markers->end());
+		Refresh(false,NULL);
+	} else {
+		cerr << "marker list must not be NULL! (list copy func)" << endl;
+	}
 }
 GUITimeline::~GUITimeline() {
 

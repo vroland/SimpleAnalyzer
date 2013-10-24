@@ -37,6 +37,10 @@ public:
 	wxTextCtrl* cspecedit;
 	wxStaticText* cspectext;
 	GUITimeline* sdtimeline;
+	wxCheckBox* analyzemarkercb;
+	wxButton* clranalyzemarkerbt;
+	wxButton* nextmarkerbt;
+	wxButton* prevmarkerbt;
 	int current_material;
 };
 
