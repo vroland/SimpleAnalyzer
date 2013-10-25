@@ -21,7 +21,6 @@ void Analyzer::analyzeObject(ObjectData* obj,AnalyzerData_object* out) {
 	bool sd_time_changed = false;
 	MeshProcessor processor;
 	for (unsigned int s=0;s<obj->sensordatalist.size();s++) {
-		out->volume = 0;
 		obj->current_sensor_index = s;
 		SensorData* sd = &obj->sensordatalist.at(s);
 		int subsets = sd->timed?sd->markers.size():1;
@@ -29,6 +28,7 @@ void Analyzer::analyzeObject(ObjectData* obj,AnalyzerData_object* out) {
 		out->data_sets.resize(prev_set_count+subsets);
 		int original_time_index = sd->current_time_index;
 		for (int ts=0;ts<subsets;ts++) {
+			out->volume = 0;
 			sd->current_time_index = sd->timed?sd->markers.at(ts):0;
 			processor.process(obj);
 			AnalyzerData_dataset* data_set = &out->data_sets.at(prev_set_count+ts);

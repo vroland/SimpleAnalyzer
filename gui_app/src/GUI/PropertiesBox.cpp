@@ -102,6 +102,7 @@ void PropertiesBox::resize() {
 	densityedit->SetSize(x+20,y+430+sdheight,150,20,0);
 	cspectext->SetSize(x+20,y+450+sdheight,300,20,0);
 	cspecedit->SetSize(x+20,y+470+sdheight,150,20,0);
+	SetSize(0,0,w,500+sdheight);
 }
 PropertiesBox::~PropertiesBox() {
 }

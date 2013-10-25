@@ -83,8 +83,11 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	mwHelpMenu = new wxMenu();
 	mwHelpMenu->Append(ID_ABOUT, wxT("&Über"));
 	mwMenuBar->Append(mwHelpMenu, wxT("&Hilfe"));
-	propbox = new PropertiesBox(this);
+
+	prop_scroll_win = new wxScrolledWindow(this, wxID_ANY);
+	propbox =  new PropertiesBox(prop_scroll_win);
 	viewbox = new ViewpropBox(this);
+
 	SetMenuBar(mwMenuBar);
 	analyzerframe = NULL;
 	analyze_window_valid = false;
@@ -154,9 +157,9 @@ void GUIMainWindow::OnActiveObjectDelete(wxCommandEvent &event) {
 void GUIMainWindow::OnResize(wxSizeEvent &event) {
 	// 3d-view
 	gl_context->SetSize(VIEWBOXWIDTH,0,GetSize().x-PROPBOXWIDTH-VIEWBOXWIDTH,GetSize().y,0);
-	//opbox
-	propbox->SetSize(GetSize().x-PROPBOXWIDTH+5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
+	propbox->SetSize(0,0,PROPBOXWIDTH-10,GetSize().y-25,0);
 	propbox->resize();
+	prop_scroll_win->SetSize(GetSize().x-PROPBOXWIDTH+5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
 	viewbox->SetSize(5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
 	viewbox->resize();
 }
