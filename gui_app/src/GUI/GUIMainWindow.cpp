@@ -87,6 +87,7 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	prop_scroll_win = new wxScrolledWindow(this, wxID_ANY);
 	propbox =  new PropertiesBox(prop_scroll_win);
 	viewbox = new ViewpropBox(this);
+	prop_scroll_win->SetScrollRate(10,10);
 
 	SetMenuBar(mwMenuBar);
 	analyzerframe = NULL;
@@ -157,9 +158,11 @@ void GUIMainWindow::OnActiveObjectDelete(wxCommandEvent &event) {
 void GUIMainWindow::OnResize(wxSizeEvent &event) {
 	// 3d-view
 	gl_context->SetSize(VIEWBOXWIDTH,0,GetSize().x-PROPBOXWIDTH-VIEWBOXWIDTH,GetSize().y,0);
-	propbox->SetSize(0,0,PROPBOXWIDTH-10,GetSize().y-25,0);
+	propbox->SetSize(propbox->GetPosition().x,propbox->GetPosition().y,PROPBOXWIDTH-10,0,0);
 	propbox->resize();
 	prop_scroll_win->SetSize(GetSize().x-PROPBOXWIDTH+5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
+	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,propbox->GetSize().y+50);
+
 	viewbox->SetSize(5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
 	viewbox->resize();
 }
@@ -177,7 +180,7 @@ void GUIMainWindow::OnSDTimelineChange(wxCommandEvent &event) {
 void GUIMainWindow::OnSensorDataChange(wxCommandEvent &event) {
 	OnGeneralPropChange(event);
 	propbox->resize();
-	propbox->Update();
+	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,propbox->GetSize().y+50);
 }
 void GUIMainWindow::OnSDTLMarkerClear(wxCommandEvent &event) {
 	propbox->sdtimeline->clearMarkers();

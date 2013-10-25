@@ -93,7 +93,7 @@ void PropertiesBox::resize() {
 	}
 	matlistboxtext->SetSize(x+10,y+220+sdheight,300,110,0);
 	matlistbox->SetSize(x+10,y+240+sdheight,270,60,0);
-	matpropbox->SetSize(x+10,y+310+sdheight,270,250,0);
+	matpropbox->SetSize(x+10,y+310+sdheight,270,195,0);
 	matnametext->SetSize(x+20,y+330+sdheight,300,20,0);
 	matnameedit->SetSize(x+20,y+350+sdheight,150,20,0);
 	interpolationmodetext->SetSize(x+20,y+370+sdheight,300,20,0);
@@ -102,7 +102,7 @@ void PropertiesBox::resize() {
 	densityedit->SetSize(x+20,y+430+sdheight,150,20,0);
 	cspectext->SetSize(x+20,y+450+sdheight,300,20,0);
 	cspecedit->SetSize(x+20,y+470+sdheight,150,20,0);
-	SetSize(0,0,w,500+sdheight);
+	SetSize(x,y,w,510+sdheight);
 }
 PropertiesBox::~PropertiesBox() {
 }
