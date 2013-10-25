@@ -9,16 +9,26 @@
 #define ANALYZER_H_
 
 #include <vector>
+#include <string>
 #include <iostream>
 #include "ObjectData.h"
 
 using namespace std;
 
+
+struct AnalyzerData_material {
+	string name;
+	double volume;
+	double heat_energy;
+};
+struct AnalyzerData_dataset {
+	string name;
+	double heat_energy;
+	vector<AnalyzerData_material> mat_data;
+};
 struct AnalyzerData_object {
 	double volume;
-	vector<double> heat_energys;		//different sensor data sets
-	vector<vector<double> > material_volumes;
-	vector<vector<double> > material_heat_energies;
+	vector<AnalyzerData_dataset> data_sets;
 };
 struct AnalyzerData_point {
 	double value;

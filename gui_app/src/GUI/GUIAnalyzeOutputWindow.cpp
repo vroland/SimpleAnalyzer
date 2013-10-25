@@ -49,31 +49,33 @@ void GUIAnalyzeOutputWindow::Update() {
 	table->AppendRows(obj_prop_count+material_prop_cout+1,true);
 	for (unsigned int o=0;o<data_objects.size();o++) {
 		ObjectData* obj = data_objects.at(o);
-		int matcount = obj->materials.size();
-		int sdcount  = obj->sensordatalist.size();
-		table->AppendCols(sdcount*matcount,true);
 		AnalyzerData_object data;
 		Analyzer analyzer;
 		analyzer.analyzeObject(data_objects.at(o),&data);
+		int matcount = obj->materials.size();
+		int sdcount  = data.data_sets.size();
+		table->AppendCols(sdcount*matcount,true);
 		table->SetCellSize(0,all_mat_cell_count , 1, matcount*sdcount);
 		table->SetCellValue(0,all_mat_cell_count,wxString::FromAscii(obj->name.c_str()));
 		table->SetCellAlignment(wxALIGN_CENTRE,0,all_mat_cell_count);
 		int materialcells = 0;
 		for (int s=0;s<sdcount;s++) {
+			AnalyzerData_dataset* data_set = &data.data_sets.at(s);
 			for (int i=0;i<obj_prop_count;i++) {
 				table->SetCellSize(i+1,all_mat_cell_count+s*matcount , 1, matcount);
 			};
-			table->SetCellValue(1,all_mat_cell_count+s*matcount,wxString::FromAscii(obj->sensordatalist.at(s).name.c_str()));
+			table->SetCellValue(1,all_mat_cell_count+s*matcount,wxString::FromAscii(data_set->name.c_str()));
 			table->SetCellAlignment(wxALIGN_CENTRE,1,all_mat_cell_count+s*matcount);
 			table->SetCellValue(2,all_mat_cell_count+s*matcount,wxString::FromAscii(ftostr(data.volume).c_str()));
-			table->SetCellValue(3,all_mat_cell_count+s*matcount,wxString::FromAscii(ftostr(data.heat_energys.at(s)).c_str()));
+			table->SetCellValue(3,all_mat_cell_count+s*matcount,wxString::FromAscii(ftostr(data_set->heat_energy).c_str()));
 
 			for (int i=0;i<matcount;i++) {
+				AnalyzerData_material* mat = &data_set->mat_data.at(i);
 				materialcells++;
-				table->SetCellValue(obj_prop_count+1,all_mat_cell_count+s*matcount+i,wxString::FromAscii(obj->materials.at(i).name.c_str()));
+				table->SetCellValue(obj_prop_count+1,all_mat_cell_count+s*matcount+i,wxString::FromAscii(mat->name.c_str()));
 				table->SetCellAlignment(wxALIGN_CENTRE,obj_prop_count+1,all_mat_cell_count+s*matcount+i);
-				table->SetCellValue(obj_prop_count+2,all_mat_cell_count+s*matcount+i,wxString::FromAscii(ftostr(data.material_volumes.at(s).at(i)).c_str()));
-				table->SetCellValue(obj_prop_count+3,all_mat_cell_count+s*matcount+i,wxString::FromAscii(ftostr(data.material_heat_energies.at(s).at(i)).c_str()));
+				table->SetCellValue(obj_prop_count+2,all_mat_cell_count+s*matcount+i,wxString::FromAscii(ftostr(mat->volume).c_str()));
+				table->SetCellValue(obj_prop_count+3,all_mat_cell_count+s*matcount+i,wxString::FromAscii(ftostr(mat->heat_energy).c_str()));
 			}
 		}
 		all_mat_cell_count+=materialcells;

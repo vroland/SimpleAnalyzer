@@ -215,6 +215,9 @@ void GUIMainWindow::OnSDTLPrevMarker(wxCommandEvent &event) {
 				}
 				break;
 			}
+			if (i==markers->size()-1) {
+				propbox->sdtimeline->setValue(markers->at(i));
+			}
 		}
 	}
 }

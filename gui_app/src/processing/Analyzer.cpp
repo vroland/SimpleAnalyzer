@@ -17,60 +17,61 @@ Analyzer::Analyzer() {
 SensorPointComparator spcomparator;
 void Analyzer::analyzeObject(ObjectData* obj,AnalyzerData_object* out) {
 	out->volume = 0;
-	out->heat_energys.resize(obj->sensordatalist.size());
-	for (unsigned int i=0;i<obj->sensordatalist.size();i++) {
-		out->heat_energys.at(i) = 0;
-	}
-	out->material_volumes.resize(obj->sensordatalist.size());
-	out->material_heat_energies.resize(obj->sensordatalist.size());
-	for (unsigned int s=0;s<obj->sensordatalist.size();s++) {
-		out->material_volumes.at(s).resize(obj->materials.size());
-		for (unsigned int i=0;i<obj->materials.size();i++) {
-			out->material_volumes.at(s).at(i) = 0;
-		}
-		out->material_heat_energies.at(s).resize(obj->materials.size());
-		for (unsigned int i=0;i<obj->materials.size();i++) {
-			out->material_heat_energies.at(s).at(i) = 0;
-		}
-	}
 	int original_sd_index = obj->current_sensor_index;
+	bool sd_time_changed = false;
 	MeshProcessor processor;
 	for (unsigned int s=0;s<obj->sensordatalist.size();s++) {
 		out->volume = 0;
 		obj->current_sensor_index = s;
-		processor.process(obj);
-		for (unsigned int i=0;i<obj->materials.size();i++) {
-			MaterialData* mat = &obj->materials.at(i);
-			double matvolume = 0;
-			double matenergy = 0;
-			for (int j=0;j<mat->tetgenoutput->numberoftetrahedra;j++) {
-				int* indices = &mat->tetgenoutput->tetrahedronlist[4*j];
-				Vector3D v1 = Vector3D(&mat->tetgenoutput->pointlist[3*indices[0]]);
-				Vector3D v2 = Vector3D(&mat->tetgenoutput->pointlist[3*indices[1]]);
-				Vector3D v3 = Vector3D(&mat->tetgenoutput->pointlist[3*indices[2]]);
-				Vector3D v4 = Vector3D(&mat->tetgenoutput->pointlist[3*indices[3]]);
-				v2.sub(&v1);
-				v3.sub(&v1);
-				v4.sub(&v1);
-				Vector3D* vvec = v2.crossProduct(&v3);
-				double volume = 1./6.*abs(vvec->dotProduct(&v4));
-				matvolume +=volume;
-				delete vvec;
-				double averagetemp = 0;
-				for (int k=0;k<4;k++) {
-					averagetemp+=mat->tetgenoutput->pointattributelist[mat->tetgenoutput->numberofpointattributes*indices[k]];
-				}
-				averagetemp /= 4.;
-				matenergy += averagetemp*volume*mat->density*mat->specificheatcapacity;
+		SensorData* sd = &obj->sensordatalist.at(s);
+		int subsets = sd->timed?sd->markers.size():1;
+		int prev_set_count = out->data_sets.size();
+		out->data_sets.resize(prev_set_count+subsets);
+		int original_time_index = sd->current_time_index;
+		for (int ts=0;ts<subsets;ts++) {
+			sd->current_time_index = sd->timed?sd->markers.at(ts):0;
+			processor.process(obj);
+			AnalyzerData_dataset* data_set = &out->data_sets.at(prev_set_count+ts);
+			data_set->name = sd->timed?sd->subnames.at(sd->current_time_index):sd->name;
+			data_set->heat_energy = 0;
+			data_set->mat_data.resize(obj->materials.size());
+			for (unsigned int i=0;i<obj->materials.size();i++) {
+				AnalyzerData_material* mat_data = &data_set->mat_data.at(i);
+				MaterialData* mat = &obj->materials.at(i);
+				mat_data->name = mat->name;
+				double matvolume = 0;
+				double matenergy = 0;
+				for (int j=0;j<mat->tetgenoutput->numberoftetrahedra;j++) {
+					int* indices = &mat->tetgenoutput->tetrahedronlist[4*j];
+					Vector3D v1 = Vector3D(&mat->tetgenoutput->pointlist[3*indices[0]]);
+					Vector3D v2 = Vector3D(&mat->tetgenoutput->pointlist[3*indices[1]]);
+					Vector3D v3 = Vector3D(&mat->tetgenoutput->pointlist[3*indices[2]]);
+					Vector3D v4 = Vector3D(&mat->tetgenoutput->pointlist[3*indices[3]]);
+					v2.sub(&v1);
+					v3.sub(&v1);
+					v4.sub(&v1);
+					Vector3D* vvec = v2.crossProduct(&v3);
+					double volume = 1./6.*abs(vvec->dotProduct(&v4));
+					matvolume +=volume;
+					delete vvec;
+					double averagetemp = 0;
+					for (int k=0;k<4;k++) {
+						averagetemp+=mat->tetgenoutput->pointattributelist[mat->tetgenoutput->numberofpointattributes*indices[k]];
+					}
+					averagetemp /= 4.;
+					matenergy += averagetemp*volume*mat->density*mat->specificheatcapacity;
 
+				}
+				mat_data->volume = matvolume;
+				mat_data->heat_energy = matenergy;
+				out->volume += matvolume;
+				data_set->heat_energy += matenergy;
 			}
-			out->material_volumes.at(s).at(i) = matvolume;
-			out->material_heat_energies.at(s).at(i) = matenergy;
-			out->volume += matvolume;
-			out->heat_energys.at(s) += matenergy;
 		}
+		sd_time_changed = (sd->current_time_index != original_time_index);
+		sd->current_time_index = original_time_index;
 	}
-	if (obj->current_sensor_index!=original_sd_index) {
+	if (obj->current_sensor_index!=original_sd_index || sd_time_changed) {
 		obj->current_sensor_index = original_sd_index;
 		processor.process(obj);
 	}
@@ -87,17 +88,18 @@ void Analyzer::analyzePoint(ObjectData* obj,Vector3D* point,AnalyzerData_point* 
 std::ostream &operator<< (std::ostream &out, const AnalyzerData_object &data) {
     out << "object analysis:"<<endl;
     out << "object volume: "<<data.volume<<" (m³)"<<endl;
-    for (unsigned int s=0;s<data.material_heat_energies.size();s++) {
-    	out << "sensor data set "<<s<<": "<<endl;
-		out << "object energy: "<<data.heat_energys.at(s)<<" (J)"<<endl;
-		for (unsigned int i=0;i<data.material_heat_energies.size();i++) {
-			out << "Material "<<i<<":"<<endl;
-			out << "volume: "<<data.material_volumes.at(s).at(i)<<" (m³)"<<endl;
-			out << "energy: "<<data.material_heat_energies.at(s).at(i)<<" (kJ)"<<endl;
+    for (unsigned int s=0;s<data.data_sets.size();s++) {
+    	const AnalyzerData_dataset* data_set = &data.data_sets.at(s);
+    	out << "sensor data set "<<data_set->name<<": "<<endl;
+		out << "object energy: "<<data_set->heat_energy<<" (J)"<<endl;
+		for (unsigned int i=0;i<data_set->mat_data.size();i++) {
+			out << "Material "<<data_set->mat_data.at(i).name<<":"<<endl;
+			out << "volume: "<<data_set->mat_data.at(i).volume<<" (m³)"<<endl;
+			out << "energy: "<<data_set->mat_data.at(i).heat_energy<<" (kJ)"<<endl;
 		}
 		out << endl;
     }
-    cout << endl;
+    cout << "end" << endl;
     return out;
 }
 Analyzer::~Analyzer() {
