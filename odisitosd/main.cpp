@@ -21,6 +21,7 @@ struct Options {
 	size_t timecol;
 	double error_threshold;
 	int maxfwcount;
+	int tab_space_count;
 } opts;
 
 bool contains( std::vector<string>& Vec, const string& Element )
@@ -57,7 +58,7 @@ string doubletostr(double val) {
 	ss << val;
 	return ss.str();
 }
-int parseLine(string line,vector<double>* out,vector<double>* times,vector<int>* valid_cols,size_t row_count) {
+int parseLine(string line,vector<double>* out,vector<double>* times,vector<int>* debug_positions,size_t row_count) {
 	string workstr;
 	if (row_count==opts.startrow) {
 		int pos = find(line,'\t');
@@ -69,19 +70,25 @@ int parseLine(string line,vector<double>* out,vector<double>* times,vector<int>*
 	out->clear();
 	int sep_pos = find(workstr,opts.separator);
 	size_t count = 0;
-	replaceAll(workstr," ","\t");
+	string tab_to_space = "";
+	for (int i=0;i<opts.tab_space_count;i++) {
+		tab_to_space+=" ";
+	}
+	replaceAll(workstr,"\t",tab_to_space);
+	int position = 0;
 	while (sep_pos>-1) {
 		string substr;
 		do {
 			sep_pos = find(workstr,opts.separator);
 			substr= workstr.substr(0,sep_pos);
+			if (substr=="") {
+				position++;
+			}
 			workstr.erase(0,sep_pos+1);
 		} while (sep_pos==0);
-
 		if (row_count>opts.startrow && count>opts.timecol) {
-			if (valid_cols==NULL || contains(*valid_cols,count-opts.startrow)) {
-				out->resize(out->size()+1,atof(substr.c_str()));
-			}
+			debug_positions->resize(debug_positions->size()+1,position+2);
+			out->resize(out->size()+1,atof(substr.c_str()));
 		}
 		if (count==opts.timecol && times!=NULL) {
 			times->resize(times->size()+1,atof(substr.c_str()));
@@ -90,6 +97,7 @@ int parseLine(string line,vector<double>* out,vector<double>* times,vector<int>*
 			out->resize(out->size()+1,atof(substr.c_str()));
 		}
 		count++;
+		position += sep_pos+1;
 	}
 	return 0;
 }
@@ -97,11 +105,12 @@ int parseLine(string line,vector<double>* out,vector<double>* times,vector<int>*
 int main(int argc, char *argv[]) {
 
 	opts.startrow = 4;
-	opts.separator = '\t';
+	opts.separator = ' ';
 	opts.replace_comma_with_point = true;
 	opts.timecol = 0;
 	opts.error_threshold = 5;
 	opts.maxfwcount = 10;
+	opts.tab_space_count = 7;
 
 	bool names_read = false;
 
@@ -142,8 +151,8 @@ int main(int argc, char *argv[]) {
 		cout << "file not found!"<<endl;
 		return 1;
 	}
-	vector<int> valid_cols;
-	vector<vector<double> > delta_values(0);
+	vector<vector<double> > values;
+	vector<vector<int> > debug_positions;
 	vector<double> times;
 	vector<double> lin_positions;
 	size_t row = 0;
@@ -159,30 +168,26 @@ int main(int argc, char *argv[]) {
 				if (opts.replace_comma_with_point) {
 					replaceAll(line,",", ".");
 				}
-				delta_values.resize(delta_values.size()+1);
-				parseLine(line,&delta_values.at(delta_values.size()-1),&times,NULL,row);	//&valid_cols
+				values.resize(values.size()+1);
+				debug_positions.resize(debug_positions.size()+1);
+				parseLine(line,&values.at(values.size()-1),&times,&debug_positions.at(debug_positions.size()-1),row);	//&valid_cols
 			}
 		}
 		row++;
-	}
-	vector<vector<double> > values;
-	values.resize(delta_values.size());
-	for (size_t i=0;i<values.size();i++) {
-		values.at(i).resize(delta_values.at(i).size());
-		for (size_t j=0;j<values.at(i).size();j++) {
-			values.at(i).at(j) = delta_values.at(i).at(j);
-		}
 	}
 	ofstream errfile;					// output
 	ofstream outfile;					// output
 	outfile.open("temperatur_odisi.txt");
 	errfile.open("temperatur_odisi_err.log");
+	cout << "vsize: "<<values.at(0).size() << endl;
+	cout << "dsize: "<<debug_positions.at(0).size() << endl;
 	for (size_t i=1;i<values.size();i++) {
 		vector<double>* curr_delta = &values.at(i);
 		values.at(i).resize(curr_delta->size());
 		for (size_t j=0;j<values.at(i).size();j++) {
 			int fwcount = 0;
 			double prev_val = values.at(i-1).at(j);
+			double original_val = values.at(i).at(j);
 			while ((i+fwcount<values.size()) && (abs(values.at(i+fwcount).at(j)-prev_val)>(fwcount+1)*opts.error_threshold)) {
 				fwcount++;
 				if (fwcount==opts.maxfwcount) {
@@ -192,7 +197,7 @@ int main(int argc, char *argv[]) {
 			}
 			if (fwcount>0) {
 				values.at(i).at(j) = prev_val+(values.at(i+fwcount).at(j)-prev_val)/(fwcount+1)*1;
-				errfile << "changed " <<delta_values.at(i).at(j)<<" (Z. "<<i<<", S. "<<j<<") to "<<values.at(i).at(j)<< endl;
+				errfile << "changed " <<original_val<<" (l. "<<i+opts.startrow+2<<", c. "<<debug_positions.at(i).at(j)<<") to "<<values.at(i).at(j)<< endl;
 			}
 			outfile << " "<<values.at(i).at(j);
 			for (int l=0;l<10-int(doubletostr(values.at(i).at(j)).length());l++) {
