@@ -411,6 +411,7 @@ void Renderer::render() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
 	glTranslatef(0,0,-viewport.zoom*viewport.zoom);
+	glScalef(4,4,4);
 	glRotatef(viewport.rotationY,1.0,0.0,0.0);
 	glRotatef(viewport.rotationX,0.0,1.0,0.0);
 	glTranslatef(viewport.cameraPosition->getX(),viewport.cameraPosition->getY(),viewport.cameraPosition->getZ());
