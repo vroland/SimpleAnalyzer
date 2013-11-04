@@ -150,82 +150,76 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 	wxPaintDC dc(this);
 	SetDoubleBuffered(true);
 	// Create graphics context from it
-	wxGraphicsContext *gc = wxGraphicsContext::Create( dc );
+	//wxGraphicsContext *gc = wxGraphicsContext::Create( dc );
 	int width = 0;
 	int height = 0;
 	int captionheight = 20;
 	GetSize(&width,&height);
-	if (gc)
-	{
-		float pixelsperstep = (float)width/((maxvalue-minvalue)*zoom);
-		float stepwidth = calcStepWidth();
-		int viewstart = int(delta_v_view/zoom);
-		int start_index = -int(viewstart/pixelsperstep/stepwidth);
-		// Clear BG
-		gc->SetPen( wxSystemSettings::GetColour(wxSYS_COLOUR_BACKGROUND) );
-		gc->SetBrush( wxSystemSettings::GetColour(wxSYS_COLOUR_BACKGROUND) );
-		gc->DrawRectangle(0, 0, width, height);
-		gc->SetBrush(*wxTRANSPARENT_BRUSH);
-		// Border
-		gc->SetPen( wxPen(wxSystemSettings::GetColour(wxSYS_COLOUR_CAPTIONTEXT),1,wxSOLID));
-		gc->DrawRectangle(0, 0, width, height);
 
-		// Unavailable areas
-		gc->SetPen( *wxTRANSPARENT_PEN);
-		gc->SetBrush( wxBrush(wxSystemSettings::GetColour(wxSYS_COLOUR_GRAYTEXT),wxSOLID));
-		if (-viewstart<minvalue*pixelsperstep) {
-			gc->DrawRectangle(0,1,viewstart+minvalue*pixelsperstep,height);
-		}
-		if (viewstart+maxvalue*pixelsperstep-width<0) {
-			int x = viewstart+maxvalue*pixelsperstep;
-			if (x<0) x = 0;
-			gc->DrawRectangle(x,1,width,height);
-		}
-		//Label bg
-		gc->SetBrush( wxBrush(wxSystemSettings::GetColour(wxSYS_COLOUR_3DSHADOW),wxSOLID));
-		gc->SetPen( wxPen(wxSystemSettings::GetColour(wxSYS_COLOUR_3DFACE),1,wxSOLID));
-		gc->DrawRectangle(0,height-captionheight,width,height);
+	float pixelsperstep = (float)width/((maxvalue-minvalue)*zoom);
+	float stepwidth = calcStepWidth();
+	int viewstart = int(delta_v_view/zoom);
+	int start_index = -int(viewstart/pixelsperstep/stepwidth);
+	// Clear BG
+	dc.SetPen( wxSystemSettings::GetColour(wxSYS_COLOUR_BACKGROUND) );
+	dc.SetBrush( wxSystemSettings::GetColour(wxSYS_COLOUR_BACKGROUND) );
+	dc.DrawRectangle(0, 0, width, height);
+	dc.SetBrush(*wxTRANSPARENT_BRUSH);
+	// Border
+	dc.SetPen( wxPen(wxSystemSettings::GetColour(wxSYS_COLOUR_CAPTIONTEXT),1,wxSOLID));
+	dc.DrawRectangle(0, 0, width, height);
 
-		dc.SetBackground(*wxTRANSPARENT_BRUSH);
-		dc.SetTextForeground(wxSystemSettings::GetColour(wxSYS_COLOUR_CAPTIONTEXT));
-		wxGraphicsPath linepath = gc->CreatePath();
-		for (int i=start_index;i<=start_index+1./pixelsperstep*width/stepwidth;i++) {
-			float x = viewstart+i*stepwidth*pixelsperstep;
-			linepath.MoveToPoint(x,0);
-			linepath.AddLineToPoint(x,height-captionheight);
+	// Unavailable areas
+	dc.SetPen( *wxTRANSPARENT_PEN);
+	dc.SetBrush( wxBrush(wxSystemSettings::GetColour(wxSYS_COLOUR_GRAYTEXT),wxSOLID));
+	if (-viewstart<minvalue*pixelsperstep) {
+		dc.DrawRectangle(0,1,viewstart+minvalue*pixelsperstep,height);
+	}
+	if (viewstart+maxvalue*pixelsperstep-width<0) {
+		int x = viewstart+maxvalue*pixelsperstep;
+		if (x<0) x = 0;
+		dc.DrawRectangle(x,1,width,height);
+	}
+	//Label bg
+	dc.SetBrush( wxBrush(wxSystemSettings::GetColour(wxSYS_COLOUR_3DSHADOW),wxSOLID));
+	dc.SetPen( wxPen(wxSystemSettings::GetColour(wxSYS_COLOUR_3DFACE),1,wxSOLID));
+	dc.DrawRectangle(0,height-captionheight,width,height);
 
-			dc.DrawText(floattowxstr(i*stepwidth,maxdigits),x,height-captionheight);
+	dc.SetBackground(*wxTRANSPARENT_BRUSH);
+	dc.SetTextForeground(wxSystemSettings::GetColour(wxSYS_COLOUR_CAPTIONTEXT));
+	dc.SetPen( wxPen(wxSystemSettings::GetColour(wxSYS_COLOUR_BTNTEXT),1,wxSOLID));
+	for (int i=start_index;i<=start_index+1./pixelsperstep*width/stepwidth;i++) {
+		float x = viewstart+i*stepwidth*pixelsperstep;
+		dc.DrawLine(0,0,x,height-captionheight);
+
+		dc.DrawText(floattowxstr(i*stepwidth,maxdigits),x,height-captionheight);
+	}
+	dc.SetPen( *wxGREEN_PEN);
+	dc.DrawLine(viewstart+(float)value*pixelsperstep,0,viewstart+(float)value*pixelsperstep,height-captionheight);
+	// Markers
+	if (markers!=NULL) {
+		dc.SetPen( wxColour (255,100,0,255));
+		for (size_t i=0;i<markers->size();i++) {
+			dc.DrawLine(viewstart+(minvalue+markers->at(i))*pixelsperstep,0,viewstart+(minvalue+markers->at(i))*pixelsperstep,height-captionheight);
 		}
-		gc->SetPen( wxPen(wxSystemSettings::GetColour(wxSYS_COLOUR_BTNTEXT),1,wxSOLID));
-		gc->StrokePath(linepath);
-		gc->SetPen( *wxGREEN_PEN);
-		gc->StrokeLine(viewstart+(float)value*pixelsperstep,0,viewstart+(float)value*pixelsperstep,height-captionheight);
-		// Markers
-		if (markers!=NULL) {
-			gc->SetPen( wxColour (255,100,0,255));
-			for (size_t i=0;i<markers->size();i++) {
-				gc->StrokeLine(viewstart+(minvalue+markers->at(i))*pixelsperstep,0,viewstart+(minvalue+markers->at(i))*pixelsperstep,height-captionheight);
-			}
+	} else {
+		cerr << "marker list should not be NULL!" << endl;
+	}
+	dc.SetTextForeground(*wxGREEN);
+	if (names==NULL) {
+		dc.DrawText(floattowxstr(value),viewstart+(float)value*pixelsperstep,10);
+	} else {
+		if (int(names->size())<(maxvalue-minvalue)) {
+			cerr << "name vector has wrong size!" << endl;
 		} else {
-			cerr << "marker list should not be NULL!" << endl;
-		}
-		dc.SetTextForeground(*wxGREEN);
-		if (names==NULL) {
-			dc.DrawText(floattowxstr(value),viewstart+(float)value*pixelsperstep,10);
-		} else {
-			if (int(names->size())<(maxvalue-minvalue)) {
-				cerr << "name vector has wrong size!" << endl;
-			} else {
-				wxString str = wxString::FromAscii((names->at(value-minvalue)).c_str())+wxT(" (")+floattowxstr(value)+wxT(")");
-				int text_width = dc.GetTextExtent(str).x;
-				int text_x = viewstart+(float)value*pixelsperstep;
-				if (text_x+text_width>width) {
-					text_x -= text_width+10;
-				}
-				dc.DrawText(str,text_x,10);
+			wxString str = wxString::FromAscii((names->at(value-minvalue)).c_str())+wxT(" (")+floattowxstr(value)+wxT(")");
+			int text_width = dc.GetTextExtent(str).x;
+			int text_x = viewstart+(float)value*pixelsperstep;
+			if (text_x+text_width>width) {
+				text_x -= text_width+10;
 			}
+			dc.DrawText(str,text_x,10);
 		}
-		delete gc;
 	}
 }
 int GUITimeline::getValue() {

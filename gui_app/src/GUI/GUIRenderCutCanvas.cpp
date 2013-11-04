@@ -108,35 +108,28 @@ void GUIRenderCutCanvas::onCanvasPaint(wxPaintEvent &event) {
 	 // Create paint DC
 	wxPaintDC dc(this);
 	// Create graphics context from it
-	wxGraphicsContext *gc = wxGraphicsContext::Create( dc );
+	//wxGraphicsContext *gc = wxGraphicsContext::Create( dc );
 	int width = 0;
 	int height = 0;
 	GetSize(&width,&height);
-	if (gc)
-	{
-		// Clear BG
-		gc->SetPen( *wxBLACK_PEN );
-		gc->SetBrush( *wxBLACK_BRUSH);
-		wxGraphicsPath path1 = gc->CreatePath();
-		path1.AddRectangle(0, 0, width, height);
-		gc->FillPath(path1);
-		if (recalculate_img) {
-			image->Rescale(width,height);
-			image->InitAlpha();
-			cout << image->HasAlpha() << endl;
-			renderImage(*image);
-			wxBitmap drawbmp(*image);
-			gc->DrawBitmap(drawbmp,0,0,width,height);
-		}
-		if (draw_grid) {
-			gc->SetPen( *wxGREY_PEN );
-			wxGraphicsPath gridpath2 = gc->CreatePath();
-			gc->SetPen( *wxRED_PEN );
-			gc->StrokeLine(0,height/2,width,height/2);
-			gc->SetPen( *wxGREEN_PEN );
-			gc->StrokeLine(width/2,0,width/2,height);
-		}
-		delete gc;
+	// Clear BG
+	dc.SetPen( *wxBLACK_PEN );
+	dc.SetBrush( *wxBLACK_BRUSH);
+	dc.DrawRectangle(0, 0, width, height);
+	if (recalculate_img) {
+		image->Rescale(width,height);
+		image->InitAlpha();
+		cout << image->HasAlpha() << endl;
+		renderImage(*image);
+		wxBitmap drawbmp(*image);
+		dc.DrawBitmap(drawbmp,0,0);
+	}
+	if (draw_grid) {
+		dc.SetPen( *wxGREY_PEN );
+		dc.SetPen( *wxRED_PEN );
+		dc.DrawLine(0,height/2,width,height/2);
+		dc.SetPen( *wxGREEN_PEN );
+		dc.DrawLine(width/2,0,width/2,height);
 	}
 	recalculate_img = 0;
 }
