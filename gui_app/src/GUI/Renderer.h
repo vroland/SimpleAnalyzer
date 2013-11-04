@@ -11,7 +11,7 @@
 #include <vector>
 #include "../libraries/interpolate/GeometryClasses.h"
 #include "../processing/ObjectData.h"
-
+#include <wx-2.8/wx/wx.h>
 using namespace std;
 
 enum rendermode {
@@ -31,6 +31,8 @@ struct Viewport_info {
 	int showfaces;
 	bool show_extrapolated;
 	bool show_sensordata;
+	int width;
+	int height;
 };
 struct CutRender_info {
 	Triangle* tri;
@@ -46,6 +48,7 @@ public:
 	void render();
 	void setObject(ObjectData* obj);
 	void setCutRenderInfo(CutRender_info* info);
+	void getViewportImage(wxImage* img);
 	Viewport_info viewport;
 	virtual ~Renderer();
 private:

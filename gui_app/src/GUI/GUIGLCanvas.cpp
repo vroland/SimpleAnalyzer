@@ -27,7 +27,7 @@ GUIGLCanvas::GUIGLCanvas(wxFrame *parent) :wxGLCanvas(parent, wxID_ANY,  wxDefau
 void GUIGLCanvas::OnResize(wxSizeEvent &event) {
 	do_refresh = true;
 	Refresh(false,NULL);
-
+	Update();
 }
 void GUIGLCanvas::OnMouseWheel(wxMouseEvent &event) {
 	renderer.viewport.zoom -=event.m_wheelRotation/360.;

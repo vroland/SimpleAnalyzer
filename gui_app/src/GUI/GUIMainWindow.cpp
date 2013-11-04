@@ -48,6 +48,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_BUTTON(ID_CLEAR_MARKER_BT,GUIMainWindow::OnSDTLMarkerClear)
 	EVT_BUTTON(ID_MARKER_NEXT_BT,GUIMainWindow::OnSDTLNextMarker)
 	EVT_BUTTON(ID_MARKER_PREV_BT,GUIMainWindow::OnSDTLPrevMarker)
+	EVT_MENU(ID_EXPORT_VIEWPORT,GUIMainWindow::OnExportViewportImage)
 END_EVENT_TABLE()
 
 GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height):
@@ -60,19 +61,20 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	mwFileMenu = new wxMenu();
 	//Import menu
 	mwImportMenu = new wxMenu();
-	mwImportMenu->Append(ID_IMPORT_OBJ, wxT("&Modell und Sensordaten..."));
-	mwImportMenu->Append(ID_IMPORT_SD, wxT("&Sensordaten..."));
-	mwImportMenu->Append(ID_IMPORT_TSD, wxT("&Sensordaten-Paket..."));
+	mwImportMenu->Append(ID_IMPORT_OBJ, wxT("Modell und Sensordaten..."));
+	mwImportMenu->Append(ID_IMPORT_SD, wxT("Sensordaten..."));
+	mwImportMenu->Append(ID_IMPORT_TSD, wxT("Sensordaten-Paket..."));
 	mwFileMenu->AppendSubMenu(mwImportMenu,wxT("Import"));
 	//Export menu
 	mwExportMenu = new wxMenu();
+	mwExportMenu->Append(ID_EXPORT_VIEWPORT,wxT("Screenshot (Viewport)"));
 	mwFileMenu->AppendSubMenu(mwExportMenu,wxT("Export"));
 	mwFileMenu->AppendSeparator();
 	mwFileMenu->Append(wxID_EXIT, wxT("&Beenden"));
 	mwMenuBar->Append(mwFileMenu, wxT("&Datei"));
 	// Edit menu
 	mwEditMenu = new wxMenu();
-	mwEditMenu->Append(ID_DELETE_ACTIVE_OBJ,wxT("&Aktives Objekt löschen"));
+	mwEditMenu->Append(ID_DELETE_ACTIVE_OBJ,wxT("Aktives Objekt löschen"));
 	// Analyze menu
 	mwAnalyzeMenu = new wxMenu();
 	mwAnalyzeMenu->Append(ID_ANALYZE,wxT("Übersicht..."));
@@ -81,8 +83,8 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	mwMenuBar->Append(mwAnalyzeMenu,wxT("Analysieren"));
 	// About menu
 	mwHelpMenu = new wxMenu();
-	mwHelpMenu->Append(ID_ABOUT, wxT("&Über"));
-	mwMenuBar->Append(mwHelpMenu, wxT("&Hilfe"));
+	mwHelpMenu->Append(ID_ABOUT, wxT("Über"));
+	mwMenuBar->Append(mwHelpMenu, wxT("Hilfe"));
 
 	prop_scroll_win = new wxScrolledWindow(this, wxID_ANY);
 	propbox =  new PropertiesBox(prop_scroll_win);
@@ -435,6 +437,20 @@ void GUIMainWindow::OnMenuImportTSD(wxCommandEvent &event) {
 	}
 	OpenDialog->Close();
 	OpenDialog->Destroy();
+}
+void GUIMainWindow::OnExportViewportImage(wxCommandEvent &event) {
+	wxFileDialog *SaveDialog= new wxFileDialog(this, wxT("Export nach..."), _(""), _(""), _("Portable Network Graphics (*.png)|*.png"), wxFD_SAVE|wxFD_OVERWRITE_PROMPT);
+	if ( SaveDialog->ShowModal() == wxID_OK )
+	{
+		cout << SaveDialog->GetPath().ToAscii() << endl;
+		wxImage* img = new wxImage(gl_context->GetSize().x,gl_context->GetSize().y,true);
+		cout << "is image ok? "<<img->IsOk() << endl;
+		gl_context->SetCurrent();
+		gl_context->renderer.getViewportImage(img);
+		img->SaveFile(SaveDialog->GetPath());
+	}
+	SaveDialog->Close();
+	SaveDialog->Destroy();
 }
 void GUIMainWindow::OnActiveObjectChangePopup(wxCommandEvent &event) {
 	if (event.GetId()!=0) {

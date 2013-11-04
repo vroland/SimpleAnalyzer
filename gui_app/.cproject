@@ -52,7 +52,7 @@
 									<listOptionValue builtIn="false" value="GL"/>
 								</option>
 								<option id="gnu.cpp.link.option.paths.1119402575" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths"/>
-								<option id="gnu.cpp.link.option.flags.386129144" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="`wx-config --libs --gl-libs`" valueType="string"/>
+								<option id="gnu.cpp.link.option.flags.386129144" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="`wx-config --cxxflags --libs --gl-libs`" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.332610086" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>

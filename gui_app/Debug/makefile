@@ -49,7 +49,7 @@ all: gui_app
 gui_app: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++ -o "gui_app" $(OBJS) $(USER_OBJS) $(LIBS) `wx-config --libs --gl-libs`
+	g++ -o "gui_app" $(OBJS) $(USER_OBJS) $(LIBS) `wx-config --cxxflags --libs --gl-libs`
 	@echo 'Finished building target: $@'
 	@echo ' '
 

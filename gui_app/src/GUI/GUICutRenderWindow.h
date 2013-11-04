@@ -18,6 +18,7 @@ public:
 	void OnResize(wxSizeEvent &event);
 	void OnCutPropsChanged(wxCommandEvent &event);
 	void refreshVisualisation();
+	void exportImage(wxCommandEvent &event);
 	CutRender_info* getCutRenderProperties();
 	virtual ~GUICutRenderWindow();
 
@@ -40,6 +41,7 @@ private:
 	wxStaticText* mmperpixellabel;
 	wxStaticText* trilabel;
 	wxButton* calcbt;
+	wxButton* exportbt;
 	GUIRenderCutCanvas* canvas;
 };
 #endif /* GUICUTRENDERWINDOW_H_ */

@@ -14,6 +14,7 @@
 #include "GUIMainWindow.h"
 BEGIN_EVENT_TABLE(GUICutRenderWindow, wxFrame)
 	EVT_BUTTON(ID_RENDER_CUT_BT, GUICutRenderWindow::renderCutBtClick)
+	EVT_BUTTON(ID_EXPORT_CUT_BT, GUICutRenderWindow::exportImage)
 	EVT_TEXT(ID_CUT_TRI_EDIT, GUICutRenderWindow::OnCutPropsChanged)
 	EVT_SIZE(GUICutRenderWindow::OnResize)
 END_EVENT_TABLE()
@@ -40,6 +41,7 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent,const wxChar *title, in
 	mmperpixeledit  = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("15"));
 
 	calcbt= new wxButton(this,ID_RENDER_CUT_BT,wxT("analysieren"));
+	exportbt= new wxButton(this,ID_EXPORT_CUT_BT,wxT("exportieren..."));
 	canvas = new GUIRenderCutCanvas(this);
 	canvas->recalculate_img = 0;
 	p1xedit->SetValue(p1xedit->GetValue()); //TEXT-Event auslösen
@@ -70,13 +72,24 @@ void GUICutRenderWindow::OnResize(wxSizeEvent &event) {
 	p3xedit->SetSize(90,90,100,20);
 	p3yedit->SetSize(190,90,100,20);
 	p3zedit->SetSize(290,90,100,20);
-	mmperpixellabel->SetSize(410,30,200,40);
-	mmperpixeledit->SetSize(410,60,100,20);
-	calcbt->SetSize(410,90,100,20);
+	mmperpixellabel->SetSize(410,20,200,40);
+	mmperpixeledit->SetSize(410,40,100,20);
+	calcbt->SetSize(410,65,100,25);
+	exportbt->SetSize(410,90,100,25);
 	canvas->SetSize(10,120,width-20,height-canvas->GetPosition().y-10);
 	refreshVisualisation();
 	canvas->Refresh(false,NULL);
 
+}
+void GUICutRenderWindow::exportImage(wxCommandEvent &event) {
+	wxFileDialog *SaveDialog= new wxFileDialog(this, wxT("Speichern unter..."), _(""), _(""), _("Portable Network Graphics (*.png)|*.png"), wxFD_SAVE|wxFD_OVERWRITE_PROMPT);
+	if ( SaveDialog->ShowModal() == wxID_OK )
+	{
+		cout << SaveDialog->GetFilename().ToAscii() << endl;
+		canvas->image->SaveFile(SaveDialog->GetPath(),wxBITMAP_TYPE_PNG);
+	}
+	SaveDialog->Close();
+	SaveDialog->Destroy();
 }
 CutRender_info* GUICutRenderWindow::getCutRenderProperties() {
 	CutRender_info* info = new CutRender_info();

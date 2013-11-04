@@ -11,7 +11,7 @@
 #include <cmath>
 #include <GL/glew.h>
 #include <GL/gl.h>
-
+#include <GL/glext.h>
 
 using namespace std;
 
@@ -187,7 +187,6 @@ void Renderer::renderTetrahedrons(MaterialData* mat,int rendermode) {
 void Renderer::renderSensorData(vector<SensorPoint>* data) {
 	glDisable(GL_DEPTH_TEST);
 	glDisable(GL_LIGHTING);
-	glBegin(GL_POINTS);
 	for (unsigned int i=0;i<data->size();i++) {
 		SensorPoint* point = &data->at(i);
 		float value = point->temperature;
@@ -200,13 +199,17 @@ void Renderer::renderSensorData(vector<SensorPoint>* data) {
 		float* color = hsvToRgb((1.0-value/100.)*.65,1,1);
 		glPointSize(6.0);
 		glColor3f(0,0,0);
+		glBegin(GL_POINTS);
 		glVertex3dv(point->coords);
+		glEnd();
 		glPointSize(4.0);
 		glColor3fv(color);
+		glBegin(GL_POINTS);
 		glVertex3dv(point->coords);
+		glEnd();
 		delete[] color;
 	}
-	glEnd();
+
 	glEnable(GL_LIGHTING);
 	glEnable(GL_DEPTH_TEST);
 }
@@ -267,8 +270,11 @@ void Renderer::initGL(int width, int height) {
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 	glClearColor(.5,.5,.5,1);
+	viewport.width = width;
+	viewport.height = height;
 }
 void Renderer::resize(int width, int height) {
+	cout <<"b resize Error: "<<glGetError()<<endl;
 	glViewport(0, 0, width, height);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -276,6 +282,9 @@ void Renderer::resize(int width, int height) {
 	glFrustum(-1.0,1.0,-h,h,1.5,500);
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
+	viewport.width = width;
+	viewport.height = height;
+	cout <<"resize Error: "<<glGetError()<<endl;
 }
 void renderGrid() {
 	glColor3f(.2,.2,.2);
@@ -407,7 +416,36 @@ void Renderer::setObject(ObjectData* obj) {
 	}
 	glEndList();
 }
+void Renderer::getViewportImage(wxImage* img) {
+	int w = img->GetWidth();
+	int h = img->GetHeight();
+	cout << "export..." << w << " "<<h <<endl;
+
+	unsigned char color_buff[w*h*3];
+	//glReadBuffer(GL_FRONT);
+
+	glReadPixels(0, 0, w,h, GL_RGB, GL_UNSIGNED_BYTE, &color_buff);
+	cout <<" "<<glGetError()<<endl;
+	cout <<"is ok: "<<img->IsOk()<<endl;
+	for (int x=0;x<w;x++) {
+		for (int y=0;y<h;y++) {
+			//cout << 3*(w*y+x) << endl;
+			img->SetRGB(x,y,color_buff[3*(w*y+x)],color_buff[3*(w*y+x)+1],color_buff[3*(w*y+x)+2]);
+		}
+	}
+	cout << "ready." << endl;
+	/*unsigned char depth_buff[img->GetWidth()*img->GetHeight()];
+	//glReadBuffer(GL_FRONT);
+	glReadPixels(0, 0, img->GetWidth()-1,img->GetHeight()-1, GL_DEPTH_COMPONENT, GL_UNSIGNED_BYTE, depth_buff);
+	img->InitAlpha();
+	for (int i=0;i<img->GetWidth()*img->GetHeight();i++) {
+		if (depth_buff[i]>253) {
+			img->SetAlpha(i%img->GetWidth(),i/img->GetWidth(),0);
+		}
+	}*/
+}
 void Renderer::render() {
+
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
 	glTranslatef(0,0,-viewport.zoom*viewport.zoom);
@@ -429,11 +467,9 @@ void Renderer::render() {
 	glLightfv (GL_LIGHT0, GL_AMBIENT, AmbientLight);
 	glPolygonMode(GL_FRONT, GL_LINE);
 	glPolygonMode(GL_BACK, GL_LINE);
-
 	if (displayList>-1) {
 		glCallList(displayList);
 	}
-
 	glPolygonMode(GL_FRONT, GL_FILL);
 	glPolygonMode(GL_BACK, GL_FILL);
 	if (cut_visualisation_info!=NULL) {
@@ -442,8 +478,8 @@ void Renderer::render() {
 		glEnable( GL_BLEND );
 		glDisable(GL_LIGHTING);
 		Triangle* tri = cut_visualisation_info->tri;
+		glColor4f(.5,0,0,.5);
 		glBegin(GL_TRIANGLES);
-			glColor4f(.5,0,0,.5);
 			Vector3D* nor = tri->getNormal();
 			glNormal3dv(nor->getXYZ());
 			glVertex3dv(tri->getV1()->getXYZ());

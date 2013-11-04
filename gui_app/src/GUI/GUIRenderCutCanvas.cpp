@@ -23,6 +23,7 @@ extern int current_data_object_index;
 GUIRenderCutCanvas::GUIRenderCutCanvas(wxWindow* parent):wxPanel(parent, wxID_ANY,  wxDefaultPosition, wxDefaultSize, 0, wxT("GLCanvas")) {
 	recalculate_img = 0;
 	draw_grid = 0;
+	image = new wxImage(100,100,true);
 }
 void GUIRenderCutCanvas::renderImage(wxImage& image) {
 	int width = image.GetWidth();
@@ -60,7 +61,10 @@ void GUIRenderCutCanvas::renderImage(wxImage& image) {
 			p->add(part_y);
 			delete part_x;
 			delete part_y;
+
+
 			image.SetRGB(x,y,0,0,0);
+			image.SetAlpha(x,y,0);
 			for (unsigned int m=0;m<obj->materials.size();m++) {
 				MaterialData* mat = &obj->materials.at(m);
 				bool found = pointInsideMesh(p,bases.at(m));
@@ -76,7 +80,9 @@ void GUIRenderCutCanvas::renderImage(wxImage& image) {
 						value = 0;
 					}
 					float* color = hsvToRgb((1.0-(float)value/100.)*.65,1,1);
+					image.SetAlpha(x,y,255);
 					image.SetRGB(x,y,(unsigned char)(color[0]*255),(unsigned char)(color[1]*255),(unsigned char)(color[2]*255));
+
 					delete color;
 					break;
 				}
@@ -109,15 +115,17 @@ void GUIRenderCutCanvas::onCanvasPaint(wxPaintEvent &event) {
 	if (gc)
 	{
 		// Clear BG
-		gc->SetPen( *wxWHITE_PEN );
-		gc->SetBrush( *wxWHITE_BRUSH);
+		gc->SetPen( *wxBLACK_PEN );
+		gc->SetBrush( *wxBLACK_BRUSH);
 		wxGraphicsPath path1 = gc->CreatePath();
 		path1.AddRectangle(0, 0, width, height);
 		gc->FillPath(path1);
 		if (recalculate_img) {
-			wxImage renderimg(width,height,false);
-			renderImage(renderimg);
-			wxBitmap drawbmp(renderimg);
+			image->Rescale(width,height);
+			image->InitAlpha();
+			cout << image->HasAlpha() << endl;
+			renderImage(*image);
+			wxBitmap drawbmp(*image);
 			gc->DrawBitmap(drawbmp,0,0,width,height);
 		}
 		if (draw_grid) {

@@ -15,6 +15,7 @@ public:
 	void renderImage(wxImage& image);
 	bool recalculate_img;
 	bool draw_grid;
+	wxImage* image;
 	virtual ~GUIRenderCutCanvas();
 protected:
 	DECLARE_EVENT_TABLE()

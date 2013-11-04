@@ -26,6 +26,7 @@ struct Options {
 	float basetemp;
 	float objwidth;
 	bool flipobj;
+	int leave_out;
 } opts;
 
 bool contains( std::vector<string>& Vec, const string& Element )
@@ -144,6 +145,7 @@ int main(int argc, char *argv[]) {
 	opts.basetemp = 20;
 	opts.objwidth = .5;
 	opts.flipobj  = true;
+	opts.leave_out = 5;
 
 	bool names_read = false;
 
@@ -158,8 +160,6 @@ int main(int argc, char *argv[]) {
 	vector<float> outlist;
 	vector<float> in_x;
 	vector<float> out_x;
-	//vector<float> in_y;
-	//vector<float> out_y;
 	while (deffile.good()) {
 		getline(deffile,line);
 		if (line.length()==0) continue;
@@ -167,11 +167,18 @@ int main(int argc, char *argv[]) {
 		if (line.at(0)=='i') {
 			inlist.resize(inlist.size()+1,atof(getTextBlock(line,1).c_str()));
 			in_x.resize(in_x.size()+1,atof(getTextBlock(line,2).c_str()));
+			if (opts.flipobj) {
+				in_x.at(in_x.size()-1) = opts.objwidth-in_x.at(in_x.size()-1);
+			}
 			//in_y.resize(in_y.size()+1,atof(getTextBlock(line,3).c_str()));
 		}
 		if (line.at(0)=='o') {
 			outlist.resize(outlist.size()+1,atof(getTextBlock(line,1).c_str()));
 			out_x.resize(out_x.size()+1,atof(getTextBlock(line,2).c_str()));
+			if (opts.flipobj) {
+				out_x.at(out_x.size()-1) = opts.objwidth-out_x.at(out_x.size()-1);
+			}
+
 			//out_y.resize(in_y.size()+1,atof(getTextBlock(line,3).c_str()));
 		}
 	}
@@ -209,10 +216,14 @@ int main(int argc, char *argv[]) {
 		}
 		row++;
 	}
-	ofstream errfile;					// output
+	ofstream errfile;					// error output
 	ofstream outfile;					// output
 	outfile.open("temperatur_odisi.tsd");
 	errfile.open("temperatur_odisi_err.log");
+	int insidecount = 0;
+	int outsidecount = 0;
+	double insideval = 0;
+	double outsideval= 0;
 	for (size_t i=1;i<values.size();i++) {
 		vector<float>* curr_delta = &values.at(i);
 		values.at(i).resize(curr_delta->size());
@@ -244,33 +255,39 @@ int main(int argc, char *argv[]) {
 				}
 			}
 			if (!outside) {
-				// calc value
-				int fwcount = 0;
-				float prev_val = values.at(i-1).at(j);
-				float original_val = values.at(i).at(j);
-				while ((i+fwcount+1<values.size()) && (abs(values.at(i+fwcount).at(j)-prev_val)>(fwcount+1)*opts.error_threshold)) {
-					fwcount++;
-					if (fwcount==opts.maxfwcount) {
-						errfile << "count of invalid values too big -> nothing changed!" <<" (l. "<<i+opts.startrow+2<<", c. "<<debug_positions.at(i).at(j)<<")"<< endl;
-						break;
+				insidecount++;
+				if (insidecount%opts.leave_out==0) {
+					// calc value
+					int fwcount = 0;
+					float prev_val = values.at(i-1).at(j);
+					float original_val = values.at(i).at(j);
+					while ((i+fwcount+1<values.size()) && (abs(values.at(i+fwcount).at(j)-prev_val)>(fwcount+1)*opts.error_threshold)) {
+						fwcount++;
+						if (fwcount==opts.maxfwcount) {
+							errfile << "count of invalid values too big -> nothing changed!" <<" (l. "<<i+opts.startrow+2<<", c. "<<debug_positions.at(i).at(j)<<")"<< endl;
+							break;
+						}
 					}
+					if (fwcount>0) {
+						values.at(i).at(j) = prev_val+(values.at(i+fwcount).at(j)-prev_val)/(fwcount+1);
+						errfile << "changed " <<original_val<<" (l. "<<i+opts.startrow+2<<", c. "<<debug_positions.at(i).at(j)<<") to "<<values.at(i).at(j)<< endl;
+					}
+					float x = x_in+((x_out-x_in)/(l_out-l_in))*(l_pos-l_in);
+					float y = opts.height;
+					float z = cos(asin(((x_out-x_in)/(l_out-l_in))))*(l_pos-l_in);
+					outfile <<"s "<<x<<" "<<y<<" "<<z<< " "<<opts.basetemp+values.at(i).at(j) << endl;
 				}
-				if (fwcount>0) {
-					values.at(i).at(j) = prev_val+(values.at(i+fwcount).at(j)-prev_val)/(fwcount+1);
-					errfile << "changed " <<original_val<<" (l. "<<i+opts.startrow+2<<", c. "<<debug_positions.at(i).at(j)<<") to "<<values.at(i).at(j)<< endl;
-				}
-				float x = x_in+((x_out-x_in)/(l_out-l_in))*(l_pos-l_in);
-				float y = opts.height;
-				float z = cos(asin(((x_out-x_in)/(l_out-l_in))))*(l_pos-l_in);
-				if (opts.flipobj) {
-					x = opts.objwidth-x;
-				}
-				outfile <<"s "<<x<<" "<<y<<" "<<z<< " "<<opts.basetemp+values.at(i).at(j) << endl;
+				insideval+=values.at(i).at(j);
+			} else {
+				outsidecount++;
+				outsideval+=values.at(i).at(j);
 			}
 		}
 		outfile << endl;
 
 	}
+	cout << insidecount << " values inside object, "<<outsidecount << " outside object "<<endl;
+	cout << "Inside average: " << insideval/insidecount << " Outside average: " << outsideval/outsidecount << endl;
 	outfile.close();
 	errfile.close();
 	cout << "files successfully created." << endl;
