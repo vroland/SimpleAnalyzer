@@ -11,12 +11,12 @@
 #include <wx-2.8/wx/wx.h>
 #include <string>
 #include <vector>
+
 using namespace std;
 
 enum GUI_TIMELINE_STYLE {
 	GTL_DEFAULT = 0,
 };
-DECLARE_EVENT_TYPE(wxEVT_TIMELINE, -1)
 
 class GUITimeline: public wxPanel {
 public:

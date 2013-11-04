@@ -14,7 +14,8 @@ src/Application.d: ../src/Application.cpp ../src/Application.h \
  ../src/GUI/GUIAnalyzeOutputWindow.h /usr/include/wx-2.8/wx/grid.h \
  /usr/include/wx-2.8/wx/generic/grid.h ../src/GUI/GUIAnalyzePointWindow.h \
  ../src/GUI/GUICutRenderWindow.h ../src/GUI/GUIRenderCutCanvas.h \
- /usr/include/wx-2.8/wx/artprov.h ../src/processing/ObjectData.h
+ ../src/GUI/events.h /usr/include/wx-2.8/wx/artprov.h \
+ ../src/processing/ObjectData.h
 
 ../src/Application.h:
 
@@ -63,6 +64,8 @@ src/Application.d: ../src/Application.cpp ../src/Application.h \
 ../src/GUI/GUICutRenderWindow.h:
 
 ../src/GUI/GUIRenderCutCanvas.h:
+
+../src/GUI/events.h:
 
 /usr/include/wx-2.8/wx/artprov.h:
 

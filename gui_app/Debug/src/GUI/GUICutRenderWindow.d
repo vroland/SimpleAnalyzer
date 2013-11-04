@@ -17,7 +17,7 @@ src/GUI/GUICutRenderWindow.d: ../src/GUI/GUICutRenderWindow.cpp \
  ../src/GUI/GUITimeline.h ../src/GUI/ViewpropBox.h \
  ../src/GUI/GUIAnalyzeOutputWindow.h /usr/include/wx-2.8/wx/grid.h \
  /usr/include/wx-2.8/wx/generic/grid.h ../src/GUI/GUIAnalyzePointWindow.h \
- /usr/include/wx-2.8/wx/artprov.h
+ ../src/GUI/events.h /usr/include/wx-2.8/wx/artprov.h
 
 ../src/GUI/GUICutRenderWindow.h:
 
@@ -74,5 +74,7 @@ src/GUI/GUICutRenderWindow.d: ../src/GUI/GUICutRenderWindow.cpp \
 /usr/include/wx-2.8/wx/generic/grid.h:
 
 ../src/GUI/GUIAnalyzePointWindow.h:
+
+../src/GUI/events.h:
 
 /usr/include/wx-2.8/wx/artprov.h:

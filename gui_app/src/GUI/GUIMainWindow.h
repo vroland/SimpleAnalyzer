@@ -14,6 +14,7 @@
 #include "GUIAnalyzeOutputWindow.h"
 #include "GUIAnalyzePointWindow.h"
 #include "GUICutRenderWindow.h"
+#include "events.h"
 #include <wx/wx.h>
 #include <wx/artprov.h>
 

@@ -10,10 +10,9 @@
 #include "../processing/utils.h"
 #include <cmath>
 #include <algorithm>
+#include "events.h"
 using namespace std;
 using namespace Utils;
-
-DEFINE_EVENT_TYPE(wxEVT_TIMELINE)
 
 BEGIN_EVENT_TABLE(GUITimeline, wxPanel)
     EVT_PAINT    (GUITimeline::OnPaint)
