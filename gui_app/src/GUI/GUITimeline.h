@@ -14,6 +14,8 @@
 
 using namespace std;
 
+extern const wxEventType wxEVT_TIMELINE_CHANGE;
+
 enum GUI_TIMELINE_STYLE {
 	GTL_DEFAULT = 0,
 };

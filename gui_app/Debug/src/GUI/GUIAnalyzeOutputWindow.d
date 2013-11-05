@@ -14,8 +14,7 @@ src/GUI/GUIAnalyzeOutputWindow.d: ../src/GUI/GUIAnalyzeOutputWindow.cpp \
  /usr/include/wx-2.8/wx/glcanvas.h /usr/include/wx-2.8/wx/gtk/glcanvas.h \
  ../src/GUI/ViewpropBox.h ../src/GUI/GUIAnalyzePointWindow.h \
  ../src/GUI/GUICutRenderWindow.h ../src/GUI/GUIRenderCutCanvas.h \
- ../src/GUI/events.h /usr/include/wx-2.8/wx/artprov.h \
- ../src/GUI/../processing/Analyzer.h \
+ /usr/include/wx-2.8/wx/artprov.h ../src/GUI/../processing/Analyzer.h \
  ../src/GUI/../processing/ObjectData.h
 
 ../src/GUI/GUIAnalyzeOutputWindow.h:
@@ -63,8 +62,6 @@ src/GUI/GUIAnalyzeOutputWindow.d: ../src/GUI/GUIAnalyzeOutputWindow.cpp \
 ../src/GUI/GUICutRenderWindow.h:
 
 ../src/GUI/GUIRenderCutCanvas.h:
-
-../src/GUI/events.h:
 
 /usr/include/wx-2.8/wx/artprov.h:
 

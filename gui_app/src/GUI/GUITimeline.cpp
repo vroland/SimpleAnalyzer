@@ -10,9 +10,10 @@
 #include "../processing/utils.h"
 #include <cmath>
 #include <algorithm>
-#include "events.h"
 using namespace std;
 using namespace Utils;
+
+const wxEventType wxEVT_TIMELINE_CHANGE = wxNewEventType();
 
 BEGIN_EVENT_TABLE(GUITimeline, wxPanel)
     EVT_PAINT    (GUITimeline::OnPaint)
@@ -45,7 +46,7 @@ GUITimeline::GUITimeline(wxWindow *parent,
 	markers = NULL;
 }
 void GUITimeline::sendTimelineEvent() {
-	wxCommandEvent event( wxEVT_TIMELINE, GetId() );
+	wxCommandEvent event( wxEVT_TIMELINE_CHANGE, GetId() );
 	event.SetEventObject( this );
 	GetEventHandler()->ProcessEvent( event );
 }

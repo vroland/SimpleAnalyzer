@@ -13,8 +13,7 @@ CPP_SRCS += \
 ../src/GUI/GUITimeline.cpp \
 ../src/GUI/PropertiesBox.cpp \
 ../src/GUI/Renderer.cpp \
-../src/GUI/ViewpropBox.cpp \
-../src/GUI/events.cpp 
+../src/GUI/ViewpropBox.cpp 
 
 OBJS += \
 ./src/GUI/GUIAnalyzeOutputWindow.o \
@@ -26,8 +25,7 @@ OBJS += \
 ./src/GUI/GUITimeline.o \
 ./src/GUI/PropertiesBox.o \
 ./src/GUI/Renderer.o \
-./src/GUI/ViewpropBox.o \
-./src/GUI/events.o 
+./src/GUI/ViewpropBox.o 
 
 CPP_DEPS += \
 ./src/GUI/GUIAnalyzeOutputWindow.d \
@@ -39,8 +37,7 @@ CPP_DEPS += \
 ./src/GUI/GUITimeline.d \
 ./src/GUI/PropertiesBox.d \
 ./src/GUI/Renderer.d \
-./src/GUI/ViewpropBox.d \
-./src/GUI/events.d 
+./src/GUI/ViewpropBox.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -23,7 +23,7 @@ src/GUI/GUIMainWindow.d: ../src/GUI/GUIMainWindow.cpp \
  ../src/GUI/GUIAnalyzeOutputWindow.h /usr/include/wx-2.8/wx/grid.h \
  /usr/include/wx-2.8/wx/generic/grid.h ../src/GUI/GUIAnalyzePointWindow.h \
  ../src/GUI/GUICutRenderWindow.h ../src/GUI/GUIRenderCutCanvas.h \
- ../src/GUI/events.h /usr/include/wx-2.8/wx/artprov.h \
+ /usr/include/wx-2.8/wx/artprov.h \
  ../src/GUI/../processing/MeshProcessor.h \
  ../src/GUI/../processing/ObjectData.h ../src/GUI/../fileIO/Importer.h \
  ../src/GUI/../fileIO/../libraries/tetgen/tetgen.h \
@@ -108,8 +108,6 @@ src/GUI/GUIMainWindow.d: ../src/GUI/GUIMainWindow.cpp \
 ../src/GUI/GUICutRenderWindow.h:
 
 ../src/GUI/GUIRenderCutCanvas.h:
-
-../src/GUI/events.h:
 
 /usr/include/wx-2.8/wx/artprov.h:
 

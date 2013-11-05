@@ -23,6 +23,8 @@ extern int current_data_object_index;
 #define PROPBOXWIDTH 300
 #define VIEWBOXWIDTH 300
 
+extern const wxEventType wxEVT_TIMELINE_CHANGE;
+
 BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_MENU(ID_IMPORT_OBJ, GUIMainWindow::OnMenuImportObj)
 	EVT_MENU(ID_IMPORT_SD, GUIMainWindow::OnMenuImportSD)
@@ -43,7 +45,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_MENU(ID_DELETE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectDelete)
 	EVT_MENU(ID_IMPORT_TSD,GUIMainWindow::OnMenuImportTSD)
 	EVT_COMBOBOX(ID_SD_BOX,GUIMainWindow::OnSensorDataChange)
-	EVT_COMMAND(ID_SD_TIMELINE, wxEVT_TIMELINE,GUIMainWindow::OnSDTimelineChange)
+	EVT_COMMAND(ID_SD_TIMELINE, wxEVT_TIMELINE_CHANGE,GUIMainWindow::OnSDTimelineChange)
 	EVT_CHECKBOX(ID_ANALYZE_MARKER_CB,GUIMainWindow::OnAnalyzeMarkerChange)
 	EVT_BUTTON(ID_CLEAR_MARKER_BT,GUIMainWindow::OnSDTLMarkerClear)
 	EVT_BUTTON(ID_MARKER_NEXT_BT,GUIMainWindow::OnSDTLNextMarker)
