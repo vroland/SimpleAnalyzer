@@ -16,7 +16,7 @@ BEGIN_EVENT_TABLE(GUIGLCanvas, wxGLCanvas)
     EVT_MOTION   (GUIGLCanvas::OnMouseMove)
     EVT_SIZE   (GUIGLCanvas::OnResize)
 END_EVENT_TABLE()
-int attrib_list[] = { WX_GL_RGBA, WX_GL_DOUBLEBUFFER };
+int attrib_list[] = { WX_GL_RGBA, WX_GL_DOUBLEBUFFER, WX_GL_DEPTH_SIZE, 16, 0};
 
 GUIGLCanvas::GUIGLCanvas(wxFrame *parent) :wxGLCanvas(parent, wxID_ANY,  wxDefaultPosition, wxDefaultSize, 0, wxT("GLCanvas"),attrib_list) {
 	is_initialized = false;
