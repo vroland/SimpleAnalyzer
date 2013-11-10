@@ -398,33 +398,31 @@ void Renderer::setObject(ObjectData* obj) {
 	}
 	glEndList();
 }
-void Renderer::getViewportImage(wxImage* img) {
-	int w = img->GetWidth();
-	int h = img->GetHeight();
-	cout << "export..." << w << " "<<h <<endl;
+wxImage* Renderer::getViewportImage() {
+	GLint view[4];
+	glGetIntegerv(GL_VIEWPORT, view);
+	void* pixels = malloc(3 * view[2] * view[3]); // must use malloc
+	glPixelStorei(GL_PACK_ALIGNMENT, 1);
+	glReadBuffer( GL_BACK_LEFT );
+	glReadPixels(0, 0, view[2], view[3], GL_RGB, GL_UNSIGNED_BYTE, pixels);
 
-	unsigned char color_buff[w*h*3];
+	// Put the image into a wxImage
+	wxImage* img = new wxImage((int) view[2], (int) view[3]);
+	for (int i=0;i<view[2]*view[3];i++) {
+		img->SetRGB(i%view[2],view[3]-i/view[2],((unsigned char*)pixels)[3*i],((unsigned char*)pixels)[3*i+1],((unsigned char*)pixels)[3*i+2]);
+	}
+	free(pixels);
+	void* depth_buff = malloc(view[2] * view[3]); // must use malloc
 	//glReadBuffer(GL_FRONT);
-
-	glReadPixels(0, 0, w,h, GL_RGB, GL_UNSIGNED_BYTE, &color_buff);
-	cout <<" "<<glGetError()<<endl;
-	cout <<"is ok: "<<img->IsOk()<<endl;
-	for (int x=0;x<w;x++) {
-		for (int y=0;y<h;y++) {
-			//cout << 3*(w*y+x) << endl;
-			img->SetRGB(x,y,color_buff[3*(w*y+x)],color_buff[3*(w*y+x)+1],color_buff[3*(w*y+x)+2]);
+	glReadPixels(0, 0,view[2], view[3], GL_DEPTH_COMPONENT, GL_UNSIGNED_BYTE, depth_buff);
+	img->InitAlpha();
+	for (int i=0;i<view[2]*view[3];i++) {
+		if (((unsigned char*)depth_buff)[i]==255) {
+			img->SetAlpha(i%view[2],view[3]-i/view[2],0);
 		}
 	}
-	cout << "ready." << endl;
-	/*unsigned char depth_buff[img->GetWidth()*img->GetHeight()];
-	//glReadBuffer(GL_FRONT);
-	glReadPixels(0, 0, img->GetWidth()-1,img->GetHeight()-1, GL_DEPTH_COMPONENT, GL_UNSIGNED_BYTE, depth_buff);
-	img->InitAlpha();
-	for (int i=0;i<img->GetWidth()*img->GetHeight();i++) {
-		if (depth_buff[i]>253) {
-			img->SetAlpha(i%img->GetWidth(),i/img->GetWidth(),0);
-		}
-	}*/
+	free(depth_buff);
+	return img;
 }
 void Renderer::render() {
 

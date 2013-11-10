@@ -459,11 +459,10 @@ void GUIMainWindow::OnExportViewportImage(wxCommandEvent &event) {
 	if ( SaveDialog->ShowModal() == wxID_OK )
 	{
 		cout << SaveDialog->GetPath().ToAscii() << endl;
-		wxImage* img = new wxImage(gl_context->GetSize().x,gl_context->GetSize().y,true);
-		cout << "is image ok? "<<img->IsOk() << endl;
 		gl_context->SetCurrent();
-		gl_context->renderer.getViewportImage(img);
+		wxImage* img = gl_context->renderer.getViewportImage();
 		img->SaveFile(SaveDialog->GetPath());
+		delete img;
 	}
 	SaveDialog->Close();
 	SaveDialog->Destroy();

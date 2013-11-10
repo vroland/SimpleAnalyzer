@@ -50,7 +50,7 @@ public:
 	void render();
 	void setObject(ObjectData* obj);
 	void setCutRenderInfo(CutRender_info* info);
-	void getViewportImage(wxImage* img);
+	wxImage* getViewportImage();
 	Viewport_info viewport;
 	virtual ~Renderer();
 private:
