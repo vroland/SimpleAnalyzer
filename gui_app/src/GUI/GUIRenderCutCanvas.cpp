@@ -10,6 +10,8 @@
 #include <vector>
 #include "../processing/utils.h"
 #include "../processing/ObjectData.h"
+#include "GUIMainWindow.h"
+#include "Renderer.h"
 #include <iostream>
 BEGIN_EVENT_TABLE(GUIRenderCutCanvas, wxPanel)
 	EVT_PAINT    (GUIRenderCutCanvas::onCanvasPaint)
@@ -31,6 +33,7 @@ void GUIRenderCutCanvas::renderImage(wxImage& image) {
 	setlocale(LC_NUMERIC, "C");
 	GUICutRenderWindow* pw = dynamic_cast<GUICutRenderWindow*>(GetParent());
 	CutRender_info* info = pw->getCutRenderProperties();
+	Viewport_info* vis_info = &dynamic_cast<GUIMainWindow*>(pw->GetParent())->getGLCanvas()->renderer.viewport;
 	Triangle* tri = info->tri;
 	Vector3D* xvec = tri->getV2()->copy();
 	xvec->sub(tri->getV1());
@@ -73,13 +76,7 @@ void GUIRenderCutCanvas::renderImage(wxImage& image) {
 					interpolator.setMode(mat->interpolation_mode);
 					SensorData* sd = &obj->sensordatalist.at(obj->current_sensor_index);
 					double value = getPointValue(status,&sd->data.at(sd->current_time_index),p->getXYZ(),&interpolator);
-					if (value>100) {
-						value = 100;
-					}
-					if (value<0) {
-						value = 0;
-					}
-					float* color = hsvToRgb((1.0-(float)value/100.)*.65,1,1);
+					float* color = hsvToRgb((1.0-clampHue((value-vis_info->min_visualisation_temp)/(vis_info->max_visualisation_temp+vis_info->min_visualisation_temp)))*.666,1,1);
 					image.SetAlpha(x,y,255);
 					image.SetRGB(x,y,(unsigned char)(color[0]*255),(unsigned char)(color[1]*255),(unsigned char)(color[2]*255));
 

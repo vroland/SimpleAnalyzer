@@ -32,6 +32,7 @@ public:
 	void OnImmUpPropChange(wxCommandEvent &event);
 	void OnGeneralPropChange(wxCommandEvent &event);
 	void OnViewPropChange(wxCommandEvent &event);
+	void OnViewPropSpinChange(wxSpinEvent &event);
 	void OnSensorDataChange(wxCommandEvent &event);
 	void OnSDTimelineChange(wxCommandEvent &event);
 	void OnSDTLMarkerClear(wxCommandEvent &event);

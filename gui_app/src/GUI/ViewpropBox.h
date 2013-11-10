@@ -8,6 +8,7 @@
 #ifndef VIEWPROPBOX_H_
 #define VIEWPROPBOX_H_
 #include <wx-2.8/wx/wx.h>
+#include <wx/spinctrl.h>
 
 class ViewpropBox: public wxStaticBox {
 public:
@@ -21,6 +22,9 @@ public:
 	wxCheckListBox* matvisibility;
 	wxCheckBox* show_extcb;
 	wxCheckBox* show_sdata;
+	wxStaticText* visdelta_lbl;
+	wxSpinCtrl* min_visval;
+	wxSpinCtrl* max_visval;
 };
 
 #endif /* VIEWPROPBOX_H_ */

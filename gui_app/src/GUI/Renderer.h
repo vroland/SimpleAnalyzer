@@ -33,6 +33,8 @@ struct Viewport_info {
 	bool show_sensordata;
 	int width;
 	int height;
+	int max_visualisation_temp;
+	int min_visualisation_temp;
 };
 struct CutRender_info {
 	Triangle* tri;

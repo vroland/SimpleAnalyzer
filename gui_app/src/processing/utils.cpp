@@ -22,6 +22,15 @@ void Utils::nextCombination(vector<int>* indices,int depth,int dataPointCount) {
 	}
 
 }
+float Utils::clampHue(float h) {
+	if (h>1.0) {
+		h = 1.0;
+	}
+	if (h<0.0) {
+		h = 0.0;
+	}
+	return h;
+}
 wxString Utils::floattowxstr(double val) {
 	ostringstream ss;
 	ss << val;
@@ -55,81 +64,99 @@ float* Utils::hsvToRgb(float h, float s, float v) {
     col[2] = b;
     return col;
 }
-int Utils::rayIntersectsTriangle(Vector3D* p,Vector3D* direction,Triangle* tri) {
-	Vector3D* n;
-	double     r, a, b;              // params to calc ray-plane intersect
+#define EPSILON 0.000001
 
-	// get triangle edge vectors and plane normal
-	Vector3D u = Vector3D(tri->getV2());
-	u.sub(tri->getV1());
-	Vector3D v = Vector3D(tri->getV3());
-	v.sub(tri->getV1());
-	n = u.crossProduct(&v);              // cross product
-	if (n->getLength()==0) {             // triangle is degenerate
-		delete n;
-		return -1;                  // do not deal with this case
-	}
-	//dir = R.P1 - R.P0;              // ray direction vector
-	Vector3D w0 = Vector3D(p);
-	w0.sub(tri->getV1());
-	a = -n->dotProduct(&w0);
-	b = n->dotProduct(direction);
-	delete n;
-	if (abs(b) < .000000000001) {     // ray is  parallel to triangle plane
-		if (a == 0)                 // ray lies in triangle plane
-			return 2;
-		else return 0;              // ray disjoint from plane
-	}
+int Utils::rayIntersectsTriangle(Vector3D* point,Vector3D* direction,Triangle* tri,float* depth) {
+	Vector3D p0 = Vector3D(tri->getV1());
+	Vector3D p1 = Vector3D(tri->getV2());
+	Vector3D p2 = Vector3D(tri->getV3());
 
-	// get intersect point of ray with triangle plane
-	r = a / b;
-	if (r < 0.0) {                   // ray goes away from triangle
-		return 0;                   // => no intersect
-	}
-	// for a segment, also test if (r > 1.0) => no intersect
+	float det, inv_det, u, v;
+	float t;
 
-	Vector3D ip = Vector3D(direction);
-	ip.mult(r);
-	ip.add(p);            // intersect point of ray and plane
-
-	// is I inside T?
-	double    uu, uv, vv, wu, wv, D;
-	uu = u.dotProduct(&u);
-	uv = u.dotProduct(&v);
-	vv = v.dotProduct(&v);
-	Vector3D w = Vector3D(ip);
-	w.sub(tri->getV1());
-	wu = w.dotProduct(&u);
-	wv = w.dotProduct(&v);
-	D = uv * uv - uu * vv;
-
-	// get and test parametric coords
-
-	double s, t;
-	s = (uv * wv - vv * wu) / D;
-	if (s < 0.0 || s > 1.0)         // I is outside T
+	//Find vectors for two edges sharing V0
+	Vector3D e1 = p1.copy();
+	Vector3D e2 = p2.copy();
+	e1.sub(&p0);
+	e2.sub(&p0);
+	//Begin calculating determinant - also used to calculate u parameter
+	Vector3D* P = direction->crossProduct(&e2);
+	//if determinant is near zero, ray lies in plane of triangle
+	det = e1.dotProduct(P);
+	//NOT CULLING
+	if(det > -EPSILON && det < EPSILON) {
+		delete P;
 		return 0;
-	t = (uv * wu - uu * wv) / D;
-	if (t < 0.0 || (s + t) > 1.0)  // I is outside T
-		return 0;
+	}
+	inv_det = 1.f / det;
 
-	return 1;                       // I is in T
+	//calculate distance from V0 to ray origin
+	Vector3D* T = point->copy();
+	T->sub(&p0);
+
+	//Calculate u parameter and test bound
+	u = T->dotProduct(P) * inv_det;
+	//The intersection lies outside of the triangle
+	if(u < 0.f || u > 1.f) {
+		delete T;
+		delete P;
+		return 0;
+	}
+
+	//Prepare to test v parameter
+	Vector3D* Q = T->crossProduct(&e1);
+
+	//Calculate V parameter and test bound
+	v = direction->dotProduct(Q) * inv_det;
+	//The intersection lies outside of the triangle
+	if(v < 0.f || u + v  > 1.f) {
+		delete T;
+		delete P;
+		delete Q;
+		return 0;
+	}
+
+	t = e2.dotProduct(Q) * inv_det;
+	delete T;
+	delete P;
+	delete Q;
+	if(t > EPSILON) { //ray intersection
+		*depth = t;
+		return 1;
+	}
+
+	// No hit, no win
+	return 0;
 }
 int Utils::pointInsideMesh(Vector3D* p,tetgenio* io) {
 	if (io->numberoftrifaces==0) {
 		cerr << "mesh doesn't have tri faces. Triangulate ist using tetgen first!" << endl;
 	}
 	Vector3D dir = Vector3D(1,0,0);
+	vector<float> depths;
 	int intersections = 0;
 	for (int f=0;f<io->numberoftrifaces;f++) {
 		Vector3D v1 = Vector3D(&io->pointlist[3*io->trifacelist[3*f]]);
 		Vector3D v2 = Vector3D(&io->pointlist[3*io->trifacelist[3*f+1]]);
 		Vector3D v3 = Vector3D(&io->pointlist[3*io->trifacelist[3*f+2]]);
 		Triangle tri = Triangle(&v1,&v2,&v3);
-		int found = rayIntersectsTriangle(p,&dir,&tri);
-		if (found) intersections++;
+		float z = 0;
+		int found = rayIntersectsTriangle(p,&dir,&tri,&z);
+		if (found) {
+			intersections++;
+			depths.resize(intersections,z);
+		}
 	}
-	return intersections%2;
+	sort(depths.begin(),depths.end());
+	for (size_t i=0;i<depths.size();i++) {
+		if (i>0) {
+			if (abs(depths.at(i)-depths.at(i-1))<EPSILON) {
+				intersections--;
+			}
+		}
+	}
+	cout << endl;
+	return (intersections%2);
 }
 int Utils::pointInsideTetrahedron(Vector3D* pges, Vector3D* v1, Vector3D* v2, Vector3D* v3, Vector3D* v4) {
 	v2->sub(v1);

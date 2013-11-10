@@ -39,6 +39,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_RADIOBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
 	EVT_CHECKLISTBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
 	EVT_CHECKBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
+	EVT_SPINCTRL(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropSpinChange)
 	EVT_MENU(ID_CHANGE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectChange)
 	EVT_MENU(ID_ANALYZE_POINT,GUIMainWindow::OnAnalyzePoint)
 	EVT_MENU(ID_RENDER_CUT,GUIMainWindow::OnRenderCut)
@@ -117,16 +118,16 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	toolbar->Realize();
 	SetToolBar(toolbar);
 	//Load Testobject
-	ObjectData* newobj = new ObjectData();
+	/*ObjectData* newobj = new ObjectData();
 	wxString path2 = wxT("../examples/haus.obj");
 	newobj->loadFromFile(path2);
 	wxString sdpath = wxT("../../csvtosd/temperatur.tsd");
 	newobj->addTimedData(sdpath);
-	addObject(newobj);
-	/*newobj = new ObjectData();
+	addObject(newobj);*/
+	ObjectData*newobj = new ObjectData();
 	wxString path = wxT("../examples/cylinder.obj");
 	newobj->loadFromFile(path);
-	addObject(newobj);*/
+	addObject(newobj);
 
 	SetIcon(wxIcon(wxT("icons/prgm-icon.png")));
 	Centre();
@@ -339,11 +340,13 @@ void GUIMainWindow::OnImmUpPropChange(wxCommandEvent &event) {
 		updateViewPropGUI();
 	}
 }
+
 void GUIMainWindow::OnGeneralPropChange(wxCommandEvent &event) {
 	if (!updating) {
 		propbox->uptodatetext->Show();
 	}
 }
+
 void GUIMainWindow::assignViewProps() {
 	Viewport_info* view = &gl_context->renderer.viewport;
 
@@ -352,6 +355,8 @@ void GUIMainWindow::assignViewProps() {
 	view->showfaces 		= viewbox->facescb->GetSelection();
 	view->show_extrapolated = viewbox->show_extcb->IsChecked();
 	view->show_sensordata	= viewbox->show_sdata->IsChecked();
+	view->min_visualisation_temp = viewbox->min_visval->GetValue();
+	view->max_visualisation_temp = viewbox->max_visval->GetValue();
 	for (unsigned int i=0;i<data_objects.at(current_data_object_index)->materials.size();i++) {
 		MaterialData* mat = &data_objects.at(current_data_object_index)->materials.at(i);
 		mat->visible = viewbox->matvisibility->IsChecked(i);
@@ -365,6 +370,8 @@ void GUIMainWindow::updateViewPropGUI() {
 	viewbox->pointscb->SetSelection(view->showpoints);
 	viewbox->edgescb->SetSelection(view->showedges);
 	viewbox->facescb->SetSelection(view->showfaces);
+	viewbox->min_visval->SetValue(view->min_visualisation_temp);
+	viewbox->max_visval->SetValue(view->max_visualisation_temp);
 	viewbox->matvisibility->Clear();
 	for (unsigned int i=0;i<data_objects.at(current_data_object_index)->materials.size();i++) {
 		MaterialData* mat = &data_objects.at(current_data_object_index)->materials.at(i);
@@ -379,6 +386,13 @@ void GUIMainWindow::OnViewPropChange(wxCommandEvent &event) {
 		gl_context->refreshRenderObject();
 	}
 }
+void GUIMainWindow::OnViewPropSpinChange(wxSpinEvent &event) {
+	if (!updating) {
+		assignViewProps();
+		gl_context->refreshRenderObject();
+	}
+}
+
 void GUIMainWindow::OnMenuImportObj(wxCommandEvent &event)
 {
 	wxFileDialog *OpenDialog= new wxFileDialog(this, wxT("Datei öffnen..."), _(""), _(""), _("Wavefront-Objektdateien (*.obj)|*.obj"), wxFD_OPEN|wxFD_FILE_MUST_EXIST);

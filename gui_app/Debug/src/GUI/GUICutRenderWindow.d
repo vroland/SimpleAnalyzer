@@ -15,6 +15,9 @@ src/GUI/GUICutRenderWindow.d: ../src/GUI/GUICutRenderWindow.cpp \
  /usr/include/wx-2.8/wx/wx.h /usr/include/wx-2.8/wx/glcanvas.h \
  /usr/include/wx-2.8/wx/gtk/glcanvas.h ../src/GUI/PropertiesBox.h \
  ../src/GUI/GUITimeline.h ../src/GUI/ViewpropBox.h \
+ /usr/include/wx-2.8/wx/spinctrl.h /usr/include/wx-2.8/wx/spinbutt.h \
+ /usr/include/wx-2.8/wx/gtk/spinbutt.h \
+ /usr/include/wx-2.8/wx/gtk/spinctrl.h \
  ../src/GUI/GUIAnalyzeOutputWindow.h /usr/include/wx-2.8/wx/grid.h \
  /usr/include/wx-2.8/wx/generic/grid.h ../src/GUI/GUIAnalyzePointWindow.h \
  /usr/include/wx-2.8/wx/artprov.h
@@ -66,6 +69,14 @@ src/GUI/GUICutRenderWindow.d: ../src/GUI/GUICutRenderWindow.cpp \
 ../src/GUI/GUITimeline.h:
 
 ../src/GUI/ViewpropBox.h:
+
+/usr/include/wx-2.8/wx/spinctrl.h:
+
+/usr/include/wx-2.8/wx/spinbutt.h:
+
+/usr/include/wx-2.8/wx/gtk/spinbutt.h:
+
+/usr/include/wx-2.8/wx/gtk/spinctrl.h:
 
 ../src/GUI/GUIAnalyzeOutputWindow.h:
 

@@ -30,6 +30,8 @@ Renderer::Renderer() {
 	viewport.showfaces = RM_NONE;
 	viewport.show_extrapolated = true;
 	viewport.show_sensordata = true;
+	viewport.min_visualisation_temp = 0;
+	viewport.max_visualisation_temp = 100;
 	/*Vector3D *p1 = new Vector3D(0,1,-5);
 	Vector3D *p2 = new Vector3D(0,1,5);
 	Vector3D *p3 = new Vector3D(3,3,0);
@@ -84,6 +86,7 @@ bool pointBehindCut(Vector3D* point,Triangle* cut) {
 	delete tpoint;
 	return behind;
 }
+
 void Renderer::renderTetrahedrons(MaterialData* mat,int rendermode) {
 	tetgenio* io = mat->tetgenoutput;
 	glEnable(GL_LIGHTING);
@@ -149,13 +152,7 @@ void Renderer::renderTetrahedrons(MaterialData* mat,int rendermode) {
 		} else {
 			for (int k=0;k<4;k++) {
 				float value = io->pointattributelist[io->numberofpointattributes*(io->tetrahedronlist[4*j+k])];
-				if (value>100) {
-					value = 100;
-				}
-				if (value<0) {
-					value = 0;
-				}
-				colors[k] = hsvToRgb((1.0-(float)value/100.)*.65,1,1);
+				colors[k] = hsvToRgb((1.0-clampHue((value-viewport.min_visualisation_temp)/(viewport.max_visualisation_temp-viewport.min_visualisation_temp)))*.666,1,1);
 			}
 		}
 		int vertlist[4][3] = {{0,1,2},{0,1,3},{0,2,3},{1,2,3}};
@@ -190,13 +187,7 @@ void Renderer::renderSensorData(vector<SensorPoint>* data) {
 	for (unsigned int i=0;i<data->size();i++) {
 		SensorPoint* point = &data->at(i);
 		float value = point->temperature;
-		if (value>100) {
-			value = 100;
-		}
-		if (value==-1) {
-			continue;
-		}
-		float* color = hsvToRgb((1.0-value/100.)*.65,1,1);
+		float* color = hsvToRgb((1.0-clampHue((value-viewport.min_visualisation_temp)/(viewport.max_visualisation_temp-viewport.min_visualisation_temp)))*.666,1,1);
 		glPointSize(6.0);
 		glColor3f(0,0,0);
 		glBegin(GL_POINTS);
@@ -229,14 +220,7 @@ void Renderer::renderMaterial(MaterialData* mat) {
 			}
 			if (viewport.showpoints==RM_VALUECOLOR) {
 				float value = io->pointattributelist[io->numberofpointattributes*(i)];
-				if (value>100) {
-					value = 100;
-				}
-				if (value==-1) {
-					continue;
-				}
-				float* color = hsvToRgb((1.0-(float)value/100.)*.65,1,1);
-
+				float* color = hsvToRgb((1.0-clampHue((value-viewport.min_visualisation_temp)/(viewport.max_visualisation_temp-viewport.min_visualisation_temp)))*.666,1,1);
 				glColor3fv(color);
 				glVertex3dv(&io->pointlist[3*(i)]);
 				delete[] color;
@@ -274,7 +258,6 @@ void Renderer::initGL(int width, int height) {
 	viewport.height = height;
 }
 void Renderer::resize(int width, int height) {
-	cout <<"b resize Error: "<<glGetError()<<endl;
 	glViewport(0, 0, width, height);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -284,7 +267,6 @@ void Renderer::resize(int width, int height) {
 	glLoadIdentity();
 	viewport.width = width;
 	viewport.height = height;
-	cout <<"resize Error: "<<glGetError()<<endl;
 }
 void renderGrid() {
 	glColor3f(.2,.2,.2);

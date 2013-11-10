@@ -190,8 +190,7 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 	dc.SetPen( wxPen(wxSystemSettings::GetColour(wxSYS_COLOUR_BTNTEXT),1,wxSOLID));
 	for (int i=start_index;i<=start_index+1./pixelsperstep*width/stepwidth;i++) {
 		float x = viewstart+i*stepwidth*pixelsperstep;
-		dc.DrawLine(0,0,x,height-captionheight);
-
+		dc.DrawLine(x,0,x,height-captionheight);
 		dc.DrawText(floattowxstr(i*stepwidth,maxdigits),x,height-captionheight);
 	}
 	dc.SetPen( *wxGREEN_PEN);

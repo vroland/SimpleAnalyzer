@@ -31,6 +31,7 @@ namespace Utils {
 		double distance;
 		int pointIndex;
 	};
+	float clampHue(float h);
 	struct SensorPoint {
 		double coords[3];
 		//Attribute
@@ -51,7 +52,7 @@ namespace Utils {
 	};
 	wxString floattowxstr(double val);
 	wxString floattowxstr(double val,int digits);
-	int rayIntersectsTriangle(Vector3D* p,Vector3D* direction,Triangle* tri);
+	int rayIntersectsTriangle(Vector3D* p,Vector3D* direction,Triangle* tri,float* depth);
 	int pointInsideMesh(Vector3D* p,tetgenio* io);
 	int pointInsideTetrahedron(Vector3D* pges, Vector3D* v1, Vector3D* v2, Vector3D* v3, Vector3D* v4);
 	int pointInsideTetrahedron(double* pges, double* v1, double* v2, double* v3, double* v4);
