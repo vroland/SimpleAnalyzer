@@ -37,6 +37,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_TEXT(ID_IMMEDIATE_UPDATE_PROP,GUIMainWindow::OnImmUpPropChange)
 	EVT_TEXT(ID_GENERAL_PROP,GUIMainWindow::OnGeneralPropChange)
 	EVT_RADIOBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
+	EVT_TEXT(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
 	EVT_CHECKLISTBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
 	EVT_CHECKBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
 	EVT_SPINCTRL(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropSpinChange)
@@ -52,6 +53,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_BUTTON(ID_MARKER_NEXT_BT,GUIMainWindow::OnSDTLNextMarker)
 	EVT_BUTTON(ID_MARKER_PREV_BT,GUIMainWindow::OnSDTLPrevMarker)
 	EVT_MENU(ID_EXPORT_VIEWPORT,GUIMainWindow::OnExportViewportImage)
+	EVT_BUTTON(ID_FIND_MAX_BT,GUIMainWindow::OnFindMaxTSD)
 END_EVENT_TABLE()
 
 GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height):
@@ -118,16 +120,16 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	toolbar->Realize();
 	SetToolBar(toolbar);
 	//Load Testobject
-	/*ObjectData* newobj = new ObjectData();
+	ObjectData* newobj = new ObjectData();
 	wxString path2 = wxT("../examples/haus.obj");
 	newobj->loadFromFile(path2);
 	wxString sdpath = wxT("../../csvtosd/temperatur.tsd");
 	newobj->addTimedData(sdpath);
-	addObject(newobj);*/
-	ObjectData*newobj = new ObjectData();
+	addObject(newobj);
+	/*ObjectData*newobj = new ObjectData();
 	wxString path = wxT("../examples/cylinder.obj");
 	newobj->loadFromFile(path);
-	addObject(newobj);
+	addObject(newobj);*/
 
 	SetIcon(wxIcon(wxT("icons/prgm-icon.png")));
 	Centre();
@@ -170,6 +172,7 @@ void GUIMainWindow::OnResize(wxSizeEvent &event) {
 
 	viewbox->SetSize(5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
 	viewbox->resize();
+
 }
 string floattostr(double val) {
 	ostringstream ss;
@@ -197,6 +200,12 @@ void GUIMainWindow::OnAnalyzeMarkerChange(wxCommandEvent &event) {
 	if (!updating) {
 		int val = propbox->sdtimeline->getValue();
 		propbox->sdtimeline->setMarked(val,propbox->analyzemarkercb->GetValue());
+	}
+}
+void GUIMainWindow::OnFindMaxTSD(wxCommandEvent &event) {
+	if (current_data_object_index>-1) {
+		wxMessageDialog dlg(this,wxT("Nur Messwertdurchschnitt verwenden? (schneller)"),wxT("Schnelle Methode verwenden?"),wxYES_NO|wxYES_DEFAULT);
+		propbox->sdtimeline->findMaxValue(data_objects.at(current_data_object_index),(dlg.ShowModal() == wxID_YES));
 	}
 }
 void GUIMainWindow::OnSDTLNextMarker(wxCommandEvent &event) {
@@ -318,8 +327,12 @@ void GUIMainWindow::OnAnalyze(wxCommandEvent &event) {
 	}
 }
 void GUIMainWindow::OnAnalyzePoint(wxCommandEvent &event) {
-	GUIAnalyzePointWindow* analyzewin = new GUIAnalyzePointWindow(this,wxT("Analyse an Punkt"),100,100,350,120);
-	analyzewin->Show();
+	if (current_data_object_index>-1) {
+		GUIAnalyzePointWindow* analyzewin = new GUIAnalyzePointWindow(this,wxT("Analyse an Punkt"),100,100,350,120);
+		analyzewin->Show();
+	} else {
+		wxMessageBox(wxT("Es ist kein Objekt geladen!"),wxT("Fehler"));
+	}
 }
 void GUIMainWindow::OnRenderCut(wxCommandEvent &event) {
 
@@ -348,37 +361,43 @@ void GUIMainWindow::OnGeneralPropChange(wxCommandEvent &event) {
 }
 
 void GUIMainWindow::assignViewProps() {
-	Viewport_info* view = &gl_context->renderer.viewport;
+	if (current_data_object_index>-1) {
+		Viewport_info* view = &gl_context->renderer.viewport;
 
-	view->showpoints 		= viewbox->pointscb->GetSelection();
-	view->showedges 		= viewbox->edgescb->GetSelection();
-	view->showfaces 		= viewbox->facescb->GetSelection();
-	view->show_extrapolated = viewbox->show_extcb->IsChecked();
-	view->show_sensordata	= viewbox->show_sdata->IsChecked();
-	view->min_visualisation_temp = viewbox->min_visval->GetValue();
-	view->max_visualisation_temp = viewbox->max_visval->GetValue();
-	for (unsigned int i=0;i<data_objects.at(current_data_object_index)->materials.size();i++) {
-		MaterialData* mat = &data_objects.at(current_data_object_index)->materials.at(i);
-		mat->visible = viewbox->matvisibility->IsChecked(i);
+		view->showpoints 		= viewbox->pointscb->GetSelection();
+		view->showedges 		= viewbox->edgescb->GetSelection();
+		view->showfaces 		= viewbox->facescb->GetSelection();
+		view->show_extrapolated = viewbox->show_extcb->IsChecked();
+		view->show_sensordata	= viewbox->show_sdata->IsChecked();
+		view->min_visualisation_temp = viewbox->min_visval->GetValue();
+		view->max_visualisation_temp = viewbox->max_visval->GetValue();
+		view->scale				= atof(viewbox->viewscale->GetValue().ToAscii());
+		for (unsigned int i=0;i<data_objects.at(current_data_object_index)->materials.size();i++) {
+			MaterialData* mat = &data_objects.at(current_data_object_index)->materials.at(i);
+			mat->visible = viewbox->matvisibility->IsChecked(i);
+		}
 	}
 }
 void GUIMainWindow::updateViewPropGUI() {
-	updating = true;
-	Viewport_info* view = &gl_context->renderer.viewport;
-	viewbox->show_extcb->SetValue(view->show_extrapolated);
-	viewbox->show_sdata->SetValue(view->show_sensordata);
-	viewbox->pointscb->SetSelection(view->showpoints);
-	viewbox->edgescb->SetSelection(view->showedges);
-	viewbox->facescb->SetSelection(view->showfaces);
-	viewbox->min_visval->SetValue(view->min_visualisation_temp);
-	viewbox->max_visval->SetValue(view->max_visualisation_temp);
-	viewbox->matvisibility->Clear();
-	for (unsigned int i=0;i<data_objects.at(current_data_object_index)->materials.size();i++) {
-		MaterialData* mat = &data_objects.at(current_data_object_index)->materials.at(i);
-		viewbox->matvisibility->Insert(wxString::FromAscii(mat->name.c_str()),i);
-		viewbox->matvisibility->Check(i,mat->visible);
+	if (current_data_object_index>-1) {
+		updating = true;
+		Viewport_info* view = &gl_context->renderer.viewport;
+		viewbox->show_extcb->SetValue(view->show_extrapolated);
+		viewbox->show_sdata->SetValue(view->show_sensordata);
+		viewbox->pointscb->SetSelection(view->showpoints);
+		viewbox->edgescb->SetSelection(view->showedges);
+		viewbox->facescb->SetSelection(view->showfaces);
+		viewbox->min_visval->SetValue(view->min_visualisation_temp);
+		viewbox->max_visval->SetValue(view->max_visualisation_temp);
+		viewbox->viewscale->SetValue(floattowxstr(view->scale));
+		viewbox->matvisibility->Clear();
+		for (unsigned int i=0;i<data_objects.at(current_data_object_index)->materials.size();i++) {
+			MaterialData* mat = &data_objects.at(current_data_object_index)->materials.at(i);
+			viewbox->matvisibility->Insert(wxString::FromAscii(mat->name.c_str()),i);
+			viewbox->matvisibility->Check(i,mat->visible);
+		}
+		updating = false;
 	}
-	updating = false;
 }
 void GUIMainWindow::OnViewPropChange(wxCommandEvent &event) {
 	if (!updating) {
@@ -462,7 +481,7 @@ void GUIMainWindow::OnExportViewportImage(wxCommandEvent &event) {
 		gl_context->SetCurrent();
 		wxImage* img = gl_context->renderer.getViewportImage();
 		img->SaveFile(SaveDialog->GetPath());
-		delete img;
+		img->Destroy();
 	}
 	SaveDialog->Close();
 	SaveDialog->Destroy();

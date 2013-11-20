@@ -11,6 +11,7 @@
 #include <wx-2.8/wx/wx.h>
 #include <string>
 #include <vector>
+#include "../processing/ObjectData.h"
 
 using namespace std;
 
@@ -29,6 +30,7 @@ public:
 			   const wxSize& size = wxDefaultSize,
 			   long style = GTL_DEFAULT,
 			   const wxString& name = wxT("Timeline"));
+	void findMaxValue(ObjectData* obj,bool fast);
 	int getValue();
 	int getMaxValue();
 	int getMinValue();

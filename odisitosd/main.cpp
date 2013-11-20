@@ -131,7 +131,6 @@ int parseLine(string line,vector<float>* out,vector<float>* times,vector<int>* d
 	}
 	return 0;
 }
-
 int main(int argc, char *argv[]) {
 
 	opts.startrow = 4;
@@ -140,22 +139,64 @@ int main(int argc, char *argv[]) {
 	opts.timecol = 0;
 	opts.error_threshold = 5;
 	opts.maxfwcount = 10;
-	opts.tab_space_count = 7;
+	opts.tab_space_count = 8-1;
 	opts.height = .065;
 	opts.basetemp = 20;
 	opts.objwidth = .5;
 	opts.flipobj  = true;
-	opts.leave_out = 5;
+	opts.leave_out = 1;
 
 	bool names_read = false;
+	ifstream cfgfile;			//Sensor definitions
+	cfgfile.open("odisitosd.cfg");
+	if (!cfgfile.is_open()) {
+		cout << "configuration file odisitosd.cfg not found!"<<endl;
+		return 1;
+	}
+	string line;
+	string def_filename;
+	string data_filename;
+	string err_filename;
+	string out_filename;
+	getline(cfgfile,line);
+	def_filename = getTextBlock(line,0).c_str();
+	getline(cfgfile,line);
+	data_filename = getTextBlock(line,0).c_str();
+	getline(cfgfile,line);
+	err_filename = getTextBlock(line,0).c_str();
+	getline(cfgfile,line);
+	out_filename = getTextBlock(line,0).c_str();
+	getline(cfgfile,line);
+	opts.startrow = atoi(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.replace_comma_with_point = atoi(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.timecol = atoi(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.error_threshold = atof(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.maxfwcount = atoi(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.tab_space_count = atoi(getTextBlock(line,0).c_str())-1;
+	getline(cfgfile,line);
+	opts.height = atof(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.basetemp = atof(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.flipobj = atoi(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.objwidth = atof(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.leave_out = atoi(getTextBlock(line,0).c_str());
+
+	cfgfile.close();
 
 	ifstream deffile;			//Sensor definitions
-	deffile.open("odisi.sdef");
+	deffile.open(def_filename.c_str());
 	if (!deffile.is_open()) {
 		cout << "file not found!"<<endl;
 		return 1;
 	}
-	string line;
 	vector<float> inlist;
 	vector<float> outlist;
 	vector<float> in_x;
@@ -188,7 +229,7 @@ int main(int argc, char *argv[]) {
 	}
 	deffile.close();
 	ifstream file;					// data file
-	file.open("FS02012LUNA000231.txt");
+	file.open(data_filename.c_str());
 	if (!file.is_open()) {
 		cout << "file not found!"<<endl;
 		return 1;
@@ -218,8 +259,8 @@ int main(int argc, char *argv[]) {
 	}
 	ofstream errfile;					// error output
 	ofstream outfile;					// output
-	outfile.open("temperatur_odisi.tsd");
-	errfile.open("temperatur_odisi_err.log");
+	outfile.open(out_filename.c_str());
+	errfile.open(err_filename.c_str());
 	int insidecount = 0;
 	int outsidecount = 0;
 	double insideval = 0;

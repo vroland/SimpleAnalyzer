@@ -32,12 +32,12 @@ Renderer::Renderer() {
 	viewport.show_sensordata = true;
 	viewport.min_visualisation_temp = 0;
 	viewport.max_visualisation_temp = 100;
+	viewport.scale = 1;
 	/*Vector3D *p1 = new Vector3D(0,1,-5);
 	Vector3D *p2 = new Vector3D(0,1,5);
 	Vector3D *p3 = new Vector3D(3,3,0);
 	viewport.cut = new Triangle(p1,p2,p3);*/
 	cut_visualisation_info = NULL;
-	cout << "init renderer!" << endl;
 }
 bool pointBehindCut(Vector3D* point,Triangle* cut) {
 	/*for (unsigned int i=0;i<cut->size();i++) {
@@ -425,14 +425,12 @@ wxImage* Renderer::getViewportImage() {
 	return img;
 }
 void Renderer::render() {
-
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();
 	glTranslatef(0,0,-viewport.zoom*viewport.zoom);
-	//glScalef(4,4,4);
 	glRotatef(viewport.rotationY,1.0,0.0,0.0);
 	glRotatef(viewport.rotationX,0.0,1.0,0.0);
-	glTranslatef(viewport.cameraPosition->getX(),viewport.cameraPosition->getY(),viewport.cameraPosition->getZ());
+
 	glDisable(GL_LIGHTING);
 	renderGrid();
 	glEnable(GL_DEPTH_TEST);
@@ -441,12 +439,14 @@ void Renderer::render() {
 	glEnable(GL_COLOR_MATERIAL);
 	GLfloat DiffuseLight[] = {1.0,1.0,1.0,1.0};
 	GLfloat AmbientLight[] = {.1, .1, .1};
-	GLfloat LightPosition[] = {10, 40, 10, 0};
+	GLfloat LightPosition[] = {-1, 1, 1, 0};
 	glLightfv (GL_LIGHT0, GL_POSITION, LightPosition);
 	glLightfv (GL_LIGHT0, GL_DIFFUSE, DiffuseLight);
 	glLightfv (GL_LIGHT0, GL_AMBIENT, AmbientLight);
 	glPolygonMode(GL_FRONT, GL_LINE);
 	glPolygonMode(GL_BACK, GL_LINE);
+	glTranslatef(viewport.cameraPosition->getX(),viewport.cameraPosition->getY(),viewport.cameraPosition->getZ());
+	glScalef(viewport.scale,viewport.scale,viewport.scale);
 	if (displayList>-1) {
 		glCallList(displayList);
 	}

@@ -44,7 +44,8 @@ PropertiesBox::PropertiesBox(wxWindow *parent):
 	cspectext	  = new wxStaticText(parent,wxID_ANY,wxT("Spez. Wärmekapazität in kJ/(kg*K):"));
 	sdtimeline 	  = new GUITimeline(parent,ID_SD_TIMELINE,wxT("Zeitleiste"));
 	analyzemarkercb = new wxCheckBox(parent,ID_ANALYZE_MARKER_CB,wxT("Analysieren"));
-	clranalyzemarkerbt = new wxButton(parent,ID_CLEAR_MARKER_BT,wxT("alles löschen"));
+	findmaxbt	  = new wxButton(parent,ID_FIND_MAX_BT,wxT("Max"));
+	clranalyzemarkerbt = new wxButton(parent,ID_CLEAR_MARKER_BT,wxT("Clear"));
 	nextmarkerbt  = new wxButton(parent,ID_MARKER_NEXT_BT,wxT("►"));
 	prevmarkerbt  = new wxButton(parent,ID_MARKER_PREV_BT,wxT("◄"));
 	current_material = 0;
@@ -63,33 +64,37 @@ void PropertiesBox::resize() {
 	qualityedit->SetSize(x+10,y+160,150,20,0);
 	sensordatatext->SetSize(x+10,y+180,300,20,0);
 	sensordatalist->SetSize(x+10,y+200,150,20,0);
-	ObjectData* object = data_objects.at(current_data_object_index);
-	SensorData* sd = &object->sensordatalist.at(sensordatalist->GetSelection());
+	sdtimeline->Hide();
+	analyzemarkercb->Hide();
+	clranalyzemarkerbt->Hide();
+	nextmarkerbt->Hide();
+	prevmarkerbt->Hide();
+	findmaxbt->Hide();
 	int sdheight = 0;
-	if (sd->timed) {
-		sdtimeline->setMarkerList(&sd->markers);
-		sdtimeline->SetSize(x+20,y+230,260,80,0);
-		sdtimeline->setValue(sd->current_time_index);
-		sdtimeline->setMinValue(0);
-		sdtimeline->setMaxValue(sd->timestamps.size()-1);
-		sdtimeline->setNameList(&sd->subnames);
-		sdtimeline->Show();
-		sdheight = 120;
+	if (current_data_object_index>-1) {
+		ObjectData* object = data_objects.at(current_data_object_index);
+		SensorData* sd = &object->sensordatalist.at(sensordatalist->GetSelection());
+		if (sd->timed) {
+			sdtimeline->setMarkerList(&sd->markers);
+			sdtimeline->SetSize(x+20,y+230,260,80,0);
+			sdtimeline->setValue(sd->current_time_index);
+			sdtimeline->setMinValue(0);
+			sdtimeline->setMaxValue(sd->timestamps.size()-1);
+			sdtimeline->setNameList(&sd->subnames);
+			sdtimeline->Show();
+			sdheight = 120;
 
-		analyzemarkercb->Show();
-		clranalyzemarkerbt->Show();
-		nextmarkerbt->Show();
-		prevmarkerbt->Show();
-		prevmarkerbt->SetSize(x+20,y+310,25,25,0);
-		nextmarkerbt->SetSize(x+45,y+310,25,25,0);
-		analyzemarkercb->SetSize(x+70,y+310,110,25,0);
-		clranalyzemarkerbt->SetSize(x+180,y+310,100,25,0);
-	} else {
-		sdtimeline->Hide();
-		analyzemarkercb->Hide();
-		clranalyzemarkerbt->Hide();
-		nextmarkerbt->Hide();
-		prevmarkerbt->Hide();
+			analyzemarkercb->Show();
+			clranalyzemarkerbt->Show();
+			nextmarkerbt->Show();
+			prevmarkerbt->Show();
+			findmaxbt->Show();
+			prevmarkerbt->SetSize(x+20,y+310,25,25,0);
+			nextmarkerbt->SetSize(x+45,y+310,25,25,0);
+			findmaxbt->SetSize(x+70,y+310,40,25,0);
+			analyzemarkercb->SetSize(x+110,y+310,110,25,0);
+			clranalyzemarkerbt->SetSize(x+220,y+310,60,25,0);
+		}
 	}
 	matlistboxtext->SetSize(x+10,y+220+sdheight,300,110,0);
 	matlistbox->SetSize(x+10,y+240+sdheight,270,60,0);

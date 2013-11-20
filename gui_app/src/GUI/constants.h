@@ -40,6 +40,7 @@ enum {
 	ID_MARKER_PREV_BT,
 	ID_EXPORT_CUT_BT,
 	ID_EXPORT_VIEWPORT,
+	ID_FIND_MAX_BT,
 };
 // IDs > wxID_HIGHEST for temporary uses
 

@@ -15,21 +15,24 @@ Analyzer::Analyzer() {
 
 }
 SensorPointComparator spcomparator;
-void Analyzer::analyzeObject(ObjectData* obj,AnalyzerData_object* out) {
+void Analyzer::analyzeObject(ObjectData* obj,AnalyzerData_object* out,bool use_markers,int sdindex) {
 	out->volume = 0;
 	int original_sd_index = obj->current_sensor_index;
 	bool sd_time_changed = false;
 	MeshProcessor processor;
-	for (unsigned int s=0;s<obj->sensordatalist.size();s++) {
+	for (unsigned int s=(sdindex>-1)?sdindex:0;s<((sdindex>-1)?sdindex+1:obj->sensordatalist.size());s++) {
 		obj->current_sensor_index = s;
 		SensorData* sd = &obj->sensordatalist.at(s);
 		int subsets = sd->timed?sd->markers.size():1;
+		subsets = (sd->timed && !use_markers)?1:subsets;
 		int prev_set_count = out->data_sets.size();
 		out->data_sets.resize(prev_set_count+subsets);
 		int original_time_index = sd->current_time_index;
 		for (int ts=0;ts<subsets;ts++) {
+			cout << "subset "<<ts<<endl;
 			out->volume = 0;
 			sd->current_time_index = sd->timed?sd->markers.at(ts):0;
+			sd->current_time_index = (sd->timed && !use_markers)?0:sd->current_time_index;
 			processor.process(obj);
 			AnalyzerData_dataset* data_set = &out->data_sets.at(prev_set_count+ts);
 			data_set->name = sd->timed?sd->subnames.at(sd->current_time_index):sd->name;
@@ -68,7 +71,7 @@ void Analyzer::analyzeObject(ObjectData* obj,AnalyzerData_object* out) {
 				data_set->heat_energy += matenergy;
 			}
 		}
-		sd_time_changed = (sd->current_time_index != original_time_index);
+		sd_time_changed |= (sd->current_time_index != original_time_index);
 		sd->current_time_index = original_time_index;
 	}
 	if (obj->current_sensor_index!=original_sd_index || sd_time_changed) {

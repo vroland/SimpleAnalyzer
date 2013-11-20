@@ -38,6 +38,7 @@ public:
 	wxStaticText* cspectext;
 	GUITimeline* sdtimeline;
 	wxCheckBox* analyzemarkercb;
+	wxButton* findmaxbt;
 	wxButton* clranalyzemarkerbt;
 	wxButton* nextmarkerbt;
 	wxButton* prevmarkerbt;

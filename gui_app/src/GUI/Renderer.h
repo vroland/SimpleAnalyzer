@@ -35,6 +35,7 @@ struct Viewport_info {
 	int height;
 	int max_visualisation_temp;
 	int min_visualisation_temp;
+	float scale;
 };
 struct CutRender_info {
 	Triangle* tri;

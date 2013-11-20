@@ -25,6 +25,8 @@ public:
 	wxStaticText* visdelta_lbl;
 	wxSpinCtrl* min_visval;
 	wxSpinCtrl* max_visval;
+	wxStaticText* viewscale_lbl;
+	wxTextCtrl* viewscale;
 };
 
 #endif /* VIEWPROPBOX_H_ */

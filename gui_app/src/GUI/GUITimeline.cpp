@@ -10,6 +10,7 @@
 #include "../processing/utils.h"
 #include <cmath>
 #include <algorithm>
+#include "../processing/Analyzer.h"
 using namespace std;
 using namespace Utils;
 
@@ -84,6 +85,57 @@ void GUITimeline::OnKeyDown(wxKeyEvent &event) {
 		sendTimelineEvent();
 	}
 	Refresh(false,NULL);
+}
+void GUITimeline::findMaxValue(ObjectData* obj,bool fast) {
+	int val = getValue();
+	int marker1 = getMinValue()-1;
+	int marker2 = getMaxValue()+1;
+	for (size_t i=0;i<markers->size();i++) {
+		int marker = markers->at(i);
+		if (val==marker) {
+			wxMessageBox(wxT("Der Cursor muss sich zwischen zwei Markierungen befinden!"),wxT("Fehler"));
+			return;
+		}
+		if (marker<val && marker>marker1) {
+			marker1 = marker;
+		}
+		if (marker>val && marker<marker2) {
+			marker2 = marker;
+		}
+	}
+	if (marker1 == getMinValue()-1 || marker2 == getMaxValue()+1) {
+		wxMessageBox(wxT("Der Cursor muss sich zwischen zwei Markierungen befinden!"),wxT("Fehler"));
+		return;
+	}
+	float max_energy = -1;
+	float max_index = marker1;
+	if (fast) {
+		for (int i=0;i<(marker2-marker1)+1;i++) {
+			float val = 0;
+			SensorData* sd = &obj->sensordatalist.at(obj->current_sensor_index);
+			for (int k=0;k<int(sd->data.at(i).size());k++) {
+				val+=sd->data.at(i).at(k).temperature;
+				cout << sd->data.at(i).at(k).temperature << endl;
+			}
+			if (val>max_energy) {
+				max_energy = val;
+				max_index = marker1+i;
+			}
+		}
+	} else {
+		AnalyzerData_object data;
+		Analyzer analyzer;
+		for (int i=0;i<(marker2-marker1)+1;i++) {
+			obj->sensordatalist.at(obj->current_sensor_index).current_time_index = marker1+i;
+			analyzer.analyzeObject(obj,&data,false,obj->current_sensor_index);
+			cout << data.data_sets.size() << endl;
+			if (data.data_sets.at(0).heat_energy>max_energy) {
+				max_energy = data.data_sets.at(0).heat_energy;
+				max_index = marker1+i;
+			}
+		}
+	}
+	setValue(max_index);
 }
 int GUITimeline::calcStepWidth() {
 	int to_ten = int(exp10(int(log10(maxvalue*zoom))));
@@ -193,8 +245,7 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 		dc.DrawLine(x,0,x,height-captionheight);
 		dc.DrawText(floattowxstr(i*stepwidth,maxdigits),x,height-captionheight);
 	}
-	dc.SetPen( *wxGREEN_PEN);
-	dc.DrawLine(viewstart+(float)value*pixelsperstep,0,viewstart+(float)value*pixelsperstep,height-captionheight);
+
 	// Markers
 	if (markers!=NULL) {
 		dc.SetPen( wxColour (255,100,0,255));
@@ -204,6 +255,8 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 	} else {
 		cerr << "marker list should not be NULL!" << endl;
 	}
+	dc.SetPen( *wxGREEN_PEN);
+	dc.DrawLine(viewstart+(float)value*pixelsperstep,0,viewstart+(float)value*pixelsperstep,height-captionheight);
 	dc.SetTextForeground(*wxGREEN);
 	if (names==NULL) {
 		dc.DrawText(floattowxstr(value),viewstart+(float)value*pixelsperstep,10);

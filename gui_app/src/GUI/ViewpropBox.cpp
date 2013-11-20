@@ -24,6 +24,8 @@ wxStaticBox(parent, wxID_ANY, wxT("Anzeigeeigenschaften")) {
 	visdelta_lbl  = new wxStaticText(parent,wxID_ANY,wxT("Farbbereich (Blau-Rot) in °C:"));
 	min_visval	  = new wxSpinCtrl(parent,ID_GENERAL_VIEW_PROP);
 	max_visval	  = new wxSpinCtrl(parent,ID_GENERAL_VIEW_PROP);
+	viewscale_lbl = new wxStaticText(parent,ID_GENERAL_VIEW_PROP,wxT("Objektskallierung:"));
+	viewscale     = new wxTextCtrl(parent,ID_GENERAL_VIEW_PROP,wxT(""));
 	min_visval->SetRange(-274,10000000);
 	max_visval->SetRange(-274,10000000);
 }
@@ -41,6 +43,8 @@ void ViewpropBox::resize() {
 	visdelta_lbl->SetSize(x+10,y+300,200,20,0);
 	min_visval->SetSize(x+20,y+320,100,20,0);
 	max_visval->SetSize(x+120,y+320,100,20,0);
+	viewscale_lbl->SetSize(x+10,y+340,200,20,0);
+	viewscale->SetSize(x+20,y+360,100,20,0);
 }
 ViewpropBox::~ViewpropBox() {
 

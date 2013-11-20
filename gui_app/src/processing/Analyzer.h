@@ -39,7 +39,7 @@ std::ostream &operator<< (std::ostream &out, const AnalyzerData_object &data);
 class Analyzer {
 public:
 	Analyzer();
-	void analyzeObject(ObjectData* obj,AnalyzerData_object* out);
+	void analyzeObject(ObjectData* obj,AnalyzerData_object* out,bool use_markers = true,int sdindex = -1);
 	void analyzePoint(ObjectData* obj,Vector3D* point,AnalyzerData_point* point_data,Interpolator* interpolator);
 	virtual ~Analyzer();
 };

@@ -21,11 +21,9 @@ IMPLEMENT_APP(Application)
 
 bool Application::OnInit()
 {
-
 	GUIMainWindow *frame = new GUIMainWindow(wxT("Simple Analyzer"), 100, 100, 1200, 700);
 	frame->Show(TRUE);
 	SetTopWindow(frame);
-
 	return true;
 }
 
