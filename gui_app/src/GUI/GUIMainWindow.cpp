@@ -54,6 +54,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_BUTTON(ID_MARKER_PREV_BT,GUIMainWindow::OnSDTLPrevMarker)
 	EVT_MENU(ID_EXPORT_VIEWPORT,GUIMainWindow::OnExportViewportImage)
 	EVT_BUTTON(ID_FIND_MAX_BT,GUIMainWindow::OnFindMaxTSD)
+	EVT_CHECKBOX(ID_AUTO_UPDATE_CB,GUIMainWindow::OnAutoUpdateChange)
 END_EVENT_TABLE()
 
 GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height):
@@ -168,7 +169,7 @@ void GUIMainWindow::OnResize(wxSizeEvent &event) {
 	propbox->SetSize(propbox->GetPosition().x,propbox->GetPosition().y,PROPBOXWIDTH-10,0,0);
 	propbox->resize();
 	prop_scroll_win->SetSize(GetSize().x-PROPBOXWIDTH+5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
-	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,propbox->GetSize().y+50);
+	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,propbox->GetSize().y+30);
 
 	viewbox->SetSize(5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
 	viewbox->resize();
@@ -204,8 +205,16 @@ void GUIMainWindow::OnAnalyzeMarkerChange(wxCommandEvent &event) {
 }
 void GUIMainWindow::OnFindMaxTSD(wxCommandEvent &event) {
 	if (current_data_object_index>-1) {
-		wxMessageDialog dlg(this,wxT("Nur Messwertdurchschnitt verwenden? (schneller)"),wxT("Schnelle Methode verwenden?"),wxYES_NO|wxYES_DEFAULT);
-		propbox->sdtimeline->findMaxValue(data_objects.at(current_data_object_index),(dlg.ShowModal() == wxID_YES));
+		ObjectData* obj = data_objects.at(current_data_object_index);
+		if (obj->current_sensor_index!=propbox->sensordatalist->GetSelection()) {
+			wxMessageBox(wxT("Das Objekt wurde noch nicht neu berechnet!\nBitte berechnen sie das Objekt neu, um die Maximumssuche fortzusetzen!"),wxT("Fehler"));
+			return;
+		}
+		wxMessageDialog dlg(this,wxT("Nur Messwertdurchschnitt verwenden? (schneller)"),wxT("Schnelle Methode verwenden?"),wxYES_NO|wxYES_DEFAULT| wxCANCEL);
+		int res = dlg.ShowModal();
+		if (res!=wxID_CANCEL) {
+			propbox->sdtimeline->findMaxValue(obj,(res == wxID_YES));
+		}
 	}
 }
 void GUIMainWindow::OnSDTLNextMarker(wxCommandEvent &event) {
@@ -239,6 +248,11 @@ void GUIMainWindow::OnSDTLPrevMarker(wxCommandEvent &event) {
 				propbox->sdtimeline->setValue(markers->at(i));
 			}
 		}
+	}
+}
+void GUIMainWindow::OnAutoUpdateChange(wxCommandEvent &event) {
+	if (propbox->autoupdatecb->IsChecked()) {
+		OnRecalcBtClick(event);
 	}
 }
 void GUIMainWindow::assignCurrentObjectProps() {	//GUI -> object
@@ -357,6 +371,9 @@ void GUIMainWindow::OnImmUpPropChange(wxCommandEvent &event) {
 void GUIMainWindow::OnGeneralPropChange(wxCommandEvent &event) {
 	if (!updating) {
 		propbox->uptodatetext->Show();
+		if (propbox->autoupdatecb->IsChecked()) {
+			OnRecalcBtClick(event);
+		}
 	}
 }
 

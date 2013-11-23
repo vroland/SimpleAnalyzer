@@ -41,6 +41,7 @@ enum {
 	ID_EXPORT_CUT_BT,
 	ID_EXPORT_VIEWPORT,
 	ID_FIND_MAX_BT,
+	ID_AUTO_UPDATE_CB,
 };
 // IDs > wxID_HIGHEST for temporary uses
 

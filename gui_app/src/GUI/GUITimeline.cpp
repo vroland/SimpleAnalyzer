@@ -128,7 +128,6 @@ void GUITimeline::findMaxValue(ObjectData* obj,bool fast) {
 		for (int i=0;i<(marker2-marker1)+1;i++) {
 			obj->sensordatalist.at(obj->current_sensor_index).current_time_index = marker1+i;
 			analyzer.analyzeObject(obj,&data,false,obj->current_sensor_index);
-			cout << data.data_sets.size() << endl;
 			if (data.data_sets.at(0).heat_energy>max_energy) {
 				max_energy = data.data_sets.at(0).heat_energy;
 				max_index = marker1+i;

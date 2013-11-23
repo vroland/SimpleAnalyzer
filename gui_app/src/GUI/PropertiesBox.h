@@ -42,6 +42,7 @@ public:
 	wxButton* clranalyzemarkerbt;
 	wxButton* nextmarkerbt;
 	wxButton* prevmarkerbt;
+	wxCheckBox* autoupdatecb;
 	int current_material;
 };
 

@@ -48,6 +48,7 @@ public:
 	void setActiveObject(int index);
 	void OnExportViewportImage(wxCommandEvent &event);
 	void OnFindMaxTSD(wxCommandEvent &event);
+	void OnAutoUpdateChange(wxCommandEvent &event);
 	GUIGLCanvas* getGLCanvas();
 	virtual ~GUIMainWindow();
 	bool analyze_window_valid;
