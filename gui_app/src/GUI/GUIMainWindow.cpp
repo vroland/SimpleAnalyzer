@@ -352,7 +352,7 @@ void GUIMainWindow::OnRenderCut(wxCommandEvent &event) {
 
 	if (current_data_object_index>-1) {
 		if (!render_cut_window_valid) {
-			rendercutwindow = new GUICutRenderWindow(this,wxT("Schnitt brechnen"), 100, 100, 600, 500);
+			rendercutwindow = new GUICutRenderWindow(this,wxT("Schnitt brechnen"), 100, 100, 700, 500);
 			rendercutwindow->Show(true);
 			render_cut_window_valid = true;
 			gl_context->Refresh(false,NULL);

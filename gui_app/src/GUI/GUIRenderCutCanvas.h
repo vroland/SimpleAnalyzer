@@ -13,11 +13,24 @@ public:
 	GUIRenderCutCanvas(wxWindow* parent);
 	void onCanvasPaint(wxPaintEvent &event);
 	void renderImage(wxImage& image);
-	bool recalculate_img;
-	bool draw_grid;
-	wxImage* image;
+	void OnMouseWheel(wxMouseEvent &event);
+	void OnMouseMove(wxMouseEvent &event);
+	void OnResize(wxSizeEvent &event);
+	void OnMouseDown(wxMouseEvent &event);
+	void OnKeyDown(wxKeyEvent &event);
+	void setImage(wxImage* img);
+	void setValueImg(float* img);
 	virtual ~GUIRenderCutCanvas();
 protected:
+	float zoom;
+	float deltaX;
+	float deltaY;
+	int original_x;
+	int original_y;
+	int current_mx;
+	int current_my;
+	wxImage* image;
+	float* value_img;
 	DECLARE_EVENT_TABLE()
 };
 

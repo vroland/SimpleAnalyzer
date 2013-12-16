@@ -10,6 +10,7 @@
 #include <wx-2.8/wx/wx.h>
 #include "GUIRenderCutCanvas.h"
 #include "../libraries/interpolate/GeometryClasses.h"
+#include <wx/spinctrl.h>
 #include "Renderer.h"
 class GUICutRenderWindow: public wxFrame {
 public:
@@ -19,9 +20,13 @@ public:
 	void OnCutPropsChanged(wxCommandEvent &event);
 	void refreshVisualisation();
 	void exportImage(wxCommandEvent &event);
+	void renderImage(wxImage* image);
+	void OnSCutPropsChanged_spin(wxSpinEvent &event);
 	CutRender_info* getCutRenderProperties();
 	virtual ~GUICutRenderWindow();
-
+protected:
+	DECLARE_EVENT_TABLE();
+private:
 	wxTextCtrl* p1xedit;
 	wxTextCtrl* p1yedit;
 	wxTextCtrl* p1zedit;
@@ -31,17 +36,20 @@ public:
 	wxTextCtrl* p3xedit;
 	wxTextCtrl* p3yedit;
 	wxTextCtrl* p3zedit;
+	wxSpinCtrl* imgWidthEdit;
+	wxSpinCtrl* imgHeightEdit;
 	wxTextCtrl* mmperpixeledit;
-protected:
-	DECLARE_EVENT_TABLE();
-private:
 	wxStaticText* p1label;
 	wxStaticText* p2label;
 	wxStaticText* p3label;
 	wxStaticText* mmperpixellabel;
 	wxStaticText* trilabel;
+	wxStaticText* optionslbl;
+	wxStaticText* whlbl;
 	wxButton* calcbt;
 	wxButton* exportbt;
 	GUIRenderCutCanvas* canvas;
+	wxImage* image;
+	float *value_img;
 };
 #endif /* GUICUTRENDERWINDOW_H_ */

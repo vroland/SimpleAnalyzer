@@ -430,9 +430,10 @@ void Renderer::render() {
 	glTranslatef(0,0,-viewport.zoom*viewport.zoom);
 	glRotatef(viewport.rotationY,1.0,0.0,0.0);
 	glRotatef(viewport.rotationX,0.0,1.0,0.0);
-
+	glTranslatef(viewport.cameraPosition->getX(),viewport.cameraPosition->getY(),viewport.cameraPosition->getZ());
 	glDisable(GL_LIGHTING);
 	renderGrid();
+	glScalef(viewport.scale,viewport.scale,viewport.scale);
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
@@ -445,8 +446,7 @@ void Renderer::render() {
 	glLightfv (GL_LIGHT0, GL_AMBIENT, AmbientLight);
 	glPolygonMode(GL_FRONT, GL_LINE);
 	glPolygonMode(GL_BACK, GL_LINE);
-	glTranslatef(viewport.cameraPosition->getX(),viewport.cameraPosition->getY(),viewport.cameraPosition->getZ());
-	glScalef(viewport.scale,viewport.scale,viewport.scale);
+
 	if (displayList>-1) {
 		glCallList(displayList);
 	}

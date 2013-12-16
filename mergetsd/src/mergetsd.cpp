@@ -84,7 +84,7 @@ int parseFile(string filename,vector<int> &timestamps,vector<string> &names,vect
 	ifstream file;					// data file
 	file.open(filename.c_str());
 	if (!file.is_open()) {
-		cout << "file not found!"<<endl;
+		cout << "file \""<<filename<<"\" not found!"<<endl;
 		return 1;
 	}
 	string line;
