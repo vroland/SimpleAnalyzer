@@ -20,13 +20,14 @@ public:
 	void OnCutPropsChanged(wxCommandEvent &event);
 	void refreshVisualisation();
 	void exportImage(wxCommandEvent &event);
-	void renderImage(wxImage* image);
 	void OnSCutPropsChanged_spin(wxSpinEvent &event);
 	CutRender_info* getCutRenderProperties();
 	virtual ~GUICutRenderWindow();
 protected:
 	DECLARE_EVENT_TABLE();
 private:
+	//void render_thread(wxImage* image,float* value_img,int width,int height,int startheight,int delta_h,CutRender_info* info,Viewport_info* vis_info,Vector3D* xvec,Vector3D* yvec,Vector3D* v0,vector<tetgenio*>* bases,ObjectData* obj);
+	void renderImage(wxImage* image);
 	wxTextCtrl* p1xedit;
 	wxTextCtrl* p1yedit;
 	wxTextCtrl* p1zedit;
@@ -38,6 +39,7 @@ private:
 	wxTextCtrl* p3zedit;
 	wxSpinCtrl* imgWidthEdit;
 	wxSpinCtrl* imgHeightEdit;
+	wxSpinCtrl* threadcountedit;
 	wxTextCtrl* mmperpixeledit;
 	wxStaticText* p1label;
 	wxStaticText* p2label;
@@ -46,10 +48,12 @@ private:
 	wxStaticText* trilabel;
 	wxStaticText* optionslbl;
 	wxStaticText* whlbl;
+	wxStaticText* threadcountlbl;
 	wxButton* calcbt;
 	wxButton* exportbt;
 	GUIRenderCutCanvas* canvas;
 	wxImage* image;
 	float *value_img;
+	int core_count;
 };
 #endif /* GUICUTRENDERWINDOW_H_ */

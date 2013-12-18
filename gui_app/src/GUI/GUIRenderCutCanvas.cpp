@@ -45,7 +45,6 @@ void GUIRenderCutCanvas::OnMouseWheel(wxMouseEvent &event) {
 	if (zoom-event.m_wheelRotation/1000.>0) {
 		zoom+=-event.m_wheelRotation/1000.;
 	}
-	cout << zoom << endl;
 	Refresh();
 }
 void GUIRenderCutCanvas::OnMouseMove(wxMouseEvent &event) {

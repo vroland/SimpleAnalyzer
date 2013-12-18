@@ -12,6 +12,8 @@
 #include "../processing/utils.h"
 #include "../libraries/interpolate/Interpolator.h"
 #include "GUIMainWindow.h"
+#include <thread>
+#include <sys/time.h>
 BEGIN_EVENT_TABLE(GUICutRenderWindow, wxFrame)
 	EVT_BUTTON(ID_RENDER_CUT_BT, GUICutRenderWindow::renderCutBtClick)
 	EVT_BUTTON(ID_EXPORT_CUT_BT, GUICutRenderWindow::exportImage)
@@ -22,6 +24,8 @@ END_EVENT_TABLE()
 
 extern std::vector<ObjectData*> data_objects;
 extern int current_data_object_index;
+
+static struct timeval tm1;
 
 GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent,const wxChar *title, int xpos, int ypos, int width, int height):
 	wxFrame(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height), wxDEFAULT_FRAME_STYLE | wxFRAME_FLOAT_ON_PARENT) {
@@ -51,6 +55,11 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent,const wxChar *title, in
 	imgHeightEdit->SetValue(600);
 	mmperpixellabel = new wxStaticText(this,wxID_ANY,wxT("Maßstab (mm/px):"));
 	mmperpixeledit  = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("15.0"));
+	threadcountlbl = new wxStaticText(this,wxID_ANY,wxT("CPU-Threads:"));
+	core_count = thread::hardware_concurrency();
+	threadcountedit = new wxSpinCtrl(this,wxID_ANY);
+	threadcountedit->SetRange(1,1000);
+	threadcountedit->SetValue(core_count);
 
 	calcbt= new wxButton(this,ID_RENDER_CUT_BT,wxT("Analysieren"));
 	exportbt= new wxButton(this,ID_EXPORT_CUT_BT,wxT("Export (.png)..."));
@@ -62,10 +71,50 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent,const wxChar *title, in
 	canvas->setValueImg(value_img);
 	Update();
 }
+void render_thread(bool* status_flag,float* value_img,wxImage* image,int width,int height,int startheight,int delta_h,CutRender_info* info,Viewport_info* vis_info,Vector3D* xvec,Vector3D* yvec,Vector3D* v0,vector<tetgenio*>* bases,ObjectData* obj,vector<SensorPoint>* sensor_data) {
+	Interpolator interpolator;
+	for (int x=0;x<width;x++) {
+		for (int y=startheight;y<startheight+delta_h;y++) {
+			Vector3D* p = v0->copy();
+			Vector3D* part_x = xvec->copy();
+			part_x->mult(x*info->mmperpixel/1000.-width*info->mmperpixel/2000);
+			Vector3D* part_y = yvec->copy();
+			part_y->mult(y*info->mmperpixel/1000.-height*info->mmperpixel/2000);
+			p->add(part_x);
+			p->add(part_y);
+			delete part_x;
+			delete part_y;
+			image->SetAlpha(x,y,0);
+			image->SetRGB(x,y,0,0,0);
+			value_img[y*width+x] = 0;
+			for (unsigned int m=0;m<obj->materials.size();m++) {
+				MaterialData* mat = &obj->materials.at(m);
+				bool found = pointInsideMesh(p,bases->at(m));
+				if (found) {
+					int status = 0;
+					interpolator.setMode(mat->interpolation_mode);
+					float value = (float)getPointValue(status,sensor_data,p->getXYZ(),&interpolator);
+					value_img[y*width+x] = value;
+					float* color = hsvToRgb((1.0-clampHue((value_img[y*width+x]-vis_info->min_visualisation_temp)/(vis_info->max_visualisation_temp+vis_info->min_visualisation_temp)))*.666,1,1);
+					image->SetRGB(x,y,(unsigned char)(color[0]*255),(unsigned char)(color[1]*255),(unsigned char)(color[2]*255));
+					delete color;
+					image->SetAlpha(x,y,255);
+					break;
+				}
+			}
+			delete p;
+		}
+	}
+	*status_flag = 0;
+}
 void GUICutRenderWindow::renderImage(wxImage* image) {
+	timeval tm1;
+	gettimeofday(&tm1, NULL);
 	int width = imgWidthEdit->GetValue();
 	int height = imgHeightEdit->GetValue();
-	image->Rescale(width,height,wxIMAGE_QUALITY_NORMAL);
+	core_count = threadcountedit->GetValue();
+	delete image;
+	image = new wxImage(width,height,true);
 	image->InitAlpha();
 	setlocale(LC_NUMERIC, "C");
 	CutRender_info* info = getCutRenderProperties();
@@ -79,12 +128,12 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 	ObjectData* obj = data_objects.at(current_data_object_index);
 	xvec->normalize();
 	yvec->normalize();
-	Interpolator interpolator;
 	vector<tetgenio*> bases(obj->materials.size());
 	for (unsigned int i=0;i<obj->materials.size();i++) {
 		tetgenio* tri_io = new tetgenio();
 		char arg = 'Q';
 		tetrahedralize(&arg, obj->materials.at(i).tetgeninput, tri_io,NULL,NULL);
+		cout << tri_io->numberoftrifaces << endl;
 		bases.at(i) = tri_io;
 	}
 	yvec->print();
@@ -92,48 +141,53 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 		delete[] value_img;
 	}
 	value_img = new float[width*height];
+	bool thread_running[core_count];
+	for (int i=0;i<core_count;i++) thread_running[i] = 1;
 	wxString original_window_title = GetTitle();
-	for (int x=0;x<width;x++) {
-		for (int y=0;y<height;y++) {
-			Vector3D* p = tri->getV1()->copy();
-			Vector3D* part_x = xvec->copy();
-			part_x->mult(x*info->mmperpixel/1000.-width*info->mmperpixel/2000);
-			Vector3D* part_y = yvec->copy();
-			part_y->mult(y*info->mmperpixel/1000.-height*info->mmperpixel/2000);
-			p->add(part_x);
-			p->add(part_y);
-			delete part_x;
-			delete part_y;
-			image->SetRGB(x,y,0,0,0);
-			image->SetAlpha(x,y,0);
-			value_img[y*width+x] = 0;
-			for (unsigned int m=0;m<obj->materials.size();m++) {
-				MaterialData* mat = &obj->materials.at(m);
-				bool found = pointInsideMesh(p,bases.at(m));
-				if (found) {
-					int status = 0;
-					interpolator.setMode(mat->interpolation_mode);
-					SensorData* sd = &obj->sensordatalist.at(obj->current_sensor_index);
-					float value = (float)getPointValue(status,&sd->data.at(sd->current_time_index),p->getXYZ(),&interpolator);
-					value_img[y*width+x] = value;
-					float* color = hsvToRgb((1.0-clampHue((value-vis_info->min_visualisation_temp)/(vis_info->max_visualisation_temp+vis_info->min_visualisation_temp)))*.666,1,1);
-					image->SetAlpha(x,y,255);
-					image->SetRGB(x,y,(unsigned char)(color[0]*255),(unsigned char)(color[1]*255),(unsigned char)(color[2]*255));
 
-					delete color;
-					break;
-				}
+	vector<thread*> threads= vector<thread*>(0);
+	vector<vector<SensorPoint>> copied_sensor_data = vector<vector<SensorPoint>>(core_count);
+	int delta_h = height/core_count;
+	for (int i=0;i<core_count;i++) {
+		int startheight = delta_h*i;
+		if (i==core_count-1) {
+			if (startheight+delta_h<height) {
+				delta_h = height-startheight;
+				cout << "corrected delta_h";
 			}
-			delete p;
 		}
-		SetTitle(original_window_title+wxT(" (")+floattowxstr(int((float)x/(float)width*100))+wxT("%)"));
+		//copy sensor data for each thread
+		SensorData* dataset = &obj->sensordatalist.at(obj->current_sensor_index);
+		vector<SensorPoint>* original_sd = &dataset->data.at(dataset->current_time_index);
+		copied_sensor_data.at(i).resize(original_sd->size());
+		for (int p=0;p<int(original_sd->size());p++) {
+			copySensorPoint(&original_sd->at(p),&copied_sensor_data.at(i).at(p));
+		}
+		threads.resize(threads.size()+1,new thread(render_thread,&thread_running[i],value_img,image,width,height,startheight,delta_h,info,vis_info,xvec,yvec,tri->getV1(),&bases,obj,&copied_sensor_data.at(i)));
+	}
+	unsigned int running = 0;
+	do {
 		Update();
+		canvas->Refresh();
+		running = 0;
+		for (int i=0;i<core_count;i++) {
+			running = running<<1;
+			running+=thread_running[i];
+		};
+	} while (running);
+	for (int i=0;i<core_count;i++) {
+		threads.at(i)->join();
+		delete threads.at(i);
 	}
 	for (int i=0;i<3;i++) {
 		delete tri->getVert(i);
 	}
 	delete tri;
-	SetTitle(original_window_title);
+	timeval tm2;
+	gettimeofday(&tm2, NULL);
+
+	unsigned long long t = 1000 * (tm2.tv_sec - tm1.tv_sec) + (tm2.tv_usec - tm1.tv_usec) / 1000;
+	SetTitle(wxT("Berechnung abgeschlossen. ( ")+floattowxstr(t/1000.)+wxT( "s )"));
 	delete xvec;
 	delete yvec;
 	for (unsigned int i=0;i<obj->materials.size();i++) {
@@ -174,8 +228,10 @@ void GUICutRenderWindow::OnResize(wxSizeEvent &event) {
 	imgHeightEdit->SetSize(390,50,70,20);
 	mmperpixellabel->SetSize(320,70,200,40);
 	mmperpixeledit->SetSize(320,90,140,20);
-	calcbt->SetSize(480,20,150,30);
-	exportbt->SetSize(480,50,150,30);
+	threadcountlbl->SetSize(480,30,100,20);
+	threadcountedit->SetSize(580,30,50,20);
+	calcbt->SetSize(480,50,150,30);
+	exportbt->SetSize(480,80,150,30);
 	canvas->SetSize(10,120,width-20,height-canvas->GetPosition().y-10);
 	refreshVisualisation();
 	canvas->Refresh(false,NULL);

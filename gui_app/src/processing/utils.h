@@ -60,6 +60,7 @@ namespace Utils {
 	void nextCombination(vector<int>* indices,int depth,int dataPointCount);
 	double getPointValue(int &status,vector<SensorPoint>* sensorpoints,double* p,Interpolator* interpolator);
 	float* hsvToRgb(float h, float s, float v);
+	void copySensorPoint(SensorPoint* from,SensorPoint* to);
 }
 
 #endif /* UTILS_H_ */

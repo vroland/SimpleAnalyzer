@@ -64,6 +64,12 @@ float* Utils::hsvToRgb(float h, float s, float v) {
     col[2] = b;
     return col;
 }
+void Utils::copySensorPoint(SensorPoint* from,SensorPoint* to) {
+	to->coords[0] = from->coords[0];
+	to->coords[1] = from->coords[1];
+	to->coords[2] = from->coords[2];
+	to->temperature = from->temperature;
+}
 #define EPSILON 0.000001
 
 int Utils::rayIntersectsTriangle(Vector3D* point,Vector3D* direction,Triangle* tri,float* depth) {
@@ -155,7 +161,6 @@ int Utils::pointInsideMesh(Vector3D* p,tetgenio* io) {
 			}
 		}
 	}
-	cout << endl;
 	return (intersections%2);
 }
 int Utils::pointInsideTetrahedron(Vector3D* pges, Vector3D* v1, Vector3D* v2, Vector3D* v3, Vector3D* v4) {
@@ -286,7 +291,7 @@ double Utils::getPointValue(int &status,vector<SensorPoint>* sensorpoints,double
 		delete extrapolationIndices;
 		return interval;
 	} else {
-		cout << "Alle Messwerte sind coplanar -> keine Inter/Extrapolation möglich!" << endl;
+		cerr << "Alle Messwerte sind coplanar -> keine Inter/Extrapolation möglich!" << endl;
 		status = -1;
 	}
 	return -1;
