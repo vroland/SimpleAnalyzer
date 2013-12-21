@@ -95,6 +95,7 @@ int ObjectData::calculateIO() {
 		ss << maxvolume;
 		string args =ss.str();//"Qpq1.414a0.001";
 		tetrahedralize(const_cast<char*> (args.c_str()), data->tetgeninput, data->tetgenoutput,NULL,NULL);
+		cout << data->tetgenoutput->numberoftrifaces << endl;
 	}
 	MeshProcessor meshprocessor;
 	meshprocessor.process(this);

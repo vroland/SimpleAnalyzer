@@ -30,7 +30,8 @@ src/GUI/GUIMainWindow.d: ../src/GUI/GUIMainWindow.cpp \
  ../src/GUI/../processing/MeshProcessor.h \
  ../src/GUI/../processing/ObjectData.h ../src/GUI/../fileIO/Importer.h \
  ../src/GUI/../fileIO/../libraries/tetgen/tetgen.h \
- ../src/GUI/../fileIO/../processing/ObjectData.h ../src/GUI/constants.h
+ ../src/GUI/../fileIO/../processing/ObjectData.h ../src/GUI/constants.h \
+ ../src/GUI/../fileIO/Exporter.h
 
 ../src/GUI/GUIMainWindow.h:
 
@@ -133,3 +134,5 @@ src/GUI/GUIMainWindow.d: ../src/GUI/GUIMainWindow.cpp \
 ../src/GUI/../fileIO/../processing/ObjectData.h:
 
 ../src/GUI/constants.h:
+
+../src/GUI/../fileIO/Exporter.h:

@@ -25,8 +25,6 @@ END_EVENT_TABLE()
 extern std::vector<ObjectData*> data_objects;
 extern int current_data_object_index;
 
-static struct timeval tm1;
-
 GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent,const wxChar *title, int xpos, int ypos, int width, int height):
 	wxFrame(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height), wxDEFAULT_FRAME_STYLE | wxFRAME_FLOAT_ON_PARENT) {
 	trilabel= new wxStaticText(this,wxID_ANY,wxT("Dreiecksebene (Punkt1 ist Mittelpunkt):"));
@@ -241,7 +239,7 @@ void GUICutRenderWindow::exportImage(wxCommandEvent &event) {
 	wxFileDialog *SaveDialog= new wxFileDialog(this, wxT("Speichern unter..."), _(""), _(""), _("Portable Network Graphics (*.png)|*.png"), wxFD_SAVE|wxFD_OVERWRITE_PROMPT);
 	if ( SaveDialog->ShowModal() == wxID_OK )
 	{
-		cout << SaveDialog->GetFilename().ToAscii() << endl;
+		cout << SaveDialog->GetFilename().ToUTF8().data() << endl;
 		image->SaveFile(SaveDialog->GetPath(),wxBITMAP_TYPE_PNG);
 	}
 	SaveDialog->Close();

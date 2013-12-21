@@ -65,7 +65,7 @@ int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) 
 	ifstream file;
 	file.open(filename);
 	if (!file.is_open()) {
-		cout << "could not open file: "<<filename<<endl;
+		cerr << "could not open file: "<<filename<<endl;
 		return OD_FAILURE;
 	}
 	string line;
@@ -116,7 +116,7 @@ int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) 
 			cout << (filedir+mtlpath).c_str() << endl;
 			mtlfile.open((filedir+mtlpath).c_str());
 			if (!mtlfile.is_open()) {
-				cout << "could not open file: "<<mtlpath<<endl;
+				cerr << "could not open file: "<<mtlpath<<endl;
 				return OD_FAILURE;
 			}
 			MaterialData* currentMat = NULL;
@@ -133,7 +133,6 @@ int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) 
 					currentMat->interpolation_mode = LINEAR;
 					currentMat->visible = true;
 					currentMat->extrapolated = NULL;
-					cout << "newmat: "<<mtldata<<endl;
 				}
 				if (mtltype=="Kd") {
 					for (int i=0;i<3;i++) {
@@ -195,14 +194,13 @@ int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) 
 		}
 	}
 	file.close();
-	cout << "file loaded." << endl;
 	return OD_SUCCESS;
 }
 int Importer::LoadSensorData(const char* filename,ObjectData* data) {
 	ifstream file;
 	file.open(filename);
 	if (!file.is_open()) {
-		cout << "could not open file: "<<filename<<endl;
+		cerr << "could not open file: "<<filename<<endl;
 		return OD_FAILURE;
 	}
 	string line;
@@ -240,7 +238,6 @@ int Importer::LoadSensorData(const char* filename,ObjectData* data) {
 int Importer::LoadTimedData(const char* filename,ObjectData* data) {
 	ifstream file;
 	file.open(filename);
-	cout << "open: " << filename << endl;
 	if (!file.is_open()) {
 		cout << "could not open file: "<<filename<<endl;
 		return OD_FAILURE;

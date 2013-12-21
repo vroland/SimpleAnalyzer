@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/fileIO/Exporter.cpp \
 ../src/fileIO/Importer.cpp 
 
 OBJS += \
+./src/fileIO/Exporter.o \
 ./src/fileIO/Importer.o 
 
 CPP_DEPS += \
+./src/fileIO/Exporter.d \
 ./src/fileIO/Importer.d 
 
 

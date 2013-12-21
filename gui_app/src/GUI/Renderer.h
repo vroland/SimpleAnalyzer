@@ -56,7 +56,7 @@ public:
 	virtual ~Renderer();
 private:
 	void renderMaterial(MaterialData* mat);
-	void renderTetrahedrons(MaterialData* mat,int rendermode);
+	void renderTetrahedra(MaterialData* mat,int rendermode);
 	void renderSensorData(vector<SensorPoint>* data);
 	ObjectData* object;
 	CutRender_info* cut_visualisation_info;

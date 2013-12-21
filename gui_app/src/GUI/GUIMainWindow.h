@@ -47,6 +47,7 @@ public:
 	void addObject(ObjectData* obj);
 	void setActiveObject(int index);
 	void OnExportViewportImage(wxCommandEvent &event);
+	void OnExportVTK(wxCommandEvent &event);
 	void OnFindMaxTSD(wxCommandEvent &event);
 	void OnAutoUpdateChange(wxCommandEvent &event);
 	GUIGLCanvas* getGLCanvas();

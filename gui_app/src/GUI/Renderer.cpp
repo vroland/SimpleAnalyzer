@@ -87,7 +87,7 @@ bool pointBehindCut(Vector3D* point,Triangle* cut) {
 	return behind;
 }
 
-void Renderer::renderTetrahedrons(MaterialData* mat,int rendermode) {
+void Renderer::renderTetrahedra(MaterialData* mat,int rendermode) {
 	tetgenio* io = mat->tetgenoutput;
 	glEnable(GL_LIGHTING);
 	glBegin(GL_TRIANGLES);
@@ -234,13 +234,13 @@ void Renderer::renderMaterial(MaterialData* mat) {
 	if (viewport.showedges) {
 		glPolygonMode(GL_FRONT, GL_LINE);
 		glPolygonMode(GL_BACK, GL_LINE);
-		renderTetrahedrons(mat,viewport.showedges);
+		renderTetrahedra(mat,viewport.showedges);
 	}
 
 	if (viewport.showfaces) {
 		glPolygonMode(GL_FRONT, GL_FILL);
 		glPolygonMode(GL_BACK, GL_FILL);
-		renderTetrahedrons(mat,viewport.showfaces);
+		renderTetrahedra(mat,viewport.showfaces);
 
 	}
 	//glEnable(GL_DEPTH_TEST);

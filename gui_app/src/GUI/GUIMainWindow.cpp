@@ -14,7 +14,7 @@
 #include "../fileIO/Importer.h"
 #include "../processing/ObjectData.h"
 #include "constants.h"
-
+#include "../fileIO/Exporter.h"
 using namespace std;
 
 extern std::vector<ObjectData*> data_objects;
@@ -55,6 +55,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_MENU(ID_EXPORT_VIEWPORT,GUIMainWindow::OnExportViewportImage)
 	EVT_BUTTON(ID_FIND_MAX_BT,GUIMainWindow::OnFindMaxTSD)
 	EVT_CHECKBOX(ID_AUTO_UPDATE_CB,GUIMainWindow::OnAutoUpdateChange)
+	EVT_MENU(ID_EXPORT_VTK,GUIMainWindow::OnExportVTK)
 END_EVENT_TABLE()
 
 GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height):
@@ -73,7 +74,8 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	mwFileMenu->AppendSubMenu(mwImportMenu,wxT("Import"));
 	//Export menu
 	mwExportMenu = new wxMenu();
-	mwExportMenu->Append(ID_EXPORT_VIEWPORT,wxT("Screenshot (Viewport)"));
+	mwExportMenu->Append(ID_EXPORT_VIEWPORT,wxT("Screenshot (Viewport)..."));
+	mwExportMenu->Append(ID_EXPORT_VTK,wxT("Legacy VTK - Datei..."));
 	mwFileMenu->AppendSubMenu(mwExportMenu,wxT("Export"));
 	mwFileMenu->AppendSeparator();
 	mwFileMenu->Append(wxID_EXIT, wxT("&Beenden"));
@@ -491,14 +493,33 @@ void GUIMainWindow::OnMenuImportTSD(wxCommandEvent &event) {
 	OpenDialog->Destroy();
 }
 void GUIMainWindow::OnExportViewportImage(wxCommandEvent &event) {
+	if (current_data_object_index==-1) {
+		cerr << "no object loaded!" << endl;
+		return;
+	}
 	wxFileDialog *SaveDialog= new wxFileDialog(this, wxT("Export nach..."), _(""), _(""), _("Portable Network Graphics (*.png)|*.png"), wxFD_SAVE|wxFD_OVERWRITE_PROMPT);
 	if ( SaveDialog->ShowModal() == wxID_OK )
 	{
-		cout << SaveDialog->GetPath().ToAscii() << endl;
+		cout << SaveDialog->GetPath().ToUTF8().data() << endl;
 		gl_context->SetCurrent();
 		wxImage* img = gl_context->renderer.getViewportImage();
 		img->SaveFile(SaveDialog->GetPath());
 		img->Destroy();
+	}
+	SaveDialog->Close();
+	SaveDialog->Destroy();
+}
+void GUIMainWindow::OnExportVTK(wxCommandEvent &event) {
+	if (current_data_object_index==-1) {
+		cerr << "no object loaded!" << endl;
+		return;
+	}
+	wxFileDialog *SaveDialog= new wxFileDialog(this, wxT("Export nach..."), _(""), _(""), _("Visualization Toolkit file(*.vtk)|*.vtk"), wxFD_SAVE|wxFD_OVERWRITE_PROMPT);
+	if ( SaveDialog->ShowModal() == wxID_OK )
+	{
+		Exporter exporter;
+		cout << string(SaveDialog->GetPath().ToUTF8().data()) << endl;
+		exporter.ExportLegacyVTK(string(SaveDialog->GetPath().ToUTF8().data()),data_objects.at(current_data_object_index));
 	}
 	SaveDialog->Close();
 	SaveDialog->Destroy();
