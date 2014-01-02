@@ -4,7 +4,7 @@
  *  Created on: 24.07.2013
  *      Author: valentin
  */
-
+#include <iostream>
 #ifndef GEOMETRYCLASSES_H_
 #define GEOMETRYCLASSES_H_
 
@@ -25,15 +25,16 @@ class Vector3D {
 		void sub(Vector3D* other);
 		void mult(double scalar);
 		void normalize();
-		~Vector3D();
+		virtual ~Vector3D();
 		bool equals(Vector3D* other);
 		double getDistanceTo(Vector3D* other);
 		double* getXYZ();
 		void print();
+		void printTo(std::ostream &stream) const;
 	private:
 		double coords[3];
 };
-
+std::ostream &operator<< (std::ostream &out, const Vector3D &vec);
 class Matrix3D {
 	private:
 		double elements[9];

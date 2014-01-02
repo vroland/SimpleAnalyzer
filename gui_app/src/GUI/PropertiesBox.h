@@ -8,7 +8,7 @@
 #ifndef PROPERTIESBOX_H_
 #define PROPERTIESBOX_H_
 
-#include <wx-2.8/wx/wx.h>
+#include <wx/wx.h>
 #include "GUITimeline.h"
 class PropertiesBox: public wxStaticBox {
 public:

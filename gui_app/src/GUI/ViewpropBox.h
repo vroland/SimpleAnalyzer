@@ -7,7 +7,7 @@
 
 #ifndef VIEWPROPBOX_H_
 #define VIEWPROPBOX_H_
-#include <wx-2.8/wx/wx.h>
+#include <wx/wx.h>
 #include <wx/spinctrl.h>
 
 class ViewpropBox: public wxStaticBox {

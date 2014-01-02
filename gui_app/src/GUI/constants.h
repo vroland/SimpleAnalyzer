@@ -8,7 +8,7 @@
 #ifndef EVENT_IDS_H_
 #define EVENT_IDS_H_
 
-#include <wx-2.8/wx/wx.h>
+#include <wx/wx.h>
 #define NUMBEROFINTERPOLATIONMODES 2
 const wxString imenumstrings[NUMBEROFINTERPOLATIONMODES] = {wxT("Linear"),wxT("Logarithmisch")};
 
@@ -38,11 +38,14 @@ enum {
 	ID_CLEAR_MARKER_BT,
 	ID_MARKER_NEXT_BT,
 	ID_MARKER_PREV_BT,
-	ID_EXPORT_CUT_BT,
+	ID_EXPORT_CUT_IMG_BT,
 	ID_EXPORT_VIEWPORT,
 	ID_FIND_MAX_BT,
 	ID_AUTO_UPDATE_CB,
 	ID_EXPORT_VTK,
+	ID_EXPORT_CUT_CSV_BT,
+	ID_COLORSCALE_PROP,
+	ID_COLORSCALE_COLORBT,
 };
 // IDs > wxID_HIGHEST for temporary uses
 

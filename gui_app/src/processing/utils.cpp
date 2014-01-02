@@ -9,6 +9,7 @@
 #include <cmath>
 using namespace std;
 
+
 void Utils::nextCombination(vector<int>* indices,int depth,int dataPointCount) {
 	if (depth<0) {
 		return;
@@ -72,13 +73,13 @@ void Utils::copySensorPoint(SensorPoint* from,SensorPoint* to) {
 }
 #define EPSILON 0.000001
 
-int Utils::rayIntersectsTriangle(Vector3D* point,Vector3D* direction,Triangle* tri,float* depth) {
+int Utils::rayIntersectsTriangle(Vector3D* point,Vector3D* direction,Triangle* tri,double* depth) {
 	Vector3D p0 = Vector3D(tri->getV1());
 	Vector3D p1 = Vector3D(tri->getV2());
 	Vector3D p2 = Vector3D(tri->getV3());
 
-	float det, inv_det, u, v;
-	float t;
+	double det, inv_det, u, v;
+	double t;
 
 	//Find vectors for two edges sharing V0
 	Vector3D e1 = p1.copy();
@@ -134,34 +135,54 @@ int Utils::rayIntersectsTriangle(Vector3D* point,Vector3D* direction,Triangle* t
 	// No hit, no win
 	return 0;
 }
-int Utils::pointInsideMesh(Vector3D* p,tetgenio* io) {
-	if (io->numberoftrifaces==0) {
-		cerr << "mesh doesn't have tri faces. Triangulate ist using tetgen first!" << endl;
-	}
-	Vector3D dir = Vector3D(1,0,0);
-	vector<float> depths;
-	int intersections = 0;
-	for (int f=0;f<io->numberoftrifaces;f++) {
-		Vector3D v1 = Vector3D(&io->pointlist[3*io->trifacelist[3*f]]);
-		Vector3D v2 = Vector3D(&io->pointlist[3*io->trifacelist[3*f+1]]);
-		Vector3D v3 = Vector3D(&io->pointlist[3*io->trifacelist[3*f+2]]);
-		Triangle tri = Triangle(&v1,&v2,&v3);
-		float z = 0;
-		int found = rayIntersectsTriangle(p,&dir,&tri,&z);
-		if (found) {
-			intersections++;
-			depths.resize(intersections,z);
-		}
-	}
-	sort(depths.begin(),depths.end());
-	for (size_t i=0;i<depths.size();i++) {
-		if (i>0) {
-			if (abs(depths.at(i)-depths.at(i-1))<EPSILON) {
-				intersections--;
+int Utils::pointInsideMesh(Vector3D* p,tetgenio* io,PIM_algorithm algorithm) {
+	switch (algorithm) {
+		case ALGORITHM_RAY: {
+			if (io->numberoftrifaces==0) {
+				cerr << "mesh doesn't have tri faces. Triangulate it first!" << endl;
 			}
+			Vector3D dir = Vector3D(1,0,0);
+			vector<double> depths;
+			int intersections = 0;
+			for (int f=0;f<io->numberoftrifaces;f++) {
+				Vector3D v1 = Vector3D(&io->pointlist[3*io->trifacelist[3*f]]);
+				Vector3D v2 = Vector3D(&io->pointlist[3*io->trifacelist[3*f+1]]);
+				Vector3D v3 = Vector3D(&io->pointlist[3*io->trifacelist[3*f+2]]);
+				Triangle tri = Triangle(&v1,&v2,&v3);
+				double z = 0;
+				int found = rayIntersectsTriangle(p,&dir,&tri,&z);
+				if (found) {
+					intersections++;
+					depths.resize(intersections,z);
+				}
+			}
+			sort(depths.begin(),depths.end());
+			for (size_t i=1;i<depths.size();i++) {
+				if (abs(depths.at(i)-depths.at(i-1))<EPSILON) {
+					intersections--;
+				}
+			}
+			return (intersections%2);
+		}
+		case ALGORITHM_TETRAHEDRONS: {
+			if (io->numberoftetrahedra==0) {
+				cerr << "mesh doesn't have tetrahedra. Reconstruct it first!" << endl;
+			}
+			for (int t=0;t<io->numberoftetrahedra;t++) {
+				int found = pointInsideTetrahedron(p->getXYZ(),
+					 &io->pointlist[3*io->tetrahedronlist[4*t]],
+					 &io->pointlist[3*io->tetrahedronlist[4*t+1]],
+					 &io->pointlist[3*io->tetrahedronlist[4*t+2]],
+					 &io->pointlist[3*io->tetrahedronlist[4*t+3]]);
+				if (found>0) {
+					return 1;
+				}
+			}
+			return 0;
 		}
 	}
-	return (intersections%2);
+	cerr << "pointInsideMesh(): invalid algorithm!" << endl;
+	return -1;
 }
 int Utils::pointInsideTetrahedron(Vector3D* pges, Vector3D* v1, Vector3D* v2, Vector3D* v3, Vector3D* v4) {
 	v2->sub(v1);

@@ -7,7 +7,7 @@
 
 #ifndef GUIAPPLICATION_H_
 #define GUIAPPLICATION_H_
-#include <wx-2.8/wx/wx.h>
+#include <wx/wx.h>
 
 class Application: public wxApp {
 public:

@@ -7,7 +7,8 @@
 
 #ifndef GUIRENDERCUTCANVAS_H_
 #define GUIRENDERCUTCANVAS_H_
-#include <wx-2.8/wx/wx.h>
+#include <wx/wx.h>
+#include "GUIColorScalePanel.h"
 class GUIRenderCutCanvas: public wxPanel {
 public:
 	GUIRenderCutCanvas(wxWindow* parent);
@@ -20,17 +21,18 @@ public:
 	void OnKeyDown(wxKeyEvent &event);
 	void setImage(wxImage* img);
 	void setValueImg(float* img);
+	GUIColorScalePanel* getScalePanel();
 	virtual ~GUIRenderCutCanvas();
 protected:
 	float zoom;
 	float deltaX;
 	float deltaY;
-	int original_x;
-	int original_y;
 	int current_mx;
 	int current_my;
+	bool mouse_to_scalepanel;
 	wxImage* image;
 	float* value_img;
+	GUIColorScalePanel* scalepanel;
 	DECLARE_EVENT_TABLE()
 };
 

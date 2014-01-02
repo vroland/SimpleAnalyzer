@@ -11,9 +11,10 @@
 #include <vector>
 #include "../libraries/interpolate/GeometryClasses.h"
 #include "../processing/ObjectData.h"
-#include <wx-2.8/wx/wx.h>
+#include "../processing/utils.h"
+#include <wx/wx.h>
 using namespace std;
-
+using namespace Utils;
 enum rendermode {
 	RM_NONE = 0,
 	RM_MATERIALCOLOR,
@@ -33,15 +34,7 @@ struct Viewport_info {
 	bool show_sensordata;
 	int width;
 	int height;
-	int max_visualisation_temp;
-	int min_visualisation_temp;
 	float scale;
-};
-struct CutRender_info {
-	Triangle* tri;
-	float mmperpixel;
-	int img_width;
-	int img_height;
 };
 class Renderer {
 public:

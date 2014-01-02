@@ -9,11 +9,13 @@
 #include "Application.h"
 #include "GUI/GUIMainWindow.h"
 #include "processing/ObjectData.h"
+#include "processing/utils.h"
 #include <vector>
 using namespace std;
 
 vector<ObjectData*> data_objects;
 int current_data_object_index = -1;
+Utils::Visualization_info visualization_info;
 
 IMPLEMENT_APP(Application)
 

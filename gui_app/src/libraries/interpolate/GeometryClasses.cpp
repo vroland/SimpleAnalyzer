@@ -97,6 +97,13 @@ double Vector3D::getDistanceTo(Vector3D* other) {
 void Vector3D::print() {
 	cout <<"Vector3D ("<< getX() << " "<<getY()<<" " << getZ() <<")"<< endl;
 }
+void Vector3D::printTo(std::ostream &stream) const {
+	stream << "("<<coords[0] << " " << coords[1] << " "<< coords[2]<<")";
+}
+std::ostream &operator<< (std::ostream &out, const Vector3D &vec) {
+    vec.printTo(out);
+    return out;
+}
 Vector3D::~Vector3D() {
 	//cout << "destroy vec"<<endl;
 }

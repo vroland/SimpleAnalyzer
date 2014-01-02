@@ -7,11 +7,15 @@
 
 #ifndef GUICUTRENDERWINDOW_H_
 #define GUICUTRENDERWINDOW_H_
-#include <wx-2.8/wx/wx.h>
+#include <wx/wx.h>
 #include "GUIRenderCutCanvas.h"
 #include "../libraries/interpolate/GeometryClasses.h"
+#include "../processing/utils.h"
 #include <wx/spinctrl.h>
 #include "Renderer.h"
+#include <wx/colordlg.h>
+using namespace Utils;
+
 class GUICutRenderWindow: public wxFrame {
 public:
 	GUICutRenderWindow(wxWindow * parent,const wxChar *title, int xpos, int ypos, int width, int height);
@@ -19,8 +23,12 @@ public:
 	void OnResize(wxSizeEvent &event);
 	void OnCutPropsChanged(wxCommandEvent &event);
 	void refreshVisualisation();
-	void exportImage(wxCommandEvent &event);
+	void OnExportImage(wxCommandEvent &event);
+	void OnExportCSV(wxCommandEvent &event);
 	void OnSCutPropsChanged_spin(wxSpinEvent &event);
+	void OnColorScaleChanged(wxCommandEvent &event);
+	void OnColorScaleChanged_spin(wxSpinEvent &event);
+	void OnCSColorBtClick(wxCommandEvent &event);
 	CutRender_info* getCutRenderProperties();
 	virtual ~GUICutRenderWindow();
 protected:
@@ -49,11 +57,20 @@ private:
 	wxStaticText* optionslbl;
 	wxStaticText* whlbl;
 	wxStaticText* threadcountlbl;
+	wxStaticText* scalelbl;
+	wxStaticText* scalemodelbl;
+	wxComboBox* scalemodecb;
+	wxStaticText* scalefontpropslbl;
+	wxSpinCtrl* scalefontsizeedit;
+	wxButton* scalefontcolorbt;
+	wxSpinCtrl* scalestepedit;
 	wxButton* calcbt;
-	wxButton* exportbt;
+	wxButton* export_img_bt;
+	wxButton* export_csv_bt;
 	GUIRenderCutCanvas* canvas;
 	wxImage* image;
 	float *value_img;
 	int core_count;
+	bool init;
 };
 #endif /* GUICUTRENDERWINDOW_H_ */

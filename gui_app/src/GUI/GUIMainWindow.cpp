@@ -19,6 +19,7 @@ using namespace std;
 
 extern std::vector<ObjectData*> data_objects;
 extern int current_data_object_index;
+extern Visualization_info visualization_info;
 
 #define PROPBOXWIDTH 300
 #define VIEWBOXWIDTH 300
@@ -351,10 +352,9 @@ void GUIMainWindow::OnAnalyzePoint(wxCommandEvent &event) {
 	}
 }
 void GUIMainWindow::OnRenderCut(wxCommandEvent &event) {
-
 	if (current_data_object_index>-1) {
 		if (!render_cut_window_valid) {
-			rendercutwindow = new GUICutRenderWindow(this,wxT("Schnitt brechnen"), 100, 100, 700, 500);
+			rendercutwindow = new GUICutRenderWindow(this,wxT("Schnitt brechnen"), 100, 100, 800, 600);
 			rendercutwindow->Show(true);
 			render_cut_window_valid = true;
 			gl_context->Refresh(false,NULL);
@@ -388,8 +388,8 @@ void GUIMainWindow::assignViewProps() {
 		view->showfaces 		= viewbox->facescb->GetSelection();
 		view->show_extrapolated = viewbox->show_extcb->IsChecked();
 		view->show_sensordata	= viewbox->show_sdata->IsChecked();
-		view->min_visualisation_temp = viewbox->min_visval->GetValue();
-		view->max_visualisation_temp = viewbox->max_visval->GetValue();
+		visualization_info.min_visualisation_temp = viewbox->min_visval->GetValue();
+		visualization_info.max_visualisation_temp = viewbox->max_visval->GetValue();
 		view->scale				= atof(viewbox->viewscale->GetValue().ToAscii());
 		for (unsigned int i=0;i<data_objects.at(current_data_object_index)->materials.size();i++) {
 			MaterialData* mat = &data_objects.at(current_data_object_index)->materials.at(i);
@@ -406,8 +406,8 @@ void GUIMainWindow::updateViewPropGUI() {
 		viewbox->pointscb->SetSelection(view->showpoints);
 		viewbox->edgescb->SetSelection(view->showedges);
 		viewbox->facescb->SetSelection(view->showfaces);
-		viewbox->min_visval->SetValue(view->min_visualisation_temp);
-		viewbox->max_visval->SetValue(view->max_visualisation_temp);
+		viewbox->min_visval->SetValue(visualization_info.min_visualisation_temp);
+		viewbox->max_visval->SetValue(visualization_info.max_visualisation_temp);
 		viewbox->viewscale->SetValue(floattowxstr(view->scale));
 		viewbox->matvisibility->Clear();
 		for (unsigned int i=0;i<data_objects.at(current_data_object_index)->materials.size();i++) {

@@ -6,6 +6,7 @@
 CPP_SRCS += \
 ../src/GUI/GUIAnalyzeOutputWindow.cpp \
 ../src/GUI/GUIAnalyzePointWindow.cpp \
+../src/GUI/GUIColorScalePanel.cpp \
 ../src/GUI/GUICutRenderWindow.cpp \
 ../src/GUI/GUIGLCanvas.cpp \
 ../src/GUI/GUIMainWindow.cpp \
@@ -18,6 +19,7 @@ CPP_SRCS += \
 OBJS += \
 ./src/GUI/GUIAnalyzeOutputWindow.o \
 ./src/GUI/GUIAnalyzePointWindow.o \
+./src/GUI/GUIColorScalePanel.o \
 ./src/GUI/GUICutRenderWindow.o \
 ./src/GUI/GUIGLCanvas.o \
 ./src/GUI/GUIMainWindow.o \
@@ -30,6 +32,7 @@ OBJS += \
 CPP_DEPS += \
 ./src/GUI/GUIAnalyzeOutputWindow.d \
 ./src/GUI/GUIAnalyzePointWindow.d \
+./src/GUI/GUIColorScalePanel.d \
 ./src/GUI/GUICutRenderWindow.d \
 ./src/GUI/GUIGLCanvas.d \
 ./src/GUI/GUIMainWindow.d \
@@ -44,7 +47,7 @@ CPP_DEPS += \
 src/GUI/%.o: ../src/GUI/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
-	g++ -DTETLIBRARY -I/usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-release-2.8/ -O0 -g3 -Wall -std=c++0x -c -fmessage-length=0 `wx-config --cxxflags` -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	g++ -DTETLIBRARY -I/usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-debug-2.8 -O0 -g3 -Wall -std=c++0x -c -fmessage-length=0 `wx-config --cxxflags` -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

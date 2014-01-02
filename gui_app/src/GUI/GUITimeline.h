@@ -8,7 +8,7 @@
 #ifndef TIMELINE_H_
 #define TIMELINE_H_
 
-#include <wx-2.8/wx/wx.h>
+#include <wx/wx.h>
 #include <string>
 #include <vector>
 #include "../processing/ObjectData.h"
