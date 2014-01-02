@@ -96,9 +96,11 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	mwMenuBar->Append(mwHelpMenu, wxT("Hilfe"));
 
 	prop_scroll_win = new wxScrolledWindow(this, wxID_ANY);
+	view_scroll_win = new wxScrolledWindow(this, wxID_ANY);
 	propbox =  new PropertiesBox(prop_scroll_win);
-	viewbox = new ViewpropBox(this);
+	viewbox = new ViewpropBox(view_scroll_win);
 	prop_scroll_win->SetScrollRate(10,10);
+	view_scroll_win->SetScrollRate(10,10);
 
 	SetMenuBar(mwMenuBar);
 	analyzerframe = NULL;
@@ -173,9 +175,10 @@ void GUIMainWindow::OnResize(wxSizeEvent &event) {
 	propbox->resize();
 	prop_scroll_win->SetSize(GetSize().x-PROPBOXWIDTH+5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
 	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,propbox->GetSize().y+30);
-
-	viewbox->SetSize(5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
+	viewbox->SetSize(5,0,VIEWBOXWIDTH-10,GetSize().y-25,0);
 	viewbox->resize();
+	view_scroll_win->SetSize(5,0,VIEWBOXWIDTH-10,GetSize().y-25,0);
+	view_scroll_win->SetVirtualSize(viewbox->GetSize().x,viewbox->GetSize().y+30);
 
 }
 string floattostr(double val) {

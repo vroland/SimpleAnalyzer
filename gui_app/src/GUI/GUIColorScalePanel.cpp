@@ -32,6 +32,7 @@ GUIColorScalePanel::GUIColorScalePanel() {
 	mode = SCM_HORIZONTAL;
 	scale_img = new wxImage(100,100);
 	font_size = 12;
+	prev_mouse_down = false;
 }
 void GUIColorScalePanel::paintTo(wxDC& dc,float zoom,wxPoint& img_coords) {
 	if (mode!=SCM_NONE) {

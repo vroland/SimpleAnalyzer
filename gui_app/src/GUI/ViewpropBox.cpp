@@ -45,6 +45,7 @@ void ViewpropBox::resize() {
 	max_visval->SetSize(x+120,y+320,100,20,0);
 	viewscale_lbl->SetSize(x+10,y+340,200,20,0);
 	viewscale->SetSize(x+20,y+360,100,20,0);
+	SetSize(x,y,w,390);
 }
 ViewpropBox::~ViewpropBox() {
 

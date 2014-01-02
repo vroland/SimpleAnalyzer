@@ -71,6 +71,7 @@ private:
 	GUIAnalyzeOutputWindow* analyzerframe;
 	GUICutRenderWindow* rendercutwindow;
 	wxScrolledWindow* prop_scroll_win;
+	wxScrolledWindow* view_scroll_win;
 	bool updating;
 	void assignCurrentObjectProps();
 	void updateObjectPropGUI();

@@ -36,6 +36,7 @@ protected:
 private:
 	//void render_thread(wxImage* image,float* value_img,int width,int height,int startheight,int delta_h,CutRender_info* info,Viewport_info* vis_info,Vector3D* xvec,Vector3D* yvec,Vector3D* v0,vector<tetgenio*>* bases,ObjectData* obj);
 	void renderImage(wxImage* image);
+	wxScrolledWindow* scroll_pane;
 	wxTextCtrl* p1xedit;
 	wxTextCtrl* p1yedit;
 	wxTextCtrl* p1zedit;
@@ -71,6 +72,5 @@ private:
 	wxImage* image;
 	float *value_img;
 	int core_count;
-	bool init;
 };
 #endif /* GUICUTRENDERWINDOW_H_ */

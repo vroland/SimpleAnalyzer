@@ -35,66 +35,68 @@ extern Visualization_info visualization_info;
 
 GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent,const wxChar *title, int xpos, int ypos, int width, int height):
 	wxFrame(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height), wxDEFAULT_FRAME_STYLE | wxFRAME_FLOAT_ON_PARENT) {
-	init = true;
-	trilabel= new wxStaticText(this,wxID_ANY,wxT("Dreiecksebene (Punkt1 ist Mittelpunkt):"));
-	p1label = new wxStaticText(this,wxID_ANY,wxT("Punkt 1:"));
-	p1xedit = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("0.0"));
-	p1yedit = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("0.0"));
-	p1zedit = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("0.0"));
+	canvas = new GUIRenderCutCanvas(this);
+	scroll_pane = new wxScrolledWindow(this, wxID_ANY);
+	scroll_pane->SetScrollRate(10,10);
+	trilabel= new wxStaticText(scroll_pane,wxID_ANY,wxT("Dreiecksebene (Punkt1 ist Mittelpunkt):"));
+	p1label = new wxStaticText(scroll_pane,wxID_ANY,wxT("Punkt 1:"));
+	p1xedit = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("0.0"));
+	p1yedit = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("0.0"));
+	p1zedit = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("0.0"));
 
-	p2label = new wxStaticText(this,wxID_ANY,wxT("Punkt 2:"));
-	p2xedit = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("1.0"));
-	p2yedit = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("0.0"));
-	p2zedit = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("0.0"));
+	p2label = new wxStaticText(scroll_pane,wxID_ANY,wxT("Punkt 2:"));
+	p2xedit = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("1.0"));
+	p2yedit = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("0.0"));
+	p2zedit = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("0.0"));
 
-	p3label = new wxStaticText(this,wxID_ANY,wxT("Punkt 3:"));
-	p3xedit = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("0.0"));
-	p3yedit = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("1.0"));
-	p3zedit = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("0.0"));
+	p3label = new wxStaticText(scroll_pane,wxID_ANY,wxT("Punkt 3:"));
+	p3xedit = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("0.0"));
+	p3yedit = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("1.0"));
+	p3zedit = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("0.0"));
 
-	optionslbl = new wxStaticText(this,wxID_ANY,wxT("Optionen:"));
-	whlbl	   = new wxStaticText(this,wxID_ANY,wxT("Breite/Höhe:"));
-	imgWidthEdit = new wxSpinCtrl(this,ID_CUT_TRI_EDIT);
+	optionslbl = new wxStaticText(scroll_pane,wxID_ANY,wxT("Optionen:"));
+	whlbl	   = new wxStaticText(scroll_pane,wxID_ANY,wxT("Breite/Höhe:"));
+	imgWidthEdit = new wxSpinCtrl(scroll_pane,ID_CUT_TRI_EDIT);
 	imgWidthEdit->SetRange(1,100000000);
 	imgWidthEdit->SetValue(800);
-	imgHeightEdit = new wxSpinCtrl(this,ID_CUT_TRI_EDIT);
+	imgHeightEdit = new wxSpinCtrl(scroll_pane,ID_CUT_TRI_EDIT);
 	imgHeightEdit->SetRange(1,100000000);
 	imgHeightEdit->SetValue(600);
-	mmperpixellabel = new wxStaticText(this,wxID_ANY,wxT("Maßstab (mm/px):"));
-	mmperpixeledit  = new wxTextCtrl(this,ID_CUT_TRI_EDIT,wxT("15.0"));
-	threadcountlbl = new wxStaticText(this,wxID_ANY,wxT("CPU-Threads:"));
+	mmperpixellabel = new wxStaticText(scroll_pane,wxID_ANY,wxT("Maßstab (mm/px):"));
+	mmperpixeledit  = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("15.0"));
+	threadcountlbl = new wxStaticText(scroll_pane,wxID_ANY,wxT("CPU-Threads:"));
 	core_count = thread::hardware_concurrency();
-	threadcountedit = new wxSpinCtrl(this,wxID_ANY);
+	threadcountedit = new wxSpinCtrl(scroll_pane,wxID_ANY);
 	threadcountedit->SetRange(1,1000);
 	threadcountedit->SetValue(core_count);
 
-	calcbt= new wxButton(this,ID_RENDER_CUT_BT,wxT("Analysieren"));
-	export_img_bt = new wxButton(this,ID_EXPORT_CUT_IMG_BT,wxT("Export (.png)..."));
-	export_csv_bt = new wxButton(this,ID_EXPORT_CUT_CSV_BT,wxT("Export (.csv)..."));
-	canvas = new GUIRenderCutCanvas(this);
-	p1xedit->SetValue(p1xedit->GetValue()); //TEXT-Event auslösen
-	value_img = new float[3*3];
-	image = new wxImage(100,100,true);
-	canvas->setImage(image);
-	canvas->setValueImg(value_img);
+	calcbt= new wxButton(scroll_pane,ID_RENDER_CUT_BT,wxT("Analysieren"));
+	export_img_bt = new wxButton(scroll_pane,ID_EXPORT_CUT_IMG_BT,wxT("Export (.png)..."));
+	export_csv_bt = new wxButton(scroll_pane,ID_EXPORT_CUT_CSV_BT,wxT("Export (.csv)..."));
 
-	scalelbl	 = new wxStaticText(this,wxID_ANY,wxT("Farbskala:"));
-	scalemodelbl = new wxStaticText(this,wxID_ANY,wxT("Modus/ΔT:"));
-	scalemodecb  = new wxComboBox(this,ID_COLORSCALE_PROP,wxT(""),wxDefaultPosition,wxDefaultSize,0,NULL,wxCB_READONLY | wxCB_DROPDOWN);
+	scalelbl	 = new wxStaticText(scroll_pane,wxID_ANY,wxT("Farbskala:"));
+	scalemodelbl = new wxStaticText(scroll_pane,wxID_ANY,wxT("Modus/ΔT:"));
+	scalemodecb  = new wxComboBox(scroll_pane,ID_COLORSCALE_PROP,wxT(""),wxDefaultPosition,wxDefaultSize,0,NULL,wxCB_READONLY | wxCB_DROPDOWN);
 	scalemodecb->Insert(wxT("Vertikal"),0);
 	scalemodecb->Insert(wxT("Horizontal"),0);
 	scalemodecb->Insert(wxT("Kein"),0);
 	scalemodecb->Select(canvas->getScalePanel()->mode);
-	scalefontpropslbl = new wxStaticText(this,wxID_ANY,wxT("Schriftgröße/Farbe:"));
-	scalefontsizeedit = new wxSpinCtrl(this,ID_COLORSCALE_PROP);
+	scalefontpropslbl = new wxStaticText(scroll_pane,wxID_ANY,wxT("Schriftgröße/Farbe:"));
+	scalefontsizeedit = new wxSpinCtrl(scroll_pane,ID_COLORSCALE_PROP);
 	scalefontsizeedit->SetRange(1,1000);
 	scalefontsizeedit->SetValue(canvas->getScalePanel()->font_size);
-	scalefontcolorbt = new wxButton(this,ID_COLORSCALE_COLORBT,wxT("Text"));
+	scalefontcolorbt = new wxButton(scroll_pane,ID_COLORSCALE_COLORBT,wxT("Text"));
 	scalefontcolorbt->SetForegroundColour(canvas->getScalePanel()->text_color);
-	scalestepedit	 = new wxSpinCtrl(this,ID_COLORSCALE_PROP);
+	scalestepedit	 = new wxSpinCtrl(scroll_pane,ID_COLORSCALE_PROP);
 	scalestepedit->SetRange(1,1000);
 	scalestepedit->SetValue(canvas->getScalePanel()->scale_step);
-	init = false;
+
+	value_img = new float[3*3];
+	image = new wxImage(100,100,true);
+	canvas->setImage(image);
+	canvas->setValueImg(value_img);
+	p1xedit->SetValue(p1xedit->GetValue()); //TEXT-Event auslösen
+
 	Update();
 }
 void render_thread(bool* status_flag,float* value_img,wxImage* image,int width,int height,int startheight,int delta_h,CutRender_info* info,Vector3D* xvec,Vector3D* yvec,Vector3D* v0,vector<tetgenio*>* bases,ObjectData* obj,vector<SensorPoint>* sensor_data) {
@@ -224,10 +226,10 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 	delete info;
 }
 void GUICutRenderWindow::OnCutPropsChanged(wxCommandEvent &event) {
-	if (!init) refreshVisualisation();
+	refreshVisualisation();
 }
 void GUICutRenderWindow::OnSCutPropsChanged_spin(wxSpinEvent &event) {
-	if (!init) refreshVisualisation();
+	refreshVisualisation();
 }
 void GUICutRenderWindow::refreshVisualisation() {
 	GUIMainWindow* parent = (GUIMainWindow*) GetParent();
@@ -271,6 +273,8 @@ void GUICutRenderWindow::OnResize(wxSizeEvent &event) {
 	export_csv_bt->SetSize(640,90,150,30);
 	canvas->SetSize(10,120,width-20,height-canvas->GetPosition().y-10);
 	refreshVisualisation();
+	scroll_pane->SetSize(0,0,width,120);
+	scroll_pane->SetVirtualSize(790,120);
 	canvas->Refresh(false,NULL);
 
 }
