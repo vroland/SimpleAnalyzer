@@ -26,7 +26,10 @@ struct Options {
 	float basetemp;
 	float objwidth;
 	bool flipobj;
-	int leave_out;
+	int fiber_step_delta;
+	int time_step_delta;
+	double max_time;
+	double min_time;
 } opts;
 
 bool contains( std::vector<string>& Vec, const string& Element )
@@ -140,32 +143,106 @@ int main(int argc, char *argv[]) {
 	opts.error_threshold = 5;
 	opts.maxfwcount = 10;
 	opts.tab_space_count = 8-1;
-	opts.height = .065;
+	opts.height = .0;
 	opts.basetemp = 20;
 	opts.objwidth = .5;
 	opts.flipobj  = true;
-	opts.leave_out = 1;
-
-	bool names_read = false;
-	ifstream cfgfile;			//Sensor definitions
-	cfgfile.open("odisitosd.cfg");
-	if (!cfgfile.is_open()) {
-		cout << "configuration file odisitosd.cfg not found!"<<endl;
-		return 1;
-	}
-	string line;
+	opts.fiber_step_delta = 1;
+	opts.time_step_delta = 1;
+	opts.max_time = -1;
+	opts.min_time = -1;
 	string def_filename;
 	string data_filename;
 	string err_filename;
 	string out_filename;
-	getline(cfgfile,line);
-	def_filename = getTextBlock(line,0).c_str();
-	getline(cfgfile,line);
-	data_filename = getTextBlock(line,0).c_str();
-	getline(cfgfile,line);
-	err_filename = getTextBlock(line,0).c_str();
-	getline(cfgfile,line);
-	out_filename = getTextBlock(line,0).c_str();
+	int i=0;
+	while (i<argc-1) {
+		i++;
+		string arg = string(argv[i]);
+		if (arg=="-in" || arg=="-i") {
+			data_filename = string(argv[i+1]);
+			i++;
+			continue;
+		}
+		if (arg=="-out" || arg=="-o") {
+			out_filename = string(argv[i+1]);
+			i++;
+			continue;
+		}
+		if (arg=="-sensor-def" || arg=="-s") {
+			def_filename = string(argv[i+1]);
+			i++;
+			continue;
+		}
+		if (arg=="-log" || arg=="-l") {
+			err_filename = string(argv[i+1]);
+			i++;
+			continue;
+		}
+		if (arg=="-step-time") {
+			opts.time_step_delta = atoi(argv[i+1]);
+			if (opts.time_step_delta<1) {
+				cerr << "-step-time must be >0!" << endl;
+				return 1;
+			}
+			i++;
+			continue;
+		}
+		if (arg=="-step-fiber") {
+			opts.fiber_step_delta = atoi(argv[i+1]);
+			if (opts.fiber_step_delta<1) {
+				cerr << "-step-fiber must be >0!" << endl;
+				return 1;
+			}
+			i++;
+			continue;
+		}
+		if (arg=="-max-time") {
+			opts.max_time = atof(argv[i+1]);
+			if (opts.max_time<0) {
+				opts.max_time = -1;
+			}
+			i++;
+			continue;
+		}
+		if (arg=="-min-time") {
+			opts.min_time = atof(argv[i+1]);
+			if (opts.min_time<0) {
+				opts.min_time = -1;
+			}
+			i++;
+			continue;
+		}
+		if (arg=="-h") {
+			cout << "odisitosd converts data files from the odisi sensor into timed sensor data (tsd) for SimpleAnalyzer.\n"
+				 << "program arguments: \n"
+				 << "\t-i,\t-in\t\tpath to csv input file\n\n"
+				 << "\t-o,\t-out\t\tpath to tsd output file\n\n"
+				 << "\t-s,\t-sensor-def\tpath to sensor definition file\n\n"
+				 << "\t-l,\t-log\t\tpath to log file (optional)\n\n"
+				 << "\t\t-step-time\tstepwidth in time (take every n-th data set) (optional)\n\n"
+				 << "\t\t-step-fiber\tstepwidth on fiber (take every n-th measuring point) (optional)\n\n"
+				 << "\t\t-min-time\tread only from this time on (optional)\n\n"
+				 << "\t\t-max-time\tread only until this time (optional)\n\n"
+				 << "\t-h,\t-help\t\tprint this help\n\n"
+				 << "configuration details can be set in configuration file: odisitosd.conf\n";
+			return 0;
+		}
+		cout << "invalid argument: " << argv[i] << endl;
+	}
+	if (opts.min_time>opts.max_time and opts.max_time!=-1) {
+		cerr << "-min-time can't be greater than -max-time!" << endl;
+		return 1;
+	}
+
+	bool names_read = false;
+	ifstream cfgfile;			//Sensor definitions
+	cfgfile.open("odisitosd.conf");
+	if (!cfgfile.is_open()) {
+		cout << "configuration file odisitosd.conf not found!"<<endl;
+		return 1;
+	}
+	string line;
 	getline(cfgfile,line);
 	opts.startrow = atoi(getTextBlock(line,0).c_str());
 	getline(cfgfile,line);
@@ -179,22 +256,18 @@ int main(int argc, char *argv[]) {
 	getline(cfgfile,line);
 	opts.tab_space_count = atoi(getTextBlock(line,0).c_str())-1;
 	getline(cfgfile,line);
-	opts.height = atof(getTextBlock(line,0).c_str());
-	getline(cfgfile,line);
 	opts.basetemp = atof(getTextBlock(line,0).c_str());
 	getline(cfgfile,line);
 	opts.flipobj = atoi(getTextBlock(line,0).c_str());
 	getline(cfgfile,line);
 	opts.objwidth = atof(getTextBlock(line,0).c_str());
-	getline(cfgfile,line);
-	opts.leave_out = atoi(getTextBlock(line,0).c_str());
 
 	cfgfile.close();
 
 	ifstream deffile;			//Sensor definitions
 	deffile.open(def_filename.c_str());
 	if (!deffile.is_open()) {
-		cout << "file not found!"<<endl;
+		cerr << "sensor definition file \""<<def_filename<< "\" not found!"<<endl;
 		return 1;
 	}
 	vector<float> inlist;
@@ -212,6 +285,9 @@ int main(int argc, char *argv[]) {
 				in_x.at(in_x.size()-1) = opts.objwidth-in_x.at(in_x.size()-1);
 			}
 			//in_y.resize(in_y.size()+1,atof(getTextBlock(line,3).c_str()));
+		}
+		if (line.at(0)=='h') {
+			opts.height = atof(getTextBlock(line,0).c_str());
 		}
 		if (line.at(0)=='o') {
 			outlist.resize(outlist.size()+1,atof(getTextBlock(line,1).c_str()));
@@ -231,7 +307,7 @@ int main(int argc, char *argv[]) {
 	ifstream file;					// data file
 	file.open(data_filename.c_str());
 	if (!file.is_open()) {
-		cout << "file not found!"<<endl;
+		cerr << "input file \""<<data_filename<< "\" not found!"<<endl;
 		return 1;
 	}
 	vector<vector<float> > values;
@@ -254,18 +330,39 @@ int main(int argc, char *argv[]) {
 				debug_positions.resize(debug_positions.size()+1);
 				parseLine(line,&values.at(values.size()-1),&times,&debug_positions.at(debug_positions.size()-1),row);	//&valid_cols
 			}
+			if (times.size()>0 && times.at(times.size()-1)<opts.min_time && opts.min_time!=-1) {
+				values.resize(times.size()-1);
+				debug_positions.resize(times.size()-1);
+				times.resize(times.size()-1);
+			}
+			if (times.size()>0 && times.at(times.size()-1)>opts.max_time && opts.max_time!=-1) {
+				values.resize(times.size()-1);
+				debug_positions.resize(times.size()-1);
+				times.resize(times.size()-1);
+				break;
+			}
 		}
 		row++;
 	}
 	ofstream errfile;					// error output
 	ofstream outfile;					// output
 	outfile.open(out_filename.c_str());
-	errfile.open(err_filename.c_str());
+	if (!outfile.is_open()) {
+		cerr << "output file path \""<<out_filename<< "\" is invalid!"<<endl;
+	}
+	if (err_filename!="") {
+		errfile.open(err_filename.c_str());
+		if (!errfile.is_open()) {
+			cerr << "log file path \""<<err_filename<< "\" is invalid!"<<endl;
+		}
+	}
 	int insidecount = 0;
 	int outsidecount = 0;
 	double insideval = 0;
 	double outsideval= 0;
-	for (size_t i=1;i<values.size();i++) {
+	for (size_t i=0;i<values.size();i++) {
+		if (!((i+1)%opts.time_step_delta==0)) continue;
+		//if (i%100) cout << "\r"<<int((float)i/values.size()*100.) << "%";
 		vector<float>* curr_delta = &values.at(i);
 		values.at(i).resize(curr_delta->size());
 		outfile << "t "<<int(times.at(i))<<endl;
@@ -296,28 +393,29 @@ int main(int argc, char *argv[]) {
 				}
 			}
 			if (!outside) {
+				if (!(j%opts.fiber_step_delta==0)) continue;
 				insidecount++;
-				if (insidecount%opts.leave_out==0) {
-					// calc value
-					int fwcount = 0;
+				// calc value
+				int fwcount = 0;
+				if (i>0) {
 					float prev_val = values.at(i-1).at(j);
 					float original_val = values.at(i).at(j);
 					while ((i+fwcount+1<values.size()) && (abs(values.at(i+fwcount).at(j)-prev_val)>(fwcount+1)*opts.error_threshold)) {
 						fwcount++;
 						if (fwcount==opts.maxfwcount) {
-							errfile << "count of invalid values too big -> nothing changed!" <<" (l. "<<i+opts.startrow+2<<", c. "<<debug_positions.at(i).at(j)<<")"<< endl;
+							if (err_filename!="") errfile << "count of invalid values too big -> nothing changed!" <<" (l. "<<i+opts.startrow+2<<", c. "<<debug_positions.at(i).at(j)<<")"<< endl;
 							break;
 						}
 					}
 					if (fwcount>0) {
 						values.at(i).at(j) = prev_val+(values.at(i+fwcount).at(j)-prev_val)/(fwcount+1);
-						errfile << "changed " <<original_val<<" (l. "<<i+opts.startrow+2<<", c. "<<debug_positions.at(i).at(j)<<") to "<<values.at(i).at(j)<< endl;
+						if (err_filename!="") errfile << "changed " <<original_val<<" (l. "<<i+opts.startrow+2<<", c. "<<debug_positions.at(i).at(j)<<") to "<<values.at(i).at(j)<< endl;
 					}
-					float x = x_in+((x_out-x_in)/(l_out-l_in))*(l_pos-l_in);
-					float y = opts.height;
-					float z = cos(asin(((x_out-x_in)/(l_out-l_in))))*(l_pos-l_in);
-					outfile <<"s "<<x<<" "<<y<<" "<<z<< " "<<opts.basetemp+values.at(i).at(j) << endl;
 				}
+				float x = x_in+((x_out-x_in)/(l_out-l_in))*(l_pos-l_in);
+				float y = opts.height;
+				float z = cos(asin(((x_out-x_in)/(l_out-l_in))))*(l_pos-l_in);
+				outfile <<"s "<<x<<" "<<y<<" "<<z<< " "<<opts.basetemp+values.at(i).at(j) << endl;
 				insideval+=values.at(i).at(j);
 			} else {
 				outsidecount++;
@@ -327,10 +425,11 @@ int main(int argc, char *argv[]) {
 		outfile << endl;
 
 	}
+	cout << "\r"<<endl;
 	cout << insidecount << " values inside object, "<<outsidecount << " outside object "<<endl;
 	cout << "Inside average: " << insideval/insidecount << " Outside average: " << outsideval/outsidecount << endl;
 	outfile.close();
-	errfile.close();
+	if (err_filename!="") errfile.close();
 	cout << "files successfully created." << endl;
 	return 0;
 };

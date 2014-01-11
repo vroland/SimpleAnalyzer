@@ -1,0 +1,7 @@
+INSTALL_PATH = /usr/bin
+
+install: mergetsd
+	sudo cp mergetsd $(INSTALL_PATH)/mergetsd
+	sudo chmod +x $(INSTALL_PATH)/mergetsd
+uninstall:
+	sudo rm $(INSTALL_PATH)/mergetsd

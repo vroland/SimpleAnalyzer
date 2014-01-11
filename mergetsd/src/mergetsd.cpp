@@ -16,8 +16,10 @@
 using namespace std;
 
 struct Options {
-	int warning_threshold;
 	int offset;
+	unsigned int max_dt;
+	long int delta;
+	bool auto_delta;
 } opts;
 
 bool contains( std::vector<string>& Vec, const string& Element )
@@ -27,7 +29,7 @@ bool contains( std::vector<string>& Vec, const string& Element )
 
     return false;
 }
-bool contains( std::vector<int>& Vec, const int& Element )
+bool contains( std::vector<int>& Vec, const long& Element )
 {
     if (find(Vec.begin(), Vec.end(), Element) != Vec.end())
         return true;
@@ -80,11 +82,11 @@ string getTextBlock(string data,int n) { //Gibt den n-ten durch Leerzeichen abge
 	}
 	return data.substr(prevPos,pos-(prevPos));
 }
-int parseFile(string filename,vector<int> &timestamps,vector<string> &names,vector<string> &data) {
+int parseFile(string filename,vector<long> &timestamps,vector<string> &names,vector<string> &data) {
 	ifstream file;					// data file
 	file.open(filename.c_str());
 	if (!file.is_open()) {
-		cout << "file \""<<filename<<"\" not found!"<<endl;
+		cerr << "file \""<<filename<<"\" not found!"<<endl;
 		return 1;
 	}
 	string line;
@@ -105,47 +107,110 @@ int parseFile(string filename,vector<int> &timestamps,vector<string> &names,vect
 	file.close();
 	return 0;
 }
-int main() {
-	opts.warning_threshold = 1;
+
+
+int main(int argc, char *argv[]) {
 	opts.offset			   = 0;
-	vector<int> timestamps1;
+	opts.max_dt			   = 3;
+	int i=0;
+	string input1;
+	string input2;
+	string output_file;
+	while (i<argc-1) {
+		i++;
+		string arg = string(argv[i]);
+		if (arg=="-i1" || arg=="in1") {
+			input1 = string(argv[i+1]);
+			i++;
+			continue;
+		}
+		if (arg=="-i2" || arg=="in2") {
+			input2 = string(argv[i+1]);
+			i++;
+			continue;
+		}
+		if (arg=="-out" || arg=="-o") {
+			output_file = string(argv[i+1]);
+			i++;
+			continue;
+		}
+		if (arg=="-offset") {
+			opts.offset = atoi(argv[i+1]);
+			i++;
+			continue;
+		}
+		if (arg=="-max-dt") {
+			opts.max_dt = atoi(argv[i+1]);
+			if (opts.max_dt<0) {
+				cerr << "max-dt (max time difference) must be positive!" << endl;
+			}
+			i++;
+			continue;
+		}
+		if (arg=="-auto-offset") {
+			string val = string(argv[i+1]);
+			transform(val.begin(), val.end(), val.begin(), ::tolower);
+			if (val=="true" || val=="1") {
+				opts.auto_delta = true;
+			} else {
+				if (val=="false" || val=="0") {
+					opts.auto_delta = false;
+				} else {
+					cerr << "invalid value for -auto-offset! possible values are true/false or 1/0!"<<endl;
+				}
+			}
+			i++;
+			continue;
+		}
+		if (arg=="-h") {
+			cout << "mergetsd merges two timed sensor data (tsd) files into one.\n"
+				 << "usage: mergetsd ARGUMENT1 VALUE1 ARGUMENT2 VALUE2...\n"
+				 << "program arguments: \n"
+				 << "\t-i1,\t-in1\t\tpath to first tsd input file (defines dataset names)\n\n"
+				 << "\t-i2,\t-in2\t\tpath to second tsd input file\n\n"
+				 << "\t-o,\t-out\t\tpath to tsd output file\n\n"
+				 << "\t\t-max-dt\t\tmaximum absolute value of the time difference between\n"
+				 << "\t\t\t\ttwo datasets to be merged (optional, default 3) in seconds\n\n"
+				 << "\t\t-offset\t\toffset added to time values of second input file in seconds\n"
+				 << "\t\t\t\t(if -auto-offset is true additionally to the auto-offset, can be negative, optional, default 0)\n\n"
+				 << "\t\t-auto-offset\tadd an offset of the difference of the first time value to the second time value\n"
+				 << "\t\t\t\tto the second time value (can be true/false or 1/0, optional, default true)\n\n"
+				 << "\t-h,\t-help\t\tprint this help\n\n";
+			return 0;
+		}
+		cout << "invalid argument: " << argv[i] << endl;
+	}
+	vector<long> timestamps1;
 	vector<string> names1;
 	vector<string> data1;
-	vector<int> timestamps2;
+	vector<long> timestamps2;
 	vector<string> names2;
 	vector<string> data2;
-	if (parseFile("temperatur.tsd",timestamps1,names1,data1)) return 1;
-	if (parseFile("temperatur_odisi.tsd",timestamps2,names2,data2)) return 1;
-	int delta = timestamps1.at(0)-timestamps2.at(opts.offset);
-	int start_delta = delta;
-	int changes = 0;
-	int bigger_changes = 0;
+	if (parseFile(input1,timestamps1,names1,data1)) return 1;
+	if (parseFile(input2,timestamps2,names2,data2)) return 1;
+	if (opts.auto_delta) opts.delta = timestamps1.at(0)-(timestamps2.at(0));
+
 	int matched_datasets = 0;
-	int last_dataset = 0;
 	ofstream outfile;
-	outfile.open("temperatur_gesamt.tsd");
+	outfile.open(output_file.c_str());
+	if (!outfile.good()) {
+		cerr << "file \""<<output_file<<"\" could not be created!" << endl;
+	}
 	for (size_t i = 0;i<timestamps1.size();i++) {
-		if (i+opts.offset<timestamps2.size() && (i+opts.offset>0)) {
-			if (timestamps2.at(i+opts.offset)!=timestamps1.at(i)-delta) {
-				int dd = (timestamps1.at(i)-timestamps2.at(i+opts.offset))-delta;
-				if (abs(dd)>opts.warning_threshold) {
-					cout << "WARNING: time stamp difference changed by: "<<dd<<" at data set "<<i<<endl;
-					bigger_changes++;
-				}
-				delta = timestamps1.at(i)-timestamps2.at(i+opts.offset);
-				changes++;
+		for (size_t j = 0;j<timestamps2.size();j++) {
+			int delta_t = (timestamps1.at(i)-(timestamps2.at(j))+opts.offset)-opts.delta;
+			if ((unsigned int)abs(delta_t)<=opts.max_dt) {
+				outfile << "t "<<timestamps1.at(i) << endl;
+				outfile << "n "<<names1.at(i) << endl;
+				outfile << data1.at(i);
+				outfile << data2.at(j);
+				outfile << endl;
+				matched_datasets++;
+				break;
 			}
-			outfile << "t "<<timestamps1.at(i) << endl;
-			outfile << "n "<<names1.at(i) << endl;
-			outfile << data1.at(i) << endl,
-			outfile << data2.at(i) << endl;
-			matched_datasets++;
 		}
-		last_dataset++;
 	}
 	outfile.close();
-	cout << "matched "<<matched_datasets<<" data sets"<<endl;
-	cout << "time stamp difference changed "<<changes<<" times. ("<<bigger_changes<<"x more than "<<opts.warning_threshold<<")"<<endl;
-	cout << "time difference at last data set ("<<last_dataset<<") to first is "<<delta-start_delta << endl;
+	cout << "merged "<<matched_datasets<<" data sets"<<endl;
 	return 0;
 }
