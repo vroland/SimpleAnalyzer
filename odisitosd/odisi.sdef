@@ -1,6 +1,4 @@
 #odisi definition file
-#fiber height:
-h 0.065	
 #type (in/out)    position on fiber    x
 i 0.60 .084
 o 0.73 .084

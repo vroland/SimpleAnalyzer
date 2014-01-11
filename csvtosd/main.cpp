@@ -158,13 +158,14 @@ int main(int argc, char *argv[]) {
 		}
 		if (arg=="-h") {
 			cout << "csvtosd converts character-separated values (csv) into timed sensor data (tsd) for SimpleAnalyzer.\n"
+				 << "usage: mergetsd ARGUMENT1 VALUE1 ARGUMENT2 VALUE2...\n"
 				 << "program arguments: \n"
 				 << "\t-i\t-in\t\tpath to csv input file\n\n"
 				 << "\t-o\t-out\t\tpath to tsd output file\n\n"
 				 << "\t-s\t-sensor-def\tpath to sensor definition file\n\n"
-				 << "\t\t-step-time\tstepwidth in time (take every n-th data set) (optional)\n\n"
-				 << "\t\t-min-time\tread only from this time on (optional)\n\n"
-				 << "\t\t-max-time\tread only until this time (optional)\n\n"
+				 << "\t\t-step-time\tstepwidth in time (take every n-th data set) (optional, default 1)\n\n"
+				 << "\t\t-min-time\tread only from this time on (optional, default -1 (means no restriction))\n\n"
+				 << "\t\t-max-time\tread only until this time (optional, default -1 (means no restriction))\n\n"
 				 << "\t-h\t-help\t\tprint this help\n\n"
 				 << "configuration details can be set in configuration file: csvtosd.conf\n";
 			return 0;

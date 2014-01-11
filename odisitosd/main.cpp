@@ -155,6 +155,37 @@ int main(int argc, char *argv[]) {
 	string data_filename;
 	string err_filename;
 	string out_filename;
+
+	ifstream cfgfile;			//Sensor definitions
+	cfgfile.open("odisitosd.conf");
+	if (!cfgfile.is_open()) {
+		cout << "configuration file odisitosd.conf not found!"<<endl;
+		return 1;
+	}
+	string line;
+	getline(cfgfile,line);
+	opts.startrow = atoi(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.replace_comma_with_point = atoi(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.timecol = atoi(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.error_threshold = atof(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.maxfwcount = atoi(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.tab_space_count = atoi(getTextBlock(line,0).c_str())-1;
+	getline(cfgfile,line);
+	opts.basetemp = atof(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.flipobj = atoi(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.height = atof(getTextBlock(line,0).c_str());
+	getline(cfgfile,line);
+	opts.objwidth = atof(getTextBlock(line,0).c_str());
+
+	cfgfile.close();
+
 	int i=0;
 	while (i<argc-1) {
 		i++;
@@ -197,6 +228,11 @@ int main(int argc, char *argv[]) {
 			i++;
 			continue;
 		}
+		if (arg=="-height") {
+			opts.height = atof(argv[i+1]);
+			i++;
+			continue;
+		}
 		if (arg=="-max-time") {
 			opts.max_time = atof(argv[i+1]);
 			if (opts.max_time<0) {
@@ -215,15 +251,17 @@ int main(int argc, char *argv[]) {
 		}
 		if (arg=="-h") {
 			cout << "odisitosd converts data files from the odisi sensor into timed sensor data (tsd) for SimpleAnalyzer.\n"
+				 << "usage: mergetsd ARGUMENT1 VALUE1 ARGUMENT2 VALUE2...\n"
 				 << "program arguments: \n"
 				 << "\t-i,\t-in\t\tpath to csv input file\n\n"
 				 << "\t-o,\t-out\t\tpath to tsd output file\n\n"
 				 << "\t-s,\t-sensor-def\tpath to sensor definition file\n\n"
 				 << "\t-l,\t-log\t\tpath to log file (optional)\n\n"
-				 << "\t\t-step-time\tstepwidth in time (take every n-th data set) (optional)\n\n"
-				 << "\t\t-step-fiber\tstepwidth on fiber (take every n-th measuring point) (optional)\n\n"
-				 << "\t\t-min-time\tread only from this time on (optional)\n\n"
-				 << "\t\t-max-time\tread only until this time (optional)\n\n"
+				 << "\t\t-height\t\theight of the fiber level (optional, default 0.0)\n\n"
+				 << "\t\t-step-time\tstepwidth in time (take every n-th data set) (optional, default 1)\n\n"
+				 << "\t\t-step-fiber\tstepwidth on fiber (take every n-th measuring point) (optional, default 1)\n\n"
+				 << "\t\t-min-time\tread only from this time on (optional, default -1 (means no restriction))\n\n"
+				 << "\t\t-max-time\tread only until this time (optional, default -1 (means no restriction))\n\n"
 				 << "\t-h,\t-help\t\tprint this help\n\n"
 				 << "configuration details can be set in configuration file: odisitosd.conf\n";
 			return 0;
@@ -236,34 +274,6 @@ int main(int argc, char *argv[]) {
 	}
 
 	bool names_read = false;
-	ifstream cfgfile;			//Sensor definitions
-	cfgfile.open("odisitosd.conf");
-	if (!cfgfile.is_open()) {
-		cout << "configuration file odisitosd.conf not found!"<<endl;
-		return 1;
-	}
-	string line;
-	getline(cfgfile,line);
-	opts.startrow = atoi(getTextBlock(line,0).c_str());
-	getline(cfgfile,line);
-	opts.replace_comma_with_point = atoi(getTextBlock(line,0).c_str());
-	getline(cfgfile,line);
-	opts.timecol = atoi(getTextBlock(line,0).c_str());
-	getline(cfgfile,line);
-	opts.error_threshold = atof(getTextBlock(line,0).c_str());
-	getline(cfgfile,line);
-	opts.maxfwcount = atoi(getTextBlock(line,0).c_str());
-	getline(cfgfile,line);
-	opts.tab_space_count = atoi(getTextBlock(line,0).c_str())-1;
-	getline(cfgfile,line);
-	opts.basetemp = atof(getTextBlock(line,0).c_str());
-	getline(cfgfile,line);
-	opts.flipobj = atoi(getTextBlock(line,0).c_str());
-	getline(cfgfile,line);
-	opts.objwidth = atof(getTextBlock(line,0).c_str());
-
-	cfgfile.close();
-
 	ifstream deffile;			//Sensor definitions
 	deffile.open(def_filename.c_str());
 	if (!deffile.is_open()) {
@@ -285,9 +295,6 @@ int main(int argc, char *argv[]) {
 				in_x.at(in_x.size()-1) = opts.objwidth-in_x.at(in_x.size()-1);
 			}
 			//in_y.resize(in_y.size()+1,atof(getTextBlock(line,3).c_str()));
-		}
-		if (line.at(0)=='h') {
-			opts.height = atof(getTextBlock(line,0).c_str());
 		}
 		if (line.at(0)=='o') {
 			outlist.resize(outlist.size()+1,atof(getTextBlock(line,1).c_str()));
@@ -362,7 +369,7 @@ int main(int argc, char *argv[]) {
 	double outsideval= 0;
 	for (size_t i=0;i<values.size();i++) {
 		if (!((i+1)%opts.time_step_delta==0)) continue;
-		//if (i%100) cout << "\r"<<int((float)i/values.size()*100.) << "%";
+		if (i%100) cout << "\r"<<int((float)i/values.size()*100.) << "%";
 		vector<float>* curr_delta = &values.at(i);
 		values.at(i).resize(curr_delta->size());
 		outfile << "t "<<int(times.at(i))<<endl;
