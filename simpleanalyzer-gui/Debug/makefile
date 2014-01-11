@@ -43,19 +43,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: gui_app
+all: simpleanalyzer-gui
 
 # Tool invocations
-gui_app: $(OBJS) $(USER_OBJS)
+simpleanalyzer-gui: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++ -o "gui_app" $(OBJS) $(USER_OBJS) $(LIBS) `wx-config --cxxflags --libs --gl-libs`
+	g++ -o "simpleanalyzer-gui" $(OBJS) $(USER_OBJS) $(LIBS) `wx-config --cxxflags --libs --gl-libs`
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(C++_DEPS)$(OBJS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) gui_app
+	-$(RM) $(C++_DEPS)$(OBJS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) simpleanalyzer-gui
 	-@echo ' '
 
 .PHONY: all clean dependents

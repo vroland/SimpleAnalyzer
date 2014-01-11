@@ -44,7 +44,7 @@
 									<listOptionValue builtIn="false" value="/usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-debug-2.8"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.other.other.1059561252" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++0x -c -fmessage-length=0 `wx-config --cxxflags`" valueType="string"/>
-								<option id="gnu.cpp.compiler.option.include.files.1012485710" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" valueType="includeFiles"/>
+								<option id="gnu.cpp.compiler.option.include.files.1012485710" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1374128285" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.1394435735" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
@@ -53,7 +53,7 @@
 									<listOptionValue builtIn="false" value="GL"/>
 									<listOptionValue builtIn="false" value="X11"/>
 								</option>
-								<option id="gnu.cpp.link.option.paths.1119402575" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths"/>
+								<option id="gnu.cpp.link.option.paths.1119402575" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths"/>
 								<option id="gnu.cpp.link.option.flags.386129144" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="`wx-config --cxxflags --libs --gl-libs`" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.332610086" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
