@@ -254,7 +254,7 @@ int Utils::pointInsideTetrahedron(double* p, double* pv1, double* pv2, double* p
 	Vector3D pges = Vector3D(p);
 	return pointInsideTetrahedron(&pges,&v1,&v2,&v3,&v4);
 }
-double Utils::getPointValue(int &status,vector<SensorPoint>* sensorpoints,double* p,Interpolator* interpolator) {
+double Utils::getPointValue(int &status,vector<SensorPoint>* sensorpoints,double* p,Interpolator* interpolator,vector<SensorPoint*>* prev_tet,vector<SensorPoint*>* current_tet) {
 	SensorPointComparator spcomparator;
 	int sensorpointcount = sensorpoints->size();
 	for (int i=0;i<3;i++) {
@@ -262,17 +262,15 @@ double Utils::getPointValue(int &status,vector<SensorPoint>* sensorpoints,double
 	}
 	sort(sensorpoints->begin(),sensorpoints->end(),spcomparator);
 	vector<SensorPoint*> tet = vector<SensorPoint*>(4);
-	tet.at(0) = &sensorpoints->at(0);
-	tet.at(1) = &sensorpoints->at(1);
-	tet.at(2) = &sensorpoints->at(2);
-	tet.at(3) = &sensorpoints->at(3);
 	vector<int> indices = vector<int>(4);
-	indices.at(0) = 0;
-	indices.at(1) = 1;
-	indices.at(2) = 2;
-	indices.at(3) = 3;
+	for (int i=0;i<4;i++) {
+		tet.at(i) = &sensorpoints->at(i);
+		indices.at(i) = i;
+	}
 	vector<int>* extrapolationIndices = NULL;
-	status = 0;
+	bool pretest_successful = (prev_tet!=NULL) && (pointInsideTetrahedron(p,prev_tet)==1);
+	status = pretest_successful?1:0;	// Vorherigen Tetraeder testen, wenn gegeben
+	//cout << "prev_stat: "<<status<<endl;
 	while (status<1) {
 		status = pointInsideTetrahedron(p,&tet);
 	    if (status>-1 && extrapolationIndices==NULL) {	//Erster nicht coplanarer Tetraeder
@@ -291,10 +289,21 @@ double Utils::getPointValue(int &status,vector<SensorPoint>* sensorpoints,double
 			}
 	    }
 	}
-	if (extrapolationIndices!=NULL) {
+	if (extrapolationIndices!=NULL || pretest_successful) {
 		if (status<1) { //Extrapolation
 			for (int i=0;i<4;i++) {
 				tet.at(i) = &sensorpoints->at(extrapolationIndices->at(i));
+			}
+		}
+		if (pretest_successful) {
+			for (int i=0;i<4;i++) {
+				tet.at(i) = prev_tet->at(i);
+			}
+		}
+		if (current_tet!=NULL) {	//aktuellen Tetraeder speichern, wenn gewünscht
+			current_tet->resize(4);
+			for (int i=0;i<4;i++) {
+				current_tet->at(i) = tet.at(i);
 			}
 		}
 		Vector3D v1 = Vector3D(tet.at(0)->coords);
@@ -308,6 +317,7 @@ double Utils::getPointValue(int &status,vector<SensorPoint>* sensorpoints,double
 			values[i] = tet.at(i)->temperature;
 		}
 		double interval =  interpolator->interpolateTet(&tetrahedron,&pg,values);
+		cout << interval << endl;
 		delete[] values;
 		delete extrapolationIndices;
 		return interval;

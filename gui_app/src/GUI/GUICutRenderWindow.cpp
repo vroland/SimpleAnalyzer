@@ -99,8 +99,11 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent,const wxChar *title, in
 
 	Update();
 }
-void render_thread(bool* status_flag,float* value_img,wxImage* image,int width,int height,int startheight,int delta_h,CutRender_info* info,Vector3D* xvec,Vector3D* yvec,Vector3D* v0,vector<tetgenio*>* bases,ObjectData* obj,vector<SensorPoint>* sensor_data) {
+void render_thread(bool* status_flag,float* value_img,wxImage* image,int width,int height,int startheight,int delta_h,CutRender_info* info,Vector3D* xvec,Vector3D* yvec,Vector3D* v0,vector<tetgenio*>* bases,ObjectData* obj,vector<SensorPoint>* sensor_data,bool use_last_tet) {
 	Interpolator interpolator;
+	vector<SensorPoint*>* last_tet = new vector<SensorPoint*>;
+	vector<SensorPoint*>* new_tet = new vector<SensorPoint*>;
+	bool last_tet_init = false;
 	for (int x=0;x<width;x++) {
 		for (int y=startheight;y<startheight+delta_h;y++) {
 			Vector3D* p = v0->copy();
@@ -121,7 +124,12 @@ void render_thread(bool* status_flag,float* value_img,wxImage* image,int width,i
 				if (found) {
 					int status = 0;
 					interpolator.setMode(mat->interpolation_mode);
-					float value = (float)getPointValue(status,sensor_data,p->getXYZ(),&interpolator);
+					float value = (float)getPointValue(status,sensor_data,p->getXYZ(),&interpolator,(last_tet_init && use_last_tet)?last_tet:NULL,use_last_tet?new_tet:0);
+					vector<SensorPoint*>* temp;
+					temp = last_tet;
+					last_tet = new_tet;
+					new_tet = temp;
+					last_tet_init = true;
 					value_img[y*width+x] = value;
 					float* color = hsvToRgb((1.0-clampHue((value_img[y*width+x]-visualization_info.min_visualisation_temp)/(visualization_info.max_visualisation_temp+visualization_info.min_visualisation_temp)))*.666,1,1);
 					image->SetRGB(x,y,(unsigned char)(color[0]*255),(unsigned char)(color[1]*255),(unsigned char)(color[2]*255));
@@ -133,6 +141,8 @@ void render_thread(bool* status_flag,float* value_img,wxImage* image,int width,i
 			delete p;
 		}
 	}
+	delete new_tet;
+	delete last_tet;
 	*status_flag = 0;
 }
 void GUICutRenderWindow::renderImage(wxImage* image) {
@@ -142,6 +152,7 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 	int height = imgHeightEdit->GetValue();
 	canvas->getScalePanel()->refresh(width,height);
 	core_count = threadcountedit->GetValue();
+	bool use_last_tet = false;		// wenig performancegewinn, ungenauigkeiten
 	delete image;
 	image = new wxImage(width,height,true);
 	image->InitAlpha();
@@ -193,7 +204,7 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 		for (int p=0;p<int(original_sd->size());p++) {
 			copySensorPoint(&original_sd->at(p),&copied_sensor_data.at(i).at(p));
 		}
-		threads.resize(threads.size()+1,new thread(render_thread,&thread_running[i],value_img,image,width,height,startheight,delta_h,info,xvec,yvec,tri->getV1(),&bases,obj,&copied_sensor_data.at(i)));
+		threads.resize(threads.size()+1,new thread(render_thread,&thread_running[i],value_img,image,width,height,startheight,delta_h,info,xvec,yvec,tri->getV1(),&bases,obj,&copied_sensor_data.at(i),use_last_tet));
 	}
 	unsigned int running = 0;
 	do {

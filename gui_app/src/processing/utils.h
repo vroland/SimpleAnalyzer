@@ -74,7 +74,7 @@ namespace Utils {
 	int pointInsideTetrahedron(double* pges, double* v1, double* v2, double* v3, double* v4);
 	int pointInsideTetrahedron(double* p,vector<SensorPoint*>* tet);
 	void nextCombination(vector<int>* indices,int depth,int dataPointCount);
-	double getPointValue(int &status,vector<SensorPoint>* sensorpoints,double* p,Interpolator* interpolator);
+	double getPointValue(int &status,vector<SensorPoint>* sensorpoints,double* p,Interpolator* interpolator,vector<SensorPoint*>* prev_tet = NULL,vector<SensorPoint*>* current_tet = NULL);
 	float* hsvToRgb(float h, float s, float v);
 	void copySensorPoint(SensorPoint* from,SensorPoint* to);
 }
