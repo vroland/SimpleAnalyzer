@@ -46,18 +46,13 @@ csvtosd: $(OBJS) $(USER_OBJS)
 	g++  -o "csvtosd" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
-	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
 	-$(RM) $(C++_DEPS)$(OBJS)$(C_DEPS)$(CC_DEPS)$(CPP_DEPS)$(EXECUTABLES)$(CXX_DEPS)$(C_UPPER_DEPS) csvtosd
 	-@echo ' '
 
-post-build:
-	-mv csvtosd /daten/Projekte/eclipse_workspace/csvtosd
-	-@echo ' '
-
 .PHONY: all clean dependents
-.SECONDARY: post-build
+.SECONDARY:
 
 -include ../makefile.targets

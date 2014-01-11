@@ -157,7 +157,16 @@ int main(int argc, char *argv[]) {
 	string out_filename;
 
 	ifstream cfgfile;			//Sensor definitions
-	cfgfile.open("odisitosd.conf");
+	#define NUMBEROFPATHS 3
+	string configpaths[NUMBEROFPATHS] {
+		string(string(argv[0])+".conf"),
+		"/usr/local/share/simpleanalyzer/odisitosd.conf",
+		"/usr/share/simpleanalyzer/odisitosd.conf"
+	};
+	for (int i=0;i<NUMBEROFPATHS;i++) {
+		cfgfile.open(configpaths[i].c_str());
+		if (cfgfile.is_open()) break;
+	}
 	if (!cfgfile.is_open()) {
 		cout << "configuration file odisitosd.conf not found!"<<endl;
 		return 1;

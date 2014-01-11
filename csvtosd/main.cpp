@@ -178,7 +178,16 @@ int main(int argc, char *argv[]) {
 	}
 
 	ifstream cfgfile;			//Sensor definitions
-	cfgfile.open("csvtosd.conf");
+	#define NUMBEROFPATHS 3
+	string configpaths[NUMBEROFPATHS] {
+		string(string(argv[0])+".conf"),
+		"/usr/local/share/simpleanalyzer/csvtosd.conf",
+		"/usr/share/simpleanalyzer/csvtosd.conf"
+	};
+	for (int i=0;i<NUMBEROFPATHS;i++) {
+		cfgfile.open(configpaths[i].c_str());
+		if (cfgfile.is_open()) break;
+	}
 	if (!cfgfile.is_open()) {
 		cout << "configuration file csvtosd.cfg not found!"<<endl;
 		return 1;

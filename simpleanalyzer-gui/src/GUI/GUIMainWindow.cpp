@@ -8,6 +8,7 @@
 #include "GUIMainWindow.h"
 #include <iostream>
 #include <sstream>
+#include <fstream>
 #include <string>
 #include "../libraries/tetgen/tetgen.h"
 #include "../processing/MeshProcessor.h"
@@ -15,6 +16,7 @@
 #include "../processing/ObjectData.h"
 #include "constants.h"
 #include "../fileIO/Exporter.h"
+#include <wx/stdpaths.h>
 using namespace std;
 
 extern std::vector<ObjectData*> data_objects;
@@ -110,6 +112,27 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	updating = false;
 	wxImage::AddHandler( new wxJPEGHandler );
 
+	#define NUMBEROFPATHS 4
+	string configpaths[NUMBEROFPATHS] {
+		string(wxStandardPaths::Get().GetExecutablePath().BeforeLast('/').ToUTF8().data())+"/",
+		"/usr/local/share/simpleanalyzer/",
+		"/usr/share/simpleanalyzer/",
+	};
+	string datadir = "";
+	ifstream testfile;
+	for (int i=0;i<NUMBEROFPATHS;i++) {
+		datadir = configpaths[i];
+		testfile.open(datadir+string("icons/analyze_point.png"));
+		if (testfile.is_open()) break;
+	}
+	if (!testfile.is_open()) {
+		cerr << "could not find application data! make sure the data is located in one of this paths:"<<endl;
+		for (int i=0;i<NUMBEROFPATHS;i++) {
+			cout << configpaths[i] << endl;
+		}
+		Close(true);
+	}
+
 	//Toolbar
 	wxImage::AddHandler( new wxPNGHandler );
 	toolbar = new wxToolBar(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORZ_TEXT, _T("ID_TOOLBAR1"));
@@ -120,24 +143,24 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	toolbar->AddTool(ID_CHANGE_ACTIVE_OBJ,wxT("aktives Objekt"),wxArtProvider::GetBitmap(wxART_LIST_VIEW  ,wxART_TOOLBAR) , wxT("Aktives Objekt wählen"));
 	toolbar->AddTool(ID_DELETE_ACTIVE_OBJ,wxArtProvider::GetBitmap(wxART_DELETE, wxART_TOOLBAR),wxT("aktives Objekt löschen"));
 	toolbar->AddSeparator();
-	wxImage analyze_point(wxT("icons/analyze_point.png"), wxBITMAP_TYPE_PNG);
+	wxImage analyze_point(wxString::FromUTF8(datadir.c_str())+wxT("icons/analyze_point.png"), wxBITMAP_TYPE_PNG);
 	analyze_point = analyze_point.Scale(toolbar->GetToolBitmapSize().x,toolbar->GetToolBitmapSize().y,wxIMAGE_QUALITY_HIGH);
 	toolbar->AddTool(ID_ANALYZE_POINT,analyze_point,wxT("Punkt analysieren"));
 	toolbar->Realize();
 	SetToolBar(toolbar);
-	//Load Testobject
+	/*//Load Testobject
 	ObjectData* newobj = new ObjectData();
 	wxString path2 = wxT("../examples/haus.obj");
 	newobj->loadFromFile(path2);
 	wxString sdpath = wxT("../../csvtosd/temperatur.tsd");
 	newobj->addTimedData(sdpath);
-	addObject(newobj);
+	addObject(newobj);*/
 	/*ObjectData*newobj = new ObjectData();
 	wxString path = wxT("../examples/cylinder.obj");
 	newobj->loadFromFile(path);
 	addObject(newobj);*/
 
-	SetIcon(wxIcon(wxT("icons/prgm-icon.png")));
+	SetIcon(wxIcon(wxString::FromUTF8(datadir.c_str())+wxT("icons/prgm-icon.png")));
 	Centre();
 }
 GUIGLCanvas* GUIMainWindow::getGLCanvas() {
