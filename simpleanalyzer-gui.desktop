@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=SimpleAnalyzer-GUI
+GenericName=Analyzer
+Comment=GUI program for analysis and visualization of temperature data
+TryExec=simpleanalyzer-gui
+Exec=simpleanalyzer-gui
+Icon=/usr/local/share/simpleanalyzer/icons/prgm-icon.png
+Terminal=false
+Type=Application
+Categories=Graphics;Science;
+Keywords=analyzer,analysis,temperature

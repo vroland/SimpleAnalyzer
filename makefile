@@ -49,6 +49,7 @@ install: all
 	mkdir -p $(prefix)/bin
 	mkdir -p $(prefix)/share/simpleanalyzer/
 	mkdir -p $(prefix)/share/simpleanalyzer/icons
+	mkdir -p $(prefix)/share/applications/
 	
 	install --mode=755 csvtosd/Debug/csvtosd $(prefix)/bin
 	install --mode=755 csvtosd/Debug/csvtosd.conf $(prefix)/share/simpleanalyzer/
@@ -61,7 +62,7 @@ install: all
 	install --mode=755 simpleanalyzer-gui/Debug/simpleanalyzer-gui $(prefix)/bin
 	install --mode=755 simpleanalyzer-gui/Debug/icons/analyze_point.png $(prefix)/share/simpleanalyzer/icons
 	install --mode=755 simpleanalyzer-gui/Debug/icons/prgm-icon.png $(prefix)/share/simpleanalyzer/icons
-
+	install --mode=755 simpleanalyzer-gui.desktop $(prefix)/share/applications/
 uninstall: all
 	rm -rf $(prefix)/share/simpleanalyzer/
 	
@@ -69,6 +70,7 @@ uninstall: all
 	rm -f $(prefix)/bin/csvtosd
 	rm -f $(prefix)/bin/mergetsd
 	rm -f $(prefix)/bin/simpleanalyzer-gui
+	rm -f $(prefix)/share/applications/simpleanalyzer-gui.desktop
 distclean: clean
 .PHONY: install 
 

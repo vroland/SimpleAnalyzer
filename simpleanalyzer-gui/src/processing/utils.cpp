@@ -317,7 +317,6 @@ double Utils::getPointValue(int &status,vector<SensorPoint>* sensorpoints,double
 			values[i] = tet.at(i)->temperature;
 		}
 		double interval =  interpolator->interpolateTet(&tetrahedron,&pg,values);
-		cout << interval << endl;
 		delete[] values;
 		delete extrapolationIndices;
 		return interval;
