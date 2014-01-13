@@ -23,6 +23,7 @@ IMPLEMENT_APP(Application)
 
 bool Application::OnInit()
 {
+	wxMilliSleep(100);	//Workaround für eventuelle Timingprobleme
 	GUIMainWindow *frame = new GUIMainWindow(wxT("Simple Analyzer"), 100, 100, 1200, 700);
 	frame->Show(TRUE);
 	SetTopWindow(frame);
