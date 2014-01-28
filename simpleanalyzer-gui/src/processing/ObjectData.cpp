@@ -38,9 +38,11 @@ int ObjectData::loadFromFile(wxString &path) {
 	Importer importer;
 	importer.ImportObj((path_without_name+_T(".obj")).ToAscii(),&materials);
 	int status = importer.LoadSensorData((path_without_name+_T(".sd")).ToAscii(),this);
-	cout << status << endl;
 	if (status==OD_FAILURE) {
-		return OD_LOAD_INVALID_SENSOR_FILE;
+		int status = importer.LoadTimedData((path_without_name+_T(".tsd")).ToAscii(),this);
+		if (status==OD_FAILURE) {
+			return OD_LOAD_INVALID_SENSOR_FILE;
+		}
 	}
 	wxString wxfn = path_without_name.AfterLast(PATH_SEPARATOR);
 	string oname = string(wxfn.ToAscii());

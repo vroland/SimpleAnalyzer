@@ -475,7 +475,7 @@ void GUIMainWindow::OnMenuImportObj(wxCommandEvent &event)
 			delete newobj;
 			break;
 		case OD_LOAD_INVALID_SENSOR_FILE:
-			wxMessageBox(wxT("Sensordaten konnten nicht geladen werden: ")+(path.BeforeLast('.')+wxT(".sd")));
+			wxMessageBox(wxT("Sensordaten konnten nicht geladen werden: ")+(path.BeforeLast('.')+wxT(".(t)sd")));
 			delete newobj;
 			break;
 		case OD_SUCCESS:
