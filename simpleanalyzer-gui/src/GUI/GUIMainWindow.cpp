@@ -174,6 +174,7 @@ void GUIMainWindow::addObject(ObjectData* obj) {
 void GUIMainWindow::setActiveObject(int index) {
 	current_data_object_index = index;
 	gl_context->setRenderObject(data_objects.at(current_data_object_index));
+	propbox->current_material = 0;
 	updateObjectPropGUI();
 	updateViewPropGUI();
 }

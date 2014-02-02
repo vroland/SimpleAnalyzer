@@ -19,7 +19,7 @@ wxStaticBox(parent, wxID_ANY, wxT("Anzeigeeigenschaften")) {
 	facescb       = new wxRadioBox(parent,ID_GENERAL_VIEW_PROP,wxT("Flächen:"),wxDefaultPosition,wxDefaultSize,3,renderchoices);
 	matvisibility = new wxCheckListBox(parent,ID_GENERAL_VIEW_PROP);
 	matvistext    = new wxStaticText(parent,wxID_ANY,wxT("sichtbare Materialien:"));
-	show_extcb    = new wxCheckBox(parent,ID_GENERAL_VIEW_PROP,wxT("zeige Extrapolierte Punkte"));
+	show_extcb    = new wxCheckBox(parent,ID_GENERAL_VIEW_PROP,wxT("zeige extrapolierte Punkte"));
 	show_sdata    = new wxCheckBox(parent,ID_GENERAL_VIEW_PROP,wxT("zeige Sensordaten"));
 	visdelta_lbl  = new wxStaticText(parent,wxID_ANY,wxT("Farbbereich (Blau-Rot) in °C:"));
 	min_visval	  = new wxSpinCtrl(parent,ID_GENERAL_VIEW_PROP);
