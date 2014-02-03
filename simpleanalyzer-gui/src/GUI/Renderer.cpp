@@ -363,6 +363,7 @@ void drawVector(Vector3D* pos,Vector3D* dir) {
 		glVertex3dv(v1.getXYZ());
 		glVertex3dv(tip.getXYZ());
 	glEnd();
+	glLineWidth(1.0);
 	delete refvec;
 	delete refvec2;
 }
@@ -409,7 +410,7 @@ wxImage* Renderer::getViewportImage() {
 	// Put the image into a wxImage
 	wxImage* img = new wxImage((int) view[2], (int) view[3]);
 	for (int i=0;i<view[2]*view[3];i++) {
-		img->SetRGB(i%view[2],view[3]-i/view[2],((unsigned char*)pixels)[3*i],((unsigned char*)pixels)[3*i+1],((unsigned char*)pixels)[3*i+2]);
+		img->SetRGB(i%view[2],view[3]-i/view[2]-1,((unsigned char*)pixels)[3*i],((unsigned char*)pixels)[3*i+1],((unsigned char*)pixels)[3*i+2]);
 	}
 	free(pixels);
 	void* depth_buff = malloc(view[2] * view[3]); // must use malloc
@@ -418,7 +419,7 @@ wxImage* Renderer::getViewportImage() {
 	img->InitAlpha();
 	for (int i=0;i<view[2]*view[3];i++) {
 		if (((unsigned char*)depth_buff)[i]==255) {
-			img->SetAlpha(i%view[2],view[3]-i/view[2],0);
+			img->SetAlpha(i%view[2],view[3]-i/view[2]-1,0);
 		}
 	}
 	free(depth_buff);
@@ -478,6 +479,36 @@ void Renderer::render() {
 		drawVector(tri->getV1(),xvec);
 		glColor3f(0,1,0);
 		drawVector(tri->getV1(),yvec);
+		glColor4f(0,0,0,1);
+		Vector3D* tl = tri->getV1()->copy();
+		tl->sub(xvec);
+		tl->add(yvec);
+		Vector3D* tr = tri->getV1()->copy();
+		tr->add(xvec);
+		tr->add(yvec);
+		Vector3D* bl = tri->getV1()->copy();
+		bl->sub(xvec);
+		bl->sub(yvec);
+		Vector3D* br = tri->getV1()->copy();
+		br->add(xvec);
+		br->sub(yvec);
+		glBegin(GL_LINES);
+			glVertex3dv(tl->getXYZ());
+			glVertex3dv(tr->getXYZ());
+
+			glVertex3dv(tl->getXYZ());
+			glVertex3dv(bl->getXYZ());
+
+			glVertex3dv(br->getXYZ());
+			glVertex3dv(tr->getXYZ());
+
+			glVertex3dv(br->getXYZ());
+			glVertex3dv(bl->getXYZ());
+		glEnd();
+		delete tl;
+		delete tr;
+		delete bl;
+		delete br;
 		delete nor;
 		delete xvec;
 		delete yvec;

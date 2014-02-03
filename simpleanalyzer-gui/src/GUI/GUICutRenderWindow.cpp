@@ -74,7 +74,7 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent,const wxChar *title, in
 	export_img_bt = new wxButton(scroll_pane,ID_EXPORT_CUT_IMG_BT,wxT("Export (.png)..."));
 	export_csv_bt = new wxButton(scroll_pane,ID_EXPORT_CUT_CSV_BT,wxT("Export (.csv)..."));
 
-	scalelbl	 = new wxStaticText(scroll_pane,wxID_ANY,wxT("Farbskala:"));
+	scalelbl	 = new wxStaticText(scroll_pane,wxID_ANY,wxT("Temperaturskala:"));
 	scalemodelbl = new wxStaticText(scroll_pane,wxID_ANY,wxT("Modus/ΔT:"));
 	scalemodecb  = new wxComboBox(scroll_pane,ID_COLORSCALE_PROP,wxT(""),wxDefaultPosition,wxDefaultSize,0,NULL,wxCB_READONLY | wxCB_DROPDOWN);
 	scalemodecb->Insert(wxT("Vertikal"),0);
