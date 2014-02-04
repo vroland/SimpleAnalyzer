@@ -110,8 +110,9 @@ int parseFile(string filename,vector<long> &timestamps,vector<string> &names,vec
 
 
 int main(int argc, char *argv[]) {
-	opts.offset			   = 0;
-	opts.max_dt			   = 3;
+	opts.auto_delta = 1;
+	opts.offset		= 0;
+	opts.max_dt		= 3;
 	int i=0;
 	string input1;
 	string input2;

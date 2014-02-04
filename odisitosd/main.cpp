@@ -192,7 +192,6 @@ int main(int argc, char *argv[]) {
 	opts.height = atof(getTextBlock(line,0).c_str());
 	getline(cfgfile,line);
 	opts.objwidth = atof(getTextBlock(line,0).c_str());
-
 	cfgfile.close();
 
 	int i=0;
