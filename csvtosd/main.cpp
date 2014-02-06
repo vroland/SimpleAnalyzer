@@ -13,6 +13,9 @@
 
 using namespace std;
 
+/*
+ * Enthält die Programmeinstellungen
+ */
 struct Options {
 	size_t startcol;
 	char separator;

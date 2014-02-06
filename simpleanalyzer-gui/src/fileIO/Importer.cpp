@@ -57,7 +57,7 @@ string getTextBlock(string data,int n) { //Gibt den n-ten durch Leerzeichen abge
 	return data.substr(prevPos,pos-(prevPos));
 }
 
-int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) {
+ObjectDataStatus Importer::ImportObj(const char* filename,ObjectData* data) {
 	// read data //
 
 	vector<double> points;
@@ -76,14 +76,14 @@ int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) 
 		getline(file,line);
 		int firstspace = line.find(" ");
 		string type = line.substr(0,firstspace);
-		string data = line.substr(firstspace+1);
+		string line_data = line.substr(firstspace+1);
 		if (type=="v") {
 			points.resize(points.size()+3);
-			int space1 = data.find(" ");
-			int space2 = data.rfind(" ");
-			points.at(points.size()-3) = atof(data.substr(0,space1).c_str());
-			points.at(points.size()-2) = atof(data.substr(space1,space2).c_str());
-			points.at(points.size()-1) = atof(data.substr(space2).c_str());
+			int space1 = line_data.find(" ");
+			int space2 = line_data.rfind(" ");
+			points.at(points.size()-3) = atof(line_data.substr(0,space1).c_str());
+			points.at(points.size()-2) = atof(line_data.substr(space1,space2).c_str());
+			points.at(points.size()-1) = atof(line_data.substr(space2).c_str());
 			currentMatPointCount++;
 			continue;
 		}
@@ -91,15 +91,15 @@ int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) 
 			if (currentMatIndex<0) {
 				cout << "no material set!" << endl;
 			}
-			int spaces = count(data.begin(),data.end(),' ');
-			bool withUV = (data.find("/")<data.npos);
+			int spaces = count(line_data.begin(),line_data.end(),' ');
+			bool withUV = (line_data.find("/")<line_data.npos);
 			faces.resize(faces.size()+1);
 			vector<int>* subvec = &faces.at(faces.size()-1);
 			subvec->resize(spaces+1);
 			int lastpos = 0;
 			for (int i=0;i<=spaces;i++) {
-				int pos = data.find(" ",lastpos);
-				subvec->at(i) = getFaceIndex(data.substr(lastpos,pos),withUV)-currentMatFirstPoint;
+				int pos = line_data.find(" ",lastpos);
+				subvec->at(i) = getFaceIndex(line_data.substr(lastpos,pos),withUV)-currentMatFirstPoint;
 				lastpos = pos+1;
 			}
 			continue;
@@ -127,8 +127,8 @@ int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) 
 				string mtltype = mtlline.substr(0,mtlfirstspace);
 				string mtldata = mtlline.substr(mtlfirstspace+1);
 				if (mtltype=="newmtl") {
-					matDataList->resize(matDataList->size()+1);
-					currentMat = &matDataList->at(matDataList->size()-1);
+					data->materials.resize(data->materials.size()+1);
+					currentMat = &data->materials.at(data->materials.size()-1);
 					currentMat->name = mtldata;
 					currentMat->interpolation_mode = LINEAR;
 					currentMat->visible = true;
@@ -150,8 +150,8 @@ int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) 
 		}
 		if (type=="usemtl") {
 			string mat_str = getTextBlock(line,1);
-			for (unsigned int i=0;i<matDataList->size();i++) {
-				if (matDataList->at(i).name==mat_str) {
+			for (unsigned int i=0;i<data->materials.size();i++) {
+				if (data->materials.at(i).name==mat_str) {
 					currentMatIndex = i;
 					break;
 				}
@@ -184,7 +184,7 @@ int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) 
 						poly->vertexlist[j] = subvec->at(j)-1;
 					}
 				}
-				matDataList->at(currentMatIndex).tetgeninput = io;
+				data->materials.at(currentMatIndex).tetgeninput = io;
 			}
 
 			currentMatFirstPoint += currentMatPointCount;
@@ -196,7 +196,7 @@ int Importer::ImportObj(const char* filename,vector<MaterialData>* matDataList) 
 	file.close();
 	return OD_SUCCESS;
 }
-int Importer::LoadSensorData(const char* filename,ObjectData* data) {
+ObjectDataStatus Importer::LoadSensorData(const char* filename,ObjectData* data) {
 	ifstream file;
 	file.open(filename);
 	if (!file.is_open()) {
@@ -235,7 +235,7 @@ int Importer::LoadSensorData(const char* filename,ObjectData* data) {
 	}
 	return OD_SUCCESS;
 }
-int Importer::LoadTimedData(const char* filename,ObjectData* data) {
+ObjectDataStatus Importer::LoadTimedData(const char* filename,ObjectData* data) {
 	ifstream file;
 	file.open(filename);
 	if (!file.is_open()) {

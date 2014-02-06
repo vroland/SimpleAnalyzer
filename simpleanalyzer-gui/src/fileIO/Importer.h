@@ -12,13 +12,33 @@
 #include <vector>
 
 using namespace std;
-
+/**
+ * @brief Importieren von 3D-Modell (.obj) und Sensordaten (.tsd oder .sd).
+ */
 class Importer {
 public:
+	/**
+	 * Der Konstruktor.
+	 */
 	Importer();
-	int LoadSensorData(const char* filename,ObjectData* data);
-	int LoadTimedData(const char* filename,ObjectData* data);
-	int ImportObj(const char* filename,vector<MaterialData>* matDataList);
+	/**
+	 * Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft
+	 * diese mit dem Objekt.
+	 */
+	ObjectDataStatus LoadSensorData(const char* filename,ObjectData* data);
+	/**
+	 * Lädt zeitgesteuerte Sensordaten und Verknüpft
+	 * diese mit dem Objekt.
+	 */
+	ObjectDataStatus LoadTimedData(const char* filename,ObjectData* data);
+	/**
+	 * Lädt Objektdaten aus einer .obj-Datei. Das Objekt
+	 * ist zwar schon im Speicher erstellt, wird aber erst durch diese Methode mit Daten gefüllt.
+	 */
+	ObjectDataStatus ImportObj(const char* filename,ObjectData* data);
+	/**
+	 * Der Destruktor.
+	 */
 	virtual ~Importer();
 };
 

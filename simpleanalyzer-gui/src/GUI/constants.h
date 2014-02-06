@@ -12,7 +12,10 @@
 #define NUMBEROFINTERPOLATIONMODES 2
 const wxString imenumstrings[NUMBEROFINTERPOLATIONMODES] = {wxT("Linear"),wxT("Logarithmisch")};
 
-enum {
+/**
+ * Konstante Event-IDs.
+ */
+enum EventID{
 	ID_ABOUT = 1,
 	ID_TEST,
 	ID_IMPORT_OBJ,

@@ -16,7 +16,7 @@
 #define NUMBEROFSENSORATTRIBUTES 1
 using namespace std;
 using namespace Utils;
-enum {
+enum ObjectDataStatus {
 	OD_SUCCESS = 1,
 	OD_FAILURE,
 	OD_LOAD_ALREADY_LOADED,

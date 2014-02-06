@@ -26,11 +26,11 @@ GUIColorScalePanel::GUIColorScalePanel() {
 	current_mx = 0;
 	current_my = 0;
 	scaling = false;
-	scale_step = 10;
+	step_width = 10;
 	text_color = wxColour(255,255,255);
 	transforming = 0;
 	mode = SCM_HORIZONTAL;
-	scale_img = new wxImage(100,100);
+	image = new wxImage(100,100);
 	font_size = 12;
 	prev_mouse_down = false;
 }
@@ -93,12 +93,12 @@ void GUIColorScalePanel::refresh(int img_width,int img_height) {
 		alpha_dc.SetTextForeground(wxColour(255,255,255));
 		alpha_dc.SetPen(*wxWHITE_PEN);
 		int delta_t_vis = (visualization_info.max_visualisation_temp-visualization_info.min_visualisation_temp);
-		for (int i=0;i<=(delta_t_vis-delta_t_vis%scale_step)/scale_step;i++) {
-			wxString text = floattowxstr(int(visualization_info.min_visualisation_temp+i*scale_step));
+		for (int i=0;i<=(delta_t_vis-delta_t_vis%step_width)/step_width;i++) {
+			wxString text = floattowxstr(int(visualization_info.min_visualisation_temp+i*step_width));
 			wxSize t_size = col_dc.GetTextExtent(text);
 			switch (mode) {
 			case SCM_VERTICAL: {
-				float display_step = (float)display_area.height/(delta_t_vis)*scale_step;
+				float display_step = (float)display_area.height/(delta_t_vis)*step_width;
 				wxPoint textpoint(display_area.x+display_area.width,display_area.y+i*display_step);
 				col_dc.DrawText(text,textpoint.x+8,textpoint.y-t_size.y/2.);
 				col_dc.DrawLine(textpoint.x,textpoint.y,textpoint.x+5,textpoint.y);
@@ -107,7 +107,7 @@ void GUIColorScalePanel::refresh(int img_width,int img_height) {
 				break;
 			}
 			case SCM_HORIZONTAL: {
-				float display_step = (float)display_area.width/(delta_t_vis)*scale_step;
+				float display_step = (float)display_area.width/(delta_t_vis)*step_width;
 				wxPoint textpoint(display_area.x+i*display_step,display_area.y+display_area.height);
 				col_dc.DrawText(text,textpoint.x-t_size.x/2.,textpoint.y+8);
 				col_dc.DrawLine(textpoint.x,textpoint.y,textpoint.x,textpoint.y+5);
@@ -121,26 +121,26 @@ void GUIColorScalePanel::refresh(int img_width,int img_height) {
 		}
 		col_dc.SelectObject(wxNullBitmap);
 		alpha_dc.SelectObject(wxNullBitmap);
-		delete scale_img;
-		scale_img = new wxImage(color_bmp.GetWidth(),color_bmp.GetHeight());
-		scale_img->InitAlpha();
+		delete image;
+		image = new wxImage(color_bmp.GetWidth(),color_bmp.GetHeight());
+		image->InitAlpha();
 		wxImage alpha_img = alpha_bmp.ConvertToImage();
 		wxImage color_img = color_bmp.ConvertToImage();
-		for (int x=0;x<scale_img->GetWidth();x++) {
-			for (int y=0;y<scale_img->GetHeight();y++) {
-				scale_img->SetRGB(x,y,color_img.GetRed(x,y),color_img.GetGreen(x,y),color_img.GetBlue(x,y));
-				scale_img->SetAlpha(x,y,alpha_img.GetRed(x,y));
+		for (int x=0;x<image->GetWidth();x++) {
+			for (int y=0;y<image->GetHeight();y++) {
+				image->SetRGB(x,y,color_img.GetRed(x,y),color_img.GetGreen(x,y),color_img.GetBlue(x,y));
+				image->SetAlpha(x,y,alpha_img.GetRed(x,y));
 			}
 		}
 	} else {
-		delete scale_img;
-		scale_img = new wxImage(img_width,img_height);
-		scale_img->InitAlpha();
+		delete image;
+		image = new wxImage(img_width,img_height);
+		image->InitAlpha();
 		for (int i=0;i<img_width;i++) {
 			for (int j=0;j<img_height;j++) {
 				float* color = hsvToRgb((1.-(mode==SCM_HORIZONTAL?i/(float)img_width:j/(float)img_height))*.66666,1,1);
-				scale_img->SetRGB(i,j,0,0,0);
-				scale_img->SetAlpha(i,j,0);
+				image->SetRGB(i,j,0,0,0);
+				image->SetAlpha(i,j,0);
 				delete[] color;
 			}
 		}
@@ -251,6 +251,43 @@ void GUIColorScalePanel::handleMouse(wxMouseEvent& event,wxPoint& img_coords,wxP
 	current_mx = event.m_x;
 	current_my = event.m_y;
 }
+
+int GUIColorScalePanel::getFontSize() const {
+	return font_size;
+}
+
+void GUIColorScalePanel::setFontSize(int fontSize) {
+	font_size = fontSize;
+}
+
+ScaleMode GUIColorScalePanel::getMode() const {
+	return mode;
+}
+
+void GUIColorScalePanel::setMode(ScaleMode mode) {
+	this->mode = mode;
+}
+
+const wxColour& GUIColorScalePanel::getTextColor() const {
+	return text_color;
+}
+
+void GUIColorScalePanel::setTextColor(const wxColour& textColor) {
+	text_color = textColor;
+}
+
+int GUIColorScalePanel::getStepWidth() const {
+	return step_width;
+}
+
+void GUIColorScalePanel::setStepWidth(int stepWidth) {
+	step_width = stepWidth;
+}
+
+wxImage* GUIColorScalePanel::getImage() const {
+	return image;
+}
+
 GUIColorScalePanel::~GUIColorScalePanel() {
 	// TODO Auto-generated destructor stub
 }

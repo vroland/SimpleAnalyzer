@@ -5,6 +5,15 @@
  *      Author: valentin
  */
 
+/**
+* @mainpage SimpleAnalyzer
+*
+* Dies ist die Dokumentation der Programmquellen.
+* Für Informationen über die Verwendung der Programme
+* konsultieren Sie bitte das Handbuch der Software.
+*
+* @author Valentin Roland
+*/
 #include <iostream>
 #include "Application.h"
 #include "GUI/GUIMainWindow.h"

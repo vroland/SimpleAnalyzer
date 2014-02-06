@@ -80,16 +80,16 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent,const wxChar *title, in
 	scalemodecb->Insert(wxT("Vertikal"),0);
 	scalemodecb->Insert(wxT("Horizontal"),0);
 	scalemodecb->Insert(wxT("Kein"),0);
-	scalemodecb->Select(canvas->getScalePanel()->mode);
+	scalemodecb->Select(canvas->getScalePanel()->getMode());
 	scalefontpropslbl = new wxStaticText(scroll_pane,wxID_ANY,wxT("Schriftgröße/Farbe:"));
 	scalefontsizeedit = new wxSpinCtrl(scroll_pane,ID_COLORSCALE_PROP);
 	scalefontsizeedit->SetRange(1,1000);
-	scalefontsizeedit->SetValue(canvas->getScalePanel()->font_size);
+	scalefontsizeedit->SetValue(canvas->getScalePanel()->getFontSize());
 	scalefontcolorbt = new wxButton(scroll_pane,ID_COLORSCALE_COLORBT,wxT("Text"));
-	scalefontcolorbt->SetForegroundColour(canvas->getScalePanel()->text_color);
+	scalefontcolorbt->SetForegroundColour(canvas->getScalePanel()->getTextColor());
 	scalestepedit	 = new wxSpinCtrl(scroll_pane,ID_COLORSCALE_PROP);
 	scalestepedit->SetRange(1,1000);
-	scalestepedit->SetValue(canvas->getScalePanel()->scale_step);
+	scalestepedit->SetValue(canvas->getScalePanel()->getStepWidth());
 
 	value_img = new float[3*3];
 	image = new wxImage(100,100,true);
@@ -306,7 +306,7 @@ void GUICutRenderWindow::OnExportImage(wxCommandEvent &event) {
 	wxFileDialog *SaveDialog= new wxFileDialog(this, wxT("Speichern unter..."), _(""), _(""), _("Portable Network Graphics (*.png)|*.png"), wxFD_SAVE|wxFD_OVERWRITE_PROMPT);
 	if ( SaveDialog->ShowModal() == wxID_OK )
 	{
-		wxImage* scale_img = canvas->getScalePanel()->scale_img;
+		wxImage* scale_img = canvas->getScalePanel()->getImage();
 		wxImage cut_img   = image->Copy();
 		for (int x=0;x<cut_img.GetWidth();x++) {
 			for (int y=0;y<cut_img.GetWidth();y++) {
@@ -345,16 +345,16 @@ void GUICutRenderWindow::OnCSColorBtClick(wxCommandEvent &event) {
 	GUIColorScalePanel* scale = canvas->getScalePanel();
 	wxColourDialog dialog(this);
 	dialog.ShowModal();
-	scale->text_color = dialog.GetColourData().GetColour();
-	scalefontcolorbt->SetForegroundColour(scale->text_color);
+	scale->setTextColor(dialog.GetColourData().GetColour());
+	scalefontcolorbt->SetForegroundColour(scale->getTextColor());
 	scale->refresh(image->GetWidth(),image->GetHeight());
 	canvas->Refresh(false,NULL);
 }
 void GUICutRenderWindow::OnColorScaleChanged(wxCommandEvent &event) {
 	GUIColorScalePanel* scale = canvas->getScalePanel();
-	scale->mode = (ScaleMode) scalemodecb->GetSelection();
-	scale->font_size = scalefontsizeedit->GetValue();
-	scale->scale_step = scalestepedit->GetValue();
+	scale->setMode((ScaleMode) scalemodecb->GetSelection());
+	scale->setFontSize(scalefontsizeedit->GetValue());
+	scale->setStepWidth(scalestepedit->GetValue());
 	scale->refresh(image->GetWidth(),image->GetHeight());
 	canvas->Refresh(false,NULL);
 }

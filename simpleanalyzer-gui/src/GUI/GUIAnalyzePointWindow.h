@@ -9,20 +9,34 @@
 #define GUIANALYZEPOINT_H_
 
 #include <wx/wx.h>
+/**
+ * @brief Analysefenster für einen Punkt
+ *
+ */
 class GUIAnalyzePointWindow: public wxDialog {
 public:
+	/**
+	 * Der Konstruktor.
+	 */
 	GUIAnalyzePointWindow(wxWindow * parent,const wxChar *title, int xpos, int ypos, int width, int height);
-	void analyzePoint(wxCommandEvent &event);
+	/**
+	 * Der Destruktor.
+	 */
 	virtual ~GUIAnalyzePointWindow();
 protected:
 	DECLARE_EVENT_TABLE()
 private:
+	/**
+	 * Ermittelt Temperatur und Art des Punktes (Interpoliert/Extrapoliert). Wird durch Event ausgelöst.
+	 */
+	void analyzePoint(wxCommandEvent &event);
+
 	wxStaticText* label;
 	wxTextCtrl* xedit;
 	wxTextCtrl* yedit;
 	wxTextCtrl* zedit;
-	wxStaticText* interpolationmodetext;
-	wxComboBox* interpolationmodelist;
+	wxStaticText* interpolationModeLabel;
+	wxComboBox* interpolationModeList;
 	wxButton* calcbt;
 };
 

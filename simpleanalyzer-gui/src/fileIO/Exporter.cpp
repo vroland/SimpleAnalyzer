@@ -20,7 +20,7 @@ Exporter::Exporter() {
 
 }
 const int tetface_indices[4][3] = {{0,1,2},{0,1,3},{0,2,3},{1,2,3}};
-int Exporter::ExportLegacyVTK(string filename,ObjectData* data) {
+ObjectDataStatus Exporter::ExportLegacyVTK(string filename,ObjectData* data) {
 	ofstream file;
 	file.open(filename);
 	if (!file.is_open()) {
@@ -78,7 +78,7 @@ int Exporter::ExportLegacyVTK(string filename,ObjectData* data) {
 	file.close();
 	return OD_SUCCESS;
 }
-int Exporter::ExportCutCSV(string filename,float* values,CutRender_info* info) {
+ObjectDataStatus Exporter::ExportCutCSV(string filename,float* values,CutRender_info* info) {
 	ofstream file;
 	file.open(filename);
 	if (!file.is_open()) {

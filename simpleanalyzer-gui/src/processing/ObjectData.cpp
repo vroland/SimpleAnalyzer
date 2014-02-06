@@ -36,7 +36,7 @@ int ObjectData::loadFromFile(wxString &path) {
 	}
 	setlocale(LC_NUMERIC, "C");
 	Importer importer;
-	importer.ImportObj((path_without_name+_T(".obj")).ToAscii(),&materials);
+	importer.ImportObj((path_without_name+_T(".obj")).ToAscii(),this);
 	int status = importer.LoadSensorData((path_without_name+_T(".sd")).ToAscii(),this);
 	if (status==OD_FAILURE) {
 		int status = importer.LoadTimedData((path_without_name+_T(".tsd")).ToAscii(),this);
