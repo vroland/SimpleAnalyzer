@@ -59,10 +59,13 @@ void GUIGLCanvas::setRenderObject(ObjectData* obj) {
 	do_refresh = true;
 	Refresh(false,NULL);
 }
-void GUIGLCanvas::refreshRenderObject() {
+void GUIGLCanvas::refresh() {
 	do_refresh = true;
 	Refresh(false,NULL);
 
+}
+Renderer* GUIGLCanvas::getRenderer() {
+	return &renderer;
 }
 void GUIGLCanvas::OnMouseMove(wxMouseEvent &event) {
 	bool refresh = false;
@@ -92,8 +95,5 @@ void GUIGLCanvas::OnMouseMove(wxMouseEvent &event) {
 	}
 }
 GUIGLCanvas::~GUIGLCanvas(){
-	for (unsigned int i=0;i<objects.size();i++) {
-		delete objects.at(i);
-	}
 }
 

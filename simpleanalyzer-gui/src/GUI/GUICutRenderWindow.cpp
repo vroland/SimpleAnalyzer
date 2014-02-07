@@ -55,7 +55,7 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent,const wxChar *title, in
 	p3zedit = new wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT("0.0"));
 
 	optionslbl = new wxStaticText(scroll_pane,wxID_ANY,wxT("Optionen:"));
-	whlbl	   = new wxStaticText(scroll_pane,wxID_ANY,wxT("Breite/Höhe:"));
+	widthHeightlbl	   = new wxStaticText(scroll_pane,wxID_ANY,wxT("Breite/Höhe:"));
 	imgWidthEdit = new wxSpinCtrl(scroll_pane,ID_CUT_TRI_EDIT);
 	imgWidthEdit->SetRange(1,100000000);
 	imgWidthEdit->SetValue(800);
@@ -244,7 +244,7 @@ void GUICutRenderWindow::OnSCutPropsChanged_spin(wxSpinEvent &event) {
 }
 void GUICutRenderWindow::refreshVisualisation() {
 	GUIMainWindow* parent = (GUIMainWindow*) GetParent();
-	parent->getGLCanvas()->renderer.setCutRenderInfo(this->getCutRenderProperties());
+	parent->getGLCanvas()->getRenderer()->setCutRenderInfo(this->getCutRenderProperties());
 	parent->getGLCanvas()->Refresh(false,NULL);
 }
 void GUICutRenderWindow::OnResize(wxSizeEvent &event) {
@@ -265,7 +265,7 @@ void GUICutRenderWindow::OnResize(wxSizeEvent &event) {
 	p3yedit->SetSize(160,90,70,20);
 	p3zedit->SetSize(230,90,70,20);
 	optionslbl->SetSize(310,10,300,20);
-	whlbl->SetSize(320,30,200,20);
+	widthHeightlbl->SetSize(320,30,200,20);
 	imgWidthEdit->SetSize(320,50,70,20);
 	imgHeightEdit->SetSize(390,50,70,20);
 	mmperpixellabel->SetSize(320,70,200,40);
@@ -352,7 +352,7 @@ void GUICutRenderWindow::OnCSColorBtClick(wxCommandEvent &event) {
 }
 void GUICutRenderWindow::OnColorScaleChanged(wxCommandEvent &event) {
 	GUIColorScalePanel* scale = canvas->getScalePanel();
-	scale->setMode((ScaleMode) scalemodecb->GetSelection());
+	scale->setMode((GUIColorScalePanel::ScaleMode) scalemodecb->GetSelection());
 	scale->setFontSize(scalefontsizeedit->GetValue());
 	scale->setStepWidth(scalestepedit->GetValue());
 	scale->refresh(image->GetWidth(),image->GetHeight());
@@ -368,8 +368,8 @@ GUICutRenderWindow::~GUICutRenderWindow() {
 	delete[] value_img;
 	GUIMainWindow* parent = (GUIMainWindow*) GetParent();
 	if (parent!=NULL) {
-		parent->render_cut_window_valid = false;
-		parent->getGLCanvas()->renderer.setCutRenderInfo(NULL);
+		parent->setCutRenderWindowStatus(false);
+		parent->getGLCanvas()->getRenderer()->setCutRenderInfo(NULL);
 		parent->getGLCanvas()->Refresh(false,NULL);
 	} else {
 		cout << "parent is null!" << endl;

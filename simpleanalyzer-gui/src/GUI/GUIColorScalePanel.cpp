@@ -260,7 +260,7 @@ void GUIColorScalePanel::setFontSize(int fontSize) {
 	font_size = fontSize;
 }
 
-ScaleMode GUIColorScalePanel::getMode() const {
+GUIColorScalePanel::ScaleMode GUIColorScalePanel::getMode() const {
 	return mode;
 }
 

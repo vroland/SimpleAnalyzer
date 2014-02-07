@@ -7,16 +7,10 @@
 
 #ifndef GUICOLORSCALEPANEL_H_
 #define GUICOLORSCALEPANEL_H_
+
 #include "Renderer.h"
 #include <wx/wx.h>
-/**
- * Modus der Skalendarstellung.
- */
-enum ScaleMode {
-	SCM_NONE = 0,
-	SCM_HORIZONTAL,
-	SCM_VERTICAL,
-};
+
 /**
  * @brief Farbige Temperaturskala für zweidimensionale Temperaturverteilung.
  *
@@ -26,6 +20,15 @@ enum ScaleMode {
  */
 class GUIColorScalePanel {
 public:
+	/**
+	 * @enum
+	 * Modus der Skalendarstellung.
+	 */
+	enum ScaleMode {
+		SCM_NONE = 0,
+		SCM_HORIZONTAL,
+		SCM_VERTICAL,
+	};
 	/**
 	 * Der Konstruktor.
 	 */
@@ -55,6 +58,12 @@ public:
 	 */
 	void getDisplayArea(wxRect* rect,float zoom);
 	/**
+	 * Passt die Größe und Position der Skala an die Größe der Grafik an.
+	 * @param img_dim Größe der Grafik.
+	 * @param to_scale Größe statt der Position verändern.
+	 */
+	void fitBounds(wxPoint& img_dim,bool to_scale);
+	/**
 	 * Gibt zurück, ob sich die Maus über der Fläche der Skala befindet.
 	 * @param img_coords Position der Grafik auf der Zeichenfläche.
 	 * @param zoom aktueller Vergrößerungsfaktor des Betrachtungsfensters.
@@ -62,15 +71,15 @@ public:
 	 */
 	bool mouseOnDisplayArea(wxPoint& img_coords,float zoom,wxPoint& mouse_pos);
 	/**
-	 * Gibt die horizontale Position auf der Zeichenfläche zurück.
+	 * @return horizontale Position auf der Zeichenfläche.
 	 */
 	int getX();
 	/**
-	 * Gibt die vertikale Position auf der Zeichenfläche zurück.
+	 * @return vertikale Position auf der Zeichenfläche.
 	 */
 	int getY();
 	/**
-	 * Gibt die Schriftgröße der Skala zurück.
+	 * @return Schriftgröße der Skala.
 	 */
 	int getFontSize() const;
 	/**
@@ -78,7 +87,7 @@ public:
 	 */
 	void setFontSize(int fontSize);
 	/**
-	 * Gibt den Modus der Skala zurück.
+	 * @return Modus der Skala.
 	 */
 	ScaleMode getMode() const;
 	/**
@@ -86,7 +95,7 @@ public:
 	 */
 	void setMode(ScaleMode mode);
 	/**
-	 * Gibt die Schriftfarbe der Skala zurück.
+	 * @return Schriftfarbe der Skala.
 	 */
 	const wxColour& getTextColor() const;
 	/**
@@ -94,7 +103,7 @@ public:
 	 */
 	void setTextColor(const wxColour& textColor);
 	/**
-	 * Gibt die Schrittweite der Skalenbeschriftung zurück.
+	 * Gibt die Schrittweite der Skalenbeschriftung.
 	 */
 	int getStepWidth() const;
 	/**
@@ -102,7 +111,7 @@ public:
 	 */
 	void setStepWidth(int stepWidth);
 	/**
-	 * Gibt die Skala als Bild zurück.
+	 * @return Skala als Grafik.
 	 */
 	wxImage* getImage() const;
 
@@ -112,25 +121,60 @@ public:
 	virtual ~GUIColorScalePanel();
 private:
 	/**
-	 * Passt die Größe und Position der Skala an die Größe der Grafik an.
-	 * @param img_dim Größe der Grafik.
-	 * @param to_scale Größe statt der Position verändern.
+	 * Schrittweite der Beschriftung.
 	 */
-	void fitBounds(wxPoint& img_dim,bool to_scale);
-
 	int step_width;
+	/**
+	 * Die Schriftgröße.
+	 */
 	int font_size;
+	/**
+	 * Der Darstellungsmodus.
+	 */
 	ScaleMode mode;
+	/**
+	 * Die Schriftfarbe.
+	 */
 	wxColour text_color;
+	/**
+	 * Bild, das die Skala ohne Steuerelemente enthält.
+	 */
 	wxImage* image;
+	/**
+	 * Zwischenspeicher für die Mausposition, zum behandeln von Mausinteraktionen.
+	 */
 	int current_mx;
+	/**
+	 * Zwischenspeicher für die Mausposition, zum behandeln von Mausinteraktionen.
+	 */
 	int current_my;
+	/**
+	 * Position (X) der Skala.
+	 */
 	float x;
+	/**
+	 * Position Y) der Skala.
+	 */
 	float y;
+	/**
+	 * Breite der Skala.
+	 */
 	float width;
+	/**
+	 * Höhe der Skala.
+	 */
 	float height;
+	/**
+	 * Wird gerade in der Größe verändert.
+	 */
 	bool scaling;
+	/**
+	 * Wird gerade transformiert (Größe oder Position).
+	 */
 	bool transforming;
+	/**
+	 * zwischenspeicher für den Mausstatus.
+	 */
 	bool prev_mouse_down;
 };
 

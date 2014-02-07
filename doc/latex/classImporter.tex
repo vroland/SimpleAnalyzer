@@ -1,0 +1,87 @@
+\hypertarget{classImporter}{\section{Importer Klassenreferenz}
+\label{classImporter}\index{Importer@{Importer}}
+}
+
+
+Importieren von 3\-D-\/\-Modell (.obj) und Sensordaten (.tsd oder .sd).  
+
+
+
+
+{\ttfamily \#include $<$Importer.\-h$>$}
+
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImporter_afaf93b56e3558a92405ab627ab8ee1d1}{Importer} ()
+\item 
+\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_a001bd26372d94f96de66f7bcb90cc790}{Load\-Sensor\-Data} (const char $\ast$filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
+\item 
+\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_a196e66a161a0102194580ec4b10895e5}{Load\-Timed\-Data} (const char $\ast$filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
+\item 
+\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_a5013417fb7556dce65dba1ed3aec4e50}{Import\-Obj} (const char $\ast$filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
+\item 
+virtual \hyperlink{classImporter_a6e61faae5020f2dc034ff3ea4032a537}{$\sim$\-Importer} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Importieren von 3\-D-\/\-Modell (.obj) und Sensordaten (.tsd oder .sd). 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classImporter_afaf93b56e3558a92405ab627ab8ee1d1}{\index{Importer@{Importer}!Importer@{Importer}}
+\index{Importer@{Importer}!Importer@{Importer}}
+\subsubsection[{Importer}]{\setlength{\rightskip}{0pt plus 5cm}Importer\-::\-Importer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classImporter_afaf93b56e3558a92405ab627ab8ee1d1}
+Der Konstruktor. \hypertarget{classImporter_a6e61faae5020f2dc034ff3ea4032a537}{\index{Importer@{Importer}!$\sim$\-Importer@{$\sim$\-Importer}}
+\index{$\sim$\-Importer@{$\sim$\-Importer}!Importer@{Importer}}
+\subsubsection[{$\sim$\-Importer}]{\setlength{\rightskip}{0pt plus 5cm}Importer\-::$\sim$\-Importer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classImporter_a6e61faae5020f2dc034ff3ea4032a537}
+Der Destruktor. 
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classImporter_a5013417fb7556dce65dba1ed3aec4e50}{\index{Importer@{Importer}!Import\-Obj@{Import\-Obj}}
+\index{Import\-Obj@{Import\-Obj}!Importer@{Importer}}
+\subsubsection[{Import\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Data\-::\-Object\-Data\-Status} Importer\-::\-Import\-Obj (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{{\bf Object\-Data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{classImporter_a5013417fb7556dce65dba1ed3aec4e50}
+Lädt Objektdaten aus einer .obj-\/\-Datei. Das Objekt ist zwar schon im Speicher erstellt, wird aber erst durch diese Methode mit Daten gefüllt. \begin{DoxyReturn}{Rückgabe}
+Der Fehlercode. 
+\end{DoxyReturn}
+\hypertarget{classImporter_a001bd26372d94f96de66f7bcb90cc790}{\index{Importer@{Importer}!Load\-Sensor\-Data@{Load\-Sensor\-Data}}
+\index{Load\-Sensor\-Data@{Load\-Sensor\-Data}!Importer@{Importer}}
+\subsubsection[{Load\-Sensor\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Data\-::\-Object\-Data\-Status} Importer\-::\-Load\-Sensor\-Data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{{\bf Object\-Data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{classImporter_a001bd26372d94f96de66f7bcb90cc790}
+Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. \begin{DoxyReturn}{Rückgabe}
+Der Fehlercode. 
+\end{DoxyReturn}
+\hypertarget{classImporter_a196e66a161a0102194580ec4b10895e5}{\index{Importer@{Importer}!Load\-Timed\-Data@{Load\-Timed\-Data}}
+\index{Load\-Timed\-Data@{Load\-Timed\-Data}!Importer@{Importer}}
+\subsubsection[{Load\-Timed\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Data\-::\-Object\-Data\-Status} Importer\-::\-Load\-Timed\-Data (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{{\bf Object\-Data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{classImporter_a196e66a161a0102194580ec4b10895e5}
+Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. \begin{DoxyReturn}{Rückgabe}
+Der Fehlercode. 
+\end{DoxyReturn}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
+\item 
+simpleanalyzer-\/gui/src/file\-I\-O/Importer.\-h\item 
+simpleanalyzer-\/gui/src/file\-I\-O/Importer.\-cpp\end{DoxyCompactItemize}

@@ -84,6 +84,5 @@ void GUIAnalyzeOutputWindow::Update() {
 }
 GUIAnalyzeOutputWindow::~GUIAnalyzeOutputWindow() {
 	GUIMainWindow* parent = (GUIMainWindow*) GetParent();
-	parent->analyze_window_valid = false;
+	parent->setAnalyzeWindowStatus(false);
 }
-

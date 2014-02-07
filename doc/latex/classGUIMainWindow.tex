@@ -1,0 +1,525 @@
+\hypertarget{classGUIMainWindow}{\section{G\-U\-I\-Main\-Window Klassenreferenz}
+\label{classGUIMainWindow}\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}}
+}
+
+
+Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen.  
+
+
+
+
+{\ttfamily \#include $<$G\-U\-I\-Main\-Window.\-h$>$}
+
+Klassendiagramm für G\-U\-I\-Main\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classGUIMainWindow}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGUIMainWindow_a55cb97ffda12d79c6d6d50c9de35a3fe}{G\-U\-I\-Main\-Window} (const wx\-Char $\ast$title, int xpos, int ypos, int width, int height)
+\item 
+void \hyperlink{classGUIMainWindow_a64f6c71f9d92ab4091670ad1d264b2d7}{set\-Analyze\-Window\-Status} (bool is\-Valid)
+\item 
+void \hyperlink{classGUIMainWindow_a4b8b9293b800ca5ff47d1cb3a75f06a5}{set\-Cut\-Render\-Window\-Status} (bool is\-Valid)
+\item 
+\hyperlink{classGUIGLCanvas}{G\-U\-I\-G\-L\-Canvas} $\ast$ \hyperlink{classGUIMainWindow_a52e68b866f7835c3691fd8fad8ba910d}{get\-G\-L\-Canvas} ()
+\item 
+virtual \hyperlink{classGUIMainWindow_a16ca27363f15a5f2678417bbf26880d2}{$\sim$\-G\-U\-I\-Main\-Window} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Methoden}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGUIMainWindow_a9fd9f2be8f45cb5433193f5d28c924bc}{On\-Menu\-Import\-Obj} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a405b99746fe6f35ec527c57604e53ce2}{On\-Menu\-Import\-S\-D} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_ab6b1fb242c4b529764093a092349f560}{On\-Menu\-Import\-T\-S\-D} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a594fc9fea2ef8cc4febc3c48c0e260c4}{On\-Menu\-File\-Quit} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_acefa13614ee8e5fc228fc577b7471b26}{On\-Menu\-Help\-About} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a0c2de30274c7f52ff74ec1217e47a9e5}{On\-Recalc\-Bt\-Click} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a3a8bcd318ff00de01d8d417cf5226120}{On\-Resize} (wx\-Size\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a6618f0cc7d26ba7690c32a996f0b812e}{On\-Material\-Select} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_ac76ba4dd3d1175d66c1b13369ec26a69}{On\-Analyze} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_ae0b6c47ae833ea4b8323e9c344b1f70a}{On\-Immediate\-Update\-Prop\-Change} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a0eb68f1e4a740486706f98eeca783a68}{On\-General\-Prop\-Change} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_ada2a98f493fcdcbdc7bd6acb47d51218}{On\-View\-Prop\-Change} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a9d642647d7cb73e34ef88c76438206a7}{On\-View\-Prop\-Spin\-Change} (wx\-Spin\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a98249bb199993ad5920cf81f4b4a350a}{On\-Sensor\-Data\-Change} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a791d688a11d58c514ca4a892f2b69b07}{On\-S\-D\-Timeline\-Change} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a8fe683ef74029b5b22d7d7cdea4f46f5}{On\-S\-D\-T\-L\-Marker\-Clear} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a683581567b0fd6fbd8e84b160a81aac7}{On\-S\-D\-T\-L\-Next\-Marker} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_ab41592f7f45ab81dd3a1b663b18ece50}{On\-S\-D\-T\-L\-Prev\-Marker} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a3a01e75c9362861eb9fdacb0b27643e5}{On\-Analyze\-Marker\-Change} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a868b65c50e42965818ceb61a5e84f687}{On\-Active\-Object\-Change\-Popup} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a62a20086c62508c133a2ac8a0496e543}{On\-Active\-Object\-Change} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a1bc00767853df9d7b839529ce722fcb1}{On\-Active\-Object\-Delete} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a5e4e41a749453fae5d9e1714203c3d5f}{On\-Analyze\-Point} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a08089b067f803799204bbc1ca81230ac}{On\-Render\-Cut} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_abaec210619095a00227277b8e0434a8d}{add\-Object} (\hyperlink{classObjectData}{Object\-Data} $\ast$obj)
+\item 
+void \hyperlink{classGUIMainWindow_a84b96a8b25d748985f4960326a977b22}{set\-Active\-Object} (int index)
+\item 
+void \hyperlink{classGUIMainWindow_a9199006080109ef0235dacfc83456338}{On\-Export\-Viewport\-Image} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a48b4417c2eaa97a6eea4438f67a315e7}{On\-Export\-V\-T\-K} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_af21ea342f481cfdd01ed04005f903ad5}{On\-Find\-Max\-T\-S\-D} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a6934b1307d1d32822c20505487cc79bf}{On\-Auto\-Update\-Change} (wx\-Command\-Event \&event)
+\item 
+void \hyperlink{classGUIMainWindow_a1cb2c4f39b9ba971d51ab682f29b7f23}{assign\-Current\-Object\-Props} ()
+\item 
+void \hyperlink{classGUIMainWindow_a4c520b8716196fa1e88a7bea5ec34ef0}{update\-Object\-Prop\-G\-U\-I} ()
+\item 
+void \hyperlink{classGUIMainWindow_ab73ac039ffebd656aa3dc0eac2fcf74f}{assign\-View\-Props} ()
+\item 
+void \hyperlink{classGUIMainWindow_a2af54fc375be6b0fb938b8562980e723}{update\-View\-Prop\-G\-U\-I} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGUIGLCanvas}{G\-U\-I\-G\-L\-Canvas} $\ast$ \hyperlink{classGUIMainWindow_a7b5069afb8996ff001654f8d832b2bfa}{gl\-\_\-context}
+\item 
+wx\-Tool\-Bar $\ast$ \hyperlink{classGUIMainWindow_a8a8638fa87b4080e2242812f3d7e469e}{toolbar}
+\item 
+wx\-Menu\-Bar $\ast$ \hyperlink{classGUIMainWindow_a057a6728bf9aa994f41060ebe15a28ac}{mw\-Menu\-Bar}
+\item 
+wx\-Menu $\ast$ \hyperlink{classGUIMainWindow_a3b23fa0fb1d779bd5b8384507d8b90e8}{mw\-File\-Menu}
+\item 
+wx\-Menu $\ast$ \hyperlink{classGUIMainWindow_ae8fc1a9ba3768aa042a77b5bea117f6c}{mw\-Help\-Menu}
+\item 
+wx\-Menu $\ast$ \hyperlink{classGUIMainWindow_afaff9e1bec11b0f80215ceba76e87bc4}{mw\-Import\-Menu}
+\item 
+wx\-Menu $\ast$ \hyperlink{classGUIMainWindow_a9f6af05ef18bf81ff9955670001941ea}{mw\-Export\-Menu}
+\item 
+wx\-Menu $\ast$ \hyperlink{classGUIMainWindow_ab93a87b5cde10015dc02dc000c409f90}{mw\-Analyze\-Menu}
+\item 
+wx\-Menu $\ast$ \hyperlink{classGUIMainWindow_a32c50be8574176c02aadb47626adc9d4}{mw\-Edit\-Menu}
+\item 
+\hyperlink{classPropertiesBox}{Properties\-Box} $\ast$ \hyperlink{classGUIMainWindow_a4959774563543927a492bf06e441920e}{propbox}
+\item 
+\hyperlink{classViewpropBox}{Viewprop\-Box} $\ast$ \hyperlink{classGUIMainWindow_a3e9a4e301f90e85e97721aa71b197ca8}{viewbox}
+\item 
+\hyperlink{classGUIAnalyzeOutputWindow}{G\-U\-I\-Analyze\-Output\-Window} $\ast$ \hyperlink{classGUIMainWindow_a20e7a8cf498df1c1c0059711b487837b}{analyzerframe}
+\item 
+\hyperlink{classGUICutRenderWindow}{G\-U\-I\-Cut\-Render\-Window} $\ast$ \hyperlink{classGUIMainWindow_a649cb92f27688772174659601188ac2d}{rendercutwindow}
+\item 
+wx\-Scrolled\-Window $\ast$ \hyperlink{classGUIMainWindow_a1c120efb232cf3d371a3a6231619b808}{prop\-\_\-scroll\-\_\-win}
+\item 
+wx\-Scrolled\-Window $\ast$ \hyperlink{classGUIMainWindow_ad440f7451fd3fdabbe48518a89e61e45}{view\-\_\-scroll\-\_\-win}
+\item 
+bool \hyperlink{classGUIMainWindow_afdc35b04c0fe94e4d0080f659ecbce8c}{updating}
+\item 
+bool \hyperlink{classGUIMainWindow_a1f65a053fadac47033fef38c4b0e8a69}{analyze\-\_\-window\-\_\-valid}
+\item 
+bool \hyperlink{classGUIMainWindow_a4f08d8e4294955a3cc0b071dd3cad0d2}{render\-\_\-cut\-\_\-window\-\_\-valid}
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen. 
+
+Das Hauptfenster bietet über das Hauptmenü und die Oberfläche Zugriff auf die Funktionen des Programms. Dazu kann das aktuelle Objekt gewählt werden, welches dann im eingebetteten 3\-D-\/\-Fenster angezeigt wird. Eigenschaften der Visualisierung und des Objekts können ebenfalls über die Oberfläche des Hauptfensters festgelegt werden. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classGUIMainWindow_a55cb97ffda12d79c6d6d50c9de35a3fe}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}}
+\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{G\-U\-I\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}G\-U\-I\-Main\-Window\-::\-G\-U\-I\-Main\-Window (
+\begin{DoxyParamCaption}
+\item[{const wx\-Char $\ast$}]{title, }
+\item[{int}]{xpos, }
+\item[{int}]{ypos, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{classGUIMainWindow_a55cb97ffda12d79c6d6d50c9de35a3fe}
+Der Konstruktor. 
+\begin{DoxyParams}{Parameter}
+{\em title} & Der Titel des Programmfensters. \\
+\hline
+{\em xpos} & horizontale Position des Fensters. \\
+\hline
+{\em ypos} & vertikale Position des Fensters. \\
+\hline
+{\em width} & Breite des Fensters. \\
+\hline
+{\em height} & Höhe des Fensters. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGUIMainWindow_a16ca27363f15a5f2678417bbf26880d2}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!$\sim$\-G\-U\-I\-Main\-Window@{$\sim$\-G\-U\-I\-Main\-Window}}
+\index{$\sim$\-G\-U\-I\-Main\-Window@{$\sim$\-G\-U\-I\-Main\-Window}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{$\sim$\-G\-U\-I\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}G\-U\-I\-Main\-Window\-::$\sim$\-G\-U\-I\-Main\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classGUIMainWindow_a16ca27363f15a5f2678417bbf26880d2}
+Der Destruktor. 
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classGUIMainWindow_abaec210619095a00227277b8e0434a8d}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!add\-Object@{add\-Object}}
+\index{add\-Object@{add\-Object}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{add\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::add\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\-Data} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_abaec210619095a00227277b8e0434a8d}
+Registriert ein neues (Versuchs-\/) Objekt im Programm. 
+\begin{DoxyParams}{Parameter}
+{\em obj} & Das zu registrierende Objekt. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGUIMainWindow_a1cb2c4f39b9ba971d51ab682f29b7f23}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!assign\-Current\-Object\-Props@{assign\-Current\-Object\-Props}}
+\index{assign\-Current\-Object\-Props@{assign\-Current\-Object\-Props}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{assign\-Current\-Object\-Props}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::assign\-Current\-Object\-Props (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a1cb2c4f39b9ba971d51ab682f29b7f23}
+Überträgt die in der G\-U\-I eingetragenen Objekteigenschaften in das aktive Objekt. \hypertarget{classGUIMainWindow_ab73ac039ffebd656aa3dc0eac2fcf74f}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!assign\-View\-Props@{assign\-View\-Props}}
+\index{assign\-View\-Props@{assign\-View\-Props}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{assign\-View\-Props}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::assign\-View\-Props (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_ab73ac039ffebd656aa3dc0eac2fcf74f}
+Speichert die Visualisierungsoptionen aus der G\-U\-I. \hypertarget{classGUIMainWindow_a52e68b866f7835c3691fd8fad8ba910d}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!get\-G\-L\-Canvas@{get\-G\-L\-Canvas}}
+\index{get\-G\-L\-Canvas@{get\-G\-L\-Canvas}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{get\-G\-L\-Canvas}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-U\-I\-G\-L\-Canvas} $\ast$ G\-U\-I\-Main\-Window\-::get\-G\-L\-Canvas (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classGUIMainWindow_a52e68b866f7835c3691fd8fad8ba910d}
+Gibt die Zeichenfläche des 3\-D-\/\-Fensters zurück. \hypertarget{classGUIMainWindow_a62a20086c62508c133a2ac8a0496e543}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Active\-Object\-Change@{On\-Active\-Object\-Change}}
+\index{On\-Active\-Object\-Change@{On\-Active\-Object\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Active\-Object\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Active\-Object\-Change (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a62a20086c62508c133a2ac8a0496e543}
+Öffnet das Popup-\/\-Menü zum auswählen des aktiven Objekts. \hypertarget{classGUIMainWindow_a868b65c50e42965818ceb61a5e84f687}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Active\-Object\-Change\-Popup@{On\-Active\-Object\-Change\-Popup}}
+\index{On\-Active\-Object\-Change\-Popup@{On\-Active\-Object\-Change\-Popup}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Active\-Object\-Change\-Popup}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Active\-Object\-Change\-Popup (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a868b65c50e42965818ceb61a5e84f687}
+Setzt das aktive Objetk nach dem Auswählen im Popup-\/\-Menü. \hypertarget{classGUIMainWindow_a1bc00767853df9d7b839529ce722fcb1}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Active\-Object\-Delete@{On\-Active\-Object\-Delete}}
+\index{On\-Active\-Object\-Delete@{On\-Active\-Object\-Delete}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Active\-Object\-Delete}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Active\-Object\-Delete (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a1bc00767853df9d7b839529ce722fcb1}
+Löscht das aktive Objekt, sofern es nicht das einzige geladene Objekt ist. \hypertarget{classGUIMainWindow_ac76ba4dd3d1175d66c1b13369ec26a69}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Analyze@{On\-Analyze}}
+\index{On\-Analyze@{On\-Analyze}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Analyze}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Analyze (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_ac76ba4dd3d1175d66c1b13369ec26a69}
+Öffnet das Analysedaten-\/Übersichtsfenster. \hypertarget{classGUIMainWindow_a3a01e75c9362861eb9fdacb0b27643e5}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Analyze\-Marker\-Change@{On\-Analyze\-Marker\-Change}}
+\index{On\-Analyze\-Marker\-Change@{On\-Analyze\-Marker\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Analyze\-Marker\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Analyze\-Marker\-Change (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a3a01e75c9362861eb9fdacb0b27643e5}
+Behandelt das Markieren eines Zeitpunktes auf der Sensordaten-\/\-Zeitleiste. \hypertarget{classGUIMainWindow_a5e4e41a749453fae5d9e1714203c3d5f}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Analyze\-Point@{On\-Analyze\-Point}}
+\index{On\-Analyze\-Point@{On\-Analyze\-Point}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Analyze\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Analyze\-Point (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a5e4e41a749453fae5d9e1714203c3d5f}
+Öffnet das Fenster zur Analyse eines Punktes (\hyperlink{classGUIAnalyzePointWindow}{G\-U\-I\-Analyze\-Point\-Window}). \hypertarget{classGUIMainWindow_a6934b1307d1d32822c20505487cc79bf}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Auto\-Update\-Change@{On\-Auto\-Update\-Change}}
+\index{On\-Auto\-Update\-Change@{On\-Auto\-Update\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Auto\-Update\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Auto\-Update\-Change (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a6934b1307d1d32822c20505487cc79bf}
+Behandelt das aktivieren/deaktivieren der Option zum automatischen neuberechnen der Temperaturverteilung eines Objekts, sobald Änderungen an dessen Eigenschaften vorgenommen werden. \hypertarget{classGUIMainWindow_a9199006080109ef0235dacfc83456338}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Export\-Viewport\-Image@{On\-Export\-Viewport\-Image}}
+\index{On\-Export\-Viewport\-Image@{On\-Export\-Viewport\-Image}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Export\-Viewport\-Image}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Export\-Viewport\-Image (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a9199006080109ef0235dacfc83456338}
+Öffnet ein Fenster zum Exportieren der Ansicht des 3\-D-\/\-Fensters. \hypertarget{classGUIMainWindow_a48b4417c2eaa97a6eea4438f67a315e7}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Export\-V\-T\-K@{On\-Export\-V\-T\-K}}
+\index{On\-Export\-V\-T\-K@{On\-Export\-V\-T\-K}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Export\-V\-T\-K}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Export\-V\-T\-K (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a48b4417c2eaa97a6eea4438f67a315e7}
+Öffnet ein Fenster zum Exportieren der Temperaturverteilung und des Objekts im V\-T\-K-\/\-Format. \hypertarget{classGUIMainWindow_af21ea342f481cfdd01ed04005f903ad5}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Find\-Max\-T\-S\-D@{On\-Find\-Max\-T\-S\-D}}
+\index{On\-Find\-Max\-T\-S\-D@{On\-Find\-Max\-T\-S\-D}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Find\-Max\-T\-S\-D}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Find\-Max\-T\-S\-D (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_af21ea342f481cfdd01ed04005f903ad5}
+Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten-\/\-Zeitleiste, für den der Wäremeenergiegehalt maximal wird. Dabei wird der Bereich zwischen den beiden markierten Stellen ausgewählt, zwischen denen sich der aktuell ausgewählte Zeitpunkt befindet. \hypertarget{classGUIMainWindow_a0eb68f1e4a740486706f98eeca783a68}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-General\-Prop\-Change@{On\-General\-Prop\-Change}}
+\index{On\-General\-Prop\-Change@{On\-General\-Prop\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-General\-Prop\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-General\-Prop\-Change (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a0eb68f1e4a740486706f98eeca783a68}
+Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Objekteigenschaften durch den Nutzer. \hypertarget{classGUIMainWindow_ae0b6c47ae833ea4b8323e9c344b1f70a}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Immediate\-Update\-Prop\-Change@{On\-Immediate\-Update\-Prop\-Change}}
+\index{On\-Immediate\-Update\-Prop\-Change@{On\-Immediate\-Update\-Prop\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Immediate\-Update\-Prop\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Immediate\-Update\-Prop\-Change (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_ae0b6c47ae833ea4b8323e9c344b1f70a}
+Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Objekteigenschaften,bei denen ein sofortiges Update der Oberfläche möglich ist, durch den Nutzer. \hypertarget{classGUIMainWindow_a6618f0cc7d26ba7690c32a996f0b812e}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Material\-Select@{On\-Material\-Select}}
+\index{On\-Material\-Select@{On\-Material\-Select}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Material\-Select}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Material\-Select (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a6618f0cc7d26ba7690c32a996f0b812e}
+Aktualisiert die Oberfläche nach dem Auswählen eines anderen Materials im Objekteigenschaften-\/\-Fenster. \hypertarget{classGUIMainWindow_a594fc9fea2ef8cc4febc3c48c0e260c4}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Menu\-File\-Quit@{On\-Menu\-File\-Quit}}
+\index{On\-Menu\-File\-Quit@{On\-Menu\-File\-Quit}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Menu\-File\-Quit}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Menu\-File\-Quit (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a594fc9fea2ef8cc4febc3c48c0e260c4}
+Beendet das Programm. \hypertarget{classGUIMainWindow_acefa13614ee8e5fc228fc577b7471b26}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Menu\-Help\-About@{On\-Menu\-Help\-About}}
+\index{On\-Menu\-Help\-About@{On\-Menu\-Help\-About}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Menu\-Help\-About}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Menu\-Help\-About (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_acefa13614ee8e5fc228fc577b7471b26}
+Öffnet ein Fenster mit Informationen über das Programm. \hypertarget{classGUIMainWindow_a9fd9f2be8f45cb5433193f5d28c924bc}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Menu\-Import\-Obj@{On\-Menu\-Import\-Obj}}
+\index{On\-Menu\-Import\-Obj@{On\-Menu\-Import\-Obj}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Menu\-Import\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Menu\-Import\-Obj (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a9fd9f2be8f45cb5433193f5d28c924bc}
+Event-\/\-Tabellendeklaration für wx\-Widgets. Öffnet den Dialog zum Importieren eines Objekts. \hypertarget{classGUIMainWindow_a405b99746fe6f35ec527c57604e53ce2}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Menu\-Import\-S\-D@{On\-Menu\-Import\-S\-D}}
+\index{On\-Menu\-Import\-S\-D@{On\-Menu\-Import\-S\-D}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Menu\-Import\-S\-D}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Menu\-Import\-S\-D (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a405b99746fe6f35ec527c57604e53ce2}
+Öffnet den Dialog zum Importieren einfacher Sensordaten. \hypertarget{classGUIMainWindow_ab6b1fb242c4b529764093a092349f560}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Menu\-Import\-T\-S\-D@{On\-Menu\-Import\-T\-S\-D}}
+\index{On\-Menu\-Import\-T\-S\-D@{On\-Menu\-Import\-T\-S\-D}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Menu\-Import\-T\-S\-D}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Menu\-Import\-T\-S\-D (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_ab6b1fb242c4b529764093a092349f560}
+Öffnet den Dialog zum Importieren zeitbezogener Sensordaten. \hypertarget{classGUIMainWindow_a0c2de30274c7f52ff74ec1217e47a9e5}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Recalc\-Bt\-Click@{On\-Recalc\-Bt\-Click}}
+\index{On\-Recalc\-Bt\-Click@{On\-Recalc\-Bt\-Click}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Recalc\-Bt\-Click}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Recalc\-Bt\-Click (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a0c2de30274c7f52ff74ec1217e47a9e5}
+Berechnet die 3\-D-\/\-Temperaturverteilung neu. \hypertarget{classGUIMainWindow_a08089b067f803799204bbc1ca81230ac}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Render\-Cut@{On\-Render\-Cut}}
+\index{On\-Render\-Cut@{On\-Render\-Cut}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Render\-Cut}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Render\-Cut (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a08089b067f803799204bbc1ca81230ac}
+Öffnet das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung. \hypertarget{classGUIMainWindow_a3a8bcd318ff00de01d8d417cf5226120}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Resize@{On\-Resize}}
+\index{On\-Resize@{On\-Resize}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Resize}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Resize (
+\begin{DoxyParamCaption}
+\item[{wx\-Size\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a3a8bcd318ff00de01d8d417cf5226120}
+Behandelt Größenänderungen des Fensters. \hypertarget{classGUIMainWindow_a791d688a11d58c514ca4a892f2b69b07}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-S\-D\-Timeline\-Change@{On\-S\-D\-Timeline\-Change}}
+\index{On\-S\-D\-Timeline\-Change@{On\-S\-D\-Timeline\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-S\-D\-Timeline\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-S\-D\-Timeline\-Change (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a791d688a11d58c514ca4a892f2b69b07}
+Behandelt Änderungen an der Sensordaten-\/\-Zeitleiste (bei zeitbezogenen Datensätzen). \hypertarget{classGUIMainWindow_a8fe683ef74029b5b22d7d7cdea4f46f5}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-S\-D\-T\-L\-Marker\-Clear@{On\-S\-D\-T\-L\-Marker\-Clear}}
+\index{On\-S\-D\-T\-L\-Marker\-Clear@{On\-S\-D\-T\-L\-Marker\-Clear}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-S\-D\-T\-L\-Marker\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-S\-D\-T\-L\-Marker\-Clear (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a8fe683ef74029b5b22d7d7cdea4f46f5}
+Löscht alle Markierungen auf der Sensordaten-\/\-Zeitleiste (bei zeitbezogenen Datensätzen). \hypertarget{classGUIMainWindow_a683581567b0fd6fbd8e84b160a81aac7}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-S\-D\-T\-L\-Next\-Marker@{On\-S\-D\-T\-L\-Next\-Marker}}
+\index{On\-S\-D\-T\-L\-Next\-Marker@{On\-S\-D\-T\-L\-Next\-Marker}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-S\-D\-T\-L\-Next\-Marker}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-S\-D\-T\-L\-Next\-Marker (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a683581567b0fd6fbd8e84b160a81aac7}
+Setzen des auf der Sensordaten-\/\-Zeitleiste ausgewählten Zeitpunktes auf den nächsten markierten Zeitpunkt. \hypertarget{classGUIMainWindow_ab41592f7f45ab81dd3a1b663b18ece50}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-S\-D\-T\-L\-Prev\-Marker@{On\-S\-D\-T\-L\-Prev\-Marker}}
+\index{On\-S\-D\-T\-L\-Prev\-Marker@{On\-S\-D\-T\-L\-Prev\-Marker}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-S\-D\-T\-L\-Prev\-Marker}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-S\-D\-T\-L\-Prev\-Marker (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_ab41592f7f45ab81dd3a1b663b18ece50}
+Setzen des auf der Sensordaten-\/\-Zeitleiste ausgewählten Zeitpunktes auf den vorherigen markierten Zeitpunkt. \hypertarget{classGUIMainWindow_a98249bb199993ad5920cf81f4b4a350a}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Sensor\-Data\-Change@{On\-Sensor\-Data\-Change}}
+\index{On\-Sensor\-Data\-Change@{On\-Sensor\-Data\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Sensor\-Data\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Sensor\-Data\-Change (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a98249bb199993ad5920cf81f4b4a350a}
+Behandelt das Auswählen eines anderen Sensordatensatzes. \hypertarget{classGUIMainWindow_ada2a98f493fcdcbdc7bd6acb47d51218}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-View\-Prop\-Change@{On\-View\-Prop\-Change}}
+\index{On\-View\-Prop\-Change@{On\-View\-Prop\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-View\-Prop\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-View\-Prop\-Change (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_ada2a98f493fcdcbdc7bd6acb47d51218}
+Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Visualisierungsoptionen durch den Nutzer. \hypertarget{classGUIMainWindow_a9d642647d7cb73e34ef88c76438206a7}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-View\-Prop\-Spin\-Change@{On\-View\-Prop\-Spin\-Change}}
+\index{On\-View\-Prop\-Spin\-Change@{On\-View\-Prop\-Spin\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-View\-Prop\-Spin\-Change}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-View\-Prop\-Spin\-Change (
+\begin{DoxyParamCaption}
+\item[{wx\-Spin\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a9d642647d7cb73e34ef88c76438206a7}
+Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Visualisierungsoptionen durch den Nutzer. \hypertarget{classGUIMainWindow_a84b96a8b25d748985f4960326a977b22}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!set\-Active\-Object@{set\-Active\-Object}}
+\index{set\-Active\-Object@{set\-Active\-Object}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{set\-Active\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::set\-Active\-Object (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a84b96a8b25d748985f4960326a977b22}
+Setzt das aktive Objekt. 
+\begin{DoxyParams}{Parameter}
+{\em index} & Index des als aktives Objekt zu verwendeten Objekts. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGUIMainWindow_a64f6c71f9d92ab4091670ad1d264b2d7}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!set\-Analyze\-Window\-Status@{set\-Analyze\-Window\-Status}}
+\index{set\-Analyze\-Window\-Status@{set\-Analyze\-Window\-Status}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{set\-Analyze\-Window\-Status}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::set\-Analyze\-Window\-Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-Valid}
+\end{DoxyParamCaption}
+)}}\label{classGUIMainWindow_a64f6c71f9d92ab4091670ad1d264b2d7}
+Setzt den Status des Übersichstfensters über die Analysedaten. 
+\begin{DoxyParams}{Parameter}
+{\em is\-Valid} & Ob das Fenster ein gültiges Objekt oder ob der Speicher bereits freigegeben ist. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGUIMainWindow_a4b8b9293b800ca5ff47d1cb3a75f06a5}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!set\-Cut\-Render\-Window\-Status@{set\-Cut\-Render\-Window\-Status}}
+\index{set\-Cut\-Render\-Window\-Status@{set\-Cut\-Render\-Window\-Status}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{set\-Cut\-Render\-Window\-Status}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::set\-Cut\-Render\-Window\-Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-Valid}
+\end{DoxyParamCaption}
+)}}\label{classGUIMainWindow_a4b8b9293b800ca5ff47d1cb3a75f06a5}
+Setzt den Status des Übersichstfensters über die Analysedaten. 
+\begin{DoxyParams}{Parameter}
+{\em is\-Valid} & Ob das Fenster ein gültiges Objekt oder ob der Speicher bereits freigegeben ist. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classGUIMainWindow_a4c520b8716196fa1e88a7bea5ec34ef0}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!update\-Object\-Prop\-G\-U\-I@{update\-Object\-Prop\-G\-U\-I}}
+\index{update\-Object\-Prop\-G\-U\-I@{update\-Object\-Prop\-G\-U\-I}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{update\-Object\-Prop\-G\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::update\-Object\-Prop\-G\-U\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a4c520b8716196fa1e88a7bea5ec34ef0}
+Überträgt die Eigenschaften des aktiven Objekts in die G\-U\-I. \hypertarget{classGUIMainWindow_a2af54fc375be6b0fb938b8562980e723}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!update\-View\-Prop\-G\-U\-I@{update\-View\-Prop\-G\-U\-I}}
+\index{update\-View\-Prop\-G\-U\-I@{update\-View\-Prop\-G\-U\-I}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{update\-View\-Prop\-G\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::update\-View\-Prop\-G\-U\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a2af54fc375be6b0fb938b8562980e723}
+Lädt die Visualisierungsoptionen in die G\-U\-I. 
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classGUIMainWindow_a1f65a053fadac47033fef38c4b0e8a69}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!analyze\-\_\-window\-\_\-valid@{analyze\-\_\-window\-\_\-valid}}
+\index{analyze\-\_\-window\-\_\-valid@{analyze\-\_\-window\-\_\-valid}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{analyze\-\_\-window\-\_\-valid}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-Main\-Window\-::analyze\-\_\-window\-\_\-valid\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a1f65a053fadac47033fef38c4b0e8a69}
+Das Analysedaten-\/Übersichtsfenster ist gerade geöffnet. \hypertarget{classGUIMainWindow_a20e7a8cf498df1c1c0059711b487837b}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!analyzerframe@{analyzerframe}}
+\index{analyzerframe@{analyzerframe}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{analyzerframe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-U\-I\-Analyze\-Output\-Window}$\ast$ G\-U\-I\-Main\-Window\-::analyzerframe\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a20e7a8cf498df1c1c0059711b487837b}
+Das Analysedaten-\/Übersichtsfenster. Der Zeiger ist ungültig, wenn das Analysedaten-\/Übersichtsfenster nicht geöffnet ist. (siehe analyze\-\_\-window\-\_\-valid) \hypertarget{classGUIMainWindow_a7b5069afb8996ff001654f8d832b2bfa}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!gl\-\_\-context@{gl\-\_\-context}}
+\index{gl\-\_\-context@{gl\-\_\-context}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{gl\-\_\-context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-U\-I\-G\-L\-Canvas}$\ast$ G\-U\-I\-Main\-Window\-::gl\-\_\-context\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a7b5069afb8996ff001654f8d832b2bfa}
+Die Zeichenfläche für das 3\-D-\/\-Fenster. \hypertarget{classGUIMainWindow_ab93a87b5cde10015dc02dc000c409f90}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Analyze\-Menu@{mw\-Analyze\-Menu}}
+\index{mw\-Analyze\-Menu@{mw\-Analyze\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{mw\-Analyze\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Menu$\ast$ G\-U\-I\-Main\-Window\-::mw\-Analyze\-Menu\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_ab93a87b5cde10015dc02dc000c409f90}
+Das \char`\"{}\-Analysieren\char`\"{}-\/\-Untermenü. \hypertarget{classGUIMainWindow_a32c50be8574176c02aadb47626adc9d4}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Edit\-Menu@{mw\-Edit\-Menu}}
+\index{mw\-Edit\-Menu@{mw\-Edit\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{mw\-Edit\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Menu$\ast$ G\-U\-I\-Main\-Window\-::mw\-Edit\-Menu\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a32c50be8574176c02aadb47626adc9d4}
+Das \char`\"{}\-Bearbeiten\char`\"{}-\/\-Untermenü \hypertarget{classGUIMainWindow_a9f6af05ef18bf81ff9955670001941ea}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Export\-Menu@{mw\-Export\-Menu}}
+\index{mw\-Export\-Menu@{mw\-Export\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{mw\-Export\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Menu$\ast$ G\-U\-I\-Main\-Window\-::mw\-Export\-Menu\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a9f6af05ef18bf81ff9955670001941ea}
+Das \char`\"{}\-Export\char`\"{}-\/\-Untermenü. \hypertarget{classGUIMainWindow_a3b23fa0fb1d779bd5b8384507d8b90e8}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-File\-Menu@{mw\-File\-Menu}}
+\index{mw\-File\-Menu@{mw\-File\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{mw\-File\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Menu$\ast$ G\-U\-I\-Main\-Window\-::mw\-File\-Menu\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a3b23fa0fb1d779bd5b8384507d8b90e8}
+Das \char`\"{}\-Datei\char`\"{}-\/\-Untermenü. \hypertarget{classGUIMainWindow_ae8fc1a9ba3768aa042a77b5bea117f6c}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Help\-Menu@{mw\-Help\-Menu}}
+\index{mw\-Help\-Menu@{mw\-Help\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{mw\-Help\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Menu$\ast$ G\-U\-I\-Main\-Window\-::mw\-Help\-Menu\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_ae8fc1a9ba3768aa042a77b5bea117f6c}
+Das \char`\"{}\-Hilfe\char`\"{}-\/\-Untermenü. \hypertarget{classGUIMainWindow_afaff9e1bec11b0f80215ceba76e87bc4}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Import\-Menu@{mw\-Import\-Menu}}
+\index{mw\-Import\-Menu@{mw\-Import\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{mw\-Import\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Menu$\ast$ G\-U\-I\-Main\-Window\-::mw\-Import\-Menu\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_afaff9e1bec11b0f80215ceba76e87bc4}
+Das \char`\"{}\-Import\char`\"{}-\/\-Untermenü. \hypertarget{classGUIMainWindow_a057a6728bf9aa994f41060ebe15a28ac}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Menu\-Bar@{mw\-Menu\-Bar}}
+\index{mw\-Menu\-Bar@{mw\-Menu\-Bar}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{mw\-Menu\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Menu\-Bar$\ast$ G\-U\-I\-Main\-Window\-::mw\-Menu\-Bar\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a057a6728bf9aa994f41060ebe15a28ac}
+Die Hauptmenükomponente. \hypertarget{classGUIMainWindow_a1c120efb232cf3d371a3a6231619b808}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!prop\-\_\-scroll\-\_\-win@{prop\-\_\-scroll\-\_\-win}}
+\index{prop\-\_\-scroll\-\_\-win@{prop\-\_\-scroll\-\_\-win}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{prop\-\_\-scroll\-\_\-win}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Scrolled\-Window$\ast$ G\-U\-I\-Main\-Window\-::prop\-\_\-scroll\-\_\-win\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a1c120efb232cf3d371a3a6231619b808}
+Scrollender Bereich, in den die Objekteigenschaften-\/\-Oberfläche eingebettet ist. \hypertarget{classGUIMainWindow_a4959774563543927a492bf06e441920e}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!propbox@{propbox}}
+\index{propbox@{propbox}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{propbox}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Properties\-Box}$\ast$ G\-U\-I\-Main\-Window\-::propbox\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a4959774563543927a492bf06e441920e}
+Die Unterkomponente, die die Objekteigenschaften-\/\-Oberfläche enthält. \hypertarget{classGUIMainWindow_a4f08d8e4294955a3cc0b071dd3cad0d2}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!render\-\_\-cut\-\_\-window\-\_\-valid@{render\-\_\-cut\-\_\-window\-\_\-valid}}
+\index{render\-\_\-cut\-\_\-window\-\_\-valid@{render\-\_\-cut\-\_\-window\-\_\-valid}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{render\-\_\-cut\-\_\-window\-\_\-valid}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-Main\-Window\-::render\-\_\-cut\-\_\-window\-\_\-valid\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a4f08d8e4294955a3cc0b071dd3cad0d2}
+Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung ist gerade geöffnet. \hypertarget{classGUIMainWindow_a649cb92f27688772174659601188ac2d}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!rendercutwindow@{rendercutwindow}}
+\index{rendercutwindow@{rendercutwindow}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{rendercutwindow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-U\-I\-Cut\-Render\-Window}$\ast$ G\-U\-I\-Main\-Window\-::rendercutwindow\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a649cb92f27688772174659601188ac2d}
+Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung. Der Zeiger ist ungültig, wenn das 2\-D-\/\-Fenster nicht geöffnet ist. (siehe render\-\_\-cut\-\_\-window\-\_\-valid) \hypertarget{classGUIMainWindow_a8a8638fa87b4080e2242812f3d7e469e}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!toolbar@{toolbar}}
+\index{toolbar@{toolbar}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{toolbar}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Tool\-Bar$\ast$ G\-U\-I\-Main\-Window\-::toolbar\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a8a8638fa87b4080e2242812f3d7e469e}
+Die Tollbarkomponente. \hypertarget{classGUIMainWindow_afdc35b04c0fe94e4d0080f659ecbce8c}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!updating@{updating}}
+\index{updating@{updating}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{updating}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-Main\-Window\-::updating\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_afdc35b04c0fe94e4d0080f659ecbce8c}
+Die Oberfläche wird gerade vom Programm verändert. Signalisiert, dass die Eingabe nicht durch den Nutzer erfolgt ist. \hypertarget{classGUIMainWindow_ad440f7451fd3fdabbe48518a89e61e45}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!view\-\_\-scroll\-\_\-win@{view\-\_\-scroll\-\_\-win}}
+\index{view\-\_\-scroll\-\_\-win@{view\-\_\-scroll\-\_\-win}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{view\-\_\-scroll\-\_\-win}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Scrolled\-Window$\ast$ G\-U\-I\-Main\-Window\-::view\-\_\-scroll\-\_\-win\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_ad440f7451fd3fdabbe48518a89e61e45}
+Scrollender Bereich, in den die Visualisierungsoptionen-\/\-Oberfläche eingebettet ist. \hypertarget{classGUIMainWindow_a3e9a4e301f90e85e97721aa71b197ca8}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!viewbox@{viewbox}}
+\index{viewbox@{viewbox}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{viewbox}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Viewprop\-Box}$\ast$ G\-U\-I\-Main\-Window\-::viewbox\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a3e9a4e301f90e85e97721aa71b197ca8}
+Die Unterkomponente, die die Visualisierungsoptionen-\/\-Oberfläche enthält. 
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
+\item 
+simpleanalyzer-\/gui/src/\-G\-U\-I/G\-U\-I\-Main\-Window.\-h\item 
+simpleanalyzer-\/gui/src/\-G\-U\-I/G\-U\-I\-Main\-Window.\-cpp\end{DoxyCompactItemize}

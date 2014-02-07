@@ -16,13 +16,6 @@
 #define NUMBEROFSENSORATTRIBUTES 1
 using namespace std;
 using namespace Utils;
-enum ObjectDataStatus {
-	OD_SUCCESS = 1,
-	OD_FAILURE,
-	OD_LOAD_ALREADY_LOADED,
-	OD_LOAD_INVALID_FILE,
-	OD_LOAD_INVALID_SENSOR_FILE,
-};
 
 struct MaterialData {
 	string name;
@@ -38,6 +31,17 @@ struct MaterialData {
 
 class ObjectData {
 public:
+	/**
+	 * Status einer die Objektdaten betreffenden Aktion.
+	 */
+	enum ObjectDataStatus {
+		OD_SUCCESS = 1,
+		OD_FAILURE,
+		OD_LOAD_ALREADY_LOADED,
+		OD_LOAD_INVALID_FILE,
+		OD_LOAD_INVALID_SENSOR_FILE,
+	};
+
 	ObjectData();
 	int loadFromFile(wxString &path);
 	int addSensorData(wxString &path);

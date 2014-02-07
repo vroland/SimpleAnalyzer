@@ -1,0 +1,77 @@
+\hypertarget{classExporter}{\section{Exporter Klassenreferenz}
+\label{classExporter}\index{Exporter@{Exporter}}
+}
+
+
+Export der gewonnenen Daten.  
+
+
+
+
+{\ttfamily \#include $<$Exporter.\-h$>$}
+
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExporter_a2a977cb5ac8f637fcb570e73f650eca0}{Exporter} ()
+\item 
+\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classExporter_a59d03f0a582498e15397230b70ad1e80}{Export\-Legacy\-V\-T\-K} (string filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
+\item 
+\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classExporter_ae2aa06b8c8c77e172801a1f77800ffd0}{Export\-Cut\-C\-S\-V} (string filename, float $\ast$values, \hyperlink{structUtils_1_1CutRender__info}{Cut\-Render\-\_\-info} $\ast$info)
+\item 
+virtual \hyperlink{classExporter_a44f24686958e01a543fd8b68b392658a}{$\sim$\-Exporter} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Export der gewonnenen Daten. 
+
+Klasse zum Export der dreidimensionalen Temperaturverteilung als V\-T\-K-\/\-Datei und der zweidimensionalen Temperaturverteilung (Schnitt durch das Modell) als .csv-\/\-Datei. 
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classExporter_a2a977cb5ac8f637fcb570e73f650eca0}{\index{Exporter@{Exporter}!Exporter@{Exporter}}
+\index{Exporter@{Exporter}!Exporter@{Exporter}}
+\subsubsection[{Exporter}]{\setlength{\rightskip}{0pt plus 5cm}Exporter\-::\-Exporter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classExporter_a2a977cb5ac8f637fcb570e73f650eca0}
+Der Konstruktor. \hypertarget{classExporter_a44f24686958e01a543fd8b68b392658a}{\index{Exporter@{Exporter}!$\sim$\-Exporter@{$\sim$\-Exporter}}
+\index{$\sim$\-Exporter@{$\sim$\-Exporter}!Exporter@{Exporter}}
+\subsubsection[{$\sim$\-Exporter}]{\setlength{\rightskip}{0pt plus 5cm}Exporter\-::$\sim$\-Exporter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classExporter_a44f24686958e01a543fd8b68b392658a}
+Der Destruktor. 
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classExporter_ae2aa06b8c8c77e172801a1f77800ffd0}{\index{Exporter@{Exporter}!Export\-Cut\-C\-S\-V@{Export\-Cut\-C\-S\-V}}
+\index{Export\-Cut\-C\-S\-V@{Export\-Cut\-C\-S\-V}!Exporter@{Exporter}}
+\subsubsection[{Export\-Cut\-C\-S\-V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Data\-::\-Object\-Data\-Status} Exporter\-::\-Export\-Cut\-C\-S\-V (
+\begin{DoxyParamCaption}
+\item[{string}]{filename, }
+\item[{float $\ast$}]{values, }
+\item[{{\bf Cut\-Render\-\_\-info} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{classExporter_ae2aa06b8c8c77e172801a1f77800ffd0}
+Exportiert die zweidimensionale Temperaturverteilung (Schnitt durch das Modell) als csv-\/\-Datei. \begin{DoxyReturn}{Rückgabe}
+Der Fehlercode. 
+\end{DoxyReturn}
+\hypertarget{classExporter_a59d03f0a582498e15397230b70ad1e80}{\index{Exporter@{Exporter}!Export\-Legacy\-V\-T\-K@{Export\-Legacy\-V\-T\-K}}
+\index{Export\-Legacy\-V\-T\-K@{Export\-Legacy\-V\-T\-K}!Exporter@{Exporter}}
+\subsubsection[{Export\-Legacy\-V\-T\-K}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Data\-::\-Object\-Data\-Status} Exporter\-::\-Export\-Legacy\-V\-T\-K (
+\begin{DoxyParamCaption}
+\item[{string}]{filename, }
+\item[{{\bf Object\-Data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{classExporter_a59d03f0a582498e15397230b70ad1e80}
+Exportiert die aktuell berechnete dreidimensionale Temperaturverteilung und das Modell als V\-T\-K-\/\-Datei. \begin{DoxyReturn}{Rückgabe}
+Der Fehlercode. 
+\end{DoxyReturn}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
+\item 
+simpleanalyzer-\/gui/src/file\-I\-O/Exporter.\-h\item 
+simpleanalyzer-\/gui/src/file\-I\-O/Exporter.\-cpp\end{DoxyCompactItemize}

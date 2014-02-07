@@ -36,13 +36,13 @@ PropertiesBox::PropertiesBox(wxWindow *parent):
 	matpropbox    = new wxStaticBox(parent,wxID_ANY,wxT("Materialeigenschaften:"));
 	matnameedit	  = new wxTextCtrl(parent,ID_IMMEDIATE_UPDATE_PROP,wxT(""));
 	matnametext	  = new wxStaticText(parent,wxID_ANY,wxT("Materialname:"));
-	interpolationmodelist = new wxComboBox(parent,ID_GENERAL_PROP,wxT(""),wxDefaultPosition,wxDefaultSize,NUMBEROFINTERPOLATIONMODES,imenumstrings,wxCB_READONLY | wxCB_DROPDOWN);
+	interpolationmodelist = new wxComboBox(parent,ID_GENERAL_PROP,wxT(""),wxDefaultPosition,wxDefaultSize,NUMBER_OF_INTERPOLATION_MODES,INTERPOLATION_MODE_STRINGS,wxCB_READONLY | wxCB_DROPDOWN);
 	interpolationmodetext = new wxStaticText(parent,wxID_ANY,wxT("Interpolationsmodus:"));
 	densityedit	  = new wxTextCtrl(parent,ID_GENERAL_PROP,wxT(""));
 	densitytext	  = new wxStaticText(parent,wxID_ANY,wxT("Dichte in kg/m³:"));
 	cspecedit	  = new wxTextCtrl(parent,ID_GENERAL_PROP,wxT(""));
 	cspectext	  = new wxStaticText(parent,wxID_ANY,wxT("Spez. Wärmekapazität in kJ/(kg*K):"));
-	sdtimeline 	  = new GUITimeline(parent,ID_SD_TIMELINE,wxT("Zeitleiste"));
+	sdtimeline 	  = new GUITimeline(parent,ID_SD_TIMELINE);
 	analyzemarkercb = new wxCheckBox(parent,ID_ANALYZE_MARKER_CB,wxT("Analysieren"));
 	findmaxbt	  = new wxButton(parent,ID_FIND_MAX_BT,wxT("Max"));
 	clranalyzemarkerbt = new wxButton(parent,ID_CLEAR_MARKER_BT,wxT("Clear"));

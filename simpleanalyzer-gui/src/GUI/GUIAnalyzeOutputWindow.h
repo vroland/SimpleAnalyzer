@@ -36,7 +36,7 @@ public:
 	virtual ~GUIAnalyzeOutputWindow();
 private:
 	/**
-	 * Die Tabellenkomponente.
+	 * Die Tabellenkomponente
 	 */
 	wxGrid* table;
 };

@@ -19,7 +19,6 @@ BEGIN_EVENT_TABLE(GUIRenderCutCanvas, wxPanel)
 	EVT_MOTION   (GUIRenderCutCanvas::OnMouseMove)
 	EVT_SIZE   (GUIRenderCutCanvas::OnResize)
 	EVT_LEFT_DOWN(GUIRenderCutCanvas::OnMouseDown)
-	EVT_KEY_DOWN(GUIRenderCutCanvas::OnKeyDown)
 END_EVENT_TABLE()
 using namespace std;
 using namespace Utils;
@@ -89,9 +88,6 @@ void GUIRenderCutCanvas::OnMouseDown(wxMouseEvent &event) {
 		mouse_to_scalepanel = true;
 	}
 }
-void GUIRenderCutCanvas::OnKeyDown(wxKeyEvent &event) {
-
-}
 void GUIRenderCutCanvas::onCanvasPaint(wxPaintEvent &event) {
 	 // Create paint DC
 	wxPaintDC dc(this);
@@ -126,7 +122,7 @@ void GUIRenderCutCanvas::onCanvasPaint(wxPaintEvent &event) {
 		dc.DrawLine(bx,by+zheight,bx+zwidth,by+zheight);
 		dc.DrawLine(bx+zwidth,by,bx+zwidth,by+zheight);
 	}
-	wxBitmap scalepanelbmp(*scalepanel->scale_img);
+	wxBitmap scalepanelbmp(*scalepanel->getImage());
 	scalepanelbmp = scalepanelbmp.Rescale(0,0,10000000,1000000,zwidth,zheight);
 	dc.DrawBitmap(scalepanelbmp,imgx,imgy);
 	wxPoint img_pos(imgx,imgy);

@@ -20,12 +20,12 @@ Exporter::Exporter() {
 
 }
 const int tetface_indices[4][3] = {{0,1,2},{0,1,3},{0,2,3},{1,2,3}};
-ObjectDataStatus Exporter::ExportLegacyVTK(string filename,ObjectData* data) {
+ObjectData::ObjectDataStatus Exporter::ExportLegacyVTK(string filename,ObjectData* data) {
 	ofstream file;
 	file.open(filename);
 	if (!file.is_open()) {
 		cerr << "could not open file: "<<filename<<endl;
-		return OD_FAILURE;
+		return ObjectData::OD_FAILURE;
 	}
 	file << "# vtk DataFile Version 3.0" << endl;
 	file << "exported from SimpleAnalyzer" << endl;
@@ -76,14 +76,14 @@ ObjectDataStatus Exporter::ExportLegacyVTK(string filename,ObjectData* data) {
 		}
 	}
 	file.close();
-	return OD_SUCCESS;
+	return ObjectData::OD_SUCCESS;
 }
-ObjectDataStatus Exporter::ExportCutCSV(string filename,float* values,CutRender_info* info) {
+ObjectData::ObjectDataStatus Exporter::ExportCutCSV(string filename,float* values,CutRender_info* info) {
 	ofstream file;
 	file.open(filename);
 	if (!file.is_open()) {
 		cerr << "could not open file: "<<filename<<endl;
-		return OD_FAILURE;
+		return ObjectData::OD_FAILURE;
 	}
 	file << "Schnittebene: " << endl;
 	file << "V1: (Mittelpunkt)"<<CSV_SEP<<*info->tri->getV1() << endl;
@@ -105,7 +105,7 @@ ObjectDataStatus Exporter::ExportCutCSV(string filename,float* values,CutRender_
 		file << endl;
 	}
 	file.close();
-	return OD_SUCCESS;
+	return ObjectData::OD_SUCCESS;
 }
 Exporter::~Exporter() {
 	// TODO Auto-generated destructor stub

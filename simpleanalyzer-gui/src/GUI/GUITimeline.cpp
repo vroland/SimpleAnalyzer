@@ -29,7 +29,6 @@ END_EVENT_TABLE()
 const float refine_factors[REFINE_STEPS] = {.5,.2,.1};
 GUITimeline::GUITimeline(wxWindow *parent,
 	wxWindowID id,
-	const wxString& title,
 	const wxPoint& pos,
 	const wxSize& size,
 	long style,

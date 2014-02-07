@@ -8,14 +8,21 @@
 #ifndef EVENT_IDS_H_
 #define EVENT_IDS_H_
 
+/** @file */
+
 #include <wx/wx.h>
-#define NUMBEROFINTERPOLATIONMODES 2
-const wxString imenumstrings[NUMBEROFINTERPOLATIONMODES] = {wxT("Linear"),wxT("Logarithmisch")};
+const int NUMBER_OF_INTERPOLATION_MODES = 2;
+/**
+ * Bezeichnungen für die von "Interpolator" verwendeten Interpolationsmodi.
+ */
+const wxString INTERPOLATION_MODE_STRINGS[NUMBER_OF_INTERPOLATION_MODES] = {wxT("Linear"),wxT("Logarithmisch")};
+
 
 /**
- * Konstante Event-IDs.
+ * \enum EventID
+ * IDs für die Events der Programmoberfläche.
  */
-enum EventID{
+enum EventID {
 	ID_ABOUT = 1,
 	ID_TEST,
 	ID_IMPORT_OBJ,

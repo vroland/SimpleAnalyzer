@@ -57,7 +57,7 @@ string getTextBlock(string data,int n) { //Gibt den n-ten durch Leerzeichen abge
 	return data.substr(prevPos,pos-(prevPos));
 }
 
-ObjectDataStatus Importer::ImportObj(const char* filename,ObjectData* data) {
+ObjectData::ObjectDataStatus Importer::ImportObj(const char* filename,ObjectData* data) {
 	// read data //
 
 	vector<double> points;
@@ -66,7 +66,7 @@ ObjectDataStatus Importer::ImportObj(const char* filename,ObjectData* data) {
 	file.open(filename);
 	if (!file.is_open()) {
 		cerr << "could not open file: "<<filename<<endl;
-		return OD_FAILURE;
+		return ObjectData::OD_FAILURE;
 	}
 	string line;
 	int currentMatIndex = -1;
@@ -117,7 +117,7 @@ ObjectDataStatus Importer::ImportObj(const char* filename,ObjectData* data) {
 			mtlfile.open((filedir+mtlpath).c_str());
 			if (!mtlfile.is_open()) {
 				cerr << "could not open file: "<<mtlpath<<endl;
-				return OD_FAILURE;
+				return ObjectData::OD_FAILURE;
 			}
 			MaterialData* currentMat = NULL;
 			while (mtlfile.good()) {
@@ -194,14 +194,14 @@ ObjectDataStatus Importer::ImportObj(const char* filename,ObjectData* data) {
 		}
 	}
 	file.close();
-	return OD_SUCCESS;
+	return ObjectData::OD_SUCCESS;
 }
-ObjectDataStatus Importer::LoadSensorData(const char* filename,ObjectData* data) {
+ObjectData::ObjectDataStatus Importer::LoadSensorData(const char* filename,ObjectData* data) {
 	ifstream file;
 	file.open(filename);
 	if (!file.is_open()) {
 		cerr << "could not open file: "<<filename<<endl;
-		return OD_FAILURE;
+		return ObjectData::OD_FAILURE;
 	}
 	string line;
 
@@ -233,14 +233,14 @@ ObjectDataStatus Importer::LoadSensorData(const char* filename,ObjectData* data)
 	if (data->current_sensor_index<0) {
 		data->current_sensor_index = 0;
 	}
-	return OD_SUCCESS;
+	return ObjectData::OD_SUCCESS;
 }
-ObjectDataStatus Importer::LoadTimedData(const char* filename,ObjectData* data) {
+ObjectData::ObjectDataStatus Importer::LoadTimedData(const char* filename,ObjectData* data) {
 	ifstream file;
 	file.open(filename);
 	if (!file.is_open()) {
 		cout << "could not open file: "<<filename<<endl;
-		return OD_FAILURE;
+		return ObjectData::OD_FAILURE;
 	}
 	string line;
 	data->sensordatalist.resize(data->sensordatalist.size()+1);
@@ -278,7 +278,7 @@ ObjectDataStatus Importer::LoadTimedData(const char* filename,ObjectData* data) 
 	if (data->current_sensor_index<0) {
 		data->current_sensor_index = 0;
 	}
-	return OD_SUCCESS;
+	return ObjectData::OD_SUCCESS;
 }
 Importer::~Importer() {
 }

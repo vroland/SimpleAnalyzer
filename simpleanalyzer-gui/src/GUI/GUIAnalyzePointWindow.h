@@ -24,19 +24,42 @@ public:
 	 */
 	virtual ~GUIAnalyzePointWindow();
 protected:
+	/**
+	 * Event-Tabellendeklaration für wxWidgets.
+	 */
 	DECLARE_EVENT_TABLE()
 private:
 	/**
 	 * Ermittelt Temperatur und Art des Punktes (Interpoliert/Extrapoliert). Wird durch Event ausgelöst.
 	 */
 	void analyzePoint(wxCommandEvent &event);
-
+	/**
+	 * Beschriftung der Fensterkomponenten.
+	 */
 	wxStaticText* label;
+	/**
+	 * Eingabefeld für die X-Koordinate.
+	 */
 	wxTextCtrl* xedit;
+	/**
+	 * Eingabefeld für die Y-Koordinate.
+	 */
 	wxTextCtrl* yedit;
+	/**
+	 * Eingabefeld für die Z-Koordinate.
+	 */
 	wxTextCtrl* zedit;
+	/**
+	 * Beschriftung für den Interpolationsmodus.
+	 */
 	wxStaticText* interpolationModeLabel;
+	/**
+	 * Dropdown-Menü für den Interpolationsmodus.
+	 */
 	wxComboBox* interpolationModeList;
+	/**
+	 * Button zum Auslösen der Analyseprozedur.
+	 */
 	wxButton* calcbt;
 };
 

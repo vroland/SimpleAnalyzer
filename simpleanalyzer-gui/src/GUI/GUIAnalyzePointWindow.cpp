@@ -25,7 +25,7 @@ GUIAnalyzePointWindow::GUIAnalyzePointWindow(wxWindow * parent,const wxChar *tit
 	yedit = new wxTextCtrl(this,wxID_ANY,wxT("0.0"));
 	zedit = new wxTextCtrl(this,wxID_ANY,wxT("0.0"));
 	calcbt= new wxButton(this,ID_ANALYZE_POINT_BT,wxT("analysieren"));
-	interpolationModeList = new wxComboBox(this,wxID_ANY,wxT(""),wxDefaultPosition,wxDefaultSize,NUMBEROFINTERPOLATIONMODES,imenumstrings,wxCB_READONLY | wxCB_DROPDOWN);
+	interpolationModeList = new wxComboBox(this,wxID_ANY,wxT(""),wxDefaultPosition,wxDefaultSize,NUMBER_OF_INTERPOLATION_MODES,INTERPOLATION_MODE_STRINGS,wxCB_READONLY | wxCB_DROPDOWN);
 	interpolationModeLabel = new wxStaticText(this,wxID_ANY,wxT("Interpolationsmodus:"));
 	label->SetSize(10,10,300,20);
 	xedit->SetSize(20,30,100,20);

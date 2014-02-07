@@ -27,12 +27,14 @@ public:
 	Exporter();
 	/**
 	 * Exportiert die aktuell berechnete dreidimensionale Temperaturverteilung und das Modell als VTK-Datei.
+	 * @return Der Fehlercode.
 	 */
-	ObjectDataStatus ExportLegacyVTK(string filename,ObjectData* data);
+	ObjectData::ObjectDataStatus ExportLegacyVTK(string filename,ObjectData* data);
 	/**
 	 * Exportiert die zweidimensionale Temperaturverteilung (Schnitt durch das Modell) als csv-Datei.
+	 * @return Der Fehlercode.
 	 */
-	ObjectDataStatus ExportCutCSV(string filename,float* values,CutRender_info* info);
+	ObjectData::ObjectDataStatus ExportCutCSV(string filename,float* values,CutRender_info* info);
 	/**
 	 * Der Destruktor.
 	 */

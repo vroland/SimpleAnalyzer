@@ -37,7 +37,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_LISTBOX(ID_MATERIALBOX, GUIMainWindow::OnMaterialSelect)
 	EVT_BUTTON(ID_RECALCBT,GUIMainWindow::OnRecalcBtClick)
 	EVT_SIZE(GUIMainWindow::OnResize)
-	EVT_TEXT(ID_IMMEDIATE_UPDATE_PROP,GUIMainWindow::OnImmUpPropChange)
+	EVT_TEXT(ID_IMMEDIATE_UPDATE_PROP,GUIMainWindow::OnImmediateUpdatePropChange)
 	EVT_TEXT(ID_GENERAL_PROP,GUIMainWindow::OnGeneralPropChange)
 	EVT_RADIOBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
 	EVT_TEXT(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
@@ -86,6 +86,7 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	// Edit menu
 	mwEditMenu = new wxMenu();
 	mwEditMenu->Append(ID_DELETE_ACTIVE_OBJ,wxT("Aktives Objekt löschen"));
+	mwMenuBar->Append(mwEditMenu,wxT("Bearbeiten"));
 	// Analyze menu
 	mwAnalyzeMenu = new wxMenu();
 	mwAnalyzeMenu->Append(ID_ANALYZE,wxT("Übersicht..."));
@@ -163,6 +164,14 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	SetIcon(wxIcon(wxString::FromUTF8(datadir.c_str())+wxT("icons/prgm-icon.png")));
 	Centre();
 }
+
+void GUIMainWindow::setAnalyzeWindowStatus(bool isValid) {
+	analyze_window_valid = isValid;
+}
+void GUIMainWindow::setCutRenderWindowStatus(bool isValid) {
+	render_cut_window_valid = isValid;
+}
+
 GUIGLCanvas* GUIMainWindow::getGLCanvas() {
 	return gl_context;
 }
@@ -354,7 +363,7 @@ void GUIMainWindow::OnRecalcBtClick(wxCommandEvent& event) {
 		ObjectData* obj = data_objects.at(current_data_object_index);
 		assignCurrentObjectProps();
 		obj->calculateIO();
-		gl_context->refreshRenderObject();
+		gl_context->refresh();
 		propbox->uptodatetext->Hide();
 		if (analyze_window_valid) {
 			analyzerframe->Update();
@@ -388,7 +397,7 @@ void GUIMainWindow::OnRenderCut(wxCommandEvent &event) {
 		}
 	}
 }
-void GUIMainWindow::OnImmUpPropChange(wxCommandEvent &event) {
+void GUIMainWindow::OnImmediateUpdatePropChange(wxCommandEvent &event) {
 	if (!updating) {
 		propbox->uptodatetext->Show();
 		assignCurrentObjectProps();
@@ -408,7 +417,7 @@ void GUIMainWindow::OnGeneralPropChange(wxCommandEvent &event) {
 
 void GUIMainWindow::assignViewProps() {
 	if (current_data_object_index>-1) {
-		Viewport_info* view = &gl_context->renderer.viewport;
+		Viewport_info* view = &gl_context->getRenderer()->viewport;
 
 		view->showpoints 		= viewbox->pointscb->GetSelection();
 		view->showedges 		= viewbox->edgescb->GetSelection();
@@ -427,7 +436,7 @@ void GUIMainWindow::assignViewProps() {
 void GUIMainWindow::updateViewPropGUI() {
 	if (current_data_object_index>-1) {
 		updating = true;
-		Viewport_info* view = &gl_context->renderer.viewport;
+		Viewport_info* view = &gl_context->getRenderer()->viewport;
 		viewbox->show_extcb->SetValue(view->show_extrapolated);
 		viewbox->show_sdata->SetValue(view->show_sensordata);
 		viewbox->pointscb->SetSelection(view->showpoints);
@@ -448,13 +457,13 @@ void GUIMainWindow::updateViewPropGUI() {
 void GUIMainWindow::OnViewPropChange(wxCommandEvent &event) {
 	if (!updating) {
 		assignViewProps();
-		gl_context->refreshRenderObject();
+		gl_context->refresh();
 	}
 }
 void GUIMainWindow::OnViewPropSpinChange(wxSpinEvent &event) {
 	if (!updating) {
 		assignViewProps();
-		gl_context->refreshRenderObject();
+		gl_context->refresh();
 	}
 }
 
@@ -467,19 +476,19 @@ void GUIMainWindow::OnMenuImportObj(wxCommandEvent &event)
 		wxString path = OpenDialog->GetPath();
 		int status = newobj->loadFromFile(path);
 		switch (status) {
-		case OD_LOAD_ALREADY_LOADED:
+		case ObjectData::OD_LOAD_ALREADY_LOADED:
 			wxMessageBox(path+wxT(" ist bereits geöffnet!"));
 			delete newobj;
 			break;
-		case OD_LOAD_INVALID_FILE:
+		case ObjectData::OD_LOAD_INVALID_FILE:
 			wxMessageBox(path+wxT(" ist keine Wavefront(.obj)-Datei."));
 			delete newobj;
 			break;
-		case OD_LOAD_INVALID_SENSOR_FILE:
+		case ObjectData::OD_LOAD_INVALID_SENSOR_FILE:
 			wxMessageBox(wxT("Sensordaten konnten nicht geladen werden: ")+(path.BeforeLast('.')+wxT(".(t)sd")));
 			delete newobj;
 			break;
-		case OD_SUCCESS:
+		case ObjectData::OD_SUCCESS:
 			addObject(newobj);
 			break;
 		default:
@@ -529,7 +538,7 @@ void GUIMainWindow::OnExportViewportImage(wxCommandEvent &event) {
 	{
 		cout << SaveDialog->GetPath().ToUTF8().data() << endl;
 		gl_context->SetCurrent();
-		wxImage* img = gl_context->renderer.getViewportImage();
+		wxImage* img = gl_context->getRenderer()->getViewportImage();
 		img->SaveFile(SaveDialog->GetPath());
 		img->Destroy();
 	}
@@ -571,7 +580,7 @@ void GUIMainWindow::OnMenuFileQuit(wxCommandEvent &event) {
 }
 
 void GUIMainWindow::OnMenuHelpAbout(wxCommandEvent &event) {
-	wxMessageBox(wxT("Simple Analyzer\n©2013-2013 by Valentin Roland"));
+	wxMessageBox(wxT("Simple Analyzer\n©2013-2014 by Valentin Roland"));
 }
 
 GUIMainWindow::~GUIMainWindow() {
