@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,124 +112,181 @@ Zusammengehörigkeiten von GUIMainWindow:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
 <tr class="memitem:a55cb97ffda12d79c6d6d50c9de35a3fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a55cb97ffda12d79c6d6d50c9de35a3fe">GUIMainWindow</a> (const wxChar *title, int xpos, int ypos, int width, int height)</td></tr>
+<tr class="memdesc:a55cb97ffda12d79c6d6d50c9de35a3fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der Konstruktor.  <a href="#a55cb97ffda12d79c6d6d50c9de35a3fe">Mehr ...</a><br/></td></tr>
 <tr class="separator:a55cb97ffda12d79c6d6d50c9de35a3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64f6c71f9d92ab4091670ad1d264b2d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a64f6c71f9d92ab4091670ad1d264b2d7">setAnalyzeWindowStatus</a> (bool isValid)</td></tr>
+<tr class="memdesc:a64f6c71f9d92ab4091670ad1d264b2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt den Status des Übersichstfensters über die Analysedaten.  <a href="#a64f6c71f9d92ab4091670ad1d264b2d7">Mehr ...</a><br/></td></tr>
 <tr class="separator:a64f6c71f9d92ab4091670ad1d264b2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b8b9293b800ca5ff47d1cb3a75f06a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a4b8b9293b800ca5ff47d1cb3a75f06a5">setCutRenderWindowStatus</a> (bool isValid)</td></tr>
+<tr class="memdesc:a4b8b9293b800ca5ff47d1cb3a75f06a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt den Status des Übersichstfensters über die Analysedaten.  <a href="#a4b8b9293b800ca5ff47d1cb3a75f06a5">Mehr ...</a><br/></td></tr>
 <tr class="separator:a4b8b9293b800ca5ff47d1cb3a75f06a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e68b866f7835c3691fd8fad8ba910d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGUIGLCanvas.xhtml">GUIGLCanvas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d">getGLCanvas</a> ()</td></tr>
+<tr class="memdesc:a52e68b866f7835c3691fd8fad8ba910d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt die Zeichenfläche des 3D-Fensters zurück.  <a href="#a52e68b866f7835c3691fd8fad8ba910d">Mehr ...</a><br/></td></tr>
 <tr class="separator:a52e68b866f7835c3691fd8fad8ba910d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16ca27363f15a5f2678417bbf26880d2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a16ca27363f15a5f2678417bbf26880d2">~GUIMainWindow</a> ()</td></tr>
+<tr class="memdesc:a16ca27363f15a5f2678417bbf26880d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der Destruktor.  <a href="#a16ca27363f15a5f2678417bbf26880d2">Mehr ...</a><br/></td></tr>
 <tr class="separator:a16ca27363f15a5f2678417bbf26880d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Methoden</h2></td></tr>
 <tr class="memitem:a9fd9f2be8f45cb5433193f5d28c924bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc">OnMenuImportObj</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a9fd9f2be8f45cb5433193f5d28c924bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event-Tabellendeklaration für wxWidgets.  <a href="#a9fd9f2be8f45cb5433193f5d28c924bc">Mehr ...</a><br/></td></tr>
 <tr class="separator:a9fd9f2be8f45cb5433193f5d28c924bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a405b99746fe6f35ec527c57604e53ce2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2">OnMenuImportSD</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a405b99746fe6f35ec527c57604e53ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öffnet den Dialog zum Importieren einfacher Sensordaten.  <a href="#a405b99746fe6f35ec527c57604e53ce2">Mehr ...</a><br/></td></tr>
 <tr class="separator:a405b99746fe6f35ec527c57604e53ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b1fb242c4b529764093a092349f560"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560">OnMenuImportTSD</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:ab6b1fb242c4b529764093a092349f560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öffnet den Dialog zum Importieren zeitbezogener Sensordaten.  <a href="#ab6b1fb242c4b529764093a092349f560">Mehr ...</a><br/></td></tr>
 <tr class="separator:ab6b1fb242c4b529764093a092349f560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a594fc9fea2ef8cc4febc3c48c0e260c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a594fc9fea2ef8cc4febc3c48c0e260c4">OnMenuFileQuit</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a594fc9fea2ef8cc4febc3c48c0e260c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beendet das Programm.  <a href="#a594fc9fea2ef8cc4febc3c48c0e260c4">Mehr ...</a><br/></td></tr>
 <tr class="separator:a594fc9fea2ef8cc4febc3c48c0e260c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acefa13614ee8e5fc228fc577b7471b26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#acefa13614ee8e5fc228fc577b7471b26">OnMenuHelpAbout</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:acefa13614ee8e5fc228fc577b7471b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öffnet ein Fenster mit Informationen über das Programm.  <a href="#acefa13614ee8e5fc228fc577b7471b26">Mehr ...</a><br/></td></tr>
 <tr class="separator:acefa13614ee8e5fc228fc577b7471b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c2de30274c7f52ff74ec1217e47a9e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5">OnRecalcBtClick</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a0c2de30274c7f52ff74ec1217e47a9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Berechnet die 3D-Temperaturverteilung neu.  <a href="#a0c2de30274c7f52ff74ec1217e47a9e5">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0c2de30274c7f52ff74ec1217e47a9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a8bcd318ff00de01d8d417cf5226120"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a3a8bcd318ff00de01d8d417cf5226120">OnResize</a> (wxSizeEvent &amp;event)</td></tr>
+<tr class="memdesc:a3a8bcd318ff00de01d8d417cf5226120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt Größenänderungen des Fensters.  <a href="#a3a8bcd318ff00de01d8d417cf5226120">Mehr ...</a><br/></td></tr>
 <tr class="separator:a3a8bcd318ff00de01d8d417cf5226120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6618f0cc7d26ba7690c32a996f0b812e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a6618f0cc7d26ba7690c32a996f0b812e">OnMaterialSelect</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a6618f0cc7d26ba7690c32a996f0b812e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualisiert die Oberfläche nach dem Auswählen eines anderen Materials im Objekteigenschaften-Fenster.  <a href="#a6618f0cc7d26ba7690c32a996f0b812e">Mehr ...</a><br/></td></tr>
 <tr class="separator:a6618f0cc7d26ba7690c32a996f0b812e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac76ba4dd3d1175d66c1b13369ec26a69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#ac76ba4dd3d1175d66c1b13369ec26a69">OnAnalyze</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:ac76ba4dd3d1175d66c1b13369ec26a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öffnet das Analysedaten-Übersichtsfenster.  <a href="#ac76ba4dd3d1175d66c1b13369ec26a69">Mehr ...</a><br/></td></tr>
 <tr class="separator:ac76ba4dd3d1175d66c1b13369ec26a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0b6c47ae833ea4b8323e9c344b1f70a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#ae0b6c47ae833ea4b8323e9c344b1f70a">OnImmediateUpdatePropChange</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:ae0b6c47ae833ea4b8323e9c344b1f70a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Objekteigenschaften,bei denen ein sofortiges Update der Oberfläche möglich ist, durch den Nutzer.  <a href="#ae0b6c47ae833ea4b8323e9c344b1f70a">Mehr ...</a><br/></td></tr>
 <tr class="separator:ae0b6c47ae833ea4b8323e9c344b1f70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eb68f1e4a740486706f98eeca783a68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a0eb68f1e4a740486706f98eeca783a68">OnGeneralPropChange</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a0eb68f1e4a740486706f98eeca783a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Objekteigenschaften durch den Nutzer.  <a href="#a0eb68f1e4a740486706f98eeca783a68">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0eb68f1e4a740486706f98eeca783a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada2a98f493fcdcbdc7bd6acb47d51218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#ada2a98f493fcdcbdc7bd6acb47d51218">OnViewPropChange</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:ada2a98f493fcdcbdc7bd6acb47d51218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Visualisierungsoptionen durch den Nutzer.  <a href="#ada2a98f493fcdcbdc7bd6acb47d51218">Mehr ...</a><br/></td></tr>
 <tr class="separator:ada2a98f493fcdcbdc7bd6acb47d51218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d642647d7cb73e34ef88c76438206a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a9d642647d7cb73e34ef88c76438206a7">OnViewPropSpinChange</a> (wxSpinEvent &amp;event)</td></tr>
+<tr class="memdesc:a9d642647d7cb73e34ef88c76438206a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Visualisierungsoptionen durch den Nutzer.  <a href="#a9d642647d7cb73e34ef88c76438206a7">Mehr ...</a><br/></td></tr>
 <tr class="separator:a9d642647d7cb73e34ef88c76438206a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98249bb199993ad5920cf81f4b4a350a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a98249bb199993ad5920cf81f4b4a350a">OnSensorDataChange</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a98249bb199993ad5920cf81f4b4a350a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt das Auswählen eines anderen Sensordatensatzes.  <a href="#a98249bb199993ad5920cf81f4b4a350a">Mehr ...</a><br/></td></tr>
 <tr class="separator:a98249bb199993ad5920cf81f4b4a350a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a791d688a11d58c514ca4a892f2b69b07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a791d688a11d58c514ca4a892f2b69b07">OnSDTimelineChange</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a791d688a11d58c514ca4a892f2b69b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt Änderungen an der Sensordaten-Zeitleiste (bei zeitbezogenen Datensätzen).  <a href="#a791d688a11d58c514ca4a892f2b69b07">Mehr ...</a><br/></td></tr>
 <tr class="separator:a791d688a11d58c514ca4a892f2b69b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fe683ef74029b5b22d7d7cdea4f46f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a8fe683ef74029b5b22d7d7cdea4f46f5">OnSDTLMarkerClear</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a8fe683ef74029b5b22d7d7cdea4f46f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Löscht alle Markierungen auf der Sensordaten-Zeitleiste (bei zeitbezogenen Datensätzen).  <a href="#a8fe683ef74029b5b22d7d7cdea4f46f5">Mehr ...</a><br/></td></tr>
 <tr class="separator:a8fe683ef74029b5b22d7d7cdea4f46f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a683581567b0fd6fbd8e84b160a81aac7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a683581567b0fd6fbd8e84b160a81aac7">OnSDTLNextMarker</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a683581567b0fd6fbd8e84b160a81aac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzen des auf der Sensordaten-Zeitleiste ausgewählten Zeitpunktes auf den nächsten markierten Zeitpunkt.  <a href="#a683581567b0fd6fbd8e84b160a81aac7">Mehr ...</a><br/></td></tr>
 <tr class="separator:a683581567b0fd6fbd8e84b160a81aac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab41592f7f45ab81dd3a1b663b18ece50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#ab41592f7f45ab81dd3a1b663b18ece50">OnSDTLPrevMarker</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:ab41592f7f45ab81dd3a1b663b18ece50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzen des auf der Sensordaten-Zeitleiste ausgewählten Zeitpunktes auf den vorherigen markierten Zeitpunkt.  <a href="#ab41592f7f45ab81dd3a1b663b18ece50">Mehr ...</a><br/></td></tr>
 <tr class="separator:ab41592f7f45ab81dd3a1b663b18ece50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a01e75c9362861eb9fdacb0b27643e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a3a01e75c9362861eb9fdacb0b27643e5">OnAnalyzeMarkerChange</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a3a01e75c9362861eb9fdacb0b27643e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt das Markieren eines Zeitpunktes auf der Sensordaten-Zeitleiste.  <a href="#a3a01e75c9362861eb9fdacb0b27643e5">Mehr ...</a><br/></td></tr>
 <tr class="separator:a3a01e75c9362861eb9fdacb0b27643e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868b65c50e42965818ceb61a5e84f687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a868b65c50e42965818ceb61a5e84f687">OnActiveObjectChangePopup</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a868b65c50e42965818ceb61a5e84f687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt das aktive Objetk nach dem Auswählen im Popup-Menü.  <a href="#a868b65c50e42965818ceb61a5e84f687">Mehr ...</a><br/></td></tr>
 <tr class="separator:a868b65c50e42965818ceb61a5e84f687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a20086c62508c133a2ac8a0496e543"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a62a20086c62508c133a2ac8a0496e543">OnActiveObjectChange</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a62a20086c62508c133a2ac8a0496e543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öffnet das Popup-Menü zum auswählen des aktiven Objekts.  <a href="#a62a20086c62508c133a2ac8a0496e543">Mehr ...</a><br/></td></tr>
 <tr class="separator:a62a20086c62508c133a2ac8a0496e543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bc00767853df9d7b839529ce722fcb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a1bc00767853df9d7b839529ce722fcb1">OnActiveObjectDelete</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a1bc00767853df9d7b839529ce722fcb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Löscht das aktive Objekt, sofern es nicht das einzige geladene Objekt ist.  <a href="#a1bc00767853df9d7b839529ce722fcb1">Mehr ...</a><br/></td></tr>
 <tr class="separator:a1bc00767853df9d7b839529ce722fcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e4e41a749453fae5d9e1714203c3d5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a5e4e41a749453fae5d9e1714203c3d5f">OnAnalyzePoint</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a5e4e41a749453fae5d9e1714203c3d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öffnet das Fenster zur Analyse eines Punktes (<a class="el" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>).  <a href="#a5e4e41a749453fae5d9e1714203c3d5f">Mehr ...</a><br/></td></tr>
 <tr class="separator:a5e4e41a749453fae5d9e1714203c3d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08089b067f803799204bbc1ca81230ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a08089b067f803799204bbc1ca81230ac">OnRenderCut</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a08089b067f803799204bbc1ca81230ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öffnet das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung.  <a href="#a08089b067f803799204bbc1ca81230ac">Mehr ...</a><br/></td></tr>
 <tr class="separator:a08089b067f803799204bbc1ca81230ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaec210619095a00227277b8e0434a8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#abaec210619095a00227277b8e0434a8d">addObject</a> (<a class="el" href="classObjectData.xhtml">ObjectData</a> *obj)</td></tr>
+<tr class="memdesc:abaec210619095a00227277b8e0434a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registriert ein neues (Versuchs-) Objekt im Programm.  <a href="#abaec210619095a00227277b8e0434a8d">Mehr ...</a><br/></td></tr>
 <tr class="separator:abaec210619095a00227277b8e0434a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b96a8b25d748985f4960326a977b22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a84b96a8b25d748985f4960326a977b22">setActiveObject</a> (int index)</td></tr>
+<tr class="memdesc:a84b96a8b25d748985f4960326a977b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt das aktive Objekt.  <a href="#a84b96a8b25d748985f4960326a977b22">Mehr ...</a><br/></td></tr>
 <tr class="separator:a84b96a8b25d748985f4960326a977b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9199006080109ef0235dacfc83456338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a9199006080109ef0235dacfc83456338">OnExportViewportImage</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a9199006080109ef0235dacfc83456338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öffnet ein Fenster zum Exportieren der Ansicht des 3D-Fensters.  <a href="#a9199006080109ef0235dacfc83456338">Mehr ...</a><br/></td></tr>
 <tr class="separator:a9199006080109ef0235dacfc83456338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48b4417c2eaa97a6eea4438f67a315e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a48b4417c2eaa97a6eea4438f67a315e7">OnExportVTK</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a48b4417c2eaa97a6eea4438f67a315e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Öffnet ein Fenster zum Exportieren der Temperaturverteilung und des Objekts im VTK-Format.  <a href="#a48b4417c2eaa97a6eea4438f67a315e7">Mehr ...</a><br/></td></tr>
 <tr class="separator:a48b4417c2eaa97a6eea4438f67a315e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af21ea342f481cfdd01ed04005f903ad5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#af21ea342f481cfdd01ed04005f903ad5">OnFindMaxTSD</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:af21ea342f481cfdd01ed04005f903ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten-Zeitleiste, für den der Wäremeenergiegehalt maximal wird.  <a href="#af21ea342f481cfdd01ed04005f903ad5">Mehr ...</a><br/></td></tr>
 <tr class="separator:af21ea342f481cfdd01ed04005f903ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6934b1307d1d32822c20505487cc79bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a6934b1307d1d32822c20505487cc79bf">OnAutoUpdateChange</a> (wxCommandEvent &amp;event)</td></tr>
+<tr class="memdesc:a6934b1307d1d32822c20505487cc79bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt das aktivieren/deaktivieren der Option zum automatischen neuberechnen der Temperaturverteilung eines Objekts, sobald Änderungen an dessen Eigenschaften vorgenommen werden.  <a href="#a6934b1307d1d32822c20505487cc79bf">Mehr ...</a><br/></td></tr>
 <tr class="separator:a6934b1307d1d32822c20505487cc79bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cb2c4f39b9ba971d51ab682f29b7f23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a1cb2c4f39b9ba971d51ab682f29b7f23">assignCurrentObjectProps</a> ()</td></tr>
+<tr class="memdesc:a1cb2c4f39b9ba971d51ab682f29b7f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Überträgt die in der GUI eingetragenen Objekteigenschaften in das aktive Objekt.  <a href="#a1cb2c4f39b9ba971d51ab682f29b7f23">Mehr ...</a><br/></td></tr>
 <tr class="separator:a1cb2c4f39b9ba971d51ab682f29b7f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c520b8716196fa1e88a7bea5ec34ef0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0">updateObjectPropGUI</a> ()</td></tr>
+<tr class="memdesc:a4c520b8716196fa1e88a7bea5ec34ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Überträgt die Eigenschaften des aktiven Objekts in die GUI.  <a href="#a4c520b8716196fa1e88a7bea5ec34ef0">Mehr ...</a><br/></td></tr>
 <tr class="separator:a4c520b8716196fa1e88a7bea5ec34ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab73ac039ffebd656aa3dc0eac2fcf74f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#ab73ac039ffebd656aa3dc0eac2fcf74f">assignViewProps</a> ()</td></tr>
+<tr class="memdesc:ab73ac039ffebd656aa3dc0eac2fcf74f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Speichert die Visualisierungsoptionen aus der GUI.  <a href="#ab73ac039ffebd656aa3dc0eac2fcf74f">Mehr ...</a><br/></td></tr>
 <tr class="separator:ab73ac039ffebd656aa3dc0eac2fcf74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af54fc375be6b0fb938b8562980e723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a2af54fc375be6b0fb938b8562980e723">updateViewPropGUI</a> ()</td></tr>
+<tr class="memdesc:a2af54fc375be6b0fb938b8562980e723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lädt die Visualisierungsoptionen in die GUI.  <a href="#a2af54fc375be6b0fb938b8562980e723">Mehr ...</a><br/></td></tr>
 <tr class="separator:a2af54fc375be6b0fb938b8562980e723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attribute</h2></td></tr>
 <tr class="memitem:a7b5069afb8996ff001654f8d832b2bfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGUIGLCanvas.xhtml">GUIGLCanvas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a7b5069afb8996ff001654f8d832b2bfa">gl_context</a></td></tr>
+<tr class="memdesc:a7b5069afb8996ff001654f8d832b2bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Zeichenfläche für das 3D-Fenster.  <a href="#a7b5069afb8996ff001654f8d832b2bfa">Mehr ...</a><br/></td></tr>
 <tr class="separator:a7b5069afb8996ff001654f8d832b2bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8638fa87b4080e2242812f3d7e469e"><td class="memItemLeft" align="right" valign="top">wxToolBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a8a8638fa87b4080e2242812f3d7e469e">toolbar</a></td></tr>
+<tr class="memdesc:a8a8638fa87b4080e2242812f3d7e469e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Tollbarkomponente.  <a href="#a8a8638fa87b4080e2242812f3d7e469e">Mehr ...</a><br/></td></tr>
 <tr class="separator:a8a8638fa87b4080e2242812f3d7e469e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a057a6728bf9aa994f41060ebe15a28ac"><td class="memItemLeft" align="right" valign="top">wxMenuBar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a057a6728bf9aa994f41060ebe15a28ac">mwMenuBar</a></td></tr>
+<tr class="memdesc:a057a6728bf9aa994f41060ebe15a28ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Hauptmenükomponente.  <a href="#a057a6728bf9aa994f41060ebe15a28ac">Mehr ...</a><br/></td></tr>
 <tr class="separator:a057a6728bf9aa994f41060ebe15a28ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b23fa0fb1d779bd5b8384507d8b90e8"><td class="memItemLeft" align="right" valign="top">wxMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a3b23fa0fb1d779bd5b8384507d8b90e8">mwFileMenu</a></td></tr>
+<tr class="memdesc:a3b23fa0fb1d779bd5b8384507d8b90e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das "Datei"-Untermenü.  <a href="#a3b23fa0fb1d779bd5b8384507d8b90e8">Mehr ...</a><br/></td></tr>
 <tr class="separator:a3b23fa0fb1d779bd5b8384507d8b90e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8fc1a9ba3768aa042a77b5bea117f6c"><td class="memItemLeft" align="right" valign="top">wxMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#ae8fc1a9ba3768aa042a77b5bea117f6c">mwHelpMenu</a></td></tr>
+<tr class="memdesc:ae8fc1a9ba3768aa042a77b5bea117f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das "Hilfe"-Untermenü.  <a href="#ae8fc1a9ba3768aa042a77b5bea117f6c">Mehr ...</a><br/></td></tr>
 <tr class="separator:ae8fc1a9ba3768aa042a77b5bea117f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaff9e1bec11b0f80215ceba76e87bc4"><td class="memItemLeft" align="right" valign="top">wxMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#afaff9e1bec11b0f80215ceba76e87bc4">mwImportMenu</a></td></tr>
+<tr class="memdesc:afaff9e1bec11b0f80215ceba76e87bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das "Import"-Untermenü.  <a href="#afaff9e1bec11b0f80215ceba76e87bc4">Mehr ...</a><br/></td></tr>
 <tr class="separator:afaff9e1bec11b0f80215ceba76e87bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f6af05ef18bf81ff9955670001941ea"><td class="memItemLeft" align="right" valign="top">wxMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a9f6af05ef18bf81ff9955670001941ea">mwExportMenu</a></td></tr>
+<tr class="memdesc:a9f6af05ef18bf81ff9955670001941ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das "Export"-Untermenü.  <a href="#a9f6af05ef18bf81ff9955670001941ea">Mehr ...</a><br/></td></tr>
 <tr class="separator:a9f6af05ef18bf81ff9955670001941ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab93a87b5cde10015dc02dc000c409f90"><td class="memItemLeft" align="right" valign="top">wxMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#ab93a87b5cde10015dc02dc000c409f90">mwAnalyzeMenu</a></td></tr>
+<tr class="memdesc:ab93a87b5cde10015dc02dc000c409f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das "Analysieren"-Untermenü.  <a href="#ab93a87b5cde10015dc02dc000c409f90">Mehr ...</a><br/></td></tr>
 <tr class="separator:ab93a87b5cde10015dc02dc000c409f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c50be8574176c02aadb47626adc9d4"><td class="memItemLeft" align="right" valign="top">wxMenu *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a32c50be8574176c02aadb47626adc9d4">mwEditMenu</a></td></tr>
+<tr class="memdesc:a32c50be8574176c02aadb47626adc9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das "Bearbeiten"-Untermenü  <a href="#a32c50be8574176c02aadb47626adc9d4">Mehr ...</a><br/></td></tr>
 <tr class="separator:a32c50be8574176c02aadb47626adc9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4959774563543927a492bf06e441920e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPropertiesBox.xhtml">PropertiesBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a4959774563543927a492bf06e441920e">propbox</a></td></tr>
+<tr class="memdesc:a4959774563543927a492bf06e441920e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Unterkomponente, die die Objekteigenschaften-Oberfläche enthält.  <a href="#a4959774563543927a492bf06e441920e">Mehr ...</a><br/></td></tr>
 <tr class="separator:a4959774563543927a492bf06e441920e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e9a4e301f90e85e97721aa71b197ca8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classViewpropBox.xhtml">ViewpropBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a3e9a4e301f90e85e97721aa71b197ca8">viewbox</a></td></tr>
+<tr class="memdesc:a3e9a4e301f90e85e97721aa71b197ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Unterkomponente, die die Visualisierungsoptionen-Oberfläche enthält.  <a href="#a3e9a4e301f90e85e97721aa71b197ca8">Mehr ...</a><br/></td></tr>
 <tr class="separator:a3e9a4e301f90e85e97721aa71b197ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20e7a8cf498df1c1c0059711b487837b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGUIAnalyzeOutputWindow.xhtml">GUIAnalyzeOutputWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a20e7a8cf498df1c1c0059711b487837b">analyzerframe</a></td></tr>
+<tr class="memdesc:a20e7a8cf498df1c1c0059711b487837b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das Analysedaten-Übersichtsfenster.  <a href="#a20e7a8cf498df1c1c0059711b487837b">Mehr ...</a><br/></td></tr>
 <tr class="separator:a20e7a8cf498df1c1c0059711b487837b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a649cb92f27688772174659601188ac2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGUICutRenderWindow.xhtml">GUICutRenderWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a649cb92f27688772174659601188ac2d">rendercutwindow</a></td></tr>
+<tr class="memdesc:a649cb92f27688772174659601188ac2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung.  <a href="#a649cb92f27688772174659601188ac2d">Mehr ...</a><br/></td></tr>
 <tr class="separator:a649cb92f27688772174659601188ac2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c120efb232cf3d371a3a6231619b808"><td class="memItemLeft" align="right" valign="top">wxScrolledWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a1c120efb232cf3d371a3a6231619b808">prop_scroll_win</a></td></tr>
+<tr class="memdesc:a1c120efb232cf3d371a3a6231619b808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scrollender Bereich, in den die Objekteigenschaften-Oberfläche eingebettet ist.  <a href="#a1c120efb232cf3d371a3a6231619b808">Mehr ...</a><br/></td></tr>
 <tr class="separator:a1c120efb232cf3d371a3a6231619b808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad440f7451fd3fdabbe48518a89e61e45"><td class="memItemLeft" align="right" valign="top">wxScrolledWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#ad440f7451fd3fdabbe48518a89e61e45">view_scroll_win</a></td></tr>
+<tr class="memdesc:ad440f7451fd3fdabbe48518a89e61e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scrollender Bereich, in den die Visualisierungsoptionen-Oberfläche eingebettet ist.  <a href="#ad440f7451fd3fdabbe48518a89e61e45">Mehr ...</a><br/></td></tr>
 <tr class="separator:ad440f7451fd3fdabbe48518a89e61e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdc35b04c0fe94e4d0080f659ecbce8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#afdc35b04c0fe94e4d0080f659ecbce8c">updating</a></td></tr>
+<tr class="memdesc:afdc35b04c0fe94e4d0080f659ecbce8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Oberfläche wird gerade vom Programm verändert.  <a href="#afdc35b04c0fe94e4d0080f659ecbce8c">Mehr ...</a><br/></td></tr>
 <tr class="separator:afdc35b04c0fe94e4d0080f659ecbce8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f65a053fadac47033fef38c4b0e8a69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a1f65a053fadac47033fef38c4b0e8a69">analyze_window_valid</a></td></tr>
+<tr class="memdesc:a1f65a053fadac47033fef38c4b0e8a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das Analysedaten-Übersichtsfenster ist gerade geöffnet.  <a href="#a1f65a053fadac47033fef38c4b0e8a69">Mehr ...</a><br/></td></tr>
 <tr class="separator:a1f65a053fadac47033fef38c4b0e8a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f08d8e4294955a3cc0b071dd3cad0d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a4f08d8e4294955a3cc0b071dd3cad0d2">render_cut_window_valid</a></td></tr>
+<tr class="memdesc:a4f08d8e4294955a3cc0b071dd3cad0d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung ist gerade geöffnet.  <a href="#a4f08d8e4294955a3cc0b071dd3cad0d2">Mehr ...</a><br/></td></tr>
 <tr class="separator:a4f08d8e4294955a3cc0b071dd3cad0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -279,6 +336,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Der Konstruktor. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -315,6 +373,7 @@ Private Attribute</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Der Destruktor. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00586">586</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -343,6 +402,7 @@ Private Attribute</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Registriert ein neues (Versuchs-) Objekt im Programm. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -375,6 +435,7 @@ Private Attribute</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Überträgt die in der GUI eingetragenen Objekteigenschaften in das aktive Objekt. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00297">297</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -382,7 +443,8 @@ Private Attribute</h2></td></tr>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a1cb2c4f39b9ba971d51ab682f29b7f23_cgraph.svg" width="470" height="270"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a1cb2c4f39b9ba971d51ab682f29b7f23_cgraph.svg" width="470" height="270"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -408,6 +470,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Speichert die Visualisierungsoptionen aus der GUI. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00418">418</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -426,6 +489,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt die Zeichenfläche des 3D-Fensters zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00175">175</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -433,7 +497,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a52e68b866f7835c3691fd8fad8ba910d_icgraph.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a52e68b866f7835c3691fd8fad8ba910d_icgraph.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </p>
 
@@ -460,6 +525,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Öffnet das Popup-Menü zum auswählen des aktiven Objekts. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00568">568</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -467,7 +533,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a62a20086c62508c133a2ac8a0496e543_cgraph.svg" width="502" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a62a20086c62508c133a2ac8a0496e543_cgraph.svg" width="502" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -494,6 +561,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Setzt das aktive Objetk nach dem Auswählen im Popup-Menü. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00563">563</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -501,7 +569,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a868b65c50e42965818ceb61a5e84f687_icgraph.svg" width="502" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a868b65c50e42965818ceb61a5e84f687_icgraph.svg" width="502" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -528,6 +597,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Löscht das aktive Objekt, sofern es nicht das einzige geladene Objekt ist. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00190">190</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -555,6 +625,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Öffnet das Analysedaten-Übersichtsfenster. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00373">373</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -582,6 +653,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt das Markieren eines Zeitpunktes auf der Sensordaten-Zeitleiste. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00239">239</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -609,6 +681,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Öffnet das Fenster zur Analyse eines Punktes (<a class="el" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>). </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00382">382</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -636,6 +709,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt das aktivieren/deaktivieren der Option zum automatischen neuberechnen der Temperaturverteilung eines Objekts, sobald Änderungen an dessen Eigenschaften vorgenommen werden. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00292">292</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -663,6 +737,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Öffnet ein Fenster zum Exportieren der Ansicht des 3D-Fensters. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00531">531</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -690,6 +765,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Öffnet ein Fenster zum Exportieren der Temperaturverteilung und des Objekts im VTK-Format. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00548">548</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -697,7 +773,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a48b4417c2eaa97a6eea4438f67a315e7_cgraph.svg" width="456" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a48b4417c2eaa97a6eea4438f67a315e7_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </p>
 
@@ -724,7 +801,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten-Zeitleiste, für den der Wäremeenergiegehalt maximal wird. Dabei wird der Bereich zwischen den beiden markierten Stellen ausgewählt, zwischen denen sich der aktuell ausgewählte Zeitpunkt befindet. </p>
+
+<p>Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten-Zeitleiste, für den der Wäremeenergiegehalt maximal wird. </p>
+<p>Dabei wird der Bereich zwischen den beiden markierten Stellen ausgewählt, zwischen denen sich der aktuell ausgewählte Zeitpunkt befindet. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00245">245</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
@@ -758,6 +837,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Objekteigenschaften durch den Nutzer. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00409">409</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -785,6 +865,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Objekteigenschaften,bei denen ein sofortiges Update der Oberfläche möglich ist, durch den Nutzer. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00400">400</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -812,6 +893,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Aktualisiert die Oberfläche nach dem Auswählen eines anderen Materials im Objekteigenschaften-Fenster. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00355">355</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -839,6 +921,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Beendet das Programm. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00578">578</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -866,6 +949,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Öffnet ein Fenster mit Informationen über das Programm. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00582">582</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -893,14 +977,17 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Event-Tabellendeklaration für wxWidgets. Öffnet den Dialog zum Importieren eines Objekts. </p>
+
+<p>Event-Tabellendeklaration für wxWidgets. </p>
+<p>Öffnet den Dialog zum Importieren eines Objekts. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00470">470</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a9fd9f2be8f45cb5433193f5d28c924bc_cgraph.svg" width="100%" height="474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a9fd9f2be8f45cb5433193f5d28c924bc_cgraph.svg" width="100%" height="554"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </p>
 
@@ -927,6 +1014,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Öffnet den Dialog zum Importieren einfacher Sensordaten. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00507">507</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -934,7 +1022,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a405b99746fe6f35ec527c57604e53ce2_cgraph.svg" width="100%" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a405b99746fe6f35ec527c57604e53ce2_cgraph.svg" width="100%" height="474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </p>
 
@@ -961,6 +1050,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Öffnet den Dialog zum Importieren zeitbezogener Sensordaten. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00519">519</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -968,7 +1058,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_ab6b1fb242c4b529764093a092349f560_cgraph.svg" width="100%" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_ab6b1fb242c4b529764093a092349f560_cgraph.svg" width="100%" height="474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </p>
 
@@ -995,6 +1086,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Berechnet die 3D-Temperaturverteilung neu. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00361">361</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1002,7 +1094,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a0c2de30274c7f52ff74ec1217e47a9e5_cgraph.svg" width="100%" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a0c2de30274c7f52ff74ec1217e47a9e5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </p>
 
@@ -1029,6 +1122,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Öffnet das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00390">390</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1056,6 +1150,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt Größenänderungen des Fensters. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00204">204</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1083,6 +1178,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt Änderungen an der Sensordaten-Zeitleiste (bei zeitbezogenen Datensätzen). </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00222">222</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1110,6 +1206,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Löscht alle Markierungen auf der Sensordaten-Zeitleiste (bei zeitbezogenen Datensätzen). </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00233">233</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1137,6 +1234,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Setzen des auf der Sensordaten-Zeitleiste ausgewählten Zeitpunktes auf den nächsten markierten Zeitpunkt. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00259">259</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1164,6 +1262,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Setzen des auf der Sensordaten-Zeitleiste ausgewählten Zeitpunktes auf den vorherigen markierten Zeitpunkt. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00272">272</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1191,6 +1290,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt das Auswählen eines anderen Sensordatensatzes. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00228">228</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1218,6 +1318,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Visualisierungsoptionen durch den Nutzer. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00457">457</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1245,6 +1346,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Visualisierungsoptionen durch den Nutzer. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00463">463</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1272,6 +1374,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Setzt das aktive Objekt. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -1297,6 +1400,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Setzt den Status des Übersichstfensters über die Analysedaten. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -1329,6 +1433,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Setzt den Status des Übersichstfensters über die Analysedaten. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -1368,6 +1473,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Überträgt die Eigenschaften des aktiven Objekts in die GUI. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00317">317</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1375,7 +1481,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a4c520b8716196fa1e88a7bea5ec34ef0_cgraph.svg" width="472" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a4c520b8716196fa1e88a7bea5ec34ef0_cgraph.svg" width="472" height="376"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1401,6 +1508,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Lädt die Visualisierungsoptionen in die GUI. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00436">436</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
@@ -1433,6 +1541,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Das Analysedaten-Übersichtsfenster ist gerade geöffnet. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00273">273</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1456,7 +1565,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Das Analysedaten-Übersichtsfenster. Der Zeiger ist ungültig, wenn das Analysedaten-Übersichtsfenster nicht geöffnet ist. (siehe analyze_window_valid) </p>
+
+<p>Das Analysedaten-Übersichtsfenster. </p>
+<p>Der Zeiger ist ungültig, wenn das Analysedaten-Übersichtsfenster nicht geöffnet ist. (siehe analyze_window_valid) </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00252">252</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
@@ -1479,6 +1590,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Die Zeichenfläche für das 3D-Fenster. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00207">207</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1502,6 +1614,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Das "Analysieren"-Untermenü. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00235">235</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1525,6 +1638,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Das "Bearbeiten"-Untermenü </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00239">239</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1548,6 +1662,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Das "Export"-Untermenü. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00231">231</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1571,6 +1686,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Das "Datei"-Untermenü. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00219">219</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1594,6 +1710,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Das "Hilfe"-Untermenü. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00223">223</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1617,6 +1734,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Das "Import"-Untermenü. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00227">227</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1640,6 +1758,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Die Hauptmenükomponente. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00215">215</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1663,6 +1782,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Scrollender Bereich, in den die Objekteigenschaften-Oberfläche eingebettet ist. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00261">261</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1686,6 +1806,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Die Unterkomponente, die die Objekteigenschaften-Oberfläche enthält. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00243">243</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1709,6 +1830,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung ist gerade geöffnet. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00277">277</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1732,7 +1854,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung. Der Zeiger ist ungültig, wenn das 2D-Fenster nicht geöffnet ist. (siehe render_cut_window_valid) </p>
+
+<p>Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung. </p>
+<p>Der Zeiger ist ungültig, wenn das 2D-Fenster nicht geöffnet ist. (siehe render_cut_window_valid) </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00257">257</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
@@ -1755,6 +1879,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Die Tollbarkomponente. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00211">211</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1778,7 +1903,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Die Oberfläche wird gerade vom Programm verändert. Signalisiert, dass die Eingabe nicht durch den Nutzer erfolgt ist. </p>
+
+<p>Die Oberfläche wird gerade vom Programm verändert. </p>
+<p>Signalisiert, dass die Eingabe nicht durch den Nutzer erfolgt ist. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00269">269</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
@@ -1801,6 +1928,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Scrollender Bereich, in den die Visualisierungsoptionen-Oberfläche eingebettet ist. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00265">265</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1824,6 +1952,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Die Unterkomponente, die die Visualisierungsoptionen-Oberfläche enthält. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00247">247</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
@@ -1837,7 +1966,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 01:43:19 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" target="_top" xlink:title="Analyzer::analyzeObject">
+<a xlink:href="classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" target="_top" xlink:title="Ermittelt Daten für ein Objekt. ">
 <polygon fill="none" stroke="black" points="162.5,-52.5 162.5,-73.5 285.5,-73.5 285.5,-52.5 162.5,-52.5"/>
 <text text-anchor="middle" x="224" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">Analyzer::analyzeObject</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" target="_top" xlink:title="ObjectData::calculateIO">
+<a xlink:href="classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" target="_top" xlink:title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver...">
 <polygon fill="none" stroke="black" points="163,-9.5 163,-30.5 285,-30.5 285,-9.5 163,-9.5"/>
 <text text-anchor="middle" x="224" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::calculateIO</text>
 </a>
@@ -39,7 +39,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" target="_top" xlink:title="GUIAnalyzeOutputWindow\l::Update">
+<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" target="_top" xlink:title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ...">
 <polygon fill="none" stroke="black" points="330,-92 330,-126 464,-126 464,-92 330,-92"/>
 <text text-anchor="start" x="338" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzeOutputWindow</text>
 <text text-anchor="middle" x="397" y="-100" font-family="Helvetica,sans-Serif" font-size="10.00">::Update</text>
@@ -52,7 +52,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" target="_top" xlink:title="GUITimeline::findMaxValue">
+<a xlink:href="classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" target="_top" xlink:title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. ">
 <polygon fill="none" stroke="black" points="328.5,-52.5 328.5,-73.5 465.5,-73.5 465.5,-52.5 328.5,-52.5"/>
 <text text-anchor="middle" x="397" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::findMaxValue</text>
 </a>
@@ -64,7 +64,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" target="_top" xlink:title="GUIAnalyzeOutputWindow\l::GUIAnalyzeOutputWindow">
+<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" target="_top" xlink:title="Der Konstruktor. ">
 <polygon fill="none" stroke="black" points="508,-92 508,-126 648,-126 648,-92 508,-92"/>
 <text text-anchor="start" x="516" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzeOutputWindow</text>
 <text text-anchor="middle" x="578" y="-100" font-family="Helvetica,sans-Serif" font-size="10.00">::GUIAnalyzeOutputWindow</text>
@@ -77,7 +77,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" target="_top" xlink:title="GUIMainWindow::OnRecalcBt\lClick">
+<a xlink:href="classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" target="_top" xlink:title="Berechnet die 3D&#45;Temperaturverteilung neu. ">
 <polygon fill="none" stroke="black" points="322,-0 322,-34 472,-34 472,-0 322,-0"/>
 <text text-anchor="start" x="330" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnRecalcBt</text>
 <text text-anchor="middle" x="397" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">Click</text>

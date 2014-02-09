@@ -14,15 +14,15 @@ Importieren von 3\-D-\/\-Modell (.obj) und Sensordaten (.tsd oder .sd).
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classImporter_afaf93b56e3558a92405ab627ab8ee1d1}{Importer} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Der Konstruktor. \end{DoxyCompactList}\item 
 \hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_a001bd26372d94f96de66f7bcb90cc790}{Load\-Sensor\-Data} (const char $\ast$filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
-\item 
+\begin{DoxyCompactList}\small\item\em Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. \end{DoxyCompactList}\item 
 \hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_a196e66a161a0102194580ec4b10895e5}{Load\-Timed\-Data} (const char $\ast$filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
-\item 
+\begin{DoxyCompactList}\small\item\em Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. \end{DoxyCompactList}\item 
 \hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_a5013417fb7556dce65dba1ed3aec4e50}{Import\-Obj} (const char $\ast$filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
-\item 
+\begin{DoxyCompactList}\small\item\em Lädt Objektdaten aus einer .obj-\/\-Datei. \end{DoxyCompactList}\item 
 virtual \hyperlink{classImporter_a6e61faae5020f2dc034ff3ea4032a537}{$\sim$\-Importer} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Der Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -40,7 +40,11 @@ Definiert in Zeile 18 der Datei Importer.\-h.
 {}
 \end{DoxyParamCaption}
 )}}\label{classImporter_afaf93b56e3558a92405ab627ab8ee1d1}
+
+
 Der Konstruktor. 
+
+
 
 Definiert in Zeile 23 der Datei Importer.\-cpp.
 
@@ -51,7 +55,11 @@ Definiert in Zeile 23 der Datei Importer.\-cpp.
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classImporter_a6e61faae5020f2dc034ff3ea4032a537}
+
+
 Der Destruktor. 
+
+
 
 Definiert in Zeile 283 der Datei Importer.\-cpp.
 
@@ -66,7 +74,11 @@ Definiert in Zeile 283 der Datei Importer.\-cpp.
 \item[{{\bf Object\-Data} $\ast$}]{data}
 \end{DoxyParamCaption}
 )}}\label{classImporter_a5013417fb7556dce65dba1ed3aec4e50}
-Lädt Objektdaten aus einer .obj-\/\-Datei. Das Objekt ist zwar schon im Speicher erstellt, wird aber erst durch diese Methode mit Daten gefüllt. \begin{DoxyReturn}{Rückgabe}
+
+
+Lädt Objektdaten aus einer .obj-\/\-Datei. 
+
+Das Objekt ist zwar schon im Speicher erstellt, wird aber erst durch diese Methode mit Daten gefüllt. \begin{DoxyReturn}{Rückgabe}
 Der Fehlercode. 
 \end{DoxyReturn}
 
@@ -75,7 +87,8 @@ Definiert in Zeile 60 der Datei Importer.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -103,7 +116,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{{\bf Object\-Data} $\ast$}]{data}
 \end{DoxyParamCaption}
 )}}\label{classImporter_a001bd26372d94f96de66f7bcb90cc790}
-Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. \begin{DoxyReturn}{Rückgabe}
+
+
+Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. 
+
+\begin{DoxyReturn}{Rückgabe}
 Der Fehlercode. 
 \end{DoxyReturn}
 
@@ -112,7 +129,8 @@ Definiert in Zeile 199 der Datei Importer.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -140,7 +158,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{{\bf Object\-Data} $\ast$}]{data}
 \end{DoxyParamCaption}
 )}}\label{classImporter_a196e66a161a0102194580ec4b10895e5}
-Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. \begin{DoxyReturn}{Rückgabe}
+
+
+Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. 
+
+\begin{DoxyReturn}{Rückgabe}
 Der Fehlercode. 
 \end{DoxyReturn}
 
@@ -149,7 +171,8 @@ Definiert in Zeile 238 der Datei Importer.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -173,5 +196,5 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/file\-I\-O/Importer.\-h\item 
-simpleanalyzer-\/gui/src/file\-I\-O/Importer.\-cpp\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/file\-I\-O/\hyperlink{Importer_8h}{Importer.\-h}\item 
+simpleanalyzer-\/gui/src/file\-I\-O/\hyperlink{Importer_8cpp}{Importer.\-cpp}\end{DoxyCompactItemize}

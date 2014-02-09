@@ -1,6 +1,7 @@
 <map id="ObjectData::addTimedData" name="ObjectData::addTimedData">
-<area shape="rect" id="node3" href="$classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" title="Importer::LoadTimedData" alt="" coords="235,67,405,96"/>
-<area shape="rect" id="node5" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="ObjectData::getSensorDataList" alt="" coords="455,5,657,35"/>
-<area shape="rect" id="node7" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="ObjectData::getCurrentSensor\lIndex" alt="" coords="457,58,655,105"/>
-<area shape="rect" id="node9" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="ObjectData::setCurrentSensor\lIndex" alt="" coords="457,127,655,174"/>
+<area shape="rect" id="node3" href="$classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. " alt="" coords="235,89,405,119"/>
+<area shape="rect" id="node5" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. " alt="" coords="455,5,657,35"/>
+<area shape="rect" id="node7" href="$Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="getTextBlock" alt="" coords="507,59,605,88"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. " alt="" coords="457,111,655,158"/>
+<area shape="rect" id="node11" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="Setzt den Index des aktuell verwendeten Sensordatensatzes. " alt="" coords="457,181,655,227"/>
 </map>

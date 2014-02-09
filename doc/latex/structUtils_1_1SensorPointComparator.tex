@@ -13,13 +13,15 @@ Hilfsstruktur zum Vergleichen des Abstands von Sensordaten.
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
+double \hyperlink{structUtils_1_1SensorPointComparator_a2b31195024a7ec123551b2bb87043a68}{get\-Distance\-\_\-d} (double $\ast$p1, double $\ast$p2)
+\begin{DoxyCompactList}\small\item\em Berechnet den Abstand zwischen zwei Punkten mithilfe des Satzes des Pythagoras. \end{DoxyCompactList}\item 
 bool \hyperlink{structUtils_1_1SensorPointComparator_a92795eac49f9ea851c04a623c5a3d6b6}{operator()} (\hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} p1, \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} p2)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Vergleichsoperator für den Abstand zum Punkt meshpoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Öffentliche Attribute}
 \begin{DoxyCompactItemize}
 \item 
 double \hyperlink{structUtils_1_1SensorPointComparator_a51335aca914559e34d9202b67d90b143}{meshpoint} \mbox{[}3\mbox{]}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Punkt, zu dem der Abstand ermittelt werden soll. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -27,11 +29,46 @@ Hilfsstruktur zum Vergleichen des Abstands von Sensordaten.
 
 Wird für Sortieralgorithmen der Standardbibliothek benötigt. 
 
-Definiert in Zeile 103 der Datei utils.\-h.
+Definiert in Zeile 97 der Datei utils.\-h.
 
 
 
 \subsection{Dokumentation der Elementfunktionen}
+\hypertarget{structUtils_1_1SensorPointComparator_a2b31195024a7ec123551b2bb87043a68}{\index{Utils\-::\-Sensor\-Point\-Comparator@{Utils\-::\-Sensor\-Point\-Comparator}!get\-Distance\-\_\-d@{get\-Distance\-\_\-d}}
+\index{get\-Distance\-\_\-d@{get\-Distance\-\_\-d}!Utils::SensorPointComparator@{Utils\-::\-Sensor\-Point\-Comparator}}
+\subsubsection[{get\-Distance\-\_\-d}]{\setlength{\rightskip}{0pt plus 5cm}double Utils\-::\-Sensor\-Point\-Comparator\-::get\-Distance\-\_\-d (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{p1, }
+\item[{double $\ast$}]{p2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structUtils_1_1SensorPointComparator_a2b31195024a7ec123551b2bb87043a68}
+
+
+Berechnet den Abstand zwischen zwei Punkten mithilfe des Satzes des Pythagoras. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em p1} & Koordinaten des ersten Punkten als Liste dreier Koordinaten. \\
+\hline
+{\em p2} & Koordinaten des zweiten Punkten als Liste dreier Koordinaten. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 103 der Datei utils.\-h.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{structUtils_1_1SensorPointComparator_a2b31195024a7ec123551b2bb87043a68_cgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{structUtils_1_1SensorPointComparator_a92795eac49f9ea851c04a623c5a3d6b6}{\index{Utils\-::\-Sensor\-Point\-Comparator@{Utils\-::\-Sensor\-Point\-Comparator}!operator()@{operator()}}
 \index{operator()@{operator()}!Utils::SensorPointComparator@{Utils\-::\-Sensor\-Point\-Comparator}}
 \subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}bool Utils\-::\-Sensor\-Point\-Comparator\-::operator() (
@@ -40,20 +77,13 @@ Definiert in Zeile 103 der Datei utils.\-h.
 \item[{{\bf Sensor\-Point}}]{p2}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{structUtils_1_1SensorPointComparator_a92795eac49f9ea851c04a623c5a3d6b6}
+
+
 Vergleichsoperator für den Abstand zum Punkt meshpoint. 
 
-Definiert in Zeile 105 der Datei utils.\-h.
 
 
-
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{structUtils_1_1SensorPointComparator_a92795eac49f9ea851c04a623c5a3d6b6_cgraph}
-\end{center}
-\end{figure}
-
+Definiert in Zeile 107 der Datei utils.\-h.
 
 
 
@@ -61,12 +91,16 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \hypertarget{structUtils_1_1SensorPointComparator_a51335aca914559e34d9202b67d90b143}{\index{Utils\-::\-Sensor\-Point\-Comparator@{Utils\-::\-Sensor\-Point\-Comparator}!meshpoint@{meshpoint}}
 \index{meshpoint@{meshpoint}!Utils::SensorPointComparator@{Utils\-::\-Sensor\-Point\-Comparator}}
 \subsubsection[{meshpoint}]{\setlength{\rightskip}{0pt plus 5cm}double Utils\-::\-Sensor\-Point\-Comparator\-::meshpoint\mbox{[}3\mbox{]}}}\label{structUtils_1_1SensorPointComparator_a51335aca914559e34d9202b67d90b143}
+
+
 Punkt, zu dem der Abstand ermittelt werden soll. 
 
-Definiert in Zeile 104 der Datei utils.\-h.
+
+
+Definiert in Zeile 105 der Datei utils.\-h.
 
 
 
 Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/processing/utils.\-h\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/processing/\hyperlink{utils_8h}{utils.\-h}\end{DoxyCompactItemize}

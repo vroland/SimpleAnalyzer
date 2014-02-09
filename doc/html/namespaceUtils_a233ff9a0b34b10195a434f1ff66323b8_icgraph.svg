@@ -61,7 +61,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" target="_top" xlink:title="GUIAnalyzePointWindow\l::analyzePoint">
+<a xlink:href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="140,-265.24 140,-299.24 268,-299.24 268,-265.24 140,-265.24"/>
 <text text-anchor="start" x="148" y="-286.24" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzePointWindow</text>
 <text text-anchor="middle" x="204" y="-273.24" font-family="Helvetica,sans-Serif" font-size="10.00">::analyzePoint</text>
@@ -74,7 +74,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" target="_top" xlink:title="GUIColorScalePanel\l::refresh">
+<a xlink:href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" target="_top" xlink:title="Zeichnet die Temperaturskala neu. ">
 <polygon fill="none" stroke="black" points="150.5,-175.24 150.5,-209.24 257.5,-209.24 257.5,-175.24 150.5,-175.24"/>
 <text text-anchor="start" x="158.5" y="-196.24" font-family="Helvetica,sans-Serif" font-size="10.00">GUIColorScalePanel</text>
 <text text-anchor="middle" x="204" y="-183.24" font-family="Helvetica,sans-Serif" font-size="10.00">::refresh</text>
@@ -87,7 +87,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" target="_top" xlink:title="GUICutRenderWindow\l::renderImage">
+<a xlink:href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" target="_top" xlink:title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. ">
 <polygon fill="none" stroke="black" points="316.5,-223.24 316.5,-257.24 433.5,-257.24 433.5,-223.24 316.5,-223.24"/>
 <text text-anchor="start" x="324.5" y="-244.24" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="375" y="-231.24" font-family="Helvetica,sans-Serif" font-size="10.00">::renderImage</text>
@@ -100,7 +100,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node9 -->
 <g id="node18" class="node"><title>Node9</title>
-<a xlink:href="classGUIMainWindow.xhtml#a2af54fc375be6b0fb938b8562980e723" target="_top" xlink:title="GUIMainWindow::updateView\lPropGUI">
+<a xlink:href="classGUIMainWindow.xhtml#a2af54fc375be6b0fb938b8562980e723" target="_top" xlink:title="Lädt die Visualisierungsoptionen in die GUI. ">
 <polygon fill="none" stroke="black" points="130,-123.24 130,-157.24 278,-157.24 278,-123.24 130,-123.24"/>
 <text text-anchor="start" x="138" y="-144.24" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::updateView</text>
 <text text-anchor="middle" x="204" y="-131.24" font-family="Helvetica,sans-Serif" font-size="10.00">PropGUI</text>
@@ -113,7 +113,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node10 -->
 <g id="node20" class="node"><title>Node10</title>
-<a xlink:href="classGUIRenderCutCanvas.xhtml#a348424f671910f6ede43cb6835852589" target="_top" xlink:title="GUIRenderCutCanvas\l::onCanvasPaint">
+<a xlink:href="classGUIRenderCutCanvas.xhtml#a348424f671910f6ede43cb6835852589" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="146,-71.2397 146,-105.24 262,-105.24 262,-71.2397 146,-71.2397"/>
 <text text-anchor="start" x="154" y="-92.2397" font-family="Helvetica,sans-Serif" font-size="10.00">GUIRenderCutCanvas</text>
 <text text-anchor="middle" x="204" y="-79.2397" font-family="Helvetica,sans-Serif" font-size="10.00">::onCanvasPaint</text>
@@ -126,7 +126,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node11 -->
 <g id="node22" class="node"><title>Node11</title>
-<a xlink:href="classGUITimeline.xhtml#a98e636407ed0691d655eaa53cd0d968c" target="_top" xlink:title="GUITimeline::calcStepWidth">
+<a xlink:href="classGUITimeline.xhtml#a98e636407ed0691d655eaa53cd0d968c" target="_top" xlink:title="Berechnet die für die aktuelle Darstellung günstigste Schrittweite für die Beschriftung. ">
 <polygon fill="none" stroke="black" points="133.5,-31.7397 133.5,-52.7397 274.5,-52.7397 274.5,-31.7397 133.5,-31.7397"/>
 <text text-anchor="middle" x="204" y="-39.7397" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::calcStepWidth</text>
 </a>
@@ -138,7 +138,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node12 -->
 <g id="node24" class="node"><title>Node12</title>
-<a xlink:href="classGUITimeline.xhtml#a55f17926f5dd787c8ae118127f73ca88" target="_top" xlink:title="GUITimeline::OnPaint">
+<a xlink:href="classGUITimeline.xhtml#a55f17926f5dd787c8ae118127f73ca88" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="318.5,-12.7397 318.5,-33.7397 431.5,-33.7397 431.5,-12.7397 318.5,-12.7397"/>
 <text text-anchor="middle" x="375" y="-20.7397" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::OnPaint</text>
 </a>
@@ -155,7 +155,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a0923a36cdf4e0094d78f623693ff8ac6" target="_top" xlink:title="GUICutRenderWindow\l::OnCSColorBtClick">
+<a xlink:href="classGUICutRenderWindow.xhtml#a0923a36cdf4e0094d78f623693ff8ac6" target="_top" xlink:title="Behandelt das Klicken auf den Button zur Wahl der Schriftfarbe auf der Skala. ">
 <polygon fill="none" stroke="black" points="316.5,-171.24 316.5,-205.24 433.5,-205.24 433.5,-171.24 316.5,-171.24"/>
 <text text-anchor="start" x="324.5" y="-192.24" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="375" y="-179.24" font-family="Helvetica,sans-Serif" font-size="10.00">::OnCSColorBtClick</text>
@@ -168,7 +168,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" target="_top" xlink:title="GUICutRenderWindow\l::OnColorScaleChanged">
+<a xlink:href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" target="_top" xlink:title="Behandelt das Ändern von Parametern zur darstellung der Temperaturskala. ">
 <polygon fill="none" stroke="black" points="314,-119.24 314,-153.24 436,-153.24 436,-119.24 314,-119.24"/>
 <text text-anchor="start" x="322" y="-140.24" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="375" y="-127.24" font-family="Helvetica,sans-Serif" font-size="10.00">::OnColorScaleChanged</text>
@@ -181,7 +181,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" target="_top" xlink:title="GUICutRenderWindow\l::renderCutBtClick">
+<a xlink:href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" target="_top" xlink:title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="486.5,-223.24 486.5,-257.24 603.5,-257.24 603.5,-223.24 486.5,-223.24"/>
 <text text-anchor="start" x="494.5" y="-244.24" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="545" y="-231.24" font-family="Helvetica,sans-Serif" font-size="10.00">::renderCutBtClick</text>
@@ -194,7 +194,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438" target="_top" xlink:title="GUICutRenderWindow\l::OnColorScaleChanged_spin">
+<a xlink:href="classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438" target="_top" xlink:title="Behandelt das Ändern von Parametern zur darstellung der Temperaturskala. ">
 <polygon fill="none" stroke="black" points="472,-119.24 472,-153.24 618,-153.24 618,-119.24 472,-119.24"/>
 <text text-anchor="start" x="480" y="-140.24" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="545" y="-127.24" font-family="Helvetica,sans-Serif" font-size="10.00">::OnColorScaleChanged_spin</text>

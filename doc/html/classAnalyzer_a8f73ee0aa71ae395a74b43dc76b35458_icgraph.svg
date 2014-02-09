@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" target="_top" xlink:title="GUIAnalyzePointWindow\l::analyzePoint">
+<a xlink:href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="154,-0 154,-34 282,-34 282,-0 154,-0"/>
 <text text-anchor="start" x="162" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzePointWindow</text>
 <text text-anchor="middle" x="218" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::analyzePoint</text>

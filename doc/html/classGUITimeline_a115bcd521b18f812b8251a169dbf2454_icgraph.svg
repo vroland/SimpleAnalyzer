@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classPropertiesBox.xhtml#adce6c28da4adced9bb98937c5cb85de0" target="_top" xlink:title="PropertiesBox::resize">
+<a xlink:href="classPropertiesBox.xhtml#adce6c28da4adced9bb98937c5cb85de0" target="_top" xlink:title="Behandelt Größenänderungen und passt die Positionen der Komponenten an. ">
 <polygon fill="none" stroke="black" points="170,-0.5 170,-21.5 280,-21.5 280,-0.5 170,-0.5"/>
 <text text-anchor="middle" x="225" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">PropertiesBox::resize</text>
 </a>

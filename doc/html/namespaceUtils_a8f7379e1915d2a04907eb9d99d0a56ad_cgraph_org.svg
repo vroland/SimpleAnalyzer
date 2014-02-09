@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" target="_top" xlink:title="Utils::pointInsideTetrahedron">
+<a xlink:href="namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" target="_top" xlink:title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. ">
 <polygon fill="none" stroke="black" points="178,-80.5 178,-101.5 320,-101.5 320,-80.5 178,-80.5"/>
 <text text-anchor="middle" x="249" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::pointInsideTetrahedron</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" target="_top" xlink:title="Vector3D::sub">
+<a xlink:href="classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" target="_top" xlink:title="Subtrahiert einen Vektor von diesem Vektor. ">
 <polygon fill="none" stroke="black" points="377,-160.5 377,-181.5 457,-181.5 457,-160.5 377,-160.5"/>
 <text text-anchor="middle" x="417" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::sub</text>
 </a>
@@ -39,7 +39,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" target="_top" xlink:title="Vector3D::crossProduct">
+<a xlink:href="classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" target="_top" xlink:title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. ">
 <polygon fill="none" stroke="black" points="356,-120.5 356,-141.5 478,-141.5 478,-120.5 356,-120.5"/>
 <text text-anchor="middle" x="417" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::crossProduct</text>
 </a>
@@ -51,7 +51,7 @@
 </g>
 <!-- Node8 -->
 <g id="node18" class="node"><title>Node8</title>
-<a xlink:href="classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" target="_top" xlink:title="Vector3D::dotProduct">
+<a xlink:href="classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" target="_top" xlink:title="Gibt das Skalarprodukt mit einem anderen Vektor. ">
 <polygon fill="none" stroke="black" points="361.5,-80.5 361.5,-101.5 472.5,-101.5 472.5,-80.5 361.5,-80.5"/>
 <text text-anchor="middle" x="417" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::dotProduct</text>
 </a>
@@ -63,7 +63,7 @@
 </g>
 <!-- Node9 -->
 <g id="node23" class="node"><title>Node9</title>
-<a xlink:href="classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" target="_top" xlink:title="Vector3D::mult">
+<a xlink:href="classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" target="_top" xlink:title="Multipliziert den Vektor mit einem Skalar. ">
 <polygon fill="none" stroke="black" points="375.5,-40.5 375.5,-61.5 458.5,-61.5 458.5,-40.5 375.5,-40.5"/>
 <text text-anchor="middle" x="417" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::mult</text>
 </a>
@@ -75,7 +75,7 @@
 </g>
 <!-- Node10 -->
 <g id="node25" class="node"><title>Node10</title>
-<a xlink:href="classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" target="_top" xlink:title="Vector3D::copy">
+<a xlink:href="classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" target="_top" xlink:title="Gibt eine Kopie des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="374.5,-0.5 374.5,-21.5 459.5,-21.5 459.5,-0.5 374.5,-0.5"/>
 <text text-anchor="middle" x="417" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::copy</text>
 </a>
@@ -87,7 +87,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" target="_top" xlink:title="Vector3D::getX">
+<a xlink:href="classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" target="_top" xlink:title="Gibt das X&#45;Element des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="514,-160.5 514,-181.5 598,-181.5 598,-160.5 514,-160.5"/>
 <text text-anchor="middle" x="556" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::getX</text>
 </a>
@@ -99,7 +99,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" target="_top" xlink:title="Vector3D::getY">
+<a xlink:href="classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" target="_top" xlink:title="Gibt das Y&#45;Element des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="514,-120.5 514,-141.5 598,-141.5 598,-120.5 514,-120.5"/>
 <text text-anchor="middle" x="556" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::getY</text>
 </a>
@@ -111,7 +111,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" target="_top" xlink:title="Vector3D::getZ">
+<a xlink:href="classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" target="_top" xlink:title="Gibt das Z&#45;Element des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="514.5,-80.5 514.5,-101.5 597.5,-101.5 597.5,-80.5 514.5,-80.5"/>
 <text text-anchor="middle" x="556" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::getZ</text>
 </a>

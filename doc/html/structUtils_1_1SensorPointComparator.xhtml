@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,20 +104,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:a2b31195024a7ec123551b2bb87043a68"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUtils_1_1SensorPointComparator.xhtml#a2b31195024a7ec123551b2bb87043a68">getDistance_d</a> (double *p1, double *p2)</td></tr>
+<tr class="memdesc:a2b31195024a7ec123551b2bb87043a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Berechnet den Abstand zwischen zwei Punkten mithilfe des Satzes des Pythagoras.  <a href="#a2b31195024a7ec123551b2bb87043a68">Mehr ...</a><br/></td></tr>
+<tr class="separator:a2b31195024a7ec123551b2bb87043a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92795eac49f9ea851c04a623c5a3d6b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUtils_1_1SensorPointComparator.xhtml#a92795eac49f9ea851c04a623c5a3d6b6">operator()</a> (<a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> p1, <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> p2)</td></tr>
+<tr class="memdesc:a92795eac49f9ea851c04a623c5a3d6b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vergleichsoperator für den Abstand zum Punkt meshpoint.  <a href="#a92795eac49f9ea851c04a623c5a3d6b6">Mehr ...</a><br/></td></tr>
 <tr class="separator:a92795eac49f9ea851c04a623c5a3d6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Öffentliche Attribute</h2></td></tr>
 <tr class="memitem:a51335aca914559e34d9202b67d90b143"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUtils_1_1SensorPointComparator.xhtml#a51335aca914559e34d9202b67d90b143">meshpoint</a> [3]</td></tr>
+<tr class="memdesc:a51335aca914559e34d9202b67d90b143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Punkt, zu dem der Abstand ermittelt werden soll.  <a href="#a51335aca914559e34d9202b67d90b143">Mehr ...</a><br/></td></tr>
 <tr class="separator:a51335aca914559e34d9202b67d90b143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock"><p>Hilfsstruktur zum Vergleichen des Abstands von Sensordaten. </p>
 <p>Wird für Sortieralgorithmen der Standardbibliothek benötigt. </p>
 
-<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00103">103</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00097">97</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
 </div><h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a class="anchor" id="a2b31195024a7ec123551b2bb87043a68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Utils::SensorPointComparator::getDistance_d </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Berechnet den Abstand zwischen zwei Punkten mithilfe des Satzes des Pythagoras. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>Koordinaten des ersten Punkten als Liste dreier Koordinaten. </td></tr>
+    <tr><td class="paramname">p2</td><td>Koordinaten des zweiten Punkten als Liste dreier Koordinaten. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00103">103</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
+
+<p><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structUtils_1_1SensorPointComparator_a2b31195024a7ec123551b2bb87043a68_cgraph.svg" width="296" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a92795eac49f9ea851c04a623c5a3d6b6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -149,16 +207,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Vergleichsoperator für den Abstand zum Punkt meshpoint. </p>
 
-<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00105">105</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
-
-<p><div class="dynheader">
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structUtils_1_1SensorPointComparator_a92795eac49f9ea851c04a623c5a3d6b6_cgraph.svg" width="398" height="72"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</p>
+<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00107">107</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
 
 </div>
 </div>
@@ -172,9 +224,10 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Punkt, zu dem der Abstand ermittelt werden soll. </p>
 
-<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00104">104</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00105">105</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
 
 </div>
 </div>
@@ -184,7 +237,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 01:43:19 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Feb 9 2014 15:44:35 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

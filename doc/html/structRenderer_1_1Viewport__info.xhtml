@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,32 +109,46 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Öffentliche Attribute</h2></td></tr>
 <tr class="memitem:a9bbc5e50fed7334fb237e620e6080e5e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#a9bbc5e50fed7334fb237e620e6080e5e">zoom</a></td></tr>
+<tr class="memdesc:a9bbc5e50fed7334fb237e620e6080e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktueller Zoomfaktor.  <a href="#a9bbc5e50fed7334fb237e620e6080e5e">Mehr ...</a><br/></td></tr>
 <tr class="separator:a9bbc5e50fed7334fb237e620e6080e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80fe2d86956d26105dd8301278e0c4e6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#a80fe2d86956d26105dd8301278e0c4e6">rotationY</a></td></tr>
+<tr class="memdesc:a80fe2d86956d26105dd8301278e0c4e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation der Ansicht um die Y-Achse.  <a href="#a80fe2d86956d26105dd8301278e0c4e6">Mehr ...</a><br/></td></tr>
 <tr class="separator:a80fe2d86956d26105dd8301278e0c4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8005e4eaa631f4c6b96cf6be05e8428"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#ad8005e4eaa631f4c6b96cf6be05e8428">rotationX</a></td></tr>
+<tr class="memdesc:ad8005e4eaa631f4c6b96cf6be05e8428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotation der Ansicht um die (Kameralokale) X-Achse.  <a href="#ad8005e4eaa631f4c6b96cf6be05e8428">Mehr ...</a><br/></td></tr>
 <tr class="separator:ad8005e4eaa631f4c6b96cf6be05e8428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b5d9d9dbde8c74e25af98680b7ccce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3D.xhtml">Vector3D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#aa6b5d9d9dbde8c74e25af98680b7ccce">cameraPosition</a></td></tr>
+<tr class="memdesc:aa6b5d9d9dbde8c74e25af98680b7ccce"><td class="mdescLeft">&#160;</td><td class="mdescRight">position der Virtuellen Kamera  <a href="#aa6b5d9d9dbde8c74e25af98680b7ccce">Mehr ...</a><br/></td></tr>
 <tr class="separator:aa6b5d9d9dbde8c74e25af98680b7ccce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6fe77b0bf872e7d65079bb58e9e8cce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTriangle.xhtml">Triangle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#af6fe77b0bf872e7d65079bb58e9e8cce">cut</a></td></tr>
+<tr class="memdesc:af6fe77b0bf872e7d65079bb58e9e8cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dreieck der Schnittebene, wenn nicht NULL, werden nur Elemente oberhalb der Dreiecksebene dargestellt (Momentan nicht verwendet).  <a href="#af6fe77b0bf872e7d65079bb58e9e8cce">Mehr ...</a><br/></td></tr>
 <tr class="separator:af6fe77b0bf872e7d65079bb58e9e8cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e06e17e13e9639179de762f6a45c71e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#a0e06e17e13e9639179de762f6a45c71e">invertcut</a></td></tr>
+<tr class="memdesc:a0e06e17e13e9639179de762f6a45c71e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nur Elemente unterhalb der durch cut definierte Ebene darstellen (Momentan nicht verwendet).  <a href="#a0e06e17e13e9639179de762f6a45c71e">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0e06e17e13e9639179de762f6a45c71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab95af83b6e3e068e14b37187a11709b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRenderer.xhtml#aa9844470f59e9fdf3aed088936100863">RenderMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#ab95af83b6e3e068e14b37187a11709b7">showPoints</a></td></tr>
+<tr class="memdesc:ab95af83b6e3e068e14b37187a11709b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modus der Darstellung von Punkten des 3D-Objekts.  <a href="#ab95af83b6e3e068e14b37187a11709b7">Mehr ...</a><br/></td></tr>
 <tr class="separator:ab95af83b6e3e068e14b37187a11709b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61ce4c293d9dc97da9b4ed2f8f7a36e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRenderer.xhtml#aa9844470f59e9fdf3aed088936100863">RenderMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#a61ce4c293d9dc97da9b4ed2f8f7a36e0">showEdges</a></td></tr>
+<tr class="memdesc:a61ce4c293d9dc97da9b4ed2f8f7a36e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modus der Darstellung von Kanten des 3D-Objekts.  <a href="#a61ce4c293d9dc97da9b4ed2f8f7a36e0">Mehr ...</a><br/></td></tr>
 <tr class="separator:a61ce4c293d9dc97da9b4ed2f8f7a36e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1f3f4b18210cf0bc69df0c9015e8acf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRenderer.xhtml#aa9844470f59e9fdf3aed088936100863">RenderMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#aa1f3f4b18210cf0bc69df0c9015e8acf">showFaces</a></td></tr>
+<tr class="memdesc:aa1f3f4b18210cf0bc69df0c9015e8acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modus der Darstellung von Flächen des 3D-Objekts.  <a href="#aa1f3f4b18210cf0bc69df0c9015e8acf">Mehr ...</a><br/></td></tr>
 <tr class="separator:aa1f3f4b18210cf0bc69df0c9015e8acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9d99216a6044d7048ba805f9f9b0815"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#ac9d99216a6044d7048ba805f9f9b0815">show_extrapolated</a></td></tr>
+<tr class="memdesc:ac9d99216a6044d7048ba805f9f9b0815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extrapolierte Elemente anzeigen.  <a href="#ac9d99216a6044d7048ba805f9f9b0815">Mehr ...</a><br/></td></tr>
 <tr class="separator:ac9d99216a6044d7048ba805f9f9b0815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd0ab0f20c5acc43128634b4b4cc1f52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#abd0ab0f20c5acc43128634b4b4cc1f52">show_sensordata</a></td></tr>
+<tr class="memdesc:abd0ab0f20c5acc43128634b4b4cc1f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sensordaten als Punkte anzeigen.  <a href="#abd0ab0f20c5acc43128634b4b4cc1f52">Mehr ...</a><br/></td></tr>
 <tr class="separator:abd0ab0f20c5acc43128634b4b4cc1f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0617337cfe95f9d5a21420335474bea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#af0617337cfe95f9d5a21420335474bea">width</a></td></tr>
+<tr class="memdesc:af0617337cfe95f9d5a21420335474bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breite des dargestellten Bereichs.  <a href="#af0617337cfe95f9d5a21420335474bea">Mehr ...</a><br/></td></tr>
 <tr class="separator:af0617337cfe95f9d5a21420335474bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd3f381981791f2b012129fe54aee39c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#acd3f381981791f2b012129fe54aee39c">height</a></td></tr>
+<tr class="memdesc:acd3f381981791f2b012129fe54aee39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Höhe des dargestellten Bereichs.  <a href="#acd3f381981791f2b012129fe54aee39c">Mehr ...</a><br/></td></tr>
 <tr class="separator:acd3f381981791f2b012129fe54aee39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90128db9d24987d94ddd843646a4f03d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRenderer_1_1Viewport__info.xhtml#a90128db9d24987d94ddd843646a4f03d">scale</a></td></tr>
+<tr class="memdesc:a90128db9d24987d94ddd843646a4f03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skalierungsfaktor für das 3D-Objekt.  <a href="#a90128db9d24987d94ddd843646a4f03d">Mehr ...</a><br/></td></tr>
 <tr class="separator:a90128db9d24987d94ddd843646a4f03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -151,6 +165,7 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>position der Virtuellen Kamera </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00041">41</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
@@ -166,6 +181,7 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Dreieck der Schnittebene, wenn nicht NULL, werden nur Elemente oberhalb der Dreiecksebene dargestellt (Momentan nicht verwendet). </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00042">42</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
@@ -181,7 +197,8 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Höhe des dargestellten Bereichs </p>
+
+<p>Höhe des dargestellten Bereichs. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00050">50</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
 
@@ -196,6 +213,7 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Nur Elemente unterhalb der durch cut definierte Ebene darstellen (Momentan nicht verwendet). </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00043">43</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
@@ -211,7 +229,8 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rotation der Ansicht um die (Kameralokale) X-Achse </p>
+
+<p>Rotation der Ansicht um die (Kameralokale) X-Achse. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00040">40</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
 
@@ -226,7 +245,8 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rotation der Ansicht um die Y-Achse </p>
+
+<p>Rotation der Ansicht um die Y-Achse. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00039">39</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
 
@@ -241,6 +261,7 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Skalierungsfaktor für das 3D-Objekt. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00051">51</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
@@ -256,7 +277,8 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Extrapolierte Elemente anzeigen </p>
+
+<p>Extrapolierte Elemente anzeigen. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00047">47</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
 
@@ -271,7 +293,8 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sensordaten als Punkte anzeigen </p>
+
+<p>Sensordaten als Punkte anzeigen. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00048">48</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
 
@@ -286,6 +309,7 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Modus der Darstellung von Kanten des 3D-Objekts. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00045">45</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
@@ -301,6 +325,7 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Modus der Darstellung von Flächen des 3D-Objekts. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00046">46</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
@@ -316,6 +341,7 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Modus der Darstellung von Punkten des 3D-Objekts. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00044">44</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
@@ -331,7 +357,8 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Breite des dargestellten Bereichs </p>
+
+<p>Breite des dargestellten Bereichs. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00049">49</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
 
@@ -346,7 +373,8 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Aktueller Zoomfaktor </p>
+
+<p>Aktueller Zoomfaktor. </p>
 
 <p>Definiert in Zeile <a class="el" href="Renderer_8h_source.xhtml#l00038">38</a> der Datei <a class="el" href="Renderer_8h_source.xhtml">Renderer.h</a>.</p>
 
@@ -358,7 +386,7 @@ Zusammengehörigkeiten von Renderer::Viewport_info:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 01:43:19 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Feb 9 2014 15:44:35 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

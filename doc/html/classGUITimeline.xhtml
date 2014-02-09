@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,85 +112,120 @@ Zusammengehörigkeiten von GUITimeline:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Öffentliche Typen</h2></td></tr>
-<tr class="memitem:a56f1cf170a8c077a0b94d19a0eba8c94"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a56f1cf170a8c077a0b94d19a0eba8c94">GUI_TIMELINE_STYLE</a> { <b>GTL_DEFAULT</b> = 0
+<tr class="memitem:a56f1cf170a8c077a0b94d19a0eba8c94"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a56f1cf170a8c077a0b94d19a0eba8c94">GUI_TIMELINE_STYLE</a> { <a class="el" href="classGUITimeline.xhtml#a56f1cf170a8c077a0b94d19a0eba8c94a9c676c8ba0c3c3312938d34a8e855bb1">GTL_DEFAULT</a> = 0
  }</td></tr>
+<tr class="memdesc:a56f1cf170a8c077a0b94d19a0eba8c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Darstellungsstil der Zeitleiste.  <a href="classGUITimeline.xhtml#a56f1cf170a8c077a0b94d19a0eba8c94">Mehr ...</a><br/></td></tr>
 <tr class="separator:a56f1cf170a8c077a0b94d19a0eba8c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
-<tr class="memitem:a2878c5574a3c329032e9cd94ab024d59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a2878c5574a3c329032e9cd94ab024d59">GUITimeline</a> (wxWindow *parent, wxWindowID id, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=GTL_DEFAULT, const wxString &amp;name=wxT(&quot;Timeline&quot;))</td></tr>
+<tr class="memitem:a2878c5574a3c329032e9cd94ab024d59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a2878c5574a3c329032e9cd94ab024d59">GUITimeline</a> (wxWindow *parent, wxWindowID id, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=<a class="el" href="classGUITimeline.xhtml#a56f1cf170a8c077a0b94d19a0eba8c94a9c676c8ba0c3c3312938d34a8e855bb1">GTL_DEFAULT</a>, const wxString &amp;name=wxT(&quot;Timeline&quot;))</td></tr>
+<tr class="memdesc:a2878c5574a3c329032e9cd94ab024d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der Konstruktor.  <a href="#a2878c5574a3c329032e9cd94ab024d59">Mehr ...</a><br/></td></tr>
 <tr class="separator:a2878c5574a3c329032e9cd94ab024d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a099f3654aa6e7ea04df861851a0e9ec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8">findMaxValue</a> (<a class="el" href="classObjectData.xhtml">ObjectData</a> *obj, bool fast)</td></tr>
+<tr class="memdesc:a099f3654aa6e7ea04df861851a0e9ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten-Zeitleiste, für den der Wäremeenergiegehalt maximal wird.  <a href="#a099f3654aa6e7ea04df861851a0e9ec8">Mehr ...</a><br/></td></tr>
 <tr class="separator:a099f3654aa6e7ea04df861851a0e9ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fa405314a0be38d95798fdc205827c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a1fa405314a0be38d95798fdc205827c3">getValue</a> ()</td></tr>
+<tr class="memdesc:a1fa405314a0be38d95798fdc205827c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">gibt den Index des aktuell ausgewählten Zeitpunkts zurück.  <a href="#a1fa405314a0be38d95798fdc205827c3">Mehr ...</a><br/></td></tr>
 <tr class="separator:a1fa405314a0be38d95798fdc205827c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90b85dd56a32b3b35498a09b116b3610"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a90b85dd56a32b3b35498a09b116b3610">getMaxValue</a> ()</td></tr>
+<tr class="memdesc:a90b85dd56a32b3b35498a09b116b3610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den maximal auswählbaren Index zurück.  <a href="#a90b85dd56a32b3b35498a09b116b3610">Mehr ...</a><br/></td></tr>
 <tr class="separator:a90b85dd56a32b3b35498a09b116b3610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec94daa9bf66cd493b970b8ebb1334d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#aec94daa9bf66cd493b970b8ebb1334d5">getMinValue</a> ()</td></tr>
+<tr class="memdesc:aec94daa9bf66cd493b970b8ebb1334d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den minimal auswählbaren Index zurück.  <a href="#aec94daa9bf66cd493b970b8ebb1334d5">Mehr ...</a><br/></td></tr>
 <tr class="separator:aec94daa9bf66cd493b970b8ebb1334d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa4ef5ed2e0fe5f416d9d4c75b86ebc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a0fa4ef5ed2e0fe5f416d9d4c75b86ebc">setValue</a> (int val)</td></tr>
+<tr class="memdesc:a0fa4ef5ed2e0fe5f416d9d4c75b86ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt den Index des aktuell ausgewählten Zeitpunkts.  <a href="#a0fa4ef5ed2e0fe5f416d9d4c75b86ebc">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0fa4ef5ed2e0fe5f416d9d4c75b86ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bb2939f43fcefbeed5dfee827eaca9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a0bb2939f43fcefbeed5dfee827eaca9e">setMaxValue</a> (int val)</td></tr>
+<tr class="memdesc:a0bb2939f43fcefbeed5dfee827eaca9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt den maximal auswählbaren Index.  <a href="#a0bb2939f43fcefbeed5dfee827eaca9e">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0bb2939f43fcefbeed5dfee827eaca9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae75bc611225782e26402896771705821"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#ae75bc611225782e26402896771705821">setMinValue</a> (int val)</td></tr>
+<tr class="memdesc:ae75bc611225782e26402896771705821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt den minimal auswählbaren Index.  <a href="#ae75bc611225782e26402896771705821">Mehr ...</a><br/></td></tr>
 <tr class="separator:ae75bc611225782e26402896771705821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a115bcd521b18f812b8251a169dbf2454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a115bcd521b18f812b8251a169dbf2454">setNameList</a> (vector&lt; string &gt; *namelist)</td></tr>
+<tr class="memdesc:a115bcd521b18f812b8251a169dbf2454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt die Liste der Namen für die jeweiligen Indices der Zeitpunkte.  <a href="#a115bcd521b18f812b8251a169dbf2454">Mehr ...</a><br/></td></tr>
 <tr class="separator:a115bcd521b18f812b8251a169dbf2454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81c8e30bdf856cf05dbc9ae32f1b0690"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a81c8e30bdf856cf05dbc9ae32f1b0690">setMarked</a> (int pos, bool state)</td></tr>
+<tr class="memdesc:a81c8e30bdf856cf05dbc9ae32f1b0690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Markiert/Demarkiert einen bestimmten Zeitpunkt.  <a href="#a81c8e30bdf856cf05dbc9ae32f1b0690">Mehr ...</a><br/></td></tr>
 <tr class="separator:a81c8e30bdf856cf05dbc9ae32f1b0690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d9d402a76a47f7e968c6b5dd84efcb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a7d9d402a76a47f7e968c6b5dd84efcb0">isMarked</a> (int pos)</td></tr>
+<tr class="memdesc:a7d9d402a76a47f7e968c6b5dd84efcb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt zurück, ob ein Zeitpunkt markiert ist.  <a href="#a7d9d402a76a47f7e968c6b5dd84efcb0">Mehr ...</a><br/></td></tr>
 <tr class="separator:a7d9d402a76a47f7e968c6b5dd84efcb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ffbeec8aa87350a623e4af4f2aba03d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a9ffbeec8aa87350a623e4af4f2aba03d">clearMarkers</a> ()</td></tr>
+<tr class="memdesc:a9ffbeec8aa87350a623e4af4f2aba03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entfernt alle Markierungen.  <a href="#a9ffbeec8aa87350a623e4af4f2aba03d">Mehr ...</a><br/></td></tr>
 <tr class="separator:a9ffbeec8aa87350a623e4af4f2aba03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac5565f407354a3b3cfa9071a3486daa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#aac5565f407354a3b3cfa9071a3486daa">setMarkerList</a> (vector&lt; int &gt; *mlist)</td></tr>
+<tr class="memdesc:aac5565f407354a3b3cfa9071a3486daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt die Liste der markierten Stellen.  <a href="#aac5565f407354a3b3cfa9071a3486daa">Mehr ...</a><br/></td></tr>
 <tr class="separator:aac5565f407354a3b3cfa9071a3486daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0475107a9485faf7b9bf8836de3d8016"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a0475107a9485faf7b9bf8836de3d8016">getMarkers</a> ()</td></tr>
+<tr class="memdesc:a0475107a9485faf7b9bf8836de3d8016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt die Liste der markierten Stellen zurück.  <a href="#a0475107a9485faf7b9bf8836de3d8016">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0475107a9485faf7b9bf8836de3d8016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48087c3b671d161fe04585f478dabd99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a48087c3b671d161fe04585f478dabd99">setMarkers</a> (vector&lt; int &gt; *mlist)</td></tr>
+<tr class="memdesc:a48087c3b671d161fe04585f478dabd99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Markiert eine Liste von Indices.  <a href="#a48087c3b671d161fe04585f478dabd99">Mehr ...</a><br/></td></tr>
 <tr class="separator:a48087c3b671d161fe04585f478dabd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa912aa353abcfc4127c05269141adf83"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#aa912aa353abcfc4127c05269141adf83">~GUITimeline</a> ()</td></tr>
+<tr class="memdesc:aa912aa353abcfc4127c05269141adf83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der Destruktor.  <a href="#aa912aa353abcfc4127c05269141adf83">Mehr ...</a><br/></td></tr>
 <tr class="separator:aa912aa353abcfc4127c05269141adf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Methoden</h2></td></tr>
 <tr class="memitem:a55f17926f5dd787c8ae118127f73ca88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a55f17926f5dd787c8ae118127f73ca88">OnPaint</a> (wxPaintEvent &amp;)</td></tr>
+<tr class="memdesc:a55f17926f5dd787c8ae118127f73ca88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event-Tabellendeklaration für wxWidgets.  <a href="#a55f17926f5dd787c8ae118127f73ca88">Mehr ...</a><br/></td></tr>
 <tr class="separator:a55f17926f5dd787c8ae118127f73ca88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23116af54d562cef9cb891adf2358a06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a23116af54d562cef9cb891adf2358a06">OnMouseWheel</a> (wxMouseEvent &amp;event)</td></tr>
+<tr class="memdesc:a23116af54d562cef9cb891adf2358a06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandellt Scrolleingaben (zoomen).  <a href="#a23116af54d562cef9cb891adf2358a06">Mehr ...</a><br/></td></tr>
 <tr class="separator:a23116af54d562cef9cb891adf2358a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d53538e56f4571e729dfe64a820ddf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a7d53538e56f4571e729dfe64a820ddf2">OnMouseMove</a> (wxMouseEvent &amp;event)</td></tr>
+<tr class="memdesc:a7d53538e56f4571e729dfe64a820ddf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt Mausbewegungen (verschieben der Ansicht).  <a href="#a7d53538e56f4571e729dfe64a820ddf2">Mehr ...</a><br/></td></tr>
 <tr class="separator:a7d53538e56f4571e729dfe64a820ddf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cba2d830e1d9189b664cd512576be36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a0cba2d830e1d9189b664cd512576be36">OnResize</a> (wxSizeEvent &amp;event)</td></tr>
+<tr class="memdesc:a0cba2d830e1d9189b664cd512576be36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt Größenänderungen der Zeitleiste.  <a href="#a0cba2d830e1d9189b664cd512576be36">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0cba2d830e1d9189b664cd512576be36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7254dd9824190a6288da682d8fefad09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a7254dd9824190a6288da682d8fefad09">OnMouseDown</a> (wxMouseEvent &amp;event)</td></tr>
+<tr class="memdesc:a7254dd9824190a6288da682d8fefad09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt klicken (verschieben der Ansicht, setzten des aktuellen Zeitpunkts).  <a href="#a7254dd9824190a6288da682d8fefad09">Mehr ...</a><br/></td></tr>
 <tr class="separator:a7254dd9824190a6288da682d8fefad09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c3ff544345678870f3738443387bc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a82c3ff544345678870f3738443387bc0">OnKeyDown</a> (wxKeyEvent &amp;event)</td></tr>
+<tr class="memdesc:a82c3ff544345678870f3738443387bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt Tastendruck (setzen des aktuellen Zeitpunkts).  <a href="#a82c3ff544345678870f3738443387bc0">Mehr ...</a><br/></td></tr>
 <tr class="separator:a82c3ff544345678870f3738443387bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cd5cc2f150a7ca94a4cddbb88843b21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a2cd5cc2f150a7ca94a4cddbb88843b21">posToVal</a> (int mouse_x)</td></tr>
+<tr class="memdesc:a2cd5cc2f150a7ca94a4cddbb88843b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt den aktuellen Zeitpunkt anhand der Mausposition.  <a href="#a2cd5cc2f150a7ca94a4cddbb88843b21">Mehr ...</a><br/></td></tr>
 <tr class="separator:a2cd5cc2f150a7ca94a4cddbb88843b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417835c7c520d9fbcf65610d255245a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a417835c7c520d9fbcf65610d255245a1">sendTimelineEvent</a> ()</td></tr>
+<tr class="memdesc:a417835c7c520d9fbcf65610d255245a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Löst ein wxEVT_TIMELINE_CHANGE-Event aus.  <a href="#a417835c7c520d9fbcf65610d255245a1">Mehr ...</a><br/></td></tr>
 <tr class="separator:a417835c7c520d9fbcf65610d255245a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e636407ed0691d655eaa53cd0d968c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a98e636407ed0691d655eaa53cd0d968c">calcStepWidth</a> ()</td></tr>
+<tr class="memdesc:a98e636407ed0691d655eaa53cd0d968c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Berechnet die für die aktuelle Darstellung günstigste Schrittweite für die Beschriftung.  <a href="#a98e636407ed0691d655eaa53cd0d968c">Mehr ...</a><br/></td></tr>
 <tr class="separator:a98e636407ed0691d655eaa53cd0d968c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attribute</h2></td></tr>
 <tr class="memitem:a0ba036e4a58176c5e868662510717ae2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a0ba036e4a58176c5e868662510717ae2">value</a></td></tr>
+<tr class="memdesc:a0ba036e4a58176c5e868662510717ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der Index des aktuell ausgewählten Zeitpunkts.  <a href="#a0ba036e4a58176c5e868662510717ae2">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0ba036e4a58176c5e868662510717ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c639803db9c5afff38d3221242da912"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a6c639803db9c5afff38d3221242da912">maxvalue</a></td></tr>
+<tr class="memdesc:a6c639803db9c5afff38d3221242da912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der größte anzuzeigende Zeitpunkt.  <a href="#a6c639803db9c5afff38d3221242da912">Mehr ...</a><br/></td></tr>
 <tr class="separator:a6c639803db9c5afff38d3221242da912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad9f2b796d0d7c086cfe0094b3ef10c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#aad9f2b796d0d7c086cfe0094b3ef10c5">minvalue</a></td></tr>
+<tr class="memdesc:aad9f2b796d0d7c086cfe0094b3ef10c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der kleinste anzuzeigende Zeitpunkt.  <a href="#aad9f2b796d0d7c086cfe0094b3ef10c5">Mehr ...</a><br/></td></tr>
 <tr class="separator:aad9f2b796d0d7c086cfe0094b3ef10c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880c85a1838b77e7dd2c03601c15e36b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a880c85a1838b77e7dd2c03601c15e36b">maxdigits</a></td></tr>
+<tr class="memdesc:a880c85a1838b77e7dd2c03601c15e36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximale Anzahl an anzuzeigenden Nachkommastellen.  <a href="#a880c85a1838b77e7dd2c03601c15e36b">Mehr ...</a><br/></td></tr>
 <tr class="separator:a880c85a1838b77e7dd2c03601c15e36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b5b63103a41b6e661cfb30acfcda448"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a9b5b63103a41b6e661cfb30acfcda448">zoom</a></td></tr>
+<tr class="memdesc:a9b5b63103a41b6e661cfb30acfcda448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktueller Zoomfaktor.  <a href="#a9b5b63103a41b6e661cfb30acfcda448">Mehr ...</a><br/></td></tr>
 <tr class="separator:a9b5b63103a41b6e661cfb30acfcda448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba3c330e3e9e5f2f5edb069ecbb9c488"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#aba3c330e3e9e5f2f5edb069ecbb9c488">delta_v_view</a></td></tr>
+<tr class="memdesc:aba3c330e3e9e5f2f5edb069ecbb9c488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verschiebung der Ansicht.  <a href="#aba3c330e3e9e5f2f5edb069ecbb9c488">Mehr ...</a><br/></td></tr>
 <tr class="separator:aba3c330e3e9e5f2f5edb069ecbb9c488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16d456832948e97e9364856f92d97f5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a16d456832948e97e9364856f92d97f5c">prev_mouse_x</a></td></tr>
+<tr class="memdesc:a16d456832948e97e9364856f92d97f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwischenspeicher für die vorherige horizontale Mausposition.  <a href="#a16d456832948e97e9364856f92d97f5c">Mehr ...</a><br/></td></tr>
 <tr class="separator:a16d456832948e97e9364856f92d97f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcdd8d58db7851c24ab9dfdfe1377ffb"><td class="memItemLeft" align="right" valign="top">vector&lt; string &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#adcdd8d58db7851c24ab9dfdfe1377ffb">names</a></td></tr>
+<tr class="memdesc:adcdd8d58db7851c24ab9dfdfe1377ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liste der Zeitpunktnamen.  <a href="#adcdd8d58db7851c24ab9dfdfe1377ffb">Mehr ...</a><br/></td></tr>
 <tr class="separator:adcdd8d58db7851c24ab9dfdfe1377ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e20b6ed00d7c48716256fffdcfa608a"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUITimeline.xhtml#a8e20b6ed00d7c48716256fffdcfa608a">markers</a></td></tr>
+<tr class="memdesc:a8e20b6ed00d7c48716256fffdcfa608a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liste der markierten Zeitpunkte.  <a href="#a8e20b6ed00d7c48716256fffdcfa608a">Mehr ...</a><br/></td></tr>
 <tr class="separator:a8e20b6ed00d7c48716256fffdcfa608a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -208,7 +243,12 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Darstellungsstil der Zeitleiste. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Aufzählungswerte</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a56f1cf170a8c077a0b94d19a0eba8c94a9c676c8ba0c3c3312938d34a8e855bb1"></a>GTL_DEFAULT</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8h_source.xhtml#l00036">36</a> der Datei <a class="el" href="GUITimeline_8h_source.xhtml">GUITimeline.h</a>.</p>
 
@@ -247,7 +287,7 @@ Private Attribute</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>style</em> = <code>GTL_DEFAULT</code>, </td>
+          <td class="paramname"><em>style</em> = <code><a class="el" href="classGUITimeline.xhtml#a56f1cf170a8c077a0b94d19a0eba8c94a9c676c8ba0c3c3312938d34a8e855bb1">GTL_DEFAULT</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -262,6 +302,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Der Konstruktor. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -299,6 +340,7 @@ Private Attribute</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Der Destruktor. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00355">355</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -326,6 +368,7 @@ Private Attribute</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Berechnet die für die aktuelle Darstellung günstigste Schrittweite für die Beschriftung. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00138">138</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -341,7 +384,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a98e636407ed0691d655eaa53cd0d968c_icgraph.svg" width="400" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a98e636407ed0691d655eaa53cd0d968c_icgraph.svg" width="400" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -359,6 +403,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Entfernt alle Markierungen. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00334">334</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -388,7 +433,9 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten-Zeitleiste, für den der Wäremeenergiegehalt maximal wird. Dabei wird der Bereich zwischen den beiden markierten Stellen ausgewählt, zwischen denen sich der aktuell ausgewählte Zeitpunkt befindet. </p>
+
+<p>Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten-Zeitleiste, für den der Wäremeenergiegehalt maximal wird. </p>
+<p>Dabei wird der Bereich zwischen den beiden markierten Stellen ausgewählt, zwischen denen sich der aktuell ausgewählte Zeitpunkt befindet. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
     <tr><td class="paramname">obj</td><td>Das zu untersuchende Objekt. </td></tr>
@@ -402,7 +449,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a099f3654aa6e7ea04df861851a0e9ec8_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a099f3654aa6e7ea04df861851a0e9ec8_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </p>
 
@@ -420,6 +468,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt die Liste der markierten Stellen zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00338">338</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -438,6 +487,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt den maximal auswählbaren Index zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00278">278</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -445,7 +495,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a90b85dd56a32b3b35498a09b116b3610_icgraph.svg" width="422" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a90b85dd56a32b3b35498a09b116b3610_icgraph.svg" width="422" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -463,6 +514,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt den minimal auswählbaren Index zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00281">281</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -470,7 +522,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_aec94daa9bf66cd493b970b8ebb1334d5_icgraph.svg" width="419" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_aec94daa9bf66cd493b970b8ebb1334d5_icgraph.svg" width="419" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -488,6 +541,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>gibt den Index des aktuell ausgewählten Zeitpunkts zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00275">275</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -495,7 +549,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a1fa405314a0be38d95798fdc205827c3_icgraph.svg" width="398" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a1fa405314a0be38d95798fdc205827c3_icgraph.svg" width="398" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -514,6 +569,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt zurück, ob ein Zeitpunkt markiert ist. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -523,6 +579,14 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </dl>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00326">326</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
+
+<p><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a7d9d402a76a47f7e968c6b5dd84efcb0_cgraph.svg" width="339" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -547,6 +611,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt Tastendruck (setzen des aktuellen Zeitpunkts). </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00071">71</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -554,7 +619,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a82c3ff544345678870f3738443387bc0_cgraph.svg" width="419" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a82c3ff544345678870f3738443387bc0_cgraph.svg" width="419" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -581,6 +647,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt klicken (verschieben der Ansicht, setzten des aktuellen Zeitpunkts). </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00067">67</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -588,7 +655,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a7254dd9824190a6288da682d8fefad09_cgraph.svg" width="643" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a7254dd9824190a6288da682d8fefad09_cgraph.svg" width="643" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -615,6 +683,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt Mausbewegungen (verschieben der Ansicht). </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00178">178</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -622,7 +691,8 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a7d53538e56f4571e729dfe64a820ddf2_cgraph.svg" width="640" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a7d53538e56f4571e729dfe64a820ddf2_cgraph.svg" width="640" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -649,6 +719,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandellt Scrolleingaben (zoomen). </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00053">53</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -676,15 +747,16 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Event-Tabellendeklaration für wxWidgets. Zeichnet die Zeitleiste. </p>
+
+<p>Event-Tabellendeklaration für wxWidgets. </p>
+<p>Zeichnet die Zeitleiste. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00196">196</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a55f17926f5dd787c8ae118127f73ca88_cgraph.svg" width="574" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a55f17926f5dd787c8ae118127f73ca88_cgraph.svg" width="574" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -711,6 +783,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Behandelt Größenänderungen der Zeitleiste. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00193">193</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -738,6 +811,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Setzt den aktuellen Zeitpunkt anhand der Mausposition. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00162">162</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -745,14 +819,16 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a2cd5cc2f150a7ca94a4cddbb88843b21_cgraph.svg" width="400" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a2cd5cc2f150a7ca94a4cddbb88843b21_cgraph.svg" width="400" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a2cd5cc2f150a7ca94a4cddbb88843b21_icgraph.svg" width="414" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a2cd5cc2f150a7ca94a4cddbb88843b21_icgraph.svg" width="414" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -778,6 +854,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Löst ein wxEVT_TIMELINE_CHANGE-Event aus. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00048">48</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -785,7 +862,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a417835c7c520d9fbcf65610d255245a1_icgraph.svg" width="662" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a417835c7c520d9fbcf65610d255245a1_icgraph.svg" width="662" height="200"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -814,6 +892,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Markiert/Demarkiert einen bestimmten Zeitpunkt. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -824,6 +903,14 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </dl>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00311">311</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
+
+<p><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a81c8e30bdf856cf05dbc9ae32f1b0690_cgraph.svg" width="347" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</p>
 
 </div>
 </div>
@@ -840,6 +927,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Setzt die Liste der markierten Stellen. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -872,6 +960,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Markiert eine Liste von Indices. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -897,6 +986,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Setzt den maximal auswählbaren Index. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00297">297</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -904,7 +994,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a0bb2939f43fcefbeed5dfee827eaca9e_icgraph.svg" width="384" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a0bb2939f43fcefbeed5dfee827eaca9e_icgraph.svg" width="384" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -923,6 +1014,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Setzt den minimal auswählbaren Index. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00300">300</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -930,7 +1022,8 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_ae75bc611225782e26402896771705821_icgraph.svg" width="382" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_ae75bc611225782e26402896771705821_icgraph.svg" width="382" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -949,6 +1042,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Setzt die Liste der Namen für die jeweiligen Indices der Zeitpunkte. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -981,6 +1075,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Setzt den Index des aktuell ausgewählten Zeitpunkts. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8cpp_source.xhtml#l00284">284</a> der Datei <a class="el" href="GUITimeline_8cpp_source.xhtml">GUITimeline.cpp</a>.</p>
@@ -988,14 +1083,16 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a0fa4ef5ed2e0fe5f416d9d4c75b86ebc_cgraph.svg" width="395" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a0fa4ef5ed2e0fe5f416d9d4c75b86ebc_cgraph.svg" width="395" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a0fa4ef5ed2e0fe5f416d9d4c75b86ebc_icgraph.svg" width="398" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUITimeline_a0fa4ef5ed2e0fe5f416d9d4c75b86ebc_icgraph.svg" width="398" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -1019,6 +1116,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Verschiebung der Ansicht. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8h_source.xhtml#l00189">189</a> der Datei <a class="el" href="GUITimeline_8h_source.xhtml">GUITimeline.h</a>.</p>
@@ -1042,6 +1140,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Liste der markierten Zeitpunkte. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8h_source.xhtml#l00201">201</a> der Datei <a class="el" href="GUITimeline_8h_source.xhtml">GUITimeline.h</a>.</p>
@@ -1065,6 +1164,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Maximale Anzahl an anzuzeigenden Nachkommastellen. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8h_source.xhtml#l00181">181</a> der Datei <a class="el" href="GUITimeline_8h_source.xhtml">GUITimeline.h</a>.</p>
@@ -1088,6 +1188,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Der größte anzuzeigende Zeitpunkt. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8h_source.xhtml#l00173">173</a> der Datei <a class="el" href="GUITimeline_8h_source.xhtml">GUITimeline.h</a>.</p>
@@ -1111,6 +1212,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Der kleinste anzuzeigende Zeitpunkt. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8h_source.xhtml#l00177">177</a> der Datei <a class="el" href="GUITimeline_8h_source.xhtml">GUITimeline.h</a>.</p>
@@ -1134,6 +1236,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Liste der Zeitpunktnamen. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8h_source.xhtml#l00197">197</a> der Datei <a class="el" href="GUITimeline_8h_source.xhtml">GUITimeline.h</a>.</p>
@@ -1157,6 +1260,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Zwischenspeicher für die vorherige horizontale Mausposition. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8h_source.xhtml#l00193">193</a> der Datei <a class="el" href="GUITimeline_8h_source.xhtml">GUITimeline.h</a>.</p>
@@ -1180,6 +1284,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Der Index des aktuell ausgewählten Zeitpunkts. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8h_source.xhtml#l00169">169</a> der Datei <a class="el" href="GUITimeline_8h_source.xhtml">GUITimeline.h</a>.</p>
@@ -1203,6 +1308,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Aktueller Zoomfaktor. </p>
 
 <p>Definiert in Zeile <a class="el" href="GUITimeline_8h_source.xhtml#l00185">185</a> der Datei <a class="el" href="GUITimeline_8h_source.xhtml">GUITimeline.h</a>.</p>
@@ -1216,7 +1322,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 01:43:19 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Feb 9 2014 15:44:35 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

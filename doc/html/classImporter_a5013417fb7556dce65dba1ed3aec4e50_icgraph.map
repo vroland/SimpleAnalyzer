@@ -1,4 +1,4 @@
 <map id="Importer::ImportObj" name="Importer::ImportObj">
-<area shape="rect" id="node3" href="$classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" title="ObjectData::loadFromFile" alt="" coords="189,5,360,35"/>
-<area shape="rect" id="node5" href="$classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" title="GUIMainWindow::OnMenuImportObj" alt="" coords="408,5,643,35"/>
+<area shape="rect" id="node3" href="$classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" title="Lädt ein Objekt und erste Sensordaten. " alt="" coords="189,5,360,35"/>
+<area shape="rect" id="node5" href="$classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="408,5,643,35"/>
 </map>

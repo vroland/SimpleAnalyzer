@@ -13,28 +13,28 @@
 \subsection*{Öffentliche Typen}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{Interpolation\-Mode} \{ {\bfseries L\-I\-N\-E\-A\-R}, 
-{\bfseries L\-O\-G\-A\-R\-I\-T\-H\-M\-I\-C}
+enum \hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{Interpolation\-Mode} \{ \hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2a3a3f536edbfcc38cea69d59eb5709769}{L\-I\-N\-E\-A\-R}, 
+\hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2aa7167350eb8c3b4e2d5cb800587a725b}{L\-O\-G\-A\-R\-I\-T\-H\-M\-I\-C}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Der Typ der verwendeten Interpolationsfunktion. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classInterpolator_ab8cbb0b13436fc54a4bba03804ae8f8a}{Interpolator} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Der Konstruktor. \end{DoxyCompactList}\item 
 double \hyperlink{classInterpolator_ad59ac6ed3822e08a67ac7d1ee88a5bd2}{interpolate\-Tri} (\hyperlink{classTriangle}{Triangle} $\ast$tri, \hyperlink{classVector3D}{Vector3\-D} $\ast$pos, double $\ast$values)
-\item 
+\begin{DoxyCompactList}\small\item\em Ermittelt den Wert für einen beliebigen Punkt in einer Ebene. \end{DoxyCompactList}\item 
 double \hyperlink{classInterpolator_a30e714ca6dff9b5745d029f95af1420a}{interpolate\-Tet} (\hyperlink{classTetrahedron}{Tetrahedron} $\ast$tet, \hyperlink{classVector3D}{Vector3\-D} $\ast$pos, double $\ast$values)
-\item 
+\begin{DoxyCompactList}\small\item\em Ermittelt den Wert für einen beliebigen Punkt im Raum. \end{DoxyCompactList}\item 
 void \hyperlink{classInterpolator_a2f9927fc580de7d2f94d85e6ca3ee3e3}{set\-Mode} (\hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{Interpolation\-Mode} \hyperlink{classInterpolator_ace34e7696bdf4a1f0544b145efee898e}{mode})
-\item 
+\begin{DoxyCompactList}\small\item\em Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion). \end{DoxyCompactList}\item 
 virtual \hyperlink{classInterpolator_a6bb406dfe33e06296ccf24f18abcd46c}{$\sim$\-Interpolator} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Der Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{Interpolation\-Mode} \hyperlink{classInterpolator_ace34e7696bdf4a1f0544b145efee898e}{mode}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Der verwendete Interpolationsmodus bzw. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -50,7 +50,20 @@ Definiert in Zeile 20 der Datei Interpolator.\-h.
 \hypertarget{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{\index{Interpolator@{Interpolator}!Interpolation\-Mode@{Interpolation\-Mode}}
 \index{Interpolation\-Mode@{Interpolation\-Mode}!Interpolator@{Interpolator}}
 \subsubsection[{Interpolation\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Interpolator\-::\-Interpolation\-Mode}}}\label{classInterpolator_adb733b1439a2903feae57fa734ced0c2}
+
+
 Der Typ der verwendeten Interpolationsfunktion. 
+
+\begin{Desc}
+\item[Aufzählungswerte]\par
+\begin{description}
+\index{L\-I\-N\-E\-A\-R@{L\-I\-N\-E\-A\-R}!Interpolator@{Interpolator}}\index{Interpolator@{Interpolator}!L\-I\-N\-E\-A\-R@{L\-I\-N\-E\-A\-R}}\item[{\em 
+\hypertarget{classInterpolator_adb733b1439a2903feae57fa734ced0c2a3a3f536edbfcc38cea69d59eb5709769}{L\-I\-N\-E\-A\-R}\label{classInterpolator_adb733b1439a2903feae57fa734ced0c2a3a3f536edbfcc38cea69d59eb5709769}
+}]\index{L\-O\-G\-A\-R\-I\-T\-H\-M\-I\-C@{L\-O\-G\-A\-R\-I\-T\-H\-M\-I\-C}!Interpolator@{Interpolator}}\index{Interpolator@{Interpolator}!L\-O\-G\-A\-R\-I\-T\-H\-M\-I\-C@{L\-O\-G\-A\-R\-I\-T\-H\-M\-I\-C}}\item[{\em 
+\hypertarget{classInterpolator_adb733b1439a2903feae57fa734ced0c2aa7167350eb8c3b4e2d5cb800587a725b}{L\-O\-G\-A\-R\-I\-T\-H\-M\-I\-C}\label{classInterpolator_adb733b1439a2903feae57fa734ced0c2aa7167350eb8c3b4e2d5cb800587a725b}
+}]\end{description}
+\end{Desc}
+
 
 Definiert in Zeile 25 der Datei Interpolator.\-h.
 
@@ -64,7 +77,11 @@ Definiert in Zeile 25 der Datei Interpolator.\-h.
 {}
 \end{DoxyParamCaption}
 )}}\label{classInterpolator_ab8cbb0b13436fc54a4bba03804ae8f8a}
+
+
 Der Konstruktor. 
+
+
 
 Definiert in Zeile 13 der Datei Interpolator.\-cpp.
 
@@ -75,7 +92,11 @@ Definiert in Zeile 13 der Datei Interpolator.\-cpp.
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classInterpolator_a6bb406dfe33e06296ccf24f18abcd46c}
+
+
 Der Destruktor. 
+
+
 
 Definiert in Zeile 248 der Datei Interpolator.\-cpp.
 
@@ -91,7 +112,11 @@ Definiert in Zeile 248 der Datei Interpolator.\-cpp.
 \item[{double $\ast$}]{values}
 \end{DoxyParamCaption}
 )}}\label{classInterpolator_a30e714ca6dff9b5745d029f95af1420a}
+
+
 Ermittelt den Wert für einen beliebigen Punkt im Raum. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em tet} & Tetraeder, durch den die Punkte für die gegebenen Werte gegeben sind. \\
 \hline
@@ -109,7 +134,8 @@ Definiert in Zeile 116 der Datei Interpolator.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -139,7 +165,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \item[{double $\ast$}]{values}
 \end{DoxyParamCaption}
 )}}\label{classInterpolator_ad59ac6ed3822e08a67ac7d1ee88a5bd2}
+
+
 Ermittelt den Wert für einen beliebigen Punkt in einer Ebene. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em tri} & Dreieck, durch das die Ebene beschrieben wird. \\
 \hline
@@ -157,7 +187,8 @@ Definiert in Zeile 22 der Datei Interpolator.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -173,13 +204,18 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \item[{{\bf Interpolation\-Mode}}]{mode}
 \end{DoxyParamCaption}
 )}}\label{classInterpolator_a2f9927fc580de7d2f94d85e6ca3ee3e3}
+
+
 Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion). 
+
+
 
 Definiert in Zeile 16 der Datei Interpolator.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -194,7 +230,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \hypertarget{classInterpolator_ace34e7696bdf4a1f0544b145efee898e}{\index{Interpolator@{Interpolator}!mode@{mode}}
 \index{mode@{mode}!Interpolator@{Interpolator}}
 \subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interpolation\-Mode} Interpolator\-::mode\hspace{0.3cm}{\ttfamily [private]}}}\label{classInterpolator_ace34e7696bdf4a1f0544b145efee898e}
-Der verwendete Interpolationsmodus bzw. die Interpolationsfunktion. 
+
+
+Der verwendete Interpolationsmodus bzw. 
+
+die Interpolationsfunktion. 
 
 Definiert in Zeile 61 der Datei Interpolator.\-h.
 
@@ -202,5 +242,5 @@ Definiert in Zeile 61 der Datei Interpolator.\-h.
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/libraries/interpolate/Interpolator.\-h\item 
-simpleanalyzer-\/gui/src/libraries/interpolate/Interpolator.\-cpp\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/libraries/interpolate/\hyperlink{Interpolator_8h}{Interpolator.\-h}\item 
+simpleanalyzer-\/gui/src/libraries/interpolate/\hyperlink{Interpolator_8cpp}{Interpolator.\-cpp}\end{DoxyCompactItemize}

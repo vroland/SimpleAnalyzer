@@ -6,6 +6,7 @@ var searchData=
   ['imgheightedit',['imgHeightEdit',['../classGUICutRenderWindow.xhtml#a4daa569840f00756e6781ad2d87aef5b',1,'GUICutRenderWindow']]],
   ['imgwidthedit',['imgWidthEdit',['../classGUICutRenderWindow.xhtml#a211043ba4bd60862a9fbfe1186c40875',1,'GUICutRenderWindow']]],
   ['in_5fvolume_5falgorithm',['in_volume_algorithm',['../structUtils_1_1CutRender__info.xhtml#af2ee1118ac14a73a2a350a05102013ab',1,'Utils::CutRender_info']]],
+  ['interpolation_5fmode',['interpolation_mode',['../structObjectData_1_1MaterialData.xhtml#a35d4f03b3af4349f69d5fed072118dca',1,'ObjectData::MaterialData']]],
   ['interpolation_5fmode_5fstrings',['INTERPOLATION_MODE_STRINGS',['../constants_8h.xhtml#a77ce5a39521911ed3b98226067b87ed6',1,'constants.h']]],
   ['interpolationmodelabel',['interpolationModeLabel',['../classGUIAnalyzePointWindow.xhtml#a6a1b5c74ab4aca0f3ccea3ef83043b35',1,'GUIAnalyzePointWindow']]],
   ['interpolationmodelbl',['interpolationModeLbl',['../classPropertiesBox.xhtml#a7184c404a73e32cee30ac299ef9fe649',1,'PropertiesBox']]],

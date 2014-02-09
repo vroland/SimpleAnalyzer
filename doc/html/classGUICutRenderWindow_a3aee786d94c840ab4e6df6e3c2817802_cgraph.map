@@ -1,7 +1,7 @@
 <map id="GUICutRenderWindow::OnExportCSV" name="GUICutRenderWindow::OnExportCSV">
-<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289" title="GUICutRenderWindow\l::getCutRenderProperties" alt="" coords="211,5,381,51"/>
-<area shape="rect" id="node5" href="$classExporter.xhtml#ae2aa06b8c8c77e172801a1f77800ffd0" title="Exporter::ExportCutCSV" alt="" coords="213,75,379,104"/>
-<area shape="rect" id="node7" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Triangle::getV1" alt="" coords="431,21,540,51"/>
-<area shape="rect" id="node9" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Triangle::getV2" alt="" coords="431,75,540,104"/>
-<area shape="rect" id="node11" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Triangle::getV3" alt="" coords="431,128,540,157"/>
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289" title="Gibt die aktuell eingestellten Eigenschaften für die zweidimensionale Temperaturverteilung zurück..." alt="" coords="211,5,381,51"/>
+<area shape="rect" id="node5" href="$classExporter.xhtml#ae2aa06b8c8c77e172801a1f77800ffd0" title="Exportiert die zweidimensionale Temperaturverteilung (Schnitt durch das Modell) als csv&#45;Datei..." alt="" coords="213,75,379,104"/>
+<area shape="rect" id="node7" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="431,21,540,51"/>
+<area shape="rect" id="node9" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. " alt="" coords="431,75,540,104"/>
+<area shape="rect" id="node11" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. " alt="" coords="431,128,540,157"/>
 </map>

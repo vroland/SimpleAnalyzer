@@ -52,11 +52,11 @@ void GUIAnalyzeOutputWindow::Update() {
 		Analyzer::AnalyzerData_object data;
 		Analyzer analyzer;
 		analyzer.analyzeObject(data_objects.at(o),&data);
-		int matcount = obj->materials.size();
+		int matcount = obj->getMaterials()->size();
 		int sdcount  = data.data_sets.size();
 		table->AppendCols(sdcount*matcount,true);
 		table->SetCellSize(0,all_mat_cell_count , 1, matcount*sdcount);
-		table->SetCellValue(0,all_mat_cell_count,wxString::FromAscii(obj->name.c_str()));
+		table->SetCellValue(0,all_mat_cell_count,wxString::FromAscii(obj->getName().c_str()));
 		table->SetCellAlignment(wxALIGN_CENTRE,0,all_mat_cell_count);
 		int materialcells = 0;
 		for (int s=0;s<sdcount;s++) {

@@ -13,28 +13,28 @@ Farbige Temperaturskala für zweidimensionale Temperaturverteilung.
 \subsection*{Öffentliche Typen}
 \begin{DoxyCompactItemize}
 \item 
-enum {\bfseries Scale\-Mode} \{ {\bfseries S\-C\-M\-\_\-\-N\-O\-N\-E} = 0, 
-{\bfseries S\-C\-M\-\_\-\-H\-O\-R\-I\-Z\-O\-N\-T\-A\-L}, 
-{\bfseries S\-C\-M\-\_\-\-V\-E\-R\-T\-I\-C\-A\-L}
+enum \hyperlink{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265}{Scale\-Mode} \{ \hyperlink{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265a341cbf92114357f8101219493b2e8b37}{S\-C\-M\-\_\-\-N\-O\-N\-E} = 0, 
+\hyperlink{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265a2a91733dc30cc826d816f7f558f3781e}{S\-C\-M\-\_\-\-H\-O\-R\-I\-Z\-O\-N\-T\-A\-L}, 
+\hyperlink{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265aa3e90f467c8f641f72ee863bc29a4032}{S\-C\-M\-\_\-\-V\-E\-R\-T\-I\-C\-A\-L}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Modus der Skalendarstellung. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classGUIColorScalePanel_ad4ad453f831d149cc9fde46cba883431}{G\-U\-I\-Color\-Scale\-Panel} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Der Konstruktor. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIColorScalePanel_a73f647d4f5eeb6b653777bb4c55696fa}{refresh} (int img\-\_\-width, int img\-\_\-height)
-\item 
+\begin{DoxyCompactList}\small\item\em Zeichnet die Temperaturskala neu. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIColorScalePanel_aaf6408cc09932a82afc7b2c233ec64c8}{paint\-To} (wx\-D\-C \&dc, float zoom, wx\-Point \&img\-\_\-coords)
-\item 
+\begin{DoxyCompactList}\small\item\em Zeichnet die Temperaturskala mit einem bestimmten device context. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIColorScalePanel_a59e27a091ec86d4c3e649f432a10ec08}{handle\-Mouse} (wx\-Mouse\-Event \&event, wx\-Point \&img\-\_\-coords, wx\-Point \&img\-\_\-dim, float zoom)
-\item 
+\begin{DoxyCompactList}\small\item\em Behandelt die Mausaktionen und verändert ggf. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIColorScalePanel_aa7d5eb68ecd55e23b2e8969a21c32a22}{get\-Display\-Area} (wx\-Rect $\ast$rect, float zoom)
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt die bei einem bestimmten Zoomfaktor eingenommene Fläche zurück. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIColorScalePanel_ac8faaae6f7016f0fecedfc350b65644b}{fit\-Bounds} (wx\-Point \&img\-\_\-dim, bool to\-\_\-scale)
-\item 
+\begin{DoxyCompactList}\small\item\em Passt die Größe und Position der Skala an die Größe der Grafik an. \end{DoxyCompactList}\item 
 bool \hyperlink{classGUIColorScalePanel_a4b17b0a63d3921ce09ffe5a99b6955a5}{mouse\-On\-Display\-Area} (wx\-Point \&img\-\_\-coords, float zoom, wx\-Point \&mouse\-\_\-pos)
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt zurück, ob sich die Maus über der Fläche der Skala befindet. \end{DoxyCompactList}\item 
 int \hyperlink{classGUIColorScalePanel_a8f5da4bc81c7ef878214cd5d0a0b2c19}{get\-X} ()
 \item 
 int \hyperlink{classGUIColorScalePanel_a5eff7202dade14031b7bf45f305f54e4}{get\-Y} ()
@@ -42,54 +42,54 @@ int \hyperlink{classGUIColorScalePanel_a5eff7202dade14031b7bf45f305f54e4}{get\-Y
 int \hyperlink{classGUIColorScalePanel_a3569b14af591835eeb60b2aa9c672ca4}{get\-Font\-Size} () const 
 \item 
 void \hyperlink{classGUIColorScalePanel_ae26f3f500092717aa7e9a85126b38461}{set\-Font\-Size} (int font\-Size)
+\begin{DoxyCompactList}\small\item\em Setzt die Schriftgröße der Skala. \end{DoxyCompactList}\item 
+\hyperlink{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265}{Scale\-Mode} \hyperlink{classGUIColorScalePanel_a4af2d1c1f161f42e2d6573315caec82f}{get\-Mode} () const 
 \item 
-Scale\-Mode \hyperlink{classGUIColorScalePanel_a4af2d1c1f161f42e2d6573315caec82f}{get\-Mode} () const 
-\item 
-void \hyperlink{classGUIColorScalePanel_aba2363ced766a14d72ad5448502f62a4}{set\-Mode} (Scale\-Mode \hyperlink{classGUIColorScalePanel_ad2f795e0d3a1c8e731da16d3320dbd34}{mode})
-\item 
+void \hyperlink{classGUIColorScalePanel_aba2363ced766a14d72ad5448502f62a4}{set\-Mode} (\hyperlink{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265}{Scale\-Mode} \hyperlink{classGUIColorScalePanel_ad2f795e0d3a1c8e731da16d3320dbd34}{mode})
+\begin{DoxyCompactList}\small\item\em Setzt den Modus der Skala. \end{DoxyCompactList}\item 
 const wx\-Colour \& \hyperlink{classGUIColorScalePanel_aae51a1ecdb5bfca126c36ad169fce846}{get\-Text\-Color} () const 
 \item 
 void \hyperlink{classGUIColorScalePanel_ad9056636be2c0707127225484f0d0392}{set\-Text\-Color} (const wx\-Colour \&text\-Color)
-\item 
+\begin{DoxyCompactList}\small\item\em Setzt die Schriftfarbe der Skala. \end{DoxyCompactList}\item 
 int \hyperlink{classGUIColorScalePanel_a5b69bf4853de97fa2445721165cab206}{get\-Step\-Width} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt die Schrittweite der Skalenbeschriftung. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIColorScalePanel_aba534a319236878bc3504050d8227fe4}{set\-Step\-Width} (int step\-Width)
-\item 
+\begin{DoxyCompactList}\small\item\em Setzt die Schrittweite der Skalenbeschriftung. \end{DoxyCompactList}\item 
 wx\-Image $\ast$ \hyperlink{classGUIColorScalePanel_ac793a56373a8f7f5cb8d3e413c26e8e7}{get\-Image} () const 
 \item 
 virtual \hyperlink{classGUIColorScalePanel_a7e6f0e0703269ce666989af49fef3369}{$\sim$\-G\-U\-I\-Color\-Scale\-Panel} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Der Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 int \hyperlink{classGUIColorScalePanel_a5f9789cc727854594c7d29c392578427}{step\-\_\-width}
-\item 
+\begin{DoxyCompactList}\small\item\em Schrittweite der Beschriftung. \end{DoxyCompactList}\item 
 int \hyperlink{classGUIColorScalePanel_acd79c1dedc939040b03f54f21e78d72f}{font\-\_\-size}
-\item 
-Scale\-Mode \hyperlink{classGUIColorScalePanel_ad2f795e0d3a1c8e731da16d3320dbd34}{mode}
-\item 
+\begin{DoxyCompactList}\small\item\em Die Schriftgröße. \end{DoxyCompactList}\item 
+\hyperlink{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265}{Scale\-Mode} \hyperlink{classGUIColorScalePanel_ad2f795e0d3a1c8e731da16d3320dbd34}{mode}
+\begin{DoxyCompactList}\small\item\em Der Darstellungsmodus. \end{DoxyCompactList}\item 
 wx\-Colour \hyperlink{classGUIColorScalePanel_a48e282e7a3bfff30894e9e6edfd120dc}{text\-\_\-color}
-\item 
+\begin{DoxyCompactList}\small\item\em Die Schriftfarbe. \end{DoxyCompactList}\item 
 wx\-Image $\ast$ \hyperlink{classGUIColorScalePanel_ac398e4b12cea263a89db6dd236ec1e87}{image}
-\item 
+\begin{DoxyCompactList}\small\item\em Bild, das die Skala ohne Steuerelemente enthält. \end{DoxyCompactList}\item 
 int \hyperlink{classGUIColorScalePanel_ab3da81e6c3cfb9122c0291584276a54d}{current\-\_\-mx}
-\item 
+\begin{DoxyCompactList}\small\item\em Zwischenspeicher für die Mausposition, zum behandeln von Mausinteraktionen. \end{DoxyCompactList}\item 
 int \hyperlink{classGUIColorScalePanel_abb73679c805d8bcdd1ca0cb602887f84}{current\-\_\-my}
-\item 
+\begin{DoxyCompactList}\small\item\em Zwischenspeicher für die Mausposition, zum behandeln von Mausinteraktionen. \end{DoxyCompactList}\item 
 float \hyperlink{classGUIColorScalePanel_a41599e2046e6766d5276c95d4aa54ad3}{x}
-\item 
+\begin{DoxyCompactList}\small\item\em Position (X) der Skala. \end{DoxyCompactList}\item 
 float \hyperlink{classGUIColorScalePanel_a5a33f7666c1c49ca8cfe2e4de3dd06e0}{y}
-\item 
+\begin{DoxyCompactList}\small\item\em Position Y) der Skala. \end{DoxyCompactList}\item 
 float \hyperlink{classGUIColorScalePanel_a1bc7bdf89d2447cddd08f5ae5f6638fa}{width}
-\item 
+\begin{DoxyCompactList}\small\item\em Breite der Skala. \end{DoxyCompactList}\item 
 float \hyperlink{classGUIColorScalePanel_a5bbc9ff741f566a75f757e54324dac5a}{height}
-\item 
+\begin{DoxyCompactList}\small\item\em Höhe der Skala. \end{DoxyCompactList}\item 
 bool \hyperlink{classGUIColorScalePanel_aec005c07c64a17ffe6d362f4de0a04b1}{scaling}
-\item 
+\begin{DoxyCompactList}\small\item\em Wird gerade in der Größe verändert. \end{DoxyCompactList}\item 
 bool \hyperlink{classGUIColorScalePanel_a3330450ed906fb99f56ed825d53f69e1}{transforming}
-\item 
+\begin{DoxyCompactList}\small\item\em Wird gerade transformiert (Größe oder Position). \end{DoxyCompactList}\item 
 bool \hyperlink{classGUIColorScalePanel_ac7050aa7729236561154b0b9be894ed6}{prev\-\_\-mouse\-\_\-down}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em zwischenspeicher für den Mausstatus. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -101,6 +101,31 @@ Definiert in Zeile 21 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 
 
+\subsection{Dokumentation der Aufzählungstypen}
+\hypertarget{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!Scale\-Mode@{Scale\-Mode}}
+\index{Scale\-Mode@{Scale\-Mode}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
+\subsubsection[{Scale\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf G\-U\-I\-Color\-Scale\-Panel\-::\-Scale\-Mode}}}\label{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265}
+
+
+Modus der Skalendarstellung. 
+
+\begin{Desc}
+\item[Aufzählungswerte]\par
+\begin{description}
+\index{S\-C\-M\-\_\-\-N\-O\-N\-E@{S\-C\-M\-\_\-\-N\-O\-N\-E}!G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}}\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!S\-C\-M\-\_\-\-N\-O\-N\-E@{S\-C\-M\-\_\-\-N\-O\-N\-E}}\item[{\em 
+\hypertarget{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265a341cbf92114357f8101219493b2e8b37}{S\-C\-M\-\_\-\-N\-O\-N\-E}\label{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265a341cbf92114357f8101219493b2e8b37}
+}]Keine Skala. \index{S\-C\-M\-\_\-\-H\-O\-R\-I\-Z\-O\-N\-T\-A\-L@{S\-C\-M\-\_\-\-H\-O\-R\-I\-Z\-O\-N\-T\-A\-L}!G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}}\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!S\-C\-M\-\_\-\-H\-O\-R\-I\-Z\-O\-N\-T\-A\-L@{S\-C\-M\-\_\-\-H\-O\-R\-I\-Z\-O\-N\-T\-A\-L}}\item[{\em 
+\hypertarget{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265a2a91733dc30cc826d816f7f558f3781e}{S\-C\-M\-\_\-\-H\-O\-R\-I\-Z\-O\-N\-T\-A\-L}\label{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265a2a91733dc30cc826d816f7f558f3781e}
+}]Eine horizontal ausgerichtete Skala. \index{S\-C\-M\-\_\-\-V\-E\-R\-T\-I\-C\-A\-L@{S\-C\-M\-\_\-\-V\-E\-R\-T\-I\-C\-A\-L}!G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}}\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!S\-C\-M\-\_\-\-V\-E\-R\-T\-I\-C\-A\-L@{S\-C\-M\-\_\-\-V\-E\-R\-T\-I\-C\-A\-L}}\item[{\em 
+\hypertarget{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265aa3e90f467c8f641f72ee863bc29a4032}{S\-C\-M\-\_\-\-V\-E\-R\-T\-I\-C\-A\-L}\label{classGUIColorScalePanel_a56a63e898188b90b82295ff7c3ebc265aa3e90f467c8f641f72ee863bc29a4032}
+}]Eine vertikal ausgerichtete Skala. \end{description}
+\end{Desc}
+
+
+Definiert in Zeile 26 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
+
+
+
 \subsection{Beschreibung der Konstruktoren und Destruktoren}
 \hypertarget{classGUIColorScalePanel_ad4ad453f831d149cc9fde46cba883431}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}}
 \index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
@@ -109,7 +134,11 @@ Definiert in Zeile 21 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 {}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_ad4ad453f831d149cc9fde46cba883431}
+
+
 Der Konstruktor. 
+
+
 
 Definiert in Zeile 21 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 
@@ -120,7 +149,11 @@ Definiert in Zeile 21 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classGUIColorScalePanel_a7e6f0e0703269ce666989af49fef3369}
+
+
 Der Destruktor. 
+
+
 
 Definiert in Zeile 291 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 
@@ -135,7 +168,11 @@ Definiert in Zeile 291 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 \item[{bool}]{to\-\_\-scale}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_ac8faaae6f7016f0fecedfc350b65644b}
+
+
 Passt die Größe und Position der Skala an die Größe der Grafik an. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em img\-\_\-dim} & Größe der Grafik. \\
 \hline
@@ -165,7 +202,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{float}]{zoom}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_aa7d5eb68ecd55e23b2e8969a21c32a22}
+
+
 Gibt die bei einem bestimmten Zoomfaktor eingenommene Fläche zurück. 
+
+
 
 Definiert in Zeile 149 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 
@@ -210,7 +251,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 
 \hypertarget{classGUIColorScalePanel_a4af2d1c1f161f42e2d6573315caec82f}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!get\-Mode@{get\-Mode}}
 \index{get\-Mode@{get\-Mode}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
-\subsubsection[{get\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}G\-U\-I\-Color\-Scale\-Panel\-::\-Scale\-Mode G\-U\-I\-Color\-Scale\-Panel\-::get\-Mode (
+\subsubsection[{get\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-U\-I\-Color\-Scale\-Panel\-::\-Scale\-Mode} G\-U\-I\-Color\-Scale\-Panel\-::get\-Mode (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -229,7 +270,11 @@ Definiert in Zeile 263 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classGUIColorScalePanel_a5b69bf4853de97fa2445721165cab206}
+
+
 Gibt die Schrittweite der Skalenbeschriftung. 
+
+
 
 Definiert in Zeile 279 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 
@@ -296,7 +341,11 @@ Definiert in Zeile 167 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 \item[{float}]{zoom}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_a59e27a091ec86d4c3e649f432a10ec08}
-Behandelt die Mausaktionen und verändert ggf. Größe oder Position des Skala. 
+
+
+Behandelt die Mausaktionen und verändert ggf. 
+
+Größe oder Position des Skala. 
 \begin{DoxyParams}{Parameter}
 {\em event} & Das zu behandelnde Maus-\/event. \\
 \hline
@@ -331,7 +380,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{wx\-Point \&}]{mouse\-\_\-pos}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_a4b17b0a63d3921ce09ffe5a99b6955a5}
+
+
 Gibt zurück, ob sich die Maus über der Fläche der Skala befindet. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em img\-\_\-coords} & Position der Grafik auf der Zeichenfläche. \\
 \hline
@@ -364,8 +417,14 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{wx\-Point \&}]{img\-\_\-coords}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_aaf6408cc09932a82afc7b2c233ec64c8}
+
+
 Zeichnet die Temperaturskala mit einem bestimmten device context. 
+
+
 \begin{DoxyParams}{Parameter}
+{\em dc} & Der zum Zeichnen zu verwendende device context. \\
+\hline
 {\em zoom} & Faktor zum Skalieren der Skala. \\
 \hline
 {\em img\-\_\-coords} & Position der Grafik auf der Zeichenfläche. \\
@@ -394,7 +453,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{int}]{img\-\_\-height}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_a73f647d4f5eeb6b653777bb4c55696fa}
+
+
 Zeichnet die Temperaturskala neu. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em img\-\_\-width} & Breite des Bildes, für das die Skala gezeichnet wird. \\
 \hline
@@ -407,8 +470,7 @@ Definiert in Zeile 57 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -435,13 +497,18 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{int}]{font\-Size}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_ae26f3f500092717aa7e9a85126b38461}
+
+
 Setzt die Schriftgröße der Skala. 
+
+
 
 Definiert in Zeile 259 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -454,16 +521,21 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \index{set\-Mode@{set\-Mode}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{set\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Color\-Scale\-Panel\-::set\-Mode (
 \begin{DoxyParamCaption}
-\item[{Scale\-Mode}]{mode}
+\item[{{\bf Scale\-Mode}}]{mode}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_aba2363ced766a14d72ad5448502f62a4}
+
+
 Setzt den Modus der Skala. 
+
+
 
 Definiert in Zeile 267 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -479,13 +551,18 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{int}]{step\-Width}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_aba534a319236878bc3504050d8227fe4}
+
+
 Setzt die Schrittweite der Skalenbeschriftung. 
+
+
 
 Definiert in Zeile 283 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -501,13 +578,18 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{const wx\-Colour \&}]{text\-Color}
 \end{DoxyParamCaption}
 )}}\label{classGUIColorScalePanel_ad9056636be2c0707127225484f0d0392}
+
+
 Setzt die Schriftfarbe der Skala. 
+
+
 
 Definiert in Zeile 275 der Datei G\-U\-I\-Color\-Scale\-Panel.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -522,98 +604,154 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \hypertarget{classGUIColorScalePanel_ab3da81e6c3cfb9122c0291584276a54d}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!current\-\_\-mx@{current\-\_\-mx}}
 \index{current\-\_\-mx@{current\-\_\-mx}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{current\-\_\-mx}]{\setlength{\rightskip}{0pt plus 5cm}int G\-U\-I\-Color\-Scale\-Panel\-::current\-\_\-mx\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_ab3da81e6c3cfb9122c0291584276a54d}
+
+
 Zwischenspeicher für die Mausposition, zum behandeln von Mausinteraktionen. 
+
+
 
 Definiert in Zeile 146 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_abb73679c805d8bcdd1ca0cb602887f84}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!current\-\_\-my@{current\-\_\-my}}
 \index{current\-\_\-my@{current\-\_\-my}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{current\-\_\-my}]{\setlength{\rightskip}{0pt plus 5cm}int G\-U\-I\-Color\-Scale\-Panel\-::current\-\_\-my\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_abb73679c805d8bcdd1ca0cb602887f84}
+
+
 Zwischenspeicher für die Mausposition, zum behandeln von Mausinteraktionen. 
+
+
 
 Definiert in Zeile 150 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_acd79c1dedc939040b03f54f21e78d72f}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!font\-\_\-size@{font\-\_\-size}}
 \index{font\-\_\-size@{font\-\_\-size}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{font\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int G\-U\-I\-Color\-Scale\-Panel\-::font\-\_\-size\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_acd79c1dedc939040b03f54f21e78d72f}
+
+
 Die Schriftgröße. 
+
+
 
 Definiert in Zeile 130 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_a5bbc9ff741f566a75f757e54324dac5a}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!height@{height}}
 \index{height@{height}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}float G\-U\-I\-Color\-Scale\-Panel\-::height\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_a5bbc9ff741f566a75f757e54324dac5a}
+
+
 Höhe der Skala. 
+
+
 
 Definiert in Zeile 166 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_ac398e4b12cea263a89db6dd236ec1e87}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!image@{image}}
 \index{image@{image}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Image$\ast$ G\-U\-I\-Color\-Scale\-Panel\-::image\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_ac398e4b12cea263a89db6dd236ec1e87}
+
+
 Bild, das die Skala ohne Steuerelemente enthält. 
+
+
 
 Definiert in Zeile 142 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_ad2f795e0d3a1c8e731da16d3320dbd34}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!mode@{mode}}
 \index{mode@{mode}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
-\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}Scale\-Mode G\-U\-I\-Color\-Scale\-Panel\-::mode\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_ad2f795e0d3a1c8e731da16d3320dbd34}
+\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scale\-Mode} G\-U\-I\-Color\-Scale\-Panel\-::mode\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_ad2f795e0d3a1c8e731da16d3320dbd34}
+
+
 Der Darstellungsmodus. 
+
+
 
 Definiert in Zeile 134 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_ac7050aa7729236561154b0b9be894ed6}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!prev\-\_\-mouse\-\_\-down@{prev\-\_\-mouse\-\_\-down}}
 \index{prev\-\_\-mouse\-\_\-down@{prev\-\_\-mouse\-\_\-down}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{prev\-\_\-mouse\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-Color\-Scale\-Panel\-::prev\-\_\-mouse\-\_\-down\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_ac7050aa7729236561154b0b9be894ed6}
+
+
 zwischenspeicher für den Mausstatus. 
+
+
 
 Definiert in Zeile 178 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_aec005c07c64a17ffe6d362f4de0a04b1}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!scaling@{scaling}}
 \index{scaling@{scaling}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{scaling}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-Color\-Scale\-Panel\-::scaling\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_aec005c07c64a17ffe6d362f4de0a04b1}
+
+
 Wird gerade in der Größe verändert. 
+
+
 
 Definiert in Zeile 170 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_a5f9789cc727854594c7d29c392578427}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!step\-\_\-width@{step\-\_\-width}}
 \index{step\-\_\-width@{step\-\_\-width}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{step\-\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}int G\-U\-I\-Color\-Scale\-Panel\-::step\-\_\-width\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_a5f9789cc727854594c7d29c392578427}
+
+
 Schrittweite der Beschriftung. 
+
+
 
 Definiert in Zeile 126 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_a48e282e7a3bfff30894e9e6edfd120dc}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!text\-\_\-color@{text\-\_\-color}}
 \index{text\-\_\-color@{text\-\_\-color}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{text\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Colour G\-U\-I\-Color\-Scale\-Panel\-::text\-\_\-color\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_a48e282e7a3bfff30894e9e6edfd120dc}
+
+
 Die Schriftfarbe. 
+
+
 
 Definiert in Zeile 138 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_a3330450ed906fb99f56ed825d53f69e1}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!transforming@{transforming}}
 \index{transforming@{transforming}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{transforming}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-Color\-Scale\-Panel\-::transforming\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_a3330450ed906fb99f56ed825d53f69e1}
+
+
 Wird gerade transformiert (Größe oder Position). 
+
+
 
 Definiert in Zeile 174 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_a1bc7bdf89d2447cddd08f5ae5f6638fa}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!width@{width}}
 \index{width@{width}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}float G\-U\-I\-Color\-Scale\-Panel\-::width\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_a1bc7bdf89d2447cddd08f5ae5f6638fa}
+
+
 Breite der Skala. 
+
+
 
 Definiert in Zeile 162 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_a41599e2046e6766d5276c95d4aa54ad3}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!x@{x}}
 \index{x@{x}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float G\-U\-I\-Color\-Scale\-Panel\-::x\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_a41599e2046e6766d5276c95d4aa54ad3}
+
+
 Position (X) der Skala. 
+
+
 
 Definiert in Zeile 154 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 \hypertarget{classGUIColorScalePanel_a5a33f7666c1c49ca8cfe2e4de3dd06e0}{\index{G\-U\-I\-Color\-Scale\-Panel@{G\-U\-I\-Color\-Scale\-Panel}!y@{y}}
 \index{y@{y}!GUIColorScalePanel@{G\-U\-I\-Color\-Scale\-Panel}}
 \subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float G\-U\-I\-Color\-Scale\-Panel\-::y\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIColorScalePanel_a5a33f7666c1c49ca8cfe2e4de3dd06e0}
+
+
 Position Y) der Skala. 
+
+
 
 Definiert in Zeile 158 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
@@ -621,5 +759,5 @@ Definiert in Zeile 158 der Datei G\-U\-I\-Color\-Scale\-Panel.\-h.
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/\-G\-U\-I/G\-U\-I\-Color\-Scale\-Panel.\-h\item 
-simpleanalyzer-\/gui/src/\-G\-U\-I/G\-U\-I\-Color\-Scale\-Panel.\-cpp\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{GUIColorScalePanel_8h}{G\-U\-I\-Color\-Scale\-Panel.\-h}\item 
+simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{GUIColorScalePanel_8cpp}{G\-U\-I\-Color\-Scale\-Panel.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,337 @@
+\hypertarget{namespaceCSVToSD}{\section{C\-S\-V\-To\-S\-D-\/\-Namensbereichsreferenz}
+\label{namespaceCSVToSD}\index{C\-S\-V\-To\-S\-D@{C\-S\-V\-To\-S\-D}}
+}
+
+
+Namespace des .csv-\/zu-\/.\-tsd-\/\-Converterprogramms.  
+
+
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCSVToSD_1_1Options}{Options}
+\begin{DoxyCompactList}\small\item\em Strunktur für die Programmeinstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funktionen}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespaceCSVToSD_a268ecb11b27ccafb712296ea053c7869}{contains} (std\-::vector$<$ string $>$ \&Vec, const string \&Element)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein String in einer Liste von Strings befindet. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceCSVToSD_afda229f036fd5340f5ba8becbe1e530a}{contains} (std\-::vector$<$ int $>$ \&Vec, const int \&Element)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich eine Ganzzahl in einer Liste von Ganzzahlen befindet. \end{DoxyCompactList}\item 
+string \hyperlink{namespaceCSVToSD_aeac9cdcffeca7cf1d8990e27fc2456ce}{get\-Text\-Block} (string data, int n)
+\begin{DoxyCompactList}\small\item\em Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceCSVToSD_a2e2e7a5141b8cf519db3c37c9b2cc410}{parse\-Line} (string line, vector$<$ string $>$ \&out, vector$<$ string $>$ $\ast$timestamps, vector$<$ string $>$ $\ast$names, vector$<$ int $>$ $\ast$valid\-\_\-cols)
+\begin{DoxyCompactList}\small\item\em Sammelt Daten aus einer Textzeile (string). \end{DoxyCompactList}\item 
+void \hyperlink{namespaceCSVToSD_a4f125d9c8df307d21dbb5363f6422b4d}{replace\-All} (string \&str, const string \&from, const string \&to)
+\begin{DoxyCompactList}\small\item\em Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen. \end{DoxyCompactList}\item 
+int \hyperlink{namespaceCSVToSD_ab24aaf410a1c332e2a84b42af50e5fd9}{convert} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die .csv-\/\-Datei um eine .tsd-\/\-Datei zu generieren, bzw. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variablen}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{namespaceCSVToSD_ad0eb84e08f9ed06630458f5dcc91b511}{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S} = 2
+\begin{DoxyCompactList}\small\item\em Anzahl der Suchpfade für die Konfigurationsdatei. \end{DoxyCompactList}\item 
+string \hyperlink{namespaceCSVToSD_ad67595c16b599d615449d991630e288d}{configpaths} \mbox{[}\hyperlink{namespaceCSVToSD_ad0eb84e08f9ed06630458f5dcc91b511}{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Suchpfade für die Konfigurationsdatei. \end{DoxyCompactList}\item 
+struct \hyperlink{structCSVToSD_1_1Options}{C\-S\-V\-To\-S\-D\-::\-Options} \hyperlink{namespaceCSVToSD_a16dddcd8b3566666b93a413bbfec206e}{opts}
+\begin{DoxyCompactList}\small\item\em Hält die verwendeten Programmeinstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Namespace des .csv-\/zu-\/.\-tsd-\/\-Converterprogramms. 
+
+\subsection{Dokumentation der Funktionen}
+\hypertarget{namespaceCSVToSD_a268ecb11b27ccafb712296ea053c7869}{\index{C\-S\-V\-To\-S\-D@{C\-S\-V\-To\-S\-D}!contains@{contains}}
+\index{contains@{contains}!CSVToSD@{C\-S\-V\-To\-S\-D}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-S\-V\-To\-S\-D\-::contains (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ string $>$ \&}]{Vec, }
+\item[{const string \&}]{Element}
+\end{DoxyParamCaption}
+)}}\label{namespaceCSVToSD_a268ecb11b27ccafb712296ea053c7869}
+
+
+Testet, ob sich ein String in einer Liste von Strings befindet. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em Vec} & Liste der Strings. \\
+\hline
+{\em Element} & Der zu suchende String. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+true, wenn das Element gefunden wurde, sonst false. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 52 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{namespaceCSVToSD_a268ecb11b27ccafb712296ea053c7869_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCSVToSD_a268ecb11b27ccafb712296ea053c7869_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceCSVToSD_afda229f036fd5340f5ba8becbe1e530a}{\index{C\-S\-V\-To\-S\-D@{C\-S\-V\-To\-S\-D}!contains@{contains}}
+\index{contains@{contains}!CSVToSD@{C\-S\-V\-To\-S\-D}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool C\-S\-V\-To\-S\-D\-::contains (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$ \&}]{Vec, }
+\item[{const int \&}]{Element}
+\end{DoxyParamCaption}
+)}}\label{namespaceCSVToSD_afda229f036fd5340f5ba8becbe1e530a}
+
+
+Testet, ob sich eine Ganzzahl in einer Liste von Ganzzahlen befindet. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em Vec} & Liste der Ganzzahlen. \\
+\hline
+{\em Element} & Die zu suchende Ganzzahl. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+true, wenn das Element gefunden wurde, sonst false. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 65 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{namespaceCSVToSD_afda229f036fd5340f5ba8becbe1e530a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceCSVToSD_ab24aaf410a1c332e2a84b42af50e5fd9}{\index{C\-S\-V\-To\-S\-D@{C\-S\-V\-To\-S\-D}!convert@{convert}}
+\index{convert@{convert}!CSVToSD@{C\-S\-V\-To\-S\-D}}
+\subsubsection[{convert}]{\setlength{\rightskip}{0pt plus 5cm}int C\-S\-V\-To\-S\-D\-::convert (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{namespaceCSVToSD_ab24aaf410a1c332e2a84b42af50e5fd9}
+
+
+Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die .csv-\/\-Datei um eine .tsd-\/\-Datei zu generieren, bzw. 
+
+die Daten der .csv-\/\-Datei ein eine .tsd-\/\-Datei umzuwandeln. Wird duch die Funktion \hyperlink{csvtosd_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()} von außerhalb des Namespaces aufgerufen. 
+\begin{DoxyParams}{Parameter}
+{\em argc} & Anzahl der Programmargumente. \\
+\hline
+{\em argv} & Die Programmargumente. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 156 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCSVToSD_ab24aaf410a1c332e2a84b42af50e5fd9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{namespaceCSVToSD_ab24aaf410a1c332e2a84b42af50e5fd9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceCSVToSD_aeac9cdcffeca7cf1d8990e27fc2456ce}{\index{C\-S\-V\-To\-S\-D@{C\-S\-V\-To\-S\-D}!get\-Text\-Block@{get\-Text\-Block}}
+\index{get\-Text\-Block@{get\-Text\-Block}!CSVToSD@{C\-S\-V\-To\-S\-D}}
+\subsubsection[{get\-Text\-Block}]{\setlength{\rightskip}{0pt plus 5cm}string C\-S\-V\-To\-S\-D\-::get\-Text\-Block (
+\begin{DoxyParamCaption}
+\item[{string}]{data, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{namespaceCSVToSD_aeac9cdcffeca7cf1d8990e27fc2456ce}
+
+
+Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em data} & Der Ausgansstring. \\
+\hline
+{\em n} & Index des zu findenden Blocks. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der n-\/te durch Leerzeichen getrennte Teilstring. \char`\"{}\char`\"{} Bei ungültigem Index. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 78 der Datei main.\-cpp.
+
+\hypertarget{namespaceCSVToSD_a2e2e7a5141b8cf519db3c37c9b2cc410}{\index{C\-S\-V\-To\-S\-D@{C\-S\-V\-To\-S\-D}!parse\-Line@{parse\-Line}}
+\index{parse\-Line@{parse\-Line}!CSVToSD@{C\-S\-V\-To\-S\-D}}
+\subsubsection[{parse\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void C\-S\-V\-To\-S\-D\-::parse\-Line (
+\begin{DoxyParamCaption}
+\item[{string}]{line, }
+\item[{vector$<$ string $>$ \&}]{out, }
+\item[{vector$<$ string $>$ $\ast$}]{timestamps, }
+\item[{vector$<$ string $>$ $\ast$}]{names, }
+\item[{vector$<$ int $>$ $\ast$}]{valid\-\_\-cols}
+\end{DoxyParamCaption}
+)}}\label{namespaceCSVToSD_a2e2e7a5141b8cf519db3c37c9b2cc410}
+
+
+Sammelt Daten aus einer Textzeile (string). 
+
+
+\begin{DoxyParams}{Parameter}
+{\em line} & Die zu untersuchende Textzeile. \\
+\hline
+{\em out} & Ausgabevariable für die Sensordaten der Zeile. Alle Spalten nach opts.\-start\-\_\-col werden als Sensordatenspalten betrachtet. \\
+\hline
+{\em timestamps} & Wenn nicht N\-U\-L\-L, Ausgabevariable für den Zeitstempel der Zeile (opts.\-timecol). Der Zeitstempel wird an die übergebene Liste angehängt. \\
+\hline
+{\em names} & Wenn nicht N\-U\-L\-L, Ausgabevariable für den Namen der Zeile (opts.\-namecol). Der Name wird an die übergebene Liste angehängt. \\
+\hline
+{\em valid\-\_\-cols} & Wenn nicht N\-U\-L\-L, werden nur die Sensordaten-\/\-Spalten mit den Indices dieser Liste ausgewertet. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 112 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCSVToSD_a2e2e7a5141b8cf519db3c37c9b2cc410_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCSVToSD_a2e2e7a5141b8cf519db3c37c9b2cc410_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceCSVToSD_a4f125d9c8df307d21dbb5363f6422b4d}{\index{C\-S\-V\-To\-S\-D@{C\-S\-V\-To\-S\-D}!replace\-All@{replace\-All}}
+\index{replace\-All@{replace\-All}!CSVToSD@{C\-S\-V\-To\-S\-D}}
+\subsubsection[{replace\-All}]{\setlength{\rightskip}{0pt plus 5cm}void C\-S\-V\-To\-S\-D\-::replace\-All (
+\begin{DoxyParamCaption}
+\item[{string \&}]{str, }
+\item[{const string \&}]{from, }
+\item[{const string \&}]{to}
+\end{DoxyParamCaption}
+)}}\label{namespaceCSVToSD_a4f125d9c8df307d21dbb5363f6422b4d}
+
+
+Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em str} & Der zu durchsuchende String. \\
+\hline
+{\em from} & Der zu ersetzende Teilstring. \\
+\hline
+{\em to} & Der Teilstring, durch den ersetzt werden soll. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 142 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceCSVToSD_a4f125d9c8df307d21dbb5363f6422b4d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variablen-\/\-Dokumentation}
+\hypertarget{namespaceCSVToSD_ad67595c16b599d615449d991630e288d}{\index{C\-S\-V\-To\-S\-D@{C\-S\-V\-To\-S\-D}!configpaths@{configpaths}}
+\index{configpaths@{configpaths}!CSVToSD@{C\-S\-V\-To\-S\-D}}
+\subsubsection[{configpaths}]{\setlength{\rightskip}{0pt plus 5cm}string C\-S\-V\-To\-S\-D\-::configpaths\mbox{[}{\bf N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}\mbox{]}}}\label{namespaceCSVToSD_ad67595c16b599d615449d991630e288d}
+{\bfseries Initialisierung\-:}
+\begin{DoxyCode}
+\{
+        \textcolor{stringliteral}{"/usr/local/share/simpleanalyzer/csvtosd.conf"},
+        \textcolor{stringliteral}{"/usr/share/simpleanalyzer/csvtosd.conf"}
+    \}
+\end{DoxyCode}
+
+
+Suchpfade für die Konfigurationsdatei. 
+
+Das Verzeichnis der ausführbaren Datei wird immer geprüft. 
+
+Definiert in Zeile 28 der Datei main.\-cpp.
+
+\hypertarget{namespaceCSVToSD_ad0eb84e08f9ed06630458f5dcc91b511}{\index{C\-S\-V\-To\-S\-D@{C\-S\-V\-To\-S\-D}!N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S@{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}}
+\index{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S@{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}!CSVToSD@{C\-S\-V\-To\-S\-D}}
+\subsubsection[{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}]{\setlength{\rightskip}{0pt plus 5cm}const int C\-S\-V\-To\-S\-D\-::\-N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S = 2}}\label{namespaceCSVToSD_ad0eb84e08f9ed06630458f5dcc91b511}
+
+
+Anzahl der Suchpfade für die Konfigurationsdatei. 
+
+
+
+Definiert in Zeile 23 der Datei main.\-cpp.
+
+\hypertarget{namespaceCSVToSD_a16dddcd8b3566666b93a413bbfec206e}{\index{C\-S\-V\-To\-S\-D@{C\-S\-V\-To\-S\-D}!opts@{opts}}
+\index{opts@{opts}!CSVToSD@{C\-S\-V\-To\-S\-D}}
+\subsubsection[{opts}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf C\-S\-V\-To\-S\-D\-::\-Options}  C\-S\-V\-To\-S\-D\-::opts}}\label{namespaceCSVToSD_a16dddcd8b3566666b93a413bbfec206e}
+
+
+Hält die verwendeten Programmeinstellungen. 
+

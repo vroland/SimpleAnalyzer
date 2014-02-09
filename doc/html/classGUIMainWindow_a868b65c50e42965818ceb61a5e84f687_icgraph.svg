@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIMainWindow.xhtml#a62a20086c62508c133a2ac8a0496e543" target="_top" xlink:title="GUIMainWindow::OnActiveObject\lChange">
+<a xlink:href="classGUIMainWindow.xhtml#a62a20086c62508c133a2ac8a0496e543" target="_top" xlink:title="Öffnet das Popup&#45;Menü zum auswählen des aktiven Objekts. ">
 <polygon fill="none" stroke="black" points="202,-0 202,-34 368,-34 368,-0 202,-0"/>
 <text text-anchor="start" x="210" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnActiveObject</text>
 <text text-anchor="middle" x="285" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">Change</text>

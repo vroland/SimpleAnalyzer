@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classObjectData.xhtml#a9ae22360c1033fd4d019466d3361701d" target="_top" xlink:title="ObjectData::setName">
+<a xlink:href="classObjectData.xhtml#a9ae22360c1033fd4d019466d3361701d" target="_top" xlink:title="Setzt den Namen des Objekts. ">
 <polygon fill="none" stroke="black" points="213,-172.5 213,-193.5 325,-193.5 325,-172.5 213,-172.5"/>
 <text text-anchor="middle" x="269" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::setName</text>
 </a>
@@ -28,7 +28,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classObjectData.xhtml#a9f98769226284127c529724acaf5d4c6" target="_top" xlink:title="ObjectData::setMaxvolume">
+<a xlink:href="classObjectData.xhtml#a9f98769226284127c529724acaf5d4c6" target="_top" xlink:title="Setzt das maximale Tetraedervolumen für der Zerlegung. ">
 <polygon fill="none" stroke="black" points="201,-132.5 201,-153.5 337,-153.5 337,-132.5 201,-132.5"/>
 <text text-anchor="middle" x="269" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::setMaxvolume</text>
 </a>
@@ -40,7 +40,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classObjectData.xhtml#a330b3d3fa607221fae87e26f60baa0e7" target="_top" xlink:title="ObjectData::setQuality">
+<a xlink:href="classObjectData.xhtml#a330b3d3fa607221fae87e26f60baa0e7" target="_top" xlink:title="Sezt die Qualisätseinstellung für die Tetraeder bei der Zerlegung (s. ">
 <polygon fill="none" stroke="black" points="211,-92.5 211,-113.5 327,-113.5 327,-92.5 211,-92.5"/>
 <text text-anchor="middle" x="269" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::setQuality</text>
 </a>
@@ -52,7 +52,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" target="_top" xlink:title="ObjectData::setCurrentSensor\lIndex">
+<a xlink:href="classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" target="_top" xlink:title="Setzt den Index des aktuell verwendeten Sensordatensatzes. ">
 <polygon fill="none" stroke="black" points="194.5,-40 194.5,-74 343.5,-74 343.5,-40 194.5,-40"/>
 <text text-anchor="start" x="202.5" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::setCurrentSensor</text>
 <text text-anchor="middle" x="269" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">Index</text>
@@ -65,7 +65,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" target="_top" xlink:title="ObjectData::getMaterials">
+<a xlink:href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" target="_top" xlink:title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">
 <polygon fill="none" stroke="black" points="206.5,-0.5 206.5,-21.5 331.5,-21.5 331.5,-0.5 206.5,-0.5"/>
 <text text-anchor="middle" x="269" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::getMaterials</text>
 </a>

@@ -33,18 +33,12 @@ namespace Utils {
 		ALGORITHM_RAY,
 	};
 	/**
-	 * @brief Quadriert eine Zahl.
+	 * Quadriert eine Zahl.
+	 * @param d Die zu quadrierende Zahl.
+	 * @return \f$d^2\f$.
 	 */
 	inline double sqr(double d) {
 		return d*d;
-	}
-	/**
-	 * @brief Berechnet den Abstand zwischen zwei Punkten.
-	 * @param p1 Koordinaten des ersten Punkten als Liste dreier Koordinaten.
-	 * @param p2 Koordinaten des zweiten Punkten als Liste dreier Koordinaten.
-	 */
-	inline double getDistance_d(double* p1,double* p2) {
-		return sqrt(sqr(p1[0]-p2[0])+sqr(p1[1]-p2[1])+sqr(p1[2]-p2[2]));
 	}
 	/**
 	 * @brief Informationen über die Farbgebung bei der Visualisierung.
@@ -62,7 +56,7 @@ namespace Utils {
 	};
 	/**
 	 * @brief Begrenzt einen Wert auf den Bereich 0..1.
-	 * @param Die zu begrenzende Zahl.
+	 * @param h Die zu begrenzende Zahl.
 	 * @return Der den Grenzen entsprechende Wert.
 	 */
 	float clampHue(float h);
@@ -101,9 +95,18 @@ namespace Utils {
 	 * Wird für Sortieralgorithmen der Standardbibliothek benötigt.
 	 */
 	struct SensorPointComparator {
+		/**
+		 * Berechnet den Abstand zwischen zwei Punkten mithilfe des Satzes des Pythagoras.
+		 * @param p1 Koordinaten des ersten Punkten als Liste dreier Koordinaten.
+		 * @param p2 Koordinaten des zweiten Punkten als Liste dreier Koordinaten.
+		 */
+		inline double getDistance_d(double* p1,double* p2) {
+			return sqrt(sqr(p1[0]-p2[0])+sqr(p1[1]-p2[1])+sqr(p1[2]-p2[2]));
+		};
 		double meshpoint[3];		/**< Punkt, zu dem der Abstand ermittelt werden soll. */
-		bool operator() (SensorPoint p1,SensorPoint p2) {return (getDistance_d(meshpoint,p1.coords)<getDistance_d(meshpoint,p2.coords));}
-		/**<  Vergleichsoperator für den Abstand zum Punkt meshpoint. */
+		bool operator() (SensorPoint p1,SensorPoint p2) {
+			return (getDistance_d(meshpoint,p1.coords)<getDistance_d(meshpoint,p2.coords));
+		} /**<  Vergleichsoperator für den Abstand zum Punkt meshpoint. */
 	};
 	/**
 	 * Wandelt eine Fließkommazahl in einen wxWidgets-String um.
@@ -114,7 +117,7 @@ namespace Utils {
 	/**
 	 * Wandelt eine Fließkommazahl in einen wxWidgets-String um.
 	 * @param val Die umzuwandelnde Zahl.
-	 * @param val Anzahl der zu übernehmenden Stellen.
+	 * @param digits Anzahl der zu übernehmenden Stellen.
 	 * @return Der entstandene String.
 	 */
 	wxString floattowxstr(double val,int digits);

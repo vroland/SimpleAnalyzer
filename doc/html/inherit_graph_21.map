@@ -1,3 +1,4 @@
 <map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
-<area shape="rect" id="node1" href="$structRenderer_1_1Viewport__info.xhtml" title="Informationen über die Ansicht des Modells (Virtuelle Kamera) und welche Elemente dargestellt werden..." alt="" coords="5,5,168,35"/>
+<area shape="rect" id="node3" href="$classPropertiesBox.xhtml" title="Oberfläche zum Verändern/Anzeigen der Eigenschaften eines Objekts. " alt="" coords="149,5,253,35"/>
+<area shape="rect" id="node5" href="$classViewpropBox.xhtml" title="Oberfläche zum Verändern/Anzeigen der Visualisierungsoptionen. " alt="" coords="152,59,251,88"/>
 </map>

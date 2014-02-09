@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a780972413c43b3086e86c28d581d1f70" target="_top" xlink:title="GUICutRenderWindow\l::OnCutPropsChanged">
+<a xlink:href="classGUICutRenderWindow.xhtml#a780972413c43b3086e86c28d581d1f70" target="_top" xlink:title="Behandelt das Ändern von Parametern zur Berechnung der 2D&#45;Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="168.5,-104 168.5,-138 285.5,-138 285.5,-104 168.5,-104"/>
 <text text-anchor="start" x="176.5" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="227" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">::OnCutPropsChanged</text>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a50e92af9db469de6d0298e58eee783ce" target="_top" xlink:title="GUICutRenderWindow\l::OnSCutPropsChanged_spin">
+<a xlink:href="classGUICutRenderWindow.xhtml#a50e92af9db469de6d0298e58eee783ce" target="_top" xlink:title="Behandelt das Ändern von Parametern zur Berechnung der 2D&#45;Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="154,-52 154,-86 300,-86 300,-52 154,-52"/>
 <text text-anchor="start" x="162" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="227" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">::OnSCutPropsChanged_spin</text>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#ab57ff6c0d5e6465bb0f3b5cf0e6d9dc9" target="_top" xlink:title="GUICutRenderWindow\l::OnResize">
+<a xlink:href="classGUICutRenderWindow.xhtml#ab57ff6c0d5e6465bb0f3b5cf0e6d9dc9" target="_top" xlink:title="Behandelt Änderungen der Größe des Fensters. ">
 <polygon fill="none" stroke="black" points="168.5,-0 168.5,-34 285.5,-34 285.5,-0 168.5,-0"/>
 <text text-anchor="start" x="176.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="227" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::OnResize</text>

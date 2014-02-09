@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" target="_top" xlink:title="Vector3D::getX">
+<a xlink:href="classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" target="_top" xlink:title="Gibt das X&#45;Element des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="116,-80.5 116,-101.5 200,-101.5 200,-80.5 116,-80.5"/>
 <text text-anchor="middle" x="158" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::getX</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" target="_top" xlink:title="Vector3D::getY">
+<a xlink:href="classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" target="_top" xlink:title="Gibt das Y&#45;Element des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="116,-40.5 116,-61.5 200,-61.5 200,-40.5 116,-40.5"/>
 <text text-anchor="middle" x="158" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::getY</text>
 </a>
@@ -39,7 +39,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" target="_top" xlink:title="Vector3D::getZ">
+<a xlink:href="classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" target="_top" xlink:title="Gibt das Z&#45;Element des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="116.5,-0.5 116.5,-21.5 199.5,-21.5 199.5,-0.5 116.5,-0.5"/>
 <text text-anchor="middle" x="158" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::getZ</text>
 </a>

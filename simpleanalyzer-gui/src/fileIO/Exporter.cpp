@@ -11,7 +11,7 @@
 #include <string>
 
 using namespace std;
-#define GET_IO(i) data->materials.at(i).tetgenoutput
+#define GET_IO(i) data->getMaterials()->at(i).tetgenoutput
 #define CSV_SEP ";"
 
 
@@ -33,7 +33,7 @@ ObjectData::ObjectDataStatus Exporter::ExportLegacyVTK(string filename,ObjectDat
 	file << "DATASET POLYDATA" << endl;
 	int point_count = 0;
 	int tetrahedra_count = 0;
-	int material_count = data->materials.size();
+	int material_count = data->getMaterials()->size();
 	for (int m=0;m<material_count;m++) {
 		tetgenio* io = GET_IO(m);
 		point_count		 += io->numberofpoints;

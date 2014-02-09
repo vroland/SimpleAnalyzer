@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" target="_top" xlink:title="GUICutRenderWindow\l::renderImage">
+<a xlink:href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" target="_top" xlink:title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. ">
 <polygon fill="none" stroke="black" points="131.5,-40 131.5,-74 248.5,-74 248.5,-40 131.5,-40"/>
 <text text-anchor="start" x="139.5" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="190" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">::renderImage</text>
@@ -28,7 +28,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classInterpolator.xhtml#ad59ac6ed3822e08a67ac7d1ee88a5bd2" target="_top" xlink:title="Interpolator::interpolateTri">
+<a xlink:href="classInterpolator.xhtml#ad59ac6ed3822e08a67ac7d1ee88a5bd2" target="_top" xlink:title="Ermittelt den Wert für einen beliebigen Punkt in einer Ebene. ">
 <polygon fill="none" stroke="black" points="126,-0.5 126,-21.5 254,-21.5 254,-0.5 126,-0.5"/>
 <text text-anchor="middle" x="190" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Interpolator::interpolateTri</text>
 </a>
@@ -40,7 +40,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" target="_top" xlink:title="GUICutRenderWindow\l::renderCutBtClick">
+<a xlink:href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" target="_top" xlink:title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="290.5,-40 290.5,-74 407.5,-74 407.5,-40 290.5,-40"/>
 <text text-anchor="start" x="298.5" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="349" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">::renderCutBtClick</text>

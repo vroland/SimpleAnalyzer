@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" target="_top" xlink:title="Utils::hsvToRgb">
+<a xlink:href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" target="_top" xlink:title="Wandelt eine Farbe im HSV&#45;Format ins RGB&#45;Format um. ">
 <polygon fill="none" stroke="black" points="178,-40.5 178,-61.5 266,-61.5 266,-40.5 178,-40.5"/>
 <text text-anchor="middle" x="222" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::hsvToRgb</text>
 </a>

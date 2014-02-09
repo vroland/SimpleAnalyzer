@@ -20,6 +20,7 @@ var searchData=
   ['onfindmaxtsd',['OnFindMaxTSD',['../classGUIMainWindow.xhtml#af21ea342f481cfdd01ed04005f903ad5',1,'GUIMainWindow']]],
   ['ongeneralpropchange',['OnGeneralPropChange',['../classGUIMainWindow.xhtml#a0eb68f1e4a740486706f98eeca783a68',1,'GUIMainWindow']]],
   ['onimmediateupdatepropchange',['OnImmediateUpdatePropChange',['../classGUIMainWindow.xhtml#ae0b6c47ae833ea4b8323e9c344b1f70a',1,'GUIMainWindow']]],
+  ['oninit',['OnInit',['../classApplication.xhtml#aa6b97a4bf380f56a925910b4223016c5',1,'Application']]],
   ['onkeydown',['OnKeyDown',['../classGUITimeline.xhtml#a82c3ff544345678870f3738443387bc0',1,'GUITimeline']]],
   ['onmaterialselect',['OnMaterialSelect',['../classGUIMainWindow.xhtml#a6618f0cc7d26ba7690c32a996f0b812e',1,'GUIMainWindow']]],
   ['onmenufilequit',['OnMenuFileQuit',['../classGUIMainWindow.xhtml#a594fc9fea2ef8cc4febc3c48c0e260c4',1,'GUIMainWindow']]],
@@ -42,5 +43,6 @@ var searchData=
   ['onsensordatachange',['OnSensorDataChange',['../classGUIMainWindow.xhtml#a98249bb199993ad5920cf81f4b4a350a',1,'GUIMainWindow']]],
   ['onviewpropchange',['OnViewPropChange',['../classGUIMainWindow.xhtml#ada2a98f493fcdcbdc7bd6acb47d51218',1,'GUIMainWindow']]],
   ['onviewpropspinchange',['OnViewPropSpinChange',['../classGUIMainWindow.xhtml#a9d642647d7cb73e34ef88c76438206a7',1,'GUIMainWindow']]],
-  ['operator_28_29',['operator()',['../structUtils_1_1SensorPointComparator.xhtml#a92795eac49f9ea851c04a623c5a3d6b6',1,'Utils::SensorPointComparator']]]
+  ['operator_28_29',['operator()',['../structUtils_1_1SensorPointComparator.xhtml#a92795eac49f9ea851c04a623c5a3d6b6',1,'Utils::SensorPointComparator']]],
+  ['operator_3c_3c',['operator&lt;&lt;',['../GeometryClasses_8cpp.xhtml#a948421d7d2b275c202125839e5d7b843',1,'operator&lt;&lt;(std::ostream &amp;out, const Vector3D &amp;vec):&#160;GeometryClasses.cpp'],['../GeometryClasses_8h.xhtml#a948421d7d2b275c202125839e5d7b843',1,'operator&lt;&lt;(std::ostream &amp;out, const Vector3D &amp;vec):&#160;GeometryClasses.cpp'],['../Analyzer_8cpp.xhtml#a76f18f1502b49787fb79cde5d74a8199',1,'operator&lt;&lt;(std::ostream &amp;out, const Analyzer::AnalyzerData_object &amp;data):&#160;Analyzer.cpp']]]
 ];

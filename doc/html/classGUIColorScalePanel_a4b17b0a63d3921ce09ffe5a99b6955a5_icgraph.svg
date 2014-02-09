@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIRenderCutCanvas.xhtml#a42f81a939b256a87e76b3896fc0b9ce3" target="_top" xlink:title="GUIRenderCutCanvas\l::OnMouseDown">
+<a xlink:href="classGUIRenderCutCanvas.xhtml#a42f81a939b256a87e76b3896fc0b9ce3" target="_top" xlink:title="Behandelt klicken mit der Maus, deren Status zum verschieben der Ansicht benötigt wird...">
 <polygon fill="none" stroke="black" points="154,-0 154,-34 270,-34 270,-0 154,-0"/>
 <text text-anchor="start" x="162" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIRenderCutCanvas</text>
 <text text-anchor="middle" x="212" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::OnMouseDown</text>

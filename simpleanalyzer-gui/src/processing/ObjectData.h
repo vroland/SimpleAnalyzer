@@ -28,15 +28,15 @@ public:
 	 * @brief Die Daten eines Materials.
 	 */
 	struct MaterialData {
-		string name;
-		Interpolator::InterpolationMode interpolation_mode;
-		tetgenio* tetgeninput;
-		tetgenio* tetgenoutput;
-		bool* extrapolated;
-		float color[3];
-		double density;
-		double specificheatcapacity;
-		bool visible;
+		string name;										/**< Der Name des Materials. */
+		Interpolator::InterpolationMode interpolation_mode;	/**< Der zu verwendende Interpolationsmodus.*/
+		tetgenio* tetgeninput;								/**< Originalgeometrie im Tetgen-Format (s. Tetgen Dokumentation)*/
+		tetgenio* tetgenoutput;								/**< Durch Zerlegung erstellte Geometrie im Tetgen-Format (s. Tetgen Dokumentation)*/
+		bool* extrapolated;									/**< Liste, die für jeden Punkt in der aktuellen Geometrie angibt, ob er extra- (true) oder interpoliert (false) ist.*/
+		float color[3];										/**< Die Farbe des Materials im RGB-Format. */
+		double density;										/**< Die Dichte in \f$\frac{kg}{m^3}\f$ */
+		double specificheatcapacity;						/**< Spezifische Wärmekapazität in \f$\frac{kJ}{kg*K}\f$ */
+		bool visible;										/**< Soll das Material angezeigt werden? */
 	};
 	/**
 	 * Status einer die Objektdaten betreffenden Aktion.

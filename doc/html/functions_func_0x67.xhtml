@@ -74,6 +74,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
       <li class="current"><a href="functions_func.xhtml"><span>Funktionen</span></a></li>
       <li><a href="functions_vars.xhtml"><span>Variablen</span></a></li>
       <li><a href="functions_enum.xhtml"><span>Aufzählungen</span></a></li>
+      <li><a href="functions_eval.xhtml"><span>Aufzählungswerte</span></a></li>
       <li><a href="functions_rela.xhtml"><span>Verwandte&#160;Funktionen</span></a></li>
     </ul>
   </div>
@@ -106,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -151,6 +152,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </li>
 <li>getDisplayArea()
 : <a class="el" href="classGUIColorScalePanel.xhtml#aa7d5eb68ecd55e23b2e8969a21c32a22">GUIColorScalePanel</a>
+</li>
+<li>getDistance_d()
+: <a class="el" href="structUtils_1_1SensorPointComparator.xhtml#a2b31195024a7ec123551b2bb87043a68">Utils::SensorPointComparator</a>
 </li>
 <li>getDistanceTo()
 : <a class="el" href="classVector3D.xhtml#a42deb992ec2f44abfb5824ea4917135c">Vector3D</a>
@@ -289,8 +293,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 : <a class="el" href="classGUITimeline.xhtml#a1fa405314a0be38d95798fdc205827c3">GUITimeline</a>
 </li>
 <li>getVert()
-: <a class="el" href="classTetrahedron.xhtml#a88afe41ae5991168ad51ba4dbb2e1a6b">Tetrahedron</a>
-, <a class="el" href="classTriangle.xhtml#a9320d1ab83c104352bf5e8f2c8274334">Triangle</a>
+: <a class="el" href="classTriangle.xhtml#a9320d1ab83c104352bf5e8f2c8274334">Triangle</a>
+, <a class="el" href="classTetrahedron.xhtml#a88afe41ae5991168ad51ba4dbb2e1a6b">Tetrahedron</a>
 </li>
 <li>getViewport()
 : <a class="el" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2">Renderer</a>
@@ -309,8 +313,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 : <a class="el" href="classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197">Vector3D</a>
 </li>
 <li>getY()
-: <a class="el" href="classGUIColorScalePanel.xhtml#a5eff7202dade14031b7bf45f305f54e4">GUIColorScalePanel</a>
-, <a class="el" href="classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2">Vector3D</a>
+: <a class="el" href="classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2">Vector3D</a>
+, <a class="el" href="classGUIColorScalePanel.xhtml#a5eff7202dade14031b7bf45f305f54e4">GUIColorScalePanel</a>
 </li>
 <li>getZ()
 : <a class="el" href="classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7">Vector3D</a>
@@ -343,7 +347,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 01:43:19 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Feb 9 2014 15:44:35 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

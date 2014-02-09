@@ -1,6 +1,7 @@
 <map id="Vector3D::getAngleTo" name="Vector3D::getAngleTo">
-<area shape="rect" id="node3" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="221,5,333,35"/>
-<area shape="rect" id="node5" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="221,59,333,88"/>
-<area shape="rect" id="node7" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="223,112,332,141"/>
-<area shape="rect" id="node9" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Vector3D::getLength" alt="" coords="207,165,348,195"/>
+<area shape="rect" id="node3" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="221,5,333,35"/>
+<area shape="rect" id="node5" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="221,59,333,88"/>
+<area shape="rect" id="node7" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="223,112,332,141"/>
+<area shape="rect" id="node9" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Gibt die Länge des Vektors zurück. " alt="" coords="207,165,348,195"/>
+<area shape="rect" id="node11" href="$GeometryClasses_8cpp.xhtml#a73527f20206c906e9f333e0f233de13e" title="sqr" alt="" coords="397,165,437,195"/>
 </map>

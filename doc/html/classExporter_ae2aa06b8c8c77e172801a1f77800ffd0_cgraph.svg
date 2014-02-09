@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" target="_top" xlink:title="Triangle::getV1">
+<a xlink:href="classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" target="_top" xlink:title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. ">
 <polygon fill="none" stroke="black" points="162.5,-80.5 162.5,-101.5 245.5,-101.5 245.5,-80.5 162.5,-80.5"/>
 <text text-anchor="middle" x="204" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">Triangle::getV1</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" target="_top" xlink:title="Triangle::getV2">
+<a xlink:href="classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" target="_top" xlink:title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. ">
 <polygon fill="none" stroke="black" points="162.5,-40.5 162.5,-61.5 245.5,-61.5 245.5,-40.5 162.5,-40.5"/>
 <text text-anchor="middle" x="204" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">Triangle::getV2</text>
 </a>
@@ -39,7 +39,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" target="_top" xlink:title="Triangle::getV3">
+<a xlink:href="classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" target="_top" xlink:title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. ">
 <polygon fill="none" stroke="black" points="162.5,-0.5 162.5,-21.5 245.5,-21.5 245.5,-0.5 162.5,-0.5"/>
 <text text-anchor="middle" x="204" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Triangle::getV3</text>
 </a>

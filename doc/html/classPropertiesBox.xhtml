@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,113 +111,166 @@ Zusammengehörigkeiten von PropertiesBox:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
 <tr class="memitem:a9218399db23aa9a4200ccf60edd74f5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a9218399db23aa9a4200ccf60edd74f5a">PropertiesBox</a> (wxWindow *parent)</td></tr>
+<tr class="memdesc:a9218399db23aa9a4200ccf60edd74f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der Konstruktor.  <a href="#a9218399db23aa9a4200ccf60edd74f5a">Mehr ...</a><br/></td></tr>
 <tr class="separator:a9218399db23aa9a4200ccf60edd74f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adce6c28da4adced9bb98937c5cb85de0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#adce6c28da4adced9bb98937c5cb85de0">resize</a> ()</td></tr>
+<tr class="memdesc:adce6c28da4adced9bb98937c5cb85de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Behandelt Größenänderungen und passt die Positionen der Komponenten an.  <a href="#adce6c28da4adced9bb98937c5cb85de0">Mehr ...</a><br/></td></tr>
 <tr class="separator:adce6c28da4adced9bb98937c5cb85de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13b9ce3aa1761689ff4be9fadeab2d87"><td class="memItemLeft" align="right" valign="top">wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a13b9ce3aa1761689ff4be9fadeab2d87">getAnalyzeMarkerCheckBox</a> ()</td></tr>
+<tr class="memdesc:a13b9ce3aa1761689ff4be9fadeab2d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt die Checkbox zum markieren des auf der Zeitleiste ausgewählten Zeitpunkts zurück.  <a href="#a13b9ce3aa1761689ff4be9fadeab2d87">Mehr ...</a><br/></td></tr>
 <tr class="separator:a13b9ce3aa1761689ff4be9fadeab2d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0def09e75b2c748b2bb8fb78369a422c"><td class="memItemLeft" align="right" valign="top">wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a0def09e75b2c748b2bb8fb78369a422c">getAutoUpdateCeckBox</a> ()</td></tr>
+<tr class="memdesc:a0def09e75b2c748b2bb8fb78369a422c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt die Checkbox zum automatischen Neuberechnen der Temperaturverteilung nach einer Änderung an den Objekteigenschaften zurück.  <a href="#a0def09e75b2c748b2bb8fb78369a422c">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0def09e75b2c748b2bb8fb78369a422c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad788ed8a06f21958e3c6ea043a162918"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ad788ed8a06f21958e3c6ea043a162918">getClearAnalyzeMarkerBt</a> ()</td></tr>
+<tr class="memdesc:ad788ed8a06f21958e3c6ea043a162918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den Button zum Löschen aller Markierungen (s.  <a href="#ad788ed8a06f21958e3c6ea043a162918">Mehr ...</a><br/></td></tr>
 <tr class="separator:ad788ed8a06f21958e3c6ea043a162918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84eb37f7bc965f3eecb638d63fa4af48"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a84eb37f7bc965f3eecb638d63fa4af48">getSpecificHeatCapEdit</a> ()</td></tr>
+<tr class="memdesc:a84eb37f7bc965f3eecb638d63fa4af48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt das Eingabefeld für die spezifische Wärmekapazität zurück.  <a href="#a84eb37f7bc965f3eecb638d63fa4af48">Mehr ...</a><br/></td></tr>
 <tr class="separator:a84eb37f7bc965f3eecb638d63fa4af48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa564b32c992a780af80378ec66b3377f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#aa564b32c992a780af80378ec66b3377f">getCurrentMaterial</a> ()</td></tr>
+<tr class="memdesc:aa564b32c992a780af80378ec66b3377f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den Index des aktuell ausgewählten Materials zurück.  <a href="#aa564b32c992a780af80378ec66b3377f">Mehr ...</a><br/></td></tr>
 <tr class="separator:aa564b32c992a780af80378ec66b3377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a995d6f6b8f068f4db6d6543f057d3fde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a995d6f6b8f068f4db6d6543f057d3fde">setCurrentMaterial</a> (int index)</td></tr>
+<tr class="memdesc:a995d6f6b8f068f4db6d6543f057d3fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt den Index des aktuell ausgewählten Materials.  <a href="#a995d6f6b8f068f4db6d6543f057d3fde">Mehr ...</a><br/></td></tr>
 <tr class="separator:a995d6f6b8f068f4db6d6543f057d3fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a088fac7ebd80b9499a98ff3a1cc93a94"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a088fac7ebd80b9499a98ff3a1cc93a94">getDensityEdit</a> ()</td></tr>
+<tr class="memdesc:a088fac7ebd80b9499a98ff3a1cc93a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt das Eingabefeld für die Dichte des Materials zurück.  <a href="#a088fac7ebd80b9499a98ff3a1cc93a94">Mehr ...</a><br/></td></tr>
 <tr class="separator:a088fac7ebd80b9499a98ff3a1cc93a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98fdcce60c8fc8d7fea0adca8d9fe7c3"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a98fdcce60c8fc8d7fea0adca8d9fe7c3">getFindMaxBt</a> ()</td></tr>
+<tr class="memdesc:a98fdcce60c8fc8d7fea0adca8d9fe7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den Button zum Suchen des maximums zwischen zwei markierten Zeitpunkten (s.  <a href="#a98fdcce60c8fc8d7fea0adca8d9fe7c3">Mehr ...</a><br/></td></tr>
 <tr class="separator:a98fdcce60c8fc8d7fea0adca8d9fe7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27b80b42d1ab9717538de23297c8a80c"><td class="memItemLeft" align="right" valign="top">wxComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a27b80b42d1ab9717538de23297c8a80c">getInterpolationModeList</a> ()</td></tr>
+<tr class="memdesc:a27b80b42d1ab9717538de23297c8a80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt das Auswahlfeld für den zu verwendenden Interpolationsmodus zurück.  <a href="#a27b80b42d1ab9717538de23297c8a80c">Mehr ...</a><br/></td></tr>
 <tr class="separator:a27b80b42d1ab9717538de23297c8a80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe27b9cfb280154821fda1f9eb6d59e"><td class="memItemLeft" align="right" valign="top">wxListBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a0fe27b9cfb280154821fda1f9eb6d59e">getMatListBox</a> ()</td></tr>
+<tr class="memdesc:a0fe27b9cfb280154821fda1f9eb6d59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt die Auswahlbox für das Material, dessen Eigenschaften angezeigt werden sollen, zurück.  <a href="#a0fe27b9cfb280154821fda1f9eb6d59e">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0fe27b9cfb280154821fda1f9eb6d59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c51038eb2219e6465d213200adcbd1"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a10c51038eb2219e6465d213200adcbd1">getMatNameEdit</a> ()</td></tr>
+<tr class="memdesc:a10c51038eb2219e6465d213200adcbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt das Eingabefeld für den Materialnamen zurück.  <a href="#a10c51038eb2219e6465d213200adcbd1">Mehr ...</a><br/></td></tr>
 <tr class="separator:a10c51038eb2219e6465d213200adcbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a152592fad06b248540565859e6747602"><td class="memItemLeft" align="right" valign="top">wxStaticBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a152592fad06b248540565859e6747602">getMatPropBox</a> ()</td></tr>
+<tr class="memdesc:a152592fad06b248540565859e6747602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den Bereich, der die Materialeigenschaften enthält zurück.  <a href="#a152592fad06b248540565859e6747602">Mehr ...</a><br/></td></tr>
 <tr class="separator:a152592fad06b248540565859e6747602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade5cd5f8ad6d86a777844ff00e199cf7"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ade5cd5f8ad6d86a777844ff00e199cf7">getMaxVolumeEdit</a> ()</td></tr>
+<tr class="memdesc:ade5cd5f8ad6d86a777844ff00e199cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt das Eingabefeld für das maximale Tetraedervolumen zurück.  <a href="#ade5cd5f8ad6d86a777844ff00e199cf7">Mehr ...</a><br/></td></tr>
 <tr class="separator:ade5cd5f8ad6d86a777844ff00e199cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48eb0273411c2312509c20fd499cd068"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a48eb0273411c2312509c20fd499cd068">getNextMarkerBt</a> ()</td></tr>
+<tr class="memdesc:a48eb0273411c2312509c20fd499cd068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den Button zum Auswählen der nächsten Markierung (s.  <a href="#a48eb0273411c2312509c20fd499cd068">Mehr ...</a><br/></td></tr>
 <tr class="separator:a48eb0273411c2312509c20fd499cd068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a012e6f4ebf8bf3443b72fff9c313aa3b"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a012e6f4ebf8bf3443b72fff9c313aa3b">getObjNameEdit</a> ()</td></tr>
+<tr class="memdesc:a012e6f4ebf8bf3443b72fff9c313aa3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt das Eingeabefeld für den Objektnamen.  <a href="#a012e6f4ebf8bf3443b72fff9c313aa3b">Mehr ...</a><br/></td></tr>
 <tr class="separator:a012e6f4ebf8bf3443b72fff9c313aa3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e97de926ac7efd390e166c5f17445c9"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a4e97de926ac7efd390e166c5f17445c9">getPrevMarkerBt</a> ()</td></tr>
+<tr class="memdesc:a4e97de926ac7efd390e166c5f17445c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den Button zum Auswählen der vorherigen Markierung (s.  <a href="#a4e97de926ac7efd390e166c5f17445c9">Mehr ...</a><br/></td></tr>
 <tr class="separator:a4e97de926ac7efd390e166c5f17445c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bad07488cb993a3eb6ec85763d2469b"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a7bad07488cb993a3eb6ec85763d2469b">getQualityEdit</a> ()</td></tr>
+<tr class="memdesc:a7bad07488cb993a3eb6ec85763d2469b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt das Eingabefeld für die Zerlegungsqualität des Modells (s.  <a href="#a7bad07488cb993a3eb6ec85763d2469b">Mehr ...</a><br/></td></tr>
 <tr class="separator:a7bad07488cb993a3eb6ec85763d2469b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a175c8202f9356211dbb9e3afced44347"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a175c8202f9356211dbb9e3afced44347">getRecalcButton</a> ()</td></tr>
+<tr class="memdesc:a175c8202f9356211dbb9e3afced44347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den Button zum Neuberechnen der Temperaturverteilung zurück.  <a href="#a175c8202f9356211dbb9e3afced44347">Mehr ...</a><br/></td></tr>
 <tr class="separator:a175c8202f9356211dbb9e3afced44347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f2f08b742f77e1d9adad98bc1d5753b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGUITimeline.xhtml">GUITimeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a2f2f08b742f77e1d9adad98bc1d5753b">getSdTimeline</a> ()</td></tr>
+<tr class="memdesc:a2f2f08b742f77e1d9adad98bc1d5753b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt die Die Zeitleiste für zeitbezogene Sensordaten zurück.  <a href="#a2f2f08b742f77e1d9adad98bc1d5753b">Mehr ...</a><br/></td></tr>
 <tr class="separator:a2f2f08b742f77e1d9adad98bc1d5753b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c3c000011a8b66faf5965b26d696776"><td class="memItemLeft" align="right" valign="top">wxComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a9c3c000011a8b66faf5965b26d696776">getSensorDataList</a> ()</td></tr>
+<tr class="memdesc:a9c3c000011a8b66faf5965b26d696776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt das Auswahlfeld für den zu verwendenden Sensordatensatz zurück.  <a href="#a9c3c000011a8b66faf5965b26d696776">Mehr ...</a><br/></td></tr>
 <tr class="separator:a9c3c000011a8b66faf5965b26d696776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dadf68da6786bd09d4a882308e22e6f"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a5dadf68da6786bd09d4a882308e22e6f">getUpToDateLbl</a> ()</td></tr>
+<tr class="memdesc:a5dadf68da6786bd09d4a882308e22e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt die Beschiftungskomponente für die Warnung bei geänderten Objekteigenschaften zurück.  <a href="#a5dadf68da6786bd09d4a882308e22e6f">Mehr ...</a><br/></td></tr>
 <tr class="separator:a5dadf68da6786bd09d4a882308e22e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45688be94b4b06f34125aebf5004e617"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a45688be94b4b06f34125aebf5004e617">~PropertiesBox</a> ()</td></tr>
+<tr class="memdesc:a45688be94b4b06f34125aebf5004e617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der Destruktor.  <a href="#a45688be94b4b06f34125aebf5004e617">Mehr ...</a><br/></td></tr>
 <tr class="separator:a45688be94b4b06f34125aebf5004e617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attribute</h2></td></tr>
 <tr class="memitem:a0f5356371cde511efeb413bc2a98e6fc"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a0f5356371cde511efeb413bc2a98e6fc">recalcButton</a></td></tr>
+<tr class="memdesc:a0f5356371cde511efeb413bc2a98e6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Button zum Neuberechnen der Temperaturverteilung.  <a href="#a0f5356371cde511efeb413bc2a98e6fc">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0f5356371cde511efeb413bc2a98e6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac281563a94d4cdffd51084d88cafc692"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ac281563a94d4cdffd51084d88cafc692">objNameLbl</a></td></tr>
+<tr class="memdesc:ac281563a94d4cdffd51084d88cafc692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beschriftung für das Objektnamen-Eingabefeld.  <a href="#ac281563a94d4cdffd51084d88cafc692">Mehr ...</a><br/></td></tr>
 <tr class="separator:ac281563a94d4cdffd51084d88cafc692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bb26289d5da39d7996c794216f4d89b"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a7bb26289d5da39d7996c794216f4d89b">objNameEdit</a></td></tr>
+<tr class="memdesc:a7bb26289d5da39d7996c794216f4d89b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eingeabefeld für den Objektnamen.  <a href="#a7bb26289d5da39d7996c794216f4d89b">Mehr ...</a><br/></td></tr>
 <tr class="separator:a7bb26289d5da39d7996c794216f4d89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae07827304c19b4e71532fed5a4c65bb0"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ae07827304c19b4e71532fed5a4c65bb0">matNameLbl</a></td></tr>
+<tr class="memdesc:ae07827304c19b4e71532fed5a4c65bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beschriftung für das Materialnamen-Eingabefeld.  <a href="#ae07827304c19b4e71532fed5a4c65bb0">Mehr ...</a><br/></td></tr>
 <tr class="separator:ae07827304c19b4e71532fed5a4c65bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba989cc01ddce5251f021419bfe3408f"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#aba989cc01ddce5251f021419bfe3408f">matNameEdit</a></td></tr>
+<tr class="memdesc:aba989cc01ddce5251f021419bfe3408f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eingabefeld für den Materialnamen.  <a href="#aba989cc01ddce5251f021419bfe3408f">Mehr ...</a><br/></td></tr>
 <tr class="separator:aba989cc01ddce5251f021419bfe3408f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd0a5ccaa4e981b961685c5714e67f92"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#acd0a5ccaa4e981b961685c5714e67f92">upToDateLbl</a></td></tr>
+<tr class="memdesc:acd0a5ccaa4e981b961685c5714e67f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beschiftung für die Warnung bei geänderten Objekteigenschaften.  <a href="#acd0a5ccaa4e981b961685c5714e67f92">Mehr ...</a><br/></td></tr>
 <tr class="separator:acd0a5ccaa4e981b961685c5714e67f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac37df12581fc6f63aa87b2807d62fdb5"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ac37df12581fc6f63aa87b2807d62fdb5">maxVolumeLbl</a></td></tr>
+<tr class="memdesc:ac37df12581fc6f63aa87b2807d62fdb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beschriftung für das max.  <a href="#ac37df12581fc6f63aa87b2807d62fdb5">Mehr ...</a><br/></td></tr>
 <tr class="separator:ac37df12581fc6f63aa87b2807d62fdb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab738d2ef986a20be47a86bb676ae11db"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ab738d2ef986a20be47a86bb676ae11db">maxVolumeEdit</a></td></tr>
+<tr class="memdesc:ab738d2ef986a20be47a86bb676ae11db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eingabefeld für das maximale Tetraedervolumen.  <a href="#ab738d2ef986a20be47a86bb676ae11db">Mehr ...</a><br/></td></tr>
 <tr class="separator:ab738d2ef986a20be47a86bb676ae11db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5339a1b07ae669a349478cf5c3b0fde"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ad5339a1b07ae669a349478cf5c3b0fde">qualityLbl</a></td></tr>
+<tr class="memdesc:ad5339a1b07ae669a349478cf5c3b0fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beschriftung für das Zerlegungsqualität-Eingabefeld.  <a href="#ad5339a1b07ae669a349478cf5c3b0fde">Mehr ...</a><br/></td></tr>
 <tr class="separator:ad5339a1b07ae669a349478cf5c3b0fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab01869f0f594e103ea5698a480696b99"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ab01869f0f594e103ea5698a480696b99">qualityEdit</a></td></tr>
+<tr class="memdesc:ab01869f0f594e103ea5698a480696b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eingabefeld für die Zerlegungsqualität des Modells (s.  <a href="#ab01869f0f594e103ea5698a480696b99">Mehr ...</a><br/></td></tr>
 <tr class="separator:ab01869f0f594e103ea5698a480696b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9b6df8a3367b4b5b56ef82ab1bd7aa3"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ab9b6df8a3367b4b5b56ef82ab1bd7aa3">sensorDataLbl</a></td></tr>
+<tr class="memdesc:ab9b6df8a3367b4b5b56ef82ab1bd7aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beschriftung für das Sensordatensatz-Auswahlfeld.  <a href="#ab9b6df8a3367b4b5b56ef82ab1bd7aa3">Mehr ...</a><br/></td></tr>
 <tr class="separator:ab9b6df8a3367b4b5b56ef82ab1bd7aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc9329945c39f48e441c410b0ff3d9fa"><td class="memItemLeft" align="right" valign="top">wxComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#afc9329945c39f48e441c410b0ff3d9fa">sensorDataList</a></td></tr>
+<tr class="memdesc:afc9329945c39f48e441c410b0ff3d9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auswahlfeld für den zu verwendenden Sensordatensatz.  <a href="#afc9329945c39f48e441c410b0ff3d9fa">Mehr ...</a><br/></td></tr>
 <tr class="separator:afc9329945c39f48e441c410b0ff3d9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affd4774a26bd75a30c1d1c07d02edd18"><td class="memItemLeft" align="right" valign="top">wxListBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#affd4774a26bd75a30c1d1c07d02edd18">matListBox</a></td></tr>
+<tr class="memdesc:affd4774a26bd75a30c1d1c07d02edd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auswahlbox für das Material, dessen Eigenschaften angezeigt werden sollen.  <a href="#affd4774a26bd75a30c1d1c07d02edd18">Mehr ...</a><br/></td></tr>
 <tr class="separator:affd4774a26bd75a30c1d1c07d02edd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa08a220302b1d89a196dc7e03a390bd6"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#aa08a220302b1d89a196dc7e03a390bd6">matListBoxLbl</a></td></tr>
+<tr class="memdesc:aa08a220302b1d89a196dc7e03a390bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beschriftung für die Materialauswahl-Box.  <a href="#aa08a220302b1d89a196dc7e03a390bd6">Mehr ...</a><br/></td></tr>
 <tr class="separator:aa08a220302b1d89a196dc7e03a390bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ff3669bf863d80a26d2d9874b1868e1"><td class="memItemLeft" align="right" valign="top">wxStaticBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a1ff3669bf863d80a26d2d9874b1868e1">matPropBox</a></td></tr>
+<tr class="memdesc:a1ff3669bf863d80a26d2d9874b1868e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bereich, der die Materialeigenschaften enthält.  <a href="#a1ff3669bf863d80a26d2d9874b1868e1">Mehr ...</a><br/></td></tr>
 <tr class="separator:a1ff3669bf863d80a26d2d9874b1868e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f5165a466fd9204f758a6fbb17507ae"><td class="memItemLeft" align="right" valign="top">wxComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a3f5165a466fd9204f758a6fbb17507ae">interpolationModeList</a></td></tr>
+<tr class="memdesc:a3f5165a466fd9204f758a6fbb17507ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auswahlfeld für den zu verwendenden Interpolationsmodus.  <a href="#a3f5165a466fd9204f758a6fbb17507ae">Mehr ...</a><br/></td></tr>
 <tr class="separator:a3f5165a466fd9204f758a6fbb17507ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7184c404a73e32cee30ac299ef9fe649"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a7184c404a73e32cee30ac299ef9fe649">interpolationModeLbl</a></td></tr>
+<tr class="memdesc:a7184c404a73e32cee30ac299ef9fe649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beschriftung für das Interpolationsmodus-Auswahlfeld.  <a href="#a7184c404a73e32cee30ac299ef9fe649">Mehr ...</a><br/></td></tr>
 <tr class="separator:a7184c404a73e32cee30ac299ef9fe649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c71f6f0ea002a57ac0750e8ae9cdf13"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a0c71f6f0ea002a57ac0750e8ae9cdf13">densityEdit</a></td></tr>
+<tr class="memdesc:a0c71f6f0ea002a57ac0750e8ae9cdf13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eingabefeld für die Dichte des Materials.  <a href="#a0c71f6f0ea002a57ac0750e8ae9cdf13">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0c71f6f0ea002a57ac0750e8ae9cdf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c670a16a13cb03338867a35508f7f5a"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a1c670a16a13cb03338867a35508f7f5a">densityLbl</a></td></tr>
+<tr class="memdesc:a1c670a16a13cb03338867a35508f7f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beschriftung für das Dichte-Eingabefeld.  <a href="#a1c670a16a13cb03338867a35508f7f5a">Mehr ...</a><br/></td></tr>
 <tr class="separator:a1c670a16a13cb03338867a35508f7f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7058b344520a2d9ba42fe9e9c1080faa"><td class="memItemLeft" align="right" valign="top">wxTextCtrl *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a7058b344520a2d9ba42fe9e9c1080faa">specificHeatCapEdit</a></td></tr>
+<tr class="memdesc:a7058b344520a2d9ba42fe9e9c1080faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eingabefeld für die spezifische Wärmekapazität.  <a href="#a7058b344520a2d9ba42fe9e9c1080faa">Mehr ...</a><br/></td></tr>
 <tr class="separator:a7058b344520a2d9ba42fe9e9c1080faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad49b95cb856e5f18d6717fc99ccd7b0b"><td class="memItemLeft" align="right" valign="top">wxStaticText *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ad49b95cb856e5f18d6717fc99ccd7b0b">specificHeatCapLbl</a></td></tr>
+<tr class="memdesc:ad49b95cb856e5f18d6717fc99ccd7b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beschriftung für das Wärmekapazitäts-Eingabefeld.  <a href="#ad49b95cb856e5f18d6717fc99ccd7b0b">Mehr ...</a><br/></td></tr>
 <tr class="separator:ad49b95cb856e5f18d6717fc99ccd7b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab145e0c36e99d355f2722964da46b31a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGUITimeline.xhtml">GUITimeline</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ab145e0c36e99d355f2722964da46b31a">sdTimeline</a></td></tr>
+<tr class="memdesc:ab145e0c36e99d355f2722964da46b31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Zeitleiste für zeitbezogene Sensordaten.  <a href="#ab145e0c36e99d355f2722964da46b31a">Mehr ...</a><br/></td></tr>
 <tr class="separator:ab145e0c36e99d355f2722964da46b31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20498b8540b84cc8f4e691aa57c7a7c3"><td class="memItemLeft" align="right" valign="top">wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a20498b8540b84cc8f4e691aa57c7a7c3">analyzeMarkerCheckBox</a></td></tr>
+<tr class="memdesc:a20498b8540b84cc8f4e691aa57c7a7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checkbox zum markieren des auf der Zeitleiste ausgewählten Zeitpunkts.  <a href="#a20498b8540b84cc8f4e691aa57c7a7c3">Mehr ...</a><br/></td></tr>
 <tr class="separator:a20498b8540b84cc8f4e691aa57c7a7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af03e4a7248c0cb91f3978eadc0936c61"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#af03e4a7248c0cb91f3978eadc0936c61">findMaxBt</a></td></tr>
+<tr class="memdesc:af03e4a7248c0cb91f3978eadc0936c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Button zum Suchen des maximums zwischen zwei markierten Zeitpunkten (s.  <a href="#af03e4a7248c0cb91f3978eadc0936c61">Mehr ...</a><br/></td></tr>
 <tr class="separator:af03e4a7248c0cb91f3978eadc0936c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93a88ce0e08aee33673b26ae63c7846f"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a93a88ce0e08aee33673b26ae63c7846f">clearAnalyzeMarkerBt</a></td></tr>
+<tr class="memdesc:a93a88ce0e08aee33673b26ae63c7846f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Button zum Löschen aller Markierungen (s.  <a href="#a93a88ce0e08aee33673b26ae63c7846f">Mehr ...</a><br/></td></tr>
 <tr class="separator:a93a88ce0e08aee33673b26ae63c7846f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4a347a273ab780cf1ab941a5cf6d4b0"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ad4a347a273ab780cf1ab941a5cf6d4b0">nextMarkerBt</a></td></tr>
+<tr class="memdesc:ad4a347a273ab780cf1ab941a5cf6d4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Button zum Auswählen der nächsten Markierung (s.  <a href="#ad4a347a273ab780cf1ab941a5cf6d4b0">Mehr ...</a><br/></td></tr>
 <tr class="separator:ad4a347a273ab780cf1ab941a5cf6d4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab315d0ce0bda89ebe2c003d141df2891"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#ab315d0ce0bda89ebe2c003d141df2891">prevMarkerBt</a></td></tr>
+<tr class="memdesc:ab315d0ce0bda89ebe2c003d141df2891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Button zum Auswählen der vorherigen Markierung (s.  <a href="#ab315d0ce0bda89ebe2c003d141df2891">Mehr ...</a><br/></td></tr>
 <tr class="separator:ab315d0ce0bda89ebe2c003d141df2891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea93bc13aea5197dfe5d53f6c465c0ad"><td class="memItemLeft" align="right" valign="top">wxCheckBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#aea93bc13aea5197dfe5d53f6c465c0ad">autoUpdateCeckBox</a></td></tr>
+<tr class="memdesc:aea93bc13aea5197dfe5d53f6c465c0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checkbox zum automatischen Neuberechnen der Temperaturverteilung nach einer Änderung an den Objekteigenschaften.  <a href="#aea93bc13aea5197dfe5d53f6c465c0ad">Mehr ...</a><br/></td></tr>
 <tr class="separator:aea93bc13aea5197dfe5d53f6c465c0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83244ddd61bfd31452a3a975b107becb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPropertiesBox.xhtml#a83244ddd61bfd31452a3a975b107becb">current_material</a></td></tr>
+<tr class="memdesc:a83244ddd61bfd31452a3a975b107becb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index des aktuell ausgewählten Materials.  <a href="#a83244ddd61bfd31452a3a975b107becb">Mehr ...</a><br/></td></tr>
 <tr class="separator:a83244ddd61bfd31452a3a975b107becb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -239,6 +292,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Der Konstruktor. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -271,6 +325,7 @@ Private Attribute</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Der Destruktor. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00115">115</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -290,6 +345,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt die Checkbox zum markieren des auf der Zeitleiste ausgewählten Zeitpunkts zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00118">118</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -308,6 +364,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt die Checkbox zum automatischen Neuberechnen der Temperaturverteilung nach einer Änderung an den Objekteigenschaften zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00122">122</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -326,7 +383,9 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gibt den Button zum Löschen aller Markierungen (s. <a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>) zurück. </p>
+
+<p>Gibt den Button zum Löschen aller Markierungen (s. </p>
+<p><a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>) zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00126">126</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
 
@@ -344,6 +403,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt den Index des aktuell ausgewählten Materials zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00134">134</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -362,6 +422,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt das Eingabefeld für die Dichte des Materials zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00140">140</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -380,7 +441,9 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gibt den Button zum Suchen des maximums zwischen zwei markierten Zeitpunkten (s. <a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>) zurück. </p>
+
+<p>Gibt den Button zum Suchen des maximums zwischen zwei markierten Zeitpunkten (s. </p>
+<p><a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>) zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00144">144</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
 
@@ -398,6 +461,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt das Auswahlfeld für den zu verwendenden Interpolationsmodus zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00148">148</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -416,6 +480,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt die Auswahlbox für das Material, dessen Eigenschaften angezeigt werden sollen, zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00152">152</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -434,6 +499,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt das Eingabefeld für den Materialnamen zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00156">156</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -452,6 +518,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt den Bereich, der die Materialeigenschaften enthält zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00160">160</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -470,6 +537,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt das Eingabefeld für das maximale Tetraedervolumen zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00164">164</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -488,7 +556,9 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gibt den Button zum Auswählen der nächsten Markierung (s. <a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>) zurück. </p>
+
+<p>Gibt den Button zum Auswählen der nächsten Markierung (s. </p>
+<p><a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>) zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00168">168</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
 
@@ -506,7 +576,9 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gibt das Eingeabefeld für den Objektnamen. zurück. </p>
+
+<p>Gibt das Eingeabefeld für den Objektnamen. </p>
+<p>zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00172">172</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
 
@@ -524,7 +596,9 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gibt den Button zum Auswählen der vorherigen Markierung (s. <a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>) zurück. </p>
+
+<p>Gibt den Button zum Auswählen der vorherigen Markierung (s. </p>
+<p><a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>) zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00176">176</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
 
@@ -542,7 +616,9 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gibt das Eingabefeld für die Zerlegungsqualität des Modells (s. Tetgen-dokumentation für weitere Informationen) zurück. </p>
+
+<p>Gibt das Eingabefeld für die Zerlegungsqualität des Modells (s. </p>
+<p>Tetgen-dokumentation für weitere Informationen) zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00180">180</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
 
@@ -560,6 +636,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt den Button zum Neuberechnen der Temperaturverteilung zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00184">184</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -578,6 +655,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt die Die Zeitleiste für zeitbezogene Sensordaten zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00188">188</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -596,6 +674,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt das Auswahlfeld für den zu verwendenden Sensordatensatz zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00192">192</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -614,6 +693,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt das Eingabefeld für die spezifische Wärmekapazität zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00130">130</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -632,6 +712,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Gibt die Beschiftungskomponente für die Warnung bei geänderten Objekteigenschaften zurück. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00196">196</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -650,6 +731,7 @@ Private Attribute</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Behandelt Größenänderungen und passt die Positionen der Komponenten an. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8cpp_source.xhtml#l00055">55</a> der Datei <a class="el" href="PropertiesBox_8cpp_source.xhtml">PropertiesBox.cpp</a>.</p>
@@ -657,7 +739,8 @@ Private Attribute</h2></td></tr>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classPropertiesBox_adce6c28da4adced9bb98937c5cb85de0_cgraph.svg" width="619" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classPropertiesBox_adce6c28da4adced9bb98937c5cb85de0_cgraph.svg" width="619" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -676,6 +759,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Setzt den Index des aktuell ausgewählten Materials. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
@@ -706,7 +790,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Checkbox zum markieren des auf der Zeitleiste ausgewählten Zeitpunkts. Dieser Zeitpunkt wird dann im Analysedaten-Übersichtsfenster (<a class="el" href="classGUIAnalyzeOutputWindow.xhtml" title="Übersichtsfenster über die Analysedaten. ">GUIAnalyzeOutputWindow</a>) angezeigt. </p>
+
+<p>Checkbox zum markieren des auf der Zeitleiste ausgewählten Zeitpunkts. </p>
+<p>Dieser Zeitpunkt wird dann im Analysedaten-Übersichtsfenster (<a class="el" href="classGUIAnalyzeOutputWindow.xhtml" title="Übersichtsfenster über die Analysedaten. ">GUIAnalyzeOutputWindow</a>) angezeigt. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00213">213</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
 
@@ -729,6 +815,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Checkbox zum automatischen Neuberechnen der Temperaturverteilung nach einer Änderung an den Objekteigenschaften. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00233">233</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -752,7 +839,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Button zum Löschen aller Markierungen (s. <a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>). </p>
+
+<p>Button zum Löschen aller Markierungen (s. </p>
+<p><a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>). </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00221">221</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
 
@@ -775,6 +864,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Index des aktuell ausgewählten Materials. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00237">237</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -798,6 +888,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Eingabefeld für die Dichte des Materials. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00192">192</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -821,6 +912,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Beschriftung für das Dichte-Eingabefeld. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00196">196</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -844,7 +936,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Button zum Suchen des maximums zwischen zwei markierten Zeitpunkten (s. <a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>). </p>
+
+<p>Button zum Suchen des maximums zwischen zwei markierten Zeitpunkten (s. </p>
+<p><a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>). </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00217">217</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
 
@@ -867,6 +961,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Beschriftung für das Interpolationsmodus-Auswahlfeld. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00188">188</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -890,6 +985,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Auswahlfeld für den zu verwendenden Interpolationsmodus. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00184">184</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -913,6 +1009,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Auswahlbox für das Material, dessen Eigenschaften angezeigt werden sollen. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00172">172</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -936,6 +1033,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Beschriftung für die Materialauswahl-Box. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00176">176</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -959,6 +1057,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Eingabefeld für den Materialnamen. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00140">140</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -982,6 +1081,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Beschriftung für das Materialnamen-Eingabefeld. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00136">136</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1005,6 +1105,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Bereich, der die Materialeigenschaften enthält. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00180">180</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1028,6 +1129,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Eingabefeld für das maximale Tetraedervolumen. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00152">152</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1051,7 +1153,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Beschriftung für das max. Tetraedervolumen-Eingabefeld. </p>
+
+<p>Beschriftung für das max. </p>
+<p>Tetraedervolumen-Eingabefeld. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00148">148</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
 
@@ -1074,7 +1178,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Button zum Auswählen der nächsten Markierung (s. <a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>). </p>
+
+<p>Button zum Auswählen der nächsten Markierung (s. </p>
+<p><a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>). </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00225">225</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
 
@@ -1097,6 +1203,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Eingeabefeld für den Objektnamen. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00132">132</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1120,6 +1227,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Beschriftung für das Objektnamen-Eingabefeld. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00128">128</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1143,7 +1251,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Button zum Auswählen der vorherigen Markierung (s. <a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>). </p>
+
+<p>Button zum Auswählen der vorherigen Markierung (s. </p>
+<p><a class="el" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>). </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00229">229</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
 
@@ -1166,7 +1276,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Eingabefeld für die Zerlegungsqualität des Modells (s. Tetgen-dokumentation für weitere Informationen). </p>
+
+<p>Eingabefeld für die Zerlegungsqualität des Modells (s. </p>
+<p>Tetgen-dokumentation für weitere Informationen). </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00160">160</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
 
@@ -1189,6 +1301,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Beschriftung für das Zerlegungsqualität-Eingabefeld. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00156">156</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1212,6 +1325,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Button zum Neuberechnen der Temperaturverteilung. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00124">124</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1235,6 +1349,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Die Zeitleiste für zeitbezogene Sensordaten. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00208">208</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1258,6 +1373,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Beschriftung für das Sensordatensatz-Auswahlfeld. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00164">164</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1281,6 +1397,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Auswahlfeld für den zu verwendenden Sensordatensatz. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00168">168</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1304,6 +1421,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Eingabefeld für die spezifische Wärmekapazität. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00200">200</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1327,6 +1445,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Beschriftung für das Wärmekapazitäts-Eingabefeld. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00204">204</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1350,6 +1469,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Beschiftung für die Warnung bei geänderten Objekteigenschaften. </p>
 
 <p>Definiert in Zeile <a class="el" href="PropertiesBox_8h_source.xhtml#l00144">144</a> der Datei <a class="el" href="PropertiesBox_8h_source.xhtml">PropertiesBox.h</a>.</p>
@@ -1363,7 +1483,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 01:43:19 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Feb 9 2014 15:44:35 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

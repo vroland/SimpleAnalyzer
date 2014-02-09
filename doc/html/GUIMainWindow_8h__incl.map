@@ -1,0 +1,16 @@
+<map id="simpleanalyzer&#45;gui/src/GUI/GUIMainWindow.h" name="simpleanalyzer&#45;gui/src/GUI/GUIMainWindow.h">
+<area shape="rect" id="node3" href="$GUIGLCanvas_8h.xhtml" title="GUIGLCanvas.h" alt="" coords="605,256,723,285"/>
+<area shape="rect" id="node45" href="$PropertiesBox_8h.xhtml" title="PropertiesBox.h" alt="" coords="467,256,581,285"/>
+<area shape="rect" id="node55" href="$ViewpropBox_8h.xhtml" title="ViewpropBox.h" alt="" coords="392,101,501,131"/>
+<area shape="rect" id="node60" href="$GUIAnalyzeOutputWindow_8h.xhtml" title="GUIAnalyzeOutputWindow.h" alt="" coords="312,179,501,208"/>
+<area shape="rect" id="node66" href="$GUIAnalyzePointWindow_8h.xhtml" title="GUIAnalyzePointWindow.h" alt="" coords="5,411,187,440"/>
+<area shape="rect" id="node69" href="$GUICutRenderWindow_8h.xhtml" title="GUICutRenderWindow.h" alt="" coords="832,101,997,131"/>
+<area shape="rect" id="node5" href="$Renderer_8h.xhtml" title="Renderer.h" alt="" coords="1027,333,1112,363"/>
+<area shape="rect" id="node15" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="1027,411,1205,440"/>
+<area shape="rect" id="node11" href="$GeometryClasses_8h.xhtml" title="../libraries/interpolate\l/GeometryClasses.h" alt="" coords="1377,662,1519,709"/>
+<area shape="rect" id="node24" href="$utils_8h.xhtml" title="utils.h" alt="" coords="1303,488,1359,517"/>
+<area shape="rect" id="node19" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="1093,566,1235,613"/>
+<area shape="rect" id="node48" href="$GUITimeline_8h.xhtml" title="GUITimeline.h" alt="" coords="595,333,701,363"/>
+<area shape="rect" id="node72" href="$GUIRenderCutCanvas_8h.xhtml" title="GUIRenderCutCanvas.h" alt="" coords="832,179,997,208"/>
+<area shape="rect" id="node75" href="$GUIColorScalePanel_8h.xhtml" title="GUIColorScalePanel.h" alt="" coords="877,256,1032,285"/>
+</map>

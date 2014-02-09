@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUITimeline.xhtml#a2cd5cc2f150a7ca94a4cddbb88843b21" target="_top" xlink:title="GUITimeline::posToVal">
+<a xlink:href="classGUITimeline.xhtml#a2cd5cc2f150a7ca94a4cddbb88843b21" target="_top" xlink:title="Setzt den aktuellen Zeitpunkt anhand der Mausposition. ">
 <polygon fill="none" stroke="black" points="182.5,-6.5 182.5,-27.5 301.5,-27.5 301.5,-6.5 182.5,-6.5"/>
 <text text-anchor="middle" x="242" y="-14.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::posToVal</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUITimeline.xhtml#a417835c7c520d9fbcf65610d255245a1" target="_top" xlink:title="GUITimeline::sendTimeline\lEvent">
+<a xlink:href="classGUITimeline.xhtml#a417835c7c520d9fbcf65610d255245a1" target="_top" xlink:title="Löst ein wxEVT_TIMELINE_CHANGE&#45;Event aus. ">
 <polygon fill="none" stroke="black" points="338.5,-0 338.5,-34 473.5,-34 473.5,-0 338.5,-0"/>
 <text text-anchor="start" x="346.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::sendTimeline</text>
 <text text-anchor="middle" x="406" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">Event</text>

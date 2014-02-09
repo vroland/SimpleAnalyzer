@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUITimeline.xhtml#aac5565f407354a3b3cfa9071a3486daa" target="_top" xlink:title="GUITimeline::setMarkerList">
+<a xlink:href="classGUITimeline.xhtml#aac5565f407354a3b3cfa9071a3486daa" target="_top" xlink:title="Setzt die Liste der markierten Stellen. ">
 <polygon fill="none" stroke="black" points="146.5,-160.5 146.5,-181.5 283.5,-181.5 283.5,-160.5 146.5,-160.5"/>
 <text text-anchor="middle" x="215" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::setMarkerList</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUITimeline.xhtml#a0fa4ef5ed2e0fe5f416d9d4c75b86ebc" target="_top" xlink:title="GUITimeline::setValue">
+<a xlink:href="classGUITimeline.xhtml#a0fa4ef5ed2e0fe5f416d9d4c75b86ebc" target="_top" xlink:title="Setzt den Index des aktuell ausgewählten Zeitpunkts. ">
 <polygon fill="none" stroke="black" points="157,-120.5 157,-141.5 273,-141.5 273,-120.5 157,-120.5"/>
 <text text-anchor="middle" x="215" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::setValue</text>
 </a>
@@ -39,7 +39,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classGUITimeline.xhtml#ae75bc611225782e26402896771705821" target="_top" xlink:title="GUITimeline::setMinValue">
+<a xlink:href="classGUITimeline.xhtml#ae75bc611225782e26402896771705821" target="_top" xlink:title="Setzt den minimal auswählbaren Index. ">
 <polygon fill="none" stroke="black" points="149.5,-80.5 149.5,-101.5 280.5,-101.5 280.5,-80.5 149.5,-80.5"/>
 <text text-anchor="middle" x="215" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::setMinValue</text>
 </a>
@@ -51,7 +51,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classGUITimeline.xhtml#a0bb2939f43fcefbeed5dfee827eaca9e" target="_top" xlink:title="GUITimeline::setMaxValue">
+<a xlink:href="classGUITimeline.xhtml#a0bb2939f43fcefbeed5dfee827eaca9e" target="_top" xlink:title="Setzt den maximal auswählbaren Index. ">
 <polygon fill="none" stroke="black" points="148,-40.5 148,-61.5 282,-61.5 282,-40.5 148,-40.5"/>
 <text text-anchor="middle" x="215" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::setMaxValue</text>
 </a>
@@ -63,7 +63,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="classGUITimeline.xhtml#a115bcd521b18f812b8251a169dbf2454" target="_top" xlink:title="GUITimeline::setNameList">
+<a xlink:href="classGUITimeline.xhtml#a115bcd521b18f812b8251a169dbf2454" target="_top" xlink:title="Setzt die Liste der Namen für die jeweiligen Indices der Zeitpunkte. ">
 <polygon fill="none" stroke="black" points="148.5,-0.5 148.5,-21.5 281.5,-21.5 281.5,-0.5 148.5,-0.5"/>
 <text text-anchor="middle" x="215" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::setNameList</text>
 </a>
@@ -75,7 +75,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUITimeline.xhtml#a417835c7c520d9fbcf65610d255245a1" target="_top" xlink:title="GUITimeline::sendTimeline\lEvent">
+<a xlink:href="classGUITimeline.xhtml#a417835c7c520d9fbcf65610d255245a1" target="_top" xlink:title="Löst ein wxEVT_TIMELINE_CHANGE&#45;Event aus. ">
 <polygon fill="none" stroke="black" points="320.5,-114 320.5,-148 455.5,-148 455.5,-114 320.5,-114"/>
 <text text-anchor="start" x="328.5" y="-135" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::sendTimeline</text>
 <text text-anchor="middle" x="388" y="-122" font-family="Helvetica,sans-Serif" font-size="10.00">Event</text>

@@ -11,6 +11,9 @@
 /** @file */
 
 #include <wx/wx.h>
+/**
+ * Anzahl der verfügbaren Interpolationsmodi.
+ */
 const int NUMBER_OF_INTERPOLATION_MODES = 2;
 /**
  * Bezeichnungen für die von "Interpolator" verwendeten Interpolationsmodi.

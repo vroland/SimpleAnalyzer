@@ -1,4 +1,4 @@
 <map id="GUIRenderCutCanvas::OnMouseMove" name="GUIRenderCutCanvas::OnMouseMove">
-<area shape="rect" id="node3" href="$classGUIColorScalePanel.xhtml#a59e27a091ec86d4c3e649f432a10ec08" title="GUIColorScalePanel\l::handleMouse" alt="" coords="209,5,351,51"/>
-<area shape="rect" id="node5" href="$classGUIColorScalePanel.xhtml#ac8faaae6f7016f0fecedfc350b65644b" title="GUIColorScalePanel\l::fitBounds" alt="" coords="209,74,351,121"/>
+<area shape="rect" id="node3" href="$classGUIColorScalePanel.xhtml#a59e27a091ec86d4c3e649f432a10ec08" title="Behandelt die Mausaktionen und verändert ggf. " alt="" coords="209,5,351,51"/>
+<area shape="rect" id="node5" href="$classGUIColorScalePanel.xhtml#ac8faaae6f7016f0fecedfc350b65644b" title="Passt die Größe und Position der Skala an die Größe der Grafik an. " alt="" coords="209,74,351,121"/>
 </map>

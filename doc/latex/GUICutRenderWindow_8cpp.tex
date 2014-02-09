@@ -1,0 +1,113 @@
+\hypertarget{GUICutRenderWindow_8cpp}{\section{simpleanalyzer-\/gui/src/\-G\-U\-I/\-G\-U\-I\-Cut\-Render\-Window.cpp-\/\-Dateireferenz}
+\label{GUICutRenderWindow_8cpp}\index{simpleanalyzer-\/gui/src/\-G\-U\-I/\-G\-U\-I\-Cut\-Render\-Window.\-cpp@{simpleanalyzer-\/gui/src/\-G\-U\-I/\-G\-U\-I\-Cut\-Render\-Window.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}G\-U\-I\-Cut\-Render\-Window.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}constants.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}../processing/\-Analyzer.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../processing/\-Object\-Data.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../processing/utils.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../libraries/interpolate/\-Interpolator.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../file\-I\-O/\-Exporter.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\-U\-I\-Main\-Window.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include $<$sys/time.\-h$>$}\\*
+{\ttfamily \#include $<$wx/graphics.\-h$>$}\\*
+Include-\/\-Abhängigkeitsdiagramm für G\-U\-I\-Cut\-Render\-Window.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{GUICutRenderWindow_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funktionen}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{GUICutRenderWindow_8cpp_aeaaae4c8452680389d221d0e60a6fc33}{render\-\_\-thread} (bool $\ast$status\-\_\-flag, float $\ast$value\-\_\-img, wx\-Image $\ast$image, int width, int height, int startheight, int delta\-\_\-h, \hyperlink{structUtils_1_1CutRender__info}{Cut\-Render\-\_\-info} $\ast$info, \hyperlink{classVector3D}{Vector3\-D} $\ast$xvec, \hyperlink{classVector3D}{Vector3\-D} $\ast$yvec, \hyperlink{classVector3D}{Vector3\-D} $\ast$v0, vector$<$ tetgenio $\ast$ $>$ $\ast$bases, \hyperlink{classObjectData}{Object\-Data} $\ast$obj, vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $>$ $\ast$sensor\-\_\-data, bool use\-\_\-last\-\_\-tet)
+\end{DoxyCompactItemize}
+\subsection*{Variablen}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{classObjectData}{Object\-Data} $\ast$ $>$ \hyperlink{GUICutRenderWindow_8cpp_a9aa46f902a3f0345c8b71e22eb4147b3}{data\-\_\-objects}
+\item 
+int \hyperlink{GUICutRenderWindow_8cpp_ae3bb0fb60c66991217f89753d27e4c9a}{current\-\_\-data\-\_\-object\-\_\-index}
+\item 
+\hyperlink{structUtils_1_1Visualization__info}{Visualization\-\_\-info} \hyperlink{GUICutRenderWindow_8cpp_ab2bc98a13798ba972e034bbf26549564}{visualization\-\_\-info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentation der Funktionen}
+\hypertarget{GUICutRenderWindow_8cpp_aeaaae4c8452680389d221d0e60a6fc33}{\index{G\-U\-I\-Cut\-Render\-Window.\-cpp@{G\-U\-I\-Cut\-Render\-Window.\-cpp}!render\-\_\-thread@{render\-\_\-thread}}
+\index{render\-\_\-thread@{render\-\_\-thread}!GUICutRenderWindow.cpp@{G\-U\-I\-Cut\-Render\-Window.\-cpp}}
+\subsubsection[{render\-\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}void render\-\_\-thread (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{status\-\_\-flag, }
+\item[{float $\ast$}]{value\-\_\-img, }
+\item[{wx\-Image $\ast$}]{image, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int}]{startheight, }
+\item[{int}]{delta\-\_\-h, }
+\item[{{\bf Cut\-Render\-\_\-info} $\ast$}]{info, }
+\item[{{\bf Vector3\-D} $\ast$}]{xvec, }
+\item[{{\bf Vector3\-D} $\ast$}]{yvec, }
+\item[{{\bf Vector3\-D} $\ast$}]{v0, }
+\item[{vector$<$ tetgenio $\ast$ $>$ $\ast$}]{bases, }
+\item[{{\bf Object\-Data} $\ast$}]{obj, }
+\item[{vector$<$ {\bf Sensor\-Point} $>$ $\ast$}]{sensor\-\_\-data, }
+\item[{bool}]{use\-\_\-last\-\_\-tet}
+\end{DoxyParamCaption}
+)}}\label{GUICutRenderWindow_8cpp_aeaaae4c8452680389d221d0e60a6fc33}
+
+
+Definiert in Zeile 103 der Datei G\-U\-I\-Cut\-Render\-Window.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{GUICutRenderWindow_8cpp_aeaaae4c8452680389d221d0e60a6fc33_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{GUICutRenderWindow_8cpp_aeaaae4c8452680389d221d0e60a6fc33_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variablen-\/\-Dokumentation}
+\hypertarget{GUICutRenderWindow_8cpp_ae3bb0fb60c66991217f89753d27e4c9a}{\index{G\-U\-I\-Cut\-Render\-Window.\-cpp@{G\-U\-I\-Cut\-Render\-Window.\-cpp}!current\-\_\-data\-\_\-object\-\_\-index@{current\-\_\-data\-\_\-object\-\_\-index}}
+\index{current\-\_\-data\-\_\-object\-\_\-index@{current\-\_\-data\-\_\-object\-\_\-index}!GUICutRenderWindow.cpp@{G\-U\-I\-Cut\-Render\-Window.\-cpp}}
+\subsubsection[{current\-\_\-data\-\_\-object\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int current\-\_\-data\-\_\-object\-\_\-index}}\label{GUICutRenderWindow_8cpp_ae3bb0fb60c66991217f89753d27e4c9a}
+
+
+Definiert in Zeile 26 der Datei Application.\-cpp.
+
+\hypertarget{GUICutRenderWindow_8cpp_a9aa46f902a3f0345c8b71e22eb4147b3}{\index{G\-U\-I\-Cut\-Render\-Window.\-cpp@{G\-U\-I\-Cut\-Render\-Window.\-cpp}!data\-\_\-objects@{data\-\_\-objects}}
+\index{data\-\_\-objects@{data\-\_\-objects}!GUICutRenderWindow.cpp@{G\-U\-I\-Cut\-Render\-Window.\-cpp}}
+\subsubsection[{data\-\_\-objects}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Object\-Data}$\ast$$>$ data\-\_\-objects}}\label{GUICutRenderWindow_8cpp_a9aa46f902a3f0345c8b71e22eb4147b3}
+
+
+Definiert in Zeile 25 der Datei Application.\-cpp.
+
+\hypertarget{GUICutRenderWindow_8cpp_ab2bc98a13798ba972e034bbf26549564}{\index{G\-U\-I\-Cut\-Render\-Window.\-cpp@{G\-U\-I\-Cut\-Render\-Window.\-cpp}!visualization\-\_\-info@{visualization\-\_\-info}}
+\index{visualization\-\_\-info@{visualization\-\_\-info}!GUICutRenderWindow.cpp@{G\-U\-I\-Cut\-Render\-Window.\-cpp}}
+\subsubsection[{visualization\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Visualization\-\_\-info} visualization\-\_\-info}}\label{GUICutRenderWindow_8cpp_ab2bc98a13798ba972e034bbf26549564}
+
+
+Definiert in Zeile 27 der Datei Application.\-cpp.
+

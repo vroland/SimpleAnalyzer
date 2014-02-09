@@ -62,7 +62,7 @@ var sectionId = 'dynsection-12';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970" target="_top" xlink:title="GUICutRenderWindow\l::refreshVisualisation">
+<a xlink:href="classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970" target="_top" xlink:title="Aktualisiert die Visualisierung der Schnittebene im Hauptfenster. ">
 <polygon fill="none" stroke="black" points="182.5,-66 182.5,-100 299.5,-100 299.5,-66 182.5,-66"/>
 <text text-anchor="start" x="190.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="241" y="-74" font-family="Helvetica,sans-Serif" font-size="10.00">::refreshVisualisation</text>
@@ -75,7 +75,7 @@ var sectionId = 'dynsection-12';
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d" target="_top" xlink:title="GUIMainWindow::getGLCanvas">
+<a xlink:href="classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d" target="_top" xlink:title="Gibt die Zeichenfläche des 3D&#45;Fensters zurück. ">
 <polygon fill="none" stroke="black" points="336.5,-132.5 336.5,-153.5 493.5,-153.5 493.5,-132.5 336.5,-132.5"/>
 <text text-anchor="middle" x="415" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::getGLCanvas</text>
 </a>
@@ -87,7 +87,7 @@ var sectionId = 'dynsection-12';
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" target="_top" xlink:title="GUIGLCanvas::getRenderer">
+<a xlink:href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" target="_top" xlink:title="Gibt den Renderer der Zeichenfläche zurück. ">
 <polygon fill="none" stroke="black" points="345,-92.5 345,-113.5 485,-113.5 485,-92.5 345,-92.5"/>
 <text text-anchor="middle" x="415" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIGLCanvas::getRenderer</text>
 </a>
@@ -99,7 +99,7 @@ var sectionId = 'dynsection-12';
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e" target="_top" xlink:title="Renderer::setCutRenderInfo">
+<a xlink:href="classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e" target="_top" xlink:title="Setzt die Eigenschaften einer 2D&#45;Temperaturverteilung, welche teilweise zur Visualisierung der Ebene ...">
 <polygon fill="none" stroke="black" points="345,-52.5 345,-73.5 485,-73.5 485,-52.5 345,-52.5"/>
 <text text-anchor="middle" x="415" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">Renderer::setCutRenderInfo</text>
 </a>
@@ -111,7 +111,7 @@ var sectionId = 'dynsection-12';
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289" target="_top" xlink:title="GUICutRenderWindow\l::getCutRenderProperties">
+<a xlink:href="classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289" target="_top" xlink:title="Gibt die aktuell eingestellten Eigenschaften für die zweidimensionale Temperaturverteilung zurück...">
 <polygon fill="none" stroke="black" points="351,-0 351,-34 479,-34 479,-0 351,-0"/>
 <text text-anchor="start" x="359" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="415" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::getCutRenderProperties</text>

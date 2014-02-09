@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,10 +104,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Öffentliche Attribute</h2></td></tr>
 <tr class="memitem:a0a6b01fc900ce677ae8403d3a85b829b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAnalyzer_1_1AnalyzerData__material.xhtml#a0a6b01fc900ce677ae8403d3a85b829b">name</a></td></tr>
+<tr class="memdesc:a0a6b01fc900ce677ae8403d3a85b829b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der Name des Material.  <a href="#a0a6b01fc900ce677ae8403d3a85b829b">Mehr ...</a><br/></td></tr>
 <tr class="separator:a0a6b01fc900ce677ae8403d3a85b829b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20017730ff899b65f91aa30caaf35dd6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAnalyzer_1_1AnalyzerData__material.xhtml#a20017730ff899b65f91aa30caaf35dd6">volume</a></td></tr>
+<tr class="memdesc:a20017730ff899b65f91aa30caaf35dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Das Volumen, das dem Material zugeordnet ist.  <a href="#a20017730ff899b65f91aa30caaf35dd6">Mehr ...</a><br/></td></tr>
 <tr class="separator:a20017730ff899b65f91aa30caaf35dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94efc7f38f7f59c97a48a0155f9c4719"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structAnalyzer_1_1AnalyzerData__material.xhtml#a94efc7f38f7f59c97a48a0155f9c4719">heat_energy</a></td></tr>
+<tr class="memdesc:a94efc7f38f7f59c97a48a0155f9c4719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die Wärmeenergie, die das dem Material zugeordnete Volumen enthält.  <a href="#a94efc7f38f7f59c97a48a0155f9c4719">Mehr ...</a><br/></td></tr>
 <tr class="separator:a94efc7f38f7f59c97a48a0155f9c4719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -124,7 +127,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Die Wärmeenergie, die das dem Material zugeordnete Volumen enthält.&lt; </p>
+
+<p>Die Wärmeenergie, die das dem Material zugeordnete Volumen enthält. </p>
+<p>&lt; </p>
 
 <p>Definiert in Zeile <a class="el" href="Analyzer_8h_source.xhtml#l00029">29</a> der Datei <a class="el" href="Analyzer_8h_source.xhtml">Analyzer.h</a>.</p>
 
@@ -139,7 +144,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Der Name des Material.&lt; </p>
+
+<p>Der Name des Material. </p>
+<p>&lt; </p>
 
 <p>Definiert in Zeile <a class="el" href="Analyzer_8h_source.xhtml#l00027">27</a> der Datei <a class="el" href="Analyzer_8h_source.xhtml">Analyzer.h</a>.</p>
 
@@ -154,7 +161,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Das Volumen, das dem Material zugeordnet ist.&lt; </p>
+
+<p>Das Volumen, das dem Material zugeordnet ist. </p>
+<p>&lt; </p>
 
 <p>Definiert in Zeile <a class="el" href="Analyzer_8h_source.xhtml#l00028">28</a> der Datei <a class="el" href="Analyzer_8h_source.xhtml">Analyzer.h</a>.</p>
 
@@ -166,7 +175,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 01:43:19 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

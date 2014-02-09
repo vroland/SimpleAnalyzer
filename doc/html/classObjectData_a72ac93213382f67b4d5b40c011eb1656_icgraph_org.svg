@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classImporter.xhtml#a001bd26372d94f96de66f7bcb90cc790" target="_top" xlink:title="Importer::LoadSensorData">
+<a xlink:href="classImporter.xhtml#a001bd26372d94f96de66f7bcb90cc790" target="_top" xlink:title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. ">
 <polygon fill="none" stroke="black" points="202.5,-283.5 202.5,-304.5 333.5,-304.5 333.5,-283.5 202.5,-283.5"/>
 <text text-anchor="middle" x="268" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00">Importer::LoadSensorData</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" target="_top" xlink:title="Importer::LoadTimedData">
+<a xlink:href="classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" target="_top" xlink:title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. ">
 <polygon fill="none" stroke="black" points="204,-243.5 204,-264.5 332,-264.5 332,-243.5 204,-243.5"/>
 <text text-anchor="middle" x="268" y="-251.5" font-family="Helvetica,sans-Serif" font-size="10.00">Importer::LoadTimedData</text>
 </a>
@@ -39,7 +39,7 @@
 </g>
 <!-- Node10 -->
 <g id="node20" class="node"><title>Node10</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" target="_top" xlink:title="GUICutRenderWindow\l::renderImage">
+<a xlink:href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" target="_top" xlink:title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. ">
 <polygon fill="none" stroke="black" points="209.5,-191 209.5,-225 326.5,-225 326.5,-191 209.5,-191"/>
 <text text-anchor="start" x="217.5" y="-212" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="268" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">::renderImage</text>
@@ -52,7 +52,7 @@
 </g>
 <!-- Node12 -->
 <g id="node24" class="node"><title>Node12</title>
-<a xlink:href="classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0" target="_top" xlink:title="GUIMainWindow::updateObject\lPropGUI">
+<a xlink:href="classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0" target="_top" xlink:title="Überträgt die Eigenschaften des aktiven Objekts in die GUI. ">
 <polygon fill="none" stroke="black" points="190.5,-139 190.5,-173 345.5,-173 345.5,-139 190.5,-139"/>
 <text text-anchor="start" x="198.5" y="-160" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::updateObject</text>
 <text text-anchor="middle" x="268" y="-147" font-family="Helvetica,sans-Serif" font-size="10.00">PropGUI</text>
@@ -65,7 +65,7 @@
 </g>
 <!-- Node13 -->
 <g id="node26" class="node"><title>Node13</title>
-<a xlink:href="classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" target="_top" xlink:title="GUITimeline::findMaxValue">
+<a xlink:href="classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" target="_top" xlink:title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. ">
 <polygon fill="none" stroke="black" points="383.5,-104.5 383.5,-125.5 520.5,-125.5 520.5,-104.5 383.5,-104.5"/>
 <text text-anchor="middle" x="452" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::findMaxValue</text>
 </a>
@@ -77,7 +77,7 @@
 </g>
 <!-- Node14 -->
 <g id="node28" class="node"><title>Node14</title>
-<a xlink:href="classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" target="_top" xlink:title="Analyzer::analyzeObject">
+<a xlink:href="classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" target="_top" xlink:title="Ermittelt Daten für ein Objekt. ">
 <polygon fill="none" stroke="black" points="206.5,-61.5 206.5,-82.5 329.5,-82.5 329.5,-61.5 206.5,-61.5"/>
 <text text-anchor="middle" x="268" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">Analyzer::analyzeObject</text>
 </a>
@@ -89,7 +89,7 @@
 </g>
 <!-- Node17 -->
 <g id="node35" class="node"><title>Node17</title>
-<a xlink:href="classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" target="_top" xlink:title="Analyzer::analyzePoint">
+<a xlink:href="classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" target="_top" xlink:title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. ">
 <polygon fill="none" stroke="black" points="209.5,-15.5 209.5,-36.5 326.5,-36.5 326.5,-15.5 209.5,-15.5"/>
 <text text-anchor="middle" x="268" y="-23.5" font-family="Helvetica,sans-Serif" font-size="10.00">Analyzer::analyzePoint</text>
 </a>
@@ -101,7 +101,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" target="_top" xlink:title="ObjectData::loadFromFile">
+<a xlink:href="classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" target="_top" xlink:title="Lädt ein Objekt und erste Sensordaten. ">
 <polygon fill="none" stroke="black" points="388,-283.5 388,-304.5 516,-304.5 516,-283.5 388,-283.5"/>
 <text text-anchor="middle" x="452" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::loadFromFile</text>
 </a>
@@ -113,7 +113,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" target="_top" xlink:title="ObjectData::addSensorData">
+<a xlink:href="classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" target="_top" xlink:title="Lädt einfache Sensordaten und verknüpft sie mit dem Objekt. ">
 <polygon fill="none" stroke="black" points="382,-323.5 382,-344.5 522,-344.5 522,-323.5 382,-323.5"/>
 <text text-anchor="middle" x="452" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::addSensorData</text>
 </a>
@@ -125,7 +125,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" target="_top" xlink:title="GUIMainWindow::OnMenuImportObj">
+<a xlink:href="classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="561,-283.5 561,-304.5 737,-304.5 737,-283.5 561,-283.5"/>
 <text text-anchor="middle" x="649" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnMenuImportObj</text>
 </a>
@@ -137,7 +137,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2" target="_top" xlink:title="GUIMainWindow::OnMenuImportSD">
+<a xlink:href="classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2" target="_top" xlink:title="Öffnet den Dialog zum Importieren einfacher Sensordaten. ">
 <polygon fill="none" stroke="black" points="561,-323.5 561,-344.5 737,-344.5 737,-323.5 561,-323.5"/>
 <text text-anchor="middle" x="649" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnMenuImportSD</text>
 </a>
@@ -154,7 +154,7 @@
 </g>
 <!-- Node8 -->
 <g id="node16" class="node"><title>Node8</title>
-<a xlink:href="classObjectData.xhtml#ac8056d23b0882a826b6e572ff080688f" target="_top" xlink:title="ObjectData::addTimedData">
+<a xlink:href="classObjectData.xhtml#ac8056d23b0882a826b6e572ff080688f" target="_top" xlink:title="Lädt zeitbezogene Sensordaten und verknüpft sie mit dem Objekt. ">
 <polygon fill="none" stroke="black" points="384,-243.5 384,-264.5 520,-264.5 520,-243.5 384,-243.5"/>
 <text text-anchor="middle" x="452" y="-251.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::addTimedData</text>
 </a>
@@ -166,7 +166,7 @@
 </g>
 <!-- Node9 -->
 <g id="node18" class="node"><title>Node9</title>
-<a xlink:href="classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560" target="_top" xlink:title="GUIMainWindow::OnMenuImportTSD">
+<a xlink:href="classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560" target="_top" xlink:title="Öffnet den Dialog zum Importieren zeitbezogener Sensordaten. ">
 <polygon fill="none" stroke="black" points="558,-243.5 558,-264.5 740,-264.5 740,-243.5 558,-243.5"/>
 <text text-anchor="middle" x="649" y="-251.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnMenuImportTSD</text>
 </a>
@@ -178,7 +178,7 @@
 </g>
 <!-- Node11 -->
 <g id="node22" class="node"><title>Node11</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" target="_top" xlink:title="GUICutRenderWindow\l::renderCutBtClick">
+<a xlink:href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" target="_top" xlink:title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="393.5,-191 393.5,-225 510.5,-225 510.5,-191 393.5,-191"/>
 <text text-anchor="start" x="401.5" y="-212" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="452" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">::renderCutBtClick</text>
@@ -196,7 +196,7 @@
 </g>
 <!-- Node15 -->
 <g id="node30" class="node"><title>Node15</title>
-<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" target="_top" xlink:title="GUIAnalyzeOutputWindow\l::Update">
+<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" target="_top" xlink:title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ...">
 <polygon fill="none" stroke="black" points="385,-52 385,-86 519,-86 519,-52 385,-52"/>
 <text text-anchor="start" x="393" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzeOutputWindow</text>
 <text text-anchor="middle" x="452" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">::Update</text>
@@ -209,7 +209,7 @@
 </g>
 <!-- Node16 -->
 <g id="node32" class="node"><title>Node16</title>
-<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" target="_top" xlink:title="GUIAnalyzeOutputWindow\l::GUIAnalyzeOutputWindow">
+<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" target="_top" xlink:title="Der Konstruktor. ">
 <polygon fill="none" stroke="black" points="579,-52 579,-86 719,-86 719,-52 579,-52"/>
 <text text-anchor="start" x="587" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzeOutputWindow</text>
 <text text-anchor="middle" x="649" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">::GUIAnalyzeOutputWindow</text>
@@ -222,7 +222,7 @@
 </g>
 <!-- Node18 -->
 <g id="node37" class="node"><title>Node18</title>
-<a xlink:href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" target="_top" xlink:title="GUIAnalyzePointWindow\l::analyzePoint">
+<a xlink:href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="388,-0 388,-34 516,-34 516,-0 388,-0"/>
 <text text-anchor="start" x="396" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzePointWindow</text>
 <text text-anchor="middle" x="452" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::analyzePoint</text>

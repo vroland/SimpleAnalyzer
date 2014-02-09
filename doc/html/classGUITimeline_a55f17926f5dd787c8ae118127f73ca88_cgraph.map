@@ -1,4 +1,4 @@
 <map id="GUITimeline::OnPaint" name="GUITimeline::OnPaint">
-<area shape="rect" id="node3" href="$classGUITimeline.xhtml#a98e636407ed0691d655eaa53cd0d968c" title="GUITimeline::calcStepWidth" alt="" coords="207,5,393,35"/>
-<area shape="rect" id="node5" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Utils::floattowxstr" alt="" coords="443,32,568,61"/>
+<area shape="rect" id="node3" href="$classGUITimeline.xhtml#a98e636407ed0691d655eaa53cd0d968c" title="Berechnet die für die aktuelle Darstellung günstigste Schrittweite für die Beschriftung. " alt="" coords="207,5,393,35"/>
+<area shape="rect" id="node5" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets&#45;String um. " alt="" coords="443,32,568,61"/>
 </map>

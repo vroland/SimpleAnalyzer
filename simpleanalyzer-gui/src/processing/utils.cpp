@@ -23,6 +23,7 @@ void Utils::nextCombination(vector<int>* indices,int depth,int dataPointCount) {
 	}
 
 }
+
 float Utils::clampHue(float h) {
 	if (h>1.0) {
 		h = 1.0;

@@ -13,33 +13,24 @@ Die Daten eines Materials.
 \subsection*{Öffentliche Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{structObjectData_1_1MaterialData_a795f1265218b9a125559bbe9231f3c8d}{string {\bfseries name}}\label{structObjectData_1_1MaterialData_a795f1265218b9a125559bbe9231f3c8d}
-
-\item 
-\hypertarget{structObjectData_1_1MaterialData_a35d4f03b3af4349f69d5fed072118dca}{\hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{Interpolator\-::\-Interpolation\-Mode} {\bfseries interpolation\-\_\-mode}}\label{structObjectData_1_1MaterialData_a35d4f03b3af4349f69d5fed072118dca}
-
-\item 
-\hypertarget{structObjectData_1_1MaterialData_ab752395b4aedbe011fa49de7fbbd36ee}{tetgenio $\ast$ {\bfseries tetgeninput}}\label{structObjectData_1_1MaterialData_ab752395b4aedbe011fa49de7fbbd36ee}
-
-\item 
-\hypertarget{structObjectData_1_1MaterialData_a15d576cfe25abe334e34eb5e4671d6d7}{tetgenio $\ast$ {\bfseries tetgenoutput}}\label{structObjectData_1_1MaterialData_a15d576cfe25abe334e34eb5e4671d6d7}
-
-\item 
-\hypertarget{structObjectData_1_1MaterialData_a22bff8a90f617a5485690bd017dcf701}{bool $\ast$ {\bfseries extrapolated}}\label{structObjectData_1_1MaterialData_a22bff8a90f617a5485690bd017dcf701}
-
-\item 
-\hypertarget{structObjectData_1_1MaterialData_a3930f8e673d50b88c9234c7f73c16a91}{float {\bfseries color} \mbox{[}3\mbox{]}}\label{structObjectData_1_1MaterialData_a3930f8e673d50b88c9234c7f73c16a91}
-
-\item 
-\hypertarget{structObjectData_1_1MaterialData_a49cbca11f42993f41497e725fe8ca68c}{double {\bfseries density}}\label{structObjectData_1_1MaterialData_a49cbca11f42993f41497e725fe8ca68c}
-
-\item 
-\hypertarget{structObjectData_1_1MaterialData_a784e2b70f98d146979fd422d41445fea}{double {\bfseries specificheatcapacity}}\label{structObjectData_1_1MaterialData_a784e2b70f98d146979fd422d41445fea}
-
-\item 
-\hypertarget{structObjectData_1_1MaterialData_a37980da11f6b51b30eb41c3ab4e9674a}{bool {\bfseries visible}}\label{structObjectData_1_1MaterialData_a37980da11f6b51b30eb41c3ab4e9674a}
-
-\end{DoxyCompactItemize}
+string \hyperlink{structObjectData_1_1MaterialData_a795f1265218b9a125559bbe9231f3c8d}{name}
+\begin{DoxyCompactList}\small\item\em Der Name des Materials. \end{DoxyCompactList}\item 
+\hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{Interpolator\-::\-Interpolation\-Mode} \hyperlink{structObjectData_1_1MaterialData_a35d4f03b3af4349f69d5fed072118dca}{interpolation\-\_\-mode}
+\begin{DoxyCompactList}\small\item\em Der zu verwendende Interpolationsmodus. \end{DoxyCompactList}\item 
+tetgenio $\ast$ \hyperlink{structObjectData_1_1MaterialData_ab752395b4aedbe011fa49de7fbbd36ee}{tetgeninput}
+\begin{DoxyCompactList}\small\item\em Originalgeometrie im Tetgen-\/\-Format (s. \end{DoxyCompactList}\item 
+tetgenio $\ast$ \hyperlink{structObjectData_1_1MaterialData_a15d576cfe25abe334e34eb5e4671d6d7}{tetgenoutput}
+\begin{DoxyCompactList}\small\item\em Durch Zerlegung erstellte Geometrie im Tetgen-\/\-Format (s. \end{DoxyCompactList}\item 
+bool $\ast$ \hyperlink{structObjectData_1_1MaterialData_a22bff8a90f617a5485690bd017dcf701}{extrapolated}
+\begin{DoxyCompactList}\small\item\em Liste, die für jeden Punkt in der aktuellen Geometrie angibt, ob er extra-\/ (true) oder interpoliert (false) ist. \end{DoxyCompactList}\item 
+float \hyperlink{structObjectData_1_1MaterialData_a3930f8e673d50b88c9234c7f73c16a91}{color} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Die Farbe des Materials im R\-G\-B-\/\-Format. \end{DoxyCompactList}\item 
+double \hyperlink{structObjectData_1_1MaterialData_a49cbca11f42993f41497e725fe8ca68c}{density}
+\begin{DoxyCompactList}\small\item\em Die Dichte in $\frac{kg}{m^3}$. \end{DoxyCompactList}\item 
+double \hyperlink{structObjectData_1_1MaterialData_a784e2b70f98d146979fd422d41445fea}{specificheatcapacity}
+\begin{DoxyCompactList}\small\item\em Spezifische Wärmekapazität in $\frac{kJ}{kg*K}$. \end{DoxyCompactList}\item 
+bool \hyperlink{structObjectData_1_1MaterialData_a37980da11f6b51b30eb41c3ab4e9674a}{visible}
+\begin{DoxyCompactList}\small\item\em Soll das Material angezeigt werden? \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -49,6 +40,108 @@ Definiert in Zeile 30 der Datei Object\-Data.\-h.
 
 
 
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{structObjectData_1_1MaterialData_a3930f8e673d50b88c9234c7f73c16a91}{\index{Object\-Data\-::\-Material\-Data@{Object\-Data\-::\-Material\-Data}!color@{color}}
+\index{color@{color}!ObjectData::MaterialData@{Object\-Data\-::\-Material\-Data}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}float Object\-Data\-::\-Material\-Data\-::color\mbox{[}3\mbox{]}}}\label{structObjectData_1_1MaterialData_a3930f8e673d50b88c9234c7f73c16a91}
+
+
+Die Farbe des Materials im R\-G\-B-\/\-Format. 
+
+
+
+Definiert in Zeile 36 der Datei Object\-Data.\-h.
+
+\hypertarget{structObjectData_1_1MaterialData_a49cbca11f42993f41497e725fe8ca68c}{\index{Object\-Data\-::\-Material\-Data@{Object\-Data\-::\-Material\-Data}!density@{density}}
+\index{density@{density}!ObjectData::MaterialData@{Object\-Data\-::\-Material\-Data}}
+\subsubsection[{density}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-Data\-::\-Material\-Data\-::density}}\label{structObjectData_1_1MaterialData_a49cbca11f42993f41497e725fe8ca68c}
+
+
+Die Dichte in $\frac{kg}{m^3}$. 
+
+
+
+Definiert in Zeile 37 der Datei Object\-Data.\-h.
+
+\hypertarget{structObjectData_1_1MaterialData_a22bff8a90f617a5485690bd017dcf701}{\index{Object\-Data\-::\-Material\-Data@{Object\-Data\-::\-Material\-Data}!extrapolated@{extrapolated}}
+\index{extrapolated@{extrapolated}!ObjectData::MaterialData@{Object\-Data\-::\-Material\-Data}}
+\subsubsection[{extrapolated}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$ Object\-Data\-::\-Material\-Data\-::extrapolated}}\label{structObjectData_1_1MaterialData_a22bff8a90f617a5485690bd017dcf701}
+
+
+Liste, die für jeden Punkt in der aktuellen Geometrie angibt, ob er extra-\/ (true) oder interpoliert (false) ist. 
+
+
+
+Definiert in Zeile 35 der Datei Object\-Data.\-h.
+
+\hypertarget{structObjectData_1_1MaterialData_a35d4f03b3af4349f69d5fed072118dca}{\index{Object\-Data\-::\-Material\-Data@{Object\-Data\-::\-Material\-Data}!interpolation\-\_\-mode@{interpolation\-\_\-mode}}
+\index{interpolation\-\_\-mode@{interpolation\-\_\-mode}!ObjectData::MaterialData@{Object\-Data\-::\-Material\-Data}}
+\subsubsection[{interpolation\-\_\-mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interpolator\-::\-Interpolation\-Mode} Object\-Data\-::\-Material\-Data\-::interpolation\-\_\-mode}}\label{structObjectData_1_1MaterialData_a35d4f03b3af4349f69d5fed072118dca}
+
+
+Der zu verwendende Interpolationsmodus. 
+
+
+
+Definiert in Zeile 32 der Datei Object\-Data.\-h.
+
+\hypertarget{structObjectData_1_1MaterialData_a795f1265218b9a125559bbe9231f3c8d}{\index{Object\-Data\-::\-Material\-Data@{Object\-Data\-::\-Material\-Data}!name@{name}}
+\index{name@{name}!ObjectData::MaterialData@{Object\-Data\-::\-Material\-Data}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}string Object\-Data\-::\-Material\-Data\-::name}}\label{structObjectData_1_1MaterialData_a795f1265218b9a125559bbe9231f3c8d}
+
+
+Der Name des Materials. 
+
+
+
+Definiert in Zeile 31 der Datei Object\-Data.\-h.
+
+\hypertarget{structObjectData_1_1MaterialData_a784e2b70f98d146979fd422d41445fea}{\index{Object\-Data\-::\-Material\-Data@{Object\-Data\-::\-Material\-Data}!specificheatcapacity@{specificheatcapacity}}
+\index{specificheatcapacity@{specificheatcapacity}!ObjectData::MaterialData@{Object\-Data\-::\-Material\-Data}}
+\subsubsection[{specificheatcapacity}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-Data\-::\-Material\-Data\-::specificheatcapacity}}\label{structObjectData_1_1MaterialData_a784e2b70f98d146979fd422d41445fea}
+
+
+Spezifische Wärmekapazität in $\frac{kJ}{kg*K}$. 
+
+
+
+Definiert in Zeile 38 der Datei Object\-Data.\-h.
+
+\hypertarget{structObjectData_1_1MaterialData_ab752395b4aedbe011fa49de7fbbd36ee}{\index{Object\-Data\-::\-Material\-Data@{Object\-Data\-::\-Material\-Data}!tetgeninput@{tetgeninput}}
+\index{tetgeninput@{tetgeninput}!ObjectData::MaterialData@{Object\-Data\-::\-Material\-Data}}
+\subsubsection[{tetgeninput}]{\setlength{\rightskip}{0pt plus 5cm}tetgenio$\ast$ Object\-Data\-::\-Material\-Data\-::tetgeninput}}\label{structObjectData_1_1MaterialData_ab752395b4aedbe011fa49de7fbbd36ee}
+
+
+Originalgeometrie im Tetgen-\/\-Format (s. 
+
+Tetgen Dokumentation) 
+
+Definiert in Zeile 33 der Datei Object\-Data.\-h.
+
+\hypertarget{structObjectData_1_1MaterialData_a15d576cfe25abe334e34eb5e4671d6d7}{\index{Object\-Data\-::\-Material\-Data@{Object\-Data\-::\-Material\-Data}!tetgenoutput@{tetgenoutput}}
+\index{tetgenoutput@{tetgenoutput}!ObjectData::MaterialData@{Object\-Data\-::\-Material\-Data}}
+\subsubsection[{tetgenoutput}]{\setlength{\rightskip}{0pt plus 5cm}tetgenio$\ast$ Object\-Data\-::\-Material\-Data\-::tetgenoutput}}\label{structObjectData_1_1MaterialData_a15d576cfe25abe334e34eb5e4671d6d7}
+
+
+Durch Zerlegung erstellte Geometrie im Tetgen-\/\-Format (s. 
+
+Tetgen Dokumentation) 
+
+Definiert in Zeile 34 der Datei Object\-Data.\-h.
+
+\hypertarget{structObjectData_1_1MaterialData_a37980da11f6b51b30eb41c3ab4e9674a}{\index{Object\-Data\-::\-Material\-Data@{Object\-Data\-::\-Material\-Data}!visible@{visible}}
+\index{visible@{visible}!ObjectData::MaterialData@{Object\-Data\-::\-Material\-Data}}
+\subsubsection[{visible}]{\setlength{\rightskip}{0pt plus 5cm}bool Object\-Data\-::\-Material\-Data\-::visible}}\label{structObjectData_1_1MaterialData_a37980da11f6b51b30eb41c3ab4e9674a}
+
+
+Soll das Material angezeigt werden? 
+
+
+
+Definiert in Zeile 39 der Datei Object\-Data.\-h.
+
+
+
 Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/processing/Object\-Data.\-h\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/processing/\hyperlink{ObjectData_8h}{Object\-Data.\-h}\end{DoxyCompactItemize}

@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" target="_top" xlink:title="GUIRenderCutCanvas\l::getScalePanel">
+<a xlink:href="classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" target="_top" xlink:title="Gibt das Temperaturskala&#45;Objekt zurück. ">
 <polygon fill="none" stroke="black" points="154,-170 154,-204 270,-204 270,-170 154,-170"/>
 <text text-anchor="start" x="162" y="-191" font-family="Helvetica,sans-Serif" font-size="10.00">GUIRenderCutCanvas</text>
 <text text-anchor="middle" x="212" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">::getScalePanel</text>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIColorScalePanel.xhtml#ad9056636be2c0707127225484f0d0392" target="_top" xlink:title="GUIColorScalePanel\l::setTextColor">
+<a xlink:href="classGUIColorScalePanel.xhtml#ad9056636be2c0707127225484f0d0392" target="_top" xlink:title="Setzt die Schriftfarbe der Skala. ">
 <polygon fill="none" stroke="black" points="158.5,-118 158.5,-152 265.5,-152 265.5,-118 158.5,-118"/>
 <text text-anchor="start" x="166.5" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00">GUIColorScalePanel</text>
 <text text-anchor="middle" x="212" y="-126" font-family="Helvetica,sans-Serif" font-size="10.00">::setTextColor</text>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" target="_top" xlink:title="GUIColorScalePanel\l::refresh">
+<a xlink:href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" target="_top" xlink:title="Zeichnet die Temperaturskala neu. ">
 <polygon fill="none" stroke="black" points="158.5,-14 158.5,-48 265.5,-48 265.5,-14 158.5,-14"/>
 <text text-anchor="start" x="166.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">GUIColorScalePanel</text>
 <text text-anchor="middle" x="212" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">::refresh</text>
@@ -68,7 +68,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" target="_top" xlink:title="Utils::hsvToRgb">
+<a xlink:href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" target="_top" xlink:title="Wandelt eine Farbe im HSV&#45;Format ins RGB&#45;Format um. ">
 <polygon fill="none" stroke="black" points="309,-40.5 309,-61.5 397,-61.5 397,-40.5 309,-40.5"/>
 <text text-anchor="middle" x="353" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::hsvToRgb</text>
 </a>
@@ -80,7 +80,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" target="_top" xlink:title="Utils::floattowxstr">
+<a xlink:href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" target="_top" xlink:title="Wandelt eine Fließkommazahl in einen wxWidgets&#45;String um. ">
 <polygon fill="none" stroke="black" points="306,-0.5 306,-21.5 400,-21.5 400,-0.5 306,-0.5"/>
 <text text-anchor="middle" x="353" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::floattowxstr</text>
 </a>

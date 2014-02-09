@@ -1,5 +1,5 @@
 <map id="Triangle::getVert" name="Triangle::getVert">
-<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="GUICutRenderWindow\l::renderImage" alt="" coords="181,5,336,51"/>
-<area shape="rect" id="node7" href="$classInterpolator.xhtml#ad59ac6ed3822e08a67ac7d1ee88a5bd2" title="Interpolator::interpolateTri" alt="" coords="173,75,344,104"/>
-<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="GUICutRenderWindow\l::renderCutBtClick" alt="" coords="393,5,548,51"/>
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="181,5,336,51"/>
+<area shape="rect" id="node7" href="$classInterpolator.xhtml#ad59ac6ed3822e08a67ac7d1ee88a5bd2" title="Ermittelt den Wert für einen beliebigen Punkt in einer Ebene. " alt="" coords="173,75,344,104"/>
+<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="393,5,548,51"/>
 </map>

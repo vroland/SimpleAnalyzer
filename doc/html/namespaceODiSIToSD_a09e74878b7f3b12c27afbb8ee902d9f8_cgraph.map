@@ -1,0 +1,7 @@
+<map id="ODiSIToSD::convert" name="ODiSIToSD::convert">
+<area shape="rect" id="node3" href="$Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="getTextBlock" alt="" coords="223,5,321,35"/>
+<area shape="rect" id="node5" href="$namespaceCSVToSD.xhtml#a2e2e7a5141b8cf519db3c37c9b2cc410" title="Sammelt Daten aus einer Textzeile (string). " alt="" coords="199,59,345,88"/>
+<area shape="rect" id="node11" href="$namespaceCSVToSD.xhtml#a4f125d9c8df307d21dbb5363f6422b4d" title="Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen. " alt="" coords="197,112,347,141"/>
+<area shape="rect" id="node7" href="$namespaceCSVToSD.xhtml#a268ecb11b27ccafb712296ea053c7869" title="Testet, ob sich ein String in einer Liste von Strings befindet. " alt="" coords="395,59,536,88"/>
+<area shape="rect" id="node9" href="$namespaceODiSIToSD.xhtml#a2978e21c2e0b6ff70786de2d92aed3ee" title="Gibt die Position des ersten Vorkommens eines Zeichens in einem String zurück. " alt="" coords="585,59,705,88"/>
+</map>

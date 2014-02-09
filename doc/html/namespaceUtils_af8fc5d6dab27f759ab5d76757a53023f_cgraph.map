@@ -1,16 +1,16 @@
 <map id="Utils::pointInsideMesh" name="Utils::pointInsideMesh">
-<area shape="rect" id="node3" href="$namespaceUtils.xhtml#a5f216cc7011a901130db81321b565334" title="Utils::rayIntersectsTriangle" alt="" coords="211,179,389,208"/>
-<area shape="rect" id="node31" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Utils::pointInsideTetrahedron" alt="" coords="205,259,395,288"/>
-<area shape="rect" id="node39" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Vector3D::getXYZ" alt="" coords="236,312,364,341"/>
-<area shape="rect" id="node5" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Triangle::getV1" alt="" coords="469,5,579,35"/>
-<area shape="rect" id="node7" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Triangle::getV2" alt="" coords="469,59,579,88"/>
-<area shape="rect" id="node9" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Triangle::getV3" alt="" coords="469,112,579,141"/>
-<area shape="rect" id="node11" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Vector3D::copy" alt="" coords="468,272,580,301"/>
-<area shape="rect" id="node13" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="471,325,577,355"/>
-<area shape="rect" id="node21" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Vector3D::crossProduct" alt="" coords="443,165,605,195"/>
-<area shape="rect" id="node26" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Vector3D::dotProduct" alt="" coords="451,219,597,248"/>
-<area shape="rect" id="node15" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="653,165,765,195"/>
-<area shape="rect" id="node17" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="653,219,765,248"/>
-<area shape="rect" id="node19" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="655,272,764,301"/>
-<area shape="rect" id="node36" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Vector3D::mult" alt="" coords="469,379,579,408"/>
+<area shape="rect" id="node3" href="$namespaceUtils.xhtml#a5f216cc7011a901130db81321b565334" title="Testet, ob ein Strahl ein Dreieck schneidet. " alt="" coords="211,179,389,208"/>
+<area shape="rect" id="node31" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. " alt="" coords="205,259,395,288"/>
+<area shape="rect" id="node39" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)..." alt="" coords="236,312,364,341"/>
+<area shape="rect" id="node5" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="469,5,579,35"/>
+<area shape="rect" id="node7" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. " alt="" coords="469,59,579,88"/>
+<area shape="rect" id="node9" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. " alt="" coords="469,112,579,141"/>
+<area shape="rect" id="node11" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="468,272,580,301"/>
+<area shape="rect" id="node13" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="471,325,577,355"/>
+<area shape="rect" id="node21" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="443,165,605,195"/>
+<area shape="rect" id="node26" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Gibt das Skalarprodukt mit einem anderen Vektor. " alt="" coords="451,219,597,248"/>
+<area shape="rect" id="node15" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="653,165,765,195"/>
+<area shape="rect" id="node17" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="653,219,765,248"/>
+<area shape="rect" id="node19" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="655,272,764,301"/>
+<area shape="rect" id="node36" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="469,379,579,408"/>
 </map>

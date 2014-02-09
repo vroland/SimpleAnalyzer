@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a97f4602acc61f4b62c4d90ddbb692a25" target="_top" xlink:title="GUICutRenderWindow\l::OnExportImage">
+<a xlink:href="classGUICutRenderWindow.xhtml#a97f4602acc61f4b62c4d90ddbb692a25" target="_top" xlink:title="Fragt den Benutzer nach dem Pfad und Exporiert eine Grafik aus 2D&#45;Temperaturverteilung und Temperatur...">
 <polygon fill="none" stroke="black" points="144.5,-52 144.5,-86 261.5,-86 261.5,-52 144.5,-52"/>
 <text text-anchor="start" x="152.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="203" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">::OnExportImage</text>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIRenderCutCanvas.xhtml#a348424f671910f6ede43cb6835852589" target="_top" xlink:title="GUIRenderCutCanvas\l::onCanvasPaint">
+<a xlink:href="classGUIRenderCutCanvas.xhtml#a348424f671910f6ede43cb6835852589" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="145,-0 145,-34 261,-34 261,-0 145,-0"/>
 <text text-anchor="start" x="153" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIRenderCutCanvas</text>
 <text text-anchor="middle" x="203" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::onCanvasPaint</text>

@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIMainWindow.xhtml#a4b8b9293b800ca5ff47d1cb3a75f06a5" target="_top" xlink:title="GUIMainWindow::setCutRender\lWindowStatus">
+<a xlink:href="classGUIMainWindow.xhtml#a4b8b9293b800ca5ff47d1cb3a75f06a5" target="_top" xlink:title="Setzt den Status des Übersichstfensters über die Analysedaten. ">
 <polygon fill="none" stroke="black" points="166,-120 166,-154 324,-154 324,-120 166,-120"/>
 <text text-anchor="start" x="174" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::setCutRender</text>
 <text text-anchor="middle" x="245" y="-128" font-family="Helvetica,sans-Serif" font-size="10.00">WindowStatus</text>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d" target="_top" xlink:title="GUIMainWindow::getGLCanvas">
+<a xlink:href="classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d" target="_top" xlink:title="Gibt die Zeichenfläche des 3D&#45;Fensters zurück. ">
 <polygon fill="none" stroke="black" points="166.5,-80.5 166.5,-101.5 323.5,-101.5 323.5,-80.5 166.5,-80.5"/>
 <text text-anchor="middle" x="245" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::getGLCanvas</text>
 </a>
@@ -41,7 +41,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" target="_top" xlink:title="GUIGLCanvas::getRenderer">
+<a xlink:href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" target="_top" xlink:title="Gibt den Renderer der Zeichenfläche zurück. ">
 <polygon fill="none" stroke="black" points="175,-40.5 175,-61.5 315,-61.5 315,-40.5 175,-40.5"/>
 <text text-anchor="middle" x="245" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIGLCanvas::getRenderer</text>
 </a>
@@ -53,7 +53,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e" target="_top" xlink:title="Renderer::setCutRenderInfo">
+<a xlink:href="classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e" target="_top" xlink:title="Setzt die Eigenschaften einer 2D&#45;Temperaturverteilung, welche teilweise zur Visualisierung der Ebene ...">
 <polygon fill="none" stroke="black" points="175,-0.5 175,-21.5 315,-21.5 315,-0.5 175,-0.5"/>
 <text text-anchor="middle" x="245" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Renderer::setCutRenderInfo</text>
 </a>

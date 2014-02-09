@@ -32,39 +32,39 @@ Zusammengehörigkeiten von G\-U\-I\-G\-L\-Canvas\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classGUIGLCanvas_ae77992061b501fa995c08cd568c2c6ad}{G\-U\-I\-G\-L\-Canvas} (wx\-Frame $\ast$parent)
-\item 
+\begin{DoxyCompactList}\small\item\em Der Konstruktor. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIGLCanvas_a643f11a7ef05829a6c48d037ad2c4b9b}{set\-Render\-Object} (\hyperlink{classObjectData}{Object\-Data} $\ast$obj)
-\item 
+\begin{DoxyCompactList}\small\item\em Setzt das darzustellende Objekt. \end{DoxyCompactList}\item 
 \hyperlink{classRenderer}{Renderer} $\ast$ \hyperlink{classGUIGLCanvas_a57085ce831e09e627fe93f17a6c79dfa}{get\-Renderer} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt den \hyperlink{classRenderer}{Renderer} der Zeichenfläche zurück. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIGLCanvas_a883d5bc79fcfc6e2c9ceeb41a0c0e77e}{refresh} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Zeichnet den Inhalt des 3\-D-\/\-Fensters neu und aktualisiert den \hyperlink{classRenderer}{Renderer}, z.\-B. \end{DoxyCompactList}\item 
 virtual \hyperlink{classGUIGLCanvas_af6358f8d4e95c6864ff005d4764fffbc}{$\sim$\-G\-U\-I\-G\-L\-Canvas} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Der Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Methoden}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classGUIGLCanvas_a83f52d08591920a339150c2f45069c8f}{On\-Paint} (wx\-Paint\-Event \&event)
-\item 
+\begin{DoxyCompactList}\small\item\em Event-\/\-Tabellendeklaration für wx\-Widgets. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIGLCanvas_a0ee8fe9339ebb330b8133a620bd67514}{On\-Mouse\-Wheel} (wx\-Mouse\-Event \&event)
-\item 
+\begin{DoxyCompactList}\small\item\em Behandelt Mausradbewegungen (zoomen). \end{DoxyCompactList}\item 
 void \hyperlink{classGUIGLCanvas_a9c089336b9485f1abcc60a1a7fb85bb7}{On\-Mouse\-Move} (wx\-Mouse\-Event \&event)
-\item 
+\begin{DoxyCompactList}\small\item\em Behandelt Mausbewegungen (verschieben und drehen der Ansicht). \end{DoxyCompactList}\item 
 void \hyperlink{classGUIGLCanvas_aba4aa683bf8226da8182779de38ef5db}{On\-Resize} (wx\-Size\-Event \&event)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Behandelt Größenänderungen der Zeichenfläche. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classRenderer}{Renderer} \hyperlink{classGUIGLCanvas_a33a4ad3bc364d697396c55d011bfac44}{renderer}
-\item 
+\begin{DoxyCompactList}\small\item\em Der verwendete \hyperlink{classRenderer}{Renderer}. \end{DoxyCompactList}\item 
 bool \hyperlink{classGUIGLCanvas_a59e01564652765dec69e7097c10b4455}{is\-\_\-initialized}
-\item 
+\begin{DoxyCompactList}\small\item\em Initialisiertungsstatus des Objekts. \end{DoxyCompactList}\item 
 bool \hyperlink{classGUIGLCanvas_a7139f37aa028f71e393a0c479299455d}{do\-\_\-refresh}
-\item 
+\begin{DoxyCompactList}\small\item\em Statusvariable, gibt an ob beim Zeichnen auch der \hyperlink{classRenderer}{Renderer} aktualisiert wird. \end{DoxyCompactList}\item 
 int \hyperlink{classGUIGLCanvas_afc22c47a62b8d5b165a22d059816ee22}{prev\-\_\-mouse\-\_\-x}
-\item 
+\begin{DoxyCompactList}\small\item\em Zwischenspeicher für die vorherige Mausposition (X). \end{DoxyCompactList}\item 
 int \hyperlink{classGUIGLCanvas_a684c82bd591f01b5f600c9589158e0e0}{prev\-\_\-mouse\-\_\-y}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Zwischenspeicher für die vorherige Mausposition (Y). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -84,7 +84,11 @@ Definiert in Zeile 22 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
 \item[{wx\-Frame $\ast$}]{parent}
 \end{DoxyParamCaption}
 )}}\label{classGUIGLCanvas_ae77992061b501fa995c08cd568c2c6ad}
+
+
 Der Konstruktor. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em parent} & Das Fenster, auf dem sich die Zeichenfläche befindet. \\
 \hline
@@ -100,7 +104,11 @@ Definiert in Zeile 21 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classGUIGLCanvas_af6358f8d4e95c6864ff005d4764fffbc}
+
+
 Der Destruktor. 
+
+
 
 Definiert in Zeile 97 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 
@@ -114,13 +122,18 @@ Definiert in Zeile 97 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{classGUIGLCanvas_a57085ce831e09e627fe93f17a6c79dfa}
+
+
 Gibt den \hyperlink{classRenderer}{Renderer} der Zeichenfläche zurück. 
+
+
 
 Definiert in Zeile 67 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -136,13 +149,18 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{wx\-Mouse\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a9c089336b9485f1abcc60a1a7fb85bb7}
+
+
 Behandelt Mausbewegungen (verschieben und drehen der Ansicht). 
+
+
 
 Definiert in Zeile 70 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -158,13 +176,18 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \item[{wx\-Mouse\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a0ee8fe9339ebb330b8133a620bd67514}
+
+
 Behandelt Mausradbewegungen (zoomen). 
+
+
 
 Definiert in Zeile 32 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -180,13 +203,18 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \item[{wx\-Paint\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a83f52d08591920a339150c2f45069c8f}
-Event-\/\-Tabellendeklaration für wx\-Widgets. Behandelt das Zeichenevent und zeichnet die Inhalte des 3\-D-\/\-Fensters. 
+
+
+Event-\/\-Tabellendeklaration für wx\-Widgets. 
+
+Behandelt das Zeichenevent und zeichnet die Inhalte des 3\-D-\/\-Fensters. 
 
 Definiert in Zeile 39 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -202,7 +230,11 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \item[{wx\-Size\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_aba4aa683bf8226da8182779de38ef5db}
+
+
 Behandelt Größenänderungen der Zeichenfläche. 
+
+
 
 Definiert in Zeile 27 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 
@@ -213,7 +245,11 @@ Definiert in Zeile 27 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{classGUIGLCanvas_a883d5bc79fcfc6e2c9ceeb41a0c0e77e}
-Zeichnet den Inhalt des 3\-D-\/\-Fensters neu und aktualisiert den \hyperlink{classRenderer}{Renderer}, z.\-B. bei geänderter Fenstergröße oder geänderten Eigenschaften des angezeigten Objekts. 
+
+
+Zeichnet den Inhalt des 3\-D-\/\-Fensters neu und aktualisiert den \hyperlink{classRenderer}{Renderer}, z.\-B. 
+
+bei geänderter Fenstergröße oder geänderten Eigenschaften des angezeigten Objekts. 
 
 Definiert in Zeile 62 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 
@@ -235,13 +271,18 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{{\bf Object\-Data} $\ast$}]{obj}
 \end{DoxyParamCaption}
 )}}\label{classGUIGLCanvas_a643f11a7ef05829a6c48d037ad2c4b9b}
+
+
 Setzt das darzustellende Objekt. 
+
+
 
 Definiert in Zeile 56 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -256,35 +297,55 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \hypertarget{classGUIGLCanvas_a7139f37aa028f71e393a0c479299455d}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!do\-\_\-refresh@{do\-\_\-refresh}}
 \index{do\-\_\-refresh@{do\-\_\-refresh}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{do\-\_\-refresh}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-G\-L\-Canvas\-::do\-\_\-refresh\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a7139f37aa028f71e393a0c479299455d}
-Statusvariable, gibt an ob beim Zeichnen auch der \hyperlink{classRenderer}{Renderer} aktualisiert wird. Dies tritt beispielsweise bei Größenänderungen oder Änderungen am Objekt ein, da die Daten teilweise neu an den \hyperlink{classRenderer}{Renderer} übermittelt werden müssen. 
+
+
+Statusvariable, gibt an ob beim Zeichnen auch der \hyperlink{classRenderer}{Renderer} aktualisiert wird. 
+
+Dies tritt beispielsweise bei Größenänderungen oder Änderungen am Objekt ein, da die Daten teilweise neu an den \hyperlink{classRenderer}{Renderer} übermittelt werden müssen. 
 
 Definiert in Zeile 81 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
 
 \hypertarget{classGUIGLCanvas_a59e01564652765dec69e7097c10b4455}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!is\-\_\-initialized@{is\-\_\-initialized}}
 \index{is\-\_\-initialized@{is\-\_\-initialized}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{is\-\_\-initialized}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-G\-L\-Canvas\-::is\-\_\-initialized\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a59e01564652765dec69e7097c10b4455}
+
+
 Initialisiertungsstatus des Objekts. 
+
+
 
 Definiert in Zeile 75 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
 
 \hypertarget{classGUIGLCanvas_afc22c47a62b8d5b165a22d059816ee22}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!prev\-\_\-mouse\-\_\-x@{prev\-\_\-mouse\-\_\-x}}
 \index{prev\-\_\-mouse\-\_\-x@{prev\-\_\-mouse\-\_\-x}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{prev\-\_\-mouse\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}int G\-U\-I\-G\-L\-Canvas\-::prev\-\_\-mouse\-\_\-x\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_afc22c47a62b8d5b165a22d059816ee22}
+
+
 Zwischenspeicher für die vorherige Mausposition (X). 
+
+
 
 Definiert in Zeile 85 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
 
 \hypertarget{classGUIGLCanvas_a684c82bd591f01b5f600c9589158e0e0}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!prev\-\_\-mouse\-\_\-y@{prev\-\_\-mouse\-\_\-y}}
 \index{prev\-\_\-mouse\-\_\-y@{prev\-\_\-mouse\-\_\-y}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{prev\-\_\-mouse\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}int G\-U\-I\-G\-L\-Canvas\-::prev\-\_\-mouse\-\_\-y\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a684c82bd591f01b5f600c9589158e0e0}
+
+
 Zwischenspeicher für die vorherige Mausposition (Y). 
+
+
 
 Definiert in Zeile 89 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
 
 \hypertarget{classGUIGLCanvas_a33a4ad3bc364d697396c55d011bfac44}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!renderer@{renderer}}
 \index{renderer@{renderer}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{renderer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Renderer} G\-U\-I\-G\-L\-Canvas\-::renderer\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a33a4ad3bc364d697396c55d011bfac44}
+
+
 Der verwendete \hyperlink{classRenderer}{Renderer}. 
+
+
 
 Definiert in Zeile 71 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
 
@@ -292,5 +353,5 @@ Definiert in Zeile 71 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/\-G\-U\-I/G\-U\-I\-G\-L\-Canvas.\-h\item 
-simpleanalyzer-\/gui/src/\-G\-U\-I/G\-U\-I\-G\-L\-Canvas.\-cpp\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{GUIGLCanvas_8h}{G\-U\-I\-G\-L\-Canvas.\-h}\item 
+simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{GUIGLCanvas_8cpp}{G\-U\-I\-G\-L\-Canvas.\-cpp}\end{DoxyCompactItemize}

@@ -23,26 +23,26 @@ Zusammengehörigkeiten von Triangle\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classTriangle_aa25e2e56ac291e4366474fcbdcc6901b}{Triangle} (\hyperlink{classVector3D}{Vector3\-D} $\ast$v1, \hyperlink{classVector3D}{Vector3\-D} $\ast$v2, \hyperlink{classVector3D}{Vector3\-D} $\ast$v3)
-\item 
+\begin{DoxyCompactList}\small\item\em Der Konstruktor. \end{DoxyCompactList}\item 
 \hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_ae054a0eae5dae026c5af69274c5f277e}{get\-V1} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. \end{DoxyCompactList}\item 
 \hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_a6de5f8560482f4130bdbb96b25aa1b58}{get\-V2} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. \end{DoxyCompactList}\item 
 \hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_a792a627dc42adad87c0b30e16a6b5824}{get\-V3} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. \end{DoxyCompactList}\item 
 \hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_a9320d1ab83c104352bf5e8f2c8274334}{get\-Vert} (int index)
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Dreiecks zurück. \end{DoxyCompactList}\item 
 void \hyperlink{classTriangle_abc3785b96e03fde1b5f594f8ed6afabb}{print} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt die Punkte des Dreiecks auf dem cout-\/\-Stream aus. \end{DoxyCompactList}\item 
 \hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_a3c72b19f316fa9ffb0a2f206e3558790}{get\-Normal} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt die Normale des Dreiecks zurück. \end{DoxyCompactList}\item 
 \hyperlink{classTriangle_a5199760a17454f4dc94c855a57e3a152}{$\sim$\-Triangle} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Der Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_aa5ac3f568e42e746f7bd8be658e50060}{verts} \mbox{[}3\mbox{]}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Die Referenzen auf die Ortsvektoren zu den Eckpunkten des Dreiecks. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -62,7 +62,11 @@ Definiert in Zeile 195 der Datei Geometry\-Classes.\-h.
 \item[{{\bf Vector3\-D} $\ast$}]{v3}
 \end{DoxyParamCaption}
 )}}\label{classTriangle_aa25e2e56ac291e4366474fcbdcc6901b}
-Der Konstruktor. Die übergebenen Vektorobjekte werden als Element der Klasse gespeichert (nicht kopiert). 
+
+
+Der Konstruktor. 
+
+Die übergebenen Vektorobjekte werden als Element der Klasse gespeichert (nicht kopiert). 
 \begin{DoxyParams}{Parameter}
 {\em v1} & Ortsvektor zum 1. Punkt des Dreiecks. \\
 \hline
@@ -82,7 +86,11 @@ Definiert in Zeile 195 der Datei Geometry\-Classes.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{classTriangle_a5199760a17454f4dc94c855a57e3a152}
+
+
 Der Destruktor. 
+
+
 
 Definiert in Zeile 229 der Datei Geometry\-Classes.\-cpp.
 
@@ -96,7 +104,11 @@ Definiert in Zeile 229 der Datei Geometry\-Classes.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{classTriangle_a3c72b19f316fa9ffb0a2f206e3558790}
-Gibt die Normale des Dreiecks zurück. Der zurückgegebene Vektor muss manuell mit delete Freigegeben werden! 
+
+
+Gibt die Normale des Dreiecks zurück. 
+
+Der zurückgegebene Vektor muss manuell mit delete Freigegeben werden! 
 
 Definiert in Zeile 212 der Datei Geometry\-Classes.\-cpp.
 
@@ -130,7 +142,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{classTriangle_ae054a0eae5dae026c5af69274c5f277e}
+
+
 Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. 
+
+
 
 Definiert in Zeile 200 der Datei Geometry\-Classes.\-cpp.
 
@@ -153,7 +169,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{classTriangle_a6de5f8560482f4130bdbb96b25aa1b58}
+
+
 Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. 
+
+
 
 Definiert in Zeile 203 der Datei Geometry\-Classes.\-cpp.
 
@@ -176,7 +196,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{classTriangle_a792a627dc42adad87c0b30e16a6b5824}
+
+
 Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. 
+
+
 
 Definiert in Zeile 206 der Datei Geometry\-Classes.\-cpp.
 
@@ -199,7 +223,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \item[{int}]{index}
 \end{DoxyParamCaption}
 )}}\label{classTriangle_a9320d1ab83c104352bf5e8f2c8274334}
+
+
 Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Dreiecks zurück. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em index} & Der Index des gesuchten Punktes (0..2). \\
 \hline
@@ -226,7 +254,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 {}
 \end{DoxyParamCaption}
 )}}\label{classTriangle_abc3785b96e03fde1b5f594f8ed6afabb}
+
+
 Gibt die Punkte des Dreiecks auf dem cout-\/\-Stream aus. 
+
+
 
 Definiert in Zeile 223 der Datei Geometry\-Classes.\-cpp.
 
@@ -236,7 +268,11 @@ Definiert in Zeile 223 der Datei Geometry\-Classes.\-cpp.
 \hypertarget{classTriangle_aa5ac3f568e42e746f7bd8be658e50060}{\index{Triangle@{Triangle}!verts@{verts}}
 \index{verts@{verts}!Triangle@{Triangle}}
 \subsubsection[{verts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D}$\ast$ Triangle\-::verts\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classTriangle_aa5ac3f568e42e746f7bd8be658e50060}
+
+
 Die Referenzen auf die Ortsvektoren zu den Eckpunkten des Dreiecks. 
+
+
 
 Definiert in Zeile 237 der Datei Geometry\-Classes.\-h.
 
@@ -244,5 +280,5 @@ Definiert in Zeile 237 der Datei Geometry\-Classes.\-h.
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/libraries/interpolate/Geometry\-Classes.\-h\item 
-simpleanalyzer-\/gui/src/libraries/interpolate/Geometry\-Classes.\-cpp\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/libraries/interpolate/\hyperlink{GeometryClasses_8h}{Geometry\-Classes.\-h}\item 
+simpleanalyzer-\/gui/src/libraries/interpolate/\hyperlink{GeometryClasses_8cpp}{Geometry\-Classes.\-cpp}\end{DoxyCompactItemize}

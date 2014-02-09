@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" target="_top" xlink:title="GUIRenderCutCanvas\l::getScalePanel">
+<a xlink:href="classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" target="_top" xlink:title="Gibt das Temperaturskala&#45;Objekt zurück. ">
 <polygon fill="none" stroke="black" points="154,-52 154,-86 270,-86 270,-52 154,-52"/>
 <text text-anchor="start" x="162" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">GUIRenderCutCanvas</text>
 <text text-anchor="middle" x="212" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">::getScalePanel</text>

@@ -20,7 +20,7 @@ class ViewpropBox: public wxStaticBox {
 public:
 	/**
 	 * Der Konstruktor.
-	 * @param Die übergeordnete Komponente.
+	 * @param parent Die übergeordnete Komponente.
 	 */
 	ViewpropBox(wxWindow *parent);
 	/**

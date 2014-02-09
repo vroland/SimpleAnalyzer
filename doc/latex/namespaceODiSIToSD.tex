@@ -1,0 +1,366 @@
+\hypertarget{namespaceODiSIToSD}{\section{O\-Di\-S\-I\-To\-S\-D-\/\-Namensbereichsreferenz}
+\label{namespaceODiSIToSD}\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}}
+}
+
+
+Namespace des O\-Di\-S\-I-\/zu-\/.\-tsd-\/\-Converterprogramms.  
+
+
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structODiSIToSD_1_1Options}{Options}
+\begin{DoxyCompactList}\small\item\em Strunktur für die Programmeinstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funktionen}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespaceODiSIToSD_a0196aa9f8fa3ef1c56432305918c6129}{contains} (std\-::vector$<$ string $>$ \&Vec, const string \&Element)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein String in einer Liste von Strings befindet. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceODiSIToSD_adc00a4a6a36292e9dbe72a2d9eb7d447}{contains} (std\-::vector$<$ int $>$ \&Vec, const int \&Element)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich eine Ganzzahl in einer Liste von Ganzzahlen befindet. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceODiSIToSD_ac5bc435a72dccec2fc50bb187298f0e8}{replace\-All} (string \&str, const string \&from, const string \&to)
+\begin{DoxyCompactList}\small\item\em Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen. \end{DoxyCompactList}\item 
+int \hyperlink{namespaceODiSIToSD_a2978e21c2e0b6ff70786de2d92aed3ee}{find} (string str, char chr)
+\begin{DoxyCompactList}\small\item\em Gibt die Position des ersten Vorkommens eines Zeichens in einem String zurück. \end{DoxyCompactList}\item 
+string \hyperlink{namespaceODiSIToSD_af546c680cd566e162094b910dfa03452}{floattostr} (float val)
+\begin{DoxyCompactList}\small\item\em Wandelt eine Zeichenkette (String) um. \end{DoxyCompactList}\item 
+string \hyperlink{namespaceODiSIToSD_a60fe9a380b9b9f2e401ae0aca1f6b87a}{get\-Text\-Block} (string data, int n)
+\begin{DoxyCompactList}\small\item\em Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceODiSIToSD_a6b06d3f5276bc29ae627f6019ce4bdc3}{parse\-Line} (string line, vector$<$ float $>$ $\ast$out, vector$<$ float $>$ $\ast$times, vector$<$ int $>$ $\ast$debug\-\_\-positions, size\-\_\-t row\-\_\-count)
+\begin{DoxyCompactList}\small\item\em Sammelt Daten aus einer Textzeile (string). \end{DoxyCompactList}\item 
+int \hyperlink{namespaceODiSIToSD_a09e74878b7f3b12c27afbb8ee902d9f8}{convert} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die O\-Di\-S\-I-\/\-Datei um eine .tsd-\/\-Datei zu generieren, bzw. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variablen}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{namespaceODiSIToSD_ae626f83adecae71a9227d63ff6c46d82}{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S} = 2
+\begin{DoxyCompactList}\small\item\em Anzahl der Suchpfade für die Konfigurationsdatei. \end{DoxyCompactList}\item 
+string \hyperlink{namespaceODiSIToSD_a4de5655bcf7e6e49c30d561521172f7a}{configpaths} \mbox{[}\hyperlink{namespaceODiSIToSD_ae626f83adecae71a9227d63ff6c46d82}{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Suchpfade für die Konfigurationsdatei. \end{DoxyCompactList}\item 
+struct \hyperlink{structODiSIToSD_1_1Options}{O\-Di\-S\-I\-To\-S\-D\-::\-Options} \hyperlink{namespaceODiSIToSD_a80beb7db49e15d88897aec916322ec08}{opts}
+\begin{DoxyCompactList}\small\item\em Hält die verwendeten Programmeinstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Namespace des O\-Di\-S\-I-\/zu-\/.\-tsd-\/\-Converterprogramms. Zusätzlich können Ausreißerwerte erkannt und eliminiert werden. 
+
+\subsection{Dokumentation der Funktionen}
+\hypertarget{namespaceODiSIToSD_a0196aa9f8fa3ef1c56432305918c6129}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!contains@{contains}}
+\index{contains@{contains}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-Di\-S\-I\-To\-S\-D\-::contains (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ string $>$ \&}]{Vec, }
+\item[{const string \&}]{Element}
+\end{DoxyParamCaption}
+)}}\label{namespaceODiSIToSD_a0196aa9f8fa3ef1c56432305918c6129}
+
+
+Testet, ob sich ein String in einer Liste von Strings befindet. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em Vec} & Liste der Strings. \\
+\hline
+{\em Element} & Der zu suchende String. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+true, wenn das Element gefunden wurde, sonst false. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 61 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespaceODiSIToSD_a0196aa9f8fa3ef1c56432305918c6129_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceODiSIToSD_adc00a4a6a36292e9dbe72a2d9eb7d447}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!contains@{contains}}
+\index{contains@{contains}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool O\-Di\-S\-I\-To\-S\-D\-::contains (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$ \&}]{Vec, }
+\item[{const int \&}]{Element}
+\end{DoxyParamCaption}
+)}}\label{namespaceODiSIToSD_adc00a4a6a36292e9dbe72a2d9eb7d447}
+
+
+Testet, ob sich eine Ganzzahl in einer Liste von Ganzzahlen befindet. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em Vec} & Liste der Ganzzahlen. \\
+\hline
+{\em Element} & Die zu suchende Ganzzahl. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+true, wenn das Element gefunden wurde, sonst false. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 74 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespaceODiSIToSD_adc00a4a6a36292e9dbe72a2d9eb7d447_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceODiSIToSD_a09e74878b7f3b12c27afbb8ee902d9f8}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!convert@{convert}}
+\index{convert@{convert}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{convert}]{\setlength{\rightskip}{0pt plus 5cm}int O\-Di\-S\-I\-To\-S\-D\-::convert (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{namespaceODiSIToSD_a09e74878b7f3b12c27afbb8ee902d9f8}
+
+
+Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die O\-Di\-S\-I-\/\-Datei um eine .tsd-\/\-Datei zu generieren, bzw. 
+
+die Daten der O\-Di\-S\-I-\/\-Datei ein eine .tsd-\/\-Datei umzuwandeln. Wird duch die Funktion \hyperlink{csvtosd_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()} von außerhalb des Namespaces aufgerufen. 
+\begin{DoxyParams}{Parameter}
+{\em argc} & Anzahl der Programmargumente. \\
+\hline
+{\em argv} & Die Programmargumente. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 209 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceODiSIToSD_a09e74878b7f3b12c27afbb8ee902d9f8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{namespaceODiSIToSD_a09e74878b7f3b12c27afbb8ee902d9f8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceODiSIToSD_a2978e21c2e0b6ff70786de2d92aed3ee}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!find@{find}}
+\index{find@{find}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}int O\-Di\-S\-I\-To\-S\-D\-::find (
+\begin{DoxyParamCaption}
+\item[{string}]{str, }
+\item[{char}]{chr}
+\end{DoxyParamCaption}
+)}}\label{namespaceODiSIToSD_a2978e21c2e0b6ff70786de2d92aed3ee}
+
+
+Gibt die Position des ersten Vorkommens eines Zeichens in einem String zurück. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em str} & Der zu durchsuchende String. \\
+\hline
+{\em chr} & Das zu findende Zeichen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Gibt den Index des ersten Vorkommens des Zeichens zurück. Wenn das Zeichen nicht gefunden wird -\/1. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 100 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceODiSIToSD_a2978e21c2e0b6ff70786de2d92aed3ee_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceODiSIToSD_af546c680cd566e162094b910dfa03452}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!floattostr@{floattostr}}
+\index{floattostr@{floattostr}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{floattostr}]{\setlength{\rightskip}{0pt plus 5cm}string O\-Di\-S\-I\-To\-S\-D\-::floattostr (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)}}\label{namespaceODiSIToSD_af546c680cd566e162094b910dfa03452}
+
+
+Wandelt eine Zeichenkette (String) um. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em val} & Die umzuwandelnde Zahl. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Die Entsprechung der Zahl als String. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 113 der Datei main.\-cpp.
+
+\hypertarget{namespaceODiSIToSD_a60fe9a380b9b9f2e401ae0aca1f6b87a}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!get\-Text\-Block@{get\-Text\-Block}}
+\index{get\-Text\-Block@{get\-Text\-Block}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{get\-Text\-Block}]{\setlength{\rightskip}{0pt plus 5cm}string O\-Di\-S\-I\-To\-S\-D\-::get\-Text\-Block (
+\begin{DoxyParamCaption}
+\item[{string}]{data, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{namespaceODiSIToSD_a60fe9a380b9b9f2e401ae0aca1f6b87a}
+
+
+Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em data} & Der Ausgansstring. \\
+\hline
+{\em n} & Index des zu findenden Blocks. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der n-\/te durch Leerzeichen getrennte Teilstring. \char`\"{}\char`\"{} Bei ungültigem Index. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 124 der Datei main.\-cpp.
+
+\hypertarget{namespaceODiSIToSD_a6b06d3f5276bc29ae627f6019ce4bdc3}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!parse\-Line@{parse\-Line}}
+\index{parse\-Line@{parse\-Line}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{parse\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void O\-Di\-S\-I\-To\-S\-D\-::parse\-Line (
+\begin{DoxyParamCaption}
+\item[{string}]{line, }
+\item[{vector$<$ float $>$ $\ast$}]{out, }
+\item[{vector$<$ float $>$ $\ast$}]{times, }
+\item[{vector$<$ int $>$ $\ast$}]{debug\-\_\-positions, }
+\item[{size\-\_\-t}]{row\-\_\-count}
+\end{DoxyParamCaption}
+)}}\label{namespaceODiSIToSD_a6b06d3f5276bc29ae627f6019ce4bdc3}
+
+
+Sammelt Daten aus einer Textzeile (string). 
+
+
+\begin{DoxyParams}{Parameter}
+{\em line} & Die zu untersuchende Textzeile. \\
+\hline
+{\em out} & Ausgabevariable für die Sensordaten der Zeile. Alle Spalten nach opts.\-start\-\_\-col werden als Sensordatenspalten betrachtet. Wenn row\-\_\-count == opts.\-startrow ist, werden statt der Sensordaten die Faserpositionen eingelesen! \\
+\hline
+{\em times} & Wenn nicht N\-U\-L\-L, Ausgabevariable für den Zeitstempel der Zeile (opts.\-timecol). Der Zeitstempel wird an die übergebene Liste angehängt. \\
+\hline
+{\em debug\-\_\-positions} & Wenn nicht N\-U\-L\-L, Ausgabevariable für die Position der einzelnen Messwerte in der Datei. Diese Positionen werden in der Logdatei zur Fehlerkorrektur angegeben, um ein Wiederfinden der Werte für den Nutzer einfacher zu machen. \\
+\hline
+{\em row\-\_\-count} & Nummer der aktuellen Zeile (Index+1). \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 160 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{namespaceODiSIToSD_a6b06d3f5276bc29ae627f6019ce4bdc3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceODiSIToSD_ac5bc435a72dccec2fc50bb187298f0e8}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!replace\-All@{replace\-All}}
+\index{replace\-All@{replace\-All}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{replace\-All}]{\setlength{\rightskip}{0pt plus 5cm}void O\-Di\-S\-I\-To\-S\-D\-::replace\-All (
+\begin{DoxyParamCaption}
+\item[{string \&}]{str, }
+\item[{const string \&}]{from, }
+\item[{const string \&}]{to}
+\end{DoxyParamCaption}
+)}}\label{namespaceODiSIToSD_ac5bc435a72dccec2fc50bb187298f0e8}
+
+
+Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em str} & Der zu durchsuchende String. \\
+\hline
+{\em from} & Der zu ersetzende Teilstring. \\
+\hline
+{\em to} & Der Teilstring, durch den ersetzt werden soll. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 87 der Datei main.\-cpp.
+
+
+
+\subsection{Variablen-\/\-Dokumentation}
+\hypertarget{namespaceODiSIToSD_a4de5655bcf7e6e49c30d561521172f7a}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!configpaths@{configpaths}}
+\index{configpaths@{configpaths}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{configpaths}]{\setlength{\rightskip}{0pt plus 5cm}string O\-Di\-S\-I\-To\-S\-D\-::configpaths\mbox{[}{\bf N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}\mbox{]}}}\label{namespaceODiSIToSD_a4de5655bcf7e6e49c30d561521172f7a}
+{\bfseries Initialisierung\-:}
+\begin{DoxyCode}
+\{
+        \textcolor{stringliteral}{"/usr/local/share/simpleanalyzer/odisitosd.conf"},
+        \textcolor{stringliteral}{"/usr/share/simpleanalyzer/odisitosd.conf"}
+    \}
+\end{DoxyCode}
+
+
+Suchpfade für die Konfigurationsdatei. 
+
+Das Verzeichnis der ausführbaren Datei wird immer geprüft. 
+
+Definiert in Zeile 31 der Datei main.\-cpp.
+
+\hypertarget{namespaceODiSIToSD_ae626f83adecae71a9227d63ff6c46d82}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S@{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}}
+\index{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S@{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}]{\setlength{\rightskip}{0pt plus 5cm}const int O\-Di\-S\-I\-To\-S\-D\-::\-N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S = 2}}\label{namespaceODiSIToSD_ae626f83adecae71a9227d63ff6c46d82}
+
+
+Anzahl der Suchpfade für die Konfigurationsdatei. 
+
+
+
+Definiert in Zeile 26 der Datei main.\-cpp.
+
+\hypertarget{namespaceODiSIToSD_a80beb7db49e15d88897aec916322ec08}{\index{O\-Di\-S\-I\-To\-S\-D@{O\-Di\-S\-I\-To\-S\-D}!opts@{opts}}
+\index{opts@{opts}!ODiSIToSD@{O\-Di\-S\-I\-To\-S\-D}}
+\subsubsection[{opts}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf O\-Di\-S\-I\-To\-S\-D\-::\-Options}  O\-Di\-S\-I\-To\-S\-D\-::opts}}\label{namespaceODiSIToSD_a80beb7db49e15d88897aec916322ec08}
+
+
+Hält die verwendeten Programmeinstellungen. 
+

@@ -32,49 +32,49 @@ Zusammengehörigkeiten von G\-U\-I\-Render\-Cut\-Canvas\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classGUIRenderCutCanvas_aa61de910b5041f7384def30e55b0817e}{G\-U\-I\-Render\-Cut\-Canvas} (wx\-Window $\ast$parent)
-\item 
+\begin{DoxyCompactList}\small\item\em Der Konstruktor. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIRenderCutCanvas_ab20c8e437704facc41fa8c3c111ffa85}{set\-Image} (wx\-Image $\ast$img)
-\item 
+\begin{DoxyCompactList}\small\item\em Setzt die aktuell angezeigte Grafik. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIRenderCutCanvas_a88c49bc069d6e1a40b68dcfce8fd9bf7}{set\-Value\-Img} (float $\ast$img)
-\item 
+\begin{DoxyCompactList}\small\item\em Setzt die zum anzeigen von werten verwendete Temperaturverteilung. \end{DoxyCompactList}\item 
 \hyperlink{classGUIColorScalePanel}{G\-U\-I\-Color\-Scale\-Panel} $\ast$ \hyperlink{classGUIRenderCutCanvas_a3f1bece4366e82377ec3754921351929}{get\-Scale\-Panel} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt das Temperaturskala-\/\-Objekt zurück. \end{DoxyCompactList}\item 
 virtual \hyperlink{classGUIRenderCutCanvas_a015523000fb4d5d9a5319115d8c3d9bb}{$\sim$\-G\-U\-I\-Render\-Cut\-Canvas} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Der Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Methoden}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classGUIRenderCutCanvas_a348424f671910f6ede43cb6835852589}{on\-Canvas\-Paint} (wx\-Paint\-Event \&event)
-\item 
+\begin{DoxyCompactList}\small\item\em Event-\/\-Tabellendeklaration für wx\-Widgets. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIRenderCutCanvas_a6759782fb854d7be47f368974c57b4e1}{On\-Mouse\-Wheel} (wx\-Mouse\-Event \&event)
-\item 
+\begin{DoxyCompactList}\small\item\em Behandelt das Zoomen in der Grafik. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIRenderCutCanvas_a5d4aa229d86929fe6f6a73fe05ab32ad}{On\-Mouse\-Move} (wx\-Mouse\-Event \&event)
-\item 
+\begin{DoxyCompactList}\small\item\em Behandelt das verschieben der Ansicht und speichert die Mauszeigerposition zur Ermittlung des Wertes an dieser Stelle in \hyperlink{classGUIRenderCutCanvas_a348424f671910f6ede43cb6835852589}{on\-Canvas\-Paint()}. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIRenderCutCanvas_a60ff460dd2c800b71802133f56d5b355}{On\-Resize} (wx\-Size\-Event \&event)
-\item 
+\begin{DoxyCompactList}\small\item\em Behandelt Größenänderungen der Zeichenfläche. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIRenderCutCanvas_a42f81a939b256a87e76b3896fc0b9ce3}{On\-Mouse\-Down} (wx\-Mouse\-Event \&event)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Behandelt klicken mit der Maus, deren Status zum verschieben der Ansicht benötigt wird. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 float \hyperlink{classGUIRenderCutCanvas_ac680bbbc673a6b336dcfc812c70a0779}{zoom}
-\item 
+\begin{DoxyCompactList}\small\item\em Der aktuelle Zoomfaktor für die Zeichenfläche. \end{DoxyCompactList}\item 
 float \hyperlink{classGUIRenderCutCanvas_a28357900ca23a3d3519af015ed6333ba}{delta\-X}
-\item 
+\begin{DoxyCompactList}\small\item\em horizontale Verschiebung der Ansicht. \end{DoxyCompactList}\item 
 float \hyperlink{classGUIRenderCutCanvas_a17b630c38009368a99e37b9f0eab3deb}{delta\-Y}
-\item 
+\begin{DoxyCompactList}\small\item\em vertikale Verschiebung der Ansicht. \end{DoxyCompactList}\item 
 int \hyperlink{classGUIRenderCutCanvas_af6d75eea1254d03ed36a07a865bf48c1}{current\-\_\-mx}
-\item 
+\begin{DoxyCompactList}\small\item\em Zwischenspeicher für die horizontale Mausposition. \end{DoxyCompactList}\item 
 int \hyperlink{classGUIRenderCutCanvas_a349deb05f26285eaf8207cbe45bf6603}{current\-\_\-my}
-\item 
+\begin{DoxyCompactList}\small\item\em Zwischenspeicher für die vertikale Mausposition. \end{DoxyCompactList}\item 
 bool \hyperlink{classGUIRenderCutCanvas_a67247191a5442c586d32c9ef6cb1df2e}{mouse\-\_\-to\-\_\-scalepanel}
-\item 
+\begin{DoxyCompactList}\small\item\em Müssen die Mausaktionen zur Skala weitergeleitet werden? (Wird diese gerade Transformiert?) \end{DoxyCompactList}\item 
 wx\-Image $\ast$ \hyperlink{classGUIRenderCutCanvas_a11ac45e65920dedf0cfbba21865dc2f9}{image}
-\item 
+\begin{DoxyCompactList}\small\item\em Die aktuelle dargestellte Temperaturverteilung als Grafik. \end{DoxyCompactList}\item 
 float $\ast$ \hyperlink{classGUIRenderCutCanvas_ad5a1f8cc7bd80e3c5a1fde354f0506b0}{value\-\_\-img}
-\item 
+\begin{DoxyCompactList}\small\item\em Die aktuelle dargestellte Temperaturverteilung. \end{DoxyCompactList}\item 
 \hyperlink{classGUIColorScalePanel}{G\-U\-I\-Color\-Scale\-Panel} $\ast$ \hyperlink{classGUIRenderCutCanvas_a775d88069fbba36582815b477f929632}{scalepanel}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Die Temperaturskala. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -94,7 +94,11 @@ Definiert in Zeile 19 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 \item[{wx\-Window $\ast$}]{parent}
 \end{DoxyParamCaption}
 )}}\label{classGUIRenderCutCanvas_aa61de910b5041f7384def30e55b0817e}
+
+
 Der Konstruktor. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em parent} & Das Fenster, auf dem die Zeichenfläche liegen soll. \\
 \hline
@@ -110,7 +114,11 @@ Definiert in Zeile 26 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classGUIRenderCutCanvas_a015523000fb4d5d9a5319115d8c3d9bb}
+
+
 Der Destruktor. 
+
+
 
 Definiert in Zeile 157 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 
@@ -124,13 +132,18 @@ Definiert in Zeile 157 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{classGUIRenderCutCanvas_a3f1bece4366e82377ec3754921351929}
+
+
 Gibt das Temperaturskala-\/\-Objekt zurück. 
+
+
 
 Definiert in Zeile 154 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -146,14 +159,17 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{wx\-Paint\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a348424f671910f6ede43cb6835852589}
-Event-\/\-Tabellendeklaration für wx\-Widgets. Zeichnet die Temperaturverteilung und die Anzeigeelemente (Informationsleiste, Skala). 
+
+
+Event-\/\-Tabellendeklaration für wx\-Widgets. 
+
+Zeichnet die Temperaturverteilung und die Anzeigeelemente (Informationsleiste, Skala). 
 
 Definiert in Zeile 91 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -169,13 +185,18 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 \item[{wx\-Mouse\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a42f81a939b256a87e76b3896fc0b9ce3}
+
+
 Behandelt klicken mit der Maus, deren Status zum verschieben der Ansicht benötigt wird. 
+
+
 
 Definiert in Zeile 77 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -191,13 +212,18 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \item[{wx\-Mouse\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a5d4aa229d86929fe6f6a73fe05ab32ad}
+
+
 Behandelt das verschieben der Ansicht und speichert die Mauszeigerposition zur Ermittlung des Wertes an dieser Stelle in \hyperlink{classGUIRenderCutCanvas_a348424f671910f6ede43cb6835852589}{on\-Canvas\-Paint()}. 
+
+
 
 Definiert in Zeile 49 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -213,7 +239,11 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \item[{wx\-Mouse\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a6759782fb854d7be47f368974c57b4e1}
+
+
 Behandelt das Zoomen in der Grafik. 
+
+
 
 Definiert in Zeile 43 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 
@@ -224,7 +254,11 @@ Definiert in Zeile 43 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 \item[{wx\-Size\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a60ff460dd2c800b71802133f56d5b355}
+
+
 Behandelt Größenänderungen der Zeichenfläche. 
+
+
 
 Definiert in Zeile 74 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 
@@ -235,13 +269,18 @@ Definiert in Zeile 74 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 \item[{wx\-Image $\ast$}]{img}
 \end{DoxyParamCaption}
 )}}\label{classGUIRenderCutCanvas_ab20c8e437704facc41fa8c3c111ffa85}
+
+
 Setzt die aktuell angezeigte Grafik. 
+
+
 
 Definiert in Zeile 37 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -257,13 +296,18 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{float $\ast$}]{img}
 \end{DoxyParamCaption}
 )}}\label{classGUIRenderCutCanvas_a88c49bc069d6e1a40b68dcfce8fd9bf7}
+
+
 Setzt die zum anzeigen von werten verwendete Temperaturverteilung. 
+
+
 
 Definiert in Zeile 40 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -278,63 +322,99 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \hypertarget{classGUIRenderCutCanvas_af6d75eea1254d03ed36a07a865bf48c1}{\index{G\-U\-I\-Render\-Cut\-Canvas@{G\-U\-I\-Render\-Cut\-Canvas}!current\-\_\-mx@{current\-\_\-mx}}
 \index{current\-\_\-mx@{current\-\_\-mx}!GUIRenderCutCanvas@{G\-U\-I\-Render\-Cut\-Canvas}}
 \subsubsection[{current\-\_\-mx}]{\setlength{\rightskip}{0pt plus 5cm}int G\-U\-I\-Render\-Cut\-Canvas\-::current\-\_\-mx\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_af6d75eea1254d03ed36a07a865bf48c1}
+
+
 Zwischenspeicher für die horizontale Mausposition. 
+
+
 
 Definiert in Zeile 84 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 
 \hypertarget{classGUIRenderCutCanvas_a349deb05f26285eaf8207cbe45bf6603}{\index{G\-U\-I\-Render\-Cut\-Canvas@{G\-U\-I\-Render\-Cut\-Canvas}!current\-\_\-my@{current\-\_\-my}}
 \index{current\-\_\-my@{current\-\_\-my}!GUIRenderCutCanvas@{G\-U\-I\-Render\-Cut\-Canvas}}
 \subsubsection[{current\-\_\-my}]{\setlength{\rightskip}{0pt plus 5cm}int G\-U\-I\-Render\-Cut\-Canvas\-::current\-\_\-my\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a349deb05f26285eaf8207cbe45bf6603}
+
+
 Zwischenspeicher für die vertikale Mausposition. 
+
+
 
 Definiert in Zeile 88 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 
 \hypertarget{classGUIRenderCutCanvas_a28357900ca23a3d3519af015ed6333ba}{\index{G\-U\-I\-Render\-Cut\-Canvas@{G\-U\-I\-Render\-Cut\-Canvas}!delta\-X@{delta\-X}}
 \index{delta\-X@{delta\-X}!GUIRenderCutCanvas@{G\-U\-I\-Render\-Cut\-Canvas}}
 \subsubsection[{delta\-X}]{\setlength{\rightskip}{0pt plus 5cm}float G\-U\-I\-Render\-Cut\-Canvas\-::delta\-X\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a28357900ca23a3d3519af015ed6333ba}
+
+
 horizontale Verschiebung der Ansicht. 
+
+
 
 Definiert in Zeile 76 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 
 \hypertarget{classGUIRenderCutCanvas_a17b630c38009368a99e37b9f0eab3deb}{\index{G\-U\-I\-Render\-Cut\-Canvas@{G\-U\-I\-Render\-Cut\-Canvas}!delta\-Y@{delta\-Y}}
 \index{delta\-Y@{delta\-Y}!GUIRenderCutCanvas@{G\-U\-I\-Render\-Cut\-Canvas}}
 \subsubsection[{delta\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float G\-U\-I\-Render\-Cut\-Canvas\-::delta\-Y\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a17b630c38009368a99e37b9f0eab3deb}
+
+
 vertikale Verschiebung der Ansicht. 
+
+
 
 Definiert in Zeile 80 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 
 \hypertarget{classGUIRenderCutCanvas_a11ac45e65920dedf0cfbba21865dc2f9}{\index{G\-U\-I\-Render\-Cut\-Canvas@{G\-U\-I\-Render\-Cut\-Canvas}!image@{image}}
 \index{image@{image}!GUIRenderCutCanvas@{G\-U\-I\-Render\-Cut\-Canvas}}
 \subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Image$\ast$ G\-U\-I\-Render\-Cut\-Canvas\-::image\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a11ac45e65920dedf0cfbba21865dc2f9}
+
+
 Die aktuelle dargestellte Temperaturverteilung als Grafik. 
+
+
 
 Definiert in Zeile 96 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 
 \hypertarget{classGUIRenderCutCanvas_a67247191a5442c586d32c9ef6cb1df2e}{\index{G\-U\-I\-Render\-Cut\-Canvas@{G\-U\-I\-Render\-Cut\-Canvas}!mouse\-\_\-to\-\_\-scalepanel@{mouse\-\_\-to\-\_\-scalepanel}}
 \index{mouse\-\_\-to\-\_\-scalepanel@{mouse\-\_\-to\-\_\-scalepanel}!GUIRenderCutCanvas@{G\-U\-I\-Render\-Cut\-Canvas}}
 \subsubsection[{mouse\-\_\-to\-\_\-scalepanel}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-Render\-Cut\-Canvas\-::mouse\-\_\-to\-\_\-scalepanel\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a67247191a5442c586d32c9ef6cb1df2e}
+
+
 Müssen die Mausaktionen zur Skala weitergeleitet werden? (Wird diese gerade Transformiert?) 
+
+
 
 Definiert in Zeile 92 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 
 \hypertarget{classGUIRenderCutCanvas_a775d88069fbba36582815b477f929632}{\index{G\-U\-I\-Render\-Cut\-Canvas@{G\-U\-I\-Render\-Cut\-Canvas}!scalepanel@{scalepanel}}
 \index{scalepanel@{scalepanel}!GUIRenderCutCanvas@{G\-U\-I\-Render\-Cut\-Canvas}}
 \subsubsection[{scalepanel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-U\-I\-Color\-Scale\-Panel}$\ast$ G\-U\-I\-Render\-Cut\-Canvas\-::scalepanel\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_a775d88069fbba36582815b477f929632}
+
+
 Die Temperaturskala. 
+
+
 
 Definiert in Zeile 104 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 
 \hypertarget{classGUIRenderCutCanvas_ad5a1f8cc7bd80e3c5a1fde354f0506b0}{\index{G\-U\-I\-Render\-Cut\-Canvas@{G\-U\-I\-Render\-Cut\-Canvas}!value\-\_\-img@{value\-\_\-img}}
 \index{value\-\_\-img@{value\-\_\-img}!GUIRenderCutCanvas@{G\-U\-I\-Render\-Cut\-Canvas}}
 \subsubsection[{value\-\_\-img}]{\setlength{\rightskip}{0pt plus 5cm}float$\ast$ G\-U\-I\-Render\-Cut\-Canvas\-::value\-\_\-img\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_ad5a1f8cc7bd80e3c5a1fde354f0506b0}
+
+
 Die aktuelle dargestellte Temperaturverteilung. 
+
+
 
 Definiert in Zeile 100 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 
 \hypertarget{classGUIRenderCutCanvas_ac680bbbc673a6b336dcfc812c70a0779}{\index{G\-U\-I\-Render\-Cut\-Canvas@{G\-U\-I\-Render\-Cut\-Canvas}!zoom@{zoom}}
 \index{zoom@{zoom}!GUIRenderCutCanvas@{G\-U\-I\-Render\-Cut\-Canvas}}
 \subsubsection[{zoom}]{\setlength{\rightskip}{0pt plus 5cm}float G\-U\-I\-Render\-Cut\-Canvas\-::zoom\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIRenderCutCanvas_ac680bbbc673a6b336dcfc812c70a0779}
+
+
 Der aktuelle Zoomfaktor für die Zeichenfläche. 
+
+
 
 Definiert in Zeile 72 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 
@@ -342,5 +422,5 @@ Definiert in Zeile 72 der Datei G\-U\-I\-Render\-Cut\-Canvas.\-h.
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/\-G\-U\-I/G\-U\-I\-Render\-Cut\-Canvas.\-h\item 
-simpleanalyzer-\/gui/src/\-G\-U\-I/G\-U\-I\-Render\-Cut\-Canvas.\-cpp\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{GUIRenderCutCanvas_8h}{G\-U\-I\-Render\-Cut\-Canvas.\-h}\item 
+simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{GUIRenderCutCanvas_8cpp}{G\-U\-I\-Render\-Cut\-Canvas.\-cpp}\end{DoxyCompactItemize}

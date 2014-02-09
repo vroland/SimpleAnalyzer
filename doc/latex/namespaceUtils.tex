@@ -24,46 +24,66 @@ struct \hyperlink{structUtils_1_1SensorPointComparator}{Sensor\-Point\-Comparato
 \subsection*{Aufzählungen}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862}{P\-I\-M\-\_\-algorithm} \{ {\bfseries A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S} = 0, 
-{\bfseries A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-R\-A\-Y}
+enum \hyperlink{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862}{P\-I\-M\-\_\-algorithm} \{ \hyperlink{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862a68e0a4da7ea369e1ba873c380926f010}{A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S} = 0, 
+\hyperlink{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862a4606bd560af1a6fd19e854e13613e9d0}{A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-R\-A\-Y}
  \}
-\begin{DoxyCompactList}\small\item\em Zum Punkt-\/in-\/\-Volumen Testen verwendeter Algorithmus. Dies wird bei A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S über alle Tetraeder des Objekts und deren Flächennormalen ermittelt. Bei A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-R\-A\-Y werden die Schnittpunkte aller Außenflächen mit einem Strahl gezählt (Aktuell nicht verwendet). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Zum Punkt-\/in-\/\-Volumen Testen verwendeter Algorithmus. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Funktionen}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{namespaceUtils_afac34330dde6235ee7395a4fd412ae0d}{double \hyperlink{namespaceUtils_afac34330dde6235ee7395a4fd412ae0d}{sqr} (double d)}\label{namespaceUtils_afac34330dde6235ee7395a4fd412ae0d}
-
+double \hyperlink{namespaceUtils_afac34330dde6235ee7395a4fd412ae0d}{sqr} (double d)
 \begin{DoxyCompactList}\small\item\em Quadriert eine Zahl. \end{DoxyCompactList}\item 
-double \hyperlink{namespaceUtils_ac924242f1790eaecb91b4965d3a661aa}{get\-Distance\-\_\-d} (double $\ast$p1, double $\ast$p2)
-\begin{DoxyCompactList}\small\item\em Berechnet den Abstand zwischen zwei Punkten. \end{DoxyCompactList}\item 
 float \hyperlink{namespaceUtils_abb647325616858e0fad55290c36ea03b}{clamp\-Hue} (float h)
 \begin{DoxyCompactList}\small\item\em Begrenzt einen Wert auf den Bereich 0..1. \end{DoxyCompactList}\item 
 wx\-String \hyperlink{namespaceUtils_a233ff9a0b34b10195a434f1ff66323b8}{floattowxstr} (double val)
-\item 
+\begin{DoxyCompactList}\small\item\em Wandelt eine Fließkommazahl in einen wx\-Widgets-\/\-String um. \end{DoxyCompactList}\item 
 wx\-String \hyperlink{namespaceUtils_ac47160b3665d77f9e1a49a4045053add}{floattowxstr} (double val, int digits)
-\item 
+\begin{DoxyCompactList}\small\item\em Wandelt eine Fließkommazahl in einen wx\-Widgets-\/\-String um. \end{DoxyCompactList}\item 
 int \hyperlink{namespaceUtils_a5f216cc7011a901130db81321b565334}{ray\-Intersects\-Triangle} (\hyperlink{classVector3D}{Vector3\-D} $\ast$p, \hyperlink{classVector3D}{Vector3\-D} $\ast$direction, \hyperlink{classTriangle}{Triangle} $\ast$tri, double $\ast$depth)
-\item 
+\begin{DoxyCompactList}\small\item\em Testet, ob ein Strahl ein Dreieck schneidet. \end{DoxyCompactList}\item 
 int \hyperlink{namespaceUtils_af8fc5d6dab27f759ab5d76757a53023f}{point\-Inside\-Mesh} (\hyperlink{classVector3D}{Vector3\-D} $\ast$p, tetgenio $\ast$io, \hyperlink{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862}{P\-I\-M\-\_\-algorithm} algorithm)
-\item 
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Körpers befindet. \end{DoxyCompactList}\item 
 int \hyperlink{namespaceUtils_a9b995a1220a78be108b19bda4b776332}{point\-Inside\-Tetrahedron} (\hyperlink{classVector3D}{Vector3\-D} $\ast$pges, \hyperlink{classVector3D}{Vector3\-D} $\ast$v1, \hyperlink{classVector3D}{Vector3\-D} $\ast$v2, \hyperlink{classVector3D}{Vector3\-D} $\ast$v3, \hyperlink{classVector3D}{Vector3\-D} $\ast$v4)
-\item 
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
 int \hyperlink{namespaceUtils_a8f7379e1915d2a04907eb9d99d0a56ad}{point\-Inside\-Tetrahedron} (double $\ast$pges, double $\ast$v1, double $\ast$v2, double $\ast$v3, double $\ast$v4)
-\item 
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
 int \hyperlink{namespaceUtils_a40eaef4d22da849a5deb2f1153d88bbc}{point\-Inside\-Tetrahedron} (double $\ast$p, vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$tet)
-\item 
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
 void \hyperlink{namespaceUtils_af4ba26e928c7cef5269c51bfac49d547}{next\-Combination} (vector$<$ int $>$ $\ast$indices, int depth, int data\-Point\-Count)
-\item 
+\begin{DoxyCompactList}\small\item\em Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf data\-Point\-Count Plätze. \end{DoxyCompactList}\item 
 double \hyperlink{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}{get\-Point\-Value} (int \&status, vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $>$ $\ast$sensorpoints, double $\ast$p, \hyperlink{classInterpolator}{Interpolator} $\ast$interpolator, vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$prev\-\_\-tet=N\-U\-L\-L, vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$current\-\_\-tet=N\-U\-L\-L)
-\item 
+\begin{DoxyCompactList}\small\item\em Gibt den inter/extrapolierten Wert eines Punktes zurück. \end{DoxyCompactList}\item 
 float $\ast$ \hyperlink{namespaceUtils_a5d6523eb946892eee52c9c74efd016de}{hsv\-To\-Rgb} (float h, float s, float v)
-\item 
+\begin{DoxyCompactList}\small\item\em Wandelt eine Farbe im H\-S\-V-\/\-Format ins R\-G\-B-\/\-Format um. \end{DoxyCompactList}\item 
 void \hyperlink{namespaceUtils_adc0438a85ca31977c95f5d27090d5346}{copy\-Sensor\-Point} (\hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$from, \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$to)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Kopiert die Eigenschaften eines Sensorpunktes in einen Anderen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
 allgemeine Funktionen und Typen. 
+
+\subsection{Dokumentation der Aufzählungstypen}
+\hypertarget{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862}{\index{Utils@{Utils}!P\-I\-M\-\_\-algorithm@{P\-I\-M\-\_\-algorithm}}
+\index{P\-I\-M\-\_\-algorithm@{P\-I\-M\-\_\-algorithm}!Utils@{Utils}}
+\subsubsection[{P\-I\-M\-\_\-algorithm}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Utils\-::\-P\-I\-M\-\_\-algorithm}}}\label{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862}
+
+
+Zum Punkt-\/in-\/\-Volumen Testen verwendeter Algorithmus. 
+
+Dies wird bei A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S über alle Tetraeder des Objekts und deren Flächennormalen ermittelt. Bei A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-R\-A\-Y werden die Schnittpunkte aller Außenflächen mit einem Strahl gezählt (Aktuell nicht verwendet). \begin{Desc}
+\item[Aufzählungswerte]\par
+\begin{description}
+\index{A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S@{A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S}!Utils@{Utils}}\index{Utils@{Utils}!A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S@{A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S}}\item[{\em 
+\hypertarget{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862a68e0a4da7ea369e1ba873c380926f010}{A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S}\label{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862a68e0a4da7ea369e1ba873c380926f010}
+}]\index{A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-R\-A\-Y@{A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-R\-A\-Y}!Utils@{Utils}}\index{Utils@{Utils}!A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-R\-A\-Y@{A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-R\-A\-Y}}\item[{\em 
+\hypertarget{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862a4606bd560af1a6fd19e854e13613e9d0}{A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-R\-A\-Y}\label{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862a4606bd560af1a6fd19e854e13613e9d0}
+}]\end{description}
+\end{Desc}
+
+
+Definiert in Zeile 31 der Datei utils.\-h.
+
+
 
 \subsection{Dokumentation der Funktionen}
 \hypertarget{namespaceUtils_abb647325616858e0fad55290c36ea03b}{\index{Utils@{Utils}!clamp\-Hue@{clamp\-Hue}}
@@ -79,7 +99,7 @@ Begrenzt einen Wert auf den Bereich 0..1.
 
 
 \begin{DoxyParams}{Parameter}
-{\em Die} & zu begrenzende Zahl. \\
+{\em h} & Die zu begrenzende Zahl. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Rückgabe}
@@ -87,15 +107,16 @@ Der den Grenzen entsprechende Wert.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 26 der Datei utils.\-cpp.
+Definiert in Zeile 27 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=346pt]{namespaceUtils_abb647325616858e0fad55290c36ea03b_icgraph}
+\includegraphics[width=350pt]{namespaceUtils_abb647325616858e0fad55290c36ea03b_icgraph}
 \end{center}
 \end{figure}
 
@@ -108,7 +129,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{Sensor\-Point $\ast$}]{to}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_adc0438a85ca31977c95f5d27090d5346}
+
+
 Kopiert die Eigenschaften eines Sensorpunktes in einen Anderen. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em from} & Quelle. \\
 \hline
@@ -117,12 +142,11 @@ Kopiert die Eigenschaften eines Sensorpunktes in einen Anderen.
 \end{DoxyParams}
 
 
-Definiert in Zeile 68 der Datei utils.\-cpp.
+Definiert in Zeile 69 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -138,7 +162,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \item[{double}]{val}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_a233ff9a0b34b10195a434f1ff66323b8}
+
+
 Wandelt eine Fließkommazahl in einen wx\-Widgets-\/\-String um. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em val} & Die umzuwandelnde Zahl. \\
 \hline
@@ -148,12 +176,11 @@ Der entstandene String.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 35 der Datei utils.\-cpp.
+Definiert in Zeile 36 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -170,11 +197,15 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \item[{int}]{digits}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_ac47160b3665d77f9e1a49a4045053add}
+
+
 Wandelt eine Fließkommazahl in einen wx\-Widgets-\/\-String um. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em val} & Die umzuwandelnde Zahl. \\
 \hline
-{\em val} & Anzahl der zu übernehmenden Stellen. \\
+{\em digits} & Anzahl der zu übernehmenden Stellen. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Rückgabe}
@@ -182,52 +213,7 @@ Der entstandene String.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 40 der Datei utils.\-cpp.
-
-\hypertarget{namespaceUtils_ac924242f1790eaecb91b4965d3a661aa}{\index{Utils@{Utils}!get\-Distance\-\_\-d@{get\-Distance\-\_\-d}}
-\index{get\-Distance\-\_\-d@{get\-Distance\-\_\-d}!Utils@{Utils}}
-\subsubsection[{get\-Distance\-\_\-d}]{\setlength{\rightskip}{0pt plus 5cm}double Utils\-::get\-Distance\-\_\-d (
-\begin{DoxyParamCaption}
-\item[{double $\ast$}]{p1, }
-\item[{double $\ast$}]{p2}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceUtils_ac924242f1790eaecb91b4965d3a661aa}
-
-
-Berechnet den Abstand zwischen zwei Punkten. 
-
-
-\begin{DoxyParams}{Parameter}
-{\em p1} & Koordinaten des ersten Punkten als Liste dreier Koordinaten. \\
-\hline
-{\em p2} & Koordinaten des zweiten Punkten als Liste dreier Koordinaten. \\
-\hline
-\end{DoxyParams}
-
-
-Definiert in Zeile 46 der Datei utils.\-h.
-
-
-
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=186pt]{namespaceUtils_ac924242f1790eaecb91b4965d3a661aa_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{namespaceUtils_ac924242f1790eaecb91b4965d3a661aa_icgraph}
-\end{center}
-\end{figure}
-
+Definiert in Zeile 41 der Datei utils.\-cpp.
 
 \hypertarget{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}{\index{Utils@{Utils}!get\-Point\-Value@{get\-Point\-Value}}
 \index{get\-Point\-Value@{get\-Point\-Value}!Utils@{Utils}}
@@ -241,7 +227,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{vector$<$ Sensor\-Point $\ast$ $>$ $\ast$}]{current\-\_\-tet = {\ttfamily NULL}}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}
+
+
 Gibt den inter/extrapolierten Wert eines Punktes zurück. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em status} & Rückgabevariable. 1\-: Punkt wurde extrapoliert 0\-: Punkt wurde interpoliert. -\/1\-: Alle Sensorpunkte sind komplanar. \\
 \hline
@@ -261,7 +251,7 @@ Temperatur des gesuchten Punktes.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 257 der Datei utils.\-cpp.
+Definiert in Zeile 258 der Datei utils.\-cpp.
 
 
 
@@ -296,7 +286,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \item[{float}]{v}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_a5d6523eb946892eee52c9c74efd016de}
+
+
 Wandelt eine Farbe im H\-S\-V-\/\-Format ins R\-G\-B-\/\-Format um. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em h} & H-\/\-Komponente der Farbe. \\
 \hline
@@ -310,7 +304,7 @@ R\-G\-B-\/\-Farbe als Liste mit 3 Werten im Bereich 0..1. Muss manuell mit delet
 \end{DoxyReturn}
 
 
-Definiert in Zeile 45 der Datei utils.\-cpp.
+Definiert in Zeile 46 der Datei utils.\-cpp.
 
 
 
@@ -333,7 +327,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \item[{int}]{data\-Point\-Count}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_af4ba26e928c7cef5269c51bfac49d547}
-Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf data\-Point\-Count Plätze. Die Indices der Plätze, die die Elemente jeweils besetzten stehen in indices. Diese Funktion generiert aus der vorherigen Anordnung die Nächste. 
+
+
+Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf data\-Point\-Count Plätze. 
+
+Die Indices der Plätze, die die Elemente jeweils besetzten stehen in indices. Diese Funktion generiert aus der vorherigen Anordnung die Nächste. 
 \begin{DoxyParams}{Parameter}
 {\em indices} & Liste der Indices der Elemente. \\
 \hline
@@ -345,18 +343,6 @@ Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen a
 
 
 Definiert in Zeile 13 der Datei utils.\-cpp.
-
-
-
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=196pt]{namespaceUtils_af4ba26e928c7cef5269c51bfac49d547_cgraph}
-\end{center}
-\end{figure}
-
 
 
 
@@ -379,7 +365,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \item[{P\-I\-M\-\_\-algorithm}]{algorithm}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_af8fc5d6dab27f759ab5d76757a53023f}
+
+
 Testet, ob sich ein Punkt innerhalb eines Körpers befindet. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em p} & Der zu testende Punkt. \\
 \hline
@@ -393,16 +383,27 @@ Testet, ob sich ein Punkt innerhalb eines Körpers befindet.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 138 der Datei utils.\-cpp.
+Definiert in Zeile 139 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{namespaceUtils_af8fc5d6dab27f759ab5d76757a53023f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceUtils_af8fc5d6dab27f759ab5d76757a53023f_icgraph}
 \end{center}
 \end{figure}
 
@@ -418,7 +419,11 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 \item[{{\bf Vector3\-D} $\ast$}]{v4}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_a9b995a1220a78be108b19bda4b776332}
+
+
 Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em pges} & Der zu testende Punkt. \\
 \hline
@@ -436,12 +441,11 @@ Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 187 der Datei utils.\-cpp.
+Definiert in Zeile 188 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -473,7 +477,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \item[{double $\ast$}]{v4}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_a8f7379e1915d2a04907eb9d99d0a56ad}
+
+
 Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em pges} & Koordinaten des zu testenden Punktes. \\
 \hline
@@ -491,12 +499,11 @@ Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 249 der Datei utils.\-cpp.
+Definiert in Zeile 250 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -513,7 +520,11 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 \item[{vector$<$ Sensor\-Point $\ast$ $>$ $\ast$}]{tet}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_a40eaef4d22da849a5deb2f1153d88bbc}
+
+
 Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em p} & Koordinaten des zu testenden Punktes. \\
 \hline
@@ -525,12 +536,11 @@ Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 241 der Datei utils.\-cpp.
+Definiert in Zeile 242 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -549,7 +559,11 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 \item[{double $\ast$}]{depth}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_a5f216cc7011a901130db81321b565334}
+
+
 Testet, ob ein Strahl ein Dreieck schneidet. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em p} & Ortsvektor zum Ausganspunkt des Strahls. \\
 \hline
@@ -565,12 +579,11 @@ Gibt 1 zurück, wenn es einen Schnittpunkt gibt, ansonsten 0.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 76 der Datei utils.\-cpp.
+Definiert in Zeile 77 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -590,4 +603,27 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \end{center}
 \end{figure}
 
+
+\hypertarget{namespaceUtils_afac34330dde6235ee7395a4fd412ae0d}{\index{Utils@{Utils}!sqr@{sqr}}
+\index{sqr@{sqr}!Utils@{Utils}}
+\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}double Utils\-::sqr (
+\begin{DoxyParamCaption}
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceUtils_afac34330dde6235ee7395a4fd412ae0d}
+
+
+Quadriert eine Zahl. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em d} & Die zu quadrierende Zahl. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+$d^2$. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 40 der Datei utils.\-h.
 

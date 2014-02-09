@@ -1,0 +1,8 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$namespaceODiSIToSD.xhtml#a09e74878b7f3b12c27afbb8ee902d9f8" title="Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die ODiSI&#45;Datei um ein..." alt="" coords="105,59,247,88"/>
+<area shape="rect" id="node5" href="$Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="getTextBlock" alt="" coords="321,5,420,35"/>
+<area shape="rect" id="node7" href="$namespaceCSVToSD.xhtml#a2e2e7a5141b8cf519db3c37c9b2cc410" title="Sammelt Daten aus einer Textzeile (string). " alt="" coords="297,59,444,88"/>
+<area shape="rect" id="node13" href="$namespaceCSVToSD.xhtml#a4f125d9c8df307d21dbb5363f6422b4d" title="Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen. " alt="" coords="296,112,445,141"/>
+<area shape="rect" id="node9" href="$namespaceCSVToSD.xhtml#a268ecb11b27ccafb712296ea053c7869" title="Testet, ob sich ein String in einer Liste von Strings befindet. " alt="" coords="493,59,635,88"/>
+<area shape="rect" id="node11" href="$namespaceODiSIToSD.xhtml#a2978e21c2e0b6ff70786de2d92aed3ee" title="Gibt die Position des ersten Vorkommens eines Zeichens in einem String zurück. " alt="" coords="684,59,804,88"/>
+</map>

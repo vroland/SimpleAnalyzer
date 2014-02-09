@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUITimeline.xhtml#a98e636407ed0691d655eaa53cd0d968c" target="_top" xlink:title="GUITimeline::calcStepWidth">
+<a xlink:href="classGUITimeline.xhtml#a98e636407ed0691d655eaa53cd0d968c" target="_top" xlink:title="Berechnet die für die aktuelle Darstellung günstigste Schrittweite für die Beschriftung. ">
 <polygon fill="none" stroke="black" points="150.5,-20.5 150.5,-41.5 291.5,-41.5 291.5,-20.5 150.5,-20.5"/>
 <text text-anchor="middle" x="221" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::calcStepWidth</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" target="_top" xlink:title="Utils::floattowxstr">
+<a xlink:href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" target="_top" xlink:title="Wandelt eine Fließkommazahl in einen wxWidgets&#45;String um. ">
 <polygon fill="none" stroke="black" points="328,-0.5 328,-21.5 422,-21.5 422,-0.5 328,-0.5"/>
 <text text-anchor="middle" x="375" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::floattowxstr</text>
 </a>

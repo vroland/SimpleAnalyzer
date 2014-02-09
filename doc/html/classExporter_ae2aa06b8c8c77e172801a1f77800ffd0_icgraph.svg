@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a3aee786d94c840ab4e6df6e3c2817802" target="_top" xlink:title="GUICutRenderWindow\l::OnExportCSV">
+<a xlink:href="classGUICutRenderWindow.xhtml#a3aee786d94c840ab4e6df6e3c2817802" target="_top" xlink:title="Fragt den Benutzer nach dem Pfad und Exporiert die 2D&#45;Temperaturverteilung als .csv&#45;Datei. ">
 <polygon fill="none" stroke="black" points="162.5,-0 162.5,-34 279.5,-34 279.5,-0 162.5,-0"/>
 <text text-anchor="start" x="170.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="221" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::OnExportCSV</text>

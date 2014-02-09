@@ -1,15 +1,15 @@
 <map id="ObjectData::setCurrentSensorIndex" name="ObjectData::setCurrentSensorIndex">
-<area shape="rect" id="node3" href="$classImporter.xhtml#a001bd26372d94f96de66f7bcb90cc790" title="Importer::LoadSensorData" alt="" coords="272,31,445,60"/>
-<area shape="rect" id="node13" href="$classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" title="Importer::LoadTimedData" alt="" coords="273,84,444,113"/>
-<area shape="rect" id="node20" href="$classGUIMainWindow.xhtml#a1cb2c4f39b9ba971d51ab682f29b7f23" title="GUIMainWindow::assignCurrent\lObjectProps" alt="" coords="253,137,464,183"/>
-<area shape="rect" id="node22" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Analyzer::analyzeObject" alt="" coords="277,207,440,236"/>
-<area shape="rect" id="node5" href="$classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" title="ObjectData::loadFromFile" alt="" coords="520,59,691,88"/>
-<area shape="rect" id="node9" href="$classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" title="ObjectData::addSensorData" alt="" coords="512,5,699,35"/>
-<area shape="rect" id="node7" href="$classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" title="GUIMainWindow::OnMenuImportObj" alt="" coords="751,59,985,88"/>
-<area shape="rect" id="node11" href="$classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2" title="GUIMainWindow::OnMenuImportSD" alt="" coords="751,5,985,35"/>
-<area shape="rect" id="node16" href="$classObjectData.xhtml#ac8056d23b0882a826b6e572ff080688f" title="ObjectData::addTimedData" alt="" coords="515,112,696,141"/>
-<area shape="rect" id="node18" href="$classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560" title="GUIMainWindow::OnMenuImportTSD" alt="" coords="747,112,989,141"/>
-<area shape="rect" id="node24" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="GUIAnalyzeOutputWindow\l::Update" alt="" coords="516,222,695,269"/>
-<area shape="rect" id="node28" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="GUITimeline::findMaxValue" alt="" coords="515,169,696,199"/>
-<area shape="rect" id="node26" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="GUIAnalyzeOutputWindow\l::GUIAnalyzeOutputWindow" alt="" coords="775,222,961,269"/>
+<area shape="rect" id="node3" href="$classImporter.xhtml#a001bd26372d94f96de66f7bcb90cc790" title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. " alt="" coords="272,31,445,60"/>
+<area shape="rect" id="node13" href="$classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. " alt="" coords="273,84,444,113"/>
+<area shape="rect" id="node20" href="$classGUIMainWindow.xhtml#a1cb2c4f39b9ba971d51ab682f29b7f23" title="Überträgt die in der GUI eingetragenen Objekteigenschaften in das aktive Objekt. " alt="" coords="253,137,464,183"/>
+<area shape="rect" id="node22" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="277,207,440,236"/>
+<area shape="rect" id="node5" href="$classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" title="Lädt ein Objekt und erste Sensordaten. " alt="" coords="520,59,691,88"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" title="Lädt einfache Sensordaten und verknüpft sie mit dem Objekt. " alt="" coords="512,5,699,35"/>
+<area shape="rect" id="node7" href="$classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="751,59,985,88"/>
+<area shape="rect" id="node11" href="$classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2" title="Öffnet den Dialog zum Importieren einfacher Sensordaten. " alt="" coords="751,5,985,35"/>
+<area shape="rect" id="node16" href="$classObjectData.xhtml#ac8056d23b0882a826b6e572ff080688f" title="Lädt zeitbezogene Sensordaten und verknüpft sie mit dem Objekt. " alt="" coords="515,112,696,141"/>
+<area shape="rect" id="node18" href="$classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560" title="Öffnet den Dialog zum Importieren zeitbezogener Sensordaten. " alt="" coords="747,112,989,141"/>
+<area shape="rect" id="node24" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="516,222,695,269"/>
+<area shape="rect" id="node28" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="515,169,696,199"/>
+<area shape="rect" id="node26" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="775,222,961,269"/>
 </map>

@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" target="_top" xlink:title="GUICutRenderWindow\l::renderImage">
+<a xlink:href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" target="_top" xlink:title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. ">
 <polygon fill="none" stroke="black" points="164.5,-143 164.5,-177 281.5,-177 281.5,-143 164.5,-143"/>
 <text text-anchor="start" x="172.5" y="-164" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="223" y="-151" font-family="Helvetica,sans-Serif" font-size="10.00">::renderImage</text>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970" target="_top" xlink:title="GUICutRenderWindow\l::refreshVisualisation">
+<a xlink:href="classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970" target="_top" xlink:title="Aktualisiert die Visualisierung der Schnittebene im Hauptfenster. ">
 <polygon fill="none" stroke="black" points="164.5,-78 164.5,-112 281.5,-112 281.5,-78 164.5,-78"/>
 <text text-anchor="start" x="172.5" y="-99" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="223" y="-86" font-family="Helvetica,sans-Serif" font-size="10.00">::refreshVisualisation</text>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a3aee786d94c840ab4e6df6e3c2817802" target="_top" xlink:title="GUICutRenderWindow\l::OnExportCSV">
+<a xlink:href="classGUICutRenderWindow.xhtml#a3aee786d94c840ab4e6df6e3c2817802" target="_top" xlink:title="Fragt den Benutzer nach dem Pfad und Exporiert die 2D&#45;Temperaturverteilung als .csv&#45;Datei. ">
 <polygon fill="none" stroke="black" points="164.5,-26 164.5,-60 281.5,-60 281.5,-26 164.5,-26"/>
 <text text-anchor="start" x="172.5" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="223" y="-34" font-family="Helvetica,sans-Serif" font-size="10.00">::OnExportCSV</text>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" target="_top" xlink:title="GUICutRenderWindow\l::renderCutBtClick">
+<a xlink:href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" target="_top" xlink:title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="332.5,-156 332.5,-190 449.5,-190 449.5,-156 332.5,-156"/>
 <text text-anchor="start" x="340.5" y="-177" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="391" y="-164" font-family="Helvetica,sans-Serif" font-size="10.00">::renderCutBtClick</text>
@@ -68,7 +68,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a780972413c43b3086e86c28d581d1f70" target="_top" xlink:title="GUICutRenderWindow\l::OnCutPropsChanged">
+<a xlink:href="classGUICutRenderWindow.xhtml#a780972413c43b3086e86c28d581d1f70" target="_top" xlink:title="Behandelt das Ändern von Parametern zur Berechnung der 2D&#45;Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="332.5,-104 332.5,-138 449.5,-138 449.5,-104 332.5,-104"/>
 <text text-anchor="start" x="340.5" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="391" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">::OnCutPropsChanged</text>
@@ -81,7 +81,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a50e92af9db469de6d0298e58eee783ce" target="_top" xlink:title="GUICutRenderWindow\l::OnSCutPropsChanged_spin">
+<a xlink:href="classGUICutRenderWindow.xhtml#a50e92af9db469de6d0298e58eee783ce" target="_top" xlink:title="Behandelt das Ändern von Parametern zur Berechnung der 2D&#45;Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="318,-52 318,-86 464,-86 464,-52 318,-52"/>
 <text text-anchor="start" x="326" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="391" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">::OnSCutPropsChanged_spin</text>
@@ -94,7 +94,7 @@
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#ab57ff6c0d5e6465bb0f3b5cf0e6d9dc9" target="_top" xlink:title="GUICutRenderWindow\l::OnResize">
+<a xlink:href="classGUICutRenderWindow.xhtml#ab57ff6c0d5e6465bb0f3b5cf0e6d9dc9" target="_top" xlink:title="Behandelt Änderungen der Größe des Fensters. ">
 <polygon fill="none" stroke="black" points="332.5,-0 332.5,-34 449.5,-34 449.5,-0 332.5,-0"/>
 <text text-anchor="start" x="340.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="391" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::OnResize</text>

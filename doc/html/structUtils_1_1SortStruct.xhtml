@@ -73,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,14 +104,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Öffentliche Attribute</h2></td></tr>
 <tr class="memitem:aca911abd52b034a588bab7b414cf93cb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUtils_1_1SortStruct.xhtml#aca911abd52b034a588bab7b414cf93cb">distance</a></td></tr>
+<tr class="memdesc:aca911abd52b034a588bab7b414cf93cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstand des Punktes.  <a href="#aca911abd52b034a588bab7b414cf93cb">Mehr ...</a><br/></td></tr>
 <tr class="separator:aca911abd52b034a588bab7b414cf93cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad470a3f9a230e66a47fd022bf7a4a70e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUtils_1_1SortStruct.xhtml#ad470a3f9a230e66a47fd022bf7a4a70e">pointIndex</a></td></tr>
+<tr class="memdesc:ad470a3f9a230e66a47fd022bf7a4a70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index des entsprechenden Sensordatenpuntkes.  <a href="#ad470a3f9a230e66a47fd022bf7a4a70e">Mehr ...</a><br/></td></tr>
 <tr class="separator:ad470a3f9a230e66a47fd022bf7a4a70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock"><p>Hilfsstruktur zum Sortieren von Punkten nach dem Abstand zu einem anderen Punkt. </p>
 
-<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00059">59</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00053">53</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
 </div><h2 class="groupheader">Dokumentation der Datenelemente</h2>
 <a class="anchor" id="aca911abd52b034a588bab7b414cf93cb"></a>
 <div class="memitem">
@@ -122,9 +124,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Abstand des Punktes. </p>
 
-<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00060">60</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00054">54</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
 
 </div>
 </div>
@@ -137,9 +140,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Index des entsprechenden Sensordatenpuntkes. </p>
 
-<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00061">61</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00055">55</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
 
 </div>
 </div>
@@ -149,7 +153,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 01:43:19 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Feb 9 2014 15:44:35 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

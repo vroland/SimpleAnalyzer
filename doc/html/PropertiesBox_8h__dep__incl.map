@@ -1,0 +1,10 @@
+<map id="simpleanalyzer&#45;gui/src/GUI/PropertiesBox.h" name="simpleanalyzer&#45;gui/src/GUI/PropertiesBox.h">
+<area shape="rect" id="node3" href="$GUIMainWindow_8h.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIMainWindow.h" alt="" coords="367,198,553,245"/>
+<area shape="rect" id="node15" href="$GUIAnalyzeOutputWindow_8h.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIAnalyzeOutputWindow.h" alt="" coords="180,102,423,149"/>
+<area shape="rect" id="node19" href="$PropertiesBox_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/PropertiesBox.cpp" alt="" coords="497,102,679,149"/>
+<area shape="rect" id="node5" href="$Application_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/Application.cpp" alt="" coords="288,294,424,341"/>
+<area shape="rect" id="node7" href="$GUIAnalyzeOutputWindow_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIAnalyzeOutputWindow.cpp" alt="" coords="5,294,264,341"/>
+<area shape="rect" id="node9" href="$GUICutRenderWindow_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUICutRenderWindow.cpp" alt="" coords="448,294,683,341"/>
+<area shape="rect" id="node11" href="$GUIMainWindow_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIMainWindow.cpp" alt="" coords="707,294,907,341"/>
+<area shape="rect" id="node13" href="$GUIRenderCutCanvas_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIRenderCutCanvas.cpp" alt="" coords="931,294,1163,341"/>
+</map>

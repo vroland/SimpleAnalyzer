@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="GUIAnalyzePointWindow_8cpp_source.xhtml" target="_top" xlink:title="simpleanalyzer&#45;gui\l/src/GUI/GUIAnalyzePointWindow.cpp">
+<a xlink:href="GUIAnalyzePointWindow_8cpp.xhtml" target="_top" xlink:title="simpleanalyzer&#45;gui\l/src/GUI/GUIAnalyzePointWindow.cpp">
 <polygon fill="none" stroke="black" points="-0.5,-1 -0.5,-35 186.5,-35 186.5,-1 -0.5,-1"/>
 <text text-anchor="start" x="7.5" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">simpleanalyzer&#45;gui</text>
 <text text-anchor="middle" x="93" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">/src/GUI/GUIAnalyzePointWindow.cpp</text>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="GUICutRenderWindow_8cpp_source.xhtml" target="_top" xlink:title="simpleanalyzer&#45;gui\l/src/GUI/GUICutRenderWindow.cpp">
+<a xlink:href="GUICutRenderWindow_8cpp.xhtml" target="_top" xlink:title="simpleanalyzer&#45;gui\l/src/GUI/GUICutRenderWindow.cpp">
 <polygon fill="none" stroke="black" points="204,-1 204,-35 380,-35 380,-1 204,-1"/>
 <text text-anchor="start" x="212" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">simpleanalyzer&#45;gui</text>
 <text text-anchor="middle" x="292" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">/src/GUI/GUICutRenderWindow.cpp</text>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="GUIMainWindow_8cpp_source.xhtml" target="_top" xlink:title="simpleanalyzer&#45;gui\l/src/GUI/GUIMainWindow.cpp">
+<a xlink:href="GUIMainWindow_8cpp.xhtml" target="_top" xlink:title="simpleanalyzer&#45;gui\l/src/GUI/GUIMainWindow.cpp">
 <polygon fill="none" stroke="black" points="398,-1 398,-35 548,-35 548,-1 398,-1"/>
 <text text-anchor="start" x="406" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">simpleanalyzer&#45;gui</text>
 <text text-anchor="middle" x="473" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">/src/GUI/GUIMainWindow.cpp</text>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="PropertiesBox_8cpp_source.xhtml" target="_top" xlink:title="simpleanalyzer&#45;gui\l/src/GUI/PropertiesBox.cpp">
+<a xlink:href="PropertiesBox_8cpp.xhtml" target="_top" xlink:title="simpleanalyzer&#45;gui\l/src/GUI/PropertiesBox.cpp">
 <polygon fill="none" stroke="black" points="565.5,-1 565.5,-35 702.5,-35 702.5,-1 565.5,-1"/>
 <text text-anchor="start" x="573.5" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">simpleanalyzer&#45;gui</text>
 <text text-anchor="middle" x="634" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">/src/GUI/PropertiesBox.cpp</text>
@@ -68,7 +68,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="ViewpropBox_8cpp_source.xhtml" target="_top" xlink:title="simpleanalyzer&#45;gui\l/src/GUI/ViewpropBox.cpp">
+<a xlink:href="ViewpropBox_8cpp.xhtml" target="_top" xlink:title="simpleanalyzer&#45;gui\l/src/GUI/ViewpropBox.cpp">
 <polygon fill="none" stroke="black" points="720,-1 720,-35 854,-35 854,-1 720,-1"/>
 <text text-anchor="start" x="728" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">simpleanalyzer&#45;gui</text>
 <text text-anchor="middle" x="787" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">/src/GUI/ViewpropBox.cpp</text>

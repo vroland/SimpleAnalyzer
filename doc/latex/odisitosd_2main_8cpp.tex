@@ -1,0 +1,90 @@
+\hypertarget{odisitosd_2main_8cpp}{\section{odisitosd/main.cpp-\/\-Dateireferenz}
+\label{odisitosd_2main_8cpp}\index{odisitosd/main.\-cpp@{odisitosd/main.\-cpp}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+Include-\/\-Abhängigkeitsdiagramm für main.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{odisitosd_2main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structODiSIToSD_1_1Options}{O\-Di\-S\-I\-To\-S\-D\-::\-Options}
+\begin{DoxyCompactList}\small\item\em Strunktur für die Programmeinstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namensbereiche}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceODiSIToSD}{O\-Di\-S\-I\-To\-S\-D}
+\begin{DoxyCompactList}\small\item\em Namespace des O\-Di\-S\-I-\/zu-\/.\-tsd-\/\-Converterprogramms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Constant Groups}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceODiSIToSD}{O\-Di\-S\-I\-To\-S\-D}
+\begin{DoxyCompactList}\small\item\em Namespace des O\-Di\-S\-I-\/zu-\/.\-tsd-\/\-Converterprogramms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funktionen}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespaceODiSIToSD_a0196aa9f8fa3ef1c56432305918c6129}{O\-Di\-S\-I\-To\-S\-D\-::contains} (std\-::vector$<$ string $>$ \&Vec, const string \&Element)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein String in einer Liste von Strings befindet. \end{DoxyCompactList}\item 
+bool \hyperlink{namespaceODiSIToSD_adc00a4a6a36292e9dbe72a2d9eb7d447}{O\-Di\-S\-I\-To\-S\-D\-::contains} (std\-::vector$<$ int $>$ \&Vec, const int \&Element)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich eine Ganzzahl in einer Liste von Ganzzahlen befindet. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceODiSIToSD_ac5bc435a72dccec2fc50bb187298f0e8}{O\-Di\-S\-I\-To\-S\-D\-::replace\-All} (string \&str, const string \&from, const string \&to)
+\begin{DoxyCompactList}\small\item\em Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen. \end{DoxyCompactList}\item 
+int \hyperlink{namespaceODiSIToSD_a2978e21c2e0b6ff70786de2d92aed3ee}{O\-Di\-S\-I\-To\-S\-D\-::find} (string str, char chr)
+\begin{DoxyCompactList}\small\item\em Gibt die Position des ersten Vorkommens eines Zeichens in einem String zurück. \end{DoxyCompactList}\item 
+string \hyperlink{namespaceODiSIToSD_af546c680cd566e162094b910dfa03452}{O\-Di\-S\-I\-To\-S\-D\-::floattostr} (float val)
+\begin{DoxyCompactList}\small\item\em Wandelt eine Zeichenkette (String) um. \end{DoxyCompactList}\item 
+string \hyperlink{namespaceODiSIToSD_a60fe9a380b9b9f2e401ae0aca1f6b87a}{O\-Di\-S\-I\-To\-S\-D\-::get\-Text\-Block} (string data, int n)
+\begin{DoxyCompactList}\small\item\em Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceODiSIToSD_a6b06d3f5276bc29ae627f6019ce4bdc3}{O\-Di\-S\-I\-To\-S\-D\-::parse\-Line} (string line, vector$<$ float $>$ $\ast$out, vector$<$ float $>$ $\ast$times, vector$<$ int $>$ $\ast$debug\-\_\-positions, size\-\_\-t row\-\_\-count)
+\begin{DoxyCompactList}\small\item\em Sammelt Daten aus einer Textzeile (string). \end{DoxyCompactList}\item 
+int \hyperlink{namespaceODiSIToSD_a09e74878b7f3b12c27afbb8ee902d9f8}{O\-Di\-S\-I\-To\-S\-D\-::convert} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die O\-Di\-S\-I-\/\-Datei um eine .tsd-\/\-Datei zu generieren, bzw. \end{DoxyCompactList}\item 
+int \hyperlink{odisitosd_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variablen}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{namespaceODiSIToSD_ae626f83adecae71a9227d63ff6c46d82}{O\-Di\-S\-I\-To\-S\-D\-::\-N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S} = 2
+\begin{DoxyCompactList}\small\item\em Anzahl der Suchpfade für die Konfigurationsdatei. \end{DoxyCompactList}\item 
+string \hyperlink{namespaceODiSIToSD_a4de5655bcf7e6e49c30d561521172f7a}{O\-Di\-S\-I\-To\-S\-D\-::configpaths} \mbox{[}\hyperlink{GUIMainWindow_8cpp_aff607d5c40608f36a3e32da21875856e}{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Suchpfade für die Konfigurationsdatei. \end{DoxyCompactList}\item 
+struct \hyperlink{structODiSIToSD_1_1Options}{O\-Di\-S\-I\-To\-S\-D\-::\-Options} \hyperlink{namespaceODiSIToSD_a80beb7db49e15d88897aec916322ec08}{O\-Di\-S\-I\-To\-S\-D\-::opts}
+\begin{DoxyCompactList}\small\item\em Hält die verwendeten Programmeinstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentation der Funktionen}
+\hypertarget{odisitosd_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{\index{odisitosd/main.\-cpp@{odisitosd/main.\-cpp}!main@{main}}
+\index{main@{main}!odisitosd/main.cpp@{odisitosd/main.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{odisitosd_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+
+
+Definiert in Zeile 522 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{odisitosd_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+
+

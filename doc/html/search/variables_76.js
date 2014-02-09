@@ -8,5 +8,7 @@ var searchData=
   ['viewport',['viewport',['../classRenderer.xhtml#a4428a5ef0ceaf4de5c9991a40990994d',1,'Renderer']]],
   ['viewscaleedit',['viewScaleEdit',['../classViewpropBox.xhtml#ae275307ddd3a84c91298e78b826f1ae1',1,'ViewpropBox']]],
   ['viewscalelbl',['viewScaleLbl',['../classViewpropBox.xhtml#ab312348ae97369e3b8a1a7ce8ba9e2b1',1,'ViewpropBox']]],
+  ['visible',['visible',['../structObjectData_1_1MaterialData.xhtml#a37980da11f6b51b30eb41c3ab4e9674a',1,'ObjectData::MaterialData']]],
+  ['visualization_5finfo',['visualization_info',['../Application_8cpp.xhtml#afa647024f69f2725a3d441f53712ffd0',1,'visualization_info():&#160;Application.cpp'],['../GUIColorScalePanel_8cpp.xhtml#ab2bc98a13798ba972e034bbf26549564',1,'visualization_info():&#160;Application.cpp'],['../GUICutRenderWindow_8cpp.xhtml#ab2bc98a13798ba972e034bbf26549564',1,'visualization_info():&#160;Application.cpp'],['../GUIMainWindow_8cpp.xhtml#ab2bc98a13798ba972e034bbf26549564',1,'visualization_info():&#160;Application.cpp'],['../Renderer_8cpp.xhtml#ab2bc98a13798ba972e034bbf26549564',1,'visualization_info():&#160;Application.cpp']]],
   ['volume',['volume',['../structAnalyzer_1_1AnalyzerData__material.xhtml#a20017730ff899b65f91aa30caaf35dd6',1,'Analyzer::AnalyzerData_material::volume()'],['../structAnalyzer_1_1AnalyzerData__object.xhtml#a78ddeb311ff702e110fc1d483d826920',1,'Analyzer::AnalyzerData_object::volume()']]]
 ];

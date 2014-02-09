@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIRenderCutCanvas.xhtml#a348424f671910f6ede43cb6835852589" target="_top" xlink:title="GUIRenderCutCanvas\l::onCanvasPaint">
+<a xlink:href="classGUIRenderCutCanvas.xhtml#a348424f671910f6ede43cb6835852589" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="144,-0 144,-34 260,-34 260,-0 144,-0"/>
 <text text-anchor="start" x="152" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIRenderCutCanvas</text>
 <text text-anchor="middle" x="202" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::onCanvasPaint</text>

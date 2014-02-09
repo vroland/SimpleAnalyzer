@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIColorScalePanel.xhtml#a4b17b0a63d3921ce09ffe5a99b6955a5" target="_top" xlink:title="GUIColorScalePanel\l::mouseOnDisplayArea">
+<a xlink:href="classGUIColorScalePanel.xhtml#a4b17b0a63d3921ce09ffe5a99b6955a5" target="_top" xlink:title="Gibt zurück, ob sich die Maus über der Fläche der Skala befindet. ">
 <polygon fill="none" stroke="black" points="152,-52 152,-86 270,-86 270,-52 152,-52"/>
 <text text-anchor="start" x="160" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">GUIColorScalePanel</text>
 <text text-anchor="middle" x="211" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">::mouseOnDisplayArea</text>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIColorScalePanel.xhtml#a59e27a091ec86d4c3e649f432a10ec08" target="_top" xlink:title="GUIColorScalePanel\l::handleMouse">
+<a xlink:href="classGUIColorScalePanel.xhtml#a59e27a091ec86d4c3e649f432a10ec08" target="_top" xlink:title="Behandelt die Mausaktionen und verändert ggf. ">
 <polygon fill="none" stroke="black" points="157.5,-0 157.5,-34 264.5,-34 264.5,-0 157.5,-0"/>
 <text text-anchor="start" x="165.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIColorScalePanel</text>
 <text text-anchor="middle" x="211" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::handleMouse</text>

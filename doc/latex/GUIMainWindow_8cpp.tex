@@ -1,0 +1,125 @@
+\hypertarget{GUIMainWindow_8cpp}{\section{simpleanalyzer-\/gui/src/\-G\-U\-I/\-G\-U\-I\-Main\-Window.cpp-\/\-Dateireferenz}
+\label{GUIMainWindow_8cpp}\index{simpleanalyzer-\/gui/src/\-G\-U\-I/\-G\-U\-I\-Main\-Window.\-cpp@{simpleanalyzer-\/gui/src/\-G\-U\-I/\-G\-U\-I\-Main\-Window.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}G\-U\-I\-Main\-Window.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}../libraries/tetgen/tetgen.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../processing/\-Mesh\-Processor.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../file\-I\-O/\-Importer.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../processing/\-Object\-Data.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}constants.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../file\-I\-O/\-Exporter.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$wx/stdpaths.\-h$>$}\\*
+Include-\/\-Abhängigkeitsdiagramm für G\-U\-I\-Main\-Window.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{GUIMainWindow_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Makrodefinitionen}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{GUIMainWindow_8cpp_a667972fb53974835227901bc16f76b3c}{P\-R\-O\-P\-B\-O\-X\-W\-I\-D\-T\-H}~300
+\item 
+\#define \hyperlink{GUIMainWindow_8cpp_a36b24fe28ba0d29b90e364114ae1753a}{V\-I\-E\-W\-B\-O\-X\-W\-I\-D\-T\-H}~300
+\item 
+\#define \hyperlink{GUIMainWindow_8cpp_aff607d5c40608f36a3e32da21875856e}{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}~4
+\end{DoxyCompactItemize}
+\subsection*{Funktionen}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{GUIMainWindow_8cpp_a89d68f162c2f49e41ac9d9185309c502}{floattostr} (double val)
+\end{DoxyCompactItemize}
+\subsection*{Variablen}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{classObjectData}{Object\-Data} $\ast$ $>$ \hyperlink{GUIMainWindow_8cpp_a9aa46f902a3f0345c8b71e22eb4147b3}{data\-\_\-objects}
+\item 
+int \hyperlink{GUIMainWindow_8cpp_ae3bb0fb60c66991217f89753d27e4c9a}{current\-\_\-data\-\_\-object\-\_\-index}
+\item 
+\hyperlink{structUtils_1_1Visualization__info}{Visualization\-\_\-info} \hyperlink{GUIMainWindow_8cpp_ab2bc98a13798ba972e034bbf26549564}{visualization\-\_\-info}
+\item 
+const wx\-Event\-Type \hyperlink{GUIMainWindow_8cpp_a91f1a5ba83d5f6414a2615dbfc977f1b}{wx\-E\-V\-T\-\_\-\-T\-I\-M\-E\-L\-I\-N\-E\-\_\-\-C\-H\-A\-N\-G\-E}
+\end{DoxyCompactItemize}
+
+
+\subsection{Makro-\/\-Dokumentation}
+\hypertarget{GUIMainWindow_8cpp_aff607d5c40608f36a3e32da21875856e}{\index{G\-U\-I\-Main\-Window.\-cpp@{G\-U\-I\-Main\-Window.\-cpp}!N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S@{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}}
+\index{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S@{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}!GUIMainWindow.cpp@{G\-U\-I\-Main\-Window.\-cpp}}
+\subsubsection[{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S~4}}\label{GUIMainWindow_8cpp_aff607d5c40608f36a3e32da21875856e}
+\hypertarget{GUIMainWindow_8cpp_a667972fb53974835227901bc16f76b3c}{\index{G\-U\-I\-Main\-Window.\-cpp@{G\-U\-I\-Main\-Window.\-cpp}!P\-R\-O\-P\-B\-O\-X\-W\-I\-D\-T\-H@{P\-R\-O\-P\-B\-O\-X\-W\-I\-D\-T\-H}}
+\index{P\-R\-O\-P\-B\-O\-X\-W\-I\-D\-T\-H@{P\-R\-O\-P\-B\-O\-X\-W\-I\-D\-T\-H}!GUIMainWindow.cpp@{G\-U\-I\-Main\-Window.\-cpp}}
+\subsubsection[{P\-R\-O\-P\-B\-O\-X\-W\-I\-D\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-O\-P\-B\-O\-X\-W\-I\-D\-T\-H~300}}\label{GUIMainWindow_8cpp_a667972fb53974835227901bc16f76b3c}
+
+
+Definiert in Zeile 26 der Datei G\-U\-I\-Main\-Window.\-cpp.
+
+\hypertarget{GUIMainWindow_8cpp_a36b24fe28ba0d29b90e364114ae1753a}{\index{G\-U\-I\-Main\-Window.\-cpp@{G\-U\-I\-Main\-Window.\-cpp}!V\-I\-E\-W\-B\-O\-X\-W\-I\-D\-T\-H@{V\-I\-E\-W\-B\-O\-X\-W\-I\-D\-T\-H}}
+\index{V\-I\-E\-W\-B\-O\-X\-W\-I\-D\-T\-H@{V\-I\-E\-W\-B\-O\-X\-W\-I\-D\-T\-H}!GUIMainWindow.cpp@{G\-U\-I\-Main\-Window.\-cpp}}
+\subsubsection[{V\-I\-E\-W\-B\-O\-X\-W\-I\-D\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\-I\-E\-W\-B\-O\-X\-W\-I\-D\-T\-H~300}}\label{GUIMainWindow_8cpp_a36b24fe28ba0d29b90e364114ae1753a}
+
+
+Definiert in Zeile 27 der Datei G\-U\-I\-Main\-Window.\-cpp.
+
+
+
+\subsection{Dokumentation der Funktionen}
+\hypertarget{GUIMainWindow_8cpp_a89d68f162c2f49e41ac9d9185309c502}{\index{G\-U\-I\-Main\-Window.\-cpp@{G\-U\-I\-Main\-Window.\-cpp}!floattostr@{floattostr}}
+\index{floattostr@{floattostr}!GUIMainWindow.cpp@{G\-U\-I\-Main\-Window.\-cpp}}
+\subsubsection[{floattostr}]{\setlength{\rightskip}{0pt plus 5cm}string floattostr (
+\begin{DoxyParamCaption}
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)}}\label{GUIMainWindow_8cpp_a89d68f162c2f49e41ac9d9185309c502}
+
+
+Definiert in Zeile 217 der Datei G\-U\-I\-Main\-Window.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{GUIMainWindow_8cpp_a89d68f162c2f49e41ac9d9185309c502_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variablen-\/\-Dokumentation}
+\hypertarget{GUIMainWindow_8cpp_ae3bb0fb60c66991217f89753d27e4c9a}{\index{G\-U\-I\-Main\-Window.\-cpp@{G\-U\-I\-Main\-Window.\-cpp}!current\-\_\-data\-\_\-object\-\_\-index@{current\-\_\-data\-\_\-object\-\_\-index}}
+\index{current\-\_\-data\-\_\-object\-\_\-index@{current\-\_\-data\-\_\-object\-\_\-index}!GUIMainWindow.cpp@{G\-U\-I\-Main\-Window.\-cpp}}
+\subsubsection[{current\-\_\-data\-\_\-object\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int current\-\_\-data\-\_\-object\-\_\-index}}\label{GUIMainWindow_8cpp_ae3bb0fb60c66991217f89753d27e4c9a}
+
+
+Definiert in Zeile 26 der Datei Application.\-cpp.
+
+\hypertarget{GUIMainWindow_8cpp_a9aa46f902a3f0345c8b71e22eb4147b3}{\index{G\-U\-I\-Main\-Window.\-cpp@{G\-U\-I\-Main\-Window.\-cpp}!data\-\_\-objects@{data\-\_\-objects}}
+\index{data\-\_\-objects@{data\-\_\-objects}!GUIMainWindow.cpp@{G\-U\-I\-Main\-Window.\-cpp}}
+\subsubsection[{data\-\_\-objects}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Object\-Data}$\ast$$>$ data\-\_\-objects}}\label{GUIMainWindow_8cpp_a9aa46f902a3f0345c8b71e22eb4147b3}
+
+
+Definiert in Zeile 25 der Datei Application.\-cpp.
+
+\hypertarget{GUIMainWindow_8cpp_ab2bc98a13798ba972e034bbf26549564}{\index{G\-U\-I\-Main\-Window.\-cpp@{G\-U\-I\-Main\-Window.\-cpp}!visualization\-\_\-info@{visualization\-\_\-info}}
+\index{visualization\-\_\-info@{visualization\-\_\-info}!GUIMainWindow.cpp@{G\-U\-I\-Main\-Window.\-cpp}}
+\subsubsection[{visualization\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Visualization\-\_\-info} visualization\-\_\-info}}\label{GUIMainWindow_8cpp_ab2bc98a13798ba972e034bbf26549564}
+
+
+Definiert in Zeile 27 der Datei Application.\-cpp.
+
+\hypertarget{GUIMainWindow_8cpp_a91f1a5ba83d5f6414a2615dbfc977f1b}{\index{G\-U\-I\-Main\-Window.\-cpp@{G\-U\-I\-Main\-Window.\-cpp}!wx\-E\-V\-T\-\_\-\-T\-I\-M\-E\-L\-I\-N\-E\-\_\-\-C\-H\-A\-N\-G\-E@{wx\-E\-V\-T\-\_\-\-T\-I\-M\-E\-L\-I\-N\-E\-\_\-\-C\-H\-A\-N\-G\-E}}
+\index{wx\-E\-V\-T\-\_\-\-T\-I\-M\-E\-L\-I\-N\-E\-\_\-\-C\-H\-A\-N\-G\-E@{wx\-E\-V\-T\-\_\-\-T\-I\-M\-E\-L\-I\-N\-E\-\_\-\-C\-H\-A\-N\-G\-E}!GUIMainWindow.cpp@{G\-U\-I\-Main\-Window.\-cpp}}
+\subsubsection[{wx\-E\-V\-T\-\_\-\-T\-I\-M\-E\-L\-I\-N\-E\-\_\-\-C\-H\-A\-N\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}const wx\-Event\-Type wx\-E\-V\-T\-\_\-\-T\-I\-M\-E\-L\-I\-N\-E\-\_\-\-C\-H\-A\-N\-G\-E}}\label{GUIMainWindow_8cpp_a91f1a5ba83d5f6414a2615dbfc977f1b}
+
+
+Definiert in Zeile 17 der Datei G\-U\-I\-Timeline.\-cpp.
+

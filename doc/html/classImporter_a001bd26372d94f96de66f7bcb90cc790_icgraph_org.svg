@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" target="_top" xlink:title="ObjectData::loadFromFile">
+<a xlink:href="classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" target="_top" xlink:title="Lädt ein Objekt und erste Sensordaten. ">
 <polygon fill="none" stroke="black" points="174,-40.5 174,-61.5 302,-61.5 302,-40.5 174,-40.5"/>
 <text text-anchor="middle" x="238" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::loadFromFile</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" target="_top" xlink:title="ObjectData::addSensorData">
+<a xlink:href="classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" target="_top" xlink:title="Lädt einfache Sensordaten und verknüpft sie mit dem Objekt. ">
 <polygon fill="none" stroke="black" points="168,-0.5 168,-21.5 308,-21.5 308,-0.5 168,-0.5"/>
 <text text-anchor="middle" x="238" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::addSensorData</text>
 </a>
@@ -39,7 +39,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" target="_top" xlink:title="GUIMainWindow::OnMenuImportObj">
+<a xlink:href="classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="344,-40.5 344,-61.5 520,-61.5 520,-40.5 344,-40.5"/>
 <text text-anchor="middle" x="432" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnMenuImportObj</text>
 </a>
@@ -51,7 +51,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2" target="_top" xlink:title="GUIMainWindow::OnMenuImportSD">
+<a xlink:href="classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2" target="_top" xlink:title="Öffnet den Dialog zum Importieren einfacher Sensordaten. ">
 <polygon fill="none" stroke="black" points="344,-0.5 344,-21.5 520,-21.5 520,-0.5 344,-0.5"/>
 <text text-anchor="middle" x="432" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnMenuImportSD</text>
 </a>

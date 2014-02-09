@@ -9,12 +9,26 @@
 #define GUIAPPLICATION_H_
 #include <wx/wx.h>
 
+/**
+ * @brief Regelt den allgemeinen Ablauf des Programms.
+ *
+ * Eine eigene Anwendungsklasse wird von wxWidgets gefordert. Das zugrunde liegende
+ * System organisiert über diese Klasse den Programmablauf (MainLoop) und Events.
+ */
 class Application: public wxApp {
 public:
-	virtual bool OnInit();
+	/**
+	 * Der Destruktor.
+	 */
 	virtual ~Application();
+private:
+	/**
+	 * Wird beim Start der Anwendung ausgeführt und öffnet das Hauptfenster.
+	 */
+	virtual bool OnInit();
 };
 
+//Makro zur Deklaration der Anwendung.
 DECLARE_APP(Application)
 
 #endif /* GUIAPPLICATION_H_ */

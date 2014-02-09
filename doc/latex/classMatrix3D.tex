@@ -14,28 +14,29 @@
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classMatrix3D_afe9c6b7abe858fe9f6aea8f0607a00a7}{Matrix3\-D} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Der Standardkonstruktor. \end{DoxyCompactList}\item 
 \hyperlink{classMatrix3D_abd8f512d6fdfda45bfe655ae38cde303}{Matrix3\-D} (double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3)
-\item 
+\begin{DoxyCompactList}\small\item\em Erzeugt eine Matrix mit den gegebenen Elementen\-:\par
+ \begin{eqnarray*} x1 & y1 & z1 \\ x2 & y2 & z2 \\ x3 & y3 & z3 \\ \end{eqnarray*}. \end{DoxyCompactList}\item 
 void \hyperlink{classMatrix3D_a399be81028219044a03439b2ff93782a}{mult} (\hyperlink{classMatrix3D}{Matrix3\-D} $\ast$other)
-\item 
+\begin{DoxyCompactList}\small\item\em Multipliziert die Matrix mit einer anderen Matrix. \end{DoxyCompactList}\item 
 \hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classMatrix3D_adb30531e4dd89eb99ed2fb7f94269122}{mult} (\hyperlink{classVector3D}{Vector3\-D} $\ast$other)
-\item 
+\begin{DoxyCompactList}\small\item\em Multipliziert die Matrix mit einem Vektor. \end{DoxyCompactList}\item 
 void \hyperlink{classMatrix3D_ada7ce7ea9f2d0ef0fdda60ad73dad345}{rotate\-X} (double angle)
-\item 
+\begin{DoxyCompactList}\small\item\em Rotiert die Matrix um einen bestimmten Winkel auf der X-\/\-Achse. \end{DoxyCompactList}\item 
 void \hyperlink{classMatrix3D_a649e1aa65466df65d63f1aef934e5fad}{rotate\-Y} (double angle)
-\item 
+\begin{DoxyCompactList}\small\item\em Rotiert die Matrix um einen bestimmten Winkel auf der Y-\/\-Achse. \end{DoxyCompactList}\item 
 void \hyperlink{classMatrix3D_ad1933b95fb776dd31ad1b81d3515b029}{rotate\-Z} (double angle)
-\item 
+\begin{DoxyCompactList}\small\item\em Rotiert die Matrix um einen bestimmten Winkel auf der Z-\/\-Achse. \end{DoxyCompactList}\item 
 void \hyperlink{classMatrix3D_a0d59cb6ea927264477a10b9d427966d6}{transpose} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Transponiert die Matrix. \end{DoxyCompactList}\item 
 void \hyperlink{classMatrix3D_a33c771d35de761fafc619773e1b253c5}{print} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gibt die Matrix auf dem cout-\/\-Stream aus. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
 double \hyperlink{classMatrix3D_aa24b85b09060684ec1559f22857ccfee}{elements} \mbox{[}9\mbox{]}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Die Elemente der Matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -53,7 +54,11 @@ Definiert in Zeile 129 der Datei Geometry\-Classes.\-h.
 {}
 \end{DoxyParamCaption}
 )}}\label{classMatrix3D_afe9c6b7abe858fe9f6aea8f0607a00a7}
-Der Standardkonstruktor. Erzeugt eine Standardmatrix\-:\par
+
+
+Der Standardkonstruktor. 
+
+Erzeugt eine Standardmatrix\-:\par
  \begin{eqnarray*} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{eqnarray*} 
 
 Definiert in Zeile 112 der Datei Geometry\-Classes.\-cpp.
@@ -73,8 +78,12 @@ Definiert in Zeile 112 der Datei Geometry\-Classes.\-cpp.
 \item[{double}]{z3}
 \end{DoxyParamCaption}
 )}}\label{classMatrix3D_abd8f512d6fdfda45bfe655ae38cde303}
+
+
 Erzeugt eine Matrix mit den gegebenen Elementen\-:\par
- \begin{eqnarray*} x1 & y1 & z1 \\ x2 & y2 & z2 \\ x3 & y3 & z3 \\ \end{eqnarray*} 
+ \begin{eqnarray*} x1 & y1 & z1 \\ x2 & y2 & z2 \\ x3 & y3 & z3 \\ \end{eqnarray*}. 
+
+
 
 Definiert in Zeile 123 der Datei Geometry\-Classes.\-cpp.
 
@@ -88,7 +97,11 @@ Definiert in Zeile 123 der Datei Geometry\-Classes.\-cpp.
 \item[{{\bf Matrix3\-D} $\ast$}]{other}
 \end{DoxyParamCaption}
 )}}\label{classMatrix3D_a399be81028219044a03439b2ff93782a}
+
+
 Multipliziert die Matrix mit einer anderen Matrix. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em other} & Die Matrix, mit der multipliziert werden soll. \\
 \hline
@@ -115,7 +128,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{{\bf Vector3\-D} $\ast$}]{other}
 \end{DoxyParamCaption}
 )}}\label{classMatrix3D_adb30531e4dd89eb99ed2fb7f94269122}
+
+
 Multipliziert die Matrix mit einem Vektor. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em other} & Der Vektor, mit dem multipliziert werden soll. \\
 \hline
@@ -145,7 +162,11 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 {}
 \end{DoxyParamCaption}
 )}}\label{classMatrix3D_a33c771d35de761fafc619773e1b253c5}
+
+
 Gibt die Matrix auf dem cout-\/\-Stream aus. 
+
+
 
 Definiert in Zeile 189 der Datei Geometry\-Classes.\-cpp.
 
@@ -156,7 +177,11 @@ Definiert in Zeile 189 der Datei Geometry\-Classes.\-cpp.
 \item[{double}]{angle}
 \end{DoxyParamCaption}
 )}}\label{classMatrix3D_ada7ce7ea9f2d0ef0fdda60ad73dad345}
+
+
 Rotiert die Matrix um einen bestimmten Winkel auf der X-\/\-Achse. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em angle} & Der Winkel, um den rotiert werden soll in R\-A\-D. \\
 \hline
@@ -183,7 +208,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{double}]{angle}
 \end{DoxyParamCaption}
 )}}\label{classMatrix3D_a649e1aa65466df65d63f1aef934e5fad}
+
+
 Rotiert die Matrix um einen bestimmten Winkel auf der Y-\/\-Achse. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em angle} & Der Winkel, um den rotiert werden soll in R\-A\-D. \\
 \hline
@@ -210,7 +239,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \item[{double}]{angle}
 \end{DoxyParamCaption}
 )}}\label{classMatrix3D_ad1933b95fb776dd31ad1b81d3515b029}
+
+
 Rotiert die Matrix um einen bestimmten Winkel auf der Z-\/\-Achse. 
+
+
 \begin{DoxyParams}{Parameter}
 {\em angle} & Der Winkel, um den rotiert werden soll in R\-A\-D. \\
 \hline
@@ -226,13 +259,18 @@ Definiert in Zeile 172 der Datei Geometry\-Classes.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{classMatrix3D_a0d59cb6ea927264477a10b9d427966d6}
+
+
 Transponiert die Matrix. 
+
+
 
 Definiert in Zeile 178 der Datei Geometry\-Classes.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -247,7 +285,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \hypertarget{classMatrix3D_aa24b85b09060684ec1559f22857ccfee}{\index{Matrix3\-D@{Matrix3\-D}!elements@{elements}}
 \index{elements@{elements}!Matrix3D@{Matrix3\-D}}
 \subsubsection[{elements}]{\setlength{\rightskip}{0pt plus 5cm}double Matrix3\-D\-::elements\mbox{[}9\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classMatrix3D_aa24b85b09060684ec1559f22857ccfee}
+
+
 Die Elemente der Matrix. 
+
+
 
 Definiert in Zeile 190 der Datei Geometry\-Classes.\-h.
 
@@ -255,5 +297,5 @@ Definiert in Zeile 190 der Datei Geometry\-Classes.\-h.
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/libraries/interpolate/Geometry\-Classes.\-h\item 
-simpleanalyzer-\/gui/src/libraries/interpolate/Geometry\-Classes.\-cpp\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/libraries/interpolate/\hyperlink{GeometryClasses_8h}{Geometry\-Classes.\-h}\item 
+simpleanalyzer-\/gui/src/libraries/interpolate/\hyperlink{GeometryClasses_8cpp}{Geometry\-Classes.\-cpp}\end{DoxyCompactItemize}

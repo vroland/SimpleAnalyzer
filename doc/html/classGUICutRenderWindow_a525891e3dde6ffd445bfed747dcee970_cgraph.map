@@ -1,6 +1,6 @@
 <map id="GUICutRenderWindow::refreshVisualisation" name="GUICutRenderWindow::refreshVisualisation">
-<area shape="rect" id="node3" href="$classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d" title="GUIMainWindow::getGLCanvas" alt="" coords="212,5,420,35"/>
-<area shape="rect" id="node5" href="$classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" title="GUIGLCanvas::getRenderer" alt="" coords="223,59,409,88"/>
-<area shape="rect" id="node7" href="$classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e" title="Renderer::setCutRenderInfo" alt="" coords="223,112,409,141"/>
-<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289" title="GUICutRenderWindow\l::getCutRenderProperties" alt="" coords="231,165,401,211"/>
+<area shape="rect" id="node3" href="$classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d" title="Gibt die Zeichenfläche des 3D&#45;Fensters zurück. " alt="" coords="212,5,420,35"/>
+<area shape="rect" id="node5" href="$classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" title="Gibt den Renderer der Zeichenfläche zurück. " alt="" coords="223,59,409,88"/>
+<area shape="rect" id="node7" href="$classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e" title="Setzt die Eigenschaften einer 2D&#45;Temperaturverteilung, welche teilweise zur Visualisierung der Ebene ..." alt="" coords="223,112,409,141"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289" title="Gibt die aktuell eingestellten Eigenschaften für die zweidimensionale Temperaturverteilung zurück..." alt="" coords="231,165,401,211"/>
 </map>

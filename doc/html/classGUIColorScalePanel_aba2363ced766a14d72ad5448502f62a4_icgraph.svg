@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" target="_top" xlink:title="GUICutRenderWindow\l::OnColorScaleChanged">
+<a xlink:href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" target="_top" xlink:title="Behandelt das Ändern von Parametern zur darstellung der Temperaturskala. ">
 <polygon fill="none" stroke="black" points="144,-0 144,-34 266,-34 266,-0 144,-0"/>
 <text text-anchor="start" x="152" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="205" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::OnColorScaleChanged</text>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438" target="_top" xlink:title="GUICutRenderWindow\l::OnColorScaleChanged_spin">
+<a xlink:href="classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438" target="_top" xlink:title="Behandelt das Ändern von Parametern zur darstellung der Temperaturskala. ">
 <polygon fill="none" stroke="black" points="302,-0 302,-34 448,-34 448,-0 302,-0"/>
 <text text-anchor="start" x="310" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="375" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::OnColorScaleChanged_spin</text>

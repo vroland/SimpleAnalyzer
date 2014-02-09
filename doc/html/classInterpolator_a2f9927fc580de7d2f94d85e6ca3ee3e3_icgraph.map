@@ -1,10 +1,13 @@
 <map id="Interpolator::setMode" name="Interpolator::setMode">
-<area shape="rect" id="node3" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="GUIAnalyzePointWindow\l::analyzePoint" alt="" coords="200,34,371,81"/>
-<area shape="rect" id="node5" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="MeshProcessor::process" alt="" coords="203,104,368,133"/>
-<area shape="rect" id="node7" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Analyzer::analyzeObject" alt="" coords="420,75,583,104"/>
-<area shape="rect" id="node15" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="ObjectData::calculateIO" alt="" coords="420,132,583,161"/>
-<area shape="rect" id="node9" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="GUIAnalyzeOutputWindow\l::Update" alt="" coords="643,5,821,51"/>
-<area shape="rect" id="node13" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="GUITimeline::findMaxValue" alt="" coords="641,75,823,104"/>
-<area shape="rect" id="node11" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="GUIAnalyzeOutputWindow\l::GUIAnalyzeOutputWindow" alt="" coords="880,5,1067,51"/>
-<area shape="rect" id="node17" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="GUIMainWindow::OnRecalcBt\lClick" alt="" coords="632,127,832,174"/>
+<area shape="rect" id="node3" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="200,5,371,51"/>
+<area shape="rect" id="node5" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="235,75,336,104"/>
+<area shape="rect" id="node11" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="Berechnet die Temperaturverteilung für ein Objekt. " alt="" coords="203,149,368,179"/>
+<area shape="rect" id="node7" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="424,45,579,91"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="655,27,809,74"/>
+<area shape="rect" id="node13" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="420,149,583,179"/>
+<area shape="rect" id="node21" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="420,207,583,236"/>
+<area shape="rect" id="node15" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="643,97,821,143"/>
+<area shape="rect" id="node19" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="641,167,823,196"/>
+<area shape="rect" id="node17" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="880,97,1067,143"/>
+<area shape="rect" id="node23" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="632,219,832,266"/>
 </map>

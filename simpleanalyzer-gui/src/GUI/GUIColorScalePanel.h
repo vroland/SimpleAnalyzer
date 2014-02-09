@@ -21,13 +21,12 @@
 class GUIColorScalePanel {
 public:
 	/**
-	 * @enum
 	 * Modus der Skalendarstellung.
 	 */
 	enum ScaleMode {
-		SCM_NONE = 0,
-		SCM_HORIZONTAL,
-		SCM_VERTICAL,
+		SCM_NONE = 0,	/**< Keine Skala. */
+		SCM_HORIZONTAL,	/**< Eine horizontal ausgerichtete Skala. */
+		SCM_VERTICAL,	/**< Eine vertikal ausgerichtete Skala. */
 	};
 	/**
 	 * Der Konstruktor.
@@ -41,6 +40,7 @@ public:
 	void refresh(int img_width,int img_height);
 	/**
 	 * Zeichnet die Temperaturskala mit einem bestimmten device context.
+	 * @param dc Der zum Zeichnen zu verwendende device context.
 	 * @param zoom Faktor zum Skalieren der Skala.
 	 * @param img_coords Position der Grafik auf der Zeichenfläche.
 	 */

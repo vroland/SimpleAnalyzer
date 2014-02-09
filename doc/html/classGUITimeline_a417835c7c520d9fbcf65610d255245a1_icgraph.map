@@ -1,9 +1,9 @@
 <map id="GUITimeline::sendTimelineEvent" name="GUITimeline::sendTimelineEvent">
-<area shape="rect" id="node3" href="$classGUITimeline.xhtml#a82c3ff544345678870f3738443387bc0" title="GUITimeline::OnKeyDown" alt="" coords="236,5,412,35"/>
-<area shape="rect" id="node5" href="$classGUITimeline.xhtml#a2cd5cc2f150a7ca94a4cddbb88843b21" title="GUITimeline::posToVal" alt="" coords="245,59,403,88"/>
-<area shape="rect" id="node11" href="$classGUITimeline.xhtml#a0fa4ef5ed2e0fe5f416d9d4c75b86ebc" title="GUITimeline::setValue" alt="" coords="247,112,401,141"/>
-<area shape="rect" id="node7" href="$classGUITimeline.xhtml#a7254dd9824190a6288da682d8fefad09" title="GUITimeline::OnMouseDown" alt="" coords="463,5,655,35"/>
-<area shape="rect" id="node9" href="$classGUITimeline.xhtml#a7d53538e56f4571e729dfe64a820ddf2" title="GUITimeline::OnMouseMove" alt="" coords="464,59,653,88"/>
-<area shape="rect" id="node13" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="GUITimeline::findMaxValue" alt="" coords="468,112,649,141"/>
-<area shape="rect" id="node15" href="$classPropertiesBox.xhtml#adce6c28da4adced9bb98937c5cb85de0" title="PropertiesBox::resize" alt="" coords="485,165,632,195"/>
+<area shape="rect" id="node3" href="$classGUITimeline.xhtml#a82c3ff544345678870f3738443387bc0" title="Behandelt Tastendruck (setzen des aktuellen Zeitpunkts). " alt="" coords="236,5,412,35"/>
+<area shape="rect" id="node5" href="$classGUITimeline.xhtml#a2cd5cc2f150a7ca94a4cddbb88843b21" title="Setzt den aktuellen Zeitpunkt anhand der Mausposition. " alt="" coords="245,59,403,88"/>
+<area shape="rect" id="node11" href="$classGUITimeline.xhtml#a0fa4ef5ed2e0fe5f416d9d4c75b86ebc" title="Setzt den Index des aktuell ausgewählten Zeitpunkts. " alt="" coords="247,112,401,141"/>
+<area shape="rect" id="node7" href="$classGUITimeline.xhtml#a7254dd9824190a6288da682d8fefad09" title="Behandelt klicken (verschieben der Ansicht, setzten des aktuellen Zeitpunkts). " alt="" coords="463,5,655,35"/>
+<area shape="rect" id="node9" href="$classGUITimeline.xhtml#a7d53538e56f4571e729dfe64a820ddf2" title="Behandelt Mausbewegungen (verschieben der Ansicht). " alt="" coords="464,59,653,88"/>
+<area shape="rect" id="node13" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="468,112,649,141"/>
+<area shape="rect" id="node15" href="$classPropertiesBox.xhtml#adce6c28da4adced9bb98937c5cb85de0" title="Behandelt Größenänderungen und passt die Positionen der Komponenten an. " alt="" coords="485,165,632,195"/>
 </map>

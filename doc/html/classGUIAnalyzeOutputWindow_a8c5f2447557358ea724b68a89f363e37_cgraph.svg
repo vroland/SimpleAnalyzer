@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIMainWindow.xhtml#a64f6c71f9d92ab4091670ad1d264b2d7" target="_top" xlink:title="GUIMainWindow::setAnalyze\lWindowStatus">
+<a xlink:href="classGUIMainWindow.xhtml#a64f6c71f9d92ab4091670ad1d264b2d7" target="_top" xlink:title="Setzt den Status des Übersichstfensters über die Analysedaten. ">
 <polygon fill="none" stroke="black" points="182,-0 182,-34 328,-34 328,-0 182,-0"/>
 <text text-anchor="start" x="190" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::setAnalyze</text>
 <text text-anchor="middle" x="255" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">WindowStatus</text>

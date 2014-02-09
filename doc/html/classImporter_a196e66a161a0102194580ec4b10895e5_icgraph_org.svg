@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" target="_top" xlink:title="ObjectData::loadFromFile">
+<a xlink:href="classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" target="_top" xlink:title="Lädt ein Objekt und erste Sensordaten. ">
 <polygon fill="none" stroke="black" points="168,-40.5 168,-61.5 296,-61.5 296,-40.5 168,-40.5"/>
 <text text-anchor="middle" x="232" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::loadFromFile</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classObjectData.xhtml#ac8056d23b0882a826b6e572ff080688f" target="_top" xlink:title="ObjectData::addTimedData">
+<a xlink:href="classObjectData.xhtml#ac8056d23b0882a826b6e572ff080688f" target="_top" xlink:title="Lädt zeitbezogene Sensordaten und verknüpft sie mit dem Objekt. ">
 <polygon fill="none" stroke="black" points="164,-0.5 164,-21.5 300,-21.5 300,-0.5 164,-0.5"/>
 <text text-anchor="middle" x="232" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::addTimedData</text>
 </a>
@@ -39,7 +39,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" target="_top" xlink:title="GUIMainWindow::OnMenuImportObj">
+<a xlink:href="classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="339,-40.5 339,-61.5 515,-61.5 515,-40.5 339,-40.5"/>
 <text text-anchor="middle" x="427" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnMenuImportObj</text>
 </a>
@@ -51,7 +51,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560" target="_top" xlink:title="GUIMainWindow::OnMenuImportTSD">
+<a xlink:href="classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560" target="_top" xlink:title="Öffnet den Dialog zum Importieren zeitbezogener Sensordaten. ">
 <polygon fill="none" stroke="black" points="336,-0.5 336,-21.5 518,-21.5 518,-0.5 336,-0.5"/>
 <text text-anchor="middle" x="427" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnMenuImportTSD</text>
 </a>

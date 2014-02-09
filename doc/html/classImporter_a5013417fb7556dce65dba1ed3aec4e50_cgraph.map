@@ -1,3 +1,5 @@
 <map id="Importer::ImportObj" name="Importer::ImportObj">
-<area shape="rect" id="node3" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="ObjectData::getMaterials" alt="" coords="191,5,356,35"/>
+<area shape="rect" id="node3" href="$Importer_8cpp.xhtml#a0903d5717f5c64c86b68bf17c4783e91" title="getFaceIndex" alt="" coords="223,5,324,35"/>
+<area shape="rect" id="node5" href="$Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="getTextBlock" alt="" coords="224,59,323,88"/>
+<area shape="rect" id="node7" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="191,112,356,141"/>
 </map>

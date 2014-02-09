@@ -1,9 +1,9 @@
 <map id="GUICutRenderWindow::OnColorScaleChanged" name="GUICutRenderWindow::OnColorScaleChanged">
-<area shape="rect" id="node3" href="$classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" title="GUIRenderCutCanvas\l::getScalePanel" alt="" coords="216,5,371,51"/>
-<area shape="rect" id="node5" href="$classGUIColorScalePanel.xhtml#aba2363ced766a14d72ad5448502f62a4" title="GUIColorScalePanel\l::setMode" alt="" coords="223,74,364,121"/>
-<area shape="rect" id="node7" href="$classGUIColorScalePanel.xhtml#ae26f3f500092717aa7e9a85126b38461" title="GUIColorScalePanel\l::setFontSize" alt="" coords="223,143,364,190"/>
-<area shape="rect" id="node9" href="$classGUIColorScalePanel.xhtml#aba534a319236878bc3504050d8227fe4" title="GUIColorScalePanel\l::setStepWidth" alt="" coords="223,213,364,259"/>
-<area shape="rect" id="node11" href="$classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="GUIColorScalePanel\l::refresh" alt="" coords="223,282,364,329"/>
-<area shape="rect" id="node13" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Utils::hsvToRgb" alt="" coords="423,264,540,293"/>
-<area shape="rect" id="node15" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Utils::floattowxstr" alt="" coords="419,317,544,347"/>
+<area shape="rect" id="node3" href="$classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" title="Gibt das Temperaturskala&#45;Objekt zurück. " alt="" coords="216,5,371,51"/>
+<area shape="rect" id="node5" href="$classGUIColorScalePanel.xhtml#aba2363ced766a14d72ad5448502f62a4" title="Setzt den Modus der Skala. " alt="" coords="223,74,364,121"/>
+<area shape="rect" id="node7" href="$classGUIColorScalePanel.xhtml#ae26f3f500092717aa7e9a85126b38461" title="Setzt die Schriftgröße der Skala. " alt="" coords="223,143,364,190"/>
+<area shape="rect" id="node9" href="$classGUIColorScalePanel.xhtml#aba534a319236878bc3504050d8227fe4" title="Setzt die Schrittweite der Skalenbeschriftung. " alt="" coords="223,213,364,259"/>
+<area shape="rect" id="node11" href="$classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="Zeichnet die Temperaturskala neu. " alt="" coords="223,282,364,329"/>
+<area shape="rect" id="node13" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Wandelt eine Farbe im HSV&#45;Format ins RGB&#45;Format um. " alt="" coords="423,264,540,293"/>
+<area shape="rect" id="node15" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets&#45;String um. " alt="" coords="419,317,544,347"/>
 </map>

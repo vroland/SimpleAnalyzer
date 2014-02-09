@@ -1,5 +1,5 @@
 <map id="Vector3D::add" name="Vector3D::add">
-<area shape="rect" id="node3" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="160,5,272,35"/>
-<area shape="rect" id="node5" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="160,59,272,88"/>
-<area shape="rect" id="node7" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="161,112,271,141"/>
+<area shape="rect" id="node3" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="160,5,272,35"/>
+<area shape="rect" id="node5" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="160,59,272,88"/>
+<area shape="rect" id="node7" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="161,112,271,141"/>
 </map>

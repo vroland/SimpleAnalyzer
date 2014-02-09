@@ -1,3 +1,5 @@
 <map id="ObjectData::getName" name="ObjectData::getName">
-<area shape="rect" id="node3" href="$classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0" title="GUIMainWindow::updateObject\lPropGUI" alt="" coords="204,5,409,51"/>
+<area shape="rect" id="node3" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="217,5,396,51"/>
+<area shape="rect" id="node7" href="$classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0" title="Überträgt die Eigenschaften des aktiven Objekts in die GUI. " alt="" coords="204,74,409,121"/>
+<area shape="rect" id="node5" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="459,5,645,51"/>
 </map>

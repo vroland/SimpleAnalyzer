@@ -1,4 +1,4 @@
 <map id="Renderer::renderMaterial" name="Renderer::renderMaterial">
-<area shape="rect" id="node3" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Utils::hsvToRgb" alt="" coords="219,5,336,35"/>
+<area shape="rect" id="node3" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Wandelt eine Farbe im HSV&#45;Format ins RGB&#45;Format um. " alt="" coords="219,5,336,35"/>
 <area shape="rect" id="node5" href="$namespaceUtils.xhtml#abb647325616858e0fad55290c36ea03b" title="Begrenzt einen Wert auf den Bereich 0..1. " alt="" coords="220,59,335,88"/>
 </map>

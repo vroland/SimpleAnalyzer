@@ -1,0 +1,18 @@
+<map id="simpleanalyzer&#45;gui/src/Application.cpp" name="simpleanalyzer&#45;gui/src/Application.cpp">
+<area shape="rect" id="node5" href="$Application_8h.xhtml" title="Application.h" alt="" coords="335,101,431,131"/>
+<area shape="rect" id="node9" href="$GUIMainWindow_8h.xhtml" title="GUI/GUIMainWindow.h" alt="" coords="747,101,907,131"/>
+<area shape="rect" id="node22" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="1319,488,1497,517"/>
+<area shape="rect" id="node31" href="$utils_8h.xhtml" title="utils.h" alt="" coords="1012,565,1068,595"/>
+<area shape="rect" id="node11" href="$GUIGLCanvas_8h.xhtml" title="GUIGLCanvas.h" alt="" coords="1203,333,1320,363"/>
+<area shape="rect" id="node51" href="$PropertiesBox_8h.xhtml" title="PropertiesBox.h" alt="" coords="813,333,928,363"/>
+<area shape="rect" id="node61" href="$ViewpropBox_8h.xhtml" title="ViewpropBox.h" alt="" coords="223,179,332,208"/>
+<area shape="rect" id="node66" href="$GUIAnalyzeOutputWindow_8h.xhtml" title="GUIAnalyzeOutputWindow.h" alt="" coords="915,256,1104,285"/>
+<area shape="rect" id="node72" href="$GUIAnalyzePointWindow_8h.xhtml" title="GUIAnalyzePointWindow.h" alt="" coords="144,488,325,517"/>
+<area shape="rect" id="node75" href="$GUICutRenderWindow_8h.xhtml" title="GUICutRenderWindow.h" alt="" coords="479,179,644,208"/>
+<area shape="rect" id="node13" href="$Renderer_8h.xhtml" title="Renderer.h" alt="" coords="1079,411,1164,440"/>
+<area shape="rect" id="node19" href="$GeometryClasses_8h.xhtml" title="../libraries/interpolate\l/GeometryClasses.h" alt="" coords="664,739,805,786"/>
+<area shape="rect" id="node26" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="1072,643,1213,690"/>
+<area shape="rect" id="node54" href="$GUITimeline_8h.xhtml" title="GUITimeline.h" alt="" coords="1188,411,1295,440"/>
+<area shape="rect" id="node78" href="$GUIRenderCutCanvas_8h.xhtml" title="GUIRenderCutCanvas.h" alt="" coords="451,256,616,285"/>
+<area shape="rect" id="node81" href="$GUIColorScalePanel_8h.xhtml" title="GUIColorScalePanel.h" alt="" coords="533,333,688,363"/>
+</map>

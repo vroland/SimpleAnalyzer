@@ -48,7 +48,7 @@ if (edges && edges.length) {
 <script type="text/javascript">
 var viewWidth = 578;
 var viewHeight = 310;
-var sectionId = 'dynsection-10';
+var sectionId = 'dynsection-8';
 </script>
 <script xlink:href="svgpan.js"/>
 <svg id="graph" class="graph">
@@ -61,7 +61,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="namespaceUtils.xhtml#a5f216cc7011a901130db81321b565334" target="_top" xlink:title="Utils::rayIntersectsTriangle">
+<a xlink:href="namespaceUtils.xhtml#a5f216cc7011a901130db81321b565334" target="_top" xlink:title="Testet, ob ein Strahl ein Dreieck schneidet. ">
 <polygon fill="none" stroke="black" points="154,-150.5 154,-171.5 288,-171.5 288,-150.5 154,-150.5"/>
 <text text-anchor="middle" x="221" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::rayIntersectsTriangle</text>
 </a>
@@ -73,7 +73,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node13 -->
 <g id="node31" class="node"><title>Node13</title>
-<a xlink:href="namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" target="_top" xlink:title="Utils::pointInsideTetrahedron">
+<a xlink:href="namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" target="_top" xlink:title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. ">
 <polygon fill="none" stroke="black" points="150,-90.5 150,-111.5 292,-111.5 292,-90.5 150,-90.5"/>
 <text text-anchor="middle" x="221" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::pointInsideTetrahedron</text>
 </a>
@@ -85,7 +85,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node15 -->
 <g id="node39" class="node"><title>Node15</title>
-<a xlink:href="classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" target="_top" xlink:title="Vector3D::getXYZ">
+<a xlink:href="classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" target="_top" xlink:title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)...">
 <polygon fill="none" stroke="black" points="172.5,-50.5 172.5,-71.5 269.5,-71.5 269.5,-50.5 172.5,-50.5"/>
 <text text-anchor="middle" x="221" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::getXYZ</text>
 </a>
@@ -97,7 +97,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" target="_top" xlink:title="Triangle::getV1">
+<a xlink:href="classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" target="_top" xlink:title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. ">
 <polygon fill="none" stroke="black" points="347.5,-280.5 347.5,-301.5 430.5,-301.5 430.5,-280.5 347.5,-280.5"/>
 <text text-anchor="middle" x="389" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">Triangle::getV1</text>
 </a>
@@ -109,7 +109,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" target="_top" xlink:title="Triangle::getV2">
+<a xlink:href="classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" target="_top" xlink:title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. ">
 <polygon fill="none" stroke="black" points="347.5,-240.5 347.5,-261.5 430.5,-261.5 430.5,-240.5 347.5,-240.5"/>
 <text text-anchor="middle" x="389" y="-248.5" font-family="Helvetica,sans-Serif" font-size="10.00">Triangle::getV2</text>
 </a>
@@ -121,7 +121,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" target="_top" xlink:title="Triangle::getV3">
+<a xlink:href="classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" target="_top" xlink:title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. ">
 <polygon fill="none" stroke="black" points="347.5,-200.5 347.5,-221.5 430.5,-221.5 430.5,-200.5 347.5,-200.5"/>
 <text text-anchor="middle" x="389" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">Triangle::getV3</text>
 </a>
@@ -133,7 +133,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" target="_top" xlink:title="Vector3D::copy">
+<a xlink:href="classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" target="_top" xlink:title="Gibt eine Kopie des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="346.5,-80.5 346.5,-101.5 431.5,-101.5 431.5,-80.5 346.5,-80.5"/>
 <text text-anchor="middle" x="389" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::copy</text>
 </a>
@@ -145,7 +145,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" target="_top" xlink:title="Vector3D::sub">
+<a xlink:href="classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" target="_top" xlink:title="Subtrahiert einen Vektor von diesem Vektor. ">
 <polygon fill="none" stroke="black" points="349,-40.5 349,-61.5 429,-61.5 429,-40.5 349,-40.5"/>
 <text text-anchor="middle" x="389" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::sub</text>
 </a>
@@ -157,7 +157,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node11 -->
 <g id="node21" class="node"><title>Node11</title>
-<a xlink:href="classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" target="_top" xlink:title="Vector3D::crossProduct">
+<a xlink:href="classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" target="_top" xlink:title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. ">
 <polygon fill="none" stroke="black" points="328,-160.5 328,-181.5 450,-181.5 450,-160.5 328,-160.5"/>
 <text text-anchor="middle" x="389" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::crossProduct</text>
 </a>
@@ -169,7 +169,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node12 -->
 <g id="node26" class="node"><title>Node12</title>
-<a xlink:href="classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" target="_top" xlink:title="Vector3D::dotProduct">
+<a xlink:href="classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" target="_top" xlink:title="Gibt das Skalarprodukt mit einem anderen Vektor. ">
 <polygon fill="none" stroke="black" points="333.5,-120.5 333.5,-141.5 444.5,-141.5 444.5,-120.5 333.5,-120.5"/>
 <text text-anchor="middle" x="389" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::dotProduct</text>
 </a>
@@ -181,7 +181,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" target="_top" xlink:title="Vector3D::getX">
+<a xlink:href="classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" target="_top" xlink:title="Gibt das X&#45;Element des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="486,-160.5 486,-181.5 570,-181.5 570,-160.5 486,-160.5"/>
 <text text-anchor="middle" x="528" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::getX</text>
 </a>
@@ -193,7 +193,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" target="_top" xlink:title="Vector3D::getY">
+<a xlink:href="classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" target="_top" xlink:title="Gibt das Y&#45;Element des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="486,-120.5 486,-141.5 570,-141.5 570,-120.5 486,-120.5"/>
 <text text-anchor="middle" x="528" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::getY</text>
 </a>
@@ -205,7 +205,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node10 -->
 <g id="node19" class="node"><title>Node10</title>
-<a xlink:href="classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" target="_top" xlink:title="Vector3D::getZ">
+<a xlink:href="classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" target="_top" xlink:title="Gibt das Z&#45;Element des Vektors zurück. ">
 <polygon fill="none" stroke="black" points="486.5,-80.5 486.5,-101.5 569.5,-101.5 569.5,-80.5 486.5,-80.5"/>
 <text text-anchor="middle" x="528" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::getZ</text>
 </a>
@@ -267,7 +267,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node14 -->
 <g id="node36" class="node"><title>Node14</title>
-<a xlink:href="classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" target="_top" xlink:title="Vector3D::mult">
+<a xlink:href="classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" target="_top" xlink:title="Multipliziert den Vektor mit einem Skalar. ">
 <polygon fill="none" stroke="black" points="347.5,-0.5 347.5,-21.5 430.5,-21.5 430.5,-0.5 347.5,-0.5"/>
 <text text-anchor="middle" x="389" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vector3D::mult</text>
 </a>

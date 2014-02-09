@@ -1,5 +1,5 @@
 <map id="Analyzer::analyzeObject" name="Analyzer::analyzeObject">
-<area shape="rect" id="node3" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="GUIAnalyzeOutputWindow\l::Update" alt="" coords="221,5,400,51"/>
-<area shape="rect" id="node7" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="GUITimeline::findMaxValue" alt="" coords="220,75,401,104"/>
-<area shape="rect" id="node5" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="GUIAnalyzeOutputWindow\l::GUIAnalyzeOutputWindow" alt="" coords="451,5,637,51"/>
+<area shape="rect" id="node3" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="221,5,400,51"/>
+<area shape="rect" id="node7" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="220,75,401,104"/>
+<area shape="rect" id="node5" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="451,5,637,51"/>
 </map>

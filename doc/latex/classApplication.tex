@@ -3,6 +3,15 @@
 }
 
 
+Regelt den allgemeinen Ablauf des Programms.  
+
+
+
+
+{\ttfamily \#include $<$Application.\-h$>$}
+
+
+
 Klassendiagramm für Application\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -22,19 +31,61 @@ Zusammengehörigkeiten von Application\-:\nopagebreak
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classApplication_aa6b97a4bf380f56a925910b4223016c5}{virtual bool {\bfseries On\-Init} ()}\label{classApplication_aa6b97a4bf380f56a925910b4223016c5}
-
-\end{DoxyCompactItemize}
+virtual \hyperlink{classApplication_a748bca84fefb9c12661cfaa2f623748d}{$\sim$\-Application} ()
+\begin{DoxyCompactList}\small\item\em Der Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Methoden}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classApplication_aa6b97a4bf380f56a925910b4223016c5}{On\-Init} ()
+\begin{DoxyCompactList}\small\item\em Wird beim Start der Anwendung ausgeführt und öffnet das Hauptfenster. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
+Regelt den allgemeinen Ablauf des Programms. 
+
+Eine eigene Anwendungsklasse wird von wx\-Widgets gefordert. Das zugrunde liegende System organisiert über diese Klasse den Programmablauf (Main\-Loop) und Events. 
+
+Definiert in Zeile 18 der Datei Application.\-h.
 
 
-Definiert in Zeile 12 der Datei Application.\-h.
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classApplication_a748bca84fefb9c12661cfaa2f623748d}{\index{Application@{Application}!$\sim$\-Application@{$\sim$\-Application}}
+\index{$\sim$\-Application@{$\sim$\-Application}!Application@{Application}}
+\subsubsection[{$\sim$\-Application}]{\setlength{\rightskip}{0pt plus 5cm}Application\-::$\sim$\-Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classApplication_a748bca84fefb9c12661cfaa2f623748d}
+
+
+Der Destruktor. 
+
+
+
+Definiert in Zeile 42 der Datei Application.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classApplication_aa6b97a4bf380f56a925910b4223016c5}{\index{Application@{Application}!On\-Init@{On\-Init}}
+\index{On\-Init@{On\-Init}!Application@{Application}}
+\subsubsection[{On\-Init}]{\setlength{\rightskip}{0pt plus 5cm}bool Application\-::\-On\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classApplication_aa6b97a4bf380f56a925910b4223016c5}
+
+
+Wird beim Start der Anwendung ausgeführt und öffnet das Hauptfenster. 
+
+
+
+Definiert in Zeile 33 der Datei Application.\-cpp.
 
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/Application.\-h\item 
-simpleanalyzer-\/gui/src/Application.\-cpp\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/\hyperlink{Application_8h}{Application.\-h}\item 
+simpleanalyzer-\/gui/src/\hyperlink{Application_8cpp}{Application.\-cpp}\end{DoxyCompactItemize}

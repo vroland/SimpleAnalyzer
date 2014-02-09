@@ -23,33 +23,33 @@ Zusammengehörigkeiten von Renderer\-:\-:Viewport\-\_\-info\-:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 float \hyperlink{structRenderer_1_1Viewport__info_a9bbc5e50fed7334fb237e620e6080e5e}{zoom}
-\item 
+\begin{DoxyCompactList}\small\item\em Aktueller Zoomfaktor. \end{DoxyCompactList}\item 
 float \hyperlink{structRenderer_1_1Viewport__info_a80fe2d86956d26105dd8301278e0c4e6}{rotation\-Y}
-\item 
+\begin{DoxyCompactList}\small\item\em Rotation der Ansicht um die Y-\/\-Achse. \end{DoxyCompactList}\item 
 float \hyperlink{structRenderer_1_1Viewport__info_ad8005e4eaa631f4c6b96cf6be05e8428}{rotation\-X}
-\item 
+\begin{DoxyCompactList}\small\item\em Rotation der Ansicht um die (Kameralokale) X-\/\-Achse. \end{DoxyCompactList}\item 
 \hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{structRenderer_1_1Viewport__info_aa6b5d9d9dbde8c74e25af98680b7ccce}{camera\-Position}
-\item 
+\begin{DoxyCompactList}\small\item\em position der Virtuellen Kamera \end{DoxyCompactList}\item 
 \hyperlink{classTriangle}{Triangle} $\ast$ \hyperlink{structRenderer_1_1Viewport__info_af6fe77b0bf872e7d65079bb58e9e8cce}{cut}
-\item 
+\begin{DoxyCompactList}\small\item\em Dreieck der Schnittebene, wenn nicht N\-U\-L\-L, werden nur Elemente oberhalb der Dreiecksebene dargestellt (Momentan nicht verwendet). \end{DoxyCompactList}\item 
 bool \hyperlink{structRenderer_1_1Viewport__info_a0e06e17e13e9639179de762f6a45c71e}{invertcut}
-\item 
+\begin{DoxyCompactList}\small\item\em Nur Elemente unterhalb der durch cut definierte Ebene darstellen (Momentan nicht verwendet). \end{DoxyCompactList}\item 
 \hyperlink{classRenderer_aa9844470f59e9fdf3aed088936100863}{Render\-Mode} \hyperlink{structRenderer_1_1Viewport__info_ab95af83b6e3e068e14b37187a11709b7}{show\-Points}
-\item 
+\begin{DoxyCompactList}\small\item\em Modus der Darstellung von Punkten des 3\-D-\/\-Objekts. \end{DoxyCompactList}\item 
 \hyperlink{classRenderer_aa9844470f59e9fdf3aed088936100863}{Render\-Mode} \hyperlink{structRenderer_1_1Viewport__info_a61ce4c293d9dc97da9b4ed2f8f7a36e0}{show\-Edges}
-\item 
+\begin{DoxyCompactList}\small\item\em Modus der Darstellung von Kanten des 3\-D-\/\-Objekts. \end{DoxyCompactList}\item 
 \hyperlink{classRenderer_aa9844470f59e9fdf3aed088936100863}{Render\-Mode} \hyperlink{structRenderer_1_1Viewport__info_aa1f3f4b18210cf0bc69df0c9015e8acf}{show\-Faces}
-\item 
+\begin{DoxyCompactList}\small\item\em Modus der Darstellung von Flächen des 3\-D-\/\-Objekts. \end{DoxyCompactList}\item 
 bool \hyperlink{structRenderer_1_1Viewport__info_ac9d99216a6044d7048ba805f9f9b0815}{show\-\_\-extrapolated}
-\item 
+\begin{DoxyCompactList}\small\item\em Extrapolierte Elemente anzeigen. \end{DoxyCompactList}\item 
 bool \hyperlink{structRenderer_1_1Viewport__info_abd0ab0f20c5acc43128634b4b4cc1f52}{show\-\_\-sensordata}
-\item 
+\begin{DoxyCompactList}\small\item\em Sensordaten als Punkte anzeigen. \end{DoxyCompactList}\item 
 int \hyperlink{structRenderer_1_1Viewport__info_af0617337cfe95f9d5a21420335474bea}{width}
-\item 
+\begin{DoxyCompactList}\small\item\em Breite des dargestellten Bereichs. \end{DoxyCompactList}\item 
 int \hyperlink{structRenderer_1_1Viewport__info_acd3f381981791f2b012129fe54aee39c}{height}
-\item 
+\begin{DoxyCompactList}\small\item\em Höhe des dargestellten Bereichs. \end{DoxyCompactList}\item 
 float \hyperlink{structRenderer_1_1Viewport__info_a90128db9d24987d94ddd843646a4f03d}{scale}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Skalierungsfaktor für das 3\-D-\/\-Objekt. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -63,98 +63,154 @@ Definiert in Zeile 37 der Datei Renderer.\-h.
 \hypertarget{structRenderer_1_1Viewport__info_aa6b5d9d9dbde8c74e25af98680b7ccce}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!camera\-Position@{camera\-Position}}
 \index{camera\-Position@{camera\-Position}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{camera\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D}$\ast$ Renderer\-::\-Viewport\-\_\-info\-::camera\-Position}}\label{structRenderer_1_1Viewport__info_aa6b5d9d9dbde8c74e25af98680b7ccce}
+
+
 position der Virtuellen Kamera 
+
+
 
 Definiert in Zeile 41 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_af6fe77b0bf872e7d65079bb58e9e8cce}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!cut@{cut}}
 \index{cut@{cut}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{cut}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Triangle}$\ast$ Renderer\-::\-Viewport\-\_\-info\-::cut}}\label{structRenderer_1_1Viewport__info_af6fe77b0bf872e7d65079bb58e9e8cce}
+
+
 Dreieck der Schnittebene, wenn nicht N\-U\-L\-L, werden nur Elemente oberhalb der Dreiecksebene dargestellt (Momentan nicht verwendet). 
+
+
 
 Definiert in Zeile 42 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_acd3f381981791f2b012129fe54aee39c}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!height@{height}}
 \index{height@{height}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}int Renderer\-::\-Viewport\-\_\-info\-::height}}\label{structRenderer_1_1Viewport__info_acd3f381981791f2b012129fe54aee39c}
-Höhe des dargestellten Bereichs 
+
+
+Höhe des dargestellten Bereichs. 
+
+
 
 Definiert in Zeile 50 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_a0e06e17e13e9639179de762f6a45c71e}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!invertcut@{invertcut}}
 \index{invertcut@{invertcut}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{invertcut}]{\setlength{\rightskip}{0pt plus 5cm}bool Renderer\-::\-Viewport\-\_\-info\-::invertcut}}\label{structRenderer_1_1Viewport__info_a0e06e17e13e9639179de762f6a45c71e}
+
+
 Nur Elemente unterhalb der durch cut definierte Ebene darstellen (Momentan nicht verwendet). 
+
+
 
 Definiert in Zeile 43 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_ad8005e4eaa631f4c6b96cf6be05e8428}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!rotation\-X@{rotation\-X}}
 \index{rotation\-X@{rotation\-X}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{rotation\-X}]{\setlength{\rightskip}{0pt plus 5cm}float Renderer\-::\-Viewport\-\_\-info\-::rotation\-X}}\label{structRenderer_1_1Viewport__info_ad8005e4eaa631f4c6b96cf6be05e8428}
-Rotation der Ansicht um die (Kameralokale) X-\/\-Achse 
+
+
+Rotation der Ansicht um die (Kameralokale) X-\/\-Achse. 
+
+
 
 Definiert in Zeile 40 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_a80fe2d86956d26105dd8301278e0c4e6}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!rotation\-Y@{rotation\-Y}}
 \index{rotation\-Y@{rotation\-Y}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{rotation\-Y}]{\setlength{\rightskip}{0pt plus 5cm}float Renderer\-::\-Viewport\-\_\-info\-::rotation\-Y}}\label{structRenderer_1_1Viewport__info_a80fe2d86956d26105dd8301278e0c4e6}
-Rotation der Ansicht um die Y-\/\-Achse 
+
+
+Rotation der Ansicht um die Y-\/\-Achse. 
+
+
 
 Definiert in Zeile 39 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_a90128db9d24987d94ddd843646a4f03d}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!scale@{scale}}
 \index{scale@{scale}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}float Renderer\-::\-Viewport\-\_\-info\-::scale}}\label{structRenderer_1_1Viewport__info_a90128db9d24987d94ddd843646a4f03d}
+
+
 Skalierungsfaktor für das 3\-D-\/\-Objekt. 
+
+
 
 Definiert in Zeile 51 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_ac9d99216a6044d7048ba805f9f9b0815}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!show\-\_\-extrapolated@{show\-\_\-extrapolated}}
 \index{show\-\_\-extrapolated@{show\-\_\-extrapolated}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{show\-\_\-extrapolated}]{\setlength{\rightskip}{0pt plus 5cm}bool Renderer\-::\-Viewport\-\_\-info\-::show\-\_\-extrapolated}}\label{structRenderer_1_1Viewport__info_ac9d99216a6044d7048ba805f9f9b0815}
-Extrapolierte Elemente anzeigen 
+
+
+Extrapolierte Elemente anzeigen. 
+
+
 
 Definiert in Zeile 47 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_abd0ab0f20c5acc43128634b4b4cc1f52}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!show\-\_\-sensordata@{show\-\_\-sensordata}}
 \index{show\-\_\-sensordata@{show\-\_\-sensordata}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{show\-\_\-sensordata}]{\setlength{\rightskip}{0pt plus 5cm}bool Renderer\-::\-Viewport\-\_\-info\-::show\-\_\-sensordata}}\label{structRenderer_1_1Viewport__info_abd0ab0f20c5acc43128634b4b4cc1f52}
-Sensordaten als Punkte anzeigen 
+
+
+Sensordaten als Punkte anzeigen. 
+
+
 
 Definiert in Zeile 48 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_a61ce4c293d9dc97da9b4ed2f8f7a36e0}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!show\-Edges@{show\-Edges}}
 \index{show\-Edges@{show\-Edges}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{show\-Edges}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Render\-Mode} Renderer\-::\-Viewport\-\_\-info\-::show\-Edges}}\label{structRenderer_1_1Viewport__info_a61ce4c293d9dc97da9b4ed2f8f7a36e0}
+
+
 Modus der Darstellung von Kanten des 3\-D-\/\-Objekts. 
+
+
 
 Definiert in Zeile 45 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_aa1f3f4b18210cf0bc69df0c9015e8acf}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!show\-Faces@{show\-Faces}}
 \index{show\-Faces@{show\-Faces}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{show\-Faces}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Render\-Mode} Renderer\-::\-Viewport\-\_\-info\-::show\-Faces}}\label{structRenderer_1_1Viewport__info_aa1f3f4b18210cf0bc69df0c9015e8acf}
+
+
 Modus der Darstellung von Flächen des 3\-D-\/\-Objekts. 
+
+
 
 Definiert in Zeile 46 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_ab95af83b6e3e068e14b37187a11709b7}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!show\-Points@{show\-Points}}
 \index{show\-Points@{show\-Points}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{show\-Points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Render\-Mode} Renderer\-::\-Viewport\-\_\-info\-::show\-Points}}\label{structRenderer_1_1Viewport__info_ab95af83b6e3e068e14b37187a11709b7}
+
+
 Modus der Darstellung von Punkten des 3\-D-\/\-Objekts. 
+
+
 
 Definiert in Zeile 44 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_af0617337cfe95f9d5a21420335474bea}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!width@{width}}
 \index{width@{width}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}int Renderer\-::\-Viewport\-\_\-info\-::width}}\label{structRenderer_1_1Viewport__info_af0617337cfe95f9d5a21420335474bea}
-Breite des dargestellten Bereichs 
+
+
+Breite des dargestellten Bereichs. 
+
+
 
 Definiert in Zeile 49 der Datei Renderer.\-h.
 
 \hypertarget{structRenderer_1_1Viewport__info_a9bbc5e50fed7334fb237e620e6080e5e}{\index{Renderer\-::\-Viewport\-\_\-info@{Renderer\-::\-Viewport\-\_\-info}!zoom@{zoom}}
 \index{zoom@{zoom}!Renderer::Viewport_info@{Renderer\-::\-Viewport\-\_\-info}}
 \subsubsection[{zoom}]{\setlength{\rightskip}{0pt plus 5cm}float Renderer\-::\-Viewport\-\_\-info\-::zoom}}\label{structRenderer_1_1Viewport__info_a9bbc5e50fed7334fb237e620e6080e5e}
-Aktueller Zoomfaktor 
+
+
+Aktueller Zoomfaktor. 
+
+
 
 Definiert in Zeile 38 der Datei Renderer.\-h.
 
@@ -162,4 +218,4 @@ Definiert in Zeile 38 der Datei Renderer.\-h.
 
 Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/\-G\-U\-I/Renderer.\-h\end{DoxyCompactItemize}
+simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{Renderer_8h}{Renderer.\-h}\end{DoxyCompactItemize}

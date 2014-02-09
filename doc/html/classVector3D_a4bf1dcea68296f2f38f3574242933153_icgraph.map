@@ -1,7 +1,18 @@
 <map id="Vector3D::getAngleTo" name="Vector3D::getAngleTo">
-<area shape="rect" id="node3" href="$classInterpolator.xhtml#ad59ac6ed3822e08a67ac7d1ee88a5bd2" title="Interpolator::interpolateTri" alt="" coords="208,5,379,35"/>
-<area shape="rect" id="node5" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Interpolator::interpolateTet" alt="" coords="207,59,380,88"/>
-<area shape="rect" id="node7" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Utils::getPointValue" alt="" coords="429,59,568,88"/>
-<area shape="rect" id="node9" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Analyzer::analyzePoint" alt="" coords="617,59,772,88"/>
-<area shape="rect" id="node11" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="GUIAnalyzePointWindow\l::analyzePoint" alt="" coords="821,50,992,97"/>
+<area shape="rect" id="node3" href="$classInterpolator.xhtml#ad59ac6ed3822e08a67ac7d1ee88a5bd2" title="Ermittelt den Wert für einen beliebigen Punkt in einer Ebene. " alt="" coords="208,29,379,59"/>
+<area shape="rect" id="node5" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="207,83,380,112"/>
+<area shape="rect" id="node7" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="429,83,568,112"/>
+<area shape="rect" id="node9" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="644,21,745,51"/>
+<area shape="rect" id="node15" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. " alt="" coords="617,83,772,112"/>
+<area shape="rect" id="node19" href="$MeshProcessor_8cpp.xhtml#ad2670c4e8381f9a0a89c65f5559ed421" title="interpolatePoint" alt="" coords="639,140,751,169"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="829,5,984,51"/>
+<area shape="rect" id="node13" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="1045,5,1200,51"/>
+<area shape="rect" id="node17" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="821,74,992,121"/>
+<area shape="rect" id="node21" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="Berechnet die Temperaturverteilung für ein Objekt. " alt="" coords="824,144,989,173"/>
+<area shape="rect" id="node23" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="1041,115,1204,144"/>
+<area shape="rect" id="node31" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="1041,172,1204,201"/>
+<area shape="rect" id="node25" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="1264,45,1443,91"/>
+<area shape="rect" id="node29" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="1263,115,1444,144"/>
+<area shape="rect" id="node27" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="1501,45,1688,91"/>
+<area shape="rect" id="node33" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="1253,167,1453,214"/>
 </map>

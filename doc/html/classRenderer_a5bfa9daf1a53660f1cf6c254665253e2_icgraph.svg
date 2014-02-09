@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIGLCanvas.xhtml#a0ee8fe9339ebb330b8133a620bd67514" target="_top" xlink:title="GUIGLCanvas::OnMouseWheel">
+<a xlink:href="classGUIGLCanvas.xhtml#a0ee8fe9339ebb330b8133a620bd67514" target="_top" xlink:title="Behandelt Mausradbewegungen (zoomen). ">
 <polygon fill="none" stroke="black" points="150.5,-40.5 150.5,-61.5 307.5,-61.5 307.5,-40.5 150.5,-40.5"/>
 <text text-anchor="middle" x="229" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIGLCanvas::OnMouseWheel</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIGLCanvas.xhtml#a9c089336b9485f1abcc60a1a7fb85bb7" target="_top" xlink:title="GUIGLCanvas::OnMouseMove">
+<a xlink:href="classGUIGLCanvas.xhtml#a9c089336b9485f1abcc60a1a7fb85bb7" target="_top" xlink:title="Behandelt Mausbewegungen (verschieben und drehen der Ansicht). ">
 <polygon fill="none" stroke="black" points="152.5,-0.5 152.5,-21.5 305.5,-21.5 305.5,-0.5 152.5,-0.5"/>
 <text text-anchor="middle" x="229" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIGLCanvas::OnMouseMove</text>
 </a>

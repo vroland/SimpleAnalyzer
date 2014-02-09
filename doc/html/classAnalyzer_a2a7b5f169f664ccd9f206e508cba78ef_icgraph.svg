@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" target="_top" xlink:title="GUIAnalyzeOutputWindow\l::Update">
+<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" target="_top" xlink:title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ...">
 <polygon fill="none" stroke="black" points="162,-40 162,-74 296,-74 296,-40 162,-40"/>
 <text text-anchor="start" x="170" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzeOutputWindow</text>
 <text text-anchor="middle" x="229" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">::Update</text>
@@ -28,7 +28,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" target="_top" xlink:title="GUITimeline::findMaxValue">
+<a xlink:href="classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" target="_top" xlink:title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. ">
 <polygon fill="none" stroke="black" points="160.5,-0.5 160.5,-21.5 297.5,-21.5 297.5,-0.5 160.5,-0.5"/>
 <text text-anchor="middle" x="229" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::findMaxValue</text>
 </a>
@@ -40,7 +40,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" target="_top" xlink:title="GUIAnalyzeOutputWindow\l::GUIAnalyzeOutputWindow">
+<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" target="_top" xlink:title="Der Konstruktor. ">
 <polygon fill="none" stroke="black" points="334,-40 334,-74 474,-74 474,-40 334,-40"/>
 <text text-anchor="start" x="342" y="-61" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzeOutputWindow</text>
 <text text-anchor="middle" x="404" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">::GUIAnalyzeOutputWindow</text>

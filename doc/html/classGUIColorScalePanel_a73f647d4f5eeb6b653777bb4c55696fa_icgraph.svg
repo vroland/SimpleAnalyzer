@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" target="_top" xlink:title="GUICutRenderWindow\l::renderImage">
+<a xlink:href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" target="_top" xlink:title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. ">
 <polygon fill="none" stroke="black" points="146.5,-104 146.5,-138 263.5,-138 263.5,-104 146.5,-104"/>
 <text text-anchor="start" x="154.5" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="205" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">::renderImage</text>
@@ -29,7 +29,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a0923a36cdf4e0094d78f623693ff8ac6" target="_top" xlink:title="GUICutRenderWindow\l::OnCSColorBtClick">
+<a xlink:href="classGUICutRenderWindow.xhtml#a0923a36cdf4e0094d78f623693ff8ac6" target="_top" xlink:title="Behandelt das Klicken auf den Button zur Wahl der Schriftfarbe auf der Skala. ">
 <polygon fill="none" stroke="black" points="146.5,-52 146.5,-86 263.5,-86 263.5,-52 146.5,-52"/>
 <text text-anchor="start" x="154.5" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="205" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">::OnCSColorBtClick</text>
@@ -42,7 +42,7 @@
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" target="_top" xlink:title="GUICutRenderWindow\l::OnColorScaleChanged">
+<a xlink:href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" target="_top" xlink:title="Behandelt das Ändern von Parametern zur darstellung der Temperaturskala. ">
 <polygon fill="none" stroke="black" points="144,-0 144,-34 266,-34 266,-0 144,-0"/>
 <text text-anchor="start" x="152" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="205" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::OnColorScaleChanged</text>
@@ -55,7 +55,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" target="_top" xlink:title="GUICutRenderWindow\l::renderCutBtClick">
+<a xlink:href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" target="_top" xlink:title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="316.5,-104 316.5,-138 433.5,-138 433.5,-104 316.5,-104"/>
 <text text-anchor="start" x="324.5" y="-125" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="375" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">::renderCutBtClick</text>
@@ -68,7 +68,7 @@
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438" target="_top" xlink:title="GUICutRenderWindow\l::OnColorScaleChanged_spin">
+<a xlink:href="classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438" target="_top" xlink:title="Behandelt das Ändern von Parametern zur darstellung der Temperaturskala. ">
 <polygon fill="none" stroke="black" points="302,-0 302,-34 448,-34 448,-0 302,-0"/>
 <text text-anchor="start" x="310" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="375" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::OnColorScaleChanged_spin</text>

@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0" target="_top" xlink:title="GUIMainWindow::updateObject\lPropGUI">
+<a xlink:href="classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0" target="_top" xlink:title="Überträgt die Eigenschaften des aktiven Objekts in die GUI. ">
 <polygon fill="none" stroke="black" points="152.5,-0 152.5,-34 307.5,-34 307.5,-0 152.5,-0"/>
 <text text-anchor="start" x="160.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::updateObject</text>
 <text text-anchor="middle" x="230" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">PropGUI</text>

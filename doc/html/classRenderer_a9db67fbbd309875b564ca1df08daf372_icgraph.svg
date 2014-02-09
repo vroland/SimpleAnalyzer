@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" target="_top" xlink:title="GUIGLCanvas::OnPaint">
+<a xlink:href="classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="160,-40.5 160,-61.5 282,-61.5 282,-40.5 160,-40.5"/>
 <text text-anchor="middle" x="221" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIGLCanvas::OnPaint</text>
 </a>
@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIGLCanvas.xhtml#a643f11a7ef05829a6c48d037ad2c4b9b" target="_top" xlink:title="GUIGLCanvas::setRenderObject">
+<a xlink:href="classGUIGLCanvas.xhtml#a643f11a7ef05829a6c48d037ad2c4b9b" target="_top" xlink:title="Setzt das darzustellende Objekt. ">
 <polygon fill="none" stroke="black" points="140.5,-0.5 140.5,-21.5 301.5,-21.5 301.5,-0.5 140.5,-0.5"/>
 <text text-anchor="middle" x="221" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIGLCanvas::setRenderObject</text>
 </a>

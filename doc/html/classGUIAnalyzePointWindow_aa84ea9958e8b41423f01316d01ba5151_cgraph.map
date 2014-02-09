@@ -1,35 +1,36 @@
 <map id="GUIAnalyzePointWindow::analyzePoint" name="GUIAnalyzePointWindow::analyzePoint">
-<area shape="rect" id="node3" href="$classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Interpolator::setMode" alt="" coords="231,5,375,35"/>
-<area shape="rect" id="node5" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Analyzer::analyzePoint" alt="" coords="225,568,380,597"/>
-<area shape="rect" id="node17" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="1379,331,1491,360"/>
-<area shape="rect" id="node19" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="1379,464,1491,493"/>
-<area shape="rect" id="node21" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="1380,411,1489,440"/>
-<area shape="rect" id="node96" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Utils::floattowxstr" alt="" coords="240,1301,365,1331"/>
-<area shape="rect" id="node7" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="ObjectData::getSensorDataList" alt="" coords="431,568,633,597"/>
-<area shape="rect" id="node9" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="ObjectData::getCurrentSensor\lIndex" alt="" coords="433,445,631,491"/>
-<area shape="rect" id="node11" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Utils::getPointValue" alt="" coords="463,621,601,651"/>
-<area shape="rect" id="node94" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Vector3D::getXYZ" alt="" coords="468,515,596,544"/>
-<area shape="rect" id="node13" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Utils::pointInsideTetrahedron" alt="" coords="907,413,1096,443"/>
-<area shape="rect" id="node37" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Utils::nextCombination" alt="" coords="693,544,848,573"/>
-<area shape="rect" id="node40" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Interpolator::interpolateTet" alt="" coords="684,648,857,677"/>
-<area shape="rect" id="node15" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="1176,411,1283,440"/>
-<area shape="rect" id="node23" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Vector3D::crossProduct" alt="" coords="1148,464,1311,493"/>
-<area shape="rect" id="node28" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Vector3D::dotProduct" alt="" coords="1156,571,1303,600"/>
-<area shape="rect" id="node33" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Vector3D::mult" alt="" coords="1175,357,1284,387"/>
-<area shape="rect" id="node35" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Vector3D::copy" alt="" coords="1173,517,1285,547"/>
-<area shape="rect" id="node42" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Vector3D::equals" alt="" coords="1168,677,1291,707"/>
-<area shape="rect" id="node47" href="$classTetrahedron.xhtml#a88afe41ae5991168ad51ba4dbb2e1a6b" title="Tetrahedron::getVert" alt="" coords="931,621,1072,651"/>
-<area shape="rect" id="node49" href="$classTetrahedron.xhtml#add51e42ab17afbd023d47a436ce24b0d" title="Tetrahedron::getV1" alt="" coords="935,675,1068,704"/>
-<area shape="rect" id="node51" href="$classTetrahedron.xhtml#aa728c967f17e2b8408009b5f2b77a17a" title="Tetrahedron::getV2" alt="" coords="935,728,1068,757"/>
-<area shape="rect" id="node53" href="$classTetrahedron.xhtml#aa539a97f133ea621520121acb2ef4a7e" title="Tetrahedron::getV3" alt="" coords="935,781,1068,811"/>
-<area shape="rect" id="node55" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Triangle::getV2" alt="" coords="947,835,1056,864"/>
-<area shape="rect" id="node59" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Triangle::getV1" alt="" coords="947,888,1056,917"/>
-<area shape="rect" id="node61" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Triangle::getV3" alt="" coords="947,941,1056,971"/>
-<area shape="rect" id="node63" href="$classTetrahedron.xhtml#a7308b7b73edeba7782dff551a03095bf" title="Tetrahedron::getV4" alt="" coords="935,995,1068,1024"/>
-<area shape="rect" id="node65" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Triangle::getNormal" alt="" coords="933,517,1069,547"/>
-<area shape="rect" id="node70" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Vector3D::normalize" alt="" coords="1159,624,1300,653"/>
-<area shape="rect" id="node74" href="$classVector3D.xhtml#a4bf1dcea68296f2f38f3574242933153" title="Vector3D::getAngleTo" alt="" coords="1155,197,1304,227"/>
-<area shape="rect" id="node79" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Vector3D::getLength" alt="" coords="1364,153,1505,183"/>
-<area shape="rect" id="node83" href="$classVector3D.xhtml#a42deb992ec2f44abfb5824ea4917135c" title="Vector3D::getDistanceTo" alt="" coords="1144,251,1315,280"/>
-<area shape="rect" id="node89" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Vector3D::add" alt="" coords="1176,304,1283,333"/>
+<area shape="rect" id="node3" href="$classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion). " alt="" coords="231,5,375,35"/>
+<area shape="rect" id="node5" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. " alt="" coords="225,577,380,607"/>
+<area shape="rect" id="node17" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="1363,509,1475,539"/>
+<area shape="rect" id="node19" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="1363,344,1475,373"/>
+<area shape="rect" id="node21" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="1364,417,1473,447"/>
+<area shape="rect" id="node98" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets&#45;String um. " alt="" coords="240,1311,365,1340"/>
+<area shape="rect" id="node7" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. " alt="" coords="431,577,633,607"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. " alt="" coords="433,454,631,501"/>
+<area shape="rect" id="node11" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="463,631,601,660"/>
+<area shape="rect" id="node96" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)..." alt="" coords="468,524,596,553"/>
+<area shape="rect" id="node13" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. " alt="" coords="907,473,1096,503"/>
+<area shape="rect" id="node37" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz..." alt="" coords="693,553,848,583"/>
+<area shape="rect" id="node39" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="684,657,857,687"/>
+<area shape="rect" id="node15" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="1176,581,1283,611"/>
+<area shape="rect" id="node23" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="1148,635,1311,664"/>
+<area shape="rect" id="node28" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Gibt das Skalarprodukt mit einem anderen Vektor. " alt="" coords="1156,528,1303,557"/>
+<area shape="rect" id="node33" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="1175,475,1284,504"/>
+<area shape="rect" id="node35" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="1173,1055,1285,1084"/>
+<area shape="rect" id="node41" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Testet, ob zwei Vektoren identisch sind. " alt="" coords="1168,317,1291,347"/>
+<area shape="rect" id="node46" href="$classTetrahedron.xhtml#a88afe41ae5991168ad51ba4dbb2e1a6b" title="Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Tetraeders zurück. " alt="" coords="931,577,1072,607"/>
+<area shape="rect" id="node48" href="$classTetrahedron.xhtml#add51e42ab17afbd023d47a436ce24b0d" title="Gibt eine Referenz auf den Ortsvektor zum 1. " alt="" coords="935,631,1068,660"/>
+<area shape="rect" id="node50" href="$classTetrahedron.xhtml#aa728c967f17e2b8408009b5f2b77a17a" title="Gibt eine Referenz auf den Ortsvektor zum 2. " alt="" coords="935,684,1068,713"/>
+<area shape="rect" id="node52" href="$classTetrahedron.xhtml#aa539a97f133ea621520121acb2ef4a7e" title="Gibt eine Referenz auf den Ortsvektor zum 3. " alt="" coords="935,737,1068,767"/>
+<area shape="rect" id="node54" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. " alt="" coords="947,791,1056,820"/>
+<area shape="rect" id="node58" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="947,844,1056,873"/>
+<area shape="rect" id="node60" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. " alt="" coords="947,897,1056,927"/>
+<area shape="rect" id="node62" href="$classTetrahedron.xhtml#a7308b7b73edeba7782dff551a03095bf" title="Gibt eine Referenz auf den Ortsvektor zum 3. " alt="" coords="935,951,1068,980"/>
+<area shape="rect" id="node64" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="933,1055,1069,1084"/>
+<area shape="rect" id="node69" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Normalisiert den Vektor. " alt="" coords="1159,1132,1300,1161"/>
+<area shape="rect" id="node73" href="$classVector3D.xhtml#a4bf1dcea68296f2f38f3574242933153" title="Gibt den Winkel zu einem anderen Vektor in RAD zurück. " alt="" coords="927,217,1076,247"/>
+<area shape="rect" id="node78" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Gibt die Länge des Vektors zurück. " alt="" coords="1159,109,1300,139"/>
+<area shape="rect" id="node84" href="$classVector3D.xhtml#a42deb992ec2f44abfb5824ea4917135c" title="Gibt den Abstand zu einem anderen Vektor zurück. " alt="" coords="1144,163,1315,192"/>
+<area shape="rect" id="node91" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. " alt="" coords="1176,371,1283,400"/>
+<area shape="rect" id="node80" href="$GeometryClasses_8cpp.xhtml#a73527f20206c906e9f333e0f233de13e" title="sqr" alt="" coords="1399,136,1439,165"/>
 </map>

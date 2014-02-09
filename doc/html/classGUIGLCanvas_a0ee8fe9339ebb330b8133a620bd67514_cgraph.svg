@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" target="_top" xlink:title="Renderer::getViewport">
+<a xlink:href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" target="_top" xlink:title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">
 <polygon fill="none" stroke="black" points="194,-0.5 194,-21.5 308,-21.5 308,-0.5 194,-0.5"/>
 <text text-anchor="middle" x="251" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Renderer::getViewport</text>
 </a>

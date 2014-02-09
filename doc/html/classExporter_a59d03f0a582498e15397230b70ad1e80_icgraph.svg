@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIMainWindow.xhtml#a48b4417c2eaa97a6eea4438f67a315e7" target="_top" xlink:title="GUIMainWindow::OnExportVTK">
+<a xlink:href="classGUIMainWindow.xhtml#a48b4417c2eaa97a6eea4438f67a315e7" target="_top" xlink:title="Öffnet ein Fenster zum Exportieren der Temperaturverteilung und des Objekts im VTK&#45;Format. ">
 <polygon fill="none" stroke="black" points="176,-0.5 176,-21.5 334,-21.5 334,-0.5 176,-0.5"/>
 <text text-anchor="middle" x="255" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnExportVTK</text>
 </a>

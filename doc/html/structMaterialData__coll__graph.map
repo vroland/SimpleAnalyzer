@@ -1,8 +1,0 @@
-<map id="MaterialData" name="MaterialData">
-<area shape="rect" id="node2" href="$classtetgenio.xhtml" title="tetgenio" alt="" coords="277,197,344,227"/>
-<area shape="rect" id="node4" href="$structtetgenio_1_1vorofacet.xhtml" title="tetgenio::vorofacet" alt="" coords="5,101,136,131"/>
-<area shape="rect" id="node6" href="$structtetgenio_1_1facet.xhtml" title="tetgenio::facet" alt="" coords="160,101,264,131"/>
-<area shape="rect" id="node8" href="$structtetgenio_1_1polygon.xhtml" title="tetgenio::polygon" alt="" coords="152,5,272,35"/>
-<area shape="rect" id="node10" href="$structtetgenio_1_1voroedge.xhtml" title="tetgenio::voroedge" alt="" coords="288,101,416,131"/>
-<area shape="rect" id="node12" href="$structtetgenio_1_1pbcgroup.xhtml" title="tetgenio::pbcgroup" alt="" coords="440,101,568,131"/>
-</map>

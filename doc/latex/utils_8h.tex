@@ -1,0 +1,89 @@
+\hypertarget{utils_8h}{\section{simpleanalyzer-\/gui/src/processing/utils.h-\/\-Dateireferenz}
+\label{utils_8h}\index{simpleanalyzer-\/gui/src/processing/utils.\-h@{simpleanalyzer-\/gui/src/processing/utils.\-h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$wx/wx.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}../libraries/tetgen/tetgen.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../libraries/interpolate/\-Geometry\-Classes.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}../libraries/interpolate/\-Interpolator.\-h\char`\"{}}\\*
+Include-\/\-Abhängigkeitsdiagramm für utils.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h__incl}
+\end{center}
+\end{figure}
+Dieser Graph zeigt, welche Datei direkt oder indirekt diese Datei enthält\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structUtils_1_1Visualization__info}{Utils\-::\-Visualization\-\_\-info}
+\begin{DoxyCompactList}\small\item\em Informationen über die Farbgebung bei der Visualisierung. \end{DoxyCompactList}\item 
+struct \hyperlink{structUtils_1_1SortStruct}{Utils\-::\-Sort\-Struct}
+\begin{DoxyCompactList}\small\item\em Hilfsstruktur zum Sortieren von Punkten nach dem Abstand zu einem anderen Punkt. \end{DoxyCompactList}\item 
+struct \hyperlink{structUtils_1_1SensorPoint}{Utils\-::\-Sensor\-Point}
+\begin{DoxyCompactList}\small\item\em Daten eines Sensordatenpunktes. \end{DoxyCompactList}\item 
+struct \hyperlink{structUtils_1_1CutRender__info}{Utils\-::\-Cut\-Render\-\_\-info}
+\begin{DoxyCompactList}\small\item\em Daten zur Darstellung einer 2\-D-\/\-Temperaturverteilungs-\/\-Ebene. \end{DoxyCompactList}\item 
+struct \hyperlink{structUtils_1_1SensorData}{Utils\-::\-Sensor\-Data}
+\begin{DoxyCompactList}\small\item\em Ein Sensordatensatz. \end{DoxyCompactList}\item 
+struct \hyperlink{structUtils_1_1SensorPointComparator}{Utils\-::\-Sensor\-Point\-Comparator}
+\begin{DoxyCompactList}\small\item\em Hilfsstruktur zum Vergleichen des Abstands von Sensordaten. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namensbereiche}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceUtils}{Utils}
+\begin{DoxyCompactList}\small\item\em allgemeine Funktionen und Typen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Constant Groups}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespaceUtils}{Utils}
+\begin{DoxyCompactList}\small\item\em allgemeine Funktionen und Typen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Aufzählungen}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862}{Utils\-::\-P\-I\-M\-\_\-algorithm} \{ \hyperlink{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862a68e0a4da7ea369e1ba873c380926f010}{Utils\-::\-A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S} = 0, 
+\hyperlink{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862a4606bd560af1a6fd19e854e13613e9d0}{Utils\-::\-A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-R\-A\-Y}
+ \}
+\begin{DoxyCompactList}\small\item\em Zum Punkt-\/in-\/\-Volumen Testen verwendeter Algorithmus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funktionen}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{namespaceUtils_afac34330dde6235ee7395a4fd412ae0d}{Utils\-::sqr} (double d)
+\begin{DoxyCompactList}\small\item\em Quadriert eine Zahl. \end{DoxyCompactList}\item 
+float \hyperlink{namespaceUtils_abb647325616858e0fad55290c36ea03b}{Utils\-::clamp\-Hue} (float h)
+\begin{DoxyCompactList}\small\item\em Begrenzt einen Wert auf den Bereich 0..1. \end{DoxyCompactList}\item 
+wx\-String \hyperlink{namespaceUtils_a233ff9a0b34b10195a434f1ff66323b8}{Utils\-::floattowxstr} (double val)
+\begin{DoxyCompactList}\small\item\em Wandelt eine Fließkommazahl in einen wx\-Widgets-\/\-String um. \end{DoxyCompactList}\item 
+wx\-String \hyperlink{namespaceUtils_ac47160b3665d77f9e1a49a4045053add}{Utils\-::floattowxstr} (double val, int digits)
+\begin{DoxyCompactList}\small\item\em Wandelt eine Fließkommazahl in einen wx\-Widgets-\/\-String um. \end{DoxyCompactList}\item 
+int \hyperlink{namespaceUtils_a5f216cc7011a901130db81321b565334}{Utils\-::ray\-Intersects\-Triangle} (\hyperlink{classVector3D}{Vector3\-D} $\ast$p, \hyperlink{classVector3D}{Vector3\-D} $\ast$direction, \hyperlink{classTriangle}{Triangle} $\ast$tri, double $\ast$depth)
+\begin{DoxyCompactList}\small\item\em Testet, ob ein Strahl ein Dreieck schneidet. \end{DoxyCompactList}\item 
+int \hyperlink{namespaceUtils_af8fc5d6dab27f759ab5d76757a53023f}{Utils\-::point\-Inside\-Mesh} (\hyperlink{classVector3D}{Vector3\-D} $\ast$p, tetgenio $\ast$io, P\-I\-M\-\_\-algorithm algorithm)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Körpers befindet. \end{DoxyCompactList}\item 
+int \hyperlink{namespaceUtils_a9b995a1220a78be108b19bda4b776332}{Utils\-::point\-Inside\-Tetrahedron} (\hyperlink{classVector3D}{Vector3\-D} $\ast$pges, \hyperlink{classVector3D}{Vector3\-D} $\ast$v1, \hyperlink{classVector3D}{Vector3\-D} $\ast$v2, \hyperlink{classVector3D}{Vector3\-D} $\ast$v3, \hyperlink{classVector3D}{Vector3\-D} $\ast$v4)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
+int \hyperlink{namespaceUtils_a8f7379e1915d2a04907eb9d99d0a56ad}{Utils\-::point\-Inside\-Tetrahedron} (double $\ast$pges, double $\ast$v1, double $\ast$v2, double $\ast$v3, double $\ast$v4)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
+int \hyperlink{namespaceUtils_a40eaef4d22da849a5deb2f1153d88bbc}{Utils\-::point\-Inside\-Tetrahedron} (double $\ast$p, vector$<$ Sensor\-Point $\ast$ $>$ $\ast$tet)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceUtils_af4ba26e928c7cef5269c51bfac49d547}{Utils\-::next\-Combination} (vector$<$ int $>$ $\ast$indices, int depth, int data\-Point\-Count)
+\begin{DoxyCompactList}\small\item\em Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf data\-Point\-Count Plätze. \end{DoxyCompactList}\item 
+double \hyperlink{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}{Utils\-::get\-Point\-Value} (int \&status, vector$<$ Sensor\-Point $>$ $\ast$sensorpoints, double $\ast$p, \hyperlink{classInterpolator}{Interpolator} $\ast$interpolator, vector$<$ Sensor\-Point $\ast$ $>$ $\ast$prev\-\_\-tet=N\-U\-L\-L, vector$<$ Sensor\-Point $\ast$ $>$ $\ast$current\-\_\-tet=N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em Gibt den inter/extrapolierten Wert eines Punktes zurück. \end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{namespaceUtils_a5d6523eb946892eee52c9c74efd016de}{Utils\-::hsv\-To\-Rgb} (float h, float s, float v)
+\begin{DoxyCompactList}\small\item\em Wandelt eine Farbe im H\-S\-V-\/\-Format ins R\-G\-B-\/\-Format um. \end{DoxyCompactList}\item 
+void \hyperlink{namespaceUtils_adc0438a85ca31977c95f5d27090d5346}{Utils\-::copy\-Sensor\-Point} (Sensor\-Point $\ast$from, Sensor\-Point $\ast$to)
+\begin{DoxyCompactList}\small\item\em Kopiert die Eigenschaften eines Sensorpunktes in einen Anderen. \end{DoxyCompactList}\end{DoxyCompactItemize}

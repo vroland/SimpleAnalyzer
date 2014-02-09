@@ -1,3 +1,4 @@
 <map id="GUIMainWindow::OnExportVTK" name="GUIMainWindow::OnExportVTK">
-<area shape="rect" id="node3" href="$classExporter.xhtml#a59d03f0a582498e15397230b70ad1e80" title="Exporter::ExportLegacyVTK" alt="" coords="265,5,449,35"/>
+<area shape="rect" id="node3" href="$classExporter.xhtml#a59d03f0a582498e15397230b70ad1e80" title="Exportiert die aktuell berechnete dreidimensionale Temperaturverteilung und das Modell als VTK&#45;Datei..." alt="" coords="265,5,449,35"/>
+<area shape="rect" id="node5" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="500,5,665,35"/>
 </map>

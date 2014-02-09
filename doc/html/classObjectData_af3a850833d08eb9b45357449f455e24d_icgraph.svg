@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" target="_top" xlink:title="GUIMainWindow::OnRecalcBt\lClick">
+<a xlink:href="classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" target="_top" xlink:title="Berechnet die 3D&#45;Temperaturverteilung neu. ">
 <polygon fill="none" stroke="black" points="158,-0 158,-34 308,-34 308,-0 158,-0"/>
 <text text-anchor="start" x="166" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnRecalcBt</text>
 <text text-anchor="middle" x="233" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">Click</text>

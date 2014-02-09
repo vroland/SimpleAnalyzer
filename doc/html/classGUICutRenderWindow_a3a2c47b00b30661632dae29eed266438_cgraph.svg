@@ -62,7 +62,7 @@ var sectionId = 'dynsection-6';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" target="_top" xlink:title="GUICutRenderWindow\l::OnColorScaleChanged">
+<a xlink:href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" target="_top" xlink:title="Behandelt das Ändern von Parametern zur darstellung der Temperaturskala. ">
 <polygon fill="none" stroke="black" points="182,-118 182,-152 304,-152 304,-118 182,-118"/>
 <text text-anchor="start" x="190" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="243" y="-126" font-family="Helvetica,sans-Serif" font-size="10.00">::OnColorScaleChanged</text>
@@ -75,7 +75,7 @@ var sectionId = 'dynsection-6';
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" target="_top" xlink:title="GUIRenderCutCanvas\l::getScalePanel">
+<a xlink:href="classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" target="_top" xlink:title="Gibt das Temperaturskala&#45;Objekt zurück. ">
 <polygon fill="none" stroke="black" points="340,-222 340,-256 456,-256 456,-222 340,-222"/>
 <text text-anchor="start" x="348" y="-243" font-family="Helvetica,sans-Serif" font-size="10.00">GUIRenderCutCanvas</text>
 <text text-anchor="middle" x="398" y="-230" font-family="Helvetica,sans-Serif" font-size="10.00">::getScalePanel</text>
@@ -88,7 +88,7 @@ var sectionId = 'dynsection-6';
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classGUIColorScalePanel.xhtml#aba2363ced766a14d72ad5448502f62a4" target="_top" xlink:title="GUIColorScalePanel\l::setMode">
+<a xlink:href="classGUIColorScalePanel.xhtml#aba2363ced766a14d72ad5448502f62a4" target="_top" xlink:title="Setzt den Modus der Skala. ">
 <polygon fill="none" stroke="black" points="344.5,-170 344.5,-204 451.5,-204 451.5,-170 344.5,-170"/>
 <text text-anchor="start" x="352.5" y="-191" font-family="Helvetica,sans-Serif" font-size="10.00">GUIColorScalePanel</text>
 <text text-anchor="middle" x="398" y="-178" font-family="Helvetica,sans-Serif" font-size="10.00">::setMode</text>
@@ -101,7 +101,7 @@ var sectionId = 'dynsection-6';
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="classGUIColorScalePanel.xhtml#ae26f3f500092717aa7e9a85126b38461" target="_top" xlink:title="GUIColorScalePanel\l::setFontSize">
+<a xlink:href="classGUIColorScalePanel.xhtml#ae26f3f500092717aa7e9a85126b38461" target="_top" xlink:title="Setzt die Schriftgröße der Skala. ">
 <polygon fill="none" stroke="black" points="344.5,-118 344.5,-152 451.5,-152 451.5,-118 344.5,-118"/>
 <text text-anchor="start" x="352.5" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00">GUIColorScalePanel</text>
 <text text-anchor="middle" x="398" y="-126" font-family="Helvetica,sans-Serif" font-size="10.00">::setFontSize</text>
@@ -114,7 +114,7 @@ var sectionId = 'dynsection-6';
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
-<a xlink:href="classGUIColorScalePanel.xhtml#aba534a319236878bc3504050d8227fe4" target="_top" xlink:title="GUIColorScalePanel\l::setStepWidth">
+<a xlink:href="classGUIColorScalePanel.xhtml#aba534a319236878bc3504050d8227fe4" target="_top" xlink:title="Setzt die Schrittweite der Skalenbeschriftung. ">
 <polygon fill="none" stroke="black" points="344.5,-66 344.5,-100 451.5,-100 451.5,-66 344.5,-66"/>
 <text text-anchor="start" x="352.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">GUIColorScalePanel</text>
 <text text-anchor="middle" x="398" y="-74" font-family="Helvetica,sans-Serif" font-size="10.00">::setStepWidth</text>
@@ -127,7 +127,7 @@ var sectionId = 'dynsection-6';
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" target="_top" xlink:title="GUIColorScalePanel\l::refresh">
+<a xlink:href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" target="_top" xlink:title="Zeichnet die Temperaturskala neu. ">
 <polygon fill="none" stroke="black" points="344.5,-14 344.5,-48 451.5,-48 451.5,-14 344.5,-14"/>
 <text text-anchor="start" x="352.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">GUIColorScalePanel</text>
 <text text-anchor="middle" x="398" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">::refresh</text>
@@ -140,7 +140,7 @@ var sectionId = 'dynsection-6';
 </g>
 <!-- Node8 -->
 <g id="node15" class="node"><title>Node8</title>
-<a xlink:href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" target="_top" xlink:title="Utils::hsvToRgb">
+<a xlink:href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" target="_top" xlink:title="Wandelt eine Farbe im HSV&#45;Format ins RGB&#45;Format um. ">
 <polygon fill="none" stroke="black" points="495,-40.5 495,-61.5 583,-61.5 583,-40.5 495,-40.5"/>
 <text text-anchor="middle" x="539" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::hsvToRgb</text>
 </a>
@@ -152,7 +152,7 @@ var sectionId = 'dynsection-6';
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" target="_top" xlink:title="Utils::floattowxstr">
+<a xlink:href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" target="_top" xlink:title="Wandelt eine Fließkommazahl in einen wxWidgets&#45;String um. ">
 <polygon fill="none" stroke="black" points="492,-0.5 492,-21.5 586,-21.5 586,-0.5 492,-0.5"/>
 <text text-anchor="middle" x="539" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::floattowxstr</text>
 </a>

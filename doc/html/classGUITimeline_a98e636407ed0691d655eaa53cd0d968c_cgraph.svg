@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" target="_top" xlink:title="Utils::floattowxstr">
+<a xlink:href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" target="_top" xlink:title="Wandelt eine Fließkommazahl in einen wxWidgets&#45;String um. ">
 <polygon fill="none" stroke="black" points="178,-0.5 178,-21.5 272,-21.5 272,-0.5 178,-0.5"/>
 <text text-anchor="middle" x="225" y="-8.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::floattowxstr</text>
 </a>

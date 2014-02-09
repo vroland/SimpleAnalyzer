@@ -16,7 +16,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classGUICutRenderWindow.xhtml#aced4a67c460b8c3ede40763b6da6953d" target="_top" xlink:title="GUICutRenderWindow\l::~GUICutRenderWindow">
+<a xlink:href="classGUICutRenderWindow.xhtml#aced4a67c460b8c3ede40763b6da6953d" target="_top" xlink:title="Der Destruktor. ">
 <polygon fill="none" stroke="black" points="194.5,-0 194.5,-34 323.5,-34 323.5,-0 194.5,-0"/>
 <text text-anchor="start" x="202.5" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUICutRenderWindow</text>
 <text text-anchor="middle" x="259" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::~GUICutRenderWindow</text>

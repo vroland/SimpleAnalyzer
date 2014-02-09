@@ -6,11 +6,16 @@ var searchData=
   ['verts',['verts',['../classTriangle.xhtml#aa5ac3f568e42e746f7bd8be658e50060',1,'Triangle::verts()'],['../classTetrahedron.xhtml#a4bb7ad83965859998a622b35a97ad935',1,'Tetrahedron::verts()']]],
   ['view_5fscroll_5fwin',['view_scroll_win',['../classGUIMainWindow.xhtml#ad440f7451fd3fdabbe48518a89e61e45',1,'GUIMainWindow']]],
   ['viewbox',['viewbox',['../classGUIMainWindow.xhtml#a3e9a4e301f90e85e97721aa71b197ca8',1,'GUIMainWindow']]],
+  ['viewboxwidth',['VIEWBOXWIDTH',['../GUIMainWindow_8cpp.xhtml#a36b24fe28ba0d29b90e364114ae1753a',1,'GUIMainWindow.cpp']]],
   ['viewport',['viewport',['../classRenderer.xhtml#a4428a5ef0ceaf4de5c9991a40990994d',1,'Renderer']]],
   ['viewport_5finfo',['Viewport_info',['../structRenderer_1_1Viewport__info.xhtml',1,'Renderer']]],
   ['viewpropbox',['ViewpropBox',['../classViewpropBox.xhtml',1,'ViewpropBox'],['../classViewpropBox.xhtml#a4cac75d99079134622f57e35f1e47229',1,'ViewpropBox::ViewpropBox()']]],
+  ['viewpropbox_2ecpp',['ViewpropBox.cpp',['../ViewpropBox_8cpp.xhtml',1,'']]],
+  ['viewpropbox_2eh',['ViewpropBox.h',['../ViewpropBox_8h.xhtml',1,'']]],
   ['viewscaleedit',['viewScaleEdit',['../classViewpropBox.xhtml#ae275307ddd3a84c91298e78b826f1ae1',1,'ViewpropBox']]],
   ['viewscalelbl',['viewScaleLbl',['../classViewpropBox.xhtml#ab312348ae97369e3b8a1a7ce8ba9e2b1',1,'ViewpropBox']]],
+  ['visible',['visible',['../structObjectData_1_1MaterialData.xhtml#a37980da11f6b51b30eb41c3ab4e9674a',1,'ObjectData::MaterialData']]],
   ['visualization_5finfo',['Visualization_info',['../structUtils_1_1Visualization__info.xhtml',1,'Utils']]],
+  ['visualization_5finfo',['visualization_info',['../Application_8cpp.xhtml#afa647024f69f2725a3d441f53712ffd0',1,'visualization_info():&#160;Application.cpp'],['../GUIColorScalePanel_8cpp.xhtml#ab2bc98a13798ba972e034bbf26549564',1,'visualization_info():&#160;Application.cpp'],['../GUICutRenderWindow_8cpp.xhtml#ab2bc98a13798ba972e034bbf26549564',1,'visualization_info():&#160;Application.cpp'],['../GUIMainWindow_8cpp.xhtml#ab2bc98a13798ba972e034bbf26549564',1,'visualization_info():&#160;Application.cpp'],['../Renderer_8cpp.xhtml#ab2bc98a13798ba972e034bbf26549564',1,'visualization_info():&#160;Application.cpp']]],
   ['volume',['volume',['../structAnalyzer_1_1AnalyzerData__material.xhtml#a20017730ff899b65f91aa30caaf35dd6',1,'Analyzer::AnalyzerData_material::volume()'],['../structAnalyzer_1_1AnalyzerData__object.xhtml#a78ddeb311ff702e110fc1d483d826920',1,'Analyzer::AnalyzerData_object::volume()']]]
 ];
