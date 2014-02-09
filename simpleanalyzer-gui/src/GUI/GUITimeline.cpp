@@ -111,7 +111,7 @@ void GUITimeline::findMaxValue(ObjectData* obj,bool fast) {
 	if (fast) {
 		for (int i=0;i<(marker2-marker1)+1;i++) {
 			float val = 0;
-			SensorData* sd = &obj->sensordatalist.at(obj->current_sensor_index);
+			SensorData* sd = &obj->getSensorDataList()->at(obj->getCurrentSensorIndex());
 			for (int k=0;k<int(sd->data.at(i).size());k++) {
 				val+=sd->data.at(i).at(k).temperature;
 				cout << sd->data.at(i).at(k).temperature << endl;
@@ -122,11 +122,11 @@ void GUITimeline::findMaxValue(ObjectData* obj,bool fast) {
 			}
 		}
 	} else {
-		AnalyzerData_object data;
+		Analyzer::AnalyzerData_object data;
 		Analyzer analyzer;
 		for (int i=0;i<(marker2-marker1)+1;i++) {
-			obj->sensordatalist.at(obj->current_sensor_index).current_time_index = marker1+i;
-			analyzer.analyzeObject(obj,&data,false,obj->current_sensor_index);
+			obj->getSensorDataList()->at(obj->getCurrentSensorIndex()).current_time_index = marker1+i;
+			analyzer.analyzeObject(obj,&data,false,obj->getCurrentSensorIndex());
 			if (data.data_sets.at(0).heat_energy>max_energy) {
 				max_energy = data.data_sets.at(0).heat_energy;
 				max_index = marker1+i;

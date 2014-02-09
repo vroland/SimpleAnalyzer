@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['simpleanalyzer',['SimpleAnalyzer',['../index.html',1,'']]],
-  ['simpleanalyzer',['SimpleAnalyzer',['../md_README.html',1,'']]]
+  ['simpleanalyzer',['SimpleAnalyzer',['../index.xhtml',1,'']]],
+  ['simpleanalyzer',['SimpleAnalyzer',['../md_README.xhtml',1,'']]]
 ];

@@ -1,0 +1,7 @@
+<map id="GUICutRenderWindow::OnResize" name="GUICutRenderWindow::OnResize">
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970" title="GUICutRenderWindow\l::refreshVisualisation" alt="" coords="212,77,367,123"/>
+<area shape="rect" id="node5" href="$classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d" title="GUIMainWindow::getGLCanvas" alt="" coords="417,5,625,35"/>
+<area shape="rect" id="node7" href="$classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" title="GUIGLCanvas::getRenderer" alt="" coords="428,59,615,88"/>
+<area shape="rect" id="node9" href="$classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e" title="Renderer::setCutRenderInfo" alt="" coords="428,112,615,141"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289" title="GUICutRenderWindow\l::getCutRenderProperties" alt="" coords="436,165,607,211"/>
+</map>

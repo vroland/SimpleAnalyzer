@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Simple Analyzer: simpleanalyzer-gui/src/processing/Analyzer.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="doc_icon.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simple Analyzer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Hauptseite</span></a></li>
+      <li><a href="pages.xhtml"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="namespaces.xhtml"><span>Namensbereiche</span></a></li>
+      <li><a href="annotated.xhtml"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.xhtml"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c77ee61374efdb50c23b8fd1bc609a29.xhtml">simpleanalyzer-gui</a></li><li class="navelem"><a class="el" href="dir_fc69cc80a9959f5f4d9fc5f3e2f537ca.xhtml">src</a></li><li class="navelem"><a class="el" href="dir_bee17b6d98f1147c834a49f1eb486f67.xhtml">processing</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Analyzer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Analyzer.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 11.09.2013</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: valentin</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ANALYZER_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ANALYZER_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;ObjectData.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="classAnalyzer.xhtml">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAnalyzer.xhtml" title="Ermittelt Daten aus der Temperaturverteilung. ">Analyzer</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__material.xhtml">   26</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structAnalyzer_1_1AnalyzerData__material.xhtml" title="Analyseergebnisse für ein Material. ">AnalyzerData_material</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__material.xhtml#a0a6b01fc900ce677ae8403d3a85b829b">   27</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__material.xhtml#a0a6b01fc900ce677ae8403d3a85b829b">name</a>;        </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__material.xhtml#a20017730ff899b65f91aa30caaf35dd6">   28</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__material.xhtml#a20017730ff899b65f91aa30caaf35dd6">volume</a>;      </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__material.xhtml#a94efc7f38f7f59c97a48a0155f9c4719">   29</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__material.xhtml#a94efc7f38f7f59c97a48a0155f9c4719">heat_energy</a>; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml">   34</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml" title="Analyseergebnisse für einen Sensordatensatz. ">AnalyzerData_dataset</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#a53f3c1896123de4dc00f01e593d5f70d">   35</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#a53f3c1896123de4dc00f01e593d5f70d">name</a>;                            </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#aaefb798e2611790d5d956fe597bbafe0">   36</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#aaefb798e2611790d5d956fe597bbafe0">heat_energy</a>;                     </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#a25d0189c93bc0da58f778750edb2a2b9">   37</a></span>&#160;        vector&lt;AnalyzerData_material&gt; <a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#a25d0189c93bc0da58f778750edb2a2b9">mat_data</a>; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml">   42</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml" title="Analyseergebnisse für ein Objekt. ">AnalyzerData_object</a> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml#a78ddeb311ff702e110fc1d483d826920">   43</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml#a78ddeb311ff702e110fc1d483d826920">volume</a>;                          </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml#a5d36dcf805f37b0e29134236e3881fca">   44</a></span>&#160;        vector&lt;AnalyzerData_dataset&gt; <a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml#a5d36dcf805f37b0e29134236e3881fca">data_sets</a>; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml">   49</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml" title="Analyseergebnisse für einen Punkt. ">AnalyzerData_point</a> {</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml#a150b00a3d0be5d1c75b39292d213cbfa">   50</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml#a150b00a3d0be5d1c75b39292d213cbfa">value</a>;       </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml#af4d2c2bd41aebc3c243afc5544bed81a">   51</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml#af4d2c2bd41aebc3c243afc5544bed81a">extrapolated</a>;  </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">friend</span> std::ostream &amp;operator&lt;&lt; (std::ostream &amp;out, <span class="keyword">const</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml" title="Analyseergebnisse für ein Objekt. ">AnalyzerData_object</a> &amp;data);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classAnalyzer.xhtml" title="Ermittelt Daten aus der Temperaturverteilung. ">Analyzer</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> analyzeObject(<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* obj,<a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml" title="Analyseergebnisse für ein Objekt. ">AnalyzerData_object</a>* out,<span class="keywordtype">bool</span> use_markers = <span class="keyword">true</span>,<span class="keywordtype">int</span> sdindex = -1);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> analyzePoint(<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* obj,<a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* point,<a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml" title="Analyseergebnisse für einen Punkt. ">AnalyzerData_point</a>* point_data,<a class="code" href="classInterpolator.xhtml" title="2- und 3-dimensionale Inter-/Extrapolation ">Interpolator</a>* interpolator);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classAnalyzer.xhtml" title="Ermittelt Daten aus der Temperaturverteilung. ">Analyzer</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ANALYZER_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Son Feb 9 2014 01:43:19 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

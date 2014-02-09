@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['badface',['badface',['../structtetgenmesh_1_1badface.html',1,'tetgenmesh']]]
+  ['badface',['badface',['../structtetgenmesh_1_1badface.xhtml',1,'tetgenmesh']]]
 ];

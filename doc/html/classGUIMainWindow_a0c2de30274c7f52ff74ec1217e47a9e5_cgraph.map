@@ -1,0 +1,6 @@
+<map id="GUIMainWindow::OnRecalcBtClick" name="GUIMainWindow::OnRecalcBtClick">
+<area shape="rect" id="node3" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="ObjectData::calculateIO" alt="" coords="253,36,416,65"/>
+<area shape="rect" id="node5" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="MeshProcessor::process" alt="" coords="465,36,631,65"/>
+<area shape="rect" id="node7" href="$classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Interpolator::setMode" alt="" coords="708,5,852,35"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="ObjectData::getCurrentSensor\lIndex" alt="" coords="681,58,879,105"/>
+</map>

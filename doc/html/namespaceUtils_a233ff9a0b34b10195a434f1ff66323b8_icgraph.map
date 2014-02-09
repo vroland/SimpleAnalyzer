@@ -1,0 +1,13 @@
+<map id="Utils::floattowxstr" name="Utils::floattowxstr">
+<area shape="rect" id="node3" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="GUIAnalyzePointWindow\l::analyzePoint" alt="" coords="192,5,363,51"/>
+<area shape="rect" id="node5" href="$classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="GUIColorScalePanel\l::refresh" alt="" coords="207,125,348,171"/>
+<area shape="rect" id="node7" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="GUICutRenderWindow\l::renderImage" alt="" coords="428,61,583,107"/>
+<area shape="rect" id="node18" href="$classGUIMainWindow.xhtml#a2af54fc375be6b0fb938b8562980e723" title="GUIMainWindow::updateView\lPropGUI" alt="" coords="179,194,376,241"/>
+<area shape="rect" id="node20" href="$classGUIRenderCutCanvas.xhtml#a348424f671910f6ede43cb6835852589" title="GUIRenderCutCanvas\l::onCanvasPaint" alt="" coords="200,263,355,310"/>
+<area shape="rect" id="node22" href="$classGUITimeline.xhtml#a98e636407ed0691d655eaa53cd0d968c" title="GUITimeline::calcStepWidth" alt="" coords="184,333,371,363"/>
+<area shape="rect" id="node24" href="$classGUITimeline.xhtml#a55f17926f5dd787c8ae118127f73ca88" title="GUITimeline::OnPaint" alt="" coords="431,359,580,388"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a0923a36cdf4e0094d78f623693ff8ac6" title="GUICutRenderWindow\l::OnCSColorBtClick" alt="" coords="428,130,583,177"/>
+<area shape="rect" id="node13" href="$classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" title="GUICutRenderWindow\l::OnColorScaleChanged" alt="" coords="424,199,587,246"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="GUICutRenderWindow\l::renderCutBtClick" alt="" coords="655,61,809,107"/>
+<area shape="rect" id="node15" href="$classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438" title="GUICutRenderWindow\l::OnColorScaleChanged_spin" alt="" coords="635,199,829,246"/>
+</map>

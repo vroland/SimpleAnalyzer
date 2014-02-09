@@ -1,0 +1,20 @@
+<map id="GUITimeline::findMaxValue" name="GUITimeline::findMaxValue">
+<area shape="rect" id="node3" href="$classGUITimeline.xhtml#a1fa405314a0be38d95798fdc205827c3" title="GUITimeline::getValue" alt="" coords="249,5,404,35"/>
+<area shape="rect" id="node5" href="$classGUITimeline.xhtml#aec94daa9bf66cd493b970b8ebb1334d5" title="GUITimeline::getMinValue" alt="" coords="240,59,413,88"/>
+<area shape="rect" id="node7" href="$classGUITimeline.xhtml#a90b85dd56a32b3b35498a09b116b3610" title="GUITimeline::getMaxValue" alt="" coords="237,112,416,141"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="ObjectData::getSensorDataList" alt="" coords="465,216,668,245"/>
+<area shape="rect" id="node11" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="ObjectData::getCurrentSensor\lIndex" alt="" coords="719,255,916,302"/>
+<area shape="rect" id="node13" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Analyzer::analyzeObject" alt="" coords="245,373,408,403"/>
+<area shape="rect" id="node44" href="$classGUITimeline.xhtml#a0fa4ef5ed2e0fe5f416d9d4c75b86ebc" title="GUITimeline::setValue" alt="" coords="249,545,404,575"/>
+<area shape="rect" id="node17" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="ObjectData::setCurrentSensor\lIndex" alt="" coords="468,426,665,473"/>
+<area shape="rect" id="node19" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="MeshProcessor::process" alt="" coords="484,320,649,349"/>
+<area shape="rect" id="node24" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="ObjectData::getMaterials" alt="" coords="484,496,649,525"/>
+<area shape="rect" id="node26" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="513,603,620,632"/>
+<area shape="rect" id="node34" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Vector3D::crossProduct" alt="" coords="485,373,648,403"/>
+<area shape="rect" id="node39" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Vector3D::dotProduct" alt="" coords="493,549,640,579"/>
+<area shape="rect" id="node21" href="$classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Interpolator::setMode" alt="" coords="745,325,889,355"/>
+<area shape="rect" id="node28" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="761,549,873,579"/>
+<area shape="rect" id="node30" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="761,603,873,632"/>
+<area shape="rect" id="node32" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="763,496,872,525"/>
+<area shape="rect" id="node46" href="$classGUITimeline.xhtml#a417835c7c520d9fbcf65610d255245a1" title="GUITimeline::sendTimeline\lEvent" alt="" coords="477,655,656,702"/>
+</map>

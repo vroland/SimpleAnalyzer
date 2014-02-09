@@ -1,68 +1,68 @@
 var hierarchy =
 [
-    [ "Analyzer", "classAnalyzer.html", null ],
-    [ "AnalyzerData_dataset", "structAnalyzerData__dataset.html", null ],
-    [ "AnalyzerData_material", "structAnalyzerData__material.html", null ],
-    [ "AnalyzerData_object", "structAnalyzerData__object.html", null ],
-    [ "AnalyzerData_point", "structAnalyzerData__point.html", null ],
-    [ "tetgenmesh::arraypool", "classtetgenmesh_1_1arraypool.html", null ],
-    [ "tetgenmesh::badface", "structtetgenmesh_1_1badface.html", null ],
-    [ "Utils::CutRender_info", "structUtils_1_1CutRender__info.html", null ],
-    [ "tetgenmesh::elemflip", "classtetgenmesh_1_1elemflip.html", null ],
-    [ "Exporter", "classExporter.html", null ],
-    [ "tetgenmesh::face", "classtetgenmesh_1_1face.html", null ],
-    [ "tetgenio::facet", "structtetgenio_1_1facet.html", null ],
-    [ "GUIColorScalePanel", "classGUIColorScalePanel.html", null ],
-    [ "Importer", "classImporter.html", null ],
-    [ "Interpolator", "classInterpolator.html", null ],
-    [ "tetgenmesh::list", "classtetgenmesh_1_1list.html", null ],
-    [ "MaterialData", "structMaterialData.html", null ],
-    [ "Matrix3D", "classMatrix3D.html", null ],
-    [ "tetgenmesh::memorypool", "classtetgenmesh_1_1memorypool.html", [
-      [ "tetgenmesh::queue", "classtetgenmesh_1_1queue.html", null ]
+    [ "Analyzer", "classAnalyzer.xhtml", null ],
+    [ "AnalyzerData_dataset", "structAnalyzerData__dataset.xhtml", null ],
+    [ "AnalyzerData_material", "structAnalyzerData__material.xhtml", null ],
+    [ "AnalyzerData_object", "structAnalyzerData__object.xhtml", null ],
+    [ "AnalyzerData_point", "structAnalyzerData__point.xhtml", null ],
+    [ "tetgenmesh::arraypool", "classtetgenmesh_1_1arraypool.xhtml", null ],
+    [ "tetgenmesh::badface", "structtetgenmesh_1_1badface.xhtml", null ],
+    [ "Utils::CutRender_info", "structUtils_1_1CutRender__info.xhtml", null ],
+    [ "tetgenmesh::elemflip", "classtetgenmesh_1_1elemflip.xhtml", null ],
+    [ "Exporter", "classExporter.xhtml", null ],
+    [ "tetgenmesh::face", "classtetgenmesh_1_1face.xhtml", null ],
+    [ "tetgenio::facet", "structtetgenio_1_1facet.xhtml", null ],
+    [ "GUIColorScalePanel", "classGUIColorScalePanel.xhtml", null ],
+    [ "Importer", "classImporter.xhtml", null ],
+    [ "Interpolator", "classInterpolator.xhtml", null ],
+    [ "tetgenmesh::list", "classtetgenmesh_1_1list.xhtml", null ],
+    [ "MaterialData", "structMaterialData.xhtml", null ],
+    [ "Matrix3D", "classMatrix3D.xhtml", null ],
+    [ "tetgenmesh::memorypool", "classtetgenmesh_1_1memorypool.xhtml", [
+      [ "tetgenmesh::queue", "classtetgenmesh_1_1queue.xhtml", null ]
     ] ],
-    [ "MeshProcessor", "classMeshProcessor.html", null ],
-    [ "ObjectData", "classObjectData.html", null ],
-    [ "Options", "structOptions.html", null ],
-    [ "tetgenmesh::pbcdata", "structtetgenmesh_1_1pbcdata.html", null ],
-    [ "tetgenio::pbcgroup", "structtetgenio_1_1pbcgroup.html", null ],
-    [ "tetgenio::polygon", "structtetgenio_1_1polygon.html", null ],
-    [ "Renderer", "classRenderer.html", null ],
-    [ "Utils::SensorData", "structUtils_1_1SensorData.html", null ],
-    [ "Utils::SensorPoint", "structUtils_1_1SensorPoint.html", null ],
-    [ "Utils::SensorPointComparator", "structUtils_1_1SensorPointComparator.html", null ],
-    [ "Utils::SortStruct", "structUtils_1_1SortStruct.html", null ],
-    [ "tetgenbehavior", "classtetgenbehavior.html", null ],
-    [ "tetgenio", "classtetgenio.html", null ],
-    [ "tetgenmesh", "classtetgenmesh.html", null ],
-    [ "Tetrahedron", "classTetrahedron.html", null ],
-    [ "Triangle", "classTriangle.html", null ],
-    [ "tetgenmesh::triface", "classtetgenmesh_1_1triface.html", null ],
-    [ "Vector3D", "classVector3D.html", null ],
-    [ "Viewport_info", "structViewport__info.html", null ],
-    [ "Utils::Visualization_info", "structUtils_1_1Visualization__info.html", null ],
-    [ "tetgenio::voroedge", "structtetgenio_1_1voroedge.html", null ],
-    [ "tetgenio::vorofacet", "structtetgenio_1_1vorofacet.html", null ],
+    [ "MeshProcessor", "classMeshProcessor.xhtml", null ],
+    [ "ObjectData", "classObjectData.xhtml", null ],
+    [ "Options", "structOptions.xhtml", null ],
+    [ "tetgenmesh::pbcdata", "structtetgenmesh_1_1pbcdata.xhtml", null ],
+    [ "tetgenio::pbcgroup", "structtetgenio_1_1pbcgroup.xhtml", null ],
+    [ "tetgenio::polygon", "structtetgenio_1_1polygon.xhtml", null ],
+    [ "Renderer", "classRenderer.xhtml", null ],
+    [ "Utils::SensorData", "structUtils_1_1SensorData.xhtml", null ],
+    [ "Utils::SensorPoint", "structUtils_1_1SensorPoint.xhtml", null ],
+    [ "Utils::SensorPointComparator", "structUtils_1_1SensorPointComparator.xhtml", null ],
+    [ "Utils::SortStruct", "structUtils_1_1SortStruct.xhtml", null ],
+    [ "tetgenbehavior", "classtetgenbehavior.xhtml", null ],
+    [ "tetgenio", "classtetgenio.xhtml", null ],
+    [ "tetgenmesh", "classtetgenmesh.xhtml", null ],
+    [ "Tetrahedron", "classTetrahedron.xhtml", null ],
+    [ "Triangle", "classTriangle.xhtml", null ],
+    [ "tetgenmesh::triface", "classtetgenmesh_1_1triface.xhtml", null ],
+    [ "Vector3D", "classVector3D.xhtml", null ],
+    [ "Viewport_info", "structViewport__info.xhtml", null ],
+    [ "Utils::Visualization_info", "structUtils_1_1Visualization__info.xhtml", null ],
+    [ "tetgenio::voroedge", "structtetgenio_1_1voroedge.xhtml", null ],
+    [ "tetgenio::vorofacet", "structtetgenio_1_1vorofacet.xhtml", null ],
     [ "wxApp", null, [
-      [ "Application", "classApplication.html", null ]
+      [ "Application", "classApplication.xhtml", null ]
     ] ],
     [ "wxDialog", null, [
-      [ "GUIAnalyzePointWindow", "classGUIAnalyzePointWindow.html", null ]
+      [ "GUIAnalyzePointWindow", "classGUIAnalyzePointWindow.xhtml", null ]
     ] ],
     [ "wxFrame", null, [
-      [ "GUIAnalyzeOutputWindow", "classGUIAnalyzeOutputWindow.html", null ],
-      [ "GUICutRenderWindow", "classGUICutRenderWindow.html", null ],
-      [ "GUIMainWindow", "classGUIMainWindow.html", null ]
+      [ "GUIAnalyzeOutputWindow", "classGUIAnalyzeOutputWindow.xhtml", null ],
+      [ "GUICutRenderWindow", "classGUICutRenderWindow.xhtml", null ],
+      [ "GUIMainWindow", "classGUIMainWindow.xhtml", null ]
     ] ],
     [ "wxGLCanvas", null, [
-      [ "GUIGLCanvas", "classGUIGLCanvas.html", null ]
+      [ "GUIGLCanvas", "classGUIGLCanvas.xhtml", null ]
     ] ],
     [ "wxPanel", null, [
-      [ "GUIRenderCutCanvas", "classGUIRenderCutCanvas.html", null ],
-      [ "GUITimeline", "classGUITimeline.html", null ]
+      [ "GUIRenderCutCanvas", "classGUIRenderCutCanvas.xhtml", null ],
+      [ "GUITimeline", "classGUITimeline.xhtml", null ]
     ] ],
     [ "wxStaticBox", null, [
-      [ "PropertiesBox", "classPropertiesBox.html", null ],
-      [ "ViewpropBox", "classViewpropBox.html", null ]
+      [ "PropertiesBox", "classPropertiesBox.xhtml", null ],
+      [ "ViewpropBox", "classViewpropBox.xhtml", null ]
     ] ]
 ];

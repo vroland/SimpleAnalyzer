@@ -1,0 +1,14 @@
+<map id="Renderer::renderTetrahedra" name="Renderer::renderTetrahedra">
+<area shape="rect" id="node3" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Vector3D::add" alt="" coords="263,59,369,88"/>
+<area shape="rect" id="node11" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Vector3D::mult" alt="" coords="261,219,371,248"/>
+<area shape="rect" id="node13" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="263,112,369,141"/>
+<area shape="rect" id="node18" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Vector3D::crossProduct" alt="" coords="235,165,397,195"/>
+<area shape="rect" id="node23" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Vector3D::dotProduct" alt="" coords="243,5,389,35"/>
+<area shape="rect" id="node28" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Vector3D::copy" alt="" coords="260,272,372,301"/>
+<area shape="rect" id="node30" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Vector3D::normalize" alt="" coords="245,325,387,355"/>
+<area shape="rect" id="node32" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Utils::hsvToRgb" alt="" coords="257,379,375,408"/>
+<area shape="rect" id="node34" href="$namespaceUtils.xhtml#abb647325616858e0fad55290c36ea03b" title="Begrenzt einen Wert auf den Bereich 0..1. " alt="" coords="259,432,373,461"/>
+<area shape="rect" id="node5" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="445,32,557,61"/>
+<area shape="rect" id="node7" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="445,85,557,115"/>
+<area shape="rect" id="node9" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="447,139,556,168"/>
+</map>

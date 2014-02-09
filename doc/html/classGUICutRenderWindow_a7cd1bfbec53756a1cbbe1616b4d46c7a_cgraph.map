@@ -1,0 +1,26 @@
+<map id="GUICutRenderWindow::renderCutBtClick" name="GUICutRenderWindow::renderCutBtClick">
+<area shape="rect" id="node3" href="$classGUIRenderCutCanvas.xhtml#a88c49bc069d6e1a40b68dcfce8fd9bf7" title="GUIRenderCutCanvas\l::setValueImg" alt="" coords="441,5,596,51"/>
+<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="GUICutRenderWindow\l::renderImage" alt="" coords="212,527,367,574"/>
+<area shape="rect" id="node7" href="$classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" title="GUIRenderCutCanvas\l::getScalePanel" alt="" coords="441,250,596,297"/>
+<area shape="rect" id="node9" href="$classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="GUIColorScalePanel\l::refresh" alt="" coords="448,319,589,366"/>
+<area shape="rect" id="node13" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Utils::floattowxstr" alt="" coords="688,385,813,415"/>
+<area shape="rect" id="node15" href="$classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289" title="GUICutRenderWindow\l::getCutRenderProperties" alt="" coords="433,439,604,486"/>
+<area shape="rect" id="node17" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Triangle::getV2" alt="" coords="464,509,573,539"/>
+<area shape="rect" id="node19" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Vector3D::copy" alt="" coords="695,584,807,613"/>
+<area shape="rect" id="node21" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="697,643,804,672"/>
+<area shape="rect" id="node29" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Triangle::getV1" alt="" coords="464,819,573,848"/>
+<area shape="rect" id="node31" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Triangle::getNormal" alt="" coords="451,664,587,693"/>
+<area shape="rect" id="node35" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Vector3D::crossProduct" alt="" coords="669,696,832,725"/>
+<area shape="rect" id="node40" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Vector3D::normalize" alt="" coords="680,760,821,789"/>
+<area shape="rect" id="node44" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="ObjectData::getMaterials" alt="" coords="436,872,601,901"/>
+<area shape="rect" id="node46" href="$classVector3D.xhtml#a37762d009e092a9a9eecb2de03b6f0ec" title="Vector3D::print" alt="" coords="464,925,573,955"/>
+<area shape="rect" id="node48" href="$classGUIRenderCutCanvas.xhtml#ab20c8e437704facc41fa8c3c111ffa85" title="GUIRenderCutCanvas\l::setImage" alt="" coords="441,978,596,1025"/>
+<area shape="rect" id="node51" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="ObjectData::getSensorDataList" alt="" coords="417,1048,620,1077"/>
+<area shape="rect" id="node53" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="ObjectData::getCurrentSensor\lIndex" alt="" coords="420,74,617,121"/>
+<area shape="rect" id="node55" href="$namespaceUtils.xhtml#adc0438a85ca31977c95f5d27090d5346" title="Utils::copySensorPoint" alt="" coords="441,144,596,173"/>
+<area shape="rect" id="node57" href="$classTriangle.xhtml#a9320d1ab83c104352bf5e8f2c8274334" title="Triangle::getVert" alt="" coords="460,197,577,227"/>
+<area shape="rect" id="node11" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Utils::hsvToRgb" alt="" coords="692,328,809,357"/>
+<area shape="rect" id="node23" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="880,616,992,645"/>
+<area shape="rect" id="node25" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="880,669,992,699"/>
+<area shape="rect" id="node27" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="881,723,991,752"/>
+</map>

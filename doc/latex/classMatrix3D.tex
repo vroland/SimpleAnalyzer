@@ -1,39 +1,256 @@
 \hypertarget{classMatrix3D}{\section{Matrix3\-D Klassenreferenz}
 \label{classMatrix3D}\index{Matrix3\-D@{Matrix3\-D}}
 }
+
+
+3x3-\/\-Matrixklasse mit Operationen.  
+
+
+
+
+{\ttfamily \#include $<$Geometry\-Classes.\-h$>$}
+
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classMatrix3D_abd8f512d6fdfda45bfe655ae38cde303}{{\bfseries Matrix3\-D} (double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3)}\label{classMatrix3D_abd8f512d6fdfda45bfe655ae38cde303}
-
+\hyperlink{classMatrix3D_afe9c6b7abe858fe9f6aea8f0607a00a7}{Matrix3\-D} ()
 \item 
-\hypertarget{classMatrix3D_a399be81028219044a03439b2ff93782a}{void {\bfseries mult} (\hyperlink{classMatrix3D}{Matrix3\-D} $\ast$other)}\label{classMatrix3D_a399be81028219044a03439b2ff93782a}
-
+\hyperlink{classMatrix3D_abd8f512d6fdfda45bfe655ae38cde303}{Matrix3\-D} (double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3)
 \item 
-\hypertarget{classMatrix3D_adb30531e4dd89eb99ed2fb7f94269122}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries mult} (\hyperlink{classVector3D}{Vector3\-D} $\ast$other)}\label{classMatrix3D_adb30531e4dd89eb99ed2fb7f94269122}
-
+void \hyperlink{classMatrix3D_a399be81028219044a03439b2ff93782a}{mult} (\hyperlink{classMatrix3D}{Matrix3\-D} $\ast$other)
 \item 
-\hypertarget{classMatrix3D_ada7ce7ea9f2d0ef0fdda60ad73dad345}{void {\bfseries rotate\-X} (double angle)}\label{classMatrix3D_ada7ce7ea9f2d0ef0fdda60ad73dad345}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classMatrix3D_adb30531e4dd89eb99ed2fb7f94269122}{mult} (\hyperlink{classVector3D}{Vector3\-D} $\ast$other)
 \item 
-\hypertarget{classMatrix3D_a649e1aa65466df65d63f1aef934e5fad}{void {\bfseries rotate\-Y} (double angle)}\label{classMatrix3D_a649e1aa65466df65d63f1aef934e5fad}
-
+void \hyperlink{classMatrix3D_ada7ce7ea9f2d0ef0fdda60ad73dad345}{rotate\-X} (double angle)
 \item 
-\hypertarget{classMatrix3D_ad1933b95fb776dd31ad1b81d3515b029}{void {\bfseries rotate\-Z} (double angle)}\label{classMatrix3D_ad1933b95fb776dd31ad1b81d3515b029}
-
+void \hyperlink{classMatrix3D_a649e1aa65466df65d63f1aef934e5fad}{rotate\-Y} (double angle)
 \item 
-\hypertarget{classMatrix3D_a0d59cb6ea927264477a10b9d427966d6}{void {\bfseries transpose} ()}\label{classMatrix3D_a0d59cb6ea927264477a10b9d427966d6}
-
+void \hyperlink{classMatrix3D_ad1933b95fb776dd31ad1b81d3515b029}{rotate\-Z} (double angle)
 \item 
-\hypertarget{classMatrix3D_a33c771d35de761fafc619773e1b253c5}{void {\bfseries print} ()}\label{classMatrix3D_a33c771d35de761fafc619773e1b253c5}
-
+void \hyperlink{classMatrix3D_a0d59cb6ea927264477a10b9d427966d6}{transpose} ()
+\item 
+void \hyperlink{classMatrix3D_a33c771d35de761fafc619773e1b253c5}{print} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classMatrix3D_aa24b85b09060684ec1559f22857ccfee}{double {\bfseries elements} \mbox{[}9\mbox{]}}\label{classMatrix3D_aa24b85b09060684ec1559f22857ccfee}
-
+double \hyperlink{classMatrix3D_aa24b85b09060684ec1559f22857ccfee}{elements} \mbox{[}9\mbox{]}
 \end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+3x3-\/\-Matrixklasse mit Operationen. 
+
+Definiert in Zeile 129 der Datei Geometry\-Classes.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classMatrix3D_afe9c6b7abe858fe9f6aea8f0607a00a7}{\index{Matrix3\-D@{Matrix3\-D}!Matrix3\-D@{Matrix3\-D}}
+\index{Matrix3\-D@{Matrix3\-D}!Matrix3D@{Matrix3\-D}}
+\subsubsection[{Matrix3\-D}]{\setlength{\rightskip}{0pt plus 5cm}Matrix3\-D\-::\-Matrix3\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix3D_afe9c6b7abe858fe9f6aea8f0607a00a7}
+Der Standardkonstruktor. Erzeugt eine Standardmatrix\-:\par
+ \begin{eqnarray*} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{eqnarray*} 
+
+Definiert in Zeile 112 der Datei Geometry\-Classes.\-cpp.
+
+\hypertarget{classMatrix3D_abd8f512d6fdfda45bfe655ae38cde303}{\index{Matrix3\-D@{Matrix3\-D}!Matrix3\-D@{Matrix3\-D}}
+\index{Matrix3\-D@{Matrix3\-D}!Matrix3D@{Matrix3\-D}}
+\subsubsection[{Matrix3\-D}]{\setlength{\rightskip}{0pt plus 5cm}Matrix3\-D\-::\-Matrix3\-D (
+\begin{DoxyParamCaption}
+\item[{double}]{x1, }
+\item[{double}]{y1, }
+\item[{double}]{z1, }
+\item[{double}]{x2, }
+\item[{double}]{y2, }
+\item[{double}]{z2, }
+\item[{double}]{x3, }
+\item[{double}]{y3, }
+\item[{double}]{z3}
+\end{DoxyParamCaption}
+)}}\label{classMatrix3D_abd8f512d6fdfda45bfe655ae38cde303}
+Erzeugt eine Matrix mit den gegebenen Elementen\-:\par
+ \begin{eqnarray*} x1 & y1 & z1 \\ x2 & y2 & z2 \\ x3 & y3 & z3 \\ \end{eqnarray*} 
+
+Definiert in Zeile 123 der Datei Geometry\-Classes.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classMatrix3D_a399be81028219044a03439b2ff93782a}{\index{Matrix3\-D@{Matrix3\-D}!mult@{mult}}
+\index{mult@{mult}!Matrix3D@{Matrix3\-D}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix3\-D\-::mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix3\-D} $\ast$}]{other}
+\end{DoxyParamCaption}
+)}}\label{classMatrix3D_a399be81028219044a03439b2ff93782a}
+Multipliziert die Matrix mit einer anderen Matrix. 
+\begin{DoxyParams}{Parameter}
+{\em other} & Die Matrix, mit der multipliziert werden soll. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 137 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMatrix3D_a399be81028219044a03439b2ff93782a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classMatrix3D_adb30531e4dd89eb99ed2fb7f94269122}{\index{Matrix3\-D@{Matrix3\-D}!mult@{mult}}
+\index{mult@{mult}!Matrix3D@{Matrix3\-D}}
+\subsubsection[{mult}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Matrix3\-D\-::mult (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3\-D} $\ast$}]{other}
+\end{DoxyParamCaption}
+)}}\label{classMatrix3D_adb30531e4dd89eb99ed2fb7f94269122}
+Multipliziert die Matrix mit einem Vektor. 
+\begin{DoxyParams}{Parameter}
+{\em other} & Der Vektor, mit dem multipliziert werden soll. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der durch die Multiplikation entstandene Vektor. Der zurückgegebene Vektor muss manuell mit delete Freigegeben werden! 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 151 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classMatrix3D_adb30531e4dd89eb99ed2fb7f94269122_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classMatrix3D_a33c771d35de761fafc619773e1b253c5}{\index{Matrix3\-D@{Matrix3\-D}!print@{print}}
+\index{print@{print}!Matrix3D@{Matrix3\-D}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix3\-D\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix3D_a33c771d35de761fafc619773e1b253c5}
+Gibt die Matrix auf dem cout-\/\-Stream aus. 
+
+Definiert in Zeile 189 der Datei Geometry\-Classes.\-cpp.
+
+\hypertarget{classMatrix3D_ada7ce7ea9f2d0ef0fdda60ad73dad345}{\index{Matrix3\-D@{Matrix3\-D}!rotate\-X@{rotate\-X}}
+\index{rotate\-X@{rotate\-X}!Matrix3D@{Matrix3\-D}}
+\subsubsection[{rotate\-X}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix3\-D\-::rotate\-X (
+\begin{DoxyParamCaption}
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)}}\label{classMatrix3D_ada7ce7ea9f2d0ef0fdda60ad73dad345}
+Rotiert die Matrix um einen bestimmten Winkel auf der X-\/\-Achse. 
+\begin{DoxyParams}{Parameter}
+{\em angle} & Der Winkel, um den rotiert werden soll in R\-A\-D. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 160 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMatrix3D_ada7ce7ea9f2d0ef0fdda60ad73dad345_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classMatrix3D_a649e1aa65466df65d63f1aef934e5fad}{\index{Matrix3\-D@{Matrix3\-D}!rotate\-Y@{rotate\-Y}}
+\index{rotate\-Y@{rotate\-Y}!Matrix3D@{Matrix3\-D}}
+\subsubsection[{rotate\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix3\-D\-::rotate\-Y (
+\begin{DoxyParamCaption}
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)}}\label{classMatrix3D_a649e1aa65466df65d63f1aef934e5fad}
+Rotiert die Matrix um einen bestimmten Winkel auf der Y-\/\-Achse. 
+\begin{DoxyParams}{Parameter}
+{\em angle} & Der Winkel, um den rotiert werden soll in R\-A\-D. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 166 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMatrix3D_a649e1aa65466df65d63f1aef934e5fad_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classMatrix3D_ad1933b95fb776dd31ad1b81d3515b029}{\index{Matrix3\-D@{Matrix3\-D}!rotate\-Z@{rotate\-Z}}
+\index{rotate\-Z@{rotate\-Z}!Matrix3D@{Matrix3\-D}}
+\subsubsection[{rotate\-Z}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix3\-D\-::rotate\-Z (
+\begin{DoxyParamCaption}
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)}}\label{classMatrix3D_ad1933b95fb776dd31ad1b81d3515b029}
+Rotiert die Matrix um einen bestimmten Winkel auf der Z-\/\-Achse. 
+\begin{DoxyParams}{Parameter}
+{\em angle} & Der Winkel, um den rotiert werden soll in R\-A\-D. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 172 der Datei Geometry\-Classes.\-cpp.
+
+\hypertarget{classMatrix3D_a0d59cb6ea927264477a10b9d427966d6}{\index{Matrix3\-D@{Matrix3\-D}!transpose@{transpose}}
+\index{transpose@{transpose}!Matrix3D@{Matrix3\-D}}
+\subsubsection[{transpose}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix3\-D\-::transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMatrix3D_a0d59cb6ea927264477a10b9d427966d6}
+Transponiert die Matrix. 
+
+Definiert in Zeile 178 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMatrix3D_a0d59cb6ea927264477a10b9d427966d6_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classMatrix3D_aa24b85b09060684ec1559f22857ccfee}{\index{Matrix3\-D@{Matrix3\-D}!elements@{elements}}
+\index{elements@{elements}!Matrix3D@{Matrix3\-D}}
+\subsubsection[{elements}]{\setlength{\rightskip}{0pt plus 5cm}double Matrix3\-D\-::elements\mbox{[}9\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classMatrix3D_aa24b85b09060684ec1559f22857ccfee}
+Die Elemente der Matrix. 
+
+Definiert in Zeile 190 der Datei Geometry\-Classes.\-h.
+
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

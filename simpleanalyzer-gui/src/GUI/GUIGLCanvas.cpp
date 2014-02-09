@@ -30,9 +30,9 @@ void GUIGLCanvas::OnResize(wxSizeEvent &event) {
 	Update();
 }
 void GUIGLCanvas::OnMouseWheel(wxMouseEvent &event) {
-	renderer.viewport.zoom -=event.m_wheelRotation/360.;
-	if (renderer.viewport.zoom<0) {
-		renderer.viewport.zoom = 0;
+	renderer.getViewport()->zoom -=event.m_wheelRotation/360.;
+	if (renderer.getViewport()->zoom<0) {
+		renderer.getViewport()->zoom = 0;
 	}
 	Refresh(false,NULL);
 }
@@ -71,19 +71,19 @@ void GUIGLCanvas::OnMouseMove(wxMouseEvent &event) {
 	bool refresh = false;
 	if (prev_mouse_x>-1) {
 		if (event.m_leftDown) {
-			renderer.viewport.rotationX +=event.m_x-prev_mouse_x;
-			renderer.viewport.rotationY +=event.m_y-prev_mouse_y;
+			renderer.getViewport()->rotationX +=event.m_x-prev_mouse_x;
+			renderer.getViewport()->rotationY +=event.m_y-prev_mouse_y;
 			refresh = true;
 		}
 		if (event.m_middleDown) {
 			Vector3D invec = Vector3D((event.m_x-prev_mouse_x)*.1,-(event.m_y-prev_mouse_y)*.1,0);
 			Matrix3D view;
-			view.rotateX(renderer.viewport.rotationY*M_PI/180.);
-			view.rotateY(renderer.viewport.rotationX*M_PI/180.);
+			view.rotateX(renderer.getViewport()->rotationY*M_PI/180.);
+			view.rotateY(renderer.getViewport()->rotationX*M_PI/180.);
 			view.transpose();
 			Vector3D* outvec = view.mult(&invec);
 
-			renderer.viewport.cameraPosition->add(outvec);
+			renderer.getViewport()->cameraPosition->add(outvec);
 			delete outvec;
 			refresh = true;
 		}

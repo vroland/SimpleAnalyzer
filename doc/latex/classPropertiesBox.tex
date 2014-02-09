@@ -1,111 +1,651 @@
 \hypertarget{classPropertiesBox}{\section{Properties\-Box Klassenreferenz}
 \label{classPropertiesBox}\index{Properties\-Box@{Properties\-Box}}
 }
-Klassendiagramm für Properties\-Box\-:\begin{figure}[H]
+
+
+Oberfläche zum Verändern/\-Anzeigen der Eigenschaften eines Objekts.  
+
+
+
+
+{\ttfamily \#include $<$Properties\-Box.\-h$>$}
+
+
+
+Klassendiagramm für Properties\-Box\-:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classPropertiesBox}
+\includegraphics[width=158pt]{classPropertiesBox__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Properties\-Box\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classPropertiesBox__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classPropertiesBox_a9218399db23aa9a4200ccf60edd74f5a}{{\bfseries Properties\-Box} (wx\-Window $\ast$parent)}\label{classPropertiesBox_a9218399db23aa9a4200ccf60edd74f5a}
-
+\hyperlink{classPropertiesBox_a9218399db23aa9a4200ccf60edd74f5a}{Properties\-Box} (wx\-Window $\ast$parent)
 \item 
-\hypertarget{classPropertiesBox_adce6c28da4adced9bb98937c5cb85de0}{void {\bfseries resize} ()}\label{classPropertiesBox_adce6c28da4adced9bb98937c5cb85de0}
-
+void \hyperlink{classPropertiesBox_adce6c28da4adced9bb98937c5cb85de0}{resize} ()
+\item 
+wx\-Check\-Box $\ast$ \hyperlink{classPropertiesBox_a13b9ce3aa1761689ff4be9fadeab2d87}{get\-Analyze\-Marker\-Check\-Box} ()
+\item 
+wx\-Check\-Box $\ast$ \hyperlink{classPropertiesBox_a0def09e75b2c748b2bb8fb78369a422c}{get\-Auto\-Update\-Ceck\-Box} ()
+\item 
+wx\-Button $\ast$ \hyperlink{classPropertiesBox_ad788ed8a06f21958e3c6ea043a162918}{get\-Clear\-Analyze\-Marker\-Bt} ()
+\item 
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_a84eb37f7bc965f3eecb638d63fa4af48}{get\-Specific\-Heat\-Cap\-Edit} ()
+\item 
+int \hyperlink{classPropertiesBox_aa564b32c992a780af80378ec66b3377f}{get\-Current\-Material} ()
+\item 
+void \hyperlink{classPropertiesBox_a995d6f6b8f068f4db6d6543f057d3fde}{set\-Current\-Material} (int index)
+\item 
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_a088fac7ebd80b9499a98ff3a1cc93a94}{get\-Density\-Edit} ()
+\item 
+wx\-Button $\ast$ \hyperlink{classPropertiesBox_a98fdcce60c8fc8d7fea0adca8d9fe7c3}{get\-Find\-Max\-Bt} ()
+\item 
+wx\-Combo\-Box $\ast$ \hyperlink{classPropertiesBox_a27b80b42d1ab9717538de23297c8a80c}{get\-Interpolation\-Mode\-List} ()
+\item 
+wx\-List\-Box $\ast$ \hyperlink{classPropertiesBox_a0fe27b9cfb280154821fda1f9eb6d59e}{get\-Mat\-List\-Box} ()
+\item 
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_a10c51038eb2219e6465d213200adcbd1}{get\-Mat\-Name\-Edit} ()
+\item 
+wx\-Static\-Box $\ast$ \hyperlink{classPropertiesBox_a152592fad06b248540565859e6747602}{get\-Mat\-Prop\-Box} ()
+\item 
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_ade5cd5f8ad6d86a777844ff00e199cf7}{get\-Max\-Volume\-Edit} ()
+\item 
+wx\-Button $\ast$ \hyperlink{classPropertiesBox_a48eb0273411c2312509c20fd499cd068}{get\-Next\-Marker\-Bt} ()
+\item 
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_a012e6f4ebf8bf3443b72fff9c313aa3b}{get\-Obj\-Name\-Edit} ()
+\item 
+wx\-Button $\ast$ \hyperlink{classPropertiesBox_a4e97de926ac7efd390e166c5f17445c9}{get\-Prev\-Marker\-Bt} ()
+\item 
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_a7bad07488cb993a3eb6ec85763d2469b}{get\-Quality\-Edit} ()
+\item 
+wx\-Button $\ast$ \hyperlink{classPropertiesBox_a175c8202f9356211dbb9e3afced44347}{get\-Recalc\-Button} ()
+\item 
+\hyperlink{classGUITimeline}{G\-U\-I\-Timeline} $\ast$ \hyperlink{classPropertiesBox_a2f2f08b742f77e1d9adad98bc1d5753b}{get\-Sd\-Timeline} ()
+\item 
+wx\-Combo\-Box $\ast$ \hyperlink{classPropertiesBox_a9c3c000011a8b66faf5965b26d696776}{get\-Sensor\-Data\-List} ()
+\item 
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_a5dadf68da6786bd09d4a882308e22e6f}{get\-Up\-To\-Date\-Lbl} ()
+\item 
+virtual \hyperlink{classPropertiesBox_a45688be94b4b06f34125aebf5004e617}{$\sim$\-Properties\-Box} ()
 \end{DoxyCompactItemize}
-\subsection*{Öffentliche Attribute}
+\subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classPropertiesBox_a7ed6542f3f3fab8e9911296a408a3ecc}{wx\-Button $\ast$ {\bfseries recalcbutton}}\label{classPropertiesBox_a7ed6542f3f3fab8e9911296a408a3ecc}
-
+wx\-Button $\ast$ \hyperlink{classPropertiesBox_a0f5356371cde511efeb413bc2a98e6fc}{recalc\-Button}
 \item 
-\hypertarget{classPropertiesBox_a85a72d1bcab9b37d95c5a53115b914d4}{wx\-Static\-Text $\ast$ {\bfseries objnametext}}\label{classPropertiesBox_a85a72d1bcab9b37d95c5a53115b914d4}
-
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_ac281563a94d4cdffd51084d88cafc692}{obj\-Name\-Lbl}
 \item 
-\hypertarget{classPropertiesBox_a08e5f3772dfb09e3e7f5f236bece70bf}{wx\-Text\-Ctrl $\ast$ {\bfseries objnameedit}}\label{classPropertiesBox_a08e5f3772dfb09e3e7f5f236bece70bf}
-
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_a7bb26289d5da39d7996c794216f4d89b}{obj\-Name\-Edit}
 \item 
-\hypertarget{classPropertiesBox_ae2c07bd54cc55bf0b37ddcb0d8314dd6}{wx\-Static\-Text $\ast$ {\bfseries matnametext}}\label{classPropertiesBox_ae2c07bd54cc55bf0b37ddcb0d8314dd6}
-
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_ae07827304c19b4e71532fed5a4c65bb0}{mat\-Name\-Lbl}
 \item 
-\hypertarget{classPropertiesBox_a34e24e560f441be0e145a19d35c3f800}{wx\-Text\-Ctrl $\ast$ {\bfseries matnameedit}}\label{classPropertiesBox_a34e24e560f441be0e145a19d35c3f800}
-
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_aba989cc01ddce5251f021419bfe3408f}{mat\-Name\-Edit}
 \item 
-\hypertarget{classPropertiesBox_a7238386f30bbcf3a742da425d64f0f73}{wx\-Static\-Text $\ast$ {\bfseries uptodatetext}}\label{classPropertiesBox_a7238386f30bbcf3a742da425d64f0f73}
-
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_acd0a5ccaa4e981b961685c5714e67f92}{up\-To\-Date\-Lbl}
 \item 
-\hypertarget{classPropertiesBox_add2eb6402483951aa187d22f5c54e4d8}{wx\-Static\-Text $\ast$ {\bfseries maxvolumetext}}\label{classPropertiesBox_add2eb6402483951aa187d22f5c54e4d8}
-
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_ac37df12581fc6f63aa87b2807d62fdb5}{max\-Volume\-Lbl}
 \item 
-\hypertarget{classPropertiesBox_a36fab988c42a5199fa8f70fdfe6ac8a3}{wx\-Text\-Ctrl $\ast$ {\bfseries maxvolumeedit}}\label{classPropertiesBox_a36fab988c42a5199fa8f70fdfe6ac8a3}
-
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_ab738d2ef986a20be47a86bb676ae11db}{max\-Volume\-Edit}
 \item 
-\hypertarget{classPropertiesBox_ad5195b9328e031bfb346729fd81672c4}{wx\-Static\-Text $\ast$ {\bfseries qualitytext}}\label{classPropertiesBox_ad5195b9328e031bfb346729fd81672c4}
-
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_ad5339a1b07ae669a349478cf5c3b0fde}{quality\-Lbl}
 \item 
-\hypertarget{classPropertiesBox_a289c2313c309d4ca4cfb8ab08ed5e640}{wx\-Text\-Ctrl $\ast$ {\bfseries qualityedit}}\label{classPropertiesBox_a289c2313c309d4ca4cfb8ab08ed5e640}
-
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_ab01869f0f594e103ea5698a480696b99}{quality\-Edit}
 \item 
-\hypertarget{classPropertiesBox_af8a67c5701081e88620b7cea49010c8e}{wx\-Static\-Text $\ast$ {\bfseries sensordatatext}}\label{classPropertiesBox_af8a67c5701081e88620b7cea49010c8e}
-
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_ab9b6df8a3367b4b5b56ef82ab1bd7aa3}{sensor\-Data\-Lbl}
 \item 
-\hypertarget{classPropertiesBox_a2ba9de60eb457d850ed18e3a7603410f}{wx\-Combo\-Box $\ast$ {\bfseries sensordatalist}}\label{classPropertiesBox_a2ba9de60eb457d850ed18e3a7603410f}
-
+wx\-Combo\-Box $\ast$ \hyperlink{classPropertiesBox_afc9329945c39f48e441c410b0ff3d9fa}{sensor\-Data\-List}
 \item 
-\hypertarget{classPropertiesBox_ac0d25d9e0a945cf88d3d9494b4e32718}{wx\-List\-Box $\ast$ {\bfseries matlistbox}}\label{classPropertiesBox_ac0d25d9e0a945cf88d3d9494b4e32718}
-
+wx\-List\-Box $\ast$ \hyperlink{classPropertiesBox_affd4774a26bd75a30c1d1c07d02edd18}{mat\-List\-Box}
 \item 
-\hypertarget{classPropertiesBox_ab03f71016b1cf668fc6bb43ba146a862}{wx\-Static\-Text $\ast$ {\bfseries matlistboxtext}}\label{classPropertiesBox_ab03f71016b1cf668fc6bb43ba146a862}
-
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_aa08a220302b1d89a196dc7e03a390bd6}{mat\-List\-Box\-Lbl}
 \item 
-\hypertarget{classPropertiesBox_a4e14d9b2939eb2db2c44ef7a330cdbb4}{wx\-Static\-Box $\ast$ {\bfseries matpropbox}}\label{classPropertiesBox_a4e14d9b2939eb2db2c44ef7a330cdbb4}
-
+wx\-Static\-Box $\ast$ \hyperlink{classPropertiesBox_a1ff3669bf863d80a26d2d9874b1868e1}{mat\-Prop\-Box}
 \item 
-\hypertarget{classPropertiesBox_a4b0a32625869a0dd087671d3661b792f}{wx\-Combo\-Box $\ast$ {\bfseries interpolationmodelist}}\label{classPropertiesBox_a4b0a32625869a0dd087671d3661b792f}
-
+wx\-Combo\-Box $\ast$ \hyperlink{classPropertiesBox_a3f5165a466fd9204f758a6fbb17507ae}{interpolation\-Mode\-List}
 \item 
-\hypertarget{classPropertiesBox_aa01c31e87016e6a602068e2fee49490b}{wx\-Static\-Text $\ast$ {\bfseries interpolationmodetext}}\label{classPropertiesBox_aa01c31e87016e6a602068e2fee49490b}
-
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_a7184c404a73e32cee30ac299ef9fe649}{interpolation\-Mode\-Lbl}
 \item 
-\hypertarget{classPropertiesBox_aa943aa50fa80e73e261ed37e8c339c84}{wx\-Text\-Ctrl $\ast$ {\bfseries densityedit}}\label{classPropertiesBox_aa943aa50fa80e73e261ed37e8c339c84}
-
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_a0c71f6f0ea002a57ac0750e8ae9cdf13}{density\-Edit}
 \item 
-\hypertarget{classPropertiesBox_a80e9a3a7087e978da7958ec4abd4bbb6}{wx\-Static\-Text $\ast$ {\bfseries densitytext}}\label{classPropertiesBox_a80e9a3a7087e978da7958ec4abd4bbb6}
-
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_a1c670a16a13cb03338867a35508f7f5a}{density\-Lbl}
 \item 
-\hypertarget{classPropertiesBox_a7cbf5d8a28ab3eb6e904f48b8a56550a}{wx\-Text\-Ctrl $\ast$ {\bfseries cspecedit}}\label{classPropertiesBox_a7cbf5d8a28ab3eb6e904f48b8a56550a}
-
+wx\-Text\-Ctrl $\ast$ \hyperlink{classPropertiesBox_a7058b344520a2d9ba42fe9e9c1080faa}{specific\-Heat\-Cap\-Edit}
 \item 
-\hypertarget{classPropertiesBox_a050b914859a2d7519eb0272e035441dc}{wx\-Static\-Text $\ast$ {\bfseries cspectext}}\label{classPropertiesBox_a050b914859a2d7519eb0272e035441dc}
-
+wx\-Static\-Text $\ast$ \hyperlink{classPropertiesBox_ad49b95cb856e5f18d6717fc99ccd7b0b}{specific\-Heat\-Cap\-Lbl}
 \item 
-\hypertarget{classPropertiesBox_ab1ddf5249a31c0f47f43241bf58d8792}{\hyperlink{classGUITimeline}{G\-U\-I\-Timeline} $\ast$ {\bfseries sdtimeline}}\label{classPropertiesBox_ab1ddf5249a31c0f47f43241bf58d8792}
-
+\hyperlink{classGUITimeline}{G\-U\-I\-Timeline} $\ast$ \hyperlink{classPropertiesBox_ab145e0c36e99d355f2722964da46b31a}{sd\-Timeline}
 \item 
-\hypertarget{classPropertiesBox_ab7eca6c3c7627b7f980dc3c109517ae7}{wx\-Check\-Box $\ast$ {\bfseries analyzemarkercb}}\label{classPropertiesBox_ab7eca6c3c7627b7f980dc3c109517ae7}
-
+wx\-Check\-Box $\ast$ \hyperlink{classPropertiesBox_a20498b8540b84cc8f4e691aa57c7a7c3}{analyze\-Marker\-Check\-Box}
 \item 
-\hypertarget{classPropertiesBox_a6ad61bdec114e3782d4c70bb4088ab84}{wx\-Button $\ast$ {\bfseries findmaxbt}}\label{classPropertiesBox_a6ad61bdec114e3782d4c70bb4088ab84}
-
+wx\-Button $\ast$ \hyperlink{classPropertiesBox_af03e4a7248c0cb91f3978eadc0936c61}{find\-Max\-Bt}
 \item 
-\hypertarget{classPropertiesBox_aec2aca2e799dcbcaabc0a99b5613810f}{wx\-Button $\ast$ {\bfseries clranalyzemarkerbt}}\label{classPropertiesBox_aec2aca2e799dcbcaabc0a99b5613810f}
-
+wx\-Button $\ast$ \hyperlink{classPropertiesBox_a93a88ce0e08aee33673b26ae63c7846f}{clear\-Analyze\-Marker\-Bt}
 \item 
-\hypertarget{classPropertiesBox_a1d7d3528b98ffd4669be01da744be5ca}{wx\-Button $\ast$ {\bfseries nextmarkerbt}}\label{classPropertiesBox_a1d7d3528b98ffd4669be01da744be5ca}
-
+wx\-Button $\ast$ \hyperlink{classPropertiesBox_ad4a347a273ab780cf1ab941a5cf6d4b0}{next\-Marker\-Bt}
 \item 
-\hypertarget{classPropertiesBox_a3e800c14e5b36278838208e75c46939b}{wx\-Button $\ast$ {\bfseries prevmarkerbt}}\label{classPropertiesBox_a3e800c14e5b36278838208e75c46939b}
-
+wx\-Button $\ast$ \hyperlink{classPropertiesBox_ab315d0ce0bda89ebe2c003d141df2891}{prev\-Marker\-Bt}
 \item 
-\hypertarget{classPropertiesBox_a8e1e80e3ca3bdac18b0bcfc07658cd9b}{wx\-Check\-Box $\ast$ {\bfseries autoupdatecb}}\label{classPropertiesBox_a8e1e80e3ca3bdac18b0bcfc07658cd9b}
-
+wx\-Check\-Box $\ast$ \hyperlink{classPropertiesBox_aea93bc13aea5197dfe5d53f6c465c0ad}{auto\-Update\-Ceck\-Box}
 \item 
-\hypertarget{classPropertiesBox_a83244ddd61bfd31452a3a975b107becb}{int {\bfseries current\-\_\-material}}\label{classPropertiesBox_a83244ddd61bfd31452a3a975b107becb}
-
+int \hyperlink{classPropertiesBox_a83244ddd61bfd31452a3a975b107becb}{current\-\_\-material}
 \end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Oberfläche zum Verändern/\-Anzeigen der Eigenschaften eines Objekts. 
+
+Diese Klasse verwaltet nur das Layout des Objekteigenschaften-\/\-Bereichs. Die Funktionalität wird in \hyperlink{classGUIMainWindow}{G\-U\-I\-Main\-Window} behandelt. 
+
+Definiert in Zeile 19 der Datei Properties\-Box.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classPropertiesBox_a9218399db23aa9a4200ccf60edd74f5a}{\index{Properties\-Box@{Properties\-Box}!Properties\-Box@{Properties\-Box}}
+\index{Properties\-Box@{Properties\-Box}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{Properties\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Properties\-Box\-::\-Properties\-Box (
+\begin{DoxyParamCaption}
+\item[{wx\-Window $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a9218399db23aa9a4200ccf60edd74f5a}
+Der Konstruktor. 
+\begin{DoxyParams}{Parameter}
+{\em parent} & Die übergeordnete Komponente. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 20 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a45688be94b4b06f34125aebf5004e617}{\index{Properties\-Box@{Properties\-Box}!$\sim$\-Properties\-Box@{$\sim$\-Properties\-Box}}
+\index{$\sim$\-Properties\-Box@{$\sim$\-Properties\-Box}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{$\sim$\-Properties\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Properties\-Box\-::$\sim$\-Properties\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPropertiesBox_a45688be94b4b06f34125aebf5004e617}
+Der Destruktor. 
+
+Definiert in Zeile 115 der Datei Properties\-Box.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classPropertiesBox_a13b9ce3aa1761689ff4be9fadeab2d87}{\index{Properties\-Box@{Properties\-Box}!get\-Analyze\-Marker\-Check\-Box@{get\-Analyze\-Marker\-Check\-Box}}
+\index{get\-Analyze\-Marker\-Check\-Box@{get\-Analyze\-Marker\-Check\-Box}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Analyze\-Marker\-Check\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Check\-Box $\ast$ Properties\-Box\-::get\-Analyze\-Marker\-Check\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a13b9ce3aa1761689ff4be9fadeab2d87}
+Gibt die Checkbox zum markieren des auf der Zeitleiste ausgewählten Zeitpunkts zurück. 
+
+Definiert in Zeile 118 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a0def09e75b2c748b2bb8fb78369a422c}{\index{Properties\-Box@{Properties\-Box}!get\-Auto\-Update\-Ceck\-Box@{get\-Auto\-Update\-Ceck\-Box}}
+\index{get\-Auto\-Update\-Ceck\-Box@{get\-Auto\-Update\-Ceck\-Box}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Auto\-Update\-Ceck\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Check\-Box $\ast$ Properties\-Box\-::get\-Auto\-Update\-Ceck\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a0def09e75b2c748b2bb8fb78369a422c}
+Gibt die Checkbox zum automatischen Neuberechnen der Temperaturverteilung nach einer Änderung an den Objekteigenschaften zurück. 
+
+Definiert in Zeile 122 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_ad788ed8a06f21958e3c6ea043a162918}{\index{Properties\-Box@{Properties\-Box}!get\-Clear\-Analyze\-Marker\-Bt@{get\-Clear\-Analyze\-Marker\-Bt}}
+\index{get\-Clear\-Analyze\-Marker\-Bt@{get\-Clear\-Analyze\-Marker\-Bt}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Clear\-Analyze\-Marker\-Bt}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Button $\ast$ Properties\-Box\-::get\-Clear\-Analyze\-Marker\-Bt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_ad788ed8a06f21958e3c6ea043a162918}
+Gibt den Button zum Löschen aller Markierungen (s. \hyperlink{classGUITimeline}{G\-U\-I\-Timeline}) zurück. 
+
+Definiert in Zeile 126 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_aa564b32c992a780af80378ec66b3377f}{\index{Properties\-Box@{Properties\-Box}!get\-Current\-Material@{get\-Current\-Material}}
+\index{get\-Current\-Material@{get\-Current\-Material}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Current\-Material}]{\setlength{\rightskip}{0pt plus 5cm}int Properties\-Box\-::get\-Current\-Material (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_aa564b32c992a780af80378ec66b3377f}
+Gibt den Index des aktuell ausgewählten Materials zurück. 
+
+Definiert in Zeile 134 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a088fac7ebd80b9499a98ff3a1cc93a94}{\index{Properties\-Box@{Properties\-Box}!get\-Density\-Edit@{get\-Density\-Edit}}
+\index{get\-Density\-Edit@{get\-Density\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Density\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl $\ast$ Properties\-Box\-::get\-Density\-Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a088fac7ebd80b9499a98ff3a1cc93a94}
+Gibt das Eingabefeld für die Dichte des Materials zurück. 
+
+Definiert in Zeile 140 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a98fdcce60c8fc8d7fea0adca8d9fe7c3}{\index{Properties\-Box@{Properties\-Box}!get\-Find\-Max\-Bt@{get\-Find\-Max\-Bt}}
+\index{get\-Find\-Max\-Bt@{get\-Find\-Max\-Bt}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Find\-Max\-Bt}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Button $\ast$ Properties\-Box\-::get\-Find\-Max\-Bt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a98fdcce60c8fc8d7fea0adca8d9fe7c3}
+Gibt den Button zum Suchen des maximums zwischen zwei markierten Zeitpunkten (s. \hyperlink{classGUITimeline}{G\-U\-I\-Timeline}) zurück. 
+
+Definiert in Zeile 144 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a27b80b42d1ab9717538de23297c8a80c}{\index{Properties\-Box@{Properties\-Box}!get\-Interpolation\-Mode\-List@{get\-Interpolation\-Mode\-List}}
+\index{get\-Interpolation\-Mode\-List@{get\-Interpolation\-Mode\-List}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Interpolation\-Mode\-List}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Combo\-Box $\ast$ Properties\-Box\-::get\-Interpolation\-Mode\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a27b80b42d1ab9717538de23297c8a80c}
+Gibt das Auswahlfeld für den zu verwendenden Interpolationsmodus zurück. 
+
+Definiert in Zeile 148 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a0fe27b9cfb280154821fda1f9eb6d59e}{\index{Properties\-Box@{Properties\-Box}!get\-Mat\-List\-Box@{get\-Mat\-List\-Box}}
+\index{get\-Mat\-List\-Box@{get\-Mat\-List\-Box}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Mat\-List\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-List\-Box $\ast$ Properties\-Box\-::get\-Mat\-List\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a0fe27b9cfb280154821fda1f9eb6d59e}
+Gibt die Auswahlbox für das Material, dessen Eigenschaften angezeigt werden sollen, zurück. 
+
+Definiert in Zeile 152 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a10c51038eb2219e6465d213200adcbd1}{\index{Properties\-Box@{Properties\-Box}!get\-Mat\-Name\-Edit@{get\-Mat\-Name\-Edit}}
+\index{get\-Mat\-Name\-Edit@{get\-Mat\-Name\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Mat\-Name\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl $\ast$ Properties\-Box\-::get\-Mat\-Name\-Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a10c51038eb2219e6465d213200adcbd1}
+Gibt das Eingabefeld für den Materialnamen zurück. 
+
+Definiert in Zeile 156 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a152592fad06b248540565859e6747602}{\index{Properties\-Box@{Properties\-Box}!get\-Mat\-Prop\-Box@{get\-Mat\-Prop\-Box}}
+\index{get\-Mat\-Prop\-Box@{get\-Mat\-Prop\-Box}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Mat\-Prop\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Box $\ast$ Properties\-Box\-::get\-Mat\-Prop\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a152592fad06b248540565859e6747602}
+Gibt den Bereich, der die Materialeigenschaften enthält zurück. 
+
+Definiert in Zeile 160 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_ade5cd5f8ad6d86a777844ff00e199cf7}{\index{Properties\-Box@{Properties\-Box}!get\-Max\-Volume\-Edit@{get\-Max\-Volume\-Edit}}
+\index{get\-Max\-Volume\-Edit@{get\-Max\-Volume\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Max\-Volume\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl $\ast$ Properties\-Box\-::get\-Max\-Volume\-Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_ade5cd5f8ad6d86a777844ff00e199cf7}
+Gibt das Eingabefeld für das maximale Tetraedervolumen zurück. 
+
+Definiert in Zeile 164 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a48eb0273411c2312509c20fd499cd068}{\index{Properties\-Box@{Properties\-Box}!get\-Next\-Marker\-Bt@{get\-Next\-Marker\-Bt}}
+\index{get\-Next\-Marker\-Bt@{get\-Next\-Marker\-Bt}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Next\-Marker\-Bt}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Button $\ast$ Properties\-Box\-::get\-Next\-Marker\-Bt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a48eb0273411c2312509c20fd499cd068}
+Gibt den Button zum Auswählen der nächsten Markierung (s. \hyperlink{classGUITimeline}{G\-U\-I\-Timeline}) zurück. 
+
+Definiert in Zeile 168 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a012e6f4ebf8bf3443b72fff9c313aa3b}{\index{Properties\-Box@{Properties\-Box}!get\-Obj\-Name\-Edit@{get\-Obj\-Name\-Edit}}
+\index{get\-Obj\-Name\-Edit@{get\-Obj\-Name\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Obj\-Name\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl $\ast$ Properties\-Box\-::get\-Obj\-Name\-Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a012e6f4ebf8bf3443b72fff9c313aa3b}
+Gibt das Eingeabefeld für den Objektnamen. zurück. 
+
+Definiert in Zeile 172 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a4e97de926ac7efd390e166c5f17445c9}{\index{Properties\-Box@{Properties\-Box}!get\-Prev\-Marker\-Bt@{get\-Prev\-Marker\-Bt}}
+\index{get\-Prev\-Marker\-Bt@{get\-Prev\-Marker\-Bt}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Prev\-Marker\-Bt}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Button $\ast$ Properties\-Box\-::get\-Prev\-Marker\-Bt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a4e97de926ac7efd390e166c5f17445c9}
+Gibt den Button zum Auswählen der vorherigen Markierung (s. \hyperlink{classGUITimeline}{G\-U\-I\-Timeline}) zurück. 
+
+Definiert in Zeile 176 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a7bad07488cb993a3eb6ec85763d2469b}{\index{Properties\-Box@{Properties\-Box}!get\-Quality\-Edit@{get\-Quality\-Edit}}
+\index{get\-Quality\-Edit@{get\-Quality\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Quality\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl $\ast$ Properties\-Box\-::get\-Quality\-Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a7bad07488cb993a3eb6ec85763d2469b}
+Gibt das Eingabefeld für die Zerlegungsqualität des Modells (s. Tetgen-\/dokumentation für weitere Informationen) zurück. 
+
+Definiert in Zeile 180 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a175c8202f9356211dbb9e3afced44347}{\index{Properties\-Box@{Properties\-Box}!get\-Recalc\-Button@{get\-Recalc\-Button}}
+\index{get\-Recalc\-Button@{get\-Recalc\-Button}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Recalc\-Button}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Button $\ast$ Properties\-Box\-::get\-Recalc\-Button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a175c8202f9356211dbb9e3afced44347}
+Gibt den Button zum Neuberechnen der Temperaturverteilung zurück. 
+
+Definiert in Zeile 184 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a2f2f08b742f77e1d9adad98bc1d5753b}{\index{Properties\-Box@{Properties\-Box}!get\-Sd\-Timeline@{get\-Sd\-Timeline}}
+\index{get\-Sd\-Timeline@{get\-Sd\-Timeline}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Sd\-Timeline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-U\-I\-Timeline} $\ast$ Properties\-Box\-::get\-Sd\-Timeline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a2f2f08b742f77e1d9adad98bc1d5753b}
+Gibt die Die Zeitleiste für zeitbezogene Sensordaten zurück. 
+
+Definiert in Zeile 188 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a9c3c000011a8b66faf5965b26d696776}{\index{Properties\-Box@{Properties\-Box}!get\-Sensor\-Data\-List@{get\-Sensor\-Data\-List}}
+\index{get\-Sensor\-Data\-List@{get\-Sensor\-Data\-List}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Sensor\-Data\-List}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Combo\-Box $\ast$ Properties\-Box\-::get\-Sensor\-Data\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a9c3c000011a8b66faf5965b26d696776}
+Gibt das Auswahlfeld für den zu verwendenden Sensordatensatz zurück. 
+
+Definiert in Zeile 192 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a84eb37f7bc965f3eecb638d63fa4af48}{\index{Properties\-Box@{Properties\-Box}!get\-Specific\-Heat\-Cap\-Edit@{get\-Specific\-Heat\-Cap\-Edit}}
+\index{get\-Specific\-Heat\-Cap\-Edit@{get\-Specific\-Heat\-Cap\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Specific\-Heat\-Cap\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl $\ast$ Properties\-Box\-::get\-Specific\-Heat\-Cap\-Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a84eb37f7bc965f3eecb638d63fa4af48}
+Gibt das Eingabefeld für die spezifische Wärmekapazität zurück. 
+
+Definiert in Zeile 130 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_a5dadf68da6786bd09d4a882308e22e6f}{\index{Properties\-Box@{Properties\-Box}!get\-Up\-To\-Date\-Lbl@{get\-Up\-To\-Date\-Lbl}}
+\index{get\-Up\-To\-Date\-Lbl@{get\-Up\-To\-Date\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{get\-Up\-To\-Date\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text $\ast$ Properties\-Box\-::get\-Up\-To\-Date\-Lbl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a5dadf68da6786bd09d4a882308e22e6f}
+Gibt die Beschiftungskomponente für die Warnung bei geänderten Objekteigenschaften zurück. 
+
+Definiert in Zeile 196 der Datei Properties\-Box.\-cpp.
+
+\hypertarget{classPropertiesBox_adce6c28da4adced9bb98937c5cb85de0}{\index{Properties\-Box@{Properties\-Box}!resize@{resize}}
+\index{resize@{resize}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}void Properties\-Box\-::resize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_adce6c28da4adced9bb98937c5cb85de0}
+Behandelt Größenänderungen und passt die Positionen der Komponenten an. 
+
+Definiert in Zeile 55 der Datei Properties\-Box.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPropertiesBox_adce6c28da4adced9bb98937c5cb85de0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classPropertiesBox_a995d6f6b8f068f4db6d6543f057d3fde}{\index{Properties\-Box@{Properties\-Box}!set\-Current\-Material@{set\-Current\-Material}}
+\index{set\-Current\-Material@{set\-Current\-Material}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{set\-Current\-Material}]{\setlength{\rightskip}{0pt plus 5cm}void Properties\-Box\-::set\-Current\-Material (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classPropertiesBox_a995d6f6b8f068f4db6d6543f057d3fde}
+Setzt den Index des aktuell ausgewählten Materials. 
+\begin{DoxyParams}{Parameter}
+{\em index} & Index des auszuwählenden Materials. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 137 der Datei Properties\-Box.\-cpp.
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classPropertiesBox_a20498b8540b84cc8f4e691aa57c7a7c3}{\index{Properties\-Box@{Properties\-Box}!analyze\-Marker\-Check\-Box@{analyze\-Marker\-Check\-Box}}
+\index{analyze\-Marker\-Check\-Box@{analyze\-Marker\-Check\-Box}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{analyze\-Marker\-Check\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Check\-Box$\ast$ Properties\-Box\-::analyze\-Marker\-Check\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a20498b8540b84cc8f4e691aa57c7a7c3}
+Checkbox zum markieren des auf der Zeitleiste ausgewählten Zeitpunkts. Dieser Zeitpunkt wird dann im Analysedaten-\/Übersichtsfenster (\hyperlink{classGUIAnalyzeOutputWindow}{G\-U\-I\-Analyze\-Output\-Window}) angezeigt. 
+
+Definiert in Zeile 213 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_aea93bc13aea5197dfe5d53f6c465c0ad}{\index{Properties\-Box@{Properties\-Box}!auto\-Update\-Ceck\-Box@{auto\-Update\-Ceck\-Box}}
+\index{auto\-Update\-Ceck\-Box@{auto\-Update\-Ceck\-Box}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{auto\-Update\-Ceck\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Check\-Box$\ast$ Properties\-Box\-::auto\-Update\-Ceck\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_aea93bc13aea5197dfe5d53f6c465c0ad}
+Checkbox zum automatischen Neuberechnen der Temperaturverteilung nach einer Änderung an den Objekteigenschaften. 
+
+Definiert in Zeile 233 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_a93a88ce0e08aee33673b26ae63c7846f}{\index{Properties\-Box@{Properties\-Box}!clear\-Analyze\-Marker\-Bt@{clear\-Analyze\-Marker\-Bt}}
+\index{clear\-Analyze\-Marker\-Bt@{clear\-Analyze\-Marker\-Bt}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{clear\-Analyze\-Marker\-Bt}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Button$\ast$ Properties\-Box\-::clear\-Analyze\-Marker\-Bt\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a93a88ce0e08aee33673b26ae63c7846f}
+Button zum Löschen aller Markierungen (s. \hyperlink{classGUITimeline}{G\-U\-I\-Timeline}). 
+
+Definiert in Zeile 221 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_a83244ddd61bfd31452a3a975b107becb}{\index{Properties\-Box@{Properties\-Box}!current\-\_\-material@{current\-\_\-material}}
+\index{current\-\_\-material@{current\-\_\-material}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{current\-\_\-material}]{\setlength{\rightskip}{0pt plus 5cm}int Properties\-Box\-::current\-\_\-material\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a83244ddd61bfd31452a3a975b107becb}
+Index des aktuell ausgewählten Materials. 
+
+Definiert in Zeile 237 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_a0c71f6f0ea002a57ac0750e8ae9cdf13}{\index{Properties\-Box@{Properties\-Box}!density\-Edit@{density\-Edit}}
+\index{density\-Edit@{density\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{density\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl$\ast$ Properties\-Box\-::density\-Edit\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a0c71f6f0ea002a57ac0750e8ae9cdf13}
+Eingabefeld für die Dichte des Materials. 
+
+Definiert in Zeile 192 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_a1c670a16a13cb03338867a35508f7f5a}{\index{Properties\-Box@{Properties\-Box}!density\-Lbl@{density\-Lbl}}
+\index{density\-Lbl@{density\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{density\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Properties\-Box\-::density\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a1c670a16a13cb03338867a35508f7f5a}
+Beschriftung für das Dichte-\/\-Eingabefeld. 
+
+Definiert in Zeile 196 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_af03e4a7248c0cb91f3978eadc0936c61}{\index{Properties\-Box@{Properties\-Box}!find\-Max\-Bt@{find\-Max\-Bt}}
+\index{find\-Max\-Bt@{find\-Max\-Bt}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{find\-Max\-Bt}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Button$\ast$ Properties\-Box\-::find\-Max\-Bt\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_af03e4a7248c0cb91f3978eadc0936c61}
+Button zum Suchen des maximums zwischen zwei markierten Zeitpunkten (s. \hyperlink{classGUITimeline}{G\-U\-I\-Timeline}). 
+
+Definiert in Zeile 217 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_a7184c404a73e32cee30ac299ef9fe649}{\index{Properties\-Box@{Properties\-Box}!interpolation\-Mode\-Lbl@{interpolation\-Mode\-Lbl}}
+\index{interpolation\-Mode\-Lbl@{interpolation\-Mode\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{interpolation\-Mode\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Properties\-Box\-::interpolation\-Mode\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a7184c404a73e32cee30ac299ef9fe649}
+Beschriftung für das Interpolationsmodus-\/\-Auswahlfeld. 
+
+Definiert in Zeile 188 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_a3f5165a466fd9204f758a6fbb17507ae}{\index{Properties\-Box@{Properties\-Box}!interpolation\-Mode\-List@{interpolation\-Mode\-List}}
+\index{interpolation\-Mode\-List@{interpolation\-Mode\-List}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{interpolation\-Mode\-List}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Combo\-Box$\ast$ Properties\-Box\-::interpolation\-Mode\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a3f5165a466fd9204f758a6fbb17507ae}
+Auswahlfeld für den zu verwendenden Interpolationsmodus. 
+
+Definiert in Zeile 184 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_affd4774a26bd75a30c1d1c07d02edd18}{\index{Properties\-Box@{Properties\-Box}!mat\-List\-Box@{mat\-List\-Box}}
+\index{mat\-List\-Box@{mat\-List\-Box}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{mat\-List\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-List\-Box$\ast$ Properties\-Box\-::mat\-List\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_affd4774a26bd75a30c1d1c07d02edd18}
+Auswahlbox für das Material, dessen Eigenschaften angezeigt werden sollen. 
+
+Definiert in Zeile 172 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_aa08a220302b1d89a196dc7e03a390bd6}{\index{Properties\-Box@{Properties\-Box}!mat\-List\-Box\-Lbl@{mat\-List\-Box\-Lbl}}
+\index{mat\-List\-Box\-Lbl@{mat\-List\-Box\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{mat\-List\-Box\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Properties\-Box\-::mat\-List\-Box\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_aa08a220302b1d89a196dc7e03a390bd6}
+Beschriftung für die Materialauswahl-\/\-Box. 
+
+Definiert in Zeile 176 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_aba989cc01ddce5251f021419bfe3408f}{\index{Properties\-Box@{Properties\-Box}!mat\-Name\-Edit@{mat\-Name\-Edit}}
+\index{mat\-Name\-Edit@{mat\-Name\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{mat\-Name\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl$\ast$ Properties\-Box\-::mat\-Name\-Edit\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_aba989cc01ddce5251f021419bfe3408f}
+Eingabefeld für den Materialnamen. 
+
+Definiert in Zeile 140 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ae07827304c19b4e71532fed5a4c65bb0}{\index{Properties\-Box@{Properties\-Box}!mat\-Name\-Lbl@{mat\-Name\-Lbl}}
+\index{mat\-Name\-Lbl@{mat\-Name\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{mat\-Name\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Properties\-Box\-::mat\-Name\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ae07827304c19b4e71532fed5a4c65bb0}
+Beschriftung für das Materialnamen-\/\-Eingabefeld. 
+
+Definiert in Zeile 136 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_a1ff3669bf863d80a26d2d9874b1868e1}{\index{Properties\-Box@{Properties\-Box}!mat\-Prop\-Box@{mat\-Prop\-Box}}
+\index{mat\-Prop\-Box@{mat\-Prop\-Box}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{mat\-Prop\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Box$\ast$ Properties\-Box\-::mat\-Prop\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a1ff3669bf863d80a26d2d9874b1868e1}
+Bereich, der die Materialeigenschaften enthält. 
+
+Definiert in Zeile 180 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ab738d2ef986a20be47a86bb676ae11db}{\index{Properties\-Box@{Properties\-Box}!max\-Volume\-Edit@{max\-Volume\-Edit}}
+\index{max\-Volume\-Edit@{max\-Volume\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{max\-Volume\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl$\ast$ Properties\-Box\-::max\-Volume\-Edit\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ab738d2ef986a20be47a86bb676ae11db}
+Eingabefeld für das maximale Tetraedervolumen. 
+
+Definiert in Zeile 152 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ac37df12581fc6f63aa87b2807d62fdb5}{\index{Properties\-Box@{Properties\-Box}!max\-Volume\-Lbl@{max\-Volume\-Lbl}}
+\index{max\-Volume\-Lbl@{max\-Volume\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{max\-Volume\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Properties\-Box\-::max\-Volume\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ac37df12581fc6f63aa87b2807d62fdb5}
+Beschriftung für das max. Tetraedervolumen-\/\-Eingabefeld. 
+
+Definiert in Zeile 148 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ad4a347a273ab780cf1ab941a5cf6d4b0}{\index{Properties\-Box@{Properties\-Box}!next\-Marker\-Bt@{next\-Marker\-Bt}}
+\index{next\-Marker\-Bt@{next\-Marker\-Bt}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{next\-Marker\-Bt}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Button$\ast$ Properties\-Box\-::next\-Marker\-Bt\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ad4a347a273ab780cf1ab941a5cf6d4b0}
+Button zum Auswählen der nächsten Markierung (s. \hyperlink{classGUITimeline}{G\-U\-I\-Timeline}). 
+
+Definiert in Zeile 225 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_a7bb26289d5da39d7996c794216f4d89b}{\index{Properties\-Box@{Properties\-Box}!obj\-Name\-Edit@{obj\-Name\-Edit}}
+\index{obj\-Name\-Edit@{obj\-Name\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{obj\-Name\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl$\ast$ Properties\-Box\-::obj\-Name\-Edit\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a7bb26289d5da39d7996c794216f4d89b}
+Eingeabefeld für den Objektnamen. 
+
+Definiert in Zeile 132 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ac281563a94d4cdffd51084d88cafc692}{\index{Properties\-Box@{Properties\-Box}!obj\-Name\-Lbl@{obj\-Name\-Lbl}}
+\index{obj\-Name\-Lbl@{obj\-Name\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{obj\-Name\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Properties\-Box\-::obj\-Name\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ac281563a94d4cdffd51084d88cafc692}
+Beschriftung für das Objektnamen-\/\-Eingabefeld. 
+
+Definiert in Zeile 128 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ab315d0ce0bda89ebe2c003d141df2891}{\index{Properties\-Box@{Properties\-Box}!prev\-Marker\-Bt@{prev\-Marker\-Bt}}
+\index{prev\-Marker\-Bt@{prev\-Marker\-Bt}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{prev\-Marker\-Bt}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Button$\ast$ Properties\-Box\-::prev\-Marker\-Bt\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ab315d0ce0bda89ebe2c003d141df2891}
+Button zum Auswählen der vorherigen Markierung (s. \hyperlink{classGUITimeline}{G\-U\-I\-Timeline}). 
+
+Definiert in Zeile 229 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ab01869f0f594e103ea5698a480696b99}{\index{Properties\-Box@{Properties\-Box}!quality\-Edit@{quality\-Edit}}
+\index{quality\-Edit@{quality\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{quality\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl$\ast$ Properties\-Box\-::quality\-Edit\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ab01869f0f594e103ea5698a480696b99}
+Eingabefeld für die Zerlegungsqualität des Modells (s. Tetgen-\/dokumentation für weitere Informationen). 
+
+Definiert in Zeile 160 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ad5339a1b07ae669a349478cf5c3b0fde}{\index{Properties\-Box@{Properties\-Box}!quality\-Lbl@{quality\-Lbl}}
+\index{quality\-Lbl@{quality\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{quality\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Properties\-Box\-::quality\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ad5339a1b07ae669a349478cf5c3b0fde}
+Beschriftung für das Zerlegungsqualität-\/\-Eingabefeld. 
+
+Definiert in Zeile 156 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_a0f5356371cde511efeb413bc2a98e6fc}{\index{Properties\-Box@{Properties\-Box}!recalc\-Button@{recalc\-Button}}
+\index{recalc\-Button@{recalc\-Button}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{recalc\-Button}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Button$\ast$ Properties\-Box\-::recalc\-Button\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a0f5356371cde511efeb413bc2a98e6fc}
+Button zum Neuberechnen der Temperaturverteilung. 
+
+Definiert in Zeile 124 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ab145e0c36e99d355f2722964da46b31a}{\index{Properties\-Box@{Properties\-Box}!sd\-Timeline@{sd\-Timeline}}
+\index{sd\-Timeline@{sd\-Timeline}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{sd\-Timeline}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-U\-I\-Timeline}$\ast$ Properties\-Box\-::sd\-Timeline\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ab145e0c36e99d355f2722964da46b31a}
+Die Zeitleiste für zeitbezogene Sensordaten. 
+
+Definiert in Zeile 208 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ab9b6df8a3367b4b5b56ef82ab1bd7aa3}{\index{Properties\-Box@{Properties\-Box}!sensor\-Data\-Lbl@{sensor\-Data\-Lbl}}
+\index{sensor\-Data\-Lbl@{sensor\-Data\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{sensor\-Data\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Properties\-Box\-::sensor\-Data\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ab9b6df8a3367b4b5b56ef82ab1bd7aa3}
+Beschriftung für das Sensordatensatz-\/\-Auswahlfeld. 
+
+Definiert in Zeile 164 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_afc9329945c39f48e441c410b0ff3d9fa}{\index{Properties\-Box@{Properties\-Box}!sensor\-Data\-List@{sensor\-Data\-List}}
+\index{sensor\-Data\-List@{sensor\-Data\-List}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{sensor\-Data\-List}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Combo\-Box$\ast$ Properties\-Box\-::sensor\-Data\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_afc9329945c39f48e441c410b0ff3d9fa}
+Auswahlfeld für den zu verwendenden Sensordatensatz. 
+
+Definiert in Zeile 168 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_a7058b344520a2d9ba42fe9e9c1080faa}{\index{Properties\-Box@{Properties\-Box}!specific\-Heat\-Cap\-Edit@{specific\-Heat\-Cap\-Edit}}
+\index{specific\-Heat\-Cap\-Edit@{specific\-Heat\-Cap\-Edit}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{specific\-Heat\-Cap\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl$\ast$ Properties\-Box\-::specific\-Heat\-Cap\-Edit\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_a7058b344520a2d9ba42fe9e9c1080faa}
+Eingabefeld für die spezifische Wärmekapazität. 
+
+Definiert in Zeile 200 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_ad49b95cb856e5f18d6717fc99ccd7b0b}{\index{Properties\-Box@{Properties\-Box}!specific\-Heat\-Cap\-Lbl@{specific\-Heat\-Cap\-Lbl}}
+\index{specific\-Heat\-Cap\-Lbl@{specific\-Heat\-Cap\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{specific\-Heat\-Cap\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Properties\-Box\-::specific\-Heat\-Cap\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_ad49b95cb856e5f18d6717fc99ccd7b0b}
+Beschriftung für das Wärmekapazitäts-\/\-Eingabefeld. 
+
+Definiert in Zeile 204 der Datei Properties\-Box.\-h.
+
+\hypertarget{classPropertiesBox_acd0a5ccaa4e981b961685c5714e67f92}{\index{Properties\-Box@{Properties\-Box}!up\-To\-Date\-Lbl@{up\-To\-Date\-Lbl}}
+\index{up\-To\-Date\-Lbl@{up\-To\-Date\-Lbl}!PropertiesBox@{Properties\-Box}}
+\subsubsection[{up\-To\-Date\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Properties\-Box\-::up\-To\-Date\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classPropertiesBox_acd0a5ccaa4e981b961685c5714e67f92}
+Beschiftung für die Warnung bei geänderten Objekteigenschaften. 
+
+Definiert in Zeile 144 der Datei Properties\-Box.\-h.
+
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

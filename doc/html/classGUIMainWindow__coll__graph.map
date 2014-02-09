@@ -1,0 +1,16 @@
+<map id="GUIMainWindow" name="GUIMainWindow">
+<area shape="rect" id="node30" href="$classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. " alt="" coords="959,98,1113,127"/>
+<area shape="rect" id="node38" href="$classGUIAnalyzeOutputWindow.xhtml" title="Übersichtsfenster über die Analysedaten. " alt="" coords="947,45,1125,74"/>
+<area shape="rect" id="node4" href="$classPropertiesBox.xhtml" title="Oberfläche zum Verändern/Anzeigen der Eigenschaften eines Objekts. " alt="" coords="984,151,1088,181"/>
+<area shape="rect" id="node41" href="$classViewpropBox.xhtml" title="Oberfläche zum Verändern/Anzeigen der Visualisierungsoptionen. " alt="" coords="987,205,1085,234"/>
+<area shape="rect" id="node8" href="$classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. " alt="" coords="705,146,799,175"/>
+<area shape="rect" id="node33" href="$classGUIRenderCutCanvas.xhtml" title="Zeichenfläche für die 2D&#45;Temperaturverteilung. " alt="" coords="675,93,829,122"/>
+<area shape="rect" id="node12" href="$classGUIGLCanvas.xhtml" title="Zeichenfläche für das 3D&#45;Fenster. " alt="" coords="983,259,1089,289"/>
+<area shape="rect" id="node16" href="$classRenderer.xhtml" title="Zeichnet den Inhalt der 3D&#45;Fensters. " alt="" coords="715,258,789,287"/>
+<area shape="rect" id="node18" href="$structRenderer_1_1Viewport__info.xhtml" title="Informationen über die Ansicht des Modells (Virtuelle Kamera) und welche Elemente dargestellt werden..." alt="" coords="333,205,496,234"/>
+<area shape="rect" id="node20" href="$classTriangle.xhtml" title="Ein durch 3 Ortsvektoren beschriebenes Dreieck. " alt="" coords="180,235,247,265"/>
+<area shape="rect" id="node27" href="$structUtils_1_1CutRender__info.xhtml" title="Daten zur Darstellung einer 2D&#45;Temperaturverteilungs&#45;Ebene. " alt="" coords="341,258,488,287"/>
+<area shape="rect" id="node22" href="$classVector3D.xhtml" title="3D&#45;Vektorklasse mit nützlichen Operationen. " alt="" coords="5,198,83,227"/>
+<area shape="rect" id="node25" href="$classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. " alt="" coords="371,311,459,341"/>
+<area shape="rect" id="node36" href="$classGUIColorScalePanel.xhtml" title="Farbige Temperaturskala für zweidimensionale Temperaturverteilung. " alt="" coords="344,69,485,98"/>
+</map>

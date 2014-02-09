@@ -10,6 +10,7 @@
 #include <cmath>
 using namespace std;
 
+#define EPSILON 0.0000001
 inline double sqr(double v) {
 	return v*v;
 }
@@ -35,7 +36,7 @@ Vector3D* Vector3D::copy() {
 	return res;
 }
 bool Vector3D::equals(Vector3D* other) {
-	return ((getX()==other->getX()) && (getY()==other->getY()) && (getZ()==other->getZ()));
+	return ((abs(getX()-other->getX())<EPSILON) && (abs(getY()-other->getY())<EPSILON) && (abs(getZ()-other->getZ())<EPSILON));
 }
 double Vector3D::getX() {
 	return coords[0];
@@ -105,8 +106,8 @@ std::ostream &operator<< (std::ostream &out, const Vector3D &vec) {
     return out;
 }
 Vector3D::~Vector3D() {
-	//cout << "destroy vec"<<endl;
 }
+
 //Matrix3D
 Matrix3D::Matrix3D() {
 	elements[0] = 1.0;

@@ -1,60 +1,326 @@
 \hypertarget{classViewpropBox}{\section{Viewprop\-Box Klassenreferenz}
 \label{classViewpropBox}\index{Viewprop\-Box@{Viewprop\-Box}}
 }
-Klassendiagramm für Viewprop\-Box\-:\begin{figure}[H]
+
+
+Oberfläche zum Verändern/\-Anzeigen der Visualisierungsoptionen.  
+
+
+
+
+{\ttfamily \#include $<$Viewprop\-Box.\-h$>$}
+
+
+
+Klassendiagramm für Viewprop\-Box\-:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classViewpropBox}
+\includegraphics[width=154pt]{classViewpropBox__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Viewprop\-Box\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classViewpropBox__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classViewpropBox_a4cac75d99079134622f57e35f1e47229}{{\bfseries Viewprop\-Box} (wx\-Window $\ast$parent)}\label{classViewpropBox_a4cac75d99079134622f57e35f1e47229}
-
+\hyperlink{classViewpropBox_a4cac75d99079134622f57e35f1e47229}{Viewprop\-Box} (wx\-Window $\ast$parent)
 \item 
-\hypertarget{classViewpropBox_a7f2732c6e7d24fc90fad55972cb1e759}{void {\bfseries resize} ()}\label{classViewpropBox_a7f2732c6e7d24fc90fad55972cb1e759}
-
+void \hyperlink{classViewpropBox_a7f2732c6e7d24fc90fad55972cb1e759}{resize} ()
+\item 
+wx\-Spin\-Ctrl $\ast$ \hyperlink{classViewpropBox_a23832121cac9cb822438072152bfa252}{get\-Color\-Range\-Max\-Edit} ()
+\item 
+wx\-Spin\-Ctrl $\ast$ \hyperlink{classViewpropBox_a3f497c6cceef0c6db27adf56c53c9838}{get\-Color\-Range\-Min\-Edit} ()
+\item 
+wx\-Radio\-Box $\ast$ \hyperlink{classViewpropBox_a2798ca6ed2a570bde1ac13f74dee398c}{get\-Edges\-Check\-Box} ()
+\item 
+wx\-Radio\-Box $\ast$ \hyperlink{classViewpropBox_a3ebd07b7d8de74d639ea80181c8c7abc}{get\-Faces\-Check\-Box} ()
+\item 
+wx\-Check\-List\-Box $\ast$ \hyperlink{classViewpropBox_a3b9cdaefd86124fd67e821dfa0bbd3b8}{get\-Mat\-Visibility\-List\-Box} ()
+\item 
+wx\-Radio\-Box $\ast$ \hyperlink{classViewpropBox_a1b74032daa1c60624755396d7afc9d0d}{get\-Points\-Check\-Box} ()
+\item 
+wx\-Check\-Box $\ast$ \hyperlink{classViewpropBox_a3d3c4a809f14eca31ccf3858033eee7a}{get\-Show\-Extrapolated\-Check\-Box} ()
+\item 
+wx\-Check\-Box $\ast$ \hyperlink{classViewpropBox_ade722440c4b3c0da3feb78a590aa2946}{get\-Show\-Show\-Sensor\-Data} ()
+\item 
+wx\-Text\-Ctrl $\ast$ \hyperlink{classViewpropBox_a8ac6322e5dcdbbde1c646e1ccbf08ed9}{get\-View\-Scale\-Edit} ()
+\item 
+virtual \hyperlink{classViewpropBox_ab1c9234649b6a386b457d9ba5de311e4}{$\sim$\-Viewprop\-Box} ()
 \end{DoxyCompactItemize}
-\subsection*{Öffentliche Attribute}
+\subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classViewpropBox_accd1605fd25d212ecec8863826c0083b}{wx\-Radio\-Box $\ast$ {\bfseries pointscb}}\label{classViewpropBox_accd1605fd25d212ecec8863826c0083b}
-
+wx\-Radio\-Box $\ast$ \hyperlink{classViewpropBox_a706dfcdceaa1afff899f51eb2ebded81}{points\-Check\-Box}
 \item 
-\hypertarget{classViewpropBox_a28aea1504bd563435b24ac5ca6caecd0}{wx\-Radio\-Box $\ast$ {\bfseries edgescb}}\label{classViewpropBox_a28aea1504bd563435b24ac5ca6caecd0}
-
+wx\-Radio\-Box $\ast$ \hyperlink{classViewpropBox_a42925abd6e515ec8f12e9de662edf39e}{edges\-Check\-Box}
 \item 
-\hypertarget{classViewpropBox_a7e5ca2086334dfaab09816e9c6c35b2f}{wx\-Radio\-Box $\ast$ {\bfseries facescb}}\label{classViewpropBox_a7e5ca2086334dfaab09816e9c6c35b2f}
-
+wx\-Radio\-Box $\ast$ \hyperlink{classViewpropBox_ad5b2d4c590f1594ae5b0c80251d80005}{faces\-Check\-Box}
 \item 
-\hypertarget{classViewpropBox_ac9a127aa0bda83897d08ca29fae3ca48}{wx\-Static\-Text $\ast$ {\bfseries matvistext}}\label{classViewpropBox_ac9a127aa0bda83897d08ca29fae3ca48}
-
+wx\-Static\-Text $\ast$ \hyperlink{classViewpropBox_a6352cdc6579ed2b9a7cfdd28a847bfec}{mat\-Visualization\-Lbl}
 \item 
-\hypertarget{classViewpropBox_a2c0875c6ebfa1b0cfe66ea7da77dd461}{wx\-Check\-List\-Box $\ast$ {\bfseries matvisibility}}\label{classViewpropBox_a2c0875c6ebfa1b0cfe66ea7da77dd461}
-
+wx\-Check\-List\-Box $\ast$ \hyperlink{classViewpropBox_a8e6d0646ebdd844f96acde46e63fb74d}{mat\-Visibility\-List\-Box}
 \item 
-\hypertarget{classViewpropBox_a7787f6442c883590efaa88001c72ce57}{wx\-Check\-Box $\ast$ {\bfseries show\-\_\-extcb}}\label{classViewpropBox_a7787f6442c883590efaa88001c72ce57}
-
+wx\-Check\-Box $\ast$ \hyperlink{classViewpropBox_a26459f6ab8498b578ecf30dcb4fd582e}{show\-Extrapolated\-Check\-Box}
 \item 
-\hypertarget{classViewpropBox_ac423e0f66cfa019fd1d70af577fb5eea}{wx\-Check\-Box $\ast$ {\bfseries show\-\_\-sdata}}\label{classViewpropBox_ac423e0f66cfa019fd1d70af577fb5eea}
-
+wx\-Check\-Box $\ast$ \hyperlink{classViewpropBox_a731fabc531998315b0850a3b60eb3c51}{show\-Show\-Sensor\-Data}
 \item 
-\hypertarget{classViewpropBox_ae1ba70044fa3d3d4a97fd3c85781b5c3}{wx\-Static\-Text $\ast$ {\bfseries visdelta\-\_\-lbl}}\label{classViewpropBox_ae1ba70044fa3d3d4a97fd3c85781b5c3}
-
+wx\-Static\-Text $\ast$ \hyperlink{classViewpropBox_a562f38091ff255820b63734e7d4b1ff8}{color\-Range\-Lbl}
 \item 
-\hypertarget{classViewpropBox_a9dabfccda6d40212c4b6c2afcd02b108}{wx\-Spin\-Ctrl $\ast$ {\bfseries min\-\_\-visval}}\label{classViewpropBox_a9dabfccda6d40212c4b6c2afcd02b108}
-
+wx\-Spin\-Ctrl $\ast$ \hyperlink{classViewpropBox_a64af7732726775603579fedcf231d5e0}{color\-Range\-Min\-Edit}
 \item 
-\hypertarget{classViewpropBox_a797f04c5a5ff51c896c5b1c8a767f39e}{wx\-Spin\-Ctrl $\ast$ {\bfseries max\-\_\-visval}}\label{classViewpropBox_a797f04c5a5ff51c896c5b1c8a767f39e}
-
+wx\-Spin\-Ctrl $\ast$ \hyperlink{classViewpropBox_ab87e9eba3e16969c4423ff0790ccf99c}{color\-Range\-Max\-Edit}
 \item 
-\hypertarget{classViewpropBox_a375ca0568e549c60a3c161eee4e207fb}{wx\-Static\-Text $\ast$ {\bfseries viewscale\-\_\-lbl}}\label{classViewpropBox_a375ca0568e549c60a3c161eee4e207fb}
-
+wx\-Static\-Text $\ast$ \hyperlink{classViewpropBox_ab312348ae97369e3b8a1a7ce8ba9e2b1}{view\-Scale\-Lbl}
 \item 
-\hypertarget{classViewpropBox_a2bb76356eccd2b73ec70630e67ff33ba}{wx\-Text\-Ctrl $\ast$ {\bfseries viewscale}}\label{classViewpropBox_a2bb76356eccd2b73ec70630e67ff33ba}
-
+wx\-Text\-Ctrl $\ast$ \hyperlink{classViewpropBox_ae275307ddd3a84c91298e78b826f1ae1}{view\-Scale\-Edit}
 \end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Oberfläche zum Verändern/\-Anzeigen der Visualisierungsoptionen. 
+
+Diese Klasse verwaltet nur das Layout des Visualisierungsoptionen-\/\-Bereichs. Die Funktionalität wird in \hyperlink{classGUIMainWindow}{G\-U\-I\-Main\-Window} behandelt. 
+
+Definiert in Zeile 19 der Datei Viewprop\-Box.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classViewpropBox_a4cac75d99079134622f57e35f1e47229}{\index{Viewprop\-Box@{Viewprop\-Box}!Viewprop\-Box@{Viewprop\-Box}}
+\index{Viewprop\-Box@{Viewprop\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{Viewprop\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Viewprop\-Box\-::\-Viewprop\-Box (
+\begin{DoxyParamCaption}
+\item[{wx\-Window $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_a4cac75d99079134622f57e35f1e47229}
+Der Konstruktor. 
+\begin{DoxyParams}{Parameter}
+{\em Die} & übergeordnete Komponente. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 15 der Datei Viewprop\-Box.\-cpp.
+
+\hypertarget{classViewpropBox_ab1c9234649b6a386b457d9ba5de311e4}{\index{Viewprop\-Box@{Viewprop\-Box}!$\sim$\-Viewprop\-Box@{$\sim$\-Viewprop\-Box}}
+\index{$\sim$\-Viewprop\-Box@{$\sim$\-Viewprop\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{$\sim$\-Viewprop\-Box}]{\setlength{\rightskip}{0pt plus 5cm}Viewprop\-Box\-::$\sim$\-Viewprop\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classViewpropBox_ab1c9234649b6a386b457d9ba5de311e4}
+Der Destruktor. 
+
+Definiert in Zeile 87 der Datei Viewprop\-Box.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classViewpropBox_a23832121cac9cb822438072152bfa252}{\index{Viewprop\-Box@{Viewprop\-Box}!get\-Color\-Range\-Max\-Edit@{get\-Color\-Range\-Max\-Edit}}
+\index{get\-Color\-Range\-Max\-Edit@{get\-Color\-Range\-Max\-Edit}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{get\-Color\-Range\-Max\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Spin\-Ctrl $\ast$ Viewprop\-Box\-::get\-Color\-Range\-Max\-Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_a23832121cac9cb822438072152bfa252}
+Gibt das Eingabefeld für die maximal Visualisierte Temperatur (entspricht der Farbe Rot) zurück. 
+
+Definiert in Zeile 51 der Datei Viewprop\-Box.\-cpp.
+
+\hypertarget{classViewpropBox_a3f497c6cceef0c6db27adf56c53c9838}{\index{Viewprop\-Box@{Viewprop\-Box}!get\-Color\-Range\-Min\-Edit@{get\-Color\-Range\-Min\-Edit}}
+\index{get\-Color\-Range\-Min\-Edit@{get\-Color\-Range\-Min\-Edit}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{get\-Color\-Range\-Min\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Spin\-Ctrl $\ast$ Viewprop\-Box\-::get\-Color\-Range\-Min\-Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_a3f497c6cceef0c6db27adf56c53c9838}
+Gibt das Eingabefeld für die minimal Visualisierte Temperatur (entspricht der Farbe Blau) zurück. 
+
+Definiert in Zeile 55 der Datei Viewprop\-Box.\-cpp.
+
+\hypertarget{classViewpropBox_a2798ca6ed2a570bde1ac13f74dee398c}{\index{Viewprop\-Box@{Viewprop\-Box}!get\-Edges\-Check\-Box@{get\-Edges\-Check\-Box}}
+\index{get\-Edges\-Check\-Box@{get\-Edges\-Check\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{get\-Edges\-Check\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Radio\-Box $\ast$ Viewprop\-Box\-::get\-Edges\-Check\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_a2798ca6ed2a570bde1ac13f74dee398c}
+Gibt das Auswahlfeld für den Darstellungsmodus von Kanten zurück. 
+
+Definiert in Zeile 59 der Datei Viewprop\-Box.\-cpp.
+
+\hypertarget{classViewpropBox_a3ebd07b7d8de74d639ea80181c8c7abc}{\index{Viewprop\-Box@{Viewprop\-Box}!get\-Faces\-Check\-Box@{get\-Faces\-Check\-Box}}
+\index{get\-Faces\-Check\-Box@{get\-Faces\-Check\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{get\-Faces\-Check\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Radio\-Box $\ast$ Viewprop\-Box\-::get\-Faces\-Check\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_a3ebd07b7d8de74d639ea80181c8c7abc}
+Gibt das Auswahlfeld für den Darstellungsmodus von Flächen zurück. 
+
+Definiert in Zeile 63 der Datei Viewprop\-Box.\-cpp.
+
+\hypertarget{classViewpropBox_a3b9cdaefd86124fd67e821dfa0bbd3b8}{\index{Viewprop\-Box@{Viewprop\-Box}!get\-Mat\-Visibility\-List\-Box@{get\-Mat\-Visibility\-List\-Box}}
+\index{get\-Mat\-Visibility\-List\-Box@{get\-Mat\-Visibility\-List\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{get\-Mat\-Visibility\-List\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Check\-List\-Box $\ast$ Viewprop\-Box\-::get\-Mat\-Visibility\-List\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_a3b9cdaefd86124fd67e821dfa0bbd3b8}
+Gibt das Auswahlfeld für die Sichtbarkeit von Materialien zurück. 
+
+Definiert in Zeile 67 der Datei Viewprop\-Box.\-cpp.
+
+\hypertarget{classViewpropBox_a1b74032daa1c60624755396d7afc9d0d}{\index{Viewprop\-Box@{Viewprop\-Box}!get\-Points\-Check\-Box@{get\-Points\-Check\-Box}}
+\index{get\-Points\-Check\-Box@{get\-Points\-Check\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{get\-Points\-Check\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Radio\-Box $\ast$ Viewprop\-Box\-::get\-Points\-Check\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_a1b74032daa1c60624755396d7afc9d0d}
+Gibt das Auswahlfeld für den Darstellungsmodus von Punkten zurück. 
+
+Definiert in Zeile 71 der Datei Viewprop\-Box.\-cpp.
+
+\hypertarget{classViewpropBox_a3d3c4a809f14eca31ccf3858033eee7a}{\index{Viewprop\-Box@{Viewprop\-Box}!get\-Show\-Extrapolated\-Check\-Box@{get\-Show\-Extrapolated\-Check\-Box}}
+\index{get\-Show\-Extrapolated\-Check\-Box@{get\-Show\-Extrapolated\-Check\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{get\-Show\-Extrapolated\-Check\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Check\-Box $\ast$ Viewprop\-Box\-::get\-Show\-Extrapolated\-Check\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_a3d3c4a809f14eca31ccf3858033eee7a}
+Gibt die Checkbox zum Anzeigen Extrapolierter Elemente zurück. 
+
+Definiert in Zeile 75 der Datei Viewprop\-Box.\-cpp.
+
+\hypertarget{classViewpropBox_ade722440c4b3c0da3feb78a590aa2946}{\index{Viewprop\-Box@{Viewprop\-Box}!get\-Show\-Show\-Sensor\-Data@{get\-Show\-Show\-Sensor\-Data}}
+\index{get\-Show\-Show\-Sensor\-Data@{get\-Show\-Show\-Sensor\-Data}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{get\-Show\-Show\-Sensor\-Data}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Check\-Box $\ast$ Viewprop\-Box\-::get\-Show\-Show\-Sensor\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_ade722440c4b3c0da3feb78a590aa2946}
+Gibt die Checkbox zum Anzeigen der Sensordaten als Punkte zurück. 
+
+Definiert in Zeile 79 der Datei Viewprop\-Box.\-cpp.
+
+\hypertarget{classViewpropBox_a8ac6322e5dcdbbde1c646e1ccbf08ed9}{\index{Viewprop\-Box@{Viewprop\-Box}!get\-View\-Scale\-Edit@{get\-View\-Scale\-Edit}}
+\index{get\-View\-Scale\-Edit@{get\-View\-Scale\-Edit}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{get\-View\-Scale\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl $\ast$ Viewprop\-Box\-::get\-View\-Scale\-Edit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_a8ac6322e5dcdbbde1c646e1ccbf08ed9}
+Gibt das Eingabefeld für einen Skalierungsfaktor für das 3\-D-\/\-Objekt zurück. Diese Skalierung ist rein optisch. 
+
+Definiert in Zeile 83 der Datei Viewprop\-Box.\-cpp.
+
+\hypertarget{classViewpropBox_a7f2732c6e7d24fc90fad55972cb1e759}{\index{Viewprop\-Box@{Viewprop\-Box}!resize@{resize}}
+\index{resize@{resize}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}void Viewprop\-Box\-::resize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classViewpropBox_a7f2732c6e7d24fc90fad55972cb1e759}
+Behandelt Größenänderungen und passt die Positionen der Komponenten an. 
+
+Definiert in Zeile 32 der Datei Viewprop\-Box.\-cpp.
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classViewpropBox_a562f38091ff255820b63734e7d4b1ff8}{\index{Viewprop\-Box@{Viewprop\-Box}!color\-Range\-Lbl@{color\-Range\-Lbl}}
+\index{color\-Range\-Lbl@{color\-Range\-Lbl}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{color\-Range\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Viewprop\-Box\-::color\-Range\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_a562f38091ff255820b63734e7d4b1ff8}
+Beschriftung für die Eingabefelder des zur Visualisierung verwendeten Temperaturbereichs. 
+
+Definiert in Zeile 102 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_ab87e9eba3e16969c4423ff0790ccf99c}{\index{Viewprop\-Box@{Viewprop\-Box}!color\-Range\-Max\-Edit@{color\-Range\-Max\-Edit}}
+\index{color\-Range\-Max\-Edit@{color\-Range\-Max\-Edit}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{color\-Range\-Max\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Spin\-Ctrl$\ast$ Viewprop\-Box\-::color\-Range\-Max\-Edit\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_ab87e9eba3e16969c4423ff0790ccf99c}
+Eingabefeld für die maximal Visualisierte Temperatur (entspricht der Farbe Rot). 
+
+Definiert in Zeile 110 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_a64af7732726775603579fedcf231d5e0}{\index{Viewprop\-Box@{Viewprop\-Box}!color\-Range\-Min\-Edit@{color\-Range\-Min\-Edit}}
+\index{color\-Range\-Min\-Edit@{color\-Range\-Min\-Edit}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{color\-Range\-Min\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Spin\-Ctrl$\ast$ Viewprop\-Box\-::color\-Range\-Min\-Edit\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_a64af7732726775603579fedcf231d5e0}
+Eingabefeld für die minimal Visualisierte Temperatur (entspricht der Farbe Blau). 
+
+Definiert in Zeile 106 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_a42925abd6e515ec8f12e9de662edf39e}{\index{Viewprop\-Box@{Viewprop\-Box}!edges\-Check\-Box@{edges\-Check\-Box}}
+\index{edges\-Check\-Box@{edges\-Check\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{edges\-Check\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Radio\-Box$\ast$ Viewprop\-Box\-::edges\-Check\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_a42925abd6e515ec8f12e9de662edf39e}
+Auswahlfeld für den Darstellungsmodus von Kanten. 
+
+Definiert in Zeile 78 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_ad5b2d4c590f1594ae5b0c80251d80005}{\index{Viewprop\-Box@{Viewprop\-Box}!faces\-Check\-Box@{faces\-Check\-Box}}
+\index{faces\-Check\-Box@{faces\-Check\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{faces\-Check\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Radio\-Box$\ast$ Viewprop\-Box\-::faces\-Check\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_ad5b2d4c590f1594ae5b0c80251d80005}
+Auswahlfeld für den Darstellungsmodus von Flächen. 
+
+Definiert in Zeile 82 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_a8e6d0646ebdd844f96acde46e63fb74d}{\index{Viewprop\-Box@{Viewprop\-Box}!mat\-Visibility\-List\-Box@{mat\-Visibility\-List\-Box}}
+\index{mat\-Visibility\-List\-Box@{mat\-Visibility\-List\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{mat\-Visibility\-List\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Check\-List\-Box$\ast$ Viewprop\-Box\-::mat\-Visibility\-List\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_a8e6d0646ebdd844f96acde46e63fb74d}
+Auswahlfeld für die Sichtbarkeit von Materialien. 
+
+Definiert in Zeile 90 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_a6352cdc6579ed2b9a7cfdd28a847bfec}{\index{Viewprop\-Box@{Viewprop\-Box}!mat\-Visualization\-Lbl@{mat\-Visualization\-Lbl}}
+\index{mat\-Visualization\-Lbl@{mat\-Visualization\-Lbl}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{mat\-Visualization\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Viewprop\-Box\-::mat\-Visualization\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_a6352cdc6579ed2b9a7cfdd28a847bfec}
+Beschriftung für das Auswahlfeld für die Sichtbarkeit von Materialien. 
+
+Definiert in Zeile 86 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_a706dfcdceaa1afff899f51eb2ebded81}{\index{Viewprop\-Box@{Viewprop\-Box}!points\-Check\-Box@{points\-Check\-Box}}
+\index{points\-Check\-Box@{points\-Check\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{points\-Check\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Radio\-Box$\ast$ Viewprop\-Box\-::points\-Check\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_a706dfcdceaa1afff899f51eb2ebded81}
+Auswahlfeld für den Darstellungsmodus von Punkten. 
+
+Definiert in Zeile 74 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_a26459f6ab8498b578ecf30dcb4fd582e}{\index{Viewprop\-Box@{Viewprop\-Box}!show\-Extrapolated\-Check\-Box@{show\-Extrapolated\-Check\-Box}}
+\index{show\-Extrapolated\-Check\-Box@{show\-Extrapolated\-Check\-Box}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{show\-Extrapolated\-Check\-Box}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Check\-Box$\ast$ Viewprop\-Box\-::show\-Extrapolated\-Check\-Box\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_a26459f6ab8498b578ecf30dcb4fd582e}
+Checkbox zum Anzeigen Extrapolierter Elemente. 
+
+Definiert in Zeile 94 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_a731fabc531998315b0850a3b60eb3c51}{\index{Viewprop\-Box@{Viewprop\-Box}!show\-Show\-Sensor\-Data@{show\-Show\-Sensor\-Data}}
+\index{show\-Show\-Sensor\-Data@{show\-Show\-Sensor\-Data}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{show\-Show\-Sensor\-Data}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Check\-Box$\ast$ Viewprop\-Box\-::show\-Show\-Sensor\-Data\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_a731fabc531998315b0850a3b60eb3c51}
+Checkbox zum Anzeigen der Sensordaten als Punkte. 
+
+Definiert in Zeile 98 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_ae275307ddd3a84c91298e78b826f1ae1}{\index{Viewprop\-Box@{Viewprop\-Box}!view\-Scale\-Edit@{view\-Scale\-Edit}}
+\index{view\-Scale\-Edit@{view\-Scale\-Edit}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{view\-Scale\-Edit}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Text\-Ctrl$\ast$ Viewprop\-Box\-::view\-Scale\-Edit\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_ae275307ddd3a84c91298e78b826f1ae1}
+Eingabefeld für einen Skalierungsfaktor für das 3\-D-\/\-Objekt. Diese Skalierung ist rein optisch. 
+
+Definiert in Zeile 118 der Datei Viewprop\-Box.\-h.
+
+\hypertarget{classViewpropBox_ab312348ae97369e3b8a1a7ce8ba9e2b1}{\index{Viewprop\-Box@{Viewprop\-Box}!view\-Scale\-Lbl@{view\-Scale\-Lbl}}
+\index{view\-Scale\-Lbl@{view\-Scale\-Lbl}!ViewpropBox@{Viewprop\-Box}}
+\subsubsection[{view\-Scale\-Lbl}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Static\-Text$\ast$ Viewprop\-Box\-::view\-Scale\-Lbl\hspace{0.3cm}{\ttfamily [private]}}}\label{classViewpropBox_ab312348ae97369e3b8a1a7ce8ba9e2b1}
+Beschriftung für das Eingabefeld eines Skalierungsfaktors für das 3\-D-\/\-Objekt. 
+
+Definiert in Zeile 114 der Datei Viewprop\-Box.\-h.
+
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

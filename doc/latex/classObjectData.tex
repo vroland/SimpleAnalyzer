@@ -1,6 +1,20 @@
 \hypertarget{classObjectData}{\section{Object\-Data Klassenreferenz}
 \label{classObjectData}\index{Object\-Data@{Object\-Data}}
 }
+
+
+Die Daten eines Versuchsobjekts.  
+
+
+
+
+{\ttfamily \#include $<$Object\-Data.\-h$>$}
+
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structObjectData_1_1MaterialData}{Material\-Data}
+\begin{DoxyCompactList}\small\item\em Die Daten eines Materials. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Öffentliche Typen}
 \begin{DoxyCompactItemize}
 \item 
@@ -16,39 +30,62 @@ enum \hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classObjectData_ab2fabb02de2ac4b5ff09b73beb15223d}{int {\bfseries load\-From\-File} (wx\-String \&path)}\label{classObjectData_ab2fabb02de2ac4b5ff09b73beb15223d}
-
+\hyperlink{classObjectData_a1fd2e4bbefbdb93126f7f09f8e20f0ac}{Object\-Data} ()
 \item 
-\hypertarget{classObjectData_a351c17608005c849cb0f26e44beee2ec}{int {\bfseries add\-Sensor\-Data} (wx\-String \&path)}\label{classObjectData_a351c17608005c849cb0f26e44beee2ec}
-
+int \hyperlink{classObjectData_ab2fabb02de2ac4b5ff09b73beb15223d}{load\-From\-File} (wx\-String \&path)
 \item 
-\hypertarget{classObjectData_ac8056d23b0882a826b6e572ff080688f}{int {\bfseries add\-Timed\-Data} (wx\-String \&path)}\label{classObjectData_ac8056d23b0882a826b6e572ff080688f}
-
+int \hyperlink{classObjectData_a351c17608005c849cb0f26e44beee2ec}{add\-Sensor\-Data} (wx\-String \&path)
 \item 
-\hypertarget{classObjectData_af3a850833d08eb9b45357449f455e24d}{int {\bfseries calculate\-I\-O} ()}\label{classObjectData_af3a850833d08eb9b45357449f455e24d}
-
+int \hyperlink{classObjectData_ac8056d23b0882a826b6e572ff080688f}{add\-Timed\-Data} (wx\-String \&path)
+\item 
+int \hyperlink{classObjectData_af3a850833d08eb9b45357449f455e24d}{calculate\-I\-O} ()
+\item 
+vector$<$ \hyperlink{structObjectData_1_1MaterialData}{Material\-Data} $>$ $\ast$ \hyperlink{classObjectData_afda67d7524b83780e431dd3a9c5ac23a}{get\-Materials} ()
+\item 
+double \hyperlink{classObjectData_a16a16a529f0e294e73cc05e585b81123}{get\-Maxvolume} ()
+\item 
+void \hyperlink{classObjectData_a9f98769226284127c529724acaf5d4c6}{set\-Maxvolume} (double \hyperlink{classObjectData_a5cc67da17022ec0f6eed6d02fa975a8b}{maxvolume})
+\item 
+string \hyperlink{classObjectData_af2ba5c8a722ad3ba3ff25930cece3478}{get\-Name} ()
+\item 
+void \hyperlink{classObjectData_a9ae22360c1033fd4d019466d3361701d}{set\-Name} (string \hyperlink{classObjectData_a6d900f11952e9d50e6660a3695fad99d}{name})
+\item 
+double \hyperlink{classObjectData_a8256cf002841401d4e4c7533d874fa5d}{get\-Quality} ()
+\item 
+void \hyperlink{classObjectData_a330b3d3fa607221fae87e26f60baa0e7}{set\-Quality} (double \hyperlink{classObjectData_ae047918932000aca3ff1bc680b288c08}{quality})
+\item 
+vector$<$ \hyperlink{structUtils_1_1SensorData}{Sensor\-Data} $>$ $\ast$ \hyperlink{classObjectData_a72ac93213382f67b4d5b40c011eb1656}{get\-Sensor\-Data\-List} ()
+\item 
+int \hyperlink{classObjectData_a503d63160a3afe2ea517449f78f8ac42}{get\-Current\-Sensor\-Index} ()
+\item 
+void \hyperlink{classObjectData_a65bc706c460a62f98e6c24959df04c76}{set\-Current\-Sensor\-Index} (int current\-Sensor\-Index)
+\item 
+virtual \hyperlink{classObjectData_a4f6cd4abd0993621e996c0a2d374c0e6}{$\sim$\-Object\-Data} ()
 \end{DoxyCompactItemize}
-\subsection*{Öffentliche Attribute}
+\subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classObjectData_a86976d7029456ac75a3e011f11e8c5f7}{int {\bfseries current\-\_\-sensor\-\_\-index}}\label{classObjectData_a86976d7029456ac75a3e011f11e8c5f7}
-
+int \hyperlink{classObjectData_a86976d7029456ac75a3e011f11e8c5f7}{current\-\_\-sensor\-\_\-index}
 \item 
-\hypertarget{classObjectData_a6d900f11952e9d50e6660a3695fad99d}{string {\bfseries name}}\label{classObjectData_a6d900f11952e9d50e6660a3695fad99d}
-
+string \hyperlink{classObjectData_a6d900f11952e9d50e6660a3695fad99d}{name}
 \item 
-\hypertarget{classObjectData_a5cc67da17022ec0f6eed6d02fa975a8b}{double {\bfseries maxvolume}}\label{classObjectData_a5cc67da17022ec0f6eed6d02fa975a8b}
-
+double \hyperlink{classObjectData_a5cc67da17022ec0f6eed6d02fa975a8b}{maxvolume}
 \item 
-\hypertarget{classObjectData_ae047918932000aca3ff1bc680b288c08}{double {\bfseries quality}}\label{classObjectData_ae047918932000aca3ff1bc680b288c08}
-
+double \hyperlink{classObjectData_ae047918932000aca3ff1bc680b288c08}{quality}
 \item 
-\hypertarget{classObjectData_a353002eeb054efed800db1b798d08a6c}{vector$<$ \hyperlink{structMaterialData}{Material\-Data} $>$ {\bfseries materials}}\label{classObjectData_a353002eeb054efed800db1b798d08a6c}
-
+vector$<$ \hyperlink{structObjectData_1_1MaterialData}{Material\-Data} $>$ \hyperlink{classObjectData_a353002eeb054efed800db1b798d08a6c}{materials}
 \item 
-\hypertarget{classObjectData_a43fbf8d2e99c444db3608c2f009de34f}{vector$<$ \hyperlink{structUtils_1_1SensorData}{Sensor\-Data} $>$ {\bfseries sensordatalist}}\label{classObjectData_a43fbf8d2e99c444db3608c2f009de34f}
-
+vector$<$ \hyperlink{structUtils_1_1SensorData}{Sensor\-Data} $>$ \hyperlink{classObjectData_af6a1dcb4e137b1698422a912c07c7f39}{sensor\-Data\-List}
 \end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Die Daten eines Versuchsobjekts. 
+
+Diese Klasse hält Objekteigenschaften, Materialien und Sensordaten eines untersuchten Objekts. 
+
+Definiert in Zeile 25 der Datei Object\-Data.\-h.
+
 
 
 \subsection{Dokumentation der Aufzählungstypen}
@@ -56,6 +93,460 @@ enum \hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\
 \index{Object\-Data\-Status@{Object\-Data\-Status}!ObjectData@{Object\-Data}}
 \subsubsection[{Object\-Data\-Status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Object\-Data\-::\-Object\-Data\-Status}}}\label{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}
 Status einer die Objektdaten betreffenden Aktion. 
+
+Definiert in Zeile 44 der Datei Object\-Data.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classObjectData_a1fd2e4bbefbdb93126f7f09f8e20f0ac}{\index{Object\-Data@{Object\-Data}!Object\-Data@{Object\-Data}}
+\index{Object\-Data@{Object\-Data}!ObjectData@{Object\-Data}}
+\subsubsection[{Object\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Object\-Data\-::\-Object\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_a1fd2e4bbefbdb93126f7f09f8e20f0ac}
+Der Konstruktor. 
+
+Definiert in Zeile 23 der Datei Object\-Data.\-cpp.
+
+\hypertarget{classObjectData_a4f6cd4abd0993621e996c0a2d374c0e6}{\index{Object\-Data@{Object\-Data}!$\sim$\-Object\-Data@{$\sim$\-Object\-Data}}
+\index{$\sim$\-Object\-Data@{$\sim$\-Object\-Data}!ObjectData@{Object\-Data}}
+\subsubsection[{$\sim$\-Object\-Data}]{\setlength{\rightskip}{0pt plus 5cm}Object\-Data\-::$\sim$\-Object\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classObjectData_a4f6cd4abd0993621e996c0a2d374c0e6}
+Der Destruktor. 
+
+Definiert in Zeile 147 der Datei Object\-Data.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classObjectData_a351c17608005c849cb0f26e44beee2ec}{\index{Object\-Data@{Object\-Data}!add\-Sensor\-Data@{add\-Sensor\-Data}}
+\index{add\-Sensor\-Data@{add\-Sensor\-Data}!ObjectData@{Object\-Data}}
+\subsubsection[{add\-Sensor\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-Data\-::add\-Sensor\-Data (
+\begin{DoxyParamCaption}
+\item[{wx\-String \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_a351c17608005c849cb0f26e44beee2ec}
+Lädt einfache Sensordaten und verknüpft sie mit dem Objekt. 
+\begin{DoxyParams}{Parameter}
+{\em path} & Pfad zur .sd-\/\-Datei. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 73 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_a351c17608005c849cb0f26e44beee2ec_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_a351c17608005c849cb0f26e44beee2ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_ac8056d23b0882a826b6e572ff080688f}{\index{Object\-Data@{Object\-Data}!add\-Timed\-Data@{add\-Timed\-Data}}
+\index{add\-Timed\-Data@{add\-Timed\-Data}!ObjectData@{Object\-Data}}
+\subsubsection[{add\-Timed\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-Data\-::add\-Timed\-Data (
+\begin{DoxyParamCaption}
+\item[{wx\-String \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_ac8056d23b0882a826b6e572ff080688f}
+Lädt zeitbezogene Sensordaten und verknüpft sie mit dem Objekt. 
+\begin{DoxyParams}{Parameter}
+{\em path} & Pfad zur .tsd-\/\-Datei. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 78 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_ac8056d23b0882a826b6e572ff080688f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_ac8056d23b0882a826b6e572ff080688f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_af3a850833d08eb9b45357449f455e24d}{\index{Object\-Data@{Object\-Data}!calculate\-I\-O@{calculate\-I\-O}}
+\index{calculate\-I\-O@{calculate\-I\-O}!ObjectData@{Object\-Data}}
+\subsubsection[{calculate\-I\-O}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-Data\-::calculate\-I\-O (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_af3a850833d08eb9b45357449f455e24d}
+Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen-\/\-Bibliothek) und Berechnet die Temperaturverteilung für die aktuell ausgewählten Sensordaten (und den aktuelle augewählten Zeitpunkt). 
+
+Definiert in Zeile 83 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_af3a850833d08eb9b45357449f455e24d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_af3a850833d08eb9b45357449f455e24d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_a503d63160a3afe2ea517449f78f8ac42}{\index{Object\-Data@{Object\-Data}!get\-Current\-Sensor\-Index@{get\-Current\-Sensor\-Index}}
+\index{get\-Current\-Sensor\-Index@{get\-Current\-Sensor\-Index}!ObjectData@{Object\-Data}}
+\subsubsection[{get\-Current\-Sensor\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-Data\-::get\-Current\-Sensor\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_a503d63160a3afe2ea517449f78f8ac42}
+Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. 
+
+Definiert in Zeile 139 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_a503d63160a3afe2ea517449f78f8ac42_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_afda67d7524b83780e431dd3a9c5ac23a}{\index{Object\-Data@{Object\-Data}!get\-Materials@{get\-Materials}}
+\index{get\-Materials@{get\-Materials}!ObjectData@{Object\-Data}}
+\subsubsection[{get\-Materials}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Object\-Data\-::\-Material\-Data} $>$ $\ast$ Object\-Data\-::get\-Materials (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_afda67d7524b83780e431dd3a9c5ac23a}
+Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. 
+
+Definiert in Zeile 107 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_afda67d7524b83780e431dd3a9c5ac23a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_a16a16a529f0e294e73cc05e585b81123}{\index{Object\-Data@{Object\-Data}!get\-Maxvolume@{get\-Maxvolume}}
+\index{get\-Maxvolume@{get\-Maxvolume}!ObjectData@{Object\-Data}}
+\subsubsection[{get\-Maxvolume}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-Data\-::get\-Maxvolume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_a16a16a529f0e294e73cc05e585b81123}
+Gibt das maximale Tetraedervolumen für der Zerlegung zurück. 
+
+Definiert in Zeile 111 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_a16a16a529f0e294e73cc05e585b81123_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_af2ba5c8a722ad3ba3ff25930cece3478}{\index{Object\-Data@{Object\-Data}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!ObjectData@{Object\-Data}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string Object\-Data\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_af2ba5c8a722ad3ba3ff25930cece3478}
+Gibt den Namen des Objekts zurück. 
+
+Definiert in Zeile 119 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_af2ba5c8a722ad3ba3ff25930cece3478_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_a8256cf002841401d4e4c7533d874fa5d}{\index{Object\-Data@{Object\-Data}!get\-Quality@{get\-Quality}}
+\index{get\-Quality@{get\-Quality}!ObjectData@{Object\-Data}}
+\subsubsection[{get\-Quality}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-Data\-::get\-Quality (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_a8256cf002841401d4e4c7533d874fa5d}
+Gibt die Qualisätseinstellung für die Tetraeder bei der Zerlegung (s. Tetgen Dokumentation) zurück. 
+
+Definiert in Zeile 127 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_a8256cf002841401d4e4c7533d874fa5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_a72ac93213382f67b4d5b40c011eb1656}{\index{Object\-Data@{Object\-Data}!get\-Sensor\-Data\-List@{get\-Sensor\-Data\-List}}
+\index{get\-Sensor\-Data\-List@{get\-Sensor\-Data\-List}!ObjectData@{Object\-Data}}
+\subsubsection[{get\-Sensor\-Data\-List}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Sensor\-Data} $>$ $\ast$ Object\-Data\-::get\-Sensor\-Data\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_a72ac93213382f67b4d5b40c011eb1656}
+Gibt eine Referenz auf die Sensordaten des Objekts zurück. 
+
+Definiert in Zeile 135 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_a72ac93213382f67b4d5b40c011eb1656_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_ab2fabb02de2ac4b5ff09b73beb15223d}{\index{Object\-Data@{Object\-Data}!load\-From\-File@{load\-From\-File}}
+\index{load\-From\-File@{load\-From\-File}!ObjectData@{Object\-Data}}
+\subsubsection[{load\-From\-File}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-Data\-::load\-From\-File (
+\begin{DoxyParamCaption}
+\item[{wx\-String \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_ab2fabb02de2ac4b5ff09b73beb15223d}
+Lädt ein Objekt und erste Sensordaten. 
+\begin{DoxyParams}{Parameter}
+{\em path} & Pfad zur 3\-D-\/\-Modell(.obj)-\/\-Datei. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 28 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_ab2fabb02de2ac4b5ff09b73beb15223d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_ab2fabb02de2ac4b5ff09b73beb15223d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_a65bc706c460a62f98e6c24959df04c76}{\index{Object\-Data@{Object\-Data}!set\-Current\-Sensor\-Index@{set\-Current\-Sensor\-Index}}
+\index{set\-Current\-Sensor\-Index@{set\-Current\-Sensor\-Index}!ObjectData@{Object\-Data}}
+\subsubsection[{set\-Current\-Sensor\-Index}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-Data\-::set\-Current\-Sensor\-Index (
+\begin{DoxyParamCaption}
+\item[{int}]{current\-Sensor\-Index}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_a65bc706c460a62f98e6c24959df04c76}
+Setzt den Index des aktuell verwendeten Sensordatensatzes. 
+
+Definiert in Zeile 143 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_a65bc706c460a62f98e6c24959df04c76_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_a9f98769226284127c529724acaf5d4c6}{\index{Object\-Data@{Object\-Data}!set\-Maxvolume@{set\-Maxvolume}}
+\index{set\-Maxvolume@{set\-Maxvolume}!ObjectData@{Object\-Data}}
+\subsubsection[{set\-Maxvolume}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-Data\-::set\-Maxvolume (
+\begin{DoxyParamCaption}
+\item[{double}]{maxvolume}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_a9f98769226284127c529724acaf5d4c6}
+Setzt das maximale Tetraedervolumen für der Zerlegung. 
+\begin{DoxyParams}{Parameter}
+{\em maxvolume} & Maximales Tetraedervolumen. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 115 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_a9f98769226284127c529724acaf5d4c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_a9ae22360c1033fd4d019466d3361701d}{\index{Object\-Data@{Object\-Data}!set\-Name@{set\-Name}}
+\index{set\-Name@{set\-Name}!ObjectData@{Object\-Data}}
+\subsubsection[{set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-Data\-::set\-Name (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_a9ae22360c1033fd4d019466d3361701d}
+Setzt den Namen des Objekts. 
+\begin{DoxyParams}{Parameter}
+{\em name} & Der neue Name des Objekts. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 123 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_a9ae22360c1033fd4d019466d3361701d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classObjectData_a330b3d3fa607221fae87e26f60baa0e7}{\index{Object\-Data@{Object\-Data}!set\-Quality@{set\-Quality}}
+\index{set\-Quality@{set\-Quality}!ObjectData@{Object\-Data}}
+\subsubsection[{set\-Quality}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-Data\-::set\-Quality (
+\begin{DoxyParamCaption}
+\item[{double}]{quality}
+\end{DoxyParamCaption}
+)}}\label{classObjectData_a330b3d3fa607221fae87e26f60baa0e7}
+Sezt die Qualisätseinstellung für die Tetraeder bei der Zerlegung (s. Tetgen Dokumentation). 
+
+Definiert in Zeile 131 der Datei Object\-Data.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classObjectData_a330b3d3fa607221fae87e26f60baa0e7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classObjectData_a86976d7029456ac75a3e011f11e8c5f7}{\index{Object\-Data@{Object\-Data}!current\-\_\-sensor\-\_\-index@{current\-\_\-sensor\-\_\-index}}
+\index{current\-\_\-sensor\-\_\-index@{current\-\_\-sensor\-\_\-index}!ObjectData@{Object\-Data}}
+\subsubsection[{current\-\_\-sensor\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-Data\-::current\-\_\-sensor\-\_\-index\hspace{0.3cm}{\ttfamily [private]}}}\label{classObjectData_a86976d7029456ac75a3e011f11e8c5f7}
+Index des aktuell verwendeten Sensordatensatzes. 
+
+Definiert in Zeile 125 der Datei Object\-Data.\-h.
+
+\hypertarget{classObjectData_a353002eeb054efed800db1b798d08a6c}{\index{Object\-Data@{Object\-Data}!materials@{materials}}
+\index{materials@{materials}!ObjectData@{Object\-Data}}
+\subsubsection[{materials}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Material\-Data}$>$ Object\-Data\-::materials\hspace{0.3cm}{\ttfamily [private]}}}\label{classObjectData_a353002eeb054efed800db1b798d08a6c}
+Liste der Materialien des Objekts. 
+
+Definiert in Zeile 141 der Datei Object\-Data.\-h.
+
+\hypertarget{classObjectData_a5cc67da17022ec0f6eed6d02fa975a8b}{\index{Object\-Data@{Object\-Data}!maxvolume@{maxvolume}}
+\index{maxvolume@{maxvolume}!ObjectData@{Object\-Data}}
+\subsubsection[{maxvolume}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-Data\-::maxvolume\hspace{0.3cm}{\ttfamily [private]}}}\label{classObjectData_a5cc67da17022ec0f6eed6d02fa975a8b}
+Maximales Volumen für Tetraeder bei der Zerlegung. 
+
+Definiert in Zeile 133 der Datei Object\-Data.\-h.
+
+\hypertarget{classObjectData_a6d900f11952e9d50e6660a3695fad99d}{\index{Object\-Data@{Object\-Data}!name@{name}}
+\index{name@{name}!ObjectData@{Object\-Data}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}string Object\-Data\-::name\hspace{0.3cm}{\ttfamily [private]}}}\label{classObjectData_a6d900f11952e9d50e6660a3695fad99d}
+Name des Objekts. 
+
+Definiert in Zeile 129 der Datei Object\-Data.\-h.
+
+\hypertarget{classObjectData_ae047918932000aca3ff1bc680b288c08}{\index{Object\-Data@{Object\-Data}!quality@{quality}}
+\index{quality@{quality}!ObjectData@{Object\-Data}}
+\subsubsection[{quality}]{\setlength{\rightskip}{0pt plus 5cm}double Object\-Data\-::quality\hspace{0.3cm}{\ttfamily [private]}}}\label{classObjectData_ae047918932000aca3ff1bc680b288c08}
+Qualität der Tetraeder bei der Zerlegung (s. Tetgen Dokumentation). 
+
+Definiert in Zeile 137 der Datei Object\-Data.\-h.
+
+\hypertarget{classObjectData_af6a1dcb4e137b1698422a912c07c7f39}{\index{Object\-Data@{Object\-Data}!sensor\-Data\-List@{sensor\-Data\-List}}
+\index{sensor\-Data\-List@{sensor\-Data\-List}!ObjectData@{Object\-Data}}
+\subsubsection[{sensor\-Data\-List}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Sensor\-Data}$>$ Object\-Data\-::sensor\-Data\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classObjectData_af6a1dcb4e137b1698422a912c07c7f39}
+Liste der Sensordaten des Objekts. 
+
+Definiert in Zeile 145 der Datei Object\-Data.\-h.
+
+
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 

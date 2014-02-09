@@ -1,0 +1,7 @@
+<map id="GUIMainWindow::assignCurrentObjectProps" name="GUIMainWindow::assignCurrentObjectProps">
+<area shape="rect" id="node3" href="$classObjectData.xhtml#a9ae22360c1033fd4d019466d3361701d" title="ObjectData::setName" alt="" coords="289,5,439,35"/>
+<area shape="rect" id="node5" href="$classObjectData.xhtml#a9f98769226284127c529724acaf5d4c6" title="ObjectData::setMaxvolume" alt="" coords="273,59,455,88"/>
+<area shape="rect" id="node7" href="$classObjectData.xhtml#a330b3d3fa607221fae87e26f60baa0e7" title="ObjectData::setQuality" alt="" coords="287,112,441,141"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="ObjectData::setCurrentSensor\lIndex" alt="" coords="265,165,463,211"/>
+<area shape="rect" id="node11" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="ObjectData::getMaterials" alt="" coords="281,235,447,264"/>
+</map>

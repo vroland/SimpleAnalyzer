@@ -103,6 +103,47 @@ int ObjectData::calculateIO() {
 	meshprocessor.process(this);
 	return OD_SUCCESS;
 }
+
+vector<ObjectData::MaterialData>* ObjectData::getMaterials() {
+	return &materials;
+}
+
+double ObjectData::getMaxvolume() {
+	return maxvolume;
+}
+
+void ObjectData::setMaxvolume(double maxvolume) {
+	this->maxvolume = maxvolume;
+}
+
+string ObjectData::getName() {
+	return name;
+}
+
+void ObjectData::setName(string name) {
+	this->name = name;
+}
+
+double ObjectData::getQuality() {
+	return quality;
+}
+
+void ObjectData::setQuality(double quality) {
+	this->quality = quality;
+}
+
+vector<SensorData>* ObjectData::getSensorDataList() {
+	return &sensorDataList;
+}
+
+int ObjectData::getCurrentSensorIndex() {
+	return current_sensor_index;
+}
+
+void ObjectData::setCurrentSensorIndex(int currentSensorIndex) {
+	current_sensor_index = currentSensorIndex;
+}
+
 ObjectData::~ObjectData() {
 	for (unsigned int i=0;i<materials.size();i++) {
 			MaterialData* data = &materials.at(i);

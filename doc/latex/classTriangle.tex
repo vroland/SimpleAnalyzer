@@ -1,36 +1,245 @@
 \hypertarget{classTriangle}{\section{Triangle Klassenreferenz}
 \label{classTriangle}\index{Triangle@{Triangle}}
 }
+
+
+Ein durch 3 Ortsvektoren beschriebenes Dreieck.  
+
+
+
+
+{\ttfamily \#include $<$Geometry\-Classes.\-h$>$}
+
+
+
+Zusammengehörigkeiten von Triangle\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{classTriangle__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classTriangle_aa25e2e56ac291e4366474fcbdcc6901b}{{\bfseries Triangle} (\hyperlink{classVector3D}{Vector3\-D} $\ast$v1, \hyperlink{classVector3D}{Vector3\-D} $\ast$v2, \hyperlink{classVector3D}{Vector3\-D} $\ast$v3)}\label{classTriangle_aa25e2e56ac291e4366474fcbdcc6901b}
-
+\hyperlink{classTriangle_aa25e2e56ac291e4366474fcbdcc6901b}{Triangle} (\hyperlink{classVector3D}{Vector3\-D} $\ast$v1, \hyperlink{classVector3D}{Vector3\-D} $\ast$v2, \hyperlink{classVector3D}{Vector3\-D} $\ast$v3)
 \item 
-\hypertarget{classTriangle_ae054a0eae5dae026c5af69274c5f277e}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries get\-V1} ()}\label{classTriangle_ae054a0eae5dae026c5af69274c5f277e}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_ae054a0eae5dae026c5af69274c5f277e}{get\-V1} ()
 \item 
-\hypertarget{classTriangle_a6de5f8560482f4130bdbb96b25aa1b58}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries get\-V2} ()}\label{classTriangle_a6de5f8560482f4130bdbb96b25aa1b58}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_a6de5f8560482f4130bdbb96b25aa1b58}{get\-V2} ()
 \item 
-\hypertarget{classTriangle_a792a627dc42adad87c0b30e16a6b5824}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries get\-V3} ()}\label{classTriangle_a792a627dc42adad87c0b30e16a6b5824}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_a792a627dc42adad87c0b30e16a6b5824}{get\-V3} ()
 \item 
-\hypertarget{classTriangle_a9320d1ab83c104352bf5e8f2c8274334}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries get\-Vert} (int index)}\label{classTriangle_a9320d1ab83c104352bf5e8f2c8274334}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_a9320d1ab83c104352bf5e8f2c8274334}{get\-Vert} (int index)
 \item 
-\hypertarget{classTriangle_abc3785b96e03fde1b5f594f8ed6afabb}{void {\bfseries print} ()}\label{classTriangle_abc3785b96e03fde1b5f594f8ed6afabb}
-
+void \hyperlink{classTriangle_abc3785b96e03fde1b5f594f8ed6afabb}{print} ()
 \item 
-\hypertarget{classTriangle_a3c72b19f316fa9ffb0a2f206e3558790}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries get\-Normal} ()}\label{classTriangle_a3c72b19f316fa9ffb0a2f206e3558790}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_a3c72b19f316fa9ffb0a2f206e3558790}{get\-Normal} ()
+\item 
+\hyperlink{classTriangle_a5199760a17454f4dc94c855a57e3a152}{$\sim$\-Triangle} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classTriangle_aa5ac3f568e42e746f7bd8be658e50060}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries verts} \mbox{[}3\mbox{]}}\label{classTriangle_aa5ac3f568e42e746f7bd8be658e50060}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTriangle_aa5ac3f568e42e746f7bd8be658e50060}{verts} \mbox{[}3\mbox{]}
 \end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Ein durch 3 Ortsvektoren beschriebenes Dreieck. 
+
+Definiert in Zeile 195 der Datei Geometry\-Classes.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classTriangle_aa25e2e56ac291e4366474fcbdcc6901b}{\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\subsubsection[{Triangle}]{\setlength{\rightskip}{0pt plus 5cm}Triangle\-::\-Triangle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3\-D} $\ast$}]{v1, }
+\item[{{\bf Vector3\-D} $\ast$}]{v2, }
+\item[{{\bf Vector3\-D} $\ast$}]{v3}
+\end{DoxyParamCaption}
+)}}\label{classTriangle_aa25e2e56ac291e4366474fcbdcc6901b}
+Der Konstruktor. Die übergebenen Vektorobjekte werden als Element der Klasse gespeichert (nicht kopiert). 
+\begin{DoxyParams}{Parameter}
+{\em v1} & Ortsvektor zum 1. Punkt des Dreiecks. \\
+\hline
+{\em v2} & Ortsvektor zum 2. Punkt des Dreiecks. \\
+\hline
+{\em v3} & Ortsvektor zum 3. Punkt des Dreiecks. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 195 der Datei Geometry\-Classes.\-cpp.
+
+\hypertarget{classTriangle_a5199760a17454f4dc94c855a57e3a152}{\index{Triangle@{Triangle}!$\sim$\-Triangle@{$\sim$\-Triangle}}
+\index{$\sim$\-Triangle@{$\sim$\-Triangle}!Triangle@{Triangle}}
+\subsubsection[{$\sim$\-Triangle}]{\setlength{\rightskip}{0pt plus 5cm}Triangle\-::$\sim$\-Triangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTriangle_a5199760a17454f4dc94c855a57e3a152}
+Der Destruktor. 
+
+Definiert in Zeile 229 der Datei Geometry\-Classes.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classTriangle_a3c72b19f316fa9ffb0a2f206e3558790}{\index{Triangle@{Triangle}!get\-Normal@{get\-Normal}}
+\index{get\-Normal@{get\-Normal}!Triangle@{Triangle}}
+\subsubsection[{get\-Normal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Triangle\-::get\-Normal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTriangle_a3c72b19f316fa9ffb0a2f206e3558790}
+Gibt die Normale des Dreiecks zurück. Der zurückgegebene Vektor muss manuell mit delete Freigegeben werden! 
+
+Definiert in Zeile 212 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTriangle_a3c72b19f316fa9ffb0a2f206e3558790_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTriangle_a3c72b19f316fa9ffb0a2f206e3558790_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTriangle_ae054a0eae5dae026c5af69274c5f277e}{\index{Triangle@{Triangle}!get\-V1@{get\-V1}}
+\index{get\-V1@{get\-V1}!Triangle@{Triangle}}
+\subsubsection[{get\-V1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Triangle\-::get\-V1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTriangle_ae054a0eae5dae026c5af69274c5f277e}
+Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. 
+
+Definiert in Zeile 200 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTriangle_ae054a0eae5dae026c5af69274c5f277e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTriangle_a6de5f8560482f4130bdbb96b25aa1b58}{\index{Triangle@{Triangle}!get\-V2@{get\-V2}}
+\index{get\-V2@{get\-V2}!Triangle@{Triangle}}
+\subsubsection[{get\-V2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Triangle\-::get\-V2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTriangle_a6de5f8560482f4130bdbb96b25aa1b58}
+Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. 
+
+Definiert in Zeile 203 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTriangle_a6de5f8560482f4130bdbb96b25aa1b58_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTriangle_a792a627dc42adad87c0b30e16a6b5824}{\index{Triangle@{Triangle}!get\-V3@{get\-V3}}
+\index{get\-V3@{get\-V3}!Triangle@{Triangle}}
+\subsubsection[{get\-V3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Triangle\-::get\-V3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTriangle_a792a627dc42adad87c0b30e16a6b5824}
+Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. 
+
+Definiert in Zeile 206 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTriangle_a792a627dc42adad87c0b30e16a6b5824_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTriangle_a9320d1ab83c104352bf5e8f2c8274334}{\index{Triangle@{Triangle}!get\-Vert@{get\-Vert}}
+\index{get\-Vert@{get\-Vert}!Triangle@{Triangle}}
+\subsubsection[{get\-Vert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Triangle\-::get\-Vert (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classTriangle_a9320d1ab83c104352bf5e8f2c8274334}
+Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Dreiecks zurück. 
+\begin{DoxyParams}{Parameter}
+{\em index} & Der Index des gesuchten Punktes (0..2). \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 209 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTriangle_a9320d1ab83c104352bf5e8f2c8274334_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTriangle_abc3785b96e03fde1b5f594f8ed6afabb}{\index{Triangle@{Triangle}!print@{print}}
+\index{print@{print}!Triangle@{Triangle}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTriangle_abc3785b96e03fde1b5f594f8ed6afabb}
+Gibt die Punkte des Dreiecks auf dem cout-\/\-Stream aus. 
+
+Definiert in Zeile 223 der Datei Geometry\-Classes.\-cpp.
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classTriangle_aa5ac3f568e42e746f7bd8be658e50060}{\index{Triangle@{Triangle}!verts@{verts}}
+\index{verts@{verts}!Triangle@{Triangle}}
+\subsubsection[{verts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D}$\ast$ Triangle\-::verts\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classTriangle_aa5ac3f568e42e746f7bd8be658e50060}
+Die Referenzen auf die Ortsvektoren zu den Eckpunkten des Dreiecks. 
+
+Definiert in Zeile 237 der Datei Geometry\-Classes.\-h.
+
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

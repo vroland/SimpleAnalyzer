@@ -1,0 +1,7 @@
+<map id="Renderer::setCutRenderInfo" name="Renderer::setCutRenderInfo">
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970" title="GUICutRenderWindow\l::refreshVisualisation" alt="" coords="249,74,404,121"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#aced4a67c460b8c3ede40763b6da6953d" title="GUICutRenderWindow\l::~GUICutRenderWindow" alt="" coords="241,143,412,190"/>
+<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a780972413c43b3086e86c28d581d1f70" title="GUICutRenderWindow\l::OnCutPropsChanged" alt="" coords="481,5,636,51"/>
+<area shape="rect" id="node7" href="$classGUICutRenderWindow.xhtml#a50e92af9db469de6d0298e58eee783ce" title="GUICutRenderWindow\l::OnSCutPropsChanged_spin" alt="" coords="461,74,656,121"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#ab57ff6c0d5e6465bb0f3b5cf0e6d9dc9" title="GUICutRenderWindow\l::OnResize" alt="" coords="481,143,636,190"/>
+</map>

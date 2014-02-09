@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Simple Analyzer: simpleanalyzer-gui/src/GUI/PropertiesBox.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="doc_icon.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simple Analyzer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Hauptseite</span></a></li>
+      <li><a href="pages.xhtml"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="namespaces.xhtml"><span>Namensbereiche</span></a></li>
+      <li><a href="annotated.xhtml"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.xhtml"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c77ee61374efdb50c23b8fd1bc609a29.xhtml">simpleanalyzer-gui</a></li><li class="navelem"><a class="el" href="dir_fc69cc80a9959f5f4d9fc5f3e2f537ca.xhtml">src</a></li><li class="navelem"><a class="el" href="dir_6d3502ad7ea637015e23cd162a030a27.xhtml">GUI</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">PropertiesBox.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * PropertiesBox.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 07.09.2013</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: valentin</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PROPERTIESBOX_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PROPERTIESBOX_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wx/wx.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GUITimeline.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPropertiesBox.xhtml" title="Oberfläche zum Verändern/Anzeigen der Eigenschaften eines Objekts. ">PropertiesBox</a>: <span class="keyword">public</span> wxStaticBox {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classPropertiesBox.xhtml#a9218399db23aa9a4200ccf60edd74f5a">PropertiesBox</a>(wxWindow *parent);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPropertiesBox.xhtml#adce6c28da4adced9bb98937c5cb85de0">resize</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    wxCheckBox* <a class="code" href="classPropertiesBox.xhtml#a13b9ce3aa1761689ff4be9fadeab2d87">getAnalyzeMarkerCheckBox</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    wxCheckBox* <a class="code" href="classPropertiesBox.xhtml#a0def09e75b2c748b2bb8fb78369a422c">getAutoUpdateCeckBox</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    wxButton* <a class="code" href="classPropertiesBox.xhtml#ad788ed8a06f21958e3c6ea043a162918">getClearAnalyzeMarkerBt</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#a84eb37f7bc965f3eecb638d63fa4af48">getSpecificHeatCapEdit</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPropertiesBox.xhtml#aa564b32c992a780af80378ec66b3377f">getCurrentMaterial</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPropertiesBox.xhtml#a995d6f6b8f068f4db6d6543f057d3fde">setCurrentMaterial</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#a088fac7ebd80b9499a98ff3a1cc93a94">getDensityEdit</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    wxButton* <a class="code" href="classPropertiesBox.xhtml#a98fdcce60c8fc8d7fea0adca8d9fe7c3">getFindMaxBt</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    wxComboBox* <a class="code" href="classPropertiesBox.xhtml#a27b80b42d1ab9717538de23297c8a80c">getInterpolationModeList</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    wxListBox* <a class="code" href="classPropertiesBox.xhtml#a0fe27b9cfb280154821fda1f9eb6d59e">getMatListBox</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#a10c51038eb2219e6465d213200adcbd1">getMatNameEdit</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    wxStaticBox* <a class="code" href="classPropertiesBox.xhtml#a152592fad06b248540565859e6747602">getMatPropBox</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#ade5cd5f8ad6d86a777844ff00e199cf7">getMaxVolumeEdit</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    wxButton* <a class="code" href="classPropertiesBox.xhtml#a48eb0273411c2312509c20fd499cd068">getNextMarkerBt</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#a012e6f4ebf8bf3443b72fff9c313aa3b">getObjNameEdit</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    wxButton* <a class="code" href="classPropertiesBox.xhtml#a4e97de926ac7efd390e166c5f17445c9">getPrevMarkerBt</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#a7bad07488cb993a3eb6ec85763d2469b">getQualityEdit</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    wxButton* <a class="code" href="classPropertiesBox.xhtml#a175c8202f9356211dbb9e3afced44347">getRecalcButton</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>* <a class="code" href="classPropertiesBox.xhtml#a2f2f08b742f77e1d9adad98bc1d5753b">getSdTimeline</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    wxComboBox* <a class="code" href="classPropertiesBox.xhtml#a9c3c000011a8b66faf5965b26d696776">getSensorDataList</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#a5dadf68da6786bd09d4a882308e22e6f">getUpToDateLbl</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classPropertiesBox.xhtml#a45688be94b4b06f34125aebf5004e617">~PropertiesBox</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a0f5356371cde511efeb413bc2a98e6fc">  124</a></span>&#160;    wxButton* <a class="code" href="classPropertiesBox.xhtml#a0f5356371cde511efeb413bc2a98e6fc">recalcButton</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ac281563a94d4cdffd51084d88cafc692">  128</a></span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#ac281563a94d4cdffd51084d88cafc692">objNameLbl</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a7bb26289d5da39d7996c794216f4d89b">  132</a></span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#a7bb26289d5da39d7996c794216f4d89b">objNameEdit</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ae07827304c19b4e71532fed5a4c65bb0">  136</a></span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#ae07827304c19b4e71532fed5a4c65bb0">matNameLbl</a>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#aba989cc01ddce5251f021419bfe3408f">  140</a></span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#aba989cc01ddce5251f021419bfe3408f">matNameEdit</a>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#acd0a5ccaa4e981b961685c5714e67f92">  144</a></span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#acd0a5ccaa4e981b961685c5714e67f92">upToDateLbl</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ac37df12581fc6f63aa87b2807d62fdb5">  148</a></span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#ac37df12581fc6f63aa87b2807d62fdb5">maxVolumeLbl</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ab738d2ef986a20be47a86bb676ae11db">  152</a></span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#ab738d2ef986a20be47a86bb676ae11db">maxVolumeEdit</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ad5339a1b07ae669a349478cf5c3b0fde">  156</a></span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#ad5339a1b07ae669a349478cf5c3b0fde">qualityLbl</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ab01869f0f594e103ea5698a480696b99">  160</a></span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#ab01869f0f594e103ea5698a480696b99">qualityEdit</a>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ab9b6df8a3367b4b5b56ef82ab1bd7aa3">  164</a></span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#ab9b6df8a3367b4b5b56ef82ab1bd7aa3">sensorDataLbl</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#afc9329945c39f48e441c410b0ff3d9fa">  168</a></span>&#160;    wxComboBox* <a class="code" href="classPropertiesBox.xhtml#afc9329945c39f48e441c410b0ff3d9fa">sensorDataList</a>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#affd4774a26bd75a30c1d1c07d02edd18">  172</a></span>&#160;    wxListBox* <a class="code" href="classPropertiesBox.xhtml#affd4774a26bd75a30c1d1c07d02edd18">matListBox</a>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#aa08a220302b1d89a196dc7e03a390bd6">  176</a></span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#aa08a220302b1d89a196dc7e03a390bd6">matListBoxLbl</a>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a1ff3669bf863d80a26d2d9874b1868e1">  180</a></span>&#160;    wxStaticBox* <a class="code" href="classPropertiesBox.xhtml#a1ff3669bf863d80a26d2d9874b1868e1">matPropBox</a>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a3f5165a466fd9204f758a6fbb17507ae">  184</a></span>&#160;    wxComboBox* <a class="code" href="classPropertiesBox.xhtml#a3f5165a466fd9204f758a6fbb17507ae">interpolationModeList</a>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a7184c404a73e32cee30ac299ef9fe649">  188</a></span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#a7184c404a73e32cee30ac299ef9fe649">interpolationModeLbl</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a0c71f6f0ea002a57ac0750e8ae9cdf13">  192</a></span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#a0c71f6f0ea002a57ac0750e8ae9cdf13">densityEdit</a>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a1c670a16a13cb03338867a35508f7f5a">  196</a></span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#a1c670a16a13cb03338867a35508f7f5a">densityLbl</a>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a7058b344520a2d9ba42fe9e9c1080faa">  200</a></span>&#160;    wxTextCtrl* <a class="code" href="classPropertiesBox.xhtml#a7058b344520a2d9ba42fe9e9c1080faa">specificHeatCapEdit</a>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ad49b95cb856e5f18d6717fc99ccd7b0b">  204</a></span>&#160;    wxStaticText* <a class="code" href="classPropertiesBox.xhtml#ad49b95cb856e5f18d6717fc99ccd7b0b">specificHeatCapLbl</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ab145e0c36e99d355f2722964da46b31a">  208</a></span>&#160;    <a class="code" href="classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. ">GUITimeline</a>* <a class="code" href="classPropertiesBox.xhtml#ab145e0c36e99d355f2722964da46b31a">sdTimeline</a>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a20498b8540b84cc8f4e691aa57c7a7c3">  213</a></span>&#160;    wxCheckBox* <a class="code" href="classPropertiesBox.xhtml#a20498b8540b84cc8f4e691aa57c7a7c3">analyzeMarkerCheckBox</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#af03e4a7248c0cb91f3978eadc0936c61">  217</a></span>&#160;    wxButton* <a class="code" href="classPropertiesBox.xhtml#af03e4a7248c0cb91f3978eadc0936c61">findMaxBt</a>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a93a88ce0e08aee33673b26ae63c7846f">  221</a></span>&#160;    wxButton* <a class="code" href="classPropertiesBox.xhtml#a93a88ce0e08aee33673b26ae63c7846f">clearAnalyzeMarkerBt</a>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ad4a347a273ab780cf1ab941a5cf6d4b0">  225</a></span>&#160;    wxButton* <a class="code" href="classPropertiesBox.xhtml#ad4a347a273ab780cf1ab941a5cf6d4b0">nextMarkerBt</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#ab315d0ce0bda89ebe2c003d141df2891">  229</a></span>&#160;    wxButton* <a class="code" href="classPropertiesBox.xhtml#ab315d0ce0bda89ebe2c003d141df2891">prevMarkerBt</a>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#aea93bc13aea5197dfe5d53f6c465c0ad">  233</a></span>&#160;    wxCheckBox* <a class="code" href="classPropertiesBox.xhtml#aea93bc13aea5197dfe5d53f6c465c0ad">autoUpdateCeckBox</a>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="code" href="classPropertiesBox.xhtml#a83244ddd61bfd31452a3a975b107becb">  237</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPropertiesBox.xhtml#a83244ddd61bfd31452a3a975b107becb">current_material</a>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;};</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PROPERTIESBOX_H_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Son Feb 9 2014 01:43:18 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

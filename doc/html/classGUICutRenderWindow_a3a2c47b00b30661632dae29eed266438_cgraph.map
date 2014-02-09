@@ -1,0 +1,10 @@
+<map id="GUICutRenderWindow::OnColorScaleChanged_spin" name="GUICutRenderWindow::OnColorScaleChanged_spin">
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" title="GUICutRenderWindow\l::OnColorScaleChanged" alt="" coords="248,143,411,190"/>
+<area shape="rect" id="node5" href="$classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" title="GUIRenderCutCanvas\l::getScalePanel" alt="" coords="459,5,613,51"/>
+<area shape="rect" id="node7" href="$classGUIColorScalePanel.xhtml#aba2363ced766a14d72ad5448502f62a4" title="GUIColorScalePanel\l::setMode" alt="" coords="465,74,607,121"/>
+<area shape="rect" id="node9" href="$classGUIColorScalePanel.xhtml#ae26f3f500092717aa7e9a85126b38461" title="GUIColorScalePanel\l::setFontSize" alt="" coords="465,143,607,190"/>
+<area shape="rect" id="node11" href="$classGUIColorScalePanel.xhtml#aba534a319236878bc3504050d8227fe4" title="GUIColorScalePanel\l::setStepWidth" alt="" coords="465,213,607,259"/>
+<area shape="rect" id="node13" href="$classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="GUIColorScalePanel\l::refresh" alt="" coords="465,282,607,329"/>
+<area shape="rect" id="node15" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Utils::hsvToRgb" alt="" coords="665,264,783,293"/>
+<area shape="rect" id="node17" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Utils::floattowxstr" alt="" coords="661,317,787,347"/>
+</map>

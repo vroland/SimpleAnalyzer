@@ -1,57 +1,434 @@
 \hypertarget{classRenderer}{\section{Renderer Klassenreferenz}
 \label{classRenderer}\index{Renderer@{Renderer}}
 }
+
+
+Zeichnet den Inhalt der 3\-D-\/\-Fensters.  
+
+
+
+
+{\ttfamily \#include $<$Renderer.\-h$>$}
+
+
+
+Zusammengehörigkeiten von Renderer\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRenderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRenderer_1_1Viewport__info}{Viewport\-\_\-info}
+\begin{DoxyCompactList}\small\item\em Informationen über die Ansicht des Modells (Virtuelle Kamera) und welche Elemente dargestellt werden. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Öffentliche Typen}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classRenderer_aa9844470f59e9fdf3aed088936100863}{Render\-Mode} \{ {\bfseries R\-M\-\_\-\-N\-O\-N\-E} = 0, 
+{\bfseries R\-M\-\_\-\-M\-A\-T\-E\-R\-I\-A\-L\-C\-O\-L\-O\-R}, 
+{\bfseries R\-M\-\_\-\-V\-A\-L\-U\-E\-C\-O\-L\-O\-R}
+ \}
+\end{DoxyCompactItemize}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classRenderer_a01887363ad27267e44c1ea0f63761a5c}{void {\bfseries init\-G\-L} (int width, int height)}\label{classRenderer_a01887363ad27267e44c1ea0f63761a5c}
-
+\hyperlink{classRenderer_a7ebf46f54dab9905f79b80f7fddb76a6}{Renderer} ()
 \item 
-\hypertarget{classRenderer_a9f4493c538688adaad4e4f0575fd3b8d}{void {\bfseries resize} (int width, int height)}\label{classRenderer_a9f4493c538688adaad4e4f0575fd3b8d}
-
+void \hyperlink{classRenderer_a01887363ad27267e44c1ea0f63761a5c}{init\-G\-L} (int width, int height)
 \item 
-\hypertarget{classRenderer_af7e5f8f68742f198e315fb4683a605a4}{void {\bfseries render} ()}\label{classRenderer_af7e5f8f68742f198e315fb4683a605a4}
-
+void \hyperlink{classRenderer_a9f4493c538688adaad4e4f0575fd3b8d}{resize} (int width, int height)
 \item 
-\hypertarget{classRenderer_a9db67fbbd309875b564ca1df08daf372}{void {\bfseries set\-Object} (\hyperlink{classObjectData}{Object\-Data} $\ast$obj)}\label{classRenderer_a9db67fbbd309875b564ca1df08daf372}
-
+void \hyperlink{classRenderer_af7e5f8f68742f198e315fb4683a605a4}{render} ()
 \item 
-\hypertarget{classRenderer_a566b30ae615b9cd74d481f360e0a567e}{void {\bfseries set\-Cut\-Render\-Info} (\hyperlink{structUtils_1_1CutRender__info}{Cut\-Render\-\_\-info} $\ast$info)}\label{classRenderer_a566b30ae615b9cd74d481f360e0a567e}
-
+void \hyperlink{classRenderer_a9db67fbbd309875b564ca1df08daf372}{set\-Object} (\hyperlink{classObjectData}{Object\-Data} $\ast$obj)
 \item 
-\hypertarget{classRenderer_afe4e5a9e26320e0b8276b2d0f82a1827}{wx\-Image $\ast$ {\bfseries get\-Viewport\-Image} ()}\label{classRenderer_afe4e5a9e26320e0b8276b2d0f82a1827}
-
-\end{DoxyCompactItemize}
-\subsection*{Öffentliche Attribute}
-\begin{DoxyCompactItemize}
+void \hyperlink{classRenderer_a566b30ae615b9cd74d481f360e0a567e}{set\-Cut\-Render\-Info} (\hyperlink{structUtils_1_1CutRender__info}{Cut\-Render\-\_\-info} $\ast$info)
 \item 
-\hypertarget{classRenderer_a4428a5ef0ceaf4de5c9991a40990994d}{\hyperlink{structViewport__info}{Viewport\-\_\-info} {\bfseries viewport}}\label{classRenderer_a4428a5ef0ceaf4de5c9991a40990994d}
-
+wx\-Image $\ast$ \hyperlink{classRenderer_afe4e5a9e26320e0b8276b2d0f82a1827}{get\-Viewport\-Image} ()
+\item 
+\hyperlink{structRenderer_1_1Viewport__info}{Viewport\-\_\-info} $\ast$ \hyperlink{classRenderer_a5bfa9daf1a53660f1cf6c254665253e2}{get\-Viewport} ()
+\item 
+virtual \hyperlink{classRenderer_afeee408862d5bd6255a6882d47e6d5cd}{$\sim$\-Renderer} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classRenderer_a5590ecdd9e913a59313c5612b5d4d2bd}{void {\bfseries render\-Material} (\hyperlink{structMaterialData}{Material\-Data} $\ast$mat)}\label{classRenderer_a5590ecdd9e913a59313c5612b5d4d2bd}
-
+void \hyperlink{classRenderer_acb6c468b92221cf8a121b87a70a3da0c}{render\-Material} (\hyperlink{structObjectData_1_1MaterialData}{Object\-Data\-::\-Material\-Data} $\ast$mat)
 \item 
-\hypertarget{classRenderer_acfb25891ff9341a9d5834105e711e162}{void {\bfseries render\-Tetrahedra} (\hyperlink{structMaterialData}{Material\-Data} $\ast$mat, int rendermode)}\label{classRenderer_acfb25891ff9341a9d5834105e711e162}
-
+void \hyperlink{classRenderer_a927f376a6283de3181b86f65b927386c}{render\-Tetrahedra} (\hyperlink{structObjectData_1_1MaterialData}{Object\-Data\-::\-Material\-Data} $\ast$mat, \hyperlink{classRenderer_aa9844470f59e9fdf3aed088936100863}{Render\-Mode} rendermode)
 \item 
-\hypertarget{classRenderer_ad2eac0343aef1abd05ed95b1b364785f}{void {\bfseries render\-Sensor\-Data} (vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $>$ $\ast$data)}\label{classRenderer_ad2eac0343aef1abd05ed95b1b364785f}
-
+void \hyperlink{classRenderer_ad2eac0343aef1abd05ed95b1b364785f}{render\-Sensor\-Data} (vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $>$ $\ast$data)
 \end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classRenderer_a4ad4a42fe6bfd32ff3ef4bb1d59f8f96}{\hyperlink{classObjectData}{Object\-Data} $\ast$ {\bfseries object}}\label{classRenderer_a4ad4a42fe6bfd32ff3ef4bb1d59f8f96}
-
+\hyperlink{structRenderer_1_1Viewport__info}{Viewport\-\_\-info} \hyperlink{classRenderer_a4428a5ef0ceaf4de5c9991a40990994d}{viewport}
 \item 
-\hypertarget{classRenderer_a119b7d1e3eb740a118e269758dd1a906}{\hyperlink{structUtils_1_1CutRender__info}{Cut\-Render\-\_\-info} $\ast$ {\bfseries cut\-\_\-visualisation\-\_\-info}}\label{classRenderer_a119b7d1e3eb740a118e269758dd1a906}
-
+\hyperlink{classObjectData}{Object\-Data} $\ast$ \hyperlink{classRenderer_a4ad4a42fe6bfd32ff3ef4bb1d59f8f96}{object}
 \item 
-\hypertarget{classRenderer_a165ec913fa058d0a38f5e7b7635adfd2}{int {\bfseries display\-List}}\label{classRenderer_a165ec913fa058d0a38f5e7b7635adfd2}
-
+\hyperlink{structUtils_1_1CutRender__info}{Cut\-Render\-\_\-info} $\ast$ \hyperlink{classRenderer_a119b7d1e3eb740a118e269758dd1a906}{cut\-\_\-visualisation\-\_\-info}
+\item 
+int \hyperlink{classRenderer_a165ec913fa058d0a38f5e7b7635adfd2}{display\-List}
 \end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Zeichnet den Inhalt der 3\-D-\/\-Fensters. 
+
+Zeichnet das 3\-D-\/\-Objekt, Sensordaten und Koordinatensystem je nach Visualisierungsoptionen mithilfe der Open\-G\-L-\/\-Bibliothek. 
+
+Definiert in Zeile 24 der Datei Renderer.\-h.
+
+
+
+\subsection{Dokumentation der Aufzählungstypen}
+\hypertarget{classRenderer_aa9844470f59e9fdf3aed088936100863}{\index{Renderer@{Renderer}!Render\-Mode@{Render\-Mode}}
+\index{Render\-Mode@{Render\-Mode}!Renderer@{Renderer}}
+\subsubsection[{Render\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Renderer\-::\-Render\-Mode}}}\label{classRenderer_aa9844470f59e9fdf3aed088936100863}
+Darstellungsmodus für Elemente /\-Punkte, Kanten, Flächen) des 3\-D-\/\-Objekts. 
+
+Definiert in Zeile 29 der Datei Renderer.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classRenderer_a7ebf46f54dab9905f79b80f7fddb76a6}{\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!Renderer@{Renderer}}
+\subsubsection[{Renderer}]{\setlength{\rightskip}{0pt plus 5cm}Renderer\-::\-Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRenderer_a7ebf46f54dab9905f79b80f7fddb76a6}
+Der Konstruktor. 
+
+Definiert in Zeile 20 der Datei Renderer.\-cpp.
+
+\hypertarget{classRenderer_afeee408862d5bd6255a6882d47e6d5cd}{\index{Renderer@{Renderer}!$\sim$\-Renderer@{$\sim$\-Renderer}}
+\index{$\sim$\-Renderer@{$\sim$\-Renderer}!Renderer@{Renderer}}
+\subsubsection[{$\sim$\-Renderer}]{\setlength{\rightskip}{0pt plus 5cm}Renderer\-::$\sim$\-Renderer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRenderer_afeee408862d5bd6255a6882d47e6d5cd}
+Der Destruktor. 
+
+Definiert in Zeile 525 der Datei Renderer.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classRenderer_a5bfa9daf1a53660f1cf6c254665253e2}{\index{Renderer@{Renderer}!get\-Viewport@{get\-Viewport}}
+\index{get\-Viewport@{get\-Viewport}!Renderer@{Renderer}}
+\subsubsection[{get\-Viewport}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Renderer\-::\-Viewport\-\_\-info} $\ast$ Renderer\-::get\-Viewport (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRenderer_a5bfa9daf1a53660f1cf6c254665253e2}
+Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. 
+
+Definiert in Zeile 43 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRenderer_a5bfa9daf1a53660f1cf6c254665253e2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRenderer_afe4e5a9e26320e0b8276b2d0f82a1827}{\index{Renderer@{Renderer}!get\-Viewport\-Image@{get\-Viewport\-Image}}
+\index{get\-Viewport\-Image@{get\-Viewport\-Image}!Renderer@{Renderer}}
+\subsubsection[{get\-Viewport\-Image}]{\setlength{\rightskip}{0pt plus 5cm}wx\-Image $\ast$ Renderer\-::get\-Viewport\-Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRenderer_afe4e5a9e26320e0b8276b2d0f82a1827}
+Gibt den Inhalt der Zeichenfläche als Bild zurück. 
+
+Definiert in Zeile 407 der Datei Renderer.\-cpp.
+
+\hypertarget{classRenderer_a01887363ad27267e44c1ea0f63761a5c}{\index{Renderer@{Renderer}!init\-G\-L@{init\-G\-L}}
+\index{init\-G\-L@{init\-G\-L}!Renderer@{Renderer}}
+\subsubsection[{init\-G\-L}]{\setlength{\rightskip}{0pt plus 5cm}void Renderer\-::init\-G\-L (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{classRenderer_a01887363ad27267e44c1ea0f63761a5c}
+Initialisiert die Open\-G\-L-\/\-Bibliothek. 
+\begin{DoxyParams}{Parameter}
+{\em width} & Breite des Anzeigebereichs. \\
+\hline
+{\em height} & Höhe des Anzeigebereichs. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 253 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classRenderer_a01887363ad27267e44c1ea0f63761a5c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRenderer_af7e5f8f68742f198e315fb4683a605a4}{\index{Renderer@{Renderer}!render@{render}}
+\index{render@{render}!Renderer@{Renderer}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Renderer\-::render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRenderer_af7e5f8f68742f198e315fb4683a605a4}
+Zeichnet das Objekt (Attribut object). 
+
+Definiert in Zeile 434 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRenderer_af7e5f8f68742f198e315fb4683a605a4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classRenderer_af7e5f8f68742f198e315fb4683a605a4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRenderer_acb6c468b92221cf8a121b87a70a3da0c}{\index{Renderer@{Renderer}!render\-Material@{render\-Material}}
+\index{render\-Material@{render\-Material}!Renderer@{Renderer}}
+\subsubsection[{render\-Material}]{\setlength{\rightskip}{0pt plus 5cm}void Renderer\-::render\-Material (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\-Data\-::\-Material\-Data} $\ast$}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classRenderer_acb6c468b92221cf8a121b87a70a3da0c}
+Zeichnet die Elemente eines Materials des Objekts. 
+\begin{DoxyParams}{Parameter}
+{\em mat} & Das zu zeichnende Material. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 212 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classRenderer_acb6c468b92221cf8a121b87a70a3da0c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRenderer_ad2eac0343aef1abd05ed95b1b364785f}{\index{Renderer@{Renderer}!render\-Sensor\-Data@{render\-Sensor\-Data}}
+\index{render\-Sensor\-Data@{render\-Sensor\-Data}!Renderer@{Renderer}}
+\subsubsection[{render\-Sensor\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Renderer\-::render\-Sensor\-Data (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf Sensor\-Point} $>$ $\ast$}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classRenderer_ad2eac0343aef1abd05ed95b1b364785f}
+Zeichnet Sensordaten als Punkte. 
+\begin{DoxyParams}{Parameter}
+{\em data} & Sensordaten als Liste von Punkten. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 189 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classRenderer_ad2eac0343aef1abd05ed95b1b364785f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRenderer_a927f376a6283de3181b86f65b927386c}{\index{Renderer@{Renderer}!render\-Tetrahedra@{render\-Tetrahedra}}
+\index{render\-Tetrahedra@{render\-Tetrahedra}!Renderer@{Renderer}}
+\subsubsection[{render\-Tetrahedra}]{\setlength{\rightskip}{0pt plus 5cm}void Renderer\-::render\-Tetrahedra (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\-Data\-::\-Material\-Data} $\ast$}]{mat, }
+\item[{{\bf Render\-Mode}}]{rendermode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classRenderer_a927f376a6283de3181b86f65b927386c}
+Zeichnet die Tetraeder eines Materials des Objekts. 
+\begin{DoxyParams}{Parameter}
+{\em mat} & Das zu zeichnende Material. \\
+\hline
+{\em rendermode} & Der zu verwendende Zeichenmodus. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 95 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRenderer_a927f376a6283de3181b86f65b927386c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRenderer_a9f4493c538688adaad4e4f0575fd3b8d}{\index{Renderer@{Renderer}!resize@{resize}}
+\index{resize@{resize}!Renderer@{Renderer}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}void Renderer\-::resize (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{classRenderer_a9f4493c538688adaad4e4f0575fd3b8d}
+Verändert die Größe des Anzeigebereichs. 
+\begin{DoxyParams}{Parameter}
+{\em width} & Neue Breite des Anzeigebereichs. \\
+\hline
+{\em height} & Neue Höhe des Anzeigebereichs. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 265 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classRenderer_a9f4493c538688adaad4e4f0575fd3b8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRenderer_a566b30ae615b9cd74d481f360e0a567e}{\index{Renderer@{Renderer}!set\-Cut\-Render\-Info@{set\-Cut\-Render\-Info}}
+\index{set\-Cut\-Render\-Info@{set\-Cut\-Render\-Info}!Renderer@{Renderer}}
+\subsubsection[{set\-Cut\-Render\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void Renderer\-::set\-Cut\-Render\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Cut\-Render\-\_\-info} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{classRenderer_a566b30ae615b9cd74d481f360e0a567e}
+Setzt die Eigenschaften einer 2\-D-\/\-Temperaturverteilung, welche teilweise zur Visualisierung der Ebene der 2\-D-\/\-Temperaturverteilung benötigt werden. N\-U\-L\-L bedeutet keine Visualisierung. 
+\begin{DoxyParams}{Parameter}
+{\em info} & Die Eigenschaften der 2\-D-\/\-Temperaturverteilung. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 375 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRenderer_a566b30ae615b9cd74d481f360e0a567e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRenderer_a9db67fbbd309875b564ca1df08daf372}{\index{Renderer@{Renderer}!set\-Object@{set\-Object}}
+\index{set\-Object@{set\-Object}!Renderer@{Renderer}}
+\subsubsection[{set\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void Renderer\-::set\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\-Data} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classRenderer_a9db67fbbd309875b564ca1df08daf372}
+Setzt das zu zeichnende Objekt. 
+\begin{DoxyParams}{Parameter}
+{\em obj} & Das zu zeichnende Objekt. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 385 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classRenderer_a9db67fbbd309875b564ca1df08daf372_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRenderer_a9db67fbbd309875b564ca1df08daf372_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classRenderer_a119b7d1e3eb740a118e269758dd1a906}{\index{Renderer@{Renderer}!cut\-\_\-visualisation\-\_\-info@{cut\-\_\-visualisation\-\_\-info}}
+\index{cut\-\_\-visualisation\-\_\-info@{cut\-\_\-visualisation\-\_\-info}!Renderer@{Renderer}}
+\subsubsection[{cut\-\_\-visualisation\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cut\-Render\-\_\-info}$\ast$ Renderer\-::cut\-\_\-visualisation\-\_\-info\hspace{0.3cm}{\ttfamily [private]}}}\label{classRenderer_a119b7d1e3eb740a118e269758dd1a906}
+Eigenschaften einer 2\-D-\/\-Temperaturverteilung, welche teilweise zur Visualisierung der Ebene der 2\-D-\/\-Temperaturverteilung benötigt werden. N\-U\-L\-L bedeutet keine Visualisierung. 
+
+Definiert in Zeile 128 der Datei Renderer.\-h.
+
+\hypertarget{classRenderer_a165ec913fa058d0a38f5e7b7635adfd2}{\index{Renderer@{Renderer}!display\-List@{display\-List}}
+\index{display\-List@{display\-List}!Renderer@{Renderer}}
+\subsubsection[{display\-List}]{\setlength{\rightskip}{0pt plus 5cm}int Renderer\-::display\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classRenderer_a165ec913fa058d0a38f5e7b7635adfd2}
+Adresse der Open\-G\-L-\/\-Displaylist, die die Geometriedaten auf der Grafikkarte vorhält. 
+
+Definiert in Zeile 132 der Datei Renderer.\-h.
+
+\hypertarget{classRenderer_a4ad4a42fe6bfd32ff3ef4bb1d59f8f96}{\index{Renderer@{Renderer}!object@{object}}
+\index{object@{object}!Renderer@{Renderer}}
+\subsubsection[{object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Data}$\ast$ Renderer\-::object\hspace{0.3cm}{\ttfamily [private]}}}\label{classRenderer_a4ad4a42fe6bfd32ff3ef4bb1d59f8f96}
+Das darzustellende Objekt. 
+
+Definiert in Zeile 122 der Datei Renderer.\-h.
+
+\hypertarget{classRenderer_a4428a5ef0ceaf4de5c9991a40990994d}{\index{Renderer@{Renderer}!viewport@{viewport}}
+\index{viewport@{viewport}!Renderer@{Renderer}}
+\subsubsection[{viewport}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Viewport\-\_\-info} Renderer\-::viewport\hspace{0.3cm}{\ttfamily [private]}}}\label{classRenderer_a4428a5ef0ceaf4de5c9991a40990994d}
+Informationen über die Darstellung des zu zeichnenden Inhalts. 
+
+Definiert in Zeile 118 der Datei Renderer.\-h.
+
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

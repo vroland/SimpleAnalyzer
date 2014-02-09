@@ -1,0 +1,7 @@
+<map id="GUIMainWindow::OnMenuImportSD" name="GUIMainWindow::OnMenuImportSD">
+<area shape="rect" id="node3" href="$classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" title="ObjectData::addSensorData" alt="" coords="288,67,475,96"/>
+<area shape="rect" id="node5" href="$classImporter.xhtml#a001bd26372d94f96de66f7bcb90cc790" title="Importer::LoadSensorData" alt="" coords="524,67,697,96"/>
+<area shape="rect" id="node7" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="ObjectData::getSensorDataList" alt="" coords="748,5,951,35"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="ObjectData::getCurrentSensor\lIndex" alt="" coords="751,58,948,105"/>
+<area shape="rect" id="node11" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="ObjectData::setCurrentSensor\lIndex" alt="" coords="751,127,948,174"/>
+</map>

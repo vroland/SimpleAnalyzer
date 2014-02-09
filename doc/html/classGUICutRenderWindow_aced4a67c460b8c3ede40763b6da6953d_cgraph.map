@@ -1,0 +1,6 @@
+<map id="GUICutRenderWindow::~GUICutRenderWindow" name="GUICutRenderWindow::~GUICutRenderWindow">
+<area shape="rect" id="node3" href="$classGUIMainWindow.xhtml#a4b8b9293b800ca5ff47d1cb3a75f06a5" title="GUIMainWindow::setCutRender\lWindowStatus" alt="" coords="227,5,437,51"/>
+<area shape="rect" id="node5" href="$classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d" title="GUIMainWindow::getGLCanvas" alt="" coords="228,75,436,104"/>
+<area shape="rect" id="node7" href="$classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" title="GUIGLCanvas::getRenderer" alt="" coords="239,128,425,157"/>
+<area shape="rect" id="node9" href="$classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e" title="Renderer::setCutRenderInfo" alt="" coords="239,181,425,211"/>
+</map>

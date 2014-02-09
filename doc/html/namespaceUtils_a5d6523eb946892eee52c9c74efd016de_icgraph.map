@@ -1,0 +1,11 @@
+<map id="Utils::hsvToRgb" name="Utils::hsvToRgb">
+<area shape="rect" id="node3" href="$classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="GUIColorScalePanel\l::refresh" alt="" coords="195,74,336,121"/>
+<area shape="rect" id="node15" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Renderer::renderTetrahedra" alt="" coords="175,144,356,173"/>
+<area shape="rect" id="node17" href="$classRenderer.xhtml#ad2eac0343aef1abd05ed95b1b364785f" title="Renderer::renderSensorData" alt="" coords="172,197,359,227"/>
+<area shape="rect" id="node19" href="$classRenderer.xhtml#acb6c468b92221cf8a121b87a70a3da0c" title="Renderer::renderMaterial" alt="" coords="183,251,348,280"/>
+<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="GUICutRenderWindow\l::renderImage" alt="" coords="412,5,567,51"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a0923a36cdf4e0094d78f623693ff8ac6" title="GUICutRenderWindow\l::OnCSColorBtClick" alt="" coords="412,74,567,121"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" title="GUICutRenderWindow\l::OnColorScaleChanged" alt="" coords="408,143,571,190"/>
+<area shape="rect" id="node7" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="GUICutRenderWindow\l::renderCutBtClick" alt="" coords="639,5,793,51"/>
+<area shape="rect" id="node13" href="$classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438" title="GUICutRenderWindow\l::OnColorScaleChanged_spin" alt="" coords="619,143,813,190"/>
+</map>

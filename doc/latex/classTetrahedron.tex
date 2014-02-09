@@ -1,33 +1,212 @@
 \hypertarget{classTetrahedron}{\section{Tetrahedron Klassenreferenz}
 \label{classTetrahedron}\index{Tetrahedron@{Tetrahedron}}
 }
+
+
+Ein durch 4 Ortsvektoren beschriebener Tetraeder.  
+
+
+
+
+{\ttfamily \#include $<$Geometry\-Classes.\-h$>$}
+
+
+
+Zusammengehörigkeiten von Tetrahedron\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classTetrahedron__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classTetrahedron_a84e19dba5735a455269abca8229b4bb4}{{\bfseries Tetrahedron} (\hyperlink{classVector3D}{Vector3\-D} $\ast$v1, \hyperlink{classVector3D}{Vector3\-D} $\ast$v2, \hyperlink{classVector3D}{Vector3\-D} $\ast$v3, \hyperlink{classVector3D}{Vector3\-D} $\ast$v4)}\label{classTetrahedron_a84e19dba5735a455269abca8229b4bb4}
-
+\hyperlink{classTetrahedron_a84e19dba5735a455269abca8229b4bb4}{Tetrahedron} (\hyperlink{classVector3D}{Vector3\-D} $\ast$v1, \hyperlink{classVector3D}{Vector3\-D} $\ast$v2, \hyperlink{classVector3D}{Vector3\-D} $\ast$v3, \hyperlink{classVector3D}{Vector3\-D} $\ast$v4)
 \item 
-\hypertarget{classTetrahedron_add51e42ab17afbd023d47a436ce24b0d}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries get\-V1} ()}\label{classTetrahedron_add51e42ab17afbd023d47a436ce24b0d}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTetrahedron_add51e42ab17afbd023d47a436ce24b0d}{get\-V1} ()
 \item 
-\hypertarget{classTetrahedron_aa728c967f17e2b8408009b5f2b77a17a}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries get\-V2} ()}\label{classTetrahedron_aa728c967f17e2b8408009b5f2b77a17a}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTetrahedron_aa728c967f17e2b8408009b5f2b77a17a}{get\-V2} ()
 \item 
-\hypertarget{classTetrahedron_aa539a97f133ea621520121acb2ef4a7e}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries get\-V3} ()}\label{classTetrahedron_aa539a97f133ea621520121acb2ef4a7e}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTetrahedron_aa539a97f133ea621520121acb2ef4a7e}{get\-V3} ()
 \item 
-\hypertarget{classTetrahedron_a7308b7b73edeba7782dff551a03095bf}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries get\-V4} ()}\label{classTetrahedron_a7308b7b73edeba7782dff551a03095bf}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTetrahedron_a7308b7b73edeba7782dff551a03095bf}{get\-V4} ()
 \item 
-\hypertarget{classTetrahedron_a791cea462ef057ef949c16a6db5a37c0}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries get\-Vert} (int i)}\label{classTetrahedron_a791cea462ef057ef949c16a6db5a37c0}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTetrahedron_a88afe41ae5991168ad51ba4dbb2e1a6b}{get\-Vert} (int index)
 \end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classTetrahedron_a4bb7ad83965859998a622b35a97ad935}{\hyperlink{classVector3D}{Vector3\-D} $\ast$ {\bfseries verts} \mbox{[}4\mbox{]}}\label{classTetrahedron_a4bb7ad83965859998a622b35a97ad935}
-
+\hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classTetrahedron_a4bb7ad83965859998a622b35a97ad935}{verts} \mbox{[}4\mbox{]}
 \end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Ein durch 4 Ortsvektoren beschriebener Tetraeder. 
+
+Definiert in Zeile 243 der Datei Geometry\-Classes.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classTetrahedron_a84e19dba5735a455269abca8229b4bb4}{\index{Tetrahedron@{Tetrahedron}!Tetrahedron@{Tetrahedron}}
+\index{Tetrahedron@{Tetrahedron}!Tetrahedron@{Tetrahedron}}
+\subsubsection[{Tetrahedron}]{\setlength{\rightskip}{0pt plus 5cm}Tetrahedron\-::\-Tetrahedron (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3\-D} $\ast$}]{v1, }
+\item[{{\bf Vector3\-D} $\ast$}]{v2, }
+\item[{{\bf Vector3\-D} $\ast$}]{v3, }
+\item[{{\bf Vector3\-D} $\ast$}]{v4}
+\end{DoxyParamCaption}
+)}}\label{classTetrahedron_a84e19dba5735a455269abca8229b4bb4}
+Der Konstruktor. Die übergebenen Vektorobjekte werden als Element der Klasse gespeichert (nicht kopiert). 
+\begin{DoxyParams}{Parameter}
+{\em v1} & Ortsvektor zum 1. Punkt des Tetraeders. \\
+\hline
+{\em v2} & Ortsvektor zum 2. Punkt des Tetraeders. \\
+\hline
+{\em v3} & Ortsvektor zum 3. Punkt des Tetraeders. \\
+\hline
+{\em v4} & Ortsvektor zum 4. Punkt des Tetraeders. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 232 der Datei Geometry\-Classes.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classTetrahedron_add51e42ab17afbd023d47a436ce24b0d}{\index{Tetrahedron@{Tetrahedron}!get\-V1@{get\-V1}}
+\index{get\-V1@{get\-V1}!Tetrahedron@{Tetrahedron}}
+\subsubsection[{get\-V1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Tetrahedron\-::get\-V1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTetrahedron_add51e42ab17afbd023d47a436ce24b0d}
+Gibt eine Referenz auf den Ortsvektor zum 1. Punkt des Tetraeders zurück. 
+
+Definiert in Zeile 238 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTetrahedron_add51e42ab17afbd023d47a436ce24b0d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTetrahedron_aa728c967f17e2b8408009b5f2b77a17a}{\index{Tetrahedron@{Tetrahedron}!get\-V2@{get\-V2}}
+\index{get\-V2@{get\-V2}!Tetrahedron@{Tetrahedron}}
+\subsubsection[{get\-V2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Tetrahedron\-::get\-V2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTetrahedron_aa728c967f17e2b8408009b5f2b77a17a}
+Gibt eine Referenz auf den Ortsvektor zum 2. Punkt des Tetraeders zurück. 
+
+Definiert in Zeile 241 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTetrahedron_aa728c967f17e2b8408009b5f2b77a17a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTetrahedron_aa539a97f133ea621520121acb2ef4a7e}{\index{Tetrahedron@{Tetrahedron}!get\-V3@{get\-V3}}
+\index{get\-V3@{get\-V3}!Tetrahedron@{Tetrahedron}}
+\subsubsection[{get\-V3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Tetrahedron\-::get\-V3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTetrahedron_aa539a97f133ea621520121acb2ef4a7e}
+Gibt eine Referenz auf den Ortsvektor zum 3. Punkt des Tetraeders zurück. 
+
+Definiert in Zeile 244 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTetrahedron_aa539a97f133ea621520121acb2ef4a7e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTetrahedron_a7308b7b73edeba7782dff551a03095bf}{\index{Tetrahedron@{Tetrahedron}!get\-V4@{get\-V4}}
+\index{get\-V4@{get\-V4}!Tetrahedron@{Tetrahedron}}
+\subsubsection[{get\-V4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Tetrahedron\-::get\-V4 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTetrahedron_a7308b7b73edeba7782dff551a03095bf}
+Gibt eine Referenz auf den Ortsvektor zum 3. Punkt des Tetraeders zurück. 
+
+Definiert in Zeile 247 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTetrahedron_a7308b7b73edeba7782dff551a03095bf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTetrahedron_a88afe41ae5991168ad51ba4dbb2e1a6b}{\index{Tetrahedron@{Tetrahedron}!get\-Vert@{get\-Vert}}
+\index{get\-Vert@{get\-Vert}!Tetrahedron@{Tetrahedron}}
+\subsubsection[{get\-Vert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D} $\ast$ Tetrahedron\-::get\-Vert (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classTetrahedron_a88afe41ae5991168ad51ba4dbb2e1a6b}
+Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Tetraeders zurück. 
+\begin{DoxyParams}{Parameter}
+{\em index} & Der Index des gesuchten Punktes (0..3). \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 250 der Datei Geometry\-Classes.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTetrahedron_a88afe41ae5991168ad51ba4dbb2e1a6b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classTetrahedron_a4bb7ad83965859998a622b35a97ad935}{\index{Tetrahedron@{Tetrahedron}!verts@{verts}}
+\index{verts@{verts}!Tetrahedron@{Tetrahedron}}
+\subsubsection[{verts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-D}$\ast$ Tetrahedron\-::verts\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classTetrahedron_a4bb7ad83965859998a622b35a97ad935}
+Die Referenzen auf die Ortsvektoren zu den Eckpunkten des Tetraeders. 
+
+Definiert in Zeile 278 der Datei Geometry\-Classes.\-h.
+
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

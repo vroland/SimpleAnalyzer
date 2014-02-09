@@ -1,0 +1,8 @@
+<map id="GUIRenderCutCanvas::getScalePanel" name="GUIRenderCutCanvas::getScalePanel">
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="GUICutRenderWindow\l::renderImage" alt="" coords="212,5,367,51"/>
+<area shape="rect" id="node7" href="$classGUICutRenderWindow.xhtml#a97f4602acc61f4b62c4d90ddbb692a25" title="GUICutRenderWindow\l::OnExportImage" alt="" coords="212,74,367,121"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a0923a36cdf4e0094d78f623693ff8ac6" title="GUICutRenderWindow\l::OnCSColorBtClick" alt="" coords="212,143,367,190"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" title="GUICutRenderWindow\l::OnColorScaleChanged" alt="" coords="208,213,371,259"/>
+<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="GUICutRenderWindow\l::renderCutBtClick" alt="" coords="439,5,593,51"/>
+<area shape="rect" id="node13" href="$classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438" title="GUICutRenderWindow\l::OnColorScaleChanged_spin" alt="" coords="419,213,613,259"/>
+</map>

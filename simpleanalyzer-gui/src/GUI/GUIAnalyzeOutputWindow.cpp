@@ -49,7 +49,7 @@ void GUIAnalyzeOutputWindow::Update() {
 	table->AppendRows(obj_prop_count+material_prop_cout+1,true);
 	for (unsigned int o=0;o<data_objects.size();o++) {
 		ObjectData* obj = data_objects.at(o);
-		AnalyzerData_object data;
+		Analyzer::AnalyzerData_object data;
 		Analyzer analyzer;
 		analyzer.analyzeObject(data_objects.at(o),&data);
 		int matcount = obj->materials.size();
@@ -60,7 +60,7 @@ void GUIAnalyzeOutputWindow::Update() {
 		table->SetCellAlignment(wxALIGN_CENTRE,0,all_mat_cell_count);
 		int materialcells = 0;
 		for (int s=0;s<sdcount;s++) {
-			AnalyzerData_dataset* data_set = &data.data_sets.at(s);
+			Analyzer::AnalyzerData_dataset* data_set = &data.data_sets.at(s);
 			for (int i=0;i<obj_prop_count;i++) {
 				table->SetCellSize(i+1,all_mat_cell_count+s*matcount , 1, matcount);
 			};
@@ -70,7 +70,7 @@ void GUIAnalyzeOutputWindow::Update() {
 			table->SetCellValue(3,all_mat_cell_count+s*matcount,wxString::FromAscii(ftostr(data_set->heat_energy).c_str()));
 
 			for (int i=0;i<matcount;i++) {
-				AnalyzerData_material* mat = &data_set->mat_data.at(i);
+				Analyzer::AnalyzerData_material* mat = &data_set->mat_data.at(i);
 				materialcells++;
 				table->SetCellValue(obj_prop_count+1,all_mat_cell_count+s*matcount+i,wxString::FromAscii(mat->name.c_str()));
 				table->SetCellAlignment(wxALIGN_CENTRE,obj_prop_count+1,all_mat_cell_count+s*matcount+i);

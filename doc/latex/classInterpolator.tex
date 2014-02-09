@@ -1,24 +1,203 @@
 \hypertarget{classInterpolator}{\section{Interpolator Klassenreferenz}
 \label{classInterpolator}\index{Interpolator@{Interpolator}}
 }
+
+
+2-\/ und 3-\/dimensionale Inter-\//\-Extrapolation  
+
+
+
+
+{\ttfamily \#include $<$Interpolator.\-h$>$}
+
+\subsection*{Öffentliche Typen}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{Interpolation\-Mode} \{ {\bfseries L\-I\-N\-E\-A\-R}, 
+{\bfseries L\-O\-G\-A\-R\-I\-T\-H\-M\-I\-C}
+ \}
+\end{DoxyCompactItemize}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classInterpolator_ad59ac6ed3822e08a67ac7d1ee88a5bd2}{double {\bfseries interpolate\-Tri} (\hyperlink{classTriangle}{Triangle} $\ast$tri, \hyperlink{classVector3D}{Vector3\-D} $\ast$pos, double $\ast$values)}\label{classInterpolator_ad59ac6ed3822e08a67ac7d1ee88a5bd2}
-
+\hyperlink{classInterpolator_ab8cbb0b13436fc54a4bba03804ae8f8a}{Interpolator} ()
 \item 
-\hypertarget{classInterpolator_a30e714ca6dff9b5745d029f95af1420a}{double {\bfseries interpolate\-Tet} (\hyperlink{classTetrahedron}{Tetrahedron} $\ast$tet, \hyperlink{classVector3D}{Vector3\-D} $\ast$pos, double $\ast$values)}\label{classInterpolator_a30e714ca6dff9b5745d029f95af1420a}
-
+double \hyperlink{classInterpolator_ad59ac6ed3822e08a67ac7d1ee88a5bd2}{interpolate\-Tri} (\hyperlink{classTriangle}{Triangle} $\ast$tri, \hyperlink{classVector3D}{Vector3\-D} $\ast$pos, double $\ast$values)
 \item 
-\hypertarget{classInterpolator_a2f9927fc580de7d2f94d85e6ca3ee3e3}{void {\bfseries set\-Mode} (Interpolation\-Mode mode)}\label{classInterpolator_a2f9927fc580de7d2f94d85e6ca3ee3e3}
-
+double \hyperlink{classInterpolator_a30e714ca6dff9b5745d029f95af1420a}{interpolate\-Tet} (\hyperlink{classTetrahedron}{Tetrahedron} $\ast$tet, \hyperlink{classVector3D}{Vector3\-D} $\ast$pos, double $\ast$values)
+\item 
+void \hyperlink{classInterpolator_a2f9927fc580de7d2f94d85e6ca3ee3e3}{set\-Mode} (\hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{Interpolation\-Mode} \hyperlink{classInterpolator_ace34e7696bdf4a1f0544b145efee898e}{mode})
+\item 
+virtual \hyperlink{classInterpolator_a6bb406dfe33e06296ccf24f18abcd46c}{$\sim$\-Interpolator} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attribute}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classInterpolator_ace34e7696bdf4a1f0544b145efee898e}{Interpolation\-Mode {\bfseries mode}}\label{classInterpolator_ace34e7696bdf4a1f0544b145efee898e}
-
+\hyperlink{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{Interpolation\-Mode} \hyperlink{classInterpolator_ace34e7696bdf4a1f0544b145efee898e}{mode}
 \end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+2-\/ und 3-\/dimensionale Inter-\//\-Extrapolation 
+
+Klasse zur Bi-\/ und Trilinearen Inter-\//\-Extrapolation, wobei die Interpolationsfunktion zwischen zwei Werten entweder linear oder logarithmisch sein kann (Interpolation\-Mode). 
+
+Definiert in Zeile 20 der Datei Interpolator.\-h.
+
+
+
+\subsection{Dokumentation der Aufzählungstypen}
+\hypertarget{classInterpolator_adb733b1439a2903feae57fa734ced0c2}{\index{Interpolator@{Interpolator}!Interpolation\-Mode@{Interpolation\-Mode}}
+\index{Interpolation\-Mode@{Interpolation\-Mode}!Interpolator@{Interpolator}}
+\subsubsection[{Interpolation\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Interpolator\-::\-Interpolation\-Mode}}}\label{classInterpolator_adb733b1439a2903feae57fa734ced0c2}
+Der Typ der verwendeten Interpolationsfunktion. 
+
+Definiert in Zeile 25 der Datei Interpolator.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classInterpolator_ab8cbb0b13436fc54a4bba03804ae8f8a}{\index{Interpolator@{Interpolator}!Interpolator@{Interpolator}}
+\index{Interpolator@{Interpolator}!Interpolator@{Interpolator}}
+\subsubsection[{Interpolator}]{\setlength{\rightskip}{0pt plus 5cm}Interpolator\-::\-Interpolator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classInterpolator_ab8cbb0b13436fc54a4bba03804ae8f8a}
+Der Konstruktor. 
+
+Definiert in Zeile 13 der Datei Interpolator.\-cpp.
+
+\hypertarget{classInterpolator_a6bb406dfe33e06296ccf24f18abcd46c}{\index{Interpolator@{Interpolator}!$\sim$\-Interpolator@{$\sim$\-Interpolator}}
+\index{$\sim$\-Interpolator@{$\sim$\-Interpolator}!Interpolator@{Interpolator}}
+\subsubsection[{$\sim$\-Interpolator}]{\setlength{\rightskip}{0pt plus 5cm}Interpolator\-::$\sim$\-Interpolator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classInterpolator_a6bb406dfe33e06296ccf24f18abcd46c}
+Der Destruktor. 
+
+Definiert in Zeile 248 der Datei Interpolator.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classInterpolator_a30e714ca6dff9b5745d029f95af1420a}{\index{Interpolator@{Interpolator}!interpolate\-Tet@{interpolate\-Tet}}
+\index{interpolate\-Tet@{interpolate\-Tet}!Interpolator@{Interpolator}}
+\subsubsection[{interpolate\-Tet}]{\setlength{\rightskip}{0pt plus 5cm}double Interpolator\-::interpolate\-Tet (
+\begin{DoxyParamCaption}
+\item[{{\bf Tetrahedron} $\ast$}]{tet, }
+\item[{{\bf Vector3\-D} $\ast$}]{pos, }
+\item[{double $\ast$}]{values}
+\end{DoxyParamCaption}
+)}}\label{classInterpolator_a30e714ca6dff9b5745d029f95af1420a}
+Ermittelt den Wert für einen beliebigen Punkt im Raum. 
+\begin{DoxyParams}{Parameter}
+{\em tet} & Tetraeder, durch den die Punkte für die gegebenen Werte gegeben sind. \\
+\hline
+{\em pos} & Position des Punktes, für den der Wert ermittelt werden soll. \\
+\hline
+{\em values} & Die Werte, die den Punkten des Tetraeders entsprechen. Dabei ist values\mbox{[}0\mbox{]} der Wert des ersten Punktes des Tetraeders, values\mbox{[}0\mbox{]} der Zweite usw. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der Wert für den angegebenen Punkt (pos). 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 116 der Datei Interpolator.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInterpolator_a30e714ca6dff9b5745d029f95af1420a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInterpolator_a30e714ca6dff9b5745d029f95af1420a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classInterpolator_ad59ac6ed3822e08a67ac7d1ee88a5bd2}{\index{Interpolator@{Interpolator}!interpolate\-Tri@{interpolate\-Tri}}
+\index{interpolate\-Tri@{interpolate\-Tri}!Interpolator@{Interpolator}}
+\subsubsection[{interpolate\-Tri}]{\setlength{\rightskip}{0pt plus 5cm}double Interpolator\-::interpolate\-Tri (
+\begin{DoxyParamCaption}
+\item[{{\bf Triangle} $\ast$}]{tri, }
+\item[{{\bf Vector3\-D} $\ast$}]{pos, }
+\item[{double $\ast$}]{values}
+\end{DoxyParamCaption}
+)}}\label{classInterpolator_ad59ac6ed3822e08a67ac7d1ee88a5bd2}
+Ermittelt den Wert für einen beliebigen Punkt in einer Ebene. 
+\begin{DoxyParams}{Parameter}
+{\em tri} & Dreieck, durch das die Ebene beschrieben wird. \\
+\hline
+{\em pos} & Position des Punktes, für den der Wert ermittelt werden soll. \\
+\hline
+{\em values} & Die Werte, die den Punkten des Dreiecks entsprechen. Dabei ist values\mbox{[}0\mbox{]} der Wert des ersten Punktes des Dreiecks, values\mbox{[}0\mbox{]} der Zweite usw. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der Wert für den angegebenen Punkt (pos). 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 22 der Datei Interpolator.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInterpolator_ad59ac6ed3822e08a67ac7d1ee88a5bd2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classInterpolator_a2f9927fc580de7d2f94d85e6ca3ee3e3}{\index{Interpolator@{Interpolator}!set\-Mode@{set\-Mode}}
+\index{set\-Mode@{set\-Mode}!Interpolator@{Interpolator}}
+\subsubsection[{set\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void Interpolator\-::set\-Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf Interpolation\-Mode}}]{mode}
+\end{DoxyParamCaption}
+)}}\label{classInterpolator_a2f9927fc580de7d2f94d85e6ca3ee3e3}
+Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion). 
+
+Definiert in Zeile 16 der Datei Interpolator.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInterpolator_a2f9927fc580de7d2f94d85e6ca3ee3e3_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classInterpolator_ace34e7696bdf4a1f0544b145efee898e}{\index{Interpolator@{Interpolator}!mode@{mode}}
+\index{mode@{mode}!Interpolator@{Interpolator}}
+\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Interpolation\-Mode} Interpolator\-::mode\hspace{0.3cm}{\ttfamily [private]}}}\label{classInterpolator_ace34e7696bdf4a1f0544b145efee898e}
+Der verwendete Interpolationsmodus bzw. die Interpolationsfunktion. 
+
+Definiert in Zeile 61 der Datei Interpolator.\-h.
+
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

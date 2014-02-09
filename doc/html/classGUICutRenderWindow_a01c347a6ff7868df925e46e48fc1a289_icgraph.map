@@ -1,0 +1,9 @@
+<map id="GUICutRenderWindow::getCutRenderProperties" name="GUICutRenderWindow::getCutRenderProperties">
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="GUICutRenderWindow\l::renderImage" alt="" coords="225,22,380,69"/>
+<area shape="rect" id="node7" href="$classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970" title="GUICutRenderWindow\l::refreshVisualisation" alt="" coords="225,109,380,155"/>
+<area shape="rect" id="node15" href="$classGUICutRenderWindow.xhtml#a3aee786d94c840ab4e6df6e3c2817802" title="GUICutRenderWindow\l::OnExportCSV" alt="" coords="225,178,380,225"/>
+<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="GUICutRenderWindow\l::renderCutBtClick" alt="" coords="449,5,604,51"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a780972413c43b3086e86c28d581d1f70" title="GUICutRenderWindow\l::OnCutPropsChanged" alt="" coords="449,74,604,121"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a50e92af9db469de6d0298e58eee783ce" title="GUICutRenderWindow\l::OnSCutPropsChanged_spin" alt="" coords="429,143,624,190"/>
+<area shape="rect" id="node13" href="$classGUICutRenderWindow.xhtml#ab57ff6c0d5e6465bb0f3b5cf0e6d9dc9" title="GUICutRenderWindow\l::OnResize" alt="" coords="449,213,604,259"/>
+</map>

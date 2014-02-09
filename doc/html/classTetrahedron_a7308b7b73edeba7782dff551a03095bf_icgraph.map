@@ -1,0 +1,6 @@
+<map id="Tetrahedron::getV4" name="Tetrahedron::getV4">
+<area shape="rect" id="node3" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Interpolator::interpolateTet" alt="" coords="188,13,361,43"/>
+<area shape="rect" id="node5" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Utils::getPointValue" alt="" coords="411,13,549,43"/>
+<area shape="rect" id="node7" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Analyzer::analyzePoint" alt="" coords="599,13,753,43"/>
+<area shape="rect" id="node9" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="GUIAnalyzePointWindow\l::analyzePoint" alt="" coords="803,5,973,51"/>
+</map>

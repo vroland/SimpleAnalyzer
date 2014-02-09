@@ -1,1 +1,12 @@
 \form#0:$\frac{mm}{px}$
+\form#1:$\begin{pmatrix} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\\ \end{pmatrix}$
+\form#2:$\begin{pmatrix} 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 \end{pmatrix}$
+\form#3:\begin{\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ }\end{\begin{pmatrix}
+\form#4:\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ }\end{pmatrix}
+\form#5:\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{pmatrix}
+\form#6:\begin{eqnarray*} g &=& \frac{Gm_2}{r^2} \\ &=& \frac{(6.673 \times 10^{-11}\,\mbox{m}^3\,\mbox{kg}^{-1}\, \mbox{s}^{-2})(5.9736 \times 10^{24}\,\mbox{kg})}{(6371.01\,\mbox{km})^2} \\ &=& 9.82066032\,\mbox{m/s}^2 \end{eqnarray*}
+\form#7:\begin{array*} g &=& \frac{Gm_2}{r^2} \\ &=& \frac{(6.673 \times 10^{-11}\,\mbox{m}^3\,\mbox{kg}^{-1}\, \mbox{s}^{-2})(5.9736 \times 10^{24}\,\mbox{kg})}{(6371.01\,\mbox{km})^2} \\ &=& 9.82066032\,\mbox{m/s}^2 \end{array*}
+\form#8:\begin{eqnarray*} 1 & 0 & 0 \\ 1 & 0 & 0 \\ 1 & 0 & 0 \\ \end{eqnarray*}
+\form#9:\begin{eqnarray*} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{eqnarray*}
+\form#10:\begin{eqnarray*} x1 & y1 & z1 \\ x2 & y2 & z2 \\ x3 & y3 & z3 \\ \end{eqnarray*}
+\form#11:$\frac{mm}{Pixel}$

@@ -1,0 +1,7 @@
+<map id="GUIMainWindow::OnMenuImportTSD" name="GUIMainWindow::OnMenuImportTSD">
+<area shape="rect" id="node3" href="$classObjectData.xhtml#ac8056d23b0882a826b6e572ff080688f" title="ObjectData::addTimedData" alt="" coords="296,67,477,96"/>
+<area shape="rect" id="node5" href="$classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" title="Importer::LoadTimedData" alt="" coords="525,67,696,96"/>
+<area shape="rect" id="node7" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="ObjectData::getSensorDataList" alt="" coords="745,5,948,35"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="ObjectData::getCurrentSensor\lIndex" alt="" coords="748,58,945,105"/>
+<area shape="rect" id="node11" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="ObjectData::setCurrentSensor\lIndex" alt="" coords="748,127,945,174"/>
+</map>

@@ -1,15 +1,187 @@
 \hypertarget{classAnalyzer}{\section{Analyzer Klassenreferenz}
 \label{classAnalyzer}\index{Analyzer@{Analyzer}}
 }
+
+
+Ermittelt Daten aus der Temperaturverteilung.  
+
+
+
+
+{\ttfamily \#include $<$Analyzer.\-h$>$}
+
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structAnalyzer_1_1AnalyzerData__dataset}{Analyzer\-Data\-\_\-dataset}
+\begin{DoxyCompactList}\small\item\em Analyseergebnisse für einen Sensordatensatz. \end{DoxyCompactList}\item 
+struct \hyperlink{structAnalyzer_1_1AnalyzerData__material}{Analyzer\-Data\-\_\-material}
+\begin{DoxyCompactList}\small\item\em Analyseergebnisse für ein Material. \end{DoxyCompactList}\item 
+struct \hyperlink{structAnalyzer_1_1AnalyzerData__object}{Analyzer\-Data\-\_\-object}
+\begin{DoxyCompactList}\small\item\em Analyseergebnisse für ein Objekt. \end{DoxyCompactList}\item 
+struct \hyperlink{structAnalyzer_1_1AnalyzerData__point}{Analyzer\-Data\-\_\-point}
+\begin{DoxyCompactList}\small\item\em Analyseergebnisse für einen Punkt. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classAnalyzer_a2a7b5f169f664ccd9f206e508cba78ef}{void {\bfseries analyze\-Object} (\hyperlink{classObjectData}{Object\-Data} $\ast$obj, \hyperlink{structAnalyzerData__object}{Analyzer\-Data\-\_\-object} $\ast$out, bool use\-\_\-markers=true, int sdindex=-\/1)}\label{classAnalyzer_a2a7b5f169f664ccd9f206e508cba78ef}
-
+\hyperlink{classAnalyzer_a1be2ff17bba265bdef6e1b44748eaf96}{Analyzer} ()
 \item 
-\hypertarget{classAnalyzer_a8f73ee0aa71ae395a74b43dc76b35458}{void {\bfseries analyze\-Point} (\hyperlink{classObjectData}{Object\-Data} $\ast$obj, \hyperlink{classVector3D}{Vector3\-D} $\ast$point, \hyperlink{structAnalyzerData__point}{Analyzer\-Data\-\_\-point} $\ast$point\-\_\-data, \hyperlink{classInterpolator}{Interpolator} $\ast$interpolator)}\label{classAnalyzer_a8f73ee0aa71ae395a74b43dc76b35458}
-
+void \hyperlink{classAnalyzer_a2a7b5f169f664ccd9f206e508cba78ef}{analyze\-Object} (\hyperlink{classObjectData}{Object\-Data} $\ast$obj, \hyperlink{structAnalyzer_1_1AnalyzerData__object}{Analyzer\-Data\-\_\-object} $\ast$out, bool use\-\_\-markers=true, int sdindex=-\/1)
+\item 
+void \hyperlink{classAnalyzer_a8f73ee0aa71ae395a74b43dc76b35458}{analyze\-Point} (\hyperlink{classObjectData}{Object\-Data} $\ast$obj, \hyperlink{classVector3D}{Vector3\-D} $\ast$point, \hyperlink{structAnalyzer_1_1AnalyzerData__point}{Analyzer\-Data\-\_\-point} $\ast$point\-\_\-data, \hyperlink{classInterpolator}{Interpolator} $\ast$interpolator)
+\item 
+virtual \hyperlink{classAnalyzer_afa899ac3a6aabbe59f791f69368ad740}{$\sim$\-Analyzer} ()
 \end{DoxyCompactItemize}
+\subsection*{Freundbeziehungen}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classAnalyzer_a031acd0d5f2a8c997c18645dd548dca7}{operator$<$$<$} (std\-::ostream \&out, const \hyperlink{structAnalyzer_1_1AnalyzerData__object}{Analyzer\-Data\-\_\-object} \&data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Ermittelt Daten aus der Temperaturverteilung. 
+
+Definiert in Zeile 21 der Datei Analyzer.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classAnalyzer_a1be2ff17bba265bdef6e1b44748eaf96}{\index{Analyzer@{Analyzer}!Analyzer@{Analyzer}}
+\index{Analyzer@{Analyzer}!Analyzer@{Analyzer}}
+\subsubsection[{Analyzer}]{\setlength{\rightskip}{0pt plus 5cm}Analyzer\-::\-Analyzer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAnalyzer_a1be2ff17bba265bdef6e1b44748eaf96}
+Der Konstruktor. 
+
+Definiert in Zeile 14 der Datei Analyzer.\-cpp.
+
+\hypertarget{classAnalyzer_afa899ac3a6aabbe59f791f69368ad740}{\index{Analyzer@{Analyzer}!$\sim$\-Analyzer@{$\sim$\-Analyzer}}
+\index{$\sim$\-Analyzer@{$\sim$\-Analyzer}!Analyzer@{Analyzer}}
+\subsubsection[{$\sim$\-Analyzer}]{\setlength{\rightskip}{0pt plus 5cm}Analyzer\-::$\sim$\-Analyzer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classAnalyzer_afa899ac3a6aabbe59f791f69368ad740}
+Der Destruktor. 
+
+Definiert in Zeile 108 der Datei Analyzer.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classAnalyzer_a2a7b5f169f664ccd9f206e508cba78ef}{\index{Analyzer@{Analyzer}!analyze\-Object@{analyze\-Object}}
+\index{analyze\-Object@{analyze\-Object}!Analyzer@{Analyzer}}
+\subsubsection[{analyze\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void Analyzer\-::analyze\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\-Data} $\ast$}]{obj, }
+\item[{{\bf Analyzer\-Data\-\_\-object} $\ast$}]{out, }
+\item[{bool}]{use\-\_\-markers = {\ttfamily true}, }
+\item[{int}]{sdindex = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{classAnalyzer_a2a7b5f169f664ccd9f206e508cba78ef}
+Ermittelt Daten für ein Objekt. 
+\begin{DoxyParams}{Parameter}
+{\em obj} & Das zu analysierende Objekt. \\
+\hline
+{\em out} & Referenz auf die \hyperlink{structAnalyzer_1_1AnalyzerData__object}{Analyzer\-Data\-\_\-object} -\/\-Struktur in der die Analyseergebnisse gespeichert werden sollen. \\
+\hline
+{\em use\-\_\-markers} & Die markierten Zeitpunkte eines Sensordatensatzes analysieren. Wenn false wird nur der aktuell ausgewählte Zeitpunkt analysiert. \\
+\hline
+{\em sdindex} & Nur den Sensordatensatz mit diesem Index analysieren. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 18 der Datei Analyzer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnalyzer_a2a7b5f169f664ccd9f206e508cba78ef_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnalyzer_a2a7b5f169f664ccd9f206e508cba78ef_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classAnalyzer_a8f73ee0aa71ae395a74b43dc76b35458}{\index{Analyzer@{Analyzer}!analyze\-Point@{analyze\-Point}}
+\index{analyze\-Point@{analyze\-Point}!Analyzer@{Analyzer}}
+\subsubsection[{analyze\-Point}]{\setlength{\rightskip}{0pt plus 5cm}void Analyzer\-::analyze\-Point (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\-Data} $\ast$}]{obj, }
+\item[{{\bf Vector3\-D} $\ast$}]{point, }
+\item[{{\bf Analyzer\-Data\-\_\-point} $\ast$}]{point\-\_\-data, }
+\item[{{\bf Interpolator} $\ast$}]{interpolator}
+\end{DoxyParamCaption}
+)}}\label{classAnalyzer_a8f73ee0aa71ae395a74b43dc76b35458}
+Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. 
+\begin{DoxyParams}{Parameter}
+{\em obj} & Das zu analysierende Objekt. \\
+\hline
+{\em point} & Der Ortsvektor zum zu analysierenden Punkt. \\
+\hline
+{\em point\-\_\-data} & Referenz auf die \hyperlink{structAnalyzer_1_1AnalyzerData__point}{Analyzer\-Data\-\_\-point} -\/\-Struktur in der die Analyseergebnisse gespeichert werden sollen. \\
+\hline
+{\em interpolator} & Das zu verwendende Interpolatorobjekt. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 83 der Datei Analyzer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnalyzer_a8f73ee0aa71ae395a74b43dc76b35458_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAnalyzer_a8f73ee0aa71ae395a74b43dc76b35458_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Freundbeziehungen und Funktionsdokumentation}
+\hypertarget{classAnalyzer_a031acd0d5f2a8c997c18645dd548dca7}{\index{Analyzer@{Analyzer}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Analyzer@{Analyzer}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{out, }
+\item[{const {\bf Analyzer\-Data\-\_\-object} \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classAnalyzer_a031acd0d5f2a8c997c18645dd548dca7}
+Operator zum Ausgeben der Analysedaten für ein Objekt im cout-\/\-Stream. 
+
+Definiert in Zeile 91 der Datei Analyzer.\-cpp.
+
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

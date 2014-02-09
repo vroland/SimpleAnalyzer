@@ -1,0 +1,5 @@
+<map id="GUIRenderCutCanvas::onCanvasPaint" name="GUIRenderCutCanvas::onCanvasPaint">
+<area shape="rect" id="node3" href="$classGUIColorScalePanel.xhtml#ac793a56373a8f7f5cb8d3e413c26e8e7" title="GUIColorScalePanel\l::getImage" alt="" coords="209,5,351,51"/>
+<area shape="rect" id="node5" href="$classGUIColorScalePanel.xhtml#aaf6408cc09932a82afc7b2c233ec64c8" title="GUIColorScalePanel\l::paintTo" alt="" coords="209,74,351,121"/>
+<area shape="rect" id="node7" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Utils::floattowxstr" alt="" coords="217,144,343,173"/>
+</map>

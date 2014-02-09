@@ -9,6 +9,7 @@
 #include "constants.h"
 #include <vector>
 #include "../processing/Analyzer.h"
+#include "../processing/ObjectData.h"
 #include "../processing/utils.h"
 #include "../libraries/interpolate/Interpolator.h"
 #include "../fileIO/Exporter.h"
@@ -118,8 +119,8 @@ void render_thread(bool* status_flag,float* value_img,wxImage* image,int width,i
 			image->SetAlpha(x,y,0);
 			image->SetRGB(x,y,0,0,0);
 			value_img[y*width+x] = -300;
-			for (unsigned int m=0;m<obj->materials.size();m++) {
-				MaterialData* mat = &obj->materials.at(m);
+			for (unsigned int m=0;m<obj->getMaterials()->size();m++) {
+				ObjectData::MaterialData* mat = &obj->getMaterials()->at(m);
 				bool found = pointInsideMesh(p,bases->at(m),info->in_volume_algorithm);
 				if (found) {
 					int status = 0;
@@ -167,11 +168,11 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 	ObjectData* obj = data_objects.at(current_data_object_index);
 	xvec->normalize();
 	yvec->normalize();
-	vector<tetgenio*> bases(obj->materials.size());
-	for (unsigned int i=0;i<obj->materials.size();i++) {
+	vector<tetgenio*> bases(obj->getMaterials()->size());
+	for (unsigned int i=0;i<obj->getMaterials()->size();i++) {
 		tetgenio* tri_io = new tetgenio();
 		string args = "Q";
-		tetrahedralize(const_cast<char*> (args.c_str()), obj->materials.at(i).tetgeninput, tri_io,NULL,NULL);
+		tetrahedralize(const_cast<char*> (args.c_str()), obj->getMaterials()->at(i).tetgeninput, tri_io,NULL,NULL);
 		bases.at(i) = tri_io;
 	}
 	yvec->print();
@@ -198,7 +199,7 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 			}
 		}
 		//copy sensor data for each thread
-		SensorData* dataset = &obj->sensordatalist.at(obj->current_sensor_index);
+		SensorData* dataset = &obj->getSensorDataList()->at(obj->getCurrentSensorIndex());
 		vector<SensorPoint>* original_sd = &dataset->data.at(dataset->current_time_index);
 		copied_sensor_data.at(i).resize(original_sd->size());
 		for (int p=0;p<int(original_sd->size());p++) {
@@ -231,7 +232,7 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 	SetTitle(wxT("Berechnung abgeschlossen. ( ")+floattowxstr(t/1000.)+wxT( "s )"));
 	delete xvec;
 	delete yvec;
-	for (unsigned int i=0;i<obj->materials.size();i++) {
+	for (unsigned int i=0;i<obj->getMaterials()->size();i++) {
 		delete bases.at(i);
 	}
 	delete info;

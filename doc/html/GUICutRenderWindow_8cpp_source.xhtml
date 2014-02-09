@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>Simple Analyzer: simpleanalyzer-gui/src/GUI/GUICutRenderWindow.cpp Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="doc_icon.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simple Analyzer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Hauptseite</span></a></li>
+      <li><a href="pages.xhtml"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="namespaces.xhtml"><span>Namensbereiche</span></a></li>
+      <li><a href="annotated.xhtml"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.xhtml"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c77ee61374efdb50c23b8fd1bc609a29.xhtml">simpleanalyzer-gui</a></li><li class="navelem"><a class="el" href="dir_fc69cc80a9959f5f4d9fc5f3e2f537ca.xhtml">src</a></li><li class="navelem"><a class="el" href="dir_6d3502ad7ea637015e23cd162a030a27.xhtml">GUI</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GUICutRenderWindow.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * GUICutRenderWindow.cpp</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 01.10.2013</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: valentin</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;GUICutRenderWindow.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.xhtml">constants.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../processing/Analyzer.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../processing/ObjectData.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../processing/utils.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../libraries/interpolate/Interpolator.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../fileIO/Exporter.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;GUIMainWindow.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;sys/time.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;wx/graphics.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;BEGIN_EVENT_TABLE(<a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>, wxFrame)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    EVT_BUTTON(ID_RENDER_CUT_BT, <a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>::renderCutBtClick)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    EVT_BUTTON(ID_EXPORT_CUT_IMG_BT, <a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>::OnExportImage)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    EVT_BUTTON(ID_EXPORT_CUT_CSV_BT, <a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>::OnExportCSV)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    EVT_TEXT(ID_CUT_TRI_EDIT, <a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>::OnCutPropsChanged)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    EVT_SPINCTRL(ID_CUT_TRI_EDIT, <a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>::OnSCutPropsChanged_spin)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    EVT_SIZE(<a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>::OnResize)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    EVT_COMBOBOX(ID_COLORSCALE_PROP,<a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>::OnColorScaleChanged)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    EVT_SPINCTRL(ID_COLORSCALE_PROP,<a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>::OnColorScaleChanged_spin)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    EVT_BUTTON(ID_COLORSCALE_COLORBT,<a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>::OnCSColorBtClick)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;END_EVENT_TABLE()</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;extern std::vector&lt;<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>*&gt; data_objects;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;extern <span class="keywordtype">int</span> current_data_object_index;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;extern <a class="code" href="structUtils_1_1Visualization__info.xhtml" title="Informationen über die Farbgebung bei der Visualisierung. ">Visualization_info</a> visualization_info;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#ae522616f2d98dd3455a1d6dcc4ee877f">   37</a></span>&#160;<a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>::<a class="code" href="classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. ">GUICutRenderWindow</a>(wxWindow * parent,const wxChar *title, <span class="keywordtype">int</span> xpos, <span class="keywordtype">int</span> ypos, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height):</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    wxFrame(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height), wxDEFAULT_FRAME_STYLE | wxFRAME_FLOAT_ON_PARENT) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    canvas = <span class="keyword">new</span> <a class="code" href="classGUIRenderCutCanvas.xhtml" title="Zeichenfläche für die 2D-Temperaturverteilung. ">GUIRenderCutCanvas</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    scroll_pane = <span class="keyword">new</span> wxScrolledWindow(<span class="keyword">this</span>, wxID_ANY);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    scroll_pane-&gt;SetScrollRate(10,10);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    trilabel= <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;Dreiecksebene (Punkt1 ist Mittelpunkt):&quot;</span>));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    p1label = <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;Punkt 1:&quot;</span>));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    p1xedit = <span class="keyword">new</span> wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    p1yedit = <span class="keyword">new</span> wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    p1zedit = <span class="keyword">new</span> wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    p2label = <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;Punkt 2:&quot;</span>));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    p2xedit = <span class="keyword">new</span> wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT(<span class="stringliteral">&quot;1.0&quot;</span>));</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    p2yedit = <span class="keyword">new</span> wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    p2zedit = <span class="keyword">new</span> wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    p3label = <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;Punkt 3:&quot;</span>));</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    p3xedit = <span class="keyword">new</span> wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    p3yedit = <span class="keyword">new</span> wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT(<span class="stringliteral">&quot;1.0&quot;</span>));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    p3zedit = <span class="keyword">new</span> wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    optionslbl = <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;Optionen:&quot;</span>));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    widthHeightlbl     = <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;Breite/Höhe:&quot;</span>));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    imgWidthEdit = <span class="keyword">new</span> wxSpinCtrl(scroll_pane,ID_CUT_TRI_EDIT);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    imgWidthEdit-&gt;SetRange(1,100000000);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    imgWidthEdit-&gt;SetValue(800);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    imgHeightEdit = <span class="keyword">new</span> wxSpinCtrl(scroll_pane,ID_CUT_TRI_EDIT);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    imgHeightEdit-&gt;SetRange(1,100000000);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    imgHeightEdit-&gt;SetValue(600);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    mmperpixellabel = <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;Maßstab (mm/px):&quot;</span>));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    mmperpixeledit  = <span class="keyword">new</span> wxTextCtrl(scroll_pane,ID_CUT_TRI_EDIT,wxT(<span class="stringliteral">&quot;15.0&quot;</span>));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    threadcountlbl = <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;CPU-Threads:&quot;</span>));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    core_count = thread::hardware_concurrency();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    threadcountedit = <span class="keyword">new</span> wxSpinCtrl(scroll_pane,wxID_ANY);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    threadcountedit-&gt;SetRange(1,1000);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    threadcountedit-&gt;SetValue(core_count);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    calcbt= <span class="keyword">new</span> wxButton(scroll_pane,ID_RENDER_CUT_BT,wxT(<span class="stringliteral">&quot;Analysieren&quot;</span>));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    export_img_bt = <span class="keyword">new</span> wxButton(scroll_pane,ID_EXPORT_CUT_IMG_BT,wxT(<span class="stringliteral">&quot;Export (.png)...&quot;</span>));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    export_csv_bt = <span class="keyword">new</span> wxButton(scroll_pane,ID_EXPORT_CUT_CSV_BT,wxT(<span class="stringliteral">&quot;Export (.csv)...&quot;</span>));</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    scalelbl     = <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;Temperaturskala:&quot;</span>));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    scalemodelbl = <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;Modus/ΔT:&quot;</span>));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    scalemodecb  = <span class="keyword">new</span> wxComboBox(scroll_pane,ID_COLORSCALE_PROP,wxT(<span class="stringliteral">&quot;&quot;</span>),wxDefaultPosition,wxDefaultSize,0,NULL,wxCB_READONLY | wxCB_DROPDOWN);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    scalemodecb-&gt;Insert(wxT(<span class="stringliteral">&quot;Vertikal&quot;</span>),0);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    scalemodecb-&gt;Insert(wxT(<span class="stringliteral">&quot;Horizontal&quot;</span>),0);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    scalemodecb-&gt;Insert(wxT(<span class="stringliteral">&quot;Kein&quot;</span>),0);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    scalemodecb-&gt;Select(canvas-&gt;getScalePanel()-&gt;getMode());</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    scalefontpropslbl = <span class="keyword">new</span> wxStaticText(scroll_pane,wxID_ANY,wxT(<span class="stringliteral">&quot;Schriftgröße/Farbe:&quot;</span>));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    scalefontsizeedit = <span class="keyword">new</span> wxSpinCtrl(scroll_pane,ID_COLORSCALE_PROP);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    scalefontsizeedit-&gt;SetRange(1,1000);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    scalefontsizeedit-&gt;SetValue(canvas-&gt;getScalePanel()-&gt;getFontSize());</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    scalefontcolorbt = <span class="keyword">new</span> wxButton(scroll_pane,ID_COLORSCALE_COLORBT,wxT(<span class="stringliteral">&quot;Text&quot;</span>));</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    scalefontcolorbt-&gt;SetForegroundColour(canvas-&gt;getScalePanel()-&gt;getTextColor());</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    scalestepedit    = <span class="keyword">new</span> wxSpinCtrl(scroll_pane,ID_COLORSCALE_PROP);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    scalestepedit-&gt;SetRange(1,1000);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    scalestepedit-&gt;SetValue(canvas-&gt;getScalePanel()-&gt;getStepWidth());</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    value_img = <span class="keyword">new</span> <span class="keywordtype">float</span>[3*3];</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    image = <span class="keyword">new</span> wxImage(100,100,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    canvas-&gt;setImage(image);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    canvas-&gt;setValueImg(value_img);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    p1xedit-&gt;SetValue(p1xedit-&gt;GetValue()); <span class="comment">//TEXT-Event auslösen</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    Update();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> render_thread(<span class="keywordtype">bool</span>* status_flag,<span class="keywordtype">float</span>* value_img,wxImage* image,<span class="keywordtype">int</span> width,<span class="keywordtype">int</span> height,<span class="keywordtype">int</span> startheight,<span class="keywordtype">int</span> delta_h,<a class="code" href="structUtils_1_1CutRender__info.xhtml" title="Daten zur Darstellung einer 2D-Temperaturverteilungs-Ebene. ">CutRender_info</a>* info,<a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* xvec,<a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* yvec,<a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* v0,vector&lt;tetgenio*&gt;* bases,<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* obj,vector&lt;SensorPoint&gt;* sensor_data,<span class="keywordtype">bool</span> use_last_tet) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="classInterpolator.xhtml" title="2- und 3-dimensionale Inter-/Extrapolation ">Interpolator</a> interpolator;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    vector&lt;SensorPoint*&gt;* last_tet = <span class="keyword">new</span> vector&lt;SensorPoint*&gt;;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    vector&lt;SensorPoint*&gt;* new_tet = <span class="keyword">new</span> vector&lt;SensorPoint*&gt;;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">bool</span> last_tet_init = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x=0;x&lt;width;x++) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y=startheight;y&lt;startheight+delta_h;y++) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* p = v0-&gt;<a class="code" href="classVector3D.xhtml#a46dd0d9a849809a3857783102959e788">copy</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* part_x = xvec-&gt;<a class="code" href="classVector3D.xhtml#a46dd0d9a849809a3857783102959e788">copy</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            part_x-&gt;<a class="code" href="classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13">mult</a>(x*info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#aca49d9537a774906b88f3fd7059d2dcb">mmperpixel</a>/1000.-width*info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#aca49d9537a774906b88f3fd7059d2dcb">mmperpixel</a>/2000);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* part_y = yvec-&gt;<a class="code" href="classVector3D.xhtml#a46dd0d9a849809a3857783102959e788">copy</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            part_y-&gt;<a class="code" href="classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13">mult</a>(y*info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#aca49d9537a774906b88f3fd7059d2dcb">mmperpixel</a>/1000.-height*info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#aca49d9537a774906b88f3fd7059d2dcb">mmperpixel</a>/2000);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            p-&gt;<a class="code" href="classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347">add</a>(part_x);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            p-&gt;<a class="code" href="classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347">add</a>(part_y);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keyword">delete</span> part_x;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keyword">delete</span> part_y;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            image-&gt;SetAlpha(x,y,0);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            image-&gt;SetRGB(x,y,0,0,0);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            value_img[y*width+x] = -300;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m=0;m&lt;obj-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a">getMaterials</a>()-&gt;size();m++) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <a class="code" href="structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. ">ObjectData::MaterialData</a>* mat = &amp;obj-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a">getMaterials</a>()-&gt;at(m);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordtype">bool</span> found = <a class="code" href="namespaceUtils.xhtml#af8fc5d6dab27f759ab5d76757a53023f">pointInsideMesh</a>(p,bases-&gt;at(m),info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#af2ee1118ac14a73a2a350a05102013ab">in_volume_algorithm</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordflow">if</span> (found) {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    <span class="keywordtype">int</span> status = 0;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    interpolator.<a class="code" href="classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3">setMode</a>(mat-&gt;interpolation_mode);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordtype">float</span> value = (float)<a class="code" href="namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2">getPointValue</a>(status,sensor_data,p-&gt;<a class="code" href="classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197">getXYZ</a>(),&amp;interpolator,(last_tet_init &amp;&amp; use_last_tet)?last_tet:NULL,use_last_tet?new_tet:0);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    vector&lt;SensorPoint*&gt;* temp;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    temp = last_tet;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    last_tet = new_tet;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    new_tet = temp;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    last_tet_init = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    value_img[y*width+x] = value;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    <span class="keywordtype">float</span>* color = <a class="code" href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de">hsvToRgb</a>((1.0-<a class="code" href="namespaceUtils.xhtml#abb647325616858e0fad55290c36ea03b" title="Begrenzt einen Wert auf den Bereich 0..1. ">clampHue</a>((value_img[y*width+x]-visualization_info.<a class="code" href="structUtils_1_1Visualization__info.xhtml#a6e192352d1f00709f8ef963206ff2653">min_visualisation_temp</a>)/(visualization_info.<a class="code" href="structUtils_1_1Visualization__info.xhtml#a5327787a12634166ecc00f2224d3f39f">max_visualisation_temp</a>+visualization_info.<a class="code" href="structUtils_1_1Visualization__info.xhtml#a6e192352d1f00709f8ef963206ff2653">min_visualisation_temp</a>)))*.666,1,1);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    image-&gt;SetRGB(x,y,(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>)(color[0]*255),(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>)(color[1]*255),(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>)(color[2]*255));</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                    <span class="keyword">delete</span> color;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    image-&gt;SetAlpha(x,y,255);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keyword">delete</span> p;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">delete</span> new_tet;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keyword">delete</span> last_tet;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    *status_flag = 0;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c">  149</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c">GUICutRenderWindow::renderImage</a>(wxImage* image) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    timeval tm1;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    gettimeofday(&amp;tm1, NULL);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">int</span> width = <a class="code" href="classGUICutRenderWindow.xhtml#a211043ba4bd60862a9fbfe1186c40875">imgWidthEdit</a>-&gt;GetValue();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">int</span> height = <a class="code" href="classGUICutRenderWindow.xhtml#a4daa569840f00756e6781ad2d87aef5b">imgHeightEdit</a>-&gt;GetValue();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;<a class="code" href="classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929">getScalePanel</a>()-&gt;<a class="code" href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa">refresh</a>(width,height);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a365103460aeafd2173c0a9360cc0caa1">core_count</a> = <a class="code" href="classGUICutRenderWindow.xhtml#ae48406dc8c80240904ca7040b7b3fbf1">threadcountedit</a>-&gt;GetValue();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">bool</span> use_last_tet = <span class="keyword">false</span>;      <span class="comment">// wenig performancegewinn, ungenauigkeiten</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classGUICutRenderWindow.xhtml#a30c36db74a83fc5523407d3611c1db34">image</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    image = <span class="keyword">new</span> wxImage(width,height,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    image-&gt;InitAlpha();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    setlocale(LC_NUMERIC, <span class="stringliteral">&quot;C&quot;</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="structUtils_1_1CutRender__info.xhtml" title="Daten zur Darstellung einer 2D-Temperaturverteilungs-Ebene. ">CutRender_info</a>* info = <a class="code" href="classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289">getCutRenderProperties</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="classTriangle.xhtml" title="Ein durch 3 Ortsvektoren beschriebenes Dreieck. ">Triangle</a>* tri = info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#a2998343c733073b317fdd04bd341ce1f">tri</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* xvec = tri-&gt;<a class="code" href="classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58">getV2</a>()-&gt;<a class="code" href="classVector3D.xhtml#a46dd0d9a849809a3857783102959e788">copy</a>();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    xvec-&gt;<a class="code" href="classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4">sub</a>(tri-&gt;<a class="code" href="classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e">getV1</a>());</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* tri_nor = tri-&gt;<a class="code" href="classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790">getNormal</a>();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* yvec = xvec-&gt;<a class="code" href="classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5">crossProduct</a>(tri_nor);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">delete</span> tri_nor;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* obj = data_objects.at(current_data_object_index);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    xvec-&gt;<a class="code" href="classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c">normalize</a>();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    yvec-&gt;<a class="code" href="classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c">normalize</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    vector&lt;tetgenio*&gt; bases(obj-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a">getMaterials</a>()-&gt;size());</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;obj-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a">getMaterials</a>()-&gt;size();i++) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        tetgenio* tri_io = <span class="keyword">new</span> tetgenio();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordtype">string</span> args = <span class="stringliteral">&quot;Q&quot;</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        tetrahedralize(const_cast&lt;char*&gt; (args.c_str()), obj-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a">getMaterials</a>()-&gt;at(i).tetgeninput, tri_io,NULL,NULL);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        bases.at(i) = tri_io;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    yvec-&gt;<a class="code" href="classVector3D.xhtml#a37762d009e092a9a9eecb2de03b6f0ec">print</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">if</span> (value_img!=NULL) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keyword">delete</span>[] <a class="code" href="classGUICutRenderWindow.xhtml#a9c8338a733363aea25a8735d6873a414">value_img</a>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    value_img = <span class="keyword">new</span> <span class="keywordtype">float</span>[width*height];</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;<a class="code" href="classGUIRenderCutCanvas.xhtml#ab20c8e437704facc41fa8c3c111ffa85">setImage</a>(image);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;<a class="code" href="classGUIRenderCutCanvas.xhtml#a88c49bc069d6e1a40b68dcfce8fd9bf7">setValueImg</a>(value_img);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">bool</span> thread_running[<a class="code" href="classGUICutRenderWindow.xhtml#a365103460aeafd2173c0a9360cc0caa1">core_count</a>];</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="classGUICutRenderWindow.xhtml#a365103460aeafd2173c0a9360cc0caa1">core_count</a>;i++) thread_running[i] = 1;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    wxString original_window_title = GetTitle();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    vector&lt;thread*&gt; threads= vector&lt;thread*&gt;(0);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    vector&lt;vector&lt;SensorPoint&gt;&gt; copied_sensor_data = vector&lt;vector&lt;SensorPoint&gt;&gt;(<a class="code" href="classGUICutRenderWindow.xhtml#a365103460aeafd2173c0a9360cc0caa1">core_count</a>);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">int</span> delta_h = height/<a class="code" href="classGUICutRenderWindow.xhtml#a365103460aeafd2173c0a9360cc0caa1">core_count</a>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="classGUICutRenderWindow.xhtml#a365103460aeafd2173c0a9360cc0caa1">core_count</a>;i++) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordtype">int</span> startheight = delta_h*i;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">if</span> (i==core_count-1) {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordflow">if</span> (startheight+delta_h&lt;height) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                delta_h = height-startheight;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;corrected delta_h&quot;</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="comment">//copy sensor data for each thread</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <a class="code" href="structUtils_1_1SensorData.xhtml" title="Ein Sensordatensatz. ">SensorData</a>* dataset = &amp;obj-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656">getSensorDataList</a>()-&gt;at(obj-&gt;<a class="code" href="classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42">getCurrentSensorIndex</a>());</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        vector&lt;SensorPoint&gt;* original_sd = &amp;dataset-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309">data</a>.at(dataset-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a177d53154d56fcf1962f969ece1e7d9d">current_time_index</a>);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        copied_sensor_data.at(i).resize(original_sd-&gt;size());</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> p=0;p&lt;int(original_sd-&gt;size());p++) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <a class="code" href="namespaceUtils.xhtml#adc0438a85ca31977c95f5d27090d5346">copySensorPoint</a>(&amp;original_sd-&gt;at(p),&amp;copied_sensor_data.at(i).at(p));</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        threads.resize(threads.size()+1,<span class="keyword">new</span> thread(render_thread,&amp;thread_running[i],value_img,image,width,height,startheight,delta_h,info,xvec,yvec,tri-&gt;<a class="code" href="classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e">getV1</a>(),&amp;bases,obj,&amp;copied_sensor_data.at(i),use_last_tet));</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> running = 0;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        Update();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;Refresh();</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        running = 0;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="classGUICutRenderWindow.xhtml#a365103460aeafd2173c0a9360cc0caa1">core_count</a>;i++) {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            running = running&lt;&lt;1;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            running+=thread_running[i];</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        };</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    } <span class="keywordflow">while</span> (running);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="classGUICutRenderWindow.xhtml#a365103460aeafd2173c0a9360cc0caa1">core_count</a>;i++) {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        threads.at(i)-&gt;join();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keyword">delete</span> threads.at(i);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;3;i++) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keyword">delete</span> tri-&gt;<a class="code" href="classTriangle.xhtml#a9320d1ab83c104352bf5e8f2c8274334">getVert</a>(i);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keyword">delete</span> tri;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    timeval tm2;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    gettimeofday(&amp;tm2, NULL);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> t = 1000 * (tm2.tv_sec - tm1.tv_sec) + (tm2.tv_usec - tm1.tv_usec) / 1000;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    SetTitle(wxT(<span class="stringliteral">&quot;Berechnung abgeschlossen. ( &quot;</span>)+<a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8">floattowxstr</a>(t/1000.)+wxT( <span class="stringliteral">&quot;s )&quot;</span>));</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">delete</span> xvec;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">delete</span> yvec;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;obj-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a">getMaterials</a>()-&gt;size();i++) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keyword">delete</span> bases.at(i);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keyword">delete</span> info;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a780972413c43b3086e86c28d581d1f70">  240</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#a780972413c43b3086e86c28d581d1f70">GUICutRenderWindow::OnCutPropsChanged</a>(wxCommandEvent &amp;event) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970">refreshVisualisation</a>();</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a50e92af9db469de6d0298e58eee783ce">  243</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#a50e92af9db469de6d0298e58eee783ce">GUICutRenderWindow::OnSCutPropsChanged_spin</a>(wxSpinEvent &amp;event) {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970">refreshVisualisation</a>();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970">  246</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970">GUICutRenderWindow::refreshVisualisation</a>() {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="classGUIMainWindow.xhtml" title="Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen. ">GUIMainWindow</a>* parent = (<a class="code" href="classGUIMainWindow.xhtml" title="Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen. ">GUIMainWindow</a>*) GetParent();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    parent-&gt;<a class="code" href="classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d">getGLCanvas</a>()-&gt;<a class="code" href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa">getRenderer</a>()-&gt;<a class="code" href="classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e">setCutRenderInfo</a>(this-&gt;<a class="code" href="classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289">getCutRenderProperties</a>());</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    parent-&gt;<a class="code" href="classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d">getGLCanvas</a>()-&gt;Refresh(<span class="keyword">false</span>,NULL);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#ab57ff6c0d5e6465bb0f3b5cf0e6d9dc9">  251</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#ab57ff6c0d5e6465bb0f3b5cf0e6d9dc9">GUICutRenderWindow::OnResize</a>(wxSizeEvent &amp;event) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">int</span> width = 0;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">int</span> height = 0;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    GetSize(&amp;width,&amp;height);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a1d6dae72dbc65725dee34799e7fb7af1">trilabel</a>-&gt;SetSize(10,10,300,20);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#ac28961397f75c1d67dd1d983cda586f8">p1label</a>-&gt;SetSize(20,30,300,20);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a509b5ca573c287e3863e952ec629fa7b">p1xedit</a>-&gt;SetSize(90,30,70,20);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a93e837c15d8c6e7f420fd457c49024f2">p1yedit</a>-&gt;SetSize(160,30,70,20);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a5843efcb13e1d56ea95932d052e5666a">p1zedit</a>-&gt;SetSize(230,30,70,20);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#adc1202b42f220ea7b8a8830f4d9d322a">p2label</a>-&gt;SetSize(20,60,300,20);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a5d2bcd96c6fdb8d629583c5d40ccdbcc">p2xedit</a>-&gt;SetSize(90,60,70,20);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a8ec4550ec7d30a8ad3c4c1e5dfcb8dce">p2yedit</a>-&gt;SetSize(160,60,70,20);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#affad4d5ff6cf42dd585a1a5f0e050075">p2zedit</a>-&gt;SetSize(230,60,70,20);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a6d1f742f0a78f84882f543f0cbbd6357">p3label</a>-&gt;SetSize(20,90,300,20);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a3382e7bd629988774c4f5e81bf66ca7e">p3xedit</a>-&gt;SetSize(90,90,70,20);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a5f908b41a4d9db847cd89c0a3c52b61a">p3yedit</a>-&gt;SetSize(160,90,70,20);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#ac4c2f8825a9596f32093f0ac08a7848d">p3zedit</a>-&gt;SetSize(230,90,70,20);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a3317d0e8526d4a11168e86f673576ee3">optionslbl</a>-&gt;SetSize(310,10,300,20);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a26632978654028e6fbfaa6eef704ff06">widthHeightlbl</a>-&gt;SetSize(320,30,200,20);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a211043ba4bd60862a9fbfe1186c40875">imgWidthEdit</a>-&gt;SetSize(320,50,70,20);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a4daa569840f00756e6781ad2d87aef5b">imgHeightEdit</a>-&gt;SetSize(390,50,70,20);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#ab1f4863c699e72e54e8b3f6d320a5e3a">mmperpixellabel</a>-&gt;SetSize(320,70,200,40);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a76ced7f0bb7a2b08142aaf225f37c108">mmperpixeledit</a>-&gt;SetSize(320,90,140,20);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a3c1e80a372d6eaacd4f6ca71a788c9fd">scalelbl</a>-&gt;SetSize(470,10,140,20);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a2a3f0b64122aff2f336f94fb72b3b8ac">scalemodelbl</a>-&gt;SetSize(480,30,140,20);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#af535e1e80e14178ff5c05707261a183d">scalemodecb</a>-&gt;SetSize(480,50,100,20);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a4fbe9115e418be48a70eff31e94640ba">scalestepedit</a>-&gt;SetSize(580,50,40,20);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a1f46a30a61ad94b76a6194758bdb3f95">scalefontpropslbl</a>-&gt;SetSize(480,70,140,20);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a62cb232f5f9747c1fdbc5c1f6ff4b7a4">scalefontsizeedit</a>-&gt;SetSize(480,90,75,20);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a13a1557216de339d20189fdaa0df482b">scalefontcolorbt</a>-&gt;SetSize(555,90,75,20);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a2797a52c219092ce3f54ea62ec4b95f3">threadcountlbl</a>-&gt;SetSize(640,10,100,20);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#ae48406dc8c80240904ca7040b7b3fbf1">threadcountedit</a>-&gt;SetSize(740,10,50,20);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a7cadc8f5fd1b153ba21aa82fd5f70eff">calcbt</a>-&gt;SetSize(640,30,150,30);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#ac0b26b746d6339154256d81da8cd7aed">export_img_bt</a>-&gt;SetSize(640,60,150,30);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a1613155eefe8309903858f9427b263de">export_csv_bt</a>-&gt;SetSize(640,90,150,30);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;SetSize(10,120,width-20,height-<a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;GetPosition().y-10);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a525891e3dde6ffd445bfed747dcee970">refreshVisualisation</a>();</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a28c430f7145860ba3265fa9b8417923d">scroll_pane</a>-&gt;SetSize(0,0,width,120);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a28c430f7145860ba3265fa9b8417923d">scroll_pane</a>-&gt;SetVirtualSize(790,120);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;Refresh(<span class="keyword">false</span>,NULL);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a3aee786d94c840ab4e6df6e3c2817802">  293</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#a3aee786d94c840ab4e6df6e3c2817802">GUICutRenderWindow::OnExportCSV</a>(wxCommandEvent &amp;event) {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    wxFileDialog *SaveDialog= <span class="keyword">new</span> wxFileDialog(<span class="keyword">this</span>, wxT(<span class="stringliteral">&quot;Speichern unter...&quot;</span>), _(<span class="stringliteral">&quot;&quot;</span>), _(<span class="stringliteral">&quot;&quot;</span>), _(<span class="stringliteral">&quot;Character-separated values (*.csv)|*.csv&quot;</span>), wxFD_SAVE|wxFD_OVERWRITE_PROMPT);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">if</span> ( SaveDialog-&gt;ShowModal() == wxID_OK )</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        cout &lt;&lt; SaveDialog-&gt;GetPath().ToUTF8().data() &lt;&lt; endl;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <a class="code" href="classExporter.xhtml" title="Export der gewonnenen Daten. ">Exporter</a> exporter;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="structUtils_1_1CutRender__info.xhtml" title="Daten zur Darstellung einer 2D-Temperaturverteilungs-Ebene. ">CutRender_info</a>* info = <a class="code" href="classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289">getCutRenderProperties</a>();</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        exporter.<a class="code" href="classExporter.xhtml#ae2aa06b8c8c77e172801a1f77800ffd0">ExportCutCSV</a>(<span class="keywordtype">string</span>(SaveDialog-&gt;GetPath().ToUTF8().data()),value_img,info);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keyword">delete</span> info;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    SaveDialog-&gt;Close();</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    SaveDialog-&gt;Destroy();</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a97f4602acc61f4b62c4d90ddbb692a25">  306</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#a97f4602acc61f4b62c4d90ddbb692a25">GUICutRenderWindow::OnExportImage</a>(wxCommandEvent &amp;event) {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    wxFileDialog *SaveDialog= <span class="keyword">new</span> wxFileDialog(<span class="keyword">this</span>, wxT(<span class="stringliteral">&quot;Speichern unter...&quot;</span>), _(<span class="stringliteral">&quot;&quot;</span>), _(<span class="stringliteral">&quot;&quot;</span>), _(<span class="stringliteral">&quot;Portable Network Graphics (*.png)|*.png&quot;</span>), wxFD_SAVE|wxFD_OVERWRITE_PROMPT);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">if</span> ( SaveDialog-&gt;ShowModal() == wxID_OK )</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        wxImage* scale_img = <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;<a class="code" href="classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929">getScalePanel</a>()-&gt;<a class="code" href="classGUIColorScalePanel.xhtml#ac793a56373a8f7f5cb8d3e413c26e8e7">getImage</a>();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        wxImage cut_img   = image-&gt;Copy();</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x=0;x&lt;cut_img.GetWidth();x++) {</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y=0;y&lt;cut_img.GetWidth();y++) {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                <span class="keywordtype">float</span> alpha = scale_img-&gt;GetAlpha(x,y)/255.;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                cut_img.SetRGB(x,y,</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                               cut_img.GetRed(x,y)*(1-alpha)+scale_img-&gt;GetRed(x,y)*alpha,</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                               cut_img.GetGreen(x,y)*(1-alpha)+scale_img-&gt;GetGreen(x,y)*alpha,</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                               cut_img.GetBlue(x,y)*(1-alpha)+scale_img-&gt;GetBlue(x,y)*alpha);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                <span class="keywordtype">int</span> new_alpha = cut_img.GetAlpha(x,y)+alpha*255;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                new_alpha = new_alpha&gt;255?255:new_alpha;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                cut_img.SetAlpha(x,y,new_alpha);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        }</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        cut_img.SaveFile(SaveDialog-&gt;GetPath(), wxBITMAP_TYPE_PNG);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    SaveDialog-&gt;Close();</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    SaveDialog-&gt;Destroy();</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div>
+<div class="line"><a name="l00329"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289">  329</a></span>&#160;<a class="code" href="structUtils_1_1CutRender__info.xhtml" title="Daten zur Darstellung einer 2D-Temperaturverteilungs-Ebene. ">CutRender_info</a>* <a class="code" href="classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289">GUICutRenderWindow::getCutRenderProperties</a>() {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <a class="code" href="structUtils_1_1CutRender__info.xhtml" title="Daten zur Darstellung einer 2D-Temperaturverteilungs-Ebene. ">CutRender_info</a>* info = <span class="keyword">new</span> <a class="code" href="structUtils_1_1CutRender__info.xhtml" title="Daten zur Darstellung einer 2D-Temperaturverteilungs-Ebene. ">CutRender_info</a>();</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    cout &lt;&lt; <a class="code" href="classGUICutRenderWindow.xhtml#a509b5ca573c287e3863e952ec629fa7b">p1xedit</a>-&gt;GetValue() &lt;&lt; endl;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#a2998343c733073b317fdd04bd341ce1f">tri</a> = <span class="keyword">new</span> <a class="code" href="classTriangle.xhtml" title="Ein durch 3 Ortsvektoren beschriebenes Dreieck. ">Triangle</a>(<span class="keyword">new</span> <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(atof(<a class="code" href="classGUICutRenderWindow.xhtml#a509b5ca573c287e3863e952ec629fa7b">p1xedit</a>-&gt;GetValue().ToAscii()),atof(<a class="code" href="classGUICutRenderWindow.xhtml#a93e837c15d8c6e7f420fd457c49024f2">p1yedit</a>-&gt;GetValue().ToAscii()),atof(<a class="code" href="classGUICutRenderWindow.xhtml#a5843efcb13e1d56ea95932d052e5666a">p1zedit</a>-&gt;GetValue().ToAscii())),</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                             <span class="keyword">new</span> <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(atof(<a class="code" href="classGUICutRenderWindow.xhtml#a5d2bcd96c6fdb8d629583c5d40ccdbcc">p2xedit</a>-&gt;GetValue().ToAscii()),atof(<a class="code" href="classGUICutRenderWindow.xhtml#a8ec4550ec7d30a8ad3c4c1e5dfcb8dce">p2yedit</a>-&gt;GetValue().ToAscii()),atof(<a class="code" href="classGUICutRenderWindow.xhtml#affad4d5ff6cf42dd585a1a5f0e050075">p2zedit</a>-&gt;GetValue().ToAscii())),</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                             <span class="keyword">new</span> <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(atof(<a class="code" href="classGUICutRenderWindow.xhtml#a3382e7bd629988774c4f5e81bf66ca7e">p3xedit</a>-&gt;GetValue().ToAscii()),atof(<a class="code" href="classGUICutRenderWindow.xhtml#a5f908b41a4d9db847cd89c0a3c52b61a">p3yedit</a>-&gt;GetValue().ToAscii()),atof(<a class="code" href="classGUICutRenderWindow.xhtml#ac4c2f8825a9596f32093f0ac08a7848d">p3zedit</a>-&gt;GetValue().ToAscii())));</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#aca49d9537a774906b88f3fd7059d2dcb">mmperpixel</a> = atof(<a class="code" href="classGUICutRenderWindow.xhtml#a76ced7f0bb7a2b08142aaf225f37c108">mmperpixeledit</a>-&gt;GetValue().ToAscii());</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#ac7a1e2c64129630affaf208808a190eb">img_width</a> = <a class="code" href="classGUICutRenderWindow.xhtml#a211043ba4bd60862a9fbfe1186c40875">imgWidthEdit</a>-&gt;GetValue();</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#abac1c3e4edb7183017ecfa7b69c40d25">img_height</a>= <a class="code" href="classGUICutRenderWindow.xhtml#a4daa569840f00756e6781ad2d87aef5b">imgHeightEdit</a>-&gt;GetValue();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    info-&gt;<a class="code" href="structUtils_1_1CutRender__info.xhtml#af2ee1118ac14a73a2a350a05102013ab">in_volume_algorithm</a> = ALGORITHM_TETRAHEDRONS;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">return</span> info;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
+<div class="line"><a name="l00341"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438">  341</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438">GUICutRenderWindow::OnColorScaleChanged_spin</a>(wxSpinEvent &amp;event) {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    wxCommandEvent temp_evt;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec">OnColorScaleChanged</a>(temp_evt);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;}</div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a0923a36cdf4e0094d78f623693ff8ac6">  345</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#a0923a36cdf4e0094d78f623693ff8ac6">GUICutRenderWindow::OnCSColorBtClick</a>(wxCommandEvent &amp;event) {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <a class="code" href="classGUIColorScalePanel.xhtml" title="Farbige Temperaturskala für zweidimensionale Temperaturverteilung. ">GUIColorScalePanel</a>* scale = <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;<a class="code" href="classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929">getScalePanel</a>();</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    wxColourDialog dialog(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    dialog.ShowModal();</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    scale-&gt;<a class="code" href="classGUIColorScalePanel.xhtml#ad9056636be2c0707127225484f0d0392">setTextColor</a>(dialog.GetColourData().GetColour());</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a13a1557216de339d20189fdaa0df482b">scalefontcolorbt</a>-&gt;SetForegroundColour(scale-&gt;<a class="code" href="classGUIColorScalePanel.xhtml#aae51a1ecdb5bfca126c36ad169fce846">getTextColor</a>());</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    scale-&gt;<a class="code" href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa">refresh</a>(image-&gt;GetWidth(),image-&gt;GetHeight());</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;Refresh(<span class="keyword">false</span>,NULL);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;}</div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec">  354</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec">GUICutRenderWindow::OnColorScaleChanged</a>(wxCommandEvent &amp;event) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <a class="code" href="classGUIColorScalePanel.xhtml" title="Farbige Temperaturskala für zweidimensionale Temperaturverteilung. ">GUIColorScalePanel</a>* scale = <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;<a class="code" href="classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929">getScalePanel</a>();</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    scale-&gt;<a class="code" href="classGUIColorScalePanel.xhtml#aba2363ced766a14d72ad5448502f62a4">setMode</a>((GUIColorScalePanel::ScaleMode) <a class="code" href="classGUICutRenderWindow.xhtml#af535e1e80e14178ff5c05707261a183d">scalemodecb</a>-&gt;GetSelection());</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    scale-&gt;<a class="code" href="classGUIColorScalePanel.xhtml#ae26f3f500092717aa7e9a85126b38461">setFontSize</a>(<a class="code" href="classGUICutRenderWindow.xhtml#a62cb232f5f9747c1fdbc5c1f6ff4b7a4">scalefontsizeedit</a>-&gt;GetValue());</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    scale-&gt;<a class="code" href="classGUIColorScalePanel.xhtml#aba534a319236878bc3504050d8227fe4">setStepWidth</a>(<a class="code" href="classGUICutRenderWindow.xhtml#a4fbe9115e418be48a70eff31e94640ba">scalestepedit</a>-&gt;GetValue());</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    scale-&gt;<a class="code" href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa">refresh</a>(image-&gt;GetWidth(),image-&gt;GetHeight());</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;Refresh(<span class="keyword">false</span>,NULL);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;}</div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a">  362</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a">GUICutRenderWindow::renderCutBtClick</a>(wxCommandEvent &amp;event) {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;<a class="code" href="classGUIRenderCutCanvas.xhtml#a88c49bc069d6e1a40b68dcfce8fd9bf7">setValueImg</a>(NULL);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c">renderImage</a>(image);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <a class="code" href="classGUICutRenderWindow.xhtml#abbaa6c66e8aa9fee96ba20a9a29e1a18">canvas</a>-&gt;Refresh(<span class="keyword">false</span>,NULL);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;}</div>
+<div class="line"><a name="l00367"></a><span class="lineno"><a class="code" href="classGUICutRenderWindow.xhtml#aced4a67c460b8c3ede40763b6da6953d">  367</a></span>&#160;<a class="code" href="classGUICutRenderWindow.xhtml#aced4a67c460b8c3ede40763b6da6953d">GUICutRenderWindow::~GUICutRenderWindow</a>() {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classGUICutRenderWindow.xhtml#a30c36db74a83fc5523407d3611c1db34">image</a>;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keyword">delete</span>[] <a class="code" href="classGUICutRenderWindow.xhtml#a9c8338a733363aea25a8735d6873a414">value_img</a>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <a class="code" href="classGUIMainWindow.xhtml" title="Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen. ">GUIMainWindow</a>* parent = (<a class="code" href="classGUIMainWindow.xhtml" title="Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen. ">GUIMainWindow</a>*) GetParent();</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">if</span> (parent!=NULL) {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        parent-&gt;<a class="code" href="classGUIMainWindow.xhtml#a4b8b9293b800ca5ff47d1cb3a75f06a5">setCutRenderWindowStatus</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        parent-&gt;<a class="code" href="classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d">getGLCanvas</a>()-&gt;<a class="code" href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa">getRenderer</a>()-&gt;<a class="code" href="classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e">setCutRenderInfo</a>(NULL);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        parent-&gt;<a class="code" href="classGUIMainWindow.xhtml#a52e68b866f7835c3691fd8fad8ba910d">getGLCanvas</a>()-&gt;Refresh(<span class="keyword">false</span>,NULL);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;parent is null!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Son Feb 9 2014 01:43:18 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

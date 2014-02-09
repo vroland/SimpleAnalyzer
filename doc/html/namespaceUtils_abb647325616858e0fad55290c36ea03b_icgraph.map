@@ -1,0 +1,5 @@
+<map id="Utils::clampHue" name="Utils::clampHue">
+<area shape="rect" id="node3" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Renderer::renderTetrahedra" alt="" coords="175,5,356,35"/>
+<area shape="rect" id="node5" href="$classRenderer.xhtml#ad2eac0343aef1abd05ed95b1b364785f" title="Renderer::renderSensorData" alt="" coords="172,59,359,88"/>
+<area shape="rect" id="node7" href="$classRenderer.xhtml#acb6c468b92221cf8a121b87a70a3da0c" title="Renderer::renderMaterial" alt="" coords="183,112,348,141"/>
+</map>

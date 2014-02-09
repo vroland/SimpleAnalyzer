@@ -1,0 +1,6 @@
+<map id="Importer::LoadSensorData" name="Importer::LoadSensorData">
+<area shape="rect" id="node3" href="$classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" title="ObjectData::loadFromFile" alt="" coords="237,5,408,35"/>
+<area shape="rect" id="node7" href="$classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" title="ObjectData::addSensorData" alt="" coords="229,59,416,88"/>
+<area shape="rect" id="node5" href="$classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" title="GUIMainWindow::OnMenuImportObj" alt="" coords="464,5,699,35"/>
+<area shape="rect" id="node9" href="$classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2" title="GUIMainWindow::OnMenuImportSD" alt="" coords="464,59,699,88"/>
+</map>

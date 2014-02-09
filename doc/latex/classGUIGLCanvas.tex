@@ -10,10 +10,22 @@ Zeichenfläche für das 3\-D-\/\-Fenster.
 
 {\ttfamily \#include $<$G\-U\-I\-G\-L\-Canvas.\-h$>$}
 
-Klassendiagramm für G\-U\-I\-G\-L\-Canvas\-:\begin{figure}[H]
+
+
+Klassendiagramm für G\-U\-I\-G\-L\-Canvas\-:\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classGUIGLCanvas}
+\includegraphics[width=160pt]{classGUIGLCanvas__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von G\-U\-I\-G\-L\-Canvas\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGUIGLCanvas__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Öffentliche Methoden}
@@ -60,6 +72,10 @@ Zeichenfläche für das 3\-D-\/\-Fenster.
 
 Klasse zum Verwalten der im 3\-D-\/\-Fenster angezeigten Inhalte. Auch zuständig für Drehen, Verschieben und Zoomen der Ansicht. 
 
+Definiert in Zeile 22 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
+
+
+
 \subsection{Beschreibung der Konstruktoren und Destruktoren}
 \hypertarget{classGUIGLCanvas_ae77992061b501fa995c08cd568c2c6ad}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}}
 \index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
@@ -73,6 +89,10 @@ Der Konstruktor.
 {\em parent} & Das Fenster, auf dem sich die Zeichenfläche befindet. \\
 \hline
 \end{DoxyParams}
+
+
+Definiert in Zeile 21 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
+
 \hypertarget{classGUIGLCanvas_af6358f8d4e95c6864ff005d4764fffbc}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!$\sim$\-G\-U\-I\-G\-L\-Canvas@{$\sim$\-G\-U\-I\-G\-L\-Canvas}}
 \index{$\sim$\-G\-U\-I\-G\-L\-Canvas@{$\sim$\-G\-U\-I\-G\-L\-Canvas}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{$\sim$\-G\-U\-I\-G\-L\-Canvas}]{\setlength{\rightskip}{0pt plus 5cm}G\-U\-I\-G\-L\-Canvas\-::$\sim$\-G\-U\-I\-G\-L\-Canvas (
@@ -82,6 +102,10 @@ Der Konstruktor.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classGUIGLCanvas_af6358f8d4e95c6864ff005d4764fffbc}
 Der Destruktor. 
 
+Definiert in Zeile 97 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
+
+
+
 \subsection{Dokumentation der Elementfunktionen}
 \hypertarget{classGUIGLCanvas_a57085ce831e09e627fe93f17a6c79dfa}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!get\-Renderer@{get\-Renderer}}
 \index{get\-Renderer@{get\-Renderer}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
@@ -90,42 +114,121 @@ Der Destruktor.
 {}
 \end{DoxyParamCaption}
 )}}\label{classGUIGLCanvas_a57085ce831e09e627fe93f17a6c79dfa}
-Gibt den \hyperlink{classRenderer}{Renderer} der Zeichenfläche zurück. \hypertarget{classGUIGLCanvas_a9c089336b9485f1abcc60a1a7fb85bb7}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!On\-Mouse\-Move@{On\-Mouse\-Move}}
+Gibt den \hyperlink{classRenderer}{Renderer} der Zeichenfläche zurück. 
+
+Definiert in Zeile 67 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGUIGLCanvas_a57085ce831e09e627fe93f17a6c79dfa_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classGUIGLCanvas_a9c089336b9485f1abcc60a1a7fb85bb7}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!On\-Mouse\-Move@{On\-Mouse\-Move}}
 \index{On\-Mouse\-Move@{On\-Mouse\-Move}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{On\-Mouse\-Move}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-G\-L\-Canvas\-::\-On\-Mouse\-Move (
 \begin{DoxyParamCaption}
 \item[{wx\-Mouse\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a9c089336b9485f1abcc60a1a7fb85bb7}
-Behandelt Mausbewegungen (verschieben und drehen der Ansicht). \hypertarget{classGUIGLCanvas_a0ee8fe9339ebb330b8133a620bd67514}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!On\-Mouse\-Wheel@{On\-Mouse\-Wheel}}
+Behandelt Mausbewegungen (verschieben und drehen der Ansicht). 
+
+Definiert in Zeile 70 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGUIGLCanvas_a9c089336b9485f1abcc60a1a7fb85bb7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classGUIGLCanvas_a0ee8fe9339ebb330b8133a620bd67514}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!On\-Mouse\-Wheel@{On\-Mouse\-Wheel}}
 \index{On\-Mouse\-Wheel@{On\-Mouse\-Wheel}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{On\-Mouse\-Wheel}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-G\-L\-Canvas\-::\-On\-Mouse\-Wheel (
 \begin{DoxyParamCaption}
 \item[{wx\-Mouse\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a0ee8fe9339ebb330b8133a620bd67514}
-Behandelt Mausradbewegungen (zoomen). \hypertarget{classGUIGLCanvas_a83f52d08591920a339150c2f45069c8f}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!On\-Paint@{On\-Paint}}
+Behandelt Mausradbewegungen (zoomen). 
+
+Definiert in Zeile 32 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGUIGLCanvas_a0ee8fe9339ebb330b8133a620bd67514_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classGUIGLCanvas_a83f52d08591920a339150c2f45069c8f}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!On\-Paint@{On\-Paint}}
 \index{On\-Paint@{On\-Paint}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{On\-Paint}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-G\-L\-Canvas\-::\-On\-Paint (
 \begin{DoxyParamCaption}
 \item[{wx\-Paint\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a83f52d08591920a339150c2f45069c8f}
-Event-\/\-Tabellendeklaration für wx\-Widgets. Behandelt das Zeichenevent und zeichnet die Inhalte des 3\-D-\/\-Fensters. \hypertarget{classGUIGLCanvas_aba4aa683bf8226da8182779de38ef5db}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!On\-Resize@{On\-Resize}}
+Event-\/\-Tabellendeklaration für wx\-Widgets. Behandelt das Zeichenevent und zeichnet die Inhalte des 3\-D-\/\-Fensters. 
+
+Definiert in Zeile 39 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGUIGLCanvas_a83f52d08591920a339150c2f45069c8f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classGUIGLCanvas_aba4aa683bf8226da8182779de38ef5db}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!On\-Resize@{On\-Resize}}
 \index{On\-Resize@{On\-Resize}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{On\-Resize}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-G\-L\-Canvas\-::\-On\-Resize (
 \begin{DoxyParamCaption}
 \item[{wx\-Size\-Event \&}]{event}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_aba4aa683bf8226da8182779de38ef5db}
-Behandelt Größenänderungen der Zeichenfläche. \hypertarget{classGUIGLCanvas_a883d5bc79fcfc6e2c9ceeb41a0c0e77e}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!refresh@{refresh}}
+Behandelt Größenänderungen der Zeichenfläche. 
+
+Definiert in Zeile 27 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
+
+\hypertarget{classGUIGLCanvas_a883d5bc79fcfc6e2c9ceeb41a0c0e77e}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!refresh@{refresh}}
 \index{refresh@{refresh}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{refresh}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-G\-L\-Canvas\-::refresh (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classGUIGLCanvas_a883d5bc79fcfc6e2c9ceeb41a0c0e77e}
-Zeichnet den Inhalt des 3\-D-\/\-Fensters neu und aktualisiert den \hyperlink{classRenderer}{Renderer}, z.\-B. bei geänderter Fenstergröße oder geänderten Eigenschaften des angezeigten Objekts. \hypertarget{classGUIGLCanvas_a643f11a7ef05829a6c48d037ad2c4b9b}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!set\-Render\-Object@{set\-Render\-Object}}
+Zeichnet den Inhalt des 3\-D-\/\-Fensters neu und aktualisiert den \hyperlink{classRenderer}{Renderer}, z.\-B. bei geänderter Fenstergröße oder geänderten Eigenschaften des angezeigten Objekts. 
+
+Definiert in Zeile 62 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGUIGLCanvas_a883d5bc79fcfc6e2c9ceeb41a0c0e77e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classGUIGLCanvas_a643f11a7ef05829a6c48d037ad2c4b9b}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!set\-Render\-Object@{set\-Render\-Object}}
 \index{set\-Render\-Object@{set\-Render\-Object}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{set\-Render\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-G\-L\-Canvas\-::set\-Render\-Object (
 \begin{DoxyParamCaption}
@@ -134,23 +237,58 @@ Zeichnet den Inhalt des 3\-D-\/\-Fensters neu und aktualisiert den \hyperlink{cl
 )}}\label{classGUIGLCanvas_a643f11a7ef05829a6c48d037ad2c4b9b}
 Setzt das darzustellende Objekt. 
 
+Definiert in Zeile 56 der Datei G\-U\-I\-G\-L\-Canvas.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGUIGLCanvas_a643f11a7ef05829a6c48d037ad2c4b9b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
 \subsection{Dokumentation der Datenelemente}
 \hypertarget{classGUIGLCanvas_a7139f37aa028f71e393a0c479299455d}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!do\-\_\-refresh@{do\-\_\-refresh}}
 \index{do\-\_\-refresh@{do\-\_\-refresh}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{do\-\_\-refresh}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-G\-L\-Canvas\-::do\-\_\-refresh\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a7139f37aa028f71e393a0c479299455d}
-Statusvariable, gibt an ob beim Zeichnen auch der \hyperlink{classRenderer}{Renderer} aktualisiert wird. Dies tritt beispielsweise bei Größenänderungen oder Änderungen am Objekt ein, da die Daten teilweise neu an den \hyperlink{classRenderer}{Renderer} übermittelt werden müssen. \hypertarget{classGUIGLCanvas_a59e01564652765dec69e7097c10b4455}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!is\-\_\-initialized@{is\-\_\-initialized}}
+Statusvariable, gibt an ob beim Zeichnen auch der \hyperlink{classRenderer}{Renderer} aktualisiert wird. Dies tritt beispielsweise bei Größenänderungen oder Änderungen am Objekt ein, da die Daten teilweise neu an den \hyperlink{classRenderer}{Renderer} übermittelt werden müssen. 
+
+Definiert in Zeile 81 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
+
+\hypertarget{classGUIGLCanvas_a59e01564652765dec69e7097c10b4455}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!is\-\_\-initialized@{is\-\_\-initialized}}
 \index{is\-\_\-initialized@{is\-\_\-initialized}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{is\-\_\-initialized}]{\setlength{\rightskip}{0pt plus 5cm}bool G\-U\-I\-G\-L\-Canvas\-::is\-\_\-initialized\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a59e01564652765dec69e7097c10b4455}
-Initialisiertungsstatus des Objekts. \hypertarget{classGUIGLCanvas_afc22c47a62b8d5b165a22d059816ee22}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!prev\-\_\-mouse\-\_\-x@{prev\-\_\-mouse\-\_\-x}}
+Initialisiertungsstatus des Objekts. 
+
+Definiert in Zeile 75 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
+
+\hypertarget{classGUIGLCanvas_afc22c47a62b8d5b165a22d059816ee22}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!prev\-\_\-mouse\-\_\-x@{prev\-\_\-mouse\-\_\-x}}
 \index{prev\-\_\-mouse\-\_\-x@{prev\-\_\-mouse\-\_\-x}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{prev\-\_\-mouse\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}int G\-U\-I\-G\-L\-Canvas\-::prev\-\_\-mouse\-\_\-x\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_afc22c47a62b8d5b165a22d059816ee22}
-Zwischenspeicher für die vorherige Mausposition (X). \hypertarget{classGUIGLCanvas_a684c82bd591f01b5f600c9589158e0e0}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!prev\-\_\-mouse\-\_\-y@{prev\-\_\-mouse\-\_\-y}}
+Zwischenspeicher für die vorherige Mausposition (X). 
+
+Definiert in Zeile 85 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
+
+\hypertarget{classGUIGLCanvas_a684c82bd591f01b5f600c9589158e0e0}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!prev\-\_\-mouse\-\_\-y@{prev\-\_\-mouse\-\_\-y}}
 \index{prev\-\_\-mouse\-\_\-y@{prev\-\_\-mouse\-\_\-y}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{prev\-\_\-mouse\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}int G\-U\-I\-G\-L\-Canvas\-::prev\-\_\-mouse\-\_\-y\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a684c82bd591f01b5f600c9589158e0e0}
-Zwischenspeicher für die vorherige Mausposition (Y). \hypertarget{classGUIGLCanvas_a33a4ad3bc364d697396c55d011bfac44}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!renderer@{renderer}}
+Zwischenspeicher für die vorherige Mausposition (Y). 
+
+Definiert in Zeile 89 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
+
+\hypertarget{classGUIGLCanvas_a33a4ad3bc364d697396c55d011bfac44}{\index{G\-U\-I\-G\-L\-Canvas@{G\-U\-I\-G\-L\-Canvas}!renderer@{renderer}}
 \index{renderer@{renderer}!GUIGLCanvas@{G\-U\-I\-G\-L\-Canvas}}
 \subsubsection[{renderer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Renderer} G\-U\-I\-G\-L\-Canvas\-::renderer\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIGLCanvas_a33a4ad3bc364d697396c55d011bfac44}
 Der verwendete \hyperlink{classRenderer}{Renderer}. 
+
+Definiert in Zeile 71 der Datei G\-U\-I\-G\-L\-Canvas.\-h.
+
+
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 

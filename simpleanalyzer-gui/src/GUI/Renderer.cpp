@@ -27,9 +27,9 @@ Renderer::Renderer() {
 	viewport.rotationX = 0;
 	viewport.invertcut = true;
 	viewport.cut = NULL;
-	viewport.showpoints = RM_NONE;
-	viewport.showedges = RM_VALUECOLOR;
-	viewport.showfaces = RM_NONE;
+	viewport.showPoints = RM_NONE;
+	viewport.showEdges = RM_VALUECOLOR;
+	viewport.showFaces = RM_NONE;
 	viewport.show_extrapolated = true;
 	viewport.show_sensordata = true;
 	viewport.scale = 1;
@@ -39,6 +39,11 @@ Renderer::Renderer() {
 	viewport.cut = new Triangle(p1,p2,p3);*/
 	cut_visualisation_info = NULL;
 }
+
+Renderer::Viewport_info* Renderer::getViewport() {
+	return &viewport;
+}
+
 bool pointBehindCut(Vector3D* point,Triangle* cut) {
 	/*for (unsigned int i=0;i<cut->size();i++) {
 		Triangle* tri = cut->at(i);
@@ -87,7 +92,7 @@ bool pointBehindCut(Vector3D* point,Triangle* cut) {
 	return behind;
 }
 
-void Renderer::renderTetrahedra(MaterialData* mat,int rendermode) {
+void Renderer::renderTetrahedra(ObjectData::MaterialData* mat,RenderMode rendermode) {
 	tetgenio* io = mat->tetgenoutput;
 	glEnable(GL_LIGHTING);
 	glBegin(GL_TRIANGLES);
@@ -204,13 +209,13 @@ void Renderer::renderSensorData(vector<SensorPoint>* data) {
 	glEnable(GL_LIGHTING);
 	glEnable(GL_DEPTH_TEST);
 }
-void Renderer::renderMaterial(MaterialData* mat) {
+void Renderer::renderMaterial(ObjectData::MaterialData* mat) {
 	tetgenio* io = mat->tetgenoutput;
-	if (viewport.showpoints) {
+	if (viewport.showPoints) {
 		glPointSize(3.0);
 		glDisable(GL_LIGHTING);
 		glBegin(GL_POINTS);
-		if (viewport.showpoints==RM_MATERIALCOLOR) {
+		if (viewport.showPoints==RM_MATERIALCOLOR) {
 			glColor3fv(mat->color);
 		}
 		for (int i=0;i<io->numberofpoints;i++) {
@@ -218,29 +223,29 @@ void Renderer::renderMaterial(MaterialData* mat) {
 			if (mat->extrapolated[i] && !viewport.show_extrapolated) {
 				continue;
 			}
-			if (viewport.showpoints==RM_VALUECOLOR) {
+			if (viewport.showPoints==RM_VALUECOLOR) {
 				float value = io->pointattributelist[io->numberofpointattributes*(i)];
 				float* color = hsvToRgb((1.0-clampHue((value-visualization_info.min_visualisation_temp)/(visualization_info.max_visualisation_temp-visualization_info.min_visualisation_temp)))*.666,1,1);
 				glColor3fv(color);
 				glVertex3dv(&io->pointlist[3*(i)]);
 				delete[] color;
 			}
-			if (viewport.showpoints==RM_MATERIALCOLOR) {
+			if (viewport.showPoints==RM_MATERIALCOLOR) {
 				glVertex3dv(&io->pointlist[3*(i)]);
 			}
 		}
 		glEnd();
 	}
-	if (viewport.showedges) {
+	if (viewport.showEdges) {
 		glPolygonMode(GL_FRONT, GL_LINE);
 		glPolygonMode(GL_BACK, GL_LINE);
-		renderTetrahedra(mat,viewport.showedges);
+		renderTetrahedra(mat,viewport.showEdges);
 	}
 
-	if (viewport.showfaces) {
+	if (viewport.showFaces) {
 		glPolygonMode(GL_FRONT, GL_FILL);
 		glPolygonMode(GL_BACK, GL_FILL);
-		renderTetrahedra(mat,viewport.showfaces);
+		renderTetrahedra(mat,viewport.showFaces);
 
 	}
 	//glEnable(GL_DEPTH_TEST);
@@ -388,12 +393,12 @@ void Renderer::setObject(ObjectData* obj) {
 	}
 	glNewList(displayList, GL_COMPILE);
 
-	for (unsigned int i=0;i<obj->materials.size();i++) {
-		if (object->materials.at(i).visible) {
-			renderMaterial(&object->materials.at(i));
+	for (unsigned int i=0;i<obj->getMaterials()->size();i++) {
+		if (object->getMaterials()->at(i).visible) {
+			renderMaterial(&object->getMaterials()->at(i));
 		}
 		if (viewport.show_sensordata) {
-			SensorData* sd = &object->sensordatalist.at(object->current_sensor_index);
+			SensorData* sd = &object->getSensorDataList()->at(object->getCurrentSensorIndex());
 			renderSensorData(&sd->data.at(sd->current_time_index));
 		}
 	}
@@ -425,6 +430,7 @@ wxImage* Renderer::getViewportImage() {
 	free(depth_buff);
 	return img;
 }
+
 void Renderer::render() {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity();

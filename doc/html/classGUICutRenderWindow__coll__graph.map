@@ -1,0 +1,4 @@
+<map id="GUICutRenderWindow" name="GUICutRenderWindow">
+<area shape="rect" id="node4" href="$classGUIRenderCutCanvas.xhtml" title="Zeichenfläche für die 2D&#45;Temperaturverteilung. " alt="" coords="104,101,259,131"/>
+<area shape="rect" id="node8" href="$classGUIColorScalePanel.xhtml" title="Farbige Temperaturskala für zweidimensionale Temperaturverteilung. " alt="" coords="176,5,317,35"/>
+</map>

@@ -1,32 +1,38 @@
 var NAVTREE =
 [
-  [ "Simple Analyzer", "index.html", [
-    [ "SimpleAnalyzer", "index.html", null ],
-    [ "SimpleAnalyzer", "md_README.html", null ],
+  [ "Simple Analyzer", "index.xhtml", [
+    [ "SimpleAnalyzer", "index.xhtml", null ],
+    [ "SimpleAnalyzer", "md_README.xhtml", null ],
     [ "Klassen", null, [
-      [ "Auflistung der Klassen", "annotated.html", "annotated" ],
-      [ "Klassen-Verzeichnis", "classes.html", null ],
-      [ "Klassenhierarchie", "hierarchy.html", "hierarchy" ],
-      [ "Klassen-Elemente", "functions.html", [
-        [ "Alle", "functions.html", null ],
-        [ "Funktionen", "functions_func.html", null ],
-        [ "Variablen", "functions_vars.html", null ]
+      [ "Auflistung der Klassen", "annotated.xhtml", "annotated" ],
+      [ "Klassen-Verzeichnis", "classes.xhtml", null ],
+      [ "Klassenhierarchie", "hierarchy.xhtml", "hierarchy" ],
+      [ "Klassen-Elemente", "functions.xhtml", [
+        [ "Alle", "functions.xhtml", "functions_dup" ],
+        [ "Funktionen", "functions_func.xhtml", null ],
+        [ "Variablen", "functions_vars.xhtml", null ],
+        [ "Aufzählungen", "functions_enum.xhtml", null ]
       ] ]
     ] ],
     [ "Dateien", null, [
-      [ "Auflistung der Dateien", "files.html", "files" ]
+      [ "Auflistung der Dateien", "files.xhtml", "files" ],
+      [ "Datei-Elemente", "globals.xhtml", [
+        [ "Alle", "globals.xhtml", null ],
+        [ "Variablen", "globals_vars.xhtml", null ],
+        [ "Aufzählungen", "globals_enum.xhtml", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-".html",
-"classGUITimeline.html#a880c85a1838b77e7dd2c03601c15e36b",
-"classtetgenio.html#a1fe58bef7f029f7b84a8541851547382",
-"classtetgenmesh.html#a472328a6a8fe8076ed0443e3b2cab4c1",
-"classtetgenmesh.html#ab81eb4452e6fc57c417bee126d500042aecb2c548b5fa1c6dea18175a9f74f19a",
-"dir_3ae5ff8f903e04726d22262ee65ea878.html"
+".xhtml",
+"classGUIRenderCutCanvas.xhtml#ad5a1f8cc7bd80e3c5a1fde354f0506b0",
+"classtetgenbehavior.xhtml#ac3e92e2c85db1dedce6aafdfca5b7b88",
+"classtetgenmesh.xhtml#a3cb62ec0ca76c3f770e82620151b2398",
+"classtetgenmesh.xhtml#aaaa4af8e91e57e1a1a1f8f0b843fa429",
+"classtetgenmesh_1_1memorypool.xhtml#a9631e38a788a91ae067a756232b515ab"
 ];
 
 var SYNCONMSG = 'Klicken um Panelsynchronisation auszuschalten';

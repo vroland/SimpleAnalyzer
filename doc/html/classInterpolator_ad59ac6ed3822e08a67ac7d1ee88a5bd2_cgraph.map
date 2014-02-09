@@ -1,0 +1,16 @@
+<map id="Interpolator::interpolateTri" name="Interpolator::interpolateTri">
+<area shape="rect" id="node3" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Vector3D::equals" alt="" coords="239,38,361,67"/>
+<area shape="rect" id="node5" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="440,64,552,94"/>
+<area shape="rect" id="node7" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="440,171,552,200"/>
+<area shape="rect" id="node11" href="$classTriangle.xhtml#a9320d1ab83c104352bf5e8f2c8274334" title="Triangle::getVert" alt="" coords="241,352,359,382"/>
+<area shape="rect" id="node13" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Triangle::getV2" alt="" coords="245,406,355,435"/>
+<area shape="rect" id="node15" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Vector3D::copy" alt="" coords="244,459,356,488"/>
+<area shape="rect" id="node17" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="247,91,353,120"/>
+<area shape="rect" id="node22" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Triangle::getV1" alt="" coords="245,512,355,542"/>
+<area shape="rect" id="node24" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Triangle::getV3" alt="" coords="245,566,355,595"/>
+<area shape="rect" id="node26" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Vector3D::mult" alt="" coords="245,619,355,648"/>
+<area shape="rect" id="node28" href="$classVector3D.xhtml#a4bf1dcea68296f2f38f3574242933153" title="Vector3D::getAngleTo" alt="" coords="225,198,375,227"/>
+<area shape="rect" id="node33" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Vector3D::getLength" alt="" coords="425,248,567,278"/>
+<area shape="rect" id="node36" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Vector3D::dotProduct" alt="" coords="227,144,373,174"/>
+<area shape="rect" id="node9" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="441,118,551,147"/>
+</map>

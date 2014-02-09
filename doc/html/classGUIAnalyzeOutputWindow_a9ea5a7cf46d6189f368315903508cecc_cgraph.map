@@ -1,0 +1,15 @@
+<map id="GUIAnalyzeOutputWindow::Update" name="GUIAnalyzeOutputWindow::Update">
+<area shape="rect" id="node3" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Analyzer::analyzeObject" alt="" coords="233,211,396,240"/>
+<area shape="rect" id="node5" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="ObjectData::getCurrentSensor\lIndex" alt="" coords="700,5,897,51"/>
+<area shape="rect" id="node7" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="ObjectData::getSensorDataList" alt="" coords="447,119,649,148"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="ObjectData::setCurrentSensor\lIndex" alt="" coords="449,171,647,218"/>
+<area shape="rect" id="node11" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="MeshProcessor::process" alt="" coords="465,65,631,95"/>
+<area shape="rect" id="node16" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="ObjectData::getMaterials" alt="" coords="465,241,631,271"/>
+<area shape="rect" id="node18" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="495,295,601,324"/>
+<area shape="rect" id="node26" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Vector3D::crossProduct" alt="" coords="467,348,629,377"/>
+<area shape="rect" id="node31" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Vector3D::dotProduct" alt="" coords="475,401,621,431"/>
+<area shape="rect" id="node13" href="$classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Interpolator::setMode" alt="" coords="727,75,871,104"/>
+<area shape="rect" id="node20" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="743,295,855,324"/>
+<area shape="rect" id="node22" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="743,348,855,377"/>
+<area shape="rect" id="node24" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="744,401,853,431"/>
+</map>

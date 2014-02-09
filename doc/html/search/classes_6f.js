@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['objectdata',['ObjectData',['../classObjectData.html',1,'']]],
-  ['options',['Options',['../structOptions.html',1,'']]]
+  ['objectdata',['ObjectData',['../classObjectData.xhtml',1,'']]],
+  ['options',['Options',['../structOptions.xhtml',1,'']]]
 ];

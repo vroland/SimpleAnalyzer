@@ -1,0 +1,16 @@
+<map id="ObjectData::getMaterials" name="ObjectData::getMaterials">
+<area shape="rect" id="node3" href="$classImporter.xhtml#a5013417fb7556dce65dba1ed3aec4e50" title="Importer::ImportObj" alt="" coords="260,5,393,35"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="GUICutRenderWindow\l::renderImage" alt="" coords="249,58,404,105"/>
+<area shape="rect" id="node13" href="$classGUIMainWindow.xhtml#a1cb2c4f39b9ba971d51ab682f29b7f23" title="GUIMainWindow::assignCurrent\lObjectProps" alt="" coords="221,127,432,174"/>
+<area shape="rect" id="node15" href="$classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0" title="GUIMainWindow::updateObject\lPropGUI" alt="" coords="224,197,429,243"/>
+<area shape="rect" id="node17" href="$classRenderer.xhtml#a9db67fbbd309875b564ca1df08daf372" title="Renderer::setObject" alt="" coords="257,267,396,296"/>
+<area shape="rect" id="node23" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Analyzer::analyzeObject" alt="" coords="245,328,408,357"/>
+<area shape="rect" id="node5" href="$classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" title="ObjectData::loadFromFile" alt="" coords="503,5,673,35"/>
+<area shape="rect" id="node7" href="$classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" title="GUIMainWindow::OnMenuImportObj" alt="" coords="744,5,979,35"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="GUICutRenderWindow\l::renderCutBtClick" alt="" coords="511,58,665,105"/>
+<area shape="rect" id="node19" href="$classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" title="GUIGLCanvas::OnPaint" alt="" coords="507,213,669,243"/>
+<area shape="rect" id="node21" href="$classGUIGLCanvas.xhtml#a643f11a7ef05829a6c48d037ad2c4b9b" title="GUIGLCanvas::setRenderObject" alt="" coords="481,267,695,296"/>
+<area shape="rect" id="node25" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="GUIAnalyzeOutputWindow\l::Update" alt="" coords="499,319,677,366"/>
+<area shape="rect" id="node29" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="GUITimeline::findMaxValue" alt="" coords="497,389,679,419"/>
+<area shape="rect" id="node27" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="GUIAnalyzeOutputWindow\l::GUIAnalyzeOutputWindow" alt="" coords="768,319,955,366"/>
+</map>

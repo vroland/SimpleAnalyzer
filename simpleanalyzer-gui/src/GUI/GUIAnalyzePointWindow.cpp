@@ -43,9 +43,9 @@ GUIAnalyzePointWindow::GUIAnalyzePointWindow(wxWindow * parent,const wxChar *tit
 
 void GUIAnalyzePointWindow::analyzePoint(wxCommandEvent &event) {
 	Analyzer analyzer;
-	AnalyzerData_point data;
+	Analyzer::AnalyzerData_point data;
 	Interpolator interpolator;
-	interpolator.setMode((InterpolationMode) interpolationModeList->GetSelection());
+	interpolator.setMode((Interpolator::InterpolationMode) interpolationModeList->GetSelection());
 	setlocale(LC_NUMERIC, "C");
 	Vector3D point = Vector3D(atof(xedit->GetValue().ToAscii()),atof(yedit->GetValue().ToAscii()),atof(zedit->GetValue().ToAscii()));
 	analyzer.analyzePoint(data_objects.at(current_data_object_index),&point,&data,&interpolator);

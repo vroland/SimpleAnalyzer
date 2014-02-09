@@ -1,0 +1,12 @@
+<map id="GUIGLCanvas::OnMouseMove" name="GUIGLCanvas::OnMouseMove">
+<area shape="rect" id="node3" href="$classGUIGLCanvas.xhtml#a883d5bc79fcfc6e2c9ceeb41a0c0e77e" title="GUIGLCanvas::refresh" alt="" coords="260,5,415,35"/>
+<area shape="rect" id="node5" href="$classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Renderer::getViewport" alt="" coords="261,59,413,88"/>
+<area shape="rect" id="node7" href="$classMatrix3D.xhtml#ada7ce7ea9f2d0ef0fdda60ad73dad345" title="Matrix3D::rotateX" alt="" coords="275,112,400,141"/>
+<area shape="rect" id="node9" href="$classMatrix3D.xhtml#a649e1aa65466df65d63f1aef934e5fad" title="Matrix3D::rotateY" alt="" coords="275,165,400,195"/>
+<area shape="rect" id="node11" href="$classMatrix3D.xhtml#a0d59cb6ea927264477a10b9d427966d6" title="Matrix3D::transpose" alt="" coords="268,219,407,248"/>
+<area shape="rect" id="node13" href="$classMatrix3D.xhtml#a399be81028219044a03439b2ff93782a" title="Matrix3D::mult" alt="" coords="284,272,391,301"/>
+<area shape="rect" id="node15" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Vector3D::add" alt="" coords="284,325,391,355"/>
+<area shape="rect" id="node17" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="464,272,576,301"/>
+<area shape="rect" id="node19" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="464,325,576,355"/>
+<area shape="rect" id="node21" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="465,379,575,408"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Utils::pointInsideTetrahedron" name="Utils::pointInsideTetrahedron">
+<area shape="rect" id="node3" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="271,5,377,35"/>
+<area shape="rect" id="node11" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Vector3D::crossProduct" alt="" coords="243,59,405,88"/>
+<area shape="rect" id="node16" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Vector3D::dotProduct" alt="" coords="251,112,397,141"/>
+<area shape="rect" id="node21" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Vector3D::mult" alt="" coords="269,165,379,195"/>
+<area shape="rect" id="node23" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Vector3D::copy" alt="" coords="268,219,380,248"/>
+<area shape="rect" id="node5" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="453,5,565,35"/>
+<area shape="rect" id="node7" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="453,59,565,88"/>
+<area shape="rect" id="node9" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="455,112,564,141"/>
+</map>

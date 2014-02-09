@@ -10,11 +10,23 @@
 #include "../libraries/tetgen/tetgen.h"
 #include "ObjectData.h"
 #include "utils.h"
-
+/**
+ * @brief Errechnet die Temperaturverteilung für ein Objekt.
+ */
 class MeshProcessor {
 public:
+	/**
+	 * Der Konstruktor.
+	 */
 	MeshProcessor();
+	/**
+	 * Berechnet die Temperaturverteilung für ein Objekt.
+	 * @param object Das Objekt, für das die Temperaturverteilung ermittelt werden soll.
+	 */
 	void process(ObjectData* object);
+	/**
+	 * Der Destruktor.
+	 */
 	virtual ~MeshProcessor();
 };
 

@@ -193,7 +193,7 @@ int Utils::pointInsideTetrahedron(Vector3D* pges, Vector3D* v1, Vector3D* v2, Ve
 	Vector3D* vvec = v2->crossProduct(v3);
 	double V = 1./6.*abs(vvec->dotProduct(v4));
 	delete vvec;
-	if (V<.0001) { // Tetraeder ist coplanar
+	if (V<.0001) { // Tetraeder ist koplanar
 		return -1;
 	}
 
@@ -321,7 +321,7 @@ double Utils::getPointValue(int &status,vector<SensorPoint>* sensorpoints,double
 		delete extrapolationIndices;
 		return interval;
 	} else {
-		cerr << "Alle Messwerte sind coplanar -> keine Inter/Extrapolation möglich!" << endl;
+		cerr << "Alle Messwerte sind komplanar -> keine Inter/Extrapolation möglich!" << endl;
 		status = -1;
 	}
 	return -1;

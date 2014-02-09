@@ -1,0 +1,14 @@
+<map id="Analyzer::analyzeObject" name="Analyzer::analyzeObject">
+<area shape="rect" id="node3" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="ObjectData::getCurrentSensor\lIndex" alt="" coords="473,5,671,51"/>
+<area shape="rect" id="node5" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="ObjectData::getSensorDataList" alt="" coords="220,119,423,148"/>
+<area shape="rect" id="node7" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="ObjectData::setCurrentSensor\lIndex" alt="" coords="223,171,420,218"/>
+<area shape="rect" id="node9" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="MeshProcessor::process" alt="" coords="239,65,404,95"/>
+<area shape="rect" id="node14" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="ObjectData::getMaterials" alt="" coords="239,241,404,271"/>
+<area shape="rect" id="node16" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="268,295,375,324"/>
+<area shape="rect" id="node24" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Vector3D::crossProduct" alt="" coords="240,348,403,377"/>
+<area shape="rect" id="node29" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Vector3D::dotProduct" alt="" coords="248,401,395,431"/>
+<area shape="rect" id="node11" href="$classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Interpolator::setMode" alt="" coords="500,75,644,104"/>
+<area shape="rect" id="node18" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="516,295,628,324"/>
+<area shape="rect" id="node20" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="516,348,628,377"/>
+<area shape="rect" id="node22" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="517,401,627,431"/>
+</map>

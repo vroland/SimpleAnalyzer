@@ -1,0 +1,4 @@
+<map id="GUIColorScalePanel::setFontSize" name="GUIColorScalePanel::setFontSize">
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a25feed7d1598253a25fc9c3bfe4131ec" title="GUICutRenderWindow\l::OnColorScaleChanged" alt="" coords="197,5,360,51"/>
+<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a3a2c47b00b30661632dae29eed266438" title="GUICutRenderWindow\l::OnColorScaleChanged_spin" alt="" coords="408,5,603,51"/>
+</map>

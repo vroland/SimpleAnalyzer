@@ -1,0 +1,10 @@
+<map id="Triangle::getNormal" name="Triangle::getNormal">
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="GUICutRenderWindow\l::renderImage" alt="" coords="200,5,355,51"/>
+<area shape="rect" id="node7" href="$classRenderer.xhtml#af7e5f8f68742f198e315fb4683a605a4" title="Renderer::render" alt="" coords="219,75,336,104"/>
+<area shape="rect" id="node11" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Interpolator::interpolateTet" alt="" coords="191,128,364,157"/>
+<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="GUICutRenderWindow\l::renderCutBtClick" alt="" coords="417,5,572,51"/>
+<area shape="rect" id="node9" href="$classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" title="GUIGLCanvas::OnPaint" alt="" coords="413,75,576,104"/>
+<area shape="rect" id="node13" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Utils::getPointValue" alt="" coords="425,128,564,157"/>
+<area shape="rect" id="node15" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Analyzer::analyzePoint" alt="" coords="625,128,780,157"/>
+<area shape="rect" id="node17" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="GUIAnalyzePointWindow\l::analyzePoint" alt="" coords="829,119,1000,166"/>
+</map>

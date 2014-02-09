@@ -1,0 +1,16 @@
+<map id="Renderer::render" name="Renderer::render">
+<area shape="rect" id="node3" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Triangle::getNormal" alt="" coords="173,159,309,188"/>
+<area shape="rect" id="node5" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Vector3D::copy" alt="" coords="383,112,495,141"/>
+<area shape="rect" id="node7" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="385,59,492,88"/>
+<area shape="rect" id="node15" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Vector3D::crossProduct" alt="" coords="357,219,520,248"/>
+<area shape="rect" id="node20" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Vector3D::normalize" alt="" coords="368,165,509,195"/>
+<area shape="rect" id="node22" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Vector3D::getXYZ" alt="" coords="177,313,305,343"/>
+<area shape="rect" id="node24" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Triangle::getV1" alt="" coords="187,367,296,396"/>
+<area shape="rect" id="node26" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Triangle::getV2" alt="" coords="187,420,296,449"/>
+<area shape="rect" id="node28" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Triangle::getV3" alt="" coords="187,473,296,503"/>
+<area shape="rect" id="node34" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Vector3D::mult" alt="" coords="187,527,296,556"/>
+<area shape="rect" id="node36" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Vector3D::add" alt="" coords="385,5,492,35"/>
+<area shape="rect" id="node9" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="568,5,680,35"/>
+<area shape="rect" id="node11" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="568,59,680,88"/>
+<area shape="rect" id="node13" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="569,112,679,141"/>
+</map>

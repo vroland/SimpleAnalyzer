@@ -183,7 +183,7 @@ void GUIMainWindow::addObject(ObjectData* obj) {
 void GUIMainWindow::setActiveObject(int index) {
 	current_data_object_index = index;
 	gl_context->setRenderObject(data_objects.at(current_data_object_index));
-	propbox->current_material = 0;
+	propbox->setCurrentMaterial(0);
 	updateObjectPropGUI();
 	updateViewPropGUI();
 }
@@ -222,7 +222,7 @@ string floattostr(double val) {
 void GUIMainWindow::OnSDTimelineChange(wxCommandEvent &event) {
 	OnGeneralPropChange(event);
 	updating = true;
-	propbox->analyzemarkercb->SetValue(propbox->sdtimeline->isMarked(propbox->sdtimeline->getValue()));
+	propbox->getAnalyzeMarkerCheckBox()->SetValue(propbox->getSdTimeline()->isMarked(propbox->getSdTimeline()->getValue()));
 	updating = false;
 }
 void GUIMainWindow::OnSensorDataChange(wxCommandEvent &event) {
@@ -231,66 +231,66 @@ void GUIMainWindow::OnSensorDataChange(wxCommandEvent &event) {
 	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,propbox->GetSize().y+50);
 }
 void GUIMainWindow::OnSDTLMarkerClear(wxCommandEvent &event) {
-	propbox->sdtimeline->clearMarkers();
+	propbox->getSdTimeline()->clearMarkers();
 	updating = true;
-	propbox->analyzemarkercb->SetValue(false);
+	propbox->getAnalyzeMarkerCheckBox()->SetValue(false);
 	updating = false;
 }
 void GUIMainWindow::OnAnalyzeMarkerChange(wxCommandEvent &event) {
 	if (!updating) {
-		int val = propbox->sdtimeline->getValue();
-		propbox->sdtimeline->setMarked(val,propbox->analyzemarkercb->GetValue());
+		int val = propbox->getSdTimeline()->getValue();
+		propbox->getSdTimeline()->setMarked(val,propbox->getAnalyzeMarkerCheckBox()->GetValue());
 	}
 }
 void GUIMainWindow::OnFindMaxTSD(wxCommandEvent &event) {
 	if (current_data_object_index>-1) {
 		ObjectData* obj = data_objects.at(current_data_object_index);
-		if (obj->current_sensor_index!=propbox->sensordatalist->GetSelection()) {
+		if (obj->getCurrentSensorIndex()!=propbox->getSensorDataList()->GetSelection()) {
 			wxMessageBox(wxT("Das Objekt wurde noch nicht neu berechnet!\nBitte berechnen sie das Objekt neu, um die Maximumssuche fortzusetzen!"),wxT("Fehler"));
 			return;
 		}
 		wxMessageDialog dlg(this,wxT("Nur Messwertdurchschnitt verwenden? (schneller)"),wxT("Schnelle Methode verwenden?"),wxYES_NO|wxYES_DEFAULT| wxCANCEL);
 		int res = dlg.ShowModal();
 		if (res!=wxID_CANCEL) {
-			propbox->sdtimeline->findMaxValue(obj,(res == wxID_YES));
+			propbox->getSdTimeline()->findMaxValue(obj,(res == wxID_YES));
 		}
 	}
 }
 void GUIMainWindow::OnSDTLNextMarker(wxCommandEvent &event) {
-	vector<int>* markers = propbox->sdtimeline->getMarkers();
+	vector<int>* markers = propbox->getSdTimeline()->getMarkers();
 	if (markers->size()==0) {
 		wxMessageBox(wxT("Es sind keine Analyze-Marker gesetzt!"),wxT("Hinweis"),wxICON_INFORMATION);
 	} else {
 		for (size_t i=0;i<markers->size();i++) {
-			if (markers->at(i)>propbox->sdtimeline->getValue()) {
-				propbox->sdtimeline->setValue(markers->at(i));
+			if (markers->at(i)>propbox->getSdTimeline()->getValue()) {
+				propbox->getSdTimeline()->setValue(markers->at(i));
 				break;
 			}
 		}
 	}
 }
 void GUIMainWindow::OnSDTLPrevMarker(wxCommandEvent &event) {
-	vector<int>* markers = propbox->sdtimeline->getMarkers();
+	vector<int>* markers = propbox->getSdTimeline()->getMarkers();
 	if (markers->size()==0) {
 		wxMessageBox(wxT("Es sind keine Analyze-Marker gesetzt!"),wxT("Hinweis"),wxICON_INFORMATION);
 	} else {
 		for (size_t i=0;i<markers->size();i++) {
-			if (markers->at(i)>=propbox->sdtimeline->getValue()) {
+			if (markers->at(i)>=propbox->getSdTimeline()->getValue()) {
 				if (i>0) {
-					propbox->sdtimeline->setValue(markers->at(i-1));
+					propbox->getSdTimeline()->setValue(markers->at(i-1));
 				} else {
-					propbox->sdtimeline->setValue(markers->at(0));
+					propbox->getSdTimeline()->setValue(markers->at(0));
 				}
 				break;
 			}
 			if (i==markers->size()-1) {
-				propbox->sdtimeline->setValue(markers->at(i));
+				propbox->getSdTimeline()->setValue(markers->at(i));
 			}
 		}
 	}
 }
 void GUIMainWindow::OnAutoUpdateChange(wxCommandEvent &event) {
-	if (propbox->autoupdatecb->IsChecked()) {
+	if (propbox->getAutoUpdateCeckBox()->IsChecked()) {
 		OnRecalcBtClick(event);
 	}
 }
@@ -298,20 +298,20 @@ void GUIMainWindow::assignCurrentObjectProps() {	//GUI -> object
 	if (current_data_object_index>-1) {
 		ObjectData* obj = data_objects.at(current_data_object_index);
 		setlocale(LC_NUMERIC, "C");
-		obj->name	   = propbox->objnameedit->GetValue().ToAscii();
-		obj->maxvolume = atof(propbox->maxvolumeedit->GetValue().ToAscii());
-		obj->quality   = atof(propbox->qualityedit->GetValue().ToAscii());
-		obj->current_sensor_index = propbox->sensordatalist->GetSelection();
+		obj->setName(string(propbox->getObjNameEdit()->GetValue().ToAscii()));
+		obj->setMaxvolume(atof(propbox->getMaxVolumeEdit()->GetValue().ToAscii()));
+		obj->setQuality(atof(propbox->getQualityEdit()->GetValue().ToAscii()));
+		obj->setCurrentSensorIndex(propbox->getSensorDataList()->GetSelection());
 		ObjectData* object = data_objects.at(current_data_object_index);
-		SensorData* sd = &object->sensordatalist.at(propbox->sensordatalist->GetSelection());
+		SensorData* sd = &object->getSensorDataList()->at(propbox->getSensorDataList()->GetSelection());
 		if (sd->timed) {
-			sd->current_time_index = propbox->sdtimeline->getValue();
+			sd->current_time_index = propbox->getSdTimeline()->getValue();
 		}
-		MaterialData* mat = &obj->materials.at(propbox->current_material);
-		mat->name				  = propbox->matnameedit->GetValue().ToAscii();
-		mat->interpolation_mode   = (InterpolationMode) propbox->interpolationmodelist->GetSelection();
-		mat->density   			  = atof(propbox->densityedit->GetValue().ToAscii());
-		mat->specificheatcapacity = atof(propbox->cspecedit->GetValue().ToAscii());
+		ObjectData::MaterialData* mat = &obj->getMaterials()->at(propbox->getCurrentMaterial());
+		mat->name				  = propbox->getMatNameEdit()->GetValue().ToAscii();
+		mat->interpolation_mode   = (Interpolator::InterpolationMode) propbox->getInterpolationModeList()->GetSelection();
+		mat->density   			  = atof(propbox->getDensityEdit()->GetValue().ToAscii());
+		mat->specificheatcapacity = atof(propbox->getSpecificHeatCapEdit()->GetValue().ToAscii());
 	}
 }
 void GUIMainWindow::updateObjectPropGUI() {		//object -> GUI
@@ -319,42 +319,42 @@ void GUIMainWindow::updateObjectPropGUI() {		//object -> GUI
 		updating = true;
 		ObjectData* obj = data_objects.at(current_data_object_index);
 		setlocale(LC_NUMERIC, "C");
-		propbox->SetLabel(wxString::FromAscii((obj->name+" - Objekteigenschaften:").c_str()));
-		propbox->objnameedit->SetValue(wxString::FromAscii(obj->name.c_str()));
-		propbox->maxvolumeedit->SetValue(wxString::FromAscii(floattostr(obj->maxvolume).c_str()));
-		propbox->qualityedit->SetValue(wxString::FromAscii(floattostr(obj->quality).c_str()));
-		propbox->sensordatalist->Clear();
-		for (unsigned int i=0;i<obj->sensordatalist.size();i++) {
-			propbox->sensordatalist->Insert(wxString::FromAscii(obj->sensordatalist.at(i).name.c_str()),i);
+		propbox->SetLabel(wxString::FromAscii((obj->getName()+" - Objekteigenschaften:").c_str()));
+		propbox->getObjNameEdit()->SetValue(wxString::FromAscii(obj->getName().c_str()));
+		propbox->getMaxVolumeEdit()->SetValue(wxString::FromAscii(floattostr(obj->getMaxvolume()).c_str()));
+		propbox->getQualityEdit()->SetValue(wxString::FromAscii(floattostr(obj->getQuality()).c_str()));
+		propbox->getSensorDataList()->Clear();
+		for (unsigned int i=0;i<obj->getSensorDataList()->size();i++) {
+			propbox->getSensorDataList()->Insert(wxString::FromAscii(obj->getSensorDataList()->at(i).name.c_str()),i);
 		}
-		propbox->sensordatalist->SetSelection(obj->current_sensor_index);
-		propbox->matlistbox->Clear();
-		for (unsigned int i=0;i<obj->materials.size();i++) {
-			propbox->matlistbox->Insert(wxString::FromAscii(obj->materials.at(i).name.c_str()),i);
+		propbox->getSensorDataList()->SetSelection(obj->getCurrentSensorIndex());
+		propbox->getMatListBox()->Clear();
+		for (unsigned int i=0;i<obj->getMaterials()->size();i++) {
+			propbox->getMatListBox()->Insert(wxString::FromAscii(obj->getMaterials()->at(i).name.c_str()),i);
 		}
-		propbox->matlistbox->SetSelection(propbox->current_material);
-		MaterialData* mat = &obj->materials.at(propbox->current_material);
-		propbox->matpropbox->SetLabel(wxString::FromAscii((mat->name+" - Materialeigenschaften").c_str()));
+		propbox->getMatListBox()->SetSelection(propbox->getCurrentMaterial());
+		ObjectData::MaterialData* mat = &obj->getMaterials()->at(propbox->getCurrentMaterial());
+		propbox->getMatPropBox()->SetLabel(wxString::FromAscii((mat->name+" - Materialeigenschaften").c_str()));
 
-		propbox->interpolationmodelist->SetSelection(mat->interpolation_mode);
-		propbox->densityedit->SetValue(wxString::FromAscii(floattostr(mat->density).c_str()));
-		propbox->cspecedit->SetValue(wxString::FromAscii(floattostr(mat->specificheatcapacity).c_str()));
-		propbox->matnameedit->SetValue(wxString::FromAscii(mat->name.c_str()));
+		propbox->getInterpolationModeList()->SetSelection(mat->interpolation_mode);
+		propbox->getDensityEdit()->SetValue(wxString::FromAscii(floattostr(mat->density).c_str()));
+		propbox->getSpecificHeatCapEdit()->SetValue(wxString::FromAscii(floattostr(mat->specificheatcapacity).c_str()));
+		propbox->getMatNameEdit()->SetValue(wxString::FromAscii(mat->name.c_str()));
 		propbox->resize();
 		updating = false;
-		propbox->uptodatetext->Hide();
+		propbox->getUpToDateLbl()->Hide();
 
 
 		int nPos = toolbar->GetToolPos(ID_CHANGE_ACTIVE_OBJ);
 		wxToolBarToolBase* pTool = toolbar->RemoveTool(ID_CHANGE_ACTIVE_OBJ);
-		pTool->SetLabel(wxString::FromAscii(("aktives Objekt: "+obj->name).c_str()));
+		pTool->SetLabel(wxString::FromAscii(("aktives Objekt: "+obj->getName()).c_str()));
 		toolbar->InsertTool(nPos, pTool);
 		toolbar->Realize();
 	}
 }
 void GUIMainWindow::OnMaterialSelect(wxCommandEvent &event) {
 	if (!updating) {
-		propbox->current_material = propbox->matlistbox->GetSelection();
+		propbox->setCurrentMaterial(propbox->getMatListBox()->GetSelection());
 		updateObjectPropGUI();
 	}
 }
@@ -364,7 +364,7 @@ void GUIMainWindow::OnRecalcBtClick(wxCommandEvent& event) {
 		assignCurrentObjectProps();
 		obj->calculateIO();
 		gl_context->refresh();
-		propbox->uptodatetext->Hide();
+		propbox->getUpToDateLbl()->Hide();
 		if (analyze_window_valid) {
 			analyzerframe->Update();
 		}
@@ -399,7 +399,7 @@ void GUIMainWindow::OnRenderCut(wxCommandEvent &event) {
 }
 void GUIMainWindow::OnImmediateUpdatePropChange(wxCommandEvent &event) {
 	if (!updating) {
-		propbox->uptodatetext->Show();
+		propbox->getUpToDateLbl()->Show();
 		assignCurrentObjectProps();
 		updateObjectPropGUI();
 		updateViewPropGUI();
@@ -408,8 +408,8 @@ void GUIMainWindow::OnImmediateUpdatePropChange(wxCommandEvent &event) {
 
 void GUIMainWindow::OnGeneralPropChange(wxCommandEvent &event) {
 	if (!updating) {
-		propbox->uptodatetext->Show();
-		if (propbox->autoupdatecb->IsChecked()) {
+		propbox->getUpToDateLbl()->Show();
+		if (propbox->getAutoUpdateCeckBox()->IsChecked()) {
 			OnRecalcBtClick(event);
 		}
 	}
@@ -417,39 +417,39 @@ void GUIMainWindow::OnGeneralPropChange(wxCommandEvent &event) {
 
 void GUIMainWindow::assignViewProps() {
 	if (current_data_object_index>-1) {
-		Viewport_info* view = &gl_context->getRenderer()->viewport;
+		Renderer::Viewport_info* view = gl_context->getRenderer()->getViewport();
 
-		view->showpoints 		= viewbox->pointscb->GetSelection();
-		view->showedges 		= viewbox->edgescb->GetSelection();
-		view->showfaces 		= viewbox->facescb->GetSelection();
-		view->show_extrapolated = viewbox->show_extcb->IsChecked();
-		view->show_sensordata	= viewbox->show_sdata->IsChecked();
-		visualization_info.min_visualisation_temp = viewbox->min_visval->GetValue();
-		visualization_info.max_visualisation_temp = viewbox->max_visval->GetValue();
-		view->scale				= atof(viewbox->viewscale->GetValue().ToAscii());
-		for (unsigned int i=0;i<data_objects.at(current_data_object_index)->materials.size();i++) {
-			MaterialData* mat = &data_objects.at(current_data_object_index)->materials.at(i);
-			mat->visible = viewbox->matvisibility->IsChecked(i);
+		view->showPoints 		= (Renderer::RenderMode) viewbox->getPointsCheckBox()->GetSelection();
+		view->showEdges 		= (Renderer::RenderMode) viewbox->getEdgesCheckBox()->GetSelection();
+		view->showFaces 		= (Renderer::RenderMode) viewbox->getFacesCheckBox()->GetSelection();
+		view->show_extrapolated = viewbox->getShowExtrapolatedCheckBox()->IsChecked();
+		view->show_sensordata	= viewbox->getShowShowSensorData()->IsChecked();
+		visualization_info.min_visualisation_temp = viewbox->getColorRangeMinEdit()->GetValue();
+		visualization_info.max_visualisation_temp = viewbox->getColorRangeMaxEdit()->GetValue();
+		view->scale				= atof(viewbox->getViewScaleEdit()->GetValue().ToAscii());
+		for (unsigned int i=0;i<data_objects.at(current_data_object_index)->getMaterials()->size();i++) {
+			ObjectData::MaterialData* mat = &data_objects.at(current_data_object_index)->getMaterials()->at(i);
+			mat->visible = viewbox->getMatVisibilityListBox()->IsChecked(i);
 		}
 	}
 }
 void GUIMainWindow::updateViewPropGUI() {
 	if (current_data_object_index>-1) {
 		updating = true;
-		Viewport_info* view = &gl_context->getRenderer()->viewport;
-		viewbox->show_extcb->SetValue(view->show_extrapolated);
-		viewbox->show_sdata->SetValue(view->show_sensordata);
-		viewbox->pointscb->SetSelection(view->showpoints);
-		viewbox->edgescb->SetSelection(view->showedges);
-		viewbox->facescb->SetSelection(view->showfaces);
-		viewbox->min_visval->SetValue(visualization_info.min_visualisation_temp);
-		viewbox->max_visval->SetValue(visualization_info.max_visualisation_temp);
-		viewbox->viewscale->SetValue(floattowxstr(view->scale));
-		viewbox->matvisibility->Clear();
-		for (unsigned int i=0;i<data_objects.at(current_data_object_index)->materials.size();i++) {
-			MaterialData* mat = &data_objects.at(current_data_object_index)->materials.at(i);
-			viewbox->matvisibility->Insert(wxString::FromAscii(mat->name.c_str()),i);
-			viewbox->matvisibility->Check(i,mat->visible);
+		Renderer::Viewport_info* view = gl_context->getRenderer()->getViewport();
+		viewbox->getShowExtrapolatedCheckBox()->SetValue(view->show_extrapolated);
+		viewbox->getShowShowSensorData()->SetValue(view->show_sensordata);
+		viewbox->getPointsCheckBox()->SetSelection(view->showPoints);
+		viewbox->getEdgesCheckBox()->SetSelection(view->showEdges);
+		viewbox->getFacesCheckBox()->SetSelection(view->showFaces);
+		viewbox->getColorRangeMinEdit()->SetValue(visualization_info.min_visualisation_temp);
+		viewbox->getColorRangeMaxEdit()->SetValue(visualization_info.max_visualisation_temp);
+		viewbox->getViewScaleEdit()->SetValue(floattowxstr(view->scale));
+		viewbox->getMatVisibilityListBox()->Clear();
+		for (unsigned int i=0;i<data_objects.at(current_data_object_index)->getMaterials()->size();i++) {
+			ObjectData::MaterialData* mat = &data_objects.at(current_data_object_index)->getMaterials()->at(i);
+			viewbox->getMatVisibilityListBox()->Insert(wxString::FromAscii(mat->name.c_str()),i);
+			viewbox->getMatVisibilityListBox()->Check(i,mat->visible);
 		}
 		updating = false;
 	}
@@ -496,13 +496,13 @@ void GUIMainWindow::OnMenuImportObj(wxCommandEvent &event)
 			delete newobj;
 			break;
 		}
-		propbox->current_material = 0;
+		propbox->setCurrentMaterial(0);
 		updateObjectPropGUI();
 		updateViewPropGUI();
 	}
 	OpenDialog->Close();
 	OpenDialog->Destroy();
-	propbox->uptodatetext->Hide();
+	propbox->getUpToDateLbl()->Hide();
 }
 void GUIMainWindow::OnMenuImportSD(wxCommandEvent &event) {
 	wxFileDialog *OpenDialog= new wxFileDialog(this, wxT("Datei öffnen..."), _(""), _(""), _("Sensordaten (*.sd)|*.sd"), wxFD_OPEN);
@@ -570,7 +570,7 @@ void GUIMainWindow::OnActiveObjectChange(wxCommandEvent &event) {
 	mnu.Append(0,wxT("verfügbare Objekte:"));
 	mnu.AppendSeparator();
 	for (unsigned int i=0;i<data_objects.size();i++) {
-		mnu.Append(wxID_HIGHEST+i+1,wxString::FromAscii(data_objects.at(i)->name.c_str()));
+		mnu.Append(wxID_HIGHEST+i+1,wxString::FromAscii(data_objects.at(i)->getName().c_str()));
 	}
 	mnu.Connect(wxEVT_COMMAND_MENU_SELECTED, (wxObjectEventFunction)&GUIMainWindow::OnActiveObjectChangePopup, NULL, this);
 	PopupMenu(&mnu);

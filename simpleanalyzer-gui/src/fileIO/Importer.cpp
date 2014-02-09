@@ -119,7 +119,7 @@ ObjectData::ObjectDataStatus Importer::ImportObj(const char* filename,ObjectData
 				cerr << "could not open file: "<<mtlpath<<endl;
 				return ObjectData::OD_FAILURE;
 			}
-			MaterialData* currentMat = NULL;
+			ObjectData::MaterialData* currentMat = NULL;
 			while (mtlfile.good()) {
 				string mtlline;
 				getline(mtlfile,mtlline);
@@ -127,10 +127,10 @@ ObjectData::ObjectDataStatus Importer::ImportObj(const char* filename,ObjectData
 				string mtltype = mtlline.substr(0,mtlfirstspace);
 				string mtldata = mtlline.substr(mtlfirstspace+1);
 				if (mtltype=="newmtl") {
-					data->materials.resize(data->materials.size()+1);
-					currentMat = &data->materials.at(data->materials.size()-1);
+					data->getMaterials()->resize(data->getMaterials()->size()+1);
+					currentMat = &data->getMaterials()->at(data->getMaterials()->size()-1);
 					currentMat->name = mtldata;
-					currentMat->interpolation_mode = LINEAR;
+					currentMat->interpolation_mode = Interpolator::LINEAR;
 					currentMat->visible = true;
 					currentMat->extrapolated = NULL;
 				}
@@ -150,8 +150,8 @@ ObjectData::ObjectDataStatus Importer::ImportObj(const char* filename,ObjectData
 		}
 		if (type=="usemtl") {
 			string mat_str = getTextBlock(line,1);
-			for (unsigned int i=0;i<data->materials.size();i++) {
-				if (data->materials.at(i).name==mat_str) {
+			for (unsigned int i=0;i<data->getMaterials()->size();i++) {
+				if (data->getMaterials()->at(i).name==mat_str) {
 					currentMatIndex = i;
 					break;
 				}
@@ -184,7 +184,7 @@ ObjectData::ObjectDataStatus Importer::ImportObj(const char* filename,ObjectData
 						poly->vertexlist[j] = subvec->at(j)-1;
 					}
 				}
-				data->materials.at(currentMatIndex).tetgeninput = io;
+				data->getMaterials()->at(currentMatIndex).tetgeninput = io;
 			}
 
 			currentMatFirstPoint += currentMatPointCount;
@@ -205,8 +205,8 @@ ObjectData::ObjectDataStatus Importer::LoadSensorData(const char* filename,Objec
 	}
 	string line;
 
-	data->sensordatalist.resize(data->sensordatalist.size()+1);
-	SensorData* sd = &data->sensordatalist.at(data->sensordatalist.size()-1);
+	data->getSensorDataList()->resize(data->getSensorDataList()->size()+1);
+	SensorData* sd = &data->getSensorDataList()->at(data->getSensorDataList()->size()-1);
 	sd->timed = false;
 	sd->current_time_index = 0;
 	string fn = string(filename);
@@ -230,8 +230,8 @@ ObjectData::ObjectDataStatus Importer::LoadSensorData(const char* filename,Objec
 			newpoint->temperature = atof(getTextBlock(line,4).c_str());
 		}
 	}
-	if (data->current_sensor_index<0) {
-		data->current_sensor_index = 0;
+	if (data->getCurrentSensorIndex()<0) {
+		data->setCurrentSensorIndex(0);
 	}
 	return ObjectData::OD_SUCCESS;
 }
@@ -243,8 +243,8 @@ ObjectData::ObjectDataStatus Importer::LoadTimedData(const char* filename,Object
 		return ObjectData::OD_FAILURE;
 	}
 	string line;
-	data->sensordatalist.resize(data->sensordatalist.size()+1);
-	SensorData* sd = &data->sensordatalist.at(data->sensordatalist.size()-1);
+	data->getSensorDataList()->resize(data->getSensorDataList()->size()+1);
+	SensorData* sd = &data->getSensorDataList()->at(data->getSensorDataList()->size()-1);
 	sd->timed = true;
 	sd->current_time_index = 0;
 	string fn = string(filename);
@@ -275,8 +275,8 @@ ObjectData::ObjectDataStatus Importer::LoadTimedData(const char* filename,Object
 			newpoint->temperature = atof(getTextBlock(line,4).c_str());
 		}
 	}
-	if (data->current_sensor_index<0) {
-		data->current_sensor_index = 0;
+	if (data->getCurrentSensorIndex()<0) {
+		data->setCurrentSensorIndex(0);
 	}
 	return ObjectData::OD_SUCCESS;
 }

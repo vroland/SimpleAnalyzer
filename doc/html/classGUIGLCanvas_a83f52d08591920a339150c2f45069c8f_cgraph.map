@@ -1,0 +1,21 @@
+<map id="GUIGLCanvas::OnPaint" name="GUIGLCanvas::OnPaint">
+<area shape="rect" id="node3" href="$classRenderer.xhtml#a01887363ad27267e44c1ea0f63761a5c" title="Renderer::initGL" alt="" coords="227,5,344,35"/>
+<area shape="rect" id="node5" href="$classRenderer.xhtml#a9f4493c538688adaad4e4f0575fd3b8d" title="Renderer::resize" alt="" coords="227,59,344,88"/>
+<area shape="rect" id="node7" href="$classRenderer.xhtml#a9db67fbbd309875b564ca1df08daf372" title="Renderer::setObject" alt="" coords="216,112,355,141"/>
+<area shape="rect" id="node11" href="$classRenderer.xhtml#af7e5f8f68742f198e315fb4683a605a4" title="Renderer::render" alt="" coords="227,296,344,325"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="ObjectData::getMaterials" alt="" coords="404,7,569,36"/>
+<area shape="rect" id="node13" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Triangle::getNormal" alt="" coords="419,321,555,351"/>
+<area shape="rect" id="node15" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Vector3D::copy" alt="" coords="644,240,756,269"/>
+<area shape="rect" id="node17" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Vector3D::sub" alt="" coords="647,315,753,344"/>
+<area shape="rect" id="node25" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Vector3D::crossProduct" alt="" coords="619,421,781,451"/>
+<area shape="rect" id="node30" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Vector3D::normalize" alt="" coords="629,368,771,397"/>
+<area shape="rect" id="node32" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Vector3D::getXYZ" alt="" coords="423,527,551,556"/>
+<area shape="rect" id="node34" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Triangle::getV1" alt="" coords="432,580,541,609"/>
+<area shape="rect" id="node36" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Triangle::getV2" alt="" coords="432,60,541,89"/>
+<area shape="rect" id="node38" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Triangle::getV3" alt="" coords="432,113,541,143"/>
+<area shape="rect" id="node44" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Vector3D::mult" alt="" coords="432,167,541,196"/>
+<area shape="rect" id="node46" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Vector3D::add" alt="" coords="647,475,753,504"/>
+<area shape="rect" id="node19" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Vector3D::getX" alt="" coords="829,475,941,504"/>
+<area shape="rect" id="node21" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Vector3D::getY" alt="" coords="829,368,941,397"/>
+<area shape="rect" id="node23" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Vector3D::getZ" alt="" coords="831,421,940,451"/>
+</map>

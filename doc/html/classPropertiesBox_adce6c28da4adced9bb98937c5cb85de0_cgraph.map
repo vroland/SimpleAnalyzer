@@ -1,0 +1,8 @@
+<map id="PropertiesBox::resize" name="PropertiesBox::resize">
+<area shape="rect" id="node3" href="$classGUITimeline.xhtml#aac5565f407354a3b3cfa9071a3486daa" title="GUITimeline::setMarkerList" alt="" coords="201,5,383,35"/>
+<area shape="rect" id="node5" href="$classGUITimeline.xhtml#a0fa4ef5ed2e0fe5f416d9d4c75b86ebc" title="GUITimeline::setValue" alt="" coords="215,59,369,88"/>
+<area shape="rect" id="node9" href="$classGUITimeline.xhtml#ae75bc611225782e26402896771705821" title="GUITimeline::setMinValue" alt="" coords="205,112,379,141"/>
+<area shape="rect" id="node11" href="$classGUITimeline.xhtml#a0bb2939f43fcefbeed5dfee827eaca9e" title="GUITimeline::setMaxValue" alt="" coords="203,165,381,195"/>
+<area shape="rect" id="node13" href="$classGUITimeline.xhtml#a115bcd521b18f812b8251a169dbf2454" title="GUITimeline::setNameList" alt="" coords="204,219,380,248"/>
+<area shape="rect" id="node7" href="$classGUITimeline.xhtml#a417835c7c520d9fbcf65610d255245a1" title="GUITimeline::sendTimeline\lEvent" alt="" coords="433,50,612,97"/>
+</map>
