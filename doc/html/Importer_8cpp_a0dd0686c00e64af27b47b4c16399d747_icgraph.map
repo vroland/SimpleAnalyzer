@@ -1,18 +1,15 @@
 <map id="getTextBlock" name="getTextBlock">
-<area shape="rect" id="node3" href="$namespaceCSVToSD.xhtml#ab24aaf410a1c332e2a84b42af50e5fd9" title="Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die ..." alt="" coords="173,5,307,35"/>
-<area shape="rect" id="node7" href="$namespaceODiSIToSD.xhtml#a09e74878b7f3b12c27afbb8ee902d9f8" title="Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die ODiSI&#45;Datei um ein..." alt="" coords="169,59,311,88"/>
-<area shape="rect" id="node11" href="$namespaceMergeTSD.xhtml#ad380b92e7e702006d21b99bf6ebbe5cf" title="Sammelt Daten aus einer .tsd&#45;Datei. " alt="" coords="167,112,313,141"/>
-<area shape="rect" id="node17" href="$classImporter.xhtml#a5013417fb7556dce65dba1ed3aec4e50" title="Lädt Objektdaten aus einer .obj&#45;Datei. " alt="" coords="173,165,307,195"/>
-<area shape="rect" id="node23" href="$classImporter.xhtml#a001bd26372d94f96de66f7bcb90cc790" title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. " alt="" coords="153,219,327,248"/>
-<area shape="rect" id="node30" href="$classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. " alt="" coords="155,272,325,301"/>
-<area shape="rect" id="node5" href="$csvtosd_2main_8cpp.xhtml#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="444,5,495,35"/>
-<area shape="rect" id="node9" href="$odisitosd_2main_8cpp.xhtml#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="444,59,495,88"/>
-<area shape="rect" id="node13" href="$namespaceMergeTSD.xhtml#a77cf0d82e2e5257abde3e667be3299f5" title="Liest die Programmargumente um die Eingabedateien anhand der Zeitstempel in eine .tsd&#45;Datei zusammen zu führen. " alt="" coords="405,112,533,141"/>
-<area shape="rect" id="node15" href="$mergetsd_8cpp.xhtml#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="707,112,757,141"/>
-<area shape="rect" id="node19" href="$classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" title="Lädt ein Objekt und erste Sensordaten. " alt="" coords="384,165,555,195"/>
-<area shape="rect" id="node21" href="$classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="615,165,849,195"/>
-<area shape="rect" id="node26" href="$classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" title="Lädt einfache Sensordaten und verknüpft sie mit dem Objekt. " alt="" coords="376,219,563,248"/>
-<area shape="rect" id="node28" href="$classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2" title="Öffnet den Dialog zum Importieren einfacher Sensordaten. " alt="" coords="615,219,849,248"/>
-<area shape="rect" id="node33" href="$classObjectData.xhtml#ac8056d23b0882a826b6e572ff080688f" title="Lädt zeitbezogene Sensordaten und verknüpft sie mit dem Objekt. " alt="" coords="379,272,560,301"/>
-<area shape="rect" id="node35" href="$classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560" title="Öffnet den Dialog zum Importieren zeitbezogener Sensordaten. " alt="" coords="611,272,853,301"/>
+<area shape="rect" id="node3" href="$classCsvToSdConverter.xhtml#a6cfc076fd11f10d70767750a6aaf1f7c" title="Liest und setzt die Programmkonfiguration aus der Konfigurationsdatei. " alt="" coords="153,5,396,35"/>
+<area shape="rect" id="node5" href="$classOdisiToSdConverter.xhtml#a8c6bc01ae2c063d89dc64c0a7d68c033" title="Liest und setzt die Programmkonfiguration aus der Konfigurationsdatei. " alt="" coords="205,58,344,105"/>
+<area shape="rect" id="node7" href="$classOdisiToSdConverter.xhtml#a436916f864cbfc7a9cefa5e0f640c683" title="Liest die Daten aus der Sensordefinitionsdatei. " alt="" coords="196,127,353,174"/>
+<area shape="rect" id="node9" href="$classTsdMerger.xhtml#aed81153be336c48a43e2663e39fa341d" title="Sammelt Daten aus einer .tsd&#45;Datei. " alt="" coords="203,197,347,227"/>
+<area shape="rect" id="node11" href="$classImporter.xhtml#aaa567a75272f300157648ffaa9b101c2" title="Lädt Objektdaten aus einer .obj&#45;Datei. " alt="" coords="208,304,341,333"/>
+<area shape="rect" id="node17" href="$classImporter.xhtml#ae837d750c92450f8e83b2d93eb099f79" title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. " alt="" coords="188,251,361,280"/>
+<area shape="rect" id="node24" href="$classImporter.xhtml#ad8dec9ce375155ca130453632530eb52" title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. " alt="" coords="189,357,360,387"/>
+<area shape="rect" id="node13" href="$classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" title="Lädt ein Objekt und erste Sensordaten. " alt="" coords="453,304,624,333"/>
+<area shape="rect" id="node15" href="$classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="684,304,919,333"/>
+<area shape="rect" id="node20" href="$classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" title="Lädt einfache Sensordaten und verknüpft sie mit dem Objekt. " alt="" coords="445,251,632,280"/>
+<area shape="rect" id="node22" href="$classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2" title="Öffnet den Dialog zum Importieren einfacher Sensordaten. " alt="" coords="684,251,919,280"/>
+<area shape="rect" id="node27" href="$classObjectData.xhtml#ac8056d23b0882a826b6e572ff080688f" title="Lädt zeitbezogene Sensordaten und verknüpft sie mit dem Objekt. " alt="" coords="448,357,629,387"/>
+<area shape="rect" id="node29" href="$classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560" title="Öffnet den Dialog zum Importieren zeitbezogener Sensordaten. " alt="" coords="680,357,923,387"/>
 </map>

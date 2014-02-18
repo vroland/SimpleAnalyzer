@@ -7,7 +7,7 @@
 <area shape="rect" id="node41" href="$namespaceUtils.xhtml#a5f216cc7011a901130db81321b565334" title="Testet, ob ein Strahl ein Dreieck schneidet. " alt="" coords="208,307,387,337"/>
 <area shape="rect" id="node46" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. " alt="" coords="203,254,392,283"/>
 <area shape="rect" id="node12" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="465,201,604,230"/>
-<area shape="rect" id="node14" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="705,307,807,337"/>
+<area shape="rect" id="node14" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="705,307,807,337"/>
 <area shape="rect" id="node20" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. " alt="" coords="679,254,833,283"/>
 <area shape="rect" id="node24" href="$MeshProcessor_8cpp.xhtml#ad2670c4e8381f9a0a89c65f5559ed421" title="interpolatePoint" alt="" coords="700,201,812,230"/>
 <area shape="rect" id="node16" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="891,323,1045,369"/>

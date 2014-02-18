@@ -1,5 +1,5 @@
 <map id="Utils::pointInsideMesh" name="Utils::pointInsideMesh">
-<area shape="rect" id="node3" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="205,13,307,43"/>
+<area shape="rect" id="node3" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="205,13,307,43"/>
 <area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="356,5,511,51"/>
 <area shape="rect" id="node7" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="561,5,716,51"/>
 </map>

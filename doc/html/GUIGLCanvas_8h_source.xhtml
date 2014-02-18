@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Simple Analyzer: simpleanalyzer-gui/src/GUI/GUIGLCanvas.h Quellcode</title>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/GUI/GUIGLCanvas.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,29 +108,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGUIGLCanvas.xhtml" title="Zeichenfläche für das 3D-Fenster. ">GUIGLCanvas</a>: <span class="keyword">public</span> wxGLCanvas {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#ae77992061b501fa995c08cd568c2c6ad" title="Der Konstruktor. ">GUIGLCanvas</a>(wxFrame* parent);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a643f11a7ef05829a6c48d037ad2c4b9b" title="Setzt das darzustellende Objekt. ">setRenderObject</a>(<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* obj);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classRenderer.xhtml" title="Zeichnet den Inhalt der 3D-Fensters. ">Renderer</a>* <a class="code" href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" title="Gibt den Renderer der Zeichenfläche zurück. ">getRenderer</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a883d5bc79fcfc6e2c9ceeb41a0c0e77e" title="Zeichnet den Inhalt des 3D-Fensters neu und aktualisiert den Renderer, z.B. ">refresh</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classGUIGLCanvas.xhtml#af6358f8d4e95c6864ff005d4764fffbc" title="Der Destruktor. ">~GUIGLCanvas</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    DECLARE_EVENT_TABLE()</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" title="Event-Tabellendeklaration für wxWidgets. ">OnPaint</a>(wxPaintEvent&amp; event);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a0ee8fe9339ebb330b8133a620bd67514" title="Behandelt Mausradbewegungen (zoomen). ">OnMouseWheel</a>(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a9c089336b9485f1abcc60a1a7fb85bb7" title="Behandelt Mausbewegungen (verschieben und drehen der Ansicht). ">OnMouseMove</a>(wxMouseEvent &amp;event);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#aba4aa683bf8226da8182779de38ef5db" title="Behandelt Größenänderungen der Zeichenfläche. ">OnResize</a>(wxSizeEvent &amp;event);</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44">   71</a></span>&#160;    <a class="code" href="classRenderer.xhtml" title="Zeichnet den Inhalt der 3D-Fensters. ">Renderer</a> <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a59e01564652765dec69e7097c10b4455">   75</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classGUIGLCanvas.xhtml#a59e01564652765dec69e7097c10b4455" title="Initialisiertungsstatus des Objekts. ">is_initialized</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d">   81</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22">   85</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22" title="Zwischenspeicher für die vorherige Mausposition (X). ">prev_mouse_x</a>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0">   89</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0" title="Zwischenspeicher für die vorherige Mausposition (Y). ">prev_mouse_y</a>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GUIGLCANVAS_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a643f11a7ef05829a6c48d037ad2c4b9b" title="Setzt das darzustellende Objekt. ">setRenderObject</a>(<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* obj);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classRenderer.xhtml" title="Zeichnet den Inhalt der 3D-Fensters. ">Renderer</a>* <a class="code" href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" title="Gibt den Renderer der Zeichenfläche zurück. ">getRenderer</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a883d5bc79fcfc6e2c9ceeb41a0c0e77e" title="Zeichnet den Inhalt des 3D-Fensters neu und aktualisiert den Renderer, z.B. ">refresh</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classGUIGLCanvas.xhtml#af6358f8d4e95c6864ff005d4764fffbc" title="Der Destruktor. ">~GUIGLCanvas</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    DECLARE_EVENT_TABLE()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" title="Event-Tabellendeklaration für wxWidgets. ">OnPaint</a>(wxPaintEvent&amp; event);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a0ee8fe9339ebb330b8133a620bd67514" title="Behandelt Mausradbewegungen (zoomen). ">OnMouseWheel</a>(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a9c089336b9485f1abcc60a1a7fb85bb7" title="Behandelt Mausbewegungen (verschieben und drehen der Ansicht). ">OnMouseMove</a>(wxMouseEvent &amp;event);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#aba4aa683bf8226da8182779de38ef5db" title="Behandelt Größenänderungen der Zeichenfläche. ">OnResize</a>(wxSizeEvent &amp;event);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44">   79</a></span>&#160;    <a class="code" href="classRenderer.xhtml" title="Zeichnet den Inhalt der 3D-Fensters. ">Renderer</a> <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a59e01564652765dec69e7097c10b4455">   84</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classGUIGLCanvas.xhtml#a59e01564652765dec69e7097c10b4455" title="Initialisiertungsstatus des Objekts. ">is_initialized</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d">   91</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22">   96</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22" title="Zwischenspeicher für die vorherige Mausposition (X). ">prev_mouse_x</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0">  101</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0" title="Zwischenspeicher für die vorherige Mausposition (Y). ">prev_mouse_y</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GUIGLCANVAS_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

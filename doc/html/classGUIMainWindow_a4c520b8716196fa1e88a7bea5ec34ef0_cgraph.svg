@@ -28,15 +28,15 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="GUIMainWindow_8cpp.xhtml#a89d68f162c2f49e41ac9d9185309c502" target="_top" xlink:title="floattostr">
-<polygon fill="none" stroke="black" points="241.5,-212.5 241.5,-233.5 296.5,-233.5 296.5,-212.5 241.5,-212.5"/>
-<text text-anchor="middle" x="269" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">floattostr</text>
+<a xlink:href="namespaceUtils.xhtml#a76b506eef525971ab3ccb328f4ca879d" target="_top" xlink:title="Hilfsfunktion zur Umwandlung einer Zahl in einen String. ">
+<polygon fill="none" stroke="black" points="228.5,-212.5 228.5,-233.5 309.5,-233.5 309.5,-212.5 228.5,-212.5"/>
+<text text-anchor="middle" x="269" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::floattostr</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M106.189,-160.185C128.751,-173.355 161.548,-191.213 192,-203 204.603,-207.878 218.82,-211.949 231.576,-215.117"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="230.897,-218.553 241.435,-217.462 232.517,-211.743 230.897,-218.553"/>
+<path fill="none" stroke="midnightblue" d="M106.189,-160.185C128.751,-173.355 161.548,-191.213 192,-203 200.513,-206.295 209.763,-209.222 218.802,-211.751"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="217.917,-215.137 228.482,-214.338 219.725,-208.375 217.917,-215.137"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>

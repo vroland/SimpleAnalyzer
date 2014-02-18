@@ -1,8 +1,8 @@
-<map id="simpleanalyzer&#45;gui/src/processing/Analyzer.cpp" name="simpleanalyzer&#45;gui/src/processing/Analyzer.cpp">
-<area shape="rect" id="node3" href="$Analyzer_8h.xhtml" title="Analyzer.h" alt="" coords="69,101,152,131"/>
-<area shape="rect" id="node16" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="125,334,267,381"/>
-<area shape="rect" id="node23" href="$utils_8h.xhtml" title="utils.h" alt="" coords="437,256,493,285"/>
-<area shape="rect" id="node39" href="$MeshProcessor_8h.xhtml" title="MeshProcessor.h" alt="" coords="331,101,453,131"/>
-<area shape="rect" id="node11" href="$ObjectData_8h.xhtml" title="ObjectData.h" alt="" coords="304,179,403,208"/>
-<area shape="rect" id="node18" href="$GeometryClasses_8h.xhtml" title="GeometryClasses.h" alt="" coords="152,429,291,459"/>
+<map id="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/processing/Analyzer.cpp" name="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/processing/Analyzer.cpp">
+<area shape="rect" id="node3" href="$Analyzer_8h.xhtml" title="Analyzer.h" alt="" coords="69,117,152,147"/>
+<area shape="rect" id="node16" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="125,350,267,397"/>
+<area shape="rect" id="node23" href="$utils_8h.xhtml" title="utils.h" alt="" coords="437,272,493,301"/>
+<area shape="rect" id="node39" href="$MeshProcessor_8h.xhtml" title="MeshProcessor.h" alt="" coords="331,117,453,147"/>
+<area shape="rect" id="node11" href="$ObjectData_8h.xhtml" title="ObjectData.h" alt="" coords="304,195,403,224"/>
+<area shape="rect" id="node18" href="$GeometryClasses_8h.xhtml" title="GeometryClasses.h" alt="" coords="152,445,291,475"/>
 </map>

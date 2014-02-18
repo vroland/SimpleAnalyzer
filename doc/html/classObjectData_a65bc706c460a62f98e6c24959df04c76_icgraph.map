@@ -1,6 +1,6 @@
 <map id="ObjectData::setCurrentSensorIndex" name="ObjectData::setCurrentSensorIndex">
-<area shape="rect" id="node3" href="$classImporter.xhtml#a001bd26372d94f96de66f7bcb90cc790" title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. " alt="" coords="272,31,445,60"/>
-<area shape="rect" id="node13" href="$classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. " alt="" coords="273,84,444,113"/>
+<area shape="rect" id="node3" href="$classImporter.xhtml#ae837d750c92450f8e83b2d93eb099f79" title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. " alt="" coords="272,31,445,60"/>
+<area shape="rect" id="node13" href="$classImporter.xhtml#ad8dec9ce375155ca130453632530eb52" title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. " alt="" coords="273,84,444,113"/>
 <area shape="rect" id="node20" href="$classGUIMainWindow.xhtml#a1cb2c4f39b9ba971d51ab682f29b7f23" title="Überträgt die in der GUI eingetragenen Objekteigenschaften in das aktive Objekt. " alt="" coords="253,137,464,183"/>
 <area shape="rect" id="node22" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="277,207,440,236"/>
 <area shape="rect" id="node5" href="$classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" title="Lädt ein Objekt und erste Sensordaten. " alt="" coords="520,59,691,88"/>

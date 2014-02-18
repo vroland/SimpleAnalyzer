@@ -16,7 +16,8 @@
 using namespace std;
 
 /**
- * Typ wxEVT_TIMELINE_CHANGE zum auslösen eigener Events.
+ * Typ wxEVT_TIMELINE_CHANGE zum Auslösen eines Events bei Veränderung der Zeitleiste.
+ * Die Definition als globale Konstante ist durch das GUI-System vorgegeben.
  */
 extern const wxEventType wxEVT_TIMELINE_CHANGE;
 

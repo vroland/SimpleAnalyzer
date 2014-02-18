@@ -21,22 +21,25 @@
  */
 class GUIAnalyzeOutputWindow: public wxFrame {
 public:
+
 	/**
 	 * Der Konstruktor.
 	 */
 	GUIAnalyzeOutputWindow(wxWindow * parent,const wxChar *title, int xpos, int ypos, int width, int height);
+
 	/**
 	 * Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die
 	 * aktualisierten Ergebnisse angezeigt.
 	 */
 	void Update();
+
 	/**
 	 * Der Destruktor.
 	 */
 	virtual ~GUIAnalyzeOutputWindow();
 private:
 	/**
-	 * Die Tabellenkomponente
+	 * Die Tabellenkomponente.
 	 */
 	wxGrid* table;
 };

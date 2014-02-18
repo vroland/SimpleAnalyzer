@@ -9,13 +9,12 @@
 
 #include <iostream>
 #include <cmath>
+#include "../SimpleAnalyzerApp.h"
 //#include <GL/glew.h>
 #include <GL/gl.h>
 #include <GL/glext.h>
 
 using namespace std;
-
-extern Visualization_info visualization_info;
 
 Renderer::Renderer() {
 	object = NULL;
@@ -96,6 +95,7 @@ void Renderer::renderTetrahedra(ObjectData::MaterialData* mat,RenderMode renderm
 	tetgenio* io = mat->tetgenoutput;
 	glEnable(GL_LIGHTING);
 	glBegin(GL_TRIANGLES);
+	Visualization_info* vis_info = wxGetApp().getVisualizationInfo();
 	//cout << "nof: "<<obj->numberoftrifaces<<endl;
 	for (int j=0;j<io->numberoftetrahedra;j++) {
 		bool contains_extrapolated_points = false;
@@ -157,7 +157,7 @@ void Renderer::renderTetrahedra(ObjectData::MaterialData* mat,RenderMode renderm
 		} else {
 			for (int k=0;k<4;k++) {
 				float value = io->pointattributelist[io->numberofpointattributes*(io->tetrahedronlist[4*j+k])];
-				colors[k] = hsvToRgb((1.0-clampHue((value-visualization_info.min_visualisation_temp)/(visualization_info.max_visualisation_temp-visualization_info.min_visualisation_temp)))*.666,1,1);
+				colors[k] = hsvToRgb((1.0-clampHue((value-vis_info->min_visualisation_temp)/(vis_info->max_visualisation_temp-vis_info->min_visualisation_temp)))*.666,1,1);
 			}
 		}
 		int vertlist[4][3] = {{0,1,2},{0,1,3},{0,2,3},{1,2,3}};
@@ -187,12 +187,13 @@ void Renderer::renderTetrahedra(ObjectData::MaterialData* mat,RenderMode renderm
 	glEnd();
 }
 void Renderer::renderSensorData(vector<SensorPoint>* data) {
-	glDisable(GL_DEPTH_TEST);
+	glDepthFunc(GL_ALWAYS);
 	glDisable(GL_LIGHTING);
+	Visualization_info* vis_info = wxGetApp().getVisualizationInfo();
 	for (unsigned int i=0;i<data->size();i++) {
 		SensorPoint* point = &data->at(i);
 		float value = point->temperature;
-		float* color = hsvToRgb((1.0-clampHue((value-visualization_info.min_visualisation_temp)/(visualization_info.max_visualisation_temp-visualization_info.min_visualisation_temp)))*.666,1,1);
+		float* color = hsvToRgb((1.0-clampHue((value-vis_info->min_visualisation_temp)/(vis_info->max_visualisation_temp-vis_info->min_visualisation_temp)))*.666,1,1);
 		glPointSize(6.0);
 		glColor3f(0,0,0);
 		glBegin(GL_POINTS);
@@ -207,10 +208,11 @@ void Renderer::renderSensorData(vector<SensorPoint>* data) {
 	}
 
 	glEnable(GL_LIGHTING);
-	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LESS);
 }
 void Renderer::renderMaterial(ObjectData::MaterialData* mat) {
 	tetgenio* io = mat->tetgenoutput;
+	Visualization_info* vis_info = wxGetApp().getVisualizationInfo();
 	if (viewport.showPoints) {
 		glPointSize(3.0);
 		glDisable(GL_LIGHTING);
@@ -225,7 +227,7 @@ void Renderer::renderMaterial(ObjectData::MaterialData* mat) {
 			}
 			if (viewport.showPoints==RM_VALUECOLOR) {
 				float value = io->pointattributelist[io->numberofpointattributes*(i)];
-				float* color = hsvToRgb((1.0-clampHue((value-visualization_info.min_visualisation_temp)/(visualization_info.max_visualisation_temp-visualization_info.min_visualisation_temp)))*.666,1,1);
+				float* color = hsvToRgb((1.0-clampHue((value-vis_info->min_visualisation_temp)/(vis_info->max_visualisation_temp-vis_info->min_visualisation_temp)))*.666,1,1);
 				glColor3fv(color);
 				glVertex3dv(&io->pointlist[3*(i)]);
 				delete[] color;
@@ -460,7 +462,7 @@ void Renderer::render() {
 	glPolygonMode(GL_FRONT, GL_FILL);
 	glPolygonMode(GL_BACK, GL_FILL);
 	if (cut_visualisation_info!=NULL) {
-		glClear(GL_DEPTH_BUFFER_BIT);
+		glDepthFunc(GL_ALWAYS);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		glEnable( GL_BLEND );
 		glDisable(GL_LIGHTING);
@@ -518,6 +520,7 @@ void Renderer::render() {
 		delete nor;
 		delete xvec;
 		delete yvec;
+		glDepthFunc(GL_LESS);
 	}
 
 }

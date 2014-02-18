@@ -1,10 +1,11 @@
 var searchData=
 [
   ['edgescheckbox',['edgesCheckBox',['../classViewpropBox.xhtml#a42925abd6e515ec8f12e9de662edf39e',1,'ViewpropBox']]],
+  ['element',['element',['../classstd_1_1vector.xhtml#aa4413180f775cf542ab040103fb94438',1,'std::vector']]],
   ['elements',['elements',['../classMatrix3D.xhtml#aa24b85b09060684ec1559f22857ccfee',1,'Matrix3D']]],
   ['epsilon',['EPSILON',['../GeometryClasses_8cpp.xhtml#a002b2f4894492820fe708b1b7e7c5e70',1,'EPSILON():&#160;GeometryClasses.cpp'],['../utils_8cpp.xhtml#a002b2f4894492820fe708b1b7e7c5e70',1,'EPSILON():&#160;utils.cpp']]],
   ['equals',['equals',['../classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2',1,'Vector3D']]],
-  ['error_5fthreshold',['error_threshold',['../structODiSIToSD_1_1Options.xhtml#a3df2be923e13ab5f3727bd7975a5c37c',1,'ODiSIToSD::Options']]],
+  ['error_5fthreshold',['error_threshold',['../structOdisiToSdConverter_1_1Options.xhtml#a2d540b0bd36d458de7797792efb13f13',1,'OdisiToSdConverter::Options']]],
   ['eventid',['EventID',['../constants_8h.xhtml#ab25acc4990929d49b383f2b7c147f60f',1,'constants.h']]],
   ['export_5fcsv_5fbt',['export_csv_bt',['../classGUICutRenderWindow.xhtml#a1613155eefe8309903858f9427b263de',1,'GUICutRenderWindow']]],
   ['export_5fimg_5fbt',['export_img_bt',['../classGUICutRenderWindow.xhtml#ac0b26b746d6339154256d81da8cd7aed',1,'GUICutRenderWindow']]],

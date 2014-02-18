@@ -1,5 +1,5 @@
 <map id="Vector3D::add" name="Vector3D::add">
-<area shape="rect" id="node3" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="631,215,732,244"/>
+<area shape="rect" id="node3" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="631,215,732,244"/>
 <area shape="rect" id="node9" href="$classGUIGLCanvas.xhtml#a9c089336b9485f1abcc60a1a7fb85bb7" title="Behandelt Mausbewegungen (verschieben und drehen der Ansicht). " alt="" coords="161,59,364,88"/>
 <area shape="rect" id="node11" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Zeichnet die Tetraeder eines Materials des Objekts. " alt="" coords="172,112,353,141"/>
 <area shape="rect" id="node13" href="$Renderer_8cpp.xhtml#a4225af4db7b633515f133a4f40c72b33" title="drawVector" alt="" coords="219,5,307,35"/>

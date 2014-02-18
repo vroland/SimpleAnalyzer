@@ -1,6 +1,6 @@
 <map id="Utils::rayIntersectsTriangle" name="Utils::rayIntersectsTriangle">
 <area shape="rect" id="node3" href="$namespaceUtils.xhtml#af8fc5d6dab27f759ab5d76757a53023f" title="Testet, ob sich ein Punkt innerhalb eines Körpers befindet. " alt="" coords="232,13,384,43"/>
-<area shape="rect" id="node5" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="432,13,533,43"/>
+<area shape="rect" id="node5" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="432,13,533,43"/>
 <area shape="rect" id="node7" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="583,5,737,51"/>
 <area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="788,5,943,51"/>
 </map>

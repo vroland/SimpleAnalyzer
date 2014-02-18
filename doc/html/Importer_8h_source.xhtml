@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Simple Analyzer: simpleanalyzer-gui/src/fileIO/Importer.h Quellcode</title>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/fileIO/Importer.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,18 +106,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="classImporter.xhtml">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classImporter.xhtml" title="Importieren von 3D-Modell (.obj) und Sensordaten (.tsd oder .sd). ">Importer</a> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classImporter.xhtml" title="Importieren von 3D-Modell (.obj) und Sensordaten (.tsd oder .sd). ">Importer</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> LoadSensorData(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename,<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> LoadTimedData(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename,<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> ImportObj(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename,<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classImporter.xhtml" title="Importieren von 3D-Modell (.obj) und Sensordaten (.tsd oder .sd). ">Importer</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMPORTER_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classImporter.xhtml" title="Importieren von 3D-Modell (.obj) und Sensordaten (.tsd oder .sd). ">Importer</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> LoadSensorData(<span class="keywordtype">string</span> filename,<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> LoadTimedData(<span class="keywordtype">string</span> filename,<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> ImportObj(<span class="keywordtype">string</span> filename,<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classImporter.xhtml" title="Importieren von 3D-Modell (.obj) und Sensordaten (.tsd oder .sd). ">Importer</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IMPORTER_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

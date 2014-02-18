@@ -20,7 +20,7 @@ var searchData=
   ['onfindmaxtsd',['OnFindMaxTSD',['../classGUIMainWindow.xhtml#af21ea342f481cfdd01ed04005f903ad5',1,'GUIMainWindow']]],
   ['ongeneralpropchange',['OnGeneralPropChange',['../classGUIMainWindow.xhtml#a0eb68f1e4a740486706f98eeca783a68',1,'GUIMainWindow']]],
   ['onimmediateupdatepropchange',['OnImmediateUpdatePropChange',['../classGUIMainWindow.xhtml#ae0b6c47ae833ea4b8323e9c344b1f70a',1,'GUIMainWindow']]],
-  ['oninit',['OnInit',['../classApplication.xhtml#aa6b97a4bf380f56a925910b4223016c5',1,'Application']]],
+  ['oninit',['OnInit',['../classSimpleAnalyzerApp.xhtml#ac98b58650811c7e744eac6cd11d7c157',1,'SimpleAnalyzerApp']]],
   ['onkeydown',['OnKeyDown',['../classGUITimeline.xhtml#a82c3ff544345678870f3738443387bc0',1,'GUITimeline']]],
   ['onmaterialselect',['OnMaterialSelect',['../classGUIMainWindow.xhtml#a6618f0cc7d26ba7690c32a996f0b812e',1,'GUIMainWindow']]],
   ['onmenufilequit',['OnMenuFileQuit',['../classGUIMainWindow.xhtml#a594fc9fea2ef8cc4febc3c48c0e260c4',1,'GUIMainWindow']]],

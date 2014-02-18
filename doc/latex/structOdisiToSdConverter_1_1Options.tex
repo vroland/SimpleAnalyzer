@@ -1,0 +1,221 @@
+\hypertarget{structOdisiToSdConverter_1_1Options}{\section{Odisi\-To\-Sd\-Converter\-:\-:Options Strukturreferenz}
+\label{structOdisiToSdConverter_1_1Options}\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+}
+
+
+Strunktur für die Programmeinstellungen.  
+
+
+\subsection*{Öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+size\-\_\-t \hyperlink{structOdisiToSdConverter_1_1Options_acb8ca8c36555d0fa3d1b87e2c8800fe6}{startrow}
+\begin{DoxyCompactList}\small\item\em Index der ersten Zeile in der Odisi-\/\-Datei, die Sensordaten enthält. \end{DoxyCompactList}\item 
+char \hyperlink{structOdisiToSdConverter_1_1Options_ae4c74d1fdfbaf37eb4b38f4b684cfa31}{separator}
+\begin{DoxyCompactList}\small\item\em Das verwendete Separatorzeichen. \end{DoxyCompactList}\item 
+bool \hyperlink{structOdisiToSdConverter_1_1Options_ad5adb03bbad593944fb94802f9efffe1}{replace\-\_\-comma\-\_\-with\-\_\-point}
+\begin{DoxyCompactList}\small\item\em Sollen Kommata durch Punkte ersetzt werrden? \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{structOdisiToSdConverter_1_1Options_a43e744e0769d2b436c56ee6a9e410613}{timecol}
+\begin{DoxyCompactList}\small\item\em Index der Spalte, die die Zeitstempel enthält. \end{DoxyCompactList}\item 
+float \hyperlink{structOdisiToSdConverter_1_1Options_a2d540b0bd36d458de7797792efb13f13}{error\-\_\-threshold}
+\begin{DoxyCompactList}\small\item\em Maximal zulässige Differenz zum Vorgängerwert für einen gültigen Messwert bei der Fehlerkorrektur. \end{DoxyCompactList}\item 
+int \hyperlink{structOdisiToSdConverter_1_1Options_aca66edaa34e64581ddb68bca902634df}{maxfwcount}
+\begin{DoxyCompactList}\small\item\em Maximale Schrittanzahl zum finden eines gültigen Messwertes bei der Fehlerkorrektur. \end{DoxyCompactList}\item 
+int \hyperlink{structOdisiToSdConverter_1_1Options_a7dda0229b360a29cd7e4b1ed26e2e71d}{tab\-\_\-space\-\_\-count}
+\begin{DoxyCompactList}\small\item\em Anzahl der Leerzeichen für T\-A\-B (Für die Positionsangabe in der Log-\/\-Datei). \end{DoxyCompactList}\item 
+float \hyperlink{structOdisiToSdConverter_1_1Options_a9e9609b45b425d128550508772ad69f6}{height}
+\begin{DoxyCompactList}\small\item\em Höhe der Faserebene in $m$. \end{DoxyCompactList}\item 
+float \hyperlink{structOdisiToSdConverter_1_1Options_a3bda06d5caa4384aba4bd5302b44cde0}{basetemp}
+\begin{DoxyCompactList}\small\item\em Temperatur zu Beginn des Versuches (Die Odisi-\/\-Daten sind Differenzen zu dieser Anfangstemperatur). \end{DoxyCompactList}\item 
+float \hyperlink{structOdisiToSdConverter_1_1Options_a88d153166692e5bb6a4a37d453b2193c}{objwidth}
+\begin{DoxyCompactList}\small\item\em Position der Messwerte auf der X-\/\-Achse um diesen Wert verschieben. \end{DoxyCompactList}\item 
+bool \hyperlink{structOdisiToSdConverter_1_1Options_a0117562823f70067df979f4975e5b076}{flipobj}
+\begin{DoxyCompactList}\small\item\em Position auf der X-\/\-Achse spiegeln? \end{DoxyCompactList}\item 
+int \hyperlink{structOdisiToSdConverter_1_1Options_a550a9730db03bc568f8ac51a269dd286}{fiber\-\_\-step\-\_\-delta}
+\begin{DoxyCompactList}\small\item\em Schrittweite beim Auslesen der Sensordaten (nur jeder fiber\-\_\-step\-\_\-delta Messpunkt auf der Faser wird verwendet). \end{DoxyCompactList}\item 
+int \hyperlink{structOdisiToSdConverter_1_1Options_a2e5c6038a0ff5ca7d32be89740b82aa4}{time\-\_\-step\-\_\-delta}
+\begin{DoxyCompactList}\small\item\em Schrittweite beim Auslesen der Sensordaten (nur jeder time\-\_\-step\-\_\-delta Zeitpunkt wird verwendet). \end{DoxyCompactList}\item 
+double \hyperlink{structOdisiToSdConverter_1_1Options_afb526c278f5e4273379c0e6345ce01c0}{max\-\_\-time}
+\begin{DoxyCompactList}\small\item\em Nur bis maximal zu diesem Zeitstempel auslesen. \end{DoxyCompactList}\item 
+double \hyperlink{structOdisiToSdConverter_1_1Options_a2c97daa31cfdd315fd1d9a3307665edb}{min\-\_\-time}
+\begin{DoxyCompactList}\small\item\em Ab diesem Zeitstempel auslesen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Strunktur für die Programmeinstellungen. 
+
+Definiert in Zeile 40 der Datei main.\-cpp.
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{structOdisiToSdConverter_1_1Options_a3bda06d5caa4384aba4bd5302b44cde0}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!basetemp@{basetemp}}
+\index{basetemp@{basetemp}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{basetemp}]{\setlength{\rightskip}{0pt plus 5cm}float Odisi\-To\-Sd\-Converter\-::\-Options\-::basetemp}}\label{structOdisiToSdConverter_1_1Options_a3bda06d5caa4384aba4bd5302b44cde0}
+
+
+Temperatur zu Beginn des Versuches (Die Odisi-\/\-Daten sind Differenzen zu dieser Anfangstemperatur). 
+
+
+
+Definiert in Zeile 49 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_a2d540b0bd36d458de7797792efb13f13}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!error\-\_\-threshold@{error\-\_\-threshold}}
+\index{error\-\_\-threshold@{error\-\_\-threshold}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{error\-\_\-threshold}]{\setlength{\rightskip}{0pt plus 5cm}float Odisi\-To\-Sd\-Converter\-::\-Options\-::error\-\_\-threshold}}\label{structOdisiToSdConverter_1_1Options_a2d540b0bd36d458de7797792efb13f13}
+
+
+Maximal zulässige Differenz zum Vorgängerwert für einen gültigen Messwert bei der Fehlerkorrektur. 
+
+
+
+Definiert in Zeile 45 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_a550a9730db03bc568f8ac51a269dd286}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!fiber\-\_\-step\-\_\-delta@{fiber\-\_\-step\-\_\-delta}}
+\index{fiber\-\_\-step\-\_\-delta@{fiber\-\_\-step\-\_\-delta}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{fiber\-\_\-step\-\_\-delta}]{\setlength{\rightskip}{0pt plus 5cm}int Odisi\-To\-Sd\-Converter\-::\-Options\-::fiber\-\_\-step\-\_\-delta}}\label{structOdisiToSdConverter_1_1Options_a550a9730db03bc568f8ac51a269dd286}
+
+
+Schrittweite beim Auslesen der Sensordaten (nur jeder fiber\-\_\-step\-\_\-delta Messpunkt auf der Faser wird verwendet). 
+
+
+
+Definiert in Zeile 52 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_a0117562823f70067df979f4975e5b076}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!flipobj@{flipobj}}
+\index{flipobj@{flipobj}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{flipobj}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::\-Options\-::flipobj}}\label{structOdisiToSdConverter_1_1Options_a0117562823f70067df979f4975e5b076}
+
+
+Position auf der X-\/\-Achse spiegeln? 
+
+
+
+Definiert in Zeile 51 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_a9e9609b45b425d128550508772ad69f6}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!height@{height}}
+\index{height@{height}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}float Odisi\-To\-Sd\-Converter\-::\-Options\-::height}}\label{structOdisiToSdConverter_1_1Options_a9e9609b45b425d128550508772ad69f6}
+
+
+Höhe der Faserebene in $m$. 
+
+
+
+Definiert in Zeile 48 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_afb526c278f5e4273379c0e6345ce01c0}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!max\-\_\-time@{max\-\_\-time}}
+\index{max\-\_\-time@{max\-\_\-time}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{max\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}double Odisi\-To\-Sd\-Converter\-::\-Options\-::max\-\_\-time}}\label{structOdisiToSdConverter_1_1Options_afb526c278f5e4273379c0e6345ce01c0}
+
+
+Nur bis maximal zu diesem Zeitstempel auslesen. 
+
+
+
+Definiert in Zeile 54 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_aca66edaa34e64581ddb68bca902634df}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!maxfwcount@{maxfwcount}}
+\index{maxfwcount@{maxfwcount}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{maxfwcount}]{\setlength{\rightskip}{0pt plus 5cm}int Odisi\-To\-Sd\-Converter\-::\-Options\-::maxfwcount}}\label{structOdisiToSdConverter_1_1Options_aca66edaa34e64581ddb68bca902634df}
+
+
+Maximale Schrittanzahl zum finden eines gültigen Messwertes bei der Fehlerkorrektur. 
+
+
+
+Definiert in Zeile 46 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_a2c97daa31cfdd315fd1d9a3307665edb}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!min\-\_\-time@{min\-\_\-time}}
+\index{min\-\_\-time@{min\-\_\-time}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{min\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}double Odisi\-To\-Sd\-Converter\-::\-Options\-::min\-\_\-time}}\label{structOdisiToSdConverter_1_1Options_a2c97daa31cfdd315fd1d9a3307665edb}
+
+
+Ab diesem Zeitstempel auslesen. 
+
+
+
+Definiert in Zeile 55 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_a88d153166692e5bb6a4a37d453b2193c}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!objwidth@{objwidth}}
+\index{objwidth@{objwidth}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{objwidth}]{\setlength{\rightskip}{0pt plus 5cm}float Odisi\-To\-Sd\-Converter\-::\-Options\-::objwidth}}\label{structOdisiToSdConverter_1_1Options_a88d153166692e5bb6a4a37d453b2193c}
+
+
+Position der Messwerte auf der X-\/\-Achse um diesen Wert verschieben. 
+
+
+
+Definiert in Zeile 50 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_ad5adb03bbad593944fb94802f9efffe1}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!replace\-\_\-comma\-\_\-with\-\_\-point@{replace\-\_\-comma\-\_\-with\-\_\-point}}
+\index{replace\-\_\-comma\-\_\-with\-\_\-point@{replace\-\_\-comma\-\_\-with\-\_\-point}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{replace\-\_\-comma\-\_\-with\-\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::\-Options\-::replace\-\_\-comma\-\_\-with\-\_\-point}}\label{structOdisiToSdConverter_1_1Options_ad5adb03bbad593944fb94802f9efffe1}
+
+
+Sollen Kommata durch Punkte ersetzt werrden? 
+
+
+
+Definiert in Zeile 43 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_ae4c74d1fdfbaf37eb4b38f4b684cfa31}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!separator@{separator}}
+\index{separator@{separator}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{separator}]{\setlength{\rightskip}{0pt plus 5cm}char Odisi\-To\-Sd\-Converter\-::\-Options\-::separator}}\label{structOdisiToSdConverter_1_1Options_ae4c74d1fdfbaf37eb4b38f4b684cfa31}
+
+
+Das verwendete Separatorzeichen. 
+
+(Hier Leerzeichen) 
+
+Definiert in Zeile 42 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_acb8ca8c36555d0fa3d1b87e2c8800fe6}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!startrow@{startrow}}
+\index{startrow@{startrow}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{startrow}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t Odisi\-To\-Sd\-Converter\-::\-Options\-::startrow}}\label{structOdisiToSdConverter_1_1Options_acb8ca8c36555d0fa3d1b87e2c8800fe6}
+
+
+Index der ersten Zeile in der Odisi-\/\-Datei, die Sensordaten enthält. 
+
+
+
+Definiert in Zeile 41 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_a7dda0229b360a29cd7e4b1ed26e2e71d}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!tab\-\_\-space\-\_\-count@{tab\-\_\-space\-\_\-count}}
+\index{tab\-\_\-space\-\_\-count@{tab\-\_\-space\-\_\-count}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{tab\-\_\-space\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int Odisi\-To\-Sd\-Converter\-::\-Options\-::tab\-\_\-space\-\_\-count}}\label{structOdisiToSdConverter_1_1Options_a7dda0229b360a29cd7e4b1ed26e2e71d}
+
+
+Anzahl der Leerzeichen für T\-A\-B (Für die Positionsangabe in der Log-\/\-Datei). 
+
+
+
+Definiert in Zeile 47 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_a2e5c6038a0ff5ca7d32be89740b82aa4}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!time\-\_\-step\-\_\-delta@{time\-\_\-step\-\_\-delta}}
+\index{time\-\_\-step\-\_\-delta@{time\-\_\-step\-\_\-delta}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{time\-\_\-step\-\_\-delta}]{\setlength{\rightskip}{0pt plus 5cm}int Odisi\-To\-Sd\-Converter\-::\-Options\-::time\-\_\-step\-\_\-delta}}\label{structOdisiToSdConverter_1_1Options_a2e5c6038a0ff5ca7d32be89740b82aa4}
+
+
+Schrittweite beim Auslesen der Sensordaten (nur jeder time\-\_\-step\-\_\-delta Zeitpunkt wird verwendet). 
+
+
+
+Definiert in Zeile 53 der Datei main.\-cpp.
+
+\hypertarget{structOdisiToSdConverter_1_1Options_a43e744e0769d2b436c56ee6a9e410613}{\index{Odisi\-To\-Sd\-Converter\-::\-Options@{Odisi\-To\-Sd\-Converter\-::\-Options}!timecol@{timecol}}
+\index{timecol@{timecol}!OdisiToSdConverter::Options@{Odisi\-To\-Sd\-Converter\-::\-Options}}
+\subsubsection[{timecol}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t Odisi\-To\-Sd\-Converter\-::\-Options\-::timecol}}\label{structOdisiToSdConverter_1_1Options_a43e744e0769d2b436c56ee6a9e410613}
+
+
+Index der Spalte, die die Zeitstempel enthält. 
+
+
+
+Definiert in Zeile 44 der Datei main.\-cpp.
+
+
+
+Die Dokumentation für diese Struktur wurde erzeugt aufgrund der Datei\-:\begin{DoxyCompactItemize}
+\item 
+/daten/\-Projekte/eclipse\-\_\-workspace/odisitosd/\hyperlink{odisitosd_2main_8cpp}{main.\-cpp}\end{DoxyCompactItemize}

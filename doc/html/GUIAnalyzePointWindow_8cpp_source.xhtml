@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Simple Analyzer: simpleanalyzer-gui/src/GUI/GUIAnalyzePointWindow.cpp Quellcode</title>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/GUI/GUIAnalyzePointWindow.cpp Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -102,65 +102,93 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="constants_8h.xhtml">constants.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../processing/Analyzer.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../SimpleAnalyzerApp.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;BEGIN_EVENT_TABLE(<a class="code" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>, wxDialog)</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    EVT_BUTTON(<a class="code" href="constants_8h.xhtml#ab25acc4990929d49b383f2b7c147f60fab62cec493a1eea68dc463b3862023a46">ID_ANALYZE_POINT_BT</a>, <a class="code" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>::analyzePoint)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;END_EVENT_TABLE()</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;extern std::vector&lt;<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>*&gt; <a class="code" href="Application_8cpp.xhtml#aebc2744bc313ea93df649f4bbbe3acaf">data_objects</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;extern <span class="keywordtype">int</span> <a class="code" href="Application_8cpp.xhtml#ae3bb0fb60c66991217f89753d27e4c9a">current_data_object_index</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#abf699fcd4ffb8bec8b0565e6404b0af3">   21</a></span>&#160;<a class="code" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>::<a class="code" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>(wxWindow * parent,const wxChar *title, <span class="keywordtype">int</span> xpos, <span class="keywordtype">int</span> ypos, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height):</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        wxDialog(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height), wxCAPTION | wxCLOSE_BOX) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    label = <span class="keyword">new</span> wxStaticText(<span class="keyword">this</span>,wxID_ANY,wxT(<span class="stringliteral">&quot;Punktkoordinaten:&quot;</span>));</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    xedit = <span class="keyword">new</span> wxTextCtrl(<span class="keyword">this</span>,wxID_ANY,wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    yedit = <span class="keyword">new</span> wxTextCtrl(<span class="keyword">this</span>,wxID_ANY,wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    zedit = <span class="keyword">new</span> wxTextCtrl(<span class="keyword">this</span>,wxID_ANY,wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    calcbt= <span class="keyword">new</span> wxButton(<span class="keyword">this</span>,ID_ANALYZE_POINT_BT,wxT(<span class="stringliteral">&quot;analysieren&quot;</span>));</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    interpolationModeList = <span class="keyword">new</span> wxComboBox(<span class="keyword">this</span>,wxID_ANY,wxT(<span class="stringliteral">&quot;&quot;</span>),wxDefaultPosition,wxDefaultSize,<a class="code" href="constants_8h.xhtml#a3671997d94de57843bd6162844cd140a" title="Anzahl der verfügbaren Interpolationsmodi. ">NUMBER_OF_INTERPOLATION_MODES</a>,<a class="code" href="constants_8h.xhtml#a77ce5a39521911ed3b98226067b87ed6" title="Bezeichnungen für die von &quot;Interpolator&quot; verwendeten Interpolationsmodi. ">INTERPOLATION_MODE_STRINGS</a>,wxCB_READONLY | wxCB_DROPDOWN);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    interpolationModeLabel = <span class="keyword">new</span> wxStaticText(<span class="keyword">this</span>,wxID_ANY,wxT(<span class="stringliteral">&quot;Interpolationsmodus:&quot;</span>));</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    label-&gt;SetSize(10,10,300,20);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    xedit-&gt;SetSize(20,30,100,20);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    yedit-&gt;SetSize(120,30,100,20);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    zedit-&gt;SetSize(220,30,100,20);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    interpolationModeLabel-&gt;SetSize(20,60,200,20);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    interpolationModeList-&gt;SetSize(180,60,140,20);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    interpolationModeList-&gt;SetSelection(0);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    calcbt-&gt;SetSize(20,80,100,30);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    xedit-&gt;SetValue(wxT(<span class="stringliteral">&quot;0&quot;</span>));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    yedit-&gt;SetValue(wxT(<span class="stringliteral">&quot;.3&quot;</span>));</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    zedit-&gt;SetValue(wxT(<span class="stringliteral">&quot;1&quot;</span>));</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Centre();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event-Tabellendeklaration für wxWidgets. ">GUIAnalyzePointWindow::analyzePoint</a>(wxCommandEvent &amp;event) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classAnalyzer.xhtml" title="Ermittelt Daten aus der Temperaturverteilung. ">Analyzer</a> analyzer;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml" title="Analyseergebnisse für einen Punkt. ">Analyzer::AnalyzerData_point</a> data;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classInterpolator.xhtml" title="2- und 3-dimensionale Inter-/Extrapolation ">Interpolator</a> interpolator;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    interpolator.<a class="code" href="classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion). ">setMode</a>((<a class="code" href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2" title="Der Typ der verwendeten Interpolationsfunktion. ">Interpolator::InterpolationMode</a>) interpolationModeList-&gt;GetSelection());</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    setlocale(LC_NUMERIC, <span class="stringliteral">&quot;C&quot;</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a> point = <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(atof(xedit-&gt;GetValue().ToAscii()),atof(yedit-&gt;GetValue().ToAscii()),atof(zedit-&gt;GetValue().ToAscii()));</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    analyzer.<a class="code" href="classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. ">analyzePoint</a>(<a class="code" href="Application_8cpp.xhtml#aebc2744bc313ea93df649f4bbbe3acaf">data_objects</a>.at(<a class="code" href="Application_8cpp.xhtml#ae3bb0fb60c66991217f89753d27e4c9a">current_data_object_index</a>),&amp;point,&amp;data,&amp;interpolator);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    wxString message = wxT(<span class="stringliteral">&quot;Analysedaten des Punktes (&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    message.Append(<a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets-String um. ">floattowxstr</a>(point.<a class="code" href="classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X-Element des Vektors zurück. ">getX</a>()));</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    message.Append(wxT(<span class="stringliteral">&quot;|&quot;</span>));</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    message.Append(<a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets-String um. ">floattowxstr</a>(point.<a class="code" href="classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y-Element des Vektors zurück. ">getY</a>()));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    message.Append(wxT(<span class="stringliteral">&quot;|&quot;</span>));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    message.Append(<a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets-String um. ">floattowxstr</a>(point.<a class="code" href="classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z-Element des Vektors zurück. ">getZ</a>()));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    message.Append(wxT(<span class="stringliteral">&quot;):\nTemperatur: &quot;</span>));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    message.Append(<a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets-String um. ">floattowxstr</a>(data.value));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    message.Append(wxT(<span class="stringliteral">&quot;\nExtrapoliert: &quot;</span>));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    data.extrapolated?message.Append(wxT(<span class="stringliteral">&quot;ja&quot;</span>)):message.Append(wxT(<span class="stringliteral">&quot;nein&quot;</span>));</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    wxMessageBox( message, wxT(<span class="stringliteral">&quot;Punktanalyse&quot;</span>), wxICON_INFORMATION);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a9edaece1fef847902309af1f63eb168a">   65</a></span>&#160;<a class="code" href="classGUIAnalyzePointWindow.xhtml#a9edaece1fef847902309af1f63eb168a" title="Der Destruktor. ">GUIAnalyzePointWindow::~GUIAnalyzePointWindow</a>() {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//Eventtabelle zum Verknüpfen der Events</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;BEGIN_EVENT_TABLE(<a class="code" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>, wxDialog)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    EVT_BUTTON(<a class="code" href="constants_8h.xhtml#ab25acc4990929d49b383f2b7c147f60fab62cec493a1eea68dc463b3862023a46">ID_ANALYZE_POINT_BT</a>, <a class="code" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>::analyzePoint)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;END_EVENT_TABLE()</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#abf699fcd4ffb8bec8b0565e6404b0af3">   22</a></span>&#160;<a class="code" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>::<a class="code" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>(wxWindow * parent,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        const wxChar *title, <span class="keywordtype">int</span> xpos, <span class="keywordtype">int</span> ypos, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height) :</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        wxDialog(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height),</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                wxCAPTION | wxCLOSE_BOX) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//Erstellen der Fensterkomponenten</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    label = <span class="keyword">new</span> wxStaticText(<span class="keyword">this</span>, wxID_ANY, wxT(<span class="stringliteral">&quot;Punktkoordinaten:&quot;</span>));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    xedit = <span class="keyword">new</span> wxTextCtrl(<span class="keyword">this</span>, wxID_ANY, wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    yedit = <span class="keyword">new</span> wxTextCtrl(<span class="keyword">this</span>, wxID_ANY, wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    zedit = <span class="keyword">new</span> wxTextCtrl(<span class="keyword">this</span>, wxID_ANY, wxT(<span class="stringliteral">&quot;0.0&quot;</span>));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    calcbt = <span class="keyword">new</span> wxButton(<span class="keyword">this</span>, ID_ANALYZE_POINT_BT, wxT(<span class="stringliteral">&quot;analysieren&quot;</span>));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    interpolationModeList = <span class="keyword">new</span> wxComboBox(<span class="keyword">this</span>, wxID_ANY, wxT(<span class="stringliteral">&quot;&quot;</span>),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            wxDefaultPosition, wxDefaultSize, <a class="code" href="constants_8h.xhtml#a3671997d94de57843bd6162844cd140a" title="Anzahl der verfügbaren Interpolationsmodi. ">NUMBER_OF_INTERPOLATION_MODES</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="constants_8h.xhtml#a77ce5a39521911ed3b98226067b87ed6" title="Bezeichnungen für die von &quot;Interpolator&quot; verwendeten Interpolationsmodi. ">INTERPOLATION_MODE_STRINGS</a>, wxCB_READONLY | wxCB_DROPDOWN);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    interpolationModeLabel = <span class="keyword">new</span> wxStaticText(<span class="keyword">this</span>, wxID_ANY,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            wxT(<span class="stringliteral">&quot;Interpolationsmodus:&quot;</span>));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//Positionieren der Fensterkomponenten</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    label-&gt;SetSize(10, 10, 300, 20);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    xedit-&gt;SetSize(20, 30, 100, 20);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    yedit-&gt;SetSize(120, 30, 100, 20);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    zedit-&gt;SetSize(220, 30, 100, 20);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    interpolationModeLabel-&gt;SetSize(20, 60, 200, 20);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    interpolationModeList-&gt;SetSize(180, 60, 140, 20);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    calcbt-&gt;SetSize(20, 80, 100, 30);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//Setzen der Standardwerte</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    interpolationModeList-&gt;SetSelection(0);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    xedit-&gt;SetValue(wxT(<span class="stringliteral">&quot;0&quot;</span>));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    yedit-&gt;SetValue(wxT(<span class="stringliteral">&quot;0&quot;</span>));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    zedit-&gt;SetValue(wxT(<span class="stringliteral">&quot;0&quot;</span>));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Centre();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event-Tabellendeklaration für wxWidgets. ">GUIAnalyzePointWindow::analyzePoint</a>(wxCommandEvent &amp;event) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classAnalyzer.xhtml" title="Ermittelt Daten aus der Temperaturverteilung. ">Analyzer</a> analyzer;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//Stuktur zum speichern der Analysedaten</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml" title="Analyseergebnisse für einen Punkt. ">Analyzer::AnalyzerData_point</a> data;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classInterpolator.xhtml" title="2- und 3-dimensionale Inter-/Extrapolation ">Interpolator</a> interpolator;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//Übergeben des gewünschten Interposationsmodus</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    interpolator.<a class="code" href="classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion). ">setMode</a>(</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            (<a class="code" href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2" title="Der Typ der verwendeten Interpolationsfunktion. ">Interpolator::InterpolationMode</a>) interpolationModeList-&gt;GetSelection());</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//Setzend des Dezimaltrennzeichens auf Punkt</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    setlocale(LC_NUMERIC, <span class="stringliteral">&quot;C&quot;</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//Auslesen der Koordinaten des gesuchten Punkts aus der Oberfläche</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a> point = <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(atof(xedit-&gt;GetValue().ToAscii()),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            atof(yedit-&gt;GetValue().ToAscii()),</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            atof(zedit-&gt;GetValue().ToAscii()));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//Analysieren des Punktes</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    analyzer.<a class="code" href="classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. ">analyzePoint</a>(wxGetApp().getActiveObject(), &amp;point, &amp;data, &amp;interpolator);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//Sammeln der gewonnenen Informationen als Text</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    wxString message = wxT(<span class="stringliteral">&quot;Analysedaten des Punktes (&quot;</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    message.Append(<a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets-String um. ">floattowxstr</a>(point.<a class="code" href="classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X-Element des Vektors zurück. ">getX</a>()));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    message.Append(wxT(<span class="stringliteral">&quot;|&quot;</span>));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    message.Append(<a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets-String um. ">floattowxstr</a>(point.<a class="code" href="classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y-Element des Vektors zurück. ">getY</a>()));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    message.Append(wxT(<span class="stringliteral">&quot;|&quot;</span>));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    message.Append(<a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets-String um. ">floattowxstr</a>(point.<a class="code" href="classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z-Element des Vektors zurück. ">getZ</a>()));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    message.Append(wxT(<span class="stringliteral">&quot;):\nTemperatur: &quot;</span>));</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    message.Append(<a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets-String um. ">floattowxstr</a>(data.<a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml#a150b00a3d0be5d1c75b39292d213cbfa" title="Die Temperatur an diesem Punkt. ">value</a>));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    message.Append(wxT(<span class="stringliteral">&quot;\nExtrapoliert: &quot;</span>));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    data.<a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml#af4d2c2bd41aebc3c243afc5544bed81a" title="Ist der Punkt extrapoliert? ">extrapolated</a> ? message.Append(wxT(<span class="stringliteral">&quot;ja&quot;</span>)) : message.Append(wxT(<span class="stringliteral">&quot;nein&quot;</span>));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">//Ausgeben der Informationen als Nachricht</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    wxMessageBox(message, wxT(<span class="stringliteral">&quot;Punktanalyse&quot;</span>), wxICON_INFORMATION);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a9edaece1fef847902309af1f63eb168a">   93</a></span>&#160;<a class="code" href="classGUIAnalyzePointWindow.xhtml#a9edaece1fef847902309af1f63eb168a" title="Der Destruktor. ">GUIAnalyzePointWindow::~GUIAnalyzePointWindow</a>() {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

@@ -1,8 +1,8 @@
-<map id="simpleanalyzer&#45;gui/src/GUI/GUITimeline.cpp" name="simpleanalyzer&#45;gui/src/GUI/GUITimeline.cpp">
-<area shape="rect" id="node3" href="$GUITimeline_8h.xhtml" title="GUITimeline.h" alt="" coords="429,101,536,131"/>
-<area shape="rect" id="node24" href="$utils_8h.xhtml" title="utils.h" alt="" coords="355,256,411,285"/>
-<area shape="rect" id="node42" href="$Analyzer_8h.xhtml" title="../processing/Analyzer.h" alt="" coords="560,101,723,131"/>
-<area shape="rect" id="node11" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="365,179,544,208"/>
-<area shape="rect" id="node16" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="149,334,291,381"/>
-<area shape="rect" id="node18" href="$GeometryClasses_8h.xhtml" title="GeometryClasses.h" alt="" coords="352,429,491,459"/>
+<map id="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUITimeline.cpp" name="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUITimeline.cpp">
+<area shape="rect" id="node3" href="$GUITimeline_8h.xhtml" title="GUITimeline.h" alt="" coords="429,117,536,147"/>
+<area shape="rect" id="node24" href="$utils_8h.xhtml" title="utils.h" alt="" coords="355,272,411,301"/>
+<area shape="rect" id="node42" href="$Analyzer_8h.xhtml" title="../processing/Analyzer.h" alt="" coords="560,117,723,147"/>
+<area shape="rect" id="node11" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="365,195,544,224"/>
+<area shape="rect" id="node16" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="149,350,291,397"/>
+<area shape="rect" id="node18" href="$GeometryClasses_8h.xhtml" title="GeometryClasses.h" alt="" coords="352,445,491,475"/>
 </map>

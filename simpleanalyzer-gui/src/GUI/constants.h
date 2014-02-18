@@ -23,7 +23,7 @@ const wxString INTERPOLATION_MODE_STRINGS[NUMBER_OF_INTERPOLATION_MODES] = {wxT(
 
 /**
  * \enum EventID
- * IDs für die Events der Programmoberfläche.
+ * IDs für die Events der Programmoberfläche. Müssen kleiner als wxID_LOWEST (wxWidgets 2.8: 4999) sein!
  */
 enum EventID {
 	ID_ABOUT = 1,
@@ -60,6 +60,5 @@ enum EventID {
 	ID_COLORSCALE_PROP,
 	ID_COLORSCALE_COLORBT,
 };
-// IDs > wxID_HIGHEST for temporary uses
 
 #endif /* EVENT_IDS_H_ */

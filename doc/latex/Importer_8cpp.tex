@@ -1,5 +1,5 @@
-\hypertarget{Importer_8cpp}{\section{simpleanalyzer-\/gui/src/file\-I\-O/\-Importer.cpp-\/\-Dateireferenz}
-\label{Importer_8cpp}\index{simpleanalyzer-\/gui/src/file\-I\-O/\-Importer.\-cpp@{simpleanalyzer-\/gui/src/file\-I\-O/\-Importer.\-cpp}}
+\hypertarget{Importer_8cpp}{\section{/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/file\-I\-O/\-Importer.cpp-\/\-Dateireferenz}
+\label{Importer_8cpp}\index{/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/file\-I\-O/\-Importer.\-cpp@{/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/file\-I\-O/\-Importer.\-cpp}}
 }
 {\ttfamily \#include \char`\"{}Importer.\-h\char`\"{}}\\*
 {\ttfamily \#include $<$iostream$>$}\\*
@@ -8,8 +8,7 @@
 {\ttfamily \#include $<$vector$>$}\\*
 {\ttfamily \#include $<$algorithm$>$}\\*
 {\ttfamily \#include \char`\"{}../processing/\-Object\-Data.\-h\char`\"{}}\\*
-Include-\/\-Abhängigkeitsdiagramm für Importer.\-cpp\-:
-\nopagebreak
+Include-\/\-Abhängigkeitsdiagramm für Importer.\-cpp\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -25,9 +24,9 @@ Include-\/\-Abhängigkeitsdiagramm für Importer.\-cpp\-:
 \begin{DoxyCompactItemize}
 \item 
 int \hyperlink{Importer_8cpp_a0903d5717f5c64c86b68bf17c4783e91}{get\-Face\-Index} (string data, bool with\-U\-V)
-\item 
+\begin{DoxyCompactList}\small\item\em Extrahiert den Index einer Fläche aus einem Textblock einer Zeile der .obj-\/\-Datei. \end{DoxyCompactList}\item 
 string \hyperlink{Importer_8cpp_a0dd0686c00e64af27b47b4c16399d747}{get\-Text\-Block} (string data, int n)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Makro-\/\-Dokumentation}
@@ -36,7 +35,7 @@ string \hyperlink{Importer_8cpp_a0dd0686c00e64af27b47b4c16399d747}{get\-Text\-Bl
 \subsubsection[{P\-A\-T\-H\-\_\-\-S\-E\-P\-A\-R\-A\-T\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-A\-T\-H\-\_\-\-S\-E\-P\-A\-R\-A\-T\-O\-R~'/'}}\label{Importer_8cpp_a256a5721249aa3309437212cc21a9fe4}
 
 
-Definiert in Zeile 20 der Datei Importer.\-cpp.
+Definiert in Zeile 21 der Datei Importer.\-cpp.
 
 
 
@@ -51,12 +50,25 @@ Definiert in Zeile 20 der Datei Importer.\-cpp.
 )}}\label{Importer_8cpp_a0903d5717f5c64c86b68bf17c4783e91}
 
 
-Definiert in Zeile 26 der Datei Importer.\-cpp.
+Extrahiert den Index einer Fläche aus einem Textblock einer Zeile der .obj-\/\-Datei. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em data} & Der zu untersuchende Block. \\
+\hline
+{\em with\-U\-V} & Enthält die obj-\/\-Datei auch Texturdatenindices? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der Flächenindex. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 34 der Datei Importer.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -75,12 +87,25 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{Importer_8cpp_a0dd0686c00e64af27b47b4c16399d747}
 
 
-Definiert in Zeile 33 der Datei Importer.\-cpp.
+Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em data} & Der Ausgansstring. \\
+\hline
+{\em n} & Index des zu findenden Blocks. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der n-\/te durch Leerzeichen getrennte Teilstring. \char`\"{}\char`\"{} Bei ungültigem Index. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 51 der Datei Importer.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

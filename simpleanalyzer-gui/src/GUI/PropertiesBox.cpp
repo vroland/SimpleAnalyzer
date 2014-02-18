@@ -8,14 +8,13 @@
 #include "PropertiesBox.h"
 #include "constants.h"
 #include <iostream>
+#include "../SimpleAnalyzerApp.h"
 #include "../processing/utils.h"
 #include "../processing/ObjectData.h"
 
 using namespace Utils;
 
 wxString sdfilestring[] = {wxT("")};
-extern std::vector<ObjectData*> data_objects;
-extern int current_data_object_index;
 
 PropertiesBox::PropertiesBox(wxWindow *parent):
 	wxStaticBox(parent, wxID_ANY, wxT("Objekteigenschaften")) {
@@ -74,8 +73,8 @@ void PropertiesBox::resize() {
 	prevMarkerBt->Hide();
 	findMaxBt->Hide();
 	int sdheight = 0;
-	if (current_data_object_index>-1) {
-		ObjectData* object = data_objects.at(current_data_object_index);
+	if (wxGetApp().getCurrentDataObjectIndex()>-1) {
+		ObjectData* object = wxGetApp().getActiveObject();
 		SensorData* sd = &object->getSensorDataList()->at(sensorDataList->GetSelection());
 		if (sd->timed) {
 			sdTimeline->setMarkerList(&sd->markers);

@@ -111,15 +111,15 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node40 -->
 <g id="node113" class="node"><title>Node40</title>
-<a xlink:href="GUIAnalyzeOutputWindow_8cpp.xhtml#a9bf9afb451f3cc3da4768bc5dd87724b" target="_top" xlink:title="ftostr">
-<polygon fill="none" stroke="black" points="388.5,-216.5 388.5,-237.5 427.5,-237.5 427.5,-216.5 388.5,-216.5"/>
-<text text-anchor="middle" x="408" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">ftostr</text>
+<a xlink:href="namespaceUtils.xhtml#a76b506eef525971ab3ccb328f4ca879d" target="_top" xlink:title="Hilfsfunktion zur Umwandlung einer Zahl in einen String. ">
+<polygon fill="none" stroke="black" points="367.5,-216.5 367.5,-237.5 448.5,-237.5 448.5,-216.5 367.5,-216.5"/>
+<text text-anchor="middle" x="408" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::floattostr</text>
 </a>
 </g>
 <!-- Node2&#45;&gt;Node40 -->
 <g id="edge146" class="edge"><title>Node2&#45;&gt;Node40</title>
-<path fill="none" stroke="midnightblue" d="M286.678,-268.91C304.936,-261.911 326.421,-253.86 346,-247 356.567,-243.298 368.233,-239.468 378.568,-236.163"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="379.894,-239.414 388.37,-233.057 377.78,-232.741 379.894,-239.414"/>
+<path fill="none" stroke="midnightblue" d="M286.678,-268.91C304.936,-261.911 326.421,-253.86 346,-247 351.954,-244.914 358.257,-242.787 364.474,-240.737"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="365.689,-244.022 374.111,-237.595 363.519,-237.367 365.689,-244.022"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>

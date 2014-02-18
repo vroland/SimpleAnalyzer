@@ -3,6 +3,7 @@ var searchData=
   ['sendtimelineevent',['sendTimelineEvent',['../classGUITimeline.xhtml#a417835c7c520d9fbcf65610d255245a1',1,'GUITimeline']]],
   ['setactiveobject',['setActiveObject',['../classGUIMainWindow.xhtml#a84b96a8b25d748985f4960326a977b22',1,'GUIMainWindow']]],
   ['setanalyzewindowstatus',['setAnalyzeWindowStatus',['../classGUIMainWindow.xhtml#a64f6c71f9d92ab4091670ad1d264b2d7',1,'GUIMainWindow']]],
+  ['setcurrentdataobjectindex',['setCurrentDataObjectIndex',['../classSimpleAnalyzerApp.xhtml#a613955c888ef6b8f014504986951e2b9',1,'SimpleAnalyzerApp']]],
   ['setcurrentmaterial',['setCurrentMaterial',['../classPropertiesBox.xhtml#a995d6f6b8f068f4db6d6543f057d3fde',1,'PropertiesBox']]],
   ['setcurrentsensorindex',['setCurrentSensorIndex',['../classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76',1,'ObjectData']]],
   ['setcutrenderinfo',['setCutRenderInfo',['../classRenderer.xhtml#a566b30ae615b9cd74d481f360e0a567e',1,'Renderer']]],

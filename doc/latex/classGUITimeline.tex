@@ -25,7 +25,7 @@ Zusammengehörigkeiten von G\-U\-I\-Timeline\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=150pt]{classGUITimeline__coll__graph}
+\includegraphics[width=350pt]{classGUITimeline__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Öffentliche Typen}
@@ -53,7 +53,7 @@ void \hyperlink{classGUITimeline_a0bb2939f43fcefbeed5dfee827eaca9e}{set\-Max\-Va
 \begin{DoxyCompactList}\small\item\em Setzt den maximal auswählbaren Index. \end{DoxyCompactList}\item 
 void \hyperlink{classGUITimeline_ae75bc611225782e26402896771705821}{set\-Min\-Value} (int val)
 \begin{DoxyCompactList}\small\item\em Setzt den minimal auswählbaren Index. \end{DoxyCompactList}\item 
-void \hyperlink{classGUITimeline_a115bcd521b18f812b8251a169dbf2454}{set\-Name\-List} (vector$<$ string $>$ $\ast$namelist)
+void \hyperlink{classGUITimeline_a115bcd521b18f812b8251a169dbf2454}{set\-Name\-List} (\hyperlink{classstd_1_1vector}{vector}$<$ string $>$ $\ast$namelist)
 \begin{DoxyCompactList}\small\item\em Setzt die Liste der Namen für die jeweiligen Indices der Zeitpunkte. \end{DoxyCompactList}\item 
 void \hyperlink{classGUITimeline_a81c8e30bdf856cf05dbc9ae32f1b0690}{set\-Marked} (int pos, bool state)
 \begin{DoxyCompactList}\small\item\em Markiert/\-Demarkiert einen bestimmten Zeitpunkt. \end{DoxyCompactList}\item 
@@ -61,11 +61,11 @@ bool \hyperlink{classGUITimeline_a7d9d402a76a47f7e968c6b5dd84efcb0}{is\-Marked} 
 \begin{DoxyCompactList}\small\item\em Gibt zurück, ob ein Zeitpunkt markiert ist. \end{DoxyCompactList}\item 
 void \hyperlink{classGUITimeline_a9ffbeec8aa87350a623e4af4f2aba03d}{clear\-Markers} ()
 \begin{DoxyCompactList}\small\item\em Entfernt alle Markierungen. \end{DoxyCompactList}\item 
-void \hyperlink{classGUITimeline_aac5565f407354a3b3cfa9071a3486daa}{set\-Marker\-List} (vector$<$ int $>$ $\ast$mlist)
+void \hyperlink{classGUITimeline_aac5565f407354a3b3cfa9071a3486daa}{set\-Marker\-List} (\hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $\ast$mlist)
 \begin{DoxyCompactList}\small\item\em Setzt die Liste der markierten Stellen. \end{DoxyCompactList}\item 
-vector$<$ int $>$ $\ast$ \hyperlink{classGUITimeline_a0475107a9485faf7b9bf8836de3d8016}{get\-Markers} ()
+\hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $\ast$ \hyperlink{classGUITimeline_a0475107a9485faf7b9bf8836de3d8016}{get\-Markers} ()
 \begin{DoxyCompactList}\small\item\em Gibt die Liste der markierten Stellen zurück. \end{DoxyCompactList}\item 
-void \hyperlink{classGUITimeline_a48087c3b671d161fe04585f478dabd99}{set\-Markers} (vector$<$ int $>$ $\ast$mlist)
+void \hyperlink{classGUITimeline_a48087c3b671d161fe04585f478dabd99}{set\-Markers} (\hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $\ast$mlist)
 \begin{DoxyCompactList}\small\item\em Markiert eine Liste von Indices. \end{DoxyCompactList}\item 
 virtual \hyperlink{classGUITimeline_aa912aa353abcfc4127c05269141adf83}{$\sim$\-G\-U\-I\-Timeline} ()
 \begin{DoxyCompactList}\small\item\em Der Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -107,9 +107,9 @@ float \hyperlink{classGUITimeline_aba3c330e3e9e5f2f5edb069ecbb9c488}{delta\-\_\-
 \begin{DoxyCompactList}\small\item\em Verschiebung der Ansicht. \end{DoxyCompactList}\item 
 int \hyperlink{classGUITimeline_a16d456832948e97e9364856f92d97f5c}{prev\-\_\-mouse\-\_\-x}
 \begin{DoxyCompactList}\small\item\em Zwischenspeicher für die vorherige horizontale Mausposition. \end{DoxyCompactList}\item 
-vector$<$ string $>$ $\ast$ \hyperlink{classGUITimeline_adcdd8d58db7851c24ab9dfdfe1377ffb}{names}
+\hyperlink{classstd_1_1vector}{vector}$<$ string $>$ $\ast$ \hyperlink{classGUITimeline_adcdd8d58db7851c24ab9dfdfe1377ffb}{names}
 \begin{DoxyCompactList}\small\item\em Liste der Zeitpunktnamen. \end{DoxyCompactList}\item 
-vector$<$ int $>$ $\ast$ \hyperlink{classGUITimeline_a8e20b6ed00d7c48716256fffdcfa608a}{markers}
+\hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $\ast$ \hyperlink{classGUITimeline_a8e20b6ed00d7c48716256fffdcfa608a}{markers}
 \begin{DoxyCompactList}\small\item\em Liste der markierten Zeitpunkte. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -118,7 +118,7 @@ Eine Zeitleistenkomponente.
 
 Die Komponente kann Zeitpunkte als Zeitleiste darstellen, wobei die Zeitpunkte anhand von Indices ausgewählt werden können. Zusätzlich kann eine Liste von Namen für die Zeitpunkte festgelegt werden, wodurch auch der Name des gewählten Zeitpunkts angezeigt wird. Weiterhin können Zeitpunkte markiert werden. 
 
-Definiert in Zeile 31 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 32 der Datei G\-U\-I\-Timeline.\-h.
 
 
 
@@ -139,7 +139,7 @@ Darstellungsstil der Zeitleiste.
 \end{Desc}
 
 
-Definiert in Zeile 36 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 37 der Datei G\-U\-I\-Timeline.\-h.
 
 
 
@@ -214,8 +214,7 @@ Definiert in Zeile 138 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -226,8 +225,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -276,8 +274,7 @@ Definiert in Zeile 88 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -288,7 +285,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 \hypertarget{classGUITimeline_a0475107a9485faf7b9bf8836de3d8016}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!get\-Markers@{get\-Markers}}
 \index{get\-Markers@{get\-Markers}!GUITimeline@{G\-U\-I\-Timeline}}
-\subsubsection[{get\-Markers}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ $\ast$ G\-U\-I\-Timeline\-::get\-Markers (
+\subsubsection[{get\-Markers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector}$<$ int $>$ $\ast$ G\-U\-I\-Timeline\-::get\-Markers (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -318,8 +315,7 @@ Definiert in Zeile 278 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -345,8 +341,7 @@ Definiert in Zeile 281 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -372,8 +367,7 @@ Definiert in Zeile 275 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -402,18 +396,6 @@ Gibt zurück, ob ein Zeitpunkt markiert ist.
 
 Definiert in Zeile 326 der Datei G\-U\-I\-Timeline.\-cpp.
 
-
-
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=326pt]{classGUITimeline_a7d9d402a76a47f7e968c6b5dd84efcb0_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{classGUITimeline_a82c3ff544345678870f3738443387bc0}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!On\-Key\-Down@{On\-Key\-Down}}
 \index{On\-Key\-Down@{On\-Key\-Down}!GUITimeline@{G\-U\-I\-Timeline}}
 \subsubsection[{On\-Key\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Timeline\-::\-On\-Key\-Down (
@@ -431,8 +413,7 @@ Definiert in Zeile 71 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -458,8 +439,7 @@ Definiert in Zeile 67 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -485,8 +465,7 @@ Definiert in Zeile 178 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -568,8 +547,7 @@ Definiert in Zeile 162 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -580,8 +558,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -607,8 +584,7 @@ Definiert in Zeile 48 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -640,23 +616,11 @@ Markiert/\-Demarkiert einen bestimmten Zeitpunkt.
 
 Definiert in Zeile 311 der Datei G\-U\-I\-Timeline.\-cpp.
 
-
-
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=332pt]{classGUITimeline_a81c8e30bdf856cf05dbc9ae32f1b0690_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{classGUITimeline_aac5565f407354a3b3cfa9071a3486daa}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!set\-Marker\-List@{set\-Marker\-List}}
 \index{set\-Marker\-List@{set\-Marker\-List}!GUITimeline@{G\-U\-I\-Timeline}}
 \subsubsection[{set\-Marker\-List}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Timeline\-::set\-Marker\-List (
 \begin{DoxyParamCaption}
-\item[{vector$<$ int $>$ $\ast$}]{mlist}
+\item[{{\bf vector}$<$ int $>$ $\ast$}]{mlist}
 \end{DoxyParamCaption}
 )}}\label{classGUITimeline_aac5565f407354a3b3cfa9071a3486daa}
 
@@ -687,7 +651,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \index{set\-Markers@{set\-Markers}!GUITimeline@{G\-U\-I\-Timeline}}
 \subsubsection[{set\-Markers}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Timeline\-::set\-Markers (
 \begin{DoxyParamCaption}
-\item[{vector$<$ int $>$ $\ast$}]{mlist}
+\item[{{\bf vector}$<$ int $>$ $\ast$}]{mlist}
 \end{DoxyParamCaption}
 )}}\label{classGUITimeline_a48087c3b671d161fe04585f478dabd99}
 
@@ -720,8 +684,7 @@ Definiert in Zeile 297 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -747,8 +710,7 @@ Definiert in Zeile 300 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -761,7 +723,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \index{set\-Name\-List@{set\-Name\-List}!GUITimeline@{G\-U\-I\-Timeline}}
 \subsubsection[{set\-Name\-List}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Timeline\-::set\-Name\-List (
 \begin{DoxyParamCaption}
-\item[{vector$<$ string $>$ $\ast$}]{namelist}
+\item[{{\bf vector}$<$ string $>$ $\ast$}]{namelist}
 \end{DoxyParamCaption}
 )}}\label{classGUITimeline_a115bcd521b18f812b8251a169dbf2454}
 
@@ -805,8 +767,7 @@ Definiert in Zeile 284 der Datei G\-U\-I\-Timeline.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -817,8 +778,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -839,18 +799,18 @@ Verschiebung der Ansicht.
 
 
 
-Definiert in Zeile 189 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 190 der Datei G\-U\-I\-Timeline.\-h.
 
 \hypertarget{classGUITimeline_a8e20b6ed00d7c48716256fffdcfa608a}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!markers@{markers}}
 \index{markers@{markers}!GUITimeline@{G\-U\-I\-Timeline}}
-\subsubsection[{markers}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$$\ast$ G\-U\-I\-Timeline\-::markers\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUITimeline_a8e20b6ed00d7c48716256fffdcfa608a}
+\subsubsection[{markers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector}$<$int$>$$\ast$ G\-U\-I\-Timeline\-::markers\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUITimeline_a8e20b6ed00d7c48716256fffdcfa608a}
 
 
 Liste der markierten Zeitpunkte. 
 
 
 
-Definiert in Zeile 201 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 202 der Datei G\-U\-I\-Timeline.\-h.
 
 \hypertarget{classGUITimeline_a880c85a1838b77e7dd2c03601c15e36b}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!maxdigits@{maxdigits}}
 \index{maxdigits@{maxdigits}!GUITimeline@{G\-U\-I\-Timeline}}
@@ -861,7 +821,7 @@ Maximale Anzahl an anzuzeigenden Nachkommastellen.
 
 
 
-Definiert in Zeile 181 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 182 der Datei G\-U\-I\-Timeline.\-h.
 
 \hypertarget{classGUITimeline_a6c639803db9c5afff38d3221242da912}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!maxvalue@{maxvalue}}
 \index{maxvalue@{maxvalue}!GUITimeline@{G\-U\-I\-Timeline}}
@@ -872,7 +832,7 @@ Der größte anzuzeigende Zeitpunkt.
 
 
 
-Definiert in Zeile 173 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 174 der Datei G\-U\-I\-Timeline.\-h.
 
 \hypertarget{classGUITimeline_aad9f2b796d0d7c086cfe0094b3ef10c5}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!minvalue@{minvalue}}
 \index{minvalue@{minvalue}!GUITimeline@{G\-U\-I\-Timeline}}
@@ -883,18 +843,18 @@ Der kleinste anzuzeigende Zeitpunkt.
 
 
 
-Definiert in Zeile 177 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 178 der Datei G\-U\-I\-Timeline.\-h.
 
 \hypertarget{classGUITimeline_adcdd8d58db7851c24ab9dfdfe1377ffb}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!names@{names}}
 \index{names@{names}!GUITimeline@{G\-U\-I\-Timeline}}
-\subsubsection[{names}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$$\ast$ G\-U\-I\-Timeline\-::names\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUITimeline_adcdd8d58db7851c24ab9dfdfe1377ffb}
+\subsubsection[{names}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector}$<$string$>$$\ast$ G\-U\-I\-Timeline\-::names\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUITimeline_adcdd8d58db7851c24ab9dfdfe1377ffb}
 
 
 Liste der Zeitpunktnamen. 
 
 
 
-Definiert in Zeile 197 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 198 der Datei G\-U\-I\-Timeline.\-h.
 
 \hypertarget{classGUITimeline_a16d456832948e97e9364856f92d97f5c}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!prev\-\_\-mouse\-\_\-x@{prev\-\_\-mouse\-\_\-x}}
 \index{prev\-\_\-mouse\-\_\-x@{prev\-\_\-mouse\-\_\-x}!GUITimeline@{G\-U\-I\-Timeline}}
@@ -905,7 +865,7 @@ Zwischenspeicher für die vorherige horizontale Mausposition.
 
 
 
-Definiert in Zeile 193 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 194 der Datei G\-U\-I\-Timeline.\-h.
 
 \hypertarget{classGUITimeline_a0ba036e4a58176c5e868662510717ae2}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!value@{value}}
 \index{value@{value}!GUITimeline@{G\-U\-I\-Timeline}}
@@ -916,7 +876,7 @@ Der Index des aktuell ausgewählten Zeitpunkts.
 
 
 
-Definiert in Zeile 169 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 170 der Datei G\-U\-I\-Timeline.\-h.
 
 \hypertarget{classGUITimeline_a9b5b63103a41b6e661cfb30acfcda448}{\index{G\-U\-I\-Timeline@{G\-U\-I\-Timeline}!zoom@{zoom}}
 \index{zoom@{zoom}!GUITimeline@{G\-U\-I\-Timeline}}
@@ -927,11 +887,11 @@ Aktueller Zoomfaktor.
 
 
 
-Definiert in Zeile 185 der Datei G\-U\-I\-Timeline.\-h.
+Definiert in Zeile 186 der Datei G\-U\-I\-Timeline.\-h.
 
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{GUITimeline_8h}{G\-U\-I\-Timeline.\-h}\item 
-simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{GUITimeline_8cpp}{G\-U\-I\-Timeline.\-cpp}\end{DoxyCompactItemize}
+/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{GUITimeline_8h}{G\-U\-I\-Timeline.\-h}\item 
+/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/\-G\-U\-I/\hyperlink{GUITimeline_8cpp}{G\-U\-I\-Timeline.\-cpp}\end{DoxyCompactItemize}

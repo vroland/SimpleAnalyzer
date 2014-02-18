@@ -7,7 +7,7 @@
 <area shape="rect" id="node9" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Zeichnet die Tetraeder eines Materials des Objekts. " alt="" coords="413,52,595,81"/>
 <area shape="rect" id="node13" href="$classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="423,105,585,134"/>
 <area shape="rect" id="node17" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="435,158,573,188"/>
-<area shape="rect" id="node19" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="671,53,772,82"/>
+<area shape="rect" id="node19" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="671,53,772,82"/>
 <area shape="rect" id="node22" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. " alt="" coords="644,108,799,137"/>
 <area shape="rect" id="node26" href="$MeshProcessor_8cpp.xhtml#ad2670c4e8381f9a0a89c65f5559ed421" title="interpolatePoint" alt="" coords="665,162,777,192"/>
 <area shape="rect" id="node24" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="848,95,1019,142"/>

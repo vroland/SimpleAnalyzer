@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Simple Analyzer: simpleanalyzer-gui/src/processing/utils.cpp Quellcode</title>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/processing/utils.cpp Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz...">Utils::nextCombination</a>(vector&lt;int&gt;* indices,<span class="keywordtype">int</span> depth,<span class="keywordtype">int</span> dataPointCount) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz...">Utils::nextCombination</a>(<a class="code" href="classstd_1_1vector.xhtml">vector&lt;int&gt;</a>* indices,<span class="keywordtype">int</span> depth,<span class="keywordtype">int</span> dataPointCount) {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> (depth&lt;0) {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
@@ -235,7 +235,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                cerr &lt;&lt; <span class="stringliteral">&quot;mesh doesn&#39;t have tri faces. Triangulate it first!&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            }</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a> dir = <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(1,0,0);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            vector&lt;double&gt; depths;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="classstd_1_1vector.xhtml">vector&lt;double&gt;</a> depths;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordtype">int</span> intersections = 0;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> f=0;f&lt;io-&gt;numberoftrifaces;f++) {</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a> v1 = <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(&amp;io-&gt;pointlist[3*io-&gt;trifacelist[3*f]]);</div>
@@ -331,7 +331,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">delete</span> pges_back;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">return</span> inside;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="code" href="namespaceUtils.xhtml#a40eaef4d22da849a5deb2f1153d88bbc">  242</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. ">Utils::pointInsideTetrahedron</a>(<span class="keywordtype">double</span>* p,vector&lt;SensorPoint*&gt;* tet) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="code" href="namespaceUtils.xhtml#a40eaef4d22da849a5deb2f1153d88bbc">  242</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. ">Utils::pointInsideTetrahedron</a>(<span class="keywordtype">double</span>* p,<a class="code" href="classstd_1_1vector.xhtml">vector&lt;SensorPoint*&gt;</a>* tet) {</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a> v1 = <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(tet-&gt;at(0)-&gt;coords);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a> v2 = <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(tet-&gt;at(1)-&gt;coords);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a> v3 = <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(tet-&gt;at(2)-&gt;coords);</div>
@@ -347,27 +347,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a> pges = <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>(p);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. ">pointInsideTetrahedron</a>(&amp;pges,&amp;v1,&amp;v2,&amp;v3,&amp;v4);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
-<div class="line"><a name="l00258"></a><span class="lineno"><a class="code" href="namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2">  258</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. ">Utils::getPointValue</a>(<span class="keywordtype">int</span> &amp;status,vector&lt;SensorPoint&gt;* sensorpoints,<span class="keywordtype">double</span>* p,<a class="code" href="classInterpolator.xhtml" title="2- und 3-dimensionale Inter-/Extrapolation ">Interpolator</a>* interpolator,vector&lt;SensorPoint*&gt;* prev_tet,vector&lt;SensorPoint*&gt;* current_tet) {</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="code" href="namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2">  258</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. ">Utils::getPointValue</a>(<span class="keywordtype">int</span> &amp;status,<a class="code" href="classstd_1_1vector.xhtml">vector&lt;SensorPoint&gt;</a>* sensorpoints,<span class="keywordtype">double</span>* p,<a class="code" href="classInterpolator.xhtml" title="2- und 3-dimensionale Inter-/Extrapolation ">Interpolator</a>* interpolator,<a class="code" href="classstd_1_1vector.xhtml">vector&lt;SensorPoint*&gt;</a>* prev_tet,<a class="code" href="classstd_1_1vector.xhtml">vector&lt;SensorPoint*&gt;</a>* current_tet) {</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="structUtils_1_1SensorPointComparator.xhtml" title="Hilfsstruktur zum Vergleichen des Abstands von Sensordaten. ">SensorPointComparator</a> <a class="code" href="Analyzer_8cpp.xhtml#a12da8238afdb05d26dccf2cab831c7fd">spcomparator</a>;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">int</span> sensorpointcount = sensorpoints-&gt;size();</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;3;i++) {</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        spcomparator.<a class="code" href="structUtils_1_1SensorPointComparator.xhtml#a51335aca914559e34d9202b67d90b143" title="Punkt, zu dem der Abstand ermittelt werden soll. ">meshpoint</a>[i] = p[i];</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    }</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    sort(sensorpoints-&gt;begin(),sensorpoints-&gt;end(),<a class="code" href="Analyzer_8cpp.xhtml#a12da8238afdb05d26dccf2cab831c7fd">spcomparator</a>);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    vector&lt;SensorPoint*&gt; tet = vector&lt;SensorPoint*&gt;(4);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    vector&lt;int&gt; indices = vector&lt;int&gt;(4);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <a class="code" href="classstd_1_1vector.xhtml">vector&lt;SensorPoint*&gt;</a> tet = <a class="code" href="classstd_1_1vector.xhtml">vector&lt;SensorPoint*&gt;</a>(4);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="classstd_1_1vector.xhtml">vector&lt;int&gt;</a> indices = <a class="code" href="classstd_1_1vector.xhtml">vector&lt;int&gt;</a>(4);</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;4;i++) {</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        tet.at(i) = &amp;sensorpoints-&gt;at(i);</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        indices.at(i) = i;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    vector&lt;int&gt;* extrapolationIndices = NULL;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="code" href="classstd_1_1vector.xhtml">vector&lt;int&gt;</a>* extrapolationIndices = NULL;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">bool</span> pretest_successful = (prev_tet!=NULL) &amp;&amp; (<a class="code" href="namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. ">pointInsideTetrahedron</a>(p,prev_tet)==1);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    status = pretest_successful?1:0;    <span class="comment">// Vorherigen Tetraeder testen, wenn gegeben</span></div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">//cout &lt;&lt; &quot;prev_stat: &quot;&lt;&lt;status&lt;&lt;endl;</span></div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">while</span> (status&lt;1) {</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        status = <a class="code" href="namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. ">pointInsideTetrahedron</a>(p,&amp;tet);</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">if</span> (status&gt;-1 &amp;&amp; extrapolationIndices==NULL) {  <span class="comment">//Erster nicht coplanarer Tetraeder</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            extrapolationIndices = <span class="keyword">new</span> vector&lt;int&gt;(4);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            extrapolationIndices = <span class="keyword">new</span> <a class="code" href="classstd_1_1vector.xhtml">vector&lt;int&gt;</a>(4);</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;4;i++) {</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                extrapolationIndices-&gt;at(i)= indices.at(i);</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            }</div>
@@ -422,7 +422,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

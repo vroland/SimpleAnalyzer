@@ -86,6 +86,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#pro-attribs">Geschützte Attribute</a> &#124;
+<a href="#pro-static-attribs">Statische, geschützte Attribute</a> &#124;
 <a href="#pri-methods">Private Methoden</a> &#124;
 <a href="#pri-attribs">Private Attribute</a> &#124;
 <a href="classGUIMainWindow-members.xhtml">Aufstellung aller Elemente</a>  </div>
@@ -106,7 +108,7 @@ Klassendiagramm für GUIMainWindow:</div>
 <div class="dynheader">
 Zusammengehörigkeiten von GUIMainWindow:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow__coll__graph.svg" width="100%" height="559"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a href="graph_legend.xhtml">Legende</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -126,6 +128,18 @@ Zusammengehörigkeiten von GUIMainWindow:</div>
 <tr class="memitem:a16ca27363f15a5f2678417bbf26880d2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#a16ca27363f15a5f2678417bbf26880d2">~GUIMainWindow</a> ()</td></tr>
 <tr class="memdesc:a16ca27363f15a5f2678417bbf26880d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Der Destruktor.  <a href="#a16ca27363f15a5f2678417bbf26880d2">Mehr ...</a><br/></td></tr>
 <tr class="separator:a16ca27363f15a5f2678417bbf26880d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Geschützte Attribute</h2></td></tr>
+<tr class="memitem:abc81190b8fea79f68a476028f11272b1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#abc81190b8fea79f68a476028f11272b1">configpaths</a> [<a class="el" href="classGUIMainWindow.xhtml#ae3eb6747c8ffa9e20e54c2d34f58bd40">NUMBEROFPATHS</a>]</td></tr>
+<tr class="memdesc:abc81190b8fea79f68a476028f11272b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suchpfade für die Anwendungsdaten.  <a href="#abc81190b8fea79f68a476028f11272b1">Mehr ...</a><br/></td></tr>
+<tr class="separator:abc81190b8fea79f68a476028f11272b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Statische, geschützte Attribute</h2></td></tr>
+<tr class="memitem:ae3eb6747c8ffa9e20e54c2d34f58bd40"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGUIMainWindow.xhtml#ae3eb6747c8ffa9e20e54c2d34f58bd40">NUMBEROFPATHS</a> = 2</td></tr>
+<tr class="memdesc:ae3eb6747c8ffa9e20e54c2d34f58bd40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anzahl der Suchpfade für die Anwendungsdaten (z.B.  <a href="#ae3eb6747c8ffa9e20e54c2d34f58bd40">Mehr ...</a><br/></td></tr>
+<tr class="separator:ae3eb6747c8ffa9e20e54c2d34f58bd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Methoden</h2></td></tr>
@@ -293,7 +307,7 @@ Private Attribute</h2></td></tr>
 <div class="textblock"><p>Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen. </p>
 <p>Das Hauptfenster bietet über das Hauptmenü und die Oberfläche Zugriff auf die Funktionen des Programms. Dazu kann das aktuelle Objekt gewählt werden, welches dann im eingebetteten 3D-Fenster angezeigt wird. Eigenschaften der Visualisierung und des Objekts können ebenfalls über die Oberfläche des Hauptfensters festgelegt werden. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00027">27</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00028">28</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 </div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
 <a class="anchor" id="a55cb97ffda12d79c6d6d50c9de35a3fe"></a>
 <div class="memitem">
@@ -348,8 +362,9 @@ Private Attribute</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>Erstellen und initialisieren der Fensterkomponenten</p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00064">64</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00063">63</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -376,7 +391,7 @@ Private Attribute</h2></td></tr>
 
 <p>Der Destruktor. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00586">586</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00888">888</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -411,7 +426,7 @@ Private Attribute</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00179">179</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00226">226</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -438,13 +453,12 @@ Private Attribute</h2></td></tr>
 
 <p>Überträgt die in der GUI eingetragenen Objekteigenschaften in das aktive Objekt. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00297">297</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00414">414</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a1cb2c4f39b9ba971d51ab682f29b7f23_cgraph.svg" width="470" height="270"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a1cb2c4f39b9ba971d51ab682f29b7f23_cgraph.svg" width="475" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -473,7 +487,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Speichert die Visualisierungsoptionen aus der GUI. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00418">418</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00616">616</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -492,13 +506,12 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Gibt die Zeichenfläche des 3D-Fensters zurück. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00175">175</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00222">222</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a52e68b866f7835c3691fd8fad8ba910d_icgraph.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a52e68b866f7835c3691fd8fad8ba910d_icgraph.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -528,13 +541,12 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 <p>Öffnet das Popup-Menü zum auswählen des aktiven Objekts. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00568">568</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00856">856</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a62a20086c62508c133a2ac8a0496e543_cgraph.svg" width="502" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a62a20086c62508c133a2ac8a0496e543_cgraph.svg" width="502" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -564,13 +576,12 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Setzt das aktive Objetk nach dem Auswählen im Popup-Menü. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00563">563</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00850">850</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a868b65c50e42965818ceb61a5e84f687_icgraph.svg" width="502" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a868b65c50e42965818ceb61a5e84f687_icgraph.svg" width="502" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -600,7 +611,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 <p>Löscht das aktive Objekt, sofern es nicht das einzige geladene Objekt ist. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00190">190</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00243">243</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -628,7 +639,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 <p>Öffnet das Analysedaten-Übersichtsfenster. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00373">373</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00546">546</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -656,7 +667,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 <p>Behandelt das Markieren eines Zeitpunktes auf der Sensordaten-Zeitleiste. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00239">239</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00315">315</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -684,7 +695,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 <p>Öffnet das Fenster zur Analyse eines Punktes (<a class="el" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>). </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00382">382</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00561">561</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -712,7 +723,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 <p>Behandelt das aktivieren/deaktivieren der Option zum automatischen neuberechnen der Temperaturverteilung eines Objekts, sobald Änderungen an dessen Eigenschaften vorgenommen werden. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00292">292</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00408">408</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -740,7 +751,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 <p>Öffnet ein Fenster zum Exportieren der Ansicht des 3D-Fensters. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00531">531</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00798">798</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -768,13 +779,12 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 <p>Öffnet ein Fenster zum Exportieren der Temperaturverteilung und des Objekts im VTK-Format. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00548">548</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00826">826</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a48b4417c2eaa97a6eea4438f67a315e7_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a48b4417c2eaa97a6eea4438f67a315e7_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -805,7 +815,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p>Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten-Zeitleiste, für den der Wäremeenergiegehalt maximal wird. </p>
 <p>Dabei wird der Bereich zwischen den beiden markierten Stellen ausgewählt, zwischen denen sich der aktuell ausgewählte Zeitpunkt befindet. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00245">245</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00324">324</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -840,7 +850,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Objekteigenschaften durch den Nutzer. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00409">409</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00602">602</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -868,7 +878,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Objekteigenschaften,bei denen ein sofortiges Update der Oberfläche möglich ist, durch den Nutzer. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00400">400</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00590">590</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -896,7 +906,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Aktualisiert die Oberfläche nach dem Auswählen eines anderen Materials im Objekteigenschaften-Fenster. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00355">355</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00514">514</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -924,7 +934,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Beendet das Programm. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00578">578</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00879">879</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -952,7 +962,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Öffnet ein Fenster mit Informationen über das Programm. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00582">582</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00884">884</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -981,13 +991,12 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p>Event-Tabellendeklaration für wxWidgets. </p>
 <p>Öffnet den Dialog zum Importieren eines Objekts. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00470">470</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00706">706</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a9fd9f2be8f45cb5433193f5d28c924bc_cgraph.svg" width="100%" height="554"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a9fd9f2be8f45cb5433193f5d28c924bc_cgraph.svg" width="100%" height="554"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -1017,13 +1026,12 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Öffnet den Dialog zum Importieren einfacher Sensordaten. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00507">507</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00758">758</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a405b99746fe6f35ec527c57604e53ce2_cgraph.svg" width="100%" height="474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a405b99746fe6f35ec527c57604e53ce2_cgraph.svg" width="100%" height="474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -1053,13 +1061,12 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Öffnet den Dialog zum Importieren zeitbezogener Sensordaten. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00519">519</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00778">778</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_ab6b1fb242c4b529764093a092349f560_cgraph.svg" width="100%" height="474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_ab6b1fb242c4b529764093a092349f560_cgraph.svg" width="100%" height="474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -1089,13 +1096,12 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Berechnet die 3D-Temperaturverteilung neu. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00361">361</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00524">524</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a0c2de30274c7f52ff74ec1217e47a9e5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a0c2de30274c7f52ff74ec1217e47a9e5_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -1125,7 +1131,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Öffnet das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00390">390</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00573">573</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -1153,7 +1159,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Behandelt Größenänderungen des Fensters. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00204">204</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00258">258</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -1181,7 +1187,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Behandelt Änderungen an der Sensordaten-Zeitleiste (bei zeitbezogenen Datensätzen). </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00222">222</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00283">283</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -1209,7 +1215,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Löscht alle Markierungen auf der Sensordaten-Zeitleiste (bei zeitbezogenen Datensätzen). </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00233">233</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00305">305</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1243,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Setzen des auf der Sensordaten-Zeitleiste ausgewählten Zeitpunktes auf den nächsten markierten Zeitpunkt. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00259">259</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00353">353</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -1265,7 +1271,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Setzen des auf der Sensordaten-Zeitleiste ausgewählten Zeitpunktes auf den vorherigen markierten Zeitpunkt. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00272">272</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00372">372</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1299,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Behandelt das Auswählen eines anderen Sensordatensatzes. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00228">228</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00295">295</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -1321,7 +1327,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Visualisierungsoptionen durch den Nutzer. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00457">457</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00693">693</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1355,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Visualisierungsoptionen durch den Nutzer. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00463">463</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00699">699</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -1383,7 +1389,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </dd>
 </dl>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00183">183</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00233">233</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 </div>
 </div>
@@ -1409,7 +1415,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </dd>
 </dl>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00168">168</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00214">214</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
@@ -1442,7 +1448,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </dd>
 </dl>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00171">171</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00218">218</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
@@ -1476,7 +1482,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 <p>Überträgt die Eigenschaften des aktiven Objekts in die GUI. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00317">317</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00446">446</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -1511,13 +1517,12 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Lädt die Visualisierungsoptionen in die GUI. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00436">436</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8cpp_source.xhtml#l00652">652</a> der Datei <a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a2af54fc375be6b0fb938b8562980e723_cgraph.svg" width="382" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classGUIMainWindow_a2af54fc375be6b0fb938b8562980e723_cgraph.svg" width="382" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -1544,7 +1549,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Das Analysedaten-Übersichtsfenster ist gerade geöffnet. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00273">273</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00343">343</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1569,7 +1574,36 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p>Das Analysedaten-Übersichtsfenster. </p>
 <p>Der Zeiger ist ungültig, wenn das Analysedaten-Übersichtsfenster nicht geöffnet ist. (siehe analyze_window_valid) </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00252">252</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00317">317</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abc81190b8fea79f68a476028f11272b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string GUIMainWindow::configpaths[<a class="el" href="classGUIMainWindow.xhtml#ae3eb6747c8ffa9e20e54c2d34f58bd40">NUMBEROFPATHS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initialisierung:</b><div class="fragment"><div class="line">{</div>
+<div class="line">            <span class="stringliteral">&quot;/usr/local/share/simpleanalyzer/&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;/usr/share/simpleanalyzer/&quot;</span>,</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p>Suchpfade für die Anwendungsdaten. </p>
+<p>Das Verzeichnis der ausführbaren Datei wird immer und zuerst geprüft. </p>
+
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00072">72</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1593,7 +1627,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Die Zeichenfläche für das 3D-Fenster. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00207">207</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00261">261</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1617,7 +1651,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Das "Analysieren"-Untermenü. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00235">235</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00296">296</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1641,7 +1675,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Das "Bearbeiten"-Untermenü </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00239">239</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00301">301</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1665,7 +1699,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Das "Export"-Untermenü. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00231">231</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00291">291</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1689,7 +1723,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Das "Datei"-Untermenü. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00219">219</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00276">276</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1713,7 +1747,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Das "Hilfe"-Untermenü. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00223">223</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00281">281</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1737,7 +1771,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Das "Import"-Untermenü. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00227">227</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00286">286</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1761,7 +1795,32 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Die Hauptmenükomponente. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00215">215</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00271">271</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3eb6747c8ffa9e20e54c2d34f58bd40"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int GUIMainWindow::NUMBEROFPATHS = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Anzahl der Suchpfade für die Anwendungsdaten (z.B. </p>
+<p>Icons). </p>
+
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00065">65</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1785,7 +1844,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Scrollender Bereich, in den die Objekteigenschaften-Oberfläche eingebettet ist. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00261">261</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00328">328</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1809,7 +1868,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Die Unterkomponente, die die Objekteigenschaften-Oberfläche enthält. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00243">243</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00306">306</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1833,7 +1892,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung ist gerade geöffnet. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00277">277</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00348">348</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1858,7 +1917,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p>Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung. </p>
 <p>Der Zeiger ist ungültig, wenn das 2D-Fenster nicht geöffnet ist. (siehe render_cut_window_valid) </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00257">257</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00323">323</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1882,7 +1941,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Die Tollbarkomponente. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00211">211</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00266">266</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1907,7 +1966,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p>Die Oberfläche wird gerade vom Programm verändert. </p>
 <p>Signalisiert, dass die Eingabe nicht durch den Nutzer erfolgt ist. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00269">269</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00338">338</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1931,7 +1990,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Scrollender Bereich, in den die Visualisierungsoptionen-Oberfläche eingebettet ist. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00265">265</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00333">333</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1955,18 +2014,18 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 <p>Die Unterkomponente, die die Visualisierungsoptionen-Oberfläche enthält. </p>
 
-<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00247">247</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="GUIMainWindow_8h_source.xhtml#l00311">311</a> der Datei <a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a>.</p>
 
 </div>
 </div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
-<li>simpleanalyzer-gui/src/GUI/<a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a></li>
-<li>simpleanalyzer-gui/src/GUI/<a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a></li>
+<li>/daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/GUI/<a class="el" href="GUIMainWindow_8h_source.xhtml">GUIMainWindow.h</a></li>
+<li>/daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/GUI/<a class="el" href="GUIMainWindow_8cpp_source.xhtml">GUIMainWindow.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:18 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

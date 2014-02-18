@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Simple Analyzer: simpleanalyzer-gui/src/GUI/GUIAnalyzePointWindow.h Quellcode</title>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/GUI/GUIAnalyzePointWindow.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,26 +103,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wx/wx.h&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGUIAnalyzePointWindow.xhtml" title="Analysefenster für einen Punkt. ">GUIAnalyzePointWindow</a>: <span class="keyword">public</span> wxDialog {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classGUIAnalyzePointWindow.xhtml#abf699fcd4ffb8bec8b0565e6404b0af3" title="Der Konstruktor. ">GUIAnalyzePointWindow</a>(wxWindow * parent,<span class="keyword">const</span> wxChar *title, <span class="keywordtype">int</span> xpos, <span class="keywordtype">int</span> ypos, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classGUIAnalyzePointWindow.xhtml#a9edaece1fef847902309af1f63eb168a" title="Der Destruktor. ">~GUIAnalyzePointWindow</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    DECLARE_EVENT_TABLE()</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event-Tabellendeklaration für wxWidgets. ">analyzePoint</a>(wxCommandEvent &amp;event);</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#ae3f474800a7f7d9e4a897bdf33510f01">   39</a></span>&#160;    wxStaticText* <a class="code" href="classGUIAnalyzePointWindow.xhtml#ae3f474800a7f7d9e4a897bdf33510f01" title="Beschriftung der Fensterkomponenten. ">label</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a4c3d50b2c5c38b8b757cdb1c04ea83b6">   43</a></span>&#160;    wxTextCtrl* <a class="code" href="classGUIAnalyzePointWindow.xhtml#a4c3d50b2c5c38b8b757cdb1c04ea83b6" title="Eingabefeld für die X-Koordinate. ">xedit</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#ac4352df05ac2a001551801a90fc8bc42">   47</a></span>&#160;    wxTextCtrl* <a class="code" href="classGUIAnalyzePointWindow.xhtml#ac4352df05ac2a001551801a90fc8bc42" title="Eingabefeld für die Y-Koordinate. ">yedit</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a173e639b35cc6c18a74fb746b8664c8c">   51</a></span>&#160;    wxTextCtrl* <a class="code" href="classGUIAnalyzePointWindow.xhtml#a173e639b35cc6c18a74fb746b8664c8c" title="Eingabefeld für die Z-Koordinate. ">zedit</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a6a1b5c74ab4aca0f3ccea3ef83043b35">   55</a></span>&#160;    wxStaticText* <a class="code" href="classGUIAnalyzePointWindow.xhtml#a6a1b5c74ab4aca0f3ccea3ef83043b35" title="Beschriftung für den Interpolationsmodus. ">interpolationModeLabel</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a6b2da34e788e56e70789d2cfc9767357">   59</a></span>&#160;    wxComboBox* <a class="code" href="classGUIAnalyzePointWindow.xhtml#a6b2da34e788e56e70789d2cfc9767357" title="Dropdown-Menü für den Interpolationsmodus. ">interpolationModeList</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a2650076436d57254fa9dd0df3783593e">   63</a></span>&#160;    wxButton* <a class="code" href="classGUIAnalyzePointWindow.xhtml#a2650076436d57254fa9dd0df3783593e" title="Button zum Auslösen der Analyseprozedur. ">calcbt</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GUIANALYZEPOINT_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classGUIAnalyzePointWindow.xhtml#abf699fcd4ffb8bec8b0565e6404b0af3" title="Der Konstruktor. ">GUIAnalyzePointWindow</a>(wxWindow * parent,<span class="keyword">const</span> wxChar *title, <span class="keywordtype">int</span> xpos, <span class="keywordtype">int</span> ypos, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classGUIAnalyzePointWindow.xhtml#a9edaece1fef847902309af1f63eb168a" title="Der Destruktor. ">~GUIAnalyzePointWindow</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    DECLARE_EVENT_TABLE()</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event-Tabellendeklaration für wxWidgets. ">analyzePoint</a>(wxCommandEvent &amp;event);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#ae3f474800a7f7d9e4a897bdf33510f01">   42</a></span>&#160;    wxStaticText* <a class="code" href="classGUIAnalyzePointWindow.xhtml#ae3f474800a7f7d9e4a897bdf33510f01" title="Beschriftung der Fensterkomponenten. ">label</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a4c3d50b2c5c38b8b757cdb1c04ea83b6">   47</a></span>&#160;    wxTextCtrl* <a class="code" href="classGUIAnalyzePointWindow.xhtml#a4c3d50b2c5c38b8b757cdb1c04ea83b6" title="Eingabefeld für die X-Koordinate. ">xedit</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#ac4352df05ac2a001551801a90fc8bc42">   52</a></span>&#160;    wxTextCtrl* <a class="code" href="classGUIAnalyzePointWindow.xhtml#ac4352df05ac2a001551801a90fc8bc42" title="Eingabefeld für die Y-Koordinate. ">yedit</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a173e639b35cc6c18a74fb746b8664c8c">   57</a></span>&#160;    wxTextCtrl* <a class="code" href="classGUIAnalyzePointWindow.xhtml#a173e639b35cc6c18a74fb746b8664c8c" title="Eingabefeld für die Z-Koordinate. ">zedit</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a6a1b5c74ab4aca0f3ccea3ef83043b35">   62</a></span>&#160;    wxStaticText* <a class="code" href="classGUIAnalyzePointWindow.xhtml#a6a1b5c74ab4aca0f3ccea3ef83043b35" title="Beschriftung für den Interpolationsmodus. ">interpolationModeLabel</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a6b2da34e788e56e70789d2cfc9767357">   67</a></span>&#160;    wxComboBox* <a class="code" href="classGUIAnalyzePointWindow.xhtml#a6b2da34e788e56e70789d2cfc9767357" title="Dropdown-Menü für den Interpolationsmodus. ">interpolationModeList</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="classGUIAnalyzePointWindow.xhtml#a2650076436d57254fa9dd0df3783593e">   72</a></span>&#160;    wxButton* <a class="code" href="classGUIAnalyzePointWindow.xhtml#a2650076436d57254fa9dd0df3783593e" title="Button zum Auslösen der Analyseprozedur. ">calcbt</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* GUIANALYZEPOINT_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

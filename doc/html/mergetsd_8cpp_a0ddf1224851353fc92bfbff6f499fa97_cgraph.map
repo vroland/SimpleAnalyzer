@@ -1,5 +1,3 @@
 <map id="main" name="main">
-<area shape="rect" id="node3" href="$namespaceMergeTSD.xhtml#a77cf0d82e2e5257abde3e667be3299f5" title="Liest die Programmargumente um die Eingabedateien anhand der Zeitstempel in eine .tsd&#45;Datei zusammen zu führen. " alt="" coords="105,5,233,35"/>
-<area shape="rect" id="node5" href="$namespaceMergeTSD.xhtml#ad380b92e7e702006d21b99bf6ebbe5cf" title="Sammelt Daten aus einer .tsd&#45;Datei. " alt="" coords="283,5,429,35"/>
-<area shape="rect" id="node7" href="$Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="getTextBlock" alt="" coords="477,5,576,35"/>
+<area shape="rect" id="node3" href="$classTsdMerger.xhtml#aef6012e4a2b9c31440ba1f81114cda4c" title="Liest die Programmargumente um die Eingabedateien anhand der Zeitstempel in eine .tsd&#45;Datei zusammen zu führen. " alt="" coords="104,5,232,35"/>
 </map>

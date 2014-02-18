@@ -15,11 +15,11 @@ Importieren von 3\-D-\/\-Modell (.obj) und Sensordaten (.tsd oder .sd).
 \item 
 \hyperlink{classImporter_afaf93b56e3558a92405ab627ab8ee1d1}{Importer} ()
 \begin{DoxyCompactList}\small\item\em Der Konstruktor. \end{DoxyCompactList}\item 
-\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_a001bd26372d94f96de66f7bcb90cc790}{Load\-Sensor\-Data} (const char $\ast$filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
+\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_ae837d750c92450f8e83b2d93eb099f79}{Load\-Sensor\-Data} (string filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
 \begin{DoxyCompactList}\small\item\em Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. \end{DoxyCompactList}\item 
-\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_a196e66a161a0102194580ec4b10895e5}{Load\-Timed\-Data} (const char $\ast$filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
+\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_ad8dec9ce375155ca130453632530eb52}{Load\-Timed\-Data} (string filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
 \begin{DoxyCompactList}\small\item\em Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. \end{DoxyCompactList}\item 
-\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_a5013417fb7556dce65dba1ed3aec4e50}{Import\-Obj} (const char $\ast$filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
+\hyperlink{classObjectData_a20e8cd3cd0f8af3b571b9393aa9e6484}{Object\-Data\-::\-Object\-Data\-Status} \hyperlink{classImporter_aaa567a75272f300157648ffaa9b101c2}{Import\-Obj} (string filename, \hyperlink{classObjectData}{Object\-Data} $\ast$data)
 \begin{DoxyCompactList}\small\item\em Lädt Objektdaten aus einer .obj-\/\-Datei. \end{DoxyCompactList}\item 
 virtual \hyperlink{classImporter_a6e61faae5020f2dc034ff3ea4032a537}{$\sim$\-Importer} ()
 \begin{DoxyCompactList}\small\item\em Der Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -46,7 +46,7 @@ Der Konstruktor.
 
 
 
-Definiert in Zeile 23 der Datei Importer.\-cpp.
+Definiert in Zeile 24 der Datei Importer.\-cpp.
 
 \hypertarget{classImporter_a6e61faae5020f2dc034ff3ea4032a537}{\index{Importer@{Importer}!$\sim$\-Importer@{$\sim$\-Importer}}
 \index{$\sim$\-Importer@{$\sim$\-Importer}!Importer@{Importer}}
@@ -61,19 +61,19 @@ Der Destruktor.
 
 
 
-Definiert in Zeile 283 der Datei Importer.\-cpp.
+Definiert in Zeile 504 der Datei Importer.\-cpp.
 
 
 
 \subsection{Dokumentation der Elementfunktionen}
-\hypertarget{classImporter_a5013417fb7556dce65dba1ed3aec4e50}{\index{Importer@{Importer}!Import\-Obj@{Import\-Obj}}
+\hypertarget{classImporter_aaa567a75272f300157648ffaa9b101c2}{\index{Importer@{Importer}!Import\-Obj@{Import\-Obj}}
 \index{Import\-Obj@{Import\-Obj}!Importer@{Importer}}
 \subsubsection[{Import\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Data\-::\-Object\-Data\-Status} Importer\-::\-Import\-Obj (
 \begin{DoxyParamCaption}
-\item[{const char $\ast$}]{filename, }
+\item[{string}]{filename, }
 \item[{{\bf Object\-Data} $\ast$}]{data}
 \end{DoxyParamCaption}
-)}}\label{classImporter_a5013417fb7556dce65dba1ed3aec4e50}
+)}}\label{classImporter_aaa567a75272f300157648ffaa9b101c2}
 
 
 Lädt Objektdaten aus einer .obj-\/\-Datei. 
@@ -83,16 +83,15 @@ Der Fehlercode.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 60 der Datei Importer.\-cpp.
+Definiert in Zeile 83 der Datei Importer.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=344pt]{classImporter_a5013417fb7556dce65dba1ed3aec4e50_cgraph}
+\includegraphics[width=344pt]{classImporter_aaa567a75272f300157648ffaa9b101c2_cgraph}
 \end{center}
 \end{figure}
 
@@ -103,19 +102,19 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classImporter_a5013417fb7556dce65dba1ed3aec4e50_icgraph}
+\includegraphics[width=350pt]{classImporter_aaa567a75272f300157648ffaa9b101c2_icgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{classImporter_a001bd26372d94f96de66f7bcb90cc790}{\index{Importer@{Importer}!Load\-Sensor\-Data@{Load\-Sensor\-Data}}
+\hypertarget{classImporter_ae837d750c92450f8e83b2d93eb099f79}{\index{Importer@{Importer}!Load\-Sensor\-Data@{Load\-Sensor\-Data}}
 \index{Load\-Sensor\-Data@{Load\-Sensor\-Data}!Importer@{Importer}}
 \subsubsection[{Load\-Sensor\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Data\-::\-Object\-Data\-Status} Importer\-::\-Load\-Sensor\-Data (
 \begin{DoxyParamCaption}
-\item[{const char $\ast$}]{filename, }
+\item[{string}]{filename, }
 \item[{{\bf Object\-Data} $\ast$}]{data}
 \end{DoxyParamCaption}
-)}}\label{classImporter_a001bd26372d94f96de66f7bcb90cc790}
+)}}\label{classImporter_ae837d750c92450f8e83b2d93eb099f79}
 
 
 Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. 
@@ -125,16 +124,15 @@ Der Fehlercode.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 199 der Datei Importer.\-cpp.
+Definiert in Zeile 342 der Datei Importer.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classImporter_a001bd26372d94f96de66f7bcb90cc790_cgraph}
+\includegraphics[width=350pt]{classImporter_ae837d750c92450f8e83b2d93eb099f79_cgraph}
 \end{center}
 \end{figure}
 
@@ -145,19 +143,19 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classImporter_a001bd26372d94f96de66f7bcb90cc790_icgraph}
+\includegraphics[width=350pt]{classImporter_ae837d750c92450f8e83b2d93eb099f79_icgraph}
 \end{center}
 \end{figure}
 
 
-\hypertarget{classImporter_a196e66a161a0102194580ec4b10895e5}{\index{Importer@{Importer}!Load\-Timed\-Data@{Load\-Timed\-Data}}
+\hypertarget{classImporter_ad8dec9ce375155ca130453632530eb52}{\index{Importer@{Importer}!Load\-Timed\-Data@{Load\-Timed\-Data}}
 \index{Load\-Timed\-Data@{Load\-Timed\-Data}!Importer@{Importer}}
 \subsubsection[{Load\-Timed\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Data\-::\-Object\-Data\-Status} Importer\-::\-Load\-Timed\-Data (
 \begin{DoxyParamCaption}
-\item[{const char $\ast$}]{filename, }
+\item[{string}]{filename, }
 \item[{{\bf Object\-Data} $\ast$}]{data}
 \end{DoxyParamCaption}
-)}}\label{classImporter_a196e66a161a0102194580ec4b10895e5}
+)}}\label{classImporter_ad8dec9ce375155ca130453632530eb52}
 
 
 Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. 
@@ -167,16 +165,15 @@ Der Fehlercode.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 238 der Datei Importer.\-cpp.
+Definiert in Zeile 416 der Datei Importer.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classImporter_a196e66a161a0102194580ec4b10895e5_cgraph}
+\includegraphics[width=350pt]{classImporter_ad8dec9ce375155ca130453632530eb52_cgraph}
 \end{center}
 \end{figure}
 
@@ -187,7 +184,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classImporter_a196e66a161a0102194580ec4b10895e5_icgraph}
+\includegraphics[width=350pt]{classImporter_ad8dec9ce375155ca130453632530eb52_icgraph}
 \end{center}
 \end{figure}
 
@@ -196,5 +193,5 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-simpleanalyzer-\/gui/src/file\-I\-O/\hyperlink{Importer_8h}{Importer.\-h}\item 
-simpleanalyzer-\/gui/src/file\-I\-O/\hyperlink{Importer_8cpp}{Importer.\-cpp}\end{DoxyCompactItemize}
+/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/file\-I\-O/\hyperlink{Importer_8h}{Importer.\-h}\item 
+/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/file\-I\-O/\hyperlink{Importer_8cpp}{Importer.\-cpp}\end{DoxyCompactItemize}

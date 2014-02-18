@@ -35,6 +35,8 @@ double \hyperlink{namespaceUtils_afac34330dde6235ee7395a4fd412ae0d}{sqr} (double
 \begin{DoxyCompactList}\small\item\em Quadriert eine Zahl. \end{DoxyCompactList}\item 
 float \hyperlink{namespaceUtils_abb647325616858e0fad55290c36ea03b}{clamp\-Hue} (float h)
 \begin{DoxyCompactList}\small\item\em Begrenzt einen Wert auf den Bereich 0..1. \end{DoxyCompactList}\item 
+string \hyperlink{namespaceUtils_a76b506eef525971ab3ccb328f4ca879d}{floattostr} (double val)
+\begin{DoxyCompactList}\small\item\em Hilfsfunktion zur Umwandlung einer Zahl in einen String. \end{DoxyCompactList}\item 
 wx\-String \hyperlink{namespaceUtils_a233ff9a0b34b10195a434f1ff66323b8}{floattowxstr} (double val)
 \begin{DoxyCompactList}\small\item\em Wandelt eine Fließkommazahl in einen wx\-Widgets-\/\-String um. \end{DoxyCompactList}\item 
 wx\-String \hyperlink{namespaceUtils_ac47160b3665d77f9e1a49a4045053add}{floattowxstr} (double val, int digits)
@@ -47,11 +49,11 @@ int \hyperlink{namespaceUtils_a9b995a1220a78be108b19bda4b776332}{point\-Inside\-
 \begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
 int \hyperlink{namespaceUtils_a8f7379e1915d2a04907eb9d99d0a56ad}{point\-Inside\-Tetrahedron} (double $\ast$pges, double $\ast$v1, double $\ast$v2, double $\ast$v3, double $\ast$v4)
 \begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
-int \hyperlink{namespaceUtils_a40eaef4d22da849a5deb2f1153d88bbc}{point\-Inside\-Tetrahedron} (double $\ast$p, vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$tet)
+int \hyperlink{namespaceUtils_a40eaef4d22da849a5deb2f1153d88bbc}{point\-Inside\-Tetrahedron} (double $\ast$p, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$tet)
 \begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
-void \hyperlink{namespaceUtils_af4ba26e928c7cef5269c51bfac49d547}{next\-Combination} (vector$<$ int $>$ $\ast$indices, int depth, int data\-Point\-Count)
+void \hyperlink{namespaceUtils_af4ba26e928c7cef5269c51bfac49d547}{next\-Combination} (\hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $\ast$indices, int depth, int data\-Point\-Count)
 \begin{DoxyCompactList}\small\item\em Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf data\-Point\-Count Plätze. \end{DoxyCompactList}\item 
-double \hyperlink{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}{get\-Point\-Value} (int \&status, vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $>$ $\ast$sensorpoints, double $\ast$p, \hyperlink{classInterpolator}{Interpolator} $\ast$interpolator, vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$prev\-\_\-tet=N\-U\-L\-L, vector$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$current\-\_\-tet=N\-U\-L\-L)
+double \hyperlink{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}{get\-Point\-Value} (int \&status, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $>$ $\ast$sensorpoints, double $\ast$p, \hyperlink{classInterpolator}{Interpolator} $\ast$interpolator, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$prev\-\_\-tet=N\-U\-L\-L, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$current\-\_\-tet=N\-U\-L\-L)
 \begin{DoxyCompactList}\small\item\em Gibt den inter/extrapolierten Wert eines Punktes zurück. \end{DoxyCompactList}\item 
 float $\ast$ \hyperlink{namespaceUtils_a5d6523eb946892eee52c9c74efd016de}{hsv\-To\-Rgb} (float h, float s, float v)
 \begin{DoxyCompactList}\small\item\em Wandelt eine Farbe im H\-S\-V-\/\-Format ins R\-G\-B-\/\-Format um. \end{DoxyCompactList}\item 
@@ -111,8 +113,7 @@ Definiert in Zeile 27 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -151,6 +152,41 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{namespaceUtils_adc0438a85ca31977c95f5d27090d5346_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceUtils_a76b506eef525971ab3ccb328f4ca879d}{\index{Utils@{Utils}!floattostr@{floattostr}}
+\index{floattostr@{floattostr}!Utils@{Utils}}
+\subsubsection[{floattostr}]{\setlength{\rightskip}{0pt plus 5cm}string Utils\-::floattostr (
+\begin{DoxyParamCaption}
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{namespaceUtils_a76b506eef525971ab3ccb328f4ca879d}
+
+
+Hilfsfunktion zur Umwandlung einer Zahl in einen String. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em val} & Die umzuwandelnde Zahl. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der resultierende String. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 116 der Datei utils.\-h.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceUtils_a76b506eef525971ab3ccb328f4ca879d_icgraph}
 \end{center}
 \end{figure}
 
@@ -220,11 +256,11 @@ Definiert in Zeile 41 der Datei utils.\-cpp.
 \subsubsection[{get\-Point\-Value}]{\setlength{\rightskip}{0pt plus 5cm}double Utils\-::get\-Point\-Value (
 \begin{DoxyParamCaption}
 \item[{int \&}]{status, }
-\item[{vector$<$ Sensor\-Point $>$ $\ast$}]{sensorpoints, }
+\item[{{\bf vector}$<$ Sensor\-Point $>$ $\ast$}]{sensorpoints, }
 \item[{double $\ast$}]{p, }
 \item[{{\bf Interpolator} $\ast$}]{interpolator, }
-\item[{vector$<$ Sensor\-Point $\ast$ $>$ $\ast$}]{prev\-\_\-tet = {\ttfamily NULL}, }
-\item[{vector$<$ Sensor\-Point $\ast$ $>$ $\ast$}]{current\-\_\-tet = {\ttfamily NULL}}
+\item[{{\bf vector}$<$ Sensor\-Point $\ast$ $>$ $\ast$}]{prev\-\_\-tet = {\ttfamily NULL}, }
+\item[{{\bf vector}$<$ Sensor\-Point $\ast$ $>$ $\ast$}]{current\-\_\-tet = {\ttfamily NULL}}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}
 
@@ -255,8 +291,7 @@ Definiert in Zeile 258 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -267,8 +302,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -308,8 +342,7 @@ Definiert in Zeile 46 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -322,7 +355,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \index{next\-Combination@{next\-Combination}!Utils@{Utils}}
 \subsubsection[{next\-Combination}]{\setlength{\rightskip}{0pt plus 5cm}void Utils\-::next\-Combination (
 \begin{DoxyParamCaption}
-\item[{vector$<$ int $>$ $\ast$}]{indices, }
+\item[{{\bf vector}$<$ int $>$ $\ast$}]{indices, }
 \item[{int}]{depth, }
 \item[{int}]{data\-Point\-Count}
 \end{DoxyParamCaption}
@@ -346,8 +379,7 @@ Definiert in Zeile 13 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -398,8 +430,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -456,8 +487,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -517,7 +547,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \subsubsection[{point\-Inside\-Tetrahedron}]{\setlength{\rightskip}{0pt plus 5cm}int Utils\-::point\-Inside\-Tetrahedron (
 \begin{DoxyParamCaption}
 \item[{double $\ast$}]{p, }
-\item[{vector$<$ Sensor\-Point $\ast$ $>$ $\ast$}]{tet}
+\item[{{\bf vector}$<$ Sensor\-Point $\ast$ $>$ $\ast$}]{tet}
 \end{DoxyParamCaption}
 )}}\label{namespaceUtils_a40eaef4d22da849a5deb2f1153d88bbc}
 
@@ -594,8 +624,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

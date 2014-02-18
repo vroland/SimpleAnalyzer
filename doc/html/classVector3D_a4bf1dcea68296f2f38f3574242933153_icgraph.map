@@ -2,7 +2,7 @@
 <area shape="rect" id="node3" href="$classInterpolator.xhtml#ad59ac6ed3822e08a67ac7d1ee88a5bd2" title="Ermittelt den Wert für einen beliebigen Punkt in einer Ebene. " alt="" coords="208,29,379,59"/>
 <area shape="rect" id="node5" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="207,83,380,112"/>
 <area shape="rect" id="node7" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="429,83,568,112"/>
-<area shape="rect" id="node9" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="644,21,745,51"/>
+<area shape="rect" id="node9" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="644,21,745,51"/>
 <area shape="rect" id="node15" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. " alt="" coords="617,83,772,112"/>
 <area shape="rect" id="node19" href="$MeshProcessor_8cpp.xhtml#ad2670c4e8381f9a0a89c65f5559ed421" title="interpolatePoint" alt="" coords="639,140,751,169"/>
 <area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="829,5,984,51"/>

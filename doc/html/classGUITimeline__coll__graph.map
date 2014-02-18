@@ -1,2 +1,4 @@
 <map id="GUITimeline" name="GUITimeline">
+<area shape="rect" id="node4" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; string \&gt;" alt="" coords="101,5,240,35"/>
+<area shape="rect" id="node6" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; int \&gt;" alt="" coords="264,5,387,35"/>
 </map>

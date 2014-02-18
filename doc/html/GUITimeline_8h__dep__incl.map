@@ -1,12 +1,12 @@
-<map id="simpleanalyzer&#45;gui/src/GUI/GUITimeline.h" name="simpleanalyzer&#45;gui/src/GUI/GUITimeline.h">
-<area shape="rect" id="node3" href="$PropertiesBox_8h.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/PropertiesBox.h" alt="" coords="376,102,544,149"/>
-<area shape="rect" id="node23" href="$GUITimeline_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUITimeline.cpp" alt="" coords="568,102,741,149"/>
-<area shape="rect" id="node5" href="$GUIMainWindow_8h.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIMainWindow.h" alt="" coords="367,294,553,341"/>
-<area shape="rect" id="node17" href="$GUIAnalyzeOutputWindow_8h.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIAnalyzeOutputWindow.h" alt="" coords="180,198,423,245"/>
-<area shape="rect" id="node21" href="$PropertiesBox_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/PropertiesBox.cpp" alt="" coords="497,198,679,245"/>
-<area shape="rect" id="node7" href="$Application_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/Application.cpp" alt="" coords="288,390,424,437"/>
-<area shape="rect" id="node9" href="$GUIAnalyzeOutputWindow_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIAnalyzeOutputWindow.cpp" alt="" coords="5,390,264,437"/>
-<area shape="rect" id="node11" href="$GUICutRenderWindow_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUICutRenderWindow.cpp" alt="" coords="448,390,683,437"/>
-<area shape="rect" id="node13" href="$GUIMainWindow_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIMainWindow.cpp" alt="" coords="707,390,907,437"/>
-<area shape="rect" id="node15" href="$GUIRenderCutCanvas_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIRenderCutCanvas.cpp" alt="" coords="931,390,1163,437"/>
+<map id="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUITimeline.h" name="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUITimeline.h">
+<area shape="rect" id="node3" href="$PropertiesBox_8h.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/PropertiesBox.h" alt="" coords="772,117,961,181"/>
+<area shape="rect" id="node14" href="$GUIMainWindow_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIMainWindow.cpp" alt="" coords="1096,453,1317,517"/>
+<area shape="rect" id="node24" href="$GUITimeline_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUITimeline.cpp" alt="" coords="1177,117,1372,181"/>
+<area shape="rect" id="node5" href="$GUIAnalyzeOutputWindow_8h.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIAnalyzeOutputWindow.h" alt="" coords="496,229,760,293"/>
+<area shape="rect" id="node9" href="$GUIMainWindow_8h.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIMainWindow.h" alt="" coords="611,341,816,405"/>
+<area shape="rect" id="node21" href="$PropertiesBox_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/PropertiesBox.cpp" alt="" coords="835,229,1037,293"/>
+<area shape="rect" id="node7" href="$GUIAnalyzeOutputWindow_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIAnalyzeOutputWindow.cpp" alt="" coords="5,453,283,517"/>
+<area shape="rect" id="node12" href="$GUICutRenderWindow_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUICutRenderWindow.cpp" alt="" coords="307,453,563,517"/>
+<area shape="rect" id="node16" href="$GUIRenderCutCanvas_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIRenderCutCanvas.cpp" alt="" coords="587,453,840,517"/>
+<area shape="rect" id="node18" href="$SimpleAnalyzerApp_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/SimpleAnalyzerApp.cpp" alt="" coords="864,453,1072,517"/>
 </map>

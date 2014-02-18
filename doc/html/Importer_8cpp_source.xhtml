@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Simple Analyzer: simpleanalyzer-gui/src/fileIO/Importer.cpp Quellcode</title>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/fileIO/Importer.cpp Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,279 +106,488 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../processing/ObjectData.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PATH_SEPARATOR &#39;\\&#39;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">   20</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PATH_SEPARATOR &#39;/&#39;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="classImporter.xhtml#afaf93b56e3558a92405ab627ab8ee1d1">   23</a></span>&#160;<a class="code" href="classImporter.xhtml#afaf93b56e3558a92405ab627ab8ee1d1" title="Der Konstruktor. ">Importer::Importer</a>() {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="Importer_8cpp.xhtml#a0903d5717f5c64c86b68bf17c4783e91">   26</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="Importer_8cpp.xhtml#a0903d5717f5c64c86b68bf17c4783e91">getFaceIndex</a>(<span class="keywordtype">string</span> data,<span class="keywordtype">bool</span> withUV) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (withUV) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> int(atof(data.substr(0,data.find(<span class="stringliteral">&quot;/&quot;</span>)).c_str()));</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> int(atof(data.c_str()));</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">   33</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(<span class="keywordtype">string</span> data,<span class="keywordtype">int</span> n) { <span class="comment">//Gibt den n-ten durch Leerzeichen abgetrennten Block zurück</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> pos = 0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> prevPos = 0;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">size_t</span> curPos = 0;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    curPos = data.find(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (curPos==data.npos) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    pos = curPos;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;n;i++) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        curPos = data.find(<span class="stringliteral">&quot; &quot;</span>,pos+1);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (curPos==data.npos) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">if</span> (n-i&gt;1) {    <span class="comment">//Mehr Blöcke als vorhanden nachgefragt</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                prevPos = pos+1;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                pos = data.size();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        prevPos = pos+1;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        pos = curPos;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> data.substr(prevPos,pos-(prevPos));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="classImporter.xhtml#a5013417fb7556dce65dba1ed3aec4e50">   60</a></span>&#160;<a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> <a class="code" href="classImporter.xhtml#a5013417fb7556dce65dba1ed3aec4e50" title="Lädt Objektdaten aus einer .obj-Datei. ">Importer::ImportObj</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename,<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// read data //</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//Pfadseparatorzeichen</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PATH_SEPARATOR &#39;\\&#39;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">   21</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PATH_SEPARATOR &#39;/&#39;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="classImporter.xhtml#afaf93b56e3558a92405ab627ab8ee1d1">   24</a></span>&#160;<a class="code" href="classImporter.xhtml#afaf93b56e3558a92405ab627ab8ee1d1" title="Der Konstruktor. ">Importer::Importer</a>() {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="Importer_8cpp.xhtml#a0903d5717f5c64c86b68bf17c4783e91">   34</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="Importer_8cpp.xhtml#a0903d5717f5c64c86b68bf17c4783e91" title="Extrahiert den Index einer Fläche aus einem Textblock einer Zeile der .obj-Datei. ...">getFaceIndex</a>(<span class="keywordtype">string</span> data,<span class="keywordtype">bool</span> withUV) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//Enthält die obj-Datei auch Texturdatenindices?</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (withUV) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">//Nur den Fächenindex, nicht den UV-Index auslesen</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> int(atof(data.substr(0,data.find(<span class="stringliteral">&quot;/&quot;</span>)).c_str()));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> int(atof(data.c_str()));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">   51</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(<span class="keywordtype">string</span> data, <span class="keywordtype">int</span> n) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//Position des abschließenden Leerzeichens für den ersten Block</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">size_t</span> position = data.find(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//Speicher für das Ende des vorherigen Blocks</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">size_t</span> previousPos = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//Ist der String Leerzeichenlos?</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (position == data.npos) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    vector&lt;double&gt; points;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    vector&lt;vector&lt;int&gt; &gt; faces;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ifstream file;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    file.open(filename);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (!file.is_open()) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        cerr &lt;&lt; <span class="stringliteral">&quot;could not open file: &quot;</span>&lt;&lt;filename&lt;&lt;endl;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a755675bc74deb397209031b5197b78cb">ObjectData::OD_FAILURE</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">string</span> line;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> currentMatIndex = -1;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> currentMatPointCount = 0;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> currentMatFirstPoint = 0;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">while</span> (file.good()) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        getline(file,line);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">int</span> firstspace = line.find(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">string</span> type = line.substr(0,firstspace);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">string</span> line_data = line.substr(firstspace+1);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (type==<span class="stringliteral">&quot;v&quot;</span>) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            points.resize(points.size()+3);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordtype">int</span> space1 = line_data.find(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordtype">int</span> space2 = line_data.rfind(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            points.at(points.size()-3) = atof(line_data.substr(0,space1).c_str());</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            points.at(points.size()-2) = atof(line_data.substr(space1,space2).c_str());</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            points.at(points.size()-1) = atof(line_data.substr(space2).c_str());</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            currentMatPointCount++;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">if</span> (type==<span class="stringliteral">&quot;f&quot;</span>) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">if</span> (currentMatIndex&lt;0) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;no material set!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">int</span> spaces = count(line_data.begin(),line_data.end(),<span class="charliteral">&#39; &#39;</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordtype">bool</span> withUV = (line_data.find(<span class="stringliteral">&quot;/&quot;</span>)&lt;line_data.npos);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            faces.resize(faces.size()+1);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            vector&lt;int&gt;* subvec = &amp;faces.at(faces.size()-1);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            subvec-&gt;resize(spaces+1);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordtype">int</span> lastpos = 0;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;=spaces;i++) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordtype">int</span> pos = line_data.find(<span class="stringliteral">&quot; &quot;</span>,lastpos);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                subvec-&gt;at(i) = <a class="code" href="Importer_8cpp.xhtml#a0903d5717f5c64c86b68bf17c4783e91">getFaceIndex</a>(line_data.substr(lastpos,pos),withUV)-currentMatFirstPoint;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                lastpos = pos+1;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">if</span> (type==<span class="stringliteral">&quot;mtllib&quot;</span>) {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordtype">string</span> mtlpath = <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(line,1);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            ifstream mtlfile;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordtype">string</span> fn = string(filename);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordtype">string</span> filedir = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordtype">size_t</span> lastps = fn.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">if</span> (lastps!=fn.npos) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                filedir = fn.substr(0,fn.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>)+1);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            cout &lt;&lt; (filedir+mtlpath).c_str() &lt;&lt; endl;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            mtlfile.open((filedir+mtlpath).c_str());</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">if</span> (!mtlfile.is_open()) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                cerr &lt;&lt; <span class="stringliteral">&quot;could not open file: &quot;</span>&lt;&lt;mtlpath&lt;&lt;endl;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a755675bc74deb397209031b5197b78cb">ObjectData::OD_FAILURE</a>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. ">ObjectData::MaterialData</a>* currentMat = NULL;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">while</span> (mtlfile.good()) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordtype">string</span> mtlline;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                getline(mtlfile,mtlline);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keywordtype">int</span> mtlfirstspace = mtlline.find(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="keywordtype">string</span> mtltype = mtlline.substr(0,mtlfirstspace);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordtype">string</span> mtldata = mtlline.substr(mtlfirstspace+1);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">if</span> (mtltype==<span class="stringliteral">&quot;newmtl&quot;</span>) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;resize(data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;size()+1);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    currentMat = &amp;data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;at(data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;size()-1);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a795f1265218b9a125559bbe9231f3c8d" title="Der Name des Materials. ">name</a> = mtldata;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a35d4f03b3af4349f69d5fed072118dca" title="Der zu verwendende Interpolationsmodus. ">interpolation_mode</a> = <a class="code" href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2a3a3f536edbfcc38cea69d59eb5709769">Interpolator::LINEAR</a>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a37980da11f6b51b30eb41c3ab4e9674a" title="Soll das Material angezeigt werden? ">visible</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a22bff8a90f617a5485690bd017dcf701" title="Liste, die für jeden Punkt in der aktuellen Geometrie angibt, ob er extra- (true) oder interpoliert (...">extrapolated</a> = NULL;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <span class="keywordflow">if</span> (mtltype==<span class="stringliteral">&quot;Kd&quot;</span>) {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;3;i++) {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                        currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a3930f8e673d50b88c9234c7f73c16a91" title="Die Farbe des Materials im RGB-Format. ">color</a>[i] = atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(mtldata,i).c_str());</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <span class="keywordflow">if</span> (mtltype==<span class="stringliteral">&quot;density&quot;</span>) {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a49cbca11f42993f41497e725fe8ca68c" title="Die Dichte in . ">density</a> = atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(mtlline,1).c_str());</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="keywordflow">if</span> (mtltype==<span class="stringliteral">&quot;spezcap&quot;</span>) {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a784e2b70f98d146979fd422d41445fea" title="Spezifische Wärmekapazität in . ">specificheatcapacity</a> = atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(mtlline,1).c_str());</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                }</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span> (type==<span class="stringliteral">&quot;usemtl&quot;</span>) {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordtype">string</span> mat_str = <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(line,1);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0;i&lt;data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;size();i++) {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">if</span> (data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;at(i).name==mat_str) {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    currentMatIndex = i;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            }</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">if</span> (type==<span class="stringliteral">&quot;o&quot;</span> || !file.good()) {    <span class="comment">// Zeichen &quot;o&quot; oder Dateiende</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span> (currentMatPointCount&gt;0) { <span class="comment">//Objekt beenden</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="comment">// Build tetgenio //</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                tetgenio* io = <span class="keyword">new</span> tetgenio();</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                io-&gt;firstnumber = 0;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                io-&gt;numberofpoints = currentMatPointCount;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                io-&gt;pointlist = <span class="keyword">new</span> REAL[currentMatPointCount*3];</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;currentMatPointCount*3;i++) {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    io-&gt;pointlist[i] = points.at(3*currentMatFirstPoint+i);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                io-&gt;numberoffacets = faces.size();</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                io-&gt;facetlist = <span class="keyword">new</span> tetgenio::facet[io-&gt;numberoffacets];</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;io-&gt;numberoffacets;i++) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                    tetgenio::facet* face = &amp;io-&gt;facetlist[i];</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                    face-&gt;numberofpolygons = 1;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    face-&gt;polygonlist = <span class="keyword">new</span> tetgenio::polygon[face-&gt;numberofpolygons];</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    face-&gt;numberofholes = 0;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    face-&gt;holelist = NULL;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    tetgenio::polygon* poly = &amp;face-&gt;polygonlist[0];</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    vector&lt;int&gt;* subvec = &amp;faces.at(i);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    poly-&gt;numberofvertices = subvec-&gt;size();</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                    poly-&gt;vertexlist = <span class="keyword">new</span> <span class="keywordtype">int</span>[poly-&gt;numberofvertices];</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0;j&lt;poly-&gt;numberofvertices;j++) {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                        poly-&gt;vertexlist[j] = subvec-&gt;at(j)-1;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                    }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                }</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;at(currentMatIndex).tetgeninput = io;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            currentMatFirstPoint += currentMatPointCount;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            currentMatPointCount = 0;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            faces.clear();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    file.close();</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a85cb5197df82ef2c0657cbe27cd86d3b">ObjectData::OD_SUCCESS</a>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
-<div class="line"><a name="l00199"></a><span class="lineno"><a class="code" href="classImporter.xhtml#a001bd26372d94f96de66f7bcb90cc790">  199</a></span>&#160;<a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> <a class="code" href="classImporter.xhtml#a001bd26372d94f96de66f7bcb90cc790" title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. ">Importer::LoadSensorData</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename,<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data) {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    ifstream file;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    file.open(filename);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">if</span> (!file.is_open()) {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        cerr &lt;&lt; <span class="stringliteral">&quot;could not open file: &quot;</span>&lt;&lt;filename&lt;&lt;endl;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a755675bc74deb397209031b5197b78cb">ObjectData::OD_FAILURE</a>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">string</span> line;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//Durchlaufen aller Textblöcke bis zum gewünschten Index</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">//aus Ende des verherigen Blocks den Anfang des aktuellen Berechnen.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        previousPos = position + 1;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">//Position des nächsten Blocks suchen</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        position = data.find(<span class="stringliteral">&quot; &quot;</span>, position + 1);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">//Ende der Zeile erreicht?</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (position == data.npos) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="comment">//Ist der Index außerhalb des möglichen Bereichs?</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">if</span> (n - 1 &gt; i) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//Zurückgeben des aktuellen Textblocks</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> data.substr(previousPos, position - (previousPos));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="classImporter.xhtml#aaa567a75272f300157648ffaa9b101c2">   83</a></span>&#160;<a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> <a class="code" href="classImporter.xhtml#aaa567a75272f300157648ffaa9b101c2" title="Lädt Objektdaten aus einer .obj-Datei. ">Importer::ImportObj</a>(<span class="keywordtype">string</span> filename,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//Punkte als je 3 Koordinaten</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classstd_1_1vector.xhtml">vector&lt;double&gt;</a> points;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//Flächen als Punktindices</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classstd_1_1vector.xhtml">vector&lt;vector&lt;int&gt;</a> &gt; faces;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    ifstream file;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">//.obj-Datei öffnen</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    file.open(filename);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">//Öffnen erfolgreich?</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> (!file.is_open()) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        cerr &lt;&lt; <span class="stringliteral">&quot;could not open file: &quot;</span> &lt;&lt; filename &lt;&lt; endl;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">//Lesen der Modelldatei fehlgeschlagen</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a755675bc74deb397209031b5197b78cb">ObjectData::OD_FAILURE</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//aktuelle Zeile</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">string</span> line;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//index des aktuell verarbeiteten Materials (und des zugehörigen Teilobjekts)</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> currentMatIndex = -1;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//Anzahl der Punkte im Material</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> currentMatPointCount = 0;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">     * Index des ersten Punkts des aktuellen Materialobjekts bezogen auf die Gesamtliste.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">     * Normalerweise unnötig, da die Punkte pro Teilobjekt lokal definiert werden sollten,</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">     * sorgt hier aber notfalls für größere Kompatibilität.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">int</span> currentMatFirstPoint = 0;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">//Für alle Zeilen...</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">while</span> (file.good()) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        getline(file, line);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">//Position des ersten Leerzeichens</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">int</span> firstspace = line.find(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="comment">//String, der den Typ des Inhalts der Zeile enthält</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordtype">string</span> type = line.substr(0, firstspace);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">//Daten der Zeile</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">string</span> line_data = line.substr(firstspace + 1);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">//Zeilentyp: Vertex?</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;v&quot;</span>) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="comment">//Vergrößern der Punktliste</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            points.resize(points.size() + 3);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="comment">//Positionen der Leerzeichen in den Daten</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="keywordtype">int</span> space1 = line_data.find(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordtype">int</span> space2 = line_data.rfind(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="comment">//Auslesen der Punktkoordinaten</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            points.at(points.size() - 3) = atof(</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    line_data.substr(0, space1).c_str());</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            points.at(points.size() - 2) = atof(</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    line_data.substr(space1, space2).c_str());</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            points.at(points.size() - 1) = atof(</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    line_data.substr(space2).c_str());</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            currentMatPointCount++;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">//Zeilentyp: Face (Fläche)?</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;f&quot;</span>) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="comment">//ist ein Material festgelegt?</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">if</span> (currentMatIndex &lt; 0) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                cerr &lt;&lt; <span class="stringliteral">&quot;no material set!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="comment">//Anzahl der Leerzeichen zur Bestimmung der Anzahl der Eckpunkte der Flächen</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordtype">int</span> spaces = count(line_data.begin(), line_data.end(), <span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="comment">//Enthalten die Flächendaten auch Texturkoordnaten-indices?</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordtype">bool</span> withUV = (line_data.find(<span class="stringliteral">&quot;/&quot;</span>) &lt; line_data.npos);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            faces.resize(faces.size() + 1);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="comment">//Liste der Eckpunktindices der Fläche</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <a class="code" href="classstd_1_1vector.xhtml">vector&lt;int&gt;</a>* facepoints = &amp;faces.at(faces.size() - 1);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            facepoints-&gt;resize(spaces + 1);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="comment">//Position des letzten Leerzeichens</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordtype">int</span> lastpos = 0;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="comment">//Extrahieren der Eckpunktindices aus der Zeile</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= spaces; i++) {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="comment">//Position des nächsten Leerzeichens</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <span class="keywordtype">int</span> pos = line_data.find(<span class="stringliteral">&quot; &quot;</span>, lastpos);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <span class="comment">//Extrahieren des Eckpunktindex für den aktuellen Textblock</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                facepoints-&gt;at(i) = <a class="code" href="Importer_8cpp.xhtml#a0903d5717f5c64c86b68bf17c4783e91" title="Extrahiert den Index einer Fläche aus einem Textblock einer Zeile der .obj-Datei. ...">getFaceIndex</a>(line_data.substr(lastpos, pos),</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                        withUV) - currentMatFirstPoint;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                lastpos = pos + 1;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="comment">//Zeilentyp: Materialbibliothek?</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;mtllib&quot;</span>) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="comment">//Pfad der Materialbibliothek auslesen</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordtype">string</span> mtlpath = <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(line, 1);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="comment">/*</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">             * Der Pfad der Materialbibliothek ist relativ zu .obj-Datei</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">             * -&gt; Extrahieren des Ordners, in dem die .obj-Datei liegt</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">             */</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordtype">string</span> filedir = filename;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="comment">//Position des letzten Pfadseparatorzeichens</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordtype">size_t</span> lastps = filedir.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="comment">//Wurde ein Pfadseparatorzeichen gefunden?</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">if</span> (lastps != string::npos) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="comment">//Extrahieren des Ordners der .obj-Datei</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                filedir = filedir.substr(0, filedir.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>) + 1);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            ifstream mtlfile;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="comment">//Öffnen der Materialbibliothek</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            mtlfile.open((filedir + mtlpath).c_str());</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="comment">//Öffnen erfolgreich?</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">if</span> (!mtlfile.is_open()) {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                cerr &lt;&lt; <span class="stringliteral">&quot;could not open file: &quot;</span> &lt;&lt; mtlpath &lt;&lt; endl;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <span class="comment">//Laden der Materialbibliothek und .obj-Datei fehlgeschlagen</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a755675bc74deb397209031b5197b78cb">ObjectData::OD_FAILURE</a>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            }</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;resize(data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;size()+1);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <a class="code" href="structUtils_1_1SensorData.xhtml" title="Ein Sensordatensatz. ">SensorData</a>* sd = &amp;data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;at(data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;size()-1);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#aca94c3ec7e8f2e719f7cfcff4e9da41b" title="Sind die Sensordaten zeitbezogen? Wenn nein, ist die Länge von data 1. ">timed</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a177d53154d56fcf1962f969ece1e7d9d" title="Index des aktuell ausgewählten Zeitpunkts. ">current_time_index</a> = 0;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">string</span> fn = string(filename);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">size_t</span> lastps = fn.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">if</span> (lastps!=fn.npos) {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a52474d0fe0dce0d3ee73c007a150a507" title="Name des Sensordatensatzes. ">name</a> = fn.substr(fn.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>)+1,fn.size()-fn.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>));</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a52474d0fe0dce0d3ee73c007a150a507" title="Name des Sensordatensatzes. ">name</a> = fn;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    }</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.resize(1);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    vector&lt;SensorPoint&gt; *points = &amp;sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.at(0);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">while</span> (file.good()) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        getline(file,line);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordtype">string</span> type = line.substr(0,1);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">if</span> (type==<span class="stringliteral">&quot;s&quot;</span>) {    <span class="comment">//Sensordaten</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            points-&gt;resize(points-&gt;size()+1);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <a class="code" href="structUtils_1_1SensorPoint.xhtml" title="Daten eines Sensordatenpunktes. ">SensorPoint</a>* newpoint = &amp;points-&gt;at(points-&gt;size()-1);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;3;i++) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                newpoint-&gt;<a class="code" href="structUtils_1_1SensorPoint.xhtml#aedff5493c2f6c36e9552dc3807c8ce24" title="Koordinaten des Punktes. ">coords</a>[i]= atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(line,i+1).c_str());</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            }</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            newpoint-&gt;<a class="code" href="structUtils_1_1SensorPoint.xhtml#a764d6572f865138b36cb46c910001e9a" title="Temperatur des Punktes. ">temperature</a> = atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(line,4).c_str());</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">if</span> (data-&gt;<a class="code" href="classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. ">getCurrentSensorIndex</a>()&lt;0) {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        data-&gt;<a class="code" href="classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="Setzt den Index des aktuell verwendeten Sensordatensatzes. ">setCurrentSensorIndex</a>(0);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a85cb5197df82ef2c0657cbe27cd86d3b">ObjectData::OD_SUCCESS</a>;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
-<div class="line"><a name="l00238"></a><span class="lineno"><a class="code" href="classImporter.xhtml#a196e66a161a0102194580ec4b10895e5">  238</a></span>&#160;<a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> <a class="code" href="classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. ">Importer::LoadTimedData</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* filename,<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data) {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    ifstream file;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    file.open(filename);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> (!file.is_open()) {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;could not open file: &quot;</span>&lt;&lt;filename&lt;&lt;endl;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a755675bc74deb397209031b5197b78cb">ObjectData::OD_FAILURE</a>;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordtype">string</span> line;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;resize(data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;size()+1);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="structUtils_1_1SensorData.xhtml" title="Ein Sensordatensatz. ">SensorData</a>* sd = &amp;data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;at(data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;size()-1);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#aca94c3ec7e8f2e719f7cfcff4e9da41b" title="Sind die Sensordaten zeitbezogen? Wenn nein, ist die Länge von data 1. ">timed</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a177d53154d56fcf1962f969ece1e7d9d" title="Index des aktuell ausgewählten Zeitpunkts. ">current_time_index</a> = 0;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">string</span> fn = string(filename);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">size_t</span> lastps = fn.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">if</span> (lastps!=fn.npos) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a52474d0fe0dce0d3ee73c007a150a507" title="Name des Sensordatensatzes. ">name</a> = fn.substr(fn.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>)+1,fn.size()-fn.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>));</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a52474d0fe0dce0d3ee73c007a150a507" title="Name des Sensordatensatzes. ">name</a> = fn;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    vector&lt;SensorPoint&gt;* currentData = NULL;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">while</span> (file.good()) {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        getline(file,line);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordtype">string</span> type = line.substr(0,1);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">if</span> (type==<span class="stringliteral">&quot;t&quot;</span>) {    <span class="comment">//Zeitstempel</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.resize(sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.size()+1);</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            currentData = &amp;sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.at(sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.size()-1);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a654f9606c3ddc6e93afb86a116d11ea5" title="Zeitstempel der einzelnen Zeitpunkte. ">timestamps</a>.resize(sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a654f9606c3ddc6e93afb86a116d11ea5" title="Zeitstempel der einzelnen Zeitpunkte. ">timestamps</a>.size()+1,atoi(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(line,1).c_str()));</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">if</span> (type==<span class="stringliteral">&quot;n&quot;</span>) {    <span class="comment">//Zeitstempel</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ad5875ab7e8ebdc9dc41a7b9ef1c063ba" title="Namen der einzelnen Zeitpunkte. ">subnames</a>.resize(sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ad5875ab7e8ebdc9dc41a7b9ef1c063ba" title="Namen der einzelnen Zeitpunkte. ">subnames</a>.size()+1,<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(line,1).c_str());</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        }</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">if</span> (type==<span class="stringliteral">&quot;s&quot;</span>) {    <span class="comment">//Sensordaten</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            currentData-&gt;resize(currentData-&gt;size()+1);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <a class="code" href="structUtils_1_1SensorPoint.xhtml" title="Daten eines Sensordatenpunktes. ">SensorPoint</a>* newpoint = &amp;currentData-&gt;at(currentData-&gt;size()-1);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;3;i++) {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                newpoint-&gt;<a class="code" href="structUtils_1_1SensorPoint.xhtml#aedff5493c2f6c36e9552dc3807c8ce24" title="Koordinaten des Punktes. ">coords</a>[i]= atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(line,i+1).c_str());</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            }</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            newpoint-&gt;<a class="code" href="structUtils_1_1SensorPoint.xhtml#a764d6572f865138b36cb46c910001e9a" title="Temperatur des Punktes. ">temperature</a> = atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(line,4).c_str());</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    }</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">if</span> (data-&gt;<a class="code" href="classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. ">getCurrentSensorIndex</a>()&lt;0) {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        data-&gt;<a class="code" href="classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="Setzt den Index des aktuell verwendeten Sensordatensatzes. ">setCurrentSensorIndex</a>(0);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a85cb5197df82ef2c0657cbe27cd86d3b">ObjectData::OD_SUCCESS</a>;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
-<div class="line"><a name="l00283"></a><span class="lineno"><a class="code" href="classImporter.xhtml#a6e61faae5020f2dc034ff3ea4032a537">  283</a></span>&#160;<a class="code" href="classImporter.xhtml#a6e61faae5020f2dc034ff3ea4032a537" title="Der Destruktor. ">Importer::~Importer</a>() {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="comment">//Verweis auf die Materialdaten des aktuellen Teilobjekts</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <a class="code" href="structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. ">ObjectData::MaterialData</a>* currentMat = NULL;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="comment">//Für alle Zeilen</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">while</span> (mtlfile.good()) {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                <span class="comment">//aktuelle Zeile</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                <span class="keywordtype">string</span> mtlline;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                getline(mtlfile, mtlline);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                <span class="keywordtype">int</span> mtlfirstspace = mtlline.find(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                <span class="comment">//String, der den Typ des Inhalts der Zeile enthält</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <span class="keywordtype">string</span> mtltype = mtlline.substr(0, mtlfirstspace);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="comment">//Daten der Zeile</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="keywordtype">string</span> mtldata = mtlline.substr(mtlfirstspace + 1);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="comment">//Zeilentyp: neues Material?</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <span class="keywordflow">if</span> (mtltype == <span class="stringliteral">&quot;newmtl&quot;</span>) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                    <span class="comment">//Vergrößern der Materialliste des Objekts</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                    data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;resize(</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                            data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;size() + 1);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                    <span class="comment">//Setzen der Standardeigenschaften für das Material</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    currentMat = &amp;data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;at(</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                            data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;size() - 1);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a795f1265218b9a125559bbe9231f3c8d" title="Der Name des Materials. ">name</a> = mtldata;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a35d4f03b3af4349f69d5fed072118dca" title="Der zu verwendende Interpolationsmodus. ">interpolation_mode</a> = <a class="code" href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2a3a3f536edbfcc38cea69d59eb5709769">Interpolator::LINEAR</a>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a37980da11f6b51b30eb41c3ab4e9674a" title="Soll das Material angezeigt werden? ">visible</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a22bff8a90f617a5485690bd017dcf701" title="Liste, die für jeden Punkt in der aktuellen Geometrie angibt, ob er extra- (true) oder interpoliert (...">extrapolated</a> = NULL;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                <span class="comment">//Zeilentyp: Materialfarbe</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keywordflow">if</span> (mtltype == <span class="stringliteral">&quot;Kd&quot;</span>) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    <span class="comment">//Materialfarbe auslesen</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                        currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a3930f8e673d50b88c9234c7f73c16a91" title="Die Farbe des Materials im RGB-Format. ">color</a>[i] = atof(</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(mtldata, i).c_str());</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    }</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                <span class="comment">//Zeilentyp: Materialdichte</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <span class="keywordflow">if</span> (mtltype == <span class="stringliteral">&quot;density&quot;</span>) {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    <span class="comment">//Materialdichte auslesen</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a49cbca11f42993f41497e725fe8ca68c" title="Die Dichte in . ">density</a> = atof(</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                            <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(mtlline, 1).c_str());</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                <span class="comment">//Zeilentyp: spezifische Wärmekapazität</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                <span class="keywordflow">if</span> (mtltype == <span class="stringliteral">&quot;spezcap&quot;</span>) {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                    <span class="comment">//spezifische Wärmekapazität auslesen</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                    currentMat-&gt;<a class="code" href="structObjectData_1_1MaterialData.xhtml#a784e2b70f98d146979fd422d41445fea" title="Spezifische Wärmekapazität in . ">specificheatcapacity</a> = atof(</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                            <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(mtlline, 1).c_str());</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="comment">//Zeilentyp: use Material? -&gt; Setzen des aktuellen Materials</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;usemtl&quot;</span>) {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="comment">//Name des gesuchten Materials</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordtype">string</span> mat_str = <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(line, 1);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="comment">//Finden des Index des gesuchten Materials</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;size(); i++) {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                <span class="comment">//Material gefunden?</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                <span class="keywordflow">if</span> (data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;at(i).name == mat_str) {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                    <span class="comment">//Setzen des aktuellen Materials</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                    currentMatIndex = i;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="comment">//Material nicht gefunden?</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordflow">if</span> (i == data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;size()) {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                    cerr &lt;&lt; <span class="stringliteral">&quot;No material with name \&quot;&quot;</span> &lt;&lt; mat_str &lt;&lt; <span class="stringliteral">&quot;\&quot; found!&quot;</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                            &lt;&lt; endl;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="comment">//Zeilentyp: Teilobjekt? bzw. Abschluss der Datei</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;o&quot;</span> || !file.good()) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="comment">//Enthält das aktuelle Teilobjekt Punkte? -&gt; Datenstuktur für Tetgen erzeugen</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordflow">if</span> (currentMatPointCount &gt; 0) {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                <span class="comment">//Neue Tetgen-Datenstukur für das Teilobjekt</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                tetgenio* io = <span class="keyword">new</span> tetgenio();</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                <span class="comment">//Schreiben der Punkte des Teilobjekts</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                io-&gt;firstnumber = 0;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                io-&gt;numberofpoints = currentMatPointCount;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                io-&gt;pointlist = <span class="keyword">new</span> REAL[currentMatPointCount * 3];</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; currentMatPointCount * 3; i++) {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                    io-&gt;pointlist[i] = points.at(3 * currentMatFirstPoint + i);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                }</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                <span class="comment">//Schreiben der Flächen des Teilobjekts</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                io-&gt;numberoffacets = faces.size();</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                io-&gt;facetlist = <span class="keyword">new</span> tetgenio::facet[io-&gt;numberoffacets];</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; io-&gt;numberoffacets; i++) {</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                    tetgenio::facet* face = &amp;io-&gt;facetlist[i];</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                    face-&gt;numberofpolygons = 1;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                    face-&gt;polygonlist =</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                            <span class="keyword">new</span> tetgenio::polygon[face-&gt;numberofpolygons];</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                    face-&gt;numberofholes = 0;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                    face-&gt;holelist = NULL;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                    tetgenio::polygon* poly = &amp;face-&gt;polygonlist[0];</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                    <a class="code" href="classstd_1_1vector.xhtml">vector&lt;int&gt;</a>* subvec = &amp;faces.at(i);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                    poly-&gt;numberofvertices = subvec-&gt;size();</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                    poly-&gt;vertexlist = <span class="keyword">new</span> <span class="keywordtype">int</span>[poly-&gt;numberofvertices];</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; poly-&gt;numberofvertices; j++) {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                        poly-&gt;vertexlist[j] = subvec-&gt;at(j) - 1;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                    }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="comment">//Verknüpfen der Geometriedaten mit dem Objekteigenschaften</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                data-&gt;<a class="code" href="classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. ">getMaterials</a>()-&gt;at(currentMatIndex).tetgeninput = io;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="comment">//mitzählen des Anfangspunktindex für das nächste Objekt</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            currentMatFirstPoint += currentMatPointCount;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="comment">//Zurücksetzen der Punktanzahl</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            currentMatPointCount = 0;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="comment">//Zurücksetzen der Eckpunktindexliste für die Flächen</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            faces.clear();</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    }</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    file.close();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="comment">//Objekt und Materialdaten erfolgreich geladen</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a85cb5197df82ef2c0657cbe27cd86d3b">ObjectData::OD_SUCCESS</a>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;}</div>
+<div class="line"><a name="l00342"></a><span class="lineno"><a class="code" href="classImporter.xhtml#ae837d750c92450f8e83b2d93eb099f79">  342</a></span>&#160;<a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> <a class="code" href="classImporter.xhtml#ae837d750c92450f8e83b2d93eb099f79" title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. ">Importer::LoadSensorData</a>(<span class="keywordtype">string</span> filename,</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data) {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    ifstream file;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">//Öffnen der Sensordatendatei</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    file.open(filename);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="comment">//Öffnen erfolgreich?</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">if</span> (!file.is_open()) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        cerr &lt;&lt; <span class="stringliteral">&quot;could not open file: &quot;</span> &lt;&lt; filename &lt;&lt; endl;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="comment">//Laden der Sensordatendatei fehlgeschalgen</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a755675bc74deb397209031b5197b78cb">ObjectData::OD_FAILURE</a>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    }</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="comment">//Neuen Sensordatensatz anlegen</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;resize(data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;size() + 1);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="comment">//Referenz auf den agelegten Sensordatensatz</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="structUtils_1_1SensorData.xhtml" title="Ein Sensordatensatz. ">SensorData</a>* sd = &amp;data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;at(</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;size() - 1);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="comment">//Standardeinstellungen für nicht-zeigbezogene Datensätze</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#aca94c3ec7e8f2e719f7cfcff4e9da41b" title="Sind die Sensordaten zeitbezogen? Wenn nein, ist die Länge von data 1. ">timed</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a177d53154d56fcf1962f969ece1e7d9d" title="Index des aktuell ausgewählten Zeitpunkts. ">current_time_index</a> = 0;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">//Position des letzten Pfadseparatorzeichens im Dateipfad</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordtype">size_t</span> lastps = filename.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">//Extrahieren des Datensatznamens aus dem Dateinamen</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordflow">if</span> (lastps != string::npos) {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a52474d0fe0dce0d3ee73c007a150a507" title="Name des Sensordatensatzes. ">name</a> = filename.substr(filename.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>) + 1,</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                filename.size() - filename.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>));</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a52474d0fe0dce0d3ee73c007a150a507" title="Name des Sensordatensatzes. ">name</a> = filename;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    }</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="comment">//Der Datensatz hat nur einen (bzw. keinen bestimmten) Zeitpunkt</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.resize(1);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="comment">//Referenz auf die Messpunktliste des Datensatzes</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <a class="code" href="classstd_1_1vector.xhtml">vector&lt;SensorPoint&gt;</a> *points = &amp;sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.at(0);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="comment">//Für alle Zeilen der Eingabedatei...</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">while</span> (file.good()) {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="comment">//aktuell Zeile</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordtype">string</span> line;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        getline(file, line);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="comment">//Typ der aktuellen Zeile</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordtype">string</span> type = line.substr(0, 1);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="comment">//Zeilentyp: Sensordaten?</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;s&quot;</span>) {</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            points-&gt;resize(points-&gt;size() + 1);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <a class="code" href="structUtils_1_1SensorPoint.xhtml" title="Daten eines Sensordatenpunktes. ">SensorPoint</a>* newpoint = &amp;points-&gt;at(points-&gt;size() - 1);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            <span class="comment">//Koordinaten des Messpunkts auslesen</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                newpoint-&gt;<a class="code" href="structUtils_1_1SensorPoint.xhtml#aedff5493c2f6c36e9552dc3807c8ce24" title="Koordinaten des Punktes. ">coords</a>[i] = atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(line, i + 1).c_str());</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            }</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            <span class="comment">//Wert des Messpunkts auslesen</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            newpoint-&gt;<a class="code" href="structUtils_1_1SensorPoint.xhtml#a764d6572f865138b36cb46c910001e9a" title="Temperatur des Punktes. ">temperature</a> = atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(line, 4).c_str());</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="comment">//Ist der gerade geladene Datensatz der Erste des Objetks?</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordflow">if</span> (data-&gt;<a class="code" href="classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. ">getCurrentSensorIndex</a>() &lt; 0) {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <span class="comment">//Auswählen als aktiven Datensatz des Objekts</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        data-&gt;<a class="code" href="classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="Setzt den Index des aktuell verwendeten Sensordatensatzes. ">setCurrentSensorIndex</a>(0);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    }</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="comment">//Laden der Sensordatendatei erfolgreich</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a85cb5197df82ef2c0657cbe27cd86d3b">ObjectData::OD_SUCCESS</a>;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;}</div>
+<div class="line"><a name="l00416"></a><span class="lineno"><a class="code" href="classImporter.xhtml#ad8dec9ce375155ca130453632530eb52">  416</a></span>&#160;<a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484" title="Status einer die Objektdaten betreffenden Aktion. ">ObjectData::ObjectDataStatus</a> <a class="code" href="classImporter.xhtml#ad8dec9ce375155ca130453632530eb52" title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. ">Importer::LoadTimedData</a>(<span class="keywordtype">string</span> filename,</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* data) {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    ifstream file;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="comment">//Öffnen der Sensordatendatei</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    file.open(filename);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="comment">//Öffnen erfolgreich?</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">if</span> (!file.is_open()) {</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="comment">//Laden der Sensordatendatei fehlgeschalgen</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        cerr &lt;&lt; <span class="stringliteral">&quot;could not open file: &quot;</span> &lt;&lt; filename &lt;&lt; endl;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a755675bc74deb397209031b5197b78cb">ObjectData::OD_FAILURE</a>;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    }</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="comment">//Neuen Sensordatensatz anlegen</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;resize(data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;size() + 1);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="comment">//Referenz auf den agelegten Sensordatensatz</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <a class="code" href="structUtils_1_1SensorData.xhtml" title="Ein Sensordatensatz. ">SensorData</a>* sd = &amp;data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;at(</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            data-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;size() - 1);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="comment">//Standardeinstellungen für zeigbezogene Datensätze</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#aca94c3ec7e8f2e719f7cfcff4e9da41b" title="Sind die Sensordaten zeitbezogen? Wenn nein, ist die Länge von data 1. ">timed</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a177d53154d56fcf1962f969ece1e7d9d" title="Index des aktuell ausgewählten Zeitpunkts. ">current_time_index</a> = 0;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="comment">//Position des letzten Pfadseparatorzeichens im Dateipfad</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keywordtype">size_t</span> lastps = filename.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="comment">//Extrahieren des Datensatznamens aus dem Dateinamen</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="keywordflow">if</span> (lastps != string::npos) {</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a52474d0fe0dce0d3ee73c007a150a507" title="Name des Sensordatensatzes. ">name</a> = filename.substr(filename.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>) + 1,</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                filename.size() - filename.find_last_of(<a class="code" href="Importer_8cpp.xhtml#a256a5721249aa3309437212cc21a9fe4">PATH_SEPARATOR</a>));</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a52474d0fe0dce0d3ee73c007a150a507" title="Name des Sensordatensatzes. ">name</a> = filename;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    }</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="comment">//Referenz auf die Messpunktliste des Datensatzes zum aktuellen Zeitpunkt</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <a class="code" href="classstd_1_1vector.xhtml">vector&lt;SensorPoint&gt;</a>* currentData = NULL;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="comment">//Für alle Zeilen der Eingabedatei...</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordflow">while</span> (file.good()) {</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="comment">//aktuelle Zeile</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordtype">string</span> line;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        getline(file, line);</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="comment">//Typ der aktuellen Zeile</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <span class="keywordtype">string</span> type = line.substr(0, 1);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <span class="comment">//Zeilentyp: Zeitstempel?</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;t&quot;</span>) {</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            <span class="comment">//Anlegen eines neuen Unterdatensatzes</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.resize(sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.size() + 1);</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            currentData = &amp;sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.at(sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.size() - 1);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            <span class="comment">//Speichern des entsprechenden Zeitstempels</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a654f9606c3ddc6e93afb86a116d11ea5" title="Zeitstempel der einzelnen Zeitpunkte. ">timestamps</a>.resize(sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a654f9606c3ddc6e93afb86a116d11ea5" title="Zeitstempel der einzelnen Zeitpunkte. ">timestamps</a>.size() + 1,</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                    atoi(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(line, 1).c_str()));</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        }</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        <span class="comment">//Zeilentyp: Unterdatensatzname?</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;n&quot;</span>) {</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            <span class="comment">//Namen für den Datensatz zum aktuellen Zeitpuntk speichern</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;            sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ad5875ab7e8ebdc9dc41a7b9ef1c063ba" title="Namen der einzelnen Zeitpunkte. ">subnames</a>.resize(sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ad5875ab7e8ebdc9dc41a7b9ef1c063ba" title="Namen der einzelnen Zeitpunkte. ">subnames</a>.size() + 1,</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                    <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(line, 1).c_str());</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        }</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="comment">//Zeilentyp: Sensordaten?</span></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;s&quot;</span>) {</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;            currentData-&gt;resize(currentData-&gt;size() + 1);</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;            <a class="code" href="structUtils_1_1SensorPoint.xhtml" title="Daten eines Sensordatenpunktes. ">SensorPoint</a>* newpoint = &amp;currentData-&gt;at(currentData-&gt;size() - 1);</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;            <span class="comment">//Koordinaten des Messpunkts auslesen</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++) {</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;                newpoint-&gt;<a class="code" href="structUtils_1_1SensorPoint.xhtml#aedff5493c2f6c36e9552dc3807c8ce24" title="Koordinaten des Punktes. ">coords</a>[i] = atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(line, i + 1).c_str());</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            }</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            <span class="comment">//Wert des Messpunkts auslesen</span></div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            newpoint-&gt;<a class="code" href="structUtils_1_1SensorPoint.xhtml#a764d6572f865138b36cb46c910001e9a" title="Temperatur des Punktes. ">temperature</a> = atof(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(line, 4).c_str());</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        }</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    }</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="comment">//Ist der gerade geladene Datensatz der Erste des Objetks?</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keywordflow">if</span> (data-&gt;<a class="code" href="classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. ">getCurrentSensorIndex</a>() &lt; 0) {</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="comment">//Auswählen als aktiven Datensatz des Objekts</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        data-&gt;<a class="code" href="classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="Setzt den Index des aktuell verwendeten Sensordatensatzes. ">setCurrentSensorIndex</a>(0);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    }</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <span class="comment">//Laden der Sensordatendatei erfolgreich</span></div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484a85cb5197df82ef2c0657cbe27cd86d3b">ObjectData::OD_SUCCESS</a>;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;}</div>
+<div class="line"><a name="l00504"></a><span class="lineno"><a class="code" href="classImporter.xhtml#a6e61faae5020f2dc034ff3ea4032a537">  504</a></span>&#160;<a class="code" href="classImporter.xhtml#a6e61faae5020f2dc034ff3ea4032a537" title="Der Destruktor. ">Importer::~Importer</a>() {</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;}</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

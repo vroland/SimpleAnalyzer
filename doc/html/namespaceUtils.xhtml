@@ -131,6 +131,9 @@ Funktionen</h2></td></tr>
 <tr class="memitem:abb647325616858e0fad55290c36ea03b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#abb647325616858e0fad55290c36ea03b">clampHue</a> (float h)</td></tr>
 <tr class="memdesc:abb647325616858e0fad55290c36ea03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begrenzt einen Wert auf den Bereich 0..1.  <a href="#abb647325616858e0fad55290c36ea03b">Mehr ...</a><br/></td></tr>
 <tr class="separator:abb647325616858e0fad55290c36ea03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b506eef525971ab3ccb328f4ca879d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#a76b506eef525971ab3ccb328f4ca879d">floattostr</a> (double val)</td></tr>
+<tr class="memdesc:a76b506eef525971ab3ccb328f4ca879d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hilfsfunktion zur Umwandlung einer Zahl in einen String.  <a href="#a76b506eef525971ab3ccb328f4ca879d">Mehr ...</a><br/></td></tr>
+<tr class="separator:a76b506eef525971ab3ccb328f4ca879d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a233ff9a0b34b10195a434f1ff66323b8"><td class="memItemLeft" align="right" valign="top">wxString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8">floattowxstr</a> (double val)</td></tr>
 <tr class="memdesc:a233ff9a0b34b10195a434f1ff66323b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wandelt eine Fließkommazahl in einen wxWidgets-String um.  <a href="#a233ff9a0b34b10195a434f1ff66323b8">Mehr ...</a><br/></td></tr>
 <tr class="separator:a233ff9a0b34b10195a434f1ff66323b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,13 +152,13 @@ Funktionen</h2></td></tr>
 <tr class="memitem:a8f7379e1915d2a04907eb9d99d0a56ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#a8f7379e1915d2a04907eb9d99d0a56ad">pointInsideTetrahedron</a> (double *pges, double *v1, double *v2, double *v3, double *v4)</td></tr>
 <tr class="memdesc:a8f7379e1915d2a04907eb9d99d0a56ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.  <a href="#a8f7379e1915d2a04907eb9d99d0a56ad">Mehr ...</a><br/></td></tr>
 <tr class="separator:a8f7379e1915d2a04907eb9d99d0a56ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40eaef4d22da849a5deb2f1153d88bbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#a40eaef4d22da849a5deb2f1153d88bbc">pointInsideTetrahedron</a> (double *p, vector&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> * &gt; *tet)</td></tr>
+<tr class="memitem:a40eaef4d22da849a5deb2f1153d88bbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#a40eaef4d22da849a5deb2f1153d88bbc">pointInsideTetrahedron</a> (double *p, <a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> * &gt; *tet)</td></tr>
 <tr class="memdesc:a40eaef4d22da849a5deb2f1153d88bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.  <a href="#a40eaef4d22da849a5deb2f1153d88bbc">Mehr ...</a><br/></td></tr>
 <tr class="separator:a40eaef4d22da849a5deb2f1153d88bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4ba26e928c7cef5269c51bfac49d547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547">nextCombination</a> (vector&lt; int &gt; *indices, int depth, int dataPointCount)</td></tr>
+<tr class="memitem:af4ba26e928c7cef5269c51bfac49d547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547">nextCombination</a> (<a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; int &gt; *indices, int depth, int dataPointCount)</td></tr>
 <tr class="memdesc:af4ba26e928c7cef5269c51bfac49d547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätze.  <a href="#af4ba26e928c7cef5269c51bfac49d547">Mehr ...</a><br/></td></tr>
 <tr class="separator:af4ba26e928c7cef5269c51bfac49d547"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a0ae18a42e2d206bc1b43da27820fe2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2">getPointValue</a> (int &amp;status, vector&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> &gt; *sensorpoints, double *p, <a class="el" href="classInterpolator.xhtml">Interpolator</a> *interpolator, vector&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> * &gt; *prev_tet=NULL, vector&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> * &gt; *current_tet=NULL)</td></tr>
+<tr class="memitem:a6a0ae18a42e2d206bc1b43da27820fe2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2">getPointValue</a> (int &amp;status, <a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> &gt; *sensorpoints, double *p, <a class="el" href="classInterpolator.xhtml">Interpolator</a> *interpolator, <a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> * &gt; *prev_tet=NULL, <a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> * &gt; *current_tet=NULL)</td></tr>
 <tr class="memdesc:a6a0ae18a42e2d206bc1b43da27820fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den inter/extrapolierten Wert eines Punktes zurück.  <a href="#a6a0ae18a42e2d206bc1b43da27820fe2">Mehr ...</a><br/></td></tr>
 <tr class="separator:a6a0ae18a42e2d206bc1b43da27820fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d6523eb946892eee52c9c74efd016de"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de">hsvToRgb</a> (float h, float s, float v)</td></tr>
@@ -220,8 +223,7 @@ Funktionen</h2></td></tr>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_abb647325616858e0fad55290c36ea03b_icgraph.svg" width="100%" height="456"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_abb647325616858e0fad55290c36ea03b_icgraph.svg" width="100%" height="456"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -266,6 +268,49 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespaceUtils_adc0438a85ca31977c95f5d27090d5346_icgraph.svg" width="579" height="56"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a76b506eef525971ab3ccb328f4ca879d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Utils::floattostr </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>val</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Hilfsfunktion zur Umwandlung einer Zahl in einen String. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>Die umzuwandelnde Zahl. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>Der resultierende String. </dd></dl>
+
+<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00116">116</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
+
+<p><div class="dynheader">
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a76b506eef525971ab3ccb328f4ca879d_icgraph.svg" width="611" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </p>
 
@@ -356,7 +401,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vector&lt; SensorPoint &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; SensorPoint &gt; *&#160;</td>
           <td class="paramname"><em>sensorpoints</em>, </td>
         </tr>
         <tr>
@@ -374,13 +419,13 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vector&lt; SensorPoint * &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; SensorPoint * &gt; *&#160;</td>
           <td class="paramname"><em>prev_tet</em> = <code>NULL</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vector&lt; SensorPoint * &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; SensorPoint * &gt; *&#160;</td>
           <td class="paramname"><em>current_tet</em> = <code>NULL</code>&#160;</td>
         </tr>
         <tr>
@@ -410,16 +455,14 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2_icgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2_icgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -471,8 +514,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a5d6523eb946892eee52c9c74efd016de_icgraph.svg" width="100%" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a5d6523eb946892eee52c9c74efd016de_icgraph.svg" width="100%" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -485,7 +527,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
         <tr>
           <td class="memname">void Utils::nextCombination </td>
           <td>(</td>
-          <td class="paramtype">vector&lt; int &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; int &gt; *&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
@@ -524,8 +566,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_af4ba26e928c7cef5269c51bfac49d547_icgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_af4ba26e928c7cef5269c51bfac49d547_icgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -584,8 +625,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_af8fc5d6dab27f759ab5d76757a53023f_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_af8fc5d6dab27f759ab5d76757a53023f_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -658,8 +698,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a9b995a1220a78be108b19bda4b776332_icgraph.svg" width="100%" height="478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a9b995a1220a78be108b19bda4b776332_icgraph.svg" width="100%" height="478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -744,7 +783,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">vector&lt; SensorPoint * &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; SensorPoint * &gt; *&#160;</td>
           <td class="paramname"><em>tet</em>&#160;</td>
         </tr>
         <tr>
@@ -836,8 +875,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a5f216cc7011a901130db81321b565334_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a5f216cc7011a901130db81321b565334_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -881,7 +919,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:35 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:21 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

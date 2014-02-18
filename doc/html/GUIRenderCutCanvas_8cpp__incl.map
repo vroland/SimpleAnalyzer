@@ -1,17 +1,17 @@
-<map id="simpleanalyzer&#45;gui/src/GUI/GUIRenderCutCanvas.cpp" name="simpleanalyzer&#45;gui/src/GUI/GUIRenderCutCanvas.cpp">
-<area shape="rect" id="node3" href="$GUIRenderCutCanvas_8h.xhtml" title="GUIRenderCutCanvas.h" alt="" coords="806,256,971,285"/>
-<area shape="rect" id="node9" href="$Renderer_8h.xhtml" title="Renderer.h" alt="" coords="556,411,642,440"/>
-<area shape="rect" id="node19" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="415,488,594,517"/>
-<area shape="rect" id="node28" href="$utils_8h.xhtml" title="utils.h" alt="" coords="248,565,304,595"/>
-<area shape="rect" id="node45" href="$GUICutRenderWindow_8h.xhtml" title="GUICutRenderWindow.h" alt="" coords="566,179,731,208"/>
-<area shape="rect" id="node59" href="$GUIMainWindow_8h.xhtml" title="GUIMainWindow.h" alt="" coords="1219,101,1350,131"/>
-<area shape="rect" id="node7" href="$GUIColorScalePanel_8h.xhtml" title="GUIColorScalePanel.h" alt="" coords="806,333,960,363"/>
-<area shape="rect" id="node15" href="$GeometryClasses_8h.xhtml" title="../libraries/interpolate\l/GeometryClasses.h" alt="" coords="319,739,460,786"/>
-<area shape="rect" id="node23" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="494,643,635,690"/>
-<area shape="rect" id="node61" href="$GUIGLCanvas_8h.xhtml" title="GUIGLCanvas.h" alt="" coords="1035,333,1152,363"/>
-<area shape="rect" id="node68" href="$PropertiesBox_8h.xhtml" title="PropertiesBox.h" alt="" coords="1240,333,1355,363"/>
-<area shape="rect" id="node78" href="$ViewpropBox_8h.xhtml" title="ViewpropBox.h" alt="" coords="1087,179,1196,208"/>
-<area shape="rect" id="node82" href="$GUIAnalyzeOutputWindow_8h.xhtml" title="GUIAnalyzeOutputWindow.h" alt="" coords="1322,256,1511,285"/>
-<area shape="rect" id="node88" href="$GUIAnalyzePointWindow_8h.xhtml" title="GUIAnalyzePointWindow.h" alt="" coords="1586,488,1767,517"/>
-<area shape="rect" id="node71" href="$GUITimeline_8h.xhtml" title="GUITimeline.h" alt="" coords="1227,411,1334,440"/>
+<map id="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUIRenderCutCanvas.cpp" name="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUIRenderCutCanvas.cpp">
+<area shape="rect" id="node3" href="$GUIRenderCutCanvas_8h.xhtml" title="GUIRenderCutCanvas.h" alt="" coords="803,272,968,301"/>
+<area shape="rect" id="node9" href="$Renderer_8h.xhtml" title="Renderer.h" alt="" coords="580,427,665,456"/>
+<area shape="rect" id="node19" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="648,504,827,533"/>
+<area shape="rect" id="node28" href="$utils_8h.xhtml" title="utils.h" alt="" coords="343,581,399,611"/>
+<area shape="rect" id="node45" href="$GUICutRenderWindow_8h.xhtml" title="GUICutRenderWindow.h" alt="" coords="545,195,711,224"/>
+<area shape="rect" id="node59" href="$GUIMainWindow_8h.xhtml" title="GUIMainWindow.h" alt="" coords="1096,117,1227,147"/>
+<area shape="rect" id="node7" href="$GUIColorScalePanel_8h.xhtml" title="GUIColorScalePanel.h" alt="" coords="803,349,957,379"/>
+<area shape="rect" id="node15" href="$GeometryClasses_8h.xhtml" title="../libraries/interpolate\l/GeometryClasses.h" alt="" coords="279,755,420,802"/>
+<area shape="rect" id="node23" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="611,659,752,706"/>
+<area shape="rect" id="node61" href="$GUIGLCanvas_8h.xhtml" title="GUIGLCanvas.h" alt="" coords="1032,349,1149,379"/>
+<area shape="rect" id="node68" href="$PropertiesBox_8h.xhtml" title="PropertiesBox.h" alt="" coords="1345,349,1460,379"/>
+<area shape="rect" id="node78" href="$ViewpropBox_8h.xhtml" title="ViewpropBox.h" alt="" coords="1172,195,1281,224"/>
+<area shape="rect" id="node82" href="$GUIAnalyzeOutputWindow_8h.xhtml" title="GUIAnalyzeOutputWindow.h" alt="" coords="1411,272,1600,301"/>
+<area shape="rect" id="node88" href="$GUIAnalyzePointWindow_8h.xhtml" title="GUIAnalyzePointWindow.h" alt="" coords="1556,504,1737,533"/>
+<area shape="rect" id="node71" href="$GUITimeline_8h.xhtml" title="GUITimeline.h" alt="" coords="1315,427,1421,456"/>
 </map>

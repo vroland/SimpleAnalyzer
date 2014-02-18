@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Simple Analyzer: simpleanalyzer-gui/src/processing/Analyzer.cpp Quellcode</title>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/processing/Analyzer.cpp Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -174,7 +174,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. ">Analyzer::analyzePoint</a>(<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* obj,<a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* point,<a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml" title="Analyseergebnisse für einen Punkt. ">AnalyzerData_point</a>* point_data,<a class="code" href="classInterpolator.xhtml" title="2- und 3-dimensionale Inter-/Extrapolation ">Interpolator</a>* interpolator) {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="structUtils_1_1SensorData.xhtml" title="Ein Sensordatensatz. ">SensorData</a>* sd = &amp;obj-&gt;<a class="code" href="classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. ">getSensorDataList</a>()-&gt;at(obj-&gt;<a class="code" href="classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. ">getCurrentSensorIndex</a>());</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    vector&lt;SensorPoint&gt;* sensorpoints = &amp;sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.at(sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a177d53154d56fcf1962f969ece1e7d9d" title="Index des aktuell ausgewählten Zeitpunkts. ">current_time_index</a>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classstd_1_1vector.xhtml">vector&lt;SensorPoint&gt;</a>* sensorpoints = &amp;sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309" title="Daten des Datensatzes (Sensorpunkte zu versch. ">data</a>.at(sd-&gt;<a class="code" href="structUtils_1_1SensorData.xhtml#a177d53154d56fcf1962f969ece1e7d9d" title="Index des aktuell ausgewählten Zeitpunkts. ">current_time_index</a>);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> found = 0;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">double</span> interval = <a class="code" href="namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. ">getPointValue</a>(found,sensorpoints,point-&gt;<a class="code" href="classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)...">getXYZ</a>(),interpolator);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    point_data-&gt;<a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml#a150b00a3d0be5d1c75b39292d213cbfa" title="Die Temperatur an diesem Punkt. ">value</a> = interval;</div>
@@ -203,7 +203,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

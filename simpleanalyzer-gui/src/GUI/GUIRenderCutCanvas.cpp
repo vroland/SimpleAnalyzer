@@ -13,6 +13,7 @@
 #include "GUIMainWindow.h"
 #include "Renderer.h"
 #include <iostream>
+
 BEGIN_EVENT_TABLE(GUIRenderCutCanvas, wxPanel)
 	EVT_PAINT    (GUIRenderCutCanvas::onCanvasPaint)
 	EVT_MOUSEWHEEL(GUIRenderCutCanvas::OnMouseWheel)
@@ -20,6 +21,7 @@ BEGIN_EVENT_TABLE(GUIRenderCutCanvas, wxPanel)
 	EVT_SIZE   (GUIRenderCutCanvas::OnResize)
 	EVT_LEFT_DOWN(GUIRenderCutCanvas::OnMouseDown)
 END_EVENT_TABLE()
+
 using namespace std;
 using namespace Utils;
 

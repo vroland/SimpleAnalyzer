@@ -1,16 +1,16 @@
-<map id="simpleanalyzer&#45;gui/src/GUI/Renderer.h" name="simpleanalyzer&#45;gui/src/GUI/Renderer.h">
-<area shape="rect" id="node3" href="$GUIGLCanvas_8h.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIGLCanvas.h" alt="" coords="587,102,760,149"/>
-<area shape="rect" id="node15" href="$GUIRenderCutCanvas_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIRenderCutCanvas.cpp" alt="" coords="931,486,1163,533"/>
-<area shape="rect" id="node19" href="$GUIColorScalePanel_8h.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIColorScalePanel.h" alt="" coords="1091,102,1299,149"/>
-<area shape="rect" id="node23" href="$GUICutRenderWindow_8h.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUICutRenderWindow.h" alt="" coords="693,294,915,341"/>
-<area shape="rect" id="node33" href="$Renderer_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/Renderer.cpp" alt="" coords="1380,102,1535,149"/>
-<area shape="rect" id="node35" href="$ViewpropBox_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/ViewpropBox.cpp" alt="" coords="1559,102,1737,149"/>
-<area shape="rect" id="node5" href="$GUIMainWindow_8h.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIMainWindow.h" alt="" coords="455,390,641,437"/>
-<area shape="rect" id="node17" href="$GUIGLCanvas_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIGLCanvas.cpp" alt="" coords="580,198,767,245"/>
-<area shape="rect" id="node7" href="$Application_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/Application.cpp" alt="" coords="5,486,141,533"/>
-<area shape="rect" id="node9" href="$GUIAnalyzeOutputWindow_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIAnalyzeOutputWindow.cpp" alt="" coords="165,486,424,533"/>
-<area shape="rect" id="node11" href="$GUICutRenderWindow_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUICutRenderWindow.cpp" alt="" coords="672,486,907,533"/>
-<area shape="rect" id="node13" href="$GUIMainWindow_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIMainWindow.cpp" alt="" coords="448,486,648,533"/>
-<area shape="rect" id="node21" href="$GUIRenderCutCanvas_8h.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIRenderCutCanvas.h" alt="" coords="841,198,1060,245"/>
-<area shape="rect" id="node29" href="$GUIColorScalePanel_8cpp.xhtml" title="simpleanalyzer&#45;gui\l/src/GUI/GUIColorScalePanel.cpp" alt="" coords="1084,198,1305,245"/>
+<map id="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/Renderer.h" name="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/Renderer.h">
+<area shape="rect" id="node3" href="$GUIGLCanvas_8h.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIGLCanvas.h" alt="" coords="688,117,883,181"/>
+<area shape="rect" id="node13" href="$GUIRenderCutCanvas_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIRenderCutCanvas.cpp" alt="" coords="1064,565,1317,629"/>
+<area shape="rect" id="node19" href="$GUIColorScalePanel_8h.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIColorScalePanel.h" alt="" coords="1235,117,1464,181"/>
+<area shape="rect" id="node23" href="$GUICutRenderWindow_8h.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUICutRenderWindow.h" alt="" coords="805,341,1048,405"/>
+<area shape="rect" id="node33" href="$Renderer_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/Renderer.cpp" alt="" coords="1545,117,1727,181"/>
+<area shape="rect" id="node35" href="$ViewpropBox_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/ViewpropBox.cpp" alt="" coords="1751,117,1948,181"/>
+<area shape="rect" id="node5" href="$GUIMainWindow_8h.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIMainWindow.h" alt="" coords="547,453,752,517"/>
+<area shape="rect" id="node17" href="$GUIGLCanvas_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIGLCanvas.cpp" alt="" coords="681,229,889,293"/>
+<area shape="rect" id="node7" href="$GUIAnalyzeOutputWindow_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIAnalyzeOutputWindow.cpp" alt="" coords="237,565,515,629"/>
+<area shape="rect" id="node9" href="$GUICutRenderWindow_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUICutRenderWindow.cpp" alt="" coords="784,565,1040,629"/>
+<area shape="rect" id="node11" href="$GUIMainWindow_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIMainWindow.cpp" alt="" coords="539,565,760,629"/>
+<area shape="rect" id="node15" href="$SimpleAnalyzerApp_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/SimpleAnalyzerApp.cpp" alt="" coords="5,565,213,629"/>
+<area shape="rect" id="node21" href="$GUIRenderCutCanvas_8h.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIRenderCutCanvas.h" alt="" coords="964,229,1204,293"/>
+<area shape="rect" id="node29" href="$GUIColorScalePanel_8cpp.xhtml" title="/daten/Projekte/eclipse\l_workspace/simpleanalyzer\l&#45;gui/src/GUI/GUIColorScalePanel.cpp" alt="" coords="1228,229,1471,293"/>
 </map>

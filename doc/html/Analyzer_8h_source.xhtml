@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Simple Analyzer: simpleanalyzer-gui/src/processing/Analyzer.h Quellcode</title>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/processing/Analyzer.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,11 +117,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml">   34</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml" title="Analyseergebnisse für einen Sensordatensatz. ">AnalyzerData_dataset</a> {</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#a53f3c1896123de4dc00f01e593d5f70d">   35</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#a53f3c1896123de4dc00f01e593d5f70d" title="Der Name des Sensordatensatzes&lt;. ">name</a>;                            </div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#aaefb798e2611790d5d956fe597bbafe0">   36</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#aaefb798e2611790d5d956fe597bbafe0" title="Die Wärmeenergie, die das Objekt für diesen Datensatz enthält. ">heat_energy</a>;                     </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#a25d0189c93bc0da58f778750edb2a2b9">   37</a></span>&#160;        vector&lt;AnalyzerData_material&gt; <a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#a25d0189c93bc0da58f778750edb2a2b9" title="Die Analyseergebnisse für die Einzelnen Materialien. ">mat_data</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#a25d0189c93bc0da58f778750edb2a2b9">   37</a></span>&#160;        <a class="code" href="classstd_1_1vector.xhtml">vector&lt;AnalyzerData_material&gt;</a> <a class="code" href="structAnalyzer_1_1AnalyzerData__dataset.xhtml#a25d0189c93bc0da58f778750edb2a2b9" title="Die Analyseergebnisse für die Einzelnen Materialien. ">mat_data</a>; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    };</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml">   42</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml" title="Analyseergebnisse für ein Objekt. ">AnalyzerData_object</a> {</div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml#a78ddeb311ff702e110fc1d483d826920">   43</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml#a78ddeb311ff702e110fc1d483d826920" title="Das Volumen des Objekts. ">volume</a>;                          </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml#a5d36dcf805f37b0e29134236e3881fca">   44</a></span>&#160;        vector&lt;AnalyzerData_dataset&gt; <a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml#a5d36dcf805f37b0e29134236e3881fca" title="Die Analyseergebisse für die Sensordatensätze. ">data_sets</a>; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml#a5d36dcf805f37b0e29134236e3881fca">   44</a></span>&#160;        <a class="code" href="classstd_1_1vector.xhtml">vector&lt;AnalyzerData_dataset&gt;</a> <a class="code" href="structAnalyzer_1_1AnalyzerData__object.xhtml#a5d36dcf805f37b0e29134236e3881fca" title="Die Analyseergebisse für die Sensordatensätze. ">data_sets</a>; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml">   49</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml" title="Analyseergebnisse für einen Punkt. ">AnalyzerData_point</a> {</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml#a150b00a3d0be5d1c75b39292d213cbfa">   50</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="structAnalyzer_1_1AnalyzerData__point.xhtml#a150b00a3d0be5d1c75b39292d213cbfa" title="Die Temperatur an diesem Punkt. ">value</a>;       </div>
@@ -139,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

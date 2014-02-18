@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Simple Analyzer: simpleanalyzer-gui/src/GUI/GUIColorScalePanel.cpp Quellcode</title>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/GUI/GUIColorScalePanel.cpp Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,295 +99,454 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="GUIColorScalePanel_8h.xhtml">GUIColorScalePanel.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../processing/utils.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wx/artprov.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span>Utils;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">extern</span> <a class="code" href="structUtils_1_1Visualization__info.xhtml" title="Informationen über die Farbgebung bei der Visualisierung. ">Visualization_info</a> <a class="code" href="Application_8cpp.xhtml#afa647024f69f2725a3d441f53712ffd0">visualization_info</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../SimpleAnalyzerApp.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../processing/utils.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wx/artprov.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>Utils;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//Minimale Maße der Skala</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="GUIColorScalePanel_8cpp.xhtml#ad3ee0cc681d736cb6d41c4ebb04c0ae4">   18</a></span>&#160;<span class="preprocessor">#define MIN_WIDTH 5</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="GUIColorScalePanel_8cpp.xhtml#a1610a21b358c3531db64b3208fa70e5b">   19</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_HEIGHT 5</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#ad4ad453f831d149cc9fde46cba883431">   21</a></span>&#160;<a class="code" href="classGUIColorScalePanel.xhtml#ad4ad453f831d149cc9fde46cba883431" title="Der Konstruktor. ">GUIColorScalePanel::GUIColorScalePanel</a>() {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    width = 20;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    height = 100;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    x = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    y = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    current_mx = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    current_my = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    scaling = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    step_width = 10;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    text_color = wxColour(255,255,255);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    transforming = 0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//Standardwerte für die Skala setzen</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    width = 20;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    height = 100;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    x = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    y = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    current_mx = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    current_my = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    step_width = 10;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    text_color = wxColour(255, 255, 255);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    mode = SCM_HORIZONTAL;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    image = <span class="keyword">new</span> wxImage(100,100);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    image = <span class="keyword">new</span> wxImage(100, 100);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    font_size = 12;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    prev_mouse_down = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#aaf6408cc09932a82afc7b2c233ec64c8">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#aaf6408cc09932a82afc7b2c233ec64c8" title="Zeichnet die Temperaturskala mit einem bestimmten device context. ">GUIColorScalePanel::paintTo</a>(wxDC&amp; dc,<span class="keywordtype">float</span> zoom,wxPoint&amp; img_coords) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (mode!=SCM_NONE) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        wxRect display_area;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        getDisplayArea(&amp;display_area,zoom);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        wxPoint sc_topleft(img_coords+display_area.GetBottomRight()-wxPoint(10,10));</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        wxRect scalearea = wxRect(sc_topleft,img_coords+display_area.GetBottomRight());</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        dc.SetBrush(*wxWHITE_BRUSH);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        dc.SetPen(*wxBLACK_PEN);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">//Color</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        dc.DrawRectangle(scalearea);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        dc.DrawLine(sc_topleft.x+2,sc_topleft.y+2,sc_topleft.x+8,sc_topleft.y+8);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        dc.DrawLine(sc_topleft.x+5,sc_topleft.y+8,sc_topleft.x+8,sc_topleft.y+8);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        dc.DrawLine(sc_topleft.x+8,sc_topleft.y+5,sc_topleft.x+8,sc_topleft.y+8);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span> (transforming) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            dc.SetBrush(*wxTRANSPARENT_BRUSH);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            dc.SetPen(*wxWHITE_PEN);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            dc.DrawRectangle(display_area.GetTopLeft()+img_coords,display_area.GetSize());</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="Zeichnet die Temperaturskala neu. ">GUIColorScalePanel::refresh</a>(<span class="keywordtype">int</span> img_width,<span class="keywordtype">int</span> img_height) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (mode!=SCM_NONE) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        wxRect display_area;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        getDisplayArea(&amp;display_area,1.0);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        wxBitmap color_bmp = wxBitmap(img_width,img_height);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        wxBitmap alpha_bmp = wxBitmap(img_width,img_height);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        wxMemoryDC col_dc(color_bmp);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        wxMemoryDC alpha_dc(alpha_bmp);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        col_dc.SetBrush(text_color);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        col_dc.SetPen(text_color);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        alpha_dc.SetBrush(*wxBLACK_BRUSH);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        alpha_dc.SetPen(*wxBLACK_PEN);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        col_dc.DrawRectangle(0,0,img_width,img_height);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        alpha_dc.DrawRectangle(0,0,img_width,img_height);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        wxImage temp_color_img = wxImage(display_area.width,display_area.height);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;display_area.width;i++) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0;j&lt;display_area.height;j++) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordtype">float</span>* color = <a class="code" href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Wandelt eine Farbe im HSV-Format ins RGB-Format um. ">hsvToRgb</a>((1.-(mode==SCM_HORIZONTAL?i/(<span class="keywordtype">float</span>)display_area.width:j/(<span class="keywordtype">float</span>)display_area.height))*.66666,1,1);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                temp_color_img.SetRGB(i,j,color[0]*255,color[1]*255,color[2]*255);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <span class="keyword">delete</span>[] color;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        col_dc.SetBrush(*wxWHITE_BRUSH);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        col_dc.SetPen(*wxBLACK_PEN);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        alpha_dc.SetBrush(*wxWHITE_BRUSH);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        alpha_dc.SetPen(*wxWHITE_PEN);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        alpha_dc.DrawRectangle(display_area);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        col_dc.DrawBitmap(wxBitmap(temp_color_img),display_area.x,display_area.y);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//keine aktuelle Transformation</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    scaling = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    transforming = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    prev_mouse_down = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#aaf6408cc09932a82afc7b2c233ec64c8">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#aaf6408cc09932a82afc7b2c233ec64c8" title="Zeichnet die Temperaturskala mit einem bestimmten device context. ">GUIColorScalePanel::paintTo</a>(wxDC&amp; dc, <span class="keywordtype">float</span> zoom, wxPoint&amp; img_coords) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//Soll die Skala dargestellt werden?</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (mode != SCM_NONE) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//Fläche des Farbbands</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        wxRect display_area;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        getDisplayArea(&amp;display_area, zoom);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">//obere linke Ecke des Rechtecks zum Skalieren</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        wxPoint scale_rect_topleft(</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                img_coords + display_area.GetBottomRight() - wxPoint(10, 10));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">//Fläche des Rechtecks zum Skalieren</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        wxRect scalearea = wxRect(scale_rect_topleft,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                img_coords + display_area.GetBottomRight());</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">//Zeichnen der Fläche zum Rechtecks zum Skalieren</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        dc.SetBrush(*wxWHITE_BRUSH);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        dc.SetPen(*wxBLACK_PEN);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        dc.DrawRectangle(scalearea);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        dc.DrawLine(scale_rect_topleft.x + 2, scale_rect_topleft.y + 2,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                scale_rect_topleft.x + 8, scale_rect_topleft.y + 8);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        dc.DrawLine(scale_rect_topleft.x + 5, scale_rect_topleft.y + 8,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                scale_rect_topleft.x + 8, scale_rect_topleft.y + 8);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        dc.DrawLine(scale_rect_topleft.x + 8, scale_rect_topleft.y + 5,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                scale_rect_topleft.x + 8, scale_rect_topleft.y + 8);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">//Wird die Skala Transformiert?</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (transforming) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="comment">//Weiße Umrandung um die Skala zeichnen</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            dc.SetBrush(*wxTRANSPARENT_BRUSH);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            dc.SetPen(*wxWHITE_PEN);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            dc.DrawRectangle(display_area.GetTopLeft() + img_coords,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    display_area.GetSize());</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa">   79</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="Zeichnet die Temperaturskala neu. ">GUIColorScalePanel::refresh</a>(<span class="keywordtype">int</span> img_width, <span class="keywordtype">int</span> img_height) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//Soll die Skala dargestellt werden?</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (mode != SCM_NONE) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">//Fläche des Farbbandes</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        wxRect display_area;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        getDisplayArea(&amp;display_area, 1.0);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">//wxFont* font = wxFont::New(font_size*zoom, wxFONTFAMILY_DEFAULT, wxFONTFLAG_NOT_ANTIALIASED);</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        wxFont font(<span class="keywordtype">int</span>(font_size),wxFONTFAMILY_DEFAULT,wxFONTSTYLE_NORMAL,wxFONTSTYLE_NORMAL);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        col_dc.SetFont(font);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        col_dc.SetTextForeground(text_color);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        col_dc.SetPen(wxPen(text_color));</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        alpha_dc.SetFont(font);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        alpha_dc.SetTextForeground(wxColour(255,255,255));</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        alpha_dc.SetPen(*wxWHITE_PEN);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">int</span> delta_t_vis = (<a class="code" href="Application_8cpp.xhtml#afa647024f69f2725a3d441f53712ffd0">visualization_info</a>.<a class="code" href="structUtils_1_1Visualization__info.xhtml#a5327787a12634166ecc00f2224d3f39f" title="maximal Visualisierte Temperatur (entspricht der Farbe Rot). ">max_visualisation_temp</a>-<a class="code" href="Application_8cpp.xhtml#afa647024f69f2725a3d441f53712ffd0">visualization_info</a>.<a class="code" href="structUtils_1_1Visualization__info.xhtml#a6e192352d1f00709f8ef963206ff2653" title="minimal Visualisierte Temperatur (entspricht der Farbe Blau). ">min_visualisation_temp</a>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;=(delta_t_vis-delta_t_vis%step_width)/step_width;i++) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            wxString text = <a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets-String um. ">floattowxstr</a>(<span class="keywordtype">int</span>(<a class="code" href="Application_8cpp.xhtml#afa647024f69f2725a3d441f53712ffd0">visualization_info</a>.<a class="code" href="structUtils_1_1Visualization__info.xhtml#a6e192352d1f00709f8ef963206ff2653" title="minimal Visualisierte Temperatur (entspricht der Farbe Blau). ">min_visualisation_temp</a>+i*step_width));</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            wxSize t_size = col_dc.GetTextExtent(text);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">switch</span> (mode) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">case</span> SCM_VERTICAL: {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordtype">float</span> display_step = (float)display_area.height/(delta_t_vis)*step_width;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                wxPoint textpoint(display_area.x+display_area.width,display_area.y+i*display_step);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                col_dc.DrawText(text,textpoint.x+8,textpoint.y-t_size.y/2.);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                col_dc.DrawLine(textpoint.x,textpoint.y,textpoint.x+5,textpoint.y);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                alpha_dc.DrawText(text,textpoint.x+8,textpoint.y-t_size.y/2.);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                alpha_dc.DrawLine(textpoint.x,textpoint.y,textpoint.x+5,textpoint.y);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">case</span> SCM_HORIZONTAL: {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordtype">float</span> display_step = (float)display_area.width/(delta_t_vis)*step_width;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                wxPoint textpoint(display_area.x+i*display_step,display_area.y+display_area.height);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                col_dc.DrawText(text,textpoint.x-t_size.x/2.,textpoint.y+8);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                col_dc.DrawLine(textpoint.x,textpoint.y,textpoint.x,textpoint.y+5);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                alpha_dc.DrawText(text,textpoint.x-t_size.x/2.,textpoint.y+8);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                alpha_dc.DrawLine(textpoint.x,textpoint.y,textpoint.x,textpoint.y+5);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        col_dc.SelectObject(wxNullBitmap);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        alpha_dc.SelectObject(wxNullBitmap);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">delete</span> image;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        image = <span class="keyword">new</span> wxImage(color_bmp.GetWidth(),color_bmp.GetHeight());</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        image-&gt;InitAlpha();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        wxImage alpha_img = alpha_bmp.ConvertToImage();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        wxImage color_img = color_bmp.ConvertToImage();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x=0;x&lt;image-&gt;GetWidth();x++) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y=0;y&lt;image-&gt;GetHeight();y++) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                image-&gt;SetRGB(x,y,color_img.GetRed(x,y),color_img.GetGreen(x,y),color_img.GetBlue(x,y));</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                image-&gt;SetAlpha(x,y,alpha_img.GetRed(x,y));</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">delete</span> image;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        image = <span class="keyword">new</span> wxImage(img_width,img_height);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        image-&gt;InitAlpha();</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;img_width;i++) {</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0;j&lt;img_height;j++) {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <span class="keywordtype">float</span>* color = <a class="code" href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Wandelt eine Farbe im HSV-Format ins RGB-Format um. ">hsvToRgb</a>((1.-(mode==SCM_HORIZONTAL?i/(<span class="keywordtype">float</span>)img_width:j/(<span class="keywordtype">float</span>)img_height))*.66666,1,1);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                image-&gt;SetRGB(i,j,0,0,0);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                image-&gt;SetAlpha(i,j,0);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keyword">delete</span>[] color;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#aa7d5eb68ecd55e23b2e8969a21c32a22">  149</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#aa7d5eb68ecd55e23b2e8969a21c32a22" title="Gibt die bei einem bestimmten Zoomfaktor eingenommene Fläche zurück. ">GUIColorScalePanel::getDisplayArea</a>(wxRect* rect,<span class="keywordtype">float</span> zoom) {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    rect-&gt;x = zoom*x;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    rect-&gt;y = zoom*y;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    rect-&gt;width = zoom*width;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    rect-&gt;height= zoom*height;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a4b17b0a63d3921ce09ffe5a99b6955a5">  155</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classGUIColorScalePanel.xhtml#a4b17b0a63d3921ce09ffe5a99b6955a5" title="Gibt zurück, ob sich die Maus über der Fläche der Skala befindet. ">GUIColorScalePanel::mouseOnDisplayArea</a>(wxPoint&amp; img_coords,<span class="keywordtype">float</span> zoom,wxPoint&amp; mouse_pos) {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    wxRect display_area;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    getDisplayArea(&amp;display_area,zoom);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    display_area.x+=img_coords.x;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    display_area.y+=img_coords.y;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    wxPoint sc_topleft(display_area.GetBottomRight()-wxPoint(10,10));</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    wxRect scalearea = wxRect(sc_topleft,display_area.GetBottomRight());</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">return</span> (display_area.Contains(mouse_pos) || scalearea.Contains(mouse_pos));</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a8f5da4bc81c7ef878214cd5d0a0b2c19">  164</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classGUIColorScalePanel.xhtml#a8f5da4bc81c7ef878214cd5d0a0b2c19">GUIColorScalePanel::getX</a>() {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> x;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a5eff7202dade14031b7bf45f305f54e4">  167</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classGUIColorScalePanel.xhtml#a5eff7202dade14031b7bf45f305f54e4">GUIColorScalePanel::getY</a>() {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> y;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
-<div class="line"><a name="l00170"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#ac8faaae6f7016f0fecedfc350b65644b">  170</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#ac8faaae6f7016f0fecedfc350b65644b" title="Passt die Größe und Position der Skala an die Größe der Grafik an. ">GUIColorScalePanel::fitBounds</a>(wxPoint&amp; img_dim,<span class="keywordtype">bool</span> to_scale) {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">bool</span> changed = 0;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">if</span> (x&lt;0) {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        x = 0;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        changed = 1;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">if</span> (y&lt;0) {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        y = 0;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        changed = 1;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span> (width&lt;<a class="code" href="GUIColorScalePanel_8cpp.xhtml#ad3ee0cc681d736cb6d41c4ebb04c0ae4">MIN_WIDTH</a>) {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        width = <a class="code" href="GUIColorScalePanel_8cpp.xhtml#ad3ee0cc681d736cb6d41c4ebb04c0ae4">MIN_WIDTH</a>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        changed = 1;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span> (height&lt;<a class="code" href="GUIColorScalePanel_8cpp.xhtml#a1610a21b358c3531db64b3208fa70e5b">MIN_HEIGHT</a>) {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        height = <a class="code" href="GUIColorScalePanel_8cpp.xhtml#a1610a21b358c3531db64b3208fa70e5b">MIN_HEIGHT</a>;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        changed = 1;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">if</span> (width&gt;img_dim.x) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        width = img_dim.x;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        changed = 1;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">if</span> (height&gt;img_dim.y) {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        height = img_dim.y;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        changed = 1;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">if</span> (to_scale &amp;&amp; !(img_dim.x-x&lt;<a class="code" href="GUIColorScalePanel_8cpp.xhtml#ad3ee0cc681d736cb6d41c4ebb04c0ae4">MIN_WIDTH</a> || img_dim.y-y&lt;<a class="code" href="GUIColorScalePanel_8cpp.xhtml#a1610a21b358c3531db64b3208fa70e5b">MIN_HEIGHT</a>)) {   <span class="comment">// image dimensions must not me lower than MIN_WIDTH/HEIGHT</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">if</span> (x+width&gt;img_dim.x) {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            width = img_dim.x-x;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            changed = 1;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">if</span> (y+height&gt;img_dim.y) {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            height = img_dim.y-y;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            changed = 1;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        }</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">if</span> (x+width&gt;img_dim.x) {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            x = img_dim.x-width;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            changed = 1;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">if</span> (y+height&gt;img_dim.y) {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            y = img_dim.y-height;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            changed = 1;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        }</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">if</span> (changed)</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        refresh(img_dim.x,img_dim.y);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
-<div class="line"><a name="l00218"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a59e27a091ec86d4c3e649f432a10ec08">  218</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#a59e27a091ec86d4c3e649f432a10ec08" title="Behandelt die Mausaktionen und verändert ggf. ">GUIColorScalePanel::handleMouse</a>(wxMouseEvent&amp; event,wxPoint&amp; img_coords,wxPoint&amp; img_dim,<span class="keywordtype">float</span> zoom) {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">if</span> (mode!=SCM_NONE) {</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        wxRect display_area;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        getDisplayArea(&amp;display_area,zoom);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        display_area.x+=img_coords.x;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        display_area.y+=img_coords.y;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">if</span> (prev_mouse_down!=event.m_leftDown &amp;&amp; !prev_mouse_down) {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            wxPoint sc_topleft(display_area.GetBottomRight()-wxPoint(10,10));</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            wxRect scalearea = wxRect(sc_topleft,display_area.GetBottomRight());</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">if</span> (scalearea.Contains(event.GetPosition())) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                scaling = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                scaling = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keywordflow">if</span> (event.m_leftDown) {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="keywordflow">if</span> (scaling) {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    width+=(<span class="keyword">event</span>.m_x-current_mx)/zoom;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                    height+=(<span class="keyword">event</span>.m_y-current_my)/zoom;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                    fitBounds(img_dim,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                    x+=(<span class="keyword">event</span>.m_x-current_mx)/zoom;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                    y+=(<span class="keyword">event</span>.m_y-current_my)/zoom;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    fitBounds(img_dim,<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            }</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        transforming = <span class="keyword">event</span>.m_leftDown;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    }</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">if</span> (prev_mouse_down!=event.m_leftDown) {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        refresh(img_dim.x,img_dim.y);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    prev_mouse_down = <span class="keyword">event</span>.m_leftDown;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    current_mx = <span class="keyword">event</span>.m_x;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    current_my = <span class="keyword">event</span>.m_y;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">//Temporäre Zwischenbilder für Farbe und Transparenz</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        wxBitmap color_bmp = wxBitmap(img_width, img_height);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        wxBitmap alpha_bmp = wxBitmap(img_width, img_height);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">//Erstellen von DeviceContexts zum Zeichnen auf die bilder</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        wxMemoryDC col_dc(color_bmp);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        wxMemoryDC alpha_dc(alpha_bmp);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">//Schwarzfärben der Bilder (entspricht im Transparentbild volltransparent)</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        col_dc.SetBrush(text_color);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        col_dc.SetPen(text_color);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        alpha_dc.SetBrush(*wxBLACK_BRUSH);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        alpha_dc.SetPen(*wxBLACK_PEN);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        col_dc.DrawRectangle(0, 0, img_width, img_height);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        alpha_dc.DrawRectangle(0, 0, img_width, img_height);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">//Temporäres Bild für das Farbband</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        wxImage temp_color_img = wxImage(display_area.width,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                display_area.height);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">//Für jedes Pixel des Farbbands</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; display_area.width; i++) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; display_area.height; j++) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="comment">//Zwischenvariable zur Ermittlung des Farbwerts</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordtype">float</span> inverse_hue = 0;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="comment">//Ist die Skala Horizontal?</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">if</span> (mode == SCM_HORIZONTAL) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <span class="comment">//Hhorizontaler Farbverlauf</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    inverse_hue = i / (float) display_area.width;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    <span class="comment">//vertikaler Farbverlauf</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    inverse_hue = j / (float) display_area.height;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="comment">//Berechnen der Farbe</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keywordtype">float</span>* color = <a class="code" href="namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Wandelt eine Farbe im HSV-Format ins RGB-Format um. ">hsvToRgb</a>((1. - inverse_hue) * .66666, 1, 1);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="comment">//Einfärben des Pixels</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                temp_color_img.SetRGB(i, j, color[0] * 255, color[1] * 255,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                        color[2] * 255);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="keyword">delete</span>[] color;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        col_dc.SetBrush(*wxWHITE_BRUSH);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        col_dc.SetPen(*wxBLACK_PEN);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">//Weiße Farbe auf dem Bild für die Transparenz heißt undurchsichtig</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        alpha_dc.SetBrush(*wxWHITE_BRUSH);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        alpha_dc.SetPen(*wxWHITE_PEN);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="comment">//Undurchsichtigmachen des Bereichs für das Farbband</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        alpha_dc.DrawRectangle(display_area);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="comment">//Zeichnen des Farbbands auf das Farbbild</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        col_dc.DrawBitmap(wxBitmap(temp_color_img), display_area.x,</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                display_area.y);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="comment">//Erstellen einer Schrift mit der gewünschten Schriftgröße</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        wxFont font(<span class="keywordtype">int</span>(font_size), wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL,</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                wxFONTSTYLE_NORMAL);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="comment">//Übertragen der Einstellungen für die Schrift in die DCs</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        col_dc.SetFont(font);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        col_dc.SetTextForeground(text_color);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        col_dc.SetPen(wxPen(text_color));</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        alpha_dc.SetFont(font);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        alpha_dc.SetTextForeground(wxColour(255, 255, 255));</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        alpha_dc.SetPen(*wxWHITE_PEN);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="comment">//Die Visualisierungseinstellungen</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="structUtils_1_1Visualization__info.xhtml" title="Informationen über die Farbgebung bei der Visualisierung. ">Visualization_info</a>* vis_info = wxGetApp().getVisualizationInfo();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">//Spannweite des darzustellenden Temperaturbereichs</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordtype">int</span> delta_t_vis = (vis_info-&gt;<a class="code" href="structUtils_1_1Visualization__info.xhtml#a5327787a12634166ecc00f2224d3f39f" title="maximal Visualisierte Temperatur (entspricht der Farbe Rot). ">max_visualisation_temp</a></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                - vis_info-&gt;<a class="code" href="structUtils_1_1Visualization__info.xhtml#a6e192352d1f00709f8ef963206ff2653" title="minimal Visualisierte Temperatur (entspricht der Farbe Blau). ">min_visualisation_temp</a>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">//Beschriftung der Skala:</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">//So viele Schritte, wie mit der angegebenen Schrittweite auf die Skala passen...</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= (delta_t_vis - delta_t_vis % step_width) / step_width; i++) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="comment">//Beschriftungstext an dieser Stelle</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            wxString text = <a class="code" href="namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets-String um. ">floattowxstr</a>(</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    <span class="keywordtype">int</span>(vis_info-&gt;<a class="code" href="structUtils_1_1Visualization__info.xhtml#a6e192352d1f00709f8ef963206ff2653" title="minimal Visualisierte Temperatur (entspricht der Farbe Blau). ">min_visualisation_temp</a> + i * step_width));</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="comment">//Größe des Schriftzuges</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            wxSize t_size = col_dc.GetTextExtent(text);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="comment">//Darstellungsmodus?</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">switch</span> (mode) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">case</span> SCM_VERTICAL: {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="comment">//Pixel pro Schritt</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="keywordtype">float</span> display_step = (float) display_area.height / (delta_t_vis)</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                        * step_width;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="comment">//Position des Beschriftungstexts</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                wxPoint textpoint(display_area.x + display_area.width,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                        display_area.y + i * display_step);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <span class="comment">//Zeichnen des Texts und Markierungsstrichs auf Farb- und Transparenzbild</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                col_dc.DrawText(text, textpoint.x + 8,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                        textpoint.y - t_size.y / 2.);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                col_dc.DrawLine(textpoint.x, textpoint.y, textpoint.x + 5,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                        textpoint.y);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                alpha_dc.DrawText(text, textpoint.x + 8,</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                        textpoint.y - t_size.y / 2.);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                alpha_dc.DrawLine(textpoint.x, textpoint.y, textpoint.x + 5,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                        textpoint.y);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordflow">case</span> SCM_HORIZONTAL: {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="comment">//Pixel pro Schritt</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                <span class="keywordtype">float</span> display_step = (float) display_area.width / (delta_t_vis)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                        * step_width;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                <span class="comment">//Position des Beschriftungstexts</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                wxPoint textpoint(display_area.x + i * display_step,</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                        display_area.y + display_area.height);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="comment">//Zeichnen des Texts und Markierungsstrichs auf Farb- und Transparenzbild</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                col_dc.DrawText(text, textpoint.x - t_size.x / 2.,</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                        textpoint.y + 8);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                col_dc.DrawLine(textpoint.x, textpoint.y, textpoint.x,</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                        textpoint.y + 5);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                alpha_dc.DrawText(text, textpoint.x - t_size.x / 2.,</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        textpoint.y + 8);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                alpha_dc.DrawLine(textpoint.x, textpoint.y, textpoint.x,</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                        textpoint.y + 5);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="comment">//lösen der Zwischenbilder von den DCs</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        col_dc.SelectObject(wxNullBitmap);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        alpha_dc.SelectObject(wxNullBitmap);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="comment">//zurücksetzen des Ausgabebilds</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keyword">delete</span> image;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        image = <span class="keyword">new</span> wxImage(color_bmp.GetWidth(), color_bmp.GetHeight());</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        image-&gt;InitAlpha();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="comment">//Zwischenbilder als wxImage, um einzelne Pixels auslesbar zu machen</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        wxImage alpha_img = alpha_bmp.ConvertToImage();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        wxImage color_img = color_bmp.ConvertToImage();</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="comment">//Übertragen von Farbe und Transparenz in das Ausgabebild</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; image-&gt;GetWidth(); x++) {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; image-&gt;GetHeight(); y++) {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                image-&gt;SetRGB(x, y, color_img.GetRed(x, y),</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                        color_img.GetGreen(x, y), color_img.GetBlue(x, y));</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                image-&gt;SetAlpha(x, y, alpha_img.GetRed(x, y));</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="comment">//zurücksetzen des Ausgabebilds</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keyword">delete</span> image;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        image = <span class="keyword">new</span> wxImage(img_width, img_height);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        image-&gt;InitAlpha();</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="comment">//Ausgabebild volltransparent machen</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; img_width; i++) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; img_height; j++) {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                image-&gt;SetRGB(i, j, 0, 0, 0);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                image-&gt;SetAlpha(i, j, 0);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a3569b14af591835eeb60b2aa9c672ca4">  255</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classGUIColorScalePanel.xhtml#a3569b14af591835eeb60b2aa9c672ca4">GUIColorScalePanel::getFontSize</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">return</span> font_size;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#ae26f3f500092717aa7e9a85126b38461">  259</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#ae26f3f500092717aa7e9a85126b38461" title="Setzt die Schriftgröße der Skala. ">GUIColorScalePanel::setFontSize</a>(<span class="keywordtype">int</span> fontSize) {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    font_size = fontSize;</div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#aa7d5eb68ecd55e23b2e8969a21c32a22">  255</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#aa7d5eb68ecd55e23b2e8969a21c32a22" title="Gibt die bei einem bestimmten Zoomfaktor eingenommene Fläche zurück. ">GUIColorScalePanel::getDisplayArea</a>(wxRect* rect, <span class="keywordtype">float</span> zoom) {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    rect-&gt;x = zoom * x;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    rect-&gt;y = zoom * y;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    rect-&gt;width = zoom * width;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    rect-&gt;height = zoom * height;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a4af2d1c1f161f42e2d6573315caec82f">  263</a></span>&#160;<a class="code" href="classGUIColorScalePanel.xhtml#a56a63e898188b90b82295ff7c3ebc265" title="Modus der Skalendarstellung. ">GUIColorScalePanel::ScaleMode</a> <a class="code" href="classGUIColorScalePanel.xhtml#a4af2d1c1f161f42e2d6573315caec82f">GUIColorScalePanel::getMode</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">return</span> mode;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#aba2363ced766a14d72ad5448502f62a4">  267</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#aba2363ced766a14d72ad5448502f62a4" title="Setzt den Modus der Skala. ">GUIColorScalePanel::setMode</a>(<a class="code" href="classGUIColorScalePanel.xhtml#a56a63e898188b90b82295ff7c3ebc265" title="Modus der Skalendarstellung. ">ScaleMode</a> mode) {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    this-&gt;mode = mode;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#aae51a1ecdb5bfca126c36ad169fce846">  271</a></span>&#160;<span class="keyword">const</span> wxColour&amp; <a class="code" href="classGUIColorScalePanel.xhtml#aae51a1ecdb5bfca126c36ad169fce846">GUIColorScalePanel::getTextColor</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">return</span> text_color;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#ad9056636be2c0707127225484f0d0392">  275</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#ad9056636be2c0707127225484f0d0392" title="Setzt die Schriftfarbe der Skala. ">GUIColorScalePanel::setTextColor</a>(<span class="keyword">const</span> wxColour&amp; textColor) {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    text_color = textColor;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00279"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a5b69bf4853de97fa2445721165cab206">  279</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classGUIColorScalePanel.xhtml#a5b69bf4853de97fa2445721165cab206" title="Gibt die Schrittweite der Skalenbeschriftung. ">GUIColorScalePanel::getStepWidth</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keywordflow">return</span> step_width;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#aba534a319236878bc3504050d8227fe4">  283</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#aba534a319236878bc3504050d8227fe4" title="Setzt die Schrittweite der Skalenbeschriftung. ">GUIColorScalePanel::setStepWidth</a>(<span class="keywordtype">int</span> stepWidth) {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    step_width = stepWidth;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#ac793a56373a8f7f5cb8d3e413c26e8e7">  287</a></span>&#160;wxImage* <a class="code" href="classGUIColorScalePanel.xhtml#ac793a56373a8f7f5cb8d3e413c26e8e7">GUIColorScalePanel::getImage</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">return</span> image;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a7e6f0e0703269ce666989af49fef3369">  291</a></span>&#160;<a class="code" href="classGUIColorScalePanel.xhtml#a7e6f0e0703269ce666989af49fef3369" title="Der Destruktor. ">GUIColorScalePanel::~GUIColorScalePanel</a>() {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}</div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a4b17b0a63d3921ce09ffe5a99b6955a5">  263</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classGUIColorScalePanel.xhtml#a4b17b0a63d3921ce09ffe5a99b6955a5" title="Gibt zurück, ob sich die Maus über der Fläche der Skala befindet. ">GUIColorScalePanel::mouseOnDisplayArea</a>(wxPoint&amp; img_coords, <span class="keywordtype">float</span> zoom,</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        wxPoint&amp; mouse_pos) {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="comment">//Fläche des Farbbands</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    wxRect display_area;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    getDisplayArea(&amp;display_area, zoom);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="comment">//Auf Fensterkoordinaten umrechnen</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    display_area.x += img_coords.x;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    display_area.y += img_coords.y;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="comment">//Berechnen der Fläche zum Skalieren der Skala</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    wxPoint sc_topleft(display_area.GetBottomRight() - wxPoint(10, 10));</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    wxRect scalearea = wxRect(sc_topleft, display_area.GetBottomRight());</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="comment">//Ist der Mauszeiger über einer dieser Flächen?</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">return</span> (display_area.Contains(mouse_pos) || scalearea.Contains(mouse_pos));</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a8f5da4bc81c7ef878214cd5d0a0b2c19">  282</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classGUIColorScalePanel.xhtml#a8f5da4bc81c7ef878214cd5d0a0b2c19">GUIColorScalePanel::getX</a>() {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a5eff7202dade14031b7bf45f305f54e4">  286</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classGUIColorScalePanel.xhtml#a5eff7202dade14031b7bf45f305f54e4">GUIColorScalePanel::getY</a>() {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">return</span> y;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#ac8faaae6f7016f0fecedfc350b65644b">  290</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#ac8faaae6f7016f0fecedfc350b65644b" title="Passt die Größe und Position der Skala an die Größe der Grafik an. ">GUIColorScalePanel::fitBounds</a>(wxPoint&amp; img_dim, <span class="keywordtype">bool</span> to_scale) {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">//hat eine Veränderung stattgefunden?</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">bool</span> changed = 0;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="comment">//Position gültig?</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">if</span> (x &lt; 0) {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        x = 0;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        changed = 1;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">if</span> (y &lt; 0) {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        y = 0;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        changed = 1;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">//Größe gültig?</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> (width &lt; <a class="code" href="GUIColorScalePanel_8cpp.xhtml#ad3ee0cc681d736cb6d41c4ebb04c0ae4">MIN_WIDTH</a>) {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        width = <a class="code" href="GUIColorScalePanel_8cpp.xhtml#ad3ee0cc681d736cb6d41c4ebb04c0ae4">MIN_WIDTH</a>;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        changed = 1;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">if</span> (height &lt; <a class="code" href="GUIColorScalePanel_8cpp.xhtml#a1610a21b358c3531db64b3208fa70e5b">MIN_HEIGHT</a>) {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        height = <a class="code" href="GUIColorScalePanel_8cpp.xhtml#a1610a21b358c3531db64b3208fa70e5b">MIN_HEIGHT</a>;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        changed = 1;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">if</span> (width &gt; img_dim.x) {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        width = img_dim.x;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        changed = 1;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    }</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">if</span> (height &gt; img_dim.y) {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        height = img_dim.y;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        changed = 1;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="comment">//Soll oder muss die Skalengröße verändert werden?</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">if</span> (to_scale</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            &amp;&amp; !(img_dim.x - x &lt; <a class="code" href="GUIColorScalePanel_8cpp.xhtml#ad3ee0cc681d736cb6d41c4ebb04c0ae4">MIN_WIDTH</a> || img_dim.y - y &lt; <a class="code" href="GUIColorScalePanel_8cpp.xhtml#a1610a21b358c3531db64b3208fa70e5b">MIN_HEIGHT</a>)) {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="comment">//Anpassen der Skalengröße an die Bildgröße</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">if</span> (x + width &gt; img_dim.x) {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            width = img_dim.x - x;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            changed = 1;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">if</span> (y + height &gt; img_dim.y) {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            height = img_dim.y - y;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            changed = 1;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        }</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="comment">//Anpassen der Sklenposition an das Bild</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">if</span> (x + width &gt; img_dim.x) {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            x = img_dim.x - width;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            changed = 1;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">if</span> (y + height &gt; img_dim.y) {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            y = img_dim.y - height;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            changed = 1;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="comment">//hat eine Veränderung stattgefunden?</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">if</span> (changed) {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="comment">//Skale neu berechnen</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        refresh(img_dim.x, img_dim.y);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;}</div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a59e27a091ec86d4c3e649f432a10ec08">  354</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#a59e27a091ec86d4c3e649f432a10ec08" title="Behandelt die Mausaktionen und verändert ggf. ">GUIColorScalePanel::handleMouse</a>(wxMouseEvent&amp; event, wxPoint&amp; img_coords,</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        wxPoint&amp; img_dim, <span class="keywordtype">float</span> zoom) {</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="comment">//Soll die Skala dargestellt werden?</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">if</span> (mode != SCM_NONE) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="comment">//Fläche des Farbbands</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        wxRect display_area;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        getDisplayArea(&amp;display_area, zoom);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="comment">//auf Fensterkoordinaten umrechnen</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        display_area.x += img_coords.x;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        display_area.y += img_coords.y;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="comment">//Ist die linke Maustaste gedrückt worden?</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">if</span> (prev_mouse_down != event.m_leftDown &amp;&amp; !prev_mouse_down) {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="comment">//Fläche zum Skalieren</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            wxPoint sc_topleft(display_area.GetBottomRight() - wxPoint(10, 10));</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            wxRect scalearea = wxRect(sc_topleft,</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                    display_area.GetBottomRight());</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="comment">//wurde auf die Fläche zum Skalieren geklickt?</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            <span class="keywordflow">if</span> (scalearea.Contains(event.GetPosition())) {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                scaling = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                scaling = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            }</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="comment">//Ist die linke Maustaste gedrückt?</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">if</span> (event.m_leftDown) {</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <span class="comment">//wird gerade skaliert?</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                <span class="keywordflow">if</span> (scaling) {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                    <span class="comment">//Skala  skalieren</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                    width += (<span class="keyword">event</span>.m_x - current_mx) / zoom;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                    height += (<span class="keyword">event</span>.m_y - current_my) / zoom;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                    fitBounds(img_dim, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                    <span class="comment">//Skala  verschieben</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                    x += (<span class="keyword">event</span>.m_x - current_mx) / zoom;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                    y += (<span class="keyword">event</span>.m_y - current_my) / zoom;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                    fitBounds(img_dim, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                }</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            }</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        }</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="comment">//findet eine Transformation statt?</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        transforming = <span class="keyword">event</span>.m_leftDown;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    }</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="comment">//wurde geklickt oder die linke Maustaste losgelassen?</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordflow">if</span> (prev_mouse_down != event.m_leftDown) {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="comment">//Skalenbild aktualisieren</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        refresh(img_dim.x, img_dim.y);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="comment">//vorherigen Maussatus speichern</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    prev_mouse_down = <span class="keyword">event</span>.m_leftDown;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="comment">//vorherige Mausposition speichern</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    current_mx = <span class="keyword">event</span>.m_x;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    current_my = <span class="keyword">event</span>.m_y;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;}</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a3569b14af591835eeb60b2aa9c672ca4">  415</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classGUIColorScalePanel.xhtml#a3569b14af591835eeb60b2aa9c672ca4">GUIColorScalePanel::getFontSize</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">return</span> font_size;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;}</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
+<div class="line"><a name="l00419"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#ae26f3f500092717aa7e9a85126b38461">  419</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#ae26f3f500092717aa7e9a85126b38461" title="Setzt die Schriftgröße der Skala. ">GUIColorScalePanel::setFontSize</a>(<span class="keywordtype">int</span> fontSize) {</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    font_size = fontSize;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;}</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a4af2d1c1f161f42e2d6573315caec82f">  423</a></span>&#160;<a class="code" href="classGUIColorScalePanel.xhtml#a56a63e898188b90b82295ff7c3ebc265" title="Modus der Skalendarstellung. ">GUIColorScalePanel::ScaleMode</a> <a class="code" href="classGUIColorScalePanel.xhtml#a4af2d1c1f161f42e2d6573315caec82f">GUIColorScalePanel::getMode</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">return</span> mode;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;}</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#aba2363ced766a14d72ad5448502f62a4">  427</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#aba2363ced766a14d72ad5448502f62a4" title="Setzt den Modus der Skala. ">GUIColorScalePanel::setMode</a>(<a class="code" href="classGUIColorScalePanel.xhtml#a56a63e898188b90b82295ff7c3ebc265" title="Modus der Skalendarstellung. ">ScaleMode</a> mode) {</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    this-&gt;mode = mode;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;}</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
+<div class="line"><a name="l00431"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#aae51a1ecdb5bfca126c36ad169fce846">  431</a></span>&#160;<span class="keyword">const</span> wxColour&amp; <a class="code" href="classGUIColorScalePanel.xhtml#aae51a1ecdb5bfca126c36ad169fce846">GUIColorScalePanel::getTextColor</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordflow">return</span> text_color;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;}</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
+<div class="line"><a name="l00435"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#ad9056636be2c0707127225484f0d0392">  435</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#ad9056636be2c0707127225484f0d0392" title="Setzt die Schriftfarbe der Skala. ">GUIColorScalePanel::setTextColor</a>(<span class="keyword">const</span> wxColour&amp; textColor) {</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    text_color = textColor;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;}</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
+<div class="line"><a name="l00439"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a5b69bf4853de97fa2445721165cab206">  439</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classGUIColorScalePanel.xhtml#a5b69bf4853de97fa2445721165cab206" title="Gibt die Schrittweite der Skalenbeschriftung. ">GUIColorScalePanel::getStepWidth</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordflow">return</span> step_width;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;}</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
+<div class="line"><a name="l00443"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#aba534a319236878bc3504050d8227fe4">  443</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIColorScalePanel.xhtml#aba534a319236878bc3504050d8227fe4" title="Setzt die Schrittweite der Skalenbeschriftung. ">GUIColorScalePanel::setStepWidth</a>(<span class="keywordtype">int</span> stepWidth) {</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    step_width = stepWidth;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;}</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
+<div class="line"><a name="l00447"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#ac793a56373a8f7f5cb8d3e413c26e8e7">  447</a></span>&#160;wxImage* <a class="code" href="classGUIColorScalePanel.xhtml#ac793a56373a8f7f5cb8d3e413c26e8e7">GUIColorScalePanel::getImage</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="keywordflow">return</span> image;</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;}</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno"><a class="code" href="classGUIColorScalePanel.xhtml#a7e6f0e0703269ce666989af49fef3369">  451</a></span>&#160;<a class="code" href="classGUIColorScalePanel.xhtml#a7e6f0e0703269ce666989af49fef3369" title="Der Destruktor. ">GUIColorScalePanel::~GUIColorScalePanel</a>() {</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;}</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

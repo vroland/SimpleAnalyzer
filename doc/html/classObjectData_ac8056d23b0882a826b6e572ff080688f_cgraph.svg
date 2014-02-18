@@ -15,7 +15,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" target="_top" xlink:title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. ">
+<a xlink:href="classImporter.xhtml#ad8dec9ce375155ca130453632530eb52" target="_top" xlink:title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. ">
 <polygon fill="none" stroke="black" points="172,-81.5 172,-102.5 300,-102.5 300,-81.5 172,-81.5"/>
 <text text-anchor="middle" x="236" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">Importer::LoadTimedData</text>
 </a>
@@ -39,7 +39,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" target="_top" xlink:title="getTextBlock">
+<a xlink:href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" target="_top" xlink:title="Gibt den n&#45;ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">
 <polygon fill="none" stroke="black" points="376,-104.5 376,-125.5 450,-125.5 450,-104.5 376,-104.5"/>
 <text text-anchor="middle" x="413" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">getTextBlock</text>
 </a>

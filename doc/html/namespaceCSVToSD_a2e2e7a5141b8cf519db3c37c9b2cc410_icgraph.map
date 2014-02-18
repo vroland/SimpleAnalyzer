@@ -1,6 +1,0 @@
-<map id="CSVToSD::parseLine" name="CSVToSD::parseLine">
-<area shape="rect" id="node3" href="$namespaceCSVToSD.xhtml#ab24aaf410a1c332e2a84b42af50e5fd9" title="Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die ..." alt="" coords="208,5,341,35"/>
-<area shape="rect" id="node7" href="$namespaceODiSIToSD.xhtml#a09e74878b7f3b12c27afbb8ee902d9f8" title="Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die ODiSI&#45;Datei um ein..." alt="" coords="204,59,345,88"/>
-<area shape="rect" id="node5" href="$csvtosd_2main_8cpp.xhtml#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="395,5,445,35"/>
-<area shape="rect" id="node9" href="$odisitosd_2main_8cpp.xhtml#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="395,59,445,88"/>
-</map>

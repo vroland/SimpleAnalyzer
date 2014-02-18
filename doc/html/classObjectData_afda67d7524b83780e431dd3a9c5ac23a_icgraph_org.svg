@@ -27,7 +27,7 @@
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
-<a xlink:href="classImporter.xhtml#a5013417fb7556dce65dba1ed3aec4e50" target="_top" xlink:title="Lädt Objektdaten aus einer .obj&#45;Datei. ">
+<a xlink:href="classImporter.xhtml#aaa567a75272f300157648ffaa9b101c2" target="_top" xlink:title="Lädt Objektdaten aus einer .obj&#45;Datei. ">
 <polygon fill="none" stroke="black" points="190.5,-340.5 190.5,-361.5 291.5,-361.5 291.5,-340.5 190.5,-340.5"/>
 <text text-anchor="middle" x="241" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">Importer::ImportObj</text>
 </a>
@@ -52,7 +52,7 @@
 </g>
 <!-- Node9 -->
 <g id="node17" class="node"><title>Node9</title>
-<a xlink:href="GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" target="_top" xlink:title="render_thread">
+<a xlink:href="GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" target="_top" xlink:title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="203,-262.5 203,-283.5 279,-283.5 279,-262.5 203,-262.5"/>
 <text text-anchor="middle" x="241" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">render_thread</text>
 </a>

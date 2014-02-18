@@ -51,7 +51,7 @@
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" target="_top" xlink:title="render_thread">
+<a xlink:href="GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" target="_top" xlink:title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="377,-142.5 377,-163.5 453,-163.5 453,-142.5 377,-142.5"/>
 <text text-anchor="middle" x="415" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">render_thread</text>
 </a>

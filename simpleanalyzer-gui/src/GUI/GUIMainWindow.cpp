@@ -10,24 +10,23 @@
 #include <sstream>
 #include <fstream>
 #include <string>
+#include "../SimpleAnalyzerApp.h"
 #include "../libraries/tetgen/tetgen.h"
 #include "../processing/MeshProcessor.h"
 #include "../fileIO/Importer.h"
 #include "../processing/ObjectData.h"
 #include "constants.h"
 #include "../fileIO/Exporter.h"
-#include <wx/stdpaths.h>
-using namespace std;
+#include "GUITimeline.h"
+#include "../processing/utils.h"
 
-extern std::vector<ObjectData*> data_objects;
-extern int current_data_object_index;
-extern Visualization_info visualization_info;
+using namespace std;
+using namespace Utils;
 
 #define PROPBOXWIDTH 300
 #define VIEWBOXWIDTH 300
 
-extern const wxEventType wxEVT_TIMELINE_CHANGE;
-
+//Eventtabelle zum Verknüpfen der Events von Menü, Objekteigenschaftenfenster und Visualisierungseigenschaftenfenster
 BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_MENU(ID_IMPORT_OBJ, GUIMainWindow::OnMenuImportObj)
 	EVT_MENU(ID_IMPORT_SD, GUIMainWindow::OnMenuImportSD)
@@ -61,113 +60,161 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_MENU(ID_EXPORT_VTK,GUIMainWindow::OnExportVTK)
 END_EVENT_TABLE()
 
-GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height):
-			wxFrame((wxFrame *) NULL, -1, title, wxPoint(xpos, ypos), wxSize(width, height))
-{
+GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
+		int height) : wxFrame((wxFrame *) NULL, -1, title, wxPoint(xpos, ypos),
+				wxSize(width, height)) {
+
+	/**
+	 * Erstellen und initialisieren der Fensterkomponenten
+	 */
+
+	//Die 3D-Zeichenfläche
 	gl_context = new GUIGLCanvas(this);
 
+	//Das Haupmenü
 	mwMenuBar = new wxMenuBar();
-	// File Menu
+
+	// Das "Datei"-Untermenü
 	mwFileMenu = new wxMenu();
-	//Import menu
+
+	// Das "Import"-Untermenü
 	mwImportMenu = new wxMenu();
 	mwImportMenu->Append(ID_IMPORT_OBJ, wxT("Modell und Sensordaten..."));
 	mwImportMenu->Append(ID_IMPORT_SD, wxT("Sensordaten..."));
 	mwImportMenu->Append(ID_IMPORT_TSD, wxT("Sensordaten-Paket..."));
-	mwFileMenu->AppendSubMenu(mwImportMenu,wxT("Import"));
-	//Export menu
+	mwFileMenu->AppendSubMenu(mwImportMenu, wxT("Import"));
+
+	// Das "Export"-Untermenü
 	mwExportMenu = new wxMenu();
-	mwExportMenu->Append(ID_EXPORT_VIEWPORT,wxT("Screenshot (Viewport)..."));
-	mwExportMenu->Append(ID_EXPORT_VTK,wxT("Legacy VTK - Datei..."));
-	mwFileMenu->AppendSubMenu(mwExportMenu,wxT("Export"));
+	mwExportMenu->Append(ID_EXPORT_VIEWPORT, wxT("Screenshot (Viewport)..."));
+	mwExportMenu->Append(ID_EXPORT_VTK, wxT("Legacy VTK - Datei..."));
+	mwFileMenu->AppendSubMenu(mwExportMenu, wxT("Export"));
 	mwFileMenu->AppendSeparator();
 	mwFileMenu->Append(wxID_EXIT, wxT("&Beenden"));
 	mwMenuBar->Append(mwFileMenu, wxT("&Datei"));
-	// Edit menu
+
+	// Das "Bearbeiten"-Untermenü
 	mwEditMenu = new wxMenu();
-	mwEditMenu->Append(ID_DELETE_ACTIVE_OBJ,wxT("Aktives Objekt löschen"));
-	mwMenuBar->Append(mwEditMenu,wxT("Bearbeiten"));
-	// Analyze menu
+	mwEditMenu->Append(ID_DELETE_ACTIVE_OBJ, wxT("Aktives Objekt löschen"));
+	mwMenuBar->Append(mwEditMenu, wxT("Bearbeiten"));
+
+	// Das "Analysieren"-Untermenü
 	mwAnalyzeMenu = new wxMenu();
-	mwAnalyzeMenu->Append(ID_ANALYZE,wxT("Übersicht..."));
-	mwAnalyzeMenu->Append(ID_ANALYZE_POINT,wxT("Punkt..."));
-	mwAnalyzeMenu->Append(ID_RENDER_CUT,wxT("Schnitt berechnen..."));
-	mwMenuBar->Append(mwAnalyzeMenu,wxT("Analysieren"));
-	// About menu
+	mwAnalyzeMenu->Append(ID_ANALYZE, wxT("Übersicht..."));
+	mwAnalyzeMenu->Append(ID_ANALYZE_POINT, wxT("Punkt..."));
+	mwAnalyzeMenu->Append(ID_RENDER_CUT, wxT("Schnitt berechnen..."));
+	mwMenuBar->Append(mwAnalyzeMenu, wxT("Analysieren"));
+
+	// Das "Hilfe"-Untermenü
 	mwHelpMenu = new wxMenu();
 	mwHelpMenu->Append(ID_ABOUT, wxT("Über"));
 	mwMenuBar->Append(mwHelpMenu, wxT("Hilfe"));
 
+	//Scrollbares Unterfenster für die Objekteigenschaften
 	prop_scroll_win = new wxScrolledWindow(this, wxID_ANY);
+	//Scrollbares Unterfenster für die Visualisierungsoptionen
 	view_scroll_win = new wxScrolledWindow(this, wxID_ANY);
-	propbox =  new PropertiesBox(prop_scroll_win);
+
+
+	prop_scroll_win->SetScrollRate(10, 10);
+	view_scroll_win->SetScrollRate(10, 10);
+	//Die Objekteigenschaften-Oberfläche
+	propbox = new PropertiesBox(prop_scroll_win);
+	//Die Visualisierungsoptionen-Oberfläche
 	viewbox = new ViewpropBox(view_scroll_win);
-	prop_scroll_win->SetScrollRate(10,10);
-	view_scroll_win->SetScrollRate(10,10);
 
 	SetMenuBar(mwMenuBar);
+
+	//Initialisieren der Verknüpfungen für die Unterfenster und ihrer Statusvariablen
 	analyzerframe = NULL;
 	analyze_window_valid = false;
 	rendercutwindow = NULL;
 	render_cut_window_valid = false;
+
+	//Wird die Oberfläche gerade aktualisiert? -> Unterdrückt endloses aktualisieren durch Änderungen an der Oberfläche
 	updating = false;
-	wxImage::AddHandler( new wxJPEGHandler );
 
-	#define NUMBEROFPATHS 4
-	string configpaths[NUMBEROFPATHS] {
-		string(wxStandardPaths::Get().GetExecutablePath().BeforeLast('/').ToUTF8().data())+"/",
-		"/usr/local/share/simpleanalyzer/",
-		"/usr/share/simpleanalyzer/",
-	};
+	//Laden der Verarbeitungsroutinen für die wxImage-Klasse
+	wxInitAllImageHandlers();
+
+	//Pfad zum Verzeichnis, in dem die Programmdaten liegen
 	string datadir = "";
+
+	//Datei zum Testen, ob ein Icon geladen werden kann.
 	ifstream testfile;
-	for (int i=0;i<NUMBEROFPATHS;i++) {
-		datadir = configpaths[i];
-		testfile.open(datadir+string("icons/analyze_point.png"));
-		if (testfile.is_open()) break;
-	}
+	testfile.open(string(wxStandardPaths::Get().GetExecutablePath().BeforeLast('/').ToUTF8().data())
+					+ "/icons/analyze_point.png");
+
+	//Liegt die Datei nicht im Verzeichnis der ausführbaren Datei?
 	if (!testfile.is_open()) {
-		cerr << "could not find application data! make sure the data is located in one of this paths:"<<endl;
-		for (int i=0;i<NUMBEROFPATHS;i++) {
-			cout << configpaths[i] << endl;
+		//Die zusätzlichen Pfade versuchen
+		for (int i = 0; i < NUMBEROFPATHS; i++) {
+			datadir = configpaths[i];
+			testfile.open(datadir + string("icons/analyze_point.png"));
+
+			//Unter diesem Pfad gefunden?
+			if (testfile.is_open()) {
+				break;
+			}
+
+			//Unter keinem Pfad gefunden?
+			if (i == NUMBEROFPATHS - 1) {
+				cerr << endl;
+				cerr
+						<< "could not find application data! make sure the data is located in one of this paths:"
+						<< endl;
+				for (int i = 0; i < NUMBEROFPATHS; i++) {
+					cerr << configpaths[i] << endl;
+				}
+
+				//Das Programm sofort beenden
+				Close(true);
+			}
 		}
-		Close(true);
 	}
 
-	//Toolbar
-	wxImage::AddHandler( new wxPNGHandler );
-	toolbar = new wxToolBar(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTB_HORZ_TEXT, _T("ID_TOOLBAR1"));
-	toolbar->AddTool(ID_IMPORT_OBJ,wxArtProvider::GetBitmap(wxART_FOLDER_OPEN, wxART_TOOLBAR), wxT("Objekt importieren"));
-	toolbar->AddTool(ID_IMPORT_SD, wxArtProvider::GetBitmap(wxART_NORMAL_FILE , wxART_TOOLBAR), wxT("Sensordaten importieren"));
-	toolbar->AddTool(ID_IMPORT_TSD, wxArtProvider::GetBitmap(wxART_FILE_OPEN , wxART_TOOLBAR), wxT("Sensordatenpaket importieren"));
+	//Die Toolbar bestücken
+	toolbar = new wxToolBar(this, wxID_ANY, wxDefaultPosition, wxDefaultSize,
+			wxTB_HORZ_TEXT, _T("ID_TOOLBAR1"));
+	toolbar->AddTool(ID_IMPORT_OBJ,
+			wxArtProvider::GetBitmap(wxART_FOLDER_OPEN, wxART_TOOLBAR),
+			wxT("Objekt importieren"));
+	toolbar->AddTool(ID_IMPORT_SD,
+			wxArtProvider::GetBitmap(wxART_NORMAL_FILE, wxART_TOOLBAR),
+			wxT("Sensordaten importieren"));
+	toolbar->AddTool(ID_IMPORT_TSD,
+			wxArtProvider::GetBitmap(wxART_FILE_OPEN, wxART_TOOLBAR),
+			wxT("Sensordatenpaket importieren"));
 	toolbar->AddSeparator();
-	toolbar->AddTool(ID_CHANGE_ACTIVE_OBJ,wxT("aktives Objekt"),wxArtProvider::GetBitmap(wxART_LIST_VIEW  ,wxART_TOOLBAR) , wxT("Aktives Objekt wählen"));
-	toolbar->AddTool(ID_DELETE_ACTIVE_OBJ,wxArtProvider::GetBitmap(wxART_DELETE, wxART_TOOLBAR),wxT("aktives Objekt löschen"));
+	toolbar->AddTool(ID_CHANGE_ACTIVE_OBJ, wxT("aktives Objekt"),
+			wxArtProvider::GetBitmap(wxART_LIST_VIEW, wxART_TOOLBAR),
+			wxT("Aktives Objekt wählen"));
+	toolbar->AddTool(ID_DELETE_ACTIVE_OBJ,
+			wxArtProvider::GetBitmap(wxART_DELETE, wxART_TOOLBAR),
+			wxT("aktives Objekt löschen"));
 	toolbar->AddSeparator();
-	wxImage analyze_point(wxString::FromUTF8(datadir.c_str())+wxT("icons/analyze_point.png"), wxBITMAP_TYPE_PNG);
-	analyze_point = analyze_point.Scale(toolbar->GetToolBitmapSize().x,toolbar->GetToolBitmapSize().y,wxIMAGE_QUALITY_HIGH);
-	toolbar->AddTool(ID_ANALYZE_POINT,analyze_point,wxT("Punkt analysieren"));
+	wxImage analyze_point(
+			wxString::FromUTF8(datadir.c_str()) + wxT("icons/analyze_point.png"),
+			wxBITMAP_TYPE_PNG);
+	analyze_point = analyze_point.Scale(toolbar->GetToolBitmapSize().x,
+			toolbar->GetToolBitmapSize().y, wxIMAGE_QUALITY_HIGH);
+	toolbar->AddTool(ID_ANALYZE_POINT, analyze_point, wxT("Punkt analysieren"));
 	toolbar->Realize();
-	SetToolBar(toolbar);
-	/*//Load Testobject
-	ObjectData* newobj = new ObjectData();
-	wxString path2 = wxT("../examples/haus.obj");
-	newobj->loadFromFile(path2);
-	wxString sdpath = wxT("../../csvtosd/temperatur.tsd");
-	newobj->addTimedData(sdpath);
-	addObject(newobj);*/
-	/*ObjectData*newobj = new ObjectData();
-	wxString path = wxT("../examples/cylinder.obj");
-	newobj->loadFromFile(path);
-	addObject(newobj);*/
 
-	SetIcon(wxIcon(wxString::FromUTF8(datadir.c_str())+wxT("icons/prgm-icon.png")));
+	//Toolbar mit dem Programmfenster verknüpfen
+	SetToolBar(toolbar);
+
+	//Programmicon laden
+	SetIcon(wxIcon(wxString::FromUTF8(datadir.c_str()) + wxT("icons/prgm-icon.png")));
+
+	//Fenster auf dem Bildschirm zentrieren
 	Centre();
 }
 
 void GUIMainWindow::setAnalyzeWindowStatus(bool isValid) {
 	analyze_window_valid = isValid;
 }
+
 void GUIMainWindow::setCutRenderWindowStatus(bool isValid) {
 	render_cut_window_valid = isValid;
 }
@@ -177,92 +224,145 @@ GUIGLCanvas* GUIMainWindow::getGLCanvas() {
 }
 
 void GUIMainWindow::addObject(ObjectData* obj) {
-	data_objects.resize(data_objects.size()+1,obj);
-	setActiveObject(data_objects.size()-1);
+
+	wxGetApp().addObject(obj);
+	//als aktives Objekt setzen
+	setActiveObject(wxGetApp().getDataObjects()->size() - 1);
 }
+
 void GUIMainWindow::setActiveObject(int index) {
-	current_data_object_index = index;
-	gl_context->setRenderObject(data_objects.at(current_data_object_index));
+
+	wxGetApp().setCurrentDataObjectIndex(index);
+
+	//Oberfläche aktualisieren
+	gl_context->setRenderObject(wxGetApp().getActiveObject());
 	propbox->setCurrentMaterial(0);
 	updateObjectPropGUI();
 	updateViewPropGUI();
 }
 void GUIMainWindow::OnActiveObjectDelete(wxCommandEvent &event) {
-	if (data_objects.size()>1) {
-		delete data_objects.at(current_data_object_index);
-		data_objects.erase(data_objects.begin()+current_data_object_index);
-		current_data_object_index--;
-		if (current_data_object_index<0) {
-			current_data_object_index = 0;
-		}
-		setActiveObject(current_data_object_index);
+
+	//Liegen mehrere Objekte vor?
+	if (wxGetApp().getDataObjects()->size() > 1) {
+		//Objekt löschen
+		wxGetApp().removeCurrentObject();
+		//Neues auswählen
+		setActiveObject(wxGetApp().getCurrentDataObjectIndex());
 	} else {
-		wxMessageBox( wxT("Das aktuelle Objekt ist das Einzige, kann also nicht gelöscht werden!"), wxT("Fehler"), wxICON_ERROR);
+		wxMessageBox(
+				wxT("Das aktuelle Objekt ist das Einzige, kann also nicht gelöscht werden!"),
+				wxT("Fehler"), wxICON_ERROR);
 	}
 }
 
 void GUIMainWindow::OnResize(wxSizeEvent &event) {
-	// 3d-view
-	gl_context->SetSize(VIEWBOXWIDTH,0,GetSize().x-PROPBOXWIDTH-VIEWBOXWIDTH,GetSize().y,0);
-	propbox->SetSize(propbox->GetPosition().x,propbox->GetPosition().y,PROPBOXWIDTH-10,0,0);
+	//Das 3D-Fenster aktualisieren
+	gl_context->SetSize(VIEWBOXWIDTH, 0,
+			GetSize().x - PROPBOXWIDTH - VIEWBOXWIDTH, GetSize().y, 0);
+
+	//Objekteigenschaften repositionieren
+	propbox->SetSize(propbox->GetPosition().x, propbox->GetPosition().y,
+			PROPBOXWIDTH - 10, 0, 0);
 	propbox->resize();
-	prop_scroll_win->SetSize(GetSize().x-PROPBOXWIDTH+5,0,PROPBOXWIDTH-10,GetSize().y-25,0);
-	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,propbox->GetSize().y+30);
-	viewbox->SetSize(5,0,VIEWBOXWIDTH-10,GetSize().y-25,0);
+	//Größe des Scrollfensters für die Objekteigenschaften anpassen
+	prop_scroll_win->SetSize(GetSize().x - PROPBOXWIDTH + 5, 0,
+			PROPBOXWIDTH - 10, GetSize().y - 25, 0);
+	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,
+			propbox->GetSize().y + 30);
+
+	//Visualisierungsoptionen repositionieren
+	viewbox->SetSize(5, 0, VIEWBOXWIDTH - 10, GetSize().y - 25, 0);
 	viewbox->resize();
-	view_scroll_win->SetSize(5,0,VIEWBOXWIDTH-10,GetSize().y-25,0);
-	view_scroll_win->SetVirtualSize(viewbox->GetSize().x,viewbox->GetSize().y+30);
+	//Größe des Scrollfensters für die Visualisierungsoptionen anpassen
+	view_scroll_win->SetSize(5, 0, VIEWBOXWIDTH - 10, GetSize().y - 25, 0);
+	view_scroll_win->SetVirtualSize(viewbox->GetSize().x,
+			viewbox->GetSize().y + 30);
 
 }
-string floattostr(double val) {
-	ostringstream ss;
-	ss << val;
-	return ss.str();
-}
+
 void GUIMainWindow::OnSDTimelineChange(wxCommandEvent &event) {
+	//gleiches Update wie für alle Attribute
 	OnGeneralPropChange(event);
+
+	//Checkbox für das Markieren des Zeitpunkts aktualisieren
 	updating = true;
-	propbox->getAnalyzeMarkerCheckBox()->SetValue(propbox->getSdTimeline()->isMarked(propbox->getSdTimeline()->getValue()));
+	propbox->getAnalyzeMarkerCheckBox()->SetValue(
+			propbox->getSdTimeline()->isMarked(
+					propbox->getSdTimeline()->getValue()));
 	updating = false;
 }
+
 void GUIMainWindow::OnSensorDataChange(wxCommandEvent &event) {
+	//gleiches Update wie für alle Attribute
 	OnGeneralPropChange(event);
+
+	//aktualisieren der Objekteigenschaftenoberfläche (evtl. durch einblenden der Timeline nötig)
 	propbox->resize();
-	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,propbox->GetSize().y+50);
+	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,
+			propbox->GetSize().y + 50);
 }
+
 void GUIMainWindow::OnSDTLMarkerClear(wxCommandEvent &event) {
+	//löschen aller markierten Stellen
 	propbox->getSdTimeline()->clearMarkers();
+
+	//Checkbox für das Markieren des Zeitpunkts aktualisieren
 	updating = true;
 	propbox->getAnalyzeMarkerCheckBox()->SetValue(false);
 	updating = false;
 }
+
 void GUIMainWindow::OnAnalyzeMarkerChange(wxCommandEvent &event) {
+	//dürfen Events verarbeitet werden?
 	if (!updating) {
+		//markieren / demarkieren des Zeitpunkts
 		int val = propbox->getSdTimeline()->getValue();
-		propbox->getSdTimeline()->setMarked(val,propbox->getAnalyzeMarkerCheckBox()->GetValue());
+		propbox->getSdTimeline()->setMarked(val,
+				propbox->getAnalyzeMarkerCheckBox()->GetValue());
 	}
 }
 void GUIMainWindow::OnFindMaxTSD(wxCommandEvent &event) {
-	if (current_data_object_index>-1) {
-		ObjectData* obj = data_objects.at(current_data_object_index);
-		if (obj->getCurrentSensorIndex()!=propbox->getSensorDataList()->GetSelection()) {
-			wxMessageBox(wxT("Das Objekt wurde noch nicht neu berechnet!\nBitte berechnen sie das Objekt neu, um die Maximumssuche fortzusetzen!"),wxT("Fehler"));
+
+	//ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex() > -1) {
+		//aktuelles Objekt
+		ObjectData* obj = wxGetApp().getActiveObject();
+
+		//Ist die Temperaturverteilung aktuell?
+		if (obj->getCurrentSensorIndex()
+				!= propbox->getSensorDataList()->GetSelection()) {
+			wxMessageBox(
+					wxT("Das Objekt wurde noch nicht neu berechnet!\nBitte berechnen sie das Objekt neu, um die Maximumssuche fortzusetzen!"),
+					wxT("Fehler"));
 			return;
 		}
-		wxMessageDialog dlg(this,wxT("Nur Messwertdurchschnitt verwenden? (schneller)"),wxT("Schnelle Methode verwenden?"),wxYES_NO|wxYES_DEFAULT| wxCANCEL);
+
+		//zu verwendende Methode erfragen
+		wxMessageDialog dlg(this,
+				wxT("Nur Messwertdurchschnitt verwenden? (schneller)"),
+				wxT("Schnelle Methode verwenden?"),
+				wxYES_NO | wxYES_DEFAULT | wxCANCEL);
 		int res = dlg.ShowModal();
-		if (res!=wxID_CANCEL) {
-			propbox->getSdTimeline()->findMaxValue(obj,(res == wxID_YES));
+
+		//Soll fortgefahren werden?
+		if (res != wxID_CANCEL) {
+			propbox->getSdTimeline()->findMaxValue(obj, (res == wxID_YES));
 		}
 	}
 }
 void GUIMainWindow::OnSDTLNextMarker(wxCommandEvent &event) {
+
+	//indices aller markierten Zeitpunkte, ist aufsteigend sortiert
 	vector<int>* markers = propbox->getSdTimeline()->getMarkers();
-	if (markers->size()==0) {
-		wxMessageBox(wxT("Es sind keine Analyze-Marker gesetzt!"),wxT("Hinweis"),wxICON_INFORMATION);
+
+	//Sind marker gesetzt?
+	if (markers->size() == 0) {
+		wxMessageBox(wxT("Es sind keine Analyze-Marker gesetzt!"),
+				wxT("Hinweis"), wxICON_INFORMATION);
 	} else {
-		for (size_t i=0;i<markers->size();i++) {
-			if (markers->at(i)>propbox->getSdTimeline()->getValue()) {
+		//nächsten marker suchen
+		for (size_t i = 0; i < markers->size(); i++) {
+			if (markers->at(i) > propbox->getSdTimeline()->getValue()) {
 				propbox->getSdTimeline()->setValue(markers->at(i));
 				break;
 			}
@@ -270,135 +370,228 @@ void GUIMainWindow::OnSDTLNextMarker(wxCommandEvent &event) {
 	}
 }
 void GUIMainWindow::OnSDTLPrevMarker(wxCommandEvent &event) {
+
+	//indices aller markierten Zeitpunkte, ist aufsteigend sortiert
 	vector<int>* markers = propbox->getSdTimeline()->getMarkers();
-	if (markers->size()==0) {
-		wxMessageBox(wxT("Es sind keine Analyze-Marker gesetzt!"),wxT("Hinweis"),wxICON_INFORMATION);
+
+	//Sind marker gesetzt?
+	if (markers->size() == 0) {
+		wxMessageBox(wxT("Es sind keine Analyze-Marker gesetzt!"),
+				wxT("Hinweis"), wxICON_INFORMATION);
 	} else {
-		for (size_t i=0;i<markers->size();i++) {
-			if (markers->at(i)>=propbox->getSdTimeline()->getValue()) {
-				if (i>0) {
-					propbox->getSdTimeline()->setValue(markers->at(i-1));
+		//vorherigen marker suchen
+		for (size_t i = 0; i < markers->size(); i++) {
+
+			//ist die markierte Stelle hinter/an dem aktuell ausgewählte Zeitpunkt?
+			if (markers->at(i) >= propbox->getSdTimeline()->getValue()) {
+				//gibt es eine merkierte Stelle davor?
+				if (i > 0) {
+					//vorherige Stelle verwenden
+					propbox->getSdTimeline()->setValue(markers->at(i - 1));
 				} else {
+					//erste Stelle verwenden
 					propbox->getSdTimeline()->setValue(markers->at(0));
 				}
+
 				break;
 			}
-			if (i==markers->size()-1) {
+
+			//Sind alle markiereten Stellen vor dem aktuellen Zeitpunkt?
+			if (i == markers->size() - 1) {
+				//die naheste verwenden
 				propbox->getSdTimeline()->setValue(markers->at(i));
 			}
 		}
 	}
 }
+
 void GUIMainWindow::OnAutoUpdateChange(wxCommandEvent &event) {
 	if (propbox->getAutoUpdateCeckBox()->IsChecked()) {
 		OnRecalcBtClick(event);
 	}
 }
-void GUIMainWindow::assignCurrentObjectProps() {	//GUI -> object
-	if (current_data_object_index>-1) {
-		ObjectData* obj = data_objects.at(current_data_object_index);
+
+void GUIMainWindow::assignCurrentObjectProps() {
+
+	//Ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex() > -1) {
+		//aktives Objekt
+		ObjectData* obj = wxGetApp().getActiveObject();
+		//Punkt als Dezimaltrennzeichen verwenden
 		setlocale(LC_NUMERIC, "C");
+
+		//Übertragen der Objekt- und Materialeigenschaften aus der Oberfläche in das Objekt
 		obj->setName(string(propbox->getObjNameEdit()->GetValue().ToAscii()));
-		obj->setMaxvolume(atof(propbox->getMaxVolumeEdit()->GetValue().ToAscii()));
+		obj->setMaxvolume(
+				atof(propbox->getMaxVolumeEdit()->GetValue().ToAscii()));
 		obj->setQuality(atof(propbox->getQualityEdit()->GetValue().ToAscii()));
-		obj->setCurrentSensorIndex(propbox->getSensorDataList()->GetSelection());
-		ObjectData* object = data_objects.at(current_data_object_index);
-		SensorData* sd = &object->getSensorDataList()->at(propbox->getSensorDataList()->GetSelection());
+		obj->setCurrentSensorIndex(
+				propbox->getSensorDataList()->GetSelection());
+		SensorData* sd = &obj->getSensorDataList()->at(
+				propbox->getSensorDataList()->GetSelection());
 		if (sd->timed) {
 			sd->current_time_index = propbox->getSdTimeline()->getValue();
 		}
-		ObjectData::MaterialData* mat = &obj->getMaterials()->at(propbox->getCurrentMaterial());
-		mat->name				  = propbox->getMatNameEdit()->GetValue().ToAscii();
-		mat->interpolation_mode   = (Interpolator::InterpolationMode) propbox->getInterpolationModeList()->GetSelection();
-		mat->density   			  = atof(propbox->getDensityEdit()->GetValue().ToAscii());
-		mat->specificheatcapacity = atof(propbox->getSpecificHeatCapEdit()->GetValue().ToAscii());
+		ObjectData::MaterialData* mat = &obj->getMaterials()->at(
+				propbox->getCurrentMaterial());
+		mat->name = propbox->getMatNameEdit()->GetValue().ToAscii();
+		mat->interpolation_mode =
+				(Interpolator::InterpolationMode) propbox->getInterpolationModeList()->GetSelection();
+		mat->density = atof(propbox->getDensityEdit()->GetValue().ToAscii());
+		mat->specificheatcapacity = atof(
+				propbox->getSpecificHeatCapEdit()->GetValue().ToAscii());
 	}
 }
-void GUIMainWindow::updateObjectPropGUI() {		//object -> GUI
-	if (current_data_object_index>-1) {
+
+void GUIMainWindow::updateObjectPropGUI() {
+
+	//Ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex() > -1) {
+		//Es werden keine Events bezüglich der Oberfläche verarbeitet werden
 		updating = true;
-		ObjectData* obj = data_objects.at(current_data_object_index);
+		//aktives Objekt
+		ObjectData* obj = wxGetApp().getActiveObject();
+		//Punkt als Dezimaltrennzeichen verwenden
 		setlocale(LC_NUMERIC, "C");
-		propbox->SetLabel(wxString::FromAscii((obj->getName()+" - Objekteigenschaften:").c_str()));
-		propbox->getObjNameEdit()->SetValue(wxString::FromAscii(obj->getName().c_str()));
-		propbox->getMaxVolumeEdit()->SetValue(wxString::FromAscii(floattostr(obj->getMaxvolume()).c_str()));
-		propbox->getQualityEdit()->SetValue(wxString::FromAscii(floattostr(obj->getQuality()).c_str()));
+
+		//Übertragen der Objekt- und Materialeigenschaften in die GUI.
+		propbox->SetLabel(
+				wxString::FromAscii(
+						(obj->getName() + " - Objekteigenschaften:").c_str()));
+		propbox->getObjNameEdit()->SetValue(
+				wxString::FromAscii(obj->getName().c_str()));
+		propbox->getMaxVolumeEdit()->SetValue(
+				wxString::FromAscii(floattostr(obj->getMaxvolume()).c_str()));
+		propbox->getQualityEdit()->SetValue(
+				wxString::FromAscii(floattostr(obj->getQuality()).c_str()));
 		propbox->getSensorDataList()->Clear();
-		for (unsigned int i=0;i<obj->getSensorDataList()->size();i++) {
-			propbox->getSensorDataList()->Insert(wxString::FromAscii(obj->getSensorDataList()->at(i).name.c_str()),i);
+		for (unsigned int i = 0; i < obj->getSensorDataList()->size(); i++) {
+			propbox->getSensorDataList()->Insert(
+					wxString::FromAscii(
+							obj->getSensorDataList()->at(i).name.c_str()), i);
 		}
-		propbox->getSensorDataList()->SetSelection(obj->getCurrentSensorIndex());
+		propbox->getSensorDataList()->SetSelection(
+				obj->getCurrentSensorIndex());
 		propbox->getMatListBox()->Clear();
-		for (unsigned int i=0;i<obj->getMaterials()->size();i++) {
-			propbox->getMatListBox()->Insert(wxString::FromAscii(obj->getMaterials()->at(i).name.c_str()),i);
+		for (unsigned int i = 0; i < obj->getMaterials()->size(); i++) {
+			propbox->getMatListBox()->Insert(
+					wxString::FromAscii(
+							obj->getMaterials()->at(i).name.c_str()), i);
 		}
 		propbox->getMatListBox()->SetSelection(propbox->getCurrentMaterial());
-		ObjectData::MaterialData* mat = &obj->getMaterials()->at(propbox->getCurrentMaterial());
-		propbox->getMatPropBox()->SetLabel(wxString::FromAscii((mat->name+" - Materialeigenschaften").c_str()));
+		ObjectData::MaterialData* mat = &obj->getMaterials()->at(
+				propbox->getCurrentMaterial());
+		propbox->getMatPropBox()->SetLabel(
+				wxString::FromAscii(
+						(mat->name + " - Materialeigenschaften").c_str()));
 
-		propbox->getInterpolationModeList()->SetSelection(mat->interpolation_mode);
-		propbox->getDensityEdit()->SetValue(wxString::FromAscii(floattostr(mat->density).c_str()));
-		propbox->getSpecificHeatCapEdit()->SetValue(wxString::FromAscii(floattostr(mat->specificheatcapacity).c_str()));
-		propbox->getMatNameEdit()->SetValue(wxString::FromAscii(mat->name.c_str()));
+		propbox->getInterpolationModeList()->SetSelection(
+				mat->interpolation_mode);
+		propbox->getDensityEdit()->SetValue(
+				wxString::FromAscii(floattostr(mat->density).c_str()));
+		propbox->getSpecificHeatCapEdit()->SetValue(
+				wxString::FromAscii(
+						floattostr(mat->specificheatcapacity).c_str()));
+		propbox->getMatNameEdit()->SetValue(
+				wxString::FromAscii(mat->name.c_str()));
 		propbox->resize();
 		updating = false;
+
+		//Oberfläche ist aktuell
 		propbox->getUpToDateLbl()->Hide();
 
-
+		//Anzeige des aktiven Objekts aktualisieren
 		int nPos = toolbar->GetToolPos(ID_CHANGE_ACTIVE_OBJ);
 		wxToolBarToolBase* pTool = toolbar->RemoveTool(ID_CHANGE_ACTIVE_OBJ);
-		pTool->SetLabel(wxString::FromAscii(("aktives Objekt: "+obj->getName()).c_str()));
+		pTool->SetLabel(
+				wxString::FromAscii(
+						("aktives Objekt: " + obj->getName()).c_str()));
 		toolbar->InsertTool(nPos, pTool);
 		toolbar->Realize();
 	}
 }
+
 void GUIMainWindow::OnMaterialSelect(wxCommandEvent &event) {
+
+	//dürfen Events verarbeitet werden?
 	if (!updating) {
 		propbox->setCurrentMaterial(propbox->getMatListBox()->GetSelection());
+		//Objekteigenschaften-Oberfläche aktualisieren
 		updateObjectPropGUI();
 	}
 }
+
 void GUIMainWindow::OnRecalcBtClick(wxCommandEvent& event) {
-	if (current_data_object_index>-1) {
-		ObjectData* obj = data_objects.at(current_data_object_index);
+
+	//Ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex() > -1) {
+		//das aktive Objekt
+		ObjectData* obj = wxGetApp().getActiveObject();
+		//Speichern der Objekteigenschaften
 		assignCurrentObjectProps();
+		//neuberechnen der Temperaturverteilung
 		obj->calculateIO();
+		//aktualisieren des 3D-Fensters
 		gl_context->refresh();
+
+		//Objekteigenschaften aktuell
 		propbox->getUpToDateLbl()->Hide();
+
+		//evtl. Analysedatenübersicht aktualisieren
 		if (analyze_window_valid) {
 			analyzerframe->Update();
 		}
 	}
 }
 void GUIMainWindow::OnAnalyze(wxCommandEvent &event) {
-	if (current_data_object_index>-1) {
+
+	//ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex() > -1) {
+		//Ist das Analysedatenübersichtsfenster noch nicht offen?
 		if (!analyze_window_valid) {
-			analyzerframe = new GUIAnalyzeOutputWindow(this,wxT("Analysedaten"), 100, 100, 800, 300);
+			//erstellen des Analysedatenübersichtsfensters
+			analyzerframe = new GUIAnalyzeOutputWindow(this,
+					wxT("Analysedaten"), 100, 100, 800, 300);
 			analyzerframe->Show(true);
+			//Status vermerken
 			analyze_window_valid = true;
 		}
 	}
 }
 void GUIMainWindow::OnAnalyzePoint(wxCommandEvent &event) {
-	if (current_data_object_index>-1) {
-		GUIAnalyzePointWindow* analyzewin = new GUIAnalyzePointWindow(this,wxT("Analyse an Punkt"),100,100,350,120);
+
+	//ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex() > -1) {
+		//Punktanalysefenster öffnen
+		GUIAnalyzePointWindow* analyzewin = new GUIAnalyzePointWindow(this,
+				wxT("Analyse an Punkt"), 100, 100, 350, 120);
 		analyzewin->Show();
 	} else {
-		wxMessageBox(wxT("Es ist kein Objekt geladen!"),wxT("Fehler"));
+		wxMessageBox(wxT("Es ist kein Objekt geladen!"), wxT("Fehler"));
 	}
 }
 void GUIMainWindow::OnRenderCut(wxCommandEvent &event) {
-	if (current_data_object_index>-1) {
+
+	//ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex() > -1) {
+		//Ist das Fenster für die 2D-Temperaturverteilung offen?
 		if (!render_cut_window_valid) {
-			rendercutwindow = new GUICutRenderWindow(this,wxT("Schnitt brechnen"), 100, 100, 800, 600);
+			//öffnen des Fensters für die 2D-Temperaturverteilung
+			rendercutwindow = new GUICutRenderWindow(this,
+					wxT("Schnitt brechnen"), 100, 100, 800, 600);
 			rendercutwindow->Show(true);
+			//Status vermerken
 			render_cut_window_valid = true;
-			gl_context->Refresh(false,NULL);
+			//3D-Fenster aktualisieren
+			gl_context->Refresh(false, NULL);
 		}
 	}
 }
 void GUIMainWindow::OnImmediateUpdatePropChange(wxCommandEvent &event) {
+
+	//dürfen Events verarbeitet werden?
 	if (!updating) {
+		//Sofortiges Speichern der Objekteigenschaften und Aktualisieren der Oberfläche
 		propbox->getUpToDateLbl()->Show();
 		assignCurrentObjectProps();
 		updateObjectPropGUI();
@@ -407,8 +600,13 @@ void GUIMainWindow::OnImmediateUpdatePropChange(wxCommandEvent &event) {
 }
 
 void GUIMainWindow::OnGeneralPropChange(wxCommandEvent &event) {
+
+	//dürfen Events verarbeitet werden?
 	if (!updating) {
+		//vermerk zu Eingenschaftenänderung
 		propbox->getUpToDateLbl()->Show();
+
+		//automatische Neuberechnung?
 		if (propbox->getAutoUpdateCeckBox()->IsChecked()) {
 			OnRecalcBtClick(event);
 		}
@@ -416,41 +614,79 @@ void GUIMainWindow::OnGeneralPropChange(wxCommandEvent &event) {
 }
 
 void GUIMainWindow::assignViewProps() {
-	if (current_data_object_index>-1) {
-		Renderer::Viewport_info* view = gl_context->getRenderer()->getViewport();
 
-		view->showPoints 		= (Renderer::RenderMode) viewbox->getPointsCheckBox()->GetSelection();
-		view->showEdges 		= (Renderer::RenderMode) viewbox->getEdgesCheckBox()->GetSelection();
-		view->showFaces 		= (Renderer::RenderMode) viewbox->getFacesCheckBox()->GetSelection();
-		view->show_extrapolated = viewbox->getShowExtrapolatedCheckBox()->IsChecked();
-		view->show_sensordata	= viewbox->getShowShowSensorData()->IsChecked();
-		visualization_info.min_visualisation_temp = viewbox->getColorRangeMinEdit()->GetValue();
-		visualization_info.max_visualisation_temp = viewbox->getColorRangeMaxEdit()->GetValue();
-		view->scale				= atof(viewbox->getViewScaleEdit()->GetValue().ToAscii());
-		for (unsigned int i=0;i<data_objects.at(current_data_object_index)->getMaterials()->size();i++) {
-			ObjectData::MaterialData* mat = &data_objects.at(current_data_object_index)->getMaterials()->at(i);
+	//ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex() > -1) {
+		//Die Rendereinstellungen des 3D-Fensters
+		Renderer::Viewport_info* view =
+				gl_context->getRenderer()->getViewport();
+
+		//Übertragen der Visualisierungsoptionen und Rendereinstellungen aus der GUI in die Datenhaltung
+		view->showPoints =
+				(Renderer::RenderMode) viewbox->getPointsCheckBox()->GetSelection();
+		view->showEdges =
+				(Renderer::RenderMode) viewbox->getEdgesCheckBox()->GetSelection();
+		view->showFaces =
+				(Renderer::RenderMode) viewbox->getFacesCheckBox()->GetSelection();
+		view->show_extrapolated =
+				viewbox->getShowExtrapolatedCheckBox()->IsChecked();
+		view->show_sensordata = viewbox->getShowShowSensorData()->IsChecked();
+
+		//Die Visualisierungsoptionen
+		Visualization_info* vis_info = wxGetApp().getVisualizationInfo();
+		vis_info->min_visualisation_temp =
+				viewbox->getColorRangeMinEdit()->GetValue();
+		vis_info->max_visualisation_temp =
+				viewbox->getColorRangeMaxEdit()->GetValue();
+		view->scale = atof(viewbox->getViewScaleEdit()->GetValue().ToAscii());
+
+		//Die Materialsichtbarkeit ist auf das Objekt bezogen
+		for (unsigned int i = 0;
+				i < wxGetApp().getActiveObject()->getMaterials()->size(); i++) {
+			ObjectData::MaterialData* mat =
+					&wxGetApp().getActiveObject()->getMaterials()->at(i);
 			mat->visible = viewbox->getMatVisibilityListBox()->IsChecked(i);
 		}
 	}
 }
 void GUIMainWindow::updateViewPropGUI() {
-	if (current_data_object_index>-1) {
+
+	//ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex() > -1) {
+		//Es werden keine Events bezüglich der Oberfläche verarbeitet werden
 		updating = true;
-		Renderer::Viewport_info* view = gl_context->getRenderer()->getViewport();
-		viewbox->getShowExtrapolatedCheckBox()->SetValue(view->show_extrapolated);
+		//Die Rendereinstellungen des 3D-Fensters
+		Renderer::Viewport_info* view =
+				gl_context->getRenderer()->getViewport();
+
+		//Übertragen der Visualisierungsoptionen und Rendereinstellungen aus der Datenhaltung in die GUI
+		viewbox->getShowExtrapolatedCheckBox()->SetValue(
+				view->show_extrapolated);
 		viewbox->getShowShowSensorData()->SetValue(view->show_sensordata);
 		viewbox->getPointsCheckBox()->SetSelection(view->showPoints);
 		viewbox->getEdgesCheckBox()->SetSelection(view->showEdges);
 		viewbox->getFacesCheckBox()->SetSelection(view->showFaces);
-		viewbox->getColorRangeMinEdit()->SetValue(visualization_info.min_visualisation_temp);
-		viewbox->getColorRangeMaxEdit()->SetValue(visualization_info.max_visualisation_temp);
+
+		//Die Visualisierungsoptionen
+		Visualization_info* vis_info = wxGetApp().getVisualizationInfo();
+		viewbox->getColorRangeMinEdit()->SetValue(
+				vis_info->min_visualisation_temp);
+		viewbox->getColorRangeMaxEdit()->SetValue(
+				vis_info->max_visualisation_temp);
 		viewbox->getViewScaleEdit()->SetValue(floattowxstr(view->scale));
+
+		//Die Materialsichtbarkeit ist auf das Objekt bezogen
 		viewbox->getMatVisibilityListBox()->Clear();
-		for (unsigned int i=0;i<data_objects.at(current_data_object_index)->getMaterials()->size();i++) {
-			ObjectData::MaterialData* mat = &data_objects.at(current_data_object_index)->getMaterials()->at(i);
-			viewbox->getMatVisibilityListBox()->Insert(wxString::FromAscii(mat->name.c_str()),i);
-			viewbox->getMatVisibilityListBox()->Check(i,mat->visible);
+
+		for (unsigned int i = 0;
+				i < wxGetApp().getActiveObject()->getMaterials()->size(); i++) {
+			ObjectData::MaterialData* mat =
+					&wxGetApp().getActiveObject()->getMaterials()->at(i);
+			viewbox->getMatVisibilityListBox()->Insert(
+					wxString::FromAscii(mat->name.c_str()), i);
+			viewbox->getMatVisibilityListBox()->Check(i, mat->visible);
 		}
+
 		updating = false;
 	}
 }
@@ -467,28 +703,39 @@ void GUIMainWindow::OnViewPropSpinChange(wxSpinEvent &event) {
 	}
 }
 
-void GUIMainWindow::OnMenuImportObj(wxCommandEvent &event)
-{
-	wxFileDialog *OpenDialog= new wxFileDialog(this, wxT("Datei öffnen..."), _(""), _(""), _("Wavefront-Objektdateien (*.obj)|*.obj"), wxFD_OPEN|wxFD_FILE_MUST_EXIST);
-	if ( OpenDialog->ShowModal() == wxID_OK )
-	{
+void GUIMainWindow::OnMenuImportObj(wxCommandEvent &event) {
+
+	//Dialog zur Dateiauswahl
+	wxFileDialog *OpenDialog = new wxFileDialog(this, wxT("Datei öffnen..."),
+			_(""), _(""), _("Wavefront-Objektdateien (*.obj)|*.obj"),
+			wxFD_OPEN | wxFD_FILE_MUST_EXIST);
+
+	//Öffnen bestätigt?
+	if (OpenDialog->ShowModal() == wxID_OK) {
+
+		//Versuch, ein neues Objekt zu Laden
 		ObjectData* newobj = new ObjectData();
 		wxString path = OpenDialog->GetPath();
 		int status = newobj->loadFromFile(path);
+
+		//Fehler auswerten
 		switch (status) {
 		case ObjectData::OD_LOAD_ALREADY_LOADED:
-			wxMessageBox(path+wxT(" ist bereits geöffnet!"));
+			wxMessageBox(path + wxT(" ist bereits geöffnet!"));
 			delete newobj;
 			break;
 		case ObjectData::OD_LOAD_INVALID_FILE:
-			wxMessageBox(path+wxT(" ist keine Wavefront(.obj)-Datei."));
+			wxMessageBox(path + wxT(" ist keine Wavefront(.obj)-Datei."));
 			delete newobj;
 			break;
 		case ObjectData::OD_LOAD_INVALID_SENSOR_FILE:
-			wxMessageBox(wxT("Sensordaten konnten nicht geladen werden: ")+(path.BeforeLast('.')+wxT(".(t)sd")));
+			wxMessageBox(
+					wxT("Sensordaten konnten nicht geladen werden: ")
+							+ (path.BeforeLast('.') + wxT(".(t)sd")));
 			delete newobj;
 			break;
 		case ObjectData::OD_SUCCESS:
+			//Objekt im Propgramm aufnehmen
 			addObject(newobj);
 			break;
 		default:
@@ -496,86 +743,141 @@ void GUIMainWindow::OnMenuImportObj(wxCommandEvent &event)
 			delete newobj;
 			break;
 		}
+
+		//aktualisieren der Oberfläche
 		propbox->setCurrentMaterial(0);
 		updateObjectPropGUI();
 		updateViewPropGUI();
+		propbox->getUpToDateLbl()->Hide();
 	}
+
 	OpenDialog->Close();
 	OpenDialog->Destroy();
-	propbox->getUpToDateLbl()->Hide();
 }
+
 void GUIMainWindow::OnMenuImportSD(wxCommandEvent &event) {
-	wxFileDialog *OpenDialog= new wxFileDialog(this, wxT("Datei öffnen..."), _(""), _(""), _("Sensordaten (*.sd)|*.sd"), wxFD_OPEN);
-	if ( OpenDialog->ShowModal() == wxID_OK )
-	{
-		ObjectData* obj = data_objects.at(current_data_object_index);
+
+	//Dialog zur Dateiauswahl
+	wxFileDialog *OpenDialog = new wxFileDialog(this, wxT("Datei öffnen..."),
+			_(""), _(""), _("Sensordaten (*.sd)|*.sd"), wxFD_OPEN);
+
+	//Öffnen bestätigt?
+	if (OpenDialog->ShowModal() == wxID_OK) {
+		//Laden der Sensordaten und verknüpfen mit dem Objekt
+		ObjectData* obj = wxGetApp().getActiveObject();
 		wxString path = OpenDialog->GetPath();
 		obj->addSensorData(path);
+
+		//aktualisieren der Oberfläche
 		updateObjectPropGUI();
 	}
+
 	OpenDialog->Close();
 	OpenDialog->Destroy();
 }
 void GUIMainWindow::OnMenuImportTSD(wxCommandEvent &event) {
-	wxFileDialog *OpenDialog= new wxFileDialog(this, wxT("Datei öffnen..."), _(""), _(""), _("Sensordaten-Pakete (*.tsd)|*.tsd"), wxFD_OPEN);
-	if ( OpenDialog->ShowModal() == wxID_OK )
-	{
-		ObjectData* obj = data_objects.at(current_data_object_index);
+
+	//Dialog zur Dateiauswahl
+	wxFileDialog *OpenDialog = new wxFileDialog(this, wxT("Datei öffnen..."),
+			_(""), _(""), _("Sensordaten-Pakete (*.tsd)|*.tsd"),
+			wxFD_OPEN);
+
+	//Öffnen bestätigt?
+	if (OpenDialog->ShowModal() == wxID_OK) {
+		//Laden der Sensordaten und verknüpfen mit dem Objekt
+		ObjectData* obj = wxGetApp().getActiveObject();
 		wxString path = OpenDialog->GetPath();
 		obj->addTimedData(path);
+
+		//aktualisieren der Oberfläche
 		updateObjectPropGUI();
 	}
 	OpenDialog->Close();
 	OpenDialog->Destroy();
 }
 void GUIMainWindow::OnExportViewportImage(wxCommandEvent &event) {
-	if (current_data_object_index==-1) {
+
+	//Ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex()<0) {
 		cerr << "no object loaded!" << endl;
 		return;
 	}
-	wxFileDialog *SaveDialog= new wxFileDialog(this, wxT("Export nach..."), _(""), _(""), _("Portable Network Graphics (*.png)|*.png"), wxFD_SAVE|wxFD_OVERWRITE_PROMPT);
-	if ( SaveDialog->ShowModal() == wxID_OK )
-	{
-		cout << SaveDialog->GetPath().ToUTF8().data() << endl;
+
+	//Dialog zur Dateiauswahl
+	wxFileDialog *SaveDialog = new wxFileDialog(this, wxT("Export nach..."),
+			_(""), _(""), _("Portable Network Graphics (*.png)|*.png"),
+			wxFD_SAVE | wxFD_OVERWRITE_PROMPT);
+
+	//Speichern bestätigt?
+	if (SaveDialog->ShowModal() == wxID_OK) {
+		//auslesen der 3D-Fensteranzeige
 		gl_context->SetCurrent();
 		wxImage* img = gl_context->getRenderer()->getViewportImage();
+
+		//Grafik in die Datei speichern
 		img->SaveFile(SaveDialog->GetPath());
+
 		img->Destroy();
 	}
+
 	SaveDialog->Close();
 	SaveDialog->Destroy();
 }
 void GUIMainWindow::OnExportVTK(wxCommandEvent &event) {
-	if (current_data_object_index==-1) {
+
+	//Ist ein Objekt geladen?
+	if (wxGetApp().getCurrentDataObjectIndex()<0) {
 		cerr << "no object loaded!" << endl;
 		return;
 	}
-	wxFileDialog *SaveDialog= new wxFileDialog(this, wxT("Export nach..."), _(""), _(""), _("Visualization Toolkit file(*.vtk)|*.vtk"), wxFD_SAVE|wxFD_OVERWRITE_PROMPT);
-	if ( SaveDialog->ShowModal() == wxID_OK )
-	{
+
+	//Dialog zur Dateiauswahl
+	wxFileDialog *SaveDialog = new wxFileDialog(this, wxT("Export nach..."),
+			_(""), _(""), _("Visualization Toolkit file(*.vtk)|*.vtk"),
+			wxFD_SAVE | wxFD_OVERWRITE_PROMPT);
+
+	//Speichern bestätigt?
+	if (SaveDialog->ShowModal() == wxID_OK) {
+		//Export des Objekts
 		Exporter exporter;
-		cout << string(SaveDialog->GetPath().ToUTF8().data()) << endl;
-		exporter.ExportLegacyVTK(string(SaveDialog->GetPath().ToUTF8().data()),data_objects.at(current_data_object_index));
+		exporter.ExportLegacyVTK(string(SaveDialog->GetPath().ToUTF8().data()),
+				wxGetApp().getActiveObject());
 	}
+
 	SaveDialog->Close();
 	SaveDialog->Destroy();
 }
 void GUIMainWindow::OnActiveObjectChangePopup(wxCommandEvent &event) {
-	if (event.GetId()!=0) {
-		setActiveObject(event.GetId()-wxID_HIGHEST-1);
+	if (event.GetId() != 0) {
+		//Die event-ID enthält den ausgewählten Menüpunkt
+		setActiveObject(event.GetId() - wxID_HIGHEST - 1);
 	}
 }
 void GUIMainWindow::OnActiveObjectChange(wxCommandEvent &event) {
+
+	//Popupmenü aller geladenen Objekte
 	wxMenu mnu;
-	mnu.Append(0,wxT("verfügbare Objekte:"));
+	mnu.Append(0, wxT("verfügbare Objekte:"));
 	mnu.AppendSeparator();
-	for (unsigned int i=0;i<data_objects.size();i++) {
-		mnu.Append(wxID_HIGHEST+i+1,wxString::FromAscii(data_objects.at(i)->getName().c_str()));
+
+	//Für alle geladenen Objekte...
+	for (unsigned int i = 0; i < wxGetApp().getDataObjects()->size(); i++) {
+		//Hinzufügen des Objektnamens, ausgewähltes Objekt später an ID des Menüpunkts erkennbar
+		mnu.Append(wxID_HIGHEST + i + 1,
+				wxString::FromAscii(
+						wxGetApp().getDataObjects()->at(i)->getName().c_str()));
 	}
-	mnu.Connect(wxEVT_COMMAND_MENU_SELECTED, (wxObjectEventFunction)&GUIMainWindow::OnActiveObjectChangePopup, NULL, this);
+
+	//Mit dem Event für die Auswahl eines Objekts verknüpfen
+	mnu.Connect(wxEVT_COMMAND_MENU_SELECTED,
+			(wxObjectEventFunction) &GUIMainWindow::OnActiveObjectChangePopup,
+			NULL, this);
+
+	//Anzeigen des Auswahlmenüs
 	PopupMenu(&mnu);
 }
 void GUIMainWindow::OnMenuFileQuit(wxCommandEvent &event) {
+	//Programm schließen
 	Close(false);
 }
 

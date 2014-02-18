@@ -9,80 +9,142 @@
 #include "GUIMainWindow.h"
 #include <iostream>
 #include <sstream>
+#include "../SimpleAnalyzerApp.h"
 #include "../processing/ObjectData.h"
 #include "../processing/Analyzer.h"
 using namespace std;
 
-extern std::vector<ObjectData*> data_objects;
+GUIAnalyzeOutputWindow::GUIAnalyzeOutputWindow(wxWindow * parent,
+		const wxChar *title, int xpos, int ypos, int width, int height) :
+		wxFrame(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height),
+				wxDEFAULT_FRAME_STYLE | wxFRAME_FLOAT_ON_PARENT) {
 
-string ftostr(double val) {
-	ostringstream ss;
-	ss << val;
-	return ss.str();
-}
-GUIAnalyzeOutputWindow::GUIAnalyzeOutputWindow(wxWindow * parent,const wxChar *title, int xpos, int ypos, int width, int height):
-wxFrame(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height), wxDEFAULT_FRAME_STYLE | wxFRAME_FLOAT_ON_PARENT) {
+	//Format für die Zahlendarstellung auf Punkt als Dezimaltrennzeichen setzen
 	setlocale(LC_NUMERIC, "C");
-	table = new wxGrid( this, wxID_ANY, wxPoint( 0, 0 ), wxSize( 600, 300 ) );
-	table->SetSize(0,0,width,height,0);
+	//erstellen und positionieren der Tabelle, wird automatisch in der Größe an das Fenster angepasst
+	table = new wxGrid(this, wxID_ANY, wxPoint(0, 0), wxSize(600, 300));
+	table->SetSize(0, 0, width, height, 0);
+
+	//aktualisieren der Tabelleninhalte
 	Update();
 }
 void GUIAnalyzeOutputWindow::Update() {
+
+	//zurücksetzen der Tabelle
 	table->ClearGrid();
-	table->DeleteRows(0,table->GetRows(), true);
-	table->DeleteCols(0,table->GetCols(), true);
-	table->CreateGrid(0,0);
-	table->SetRowLabelValue(0,wxT("Objekt:"));
-	table->SetRowLabelValue(1,wxT("Sensordatensatz:"));
-	table->SetRowLabelValue(2,wxT("Volumen in m³:"));
-	table->SetRowLabelValue(3,wxT("Energie in kJ:"));
-	table->SetRowLabelValue(4,wxT("Material:"));
-	table->SetRowLabelValue(5,wxT("Volumen in m³:"));
-	table->SetRowLabelValue(6,wxT("Energie in kJ:"));
+	table->DeleteRows(0, table->GetRows(), true);
+	table->DeleteCols(0, table->GetCols(), true);
+	table->CreateGrid(0, 0);
+
+	//Erstellen der Zeilenbezeichnungen
+	table->SetRowLabelValue(0, wxT("Objekt:"));
+	table->SetRowLabelValue(1, wxT("Sensordatensatz:"));
+	table->SetRowLabelValue(2, wxT("Volumen in m³:"));
+	table->SetRowLabelValue(3, wxT("Energie in kJ:"));
+	table->SetRowLabelValue(4, wxT("Material:"));
+	table->SetRowLabelValue(5, wxT("Volumen in m³:"));
+	table->SetRowLabelValue(6, wxT("Energie in kJ:"));
+
+	//Setzen der Tabelleneinstellungen
 	table->SetRowLabelSize(150);
 	table->SetColLabelSize(0);
-	table->SetDefaultColSize(100,true);
-	int obj_prop_count = 3;
-	int material_prop_cout = 3;
-	int all_sd_count = 0;
-	int all_mat_cell_count = 0;
-	table->AppendRows(obj_prop_count+material_prop_cout+1,true);
-	for (unsigned int o=0;o<data_objects.size();o++) {
-		ObjectData* obj = data_objects.at(o);
-		Analyzer::AnalyzerData_object data;
-		Analyzer analyzer;
-		analyzer.analyzeObject(data_objects.at(o),&data);
-		int matcount = obj->getMaterials()->size();
-		int sdcount  = data.data_sets.size();
-		table->AppendCols(sdcount*matcount,true);
-		table->SetCellSize(0,all_mat_cell_count , 1, matcount*sdcount);
-		table->SetCellValue(0,all_mat_cell_count,wxString::FromAscii(obj->getName().c_str()));
-		table->SetCellAlignment(wxALIGN_CENTRE,0,all_mat_cell_count);
-		int materialcells = 0;
-		for (int s=0;s<sdcount;s++) {
-			Analyzer::AnalyzerData_dataset* data_set = &data.data_sets.at(s);
-			for (int i=0;i<obj_prop_count;i++) {
-				table->SetCellSize(i+1,all_mat_cell_count+s*matcount , 1, matcount);
-			};
-			table->SetCellValue(1,all_mat_cell_count+s*matcount,wxString::FromAscii(data_set->name.c_str()));
-			table->SetCellAlignment(wxALIGN_CENTRE,1,all_mat_cell_count+s*matcount);
-			table->SetCellValue(2,all_mat_cell_count+s*matcount,wxString::FromAscii(ftostr(data.volume).c_str()));
-			table->SetCellValue(3,all_mat_cell_count+s*matcount,wxString::FromAscii(ftostr(data_set->heat_energy).c_str()));
+	table->SetDefaultColSize(100, true);
 
-			for (int i=0;i<matcount;i++) {
+	//Anzahl der dargestellten Objekt- und Materialeigenschaften
+	const int OBJECT_PROPERTY_COUNT = 3;
+	const int MATERIAL_PROPERTY_COUNT = 3;
+
+	//erstellen der Zeilen der Tabelle
+	table->AppendRows(OBJECT_PROPERTY_COUNT + MATERIAL_PROPERTY_COUNT + 1, true);
+
+	//Breite der Tabelle in Zellen (für Zellenindices benötigt)
+	int all_mat_cell_count = 0;
+
+	//Für alle Objekte...
+	for (unsigned int o = 0; o < wxGetApp().getDataObjects()->size(); o++) {
+		//aktuelles Objekt
+		ObjectData* obj = wxGetApp().getDataObjects()->at(o);
+		//Objekt zum speichern der Analysedaten
+		Analyzer::AnalyzerData_object data;
+
+		//Analysieren des Objekts
+		Analyzer analyzer;
+		analyzer.analyzeObject(wxGetApp().getDataObjects()->at(o), &data);
+
+		//Anzahl der Materialien des Objekts
+		int matcount = obj->getMaterials()->size();
+		//Anzahl der Sensordatensätze des Objekts
+		int sdcount = data.data_sets.size();
+
+		//Die benötigten Spalten hinzufügen
+		table->AppendCols(sdcount * matcount, true);
+
+		//Die Spalte für den Objektnamen auf volle Breite vergrößern
+		table->SetCellSize(0, all_mat_cell_count, 1, matcount * sdcount);
+		//Objektnamen eintragen
+		table->SetCellValue(0, all_mat_cell_count,
+				wxString::FromAscii(obj->getName().c_str()));
+		// Objektnamen zentrieren
+		table->SetCellAlignment(wxALIGN_CENTRE, 0, all_mat_cell_count);
+
+		//Anzahl der bereits mit Materialdaten gefüllten Zellen
+		int materialcells = 0;
+
+		//Für alle Sensordatensätze
+		for (int s = 0; s < sdcount; s++) {
+			//Analysedaten für einen Datensatz
+			Analyzer::AnalyzerData_dataset* data_set = &data.data_sets.at(s);
+
+			//Zellen für den Datensatznamen über alle Materialzellen vergrößern
+			for (int i = 0; i < OBJECT_PROPERTY_COUNT; i++) {
+				table->SetCellSize(i + 1, all_mat_cell_count + s * matcount, 1,
+						matcount);
+			};
+
+			//Den Namen des Datensatzes eintragen
+			table->SetCellValue(1, all_mat_cell_count + s * matcount,
+					wxString::FromAscii(data_set->name.c_str()));
+			//Den Namen des Datensatzes zentrieren
+			table->SetCellAlignment(wxALIGN_CENTRE, 1,
+					all_mat_cell_count + s * matcount);
+
+			//Die Analyseergebnisse für den Sensordatensatz eintragen
+			table->SetCellValue(2, all_mat_cell_count + s * matcount,
+					wxString::FromAscii(floattostr(data.volume).c_str()));
+			table->SetCellValue(3, all_mat_cell_count + s * matcount,
+					wxString::FromAscii(floattostr(data_set->heat_energy).c_str()));
+
+			//Für alle Materialien...
+			for (int i = 0; i < matcount; i++) {
+				//Analysedaten für einen Material
 				Analyzer::AnalyzerData_material* mat = &data_set->mat_data.at(i);
+				//Zelle Mitzählen
 				materialcells++;
-				table->SetCellValue(obj_prop_count+1,all_mat_cell_count+s*matcount+i,wxString::FromAscii(mat->name.c_str()));
-				table->SetCellAlignment(wxALIGN_CENTRE,obj_prop_count+1,all_mat_cell_count+s*matcount+i);
-				table->SetCellValue(obj_prop_count+2,all_mat_cell_count+s*matcount+i,wxString::FromAscii(ftostr(mat->volume).c_str()));
-				table->SetCellValue(obj_prop_count+3,all_mat_cell_count+s*matcount+i,wxString::FromAscii(ftostr(mat->heat_energy).c_str()));
+				//Materialnamen eintragen
+				table->SetCellValue(OBJECT_PROPERTY_COUNT + 1,
+						all_mat_cell_count + s * matcount + i,
+						wxString::FromAscii(mat->name.c_str()));
+				//Materialnamen zentrieren
+				table->SetCellAlignment(wxALIGN_CENTRE, OBJECT_PROPERTY_COUNT + 1,
+						all_mat_cell_count + s * matcount + i);
+
+				//Die Analyseergebnisse für das Material eintragen
+				table->SetCellValue(OBJECT_PROPERTY_COUNT + 2,
+						all_mat_cell_count + s * matcount + i,
+						wxString::FromAscii(floattostr(mat->volume).c_str()));
+				table->SetCellValue(OBJECT_PROPERTY_COUNT + 3,
+						all_mat_cell_count + s * matcount + i,
+						wxString::FromAscii(floattostr(mat->heat_energy).c_str()));
 			}
 		}
-		all_mat_cell_count+=materialcells;
-		all_sd_count += sdcount;
+		//Materialzellen mitzählen
+		all_mat_cell_count += materialcells;
 	}
 }
+
 GUIAnalyzeOutputWindow::~GUIAnalyzeOutputWindow() {
+
+	//Vermerken des Fensterschließens im Hauptfenster
 	GUIMainWindow* parent = (GUIMainWindow*) GetParent();
 	parent->setAnalyzeWindowStatus(false);
 }

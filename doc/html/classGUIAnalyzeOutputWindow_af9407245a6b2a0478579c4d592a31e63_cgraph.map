@@ -3,7 +3,7 @@
 <area shape="rect" id="node5" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="468,376,631,405"/>
 <area shape="rect" id="node105" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="700,1215,865,1244"/>
 <area shape="rect" id="node111" href="$classObjectData.xhtml#af2ba5c8a722ad3ba3ff25930cece3478" title="Gibt den Namen des Objekts zurück. " alt="" coords="475,873,624,903"/>
-<area shape="rect" id="node113" href="$GUIAnalyzeOutputWindow_8cpp.xhtml#a9bf9afb451f3cc3da4768bc5dd87724b" title="ftostr" alt="" coords="524,927,575,956"/>
+<area shape="rect" id="node113" href="$namespaceUtils.xhtml#a76b506eef525971ab3ccb328f4ca879d" title="Hilfsfunktion zur Umwandlung einer Zahl in einen String. " alt="" coords="496,927,603,956"/>
 <area shape="rect" id="node7" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. " alt="" coords="935,250,1132,297"/>
 <area shape="rect" id="node9" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. " alt="" coords="681,255,884,284"/>
 <area shape="rect" id="node11" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="Setzt den Index des aktuell verwendeten Sensordatensatzes. " alt="" coords="684,307,881,354"/>

@@ -1,0 +1,10 @@
+# All Target
+all: simpleanalyzer
+
+# Tool invocations
+simpleanalyzer: $(OBJS) $(USER_OBJS)
+	doxygen doxygen.conf
+
+distclean: clean
+.PHONY: install 
+

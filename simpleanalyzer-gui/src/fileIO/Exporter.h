@@ -25,20 +25,29 @@ public:
 	 * Der Konstruktor.
 	 */
 	Exporter();
+
 	/**
 	 * Exportiert die aktuell berechnete dreidimensionale Temperaturverteilung und das Modell als VTK-Datei.
 	 * @return Der Fehlercode.
 	 */
 	ObjectData::ObjectDataStatus ExportLegacyVTK(string filename,ObjectData* data);
+
 	/**
 	 * Exportiert die zweidimensionale Temperaturverteilung (Schnitt durch das Modell) als csv-Datei.
 	 * @return Der Fehlercode.
 	 */
 	ObjectData::ObjectDataStatus ExportCutCSV(string filename,float* values,CutRender_info* info);
+
 	/**
 	 * Der Destruktor.
 	 */
 	virtual ~Exporter();
+
+protected:
+	/**
+	 * Das in der .csv-Datei verwendete Separatorzeichen.
+	 */
+	const char* CSV_SEPARATOR;
 };
 
 #endif /* EXPORTER_H_ */

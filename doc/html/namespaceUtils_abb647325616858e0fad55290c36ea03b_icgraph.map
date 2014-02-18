@@ -1,5 +1,5 @@
 <map id="Utils::clampHue" name="Utils::clampHue">
-<area shape="rect" id="node3" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="215,13,316,43"/>
+<area shape="rect" id="node3" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="215,13,316,43"/>
 <area shape="rect" id="node9" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Zeichnet die Tetraeder eines Materials des Objekts. " alt="" coords="175,67,356,96"/>
 <area shape="rect" id="node11" href="$classRenderer.xhtml#ad2eac0343aef1abd05ed95b1b364785f" title="Zeichnet Sensordaten als Punkte. " alt="" coords="172,120,359,149"/>
 <area shape="rect" id="node13" href="$classRenderer.xhtml#acb6c468b92221cf8a121b87a70a3da0c" title="Zeichnet die Elemente eines Materials des Objekts. " alt="" coords="183,173,348,203"/>

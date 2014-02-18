@@ -1,11 +1,11 @@
-<map id="simpleanalyzer&#45;gui/src/GUI" name="simpleanalyzer&#45;gui/src/GUI">
+<map id="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI" name="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI">
 <area shape="rect" id="node2" href="dir_6d3502ad7ea637015e23cd162a030a27.xhtml" title="GUI" alt="" coords="79,55,151,103"/>
 <area shape="rect" id="node3" href="dir_2349201c047e2c0ea730b171cb17a436.xhtml" title="fileIO" alt="" coords="5,151,77,199"/>
 <area shape="rect" id="edge9" href="dir_000007_000006.xhtml" title="3" alt="" coords="74,132,82,150"/>
 <area shape="rect" id="node4" href="dir_3ae5ff8f903e04726d22262ee65ea878.xhtml" title="libraries" alt="" coords="79,343,151,391"/>
 <area shape="rect" id="edge11" href="dir_000007_000008.xhtml" title="4" alt="" coords="122,316,130,333"/>
 <area shape="rect" id="node5" href="dir_bee17b6d98f1147c834a49f1eb486f67.xhtml" title="processing" alt="" coords="21,247,107,295"/>
-<area shape="rect" id="edge13" href="dir_000007_000010.xhtml" title="20" alt="" coords="80,223,95,241"/>
+<area shape="rect" id="edge13" href="dir_000007_000010.xhtml" title="21" alt="" coords="80,223,95,241"/>
 <area shape="rect" id="edge3" href="dir_000006_000010.xhtml" title="4" alt="" coords="49,218,57,235"/>
 <area shape="rect" id="edge5" href="dir_000010_000006.xhtml" title="1" alt="" coords="48,210,56,227"/>
 <area shape="rect" id="edge7" href="dir_000010_000008.xhtml" title="5" alt="" coords="97,313,105,331"/>

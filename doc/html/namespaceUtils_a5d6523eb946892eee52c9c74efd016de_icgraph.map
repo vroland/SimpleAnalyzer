@@ -1,6 +1,6 @@
 <map id="Utils::hsvToRgb" name="Utils::hsvToRgb">
 <area shape="rect" id="node3" href="$classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="Zeichnet die Temperaturskala neu. " alt="" coords="195,71,336,118"/>
-<area shape="rect" id="node15" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="215,15,316,44"/>
+<area shape="rect" id="node15" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="215,15,316,44"/>
 <area shape="rect" id="node18" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Zeichnet die Tetraeder eines Materials des Objekts. " alt="" coords="175,141,356,171"/>
 <area shape="rect" id="node20" href="$classRenderer.xhtml#ad2eac0343aef1abd05ed95b1b364785f" title="Zeichnet Sensordaten als Punkte. " alt="" coords="172,195,359,224"/>
 <area shape="rect" id="node22" href="$classRenderer.xhtml#acb6c468b92221cf8a121b87a70a3da0c" title="Zeichnet die Elemente eines Materials des Objekts. " alt="" coords="183,248,348,277"/>

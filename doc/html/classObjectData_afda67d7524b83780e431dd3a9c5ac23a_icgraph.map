@@ -1,8 +1,8 @@
 <map id="ObjectData::getMaterials" name="ObjectData::getMaterials">
 <area shape="rect" id="node3" href="$classExporter.xhtml#a59d03f0a582498e15397230b70ad1e80" title="Exportiert die aktuell berechnete dreidimensionale Temperaturverteilung und das Modell als VTK&#45;Datei..." alt="" coords="235,5,419,35"/>
-<area shape="rect" id="node7" href="$classImporter.xhtml#a5013417fb7556dce65dba1ed3aec4e50" title="Lädt Objektdaten aus einer .obj&#45;Datei. " alt="" coords="260,59,393,88"/>
+<area shape="rect" id="node7" href="$classImporter.xhtml#aaa567a75272f300157648ffaa9b101c2" title="Lädt Objektdaten aus einer .obj&#45;Datei. " alt="" coords="260,59,393,88"/>
 <area shape="rect" id="node13" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="499,258,677,305"/>
-<area shape="rect" id="node17" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="276,163,377,192"/>
+<area shape="rect" id="node17" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="276,163,377,192"/>
 <area shape="rect" id="node19" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="511,133,665,179"/>
 <area shape="rect" id="node24" href="$classGUIMainWindow.xhtml#a1cb2c4f39b9ba971d51ab682f29b7f23" title="Überträgt die in der GUI eingetragenen Objekteigenschaften in das aktive Objekt. " alt="" coords="221,266,432,313"/>
 <area shape="rect" id="node26" href="$classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0" title="Überträgt die Eigenschaften des aktiven Objekts in die GUI. " alt="" coords="224,335,429,382"/>

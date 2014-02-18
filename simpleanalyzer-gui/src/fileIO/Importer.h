@@ -17,28 +17,33 @@ using namespace std;
  */
 class Importer {
 public:
+
 	/**
 	 * Der Konstruktor.
 	 */
 	Importer();
+
 	/**
 	 * Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft
 	 * diese mit dem Objekt.
 	 * @return Der Fehlercode.
 	 */
-	ObjectData::ObjectDataStatus LoadSensorData(const char* filename,ObjectData* data);
+	ObjectData::ObjectDataStatus LoadSensorData(string filename,ObjectData* data);
+
 	/**
 	 * Lädt zeitgesteuerte Sensordaten und Verknüpft
 	 * diese mit dem Objekt.
 	 * @return Der Fehlercode.
 	 */
-	ObjectData::ObjectDataStatus LoadTimedData(const char* filename,ObjectData* data);
+	ObjectData::ObjectDataStatus LoadTimedData(string filename,ObjectData* data);
+
 	/**
 	 * Lädt Objektdaten aus einer .obj-Datei. Das Objekt
 	 * ist zwar schon im Speicher erstellt, wird aber erst durch diese Methode mit Daten gefüllt.
 	 * @return Der Fehlercode.
 	 */
-	ObjectData::ObjectDataStatus ImportObj(const char* filename,ObjectData* data);
+	ObjectData::ObjectDataStatus ImportObj(string filename,ObjectData* data);
+
 	/**
 	 * Der Destruktor.
 	 */

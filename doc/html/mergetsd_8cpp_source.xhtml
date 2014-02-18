@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.4"/>
-<title>Simple Analyzer: mergetsd/src/mergetsd.cpp Quellcode</title>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/mergetsd/src/mergetsd.cpp Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,179 +107,315 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="namespaceMergeTSD.xhtml">   21</a></span>&#160;<span class="keyword">namespace </span>MergeTSD {</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="structMergeTSD_1_1Options.xhtml">   25</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structMergeTSD_1_1Options.xhtml" title="Strunktur für die Programmeinstellungen. ">Options</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="structMergeTSD_1_1Options.xhtml#ac83ae2ea134ea0377d85739d2436ccff">   26</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structMergeTSD_1_1Options.xhtml#ac83ae2ea134ea0377d85739d2436ccff" title="Ein zusätzlicher Versatz, der zu den Zeitstempeln der zweiten Datei addiert wird. ...">offset</a>;             </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="structMergeTSD_1_1Options.xhtml#a6fa812feda6841eff6455772f6f42980">   27</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structMergeTSD_1_1Options.xhtml#a6fa812feda6841eff6455772f6f42980" title="Maximale Zeitdifferenz zwischen den Zeitstempeln um die Datensätze zusammenführen zu können...">max_dt</a>;    </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="structMergeTSD_1_1Options.xhtml#a9d6eb15b0c9103bb0f3a2cbe098cb9a1">   28</a></span>&#160;        <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="structMergeTSD_1_1Options.xhtml#a9d6eb15b0c9103bb0f3a2cbe098cb9a1" title="Ein Versatz, der zu den Zeitstempeln der zweiten Datei addiert wird. ">delta</a>;         </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="structMergeTSD_1_1Options.xhtml#a59137e1e5d0466ddce1e5b70afec8f86">   29</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="structMergeTSD_1_1Options.xhtml#a59137e1e5d0466ddce1e5b70afec8f86" title="Delta automatisch aus der Differenz der jeweils ersten Zeitstempel der Eingabedateien ermitteln...">auto_delta</a>;        </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    } <a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>;     </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="namespaceMergeTSD.xhtml#a3e10ba5891c92ec49480c12330f7d87c">   37</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(<span class="keywordtype">string</span> data,<span class="keywordtype">int</span> n) { <span class="comment">//Gibt den n-ten durch Leerzeichen abgetrennten Block zurück</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">int</span> pos = 0;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">int</span> prevPos = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">size_t</span> curPos = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        curPos = data.find(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (curPos==data.npos) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        pos = curPos;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;n;i++) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            curPos = data.find(<span class="stringliteral">&quot; &quot;</span>,pos+1);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (curPos==data.npos) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">if</span> (n-i&gt;1) {    <span class="comment">//Mehr Blöcke als vorhanden nachgefragt</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    prevPos = pos+1;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    pos = data.size();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            prevPos = pos+1;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            pos = curPos;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> data.substr(prevPos,pos-(prevPos));</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="namespaceMergeTSD.xhtml#ad380b92e7e702006d21b99bf6ebbe5cf">   71</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="namespaceMergeTSD.xhtml#ad380b92e7e702006d21b99bf6ebbe5cf" title="Sammelt Daten aus einer .tsd-Datei. ">parseFile</a>(<span class="keywordtype">string</span> filename,vector&lt;long&gt; &amp;timestamps,vector&lt;string&gt; &amp;names,vector&lt;string&gt; &amp;data) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        ifstream file;                  <span class="comment">// data file</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        file.open(filename.c_str());</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span> (!file.is_open()) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;file \&quot;&quot;</span>&lt;&lt;filename&lt;&lt;<span class="stringliteral">&quot;\&quot; not found!&quot;</span>&lt;&lt;endl;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">string</span> line;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">while</span> (file.good()) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            getline(file,line);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (line==<span class="stringliteral">&quot;&quot;</span>) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">if</span> (line.at(0)==<span class="charliteral">&#39;t&#39;</span>) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                timestamps.resize(timestamps.size()+1,atoi(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(line,1).c_str()));</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                data.resize(data.size()+1,<span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (line.at(0)==<span class="charliteral">&#39;n&#39;</span>) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                names.resize(names.size()+1,<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747">getTextBlock</a>(line,1));</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span> (line.at(0)==<span class="charliteral">&#39;s&#39;</span>) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                data.at(data.size()-1)+=line+<span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="classTsdMerger.xhtml">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTsdMerger.xhtml" title="Zusammenführen zweier .tsd-Dateien. ">TsdMerger</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="structTsdMerger_1_1Options.xhtml">   27</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structTsdMerger_1_1Options.xhtml" title="Strunktur für die Programmeinstellungen. ">Options</a> {</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="structTsdMerger_1_1Options.xhtml#a01b3881ab882a6ec9690220bef2207b8">   28</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#a01b3881ab882a6ec9690220bef2207b8" title="Ein zusätzlicher Versatz, der zu den Zeitstempeln der zweiten Datei addiert wird. ...">offset</a>;             </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="structTsdMerger_1_1Options.xhtml#aa8403cbade9ca78ab6f5be07ad270c15">   29</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#aa8403cbade9ca78ab6f5be07ad270c15" title="Maximale Zeitdifferenz zwischen den Zeitstempeln um die Datensätze zusammenführen zu können...">max_dt</a>;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="structTsdMerger_1_1Options.xhtml#ac64f16f7048749aceb1f3368344ea8a8">   30</a></span>&#160;        <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#ac64f16f7048749aceb1f3368344ea8a8" title="Ein Versatz, der zu den Zeitstempeln der zweiten Datei addiert wird. ">delta</a>;         </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="structTsdMerger_1_1Options.xhtml#a34cacae19241161f15637c7fcab5ac0a">   31</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#a34cacae19241161f15637c7fcab5ac0a" title="Delta automatisch aus der Differenz der jeweils ersten Zeitstempel der Eingabedateien ermitteln...">auto_delta</a>;        </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    } opts; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="classTsdMerger.xhtml#a413e3835ebd34a810a19465525bb6cbb">   40</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classTsdMerger.xhtml#a413e3835ebd34a810a19465525bb6cbb" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(<span class="keywordtype">string</span> data, <span class="keywordtype">int</span> n) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">//Position des abschließenden Leerzeichens für den ersten Block</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">size_t</span> position = data.find(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">//Speicher für das Ende des vorherigen Blocks</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">size_t</span> previousPos = 0;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">//Ist der String Leerzeichenlos?</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> (position == data.npos) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">//Durchlaufen aller Textblöcke bis zum gewünschten Index</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; i++) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="comment">//aus Ende des verherigen Blocks den Anfang des aktuellen Berechnen.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            previousPos = position + 1;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="comment">//Position des nächsten Blocks suchen</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            position = data.find(<span class="stringliteral">&quot; &quot;</span>, position + 1);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="comment">//Ende der Zeile erreicht?</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span> (position == data.npos) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="comment">//Ist der Index außerhalb des möglichen Bereichs?</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordflow">if</span> (n - 1 &gt; i) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">//Zurückgeben des aktuellen Textblocks</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> data.substr(previousPos, position - (previousPos));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="classTsdMerger.xhtml#aed81153be336c48a43e2663e39fa341d">   80</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classTsdMerger.xhtml#aed81153be336c48a43e2663e39fa341d" title="Sammelt Daten aus einer .tsd-Datei. ">parseFile</a>(<span class="keywordtype">string</span> filename, <a class="code" href="classstd_1_1vector.xhtml">vector&lt;long&gt;</a> &amp;timestamps,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="classstd_1_1vector.xhtml">vector&lt;string&gt;</a> &amp;names, <a class="code" href="classstd_1_1vector.xhtml">vector&lt;string&gt;</a> &amp;data) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        ifstream file;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">//Öffnen der Eingabedatei</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        file.open(filename.c_str());</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">//Öffnen erfolgreich?</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span> (!file.is_open()) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;file \&quot;&quot;</span> &lt;&lt; filename &lt;&lt; <span class="stringliteral">&quot;\&quot; not found!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="comment">//Datei nicht gefunden</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        file.close();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="namespaceMergeTSD.xhtml#a77cf0d82e2e5257abde3e667be3299f5">  102</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="namespaceMergeTSD.xhtml#a77cf0d82e2e5257abde3e667be3299f5" title="Liest die Programmargumente um die Eingabedateien anhand der Zeitstempel in eine .tsd-Datei zusammen zu führen. ">merge</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.auto_delta = 1;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.offset     = 0;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.max_dt     = 3;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">int</span> i=0;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">string</span> input1;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">string</span> input2;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">string</span> output_file;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">while</span> (i&lt;argc-1) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            i++;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordtype">string</span> arg = string(argv[i]);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">if</span> (arg==<span class="stringliteral">&quot;-i1&quot;</span> || arg==<span class="stringliteral">&quot;in1&quot;</span>) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                input1 = string(argv[i+1]);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                i++;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">if</span> (arg==<span class="stringliteral">&quot;-i2&quot;</span> || arg==<span class="stringliteral">&quot;in2&quot;</span>) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                input2 = string(argv[i+1]);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                i++;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">if</span> (arg==<span class="stringliteral">&quot;-out&quot;</span> || arg==<span class="stringliteral">&quot;-o&quot;</span>) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                output_file = string(argv[i+1]);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                i++;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">if</span> (arg==<span class="stringliteral">&quot;-offset&quot;</span>) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.offset = atoi(argv[i+1]);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                i++;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">if</span> (arg==<span class="stringliteral">&quot;-max-dt&quot;</span>) {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.max_dt = atoi(argv[i+1]);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.max_dt&lt;0) {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    cerr &lt;&lt; <span class="stringliteral">&quot;max-dt (max time difference) must be positive!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                i++;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <span class="keywordflow">if</span> (arg==<span class="stringliteral">&quot;-auto-offset&quot;</span>) {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <span class="keywordtype">string</span> val = string(argv[i+1]);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                transform(val.begin(), val.end(), val.begin(), ::tolower);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keywordflow">if</span> (val==<span class="stringliteral">&quot;true&quot;</span> || val==<span class="stringliteral">&quot;1&quot;</span>) {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                    <a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.auto_delta = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                    <span class="keywordflow">if</span> (val==<span class="stringliteral">&quot;false&quot;</span> || val==<span class="stringliteral">&quot;0&quot;</span>) {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                        <a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.auto_delta = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                        cerr &lt;&lt; <span class="stringliteral">&quot;invalid value for -auto-offset! possible values are true/false or 1/0!&quot;</span>&lt;&lt;endl;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                    }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                }</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                i++;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">if</span> (arg==<span class="stringliteral">&quot;-h&quot;</span>) {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                cout &lt;&lt; <span class="stringliteral">&quot;mergetsd merges two timed sensor data (tsd) files into one.\n&quot;</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;usage: mergetsd ARGUMENT1 VALUE1 ARGUMENT2 VALUE2...\n&quot;</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;program arguments: \n&quot;</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;\t-i1,\t-in1\t\tpath to first tsd input file (defines dataset names)\n\n&quot;</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;\t-i2,\t-in2\t\tpath to second tsd input file\n\n&quot;</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;\t-o,\t-out\t\tpath to tsd output file\n\n&quot;</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;\t\t-max-dt\t\tmaximum absolute value of the time difference between\n&quot;</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;\t\t\t\ttwo datasets to be merged (optional, default 3) in seconds\n\n&quot;</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;\t\t-offset\t\toffset added to time values of second input file in seconds\n&quot;</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;\t\t\t\t(if -auto-offset is true additionally to the auto-offset, can be negative, optional, default 0)\n\n&quot;</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;\t\t-auto-offset\tadd an offset of the difference of the first time value to the second time value\n&quot;</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;\t\t\t\tto the second time value (can be true/false or 1/0, optional, default true)\n\n&quot;</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                     &lt;&lt; <span class="stringliteral">&quot;\t-h,\t-help\t\tprint this help\n\n&quot;</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;invalid argument: &quot;</span> &lt;&lt; argv[i] &lt;&lt; endl;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        vector&lt;long&gt; timestamps1;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        vector&lt;string&gt; names1;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        vector&lt;string&gt; data1;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        vector&lt;long&gt; timestamps2;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        vector&lt;string&gt; names2;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        vector&lt;string&gt; data2;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespaceMergeTSD.xhtml#ad380b92e7e702006d21b99bf6ebbe5cf" title="Sammelt Daten aus einer .tsd-Datei. ">parseFile</a>(input1,timestamps1,names1,data1)) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespaceMergeTSD.xhtml#ad380b92e7e702006d21b99bf6ebbe5cf" title="Sammelt Daten aus einer .tsd-Datei. ">parseFile</a>(input2,timestamps2,names2,data2)) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.auto_delta) <a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.delta = timestamps1.at(0)-(timestamps2.at(0));</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordtype">int</span> matched_datasets = 0;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        ofstream outfile;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        outfile.open(output_file.c_str());</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">if</span> (!outfile.good()) {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;file \&quot;&quot;</span>&lt;&lt;output_file&lt;&lt;<span class="stringliteral">&quot;\&quot; could not be created!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0;i&lt;timestamps1.size();i++) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0;j&lt;timestamps2.size();j++) {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                <span class="keywordtype">int</span> delta_t = (timestamps1.at(i)-(timestamps2.at(j))+<a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.offset)-<a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.delta;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)abs(delta_t)&lt;=<a class="code" href="namespaceCSVToSD.xhtml#a16dddcd8b3566666b93a413bbfec206e" title="Hält die verwendeten Programmeinstellungen. ">opts</a>.max_dt) {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                    outfile &lt;&lt; <span class="stringliteral">&quot;t &quot;</span>&lt;&lt;timestamps1.at(i) &lt;&lt; endl;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                    outfile &lt;&lt; <span class="stringliteral">&quot;n &quot;</span>&lt;&lt;names1.at(i) &lt;&lt; endl;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                    outfile &lt;&lt; data1.at(i);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                    outfile &lt;&lt; data2.at(j);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                    outfile &lt;&lt; endl;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                    matched_datasets++;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        outfile.close();</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;merged &quot;</span>&lt;&lt;matched_datasets&lt;&lt;<span class="stringliteral">&quot; data sets&quot;</span>&lt;&lt;endl;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00210"></a><span class="lineno"><a class="code" href="mergetsd_8cpp.xhtml#a0ddf1224851353fc92bfbff6f499fa97">  210</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="csvtosd_2main_8cpp.xhtml#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceMergeTSD.xhtml#a77cf0d82e2e5257abde3e667be3299f5" title="Liest die Programmargumente um die Eingabedateien anhand der Zeitstempel in eine .tsd-Datei zusammen zu führen. ">MergeTSD::merge</a>(argc,argv);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">string</span> line;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">//Alle Zeilen...</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">while</span> (file.good()) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            getline(file, line);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="comment">//Leerzeilen ignorieren</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">if</span> (line == <span class="stringliteral">&quot;&quot;</span>) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="comment">//Zeitstempel eines Datensatzes lesen</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">if</span> (line.at(0) == <span class="charliteral">&#39;t&#39;</span>) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                timestamps.resize(timestamps.size() + 1,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                        atoi(<a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(line, 1).c_str()));</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                data.resize(data.size() + 1, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="comment">//Namen eines Datensatzes lesen</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">if</span> (line.at(0) == <span class="charliteral">&#39;n&#39;</span>) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                names.resize(names.size() + 1, <a class="code" href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">getTextBlock</a>(line, 1));</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="comment">//Daten des Datensatzes lesen</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">if</span> (line.at(0) == <span class="charliteral">&#39;s&#39;</span>) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                data.at(data.size() - 1) += line + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        file.close();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="comment">//Lesen der Datei erfolgreich</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="code" href="classTsdMerger.xhtml#a28edc421a3ee073b63448740fe1184ea">  138</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classTsdMerger.xhtml#a28edc421a3ee073b63448740fe1184ea" title="Wertet die Programmargumente aus. ">parseArguments</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[], <span class="keywordtype">string</span>&amp; input1,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordtype">string</span>&amp; input2, <span class="keywordtype">string</span>&amp; output_file) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="comment">//Für alle Argumente...</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; argc; i++) {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="comment">//aktuelles Argument</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordtype">string</span> arg = string(argv[i]);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="comment">//Eingabedatei 1?</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">if</span> (arg == <span class="stringliteral">&quot;-i1&quot;</span> || arg == <span class="stringliteral">&quot;in1&quot;</span>) {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                input1 = string(argv[i + 1]);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                i++;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">//Eingabedatei 2?</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">if</span> (arg == <span class="stringliteral">&quot;-i2&quot;</span> || arg == <span class="stringliteral">&quot;in2&quot;</span>) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                input2 = string(argv[i + 1]);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                i++;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">//Ausgabedatei?</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span> (arg == <span class="stringliteral">&quot;-out&quot;</span> || arg == <span class="stringliteral">&quot;-o&quot;</span>) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                output_file = string(argv[i + 1]);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                i++;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="comment">//Versatz für die Zeitstempel der 2. Datei</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">if</span> (arg == <span class="stringliteral">&quot;-offset&quot;</span>) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                opts.offset = atoi(argv[i + 1]);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                i++;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="comment">//Maximale Zeitdifferenz zwischen den Zeitstempeln um die Datensätze zusammenführen zu können</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">if</span> (arg == <span class="stringliteral">&quot;-max-dt&quot;</span>) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                opts.max_dt = atoi(argv[i + 1]);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="comment">//Warnung bei Fehleingabe</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="keywordflow">if</span> (opts.max_dt &lt; 0) {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    cerr &lt;&lt; <span class="stringliteral">&quot;max-dt (max time difference) must be positive!&quot;</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                            &lt;&lt; endl;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                    <span class="comment">//Programmausgührung stoppen</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                i++;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="comment">//Einen Versatz automatisch aus der Differenz der jeweils ersten Zeitstempel der Eingabedateien ermitteln</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">if</span> (arg == <span class="stringliteral">&quot;-auto-offset&quot;</span>) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="comment">//übergebener Wert</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <span class="keywordtype">string</span> val = string(argv[i + 1]);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="comment">//Eingaben in Kleinbuchstaben umwandeln</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                transform(val.begin(), val.end(), val.begin(), ::tolower);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                <span class="comment">//auto-offset verwenden?</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                <span class="keywordflow">if</span> (val == <span class="stringliteral">&quot;true&quot;</span> || val == <span class="stringliteral">&quot;1&quot;</span>) {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    opts.auto_delta = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                    <span class="comment">//auto-offset nicht verwenden?</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                    <span class="keywordflow">if</span> (val == <span class="stringliteral">&quot;false&quot;</span> || val == <span class="stringliteral">&quot;0&quot;</span>) {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                        opts.auto_delta = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                        <span class="comment">//Warnung bei Fehleingabe</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                        cerr</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                                &lt;&lt; <span class="stringliteral">&quot;invalid value for -auto-offset! possible values are true/false or 1/0!&quot;</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                                &lt;&lt; endl;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        <span class="comment">//Programmausgührung stoppen</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                    }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                i++;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="comment">//Hilfetext ausgeben</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordflow">if</span> (arg == <span class="stringliteral">&quot;-h&quot;</span>) {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                cout</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;mergetsd merges two timed sensor data (tsd) files into one.\n&quot;</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;usage: mergetsd ARGUMENT1 VALUE1 ARGUMENT2 VALUE2...\n&quot;</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;program arguments: \n&quot;</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;\t-i1,\t-in1\t\tpath to first tsd input file (defines dataset names)\n\n&quot;</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;\t-i2,\t-in2\t\tpath to second tsd input file\n\n&quot;</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;\t-o,\t-out\t\tpath to tsd output file\n\n&quot;</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;\t\t-max-dt\t\tmaximum absolute value of the time difference between\n&quot;</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;\t\t\t\ttwo datasets to be merged (optional, default 3) in seconds\n\n&quot;</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;\t\t-offset\t\toffset added to time values of second input file in seconds\n&quot;</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;\t\t\t\t(if -auto-offset is true additionally to the auto-offset, can be negative, optional, default 0)\n\n&quot;</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;\t\t-auto-offset\tadd an offset of the difference of the first time value to the second time value\n&quot;</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;\t\t\t\tto the second time value (can be true/false or 1/0, optional, default true)\n\n&quot;</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                        &lt;&lt; <span class="stringliteral">&quot;\t-h,\t-help\t\tprint this help\n\n&quot;</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                <span class="comment">//Programmausgührung stoppen</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;invalid argument: &quot;</span> &lt;&lt; argv[i] &lt;&lt; endl;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno"><a class="code" href="classTsdMerger.xhtml#af88a04f92aed868a58740f5d9ecd2eda">  256</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classTsdMerger.xhtml#af88a04f92aed868a58740f5d9ecd2eda" title="Schreibt die Ausgabedatei. ">writeOutputFile</a>(<span class="keywordtype">string</span> path, <a class="code" href="classstd_1_1vector.xhtml">vector&lt;long&gt;</a>&amp; timestamps1,</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <a class="code" href="classstd_1_1vector.xhtml">vector&lt;string&gt;</a>&amp; names1, <a class="code" href="classstd_1_1vector.xhtml">vector&lt;string&gt;</a>&amp; data1,</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <a class="code" href="classstd_1_1vector.xhtml">vector&lt;long&gt;</a>&amp; timestamps2, <a class="code" href="classstd_1_1vector.xhtml">vector&lt;string&gt;</a>&amp; names2,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <a class="code" href="classstd_1_1vector.xhtml">vector&lt;string&gt;</a>&amp; data2) {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="comment">//Anzahl der zusammengeführten Datensätze</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordtype">int</span> matched_datasets = 0;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        ofstream outfile;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="comment">//Öffnen der Ausgabedatei</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        outfile.open(path.c_str());</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="comment">//Öffnen erfolgreich?</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">if</span> (!outfile.good()) {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            cerr &lt;&lt; <span class="stringliteral">&quot;file \&quot;&quot;</span> &lt;&lt; path &lt;&lt; <span class="stringliteral">&quot;\&quot; could not be created!&quot;</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                    &lt;&lt; endl;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="comment">//Schreiben fehlgeschlagen</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">//Alle Datensätze miteinander Vergleichen</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; timestamps1.size(); i++) {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; timestamps2.size(); j++) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="comment">//Zeitdifferenz zwischen den Datensätzen</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordtype">int</span> delta_t = (timestamps1.at(i) - (timestamps2.at(j))</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        + opts.offset) - opts.delta;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="comment">//kleiner als das maximum?</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) abs(delta_t) &lt;= opts.max_dt) {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                    <span class="comment">//Zusammenführen und schreiben</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                    outfile &lt;&lt; <span class="stringliteral">&quot;t &quot;</span> &lt;&lt; timestamps1.at(i) &lt;&lt; endl;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                    outfile &lt;&lt; <span class="stringliteral">&quot;n &quot;</span> &lt;&lt; names1.at(i) &lt;&lt; endl;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                    outfile &lt;&lt; data1.at(i);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                    outfile &lt;&lt; data2.at(j);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                    outfile &lt;&lt; endl;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                    matched_datasets++;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                    <span class="comment">//nächster Datensatz</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        outfile.close();</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="comment">//Ausgeben der Statistik</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;merged &quot;</span> &lt;&lt; matched_datasets &lt;&lt; <span class="stringliteral">&quot; data sets&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="comment">//Schreieb erfolgreich</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="code" href="classTsdMerger.xhtml#aef6012e4a2b9c31440ba1f81114cda4c">  313</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classTsdMerger.xhtml#aef6012e4a2b9c31440ba1f81114cda4c" title="Liest die Programmargumente um die Eingabedateien anhand der Zeitstempel in eine .tsd-Datei zusammen zu führen. ">merge</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <span class="comment">//Standardwerte für die Progammoptionen</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        opts.auto_delta = 1;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        opts.offset = 0;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        opts.max_dt = 3;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="comment">//Pfad zur ersten Eingabedatei</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordtype">string</span> input1;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="comment">//Pfad zur zweiten Eingabedatei</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordtype">string</span> input2;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="comment">//Pfad zur ersten Ausgabedatei</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordtype">string</span> output_file;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="comment">//Alle Programmargumente auslesen, weiterer Programmablauf?</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">if</span> (!parseArguments(argc, argv, input1, input2, output_file)) {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        }</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="comment">//Zeitstempel, Namen und Daten der 1. Datei</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <a class="code" href="classstd_1_1vector.xhtml">vector&lt;long&gt;</a> timestamps1;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <a class="code" href="classstd_1_1vector.xhtml">vector&lt;string&gt;</a> names1;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <a class="code" href="classstd_1_1vector.xhtml">vector&lt;string&gt;</a> data1;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="comment">//Zeitstempel, Namen und Daten der 2. Datei</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <a class="code" href="classstd_1_1vector.xhtml">vector&lt;long&gt;</a> timestamps2;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <a class="code" href="classstd_1_1vector.xhtml">vector&lt;string&gt;</a> names2;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <a class="code" href="classstd_1_1vector.xhtml">vector&lt;string&gt;</a> data2;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="comment">//Einlesen der 1. Datei</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">if</span> (parseFile(input1, timestamps1, names1, data1)) {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="comment">//Einlesen der 2. Datei</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordflow">if</span> (parseFile(input2, timestamps2, names2, data2)) {</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="comment">//Automatischen Versatz berechnen?</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">if</span> (opts.auto_delta) {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            opts.delta = timestamps1.at(0) - (timestamps2.at(0));</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        }</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="comment">//Schreiben der Ausgabedatei erfolgreich?</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keywordflow">if</span> (!writeOutputFile(output_file, timestamps1, names1, data1,</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                timestamps2, names2, data2)) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    }</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;};</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno"><a class="code" href="mergetsd_8cpp.xhtml#a0ddf1224851353fc92bfbff6f499fa97">  366</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="csvtosd_2main_8cpp.xhtml#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[]) {</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="code" href="classTsdMerger.xhtml" title="Zusammenführen zweier .tsd-Dateien. ">TsdMerger</a> merger;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">return</span> merger.<a class="code" href="classTsdMerger.xhtml#aef6012e4a2b9c31440ba1f81114cda4c" title="Liest die Programmargumente um die Eingabedateien anhand der Zeitstempel in eine .tsd-Datei zusammen zu führen. ">merge</a>(argc, argv);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Feb 9 2014 15:44:34 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Feb 18 2014 16:47:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

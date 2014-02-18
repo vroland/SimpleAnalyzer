@@ -27,6 +27,6 @@ src/processing \
 src/libraries/tetgen \
 src/libraries/interpolate \
 src/fileIO \
-src/GUI \
 src \
+src/GUI \
 

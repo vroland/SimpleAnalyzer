@@ -1,5 +1,5 @@
 <map id="Vector3D::copy" name="Vector3D::copy">
-<area shape="rect" id="node3" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="render_thread" alt="" coords="900,290,1001,319"/>
+<area shape="rect" id="node3" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="900,290,1001,319"/>
 <area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="1085,229,1240,276"/>
 <area shape="rect" id="node10" href="$Renderer_8cpp.xhtml#a17ef754a4f478e115d6e7fb813702639" title="pointBehindCut" alt="" coords="445,133,555,162"/>
 <area shape="rect" id="node12" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Zeichnet die Tetraeder eines Materials des Objekts. " alt="" coords="643,107,824,137"/>

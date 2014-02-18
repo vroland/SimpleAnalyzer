@@ -1,7 +1,7 @@
 var searchData=
 [
   ['add',['add',['../classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347',1,'Vector3D']]],
-  ['addobject',['addObject',['../classGUIMainWindow.xhtml#abaec210619095a00227277b8e0434a8d',1,'GUIMainWindow']]],
+  ['addobject',['addObject',['../classGUIMainWindow.xhtml#abaec210619095a00227277b8e0434a8d',1,'GUIMainWindow::addObject()'],['../classSimpleAnalyzerApp.xhtml#acedd76089853323687a3ac9cfeed1540',1,'SimpleAnalyzerApp::addObject()']]],
   ['addsensordata',['addSensorData',['../classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec',1,'ObjectData']]],
   ['addtimeddata',['addTimedData',['../classObjectData.xhtml#ac8056d23b0882a826b6e572ff080688f',1,'ObjectData']]],
   ['algorithm_5fray',['ALGORITHM_RAY',['../namespaceUtils.xhtml#ad369b0127cabda0d6871ce1ae7e6c862a4606bd560af1a6fd19e854e13613e9d0',1,'Utils']]],
@@ -18,12 +18,9 @@ var searchData=
   ['analyzerdata_5fobject',['AnalyzerData_object',['../structAnalyzer_1_1AnalyzerData__object.xhtml',1,'Analyzer']]],
   ['analyzerdata_5fpoint',['AnalyzerData_point',['../structAnalyzer_1_1AnalyzerData__point.xhtml',1,'Analyzer']]],
   ['analyzerframe',['analyzerframe',['../classGUIMainWindow.xhtml#a20e7a8cf498df1c1c0059711b487837b',1,'GUIMainWindow']]],
-  ['application',['Application',['../classApplication.xhtml',1,'']]],
-  ['application_2ecpp',['Application.cpp',['../Application_8cpp.xhtml',1,'']]],
-  ['application_2eh',['Application.h',['../Application_8h.xhtml',1,'']]],
   ['assigncurrentobjectprops',['assignCurrentObjectProps',['../classGUIMainWindow.xhtml#a1cb2c4f39b9ba971d51ab682f29b7f23',1,'GUIMainWindow']]],
   ['assignviewprops',['assignViewProps',['../classGUIMainWindow.xhtml#ab73ac039ffebd656aa3dc0eac2fcf74f',1,'GUIMainWindow']]],
   ['attrib_5flist',['attrib_list',['../GUIGLCanvas_8cpp.xhtml#aa773edd94887f5539bd9b1a05246be33',1,'GUIGLCanvas.cpp']]],
-  ['auto_5fdelta',['auto_delta',['../structMergeTSD_1_1Options.xhtml#a59137e1e5d0466ddce1e5b70afec8f86',1,'MergeTSD::Options']]],
+  ['auto_5fdelta',['auto_delta',['../structTsdMerger_1_1Options.xhtml#a34cacae19241161f15637c7fcab5ac0a',1,'TsdMerger::Options']]],
   ['autoupdatececkbox',['autoUpdateCeckBox',['../classPropertiesBox.xhtml#aea93bc13aea5197dfe5d53f6c465c0ad',1,'PropertiesBox']]]
 ];

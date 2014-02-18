@@ -6,6 +6,7 @@
  */
 
 #include "ObjectData.h"
+#include "../SimpleAnalyzerApp.h"
 #include "../fileIO/Importer.h"
 #include "../processing/MeshProcessor.h"
 #include <iostream>
@@ -18,7 +19,6 @@ using namespace std;
 #else
 #define PATH_SEPARATOR '/'
 #endif
-extern std::vector<ObjectData*> data_objects;
 
 ObjectData::ObjectData() {
 	current_sensor_index = -1;
@@ -36,10 +36,10 @@ int ObjectData::loadFromFile(wxString &path) {
 	}
 	setlocale(LC_NUMERIC, "C");
 	Importer importer;
-	importer.ImportObj((path_without_name+_T(".obj")).ToAscii(),this);
-	int status = importer.LoadSensorData((path_without_name+_T(".sd")).ToAscii(),this);
+	importer.ImportObj(string((path_without_name+_T(".obj")).ToUTF8().data()),this);
+	int status = importer.LoadSensorData(string((path_without_name+_T(".sd")).ToUTF8().data()),this);
 	if (status==OD_FAILURE) {
-		int status = importer.LoadTimedData((path_without_name+_T(".tsd")).ToAscii(),this);
+		int status = importer.LoadTimedData(string((path_without_name+_T(".tsd")).ToUTF8().data()),this);
 		if (status==OD_FAILURE) {
 			return OD_LOAD_INVALID_SENSOR_FILE;
 		}
@@ -51,8 +51,8 @@ int ObjectData::loadFromFile(wxString &path) {
 	int count = 0;
 	while (!unique) {
 		bool found = false;
-		for (unsigned int i=0;i<data_objects.size();i++) {
-			if (data_objects.at(i)->name==tname) {
+		for (unsigned int i=0;i<wxGetApp().getDataObjects()->size();i++) {
+			if (wxGetApp().getDataObjects()->at(i)->name==tname) {
 				found = true;
 			}
 		}
@@ -72,12 +72,12 @@ int ObjectData::loadFromFile(wxString &path) {
 }
 int ObjectData::addSensorData(wxString &path) {
 	Importer importer;
-	importer.LoadSensorData(path.ToAscii(),this);
+	importer.LoadSensorData(string(path.ToUTF8().data()),this);
 	return OD_SUCCESS;
 }
 int ObjectData::addTimedData(wxString &path) {
 	Importer importer;
-	importer.LoadTimedData(path.ToAscii(),this);
+	importer.LoadTimedData(string(path.ToUTF8().data()),this);
 	return OD_SUCCESS;
 }
 int ObjectData::calculateIO() {
@@ -97,7 +97,6 @@ int ObjectData::calculateIO() {
 		ss << maxvolume;
 		string args =ss.str();//"Qpq1.414a0.001";
 		tetrahedralize(const_cast<char*> (args.c_str()), data->tetgeninput, data->tetgenoutput,NULL,NULL);
-		cout << data->tetgenoutput->numberoftrifaces << endl;
 	}
 	MeshProcessor meshprocessor;
 	meshprocessor.process(this);

@@ -1,8 +1,8 @@
-<map id="simpleanalyzer&#45;gui/src/GUI/GUIRenderCutCanvas.h" name="simpleanalyzer&#45;gui/src/GUI/GUIRenderCutCanvas.h">
-<area shape="rect" id="node5" href="$GUIColorScalePanel_8h.xhtml" title="GUIColorScalePanel.h" alt="" coords="736,101,891,131"/>
-<area shape="rect" id="node7" href="$Renderer_8h.xhtml" title="Renderer.h" alt="" coords="424,179,509,208"/>
-<area shape="rect" id="node13" href="$GeometryClasses_8h.xhtml" title="../libraries/interpolate\l/GeometryClasses.h" alt="" coords="445,507,587,554"/>
-<area shape="rect" id="node17" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="175,256,353,285"/>
-<area shape="rect" id="node26" href="$utils_8h.xhtml" title="utils.h" alt="" coords="439,333,495,363"/>
-<area shape="rect" id="node21" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="88,411,229,458"/>
+<map id="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUIRenderCutCanvas.h" name="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUIRenderCutCanvas.h">
+<area shape="rect" id="node5" href="$GUIColorScalePanel_8h.xhtml" title="GUIColorScalePanel.h" alt="" coords="736,117,891,147"/>
+<area shape="rect" id="node7" href="$Renderer_8h.xhtml" title="Renderer.h" alt="" coords="424,195,509,224"/>
+<area shape="rect" id="node13" href="$GeometryClasses_8h.xhtml" title="../libraries/interpolate\l/GeometryClasses.h" alt="" coords="445,523,587,570"/>
+<area shape="rect" id="node17" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="175,272,353,301"/>
+<area shape="rect" id="node26" href="$utils_8h.xhtml" title="utils.h" alt="" coords="439,349,495,379"/>
+<area shape="rect" id="node21" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="88,427,229,474"/>
 </map>

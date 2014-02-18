@@ -1,0 +1,277 @@
+\hypertarget{classSimpleAnalyzerApp}{\section{Simple\-Analyzer\-App Klassenreferenz}
+\label{classSimpleAnalyzerApp}\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}}
+}
+
+
+Regelt den allgemeinen Ablauf des Programms.  
+
+
+
+
+{\ttfamily \#include $<$Simple\-Analyzer\-App.\-h$>$}
+
+
+
+Klassendiagramm für Simple\-Analyzer\-App\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classSimpleAnalyzerApp__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Zusammengehörigkeiten von Simple\-Analyzer\-App\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSimpleAnalyzerApp__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classSimpleAnalyzerApp_ad759c546dadd12d8072f373c48a0e230}{get\-Current\-Data\-Object\-Index} ()
+\begin{DoxyCompactList}\small\item\em Gibt den Index des aktiven Objekts zurück. \end{DoxyCompactList}\item 
+void \hyperlink{classSimpleAnalyzerApp_a613955c888ef6b8f014504986951e2b9}{set\-Current\-Data\-Object\-Index} (int current\-Data\-Object\-Index)
+\begin{DoxyCompactList}\small\item\em Setzt den Index des aktiven Objekts. \end{DoxyCompactList}\item 
+\hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classObjectData}{Object\-Data} $\ast$ $>$ $\ast$ \hyperlink{classSimpleAnalyzerApp_a977aa8cde1479c495e01caf25b6e8a1c}{get\-Data\-Objects} ()
+\begin{DoxyCompactList}\small\item\em Gibt einen Verweis auf die Liste der geladenen Objekte zurück. \end{DoxyCompactList}\item 
+\hyperlink{structUtils_1_1Visualization__info}{Utils\-::\-Visualization\-\_\-info} $\ast$ \hyperlink{classSimpleAnalyzerApp_aa0149bf3fcedd1ff880817a16e1e1574}{get\-Visualization\-Info} ()
+\begin{DoxyCompactList}\small\item\em Gibt einen Verweis auf verwendeten Visualisierungsoptionen zurück. \end{DoxyCompactList}\item 
+\hyperlink{classObjectData}{Object\-Data} $\ast$ \hyperlink{classSimpleAnalyzerApp_a9bf75442c8ccb79cc735cf922de83bdc}{get\-Active\-Object} ()
+\begin{DoxyCompactList}\small\item\em Gibt einen Verweis auf das aktuell aktive Objekt zurück. \end{DoxyCompactList}\item 
+void \hyperlink{classSimpleAnalyzerApp_acedd76089853323687a3ac9cfeed1540}{add\-Object} (\hyperlink{classObjectData}{Object\-Data} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Fügt ein Objekt zur Objektliste hinzu. \end{DoxyCompactList}\item 
+void \hyperlink{classSimpleAnalyzerApp_ac78a3ea0f527414f0617d32ab54043f7}{remove\-Current\-Object} ()
+\begin{DoxyCompactList}\small\item\em Löscht das aktuelle Objekt aus der Objektliste. \end{DoxyCompactList}\item 
+virtual \hyperlink{classSimpleAnalyzerApp_ae0330ceb4781668e020614f5b659766b}{$\sim$\-Simple\-Analyzer\-App} ()
+\begin{DoxyCompactList}\small\item\em Der Destruktor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Methoden}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classSimpleAnalyzerApp_ac98b58650811c7e744eac6cd11d7c157}{On\-Init} ()
+\begin{DoxyCompactList}\small\item\em Wird beim Start der Anwendung ausgeführt und öffnet das Hauptfenster. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classObjectData}{Object\-Data} $\ast$ $>$ \hyperlink{classSimpleAnalyzerApp_a99bb49d6e0ec4d6f03ad08c29cf63288}{data\-\_\-objects}
+\begin{DoxyCompactList}\small\item\em Liste aller geladenen Objekte. \end{DoxyCompactList}\item 
+int \hyperlink{classSimpleAnalyzerApp_a79ee2f69d43e2a32ba3c33c2560966e2}{current\-\_\-data\-\_\-object\-\_\-index} = -\/1
+\begin{DoxyCompactList}\small\item\em Index des aktuellen Objekts. \end{DoxyCompactList}\item 
+\hyperlink{structUtils_1_1Visualization__info}{Utils\-::\-Visualization\-\_\-info} \hyperlink{classSimpleAnalyzerApp_a6cfd36a56cc92ee6cd25512744c6adda}{visualization\-\_\-info}
+\begin{DoxyCompactList}\small\item\em Die allgemein verwendeten Visualisierungsoptionen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Regelt den allgemeinen Ablauf des Programms. 
+
+Eine eigene Anwendungsklasse wird von wx\-Widgets gefordert. Das zugrunde liegende System organisiert über diese Klasse den Programmablauf (Main\-Loop) und Events. 
+
+Definiert in Zeile 23 der Datei Simple\-Analyzer\-App.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classSimpleAnalyzerApp_ae0330ceb4781668e020614f5b659766b}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!$\sim$\-Simple\-Analyzer\-App@{$\sim$\-Simple\-Analyzer\-App}}
+\index{$\sim$\-Simple\-Analyzer\-App@{$\sim$\-Simple\-Analyzer\-App}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{$\sim$\-Simple\-Analyzer\-App}]{\setlength{\rightskip}{0pt plus 5cm}Simple\-Analyzer\-App\-::$\sim$\-Simple\-Analyzer\-App (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimpleAnalyzerApp_ae0330ceb4781668e020614f5b659766b}
+
+
+Der Destruktor. 
+
+
+
+Definiert in Zeile 70 der Datei Simple\-Analyzer\-App.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classSimpleAnalyzerApp_acedd76089853323687a3ac9cfeed1540}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!add\-Object@{add\-Object}}
+\index{add\-Object@{add\-Object}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{add\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void Simple\-Analyzer\-App\-::add\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\-Data} $\ast$}]{obj}
+\end{DoxyParamCaption}
+)}}\label{classSimpleAnalyzerApp_acedd76089853323687a3ac9cfeed1540}
+
+
+Fügt ein Objekt zur Objektliste hinzu. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em obj} & Das hinzuzufügende Objekt. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 47 der Datei Simple\-Analyzer\-App.\-cpp.
+
+\hypertarget{classSimpleAnalyzerApp_a9bf75442c8ccb79cc735cf922de83bdc}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!get\-Active\-Object@{get\-Active\-Object}}
+\index{get\-Active\-Object@{get\-Active\-Object}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{get\-Active\-Object}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\-Data} $\ast$ Simple\-Analyzer\-App\-::get\-Active\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSimpleAnalyzerApp_a9bf75442c8ccb79cc735cf922de83bdc}
+
+
+Gibt einen Verweis auf das aktuell aktive Objekt zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Pointer auf das aktuell aktive Objekt. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 43 der Datei Simple\-Analyzer\-App.\-cpp.
+
+\hypertarget{classSimpleAnalyzerApp_ad759c546dadd12d8072f373c48a0e230}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!get\-Current\-Data\-Object\-Index@{get\-Current\-Data\-Object\-Index}}
+\index{get\-Current\-Data\-Object\-Index@{get\-Current\-Data\-Object\-Index}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{get\-Current\-Data\-Object\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int Simple\-Analyzer\-App\-::get\-Current\-Data\-Object\-Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSimpleAnalyzerApp_ad759c546dadd12d8072f373c48a0e230}
+
+
+Gibt den Index des aktiven Objekts zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Der Index des aktiven Objetks. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 27 der Datei Simple\-Analyzer\-App.\-cpp.
+
+\hypertarget{classSimpleAnalyzerApp_a977aa8cde1479c495e01caf25b6e8a1c}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!get\-Data\-Objects@{get\-Data\-Objects}}
+\index{get\-Data\-Objects@{get\-Data\-Objects}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{get\-Data\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector}$<$ {\bf Object\-Data} $\ast$ $>$ $\ast$ Simple\-Analyzer\-App\-::get\-Data\-Objects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSimpleAnalyzerApp_a977aa8cde1479c495e01caf25b6e8a1c}
+
+
+Gibt einen Verweis auf die Liste der geladenen Objekte zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Pointer zur Liste der geladenen Objekte. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 35 der Datei Simple\-Analyzer\-App.\-cpp.
+
+\hypertarget{classSimpleAnalyzerApp_aa0149bf3fcedd1ff880817a16e1e1574}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!get\-Visualization\-Info@{get\-Visualization\-Info}}
+\index{get\-Visualization\-Info@{get\-Visualization\-Info}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{get\-Visualization\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Utils\-::\-Visualization\-\_\-info} $\ast$ Simple\-Analyzer\-App\-::get\-Visualization\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSimpleAnalyzerApp_aa0149bf3fcedd1ff880817a16e1e1574}
+
+
+Gibt einen Verweis auf verwendeten Visualisierungsoptionen zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Pointer zu den verwendeten Visualisierungsoptionen. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 39 der Datei Simple\-Analyzer\-App.\-cpp.
+
+\hypertarget{classSimpleAnalyzerApp_ac98b58650811c7e744eac6cd11d7c157}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!On\-Init@{On\-Init}}
+\index{On\-Init@{On\-Init}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{On\-Init}]{\setlength{\rightskip}{0pt plus 5cm}bool Simple\-Analyzer\-App\-::\-On\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}}\label{classSimpleAnalyzerApp_ac98b58650811c7e744eac6cd11d7c157}
+
+
+Wird beim Start der Anwendung ausgeführt und öffnet das Hauptfenster. 
+
+
+
+Definiert in Zeile 61 der Datei Simple\-Analyzer\-App.\-cpp.
+
+\hypertarget{classSimpleAnalyzerApp_ac78a3ea0f527414f0617d32ab54043f7}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!remove\-Current\-Object@{remove\-Current\-Object}}
+\index{remove\-Current\-Object@{remove\-Current\-Object}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{remove\-Current\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void Simple\-Analyzer\-App\-::remove\-Current\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSimpleAnalyzerApp_ac78a3ea0f527414f0617d32ab54043f7}
+
+
+Löscht das aktuelle Objekt aus der Objektliste. 
+
+
+
+Definiert in Zeile 51 der Datei Simple\-Analyzer\-App.\-cpp.
+
+\hypertarget{classSimpleAnalyzerApp_a613955c888ef6b8f014504986951e2b9}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!set\-Current\-Data\-Object\-Index@{set\-Current\-Data\-Object\-Index}}
+\index{set\-Current\-Data\-Object\-Index@{set\-Current\-Data\-Object\-Index}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{set\-Current\-Data\-Object\-Index}]{\setlength{\rightskip}{0pt plus 5cm}void Simple\-Analyzer\-App\-::set\-Current\-Data\-Object\-Index (
+\begin{DoxyParamCaption}
+\item[{int}]{current\-Data\-Object\-Index}
+\end{DoxyParamCaption}
+)}}\label{classSimpleAnalyzerApp_a613955c888ef6b8f014504986951e2b9}
+
+
+Setzt den Index des aktiven Objekts. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em current\-Data\-Object\-Index} & Index des auszuwählenden Objekts. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 31 der Datei Simple\-Analyzer\-App.\-cpp.
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classSimpleAnalyzerApp_a79ee2f69d43e2a32ba3c33c2560966e2}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!current\-\_\-data\-\_\-object\-\_\-index@{current\-\_\-data\-\_\-object\-\_\-index}}
+\index{current\-\_\-data\-\_\-object\-\_\-index@{current\-\_\-data\-\_\-object\-\_\-index}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{current\-\_\-data\-\_\-object\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int Simple\-Analyzer\-App\-::current\-\_\-data\-\_\-object\-\_\-index = -\/1\hspace{0.3cm}{\ttfamily [private]}}}\label{classSimpleAnalyzerApp_a79ee2f69d43e2a32ba3c33c2560966e2}
+
+
+Index des aktuellen Objekts. 
+
+
+
+Definiert in Zeile 79 der Datei Simple\-Analyzer\-App.\-h.
+
+\hypertarget{classSimpleAnalyzerApp_a99bb49d6e0ec4d6f03ad08c29cf63288}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!data\-\_\-objects@{data\-\_\-objects}}
+\index{data\-\_\-objects@{data\-\_\-objects}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{data\-\_\-objects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf vector}$<${\bf Object\-Data}$\ast$$>$ Simple\-Analyzer\-App\-::data\-\_\-objects\hspace{0.3cm}{\ttfamily [private]}}}\label{classSimpleAnalyzerApp_a99bb49d6e0ec4d6f03ad08c29cf63288}
+
+
+Liste aller geladenen Objekte. 
+
+
+
+Definiert in Zeile 74 der Datei Simple\-Analyzer\-App.\-h.
+
+\hypertarget{classSimpleAnalyzerApp_a6cfd36a56cc92ee6cd25512744c6adda}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!visualization\-\_\-info@{visualization\-\_\-info}}
+\index{visualization\-\_\-info@{visualization\-\_\-info}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{visualization\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Utils\-::\-Visualization\-\_\-info} Simple\-Analyzer\-App\-::visualization\-\_\-info\hspace{0.3cm}{\ttfamily [private]}}}\label{classSimpleAnalyzerApp_a6cfd36a56cc92ee6cd25512744c6adda}
+
+
+Die allgemein verwendeten Visualisierungsoptionen. 
+
+
+
+Definiert in Zeile 84 der Datei Simple\-Analyzer\-App.\-h.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
+\item 
+/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/\hyperlink{SimpleAnalyzerApp_8h}{Simple\-Analyzer\-App.\-h}\item 
+/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/\hyperlink{SimpleAnalyzerApp_8cpp}{Simple\-Analyzer\-App.\-cpp}\end{DoxyCompactItemize}

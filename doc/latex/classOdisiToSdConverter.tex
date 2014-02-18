@@ -1,0 +1,515 @@
+\hypertarget{classOdisiToSdConverter}{\section{Odisi\-To\-Sd\-Converter Klassenreferenz}
+\label{classOdisiToSdConverter}\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}}
+}
+
+
+Konverter von O\-Di\-S\-I zu .tsd.  
+
+
+
+
+Zusammengehörigkeiten von Odisi\-To\-Sd\-Converter\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classOdisiToSdConverter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structOdisiToSdConverter_1_1Options}{Options}
+\begin{DoxyCompactList}\small\item\em Strunktur für die Programmeinstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classOdisiToSdConverter_ab4e518bcb8d7588180bb4e1edec50c06}{convert} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die O\-Di\-S\-I-\/\-Datei um eine .tsd-\/\-Datei zu generieren, bzw. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Geschützte Methoden}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classOdisiToSdConverter_ad851e258c9aad4ab07887fc19f9cc89d}{contains} (\hyperlink{classstd_1_1vector}{std\-::vector}$<$ string $>$ \&Vec, const string \&Element)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich ein String in einer Liste von Strings befindet. \end{DoxyCompactList}\item 
+bool \hyperlink{classOdisiToSdConverter_a22b9cc047c31d81b84e74d68d69ba2c6}{contains} (\hyperlink{classstd_1_1vector}{std\-::vector}$<$ int $>$ \&Vec, const int \&Element)
+\begin{DoxyCompactList}\small\item\em Testet, ob sich eine Ganzzahl in einer Liste von Ganzzahlen befindet. \end{DoxyCompactList}\item 
+void \hyperlink{classOdisiToSdConverter_a8bf5e68acbe7e6388db98b1e1d321709}{replace\-All} (string \&str, const string from, const string to)
+\begin{DoxyCompactList}\small\item\em Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen. \end{DoxyCompactList}\item 
+string \hyperlink{classOdisiToSdConverter_a01498491495ce740686843f6575859fd}{floattostr} (float val)
+\begin{DoxyCompactList}\small\item\em Wandelt eine Zeichenkette (String) um. \end{DoxyCompactList}\item 
+string \hyperlink{classOdisiToSdConverter_af7ff6a5280429bfa3ade6202e4651e25}{get\-Text\-Block} (string data, int n)
+\begin{DoxyCompactList}\small\item\em Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. \end{DoxyCompactList}\item 
+void \hyperlink{classOdisiToSdConverter_a0497baba5fd610c206b57a80154425b8}{parse\-Line} (string line, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ $\ast$out, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ $\ast$times, \hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $\ast$debug\-\_\-positions, size\-\_\-t row\-\_\-count)
+\begin{DoxyCompactList}\small\item\em Sammelt Daten aus einer Textzeile (string). \end{DoxyCompactList}\item 
+bool \hyperlink{classOdisiToSdConverter_a8c6bc01ae2c063d89dc64c0a7d68c033}{read\-Configuration} (string binary\-\_\-path)
+\begin{DoxyCompactList}\small\item\em Liest und setzt die Programmkonfiguration aus der Konfigurationsdatei. \end{DoxyCompactList}\item 
+bool \hyperlink{classOdisiToSdConverter_ac8d40f3edad9af5004d516809e0e40a2}{parse\-Arguments} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, string \&def\-\_\-filename, string \&data\-\_\-filename, string \&out\-\_\-filename, string \&err\-\_\-filename)
+\begin{DoxyCompactList}\small\item\em Wertet die Programmargumente aus. \end{DoxyCompactList}\item 
+bool \hyperlink{classOdisiToSdConverter_a436916f864cbfc7a9cefa5e0f640c683}{read\-Sensor\-Definitions} (string path, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&inlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&outlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&in\-\_\-x, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&out\-\_\-x)
+\begin{DoxyCompactList}\small\item\em Liest die Daten aus der Sensordefinitionsdatei. \end{DoxyCompactList}\item 
+bool \hyperlink{classOdisiToSdConverter_a270932ed908757ac477370eef64db442}{read\-Input\-File} (string path, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ $>$ \&values, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $>$ \&debug\-\_\-positions, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&times, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&lin\-\_\-positions)
+\begin{DoxyCompactList}\small\item\em Liest die Daten aus der Eingabedatei. \end{DoxyCompactList}\item 
+bool \hyperlink{classOdisiToSdConverter_a869a2571e5788922826f4bc63adbbe18}{write\-Output\-File} (string path, string logpath, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ $>$ \&values, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $>$ \&debug\-\_\-positions, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&times, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&lin\-\_\-positions, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&inlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&outlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&in\-\_\-x, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&out\-\_\-x)
+\begin{DoxyCompactList}\small\item\em Schreibt die Ausgabedatei. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classOdisiToSdConverter_aeecf67d22a4b6333ceabe5f1a1036736}{configpaths} \mbox{[}\hyperlink{classOdisiToSdConverter_a6f59f3670356c1588b736af33d59532a}{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Suchpfade für die Konfigurationsdatei. \end{DoxyCompactList}\item 
+struct \hyperlink{structOdisiToSdConverter_1_1Options}{Odisi\-To\-Sd\-Converter\-::\-Options} \hyperlink{classOdisiToSdConverter_a032865606668d520887b2b164913539d}{opts}
+\begin{DoxyCompactList}\small\item\em Hält die verwendeten Programmeinstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statische, geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classOdisiToSdConverter_a6f59f3670356c1588b736af33d59532a}{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S} = 2
+\begin{DoxyCompactList}\small\item\em Anzahl der Suchpfade für die Konfigurationsdatei. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Konverter von O\-Di\-S\-I zu .tsd. 
+
+Zusätzlich können Ausreißerwerte erkannt und eliminiert werden. 
+
+Definiert in Zeile 22 der Datei main.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classOdisiToSdConverter_ad851e258c9aad4ab07887fc19f9cc89d}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!contains@{contains}}
+\index{contains@{contains}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::contains (
+\begin{DoxyParamCaption}
+\item[{{\bf std\-::vector}$<$ string $>$ \&}]{Vec, }
+\item[{const string \&}]{Element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_ad851e258c9aad4ab07887fc19f9cc89d}
+
+
+Testet, ob sich ein String in einer Liste von Strings befindet. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em Vec} & Liste der Strings. \\
+\hline
+{\em Element} & Der zu suchende String. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+true, wenn das Element gefunden wurde, sonst false. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 64 der Datei main.\-cpp.
+
+\hypertarget{classOdisiToSdConverter_a22b9cc047c31d81b84e74d68d69ba2c6}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!contains@{contains}}
+\index{contains@{contains}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::contains (
+\begin{DoxyParamCaption}
+\item[{{\bf std\-::vector}$<$ int $>$ \&}]{Vec, }
+\item[{const int \&}]{Element}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a22b9cc047c31d81b84e74d68d69ba2c6}
+
+
+Testet, ob sich eine Ganzzahl in einer Liste von Ganzzahlen befindet. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em Vec} & Liste der Ganzzahlen. \\
+\hline
+{\em Element} & Die zu suchende Ganzzahl. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+true, wenn das Element gefunden wurde, sonst false. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 80 der Datei main.\-cpp.
+
+\hypertarget{classOdisiToSdConverter_ab4e518bcb8d7588180bb4e1edec50c06}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!convert@{convert}}
+\index{convert@{convert}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{convert}]{\setlength{\rightskip}{0pt plus 5cm}int Odisi\-To\-Sd\-Converter\-::convert (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classOdisiToSdConverter_ab4e518bcb8d7588180bb4e1edec50c06}
+
+
+Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die O\-Di\-S\-I-\/\-Datei um eine .tsd-\/\-Datei zu generieren, bzw. 
+
+die Daten der O\-Di\-S\-I-\/\-Datei ein eine .tsd-\/\-Datei umzuwandeln. Wird duch die Funktion \hyperlink{csvtosd_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()} von außerhalb des Namespaces aufgerufen. 
+\begin{DoxyParams}{Parameter}
+{\em argc} & Anzahl der Programmargumente. \\
+\hline
+{\em argv} & Die Programmargumente. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 866 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classOdisiToSdConverter_ab4e518bcb8d7588180bb4e1edec50c06_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classOdisiToSdConverter_a01498491495ce740686843f6575859fd}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!floattostr@{floattostr}}
+\index{floattostr@{floattostr}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{floattostr}]{\setlength{\rightskip}{0pt plus 5cm}string Odisi\-To\-Sd\-Converter\-::floattostr (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a01498491495ce740686843f6575859fd}
+
+
+Wandelt eine Zeichenkette (String) um. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em val} & Die umzuwandelnde Zahl. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Die Entsprechung der Zahl als String. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 118 der Datei main.\-cpp.
+
+\hypertarget{classOdisiToSdConverter_af7ff6a5280429bfa3ade6202e4651e25}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!get\-Text\-Block@{get\-Text\-Block}}
+\index{get\-Text\-Block@{get\-Text\-Block}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{get\-Text\-Block}]{\setlength{\rightskip}{0pt plus 5cm}string Odisi\-To\-Sd\-Converter\-::get\-Text\-Block (
+\begin{DoxyParamCaption}
+\item[{string}]{data, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_af7ff6a5280429bfa3ade6202e4651e25}
+
+
+Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em data} & Der Ausgansstring. \\
+\hline
+{\em n} & Index des zu findenden Blocks. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der n-\/te durch Leerzeichen getrennte Teilstring. \char`\"{}\char`\"{} Bei ungültigem Index. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 131 der Datei main.\-cpp.
+
+\hypertarget{classOdisiToSdConverter_ac8d40f3edad9af5004d516809e0e40a2}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!parse\-Arguments@{parse\-Arguments}}
+\index{parse\-Arguments@{parse\-Arguments}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{parse\-Arguments}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::parse\-Arguments (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}, }
+\item[{string \&}]{def\-\_\-filename, }
+\item[{string \&}]{data\-\_\-filename, }
+\item[{string \&}]{out\-\_\-filename, }
+\item[{string \&}]{err\-\_\-filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_ac8d40f3edad9af5004d516809e0e40a2}
+
+
+Wertet die Programmargumente aus. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em argc} & Anzahl der Programmargumente. \\
+\hline
+{\em argv} & Die Programmargumente. \\
+\hline
+{\em def\-\_\-filename} & Ausgabe für den Pfad zur Sensordefinitionsdatei. \\
+\hline
+{\em data\-\_\-filename} & Ausgabe für den Pfad zur Eingabedatei. \\
+\hline
+{\em out\-\_\-filename} & Ausgabe für den Pfad zur Ausgabedatei. \\
+\hline
+{\em err\-\_\-filename} & Ausgabe für den Pfad zur Logdatei. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Soll das Programm weiter ablaufen? 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 334 der Datei main.\-cpp.
+
+\hypertarget{classOdisiToSdConverter_a0497baba5fd610c206b57a80154425b8}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!parse\-Line@{parse\-Line}}
+\index{parse\-Line@{parse\-Line}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{parse\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Odisi\-To\-Sd\-Converter\-::parse\-Line (
+\begin{DoxyParamCaption}
+\item[{string}]{line, }
+\item[{{\bf vector}$<$ float $>$ $\ast$}]{out, }
+\item[{{\bf vector}$<$ float $>$ $\ast$}]{times, }
+\item[{{\bf vector}$<$ int $>$ $\ast$}]{debug\-\_\-positions, }
+\item[{size\-\_\-t}]{row\-\_\-count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a0497baba5fd610c206b57a80154425b8}
+
+
+Sammelt Daten aus einer Textzeile (string). 
+
+
+\begin{DoxyParams}{Parameter}
+{\em line} & Die zu untersuchende Textzeile. \\
+\hline
+{\em out} & Ausgabevariable für die Sensordaten der Zeile. Alle Spalten nach opts.\-start\-\_\-col werden als Sensordatenspalten betrachtet. Wenn row\-\_\-count == opts.\-startrow ist, werden statt der Sensordaten die Faserpositionen eingelesen! \\
+\hline
+{\em times} & Wenn nicht N\-U\-L\-L, Ausgabevariable für den Zeitstempel der Zeile (opts.\-timecol). Der Zeitstempel wird an die übergebene Liste angehängt. \\
+\hline
+{\em debug\-\_\-positions} & Wenn nicht N\-U\-L\-L, Ausgabevariable für die Position der einzelnen Messwerte in der Datei. Diese Positionen werden in der Logdatei zur Fehlerkorrektur angegeben, um ein Wiederfinden der Werte für den Nutzer einfacher zu machen. \\
+\hline
+{\em row\-\_\-count} & Nummer der aktuellen Zeile (Index+1). \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 173 der Datei main.\-cpp.
+
+\hypertarget{classOdisiToSdConverter_a8c6bc01ae2c063d89dc64c0a7d68c033}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!read\-Configuration@{read\-Configuration}}
+\index{read\-Configuration@{read\-Configuration}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{read\-Configuration}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::read\-Configuration (
+\begin{DoxyParamCaption}
+\item[{string}]{binary\-\_\-path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a8c6bc01ae2c063d89dc64c0a7d68c033}
+
+
+Liest und setzt die Programmkonfiguration aus der Konfigurationsdatei. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em binary\-\_\-path} & Pfad zur Binärdatei. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+War das Einlesen erfolgreich? 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 258 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classOdisiToSdConverter_a8c6bc01ae2c063d89dc64c0a7d68c033_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classOdisiToSdConverter_a270932ed908757ac477370eef64db442}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!read\-Input\-File@{read\-Input\-File}}
+\index{read\-Input\-File@{read\-Input\-File}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{read\-Input\-File}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::read\-Input\-File (
+\begin{DoxyParamCaption}
+\item[{string}]{path, }
+\item[{{\bf vector}$<$ {\bf vector}$<$ float $>$ $>$ \&}]{values, }
+\item[{{\bf vector}$<$ {\bf vector}$<$ int $>$ $>$ \&}]{debug\-\_\-positions, }
+\item[{{\bf vector}$<$ float $>$ \&}]{times, }
+\item[{{\bf vector}$<$ float $>$ \&}]{lin\-\_\-positions}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a270932ed908757ac477370eef64db442}
+
+
+Liest die Daten aus der Eingabedatei. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em path} & Der Pfad zur Eingabedatei. \\
+\hline
+{\em values} & Liste für die extrahierten Sensorwerte. \\
+\hline
+{\em times} & Liste für die Zeitstempel der Messwerte. \\
+\hline
+{\em debug\-\_\-positions} & Liste für die Positionen der Messwerte in der Datei. \\
+\hline
+{\em lin\-\_\-positions} & Liste für die Positionen auf der Faser. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+War das Einlesen erfolgreich? 
+\end{DoxyReturn}
+Komma mit Punkt als Dezimaltrennzeichen ersetzen? 
+
+Definiert in Zeile 563 der Datei main.\-cpp.
+
+\hypertarget{classOdisiToSdConverter_a436916f864cbfc7a9cefa5e0f640c683}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!read\-Sensor\-Definitions@{read\-Sensor\-Definitions}}
+\index{read\-Sensor\-Definitions@{read\-Sensor\-Definitions}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{read\-Sensor\-Definitions}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::read\-Sensor\-Definitions (
+\begin{DoxyParamCaption}
+\item[{string}]{path, }
+\item[{{\bf vector}$<$ float $>$ \&}]{inlist, }
+\item[{{\bf vector}$<$ float $>$ \&}]{outlist, }
+\item[{{\bf vector}$<$ float $>$ \&}]{in\-\_\-x, }
+\item[{{\bf vector}$<$ float $>$ \&}]{out\-\_\-x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a436916f864cbfc7a9cefa5e0f640c683}
+
+
+Liest die Daten aus der Sensordefinitionsdatei. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em path} & Pfad zur Binärdatei. \\
+\hline
+{\em inlist} & Liste für die Positionen der Fasereingänge auf der Faser. \\
+\hline
+{\em outlist} & Liste für die Positionen der Faserausgänge auf der Faser. \\
+\hline
+{\em in\-\_\-x} & Liste für die X-\/\-Positionen der Fasereingänge. \\
+\hline
+{\em out\-\_\-x} & Liste für die X-\/\-Positionen der Faserausgänge. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+War das Einlesen erfolgreich? 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 475 der Datei main.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classOdisiToSdConverter_a436916f864cbfc7a9cefa5e0f640c683_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classOdisiToSdConverter_a8bf5e68acbe7e6388db98b1e1d321709}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!replace\-All@{replace\-All}}
+\index{replace\-All@{replace\-All}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{replace\-All}]{\setlength{\rightskip}{0pt plus 5cm}void Odisi\-To\-Sd\-Converter\-::replace\-All (
+\begin{DoxyParamCaption}
+\item[{string \&}]{str, }
+\item[{const string}]{from, }
+\item[{const string}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a8bf5e68acbe7e6388db98b1e1d321709}
+
+
+Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em str} & Der zu durchsuchende String. \\
+\hline
+{\em from} & Der zu ersetzende Teilstring. \\
+\hline
+{\em to} & Der Teilstring, durch den ersetzt werden soll. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 96 der Datei main.\-cpp.
+
+\hypertarget{classOdisiToSdConverter_a869a2571e5788922826f4bc63adbbe18}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!write\-Output\-File@{write\-Output\-File}}
+\index{write\-Output\-File@{write\-Output\-File}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{write\-Output\-File}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::write\-Output\-File (
+\begin{DoxyParamCaption}
+\item[{string}]{path, }
+\item[{string}]{logpath, }
+\item[{{\bf vector}$<$ {\bf vector}$<$ float $>$ $>$ \&}]{values, }
+\item[{{\bf vector}$<$ {\bf vector}$<$ int $>$ $>$ \&}]{debug\-\_\-positions, }
+\item[{{\bf vector}$<$ float $>$ \&}]{times, }
+\item[{{\bf vector}$<$ float $>$ \&}]{lin\-\_\-positions, }
+\item[{{\bf vector}$<$ float $>$ \&}]{inlist, }
+\item[{{\bf vector}$<$ float $>$ \&}]{outlist, }
+\item[{{\bf vector}$<$ float $>$ \&}]{in\-\_\-x, }
+\item[{{\bf vector}$<$ float $>$ \&}]{out\-\_\-x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a869a2571e5788922826f4bc63adbbe18}
+
+
+Schreibt die Ausgabedatei. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em path} & Der Pfad zur Ausgabedatei. \\
+\hline
+{\em logpath} & Der Pfad zur Logdatei. Bei \char`\"{}\char`\"{} wird keine Logdatei angelegt. \\
+\hline
+{\em debug\-\_\-positions} & Liste der Positionen der Sensorwerte in der Eingabedatei. \\
+\hline
+{\em values} & Die extrahierten Sensorwerte. \\
+\hline
+{\em times} & Zeitstempel der Datensätze. \\
+\hline
+{\em lin\-\_\-positions} & Die Position der Messstellen auf der Faser. \\
+\hline
+{\em inlist} & Positionen der Fasereingänge auf der Faser. \\
+\hline
+{\em outlist} & Positionen der Faserausgänge auf der Faser. \\
+\hline
+{\em in\-\_\-x} & X-\/\-Positionen der Fasereingänge. \\
+\hline
+{\em out\-\_\-x} & X-\/\-Positionen der Faserausgänge. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+War das Schreiben erfolgreich? 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 667 der Datei main.\-cpp.
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classOdisiToSdConverter_aeecf67d22a4b6333ceabe5f1a1036736}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!configpaths@{configpaths}}
+\index{configpaths@{configpaths}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{configpaths}]{\setlength{\rightskip}{0pt plus 5cm}string Odisi\-To\-Sd\-Converter\-::configpaths\mbox{[}{\bf N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classOdisiToSdConverter_aeecf67d22a4b6333ceabe5f1a1036736}
+{\bfseries Initialisierung\-:}
+\begin{DoxyCode}
+\{
+            \textcolor{stringliteral}{"/usr/local/share/simpleanalyzer/odisitosd.conf"},
+            \textcolor{stringliteral}{"/usr/share/simpleanalyzer/odisitosd.conf"} \}
+\end{DoxyCode}
+
+
+Suchpfade für die Konfigurationsdatei. 
+
+Das Verzeichnis der ausführbaren Datei wird immer geprüft. 
+
+Definiert in Zeile 33 der Datei main.\-cpp.
+
+\hypertarget{classOdisiToSdConverter_a6f59f3670356c1588b736af33d59532a}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S@{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}}
+\index{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S@{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}]{\setlength{\rightskip}{0pt plus 5cm}const int Odisi\-To\-Sd\-Converter\-::\-N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a6f59f3670356c1588b736af33d59532a}
+
+
+Anzahl der Suchpfade für die Konfigurationsdatei. 
+
+
+
+Definiert in Zeile 27 der Datei main.\-cpp.
+
+\hypertarget{classOdisiToSdConverter_a032865606668d520887b2b164913539d}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!opts@{opts}}
+\index{opts@{opts}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
+\subsubsection[{opts}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Odisi\-To\-Sd\-Converter\-::\-Options}  Odisi\-To\-Sd\-Converter\-::opts\hspace{0.3cm}{\ttfamily [protected]}}}\label{classOdisiToSdConverter_a032865606668d520887b2b164913539d}
+
+
+Hält die verwendeten Programmeinstellungen. 
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\-:\begin{DoxyCompactItemize}
+\item 
+/daten/\-Projekte/eclipse\-\_\-workspace/odisitosd/\hyperlink{odisitosd_2main_8cpp}{main.\-cpp}\end{DoxyCompactItemize}

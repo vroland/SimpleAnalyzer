@@ -1,0 +1,247 @@
+\hypertarget{classTsdMerger}{\section{Tsd\-Merger Klassenreferenz}
+\label{classTsdMerger}\index{Tsd\-Merger@{Tsd\-Merger}}
+}
+
+
+Zusammenführen zweier .tsd-\/\-Dateien.  
+
+
+
+
+Zusammengehörigkeiten von Tsd\-Merger\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classTsdMerger__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structTsdMerger_1_1Options}{Options}
+\begin{DoxyCompactList}\small\item\em Strunktur für die Programmeinstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classTsdMerger_aef6012e4a2b9c31440ba1f81114cda4c}{merge} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Liest die Programmargumente um die Eingabedateien anhand der Zeitstempel in eine .tsd-\/\-Datei zusammen zu führen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Geschützte Methoden}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classTsdMerger_a413e3835ebd34a810a19465525bb6cbb}{get\-Text\-Block} (string data, int n)
+\begin{DoxyCompactList}\small\item\em Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. \end{DoxyCompactList}\item 
+int \hyperlink{classTsdMerger_aed81153be336c48a43e2663e39fa341d}{parse\-File} (string filename, \hyperlink{classstd_1_1vector}{vector}$<$ long $>$ \&timestamps, \hyperlink{classstd_1_1vector}{vector}$<$ string $>$ \&names, \hyperlink{classstd_1_1vector}{vector}$<$ string $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Sammelt Daten aus einer .tsd-\/\-Datei. \end{DoxyCompactList}\item 
+bool \hyperlink{classTsdMerger_a28edc421a3ee073b63448740fe1184ea}{parse\-Arguments} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, string \&input1, string \&input2, string \&output\-\_\-file)
+\begin{DoxyCompactList}\small\item\em Wertet die Programmargumente aus. \end{DoxyCompactList}\item 
+bool \hyperlink{classTsdMerger_af88a04f92aed868a58740f5d9ecd2eda}{write\-Output\-File} (string path, \hyperlink{classstd_1_1vector}{vector}$<$ long $>$ \&timestamps1, \hyperlink{classstd_1_1vector}{vector}$<$ string $>$ \&names1, \hyperlink{classstd_1_1vector}{vector}$<$ string $>$ \&data1, \hyperlink{classstd_1_1vector}{vector}$<$ long $>$ \&timestamps2, \hyperlink{classstd_1_1vector}{vector}$<$ string $>$ \&names2, \hyperlink{classstd_1_1vector}{vector}$<$ string $>$ \&data2)
+\begin{DoxyCompactList}\small\item\em Schreibt die Ausgabedatei. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Geschützte Attribute}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structTsdMerger_1_1Options}{Tsd\-Merger\-::\-Options} \hyperlink{classTsdMerger_a974c4c249c8a33dd1030bb0c83a94afc}{opts}
+\begin{DoxyCompactList}\small\item\em Hält die verwendeten Programmeinstellungen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+Zusammenführen zweier .tsd-\/\-Dateien. 
+
+Definiert in Zeile 21 der Datei mergetsd.\-cpp.
+
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classTsdMerger_a413e3835ebd34a810a19465525bb6cbb}{\index{Tsd\-Merger@{Tsd\-Merger}!get\-Text\-Block@{get\-Text\-Block}}
+\index{get\-Text\-Block@{get\-Text\-Block}!TsdMerger@{Tsd\-Merger}}
+\subsubsection[{get\-Text\-Block}]{\setlength{\rightskip}{0pt plus 5cm}string Tsd\-Merger\-::get\-Text\-Block (
+\begin{DoxyParamCaption}
+\item[{string}]{data, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classTsdMerger_a413e3835ebd34a810a19465525bb6cbb}
+
+
+Gibt den n-\/ten durch Leerzeichen abgetrennten Block aus einem String zurück. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em data} & Der Ausgansstring. \\
+\hline
+{\em n} & Index des zu findenden Blocks. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der n-\/te durch Leerzeichen getrennte Teilstring. \char`\"{}\char`\"{} Bei ungültigem Index. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 40 der Datei mergetsd.\-cpp.
+
+\hypertarget{classTsdMerger_aef6012e4a2b9c31440ba1f81114cda4c}{\index{Tsd\-Merger@{Tsd\-Merger}!merge@{merge}}
+\index{merge@{merge}!TsdMerger@{Tsd\-Merger}}
+\subsubsection[{merge}]{\setlength{\rightskip}{0pt plus 5cm}int Tsd\-Merger\-::merge (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classTsdMerger_aef6012e4a2b9c31440ba1f81114cda4c}
+
+
+Liest die Programmargumente um die Eingabedateien anhand der Zeitstempel in eine .tsd-\/\-Datei zusammen zu führen. 
+
+Wird duch die Funktion \hyperlink{csvtosd_2main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()} von außerhalb des Namespaces aufgerufen. 
+\begin{DoxyParams}{Parameter}
+{\em argc} & Anzahl der Programmargumente. \\
+\hline
+{\em argv} & Die Programmargumente. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 313 der Datei mergetsd.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classTsdMerger_aef6012e4a2b9c31440ba1f81114cda4c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTsdMerger_a28edc421a3ee073b63448740fe1184ea}{\index{Tsd\-Merger@{Tsd\-Merger}!parse\-Arguments@{parse\-Arguments}}
+\index{parse\-Arguments@{parse\-Arguments}!TsdMerger@{Tsd\-Merger}}
+\subsubsection[{parse\-Arguments}]{\setlength{\rightskip}{0pt plus 5cm}bool Tsd\-Merger\-::parse\-Arguments (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}, }
+\item[{string \&}]{input1, }
+\item[{string \&}]{input2, }
+\item[{string \&}]{output\-\_\-file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classTsdMerger_a28edc421a3ee073b63448740fe1184ea}
+
+
+Wertet die Programmargumente aus. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em argc} & Anzahl der Programmargumente. \\
+\hline
+{\em argv} & Die Programmargumente. \\
+\hline
+{\em input1} & Ausgabe für den Pfad zur Eingabedatei 1. \\
+\hline
+{\em input2} & Ausgabe für den Pfad zur Eingabedatei 2. \\
+\hline
+{\em output\-\_\-file} & Ausgabe für den Pfad zur Ausgabedatei. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Soll das Programm weiter ablaufen? 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 138 der Datei mergetsd.\-cpp.
+
+\hypertarget{classTsdMerger_aed81153be336c48a43e2663e39fa341d}{\index{Tsd\-Merger@{Tsd\-Merger}!parse\-File@{parse\-File}}
+\index{parse\-File@{parse\-File}!TsdMerger@{Tsd\-Merger}}
+\subsubsection[{parse\-File}]{\setlength{\rightskip}{0pt plus 5cm}int Tsd\-Merger\-::parse\-File (
+\begin{DoxyParamCaption}
+\item[{string}]{filename, }
+\item[{{\bf vector}$<$ long $>$ \&}]{timestamps, }
+\item[{{\bf vector}$<$ string $>$ \&}]{names, }
+\item[{{\bf vector}$<$ string $>$ \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classTsdMerger_aed81153be336c48a43e2663e39fa341d}
+
+
+Sammelt Daten aus einer .tsd-\/\-Datei. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em filename} & Der Pfad zur .tsd-\/\-Datei. \\
+\hline
+{\em timestamps} & Ausgabevariable für die Zeitstempel der Datensätze. \\
+\hline
+{\em names} & Ausgabevariable für den Namen der Datensätze. \\
+\hline
+{\em data} & Ausgabevariable für die Sensordaten der Datensätze. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Gibt 0 bei Erfolg zurück, 1, wenn die Datei nicht gefunden werden konnte. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 80 der Datei mergetsd.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classTsdMerger_aed81153be336c48a43e2663e39fa341d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classTsdMerger_af88a04f92aed868a58740f5d9ecd2eda}{\index{Tsd\-Merger@{Tsd\-Merger}!write\-Output\-File@{write\-Output\-File}}
+\index{write\-Output\-File@{write\-Output\-File}!TsdMerger@{Tsd\-Merger}}
+\subsubsection[{write\-Output\-File}]{\setlength{\rightskip}{0pt plus 5cm}bool Tsd\-Merger\-::write\-Output\-File (
+\begin{DoxyParamCaption}
+\item[{string}]{path, }
+\item[{{\bf vector}$<$ long $>$ \&}]{timestamps1, }
+\item[{{\bf vector}$<$ string $>$ \&}]{names1, }
+\item[{{\bf vector}$<$ string $>$ \&}]{data1, }
+\item[{{\bf vector}$<$ long $>$ \&}]{timestamps2, }
+\item[{{\bf vector}$<$ string $>$ \&}]{names2, }
+\item[{{\bf vector}$<$ string $>$ \&}]{data2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classTsdMerger_af88a04f92aed868a58740f5d9ecd2eda}
+
+
+Schreibt die Ausgabedatei. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em path} & Der Pfad zur Ausgabedatei. \\
+\hline
+{\em timestamps1} & Zeitstempel der Datensätze der ersten Datei. \\
+\hline
+{\em timestamps2} & Zeitstempel der Datensätze der zweiten Datei. \\
+\hline
+{\em names1} & Namen der Datensätze der ersten Datei. \\
+\hline
+{\em names2} & Namen der Datensätze der zweiten Datei. \\
+\hline
+{\em data1} & Daten der Datensätze der ersten Datei. \\
+\hline
+{\em data2} & Daten der Datensätze der zweiten Datei. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+War das Schreiben erfolgreich? 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 256 der Datei mergetsd.\-cpp.
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classTsdMerger_a974c4c249c8a33dd1030bb0c83a94afc}{\index{Tsd\-Merger@{Tsd\-Merger}!opts@{opts}}
+\index{opts@{opts}!TsdMerger@{Tsd\-Merger}}
+\subsubsection[{opts}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Tsd\-Merger\-::\-Options}  Tsd\-Merger\-::opts\hspace{0.3cm}{\ttfamily [protected]}}}\label{classTsdMerger_a974c4c249c8a33dd1030bb0c83a94afc}
+
+
+Hält die verwendeten Programmeinstellungen. 
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\-:\begin{DoxyCompactItemize}
+\item 
+/daten/\-Projekte/eclipse\-\_\-workspace/mergetsd/src/\hyperlink{mergetsd_8cpp}{mergetsd.\-cpp}\end{DoxyCompactItemize}

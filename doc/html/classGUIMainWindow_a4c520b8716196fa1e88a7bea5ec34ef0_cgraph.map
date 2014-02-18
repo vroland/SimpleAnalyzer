@@ -1,6 +1,6 @@
 <map id="GUIMainWindow::updateObjectPropGUI" name="GUIMainWindow::updateObjectPropGUI">
 <area shape="rect" id="node3" href="$classObjectData.xhtml#af2ba5c8a722ad3ba3ff25930cece3478" title="Gibt den Namen des Objekts zurück. " alt="" coords="289,5,439,35"/>
-<area shape="rect" id="node5" href="$GUIMainWindow_8cpp.xhtml#a89d68f162c2f49e41ac9d9185309c502" title="floattostr" alt="" coords="328,59,400,88"/>
+<area shape="rect" id="node5" href="$namespaceUtils.xhtml#a76b506eef525971ab3ccb328f4ca879d" title="Hilfsfunktion zur Umwandlung einer Zahl in einen String. " alt="" coords="311,59,417,88"/>
 <area shape="rect" id="node7" href="$classObjectData.xhtml#a16a16a529f0e294e73cc05e585b81123" title="Gibt das maximale Tetraedervolumen für der Zerlegung zurück. " alt="" coords="273,112,455,141"/>
 <area shape="rect" id="node9" href="$classObjectData.xhtml#a8256cf002841401d4e4c7533d874fa5d" title="Gibt die Qualisätseinstellung für die Tetraeder bei der Zerlegung (s. " alt="" coords="287,165,441,195"/>
 <area shape="rect" id="node11" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. " alt="" coords="263,219,465,248"/>

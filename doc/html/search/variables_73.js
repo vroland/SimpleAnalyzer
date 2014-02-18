@@ -15,7 +15,7 @@ var searchData=
   ['sdtimeline',['sdTimeline',['../classPropertiesBox.xhtml#ab145e0c36e99d355f2722964da46b31a',1,'PropertiesBox']]],
   ['sensordatalbl',['sensorDataLbl',['../classPropertiesBox.xhtml#ab9b6df8a3367b4b5b56ef82ab1bd7aa3',1,'PropertiesBox']]],
   ['sensordatalist',['sensorDataList',['../classPropertiesBox.xhtml#afc9329945c39f48e441c410b0ff3d9fa',1,'PropertiesBox::sensorDataList()'],['../classObjectData.xhtml#af6a1dcb4e137b1698422a912c07c7f39',1,'ObjectData::sensorDataList()']]],
-  ['separator',['separator',['../structCSVToSD_1_1Options.xhtml#afa7a79f38999d3c89f7ffa67f74bfbd4',1,'CSVToSD::Options::separator()'],['../structODiSIToSD_1_1Options.xhtml#a5621362ac3b707242893629db592f994',1,'ODiSIToSD::Options::separator()']]],
+  ['separator',['separator',['../structCsvToSdConverter_1_1Options.xhtml#abdcf3a6497aac513eedad80fd85b2f76',1,'CsvToSdConverter::Options::separator()'],['../structOdisiToSdConverter_1_1Options.xhtml#ae4c74d1fdfbaf37eb4b38f4b684cfa31',1,'OdisiToSdConverter::Options::separator()']]],
   ['show_5fextrapolated',['show_extrapolated',['../structRenderer_1_1Viewport__info.xhtml#ac9d99216a6044d7048ba805f9f9b0815',1,'Renderer::Viewport_info']]],
   ['show_5fsensordata',['show_sensordata',['../structRenderer_1_1Viewport__info.xhtml#abd0ab0f20c5acc43128634b4b4cc1f52',1,'Renderer::Viewport_info']]],
   ['showedges',['showEdges',['../structRenderer_1_1Viewport__info.xhtml#a61ce4c293d9dc97da9b4ed2f8f7a36e0',1,'Renderer::Viewport_info']]],
@@ -27,8 +27,8 @@ var searchData=
   ['specificheatcapacity',['specificheatcapacity',['../structObjectData_1_1MaterialData.xhtml#a784e2b70f98d146979fd422d41445fea',1,'ObjectData::MaterialData']]],
   ['specificheatcapedit',['specificHeatCapEdit',['../classPropertiesBox.xhtml#a7058b344520a2d9ba42fe9e9c1080faa',1,'PropertiesBox']]],
   ['specificheatcaplbl',['specificHeatCapLbl',['../classPropertiesBox.xhtml#ad49b95cb856e5f18d6717fc99ccd7b0b',1,'PropertiesBox']]],
-  ['start_5fcol',['start_col',['../structCSVToSD_1_1Options.xhtml#a70d85339b25b5fa4db8750fb78203e5e',1,'CSVToSD::Options']]],
-  ['startrow',['startrow',['../structODiSIToSD_1_1Options.xhtml#ac5138441572e68637dee8052f3c97240',1,'ODiSIToSD::Options']]],
+  ['start_5fcol',['start_col',['../structCsvToSdConverter_1_1Options.xhtml#a8d822728dd7c9b03261be6e994fd198c',1,'CsvToSdConverter::Options']]],
+  ['startrow',['startrow',['../structOdisiToSdConverter_1_1Options.xhtml#acb8ca8c36555d0fa3d1b87e2c8800fe6',1,'OdisiToSdConverter::Options']]],
   ['step_5fwidth',['step_width',['../classGUIColorScalePanel.xhtml#a5f9789cc727854594c7d29c392578427',1,'GUIColorScalePanel']]],
   ['subnames',['subnames',['../structUtils_1_1SensorData.xhtml#ad5875ab7e8ebdc9dc41a7b9ef1c063ba',1,'Utils::SensorData']]]
 ];

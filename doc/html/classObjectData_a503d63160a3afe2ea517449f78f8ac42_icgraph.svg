@@ -62,7 +62,7 @@ var sectionId = 'dynsection-6';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="classImporter.xhtml#a001bd26372d94f96de66f7bcb90cc790" target="_top" xlink:title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. ">
+<a xlink:href="classImporter.xhtml#ae837d750c92450f8e83b2d93eb099f79" target="_top" xlink:title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. ">
 <polygon fill="none" stroke="black" points="204.5,-354.5 204.5,-375.5 335.5,-375.5 335.5,-354.5 204.5,-354.5"/>
 <text text-anchor="middle" x="270" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">Importer::LoadSensorData</text>
 </a>
@@ -74,7 +74,7 @@ var sectionId = 'dynsection-6';
 </g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
-<a xlink:href="classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" target="_top" xlink:title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. ">
+<a xlink:href="classImporter.xhtml#ad8dec9ce375155ca130453632530eb52" target="_top" xlink:title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. ">
 <polygon fill="none" stroke="black" points="206,-314.5 206,-335.5 334,-335.5 334,-314.5 206,-314.5"/>
 <text text-anchor="middle" x="270" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">Importer::LoadTimedData</text>
 </a>

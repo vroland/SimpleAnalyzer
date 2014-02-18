@@ -73,7 +73,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
-<a xlink:href="classImporter.xhtml#a196e66a161a0102194580ec4b10895e5" target="_top" xlink:title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. ">
+<a xlink:href="classImporter.xhtml#ad8dec9ce375155ca130453632530eb52" target="_top" xlink:title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. ">
 <polygon fill="none" stroke="black" points="390,-81.5 390,-102.5 518,-102.5 518,-81.5 390,-81.5"/>
 <text text-anchor="middle" x="454" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">Importer::LoadTimedData</text>
 </a>
@@ -97,7 +97,7 @@ var sectionId = 'dynsection-10';
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
-<a xlink:href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" target="_top" xlink:title="getTextBlock">
+<a xlink:href="Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" target="_top" xlink:title="Gibt den n&#45;ten durch Leerzeichen abgetrennten Block aus einem String zurück. ">
 <polygon fill="none" stroke="black" points="594,-104.5 594,-125.5 668,-125.5 668,-104.5 594,-104.5"/>
 <text text-anchor="middle" x="631" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">getTextBlock</text>
 </a>

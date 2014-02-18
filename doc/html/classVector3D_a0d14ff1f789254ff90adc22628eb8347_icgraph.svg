@@ -61,7 +61,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<a xlink:href="GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" target="_top" xlink:title="render_thread">
+<a xlink:href="GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" target="_top" xlink:title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. ">
 <polygon fill="none" stroke="black" points="469,-132.5 469,-153.5 545,-153.5 545,-132.5 469,-132.5"/>
 <text text-anchor="middle" x="507" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">render_thread</text>
 </a>

@@ -109,6 +109,16 @@ namespace Utils {
 		} /**<  Vergleichsoperator für den Abstand zum Punkt meshpoint. */
 	};
 	/**
+	 * Hilfsfunktion zur Umwandlung einer Zahl in einen String.
+	 * @param val Die umzuwandelnde Zahl.
+	 * @return Der resultierende String.
+	 */
+	inline string floattostr(double val) {
+		ostringstream ss;
+		ss << val;
+		return ss.str();
+	}
+	/**
 	 * Wandelt eine Fließkommazahl in einen wxWidgets-String um.
 	 * @param val Die umzuwandelnde Zahl.
 	 * @return Der entstandene String.
