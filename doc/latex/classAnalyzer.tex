@@ -36,7 +36,7 @@ virtual \hyperlink{classAnalyzer_afa899ac3a6aabbe59f791f69368ad740}{$\sim$\-Anal
 \begin{DoxyCompactItemize}
 \item 
 std\-::ostream \& \hyperlink{classAnalyzer_a031acd0d5f2a8c997c18645dd548dca7}{operator$<$$<$} (std\-::ostream \&out, const \hyperlink{structAnalyzer_1_1AnalyzerData__object}{Analyzer\-Data\-\_\-object} \&data)
-\begin{DoxyCompactList}\small\item\em Operator zum Ausgeben der Analysedaten für ein Objekt im cout-\/\-Stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Operator zum Ausgeben der Analysedaten für ein Objekt in einem Stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -60,7 +60,7 @@ Der Konstruktor.
 
 
 
-Definiert in Zeile 14 der Datei Analyzer.\-cpp.
+Definiert in Zeile 16 der Datei Analyzer.\-cpp.
 
 \hypertarget{classAnalyzer_afa899ac3a6aabbe59f791f69368ad740}{\index{Analyzer@{Analyzer}!$\sim$\-Analyzer@{$\sim$\-Analyzer}}
 \index{$\sim$\-Analyzer@{$\sim$\-Analyzer}!Analyzer@{Analyzer}}
@@ -75,7 +75,7 @@ Der Destruktor.
 
 
 
-Definiert in Zeile 108 der Datei Analyzer.\-cpp.
+Definiert in Zeile 191 der Datei Analyzer.\-cpp.
 
 
 
@@ -94,6 +94,8 @@ Definiert in Zeile 108 der Datei Analyzer.\-cpp.
 
 Ermittelt Daten für ein Objekt. 
 
+Objekt zum Vergleichen von Messpunkten hinsichtlich der Temperatur.
+
 
 \begin{DoxyParams}{Parameter}
 {\em obj} & Das zu analysierende Objekt. \\
@@ -102,12 +104,12 @@ Ermittelt Daten für ein Objekt.
 \hline
 {\em use\-\_\-markers} & Die markierten Zeitpunkte eines Sensordatensatzes analysieren. Wenn false wird nur der aktuell ausgewählte Zeitpunkt analysiert. \\
 \hline
-{\em sdindex} & Nur den Sensordatensatz mit diesem Index analysieren. \\
+{\em sdindex} & Nur den Sensordatensatz mit diesem Index analysieren.\\
 \hline
 \end{DoxyParams}
+Wird von s 
 
-
-Definiert in Zeile 18 der Datei Analyzer.\-cpp.
+Definiert in Zeile 26 der Datei Analyzer.\-cpp.
 
 
 
@@ -158,7 +160,7 @@ Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt.
 \end{DoxyParams}
 
 
-Definiert in Zeile 83 der Datei Analyzer.\-cpp.
+Definiert in Zeile 147 der Datei Analyzer.\-cpp.
 
 
 
@@ -195,11 +197,11 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [friend]}}}\label{classAnalyzer_a031acd0d5f2a8c997c18645dd548dca7}
 
 
-Operator zum Ausgeben der Analysedaten für ein Objekt im cout-\/\-Stream. 
+Operator zum Ausgeben der Analysedaten für ein Objekt in einem Stream. 
 
 
 
-Definiert in Zeile 91 der Datei Analyzer.\-cpp.
+Definiert in Zeile 164 der Datei Analyzer.\-cpp.
 
 
 

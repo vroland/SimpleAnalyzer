@@ -21,85 +21,139 @@ using namespace std;
 #endif
 
 ObjectData::ObjectData() {
+	/*
+	 * Objekteigenschaften, die keine Daten sind initialisieren.
+	 * Die Daten werden erst durch das Laden einer Datei (loadFromFile) hinzugefügt.
+	 */
 	current_sensor_index = -1;
 	maxvolume = .001;
 	quality = 2;
 }
+
 int ObjectData::loadFromFile(wxString &path) {
-	if (materials.size()!=0) {
+
+	//sind schon Daten mit dem Objekt verknüpft?
+	if (materials.size() != 0) {
 		return OD_LOAD_ALREADY_LOADED;
 	}
+
+	//Ist die angegebene Datei eine .obj-Datei?
 	wxString end = _T("obj");
 	wxString path_without_name = path.BeforeLast('.');
-	if (path.AfterLast('.')!=end) {
+	if (path.AfterLast('.') != end) {
 		return OD_LOAD_INVALID_FILE;
 	}
+
+	//Dezimaltrennzeichen auf Punkt setzen
 	setlocale(LC_NUMERIC, "C");
+
+	//Objekt importieren
 	Importer importer;
-	importer.ImportObj(string((path_without_name+_T(".obj")).ToUTF8().data()),this);
-	int status = importer.LoadSensorData(string((path_without_name+_T(".sd")).ToUTF8().data()),this);
-	if (status==OD_FAILURE) {
-		int status = importer.LoadTimedData(string((path_without_name+_T(".tsd")).ToUTF8().data()),this);
-		if (status==OD_FAILURE) {
+	importer.ImportObj(string((path_without_name + _T(".obj")).ToUTF8().data()),
+			this);
+
+	//Sensordaten importieren
+	int status = importer.LoadSensorData(
+			string((path_without_name + _T(".sd")).ToUTF8().data()), this);
+	//Fehlschlag? -> Versuchen, zeitgesteuerte Sensordaten zu importieren
+	if (status == OD_FAILURE) {
+		int status = importer.LoadTimedData(
+				string((path_without_name + _T(".tsd")).ToUTF8().data()), this);
+		if (status == OD_FAILURE) {
+			//Sensordaten konnten nicht geladen werden
 			return OD_LOAD_INVALID_SENSOR_FILE;
 		}
 	}
-	wxString wxfn = path_without_name.AfterLast(PATH_SEPARATOR);
-	string oname = string(wxfn.ToAscii());
-	string tname = oname;
+
+	//Namen für das Objekt aus dem Dateinamen ermitteln
+	wxString wx_filename = path_without_name.AfterLast(PATH_SEPARATOR);
+	string obj_name = string(wx_filename.ToAscii());
+	string temp_name = obj_name;
+
 	bool unique = false;
+	//Anzahl der Durchläufe
 	int count = 0;
+	//Solange ein Objekt mit dem selben Namen existiert...
 	while (!unique) {
+
+		//Existiert bereits ein Objekt mit diesem Namen?
 		bool found = false;
-		for (unsigned int i=0;i<wxGetApp().getDataObjects()->size();i++) {
-			if (wxGetApp().getDataObjects()->at(i)->name==tname) {
+		for (unsigned int i = 0; i < wxGetApp().getDataObjects()->size(); i++) {
+			if (wxGetApp().getDataObjects()->at(i)->name == temp_name) {
 				found = true;
 			}
 		}
+
+		//Objektnamen einzigartig?
 		if (!found) {
 			unique = true;
 		} else {
+			//Objekt eine Nummer zu Identifisierung an den Namen geben
 			count++;
-			stringstream ss (stringstream::in | stringstream::out);
-			ss <<oname;
-			ss <<" ("<<count<<")";
-			tname =ss.str();
+			stringstream ss(stringstream::in | stringstream::out);
+			ss << obj_name;
+			ss << " (" << count << ")";
+			temp_name = ss.str();
 		}
 	}
-	name = tname;
+
+	name = temp_name;
+
+	//Geometrie und Temperaturverteilung für das Objekt berechnen
 	calculateIO();
+
 	return OD_SUCCESS;
 }
+
 int ObjectData::addSensorData(wxString &path) {
 	Importer importer;
-	importer.LoadSensorData(string(path.ToUTF8().data()),this);
+	importer.LoadSensorData(string(path.ToUTF8().data()), this);
 	return OD_SUCCESS;
 }
+
 int ObjectData::addTimedData(wxString &path) {
 	Importer importer;
-	importer.LoadTimedData(string(path.ToUTF8().data()),this);
+	importer.LoadTimedData(string(path.ToUTF8().data()), this);
 	return OD_SUCCESS;
 }
+
 int ObjectData::calculateIO() {
+
+	//Dezimaltrennzeichen auf Punkt setzen
 	setlocale(LC_NUMERIC, "C");
-	for (unsigned int i=0;i<materials.size();i++) {
+
+	//Für alle Materialien...
+	for (unsigned int i = 0; i < materials.size(); i++) {
 		MaterialData* data = &materials.at(i);
-		if (data->tetgenoutput!=NULL) {
+
+		//Muss erst alte Geometrie gelöscht werden?
+		if (data->tetgenoutput != NULL) {
 			delete data->tetgenoutput;
 		}
-		if (quality==0) {
-			cerr << "Error: quality is 0! Are object properties set properly?" << endl;
+
+		//Objekteigenschaften gültig?
+		if (quality == 0) {
+			cerr << "Error: quality is 0! Are object properties set properly?"
+					<< endl;
 			return OD_FAILURE;
 		}
+
+		//Speicherstruktur für die neue Geometrie erzeugen
 		data->tetgenoutput = new tetgenio();
-		stringstream ss (stringstream::in | stringstream::out);
-		ss <<"Qpq1.414a";
+
+		//Die neue Geometrie mit tetgen erzeugen
+		stringstream ss(stringstream::in | stringstream::out);
+		ss << "Qpq1.414a";
 		ss << maxvolume;
-		string args =ss.str();//"Qpq1.414a0.001";
-		tetrahedralize(const_cast<char*> (args.c_str()), data->tetgeninput, data->tetgenoutput,NULL,NULL);
+		string args = ss.str(); //"Qpq1.414a0.001";
+		tetrahedralize(const_cast<char*>(args.c_str()), data->tetgeninput,
+				data->tetgenoutput, NULL, NULL);
 	}
+
+	//Die Temperaturverteilung für die neue Geometrie berechnen
 	MeshProcessor meshprocessor;
 	meshprocessor.process(this);
+
 	return OD_SUCCESS;
 }
 
@@ -144,10 +198,12 @@ void ObjectData::setCurrentSensorIndex(int currentSensorIndex) {
 }
 
 ObjectData::~ObjectData() {
-	for (unsigned int i=0;i<materials.size();i++) {
-			MaterialData* data = &materials.at(i);
-			delete data->tetgeninput;
-			delete data->tetgenoutput;
+	//für alle Materialien...
+	for (unsigned int i = 0; i < materials.size(); i++) {
+		//Geometriedaten löschen
+		MaterialData* data = &materials.at(i);
+		delete data->tetgeninput;
+		delete data->tetgenoutput;
 	}
 }
 

@@ -1,23 +1,25 @@
 <map id="Vector3D::normalize" name="Vector3D::normalize">
-<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="1045,169,1200,215"/>
-<area shape="rect" id="node7" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Zeichnet die Tetraeder eines Materials des Objekts. " alt="" coords="603,125,784,155"/>
-<area shape="rect" id="node9" href="$Renderer_8cpp.xhtml#a4225af4db7b633515f133a4f40c72b33" title="drawVector" alt="" coords="219,179,307,208"/>
-<area shape="rect" id="node11" href="$classRenderer.xhtml#af7e5f8f68742f198e315fb4683a605a4" title="Zeichnet das Objekt (Attribut object). " alt="" coords="408,229,525,259"/>
-<area shape="rect" id="node16" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="195,125,331,155"/>
-<area shape="rect" id="node23" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="380,72,553,101"/>
-<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="1261,169,1416,215"/>
-<area shape="rect" id="node13" href="$classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="612,229,775,259"/>
-<area shape="rect" id="node19" href="$Renderer_8cpp.xhtml#a17ef754a4f478e115d6e7fb813702639" title="pointBehindCut" alt="" coords="412,125,521,155"/>
-<area shape="rect" id="node25" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="624,72,763,101"/>
-<area shape="rect" id="node27" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="860,125,961,155"/>
-<area shape="rect" id="node30" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. " alt="" coords="833,15,988,44"/>
-<area shape="rect" id="node34" href="$MeshProcessor_8cpp.xhtml#ad2670c4e8381f9a0a89c65f5559ed421" title="interpolatePoint" alt="" coords="855,72,967,101"/>
-<area shape="rect" id="node32" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="1037,5,1208,51"/>
-<area shape="rect" id="node36" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="Berechnet die Temperaturverteilung für ein Objekt. " alt="" coords="1040,75,1205,104"/>
-<area shape="rect" id="node38" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="1257,96,1420,125"/>
-<area shape="rect" id="node46" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="1257,39,1420,68"/>
-<area shape="rect" id="node40" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="1480,149,1659,195"/>
-<area shape="rect" id="node44" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="1479,96,1660,125"/>
-<area shape="rect" id="node42" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="1717,149,1904,195"/>
-<area shape="rect" id="node48" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="1469,26,1669,73"/>
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="1051,140,1205,186"/>
+<area shape="rect" id="node7" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Zeichnet die Tetraeder eines Materials des Objekts. " alt="" coords="603,212,784,242"/>
+<area shape="rect" id="node9" href="$Renderer_8cpp.xhtml#a4225af4db7b633515f133a4f40c72b33" title="Zeichnet einen Vektor als Pfeil. " alt="" coords="219,71,307,100"/>
+<area shape="rect" id="node17" href="$Renderer_8cpp.xhtml#a608a02845726b8844beac12e5154c500" title="Visualisiert Informationen über eine 2D&#45;Temperaturverteilung. " alt="" coords="400,96,533,126"/>
+<area shape="rect" id="node21" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="195,175,331,204"/>
+<area shape="rect" id="node28" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="380,304,553,334"/>
+<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="1267,140,1421,186"/>
+<area shape="rect" id="node11" href="$Renderer_8cpp.xhtml#ac35d259852428046b123c635864e2197" title="Zeichnet markante Linien zum leichteren Erfassen des Koordinatensystems. " alt="" coords="425,43,508,72"/>
+<area shape="rect" id="node13" href="$classRenderer.xhtml#af7e5f8f68742f198e315fb4683a605a4" title="Zeichnet das Objekt (Attribut object). " alt="" coords="635,70,752,99"/>
+<area shape="rect" id="node15" href="$classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="832,70,995,99"/>
+<area shape="rect" id="node24" href="$Renderer_8cpp.xhtml#a17ef754a4f478e115d6e7fb813702639" title="pointBehindCut" alt="" coords="412,200,521,230"/>
+<area shape="rect" id="node30" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="624,279,763,308"/>
+<area shape="rect" id="node32" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="863,207,964,236"/>
+<area shape="rect" id="node35" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. " alt="" coords="836,272,991,302"/>
+<area shape="rect" id="node39" href="$MeshProcessor_8cpp.xhtml#ad2670c4e8381f9a0a89c65f5559ed421" title="interpolatePoint" alt="" coords="857,330,969,359"/>
+<area shape="rect" id="node37" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="1043,261,1213,308"/>
+<area shape="rect" id="node41" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="Berechnet die Temperaturverteilung für ein Objekt. " alt="" coords="1045,331,1211,360"/>
+<area shape="rect" id="node43" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="1263,358,1425,387"/>
+<area shape="rect" id="node51" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="1263,304,1425,334"/>
+<area shape="rect" id="node45" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="1485,384,1664,430"/>
+<area shape="rect" id="node49" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="1484,331,1665,360"/>
+<area shape="rect" id="node47" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="1723,384,1909,430"/>
+<area shape="rect" id="node53" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="1475,261,1675,308"/>
 </map>

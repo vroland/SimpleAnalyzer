@@ -1,7 +1,7 @@
 <map id="interpolatePoint" name="interpolatePoint">
 <area shape="rect" id="node3" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="165,306,304,335"/>
 <area shape="rect" id="node5" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. " alt="" coords="576,101,765,130"/>
-<area shape="rect" id="node29" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz..." alt="" coords="363,306,517,335"/>
+<area shape="rect" id="node29" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze..." alt="" coords="363,306,517,335"/>
 <area shape="rect" id="node31" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="353,511,527,541"/>
 <area shape="rect" id="node7" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="845,207,952,237"/>
 <area shape="rect" id="node15" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="817,261,980,290"/>

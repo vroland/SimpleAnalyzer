@@ -19,13 +19,57 @@ Include-\/\-Abhängigkeitsdiagramm für Renderer.\-cpp\-:\nopagebreak
 \item 
 bool \hyperlink{Renderer_8cpp_a17ef754a4f478e115d6e7fb813702639}{point\-Behind\-Cut} (\hyperlink{classVector3D}{Vector3\-D} $\ast$point, \hyperlink{classTriangle}{Triangle} $\ast$cut)
 \item 
-void \hyperlink{Renderer_8cpp_ac35d259852428046b123c635864e2197}{render\-Grid} ()
-\item 
 void \hyperlink{Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33}{draw\-Vector} (\hyperlink{classVector3D}{Vector3\-D} $\ast$pos, \hyperlink{classVector3D}{Vector3\-D} $\ast$dir)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Zeichnet einen Vektor als Pfeil. \end{DoxyCompactList}\item 
+void \hyperlink{Renderer_8cpp_ac35d259852428046b123c635864e2197}{render\-Grid} ()
+\begin{DoxyCompactList}\small\item\em Zeichnet markante Linien zum leichteren Erfassen des Koordinatensystems. \end{DoxyCompactList}\item 
+void \hyperlink{Renderer_8cpp_a608a02845726b8844beac12e5154c500}{draw\-Cut\-Render\-Info} (\hyperlink{structUtils_1_1CutRender__info}{Cut\-Render\-\_\-info} $\ast$info)
+\begin{DoxyCompactList}\small\item\em Visualisiert Informationen über eine 2\-D-\/\-Temperaturverteilung. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Dokumentation der Funktionen}
+\hypertarget{Renderer_8cpp_a608a02845726b8844beac12e5154c500}{\index{Renderer.\-cpp@{Renderer.\-cpp}!draw\-Cut\-Render\-Info@{draw\-Cut\-Render\-Info}}
+\index{draw\-Cut\-Render\-Info@{draw\-Cut\-Render\-Info}!Renderer.cpp@{Renderer.\-cpp}}
+\subsubsection[{draw\-Cut\-Render\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Cut\-Render\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Cut\-Render\-\_\-info} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{Renderer_8cpp_a608a02845726b8844beac12e5154c500}
+
+
+Visualisiert Informationen über eine 2\-D-\/\-Temperaturverteilung. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em info} & Die zu visualisierenden Informationen. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 576 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Renderer_8cpp_a608a02845726b8844beac12e5154c500_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Renderer_8cpp_a608a02845726b8844beac12e5154c500_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33}{\index{Renderer.\-cpp@{Renderer.\-cpp}!draw\-Vector@{draw\-Vector}}
 \index{draw\-Vector@{draw\-Vector}!Renderer.cpp@{Renderer.\-cpp}}
 \subsubsection[{draw\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Vector (
@@ -36,7 +80,18 @@ void \hyperlink{Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33}{draw\-Vector} (
 )}}\label{Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33}
 
 
-Definiert in Zeile 312 der Datei Renderer.\-cpp.
+Zeichnet einen Vektor als Pfeil. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em pos} & Startpunkt des Pfeils. \\
+\hline
+{\em dir} & Richtung und Länge des Pfeils. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 373 der Datei Renderer.\-cpp.
 
 
 
@@ -103,7 +158,22 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 )}}\label{Renderer_8cpp_ac35d259852428046b123c635864e2197}
 
 
-Definiert in Zeile 278 der Datei Renderer.\-cpp.
+Zeichnet markante Linien zum leichteren Erfassen des Koordinatensystems. 
+
+
+
+Definiert in Zeile 455 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Renderer_8cpp_ac35d259852428046b123c635864e2197_cgraph}
+\end{center}
+\end{figure}
+
 
 
 

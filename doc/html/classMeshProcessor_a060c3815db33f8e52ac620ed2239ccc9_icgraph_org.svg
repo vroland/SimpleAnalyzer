@@ -10,32 +10,32 @@
 <title>MeshProcessor::process</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="0.5,-30.5 0.5,-51.5 125.5,-51.5 125.5,-30.5 0.5,-30.5"/>
-<text text-anchor="middle" x="63" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">MeshProcessor::process</text>
+<polygon fill="#bfbfbf" stroke="black" points="0.5,-52.5 0.5,-73.5 125.5,-73.5 125.5,-52.5 0.5,-52.5"/>
+<text text-anchor="middle" x="63" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">MeshProcessor::process</text>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
 <a xlink:href="classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" target="_top" xlink:title="Ermittelt Daten für ein Objekt. ">
-<polygon fill="none" stroke="black" points="162.5,-52.5 162.5,-73.5 285.5,-73.5 285.5,-52.5 162.5,-52.5"/>
-<text text-anchor="middle" x="224" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">Analyzer::analyzeObject</text>
+<polygon fill="none" stroke="black" points="162.5,-72.5 162.5,-93.5 285.5,-93.5 285.5,-72.5 162.5,-72.5"/>
+<text text-anchor="middle" x="224" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">Analyzer::analyzeObject</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M135.659,-50.9286C144.543,-52.1425 153.555,-53.3739 162.257,-54.563"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="136.09,-47.455 125.708,-49.5688 135.142,-54.3905 136.09,-47.455"/>
+<path fill="none" stroke="midnightblue" d="M135.659,-72.026C144.543,-73.1295 153.555,-74.249 162.257,-75.33"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="136.063,-68.5493 125.708,-70.7898 135.2,-75.4959 136.063,-68.5493"/>
 </g>
 <!-- Node6 -->
 <g id="node11" class="node"><title>Node6</title>
 <a xlink:href="classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" target="_top" xlink:title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver...">
-<polygon fill="none" stroke="black" points="163,-9.5 163,-30.5 285,-30.5 285,-9.5 163,-9.5"/>
-<text text-anchor="middle" x="224" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::calculateIO</text>
+<polygon fill="none" stroke="black" points="163,-32.5 163,-53.5 285,-53.5 285,-32.5 163,-32.5"/>
+<text text-anchor="middle" x="224" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::calculateIO</text>
 </a>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge10" class="edge"><title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M135.807,-31.5035C144.822,-30.3275 153.968,-29.1347 162.785,-27.9846"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="135.171,-28.0566 125.708,-32.8207 136.077,-34.9978 135.171,-28.0566"/>
+<path fill="none" stroke="midnightblue" d="M135.807,-53.9557C144.822,-52.8357 153.968,-51.6997 162.785,-50.6044"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="135.2,-50.5041 125.708,-55.2102 136.063,-57.4507 135.2,-50.5041"/>
 </g>
 <!-- Node3 -->
 <g id="node5" class="node"><title>Node3</title>
@@ -47,8 +47,8 @@
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge4" class="edge"><title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M273.358,-76.1241C291.84,-81.0383 313.114,-86.695 332.747,-91.9155"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="274.253,-72.7406 263.69,-73.5533 272.454,-79.5055 274.253,-72.7406"/>
+<path fill="none" stroke="midnightblue" d="M296.127,-93.8399C307.313,-95.5211 318.83,-97.2519 329.9,-98.9156"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="296.377,-90.3383 285.968,-92.3132 295.337,-97.2606 296.377,-90.3383"/>
 </g>
 <!-- Node5 -->
 <g id="node9" class="node"><title>Node5</title>
@@ -59,8 +59,8 @@
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge8" class="edge"><title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M296.108,-63C306.804,-63 317.801,-63 328.422,-63"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="295.968,-59.5001 285.968,-63 295.968,-66.5001 295.968,-59.5001"/>
+<path fill="none" stroke="midnightblue" d="M296.108,-74.6638C306.804,-73.4273 317.801,-72.1559 328.422,-70.9281"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="295.5,-71.2107 285.968,-75.836 296.304,-78.1644 295.5,-71.2107"/>
 </g>
 <!-- Node4 -->
 <g id="node7" class="node"><title>Node4</title>
@@ -75,6 +75,11 @@
 <path fill="none" stroke="midnightblue" d="M474.303,-109C485.474,-109 496.92,-109 507.939,-109"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="474.141,-105.5 464.141,-109 474.14,-112.5 474.141,-105.5"/>
 </g>
+<!-- Node6&#45;&gt;Node5 -->
+<g id="edge14" class="edge"><title>Node6&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M295.714,-51.2906C306.512,-52.539 317.628,-53.824 328.36,-55.0647"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="295.816,-47.7792 285.48,-50.1076 295.012,-54.7329 295.816,-47.7792"/>
+</g>
 <!-- Node7 -->
 <g id="node13" class="node"><title>Node7</title>
 <a xlink:href="classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" target="_top" xlink:title="Berechnet die 3D&#45;Temperaturverteilung neu. ">
@@ -85,8 +90,8 @@
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge12" class="edge"><title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M295.534,-18.7595C304.197,-18.6093 313.067,-18.4555 321.782,-18.3044"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="295.418,-15.2609 285.48,-18.9339 295.54,-22.2599 295.418,-15.2609"/>
+<path fill="none" stroke="midnightblue" d="M295.534,-32.2492C304.197,-30.9472 313.067,-29.6141 321.782,-28.3044"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="294.849,-28.8128 285.48,-33.7602 295.89,-35.735 294.849,-28.8128"/>
 </g>
 </g>
 </svg>

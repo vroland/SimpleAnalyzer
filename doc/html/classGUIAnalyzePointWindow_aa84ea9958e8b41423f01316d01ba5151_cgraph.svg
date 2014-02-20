@@ -195,7 +195,7 @@ var sectionId = 'dynsection-2';
 </g>
 <!-- Node16 -->
 <g id="node37" class="node"><title>Node16</title>
-<a xlink:href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" target="_top" xlink:title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz...">
+<a xlink:href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" target="_top" xlink:title="Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze...">
 <polygon fill="none" stroke="black" points="516,-568.5 516,-589.5 632,-589.5 632,-568.5 516,-568.5"/>
 <text text-anchor="middle" x="574" y="-576.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::nextCombination</text>
 </a>

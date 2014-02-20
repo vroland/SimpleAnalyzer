@@ -1,14 +1,13 @@
 <map id="drawVector" name="drawVector">
 <area shape="rect" id="node3" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Normalisiert den Vektor. " alt="" coords="152,5,293,35"/>
-<area shape="rect" id="node5" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Testet, ob zwei Vektoren identisch sind. " alt="" coords="161,165,284,195"/>
-<area shape="rect" id="node13" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)..." alt="" coords="159,272,287,301"/>
-<area shape="rect" id="node15" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="141,219,304,248"/>
-<area shape="rect" id="node20" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="168,325,277,355"/>
-<area shape="rect" id="node22" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. " alt="" coords="169,59,276,88"/>
-<area shape="rect" id="node27" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="169,112,276,141"/>
-<area shape="rect" id="node32" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Gibt die Länge des Vektors zurück. " alt="" coords="152,379,293,408"/>
-<area shape="rect" id="node7" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="352,85,464,115"/>
-<area shape="rect" id="node9" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="352,139,464,168"/>
-<area shape="rect" id="node11" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="353,192,463,221"/>
-<area shape="rect" id="node34" href="$GeometryClasses_8cpp.xhtml#a73527f20206c906e9f333e0f233de13e" title="sqr" alt="" coords="388,379,428,408"/>
+<area shape="rect" id="node5" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Testet, ob zwei Vektoren identisch sind. " alt="" coords="161,59,284,88"/>
+<area shape="rect" id="node13" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)..." alt="" coords="159,219,287,248"/>
+<area shape="rect" id="node15" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Gibt die Länge des Vektors zurück. " alt="" coords="152,272,293,301"/>
+<area shape="rect" id="node19" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="141,112,304,141"/>
+<area shape="rect" id="node24" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. " alt="" coords="169,165,276,195"/>
+<area shape="rect" id="node29" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="168,325,277,355"/>
+<area shape="rect" id="node7" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="352,59,464,88"/>
+<area shape="rect" id="node9" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="352,112,464,141"/>
+<area shape="rect" id="node11" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="353,165,463,195"/>
+<area shape="rect" id="node17" href="$GeometryClasses_8cpp.xhtml#a73527f20206c906e9f333e0f233de13e" title="sqr" alt="" coords="388,272,428,301"/>
 </map>

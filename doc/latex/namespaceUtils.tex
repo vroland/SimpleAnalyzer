@@ -20,7 +20,7 @@ struct \hyperlink{structUtils_1_1CutRender__info}{Cut\-Render\-\_\-info}
 struct \hyperlink{structUtils_1_1SensorData}{Sensor\-Data}
 \begin{DoxyCompactList}\small\item\em Ein Sensordatensatz. \end{DoxyCompactList}\item 
 struct \hyperlink{structUtils_1_1SensorPointComparator}{Sensor\-Point\-Comparator}
-\begin{DoxyCompactList}\small\item\em Hilfsstruktur zum Vergleichen des Abstands von Sensordaten. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Hilfsstruktur zum Vergleichen des Abstands von Messpunkten. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Aufzählungen}
 \begin{DoxyCompactItemize}
 \item 
@@ -52,7 +52,7 @@ int \hyperlink{namespaceUtils_a8f7379e1915d2a04907eb9d99d0a56ad}{point\-Inside\-
 int \hyperlink{namespaceUtils_a40eaef4d22da849a5deb2f1153d88bbc}{point\-Inside\-Tetrahedron} (double $\ast$p, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$tet)
 \begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
 void \hyperlink{namespaceUtils_af4ba26e928c7cef5269c51bfac49d547}{next\-Combination} (\hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $\ast$indices, int depth, int data\-Point\-Count)
-\begin{DoxyCompactList}\small\item\em Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf data\-Point\-Count Plätze. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf data\-Point\-Count Plätze. \end{DoxyCompactList}\item 
 double \hyperlink{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}{get\-Point\-Value} (int \&status, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $>$ $\ast$sensorpoints, double $\ast$p, \hyperlink{classInterpolator}{Interpolator} $\ast$interpolator, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$prev\-\_\-tet=N\-U\-L\-L, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$current\-\_\-tet=N\-U\-L\-L)
 \begin{DoxyCompactList}\small\item\em Gibt den inter/extrapolierten Wert eines Punktes zurück. \end{DoxyCompactList}\item 
 float $\ast$ \hyperlink{namespaceUtils_a5d6523eb946892eee52c9c74efd016de}{hsv\-To\-Rgb} (float h, float s, float v)
@@ -109,7 +109,7 @@ Der den Grenzen entsprechende Wert.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 27 der Datei utils.\-cpp.
+Definiert in Zeile 39 der Datei utils.\-cpp.
 
 
 
@@ -143,7 +143,7 @@ Kopiert die Eigenschaften eines Sensorpunktes in einen Anderen.
 \end{DoxyParams}
 
 
-Definiert in Zeile 69 der Datei utils.\-cpp.
+Definiert in Zeile 97 der Datei utils.\-cpp.
 
 
 
@@ -177,12 +177,11 @@ Der resultierende String.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 116 der Datei utils.\-h.
+Definiert in Zeile 121 der Datei utils.\-h.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -212,7 +211,7 @@ Der entstandene String.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 36 der Datei utils.\-cpp.
+Definiert in Zeile 49 der Datei utils.\-cpp.
 
 
 
@@ -249,7 +248,7 @@ Der entstandene String.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 41 der Datei utils.\-cpp.
+Definiert in Zeile 55 der Datei utils.\-cpp.
 
 \hypertarget{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}{\index{Utils@{Utils}!get\-Point\-Value@{get\-Point\-Value}}
 \index{get\-Point\-Value@{get\-Point\-Value}!Utils@{Utils}}
@@ -287,7 +286,7 @@ Temperatur des gesuchten Punktes.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 258 der Datei utils.\-cpp.
+Definiert in Zeile 353 der Datei utils.\-cpp.
 
 
 
@@ -324,7 +323,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 
 Wandelt eine Farbe im H\-S\-V-\/\-Format ins R\-G\-B-\/\-Format um. 
 
-
+Gefunden unter \href{http://stackoverflow.com/questions/8208905/hsv-0-255-to-rgb-0-255}{\tt http\-://stackoverflow.\-com/questions/8208905/hsv-\/0-\/255-\/to-\/rgb-\/0-\/255}. (5.\-9.\-13) 
 \begin{DoxyParams}{Parameter}
 {\em h} & H-\/\-Komponente der Farbe. \\
 \hline
@@ -338,7 +337,7 @@ R\-G\-B-\/\-Farbe als Liste mit 3 Werten im Bereich 0..1. Muss manuell mit delet
 \end{DoxyReturn}
 
 
-Definiert in Zeile 46 der Datei utils.\-cpp.
+Definiert in Zeile 61 der Datei utils.\-cpp.
 
 
 
@@ -362,20 +361,34 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 )}}\label{namespaceUtils_af4ba26e928c7cef5269c51bfac49d547}
 
 
-Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf data\-Point\-Count Plätze. 
+Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf data\-Point\-Count Plätze. 
 
-Die Indices der Plätze, die die Elemente jeweils besetzten stehen in indices. Diese Funktion generiert aus der vorherigen Anordnung die Nächste. 
+Die Indices der Plätze, die die Elemente jeweils besetzten stehen in indices. Verschiedene Reihenfolgen der selben Indices werden dabei nicht generiert. Diese Funktion generiert aus der vorherigen Anordnung die Nächste, indem die Indices bis zum überlauf hochgezählt wird, woraufhin der vorhergehende erhöht wird, z.\-b. für data\-Point\-Count = 8\-:\par
+
+
+0 1 2 3\par
+ 0 1 2 4\par
+ 0 1 2 5\par
+ 0 1 2 6\par
+ 0 1 2 7\par
+ 0 1 2 8 -\/$>$ Umschlag\par
+ 0 1 3 4\par
+ 0 1 3 5\par
+ 0 1 3 6\par
+
+
+
 \begin{DoxyParams}{Parameter}
 {\em indices} & Liste der Indices der Elemente. \\
 \hline
-{\em depth} & Anzahl der Elemente-\/1. \\
+{\em depth} & Index des in diesem Funktionsaufruf verarbeiteten Elements. Beim ersten Aufruf also 3. \\
 \hline
 {\em data\-Point\-Count} & Anzahl der Plätze. \\
 \hline
 \end{DoxyParams}
 
 
-Definiert in Zeile 13 der Datei utils.\-cpp.
+Definiert in Zeile 16 der Datei utils.\-cpp.
 
 
 
@@ -415,7 +428,7 @@ Testet, ob sich ein Punkt innerhalb eines Körpers befindet.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 139 der Datei utils.\-cpp.
+Definiert in Zeile 170 der Datei utils.\-cpp.
 
 
 
@@ -468,11 +481,11 @@ Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Rückgabe}
-1 Wenn innerhalb, 0 wenn außerhalb. -\/1, wenn der Tetraeder Komplanar ist. 
+1 Wenn innerhalb, 0 wenn außerhalb. -\/1, wenn der Tetraeder komplanar ist. 
 \end{DoxyReturn}
 
 
-Definiert in Zeile 188 der Datei utils.\-cpp.
+Definiert in Zeile 248 der Datei utils.\-cpp.
 
 
 
@@ -525,11 +538,11 @@ Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Rückgabe}
-1 Wenn innerhalb, 0 wenn außerhalb. -\/1, wenn der Tetraeder Komplanar ist. 
+1 Wenn innerhalb, 0 wenn außerhalb. -\/1, wenn der Tetraeder komplanar ist. 
 \end{DoxyReturn}
 
 
-Definiert in Zeile 250 der Datei utils.\-cpp.
+Definiert in Zeile 342 der Datei utils.\-cpp.
 
 
 
@@ -562,11 +575,11 @@ Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Rückgabe}
-1 Wenn innerhalb, 0 wenn außerhalb. -\/1, wenn der Tetraeder Komplanar ist. 
+1 Wenn innerhalb, 0 wenn außerhalb. -\/1, wenn der Tetraeder komplanar ist. 
 \end{DoxyReturn}
 
 
-Definiert in Zeile 242 der Datei utils.\-cpp.
+Definiert in Zeile 332 der Datei utils.\-cpp.
 
 
 
@@ -593,7 +606,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 
 Testet, ob ein Strahl ein Dreieck schneidet. 
 
-
+Gefunden unter \href{http://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm}{\tt http\-://en.\-wikipedia.\-org/wiki/\-M\%\-C3\%\-B6ller\%\-E2\%80\%93\-Trumbore\-\_\-intersection\-\_\-algorithm} am 4.\-9.\-13 und auf C++ und eigene Datentypen portiert. 
 \begin{DoxyParams}{Parameter}
 {\em p} & Ortsvektor zum Ausganspunkt des Strahls. \\
 \hline
@@ -609,7 +622,7 @@ Gibt 1 zurück, wenn es einen Schnittpunkt gibt, ansonsten 0.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 77 der Datei utils.\-cpp.
+Definiert in Zeile 105 der Datei utils.\-cpp.
 
 
 
@@ -654,5 +667,5 @@ $d^2$.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 40 der Datei utils.\-h.
+Definiert in Zeile 39 der Datei utils.\-h.
 

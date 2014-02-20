@@ -16,5 +16,6 @@ var searchData=
   ['do_5frefresh',['do_refresh',['../classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d',1,'GUIGLCanvas']]],
   ['dotproduct',['dotProduct',['../classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f',1,'Vector3D']]],
   ['doxygen_5fdep_5fdummy_2eh',['doxygen_dep_dummy.h',['../doxygen__dep__dummy_8h.xhtml',1,'']]],
+  ['drawcutrenderinfo',['drawCutRenderInfo',['../Renderer_8cpp.xhtml#a608a02845726b8844beac12e5154c500',1,'Renderer.cpp']]],
   ['drawvector',['drawVector',['../Renderer_8cpp.xhtml#a4225af4db7b633515f133a4f40c72b33',1,'Renderer.cpp']]]
 ];

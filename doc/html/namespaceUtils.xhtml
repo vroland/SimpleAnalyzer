@@ -112,7 +112,7 @@ Klassen</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ein Sensordatensatz.  <a href="structUtils_1_1SensorData.xhtml#details">Mehr ...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUtils_1_1SensorPointComparator.xhtml">SensorPointComparator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hilfsstruktur zum Vergleichen des Abstands von Sensordaten.  <a href="structUtils_1_1SensorPointComparator.xhtml#details">Mehr ...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hilfsstruktur zum Vergleichen des Abstands von Messpunkten.  <a href="structUtils_1_1SensorPointComparator.xhtml#details">Mehr ...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -156,7 +156,7 @@ Funktionen</h2></td></tr>
 <tr class="memdesc:a40eaef4d22da849a5deb2f1153d88bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.  <a href="#a40eaef4d22da849a5deb2f1153d88bbc">Mehr ...</a><br/></td></tr>
 <tr class="separator:a40eaef4d22da849a5deb2f1153d88bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4ba26e928c7cef5269c51bfac49d547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547">nextCombination</a> (<a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; int &gt; *indices, int depth, int dataPointCount)</td></tr>
-<tr class="memdesc:af4ba26e928c7cef5269c51bfac49d547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätze.  <a href="#af4ba26e928c7cef5269c51bfac49d547">Mehr ...</a><br/></td></tr>
+<tr class="memdesc:af4ba26e928c7cef5269c51bfac49d547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze.  <a href="#af4ba26e928c7cef5269c51bfac49d547">Mehr ...</a><br/></td></tr>
 <tr class="separator:af4ba26e928c7cef5269c51bfac49d547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a0ae18a42e2d206bc1b43da27820fe2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2">getPointValue</a> (int &amp;status, <a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> &gt; *sensorpoints, double *p, <a class="el" href="classInterpolator.xhtml">Interpolator</a> *interpolator, <a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> * &gt; *prev_tet=NULL, <a class="el" href="classstd_1_1vector.xhtml">vector</a>&lt; <a class="el" href="structUtils_1_1SensorPoint.xhtml">SensorPoint</a> * &gt; *current_tet=NULL)</td></tr>
 <tr class="memdesc:a6a0ae18a42e2d206bc1b43da27820fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt den inter/extrapolierten Wert eines Punktes zurück.  <a href="#a6a0ae18a42e2d206bc1b43da27820fe2">Mehr ...</a><br/></td></tr>
@@ -218,7 +218,7 @@ Funktionen</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd>Der den Grenzen entsprechende Wert. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00027">27</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00039">39</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
@@ -262,7 +262,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </dd>
 </dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00069">69</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00097">97</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
@@ -304,13 +304,12 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd>Der resultierende String. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00116">116</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00121">121</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a76b506eef525971ab3ccb328f4ca879d_icgraph.svg" width="611" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a76b506eef525971ab3ccb328f4ca879d_icgraph.svg" width="611" height="126"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -339,7 +338,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd>Der entstandene String. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00036">36</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00049">49</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
@@ -384,7 +383,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd>Der entstandene String. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00041">41</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00055">55</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -450,7 +449,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd>Temperatur des gesuchten Punktes. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00258">258</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00353">353</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -462,7 +461,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2_icgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2_icgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -499,6 +498,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><div class="memdoc">
 
 <p>Wandelt eine Farbe im HSV-Format ins RGB-Format um. </p>
+<p>Gefunden unter <a href="http://stackoverflow.com/questions/8208905/hsv-0-255-to-rgb-0-255">http://stackoverflow.com/questions/8208905/hsv-0-255-to-rgb-0-255</a>. (5.9.13) </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
     <tr><td class="paramname">h</td><td>H-Komponente der Farbe. </td></tr>
@@ -509,7 +509,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd>RGB-Farbe als Liste mit 3 Werten im Bereich 0..1. Muss manuell mit delete[] freigegeben werden! </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00046">46</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00061">61</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
@@ -550,23 +550,34 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätze. </p>
-<p>Die Indices der Plätze, die die Elemente jeweils besetzten stehen in indices. Diese Funktion generiert aus der vorherigen Anordnung die Nächste. </p>
+<p>Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze. </p>
+<p>Die Indices der Plätze, die die Elemente jeweils besetzten stehen in indices. Verschiedene Reihenfolgen der selben Indices werden dabei nicht generiert. Diese Funktion generiert aus der vorherigen Anordnung die Nächste, indem die Indices bis zum überlauf hochgezählt wird, woraufhin der vorhergehende erhöht wird, z.b. für dataPointCount = 8:<br/>
+</p>
+<p>0 1 2 3<br/>
+ 0 1 2 4<br/>
+ 0 1 2 5<br/>
+ 0 1 2 6<br/>
+ 0 1 2 7<br/>
+ 0 1 2 8 -&gt; Umschlag<br/>
+ 0 1 3 4<br/>
+ 0 1 3 5<br/>
+ 0 1 3 6<br/>
+</p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
     <tr><td class="paramname">indices</td><td>Liste der Indices der Elemente. </td></tr>
-    <tr><td class="paramname">depth</td><td>Anzahl der Elemente-1. </td></tr>
+    <tr><td class="paramname">depth</td><td>Index des in diesem Funktionsaufruf verarbeiteten Elements. Beim ersten Aufruf also 3. </td></tr>
     <tr><td class="paramname">dataPointCount</td><td>Anzahl der Plätze. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00013">13</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00016">16</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_af4ba26e928c7cef5269c51bfac49d547_icgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_af4ba26e928c7cef5269c51bfac49d547_icgraph.svg" width="100%" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -613,7 +624,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd>1 Wenn innerhalb, 0 wenn außerhalb. Bei einer falschen Algorithmuskonstante -1. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00139">139</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00170">170</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -684,9 +695,9 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Rückgabe</dt><dd>1 Wenn innerhalb, 0 wenn außerhalb. -1, wenn der Tetraeder Komplanar ist. </dd></dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>1 Wenn innerhalb, 0 wenn außerhalb. -1, wenn der Tetraeder komplanar ist. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00188">188</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00248">248</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -698,7 +709,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a9b995a1220a78be108b19bda4b776332_icgraph.svg" width="100%" height="478"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespaceUtils_a9b995a1220a78be108b19bda4b776332_icgraph.svg" width="100%" height="500"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </p>
 
@@ -757,9 +768,9 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Rückgabe</dt><dd>1 Wenn innerhalb, 0 wenn außerhalb. -1, wenn der Tetraeder Komplanar ist. </dd></dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>1 Wenn innerhalb, 0 wenn außerhalb. -1, wenn der Tetraeder komplanar ist. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00250">250</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00342">342</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -802,9 +813,9 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Rückgabe</dt><dd>1 Wenn innerhalb, 0 wenn außerhalb. -1, wenn der Tetraeder Komplanar ist. </dd></dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>1 Wenn innerhalb, 0 wenn außerhalb. -1, wenn der Tetraeder komplanar ist. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00242">242</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00332">332</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -852,6 +863,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </div><div class="memdoc">
 
 <p>Testet, ob ein Strahl ein Dreieck schneidet. </p>
+<p>Gefunden unter <a href="http://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm">http://en.wikipedia.org/wiki/M%C3%B6ller%E2%80%93Trumbore_intersection_algorithm</a> am 4.9.13 und auf C++ und eigene Datentypen portiert. </p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>Ortsvektor zum Ausganspunkt des Strahls. </td></tr>
@@ -863,7 +875,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd>Gibt 1 zurück, wenn es einen Schnittpunkt gibt, ansonsten 0. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00077">77</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8cpp_source.xhtml#l00105">105</a> der Datei <a class="el" href="utils_8cpp_source.xhtml">utils.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -912,14 +924,14 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </dl>
 <dl class="section return"><dt>Rückgabe</dt><dd><img class="formulaInl" alt="$d^2$" src="form_6.png"/>. </dd></dl>
 
-<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00040">40</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="utils_8h_source.xhtml#l00039">39</a> der Datei <a class="el" href="utils_8h_source.xhtml">utils.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Die Feb 18 2014 16:47:21 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Fre Feb 21 2014 00:31:55 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

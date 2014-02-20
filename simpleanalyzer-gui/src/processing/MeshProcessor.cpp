@@ -15,37 +15,62 @@
 using namespace std;
 
 MeshProcessor::MeshProcessor() {
+}
 
-}
-void interpolatePoint(ObjectData::MaterialData* data,vector<SensorPoint>* sensorpoints,int pointIndex,Interpolator* interpolator) {
+void interpolatePoint(ObjectData::MaterialData* data,
+		vector<SensorPoint>* sensorpoints, int pointIndex,
+		Interpolator* interpolator) {
+
+	//Wert des Punktes ermitteln
 	int found = 0;
-	double interval = getPointValue(found,sensorpoints,&data->tetgenoutput->pointlist[3*pointIndex],interpolator);
-	data->tetgenoutput->pointattributelist[data->tetgenoutput->numberofpointattributes*pointIndex] = interval;
-	data->extrapolated[pointIndex] = (found<1);
+	double interval = getPointValue(found, sensorpoints,
+			&data->tetgenoutput->pointlist[3 * pointIndex], interpolator);
+
+	//Wert und Status als Punktattribute ablegen
+	data->tetgenoutput->pointattributelist[data->tetgenoutput->numberofpointattributes
+			* pointIndex] = interval;
+	data->extrapolated[pointIndex] = (found < 1);
 }
+
 void MeshProcessor::process(ObjectData* object) {
-	for (unsigned int i=0;i<object->getMaterials()->size();i++) {
+
+	//Für alle Materialien...
+	for (unsigned int i = 0; i < object->getMaterials()->size(); i++) {
 		ObjectData::MaterialData* mat = &object->getMaterials()->at(i);
 		tetgenio* io = mat->tetgenoutput;
 
-		if (mat->tetgenoutput->numberofpointattributes!=0) {
+		//ist es nötig, die Punktattributliste freizugeben?
+		if (mat->tetgenoutput->numberofpointattributes != 0) {
 			delete mat->tetgenoutput->pointattributelist;
 		}
-		if (mat->extrapolated!=NULL) {
+
+		//ist es nötig, die Extrapolationsstatusliste freizugeben?
+		if (mat->extrapolated != NULL) {
 			delete[] mat->extrapolated;
 		}
+
+		//Extrapolationsstatusliste neu erstellen
 		mat->extrapolated = new bool[mat->tetgenoutput->numberofpoints];
+		//Punktattributliste neu erstellen
 		mat->tetgenoutput->numberofpointattributes = NUMBEROFSENSORATTRIBUTES;
-		mat->tetgenoutput->pointattributelist = new REAL[NUMBEROFSENSORATTRIBUTES*mat->tetgenoutput->numberofpoints];
-		//Interpolieren
+		mat->tetgenoutput->pointattributelist =
+				new REAL[NUMBEROFSENSORATTRIBUTES
+						* mat->tetgenoutput->numberofpoints];
+
+
 		Interpolator interpolator;
 		interpolator.setMode(mat->interpolation_mode);
-		for (int i=0;i<io->numberofpoints;i++) {
-			SensorData* sd = &object->getSensorDataList()->at(object->getCurrentSensorIndex());
-			interpolatePoint(mat,&sd->data.at(sd->current_time_index),i,&interpolator);
+
+		//Ermitteln der Werte für alle Punkte...
+		for (int i = 0; i < io->numberofpoints; i++) {
+			SensorData* sd = &object->getSensorDataList()->at(
+					object->getCurrentSensorIndex());
+			interpolatePoint(mat, &sd->data.at(sd->current_time_index), i,
+					&interpolator);
 		}
 	}
 }
+
 MeshProcessor::~MeshProcessor() {
 }
 

@@ -28,8 +28,11 @@ public:
 	 * Der Konstruktor.
 	 */
 	Interpolator();
+
 	/**
 	 * Ermittelt den Wert für einen beliebigen Punkt in einer Ebene.
+	 * Dabei wird wie bei der bilinearen Interpolation (http://en.wikipedia.org/wiki/Bilinear_interpolation)
+	 * vorgegangen, es kann jedoch auch eine logarithmische Interpolationsfunktion verwendet werden.
 	 * @param tri Dreieck, durch das die Ebene beschrieben wird.
 	 * @param pos Position des Punktes, für den der Wert ermittelt werden soll.
 	 * @param values Die Werte, die den Punkten des Dreiecks entsprechen.
@@ -37,8 +40,11 @@ public:
 	 * @return Der Wert für den angegebenen Punkt (pos).
 	 */
 	double interpolateTri(Triangle* tri,Vector3D* pos,double* values);
+
 	/**
 	 * Ermittelt den Wert für einen beliebigen Punkt im Raum.
+	 * Dabei wird wie bei der bilinearen Interpolation (http://en.wikipedia.org/wiki/Trilinear_interpolation)
+	 * vorgegangen, es kann jedoch auch eine logarithmische Interpolationsfunktion verwendet werden.
 	 * @param tet Tetraeder, durch den die Punkte für die gegebenen Werte gegeben sind.
 	 * @param pos Position des Punktes, für den der Wert ermittelt werden soll.
 	 * @param values Die Werte, die den Punkten des Tetraeders entsprechen.
@@ -46,10 +52,12 @@ public:
 	 * @return Der Wert für den angegebenen Punkt (pos).
 	 */
 	double interpolateTet(Tetrahedron* tet,Vector3D* pos,double* values);
+
 	/**
 	 * Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion).
 	 */
 	void setMode(InterpolationMode mode);
+
 	/**
 	 * Der Destruktor.
 	 */

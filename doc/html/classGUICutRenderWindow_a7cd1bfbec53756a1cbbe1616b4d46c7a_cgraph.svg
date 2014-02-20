@@ -639,7 +639,7 @@ var sectionId = 'dynsection-15';
 </g>
 <!-- Node35 -->
 <g id="node96" class="node"><title>Node35</title>
-<a xlink:href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" target="_top" xlink:title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz...">
+<a xlink:href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" target="_top" xlink:title="Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze...">
 <polygon fill="none" stroke="black" points="673,-897.5 673,-918.5 789,-918.5 789,-897.5 673,-897.5"/>
 <text text-anchor="middle" x="731" y="-905.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::nextCombination</text>
 </a>

@@ -17,8 +17,7 @@ Include-\/\-Abhängigkeitsdiagramm für utils.\-h\-:\nopagebreak
 \includegraphics[width=350pt]{utils_8h__incl}
 \end{center}
 \end{figure}
-Dieser Graph zeigt, welche Datei direkt oder indirekt diese Datei enthält\-:
-\nopagebreak
+Dieser Graph zeigt, welche Datei direkt oder indirekt diese Datei enthält\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -39,7 +38,7 @@ struct \hyperlink{structUtils_1_1CutRender__info}{Utils\-::\-Cut\-Render\-\_\-in
 struct \hyperlink{structUtils_1_1SensorData}{Utils\-::\-Sensor\-Data}
 \begin{DoxyCompactList}\small\item\em Ein Sensordatensatz. \end{DoxyCompactList}\item 
 struct \hyperlink{structUtils_1_1SensorPointComparator}{Utils\-::\-Sensor\-Point\-Comparator}
-\begin{DoxyCompactList}\small\item\em Hilfsstruktur zum Vergleichen des Abstands von Sensordaten. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Hilfsstruktur zum Vergleichen des Abstands von Messpunkten. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Namensbereiche}
 \begin{DoxyCompactItemize}
 \item 
@@ -81,7 +80,7 @@ int \hyperlink{namespaceUtils_a8f7379e1915d2a04907eb9d99d0a56ad}{Utils\-::point\
 int \hyperlink{namespaceUtils_a40eaef4d22da849a5deb2f1153d88bbc}{Utils\-::point\-Inside\-Tetrahedron} (double $\ast$p, \hyperlink{classstd_1_1vector}{vector}$<$ Sensor\-Point $\ast$ $>$ $\ast$tet)
 \begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
 void \hyperlink{namespaceUtils_af4ba26e928c7cef5269c51bfac49d547}{Utils\-::next\-Combination} (\hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $\ast$indices, int depth, int data\-Point\-Count)
-\begin{DoxyCompactList}\small\item\em Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf data\-Point\-Count Plätze. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf data\-Point\-Count Plätze. \end{DoxyCompactList}\item 
 double \hyperlink{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}{Utils\-::get\-Point\-Value} (int \&status, \hyperlink{classstd_1_1vector}{vector}$<$ Sensor\-Point $>$ $\ast$sensorpoints, double $\ast$p, \hyperlink{classInterpolator}{Interpolator} $\ast$interpolator, \hyperlink{classstd_1_1vector}{vector}$<$ Sensor\-Point $\ast$ $>$ $\ast$prev\-\_\-tet=N\-U\-L\-L, \hyperlink{classstd_1_1vector}{vector}$<$ Sensor\-Point $\ast$ $>$ $\ast$current\-\_\-tet=N\-U\-L\-L)
 \begin{DoxyCompactList}\small\item\em Gibt den inter/extrapolierten Wert eines Punktes zurück. \end{DoxyCompactList}\item 
 float $\ast$ \hyperlink{namespaceUtils_a5d6523eb946892eee52c9c74efd016de}{Utils\-::hsv\-To\-Rgb} (float h, float s, float v)

@@ -132,7 +132,7 @@ Klassen</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Freundbeziehungen</h2></td></tr>
 <tr class="memitem:a031acd0d5f2a8c997c18645dd548dca7"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAnalyzer.xhtml#a031acd0d5f2a8c997c18645dd548dca7">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="structAnalyzer_1_1AnalyzerData__object.xhtml">AnalyzerData_object</a> &amp;data)</td></tr>
-<tr class="memdesc:a031acd0d5f2a8c997c18645dd548dca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator zum Ausgeben der Analysedaten für ein Objekt im cout-Stream.  <a href="#a031acd0d5f2a8c997c18645dd548dca7">Mehr ...</a><br/></td></tr>
+<tr class="memdesc:a031acd0d5f2a8c997c18645dd548dca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operator zum Ausgeben der Analysedaten für ein Objekt in einem Stream.  <a href="#a031acd0d5f2a8c997c18645dd548dca7">Mehr ...</a><br/></td></tr>
 <tr class="separator:a031acd0d5f2a8c997c18645dd548dca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
@@ -155,7 +155,7 @@ Freundbeziehungen</h2></td></tr>
 
 <p>Der Konstruktor. </p>
 
-<p>Definiert in Zeile <a class="el" href="Analyzer_8cpp_source.xhtml#l00014">14</a> der Datei <a class="el" href="Analyzer_8cpp_source.xhtml">Analyzer.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="Analyzer_8cpp_source.xhtml#l00016">16</a> der Datei <a class="el" href="Analyzer_8cpp_source.xhtml">Analyzer.cpp</a>.</p>
 
 </div>
 </div>
@@ -182,7 +182,7 @@ Freundbeziehungen</h2></td></tr>
 
 <p>Der Destruktor. </p>
 
-<p>Definiert in Zeile <a class="el" href="Analyzer_8cpp_source.xhtml#l00108">108</a> der Datei <a class="el" href="Analyzer_8cpp_source.xhtml">Analyzer.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="Analyzer_8cpp_source.xhtml#l00191">191</a> der Datei <a class="el" href="Analyzer_8cpp_source.xhtml">Analyzer.cpp</a>.</p>
 
 </div>
 </div>
@@ -224,17 +224,19 @@ Freundbeziehungen</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Ermittelt Daten für ein Objekt. </p>
+<p>Objekt zum Vergleichen von Messpunkten hinsichtlich der Temperatur.</p>
 <dl class="params"><dt>Parameter</dt><dd>
   <table class="params">
     <tr><td class="paramname">obj</td><td>Das zu analysierende Objekt. </td></tr>
     <tr><td class="paramname">out</td><td>Referenz auf die <a class="el" href="structAnalyzer_1_1AnalyzerData__object.xhtml" title="Analyseergebnisse für ein Objekt. ">AnalyzerData_object</a> -Struktur in der die Analyseergebnisse gespeichert werden sollen. </td></tr>
     <tr><td class="paramname">use_markers</td><td>Die markierten Zeitpunkte eines Sensordatensatzes analysieren. Wenn false wird nur der aktuell ausgewählte Zeitpunkt analysiert. </td></tr>
-    <tr><td class="paramname">sdindex</td><td>Nur den Sensordatensatz mit diesem Index analysieren. </td></tr>
+    <tr><td class="paramname">sdindex</td><td>Nur den Sensordatensatz mit diesem Index analysieren.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Wird von s </p>
 
-<p>Definiert in Zeile <a class="el" href="Analyzer_8cpp_source.xhtml#l00018">18</a> der Datei <a class="el" href="Analyzer_8cpp_source.xhtml">Analyzer.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="Analyzer_8cpp_source.xhtml#l00026">26</a> der Datei <a class="el" href="Analyzer_8cpp_source.xhtml">Analyzer.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -299,7 +301,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
   </dd>
 </dl>
 
-<p>Definiert in Zeile <a class="el" href="Analyzer_8cpp_source.xhtml#l00083">83</a> der Datei <a class="el" href="Analyzer_8cpp_source.xhtml">Analyzer.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="Analyzer_8cpp_source.xhtml#l00147">147</a> der Datei <a class="el" href="Analyzer_8cpp_source.xhtml">Analyzer.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
@@ -350,9 +352,9 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Operator zum Ausgeben der Analysedaten für ein Objekt im cout-Stream. </p>
+<p>Operator zum Ausgeben der Analysedaten für ein Objekt in einem Stream. </p>
 
-<p>Definiert in Zeile <a class="el" href="Analyzer_8cpp_source.xhtml#l00091">91</a> der Datei <a class="el" href="Analyzer_8cpp_source.xhtml">Analyzer.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="Analyzer_8cpp_source.xhtml#l00164">164</a> der Datei <a class="el" href="Analyzer_8cpp_source.xhtml">Analyzer.cpp</a>.</p>
 
 </div>
 </div>
@@ -363,7 +365,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Die Feb 18 2014 16:47:16 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Fre Feb 21 2014 00:31:54 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

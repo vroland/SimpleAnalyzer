@@ -7,10 +7,10 @@
 <area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="845,5,1000,51"/>
 <area shape="rect" id="node13" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="621,74,792,121"/>
 <area shape="rect" id="node17" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="Berechnet die Temperaturverteilung für ein Objekt. " alt="" coords="624,144,789,173"/>
-<area shape="rect" id="node19" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="841,115,1004,144"/>
-<area shape="rect" id="node27" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="841,172,1004,201"/>
-<area shape="rect" id="node21" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="1064,45,1243,91"/>
-<area shape="rect" id="node25" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="1063,115,1244,144"/>
-<area shape="rect" id="node23" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="1301,45,1488,91"/>
-<area shape="rect" id="node29" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="1053,167,1253,214"/>
+<area shape="rect" id="node19" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="841,117,1004,147"/>
+<area shape="rect" id="node27" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="841,171,1004,200"/>
+<area shape="rect" id="node21" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="1064,74,1243,121"/>
+<area shape="rect" id="node25" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="1063,144,1244,173"/>
+<area shape="rect" id="node23" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="1301,74,1488,121"/>
+<area shape="rect" id="node29" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="1053,197,1253,243"/>
 </map>

@@ -221,7 +221,7 @@
 </g>
 <!-- Node20 -->
 <g id="node46" class="node"><title>Node20</title>
-<a xlink:href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" target="_top" xlink:title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz...">
+<a xlink:href="namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" target="_top" xlink:title="Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze...">
 <polygon fill="none" stroke="black" points="1030,-493.5 1030,-514.5 1146,-514.5 1146,-493.5 1030,-493.5"/>
 <text text-anchor="middle" x="1088" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">Utils::nextCombination</text>
 </a>

@@ -23,7 +23,6 @@ var searchData=
   ['showfaces',['showFaces',['../structRenderer_1_1Viewport__info.xhtml#aa1f3f4b18210cf0bc69df0c9015e8acf',1,'Renderer::Viewport_info']]],
   ['showpoints',['showPoints',['../structRenderer_1_1Viewport__info.xhtml#ab95af83b6e3e068e14b37187a11709b7',1,'Renderer::Viewport_info']]],
   ['showshowsensordata',['showShowSensorData',['../classViewpropBox.xhtml#a731fabc531998315b0850a3b60eb3c51',1,'ViewpropBox']]],
-  ['spcomparator',['spcomparator',['../Analyzer_8cpp.xhtml#a12da8238afdb05d26dccf2cab831c7fd',1,'Analyzer.cpp']]],
   ['specificheatcapacity',['specificheatcapacity',['../structObjectData_1_1MaterialData.xhtml#a784e2b70f98d146979fd422d41445fea',1,'ObjectData::MaterialData']]],
   ['specificheatcapedit',['specificHeatCapEdit',['../classPropertiesBox.xhtml#a7058b344520a2d9ba42fe9e9c1080faa',1,'PropertiesBox']]],
   ['specificheatcaplbl',['specificHeatCapLbl',['../classPropertiesBox.xhtml#ad49b95cb856e5f18d6717fc99ccd7b0b',1,'PropertiesBox']]],

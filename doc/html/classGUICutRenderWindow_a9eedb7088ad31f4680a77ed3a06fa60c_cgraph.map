@@ -33,7 +33,7 @@
 <area shape="rect" id="node79" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. " alt="" coords="680,581,869,611"/>
 <area shape="rect" id="node69" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. " alt="" coords="939,843,1048,872"/>
 <area shape="rect" id="node74" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Gibt das Skalarprodukt mit einem anderen Vektor. " alt="" coords="1129,912,1276,941"/>
-<area shape="rect" id="node93" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz..." alt="" coords="697,843,852,872"/>
+<area shape="rect" id="node93" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze..." alt="" coords="697,843,852,872"/>
 <area shape="rect" id="node95" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="688,1151,861,1180"/>
 <area shape="rect" id="node97" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Testet, ob zwei Vektoren identisch sind. " alt="" coords="1141,1123,1264,1152"/>
 <area shape="rect" id="node102" href="$classTetrahedron.xhtml#a88afe41ae5991168ad51ba4dbb2e1a6b" title="Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Tetraeders zurück. " alt="" coords="923,1357,1064,1387"/>

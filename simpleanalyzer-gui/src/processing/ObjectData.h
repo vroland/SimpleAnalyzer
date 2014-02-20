@@ -38,6 +38,7 @@ public:
 		double specificheatcapacity;						/**< Spezifische Wärmekapazität in \f$\frac{kJ}{kg*K}\f$ */
 		bool visible;										/**< Soll das Material angezeigt werden? */
 	};
+
 	/**
 	 * Status einer die Objektdaten betreffenden Aktion.
 	 */
@@ -48,72 +49,88 @@ public:
 		OD_LOAD_INVALID_FILE,
 		OD_LOAD_INVALID_SENSOR_FILE,
 	};
+
 	/**
 	 * Der Konstruktor.
 	 */
 	ObjectData();
+
 	/**
 	 * Lädt ein Objekt und erste Sensordaten.
 	 * @param path Pfad zur 3D-Modell(.obj)-Datei.
 	 */
 	int loadFromFile(wxString &path);
+
 	/**
 	 * Lädt einfache Sensordaten und verknüpft sie mit dem Objekt.
 	 * @param path Pfad zur .sd-Datei.
 	 */
 	int addSensorData(wxString &path);
+
 	/**
 	 * Lädt zeitbezogene Sensordaten und verknüpft sie mit dem Objekt.
 	 * @param path Pfad zur .tsd-Datei.
 	 */
 	int addTimedData(wxString &path);
+
 	/**
 	 * Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen-Bibliothek) und Berechnet
 	 * die Temperaturverteilung für die aktuell ausgewählten Sensordaten (und den aktuelle augewählten Zeitpunkt).
 	 */
 	int calculateIO();
+
 	/**
 	 * Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück.
 	 */
 	vector<MaterialData>* getMaterials();
+
 	/**
 	 * Gibt das maximale Tetraedervolumen für der Zerlegung zurück.
 	 */
 	double getMaxvolume();
+
 	/**
 	 * Setzt das maximale Tetraedervolumen für der Zerlegung.
 	 * @param maxvolume Maximales Tetraedervolumen.
 	 */
 	void setMaxvolume(double maxvolume);
+
 	/**
 	 * Gibt den Namen des Objekts zurück.
 	 */
 	string getName();
+
 	/**
 	 * Setzt den Namen des Objekts.
 	 * @param name Der neue Name des Objekts.
 	 */
 	void setName(string name);
+
 	/**
 	 * Gibt die Qualisätseinstellung für die Tetraeder bei der Zerlegung (s. Tetgen Dokumentation) zurück.
 	 */
 	double getQuality();
+
 	/**
 	 * Sezt die Qualisätseinstellung für die Tetraeder bei der Zerlegung (s. Tetgen Dokumentation).
 	 */
 	void setQuality(double quality);
+
 	/**
 	 * Gibt eine Referenz auf die Sensordaten des Objekts zurück.
 	 */
 	vector<SensorData>* getSensorDataList();
+
 	/**
 	 * Gibt den Index des aktuell verwendeten Sensordatensatzes zurück.
 	 */
 	int getCurrentSensorIndex();
+
 	/**
 	 * Setzt den Index des aktuell verwendeten Sensordatensatzes.
 	 */
 	void setCurrentSensorIndex(int currentSensorIndex);
+
 	/**
 	 * Der Destruktor.
 	 */
@@ -123,22 +140,27 @@ private:
 	 * Index des aktuell verwendeten Sensordatensatzes.
 	 */
 	int current_sensor_index;
+
 	/**
 	 * Name des Objekts.
 	 */
 	string name;
+
 	/**
 	 * Maximales Volumen für Tetraeder bei der Zerlegung.
 	 */
 	double maxvolume;
+
 	/**
 	 * Qualität der Tetraeder bei der Zerlegung (s. Tetgen Dokumentation).
 	 */
 	double quality;
+
 	/**
 	 * Liste der Materialien des Objekts.
 	 */
 	vector<MaterialData> materials;
+
 	/**
 	 * Liste der Sensordaten des Objekts.
 	 */

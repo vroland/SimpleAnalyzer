@@ -4,7 +4,7 @@
 <area shape="rect" id="node7" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="244,306,383,335"/>
 <area shape="rect" id="node92" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)..." alt="" coords="249,359,377,389"/>
 <area shape="rect" id="node9" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. " alt="" coords="688,101,877,130"/>
-<area shape="rect" id="node33" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz..." alt="" coords="475,306,629,335"/>
+<area shape="rect" id="node33" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze..." alt="" coords="475,306,629,335"/>
 <area shape="rect" id="node35" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="465,511,639,541"/>
 <area shape="rect" id="node11" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="957,207,1064,237"/>
 <area shape="rect" id="node19" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="929,261,1092,290"/>

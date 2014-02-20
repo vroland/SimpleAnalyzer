@@ -16,8 +16,7 @@
 \hyperlink{classMatrix3D_afe9c6b7abe858fe9f6aea8f0607a00a7}{Matrix3\-D} ()
 \begin{DoxyCompactList}\small\item\em Der Standardkonstruktor. \end{DoxyCompactList}\item 
 \hyperlink{classMatrix3D_abd8f512d6fdfda45bfe655ae38cde303}{Matrix3\-D} (double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3)
-\begin{DoxyCompactList}\small\item\em Erzeugt eine Matrix mit den gegebenen Elementen\-:\par
- \begin{eqnarray*} x1 & y1 & z1 \\ x2 & y2 & z2 \\ x3 & y3 & z3 \\ \end{eqnarray*}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Erzeugt eine Matrix mit den gegebenen Elementen. \end{DoxyCompactList}\item 
 void \hyperlink{classMatrix3D_a399be81028219044a03439b2ff93782a}{mult} (\hyperlink{classMatrix3D}{Matrix3\-D} $\ast$other)
 \begin{DoxyCompactList}\small\item\em Multipliziert die Matrix mit einer anderen Matrix. \end{DoxyCompactList}\item 
 \hyperlink{classVector3D}{Vector3\-D} $\ast$ \hyperlink{classMatrix3D_adb30531e4dd89eb99ed2fb7f94269122}{mult} (\hyperlink{classVector3D}{Vector3\-D} $\ast$other)
@@ -42,7 +41,7 @@ double \hyperlink{classMatrix3D_aa24b85b09060684ec1559f22857ccfee}{elements} \mb
 \subsection{Ausführliche Beschreibung}
 3x3-\/\-Matrixklasse mit Operationen. 
 
-Definiert in Zeile 129 der Datei Geometry\-Classes.\-h.
+Definiert in Zeile 151 der Datei Geometry\-Classes.\-h.
 
 
 
@@ -61,7 +60,7 @@ Der Standardkonstruktor.
 Erzeugt eine Standardmatrix\-:\par
  \begin{eqnarray*} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{eqnarray*} 
 
-Definiert in Zeile 112 der Datei Geometry\-Classes.\-cpp.
+Definiert in Zeile 141 der Datei Geometry\-Classes.\-cpp.
 
 \hypertarget{classMatrix3D_abd8f512d6fdfda45bfe655ae38cde303}{\index{Matrix3\-D@{Matrix3\-D}!Matrix3\-D@{Matrix3\-D}}
 \index{Matrix3\-D@{Matrix3\-D}!Matrix3D@{Matrix3\-D}}
@@ -80,12 +79,12 @@ Definiert in Zeile 112 der Datei Geometry\-Classes.\-cpp.
 )}}\label{classMatrix3D_abd8f512d6fdfda45bfe655ae38cde303}
 
 
-Erzeugt eine Matrix mit den gegebenen Elementen\-:\par
- \begin{eqnarray*} x1 & y1 & z1 \\ x2 & y2 & z2 \\ x3 & y3 & z3 \\ \end{eqnarray*}. 
+Erzeugt eine Matrix mit den gegebenen Elementen. 
 
+\par
+ \begin{eqnarray*} x1 & y1 & z1 \\ x2 & y2 & z2 \\ x3 & y3 & z3 \\ \end{eqnarray*} 
 
-
-Definiert in Zeile 123 der Datei Geometry\-Classes.\-cpp.
+Definiert in Zeile 153 der Datei Geometry\-Classes.\-cpp.
 
 
 
@@ -108,7 +107,7 @@ Multipliziert die Matrix mit einer anderen Matrix.
 \end{DoxyParams}
 
 
-Definiert in Zeile 137 der Datei Geometry\-Classes.\-cpp.
+Definiert in Zeile 168 der Datei Geometry\-Classes.\-cpp.
 
 
 
@@ -142,7 +141,7 @@ Der durch die Multiplikation entstandene Vektor. Der zurückgegebene Vektor muss
 \end{DoxyReturn}
 
 
-Definiert in Zeile 151 der Datei Geometry\-Classes.\-cpp.
+Definiert in Zeile 186 der Datei Geometry\-Classes.\-cpp.
 
 
 
@@ -168,7 +167,7 @@ Gibt die Matrix auf dem cout-\/\-Stream aus.
 
 
 
-Definiert in Zeile 189 der Datei Geometry\-Classes.\-cpp.
+Definiert in Zeile 230 der Datei Geometry\-Classes.\-cpp.
 
 \hypertarget{classMatrix3D_ada7ce7ea9f2d0ef0fdda60ad73dad345}{\index{Matrix3\-D@{Matrix3\-D}!rotate\-X@{rotate\-X}}
 \index{rotate\-X@{rotate\-X}!Matrix3D@{Matrix3\-D}}
@@ -188,7 +187,7 @@ Rotiert die Matrix um einen bestimmten Winkel auf der X-\/\-Achse.
 \end{DoxyParams}
 
 
-Definiert in Zeile 160 der Datei Geometry\-Classes.\-cpp.
+Definiert in Zeile 197 der Datei Geometry\-Classes.\-cpp.
 
 
 
@@ -219,7 +218,7 @@ Rotiert die Matrix um einen bestimmten Winkel auf der Y-\/\-Achse.
 \end{DoxyParams}
 
 
-Definiert in Zeile 166 der Datei Geometry\-Classes.\-cpp.
+Definiert in Zeile 204 der Datei Geometry\-Classes.\-cpp.
 
 
 
@@ -250,7 +249,7 @@ Rotiert die Matrix um einen bestimmten Winkel auf der Z-\/\-Achse.
 \end{DoxyParams}
 
 
-Definiert in Zeile 172 der Datei Geometry\-Classes.\-cpp.
+Definiert in Zeile 211 der Datei Geometry\-Classes.\-cpp.
 
 \hypertarget{classMatrix3D_a0d59cb6ea927264477a10b9d427966d6}{\index{Matrix3\-D@{Matrix3\-D}!transpose@{transpose}}
 \index{transpose@{transpose}!Matrix3D@{Matrix3\-D}}
@@ -265,7 +264,7 @@ Transponiert die Matrix.
 
 
 
-Definiert in Zeile 178 der Datei Geometry\-Classes.\-cpp.
+Definiert in Zeile 218 der Datei Geometry\-Classes.\-cpp.
 
 
 
@@ -290,7 +289,7 @@ Die Elemente der Matrix.
 
 
 
-Definiert in Zeile 190 der Datei Geometry\-Classes.\-h.
+Definiert in Zeile 221 der Datei Geometry\-Classes.\-h.
 
 
 

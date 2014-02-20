@@ -1,7 +1,7 @@
 var searchData=
 [
   ['recalcbutton',['recalcButton',['../classPropertiesBox.xhtml#a0f5356371cde511efeb413bc2a98e6fc',1,'PropertiesBox']]],
-  ['refine_5ffactors',['refine_factors',['../GUITimeline_8cpp.xhtml#a8ef667976fd85f1ab1c7090bee2979ec',1,'GUITimeline.cpp']]],
+  ['refine_5ffactors',['refine_factors',['../GUITimeline_8cpp.xhtml#a2d4c5f0527cd237bcb82ea536a89fc80',1,'GUITimeline.cpp']]],
   ['render_5fcut_5fwindow_5fvalid',['render_cut_window_valid',['../classGUIMainWindow.xhtml#a4f08d8e4294955a3cc0b071dd3cad0d2',1,'GUIMainWindow']]],
   ['renderchoices',['renderchoices',['../ViewpropBox_8cpp.xhtml#a2b44a303559d58513c3f945c86c693d1',1,'ViewpropBox.cpp']]],
   ['rendercutwindow',['rendercutwindow',['../classGUIMainWindow.xhtml#a649cb92f27688772174659601188ac2d',1,'GUIMainWindow']]],

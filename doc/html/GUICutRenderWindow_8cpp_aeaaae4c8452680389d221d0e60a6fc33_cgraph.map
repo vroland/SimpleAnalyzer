@@ -20,7 +20,7 @@
 <area shape="rect" id="node28" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="840,949,947,978"/>
 <area shape="rect" id="node33" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="812,1002,975,1031"/>
 <area shape="rect" id="node38" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Gibt das Skalarprodukt mit einem anderen Vektor. " alt="" coords="820,895,967,925"/>
-<area shape="rect" id="node57" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz..." alt="" coords="388,590,543,619"/>
+<area shape="rect" id="node57" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze..." alt="" coords="388,590,543,619"/>
 <area shape="rect" id="node59" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="379,1055,552,1085"/>
 <area shape="rect" id="node61" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Testet, ob zwei Vektoren identisch sind. " alt="" coords="832,1159,955,1189"/>
 <area shape="rect" id="node66" href="$classTetrahedron.xhtml#a88afe41ae5991168ad51ba4dbb2e1a6b" title="Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Tetraeders zurück. " alt="" coords="613,1471,755,1501"/>

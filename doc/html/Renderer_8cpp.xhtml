@@ -110,12 +110,57 @@ Include-Abhängigkeitsdiagramm für Renderer.cpp:</div>
 Funktionen</h2></td></tr>
 <tr class="memitem:a17ef754a4f478e115d6e7fb813702639"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Renderer_8cpp.xhtml#a17ef754a4f478e115d6e7fb813702639">pointBehindCut</a> (<a class="el" href="classVector3D.xhtml">Vector3D</a> *point, <a class="el" href="classTriangle.xhtml">Triangle</a> *cut)</td></tr>
 <tr class="separator:a17ef754a4f478e115d6e7fb813702639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac35d259852428046b123c635864e2197"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Renderer_8cpp.xhtml#ac35d259852428046b123c635864e2197">renderGrid</a> ()</td></tr>
-<tr class="separator:ac35d259852428046b123c635864e2197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4225af4db7b633515f133a4f40c72b33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Renderer_8cpp.xhtml#a4225af4db7b633515f133a4f40c72b33">drawVector</a> (<a class="el" href="classVector3D.xhtml">Vector3D</a> *pos, <a class="el" href="classVector3D.xhtml">Vector3D</a> *dir)</td></tr>
+<tr class="memdesc:a4225af4db7b633515f133a4f40c72b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeichnet einen Vektor als Pfeil.  <a href="#a4225af4db7b633515f133a4f40c72b33">Mehr ...</a><br/></td></tr>
 <tr class="separator:a4225af4db7b633515f133a4f40c72b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35d259852428046b123c635864e2197"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Renderer_8cpp.xhtml#ac35d259852428046b123c635864e2197">renderGrid</a> ()</td></tr>
+<tr class="memdesc:ac35d259852428046b123c635864e2197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeichnet markante Linien zum leichteren Erfassen des Koordinatensystems.  <a href="#ac35d259852428046b123c635864e2197">Mehr ...</a><br/></td></tr>
+<tr class="separator:ac35d259852428046b123c635864e2197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608a02845726b8844beac12e5154c500"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Renderer_8cpp.xhtml#a608a02845726b8844beac12e5154c500">drawCutRenderInfo</a> (<a class="el" href="structUtils_1_1CutRender__info.xhtml">CutRender_info</a> *info)</td></tr>
+<tr class="memdesc:a608a02845726b8844beac12e5154c500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualisiert Informationen über eine 2D-Temperaturverteilung.  <a href="#a608a02845726b8844beac12e5154c500">Mehr ...</a><br/></td></tr>
+<tr class="separator:a608a02845726b8844beac12e5154c500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Dokumentation der Funktionen</h2>
+<a class="anchor" id="a608a02845726b8844beac12e5154c500"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drawCutRenderInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structUtils_1_1CutRender__info.xhtml">CutRender_info</a> *&#160;</td>
+          <td class="paramname"><em>info</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Visualisiert Informationen über eine 2D-Temperaturverteilung. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">info</td><td>Die zu visualisierenden Informationen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="Renderer_8cpp_source.xhtml#l00576">576</a> der Datei <a class="el" href="Renderer_8cpp_source.xhtml">Renderer.cpp</a>.</p>
+
+<p><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Renderer_8cpp_a608a02845726b8844beac12e5154c500_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="Renderer_8cpp_a608a02845726b8844beac12e5154c500_icgraph.svg" width="526" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a4225af4db7b633515f133a4f40c72b33"></a>
 <div class="memitem">
 <div class="memproto">
@@ -140,19 +185,28 @@ Funktionen</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definiert in Zeile <a class="el" href="Renderer_8cpp_source.xhtml#l00312">312</a> der Datei <a class="el" href="Renderer_8cpp_source.xhtml">Renderer.cpp</a>.</p>
+<p>Zeichnet einen Vektor als Pfeil. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Startpunkt des Pfeils. </td></tr>
+    <tr><td class="paramname">dir</td><td>Richtung und Länge des Pfeils. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="Renderer_8cpp_source.xhtml#l00373">373</a> der Datei <a class="el" href="Renderer_8cpp_source.xhtml">Renderer.cpp</a>.</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33_cgraph.svg" width="470" height="414"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33_cgraph.svg" width="470" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33_icgraph.svg" width="478" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33_icgraph.svg" width="662" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </p>
 
@@ -213,7 +267,16 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definiert in Zeile <a class="el" href="Renderer_8cpp_source.xhtml#l00278">278</a> der Datei <a class="el" href="Renderer_8cpp_source.xhtml">Renderer.cpp</a>.</p>
+<p>Zeichnet markante Linien zum leichteren Erfassen des Koordinatensystems. </p>
+
+<p>Definiert in Zeile <a class="el" href="Renderer_8cpp_source.xhtml#l00455">455</a> der Datei <a class="el" href="Renderer_8cpp_source.xhtml">Renderer.cpp</a>.</p>
+
+<p><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="Renderer_8cpp_ac35d259852428046b123c635864e2197_cgraph.svg" width="600" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</p>
 
 <p><div class="dynheader">
 Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
@@ -227,7 +290,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Die Feb 18 2014 16:47:15 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Fre Feb 21 2014 00:31:53 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

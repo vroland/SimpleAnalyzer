@@ -11,7 +11,7 @@
 <area shape="rect" id="node14" href="$MeshProcessor_8cpp.xhtml#ad2670c4e8381f9a0a89c65f5559ed421" title="interpolatePoint" alt="" coords="516,128,628,157"/>
 <area shape="rect" id="node16" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="720,128,859,157"/>
 <area shape="rect" id="node18" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. " alt="" coords="1131,128,1320,157"/>
-<area shape="rect" id="node42" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von depth+1 Elementen auf dataPointCount Plätz..." alt="" coords="917,128,1072,157"/>
+<area shape="rect" id="node42" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze..." alt="" coords="917,128,1072,157"/>
 <area shape="rect" id="node44" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="908,647,1081,676"/>
 <area shape="rect" id="node38" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="1399,51,1508,80"/>
 <area shape="rect" id="node40" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="1397,128,1509,157"/>

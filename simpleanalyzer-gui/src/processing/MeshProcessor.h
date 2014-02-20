@@ -19,11 +19,13 @@ public:
 	 * Der Konstruktor.
 	 */
 	MeshProcessor();
+
 	/**
 	 * Berechnet die Temperaturverteilung für ein Objekt.
 	 * @param object Das Objekt, für das die Temperaturverteilung ermittelt werden soll.
 	 */
 	void process(ObjectData* object);
+
 	/**
 	 * Der Destruktor.
 	 */

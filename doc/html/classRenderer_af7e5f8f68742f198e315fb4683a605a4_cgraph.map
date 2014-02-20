@@ -1,21 +1,22 @@
 <map id="Renderer::render" name="Renderer::render">
-<area shape="rect" id="node3" href="$Renderer_8cpp.xhtml#ac35d259852428046b123c635864e2197" title="renderGrid" alt="" coords="200,5,283,35"/>
-<area shape="rect" id="node5" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="173,160,309,189"/>
-<area shape="rect" id="node7" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="383,79,495,108"/>
-<area shape="rect" id="node9" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="385,205,492,235"/>
-<area shape="rect" id="node17" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="357,259,520,288"/>
-<area shape="rect" id="node22" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Normalisiert den Vektor. " alt="" coords="368,152,509,181"/>
-<area shape="rect" id="node24" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)..." alt="" coords="375,472,503,501"/>
-<area shape="rect" id="node26" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="187,520,296,549"/>
-<area shape="rect" id="node28" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. " alt="" coords="187,573,296,603"/>
-<area shape="rect" id="node30" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. " alt="" coords="187,627,296,656"/>
-<area shape="rect" id="node36" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="384,525,493,555"/>
-<area shape="rect" id="node38" href="$Renderer_8cpp.xhtml#a4225af4db7b633515f133a4f40c72b33" title="drawVector" alt="" coords="197,365,285,395"/>
-<area shape="rect" id="node49" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. " alt="" coords="385,312,492,341"/>
-<area shape="rect" id="node11" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="568,285,680,315"/>
-<area shape="rect" id="node13" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="568,339,680,368"/>
-<area shape="rect" id="node15" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="569,232,679,261"/>
-<area shape="rect" id="node41" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Testet, ob zwei Vektoren identisch sind. " alt="" coords="377,365,500,395"/>
-<area shape="rect" id="node55" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Gibt die Länge des Vektors zurück. " alt="" coords="368,419,509,448"/>
-<area shape="rect" id="node57" href="$GeometryClasses_8cpp.xhtml#a73527f20206c906e9f333e0f233de13e" title="sqr" alt="" coords="604,419,644,448"/>
+<area shape="rect" id="node3" href="$Renderer_8cpp.xhtml#ac35d259852428046b123c635864e2197" title="Zeichnet markante Linien zum leichteren Erfassen des Koordinatensystems. " alt="" coords="200,137,283,166"/>
+<area shape="rect" id="node35" href="$Renderer_8cpp.xhtml#a608a02845726b8844beac12e5154c500" title="Visualisiert Informationen über eine 2D&#45;Temperaturverteilung. " alt="" coords="175,267,308,297"/>
+<area shape="rect" id="node5" href="$Renderer_8cpp.xhtml#a4225af4db7b633515f133a4f40c72b33" title="Zeichnet einen Vektor als Pfeil. " alt="" coords="381,58,469,87"/>
+<area shape="rect" id="node7" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Normalisiert den Vektor. " alt="" coords="552,409,693,438"/>
+<area shape="rect" id="node9" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Testet, ob zwei Vektoren identisch sind. " alt="" coords="561,137,684,166"/>
+<area shape="rect" id="node17" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)..." alt="" coords="559,6,687,35"/>
+<area shape="rect" id="node19" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Gibt die Länge des Vektors zurück. " alt="" coords="552,59,693,89"/>
+<area shape="rect" id="node23" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="541,343,704,373"/>
+<area shape="rect" id="node28" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. " alt="" coords="569,267,676,297"/>
+<area shape="rect" id="node33" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="568,190,677,219"/>
+<area shape="rect" id="node11" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="752,253,864,282"/>
+<area shape="rect" id="node13" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="752,306,864,335"/>
+<area shape="rect" id="node15" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="753,359,863,389"/>
+<area shape="rect" id="node21" href="$GeometryClasses_8cpp.xhtml#a73527f20206c906e9f333e0f233de13e" title="sqr" alt="" coords="788,59,828,89"/>
+<area shape="rect" id="node37" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="357,474,493,503"/>
+<area shape="rect" id="node39" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="567,553,679,582"/>
+<area shape="rect" id="node41" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="569,462,676,491"/>
+<area shape="rect" id="node49" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="371,111,480,141"/>
+<area shape="rect" id="node51" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. " alt="" coords="371,215,480,245"/>
+<area shape="rect" id="node53" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. " alt="" coords="371,319,480,349"/>
 </map>
