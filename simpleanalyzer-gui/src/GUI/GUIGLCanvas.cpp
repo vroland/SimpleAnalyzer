@@ -55,6 +55,7 @@ void GUIGLCanvas::OnMouseWheel(wxMouseEvent &event) {
 void GUIGLCanvas::OnPaint(wxPaintEvent &event) {
 
 	//Aufrufen des OpenGL-Kontexts
+	wxPaintDC(this);
 	SetCurrent();
 
 	//OpenGL initialisieren?
