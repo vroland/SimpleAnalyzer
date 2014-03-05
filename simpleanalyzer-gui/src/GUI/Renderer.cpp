@@ -323,19 +323,19 @@ void Renderer::renderMaterial(ObjectData::MaterialData* mat) {
 		glEnd();
 	}
 
-	//sollen die Kanten angezeigt werden
-	if (viewport.showEdges) {
-		glPolygonMode(GL_FRONT, GL_LINE);
-		glPolygonMode(GL_BACK, GL_LINE);
-		renderTetrahedra(mat, viewport.showEdges);
-	}
-
 	//sollen die Flächen angezeigt werden
 	if (viewport.showFaces) {
 		glPolygonMode(GL_FRONT, GL_FILL);
 		glPolygonMode(GL_BACK, GL_FILL);
 		renderTetrahedra(mat, viewport.showFaces);
 
+	}
+
+	//sollen die Kanten angezeigt werden
+	if (viewport.showEdges) {
+		glPolygonMode(GL_FRONT, GL_LINE);
+		glPolygonMode(GL_BACK, GL_LINE);
+		renderTetrahedra(mat, viewport.showEdges);
 	}
 
 	//zeichenmodus zurücksetzen

@@ -105,6 +105,11 @@ private:
 	void OnMenuHelpAbout(wxCommandEvent &event);
 
 	/**
+	 * Öffnet das Handbuch mit dem PDF-Viewer des Systems.
+	 */
+	void OnMenuOpenManual(wxCommandEvent &event);
+
+	/**
 	 * Berechnet die 3D-Temperaturverteilung neu.
 	 */
 	void OnRecalcBtClick(wxCommandEvent &event);
@@ -346,6 +351,11 @@ private:
 	 * Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung ist gerade geöffnet.
 	 */
 	bool render_cut_window_valid;
+
+	/**
+	 * Der Pfad zum Verzeichnis, das die von der Anwendung verwendeten Daten (z.B. Icons) enthält. Wird im Konstruktor bestimmt.
+	 */
+	string data_directory;
 };
 
 #endif /* GUIMAINWINDOW_H_ */

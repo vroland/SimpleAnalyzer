@@ -62,6 +62,14 @@ install: all
 	install --mode=755 simpleanalyzer-gui/Debug/simpleanalyzer-gui $(prefix)/bin
 	install --mode=755 simpleanalyzer-gui/Debug/icons/analyze_point.png $(prefix)/share/simpleanalyzer/icons
 	install --mode=755 simpleanalyzer-gui/Debug/icons/prgm-icon.png $(prefix)/share/simpleanalyzer/icons
+	install --mode=755 simpleanalyzer-gui/Debug/icons/cut_icon.png $(prefix)/share/simpleanalyzer/icons
+	install --mode=755 simpleanalyzer-gui/Debug/icons/obj_icon.png $(prefix)/share/simpleanalyzer/icons
+	install --mode=755 simpleanalyzer-gui/Debug/icons/overview_icon.png $(prefix)/share/simpleanalyzer/icons
+	install --mode=755 simpleanalyzer-gui/Debug/icons/sd_icon.png $(prefix)/share/simpleanalyzer/icons
+	install --mode=755 simpleanalyzer-gui/Debug/icons/tsd_icon.png $(prefix)/share/simpleanalyzer/icons
+	install --mode=755 simpleanalyzer-gui/Debug/icons/cut_icon.png $(prefix)/share/simpleanalyzer/icons
+	install --mode=755 simpleanalyzer-gui/Debug/simpleanalyzer-man.pdf $(prefix)/share/simpleanalyzer/
+	
 	install --mode=755 simpleanalyzer-gui.desktop $(prefix)/share/applications/
 uninstall: all
 	rm -rf $(prefix)/share/simpleanalyzer/
