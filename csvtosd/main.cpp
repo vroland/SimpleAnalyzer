@@ -21,13 +21,14 @@ protected:
 	/**
 	 * Anzahl der Suchpfade für die Konfigurationsdatei.
 	 */
-	static const int NUMBEROFPATHS = 2;
+	static const int NUMBEROFPATHS = 3;
 
 	/**
 	 * Suchpfade für die Konfigurationsdatei.
 	 * Das Verzeichnis der ausführbaren Datei wird immer geprüft.
 	 */
 	string configpaths[NUMBEROFPATHS] {
+			"/etc/simpleanalyzer/csvtosd.conf",
 			"/usr/local/share/simpleanalyzer/csvtosd.conf",
 			"/usr/share/simpleanalyzer/csvtosd.conf" };
 

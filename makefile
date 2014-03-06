@@ -50,12 +50,13 @@ install: all
 	mkdir -p $(prefix)/share/simpleanalyzer/
 	mkdir -p $(prefix)/share/simpleanalyzer/icons
 	mkdir -p $(prefix)/share/applications/
+	mkdir -p $(DESTDIR)/etc/simpleanalyzer/
 	
 	install --mode=755 csvtosd/Debug/csvtosd $(prefix)/bin
-	install --mode=755 csvtosd/Debug/csvtosd.conf $(prefix)/share/simpleanalyzer/
+	install --mode=755 csvtosd/Debug/csvtosd.conf $(DESTDIR)/etc/simpleanalyzer/
 	
 	install --mode=755 odisitosd/Debug/odisitosd $(prefix)/bin
-	install --mode=755 odisitosd/Debug/odisitosd.conf $(prefix)/share/simpleanalyzer/
+	install --mode=755 odisitosd/Debug/odisitosd.conf $(DESTDIR)/etc/simpleanalyzer/
 	
 	install --mode=755 mergetsd/build/mergetsd $(prefix)/bin
 	
@@ -73,6 +74,7 @@ install: all
 	install --mode=755 simpleanalyzer-gui.desktop $(prefix)/share/applications/
 uninstall: all
 	rm -rf $(prefix)/share/simpleanalyzer/
+	rm -rf $(DESTDIR)/etc/simpleanalyzer/
 	
 	rm -f $(prefix)/bin/odisitosd
 	rm -f $(prefix)/bin/csvtosd

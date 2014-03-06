@@ -24,13 +24,14 @@ protected:
 	/**
 	 * Anzahl der Suchpfade für die Konfigurationsdatei.
 	 */
-	static const int NUMBEROFPATHS = 2;
+	static const int NUMBEROFPATHS = 3;
 
 	/**
 	 * Suchpfade für die Konfigurationsdatei.
 	 * Das Verzeichnis der ausführbaren Datei wird immer geprüft.
 	 */
 	string configpaths[NUMBEROFPATHS] {
+			"/etc/simpleanalyzer/odisitosd.conf",
 			"/usr/local/share/simpleanalyzer/odisitosd.conf",
 			"/usr/share/simpleanalyzer/odisitosd.conf" };
 
