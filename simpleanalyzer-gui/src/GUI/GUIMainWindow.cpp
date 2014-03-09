@@ -20,6 +20,17 @@
 #include "GUITimeline.h"
 #include "../processing/utils.h"
 
+#if defined (__WIN32__)
+#include <Shellapi.h>
+#endif
+
+//Pfadseparatorzeichen
+#if defined (__WIN32__)
+#define PATH_SEPARATOR "\\"
+#else
+#define PATH_SEPARATOR "/"
+#endif
+
 using namespace std;
 using namespace Utils;
 
@@ -41,7 +52,7 @@ BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
 	EVT_TEXT(ID_GENERAL_PROP,GUIMainWindow::OnGeneralPropChange)
 	EVT_RADIOBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
 	EVT_TEXT(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
-	EVT_CHECKLISTBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
+	EVT_CHECKLISTBOX(ID_CHECKLISTBOX_VIEW_PROP,GUIMainWindow::OnViewPropChange)
 	EVT_CHECKBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
 	EVT_SPINCTRL(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropSpinChange)
 	EVT_MENU(ID_CHANGE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectChange)
@@ -120,6 +131,7 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 
 	prop_scroll_win->SetScrollRate(10, 10);
 	view_scroll_win->SetScrollRate(10, 10);
+
 	//Die Objekteigenschaften-Oberfläche
 	propbox = new PropertiesBox(prop_scroll_win);
 	//Die Visualisierungsoptionen-Oberfläche
@@ -143,16 +155,20 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	 * Finden des Datenverzeichnisses
 	 */
 
+	data_directory = string(wxStandardPaths::Get().GetExecutablePath().BeforeLast(PATH_SEPARATOR[0]).ToUTF8().data());
+
 	//Datei zum Testen, ob ein Icon geladen werden kann.
 	ifstream testfile;
-	testfile.open("icons/analyze_point.png");
+	testfile.open(data_directory + PATH_SEPARATOR + "icons" + PATH_SEPARATOR + "analyze_point.png");
 
 	//Liegt die Datei nicht im Verzeichnis der ausführbaren Datei?
 	if (!testfile.is_open()) {
 		//Die zusätzlichen Pfade versuchen
 		for (int i = 0; i < NUMBEROFPATHS; i++) {
 			data_directory = configpaths[i];
-			testfile.open(data_directory + string("icons/analyze_point.png"));
+			testfile.open(data_directory + string("icons")
+					+ string(PATH_SEPARATOR)
+							+ string("analyze_point.png"));
 
 			//Unter diesem Pfad gefunden?
 			if (testfile.is_open()) {
@@ -180,23 +196,26 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 			wxTB_HORZ_TEXT, _T("ID_TOOLBAR1"));
 	//Icon zum Laden eines Objekts laden
 	wxImage obj_icon(
-			wxString::FromUTF8(data_directory.c_str()) + wxT("icons/obj_icon.png"),
-			wxBITMAP_TYPE_PNG);
+			wxString::FromUTF8(
+					(data_directory + PATH_SEPARATOR + "icons" + PATH_SEPARATOR
+							+ "obj_icon.png").c_str()), wxBITMAP_TYPE_PNG);
 	obj_icon = obj_icon.Scale(toolbar->GetToolBitmapSize().x,
 			toolbar->GetToolBitmapSize().y, wxIMAGE_QUALITY_HIGH);
 	toolbar->AddTool(ID_IMPORT_OBJ, obj_icon,
 			wxT("Objekt und Sensordaten importieren"));
 	//Icon zum Laden einfacher Sensordaten laden
 	wxImage sd_icon(
-			wxString::FromUTF8(data_directory.c_str()) + wxT("icons/sd_icon.png"),
-			wxBITMAP_TYPE_PNG);
+			wxString::FromUTF8(
+					(data_directory + PATH_SEPARATOR + "icons" + PATH_SEPARATOR
+							+ "sd_icon.png").c_str()), wxBITMAP_TYPE_PNG);
 	sd_icon = sd_icon.Scale(toolbar->GetToolBitmapSize().x,
 			toolbar->GetToolBitmapSize().y, wxIMAGE_QUALITY_HIGH);
 	toolbar->AddTool(ID_IMPORT_SD, sd_icon, wxT("Sensordaten importieren"));
 	//Icon zum Laden zeitbezogener Sensordaten laden
 	wxImage tsd_icon(
-			wxString::FromUTF8(data_directory.c_str()) + wxT("icons/tsd_icon.png"),
-			wxBITMAP_TYPE_PNG);
+			wxString::FromUTF8(
+					(data_directory + PATH_SEPARATOR + "icons" + PATH_SEPARATOR
+							+ "tsd_icon.png").c_str()), wxBITMAP_TYPE_PNG);
 	tsd_icon = tsd_icon.Scale(toolbar->GetToolBitmapSize().x,
 			toolbar->GetToolBitmapSize().y, wxIMAGE_QUALITY_HIGH);
 	toolbar->AddTool(ID_IMPORT_TSD, tsd_icon,
@@ -212,25 +231,32 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	toolbar->AddSeparator();
 	//Icon für die Analysedatenübersicht laden
 	wxImage overview_icon(
-			wxString::FromUTF8(data_directory.c_str()) + wxT("icons/overview_icon.png"),
-			wxBITMAP_TYPE_PNG);
+			wxString::FromUTF8(
+					(data_directory + PATH_SEPARATOR + "icons" + PATH_SEPARATOR
+							+ "overview_icon.png").c_str()), wxBITMAP_TYPE_PNG);
 	overview_icon = overview_icon.Scale(toolbar->GetToolBitmapSize().x,
 			toolbar->GetToolBitmapSize().y, wxIMAGE_QUALITY_HIGH);
 	toolbar->AddTool(ID_ANALYZE, overview_icon, wxT("Analysedatenübersicht"));
 	//Icon für Analyse an einem Punkt laden
 	wxImage analyze_point_icon(
-			wxString::FromUTF8(data_directory.c_str()) + wxT("icons/analyze_point.png"),
+			wxString::FromUTF8(
+					(data_directory + PATH_SEPARATOR + "icons" + PATH_SEPARATOR
+							+ "analyze_point.png").c_str()),
 			wxBITMAP_TYPE_PNG);
-	analyze_point_icon = analyze_point_icon.Scale(toolbar->GetToolBitmapSize().x,
-			toolbar->GetToolBitmapSize().y, wxIMAGE_QUALITY_HIGH);
-	toolbar->AddTool(ID_ANALYZE_POINT, analyze_point_icon, wxT("Punkt analysieren"));
+	analyze_point_icon = analyze_point_icon.Scale(
+			toolbar->GetToolBitmapSize().x, toolbar->GetToolBitmapSize().y,
+			wxIMAGE_QUALITY_HIGH);
+	toolbar->AddTool(ID_ANALYZE_POINT, analyze_point_icon,
+			wxT("Punkt analysieren"));
 	//Icon für die Berechnung einer 2D-Temperaturverteilung laden
 	wxImage render_cut_icon(
-			wxString::FromUTF8(data_directory.c_str()) + wxT("icons/cut_icon.png"),
-			wxBITMAP_TYPE_PNG);
+			wxString::FromUTF8(
+					(data_directory + PATH_SEPARATOR + "icons" + PATH_SEPARATOR
+							+ "cut_icon.png").c_str()), wxBITMAP_TYPE_PNG);
 	render_cut_icon = render_cut_icon.Scale(toolbar->GetToolBitmapSize().x,
 			toolbar->GetToolBitmapSize().y, wxIMAGE_QUALITY_HIGH);
-	toolbar->AddTool(ID_RENDER_CUT, render_cut_icon, wxT("2D-Temperaturverteilung berechnen"));
+	toolbar->AddTool(ID_RENDER_CUT, render_cut_icon,
+			wxT("2D-Temperaturverteilung berechnen"));
 
 	toolbar->Realize();
 
@@ -238,7 +264,12 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	SetToolBar(toolbar);
 
 	//Programmicon laden
-	SetIcon(wxIcon(wxString::FromUTF8(data_directory.c_str()) + wxT("icons/prgm-icon.png")));
+#if defined (__WIN32__)
+	SetIcon(wxICON(program_icon));
+#else
+	SetIcon(wxIcon(wxString::FromUTF8(data_directory.c_str())
+		+ wxT("icons/prgm-icon.png")));
+#endif
 
 	//Fenster auf dem Bildschirm zentrieren
 	Centre();
@@ -273,6 +304,7 @@ void GUIMainWindow::setActiveObject(int index) {
 	updateObjectPropGUI();
 	updateViewPropGUI();
 }
+
 void GUIMainWindow::OnActiveObjectDelete(wxCommandEvent &event) {
 
 	//Liegen mehrere Objekte vor?
@@ -354,6 +386,7 @@ void GUIMainWindow::OnAnalyzeMarkerChange(wxCommandEvent &event) {
 				propbox->getAnalyzeMarkerCheckBox()->GetValue());
 	}
 }
+
 void GUIMainWindow::OnFindMaxTSD(wxCommandEvent &event) {
 
 	//ist ein Objekt geladen?
@@ -383,6 +416,7 @@ void GUIMainWindow::OnFindMaxTSD(wxCommandEvent &event) {
 		}
 	}
 }
+
 void GUIMainWindow::OnSDTLNextMarker(wxCommandEvent &event) {
 
 	//indices aller markierten Zeitpunkte, ist aufsteigend sortiert
@@ -402,6 +436,7 @@ void GUIMainWindow::OnSDTLNextMarker(wxCommandEvent &event) {
 		}
 	}
 }
+
 void GUIMainWindow::OnSDTLPrevMarker(wxCommandEvent &event) {
 
 	//indices aller markierten Zeitpunkte, ist aufsteigend sortiert
@@ -576,6 +611,7 @@ void GUIMainWindow::OnRecalcBtClick(wxCommandEvent& event) {
 		}
 	}
 }
+
 void GUIMainWindow::OnAnalyze(wxCommandEvent &event) {
 
 	//ist ein Objekt geladen?
@@ -591,6 +627,7 @@ void GUIMainWindow::OnAnalyze(wxCommandEvent &event) {
 		}
 	}
 }
+
 void GUIMainWindow::OnAnalyzePoint(wxCommandEvent &event) {
 
 	//ist ein Objekt geladen?
@@ -603,6 +640,7 @@ void GUIMainWindow::OnAnalyzePoint(wxCommandEvent &event) {
 		wxMessageBox(wxT("Es ist kein Objekt geladen!"), wxT("Fehler"));
 	}
 }
+
 void GUIMainWindow::OnRenderCut(wxCommandEvent &event) {
 
 	//ist ein Objekt geladen?
@@ -620,6 +658,7 @@ void GUIMainWindow::OnRenderCut(wxCommandEvent &event) {
 		}
 	}
 }
+
 void GUIMainWindow::OnImmediateUpdatePropChange(wxCommandEvent &event) {
 
 	//dürfen Events verarbeitet werden?
@@ -682,6 +721,7 @@ void GUIMainWindow::assignViewProps() {
 		}
 	}
 }
+
 void GUIMainWindow::updateViewPropGUI() {
 
 	//ist ein Objekt geladen?
@@ -723,12 +763,14 @@ void GUIMainWindow::updateViewPropGUI() {
 		updating = false;
 	}
 }
+
 void GUIMainWindow::OnViewPropChange(wxCommandEvent &event) {
 	if (!updating) {
 		assignViewProps();
 		gl_context->refresh();
 	}
 }
+
 void GUIMainWindow::OnViewPropSpinChange(wxSpinEvent &event) {
 	if (!updating) {
 		assignViewProps();
@@ -808,6 +850,7 @@ void GUIMainWindow::OnMenuImportSD(wxCommandEvent &event) {
 	OpenDialog->Close();
 	OpenDialog->Destroy();
 }
+
 void GUIMainWindow::OnMenuImportTSD(wxCommandEvent &event) {
 
 	//Dialog zur Dateiauswahl
@@ -828,6 +871,7 @@ void GUIMainWindow::OnMenuImportTSD(wxCommandEvent &event) {
 	OpenDialog->Close();
 	OpenDialog->Destroy();
 }
+
 void GUIMainWindow::OnExportViewportImage(wxCommandEvent &event) {
 
 	//Ist ein Objekt geladen?
@@ -856,6 +900,7 @@ void GUIMainWindow::OnExportViewportImage(wxCommandEvent &event) {
 	SaveDialog->Close();
 	SaveDialog->Destroy();
 }
+
 void GUIMainWindow::OnExportVTK(wxCommandEvent &event) {
 
 	//Ist ein Objekt geladen?
@@ -880,12 +925,14 @@ void GUIMainWindow::OnExportVTK(wxCommandEvent &event) {
 	SaveDialog->Close();
 	SaveDialog->Destroy();
 }
+
 void GUIMainWindow::OnActiveObjectChangePopup(wxCommandEvent &event) {
 	if (event.GetId() != 0) {
 		//Die event-ID enthält den ausgewählten Menüpunkt
 		setActiveObject(event.GetId() - wxID_HIGHEST - 1);
 	}
 }
+
 void GUIMainWindow::OnActiveObjectChange(wxCommandEvent &event) {
 
 	//Popupmenü aller geladenen Objekte
@@ -909,13 +956,25 @@ void GUIMainWindow::OnActiveObjectChange(wxCommandEvent &event) {
 	//Anzeigen des Auswahlmenüs
 	PopupMenu(&mnu);
 }
+
 void GUIMainWindow::OnMenuFileQuit(wxCommandEvent &event) {
 	//Programm schließen
-	Close(false);
+	Close();
 }
 
 void GUIMainWindow::OnMenuOpenManual(wxCommandEvent &event) {
-	system(string("xdg-open "+data_directory+"simpleanalyzer-man.pdf\n").c_str());
+
+#if defined (__WIN32__)
+	ShellExecute(NULL, NULL, wxString::FromUTF8(
+					(data_directory + PATH_SEPARATOR
+							+ "simpleanalyzer-man.pdf").c_str()).wc_str(),
+								NULL, NULL, SW_SHOWNORMAL);
+#else
+	system(
+			string(
+					"xdg-open " + data_directory + PATH_SEPARATOR
+							+ "simpleanalyzer-man.pdf\n").c_str());
+#endif
 }
 
 void GUIMainWindow::OnMenuHelpAbout(wxCommandEvent &event) {

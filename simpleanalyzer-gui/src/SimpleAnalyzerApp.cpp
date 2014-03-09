@@ -63,7 +63,11 @@ void SimpleAnalyzerApp::removeCurrentObject() {
 		}
 	}
 }
+
 bool SimpleAnalyzerApp::OnInit() {
+
+	//nötig zum Ausgeben auf dem std-Stream unter Windows
+	std::cout << std::flush;
 
 	//Workaround für eventuelle Timingprobleme von wxWidgets
 	wxMilliSleep(100);

@@ -68,6 +68,7 @@ PropertiesBox::PropertiesBox(wxWindow *parent) :
 	//Statusvariablen initialisieren
 	current_material = 0;
 }
+
 void PropertiesBox::resize() {
 
 	//Positionieren aller Komponenten
@@ -123,7 +124,7 @@ void PropertiesBox::resize() {
 		}
 	}
 
-	matListBoxLbl->SetSize(x + 10, y + 240 + sdheight, 300, 110, 0);
+	matListBoxLbl->SetSize(x + 10, y + 240 + sdheight, 300, 20, 0);
 	matListBox->SetSize(x + 10, y + 260 + sdheight, 270, 60, 0);
 	matPropBox->SetSize(x + 10, y + 330 + sdheight, 270, 195, 0);
 	matNameLbl->SetSize(x + 20, y + 350 + sdheight, 300, 20, 0);

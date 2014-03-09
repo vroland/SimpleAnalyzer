@@ -36,8 +36,8 @@ void GUIGLCanvas::OnResize(wxSizeEvent &event) {
 	//Aktualisieren des Renderers vormerken
 	do_refresh = true;
 
-	Refresh(false, NULL);
 	Update();
+	Refresh();
 }
 
 void GUIGLCanvas::OnMouseWheel(wxMouseEvent &event) {
@@ -49,7 +49,8 @@ void GUIGLCanvas::OnMouseWheel(wxMouseEvent &event) {
 		renderer.getViewport()->zoom = 0;
 	}
 
-	Refresh(false, NULL);
+	Update();
+	Refresh();
 }
 
 void GUIGLCanvas::OnPaint(wxPaintEvent &event) {

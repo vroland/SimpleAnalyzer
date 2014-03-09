@@ -41,6 +41,7 @@ GUIRenderCutCanvas::GUIRenderCutCanvas(wxWindow* parent) :
 	mouse_to_scalepanel = false;
 	//Die Temperaturkala
 	scalepanel = new GUIColorScalePanel();
+	SetDoubleBuffered(true);
 }
 
 void GUIRenderCutCanvas::setImage(wxImage* img) {
@@ -97,6 +98,7 @@ void GUIRenderCutCanvas::OnMouseMove(wxMouseEvent &event) {
 	current_my = event.m_y;
 
 	Refresh();
+	SetFocus();
 }
 
 void GUIRenderCutCanvas::OnResize(wxSizeEvent &event) {

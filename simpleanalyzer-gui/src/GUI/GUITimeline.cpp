@@ -211,7 +211,7 @@ void GUITimeline::findMaxValue(ObjectData* obj, bool fast) {
 int GUITimeline::calcStepWidth() {
 
 	//Zehnerpotenz des beim aktuellen Zoom dargestellten Bereichs (zoom * maxvalue)
-	int to_ten = int(exp10(int(log10(maxvalue * zoom))));
+	int to_ten = int(pow(10,int(log10(maxvalue * zoom))));
 	//faktor zur Verfeinerung der kleinsten Skaleneinteilung
 	float refine_factor = 1;
 	//Device Context zum ermitteln zur ausdehnung des dargestellten Texts

@@ -54,7 +54,7 @@ wxString Utils::floattowxstr(double val) {
 
 wxString Utils::floattowxstr(double val, int digits) {
 	ostringstream ss;
-	ss << int(val * exp10(digits)) / (float) exp10(digits);
+	ss << int(val * pow(10,digits)) / (float) pow(10,digits);
 	return wxString::FromAscii(ss.str().c_str());
 }
 

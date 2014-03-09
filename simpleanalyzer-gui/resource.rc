@@ -1,0 +1,3 @@
+program_icon ICON "windows-icon.ico"
+
+#include "wx/msw/wx.rc"

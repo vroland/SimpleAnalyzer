@@ -26,7 +26,7 @@ ViewpropBox::ViewpropBox(wxWindow *parent) :
 	facesCheckBox = new wxRadioBox(parent, ID_GENERAL_VIEW_PROP,
 			wxT("Flächen:"), wxDefaultPosition, wxDefaultSize, 3,
 			renderchoices);
-	matVisibilityListBox = new wxCheckListBox(parent, ID_GENERAL_VIEW_PROP);
+	matVisibilityListBox = new wxCheckListBox(parent, ID_CHECKLISTBOX_VIEW_PROP);
 	matVisualizationLbl = new wxStaticText(parent, wxID_ANY,
 			wxT("sichtbare Materialien:"));
 	showExtrapolatedCheckBox = new wxCheckBox(parent, ID_GENERAL_VIEW_PROP,

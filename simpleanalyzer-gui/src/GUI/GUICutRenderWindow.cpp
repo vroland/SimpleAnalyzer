@@ -12,6 +12,7 @@
 #include "../processing/ObjectData.h"
 #include "../processing/utils.h"
 #include "../libraries/interpolate/Interpolator.h"
+#include "../libraries/tetgen/tetgen.h"
 #include "../fileIO/Exporter.h"
 #include "GUIMainWindow.h"
 #include <thread>
@@ -43,38 +44,33 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent, const wxChar *title,
 	trilabel = new wxStaticText(scroll_pane, wxID_ANY,
 			wxT("Dreiecksebene (Punkt1 ist Mittelpunkt):"));
 	p1label = new wxStaticText(scroll_pane, wxID_ANY, wxT("Punkt 1:"));
-	p1xedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT, wxT("0.0"));
-	p1yedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT, wxT("0.0"));
-	p1zedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT, wxT("0.0"));
+	p1label = new wxStaticText(scroll_pane, wxID_ANY, wxT("Punkt 1:"));
+	p1xedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
+	p1yedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
+	p1zedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
 
 	p2label = new wxStaticText(scroll_pane, wxID_ANY, wxT("Punkt 2:"));
-	p2xedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT, wxT("1.0"));
-	p2yedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT, wxT("0.0"));
-	p2zedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT, wxT("0.0"));
+	p2xedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
+	p2yedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
+	p2zedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
 
 	p3label = new wxStaticText(scroll_pane, wxID_ANY, wxT("Punkt 3:"));
-	p3xedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT, wxT("0.0"));
-	p3yedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT, wxT("1.0"));
-	p3zedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT, wxT("0.0"));
+	p3xedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
+	p3yedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
+	p3zedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
 
 	optionslbl = new wxStaticText(scroll_pane, wxID_ANY, wxT("Optionen:"));
 	widthHeightlbl = new wxStaticText(scroll_pane, wxID_ANY,
 			wxT("Breite/Höhe:"));
 	imgWidthEdit = new wxSpinCtrl(scroll_pane, ID_CUT_TRI_EDIT);
-	imgWidthEdit->SetRange(1, 100000000);
-	imgWidthEdit->SetValue(800);
 	imgHeightEdit = new wxSpinCtrl(scroll_pane, ID_CUT_TRI_EDIT);
-	imgHeightEdit->SetRange(1, 100000000);
-	imgHeightEdit->SetValue(600);
 	mmperpixellabel = new wxStaticText(scroll_pane, wxID_ANY,
 			wxT("Maßstab (mm/px):"));
-	mmperpixeledit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT, wxT("15.0"));
+	mmperpixeledit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
 	threadcountlbl = new wxStaticText(scroll_pane, wxID_ANY,
 			wxT("CPU-Threads:"));
 	core_count = thread::hardware_concurrency();
 	threadcountedit = new wxSpinCtrl(scroll_pane, wxID_ANY);
-	threadcountedit->SetRange(1, 1000);
-	threadcountedit->SetValue(core_count);
 
 	calcbt = new wxButton(scroll_pane, ID_RENDER_CUT_BT, wxT("Analysieren"));
 	export_img_bt = new wxButton(scroll_pane, ID_EXPORT_CUT_IMG_BT,
@@ -90,19 +86,13 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent, const wxChar *title,
 	scalemodecb->Insert(wxT("Vertikal"), 0);
 	scalemodecb->Insert(wxT("Horizontal"), 0);
 	scalemodecb->Insert(wxT("Kein"), 0);
-	scalemodecb->Select(canvas->getScalePanel()->getMode());
+
 	scalefontpropslbl = new wxStaticText(scroll_pane, wxID_ANY,
 			wxT("Schriftgröße/Farbe:"));
 	scalefontsizeedit = new wxSpinCtrl(scroll_pane, ID_COLORSCALE_PROP);
-	scalefontsizeedit->SetRange(1, 1000);
-	scalefontsizeedit->SetValue(canvas->getScalePanel()->getFontSize());
 	scalefontcolorbt = new wxButton(scroll_pane, ID_COLORSCALE_COLORBT,
 			wxT("Text"));
-	scalefontcolorbt->SetForegroundColour(
-			canvas->getScalePanel()->getTextColor());
 	scalestepedit = new wxSpinCtrl(scroll_pane, ID_COLORSCALE_PROP);
-	scalestepedit->SetRange(1, 1000);
-	scalestepedit->SetValue(canvas->getScalePanel()->getStepWidth());
 
 	//Initialisieren der Temperaturverteilung
 	value_img = new float[1];
@@ -112,10 +102,47 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent, const wxChar *title,
 	canvas->setImage(image);
 	canvas->setValueImg(value_img);
 
+	//getrennte Initialisierung für wxMSW erforderlich
+	p1xedit->SetValue(wxT("0.0"));
+	p1yedit->SetValue(wxT("0.0"));
+	p1zedit->SetValue(wxT("0.0"));
+
+	p2xedit->SetValue(wxT("1.0"));
+	p2yedit->SetValue(wxT("0.0"));
+	p2zedit->SetValue(wxT("0.0"));
+
+	p3xedit->SetValue(wxT("0.0"));
+	p3yedit->SetValue(wxT("1.0"));
+	p3zedit->SetValue(wxT("0.0"));
+
+	imgWidthEdit->SetRange(1, 100000000);
+	imgWidthEdit->SetValue(800);
+
+	imgHeightEdit->SetRange(1, 100000000);
+	imgHeightEdit->SetValue(600);
+
+	threadcountedit->SetRange(1, 1000);
+	threadcountedit->SetValue(core_count);
+
+	mmperpixeledit->SetValue(wxT("15.0"));
+
+	scalemodecb->Select(GUIColorScalePanel::SCM_HORIZONTAL);
+
+	scalestepedit->SetRange(1, 1000);
+	scalestepedit->SetValue(12);
+
+	scalefontsizeedit->SetRange(1, 1000);
+	scalefontsizeedit->SetValue(12);
+
+	scalefontcolorbt->SetForegroundColour(
+			canvas->getScalePanel()->getTextColor());
+
 	//update der Oberfläche auslösen
 	p1xedit->SetValue(p1xedit->GetValue());
 
-	Update();
+	//Neupositionierung der Oberflächenkomponenten für wxMSW
+	wxSizeEvent evt;
+	OnResize(evt);
 }
 
 /**
@@ -356,7 +383,7 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 	//Solange threads laufen...
 	do {
 		//Ausgabe aktualisieren
-		Update();
+		canvas->Update();
 		canvas->Refresh();
 
 		//ermitteln der Pfüfzahl, ob noch Threads laufen. Wenn diese 0 bleibt, sind alle Threads fertig.
@@ -420,23 +447,23 @@ void GUICutRenderWindow::OnResize(wxSizeEvent &event) {
 	int height = 0;
 	GetSize(&width, &height);
 	trilabel->SetSize(10, 10, 300, 20);
-	p1label->SetSize(20, 30, 300, 20);
+	p1label->SetSize(20, 30, 80, 20);
 	p1xedit->SetSize(90, 30, 70, 20);
 	p1yedit->SetSize(160, 30, 70, 20);
 	p1zedit->SetSize(230, 30, 70, 20);
-	p2label->SetSize(20, 60, 300, 20);
+	p2label->SetSize(20, 60, 80, 20);
 	p2xedit->SetSize(90, 60, 70, 20);
 	p2yedit->SetSize(160, 60, 70, 20);
 	p2zedit->SetSize(230, 60, 70, 20);
-	p3label->SetSize(20, 90, 300, 20);
+	p3label->SetSize(20, 90, 80, 20);
 	p3xedit->SetSize(90, 90, 70, 20);
 	p3yedit->SetSize(160, 90, 70, 20);
 	p3zedit->SetSize(230, 90, 70, 20);
-	optionslbl->SetSize(310, 10, 300, 20);
+	optionslbl->SetSize(310, 10, 80, 20);
 	widthHeightlbl->SetSize(320, 30, 200, 20);
 	imgWidthEdit->SetSize(320, 50, 70, 20);
 	imgHeightEdit->SetSize(390, 50, 70, 20);
-	mmperpixellabel->SetSize(320, 70, 200, 40);
+	mmperpixellabel->SetSize(320, 70, 100, 20);
 	mmperpixeledit->SetSize(320, 90, 140, 20);
 	scalelbl->SetSize(470, 10, 140, 20);
 	scalemodelbl->SetSize(480, 30, 140, 20);
@@ -450,11 +477,11 @@ void GUICutRenderWindow::OnResize(wxSizeEvent &event) {
 	calcbt->SetSize(640, 30, 150, 30);
 	export_img_bt->SetSize(640, 60, 150, 30);
 	export_csv_bt->SetSize(640, 90, 150, 30);
-	canvas->SetSize(10, 120, width - 20, height - canvas->GetPosition().y - 10);
+	canvas->SetSize(0, 140, width, height - canvas->GetPosition().y);
 	refreshVisualisation();
-	scroll_pane->SetSize(0, 0, width, 120);
+	scroll_pane->SetSize(0, 0, width, 140);
 	scroll_pane->SetVirtualSize(790, 120);
-	canvas->Refresh(false, NULL);
+	canvas->Refresh();
 }
 
 void GUICutRenderWindow::OnExportCSV(wxCommandEvent &event) {

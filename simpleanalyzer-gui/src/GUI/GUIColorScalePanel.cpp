@@ -48,10 +48,10 @@ void GUIColorScalePanel::paintTo(wxDC& dc, float zoom, wxPoint& img_coords) {
 		getDisplayArea(&display_area, zoom);
 
 		//Zeichnen des Overlay-Bildes mit der Skala
-		wxBitmap drawbmp(*image);
-		drawbmp = drawbmp.Rescale(0, 0, 10000000, 1000000,
-				drawbmp.GetWidth() * zoom, drawbmp.GetHeight() * zoom);
-		dc.DrawBitmap(drawbmp, img_coords.x, img_coords.y);
+		wxImage drawimg = image->Copy();
+
+		drawimg.Rescale(drawimg.GetWidth() * zoom, drawimg.GetHeight() * zoom, wxIMAGE_QUALITY_NORMAL);
+        dc.DrawBitmap(wxBitmap(drawimg), img_coords.x, img_coords.y);
 
 		//obere linke Ecke des Rechtecks zum Skalieren
 		wxPoint scale_rect_topleft(
