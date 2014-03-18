@@ -9,11 +9,18 @@
  * @mainpage SimpleAnalyzer
  *
  * Dies ist die Dokumentation der Programmquellen.
- * Für Informationen über die Verwendung der Programme
- * konsultieren Sie bitte das Handbuch der Software.
+ *  Für Informationen über die Verwendung der Programme
+ *  konsultieren Sie bitte das Handbuch der Software.
+ *
+ * Alle in https://github.com/vroland/SimpleAnalyzer zur
+ *  Verfügung gestellten Quelltexte und Beispieldateien stehen
+ *  unter der GNU General Public License in der Version 3,
+ *  wenn nicht anders in einer Datei im entsprechenden
+ *  Verzeichnis angegeben.
  *
  * @author Valentin Roland
  */
+
 #include <iostream>
 #include "SimpleAnalyzerApp.h"
 #include "GUI/GUIMainWindow.h"

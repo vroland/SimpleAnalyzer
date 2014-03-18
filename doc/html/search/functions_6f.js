@@ -28,6 +28,7 @@ var searchData=
   ['onmenuimportobj',['OnMenuImportObj',['../classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc',1,'GUIMainWindow']]],
   ['onmenuimportsd',['OnMenuImportSD',['../classGUIMainWindow.xhtml#a405b99746fe6f35ec527c57604e53ce2',1,'GUIMainWindow']]],
   ['onmenuimporttsd',['OnMenuImportTSD',['../classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560',1,'GUIMainWindow']]],
+  ['onmenuopenmanual',['OnMenuOpenManual',['../classGUIMainWindow.xhtml#ac3fd30af35182d72c407f04a81abea07',1,'GUIMainWindow']]],
   ['onmousedown',['OnMouseDown',['../classGUIRenderCutCanvas.xhtml#a42f81a939b256a87e76b3896fc0b9ce3',1,'GUIRenderCutCanvas::OnMouseDown()'],['../classGUITimeline.xhtml#a7254dd9824190a6288da682d8fefad09',1,'GUITimeline::OnMouseDown()']]],
   ['onmousemove',['OnMouseMove',['../classGUIGLCanvas.xhtml#a9c089336b9485f1abcc60a1a7fb85bb7',1,'GUIGLCanvas::OnMouseMove()'],['../classGUIRenderCutCanvas.xhtml#a5d4aa229d86929fe6f6a73fe05ab32ad',1,'GUIRenderCutCanvas::OnMouseMove()'],['../classGUITimeline.xhtml#a7d53538e56f4571e729dfe64a820ddf2',1,'GUITimeline::OnMouseMove()']]],
   ['onmousewheel',['OnMouseWheel',['../classGUIGLCanvas.xhtml#a0ee8fe9339ebb330b8133a620bd67514',1,'GUIGLCanvas::OnMouseWheel()'],['../classGUIRenderCutCanvas.xhtml#a6759782fb854d7be47f368974c57b4e1',1,'GUIRenderCutCanvas::OnMouseWheel()'],['../classGUITimeline.xhtml#a23116af54d562cef9cb891adf2358a06',1,'GUITimeline::OnMouseWheel()']]],

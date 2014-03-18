@@ -140,10 +140,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        getDisplayArea(&amp;display_area, zoom);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">//Zeichnen des Overlay-Bildes mit der Skala</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        wxBitmap drawbmp(*image);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        drawbmp = drawbmp.Rescale(0, 0, 10000000, 1000000,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                drawbmp.GetWidth() * zoom, drawbmp.GetHeight() * zoom);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        dc.DrawBitmap(drawbmp, img_coords.x, img_coords.y);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        wxImage drawimg = image-&gt;Copy();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        drawimg.Rescale(drawimg.GetWidth() * zoom, drawimg.GetHeight() * zoom, wxIMAGE_QUALITY_NORMAL);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        dc.DrawBitmap(wxBitmap(drawimg), img_coords.x, img_coords.y);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//obere linke Ecke des Rechtecks zum Skalieren</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        wxPoint scale_rect_topleft(</div>
@@ -552,7 +552,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Feb 21 2014 00:31:53 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Mär 18 2014 18:09:53 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

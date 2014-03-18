@@ -443,12 +443,12 @@ void GUITimeline::setValue(int val) {
 	if (value < minvalue) {
 		value = minvalue;
 		cerr << "Timeline value must not be smaller than the minimum value!"
-				<< cout;
+				<< endl;
 	}
 	if (value > maxvalue) {
 		value = minvalue;
 		cerr << "Timeline value must not be smaller than the maximum value!"
-				<< cout;
+				<< endl;
 	}
 
 	sendTimelineEvent();

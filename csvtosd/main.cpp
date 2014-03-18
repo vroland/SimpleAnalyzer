@@ -307,7 +307,7 @@ protected:
 					dont_split = !dont_split;
 				}
 
-				//An Leerzeichen in Sensorname und -daten trennen
+				//An Leerzeichen in Sensorname und -koordinaten trennen
 				if (c == ' ' && !dont_split) {
 
 					string name = line.substr(0, i);

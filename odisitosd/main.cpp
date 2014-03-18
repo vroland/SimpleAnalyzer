@@ -188,6 +188,7 @@ protected:
 		for (int i = 0; i < opts.tab_space_count; i++) {
 			tab_to_space += " ";
 		}
+
 		//Ersetzen aller TABs durch die gewünschte Anzahl an Leerzeichen
 		replaceAll(line, "\t", tab_to_space);
 
@@ -221,12 +222,18 @@ protected:
 
 			} while (sep_pos == 0);
 
+			///Komma mit Punkt als Dezimaltrennzeichen ersetzen?
+			if (opts.replace_comma_with_point) {
+				replaceAll(substr, ",", ".");
+			}
+
 			//Enthält die Spalte Sensordaten?
 			if (row_count > opts.startrow && col_index > opts.timecol) {
 
 				//Speichern der Daten aus der Spalte in die Ausgabeliste
 				debug_positions->resize(debug_positions->size() + 1,
 						position + 2);
+
 				//Speichern der Position in der Datei
 				out->resize(out->size() + 1, atof(substr.c_str()));
 			}
@@ -291,9 +298,6 @@ protected:
 		getline(cfgfile, line);
 		//Lesen, ob Komma durch Punkt ersetzt werden soll
 		opts.replace_comma_with_point = atoi(getTextBlock(line, 0).c_str());
-		getline(cfgfile, line);
-		//Lesen des Index der Zeitstempelspalte
-		opts.timecol = atoi(getTextBlock(line, 0).c_str());
 		getline(cfgfile, line);
 		//Maximal zulässige Differenz zum Vorgängerwert für einen gültigen Messwert bei der Fehlerkorrektur
 		opts.error_threshold = atof(getTextBlock(line, 0).c_str());
@@ -603,11 +607,6 @@ protected:
 					positions_read = true;
 				} else {
 
-					///Komma mit Punkt als Dezimaltrennzeichen ersetzen?
-					if (opts.replace_comma_with_point) {
-						replaceAll(line, ",", ".");
-					}
-
 					values.resize(values.size() + 1);
 					debug_positions.resize(debug_positions.size() + 1);
 					//Einlesen der aktuellen Zeile
@@ -743,6 +742,7 @@ protected:
 						l_out = outlist.at(li);
 						x_in = in_x.at(li);
 						x_out = out_x.at(li);
+						//cout << l_pos << endl;
 						break;
 					}
 
@@ -824,6 +824,7 @@ protected:
 					float y = opts.height;
 					float z = cos(asin(((x_out - x_in) / (l_out - l_in))))
 							* (l_pos - l_in);
+					//cout << x_in << " "<< x_out << endl;
 					//Schreiben des Messpunktes
 					outfile << "s " << x << " " << y << " " << z << " "
 							<< opts.basetemp + values.at(i).at(j) << endl;

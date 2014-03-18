@@ -512,7 +512,7 @@ void Renderer::setObject(ObjectData* obj) {
 	//Generieren einer neuen Displayliste
 	displayList = glGenLists(1);
 	if (!glIsList(displayList)) {
-		cout << "could not create display list!" << endl;
+		cerr << "could not create display list!" << endl;
 	}
 
 	//Speichern der neuen Geometriedaten auf der Grafikkarte

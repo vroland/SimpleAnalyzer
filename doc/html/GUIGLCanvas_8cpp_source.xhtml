@@ -128,8 +128,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//Aktualisieren des Renderers vormerken</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Refresh(<span class="keyword">false</span>, NULL);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Update();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Update();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Refresh();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a0ee8fe9339ebb330b8133a620bd67514">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a0ee8fe9339ebb330b8133a620bd67514" title="Behandelt Mausradbewegungen (zoomen). ">GUIGLCanvas::OnMouseWheel</a>(wxMouseEvent &amp;event) {</div>
@@ -141,109 +141,111 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#a9bbc5e50fed7334fb237e620e6080e5e" title="Aktueller Zoomfaktor. ">zoom</a> = 0;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Refresh(<span class="keyword">false</span>, NULL);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f">   55</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" title="Event-Tabellendeklaration für wxWidgets. ">GUIGLCanvas::OnPaint</a>(wxPaintEvent &amp;event) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//Aufrufen des OpenGL-Kontexts</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    SetCurrent();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//OpenGL initialisieren?</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classGUIGLCanvas.xhtml#a59e01564652765dec69e7097c10b4455" title="Initialisiertungsstatus des Objekts. ">is_initialized</a>) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a01887363ad27267e44c1ea0f63761a5c" title="Initialisiert die OpenGL-Bibliothek. ">initGL</a>(GetSize().x, GetSize().y);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classGUIGLCanvas.xhtml#a59e01564652765dec69e7097c10b4455" title="Initialisiertungsstatus des Objekts. ">is_initialized</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//Viewport aktualisieren?</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a>) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a9f4493c538688adaad4e4f0575fd3b8d" title="Verändert die Größe des Anzeigebereichs. ">resize</a>(GetSize().x, GetSize().y);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (wxGetApp().getCurrentDataObjectIndex() &gt; -1) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a9db67fbbd309875b564ca1df08daf372" title="Setzt das zu zeichnende Objekt. ">setObject</a>(wxGetApp().getActiveObject());</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//Fensterinhalt zeichnen</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#af7e5f8f68742f198e315fb4683a605a4" title="Zeichnet das Objekt (Attribut object). ">render</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//Doublebuffer austauschen</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    SwapBuffers();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a643f11a7ef05829a6c48d037ad2c4b9b">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a643f11a7ef05829a6c48d037ad2c4b9b" title="Setzt das darzustellende Objekt. ">GUIGLCanvas::setRenderObject</a>(<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* obj) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Update();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Refresh();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a83f52d08591920a339150c2f45069c8f" title="Event-Tabellendeklaration für wxWidgets. ">GUIGLCanvas::OnPaint</a>(wxPaintEvent &amp;event) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//Aufrufen des OpenGL-Kontexts</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    wxPaintDC(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    SetCurrent();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//OpenGL initialisieren?</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classGUIGLCanvas.xhtml#a59e01564652765dec69e7097c10b4455" title="Initialisiertungsstatus des Objekts. ">is_initialized</a>) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a01887363ad27267e44c1ea0f63761a5c" title="Initialisiert die OpenGL-Bibliothek. ">initGL</a>(GetSize().x, GetSize().y);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classGUIGLCanvas.xhtml#a59e01564652765dec69e7097c10b4455" title="Initialisiertungsstatus des Objekts. ">is_initialized</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//Viewport aktualisieren?</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a>) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a9f4493c538688adaad4e4f0575fd3b8d" title="Verändert die Größe des Anzeigebereichs. ">resize</a>(GetSize().x, GetSize().y);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (wxGetApp().getCurrentDataObjectIndex() &gt; -1) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a9db67fbbd309875b564ca1df08daf372" title="Setzt das zu zeichnende Objekt. ">setObject</a>(wxGetApp().getActiveObject());</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//Fensterinhalt zeichnen</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#af7e5f8f68742f198e315fb4683a605a4" title="Zeichnet das Objekt (Attribut object). ">render</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//Doublebuffer austauschen</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    SwapBuffers();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//Aufrufen des OpenGL-Kontexts</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    SetCurrent();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//Setzen des neuen Objekts</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a9db67fbbd309875b564ca1df08daf372" title="Setzt das zu zeichnende Objekt. ">setObject</a>(obj);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//aktualisieren</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    Refresh(<span class="keyword">false</span>, NULL);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a883d5bc79fcfc6e2c9ceeb41a0c0e77e">   93</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a883d5bc79fcfc6e2c9ceeb41a0c0e77e" title="Zeichnet den Inhalt des 3D-Fensters neu und aktualisiert den Renderer, z.B. ">GUIGLCanvas::refresh</a>() {</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a643f11a7ef05829a6c48d037ad2c4b9b">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a643f11a7ef05829a6c48d037ad2c4b9b" title="Setzt das darzustellende Objekt. ">GUIGLCanvas::setRenderObject</a>(<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* obj) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">//Aufrufen des OpenGL-Kontexts</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    SetCurrent();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//Setzen des neuen Objekts</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a9db67fbbd309875b564ca1df08daf372" title="Setzt das zu zeichnende Objekt. ">setObject</a>(obj);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//aktualisieren</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    Refresh(<span class="keyword">false</span>, NULL);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    Refresh(<span class="keyword">false</span>, NULL);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa">   99</a></span>&#160;<a class="code" href="classRenderer.xhtml" title="Zeichnet den Inhalt der 3D-Fensters. ">Renderer</a>* <a class="code" href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" title="Gibt den Renderer der Zeichenfläche zurück. ">GUIGLCanvas::getRenderer</a>() {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> &amp;<a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a9c089336b9485f1abcc60a1a7fb85bb7">  103</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a9c089336b9485f1abcc60a1a7fb85bb7" title="Behandelt Mausbewegungen (verschieben und drehen der Ansicht). ">GUIGLCanvas::OnMouseMove</a>(wxMouseEvent &amp;event) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a883d5bc79fcfc6e2c9ceeb41a0c0e77e">   95</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a883d5bc79fcfc6e2c9ceeb41a0c0e77e" title="Zeichnet den Inhalt des 3D-Fensters neu und aktualisiert den Renderer, z.B. ">GUIGLCanvas::refresh</a>() {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a7139f37aa028f71e393a0c479299455d" title="Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird. ">do_refresh</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    Refresh(<span class="keyword">false</span>, NULL);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa">  101</a></span>&#160;<a class="code" href="classRenderer.xhtml" title="Zeichnet den Inhalt der 3D-Fensters. ">Renderer</a>* <a class="code" href="classGUIGLCanvas.xhtml#a57085ce831e09e627fe93f17a6c79dfa" title="Gibt den Renderer der Zeichenfläche zurück. ">GUIGLCanvas::getRenderer</a>() {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> &amp;<a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//Aktualisierung nötig?</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classGUIGLCanvas.xhtml#a883d5bc79fcfc6e2c9ceeb41a0c0e77e" title="Zeichnet den Inhalt des 3D-Fensters neu und aktualisiert den Renderer, z.B. ">refresh</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">//Mausstatus initialisiert?</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22" title="Zwischenspeicher für die vorherige Mausposition (X). ">prev_mouse_x</a> &gt; -1) {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="comment">//Kamera drehen?</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">if</span> (event.m_leftDown) {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#ad8005e4eaa631f4c6b96cf6be05e8428" title="Rotation der Ansicht um die (Kameralokale) X-Achse. ">rotationX</a> += <span class="keyword">event</span>.m_x - <a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22" title="Zwischenspeicher für die vorherige Mausposition (X). ">prev_mouse_x</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#a80fe2d86956d26105dd8301278e0c4e6" title="Rotation der Ansicht um die Y-Achse. ">rotationY</a> += <span class="keyword">event</span>.m_y - <a class="code" href="classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0" title="Zwischenspeicher für die vorherige Mausposition (Y). ">prev_mouse_y</a>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            refresh = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">//Kamera verschieben?</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (event.m_middleDown) {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="comment">//Verschiebungsvektor</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a> invec = <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>((event.m_x - <a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22" title="Zwischenspeicher für die vorherige Mausposition (X). ">prev_mouse_x</a>) * .1,</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    -(event.m_y - <a class="code" href="classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0" title="Zwischenspeicher für die vorherige Mausposition (Y). ">prev_mouse_y</a>) * .1, 0);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="comment">//Matrix zum Transformieren des Verschiebungsvektors durch die Kameradrehung</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <a class="code" href="classMatrix3D.xhtml" title="3x3-Matrixklasse mit Operationen. ">Matrix3D</a> view;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            view.<a class="code" href="classMatrix3D.xhtml#ada7ce7ea9f2d0ef0fdda60ad73dad345" title="Rotiert die Matrix um einen bestimmten Winkel auf der X-Achse. ">rotateX</a>(<a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#a80fe2d86956d26105dd8301278e0c4e6" title="Rotation der Ansicht um die Y-Achse. ">rotationY</a> * M_PI / 180.);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            view.<a class="code" href="classMatrix3D.xhtml#a649e1aa65466df65d63f1aef934e5fad" title="Rotiert die Matrix um einen bestimmten Winkel auf der Y-Achse. ">rotateY</a>(<a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#ad8005e4eaa631f4c6b96cf6be05e8428" title="Rotation der Ansicht um die (Kameralokale) X-Achse. ">rotationX</a> * M_PI / 180.);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            view.<a class="code" href="classMatrix3D.xhtml#a0d59cb6ea927264477a10b9d427966d6" title="Transponiert die Matrix. ">transpose</a>();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="comment">//Transformieren des Verschiebungsvektors</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* outvec = view.<a class="code" href="classMatrix3D.xhtml#a399be81028219044a03439b2ff93782a" title="Multipliziert die Matrix mit einer anderen Matrix. ">mult</a>(&amp;invec);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="comment">//Verschieben der Kamera</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#aa6b5d9d9dbde8c74e25af98680b7ccce" title="position der Virtuellen Kamera ">cameraPosition</a>-&gt;<a class="code" href="classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. ">add</a>(outvec);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keyword">delete</span> outvec;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            refresh = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">//Speichern des alten Mausstatus</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22" title="Zwischenspeicher für die vorherige Mausposition (X). ">prev_mouse_x</a> = <span class="keyword">event</span>.m_x;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0" title="Zwischenspeicher für die vorherige Mausposition (Y). ">prev_mouse_y</a> = <span class="keyword">event</span>.m_y;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">//Aktualisierung wenn nötig</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">if</span> (refresh) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        Refresh(<span class="keyword">false</span>, NULL);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#af6358f8d4e95c6864ff005d4764fffbc">  148</a></span>&#160;<a class="code" href="classGUIGLCanvas.xhtml#af6358f8d4e95c6864ff005d4764fffbc" title="Der Destruktor. ">GUIGLCanvas::~GUIGLCanvas</a>() {</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#a9c089336b9485f1abcc60a1a7fb85bb7">  105</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classGUIGLCanvas.xhtml#a9c089336b9485f1abcc60a1a7fb85bb7" title="Behandelt Mausbewegungen (verschieben und drehen der Ansicht). ">GUIGLCanvas::OnMouseMove</a>(wxMouseEvent &amp;event) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">//Aktualisierung nötig?</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classGUIGLCanvas.xhtml#a883d5bc79fcfc6e2c9ceeb41a0c0e77e" title="Zeichnet den Inhalt des 3D-Fensters neu und aktualisiert den Renderer, z.B. ">refresh</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">//Mausstatus initialisiert?</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22" title="Zwischenspeicher für die vorherige Mausposition (X). ">prev_mouse_x</a> &gt; -1) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="comment">//Kamera drehen?</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">if</span> (event.m_leftDown) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#ad8005e4eaa631f4c6b96cf6be05e8428" title="Rotation der Ansicht um die (Kameralokale) X-Achse. ">rotationX</a> += <span class="keyword">event</span>.m_x - <a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22" title="Zwischenspeicher für die vorherige Mausposition (X). ">prev_mouse_x</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#a80fe2d86956d26105dd8301278e0c4e6" title="Rotation der Ansicht um die Y-Achse. ">rotationY</a> += <span class="keyword">event</span>.m_y - <a class="code" href="classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0" title="Zwischenspeicher für die vorherige Mausposition (Y). ">prev_mouse_y</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            refresh = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">//Kamera verschieben?</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">if</span> (event.m_middleDown) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="comment">//Verschiebungsvektor</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a> invec = <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>((event.m_x - <a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22" title="Zwischenspeicher für die vorherige Mausposition (X). ">prev_mouse_x</a>) * .1,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    -(event.m_y - <a class="code" href="classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0" title="Zwischenspeicher für die vorherige Mausposition (Y). ">prev_mouse_y</a>) * .1, 0);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="comment">//Matrix zum Transformieren des Verschiebungsvektors durch die Kameradrehung</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="classMatrix3D.xhtml" title="3x3-Matrixklasse mit Operationen. ">Matrix3D</a> view;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            view.<a class="code" href="classMatrix3D.xhtml#ada7ce7ea9f2d0ef0fdda60ad73dad345" title="Rotiert die Matrix um einen bestimmten Winkel auf der X-Achse. ">rotateX</a>(<a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#a80fe2d86956d26105dd8301278e0c4e6" title="Rotation der Ansicht um die Y-Achse. ">rotationY</a> * M_PI / 180.);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            view.<a class="code" href="classMatrix3D.xhtml#a649e1aa65466df65d63f1aef934e5fad" title="Rotiert die Matrix um einen bestimmten Winkel auf der Y-Achse. ">rotateY</a>(<a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#ad8005e4eaa631f4c6b96cf6be05e8428" title="Rotation der Ansicht um die (Kameralokale) X-Achse. ">rotationX</a> * M_PI / 180.);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            view.<a class="code" href="classMatrix3D.xhtml#a0d59cb6ea927264477a10b9d427966d6" title="Transponiert die Matrix. ">transpose</a>();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="comment">//Transformieren des Verschiebungsvektors</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* outvec = view.<a class="code" href="classMatrix3D.xhtml#a399be81028219044a03439b2ff93782a" title="Multipliziert die Matrix mit einer anderen Matrix. ">mult</a>(&amp;invec);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="comment">//Verschieben der Kamera</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <a class="code" href="classGUIGLCanvas.xhtml#a33a4ad3bc364d697396c55d011bfac44" title="Der verwendete Renderer. ">renderer</a>.<a class="code" href="classRenderer.xhtml#a5bfa9daf1a53660f1cf6c254665253e2" title="Gibt eine Referenz auf die verwendeten Anzeigeeigenschaften zurück. ">getViewport</a>()-&gt;<a class="code" href="structRenderer_1_1Viewport__info.xhtml#aa6b5d9d9dbde8c74e25af98680b7ccce" title="position der Virtuellen Kamera ">cameraPosition</a>-&gt;<a class="code" href="classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. ">add</a>(outvec);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keyword">delete</span> outvec;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            refresh = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">//Speichern des alten Mausstatus</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22" title="Zwischenspeicher für die vorherige Mausposition (X). ">prev_mouse_x</a> = <span class="keyword">event</span>.m_x;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0" title="Zwischenspeicher für die vorherige Mausposition (Y). ">prev_mouse_y</a> = <span class="keyword">event</span>.m_y;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">//Aktualisierung wenn nötig</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> (refresh) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        Refresh(<span class="keyword">false</span>, NULL);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="code" href="classGUIGLCanvas.xhtml#af6358f8d4e95c6864ff005d4764fffbc">  150</a></span>&#160;<a class="code" href="classGUIGLCanvas.xhtml#af6358f8d4e95c6864ff005d4764fffbc" title="Der Destruktor. ">GUIGLCanvas::~GUIGLCanvas</a>() {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Feb 21 2014 00:31:53 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Mär 18 2014 18:09:53 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

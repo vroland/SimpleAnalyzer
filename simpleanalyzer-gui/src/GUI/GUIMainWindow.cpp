@@ -814,7 +814,7 @@ void GUIMainWindow::OnMenuImportObj(wxCommandEvent &event) {
 			addObject(newobj);
 			break;
 		default:
-			cout << "undefined status value!" << endl;
+			cerr << "undefined status value!" << endl;
 			delete newobj;
 			break;
 		}

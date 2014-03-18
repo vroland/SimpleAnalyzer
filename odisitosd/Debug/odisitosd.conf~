@@ -1,5 +1,6 @@
 4    #Startzeile
 1    #Komma -> Punkt
+0    #Index der Zeitspalte
 5    #Maximal zulässige wertdifferenz
 10   #Maximale Schrittanzahl zum finden zulässiger Werte
 8    #Anzahl der Leerzeichen für TAB

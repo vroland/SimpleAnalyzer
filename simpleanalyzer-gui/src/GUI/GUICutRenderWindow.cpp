@@ -352,7 +352,6 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 		if (i == core_count - 1) {
 			if (startheight + delta_h < height) {
 				delta_h = height - startheight;
-				cout << "corrected delta_h";
 			}
 		}
 
@@ -611,7 +610,7 @@ GUICutRenderWindow::~GUICutRenderWindow() {
 		parent->getGLCanvas()->getRenderer()->setCutRenderInfo(NULL);
 		parent->getGLCanvas()->Refresh(false, NULL);
 	} else {
-		cout << "parent is null!" << endl;
+		cerr << "GUICutRenderWindow parent is null!" << endl;
 	}
 }
 

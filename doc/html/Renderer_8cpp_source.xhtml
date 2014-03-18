@@ -415,19 +415,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        glEnd();</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">//sollen die Kanten angezeigt werden</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">if</span> (viewport.showEdges) {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        glPolygonMode(GL_FRONT, GL_LINE);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        glPolygonMode(GL_BACK, GL_LINE);</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        renderTetrahedra(mat, viewport.showEdges);</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="comment">//sollen die Flächen angezeigt werden</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">if</span> (viewport.showFaces) {</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        glPolygonMode(GL_FRONT, GL_FILL);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        glPolygonMode(GL_BACK, GL_FILL);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        renderTetrahedra(mat, viewport.showFaces);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">//sollen die Flächen angezeigt werden</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">if</span> (viewport.showFaces) {</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        glPolygonMode(GL_FRONT, GL_FILL);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        glPolygonMode(GL_BACK, GL_FILL);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        renderTetrahedra(mat, viewport.showFaces);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="comment">//sollen die Kanten angezeigt werden</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keywordflow">if</span> (viewport.showEdges) {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        glPolygonMode(GL_FRONT, GL_LINE);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        glPolygonMode(GL_BACK, GL_LINE);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        renderTetrahedra(mat, viewport.showEdges);</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    }</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="comment">//zeichenmodus zurücksetzen</span></div>
@@ -596,7 +596,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <span class="comment">//Generieren einer neuen Displayliste</span></div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    displayList = glGenLists(1);</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <span class="keywordflow">if</span> (!glIsList(displayList)) {</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;could not create display list!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        cerr &lt;&lt; <span class="stringliteral">&quot;could not create display list!&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    }</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="comment">//Speichern der neuen Geometriedaten auf der Grafikkarte</span></div>
@@ -785,7 +785,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Feb 21 2014 00:31:53 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Die Mär 18 2014 18:09:53 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

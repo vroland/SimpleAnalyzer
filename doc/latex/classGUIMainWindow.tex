@@ -21,7 +21,8 @@ Klassendiagramm für G\-U\-I\-Main\-Window\-:\nopagebreak
 \end{figure}
 
 
-Zusammengehörigkeiten von G\-U\-I\-Main\-Window\-:\nopagebreak
+Zusammengehörigkeiten von G\-U\-I\-Main\-Window\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -64,6 +65,8 @@ void \hyperlink{classGUIMainWindow_a594fc9fea2ef8cc4febc3c48c0e260c4}{On\-Menu\-
 \begin{DoxyCompactList}\small\item\em Beendet das Programm. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIMainWindow_acefa13614ee8e5fc228fc577b7471b26}{On\-Menu\-Help\-About} (wx\-Command\-Event \&event)
 \begin{DoxyCompactList}\small\item\em Öffnet ein Fenster mit Informationen über das Programm. \end{DoxyCompactList}\item 
+void \hyperlink{classGUIMainWindow_ac3fd30af35182d72c407f04a81abea07}{On\-Menu\-Open\-Manual} (wx\-Command\-Event \&event)
+\begin{DoxyCompactList}\small\item\em Öffnet das Handbuch mit dem P\-D\-F-\/\-Viewer des Systems. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIMainWindow_a0c2de30274c7f52ff74ec1217e47a9e5}{On\-Recalc\-Bt\-Click} (wx\-Command\-Event \&event)
 \begin{DoxyCompactList}\small\item\em Berechnet die 3\-D-\/\-Temperaturverteilung neu. \end{DoxyCompactList}\item 
 void \hyperlink{classGUIMainWindow_a3a8bcd318ff00de01d8d417cf5226120}{On\-Resize} (wx\-Size\-Event \&event)
@@ -160,7 +163,9 @@ bool \hyperlink{classGUIMainWindow_afdc35b04c0fe94e4d0080f659ecbce8c}{updating}
 bool \hyperlink{classGUIMainWindow_a1f65a053fadac47033fef38c4b0e8a69}{analyze\-\_\-window\-\_\-valid}
 \begin{DoxyCompactList}\small\item\em Das Analysedaten-\/Übersichtsfenster ist gerade geöffnet. \end{DoxyCompactList}\item 
 bool \hyperlink{classGUIMainWindow_a4f08d8e4294955a3cc0b071dd3cad0d2}{render\-\_\-cut\-\_\-window\-\_\-valid}
-\begin{DoxyCompactList}\small\item\em Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung ist gerade geöffnet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung ist gerade geöffnet. \end{DoxyCompactList}\item 
+string \hyperlink{classGUIMainWindow_a8f8de1643ce13dec12465486509fd834}{data\-\_\-directory}
+\begin{DoxyCompactList}\small\item\em Der Pfad zum Verzeichnis, das die von der Anwendung verwendeten Daten (z.\-B. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -203,7 +208,7 @@ Der Konstruktor.
 \end{DoxyParams}
 Erstellen und initialisieren der Fensterkomponenten
 
-Definiert in Zeile 63 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 75 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a16ca27363f15a5f2678417bbf26880d2}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!$\sim$\-G\-U\-I\-Main\-Window@{$\sim$\-G\-U\-I\-Main\-Window}}
 \index{$\sim$\-G\-U\-I\-Main\-Window@{$\sim$\-G\-U\-I\-Main\-Window}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -218,7 +223,7 @@ Der Destruktor.
 
 
 
-Definiert in Zeile 888 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 984 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -241,7 +246,7 @@ Registriert ein neues (Versuchs-\/) Objekt im Programm.
 \end{DoxyParams}
 
 
-Definiert in Zeile 226 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 290 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a1cb2c4f39b9ba971d51ab682f29b7f23}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!assign\-Current\-Object\-Props@{assign\-Current\-Object\-Props}}
 \index{assign\-Current\-Object\-Props@{assign\-Current\-Object\-Props}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -256,7 +261,7 @@ Definiert in Zeile 226 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
-Definiert in Zeile 414 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 482 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -282,7 +287,7 @@ Speichert die Visualisierungsoptionen aus der G\-U\-I.
 
 
 
-Definiert in Zeile 616 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 688 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a52e68b866f7835c3691fd8fad8ba910d}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!get\-G\-L\-Canvas@{get\-G\-L\-Canvas}}
 \index{get\-G\-L\-Canvas@{get\-G\-L\-Canvas}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -297,7 +302,7 @@ Gibt die Zeichenfläche des 3\-D-\/\-Fensters zurück.
 
 
 
-Definiert in Zeile 222 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 286 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -323,7 +328,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 
 
 
-Definiert in Zeile 856 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 936 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -349,7 +354,7 @@ Setzt das aktive Objetk nach dem Auswählen im Popup-\/\-Menü.
 
 
 
-Definiert in Zeile 850 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 929 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -375,7 +380,7 @@ Löscht das aktive Objekt, sofern es nicht das einzige geladene Objekt ist.
 
 
 
-Definiert in Zeile 243 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 308 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_ac76ba4dd3d1175d66c1b13369ec26a69}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Analyze@{On\-Analyze}}
 \index{On\-Analyze@{On\-Analyze}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -390,7 +395,7 @@ Definiert in Zeile 243 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
-Definiert in Zeile 546 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 615 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a3a01e75c9362861eb9fdacb0b27643e5}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Analyze\-Marker\-Change@{On\-Analyze\-Marker\-Change}}
 \index{On\-Analyze\-Marker\-Change@{On\-Analyze\-Marker\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -405,7 +410,7 @@ Behandelt das Markieren eines Zeitpunktes auf der Sensordaten-\/\-Zeitleiste.
 
 
 
-Definiert in Zeile 315 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 380 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a5e4e41a749453fae5d9e1714203c3d5f}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Analyze\-Point@{On\-Analyze\-Point}}
 \index{On\-Analyze\-Point@{On\-Analyze\-Point}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -420,7 +425,7 @@ Definiert in Zeile 315 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
-Definiert in Zeile 561 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 631 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a6934b1307d1d32822c20505487cc79bf}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Auto\-Update\-Change@{On\-Auto\-Update\-Change}}
 \index{On\-Auto\-Update\-Change@{On\-Auto\-Update\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -435,7 +440,7 @@ Behandelt das aktivieren/deaktivieren der Option zum automatischen neuberechnen 
 
 
 
-Definiert in Zeile 408 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 476 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a9199006080109ef0235dacfc83456338}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Export\-Viewport\-Image@{On\-Export\-Viewport\-Image}}
 \index{On\-Export\-Viewport\-Image@{On\-Export\-Viewport\-Image}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -450,7 +455,7 @@ Definiert in Zeile 408 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
-Definiert in Zeile 798 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 875 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a48b4417c2eaa97a6eea4438f67a315e7}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Export\-V\-T\-K@{On\-Export\-V\-T\-K}}
 \index{On\-Export\-V\-T\-K@{On\-Export\-V\-T\-K}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -465,7 +470,7 @@ Definiert in Zeile 798 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
-Definiert in Zeile 826 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 904 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -491,7 +496,7 @@ Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten-\/\-Zei
 
 Dabei wird der Bereich zwischen den beiden markierten Stellen ausgewählt, zwischen denen sich der aktuell ausgewählte Zeitpunkt befindet. 
 
-Definiert in Zeile 324 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 390 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -517,7 +522,7 @@ Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Objekteigens
 
 
 
-Definiert in Zeile 602 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 674 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_ae0b6c47ae833ea4b8323e9c344b1f70a}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Immediate\-Update\-Prop\-Change@{On\-Immediate\-Update\-Prop\-Change}}
 \index{On\-Immediate\-Update\-Prop\-Change@{On\-Immediate\-Update\-Prop\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -532,7 +537,7 @@ Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Objekteigens
 
 
 
-Definiert in Zeile 590 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 662 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a6618f0cc7d26ba7690c32a996f0b812e}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Material\-Select@{On\-Material\-Select}}
 \index{On\-Material\-Select@{On\-Material\-Select}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -547,7 +552,7 @@ Aktualisiert die Oberfläche nach dem Auswählen eines anderen Materials im Obje
 
 
 
-Definiert in Zeile 514 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 582 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a594fc9fea2ef8cc4febc3c48c0e260c4}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Menu\-File\-Quit@{On\-Menu\-File\-Quit}}
 \index{On\-Menu\-File\-Quit@{On\-Menu\-File\-Quit}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -562,7 +567,7 @@ Beendet das Programm.
 
 
 
-Definiert in Zeile 879 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 960 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_acefa13614ee8e5fc228fc577b7471b26}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Menu\-Help\-About@{On\-Menu\-Help\-About}}
 \index{On\-Menu\-Help\-About@{On\-Menu\-Help\-About}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -577,7 +582,7 @@ Definiert in Zeile 879 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
-Definiert in Zeile 884 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 980 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a9fd9f2be8f45cb5433193f5d28c924bc}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Menu\-Import\-Obj@{On\-Menu\-Import\-Obj}}
 \index{On\-Menu\-Import\-Obj@{On\-Menu\-Import\-Obj}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -592,7 +597,7 @@ Event-\/\-Tabellendeklaration für wx\-Widgets.
 
 Öffnet den Dialog zum Importieren eines Objekts. 
 
-Definiert in Zeile 706 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 781 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -618,7 +623,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 
 
 
-Definiert in Zeile 758 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 833 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -644,7 +649,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 
 
 
-Definiert in Zeile 778 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 854 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -656,6 +661,21 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \end{center}
 \end{figure}
 
+
+\hypertarget{classGUIMainWindow_ac3fd30af35182d72c407f04a81abea07}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Menu\-Open\-Manual@{On\-Menu\-Open\-Manual}}
+\index{On\-Menu\-Open\-Manual@{On\-Menu\-Open\-Manual}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{On\-Menu\-Open\-Manual}]{\setlength{\rightskip}{0pt plus 5cm}void G\-U\-I\-Main\-Window\-::\-On\-Menu\-Open\-Manual (
+\begin{DoxyParamCaption}
+\item[{wx\-Command\-Event \&}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_ac3fd30af35182d72c407f04a81abea07}
+
+
+Öffnet das Handbuch mit dem P\-D\-F-\/\-Viewer des Systems. 
+
+
+
+Definiert in Zeile 965 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a0c2de30274c7f52ff74ec1217e47a9e5}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Recalc\-Bt\-Click@{On\-Recalc\-Bt\-Click}}
 \index{On\-Recalc\-Bt\-Click@{On\-Recalc\-Bt\-Click}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -670,7 +690,7 @@ Berechnet die 3\-D-\/\-Temperaturverteilung neu.
 
 
 
-Definiert in Zeile 524 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 592 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -696,7 +716,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 
 
 
-Definiert in Zeile 573 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 644 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a3a8bcd318ff00de01d8d417cf5226120}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Resize@{On\-Resize}}
 \index{On\-Resize@{On\-Resize}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -711,7 +731,7 @@ Behandelt Größenänderungen des Fensters.
 
 
 
-Definiert in Zeile 258 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 323 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a791d688a11d58c514ca4a892f2b69b07}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-S\-D\-Timeline\-Change@{On\-S\-D\-Timeline\-Change}}
 \index{On\-S\-D\-Timeline\-Change@{On\-S\-D\-Timeline\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -726,7 +746,7 @@ Behandelt Änderungen an der Sensordaten-\/\-Zeitleiste (bei zeitbezogenen Daten
 
 
 
-Definiert in Zeile 283 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 348 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a8fe683ef74029b5b22d7d7cdea4f46f5}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-S\-D\-T\-L\-Marker\-Clear@{On\-S\-D\-T\-L\-Marker\-Clear}}
 \index{On\-S\-D\-T\-L\-Marker\-Clear@{On\-S\-D\-T\-L\-Marker\-Clear}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -741,7 +761,7 @@ Löscht alle Markierungen auf der Sensordaten-\/\-Zeitleiste (bei zeitbezogenen 
 
 
 
-Definiert in Zeile 305 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 370 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a683581567b0fd6fbd8e84b160a81aac7}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-S\-D\-T\-L\-Next\-Marker@{On\-S\-D\-T\-L\-Next\-Marker}}
 \index{On\-S\-D\-T\-L\-Next\-Marker@{On\-S\-D\-T\-L\-Next\-Marker}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -756,7 +776,7 @@ Setzen des auf der Sensordaten-\/\-Zeitleiste ausgewählten Zeitpunktes auf den 
 
 
 
-Definiert in Zeile 353 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 420 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_ab41592f7f45ab81dd3a1b663b18ece50}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-S\-D\-T\-L\-Prev\-Marker@{On\-S\-D\-T\-L\-Prev\-Marker}}
 \index{On\-S\-D\-T\-L\-Prev\-Marker@{On\-S\-D\-T\-L\-Prev\-Marker}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -771,7 +791,7 @@ Setzen des auf der Sensordaten-\/\-Zeitleiste ausgewählten Zeitpunktes auf den 
 
 
 
-Definiert in Zeile 372 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 440 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a98249bb199993ad5920cf81f4b4a350a}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-Sensor\-Data\-Change@{On\-Sensor\-Data\-Change}}
 \index{On\-Sensor\-Data\-Change@{On\-Sensor\-Data\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -786,7 +806,7 @@ Behandelt das Auswählen eines anderen Sensordatensatzes.
 
 
 
-Definiert in Zeile 295 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 360 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_ada2a98f493fcdcbdc7bd6acb47d51218}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-View\-Prop\-Change@{On\-View\-Prop\-Change}}
 \index{On\-View\-Prop\-Change@{On\-View\-Prop\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -801,7 +821,7 @@ Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Visualisieru
 
 
 
-Definiert in Zeile 693 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 767 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a9d642647d7cb73e34ef88c76438206a7}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!On\-View\-Prop\-Spin\-Change@{On\-View\-Prop\-Spin\-Change}}
 \index{On\-View\-Prop\-Spin\-Change@{On\-View\-Prop\-Spin\-Change}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -816,7 +836,7 @@ Behandelt das Aktualisieren der Oberfläche nach einer Änderung an Visualisieru
 
 
 
-Definiert in Zeile 699 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 774 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a84b96a8b25d748985f4960326a977b22}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!set\-Active\-Object@{set\-Active\-Object}}
 \index{set\-Active\-Object@{set\-Active\-Object}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -836,7 +856,7 @@ Setzt das aktive Objekt.
 \end{DoxyParams}
 
 
-Definiert in Zeile 233 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 297 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 \hypertarget{classGUIMainWindow_a64f6c71f9d92ab4091670ad1d264b2d7}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!set\-Analyze\-Window\-Status@{set\-Analyze\-Window\-Status}}
 \index{set\-Analyze\-Window\-Status@{set\-Analyze\-Window\-Status}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -856,7 +876,7 @@ Setzt den Status des Übersichstfensters über die Analysedaten.
 \end{DoxyParams}
 
 
-Definiert in Zeile 214 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 278 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -887,7 +907,7 @@ Setzt den Status des Übersichstfensters über die Analysedaten.
 \end{DoxyParams}
 
 
-Definiert in Zeile 218 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 282 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -913,7 +933,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 
 
 
-Definiert in Zeile 446 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 514 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -939,7 +959,7 @@ Lädt die Visualisierungsoptionen in die G\-U\-I.
 
 
 
-Definiert in Zeile 652 der Datei G\-U\-I\-Main\-Window.\-cpp.
+Definiert in Zeile 725 der Datei G\-U\-I\-Main\-Window.\-cpp.
 
 
 
@@ -964,7 +984,7 @@ Das Analysedaten-\/Übersichtsfenster ist gerade geöffnet.
 
 
 
-Definiert in Zeile 343 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 348 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_a20e7a8cf498df1c1c0059711b487837b}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!analyzerframe@{analyzerframe}}
 \index{analyzerframe@{analyzerframe}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -975,7 +995,7 @@ Das Analysedaten-\/Übersichtsfenster.
 
 Der Zeiger ist ungültig, wenn das Analysedaten-\/Übersichtsfenster nicht geöffnet ist. (siehe analyze\-\_\-window\-\_\-valid) 
 
-Definiert in Zeile 317 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 322 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_abc81190b8fea79f68a476028f11272b1}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!configpaths@{configpaths}}
 \index{configpaths@{configpaths}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -995,6 +1015,17 @@ Das Verzeichnis der ausführbaren Datei wird immer und zuerst geprüft.
 
 Definiert in Zeile 72 der Datei G\-U\-I\-Main\-Window.\-h.
 
+\hypertarget{classGUIMainWindow_a8f8de1643ce13dec12465486509fd834}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!data\-\_\-directory@{data\-\_\-directory}}
+\index{data\-\_\-directory@{data\-\_\-directory}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
+\subsubsection[{data\-\_\-directory}]{\setlength{\rightskip}{0pt plus 5cm}string G\-U\-I\-Main\-Window\-::data\-\_\-directory\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a8f8de1643ce13dec12465486509fd834}
+
+
+Der Pfad zum Verzeichnis, das die von der Anwendung verwendeten Daten (z.\-B. 
+
+Icons) enthält. Wird im Konstruktor bestimmt. 
+
+Definiert in Zeile 358 der Datei G\-U\-I\-Main\-Window.\-h.
+
 \hypertarget{classGUIMainWindow_a7b5069afb8996ff001654f8d832b2bfa}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!gl\-\_\-context@{gl\-\_\-context}}
 \index{gl\-\_\-context@{gl\-\_\-context}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
 \subsubsection[{gl\-\_\-context}]{\setlength{\rightskip}{0pt plus 5cm}{\bf G\-U\-I\-G\-L\-Canvas}$\ast$ G\-U\-I\-Main\-Window\-::gl\-\_\-context\hspace{0.3cm}{\ttfamily [private]}}}\label{classGUIMainWindow_a7b5069afb8996ff001654f8d832b2bfa}
@@ -1004,7 +1035,7 @@ Die Zeichenfläche für das 3\-D-\/\-Fenster.
 
 
 
-Definiert in Zeile 261 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 266 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_ab93a87b5cde10015dc02dc000c409f90}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Analyze\-Menu@{mw\-Analyze\-Menu}}
 \index{mw\-Analyze\-Menu@{mw\-Analyze\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1015,7 +1046,7 @@ Das \char`\"{}\-Analysieren\char`\"{}-\/\-Untermenü.
 
 
 
-Definiert in Zeile 296 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 301 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_a32c50be8574176c02aadb47626adc9d4}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Edit\-Menu@{mw\-Edit\-Menu}}
 \index{mw\-Edit\-Menu@{mw\-Edit\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1026,7 +1057,7 @@ Das \char`\"{}\-Bearbeiten\char`\"{}-\/\-Untermenü
 
 
 
-Definiert in Zeile 301 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 306 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_a9f6af05ef18bf81ff9955670001941ea}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Export\-Menu@{mw\-Export\-Menu}}
 \index{mw\-Export\-Menu@{mw\-Export\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1037,7 +1068,7 @@ Das \char`\"{}\-Export\char`\"{}-\/\-Untermenü.
 
 
 
-Definiert in Zeile 291 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 296 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_a3b23fa0fb1d779bd5b8384507d8b90e8}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-File\-Menu@{mw\-File\-Menu}}
 \index{mw\-File\-Menu@{mw\-File\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1048,7 +1079,7 @@ Das \char`\"{}\-Datei\char`\"{}-\/\-Untermenü.
 
 
 
-Definiert in Zeile 276 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 281 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_ae8fc1a9ba3768aa042a77b5bea117f6c}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Help\-Menu@{mw\-Help\-Menu}}
 \index{mw\-Help\-Menu@{mw\-Help\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1059,7 +1090,7 @@ Das \char`\"{}\-Hilfe\char`\"{}-\/\-Untermenü.
 
 
 
-Definiert in Zeile 281 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 286 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_afaff9e1bec11b0f80215ceba76e87bc4}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Import\-Menu@{mw\-Import\-Menu}}
 \index{mw\-Import\-Menu@{mw\-Import\-Menu}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1070,7 +1101,7 @@ Das \char`\"{}\-Import\char`\"{}-\/\-Untermenü.
 
 
 
-Definiert in Zeile 286 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 291 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_a057a6728bf9aa994f41060ebe15a28ac}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!mw\-Menu\-Bar@{mw\-Menu\-Bar}}
 \index{mw\-Menu\-Bar@{mw\-Menu\-Bar}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1081,7 +1112,7 @@ Die Hauptmenükomponente.
 
 
 
-Definiert in Zeile 271 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 276 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_ae3eb6747c8ffa9e20e54c2d34f58bd40}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S@{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}}
 \index{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S@{N\-U\-M\-B\-E\-R\-O\-F\-P\-A\-T\-H\-S}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1103,7 +1134,7 @@ Scrollender Bereich, in den die Objekteigenschaften-\/\-Oberfläche eingebettet 
 
 
 
-Definiert in Zeile 328 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 333 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_a4959774563543927a492bf06e441920e}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!propbox@{propbox}}
 \index{propbox@{propbox}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1114,7 +1145,7 @@ Die Unterkomponente, die die Objekteigenschaften-\/\-Oberfläche enthält.
 
 
 
-Definiert in Zeile 306 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 311 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_a4f08d8e4294955a3cc0b071dd3cad0d2}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!render\-\_\-cut\-\_\-window\-\_\-valid@{render\-\_\-cut\-\_\-window\-\_\-valid}}
 \index{render\-\_\-cut\-\_\-window\-\_\-valid@{render\-\_\-cut\-\_\-window\-\_\-valid}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1125,7 +1156,7 @@ Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung ist gera
 
 
 
-Definiert in Zeile 348 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 353 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_a649cb92f27688772174659601188ac2d}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!rendercutwindow@{rendercutwindow}}
 \index{rendercutwindow@{rendercutwindow}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1136,7 +1167,7 @@ Das Fenster zur Berechnung einer zweidimensionalen Temperaturverteilung.
 
 Der Zeiger ist ungültig, wenn das 2\-D-\/\-Fenster nicht geöffnet ist. (siehe render\-\_\-cut\-\_\-window\-\_\-valid) 
 
-Definiert in Zeile 323 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 328 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_a8a8638fa87b4080e2242812f3d7e469e}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!toolbar@{toolbar}}
 \index{toolbar@{toolbar}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1147,7 +1178,7 @@ Die Tollbarkomponente.
 
 
 
-Definiert in Zeile 266 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 271 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_afdc35b04c0fe94e4d0080f659ecbce8c}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!updating@{updating}}
 \index{updating@{updating}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1158,7 +1189,7 @@ Die Oberfläche wird gerade vom Programm verändert.
 
 Signalisiert, dass die Eingabe nicht durch den Nutzer erfolgt ist. 
 
-Definiert in Zeile 338 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 343 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_ad440f7451fd3fdabbe48518a89e61e45}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!view\-\_\-scroll\-\_\-win@{view\-\_\-scroll\-\_\-win}}
 \index{view\-\_\-scroll\-\_\-win@{view\-\_\-scroll\-\_\-win}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1169,7 +1200,7 @@ Scrollender Bereich, in den die Visualisierungsoptionen-\/\-Oberfläche eingebet
 
 
 
-Definiert in Zeile 333 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 338 der Datei G\-U\-I\-Main\-Window.\-h.
 
 \hypertarget{classGUIMainWindow_a3e9a4e301f90e85e97721aa71b197ca8}{\index{G\-U\-I\-Main\-Window@{G\-U\-I\-Main\-Window}!viewbox@{viewbox}}
 \index{viewbox@{viewbox}!GUIMainWindow@{G\-U\-I\-Main\-Window}}
@@ -1180,7 +1211,7 @@ Die Unterkomponente, die die Visualisierungsoptionen-\/\-Oberfläche enthält.
 
 
 
-Definiert in Zeile 311 der Datei G\-U\-I\-Main\-Window.\-h.
+Definiert in Zeile 316 der Datei G\-U\-I\-Main\-Window.\-h.
 
 
 

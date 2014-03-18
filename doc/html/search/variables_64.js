@@ -1,6 +1,7 @@
 var searchData=
 [
   ['data',['data',['../structUtils_1_1SensorData.xhtml#ae94e7645dc0b6adfd21571b0abd5e309',1,'Utils::SensorData']]],
+  ['data_5fdirectory',['data_directory',['../classGUIMainWindow.xhtml#a8f8de1643ce13dec12465486509fd834',1,'GUIMainWindow']]],
   ['data_5fobjects',['data_objects',['../classSimpleAnalyzerApp.xhtml#a99bb49d6e0ec4d6f03ad08c29cf63288',1,'SimpleAnalyzerApp']]],
   ['data_5fsets',['data_sets',['../structAnalyzer_1_1AnalyzerData__object.xhtml#a5d36dcf805f37b0e29134236e3881fca',1,'Analyzer::AnalyzerData_object']]],
   ['delta',['delta',['../structTsdMerger_1_1Options.xhtml#ac64f16f7048749aceb1f3368344ea8a8',1,'TsdMerger::Options']]],

@@ -34,6 +34,10 @@ void interpolatePoint(ObjectData::MaterialData* data,
 
 void MeshProcessor::process(ObjectData* object) {
 
+	//Statusinformationen ausgeben
+	cout << "calculating temperature distribution for \"" << object->getName()
+			<< "..." << endl;
+
 	//Für alle Materialien...
 	for (unsigned int i = 0; i < object->getMaterials()->size(); i++) {
 		ObjectData::MaterialData* mat = &object->getMaterials()->at(i);
@@ -62,12 +66,19 @@ void MeshProcessor::process(ObjectData* object) {
 		interpolator.setMode(mat->interpolation_mode);
 
 		//Ermitteln der Werte für alle Punkte...
-		for (int i = 0; i < io->numberofpoints; i++) {
+		for (int j = 0; j < io->numberofpoints; j++) {
+
+			//Statusinformationen ausgeben
+			cout << "\rmaterial " << i + 1 << ": " << j + 1 << "/"
+					<< io->numberofpoints;
+
 			SensorData* sd = &object->getSensorDataList()->at(
 					object->getCurrentSensorIndex());
-			interpolatePoint(mat, &sd->data.at(sd->current_time_index), i,
+			interpolatePoint(mat, &sd->data.at(sd->current_time_index), j,
 					&interpolator);
 		}
+
+		cout << endl;
 	}
 }
 

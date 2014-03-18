@@ -132,7 +132,7 @@ double Interpolator::interpolateTri(Triangle* tri, Vector3D* pos,
 								/ (iPointX2.getX() - iPointX1.getX()));
 		break;
 	default:
-		cout << "Kein Gültiges Interpolationsverfahren angegeben!" << endl;
+		cerr << "Kein Gültiges Interpolationsverfahren angegeben!" << endl;
 		break;
 	}
 
