@@ -219,7 +219,7 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	tsd_icon = tsd_icon.Scale(toolbar->GetToolBitmapSize().x,
 			toolbar->GetToolBitmapSize().y, wxIMAGE_QUALITY_HIGH);
 	toolbar->AddTool(ID_IMPORT_TSD, tsd_icon,
-			wxT("Sensordatenpaket importieren"));
+			wxT("zeitbezogene Sensordaten importieren"));
 	toolbar->AddSeparator();
 
 	toolbar->AddTool(ID_CHANGE_ACTIVE_OBJ, wxT("aktives Objekt"),

@@ -1,0 +1,36 @@
+\BOOKMARK [1][-]{section.1}{Einf\374hrung}{}% 1
+\BOOKMARK [1][-]{section.2}{Installation}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Download}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Download des Debian-Packets}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Download des Quellcodes}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Installation Im Dateisystem}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Installation des Debian-Pakets}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Installation aus dem Quellcode}{subsection.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Deinstallation}{section.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Deinstallation des Debian-Pakets}{subsection.2.3}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Deinstallation durch den Quellcode}{subsection.2.3}% 11
+\BOOKMARK [1][-]{section.3}{Verwendung}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Umwandeln von .csv-Dateien}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Die .csv-Datei}{subsection.3.1}% 14
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Die Sensordefinitionsdatei}{subsection.3.1}% 15
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Die Konfigurationsdatei}{subsection.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.2}{Umwandeln von ODiSI-Dateien}{section.3}% 17
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Die Eingabedatei}{subsection.3.2}% 18
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Fehlerkorrektur}{subsection.3.2}% 19
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Die Sensordefinitionsdatei}{subsection.3.2}% 20
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Die Konfigurationsdatei}{subsection.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.3}{Zusammenf\374gen von .tsd-Dateien}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.4}{Erstellung des 3D-Modells}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Erstellung mit Blender}{subsection.3.4}% 24
+\BOOKMARK [2][-]{subsection.3.5}{Auswertung und Visualisierung}{section.3}% 25
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Laden von Modellen und Sensordaten}{subsection.3.5}% 26
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Berechnen der Temperaturverteilung}{subsection.3.5}% 27
+\BOOKMARK [3][-]{subsubsection.3.5.3}{Das Modell betrachten}{subsection.3.5}% 28
+\BOOKMARK [2][-]{subsection.3.6}{Analyse des Modells}{section.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Die Analysedaten\374bersicht}{subsection.3.6}% 30
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Analyse f\374r einen Punkt}{subsection.3.6}% 31
+\BOOKMARK [2][-]{subsection.3.7}{Temperaturverteilung einer Ebene}{section.3}% 32
+\BOOKMARK [2][-]{subsection.3.8}{Exportm\366glichkeiten}{section.3}% 33
+\BOOKMARK [3][-]{subsubsection.3.8.1}{Anzeige des 3D-Fensters}{subsection.3.8}% 34
+\BOOKMARK [3][-]{subsubsection.3.8.2}{VTK-Datei}{subsection.3.8}% 35
+\BOOKMARK [1][-]{section.4}{Generelles Vorgehen}{}% 36

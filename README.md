@@ -1,15 +1,12 @@
 SimpleAnalyzer
 ==============
 
-Das SimpleAnalyzer-Softwarepaket enthält Programme zur Auswertung physikalischer 
-Versuche für debianbasierte Betriebssysteme. Mithilfe der enthaltenen können Sie 
-Temperaturmessdaten aus einer .csv-Datei oder Messwerte des ODiSI-Instruments 
-von Luna zusammenführen und weiter zu verarbeiten.
-Über grafische Oberfläche wird das Berechnen einer Temperaturverteilung eines 
-dreidimensionalen Modells und das Bestimmen von physikalischen Größen und die
-Visualisierung des Versuchs ermöglicht.
-Zur weiteren Nutzung der Ergebnisse ist es möglich diese, beispielsweise als 
-VTK-Datei oder PNG-Grafik, zu exportieren.	
+Das SimpleAnalyzer-Softwarepaket enthält Programme zur Auswertung physikalischer Versuche für debianbasierte Betriebssysteme. 
+Mithilfe der enthaltenen Software sind Sie im Stande, Temperaturmessdaten aus einer .csv-Datei oder Messwerte des ODiSI-Instruments von Luna in ein einheitliches Format umzuwandeln und zusammenzuführen.
+
+Über eine grafische Oberfläche ist es möglich, mithilfe der so aufbereiteten Daten Auswertungen wie eine Temperaturverteilung über ein dreidimensionales Modell oder das Bestimmen des Wärmegehalts vorzunehmen und den Versuch zu visualisieren.
+
+Zur weiteren Nutzung der Ergebnisse können diese, beispielsweise als VTK-Datei oder PNG-Grafik, exportiert werden.
 
 Quelltext, Handbuch, Dokumentation und Beispiele sowie Binärdateien finden 
 Sie unter https://github.com/vroland/SimpleAnalyzer.
