@@ -1,0 +1,11 @@
+<map id="tetgenmesh::getsteinerptonsegment" name="tetgenmesh::getsteinerptonsegment">
+<area shape="rect" id="node3" href="$classtetgenmesh.xhtml#a55db9a054b722d91a17b82d442f88f4c" title="tetgenmesh::sorg" alt="" coords="312,5,435,35"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#aa6017928ea3dc0b8ba39e7f24ea312b2" title="tetgenmesh::sdest" alt="" coords="308,59,439,88"/>
+<area shape="rect" id="node7" href="$classtetgenmesh.xhtml#a87204594ee11bb38e68e0381e6e04b6c" title="tetgenmesh::pointtype" alt="" coords="299,112,448,141"/>
+<area shape="rect" id="node9" href="$classtetgenmesh.xhtml#ac5a50a5f6e277b5b95d58e40f3d58c2f" title="tetgenmesh::sdecode" alt="" coords="300,165,447,195"/>
+<area shape="rect" id="node11" href="$classtetgenmesh.xhtml#a71c1fce651aaffe6e7db6c1f64f7f67d" title="tetgenmesh::point2sh" alt="" coords="300,219,447,248"/>
+<area shape="rect" id="node13" href="$classtetgenmesh.xhtml#ab4b3f98e52ac862ab3c619708c5bc07d" title="tetgenmesh::getfacetindex" alt="" coords="285,272,461,301"/>
+<area shape="rect" id="node15" href="$classtetgenmesh.xhtml#a4f2849235299c81ad7d585dc0b657d80" title="tetgenmesh::distance" alt="" coords="300,325,447,355"/>
+<area shape="rect" id="node17" href="$classtetgenmesh.xhtml#ac22152fa0a43b549ae37cadff0e8c56f" title="tetgenmesh::projpt2edge" alt="" coords="291,379,456,408"/>
+<area shape="rect" id="node19" href="$classtetgenmesh.xhtml#afa0906703b590597155547336c360004" title="tetgenmesh::dot" alt="" coords="511,379,625,408"/>
+</map>

@@ -37,7 +37,28 @@ public:
 	 * Der Destruktor.
 	 */
 	virtual ~GUIAnalyzeOutputWindow();
+protected:
+	/**
+	 * Event-Tabellendeklaration für wxWidgets.
+	 */
+	DECLARE_EVENT_TABLE()
 private:
+	/**
+	 * Behandelt das Drücken von Strg+C und Strg+A.
+	 */
+	void OnKeyPress(wxKeyEvent& event);
+
+	/**
+	 * Selektiert alle Zellen der Tabelle.
+	 */
+	void SelectAll();
+
+	/**
+	 * Kopiert die Inhalte der Tabelle in die Zwischenablage.
+	 * Basierend auf http://forums.wxwidgets.org/viewtopic.php?f=20&t=2200#p148731.
+	 */
+	void ToClipboard();
+
 	/**
 	 * Die Tabellenkomponente.
 	 */

@@ -1,0 +1,7 @@
+<map id="insphere" name="insphere">
+<area shape="rect" id="node3" href="$predicates_8cxx.xhtml#aff1beabe144889954e1a63692f0f4d00" title="insphereadapt" alt="" coords="127,57,228,87"/>
+<area shape="rect" id="node5" href="$predicates_8cxx.xhtml#abdcdaa8948d9a2937154d9d67f67da8d" title="scale_expansion_zeroelim" alt="" coords="431,5,604,35"/>
+<area shape="rect" id="node7" href="$predicates_8cxx.xhtml#a37646a7e0014e10c612e946bc95aeeea" title="fast_expansion_sum\l_zeroelim" alt="" coords="447,79,588,126"/>
+<area shape="rect" id="node9" href="$predicates_8cxx.xhtml#a3487d9f90ea72da543d5d38b3dab1fbc" title="estimate" alt="" coords="293,84,365,113"/>
+<area shape="rect" id="node11" href="$predicates_8cxx.xhtml#a1b7f36a00bcca4ab972133f190d07b35" title="insphereexact" alt="" coords="279,31,380,60"/>
+</map>

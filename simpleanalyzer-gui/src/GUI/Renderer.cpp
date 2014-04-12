@@ -657,7 +657,7 @@ void drawCutRenderInfo(CutRender_info* info) {
 void Renderer::render() {
 
 	//Löschen der Farb- und Tiefeninformationen
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 	//Transformieren der Kamera
 	glLoadIdentity();
 	glTranslatef(0, 0, -viewport.zoom * viewport.zoom);

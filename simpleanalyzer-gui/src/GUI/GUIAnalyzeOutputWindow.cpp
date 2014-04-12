@@ -12,7 +12,13 @@
 #include "../SimpleAnalyzerApp.h"
 #include "../processing/ObjectData.h"
 #include "../processing/Analyzer.h"
+#include <wx/clipbrd.h>
 using namespace std;
+
+//Eventtabelle zum Verknüpfen der Events
+BEGIN_EVENT_TABLE(GUIAnalyzeOutputWindow, wxFrame)
+	EVT_KEY_DOWN(GUIAnalyzeOutputWindow::OnKeyPress)
+END_EVENT_TABLE()
 
 GUIAnalyzeOutputWindow::GUIAnalyzeOutputWindow(wxWindow * parent,
 		const wxChar *title, int xpos, int ypos, int width, int height) :
@@ -24,10 +30,10 @@ GUIAnalyzeOutputWindow::GUIAnalyzeOutputWindow(wxWindow * parent,
 	//erstellen und positionieren der Tabelle, wird automatisch in der Größe an das Fenster angepasst
 	table = new wxGrid(this, wxID_ANY, wxPoint(0, 0), wxSize(600, 300));
 	table->SetSize(0, 0, width, height, 0);
-
 	//aktualisieren der Tabelleninhalte
 	Update();
 }
+
 void GUIAnalyzeOutputWindow::Update() {
 
 	//zurücksetzen der Tabelle
@@ -139,6 +145,65 @@ void GUIAnalyzeOutputWindow::Update() {
 		}
 		//Materialzellen mitzählen
 		all_mat_cell_count += materialcells;
+	}
+}
+
+void GUIAnalyzeOutputWindow::ToClipboard() {
+
+    wxString copy_data;
+    bool something_in_this_line;
+
+    copy_data.Clear();
+
+    //Kopieren der Tabelleninhalte
+    for (int i=0; i<table->GetRows();i++) {
+
+        something_in_this_line = false;
+        for (int j=0; j<table->GetCols(); j++) {
+
+            if (table->IsInSelection(i,j)) {
+
+                if (something_in_this_line == false) {
+
+                	if (copy_data.IsEmpty() == false) {
+                        copy_data.Append(wxT("\r\n"));  // in windows if copy to notepad need \r\n to newline
+                    }
+
+                    something_in_this_line = true;
+                } else {
+                    copy_data.Append(wxT("\t"));
+                }
+
+                copy_data = copy_data + table->GetCellValue(i,j);
+            }
+        }
+    }
+
+    //Schreiben in die Zwischenablage
+    if (wxTheClipboard->Open()) {
+    	wxTheClipboard->SetData(new wxTextDataObject(copy_data));
+    	wxTheClipboard->Close();
+    }
+}
+
+void GUIAnalyzeOutputWindow::SelectAll() {
+
+	//Alle Zeilen zur Selektion hinzufügen
+	for (int i=0; i<table->GetRows();i++) {
+		table->SelectRow(i, true);
+	}
+}
+
+void GUIAnalyzeOutputWindow::OnKeyPress(wxKeyEvent& event) {
+
+	//Kopieren der Tabelle in die Zwischenablage
+	if ((event.GetUnicodeKey() == 'C') && (event.ControlDown() == true)) {
+		ToClipboard();
+	}
+
+	//Selektieren aller Zellen
+	if ((event.GetUnicodeKey() == 'A') && (event.ControlDown() == true)) {
+		SelectAll();
 	}
 }
 

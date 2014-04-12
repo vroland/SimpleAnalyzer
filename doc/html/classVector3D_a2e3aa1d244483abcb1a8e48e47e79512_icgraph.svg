@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1418;
+var viewWidth = 1242;
 var viewHeight = 260;
 var sectionId = 'dynsection-15';
 </script>
@@ -91,7 +91,7 @@ var sectionId = 'dynsection-15';
 </a>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge50" class="edge"><title>Node1&#45;&gt;Node8</title>
+<g id="edge48" class="edge"><title>Node1&#45;&gt;Node8</title>
 <path fill="none" stroke="midnightblue" d="M117.795,-151.502C169.994,-153.549 243.482,-156.431 295.793,-158.482"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="117.781,-147.999 107.651,-151.104 117.506,-154.993 117.781,-147.999"/>
 </g>
@@ -103,7 +103,7 @@ var sectionId = 'dynsection-15';
 </a>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
-<g id="edge52" class="edge"><title>Node1&#45;&gt;Node9</title>
+<g id="edge50" class="edge"><title>Node1&#45;&gt;Node9</title>
 <path fill="none" stroke="midnightblue" d="M81.2222,-133.756C98.5948,-124.912 121.922,-114.631 144,-110 193.547,-99.6067 250.905,-99.8969 294.058,-102.493"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="79.457,-130.729 72.2292,-138.476 82.7103,-136.928 79.457,-130.729"/>
 </g>
@@ -281,15 +281,15 @@ var sectionId = 'dynsection-15';
 <path fill="none" stroke="midnightblue" d="M896.6,-71.963C905.86,-73.1062 915.268,-74.2677 924.333,-75.3868"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="896.987,-68.4842 886.633,-70.7325 896.129,-75.4315 896.987,-68.4842"/>
 </g>
-<!-- Node22 -->
-<g id="node44" class="node"><title>Node22</title>
+<!-- Node21 -->
+<g id="node42" class="node"><title>Node21</title>
 <a xlink:href="classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" target="_top" xlink:title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver...">
 <polygon fill="none" stroke="black" points="925,-32.5 925,-53.5 1047,-53.5 1047,-32.5 925,-32.5"/>
 <text text-anchor="middle" x="986" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectData::calculateIO</text>
 </a>
 </g>
-<!-- Node17&#45;&gt;Node22 -->
-<g id="edge44" class="edge"><title>Node17&#45;&gt;Node22</title>
+<!-- Node17&#45;&gt;Node21 -->
+<g id="edge42" class="edge"><title>Node17&#45;&gt;Node21</title>
 <path fill="none" stroke="midnightblue" d="M896.745,-54.0192C906.14,-52.8593 915.684,-51.681 924.866,-50.5474"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="896.129,-50.5685 886.633,-55.2675 896.987,-57.5158 896.129,-50.5685"/>
 </g>
@@ -306,46 +306,33 @@ var sectionId = 'dynsection-15';
 <path fill="none" stroke="midnightblue" d="M1058.13,-93.8399C1069.31,-95.5211 1080.83,-97.2519 1091.9,-98.9156"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1058.38,-90.3383 1047.97,-92.3132 1057.34,-97.2606 1058.38,-90.3383"/>
 </g>
-<!-- Node21 -->
-<g id="node42" class="node"><title>Node21</title>
+<!-- Node20 -->
+<g id="node40" class="node"><title>Node20</title>
 <a xlink:href="classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" target="_top" xlink:title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. ">
 <polygon fill="none" stroke="black" points="1090.5,-52.5 1090.5,-73.5 1227.5,-73.5 1227.5,-52.5 1090.5,-52.5"/>
 <text text-anchor="middle" x="1159" y="-60.5" font-family="Helvetica,sans-Serif" font-size="10.00">GUITimeline::findMaxValue</text>
 </a>
 </g>
-<!-- Node18&#45;&gt;Node21 -->
-<g id="edge42" class="edge"><title>Node18&#45;&gt;Node21</title>
+<!-- Node18&#45;&gt;Node20 -->
+<g id="edge40" class="edge"><title>Node18&#45;&gt;Node20</title>
 <path fill="none" stroke="midnightblue" d="M1058.11,-74.6638C1068.8,-73.4273 1079.8,-72.1559 1090.42,-70.9281"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1057.5,-71.2107 1047.97,-75.836 1058.3,-78.1644 1057.5,-71.2107"/>
 </g>
-<!-- Node20 -->
-<g id="node40" class="node"><title>Node20</title>
-<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" target="_top" xlink:title="Der Konstruktor. ">
-<polygon fill="none" stroke="black" points="1270,-92 1270,-126 1410,-126 1410,-92 1270,-92"/>
-<text text-anchor="start" x="1278" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzeOutputWindow</text>
-<text text-anchor="middle" x="1340" y="-100" font-family="Helvetica,sans-Serif" font-size="10.00">::GUIAnalyzeOutputWindow</text>
-</a>
-</g>
-<!-- Node19&#45;&gt;Node20 -->
-<g id="edge40" class="edge"><title>Node19&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M1236.3,-109C1247.47,-109 1258.92,-109 1269.94,-109"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1236.14,-105.5 1226.14,-109 1236.14,-112.5 1236.14,-105.5"/>
-</g>
-<!-- Node22&#45;&gt;Node21 -->
-<g id="edge48" class="edge"><title>Node22&#45;&gt;Node21</title>
+<!-- Node21&#45;&gt;Node20 -->
+<g id="edge46" class="edge"><title>Node21&#45;&gt;Node20</title>
 <path fill="none" stroke="midnightblue" d="M1057.71,-51.2906C1068.51,-52.539 1079.63,-53.824 1090.36,-55.0647"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1057.82,-47.7792 1047.48,-50.1076 1057.01,-54.7329 1057.82,-47.7792"/>
 </g>
-<!-- Node23 -->
-<g id="node46" class="node"><title>Node23</title>
+<!-- Node22 -->
+<g id="node44" class="node"><title>Node22</title>
 <a xlink:href="classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" target="_top" xlink:title="Berechnet die 3D&#45;Temperaturverteilung neu. ">
 <polygon fill="none" stroke="black" points="1084,-0 1084,-34 1234,-34 1234,-0 1084,-0"/>
 <text text-anchor="start" x="1092" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIMainWindow::OnRecalcBt</text>
 <text text-anchor="middle" x="1159" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">Click</text>
 </a>
 </g>
-<!-- Node22&#45;&gt;Node23 -->
-<g id="edge46" class="edge"><title>Node22&#45;&gt;Node23</title>
+<!-- Node21&#45;&gt;Node22 -->
+<g id="edge44" class="edge"><title>Node21&#45;&gt;Node22</title>
 <path fill="none" stroke="midnightblue" d="M1057.53,-32.2492C1066.2,-30.9472 1075.07,-29.6141 1083.78,-28.3044"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1056.85,-28.8128 1047.48,-33.7602 1057.89,-35.735 1056.85,-28.8128"/>
 </g>

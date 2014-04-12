@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typdefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,35 +89,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <a href="README_8md.xhtml">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;SimpleAnalyzer</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;==============</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;Das SimpleAnalyzer-Softwarepaket enthält Programme zur Auswertung physikalischer </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;Versuche für debianbasierte Betriebssysteme. Mithilfe der enthaltenen können Sie </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;Temperaturmessdaten aus einer .csv-Datei oder Messwerte des ODiSI-Instruments </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;von Luna zusammenführen und weiter zu verarbeiten.</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;Über grafische Oberfläche wird das Berechnen einer Temperaturverteilung eines </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;dreidimensionalen Modells und das Bestimmen von physikalischen Größen und die</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;Visualisierung des Versuchs ermöglicht.</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;Zur weiteren Nutzung der Ergebnisse ist es möglich diese, beispielsweise als </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;VTK-Datei oder PNG-Grafik, zu exportieren.  </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;Das SimpleAnalyzer-Softwarepaket enthält Programme zur Auswertung physikalischer Versuche für debianbasierte Betriebssysteme. </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;Mithilfe der enthaltenen Software sind Sie im Stande, Temperaturmessdaten aus einer .csv-Datei oder Messwerte des ODiSI-Instruments von Luna in ein einheitliches Format umzuwandeln und zusammenzuführen.</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;Über eine grafische Oberfläche ist es möglich, mithilfe der so aufbereiteten Daten Auswertungen wie eine Temperaturverteilung über ein dreidimensionales Modell oder das Bestimmen des Wärmegehalts vorzunehmen und den Versuch zu visualisieren.</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;Zur weiteren Nutzung der Ergebnisse können diese, beispielsweise als VTK-Datei oder PNG-Grafik, exportiert werden.</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;Quelltext, Handbuch, Dokumentation und Beispiele sowie Binärdateien finden </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;Sie unter https:<span class="comment">//github.com/vroland/SimpleAnalyzer.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;Quelltext, Handbuch, Dokumentation und Beispiele sowie Binärdateien finden </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;Sie unter https:<span class="comment">//github.com/vroland/SimpleAnalyzer.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;Handbuch</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;========</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;Handbuch</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;========</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;Im Handbuch zum Programm finden Sie Informationen zur Installation und Bedienung</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;der Programme. Es liegt im pdf-Format unter simpleanalyzer-gui/Debug/simpleanalyzer-man.pdf</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;vor und kann über das Hilfemenü in SimpleAnalyzer-GUI aufgerufen werden.</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;Im Handbuch zum Programm finden Sie Informationen zur Installation und Bedienung</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;der Programme. Es liegt im pdf-Format unter simpleanalyzer-gui/Debug/simpleanalyzer-man.pdf</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;vor und kann über das Hilfemenü in SimpleAnalyzer-GUI aufgerufen werden.</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;Dokumentation</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;=============</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;Dokumentation</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;=============</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;Eine Dokumentation für die Weiterentwicklung der Software befindet sich im Verzeichnis</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;doc/html.</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;Eine Dokumentation für die Weiterentwicklung der Software befindet sich im Verzeichnis</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;doc/html.</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Don Mär 27 2014 22:23:04 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Sam Apr 12 2014 18:44:17 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.4
 </small></address>

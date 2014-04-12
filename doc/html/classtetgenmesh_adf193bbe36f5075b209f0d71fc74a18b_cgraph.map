@@ -1,0 +1,6 @@
+<map id="tetgenmesh::segfacetadjacent" name="tetgenmesh::segfacetadjacent">
+<area shape="rect" id="node3" href="$classtetgenmesh.xhtml#ab4b3f98e52ac862ab3c619708c5bc07d" title="tetgenmesh::getfacetindex" alt="" coords="251,5,427,35"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#a3da09b1723336c0d9e82677f8f30c965" title="tetgenmesh::pinfect" alt="" coords="271,59,407,88"/>
+<area shape="rect" id="node7" href="$classtetgenmesh.xhtml#acc0db186d69dcdf785b49d6e709fed7b" title="tetgenmesh::pinfected" alt="" coords="264,112,413,141"/>
+<area shape="rect" id="node9" href="$classtetgenmesh.xhtml#a6220e341248cd83ab6ee1c0d71e4d160" title="tetgenmesh::puninfect" alt="" coords="264,165,413,195"/>
+</map>

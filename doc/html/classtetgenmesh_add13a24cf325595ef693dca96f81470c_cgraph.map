@@ -1,0 +1,29 @@
+<map id="tetgenmesh::collectremovepoints" name="tetgenmesh::collectremovepoints">
+<area shape="rect" id="node3" href="$classtetgenmesh_1_1memorypool.xhtml#a623b101e4e2f249d8b7e5dba65c3f7e2" title="tetgenmesh::memorypool\l::traversalinit" alt="" coords="273,13,441,59"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#a2b088cf9fa743d47b4520d43d9964087" title="tetgenmesh::pointtraverse" alt="" coords="271,83,444,112"/>
+<area shape="rect" id="node9" href="$classtetgenmesh.xhtml#a87204594ee11bb38e68e0381e6e04b6c" title="tetgenmesh::pointtype" alt="" coords="511,75,660,104"/>
+<area shape="rect" id="node11" href="$classtetgenmesh.xhtml#a9ba3540239e05588c5a2021b15d89a8e" title="tetgenmesh::getvertexstar" alt="" coords="271,509,444,539"/>
+<area shape="rect" id="node23" href="$classtetgenmesh_1_1arraypool.xhtml#afb546c70f7728e3e0d58e2aada464437" title="tetgenmesh::arraypool\l::newindex" alt="" coords="511,127,660,174"/>
+<area shape="rect" id="node25" href="$classtetgenmesh.xhtml#a3da09b1723336c0d9e82677f8f30c965" title="tetgenmesh::pinfect" alt="" coords="517,197,653,227"/>
+<area shape="rect" id="node45" href="$classtetgenmesh.xhtml#acc0db186d69dcdf785b49d6e709fed7b" title="tetgenmesh::pinfected" alt="" coords="511,944,660,973"/>
+<area shape="rect" id="node49" href="$classtetgenmesh.xhtml#a6220e341248cd83ab6ee1c0d71e4d160" title="tetgenmesh::puninfect" alt="" coords="511,997,660,1027"/>
+<area shape="rect" id="node53" href="$classtetgenmesh.xhtml#a4f2849235299c81ad7d585dc0b657d80" title="tetgenmesh::distance" alt="" coords="284,664,431,693"/>
+<area shape="rect" id="node55" href="$classtetgenmesh_1_1arraypool.xhtml#a19030126ef81a9ff3c4aca35f0347cdc" title="tetgenmesh::arraypool\l::restart" alt="" coords="283,717,432,763"/>
+<area shape="rect" id="node7" href="$classtetgenmesh_1_1memorypool.xhtml#a151fe73459d0fa9a7262d0030fecf291" title="tetgenmesh::memorypool\l::traverse" alt="" coords="501,5,669,51"/>
+<area shape="rect" id="node13" href="$classtetgenmesh.xhtml#a08a487daca1979751e3d4e536182cbc3" title="tetgenmesh::point2tetorg" alt="" coords="503,517,668,547"/>
+<area shape="rect" id="node19" href="$classtetgenmesh.xhtml#a532ef2752219b80766e145980178443e" title="tetgenmesh::enextesymself" alt="" coords="495,571,676,600"/>
+<area shape="rect" id="node21" href="$classtetgenmesh.xhtml#ad060b1bbcd6b0ce11367b1a4d1be9c75" title="tetgenmesh::infect" alt="" coords="520,624,651,653"/>
+<area shape="rect" id="node27" href="$classtetgenmesh.xhtml#a523cfafc3be8e0ead97a13707b33e4b3" title="tetgenmesh::esym" alt="" coords="520,677,651,707"/>
+<area shape="rect" id="node29" href="$classtetgenmesh.xhtml#a9f17777c1c04712dfa0ac34e8fbd0a4a" title="tetgenmesh::tspivot" alt="" coords="517,731,653,760"/>
+<area shape="rect" id="node33" href="$classtetgenmesh.xhtml#a5ffe02962a36a2c20231991c2c1a1996" title="tetgenmesh::sinfected" alt="" coords="511,784,660,813"/>
+<area shape="rect" id="node35" href="$classtetgenmesh.xhtml#a57b18059c68cacbe01720c387c19ee9e" title="tetgenmesh::fsymself" alt="" coords="512,837,659,867"/>
+<area shape="rect" id="node37" href="$classtetgenmesh.xhtml#a9c4f9877ba70f7c0f399b7fcdd8fdddf" title="tetgenmesh::esymself" alt="" coords="511,891,660,920"/>
+<area shape="rect" id="node39" href="$classtetgenmesh.xhtml#a9287d941f7f432ca846d5c004603af40" title="tetgenmesh::apex" alt="" coords="523,251,648,280"/>
+<area shape="rect" id="node41" href="$classtetgenmesh.xhtml#a1c65efaf2a8a72d023327c2592d89188" title="tetgenmesh::enextself" alt="" coords="511,304,660,333"/>
+<area shape="rect" id="node43" href="$classtetgenmesh.xhtml#a26ecd46a8e767042b2bd0a2725ac4a89" title="tetgenmesh::infected" alt="" coords="513,357,657,387"/>
+<area shape="rect" id="node47" href="$classtetgenmesh.xhtml#a3de3aa0353d41c28437b3a77cc9618f8" title="tetgenmesh::uninfect" alt="" coords="513,411,657,440"/>
+<area shape="rect" id="node51" href="$classtetgenmesh.xhtml#a511f009f29bef3d614063e9c174bc677" title="tetgenmesh::suninfect" alt="" coords="511,464,660,493"/>
+<area shape="rect" id="node15" href="$classtetgenmesh.xhtml#a809cfdec35ae9a52670e045823a302c0" title="tetgenmesh::decode" alt="" coords="731,491,869,520"/>
+<area shape="rect" id="node17" href="$classtetgenmesh.xhtml#a6c3e38cde82f108d0c0ca90d1a046931" title="tetgenmesh::point2tet" alt="" coords="727,544,873,573"/>
+<area shape="rect" id="node31" href="$classtetgenmesh.xhtml#ac5a50a5f6e277b5b95d58e40f3d58c2f" title="tetgenmesh::sdecode" alt="" coords="727,731,873,760"/>
+</map>

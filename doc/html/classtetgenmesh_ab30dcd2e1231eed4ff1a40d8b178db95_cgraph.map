@@ -1,0 +1,5 @@
+<map id="tetgenmesh::checkseg4encroach" name="tetgenmesh::checkseg4encroach">
+<area shape="rect" id="node3" href="$classtetgenmesh.xhtml#afa0906703b590597155547336c360004" title="tetgenmesh::dot" alt="" coords="484,5,599,35"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#ac22152fa0a43b549ae37cadff0e8c56f" title="tetgenmesh::projpt2edge" alt="" coords="269,31,435,60"/>
+<area shape="rect" id="node8" href="$classtetgenmesh.xhtml#a4f2849235299c81ad7d585dc0b657d80" title="tetgenmesh::distance" alt="" coords="279,84,425,113"/>
+</map>

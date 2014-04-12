@@ -1,8 +1,8 @@
 <map id="sqr" name="sqr">
 <area shape="rect" id="node3" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Gibt die Länge des Vektors zurück. " alt="" coords="121,163,263,192"/>
 <area shape="rect" id="node18" href="$classInterpolator.xhtml#ad59ac6ed3822e08a67ac7d1ee88a5bd2" title="Ermittelt den Wert für einen beliebigen Punkt in einer Ebene. " alt="" coords="560,136,731,165"/>
-<area shape="rect" id="node53" href="$classVector3D.xhtml#a42deb992ec2f44abfb5824ea4917135c" title="Gibt den Abstand zu einem anderen Vektor zurück. " alt="" coords="339,292,509,321"/>
-<area shape="rect" id="node57" href="$structUtils_1_1SensorPointComparator.xhtml#a2b31195024a7ec123551b2bb87043a68" title="Berechnet den Abstand zwischen zwei Punkten mithilfe des Satzes des Pythagoras. " alt="" coords="95,266,289,313"/>
+<area shape="rect" id="node51" href="$classVector3D.xhtml#a42deb992ec2f44abfb5824ea4917135c" title="Gibt den Abstand zu einem anderen Vektor zurück. " alt="" coords="339,292,509,321"/>
+<area shape="rect" id="node55" href="$structUtils_1_1SensorPointComparator.xhtml#a2b31195024a7ec123551b2bb87043a68" title="Berechnet den Abstand zwischen zwei Punkten mithilfe des Satzes des Pythagoras. " alt="" coords="95,266,289,313"/>
 <area shape="rect" id="node5" href="$Renderer_8cpp.xhtml#a4225af4db7b633515f133a4f40c72b33" title="Zeichnet einen Vektor als Pfeil. " alt="" coords="380,33,468,63"/>
 <area shape="rect" id="node16" href="$classVector3D.xhtml#a4bf1dcea68296f2f38f3574242933153" title="Gibt den Winkel zu einem anderen Vektor in RAD zurück. " alt="" coords="349,188,499,217"/>
 <area shape="rect" id="node20" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="559,240,732,269"/>
@@ -19,9 +19,8 @@
 <area shape="rect" id="node32" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="1179,170,1349,217"/>
 <area shape="rect" id="node36" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="Berechnet die Temperaturverteilung für ein Objekt. " alt="" coords="1181,240,1347,269"/>
 <area shape="rect" id="node38" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="1399,187,1561,216"/>
-<area shape="rect" id="node46" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="1399,240,1561,269"/>
+<area shape="rect" id="node44" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="1399,240,1561,269"/>
 <area shape="rect" id="node40" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="1621,143,1800,190"/>
-<area shape="rect" id="node44" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="1620,213,1801,243"/>
-<area shape="rect" id="node42" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="1859,143,2045,190"/>
-<area shape="rect" id="node48" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="1611,266,1811,313"/>
+<area shape="rect" id="node42" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="1620,213,1801,243"/>
+<area shape="rect" id="node46" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="1611,266,1811,313"/>
 </map>

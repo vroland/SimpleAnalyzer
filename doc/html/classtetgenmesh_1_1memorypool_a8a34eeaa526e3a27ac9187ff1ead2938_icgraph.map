@@ -1,0 +1,23 @@
+<map id="tetgenmesh::memorypool::restart" name="tetgenmesh::memorypool::restart">
+<area shape="rect" id="node3" href="$classtetgenmesh.xhtml#adcb0e0e582808c23829b42708a7596dc" title="tetgenmesh::unifysegments" alt="" coords="225,5,407,35"/>
+<area shape="rect" id="node21" href="$classtetgenmesh.xhtml#a854e8e8d77d2d1b2b74372a87a1a7717" title="tetgenmesh::detectinterfaces" alt="" coords="1169,57,1359,87"/>
+<area shape="rect" id="node24" href="$classtetgenmesh.xhtml#ad34c3db4b465048cf061a3e2ae2ba34e" title="tetgenmesh::fillregion" alt="" coords="472,109,619,139"/>
+<area shape="rect" id="node31" href="$classtetgenmesh.xhtml#a7af360f1ae413f9e0d7803ccae55b6d6" title="tetgenmesh::repairencsegs" alt="" coords="227,212,405,241"/>
+<area shape="rect" id="node35" href="$classtetgenmesh.xhtml#a701d4f317ed66df6a2e2b7b237e2386a" title="tetgenmesh::repairencfacs" alt="" coords="696,315,872,344"/>
+<area shape="rect" id="node39" href="$classtetgenmesh.xhtml#a7c46c82d83099214115fa9719aefbd78" title="tetgenmesh::repairbadtets" alt="" coords="1177,367,1351,396"/>
+<area shape="rect" id="node50" href="$classtetgenmesh.xhtml#ad5c46c2f6c9adeed23fc8c64b682778d" title="tetgenmesh::removeslivers" alt="" coords="456,419,635,448"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#a0c51cd3511d2b0ef9d0d45fe8b546b2e" title="tetgenmesh::meshsurface" alt="" coords="940,5,1113,35"/>
+<area shape="rect" id="node7" href="$tetgen_8h.xhtml#ad3637eb4ffe7fda90667e67b7771d964" title="tetrahedralize" alt="" coords="1676,109,1775,139"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="1828,39,1983,86"/>
+<area shape="rect" id="node13" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="1824,109,1987,139"/>
+<area shape="rect" id="node19" href="$tetgen_8cxx.xhtml#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1880,163,1931,192"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="2057,39,2212,86"/>
+<area shape="rect" id="node15" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="2035,162,2235,209"/>
+<area shape="rect" id="node17" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="2044,109,2225,139"/>
+<area shape="rect" id="node26" href="$classtetgenmesh.xhtml#a7579c3a44a54712623d9f9e5fc1dfbdc" title="tetgenmesh::constrainedfacets" alt="" coords="684,109,884,139"/>
+<area shape="rect" id="node28" href="$classtetgenmesh.xhtml#aab64d62b3d2b048a38158fb2bf678624" title="tetgenmesh::constraineddelaunay" alt="" coords="1409,109,1625,139"/>
+<area shape="rect" id="node33" href="$classtetgenmesh.xhtml#a3a8404870ab3c2e8ce4312d48c2b29f4" title="tetgenmesh::splitsubface" alt="" coords="461,264,629,293"/>
+<area shape="rect" id="node37" href="$classtetgenmesh.xhtml#aa752155eb1d18550a212dd40297f122e" title="tetgenmesh::splittetrahedron" alt="" coords="933,263,1120,292"/>
+<area shape="rect" id="node41" href="$classtetgenmesh.xhtml#a477bbfde72103de66546d4ea3343b4a1" title="tetgenmesh::delaunayrefinement" alt="" coords="1412,239,1623,268"/>
+<area shape="rect" id="node52" href="$classtetgenmesh.xhtml#a8bb5c6ad8ccfa57f2a84e5a78295b263" title="tetgenmesh::optimizemesh" alt="" coords="695,419,873,448"/>
+</map>

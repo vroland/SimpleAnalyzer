@@ -1,0 +1,1988 @@
+\hypertarget{predicates_8cxx}{\section{/daten/\-Projekte/eclipse\-\_\-workspace/tetgen1.5.0/predicates.cxx-\/\-Dateireferenz}
+\label{predicates_8cxx}\index{/daten/\-Projekte/eclipse\-\_\-workspace/tetgen1.\-5.\-0/predicates.\-cxx@{/daten/\-Projekte/eclipse\-\_\-workspace/tetgen1.\-5.\-0/predicates.\-cxx}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}tetgen.\-h\char`\"{}}\\*
+Include-\/\-Abhängigkeitsdiagramm für predicates.\-cxx\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx__incl}
+\end{center}
+\end{figure}
+\subsection*{Makrodefinitionen}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{predicates_8cxx_ad49beae4f708cdfe26352d865ed2eb95}{I\-N\-E\-X\-A\-C\-T}~/$\ast$ Nothing $\ast$/
+\item 
+\#define \hyperlink{predicates_8cxx_a08c32ee2465d67f098ab09bdf0e2eb59}{R\-E\-A\-L\-P\-R\-I\-N\-T}~doubleprint
+\item 
+\#define \hyperlink{predicates_8cxx_a810b77dd5b3d884e1d2641a2e597df22}{R\-E\-A\-L\-R\-A\-N\-D}~doublerand
+\item 
+\#define \hyperlink{predicates_8cxx_a573b0e3df6fc0f000607eca1c5569f68}{N\-A\-R\-R\-O\-W\-R\-A\-N\-D}~narrowdoublerand
+\item 
+\#define \hyperlink{predicates_8cxx_a151c130268f15ea9975886f0750f3079}{U\-N\-I\-F\-O\-R\-M\-R\-A\-N\-D}~uniformdoublerand
+\item 
+\#define \hyperlink{predicates_8cxx_aef0ab760424f561c08ca685b4fd28a3f}{Absolute}(a)~fabs(a)
+\item 
+\#define \hyperlink{predicates_8cxx_afdb937df435c24d5c402eb0fdd97f6da}{Fast\-\_\-\-Two\-\_\-\-Sum\-\_\-\-Tail}(a, b, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_ae85afbfee038480d9baf7796514cb121}{Fast\-\_\-\-Two\-\_\-\-Sum}(a, b, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_aabefa8f7315771dc0c0ca2d7f61879b1}{Fast\-\_\-\-Two\-\_\-\-Diff\-\_\-\-Tail}(a, b, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_a2dc0302d787df9335fab8a094e3f9c8a}{Fast\-\_\-\-Two\-\_\-\-Diff}(a, b, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_a367e02bc95e29a48c4815fcd63806f64}{Two\-\_\-\-Sum\-\_\-\-Tail}(a, b, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_aa559790796899b51e5f0afcb2dfb8ed7}{Two\-\_\-\-Sum}(a, b, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_a636a9c6e1b1171cbf745575166954389}{Two\-\_\-\-Diff\-\_\-\-Tail}(a, b, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_ac60bb459f7540f5717747fbef47e62b4}{Two\-\_\-\-Diff}(a, b, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_aeeb6165c4120f8480d2f92fa7e3061ab}{Split}(a, ahi, alo)
+\item 
+\#define \hyperlink{predicates_8cxx_ac9dcc9500c883fdac1acdf11127ae886}{Two\-\_\-\-Product\-\_\-\-Tail}(a, b, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_a27f5145ac554d28b9c257ac0909d055b}{Two\-\_\-\-Product}(a, b, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_a4b7fb41ff1c60fa3b701bc405a5c5e46}{Two\-\_\-\-Product\-\_\-\-Presplit}(a, b, bhi, blo, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_afbc2a37f0c0de1cb35f8ebf5cca260de}{Two\-\_\-\-Product\-\_\-2\-Presplit}(a, ahi, alo, b, bhi, blo, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_a6e9ed62b93fa2a55ede246e85507de18}{Square\-\_\-\-Tail}(a, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_a0cce77b99432ef29e32ed7481e470f10}{Square}(a, x, y)
+\item 
+\#define \hyperlink{predicates_8cxx_aac797f696ef3cee9ffd42c36f8990185}{Two\-\_\-\-One\-\_\-\-Sum}(a1, a0, b, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_a5315d6436a90d87938ae9df8a408de67}{Two\-\_\-\-One\-\_\-\-Diff}(a1, a0, b, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_ae3c61622ca0206f23311a66c864f8fff}{Two\-\_\-\-Two\-\_\-\-Sum}(a1, a0, b1, b0, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_ab4f08ad5dba11bbdf27b64132824b3a3}{Two\-\_\-\-Two\-\_\-\-Diff}(a1, a0, b1, b0, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_a44216cd8f5e66887021d5adc5946fd5b}{Four\-\_\-\-One\-\_\-\-Sum}(a3, a2, a1, a0, b, x4, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_abfb2851ae0a5a306b284bc0b49c44a58}{Four\-\_\-\-Two\-\_\-\-Sum}(a3, a2, a1, a0, b1, b0, x5, x4, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_a466f1351b3b0c629ce26624e9c4f37c8}{Four\-\_\-\-Four\-\_\-\-Sum}(a3, a2, a1, a0, b4, b3, b1, b0, x7, x6, x5, x4, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_a389723f9b62403a0120409d8df273d66}{Eight\-\_\-\-One\-\_\-\-Sum}(a7, a6, a5, a4, a3, a2, a1, a0, b, x8, x7, x6, x5, x4, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_a8b9d9b20641eea87a448f2346f009b86}{Eight\-\_\-\-Two\-\_\-\-Sum}(a7, a6, a5, a4, a3, a2, a1, a0, b1, b0, x9, x8, x7, x6, x5, x4, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_a33bcbc6d2cbdebeb473b299b7e4b5cdb}{Eight\-\_\-\-Four\-\_\-\-Sum}(a7, a6, a5, a4, a3, a2, a1, a0, b4, b3, b1, b0, x11, x10, x9, x8, x7, x6, x5, x4, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_ab4cdb5eb173ed61eb35e082b0a4a6043}{Two\-\_\-\-One\-\_\-\-Product}(a1, a0, b, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_a058c146b098bad5240f5602ff0af5c65}{Four\-\_\-\-One\-\_\-\-Product}(a3, a2, a1, a0, b, x7, x6, x5, x4, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_a98c18d11899b6f43f7880545414e6667}{Two\-\_\-\-Two\-\_\-\-Product}(a1, a0, b1, b0, x7, x6, x5, x4, x3, x2, x1, x0)
+\item 
+\#define \hyperlink{predicates_8cxx_a25633714f30f83c17409803936779987}{Two\-\_\-\-Square}(a1, a0, x5, x4, x3, x2, x1, x0)
+\end{DoxyCompactItemize}
+\subsection*{Funktionen}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{predicates_8cxx_a2c32d3c0d804132adb065278086ebf9b}{fppow2} (int n)
+\item 
+double \hyperlink{predicates_8cxx_aeb78bb8677b1583e602375f02180ae4b}{dstore} (double x)
+\item 
+int \hyperlink{predicates_8cxx_a4099aaa470a750a3f06a160239500f4c}{test\-\_\-double} (int verbose)
+\item 
+void \hyperlink{predicates_8cxx_a134ce675a468e3bfd83448f647dbe8a7}{exactinit} (int verbose, int noexact, int nofilter, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} maxx, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} maxy, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} maxz)
+\item 
+int \hyperlink{predicates_8cxx_ad77489867dd5a42647265c6f7ef4f129}{grow\-\_\-expansion} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} b, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_a2e8fca6854d6a2ed3249fcd24b47a1a9}{grow\-\_\-expansion\-\_\-zeroelim} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} b, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_a205c9564b62316ed9249e2d3651505c5}{expansion\-\_\-sum} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, int flen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$f, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_ac38daa3df2459b9b2bab42702a87883e}{expansion\-\_\-sum\-\_\-zeroelim1} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, int flen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$f, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_ab51616333dc680aa848d522b1ba44862}{expansion\-\_\-sum\-\_\-zeroelim2} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, int flen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$f, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_ab0eab651328372abd17e2f1f8c01dff8}{fast\-\_\-expansion\-\_\-sum} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, int flen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$f, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_a37646a7e0014e10c612e946bc95aeeea}{fast\-\_\-expansion\-\_\-sum\-\_\-zeroelim} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, int flen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$f, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_a6e0c13a3de573bce6190d5db3138be98}{linear\-\_\-expansion\-\_\-sum} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, int flen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$f, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_afa54a82f07d2f72d3807b9a78aa2da8b}{linear\-\_\-expansion\-\_\-sum\-\_\-zeroelim} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, int flen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$f, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_a5873b19d855d3ace3c375c0b89933acb}{scale\-\_\-expansion} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} b, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_abdcdaa8948d9a2937154d9d67f67da8d}{scale\-\_\-expansion\-\_\-zeroelim} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} b, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+int \hyperlink{predicates_8cxx_a0e05cf94eeeea515483f825d7a3b7dd6}{compress} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$h)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a3487d9f90ea72da543d5d38b3dab1fbc}{estimate} (int elen, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$e)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a4de6f7de113918ac01301cb7d3e14786}{orient2dfast} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_ab0e440a5722811168c73e48978b84f93}{orient2dexact} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a8669878673de09a9a154846be57f19f5}{orient2dslow} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a3c11579e45f0c8f763a451807e3cef55}{orient2dadapt} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} detsum)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_ab5a54b1ed9cbddb103f0e2871255bad9}{orient2d} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_ae109597f942156531a1ecda4f969eee0}{orient3dfast} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_acfff1cef21b648cd6d91b475e56b025d}{orient3dexact} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a1934247c9105903d0c78aed2ddd9bad4}{orient3dslow} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_ae16b246ccaad9f1d90f37590816c5fde}{orient3dadapt} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} permanent)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a701f35178b28c7bbb94644665c0b058a}{orient3d} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_aeaa358dce9bc5bbf293a1be51525c96d}{incirclefast} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a705a8050600c953887fd80345a1ac5de}{incircleexact} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a5b9a93684c5ea8169252aa43ffb59e6c}{incircleslow} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a15d23cd19b508dab095490be2d4e8074}{incircleadapt} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} permanent)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a6a040ef58ef5e12f96c04defd742605e}{incircle} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a7537ecb7c72fae4f1b6db1468a5880f1}{inspherefast} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pe)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a1b7f36a00bcca4ab972133f190d07b35}{insphereexact} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pe)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a31e92ae77aba844dc30a687db61f532a}{insphereslow} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pe)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_aff1beabe144889954e1a63692f0f4d00}{insphereadapt} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pe, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} permanent)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a6856d0058088615e8f10f983a6bdef08}{insphere} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pe)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a791d324c7c5cbf5c78da3488d54495a6}{orient4dexact} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pe, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} aheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} bheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} cheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} dheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} eheight)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_a3dfeb25725cfe0223d6f12b2a42e1bee}{orient4dadapt} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pe, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} aheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} bheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} cheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} dheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} eheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} permanent)
+\item 
+\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} \hyperlink{predicates_8cxx_ac18ea9102bdd2ef503dbf477748adfb5}{orient4d} (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pa, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pb, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pc, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pd, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} $\ast$pe, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} aheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} bheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} cheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} dheight, \hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{R\-E\-A\-L} eheight)
+\end{DoxyCompactItemize}
+
+
+\subsection{Makro-\/\-Dokumentation}
+\hypertarget{predicates_8cxx_aef0ab760424f561c08ca685b4fd28a3f}{\index{predicates.\-cxx@{predicates.\-cxx}!Absolute@{Absolute}}
+\index{Absolute@{Absolute}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Absolute}]{\setlength{\rightskip}{0pt plus 5cm}\#define Absolute(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~fabs(a)}}\label{predicates_8cxx_aef0ab760424f561c08ca685b4fd28a3f}
+
+
+Definiert in Zeile 160 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a33bcbc6d2cbdebeb473b299b7e4b5cdb}{\index{predicates.\-cxx@{predicates.\-cxx}!Eight\-\_\-\-Four\-\_\-\-Sum@{Eight\-\_\-\-Four\-\_\-\-Sum}}
+\index{Eight\-\_\-\-Four\-\_\-\-Sum@{Eight\-\_\-\-Four\-\_\-\-Sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Eight\-\_\-\-Four\-\_\-\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}\#define Eight\-\_\-\-Four\-\_\-\-Sum(
+\begin{DoxyParamCaption}
+\item[{}]{a7, }
+\item[{}]{a6, }
+\item[{}]{a5, }
+\item[{}]{a4, }
+\item[{}]{a3, }
+\item[{}]{a2, }
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b4, }
+\item[{}]{b3, }
+\item[{}]{b1, }
+\item[{}]{b0, }
+\item[{}]{x11, }
+\item[{}]{x10, }
+\item[{}]{x9, }
+\item[{}]{x8, }
+\item[{}]{x7, }
+\item[{}]{x6, }
+\item[{}]{x5, }
+\item[{}]{x4, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a33bcbc6d2cbdebeb473b299b7e4b5cdb}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_a8b9d9b20641eea87a448f2346f009b86}{Eight\_Two\_Sum}(a7, a6, a5, a4, a3, a2, a1, a0, b1, b0, \_l, \_6, \_5, \_4, \_3, \(\backslash\)
+                \_2, \_1, \_0, x1, x0); \(\backslash\)
+  Eight\_Two\_Sum(\_l, \_6, \_5, \_4, \_3, \_2, \_1, \_0, b4, b3, x11, x10, x9, x8, \(\backslash\)
+                x7, x6, x5, x4, x3, x2)
+\end{DoxyCode}
+
+
+Definiert in Zeile 308 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a389723f9b62403a0120409d8df273d66}{\index{predicates.\-cxx@{predicates.\-cxx}!Eight\-\_\-\-One\-\_\-\-Sum@{Eight\-\_\-\-One\-\_\-\-Sum}}
+\index{Eight\-\_\-\-One\-\_\-\-Sum@{Eight\-\_\-\-One\-\_\-\-Sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Eight\-\_\-\-One\-\_\-\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}\#define Eight\-\_\-\-One\-\_\-\-Sum(
+\begin{DoxyParamCaption}
+\item[{}]{a7, }
+\item[{}]{a6, }
+\item[{}]{a5, }
+\item[{}]{a4, }
+\item[{}]{a3, }
+\item[{}]{a2, }
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b, }
+\item[{}]{x8, }
+\item[{}]{x7, }
+\item[{}]{x6, }
+\item[{}]{x5, }
+\item[{}]{x4, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a389723f9b62403a0120409d8df273d66}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_a44216cd8f5e66887021d5adc5946fd5b}{Four\_One\_Sum}(a3, a2, a1, a0, b , \_j, x3, x2, x1, x0); \(\backslash\)
+  Four\_One\_Sum(a7, a6, a5, a4, \_j, x8, x7, x6, x5, x4)
+\end{DoxyCode}
+
+
+Definiert in Zeile 296 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a8b9d9b20641eea87a448f2346f009b86}{\index{predicates.\-cxx@{predicates.\-cxx}!Eight\-\_\-\-Two\-\_\-\-Sum@{Eight\-\_\-\-Two\-\_\-\-Sum}}
+\index{Eight\-\_\-\-Two\-\_\-\-Sum@{Eight\-\_\-\-Two\-\_\-\-Sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Eight\-\_\-\-Two\-\_\-\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}\#define Eight\-\_\-\-Two\-\_\-\-Sum(
+\begin{DoxyParamCaption}
+\item[{}]{a7, }
+\item[{}]{a6, }
+\item[{}]{a5, }
+\item[{}]{a4, }
+\item[{}]{a3, }
+\item[{}]{a2, }
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b1, }
+\item[{}]{b0, }
+\item[{}]{x9, }
+\item[{}]{x8, }
+\item[{}]{x7, }
+\item[{}]{x6, }
+\item[{}]{x5, }
+\item[{}]{x4, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a8b9d9b20641eea87a448f2346f009b86}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_a389723f9b62403a0120409d8df273d66}{Eight\_One\_Sum}(a7, a6, a5, a4, a3, a2, a1, a0, b0, \_k, \_6, \_5, \_4, \_3, \_2, \(\backslash\)
+                \_1, \_0, x0); \(\backslash\)
+  Eight\_One\_Sum(\_k, \_6, \_5, \_4, \_3, \_2, \_1, \_0, b1, x9, x8, x7, x6, x5, x4, \(\backslash\)
+                x3, x2, x1)
+\end{DoxyCode}
+
+
+Definiert in Zeile 301 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a2dc0302d787df9335fab8a094e3f9c8a}{\index{predicates.\-cxx@{predicates.\-cxx}!Fast\-\_\-\-Two\-\_\-\-Diff@{Fast\-\_\-\-Two\-\_\-\-Diff}}
+\index{Fast\-\_\-\-Two\-\_\-\-Diff@{Fast\-\_\-\-Two\-\_\-\-Diff}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Fast\-\_\-\-Two\-\_\-\-Diff}]{\setlength{\rightskip}{0pt plus 5cm}\#define Fast\-\_\-\-Two\-\_\-\-Diff(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a2dc0302d787df9335fab8a094e3f9c8a}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+x = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (a - b); \(\backslash\)
+  Fast\_Two\_Diff\_Tail(a, b, x, y)
+\end{DoxyCode}
+
+
+Definiert in Zeile 187 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_aabefa8f7315771dc0c0ca2d7f61879b1}{\index{predicates.\-cxx@{predicates.\-cxx}!Fast\-\_\-\-Two\-\_\-\-Diff\-\_\-\-Tail@{Fast\-\_\-\-Two\-\_\-\-Diff\-\_\-\-Tail}}
+\index{Fast\-\_\-\-Two\-\_\-\-Diff\-\_\-\-Tail@{Fast\-\_\-\-Two\-\_\-\-Diff\-\_\-\-Tail}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Fast\-\_\-\-Two\-\_\-\-Diff\-\_\-\-Tail}]{\setlength{\rightskip}{0pt plus 5cm}\#define Fast\-\_\-\-Two\-\_\-\-Diff\-\_\-\-Tail(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_aabefa8f7315771dc0c0ca2d7f61879b1}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+bvirt = a - x; \(\backslash\)
+  y = bvirt - b
+\end{DoxyCode}
+
+
+Definiert in Zeile 183 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ae85afbfee038480d9baf7796514cb121}{\index{predicates.\-cxx@{predicates.\-cxx}!Fast\-\_\-\-Two\-\_\-\-Sum@{Fast\-\_\-\-Two\-\_\-\-Sum}}
+\index{Fast\-\_\-\-Two\-\_\-\-Sum@{Fast\-\_\-\-Two\-\_\-\-Sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Fast\-\_\-\-Two\-\_\-\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}\#define Fast\-\_\-\-Two\-\_\-\-Sum(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ae85afbfee038480d9baf7796514cb121}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+x = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (a + b); \(\backslash\)
+  Fast\_Two\_Sum\_Tail(a, b, x, y)
+\end{DoxyCode}
+
+
+Definiert in Zeile 179 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_afdb937df435c24d5c402eb0fdd97f6da}{\index{predicates.\-cxx@{predicates.\-cxx}!Fast\-\_\-\-Two\-\_\-\-Sum\-\_\-\-Tail@{Fast\-\_\-\-Two\-\_\-\-Sum\-\_\-\-Tail}}
+\index{Fast\-\_\-\-Two\-\_\-\-Sum\-\_\-\-Tail@{Fast\-\_\-\-Two\-\_\-\-Sum\-\_\-\-Tail}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Fast\-\_\-\-Two\-\_\-\-Sum\-\_\-\-Tail}]{\setlength{\rightskip}{0pt plus 5cm}\#define Fast\-\_\-\-Two\-\_\-\-Sum\-\_\-\-Tail(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_afdb937df435c24d5c402eb0fdd97f6da}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+bvirt = x - a; \(\backslash\)
+  y = b - bvirt
+\end{DoxyCode}
+
+
+Definiert in Zeile 175 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a466f1351b3b0c629ce26624e9c4f37c8}{\index{predicates.\-cxx@{predicates.\-cxx}!Four\-\_\-\-Four\-\_\-\-Sum@{Four\-\_\-\-Four\-\_\-\-Sum}}
+\index{Four\-\_\-\-Four\-\_\-\-Sum@{Four\-\_\-\-Four\-\_\-\-Sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Four\-\_\-\-Four\-\_\-\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}\#define Four\-\_\-\-Four\-\_\-\-Sum(
+\begin{DoxyParamCaption}
+\item[{}]{a3, }
+\item[{}]{a2, }
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b4, }
+\item[{}]{b3, }
+\item[{}]{b1, }
+\item[{}]{b0, }
+\item[{}]{x7, }
+\item[{}]{x6, }
+\item[{}]{x5, }
+\item[{}]{x4, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a466f1351b3b0c629ce26624e9c4f37c8}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_abfb2851ae0a5a306b284bc0b49c44a58}{Four\_Two\_Sum}(a3, a2, a1, a0, b1, b0, \_l, \_2, \_1, \_0, x1, x0); \(\backslash\)
+  Four\_Two\_Sum(\_l, \_2, \_1, \_0, b4, b3, x7, x6, x5, x4, x3, x2)
+\end{DoxyCode}
+
+
+Definiert in Zeile 291 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a058c146b098bad5240f5602ff0af5c65}{\index{predicates.\-cxx@{predicates.\-cxx}!Four\-\_\-\-One\-\_\-\-Product@{Four\-\_\-\-One\-\_\-\-Product}}
+\index{Four\-\_\-\-One\-\_\-\-Product@{Four\-\_\-\-One\-\_\-\-Product}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Four\-\_\-\-One\-\_\-\-Product}]{\setlength{\rightskip}{0pt plus 5cm}\#define Four\-\_\-\-One\-\_\-\-Product(
+\begin{DoxyParamCaption}
+\item[{}]{a3, }
+\item[{}]{a2, }
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b, }
+\item[{}]{x7, }
+\item[{}]{x6, }
+\item[{}]{x5, }
+\item[{}]{x4, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a058c146b098bad5240f5602ff0af5c65}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_aeeb6165c4120f8480d2f92fa7e3061ab}{Split}(b, bhi, blo); \(\backslash\)
+  Two\_Product\_Presplit(a0, b, bhi, blo, \_i, x0); \(\backslash\)
+  Two\_Product\_Presplit(a1, b, bhi, blo, \_j, \_0); \(\backslash\)
+  Two\_Sum(\_i, \_0, \_k, x1); \(\backslash\)
+  Fast\_Two\_Sum(\_j, \_k, \_i, x2); \(\backslash\)
+  Two\_Product\_Presplit(a2, b, bhi, blo, \_j, \_0); \(\backslash\)
+  Two\_Sum(\_i, \_0, \_k, x3); \(\backslash\)
+  Fast\_Two\_Sum(\_j, \_k, \_i, x4); \(\backslash\)
+  Two\_Product\_Presplit(a3, b, bhi, blo, \_j, \_0); \(\backslash\)
+  Two\_Sum(\_i, \_0, \_k, x5); \(\backslash\)
+  Fast\_Two\_Sum(\_j, \_k, x7, x6)
+\end{DoxyCode}
+
+
+Definiert in Zeile 324 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a44216cd8f5e66887021d5adc5946fd5b}{\index{predicates.\-cxx@{predicates.\-cxx}!Four\-\_\-\-One\-\_\-\-Sum@{Four\-\_\-\-One\-\_\-\-Sum}}
+\index{Four\-\_\-\-One\-\_\-\-Sum@{Four\-\_\-\-One\-\_\-\-Sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Four\-\_\-\-One\-\_\-\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}\#define Four\-\_\-\-One\-\_\-\-Sum(
+\begin{DoxyParamCaption}
+\item[{}]{a3, }
+\item[{}]{a2, }
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b, }
+\item[{}]{x4, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a44216cd8f5e66887021d5adc5946fd5b}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_aac797f696ef3cee9ffd42c36f8990185}{Two\_One\_Sum}(a1, a0, b , \_j, x1, x0); \(\backslash\)
+  Two\_One\_Sum(a3, a2, \_j, x4, x3, x2)
+\end{DoxyCode}
+
+
+Definiert in Zeile 283 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_abfb2851ae0a5a306b284bc0b49c44a58}{\index{predicates.\-cxx@{predicates.\-cxx}!Four\-\_\-\-Two\-\_\-\-Sum@{Four\-\_\-\-Two\-\_\-\-Sum}}
+\index{Four\-\_\-\-Two\-\_\-\-Sum@{Four\-\_\-\-Two\-\_\-\-Sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Four\-\_\-\-Two\-\_\-\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}\#define Four\-\_\-\-Two\-\_\-\-Sum(
+\begin{DoxyParamCaption}
+\item[{}]{a3, }
+\item[{}]{a2, }
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b1, }
+\item[{}]{b0, }
+\item[{}]{x5, }
+\item[{}]{x4, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_abfb2851ae0a5a306b284bc0b49c44a58}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_a44216cd8f5e66887021d5adc5946fd5b}{Four\_One\_Sum}(a3, a2, a1, a0, b0, \_k, \_2, \_1, \_0, x0); \(\backslash\)
+  Four\_One\_Sum(\_k, \_2, \_1, \_0, b1, x5, x4, x3, x2, x1)
+\end{DoxyCode}
+
+
+Definiert in Zeile 287 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ad49beae4f708cdfe26352d865ed2eb95}{\index{predicates.\-cxx@{predicates.\-cxx}!I\-N\-E\-X\-A\-C\-T@{I\-N\-E\-X\-A\-C\-T}}
+\index{I\-N\-E\-X\-A\-C\-T@{I\-N\-E\-X\-A\-C\-T}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{I\-N\-E\-X\-A\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-E\-X\-A\-C\-T~/$\ast$ Nothing $\ast$/}}\label{predicates_8cxx_ad49beae4f708cdfe26352d865ed2eb95}
+
+
+Definiert in Zeile 144 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a573b0e3df6fc0f000607eca1c5569f68}{\index{predicates.\-cxx@{predicates.\-cxx}!N\-A\-R\-R\-O\-W\-R\-A\-N\-D@{N\-A\-R\-R\-O\-W\-R\-A\-N\-D}}
+\index{N\-A\-R\-R\-O\-W\-R\-A\-N\-D@{N\-A\-R\-R\-O\-W\-R\-A\-N\-D}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{N\-A\-R\-R\-O\-W\-R\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-A\-R\-R\-O\-W\-R\-A\-N\-D~narrowdoublerand}}\label{predicates_8cxx_a573b0e3df6fc0f000607eca1c5569f68}
+
+
+Definiert in Zeile 150 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a08c32ee2465d67f098ab09bdf0e2eb59}{\index{predicates.\-cxx@{predicates.\-cxx}!R\-E\-A\-L\-P\-R\-I\-N\-T@{R\-E\-A\-L\-P\-R\-I\-N\-T}}
+\index{R\-E\-A\-L\-P\-R\-I\-N\-T@{R\-E\-A\-L\-P\-R\-I\-N\-T}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{R\-E\-A\-L\-P\-R\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-E\-A\-L\-P\-R\-I\-N\-T~doubleprint}}\label{predicates_8cxx_a08c32ee2465d67f098ab09bdf0e2eb59}
+
+
+Definiert in Zeile 148 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a810b77dd5b3d884e1d2641a2e597df22}{\index{predicates.\-cxx@{predicates.\-cxx}!R\-E\-A\-L\-R\-A\-N\-D@{R\-E\-A\-L\-R\-A\-N\-D}}
+\index{R\-E\-A\-L\-R\-A\-N\-D@{R\-E\-A\-L\-R\-A\-N\-D}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{R\-E\-A\-L\-R\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-E\-A\-L\-R\-A\-N\-D~doublerand}}\label{predicates_8cxx_a810b77dd5b3d884e1d2641a2e597df22}
+
+
+Definiert in Zeile 149 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_aeeb6165c4120f8480d2f92fa7e3061ab}{\index{predicates.\-cxx@{predicates.\-cxx}!Split@{Split}}
+\index{Split@{Split}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Split}]{\setlength{\rightskip}{0pt plus 5cm}\#define Split(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{ahi, }
+\item[{}]{alo}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_aeeb6165c4120f8480d2f92fa7e3061ab}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+c = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (splitter * a); \(\backslash\)
+  abig = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (c - a); \(\backslash\)
+  ahi = c - abig; \(\backslash\)
+  alo = a - ahi
+\end{DoxyCode}
+
+
+Definiert in Zeile 213 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a0cce77b99432ef29e32ed7481e470f10}{\index{predicates.\-cxx@{predicates.\-cxx}!Square@{Square}}
+\index{Square@{Square}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Square}]{\setlength{\rightskip}{0pt plus 5cm}\#define Square(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a0cce77b99432ef29e32ed7481e470f10}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+x = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (a * a); \(\backslash\)
+  Square\_Tail(a, x, y)
+\end{DoxyCode}
+
+
+Definiert in Zeile 260 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a6e9ed62b93fa2a55ede246e85507de18}{\index{predicates.\-cxx@{predicates.\-cxx}!Square\-\_\-\-Tail@{Square\-\_\-\-Tail}}
+\index{Square\-\_\-\-Tail@{Square\-\_\-\-Tail}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Square\-\_\-\-Tail}]{\setlength{\rightskip}{0pt plus 5cm}\#define Square\-\_\-\-Tail(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a6e9ed62b93fa2a55ede246e85507de18}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_aeeb6165c4120f8480d2f92fa7e3061ab}{Split}(a, ahi, alo); \(\backslash\)
+  err1 = x - (ahi * ahi); \(\backslash\)
+  err3 = err1 - ((ahi + ahi) * alo); \(\backslash\)
+  y = (alo * alo) - err3
+\end{DoxyCode}
+
+
+Definiert in Zeile 254 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ac60bb459f7540f5717747fbef47e62b4}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Diff@{Two\-\_\-\-Diff}}
+\index{Two\-\_\-\-Diff@{Two\-\_\-\-Diff}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Diff}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Diff(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ac60bb459f7540f5717747fbef47e62b4}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+x = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (a - b); \(\backslash\)
+  Two\_Diff\_Tail(a, b, x, y)
+\end{DoxyCode}
+
+
+Definiert in Zeile 209 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a636a9c6e1b1171cbf745575166954389}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Diff\-\_\-\-Tail@{Two\-\_\-\-Diff\-\_\-\-Tail}}
+\index{Two\-\_\-\-Diff\-\_\-\-Tail@{Two\-\_\-\-Diff\-\_\-\-Tail}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Diff\-\_\-\-Tail}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Diff\-\_\-\-Tail(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a636a9c6e1b1171cbf745575166954389}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+bvirt = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (a - x); \(\backslash\)
+  avirt = x + bvirt; \(\backslash\)
+  bround = bvirt - b; \(\backslash\)
+  around = a - avirt; \(\backslash\)
+  y = around + bround
+\end{DoxyCode}
+
+
+Definiert in Zeile 202 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a5315d6436a90d87938ae9df8a408de67}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-One\-\_\-\-Diff@{Two\-\_\-\-One\-\_\-\-Diff}}
+\index{Two\-\_\-\-One\-\_\-\-Diff@{Two\-\_\-\-One\-\_\-\-Diff}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-One\-\_\-\-Diff}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-One\-\_\-\-Diff(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a5315d6436a90d87938ae9df8a408de67}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_ac60bb459f7540f5717747fbef47e62b4}{Two\_Diff}(a0, b , \_i, x0); \(\backslash\)
+  Two\_Sum( a1, \_i, x2, x1)
+\end{DoxyCode}
+
+
+Definiert in Zeile 271 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ab4cdb5eb173ed61eb35e082b0a4a6043}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-One\-\_\-\-Product@{Two\-\_\-\-One\-\_\-\-Product}}
+\index{Two\-\_\-\-One\-\_\-\-Product@{Two\-\_\-\-One\-\_\-\-Product}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-One\-\_\-\-Product}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-One\-\_\-\-Product(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ab4cdb5eb173ed61eb35e082b0a4a6043}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_aeeb6165c4120f8480d2f92fa7e3061ab}{Split}(b, bhi, blo); \(\backslash\)
+  Two\_Product\_Presplit(a0, b, bhi, blo, \_i, x0); \(\backslash\)
+  Two\_Product\_Presplit(a1, b, bhi, blo, \_j, \_0); \(\backslash\)
+  Two\_Sum(\_i, \_0, \_k, x1); \(\backslash\)
+  Fast\_Two\_Sum(\_j, \_k, x3, x2)
+\end{DoxyCode}
+
+
+Definiert in Zeile 317 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_aac797f696ef3cee9ffd42c36f8990185}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-One\-\_\-\-Sum@{Two\-\_\-\-One\-\_\-\-Sum}}
+\index{Two\-\_\-\-One\-\_\-\-Sum@{Two\-\_\-\-One\-\_\-\-Sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-One\-\_\-\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-One\-\_\-\-Sum(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_aac797f696ef3cee9ffd42c36f8990185}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_aa559790796899b51e5f0afcb2dfb8ed7}{Two\_Sum}(a0, b , \_i, x0); \(\backslash\)
+  Two\_Sum(a1, \_i, x2, x1)
+\end{DoxyCode}
+
+
+Definiert in Zeile 267 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a27f5145ac554d28b9c257ac0909d055b}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Product@{Two\-\_\-\-Product}}
+\index{Two\-\_\-\-Product@{Two\-\_\-\-Product}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Product}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Product(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a27f5145ac554d28b9c257ac0909d055b}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+x = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (a * b); \(\backslash\)
+  Two\_Product\_Tail(a, b, x, y)
+\end{DoxyCode}
+
+
+Definiert in Zeile 227 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_afbc2a37f0c0de1cb35f8ebf5cca260de}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Product\-\_\-2\-Presplit@{Two\-\_\-\-Product\-\_\-2\-Presplit}}
+\index{Two\-\_\-\-Product\-\_\-2\-Presplit@{Two\-\_\-\-Product\-\_\-2\-Presplit}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Product\-\_\-2\-Presplit}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Product\-\_\-2\-Presplit(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{ahi, }
+\item[{}]{alo, }
+\item[{}]{b, }
+\item[{}]{bhi, }
+\item[{}]{blo, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_afbc2a37f0c0de1cb35f8ebf5cca260de}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+x = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (a * b); \(\backslash\)
+  err1 = x - (ahi * bhi); \(\backslash\)
+  err2 = err1 - (alo * bhi); \(\backslash\)
+  err3 = err2 - (ahi * blo); \(\backslash\)
+  y = (alo * blo) - err3
+\end{DoxyCode}
+
+
+Definiert in Zeile 245 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a4b7fb41ff1c60fa3b701bc405a5c5e46}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Product\-\_\-\-Presplit@{Two\-\_\-\-Product\-\_\-\-Presplit}}
+\index{Two\-\_\-\-Product\-\_\-\-Presplit@{Two\-\_\-\-Product\-\_\-\-Presplit}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Product\-\_\-\-Presplit}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Product\-\_\-\-Presplit(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{bhi, }
+\item[{}]{blo, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a4b7fb41ff1c60fa3b701bc405a5c5e46}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+x = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (a * b); \(\backslash\)
+  Split(a, ahi, alo); \(\backslash\)
+  err1 = x - (ahi * bhi); \(\backslash\)
+  err2 = err1 - (alo * bhi); \(\backslash\)
+  err3 = err2 - (ahi * blo); \(\backslash\)
+  y = (alo * blo) - err3
+\end{DoxyCode}
+
+
+Definiert in Zeile 234 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ac9dcc9500c883fdac1acdf11127ae886}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Product\-\_\-\-Tail@{Two\-\_\-\-Product\-\_\-\-Tail}}
+\index{Two\-\_\-\-Product\-\_\-\-Tail@{Two\-\_\-\-Product\-\_\-\-Tail}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Product\-\_\-\-Tail}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Product\-\_\-\-Tail(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ac9dcc9500c883fdac1acdf11127ae886}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_aeeb6165c4120f8480d2f92fa7e3061ab}{Split}(a, ahi, alo); \(\backslash\)
+  Split(b, bhi, blo); \(\backslash\)
+  err1 = x - (ahi * bhi); \(\backslash\)
+  err2 = err1 - (alo * bhi); \(\backslash\)
+  err3 = err2 - (ahi * blo); \(\backslash\)
+  y = (alo * blo) - err3
+\end{DoxyCode}
+
+
+Definiert in Zeile 219 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a25633714f30f83c17409803936779987}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Square@{Two\-\_\-\-Square}}
+\index{Two\-\_\-\-Square@{Two\-\_\-\-Square}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Square}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Square(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{x5, }
+\item[{}]{x4, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a25633714f30f83c17409803936779987}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_a0cce77b99432ef29e32ed7481e470f10}{Square}(a0, \_j, x0); \(\backslash\)
+  \_0 = a0 + a0; \(\backslash\)
+  Two\_Product(a1, \_0, \_k, \_1); \(\backslash\)
+  Two\_One\_Sum(\_k, \_1, \_j, \_l, \_2, x1); \(\backslash\)
+  Square(a1, \_j, \_1); \(\backslash\)
+  Two\_Two\_Sum(\_j, \_1, \_l, \_2, x5, x4, x3, x2)
+\end{DoxyCode}
+
+
+Definiert in Zeile 367 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_aa559790796899b51e5f0afcb2dfb8ed7}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Sum@{Two\-\_\-\-Sum}}
+\index{Two\-\_\-\-Sum@{Two\-\_\-\-Sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Sum(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_aa559790796899b51e5f0afcb2dfb8ed7}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+x = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (a + b); \(\backslash\)
+  Two\_Sum\_Tail(a, b, x, y)
+\end{DoxyCode}
+
+
+Definiert in Zeile 198 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a367e02bc95e29a48c4815fcd63806f64}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Sum\-\_\-\-Tail@{Two\-\_\-\-Sum\-\_\-\-Tail}}
+\index{Two\-\_\-\-Sum\-\_\-\-Tail@{Two\-\_\-\-Sum\-\_\-\-Tail}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Sum\-\_\-\-Tail}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Sum\-\_\-\-Tail(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a367e02bc95e29a48c4815fcd63806f64}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+bvirt = (\hyperlink{tetgen_8h_a4b654506f18b8bfd61ad2a29a7e38c25}{REAL}) (x - a); \(\backslash\)
+  avirt = x - bvirt; \(\backslash\)
+  bround = b - bvirt; \(\backslash\)
+  around = a - avirt; \(\backslash\)
+  y = around + bround
+\end{DoxyCode}
+
+
+Definiert in Zeile 191 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ab4f08ad5dba11bbdf27b64132824b3a3}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Two\-\_\-\-Diff@{Two\-\_\-\-Two\-\_\-\-Diff}}
+\index{Two\-\_\-\-Two\-\_\-\-Diff@{Two\-\_\-\-Two\-\_\-\-Diff}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Two\-\_\-\-Diff}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Two\-\_\-\-Diff(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b1, }
+\item[{}]{b0, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ab4f08ad5dba11bbdf27b64132824b3a3}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_a5315d6436a90d87938ae9df8a408de67}{Two\_One\_Diff}(a1, a0, b0, \_j, \_0, x0); \(\backslash\)
+  Two\_One\_Diff(\_j, \_0, b1, x3, x2, x1)
+\end{DoxyCode}
+
+
+Definiert in Zeile 279 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a98c18d11899b6f43f7880545414e6667}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Two\-\_\-\-Product@{Two\-\_\-\-Two\-\_\-\-Product}}
+\index{Two\-\_\-\-Two\-\_\-\-Product@{Two\-\_\-\-Two\-\_\-\-Product}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Two\-\_\-\-Product}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Two\-\_\-\-Product(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b1, }
+\item[{}]{b0, }
+\item[{}]{x7, }
+\item[{}]{x6, }
+\item[{}]{x5, }
+\item[{}]{x4, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a98c18d11899b6f43f7880545414e6667}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_aeeb6165c4120f8480d2f92fa7e3061ab}{Split}(a0, a0hi, a0lo); \(\backslash\)
+  Split(b0, bhi, blo); \(\backslash\)
+  Two\_Product\_2Presplit(a0, a0hi, a0lo, b0, bhi, blo, \_i, x0); \(\backslash\)
+  Split(a1, a1hi, a1lo); \(\backslash\)
+  Two\_Product\_2Presplit(a1, a1hi, a1lo, b0, bhi, blo, \_j, \_0); \(\backslash\)
+  Two\_Sum(\_i, \_0, \_k, \_1); \(\backslash\)
+  Fast\_Two\_Sum(\_j, \_k, \_l, \_2); \(\backslash\)
+  Split(b1, bhi, blo); \(\backslash\)
+  Two\_Product\_2Presplit(a0, a0hi, a0lo, b1, bhi, blo, \_i, \_0); \(\backslash\)
+  Two\_Sum(\_1, \_0, \_k, x1); \(\backslash\)
+  Two\_Sum(\_2, \_k, \_j, \_1); \(\backslash\)
+  Two\_Sum(\_l, \_j, \_m, \_2); \(\backslash\)
+  Two\_Product\_2Presplit(a1, a1hi, a1lo, b1, bhi, blo, \_j, \_0); \(\backslash\)
+  Two\_Sum(\_i, \_0, \_n, \_0); \(\backslash\)
+  Two\_Sum(\_1, \_0, \_i, x2); \(\backslash\)
+  Two\_Sum(\_2, \_i, \_k, \_1); \(\backslash\)
+  Two\_Sum(\_m, \_k, \_l, \_2); \(\backslash\)
+  Two\_Sum(\_j, \_n, \_k, \_0); \(\backslash\)
+  Two\_Sum(\_1, \_0, \_j, x3); \(\backslash\)
+  Two\_Sum(\_2, \_j, \_i, \_1); \(\backslash\)
+  Two\_Sum(\_l, \_i, \_m, \_2); \(\backslash\)
+  Two\_Sum(\_1, \_k, \_i, x4); \(\backslash\)
+  Two\_Sum(\_2, \_i, \_k, x5); \(\backslash\)
+  Two\_Sum(\_m, \_k, x7, x6)
+\end{DoxyCode}
+
+
+Definiert in Zeile 337 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ae3c61622ca0206f23311a66c864f8fff}{\index{predicates.\-cxx@{predicates.\-cxx}!Two\-\_\-\-Two\-\_\-\-Sum@{Two\-\_\-\-Two\-\_\-\-Sum}}
+\index{Two\-\_\-\-Two\-\_\-\-Sum@{Two\-\_\-\-Two\-\_\-\-Sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{Two\-\_\-\-Two\-\_\-\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}\#define Two\-\_\-\-Two\-\_\-\-Sum(
+\begin{DoxyParamCaption}
+\item[{}]{a1, }
+\item[{}]{a0, }
+\item[{}]{b1, }
+\item[{}]{b0, }
+\item[{}]{x3, }
+\item[{}]{x2, }
+\item[{}]{x1, }
+\item[{}]{x0}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ae3c61622ca0206f23311a66c864f8fff}
+{\bfseries Wert\-:}
+\begin{DoxyCode}
+\hyperlink{predicates_8cxx_aac797f696ef3cee9ffd42c36f8990185}{Two\_One\_Sum}(a1, a0, b0, \_j, \_0, x0); \(\backslash\)
+  Two\_One\_Sum(\_j, \_0, b1, x3, x2, x1)
+\end{DoxyCode}
+
+
+Definiert in Zeile 275 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a151c130268f15ea9975886f0750f3079}{\index{predicates.\-cxx@{predicates.\-cxx}!U\-N\-I\-F\-O\-R\-M\-R\-A\-N\-D@{U\-N\-I\-F\-O\-R\-M\-R\-A\-N\-D}}
+\index{U\-N\-I\-F\-O\-R\-M\-R\-A\-N\-D@{U\-N\-I\-F\-O\-R\-M\-R\-A\-N\-D}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{U\-N\-I\-F\-O\-R\-M\-R\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-N\-I\-F\-O\-R\-M\-R\-A\-N\-D~uniformdoublerand}}\label{predicates_8cxx_a151c130268f15ea9975886f0750f3079}
+
+
+Definiert in Zeile 151 der Datei predicates.\-cxx.
+
+
+
+\subsection{Dokumentation der Funktionen}
+\hypertarget{predicates_8cxx_a0e05cf94eeeea515483f825d7a3b7dd6}{\index{predicates.\-cxx@{predicates.\-cxx}!compress@{compress}}
+\index{compress@{compress}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{compress}]{\setlength{\rightskip}{0pt plus 5cm}int compress (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a0e05cf94eeeea515483f825d7a3b7dd6}
+
+
+Definiert in Zeile 1271 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_aeb78bb8677b1583e602375f02180ae4b}{\index{predicates.\-cxx@{predicates.\-cxx}!dstore@{dstore}}
+\index{dstore@{dstore}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{dstore}]{\setlength{\rightskip}{0pt plus 5cm}double dstore (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_aeb78bb8677b1583e602375f02180ae4b}
+
+
+Definiert in Zeile 470 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_aeb78bb8677b1583e602375f02180ae4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a3487d9f90ea72da543d5d38b3dab1fbc}{\index{predicates.\-cxx@{predicates.\-cxx}!estimate@{estimate}}
+\index{estimate@{estimate}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{estimate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} estimate (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a3487d9f90ea72da543d5d38b3dab1fbc}
+
+
+Definiert in Zeile 1314 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a3487d9f90ea72da543d5d38b3dab1fbc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a134ce675a468e3bfd83448f647dbe8a7}{\index{predicates.\-cxx@{predicates.\-cxx}!exactinit@{exactinit}}
+\index{exactinit@{exactinit}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{exactinit}]{\setlength{\rightskip}{0pt plus 5cm}void exactinit (
+\begin{DoxyParamCaption}
+\item[{int}]{verbose, }
+\item[{int}]{noexact, }
+\item[{int}]{nofilter, }
+\item[{{\bf R\-E\-A\-L}}]{maxx, }
+\item[{{\bf R\-E\-A\-L}}]{maxy, }
+\item[{{\bf R\-E\-A\-L}}]{maxz}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a134ce675a468e3bfd83448f647dbe8a7}
+
+
+Definiert in Zeile 543 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{predicates_8cxx_a134ce675a468e3bfd83448f647dbe8a7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a134ce675a468e3bfd83448f647dbe8a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a205c9564b62316ed9249e2d3651505c5}{\index{predicates.\-cxx@{predicates.\-cxx}!expansion\-\_\-sum@{expansion\-\_\-sum}}
+\index{expansion\-\_\-sum@{expansion\-\_\-sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{expansion\-\_\-sum}]{\setlength{\rightskip}{0pt plus 5cm}int expansion\-\_\-sum (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{int}]{flen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{f, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a205c9564b62316ed9249e2d3651505c5}
+
+
+Definiert in Zeile 737 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ac38daa3df2459b9b2bab42702a87883e}{\index{predicates.\-cxx@{predicates.\-cxx}!expansion\-\_\-sum\-\_\-zeroelim1@{expansion\-\_\-sum\-\_\-zeroelim1}}
+\index{expansion\-\_\-sum\-\_\-zeroelim1@{expansion\-\_\-sum\-\_\-zeroelim1}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{expansion\-\_\-sum\-\_\-zeroelim1}]{\setlength{\rightskip}{0pt plus 5cm}int expansion\-\_\-sum\-\_\-zeroelim1 (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{int}]{flen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{f, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ac38daa3df2459b9b2bab42702a87883e}
+
+
+Definiert in Zeile 781 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ab51616333dc680aa848d522b1ba44862}{\index{predicates.\-cxx@{predicates.\-cxx}!expansion\-\_\-sum\-\_\-zeroelim2@{expansion\-\_\-sum\-\_\-zeroelim2}}
+\index{expansion\-\_\-sum\-\_\-zeroelim2@{expansion\-\_\-sum\-\_\-zeroelim2}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{expansion\-\_\-sum\-\_\-zeroelim2}]{\setlength{\rightskip}{0pt plus 5cm}int expansion\-\_\-sum\-\_\-zeroelim2 (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{int}]{flen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{f, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ab51616333dc680aa848d522b1ba44862}
+
+
+Definiert in Zeile 836 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ab0eab651328372abd17e2f1f8c01dff8}{\index{predicates.\-cxx@{predicates.\-cxx}!fast\-\_\-expansion\-\_\-sum@{fast\-\_\-expansion\-\_\-sum}}
+\index{fast\-\_\-expansion\-\_\-sum@{fast\-\_\-expansion\-\_\-sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{fast\-\_\-expansion\-\_\-sum}]{\setlength{\rightskip}{0pt plus 5cm}int fast\-\_\-expansion\-\_\-sum (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{int}]{flen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{f, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ab0eab651328372abd17e2f1f8c01dff8}
+
+
+Definiert in Zeile 888 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a37646a7e0014e10c612e946bc95aeeea}{\index{predicates.\-cxx@{predicates.\-cxx}!fast\-\_\-expansion\-\_\-sum\-\_\-zeroelim@{fast\-\_\-expansion\-\_\-sum\-\_\-zeroelim}}
+\index{fast\-\_\-expansion\-\_\-sum\-\_\-zeroelim@{fast\-\_\-expansion\-\_\-sum\-\_\-zeroelim}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{fast\-\_\-expansion\-\_\-sum\-\_\-zeroelim}]{\setlength{\rightskip}{0pt plus 5cm}int fast\-\_\-expansion\-\_\-sum\-\_\-zeroelim (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{int}]{flen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{f, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a37646a7e0014e10c612e946bc95aeeea}
+
+
+Definiert in Zeile 961 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a37646a7e0014e10c612e946bc95aeeea_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a2c32d3c0d804132adb065278086ebf9b}{\index{predicates.\-cxx@{predicates.\-cxx}!fppow2@{fppow2}}
+\index{fppow2@{fppow2}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{fppow2}]{\setlength{\rightskip}{0pt plus 5cm}double fppow2 (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a2c32d3c0d804132adb065278086ebf9b}
+
+
+Definiert in Zeile 402 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a2c32d3c0d804132adb065278086ebf9b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_ad77489867dd5a42647265c6f7ef4f129}{\index{predicates.\-cxx@{predicates.\-cxx}!grow\-\_\-expansion@{grow\-\_\-expansion}}
+\index{grow\-\_\-expansion@{grow\-\_\-expansion}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{grow\-\_\-expansion}]{\setlength{\rightskip}{0pt plus 5cm}int grow\-\_\-expansion (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{{\bf R\-E\-A\-L}}]{b, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ad77489867dd5a42647265c6f7ef4f129}
+
+
+Definiert in Zeile 664 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a2e8fca6854d6a2ed3249fcd24b47a1a9}{\index{predicates.\-cxx@{predicates.\-cxx}!grow\-\_\-expansion\-\_\-zeroelim@{grow\-\_\-expansion\-\_\-zeroelim}}
+\index{grow\-\_\-expansion\-\_\-zeroelim@{grow\-\_\-expansion\-\_\-zeroelim}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{grow\-\_\-expansion\-\_\-zeroelim}]{\setlength{\rightskip}{0pt plus 5cm}int grow\-\_\-expansion\-\_\-zeroelim (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{{\bf R\-E\-A\-L}}]{b, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a2e8fca6854d6a2ed3249fcd24b47a1a9}
+
+
+Definiert in Zeile 698 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a6a040ef58ef5e12f96c04defd742605e}{\index{predicates.\-cxx@{predicates.\-cxx}!incircle@{incircle}}
+\index{incircle@{incircle}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{incircle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} incircle (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a6a040ef58ef5e12f96c04defd742605e}
+
+
+Definiert in Zeile 3125 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a6a040ef58ef5e12f96c04defd742605e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a15d23cd19b508dab095490be2d4e8074}{\index{predicates.\-cxx@{predicates.\-cxx}!incircleadapt@{incircleadapt}}
+\index{incircleadapt@{incircleadapt}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{incircleadapt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} incircleadapt (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd, }
+\item[{{\bf R\-E\-A\-L}}]{permanent}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a15d23cd19b508dab095490be2d4e8074}
+
+
+Definiert in Zeile 2553 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{predicates_8cxx_a15d23cd19b508dab095490be2d4e8074_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{predicates_8cxx_a15d23cd19b508dab095490be2d4e8074_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a705a8050600c953887fd80345a1ac5de}{\index{predicates.\-cxx@{predicates.\-cxx}!incircleexact@{incircleexact}}
+\index{incircleexact@{incircleexact}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{incircleexact}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} incircleexact (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a705a8050600c953887fd80345a1ac5de}
+
+
+Definiert in Zeile 2299 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{predicates_8cxx_a705a8050600c953887fd80345a1ac5de_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_aeaa358dce9bc5bbf293a1be51525c96d}{\index{predicates.\-cxx@{predicates.\-cxx}!incirclefast@{incirclefast}}
+\index{incirclefast@{incirclefast}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{incirclefast}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} incirclefast (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_aeaa358dce9bc5bbf293a1be51525c96d}
+
+
+Definiert in Zeile 2276 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a5b9a93684c5ea8169252aa43ffb59e6c}{\index{predicates.\-cxx@{predicates.\-cxx}!incircleslow@{incircleslow}}
+\index{incircleslow@{incircleslow}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{incircleslow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} incircleslow (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a5b9a93684c5ea8169252aa43ffb59e6c}
+
+
+Definiert in Zeile 2397 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{predicates_8cxx_a5b9a93684c5ea8169252aa43ffb59e6c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a6856d0058088615e8f10f983a6bdef08}{\index{predicates.\-cxx@{predicates.\-cxx}!insphere@{insphere}}
+\index{insphere@{insphere}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{insphere}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} insphere (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pe}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a6856d0058088615e8f10f983a6bdef08}
+
+
+Definiert in Zeile 4050 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a6856d0058088615e8f10f983a6bdef08_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a6856d0058088615e8f10f983a6bdef08_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_aff1beabe144889954e1a63692f0f4d00}{\index{predicates.\-cxx@{predicates.\-cxx}!insphereadapt@{insphereadapt}}
+\index{insphereadapt@{insphereadapt}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{insphereadapt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} insphereadapt (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pe, }
+\item[{{\bf R\-E\-A\-L}}]{permanent}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_aff1beabe144889954e1a63692f0f4d00}
+
+
+Definiert in Zeile 3819 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_aff1beabe144889954e1a63692f0f4d00_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_aff1beabe144889954e1a63692f0f4d00_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a1b7f36a00bcca4ab972133f190d07b35}{\index{predicates.\-cxx@{predicates.\-cxx}!insphereexact@{insphereexact}}
+\index{insphereexact@{insphereexact}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{insphereexact}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} insphereexact (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pe}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a1b7f36a00bcca4ab972133f190d07b35}
+
+
+Definiert in Zeile 3237 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{predicates_8cxx_a1b7f36a00bcca4ab972133f190d07b35_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a1b7f36a00bcca4ab972133f190d07b35_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a7537ecb7c72fae4f1b6db1468a5880f1}{\index{predicates.\-cxx@{predicates.\-cxx}!inspherefast@{inspherefast}}
+\index{inspherefast@{inspherefast}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{inspherefast}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} inspherefast (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pe}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a7537ecb7c72fae4f1b6db1468a5880f1}
+
+
+Definiert in Zeile 3194 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a31e92ae77aba844dc30a687db61f532a}{\index{predicates.\-cxx@{predicates.\-cxx}!insphereslow@{insphereslow}}
+\index{insphereslow@{insphereslow}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{insphereslow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} insphereslow (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pe}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a31e92ae77aba844dc30a687db61f532a}
+
+
+Definiert in Zeile 3490 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{predicates_8cxx_a31e92ae77aba844dc30a687db61f532a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a6e0c13a3de573bce6190d5db3138be98}{\index{predicates.\-cxx@{predicates.\-cxx}!linear\-\_\-expansion\-\_\-sum@{linear\-\_\-expansion\-\_\-sum}}
+\index{linear\-\_\-expansion\-\_\-sum@{linear\-\_\-expansion\-\_\-sum}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{linear\-\_\-expansion\-\_\-sum}]{\setlength{\rightskip}{0pt plus 5cm}int linear\-\_\-expansion\-\_\-sum (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{int}]{flen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{f, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a6e0c13a3de573bce6190d5db3138be98}
+
+
+Definiert in Zeile 1042 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_afa54a82f07d2f72d3807b9a78aa2da8b}{\index{predicates.\-cxx@{predicates.\-cxx}!linear\-\_\-expansion\-\_\-sum\-\_\-zeroelim@{linear\-\_\-expansion\-\_\-sum\-\_\-zeroelim}}
+\index{linear\-\_\-expansion\-\_\-sum\-\_\-zeroelim@{linear\-\_\-expansion\-\_\-sum\-\_\-zeroelim}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{linear\-\_\-expansion\-\_\-sum\-\_\-zeroelim}]{\setlength{\rightskip}{0pt plus 5cm}int linear\-\_\-expansion\-\_\-sum\-\_\-zeroelim (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{int}]{flen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{f, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_afa54a82f07d2f72d3807b9a78aa2da8b}
+
+
+Definiert in Zeile 1102 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_ab5a54b1ed9cbddb103f0e2871255bad9}{\index{predicates.\-cxx@{predicates.\-cxx}!orient2d@{orient2d}}
+\index{orient2d@{orient2d}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient2d}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient2d (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ab5a54b1ed9cbddb103f0e2871255bad9}
+
+
+Definiert in Zeile 1526 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_ab5a54b1ed9cbddb103f0e2871255bad9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a3c11579e45f0c8f763a451807e3cef55}{\index{predicates.\-cxx@{predicates.\-cxx}!orient2dadapt@{orient2dadapt}}
+\index{orient2dadapt@{orient2dadapt}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient2dadapt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient2dadapt (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L}}]{detsum}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a3c11579e45f0c8f763a451807e3cef55}
+
+
+Definiert in Zeile 1446 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{predicates_8cxx_a3c11579e45f0c8f763a451807e3cef55_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{predicates_8cxx_a3c11579e45f0c8f763a451807e3cef55_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_ab0e440a5722811168c73e48978b84f93}{\index{predicates.\-cxx@{predicates.\-cxx}!orient2dexact@{orient2dexact}}
+\index{orient2dexact@{orient2dexact}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient2dexact}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient2dexact (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ab0e440a5722811168c73e48978b84f93}
+
+
+Definiert in Zeile 1363 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{predicates_8cxx_ab0e440a5722811168c73e48978b84f93_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a4de6f7de113918ac01301cb7d3e14786}{\index{predicates.\-cxx@{predicates.\-cxx}!orient2dfast@{orient2dfast}}
+\index{orient2dfast@{orient2dfast}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient2dfast}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient2dfast (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a4de6f7de113918ac01301cb7d3e14786}
+
+
+Definiert in Zeile 1352 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a8669878673de09a9a154846be57f19f5}{\index{predicates.\-cxx@{predicates.\-cxx}!orient2dslow@{orient2dslow}}
+\index{orient2dslow@{orient2dslow}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient2dslow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient2dslow (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a8669878673de09a9a154846be57f19f5}
+
+
+Definiert in Zeile 1405 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{predicates_8cxx_a8669878673de09a9a154846be57f19f5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a701f35178b28c7bbb94644665c0b058a}{\index{predicates.\-cxx@{predicates.\-cxx}!orient3d@{orient3d}}
+\index{orient3d@{orient3d}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient3d}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient3d (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a701f35178b28c7bbb94644665c0b058a}
+
+
+Definiert in Zeile 2194 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a701f35178b28c7bbb94644665c0b058a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a701f35178b28c7bbb94644665c0b058a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_ae16b246ccaad9f1d90f37590816c5fde}{\index{predicates.\-cxx@{predicates.\-cxx}!orient3dadapt@{orient3dadapt}}
+\index{orient3dadapt@{orient3dadapt}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient3dadapt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient3dadapt (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd, }
+\item[{{\bf R\-E\-A\-L}}]{permanent}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ae16b246ccaad9f1d90f37590816c5fde}
+
+
+Definiert in Zeile 1778 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{predicates_8cxx_ae16b246ccaad9f1d90f37590816c5fde_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_ae16b246ccaad9f1d90f37590816c5fde_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_acfff1cef21b648cd6d91b475e56b025d}{\index{predicates.\-cxx@{predicates.\-cxx}!orient3dexact@{orient3dexact}}
+\index{orient3dexact@{orient3dexact}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient3dexact}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient3dexact (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_acfff1cef21b648cd6d91b475e56b025d}
+
+
+Definiert in Zeile 1609 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{predicates_8cxx_acfff1cef21b648cd6d91b475e56b025d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_ae109597f942156531a1ecda4f969eee0}{\index{predicates.\-cxx@{predicates.\-cxx}!orient3dfast@{orient3dfast}}
+\index{orient3dfast@{orient3dfast}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient3dfast}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient3dfast (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ae109597f942156531a1ecda4f969eee0}
+
+
+Definiert in Zeile 1588 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_a1934247c9105903d0c78aed2ddd9bad4}{\index{predicates.\-cxx@{predicates.\-cxx}!orient3dslow@{orient3dslow}}
+\index{orient3dslow@{orient3dslow}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient3dslow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient3dslow (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a1934247c9105903d0c78aed2ddd9bad4}
+
+
+Definiert in Zeile 1686 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{predicates_8cxx_a1934247c9105903d0c78aed2ddd9bad4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_ac18ea9102bdd2ef503dbf477748adfb5}{\index{predicates.\-cxx@{predicates.\-cxx}!orient4d@{orient4d}}
+\index{orient4d@{orient4d}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient4d}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient4d (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pe, }
+\item[{{\bf R\-E\-A\-L}}]{aheight, }
+\item[{{\bf R\-E\-A\-L}}]{bheight, }
+\item[{{\bf R\-E\-A\-L}}]{cheight, }
+\item[{{\bf R\-E\-A\-L}}]{dheight, }
+\item[{{\bf R\-E\-A\-L}}]{eheight}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_ac18ea9102bdd2ef503dbf477748adfb5}
+
+
+Definiert in Zeile 4600 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_ac18ea9102bdd2ef503dbf477748adfb5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_ac18ea9102bdd2ef503dbf477748adfb5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a3dfeb25725cfe0223d6f12b2a42e1bee}{\index{predicates.\-cxx@{predicates.\-cxx}!orient4dadapt@{orient4dadapt}}
+\index{orient4dadapt@{orient4dadapt}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient4dadapt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient4dadapt (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pe, }
+\item[{{\bf R\-E\-A\-L}}]{aheight, }
+\item[{{\bf R\-E\-A\-L}}]{bheight, }
+\item[{{\bf R\-E\-A\-L}}]{cheight, }
+\item[{{\bf R\-E\-A\-L}}]{dheight, }
+\item[{{\bf R\-E\-A\-L}}]{eheight, }
+\item[{{\bf R\-E\-A\-L}}]{permanent}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a3dfeb25725cfe0223d6f12b2a42e1bee}
+
+
+Definiert in Zeile 4404 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a3dfeb25725cfe0223d6f12b2a42e1bee_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a3dfeb25725cfe0223d6f12b2a42e1bee_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a791d324c7c5cbf5c78da3488d54495a6}{\index{predicates.\-cxx@{predicates.\-cxx}!orient4dexact@{orient4dexact}}
+\index{orient4dexact@{orient4dexact}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{orient4dexact}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-E\-A\-L} orient4dexact (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pa, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pb, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pc, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pd, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{pe, }
+\item[{{\bf R\-E\-A\-L}}]{aheight, }
+\item[{{\bf R\-E\-A\-L}}]{bheight, }
+\item[{{\bf R\-E\-A\-L}}]{cheight, }
+\item[{{\bf R\-E\-A\-L}}]{dheight, }
+\item[{{\bf R\-E\-A\-L}}]{eheight}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a791d324c7c5cbf5c78da3488d54495a6}
+
+
+Definiert in Zeile 4189 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{predicates_8cxx_a791d324c7c5cbf5c78da3488d54495a6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a791d324c7c5cbf5c78da3488d54495a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a5873b19d855d3ace3c375c0b89933acb}{\index{predicates.\-cxx@{predicates.\-cxx}!scale\-\_\-expansion@{scale\-\_\-expansion}}
+\index{scale\-\_\-expansion@{scale\-\_\-expansion}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{scale\-\_\-expansion}]{\setlength{\rightskip}{0pt plus 5cm}int scale\-\_\-expansion (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{{\bf R\-E\-A\-L}}]{b, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a5873b19d855d3ace3c375c0b89933acb}
+
+
+Definiert in Zeile 1173 der Datei predicates.\-cxx.
+
+\hypertarget{predicates_8cxx_abdcdaa8948d9a2937154d9d67f67da8d}{\index{predicates.\-cxx@{predicates.\-cxx}!scale\-\_\-expansion\-\_\-zeroelim@{scale\-\_\-expansion\-\_\-zeroelim}}
+\index{scale\-\_\-expansion\-\_\-zeroelim@{scale\-\_\-expansion\-\_\-zeroelim}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{scale\-\_\-expansion\-\_\-zeroelim}]{\setlength{\rightskip}{0pt plus 5cm}int scale\-\_\-expansion\-\_\-zeroelim (
+\begin{DoxyParamCaption}
+\item[{int}]{elen, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{e, }
+\item[{{\bf R\-E\-A\-L}}]{b, }
+\item[{{\bf R\-E\-A\-L} $\ast$}]{h}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_abdcdaa8948d9a2937154d9d67f67da8d}
+
+
+Definiert in Zeile 1219 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_abdcdaa8948d9a2937154d9d67f67da8d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{predicates_8cxx_a4099aaa470a750a3f06a160239500f4c}{\index{predicates.\-cxx@{predicates.\-cxx}!test\-\_\-double@{test\-\_\-double}}
+\index{test\-\_\-double@{test\-\_\-double}!predicates.cxx@{predicates.\-cxx}}
+\subsubsection[{test\-\_\-double}]{\setlength{\rightskip}{0pt plus 5cm}int test\-\_\-double (
+\begin{DoxyParamCaption}
+\item[{int}]{verbose}
+\end{DoxyParamCaption}
+)}}\label{predicates_8cxx_a4099aaa470a750a3f06a160239500f4c}
+
+
+Definiert in Zeile 475 der Datei predicates.\-cxx.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{predicates_8cxx_a4099aaa470a750a3f06a160239500f4c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{predicates_8cxx_a4099aaa470a750a3f06a160239500f4c_icgraph}
+\end{center}
+\end{figure}
+
+

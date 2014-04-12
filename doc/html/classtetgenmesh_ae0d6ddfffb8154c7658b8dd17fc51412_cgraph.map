@@ -1,0 +1,11 @@
+<map id="tetgenmesh::insphere_s" name="tetgenmesh::insphere_s">
+<area shape="rect" id="node3" href="$predicates_8cxx.xhtml#a6856d0058088615e8f10f983a6bdef08" title="insphere" alt="" coords="259,93,328,122"/>
+<area shape="rect" id="node17" href="$classtetgenmesh.xhtml#a46fa5fabd0e8e806f7f8beb069732e21" title="tetgenmesh::pointmark" alt="" coords="216,225,371,254"/>
+<area shape="rect" id="node19" href="$predicates_8cxx.xhtml#a701f35178b28c7bbb94644665c0b058a" title="orient3d" alt="" coords="260,172,327,201"/>
+<area shape="rect" id="node5" href="$predicates_8cxx.xhtml#aff1beabe144889954e1a63692f0f4d00" title="insphereadapt" alt="" coords="420,81,521,110"/>
+<area shape="rect" id="node7" href="$predicates_8cxx.xhtml#abdcdaa8948d9a2937154d9d67f67da8d" title="scale_expansion_zeroelim" alt="" coords="724,25,897,54"/>
+<area shape="rect" id="node9" href="$predicates_8cxx.xhtml#a37646a7e0014e10c612e946bc95aeeea" title="fast_expansion_sum\l_zeroelim" alt="" coords="740,78,881,124"/>
+<area shape="rect" id="node11" href="$predicates_8cxx.xhtml#a3487d9f90ea72da543d5d38b3dab1fbc" title="estimate" alt="" coords="587,133,659,162"/>
+<area shape="rect" id="node13" href="$predicates_8cxx.xhtml#a1b7f36a00bcca4ab972133f190d07b35" title="insphereexact" alt="" coords="572,29,673,58"/>
+<area shape="rect" id="node21" href="$predicates_8cxx.xhtml#ae16b246ccaad9f1d90f37590816c5fde" title="orient3dadapt" alt="" coords="421,178,520,208"/>
+</map>

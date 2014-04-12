@@ -21,6 +21,8 @@ using namespace Utils;
  * @brief Die Daten eines Versuchsobjekts.
  *
  * Diese Klasse hält Objekteigenschaften, Materialien und Sensordaten eines untersuchten Objekts.
+ * Desweiteren stellt sie die Schnittstelle zur Tetgen-Bibliothek (http://wias-berlin.de/software/tetgen/) zum
+ * zerlegen des Objekts dar.
  */
 class ObjectData {
 public:

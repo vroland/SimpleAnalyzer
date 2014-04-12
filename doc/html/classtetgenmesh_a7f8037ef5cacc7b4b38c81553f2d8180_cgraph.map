@@ -1,0 +1,10 @@
+<map id="tetgenmesh::checkseg4split" name="tetgenmesh::checkseg4split">
+<area shape="rect" id="node3" href="$classtetgenmesh.xhtml#a55db9a054b722d91a17b82d442f88f4c" title="tetgenmesh::sorg" alt="" coords="259,5,381,35"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#aa6017928ea3dc0b8ba39e7f24ea312b2" title="tetgenmesh::sdest" alt="" coords="255,59,385,88"/>
+<area shape="rect" id="node7" href="$classtetgenmesh.xhtml#a4f2849235299c81ad7d585dc0b657d80" title="tetgenmesh::distance" alt="" coords="247,112,393,141"/>
+<area shape="rect" id="node9" href="$classtetgenmesh.xhtml#a589cf429e209ed7575602ede3d158d93" title="tetgenmesh::areabound" alt="" coords="241,165,399,195"/>
+<area shape="rect" id="node11" href="$classtetgenmesh.xhtml#a08c6f7bbaecd0aa7733b5e797106be24" title="tetgenmesh::sstpivot1" alt="" coords="245,219,395,248"/>
+<area shape="rect" id="node15" href="$classtetgenmesh.xhtml#a9287d941f7f432ca846d5c004603af40" title="tetgenmesh::apex" alt="" coords="257,272,383,301"/>
+<area shape="rect" id="node17" href="$classtetgenmesh.xhtml#a473568d02dfc5c262325ed18b1f9af3a" title="tetgenmesh::fnextself" alt="" coords="247,325,393,355"/>
+<area shape="rect" id="node13" href="$classtetgenmesh.xhtml#a809cfdec35ae9a52670e045823a302c0" title="tetgenmesh::decode" alt="" coords="449,219,588,248"/>
+</map>

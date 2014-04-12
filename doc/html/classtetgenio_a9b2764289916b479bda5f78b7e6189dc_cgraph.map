@@ -1,0 +1,6 @@
+<map id="tetgenio::load_ply" name="tetgenio::load_ply">
+<area shape="rect" id="node3" href="$classtetgenio.xhtml#a085af1b2c889a6545f6aab67aad1ba43" title="tetgenio::readline" alt="" coords="201,5,321,35"/>
+<area shape="rect" id="node5" href="$classtetgenio.xhtml#ad181a411db5dbcb1e11af7641e268bd5" title="tetgenio::findnextfield" alt="" coords="188,59,335,88"/>
+<area shape="rect" id="node7" href="$classtetgenio.xhtml#a9a30e99d63fb2288525cdbda2b887c38" title="tetgenio::findnextnumber" alt="" coords="179,112,344,141"/>
+<area shape="rect" id="node9" href="$classtetgenio.xhtml#aca2fd0dcb29ee3cd313a74d55df2ff2c" title="tetgenio::init" alt="" coords="215,165,308,195"/>
+</map>

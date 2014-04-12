@@ -1,0 +1,7 @@
+<map id="orient4d" name="orient4d">
+<area shape="rect" id="node3" href="$predicates_8cxx.xhtml#a3dfeb25725cfe0223d6f12b2a42e1bee" title="orient4dadapt" alt="" coords="124,57,223,87"/>
+<area shape="rect" id="node5" href="$predicates_8cxx.xhtml#abdcdaa8948d9a2937154d9d67f67da8d" title="scale_expansion_zeroelim" alt="" coords="423,5,596,35"/>
+<area shape="rect" id="node7" href="$predicates_8cxx.xhtml#a37646a7e0014e10c612e946bc95aeeea" title="fast_expansion_sum\l_zeroelim" alt="" coords="439,79,580,126"/>
+<area shape="rect" id="node9" href="$predicates_8cxx.xhtml#a3487d9f90ea72da543d5d38b3dab1fbc" title="estimate" alt="" coords="287,84,359,113"/>
+<area shape="rect" id="node11" href="$predicates_8cxx.xhtml#a791d324c7c5cbf5c78da3488d54495a6" title="orient4dexact" alt="" coords="273,31,372,60"/>
+</map>

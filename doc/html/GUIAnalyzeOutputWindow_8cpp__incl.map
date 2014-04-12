@@ -1,19 +1,19 @@
 <map id="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUIAnalyzeOutputWindow.cpp" name="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUIAnalyzeOutputWindow.cpp">
-<area shape="rect" id="node3" href="$GUIAnalyzeOutputWindow_8h.xhtml" title="GUIAnalyzeOutputWindow.h" alt="" coords="519,272,708,301"/>
-<area shape="rect" id="node16" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="296,504,475,533"/>
-<area shape="rect" id="node46" href="$GUIMainWindow_8h.xhtml" title="GUIMainWindow.h" alt="" coords="773,117,904,147"/>
+<area shape="rect" id="node3" href="$GUIAnalyzeOutputWindow_8h.xhtml" title="GUIAnalyzeOutputWindow.h" alt="" coords="525,272,715,301"/>
+<area shape="rect" id="node16" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="288,504,467,533"/>
+<area shape="rect" id="node46" href="$GUIMainWindow_8h.xhtml" title="GUIMainWindow.h" alt="" coords="795,117,925,147"/>
 <area shape="rect" id="node95" href="$SimpleAnalyzerApp_8h.xhtml" title="../SimpleAnalyzerApp.h" alt="" coords="373,427,531,456"/>
 <area shape="rect" id="node102" href="$Analyzer_8h.xhtml" title="../processing/Analyzer.h" alt="" coords="5,427,168,456"/>
 <area shape="rect" id="node5" href="$PropertiesBox_8h.xhtml" title="PropertiesBox.h" alt="" coords="437,349,552,379"/>
 <area shape="rect" id="node9" href="$GUITimeline_8h.xhtml" title="GUITimeline.h" alt="" coords="192,427,299,456"/>
-<area shape="rect" id="node21" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="551,659,692,706"/>
-<area shape="rect" id="node29" href="$utils_8h.xhtml" title="utils.h" alt="" coords="659,581,715,611"/>
-<area shape="rect" id="node23" href="$GeometryClasses_8h.xhtml" title="GeometryClasses.h" alt="" coords="841,755,980,784"/>
+<area shape="rect" id="node21" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="543,659,684,706"/>
+<area shape="rect" id="node29" href="$utils_8h.xhtml" title="utils.h" alt="" coords="651,581,707,611"/>
+<area shape="rect" id="node23" href="$GeometryClasses_8h.xhtml" title="GeometryClasses.h" alt="" coords="833,755,972,784"/>
 <area shape="rect" id="node48" href="$GUIGLCanvas_8h.xhtml" title="GUIGLCanvas.h" alt="" coords="675,349,792,379"/>
-<area shape="rect" id="node63" href="$ViewpropBox_8h.xhtml" title="ViewpropBox.h" alt="" coords="1324,195,1433,224"/>
-<area shape="rect" id="node69" href="$GUIAnalyzePointWindow_8h.xhtml" title="GUIAnalyzePointWindow.h" alt="" coords="1331,504,1512,533"/>
-<area shape="rect" id="node72" href="$GUICutRenderWindow_8h.xhtml" title="GUICutRenderWindow.h" alt="" coords="995,195,1160,224"/>
+<area shape="rect" id="node63" href="$ViewpropBox_8h.xhtml" title="ViewpropBox.h" alt="" coords="1323,195,1432,224"/>
+<area shape="rect" id="node69" href="$GUIAnalyzePointWindow_8h.xhtml" title="GUIAnalyzePointWindow.h" alt="" coords="1320,504,1501,533"/>
+<area shape="rect" id="node72" href="$GUICutRenderWindow_8h.xhtml" title="GUICutRenderWindow.h" alt="" coords="993,195,1159,224"/>
 <area shape="rect" id="node50" href="$Renderer_8h.xhtml" title="Renderer.h" alt="" coords="787,427,872,456"/>
-<area shape="rect" id="node75" href="$GUIRenderCutCanvas_8h.xhtml" title="GUIRenderCutCanvas.h" alt="" coords="917,272,1083,301"/>
-<area shape="rect" id="node78" href="$GUIColorScalePanel_8h.xhtml" title="GUIColorScalePanel.h" alt="" coords="997,349,1152,379"/>
+<area shape="rect" id="node75" href="$GUIRenderCutCanvas_8h.xhtml" title="GUIRenderCutCanvas.h" alt="" coords="916,272,1081,301"/>
+<area shape="rect" id="node78" href="$GUIColorScalePanel_8h.xhtml" title="GUIColorScalePanel.h" alt="" coords="985,349,1140,379"/>
 </map>

@@ -128,6 +128,7 @@
 	Benötigen Sie auch Beispieldateien, Quellcode oder existiert kein fertiges Paket für ihr System, müssen Sie alle Dateien aus dem \pkname-Repository herunterladen. Folgen Sie dazu dem Link	\url{https://github.com/vroland/SimpleAnalyzer/archive/master.zip}
 	und laden Sie das die Zip-Datei herunter. Extrahieren Sie die Datei anschließend mithilfe der Archivverwaltungssoftware ihres Systems in ein Verzeichnis ihrer Wahl. Wenn Sie später auf Beispiele oder Quelltext zurückgreifen wollen, bietet sich hierfür Ihr HOME-Verzeichnis an. Informationen zum Entpacken von Archiven für die meisten debianbasierten Distributione finden Sie unter \url{http://wiki.ubuntuusers.de/Archivmanager}.\\
 	Wenn sie mit der Nutzung des Programms \emph{git} vertraut sind, können Sie alternativ auch folgende clone-URL verwenden:\\
+	
 	\url{https://github.com/vroland/SimpleAnalyzer.git}
 	\subsection{Installation Im Dateisystem}
 	\label{subsec:install}
@@ -221,7 +222,7 @@
 	\section{Verwendung}
 	Das \pkname -Programmpaket enthält vier Einzelprogramme. Hier sehen Sie eine Übersicht über die Programme und deren Funktion:\\
 	
-	\begin{tabular}{p{.31\textwidth}|p{.6\textwidth}}
+	\begin{tabular}{p{.31\linewidth}|p{.58\linewidth}}
 	\textsc{Programm} & \textsc{Funktion}\\
 	\hline
 	csvtosd & Wandelt Sensordaten von Character-separated values (.csv)-Dateien zu timed sensor data (.tsd)-Dateien um.\\
@@ -310,7 +311,7 @@
 	\setcounter{rownum}{0}
 	\textsc{Zeile} / \textsc{Standardwert} / \textsc{Beschreibung}\\
 	
-	\begin{tabular}{p{.03\textwidth}|p{.01\textwidth}|p{.8\textwidth}}
+	\begin{tabular}{p{.03\textwidth}|p{.02\textwidth}|p{.8\textwidth}}
 	\addtocounter{rownum}{1}\arabic{rownum} & 4 & Index der ersten Spalte in der .csv-Datei, die Sensordaten enthält\\
 	\addtocounter{rownum}{1}\arabic{rownum} & ; & Zeichen zur Spaltenabtrennung\\
 	\addtocounter{rownum}{1}\arabic{rownum} & 1 & Komma als Dezimaltrennzeichen zulassen\\
@@ -403,7 +404,7 @@
 	\setcounter{rownum}{0}
 	\textsc{Zeile} / \textsc{Standardwert} / \textsc{Beschreibung}\\
 	
-	\begin{tabular}{p{.03\textwidth}|p{.03\textwidth}|p{.8\textwidth}}
+	\begin{tabular}{p{.03\textwidth}|p{.05\textwidth}|p{.76\textwidth}}
 	\addtocounter{rownum}{1}\arabic{rownum} & 4 & Index der ersten Zeile in der ODiSI-Datei, die Sensordaten enthält\\
 	\addtocounter{rownum}{1}\arabic{rownum} & 1 & Komma als Dezimaltrennzeichen zulassen\\
 	\addtocounter{rownum}{1}\arabic{rownum} & 5 & Maximal zulässige Differenz zum Vorgängerwert für einen gültigen Messwert\\
@@ -427,7 +428,7 @@
 	\end{lstlisting}
 	Mögliche Argumente (teilweise mit alternativer Kurzform):\\
 	
-	\begin{tabular}{p{.13\textwidth}c|p{.7\textwidth}}
+	\begin{tabular}{p{.13\textwidth}c|p{.68\textwidth}}
 	-in1 & -i1 & \textbf{[benötigt]} Pfad zur ersten .tsd-Datei. Aus dieser Datei werden die Namen für die zusammengeführten Datensätze entnommen.\\
 	-in2 & -i2 & \textbf{[benötigt]} Pfad zur zweiten .tsd-Datei.\\
 	-out & -o & \textbf{[benötigt]} Pfad zur Ausgabedatei\\
@@ -695,6 +696,9 @@
 	Navigieren Sie im Hauptmenü zu \textbf{Analysieren - Übersicht} oder wählen Sie das entsprechende Symbol auf der Toolbar (s. \ref{subsec:toolbar_and_loading}), um eine Übersicht über den \textbf{Wärmeenergiegehalt} aller geladenen Objekte angezeigt zu bekommen. Angezeigt werden der \emph{des Objekts, Energiegehalt der einzelnen Materialien für alle mit diesem Objekt verknüpften Datensätze und das Volumen dieser}.
 	Wenn ein Objekt Zeit-bezogene Sensordaten besitzt, müssen Sie die zu analysierenden Zeitpunkte erst markieren(s. \ref{subsec:temp_vert}). 
 	\begin{hinweis}
+	Um die Analysedaten z.B. in ein Tabellenkalkulationsprogramm zu übernehmen, markieren Sie alle Zellen der Tabelle, indem Sie in diese klicken und anschließend die Tasten \textbf{[Strg]} + \textbf{[a]} drücken. Kopieren Sie nun deren Inhalte mit \textbf{[Strg]} + \textbf{[c]}. Die Werte sind nun in der Zwischenablage ihres Systems gespeichert und können in andere Programme wieder eingefügt werden.
+	\end{hinweis}
+	\begin{hinweis}
 	Solange Sie das Übersichtsfenster geöffnet haben, wird das Fenster automatisch aktualisiert, sobald Sie ein Objekt neu berechnen.
 	\end{hinweis}
 	\begin{hinweis}
@@ -710,7 +714,7 @@
 	\end{figure}
 	Um Informationen über einen einzelnen Punkt im Modell zu erhalten, wählen Sie das in Abbildung \ref{fig:sa_analyze_point} markierte Symbol in der Toolbar oder den Menüpunkt \textbf{Analysieren - Punkt}. Es öffnet sich ein Fenster, in dem Sie die Koordinaten des Punktes und den Interpolationsmodus festlegen können. Klicken Sie auf \textbf{[analysieren]}, um die Temperatur des Punktes in $^{\circ}\mathrm{C}$ anzuzeigen. Zusätzlich zeigt die Meldung, ob der Punkt inter- oder extrapoliert wurde. 
 	\begin{hinweis}
-	\dq extrapoliert\dq \space bedeutet nicht das er sich außerhalb des Objekts befindet, sondern dass der Punkt außerhalb des durch die Messpunkte umgebenen Volumens ist!
+	\dq extrapoliert\dq \space bedeutet nicht das er sich außerhalb des Objekts befindet, sondern dass der Punkt außerhalb des durch die Messpunkte umgebenen Volumens ist.
 	\end{hinweis}
 	\subsection{Temperaturverteilung einer Ebene}
 	\label{subsec:render_cut}

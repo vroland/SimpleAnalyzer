@@ -1,0 +1,50 @@
+<map id="tetgenmesh::sstpivot1" name="tetgenmesh::sstpivot1">
+<area shape="rect" id="node3" href="$classtetgenmesh.xhtml#a5d85611ca91db181e357457beb13a633" title="tetgenmesh::insertpoint" alt="" coords="235,712,392,741"/>
+<area shape="rect" id="node21" href="$classtetgenmesh.xhtml#a8dee14a42e35e4fe65944518eed4f7d3" title="tetgenmesh::delaunizesegments" alt="" coords="485,408,696,437"/>
+<area shape="rect" id="node30" href="$classtetgenmesh.xhtml#aa34a5188a4cee82197394560c388c348" title="tetgenmesh::refineregion" alt="" coords="1100,253,1265,283"/>
+<area shape="rect" id="node41" href="$classtetgenmesh.xhtml#a50e12e269b11573e6e1b91347ad19b37" title="tetgenmesh::recoversegments" alt="" coords="1084,664,1281,693"/>
+<area shape="rect" id="node50" href="$classtetgenmesh.xhtml#ace09080e4f274e0a48cd1728475878c9" title="tetgenmesh::recoversubfaces" alt="" coords="493,955,688,984"/>
+<area shape="rect" id="node58" href="$classtetgenmesh.xhtml#a6394d7b4d386e8d08077c39cd8983e0e" title="tetgenmesh::splitsegment" alt="" coords="804,1073,975,1103"/>
+<area shape="rect" id="node89" href="$classtetgenmesh.xhtml#a51147efb6aa8daeef94b7579997b23d0" title="tetgenmesh::scoutcrossedge" alt="" coords="1088,96,1277,125"/>
+<area shape="rect" id="node92" href="$classtetgenmesh.xhtml#a820c230ca5161419ee7d1d9a731a17af" title="tetgenmesh::carvecavity" alt="" coords="508,200,673,229"/>
+<area shape="rect" id="node96" href="$classtetgenmesh.xhtml#a114335d22e6317239085dcba0910a7e1" title="tetgenmesh::restorecavity" alt="" coords="1096,149,1269,179"/>
+<area shape="rect" id="node99" href="$classtetgenmesh.xhtml#ad34c3db4b465048cf061a3e2ae2ba34e" title="tetgenmesh::fillregion" alt="" coords="240,44,387,73"/>
+<area shape="rect" id="node105" href="$classtetgenmesh.xhtml#ad3277eea82fb5eb134c5eaa6abf5c18d" title="tetgenmesh::removevertexbyflips" alt="" coords="207,1279,420,1308"/>
+<area shape="rect" id="node107" href="$classtetgenmesh.xhtml#aae5530d808e30771e717c94cb8586f0b" title="tetgenmesh::suppressbdrysteinerpoint" alt="" coords="469,1432,712,1461"/>
+<area shape="rect" id="node130" href="$classtetgenmesh.xhtml#a7f8037ef5cacc7b4b38c81553f2d8180" title="tetgenmesh::checkseg4split" alt="" coords="221,1160,405,1189"/>
+<area shape="rect" id="node134" href="$classtetgenmesh.xhtml#ae2cbec9eb2c18f23e2046780841c9f6a" title="tetgenmesh::checksegments" alt="" coords="2133,1484,2323,1513"/>
+<area shape="rect" id="node137" href="$classtetgenmesh.xhtml#aa7ff4d59b68391bc6eb4998017a43b77" title="tetgenmesh::checkconforming" alt="" coords="215,1588,412,1617"/>
+<area shape="rect" id="node139" href="$classtetgenmesh.xhtml#a9074a5c187967e3d4a7a7851b4900c09" title="tetgenmesh::outsubsegments" alt="" coords="2381,1535,2576,1564"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#a5a5a0513d0bea7aa457eb0bc5fad1b02" title="tetgenmesh::incrementaldelaunay" alt="" coords="1865,651,2081,680"/>
+<area shape="rect" id="node26" href="$classtetgenmesh.xhtml#ab1a82368937a13996efae911b8b1fded" title="tetgenmesh::delaunizecavity" alt="" coords="497,355,684,384"/>
+<area shape="rect" id="node28" href="$classtetgenmesh.xhtml#a9c967ef25cfd6e06d6b9301302be3f70" title="tetgenmesh::insertpoint_cdt" alt="" coords="799,304,980,333"/>
+<area shape="rect" id="node37" href="$classtetgenmesh.xhtml#acb5fc751eaa4a4ddffbebedfa7b7382a" title="tetgenmesh::add_steinerpt\l_in_schoenhardtpoly" alt="" coords="503,733,679,779"/>
+<area shape="rect" id="node39" href="$classtetgenmesh.xhtml#a9d878a0e64588b0471a58e534affea8e" title="tetgenmesh::addsteiner4recoversegment" alt="" coords="760,664,1019,693"/>
+<area shape="rect" id="node46" href="$classtetgenmesh.xhtml#a3de6e9d82e74671af7f038043b5e9bcc" title="tetgenmesh::add_steinerpt\l_in_segment" alt="" coords="503,613,679,659"/>
+<area shape="rect" id="node53" href="$classtetgenmesh.xhtml#ac8205cae8e16f490b80d74975934ff74" title="tetgenmesh::insertconstrainedpoints" alt="" coords="773,907,1005,936"/>
+<area shape="rect" id="node62" href="$classtetgenmesh.xhtml#a3a8404870ab3c2e8ce4312d48c2b29f4" title="tetgenmesh::splitsubface" alt="" coords="1364,1073,1532,1103"/>
+<area shape="rect" id="node66" href="$classtetgenmesh.xhtml#aa752155eb1d18550a212dd40297f122e" title="tetgenmesh::splittetrahedron" alt="" coords="1880,1073,2067,1103"/>
+<area shape="rect" id="node81" href="$classtetgenmesh.xhtml#aa9540f310c97db99c989a02b0978ceec" title="tetgenmesh::splitsliver" alt="" coords="813,467,965,496"/>
+<area shape="rect" id="node7" href="$tetgen_8h.xhtml#ad3637eb4ffe7fda90667e67b7771d964" title="tetrahedralize" alt="" coords="2633,1156,2732,1185"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="2785,1082,2940,1129"/>
+<area shape="rect" id="node13" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="2781,1156,2944,1185"/>
+<area shape="rect" id="node19" href="$tetgen_8cxx.xhtml#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="2837,1209,2888,1239"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="3015,1078,3169,1125"/>
+<area shape="rect" id="node15" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="2992,1147,3192,1194"/>
+<area shape="rect" id="node17" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="3001,1217,3183,1247"/>
+<area shape="rect" id="node23" href="$classtetgenmesh.xhtml#aab64d62b3d2b048a38158fb2bf678624" title="tetgenmesh::constraineddelaunay" alt="" coords="1599,408,1815,437"/>
+<area shape="rect" id="node32" href="$classtetgenmesh.xhtml#a7579c3a44a54712623d9f9e5fc1dfbdc" title="tetgenmesh::constrainedfacets" alt="" coords="1348,201,1548,231"/>
+<area shape="rect" id="node43" href="$classtetgenmesh.xhtml#a1be7dce56688fbe7a97fc31f98b61c19" title="tetgenmesh::recoverboundary" alt="" coords="1351,765,1545,795"/>
+<area shape="rect" id="node55" href="$classtetgenmesh.xhtml#ab859365ca3dd3eafb77fac56d0ae3a03" title="tetgenmesh::insertconstrainedpoints" alt="" coords="1067,920,1299,949"/>
+<area shape="rect" id="node60" href="$classtetgenmesh.xhtml#a7af360f1ae413f9e0d7803ccae55b6d6" title="tetgenmesh::repairencsegs" alt="" coords="1093,1176,1272,1205"/>
+<area shape="rect" id="node70" href="$classtetgenmesh.xhtml#a477bbfde72103de66546d4ea3343b4a1" title="tetgenmesh::delaunayrefinement" alt="" coords="2373,1129,2584,1159"/>
+<area shape="rect" id="node64" href="$classtetgenmesh.xhtml#a701d4f317ed66df6a2e2b7b237e2386a" title="tetgenmesh::repairencfacs" alt="" coords="1619,971,1795,1000"/>
+<area shape="rect" id="node68" href="$classtetgenmesh.xhtml#a7c46c82d83099214115fa9719aefbd78" title="tetgenmesh::repairbadtets" alt="" coords="2141,1092,2315,1121"/>
+<area shape="rect" id="node83" href="$classtetgenmesh.xhtml#ad5c46c2f6c9adeed23fc8c64b682778d" title="tetgenmesh::removeslivers" alt="" coords="1359,485,1537,515"/>
+<area shape="rect" id="node85" href="$classtetgenmesh.xhtml#a8bb5c6ad8ccfa57f2a84e5a78295b263" title="tetgenmesh::optimizemesh" alt="" coords="1884,548,2063,577"/>
+<area shape="rect" id="node109" href="$classtetgenmesh.xhtml#affc448708b6df2b57048544d3efd6e3c" title="tetgenmesh::suppresssteinerpoints" alt="" coords="777,1432,1001,1461"/>
+<area shape="rect" id="node114" href="$classtetgenmesh.xhtml#a85e17b620820cbcb6cb47b565f822062" title="tetgenmesh::meshcoarsening" alt="" coords="2132,1380,2324,1409"/>
+<area shape="rect" id="node117" href="$classtetgenmesh.xhtml#a6755cfa20d8ea6ce62d059750657a292" title="tetgenmesh::lawsonflip3d" alt="" coords="505,1228,676,1257"/>
+<area shape="rect" id="node119" href="$classtetgenmesh.xhtml#ad71017c71bd2cac0232c410a651ed085" title="tetgenmesh::carveholes" alt="" coords="2399,1201,2559,1231"/>
+<area shape="rect" id="node126" href="$classtetgenmesh.xhtml#a4f6f365744005e9d9da43a7d8a1fbba8" title="tetgenmesh::recoverdelaunay" alt="" coords="1611,1329,1803,1359"/>
+</map>

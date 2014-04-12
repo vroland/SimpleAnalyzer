@@ -1,0 +1,11 @@
+<map id="tetgenmesh::orient4d_s" name="tetgenmesh::orient4d_s">
+<area shape="rect" id="node3" href="$predicates_8cxx.xhtml#ac18ea9102bdd2ef503dbf477748adfb5" title="orient4d" alt="" coords="257,93,324,122"/>
+<area shape="rect" id="node17" href="$classtetgenmesh.xhtml#a46fa5fabd0e8e806f7f8beb069732e21" title="tetgenmesh::pointmark" alt="" coords="213,225,368,254"/>
+<area shape="rect" id="node19" href="$predicates_8cxx.xhtml#a701f35178b28c7bbb94644665c0b058a" title="orient3d" alt="" coords="257,172,324,201"/>
+<area shape="rect" id="node5" href="$predicates_8cxx.xhtml#a3dfeb25725cfe0223d6f12b2a42e1bee" title="orient4dadapt" alt="" coords="417,81,516,110"/>
+<area shape="rect" id="node7" href="$predicates_8cxx.xhtml#abdcdaa8948d9a2937154d9d67f67da8d" title="scale_expansion_zeroelim" alt="" coords="716,25,889,54"/>
+<area shape="rect" id="node9" href="$predicates_8cxx.xhtml#a37646a7e0014e10c612e946bc95aeeea" title="fast_expansion_sum\l_zeroelim" alt="" coords="732,78,873,124"/>
+<area shape="rect" id="node11" href="$predicates_8cxx.xhtml#a3487d9f90ea72da543d5d38b3dab1fbc" title="estimate" alt="" coords="580,133,652,162"/>
+<area shape="rect" id="node13" href="$predicates_8cxx.xhtml#a791d324c7c5cbf5c78da3488d54495a6" title="orient4dexact" alt="" coords="567,29,665,58"/>
+<area shape="rect" id="node21" href="$predicates_8cxx.xhtml#ae16b246ccaad9f1d90f37590816c5fde" title="orient3dadapt" alt="" coords="417,178,516,208"/>
+</map>

@@ -1,44 +1,51 @@
 <map id="GUITimeline::findMaxValue" name="GUITimeline::findMaxValue">
-<area shape="rect" id="node3" href="$classGUITimeline.xhtml#a1fa405314a0be38d95798fdc205827c3" title="gibt den Index des aktuell ausgewählten Zeitpunkts zurück. " alt="" coords="249,5,404,35"/>
-<area shape="rect" id="node5" href="$classGUITimeline.xhtml#aec94daa9bf66cd493b970b8ebb1334d5" title="Gibt den minimal auswählbaren Index zurück. " alt="" coords="240,59,413,88"/>
-<area shape="rect" id="node7" href="$classGUITimeline.xhtml#a90b85dd56a32b3b35498a09b116b3610" title="Gibt den maximal auswählbaren Index zurück. " alt="" coords="237,112,416,141"/>
-<area shape="rect" id="node9" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. " alt="" coords="465,215,668,244"/>
-<area shape="rect" id="node11" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. " alt="" coords="719,195,916,242"/>
-<area shape="rect" id="node13" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="245,371,408,400"/>
-<area shape="rect" id="node116" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="245,292,408,321"/>
-<area shape="rect" id="node119" href="$classGUITimeline.xhtml#a0fa4ef5ed2e0fe5f416d9d4c75b86ebc" title="Setzt den Index des aktuell ausgewählten Zeitpunkts. " alt="" coords="249,869,404,899"/>
-<area shape="rect" id="node17" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="Setzt den Index des aktuell verwendeten Sensordatensatzes. " alt="" coords="468,422,665,469"/>
-<area shape="rect" id="node19" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="Berechnet die Temperaturverteilung für ein Objekt. " alt="" coords="484,319,649,348"/>
-<area shape="rect" id="node30" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="1645,681,1752,711"/>
-<area shape="rect" id="node38" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="1617,735,1780,764"/>
-<area shape="rect" id="node43" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Gibt das Skalarprodukt mit einem anderen Vektor. " alt="" coords="1625,867,1772,896"/>
-<area shape="rect" id="node111" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="484,543,649,572"/>
-<area shape="rect" id="node21" href="$classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion). " alt="" coords="745,265,889,295"/>
-<area shape="rect" id="node24" href="$MeshProcessor_8cpp.xhtml#ad2670c4e8381f9a0a89c65f5559ed421" title="interpolatePoint" alt="" coords="761,319,873,348"/>
-<area shape="rect" id="node26" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="965,319,1104,348"/>
-<area shape="rect" id="node28" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. " alt="" coords="1376,319,1565,348"/>
-<area shape="rect" id="node52" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze..." alt="" coords="1163,319,1317,348"/>
-<area shape="rect" id="node54" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="1153,837,1327,867"/>
-<area shape="rect" id="node48" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="1644,241,1753,271"/>
-<area shape="rect" id="node50" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="1643,319,1755,348"/>
-<area shape="rect" id="node32" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="1832,917,1944,947"/>
-<area shape="rect" id="node34" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="1832,1024,1944,1053"/>
-<area shape="rect" id="node36" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="1833,971,1943,1000"/>
-<area shape="rect" id="node56" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Testet, ob zwei Vektoren identisch sind. " alt="" coords="1637,1024,1760,1053"/>
-<area shape="rect" id="node61" href="$classTetrahedron.xhtml#a88afe41ae5991168ad51ba4dbb2e1a6b" title="Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Tetraeders zurück. " alt="" coords="1400,889,1541,919"/>
-<area shape="rect" id="node63" href="$classTetrahedron.xhtml#add51e42ab17afbd023d47a436ce24b0d" title="Gibt eine Referenz auf den Ortsvektor zum 1. " alt="" coords="1404,943,1537,972"/>
-<area shape="rect" id="node65" href="$classTetrahedron.xhtml#aa728c967f17e2b8408009b5f2b77a17a" title="Gibt eine Referenz auf den Ortsvektor zum 2. " alt="" coords="1404,996,1537,1025"/>
-<area shape="rect" id="node67" href="$classTetrahedron.xhtml#aa539a97f133ea621520121acb2ef4a7e" title="Gibt eine Referenz auf den Ortsvektor zum 3. " alt="" coords="1404,1049,1537,1079"/>
-<area shape="rect" id="node69" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. " alt="" coords="1416,1103,1525,1132"/>
-<area shape="rect" id="node73" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="1416,473,1525,503"/>
-<area shape="rect" id="node75" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. " alt="" coords="1416,527,1525,556"/>
-<area shape="rect" id="node77" href="$classTetrahedron.xhtml#a7308b7b73edeba7782dff551a03095bf" title="Gibt eine Referenz auf den Ortsvektor zum 3. " alt="" coords="1404,580,1537,609"/>
-<area shape="rect" id="node79" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="1403,684,1539,713"/>
-<area shape="rect" id="node84" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Normalisiert den Vektor. " alt="" coords="1628,788,1769,817"/>
-<area shape="rect" id="node88" href="$classVector3D.xhtml#a4bf1dcea68296f2f38f3574242933153" title="Gibt den Winkel zu einem anderen Vektor in RAD zurück. " alt="" coords="1396,1308,1545,1337"/>
-<area shape="rect" id="node93" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Gibt die Länge des Vektors zurück. " alt="" coords="1628,1308,1769,1337"/>
-<area shape="rect" id="node99" href="$classVector3D.xhtml#a42deb992ec2f44abfb5824ea4917135c" title="Gibt den Abstand zu einem anderen Vektor zurück. " alt="" coords="1613,1128,1784,1157"/>
-<area shape="rect" id="node106" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. " alt="" coords="1645,971,1752,1000"/>
-<area shape="rect" id="node95" href="$GeometryClasses_8cpp.xhtml#a73527f20206c906e9f333e0f233de13e" title="sqr" alt="" coords="1868,1217,1908,1247"/>
-<area shape="rect" id="node121" href="$classGUITimeline.xhtml#a417835c7c520d9fbcf65610d255245a1" title="Löst ein wxEVT_TIMELINE_CHANGE&#45;Event aus. " alt="" coords="477,1307,656,1354"/>
+<area shape="rect" id="node3" href="$classGUITimeline.xhtml#a1fa405314a0be38d95798fdc205827c3" title="gibt den Index des aktuell ausgewählten Zeitpunkts zurück. " alt="" coords="249,39,404,68"/>
+<area shape="rect" id="node5" href="$classGUITimeline.xhtml#aec94daa9bf66cd493b970b8ebb1334d5" title="Gibt den minimal auswählbaren Index zurück. " alt="" coords="240,92,413,121"/>
+<area shape="rect" id="node7" href="$classGUITimeline.xhtml#a90b85dd56a32b3b35498a09b116b3610" title="Gibt den maximal auswählbaren Index zurück. " alt="" coords="237,145,416,175"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. " alt="" coords="465,5,668,35"/>
+<area shape="rect" id="node11" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. " alt="" coords="735,331,932,378"/>
+<area shape="rect" id="node13" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="245,249,408,279"/>
+<area shape="rect" id="node46" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="245,443,408,472"/>
+<area shape="rect" id="node108" href="$classGUITimeline.xhtml#a0fa4ef5ed2e0fe5f416d9d4c75b86ebc" title="Setzt den Index des aktuell ausgewählten Zeitpunkts. " alt="" coords="249,852,404,881"/>
+<area shape="rect" id="node17" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="Setzt den Index des aktuell verwendeten Sensordatensatzes. " alt="" coords="468,271,665,318"/>
+<area shape="rect" id="node19" href="$classMeshProcessor.xhtml#a060c3815db33f8e52ac620ed2239ccc9" title="Berechnet die Temperaturverteilung für ein Objekt. " alt="" coords="484,443,649,472"/>
+<area shape="rect" id="node26" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="484,59,649,88"/>
+<area shape="rect" id="node28" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="513,112,620,141"/>
+<area shape="rect" id="node36" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="485,165,648,195"/>
+<area shape="rect" id="node41" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Gibt das Skalarprodukt mit einem anderen Vektor. " alt="" coords="493,219,640,248"/>
+<area shape="rect" id="node21" href="$classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion). " alt="" coords="761,401,905,431"/>
+<area shape="rect" id="node24" href="$MeshProcessor_8cpp.xhtml#ad2670c4e8381f9a0a89c65f5559ed421" title="interpolatePoint" alt="" coords="777,455,889,484"/>
+<area shape="rect" id="node30" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="777,112,889,141"/>
+<area shape="rect" id="node32" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="777,165,889,195"/>
+<area shape="rect" id="node34" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="779,219,888,248"/>
+<area shape="rect" id="node48" href="$tetgen_8cxx.xhtml#ab4ae6011f260dcbf4d8b5342810a84f8" title="tetrahedralize" alt="" coords="517,1175,616,1204"/>
+<area shape="rect" id="node50" href="$classtetgenmesh.xhtml#adaad2fe67160e2d4564fcf20fcb841ee" title="tetgenmesh::tetgenmesh" alt="" coords="751,1468,916,1497"/>
+<area shape="rect" id="node52" href="$classtetgenmesh.xhtml#a0ed29d97e57db7035017c312dc6aaa2f" title="tetgenmesh::initializepools" alt="" coords="745,1521,921,1551"/>
+<area shape="rect" id="node54" href="$classtetgenmesh.xhtml#aca4cdd18ce8662d83d00f3be302e594d" title="tetgenmesh::transfernodes" alt="" coords="745,1575,921,1604"/>
+<area shape="rect" id="node56" href="$predicates_8cxx.xhtml#a134ce675a468e3bfd83448f647dbe8a7" title="exactinit" alt="" coords="799,1628,868,1657"/>
+<area shape="rect" id="node58" href="$classtetgenmesh.xhtml#ad44b2ea3720da385a0cbcf306884e126" title="tetgenmesh::reconstructmesh" alt="" coords="736,1681,931,1711"/>
+<area shape="rect" id="node60" href="$classtetgenmesh.xhtml#a5a5a0513d0bea7aa457eb0bc5fad1b02" title="tetgenmesh::incrementaldelaunay" alt="" coords="725,1735,941,1764"/>
+<area shape="rect" id="node62" href="$classtetgenmesh.xhtml#a0c51cd3511d2b0ef9d0d45fe8b546b2e" title="tetgenmesh::meshsurface" alt="" coords="747,1788,920,1817"/>
+<area shape="rect" id="node64" href="$classtetgenmesh.xhtml#a2ceb55fb1e757b0083a41ad34aabab56" title="tetgenmesh::jettisonnodes" alt="" coords="999,1815,1172,1844"/>
+<area shape="rect" id="node66" href="$classtetgenmesh.xhtml#a854e8e8d77d2d1b2b74372a87a1a7717" title="tetgenmesh::detectinterfaces" alt="" coords="739,1892,928,1921"/>
+<area shape="rect" id="node68" href="$classtetgenmesh.xhtml#a7822fa38f096959d128175922aa57460" title="tetgenmesh::outnodes" alt="" coords="759,1945,908,1975"/>
+<area shape="rect" id="node70" href="$classtetgenmesh.xhtml#a357976a26bd46ca731e3492f6d96e7eb" title="tetgenmesh::outsubfaces" alt="" coords="749,508,917,537"/>
+<area shape="rect" id="node72" href="$classtetgenmesh.xhtml#a78dbc1dcd69c15ee0f7f226be1078008" title="tetgenmesh::interpolatemeshsize" alt="" coords="727,561,940,591"/>
+<area shape="rect" id="node74" href="$classtetgenmesh.xhtml#a1be7dce56688fbe7a97fc31f98b61c19" title="tetgenmesh::recoverboundary" alt="" coords="736,615,931,644"/>
+<area shape="rect" id="node76" href="$classtetgenmesh.xhtml#aab64d62b3d2b048a38158fb2bf678624" title="tetgenmesh::constraineddelaunay" alt="" coords="725,668,941,697"/>
+<area shape="rect" id="node78" href="$classtetgenmesh.xhtml#ad71017c71bd2cac0232c410a651ed085" title="tetgenmesh::carveholes" alt="" coords="753,721,913,751"/>
+<area shape="rect" id="node80" href="$classtetgenmesh.xhtml#affc448708b6df2b57048544d3efd6e3c" title="tetgenmesh::suppresssteinerpoints" alt="" coords="721,775,945,804"/>
+<area shape="rect" id="node82" href="$classtetgenmesh.xhtml#a85e17b620820cbcb6cb47b565f822062" title="tetgenmesh::meshcoarsening" alt="" coords="737,828,929,857"/>
+<area shape="rect" id="node84" href="$classtetgenmesh.xhtml#a4f6f365744005e9d9da43a7d8a1fbba8" title="tetgenmesh::recoverdelaunay" alt="" coords="737,881,929,911"/>
+<area shape="rect" id="node86" href="$classtetgenmesh.xhtml#ac8205cae8e16f490b80d74975934ff74" title="tetgenmesh::insertconstrainedpoints" alt="" coords="717,935,949,964"/>
+<area shape="rect" id="node88" href="$classtetgenmesh.xhtml#a477bbfde72103de66546d4ea3343b4a1" title="tetgenmesh::delaunayrefinement" alt="" coords="728,988,939,1017"/>
+<area shape="rect" id="node90" href="$classtetgenmesh.xhtml#a8bb5c6ad8ccfa57f2a84e5a78295b263" title="tetgenmesh::optimizemesh" alt="" coords="744,1041,923,1071"/>
+<area shape="rect" id="node93" href="$classtetgenmesh.xhtml#a2442f784a429111586a323a185009e68" title="tetgenmesh::highorder" alt="" coords="759,1095,908,1124"/>
+<area shape="rect" id="node95" href="$classtetgenmesh.xhtml#a5c66b2436d9a9600ce2bfcb164eb4057" title="tetgenmesh::outelements" alt="" coords="749,1148,917,1177"/>
+<area shape="rect" id="node97" href="$classtetgenmesh.xhtml#a66e4aa0af0703d1cb1a88e6d5f5a7fe6" title="tetgenmesh::outfaces" alt="" coords="760,1201,907,1231"/>
+<area shape="rect" id="node99" href="$classtetgenmesh.xhtml#a761d7284859037c6060a3526bff309b9" title="tetgenmesh::outhullfaces" alt="" coords="749,1255,917,1284"/>
+<area shape="rect" id="node101" href="$classtetgenmesh.xhtml#ad3e1b0a623146c7bf47e9fdf0dc905e9" title="tetgenmesh::outedges" alt="" coords="759,1308,908,1337"/>
+<area shape="rect" id="node103" href="$classtetgenmesh.xhtml#a9074a5c187967e3d4a7a7851b4900c09" title="tetgenmesh::outsubsegments" alt="" coords="736,1361,931,1391"/>
+<area shape="rect" id="node105" href="$classtetgenmesh.xhtml#a7f7239417b0e75bb293eaba2f2ff4ff8" title="tetgenmesh::outmetrics" alt="" coords="755,1415,912,1444"/>
+<area shape="rect" id="node110" href="$classGUITimeline.xhtml#a417835c7c520d9fbcf65610d255245a1" title="Löst ein wxEVT_TIMELINE_CHANGE&#45;Event aus. " alt="" coords="477,1227,656,1274"/>
 </map>

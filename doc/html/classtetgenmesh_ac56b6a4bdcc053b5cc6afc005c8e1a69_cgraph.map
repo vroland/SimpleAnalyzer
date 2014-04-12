@@ -1,0 +1,15 @@
+<map id="tetgenmesh::makesegmentendpointsmap" name="tetgenmesh::makesegmentendpointsmap">
+<area shape="rect" id="node3" href="$classtetgenmesh_1_1memorypool.xhtml#a623b101e4e2f249d8b7e5dba65c3f7e2" title="tetgenmesh::memorypool\l::traversalinit" alt="" coords="329,5,497,51"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#ae50ecae1d69935b12a4fa7ca843011d7" title="tetgenmesh::shellfacetraverse" alt="" coords="315,75,512,104"/>
+<area shape="rect" id="node9" href="$classtetgenmesh.xhtml#a9e2a0e8ac94c6273dd98c83b6c4bb0d9" title="tetgenmesh::senext2" alt="" coords="341,128,485,157"/>
+<area shape="rect" id="node11" href="$classtetgenmesh.xhtml#a088e275c2a89691864c08d3bfe2c0460" title="tetgenmesh::spivotself" alt="" coords="336,181,491,211"/>
+<area shape="rect" id="node15" href="$classtetgenmesh.xhtml#a55db9a054b722d91a17b82d442f88f4c" title="tetgenmesh::sorg" alt="" coords="352,235,475,264"/>
+<area shape="rect" id="node17" href="$classtetgenmesh.xhtml#aa6017928ea3dc0b8ba39e7f24ea312b2" title="tetgenmesh::sdest" alt="" coords="348,288,479,317"/>
+<area shape="rect" id="node19" href="$classtetgenmesh.xhtml#ada5d50fbd8ccc1c82389b0b3450ce98e" title="tetgenmesh::setfacetindex" alt="" coords="325,341,501,371"/>
+<area shape="rect" id="node21" href="$classtetgenmesh.xhtml#a5e0c9efed1fb3a19ed5c2b0721086840" title="tetgenmesh::senext" alt="" coords="345,395,481,424"/>
+<area shape="rect" id="node23" href="$classtetgenmesh.xhtml#a867b8f5e8312c7a918eb96813a6f6de7" title="tetgenmesh::sesymself" alt="" coords="335,448,492,477"/>
+<area shape="rect" id="node25" href="$classtetgenmesh.xhtml#aec1136555f9371102995738aabe1e552" title="tetgenmesh::senextself" alt="" coords="335,501,492,531"/>
+<area shape="rect" id="node27" href="$classtetgenmesh_1_1arraypool.xhtml#afb546c70f7728e3e0d58e2aada464437" title="tetgenmesh::arraypool\l::newindex" alt="" coords="339,554,488,601"/>
+<area shape="rect" id="node7" href="$classtetgenmesh_1_1memorypool.xhtml#a151fe73459d0fa9a7262d0030fecf291" title="tetgenmesh::memorypool\l::traverse" alt="" coords="561,66,729,113"/>
+<area shape="rect" id="node13" href="$classtetgenmesh.xhtml#ac5a50a5f6e277b5b95d58e40f3d58c2f" title="tetgenmesh::sdecode" alt="" coords="572,181,719,211"/>
+</map>

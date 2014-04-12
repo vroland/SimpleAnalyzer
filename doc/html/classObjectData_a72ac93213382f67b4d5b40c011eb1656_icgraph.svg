@@ -146,15 +146,15 @@ var sectionId = 'dynsection-12';
 <path fill="none" stroke="midnightblue" d="M96.0011,-164.476C117.42,-145.53 153.973,-115.559 190,-97 201.382,-91.1366 214.398,-86.3285 226.536,-82.5506"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="93.4091,-162.099 88.3081,-171.386 98.0866,-167.307 93.4091,-162.099"/>
 </g>
-<!-- Node18 -->
-<g id="node37" class="node"><title>Node18</title>
+<!-- Node17 -->
+<g id="node35" class="node"><title>Node17</title>
 <a xlink:href="classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" target="_top" xlink:title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. ">
 <polygon fill="none" stroke="black" points="210.5,-15.5 210.5,-36.5 327.5,-36.5 327.5,-15.5 210.5,-15.5"/>
 <text text-anchor="middle" x="269" y="-23.5" font-family="Helvetica,sans-Serif" font-size="10.00">Analyzer::analyzePoint</text>
 </a>
 </g>
-<!-- Node1&#45;&gt;Node18 -->
-<g id="edge38" class="edge"><title>Node1&#45;&gt;Node18</title>
+<!-- Node1&#45;&gt;Node17 -->
+<g id="edge36" class="edge"><title>Node1&#45;&gt;Node17</title>
 <path fill="none" stroke="midnightblue" d="M88.9323,-162.584C107.272,-134.301 145.025,-81.8919 190,-52 199.861,-45.4462 211.51,-40.4234 222.79,-36.6231"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="85.8779,-160.865 83.4745,-171.184 91.7881,-164.616 85.8779,-160.865"/>
 </g>
@@ -249,7 +249,7 @@ var sectionId = 'dynsection-12';
 <polygon fill="midnightblue" stroke="midnightblue" points="337.535,-256.5 327.535,-260 337.535,-263.5 337.535,-256.5"/>
 </g>
 <!-- Node15&#45;&gt;Node14 -->
-<g id="edge36" class="edge"><title>Node15&#45;&gt;Node14</title>
+<g id="edge34" class="edge"><title>Node15&#45;&gt;Node14</title>
 <path fill="none" stroke="midnightblue" d="M324.293,-84.852C351.189,-91.1033 383.12,-98.5251 408.57,-104.441"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="324.789,-81.3739 314.256,-82.519 323.204,-88.1922 324.789,-81.3739"/>
 </g>
@@ -266,29 +266,16 @@ var sectionId = 'dynsection-12';
 <path fill="none" stroke="midnightblue" d="M340.938,-70.8334C356.077,-70.5879 371.99,-70.3299 386.941,-70.0874"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="340.544,-67.3393 330.602,-71.001 340.658,-74.3383 340.544,-67.3393"/>
 </g>
-<!-- Node17 -->
-<g id="node34" class="node"><title>Node17</title>
-<a xlink:href="classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" target="_top" xlink:title="Der Konstruktor. ">
-<polygon fill="none" stroke="black" points="581,-52 581,-86 721,-86 721,-52 581,-52"/>
-<text text-anchor="start" x="589" y="-73" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzeOutputWindow</text>
-<text text-anchor="middle" x="651" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">::GUIAnalyzeOutputWindow</text>
-</a>
-</g>
-<!-- Node16&#45;&gt;Node17 -->
-<g id="edge34" class="edge"><title>Node16&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M531.27,-69C547.566,-69 564.677,-69 580.7,-69"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="531.245,-65.5001 521.245,-69 531.245,-72.5001 531.245,-65.5001"/>
-</g>
-<!-- Node19 -->
-<g id="node39" class="node"><title>Node19</title>
+<!-- Node18 -->
+<g id="node37" class="node"><title>Node18</title>
 <a xlink:href="classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" target="_top" xlink:title="Event&#45;Tabellendeklaration für wxWidgets. ">
 <polygon fill="none" stroke="black" points="390,-0 390,-34 518,-34 518,-0 390,-0"/>
 <text text-anchor="start" x="398" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">GUIAnalyzePointWindow</text>
 <text text-anchor="middle" x="454" y="-8" font-family="Helvetica,sans-Serif" font-size="10.00">::analyzePoint</text>
 </a>
 </g>
-<!-- Node18&#45;&gt;Node19 -->
-<g id="edge40" class="edge"><title>Node18&#45;&gt;Node19</title>
+<!-- Node17&#45;&gt;Node18 -->
+<g id="edge38" class="edge"><title>Node17&#45;&gt;Node18</title>
 <path fill="none" stroke="midnightblue" d="M337.933,-22.6465C354.905,-21.8208 373.01,-20.94 389.75,-20.1257"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="337.353,-19.1705 327.535,-23.1523 337.693,-26.1622 337.353,-19.1705"/>
 </g>

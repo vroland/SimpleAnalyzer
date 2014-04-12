@@ -1,48 +1,51 @@
 <map id="GUICutRenderWindow::renderImage" name="GUICutRenderWindow::renderImage">
 <area shape="rect" id="node3" href="$classGUIRenderCutCanvas.xhtml#a3f1bece4366e82377ec3754921351929" title="Gibt das Temperaturskala&#45;Objekt zurück. " alt="" coords="236,5,391,51"/>
-<area shape="rect" id="node5" href="$classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="Zeichnet die Temperaturskala neu. " alt="" coords="243,425,384,471"/>
-<area shape="rect" id="node9" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets&#45;String um. " alt="" coords="485,373,611,403"/>
-<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289" title="Gibt die aktuell eingestellten Eigenschaften für die zweidimensionale Temperaturverteilung zurück..." alt="" coords="228,1151,399,1198"/>
-<area shape="rect" id="node13" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. " alt="" coords="939,896,1048,925"/>
-<area shape="rect" id="node15" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="1147,301,1259,331"/>
-<area shape="rect" id="node17" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="1149,965,1256,995"/>
-<area shape="rect" id="node25" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="939,789,1048,819"/>
-<area shape="rect" id="node27" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="925,480,1061,509"/>
-<area shape="rect" id="node31" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="1121,681,1284,711"/>
-<area shape="rect" id="node36" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Normalisiert den Vektor. " alt="" coords="1132,1724,1273,1753"/>
-<area shape="rect" id="node40" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="465,896,631,925"/>
-<area shape="rect" id="node42" href="$classGUIRenderCutCanvas.xhtml#ab20c8e437704facc41fa8c3c111ffa85" title="Setzt die aktuell angezeigte Grafik. " alt="" coords="236,1221,391,1267"/>
-<area shape="rect" id="node44" href="$classGUIRenderCutCanvas.xhtml#a88c49bc069d6e1a40b68dcfce8fd9bf7" title="Setzt die zum anzeigen von werten verwendete Temperaturverteilung. " alt="" coords="236,1290,391,1337"/>
-<area shape="rect" id="node46" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. " alt="" coords="212,1360,415,1389"/>
-<area shape="rect" id="node48" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. " alt="" coords="215,1413,412,1459"/>
-<area shape="rect" id="node50" href="$namespaceUtils.xhtml#adc0438a85ca31977c95f5d27090d5346" title="Kopiert die Eigenschaften eines Sensorpunktes in einen Anderen. " alt="" coords="236,1483,391,1512"/>
-<area shape="rect" id="node52" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="263,687,364,716"/>
-<area shape="rect" id="node143" href="$classTriangle.xhtml#a9320d1ab83c104352bf5e8f2c8274334" title="Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Dreiecks zurück. " alt="" coords="255,1536,372,1565"/>
-<area shape="rect" id="node7" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Wandelt eine Farbe im HSV&#45;Format ins RGB&#45;Format um. " alt="" coords="489,427,607,456"/>
-<area shape="rect" id="node19" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="1336,1019,1448,1048"/>
-<area shape="rect" id="node21" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="1336,1072,1448,1101"/>
-<area shape="rect" id="node23" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="1337,965,1447,995"/>
-<area shape="rect" id="node55" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="939,685,1048,715"/>
-<area shape="rect" id="node57" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. " alt="" coords="1149,1019,1256,1048"/>
-<area shape="rect" id="node63" href="$namespaceUtils.xhtml#af8fc5d6dab27f759ab5d76757a53023f" title="Testet, ob sich ein Punkt innerhalb eines Körpers befindet. " alt="" coords="472,635,624,664"/>
-<area shape="rect" id="node86" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)..." alt="" coords="711,528,839,557"/>
-<area shape="rect" id="node88" href="$classInterpolator.xhtml#a2f9927fc580de7d2f94d85e6ca3ee3e3" title="Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion). " alt="" coords="476,789,620,819"/>
-<area shape="rect" id="node90" href="$namespaceUtils.xhtml#a6a0ae18a42e2d206bc1b43da27820fe2" title="Gibt den inter/extrapolierten Wert eines Punktes zurück. " alt="" coords="479,843,617,872"/>
-<area shape="rect" id="node141" href="$namespaceUtils.xhtml#abb647325616858e0fad55290c36ea03b" title="Begrenzt einen Wert auf den Bereich 0..1. " alt="" coords="491,531,605,560"/>
-<area shape="rect" id="node65" href="$namespaceUtils.xhtml#a5f216cc7011a901130db81321b565334" title="Testet, ob ein Strahl ein Dreieck schneidet. " alt="" coords="685,635,864,664"/>
-<area shape="rect" id="node79" href="$namespaceUtils.xhtml#a9b995a1220a78be108b19bda4b776332" title="Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. " alt="" coords="680,581,869,611"/>
-<area shape="rect" id="node69" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. " alt="" coords="939,843,1048,872"/>
-<area shape="rect" id="node74" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Gibt das Skalarprodukt mit einem anderen Vektor. " alt="" coords="1129,912,1276,941"/>
-<area shape="rect" id="node93" href="$namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547" title="Ermöglicht das generieren aller möglichen Verteilungen von 4 Elementen auf dataPointCount Plätze..." alt="" coords="697,843,852,872"/>
-<area shape="rect" id="node95" href="$classInterpolator.xhtml#a30e714ca6dff9b5745d029f95af1420a" title="Ermittelt den Wert für einen beliebigen Punkt im Raum. " alt="" coords="688,1151,861,1180"/>
-<area shape="rect" id="node97" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Testet, ob zwei Vektoren identisch sind. " alt="" coords="1141,1123,1264,1152"/>
-<area shape="rect" id="node102" href="$classTetrahedron.xhtml#a88afe41ae5991168ad51ba4dbb2e1a6b" title="Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Tetraeders zurück. " alt="" coords="923,1357,1064,1387"/>
-<area shape="rect" id="node104" href="$classTetrahedron.xhtml#add51e42ab17afbd023d47a436ce24b0d" title="Gibt eine Referenz auf den Ortsvektor zum 1. " alt="" coords="927,1411,1060,1440"/>
-<area shape="rect" id="node106" href="$classTetrahedron.xhtml#aa728c967f17e2b8408009b5f2b77a17a" title="Gibt eine Referenz auf den Ortsvektor zum 2. " alt="" coords="927,1515,1060,1544"/>
-<area shape="rect" id="node108" href="$classTetrahedron.xhtml#aa539a97f133ea621520121acb2ef4a7e" title="Gibt eine Referenz auf den Ortsvektor zum 3. " alt="" coords="927,1568,1060,1597"/>
-<area shape="rect" id="node115" href="$classTetrahedron.xhtml#a7308b7b73edeba7782dff551a03095bf" title="Gibt eine Referenz auf den Ortsvektor zum 3. " alt="" coords="927,1621,1060,1651"/>
-<area shape="rect" id="node120" href="$classVector3D.xhtml#a4bf1dcea68296f2f38f3574242933153" title="Gibt den Winkel zu einem anderen Vektor in RAD zurück. " alt="" coords="919,1304,1068,1333"/>
-<area shape="rect" id="node125" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Gibt die Länge des Vektors zurück. " alt="" coords="1132,1331,1273,1360"/>
-<area shape="rect" id="node131" href="$classVector3D.xhtml#a42deb992ec2f44abfb5824ea4917135c" title="Gibt den Abstand zu einem anderen Vektor zurück. " alt="" coords="1117,1227,1288,1256"/>
-<area shape="rect" id="node127" href="$GeometryClasses_8cpp.xhtml#a73527f20206c906e9f333e0f233de13e" title="sqr" alt="" coords="1372,1279,1412,1308"/>
+<area shape="rect" id="node5" href="$classGUIColorScalePanel.xhtml#a73f647d4f5eeb6b653777bb4c55696fa" title="Zeichnet die Temperaturskala neu. " alt="" coords="243,178,384,225"/>
+<area shape="rect" id="node9" href="$namespaceUtils.xhtml#a233ff9a0b34b10195a434f1ff66323b8" title="Wandelt eine Fließkommazahl in einen wxWidgets&#45;String um. " alt="" coords="517,187,643,216"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a01c347a6ff7868df925e46e48fc1a289" title="Gibt die aktuell eingestellten Eigenschaften für die zweidimensionale Temperaturverteilung zurück..." alt="" coords="228,554,399,601"/>
+<area shape="rect" id="node13" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. " alt="" coords="259,624,368,653"/>
+<area shape="rect" id="node15" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="524,240,636,269"/>
+<area shape="rect" id="node17" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="527,293,633,323"/>
+<area shape="rect" id="node25" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="259,677,368,707"/>
+<area shape="rect" id="node27" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="245,400,381,429"/>
+<area shape="rect" id="node31" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="499,347,661,376"/>
+<area shape="rect" id="node36" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Normalisiert den Vektor. " alt="" coords="509,400,651,429"/>
+<area shape="rect" id="node40" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="497,75,663,104"/>
+<area shape="rect" id="node42" href="$tetgen_8cxx.xhtml#ab4ae6011f260dcbf4d8b5342810a84f8" title="tetrahedralize" alt="" coords="264,904,363,933"/>
+<area shape="rect" id="node95" href="$classGUIRenderCutCanvas.xhtml#ab20c8e437704facc41fa8c3c111ffa85" title="Setzt die aktuell angezeigte Grafik. " alt="" coords="236,957,391,1003"/>
+<area shape="rect" id="node97" href="$classGUIRenderCutCanvas.xhtml#a88c49bc069d6e1a40b68dcfce8fd9bf7" title="Setzt die zum anzeigen von werten verwendete Temperaturverteilung. " alt="" coords="236,1026,391,1073"/>
+<area shape="rect" id="node99" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. " alt="" coords="212,1096,415,1125"/>
+<area shape="rect" id="node101" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. " alt="" coords="215,1149,412,1195"/>
+<area shape="rect" id="node103" href="$namespaceUtils.xhtml#adc0438a85ca31977c95f5d27090d5346" title="Kopiert die Eigenschaften eines Sensorpunktes in einen Anderen. " alt="" coords="236,1219,391,1248"/>
+<area shape="rect" id="node105" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="263,125,364,155"/>
+<area shape="rect" id="node110" href="$classTriangle.xhtml#a9320d1ab83c104352bf5e8f2c8274334" title="Gibt eine Referenz auf den Ortsvektor zum index+1 Punkt des Dreiecks zurück. " alt="" coords="255,1272,372,1301"/>
+<area shape="rect" id="node7" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Wandelt eine Farbe im HSV&#45;Format ins RGB&#45;Format um. " alt="" coords="521,131,639,160"/>
+<area shape="rect" id="node19" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="776,320,888,349"/>
+<area shape="rect" id="node21" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="776,373,888,403"/>
+<area shape="rect" id="node23" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="777,267,887,296"/>
+<area shape="rect" id="node44" href="$classtetgenmesh.xhtml#adaad2fe67160e2d4564fcf20fcb841ee" title="tetgenmesh::tetgenmesh" alt="" coords="497,1571,663,1600"/>
+<area shape="rect" id="node46" href="$classtetgenmesh.xhtml#a0ed29d97e57db7035017c312dc6aaa2f" title="tetgenmesh::initializepools" alt="" coords="492,1624,668,1653"/>
+<area shape="rect" id="node48" href="$classtetgenmesh.xhtml#aca4cdd18ce8662d83d00f3be302e594d" title="tetgenmesh::transfernodes" alt="" coords="492,1677,668,1707"/>
+<area shape="rect" id="node50" href="$predicates_8cxx.xhtml#a134ce675a468e3bfd83448f647dbe8a7" title="exactinit" alt="" coords="545,1731,615,1760"/>
+<area shape="rect" id="node52" href="$classtetgenmesh.xhtml#ad44b2ea3720da385a0cbcf306884e126" title="tetgenmesh::reconstructmesh" alt="" coords="483,453,677,483"/>
+<area shape="rect" id="node54" href="$classtetgenmesh.xhtml#a5a5a0513d0bea7aa457eb0bc5fad1b02" title="tetgenmesh::incrementaldelaunay" alt="" coords="472,507,688,536"/>
+<area shape="rect" id="node56" href="$classtetgenmesh.xhtml#a0c51cd3511d2b0ef9d0d45fe8b546b2e" title="tetgenmesh::meshsurface" alt="" coords="493,611,667,640"/>
+<area shape="rect" id="node58" href="$classtetgenmesh.xhtml#a2ceb55fb1e757b0083a41ad34aabab56" title="tetgenmesh::jettisonnodes" alt="" coords="745,585,919,615"/>
+<area shape="rect" id="node60" href="$classtetgenmesh.xhtml#a854e8e8d77d2d1b2b74372a87a1a7717" title="tetgenmesh::detectinterfaces" alt="" coords="485,664,675,693"/>
+<area shape="rect" id="node62" href="$classtetgenmesh.xhtml#a7822fa38f096959d128175922aa57460" title="tetgenmesh::outnodes" alt="" coords="505,717,655,747"/>
+<area shape="rect" id="node64" href="$classtetgenmesh.xhtml#a357976a26bd46ca731e3492f6d96e7eb" title="tetgenmesh::outsubfaces" alt="" coords="496,771,664,800"/>
+<area shape="rect" id="node66" href="$classtetgenmesh.xhtml#a78dbc1dcd69c15ee0f7f226be1078008" title="tetgenmesh::interpolatemeshsize" alt="" coords="473,824,687,853"/>
+<area shape="rect" id="node68" href="$classtetgenmesh.xhtml#a1be7dce56688fbe7a97fc31f98b61c19" title="tetgenmesh::recoverboundary" alt="" coords="483,877,677,907"/>
+<area shape="rect" id="node70" href="$classtetgenmesh.xhtml#aab64d62b3d2b048a38158fb2bf678624" title="tetgenmesh::constraineddelaunay" alt="" coords="472,931,688,960"/>
+<area shape="rect" id="node72" href="$classtetgenmesh.xhtml#ad71017c71bd2cac0232c410a651ed085" title="tetgenmesh::carveholes" alt="" coords="500,984,660,1013"/>
+<area shape="rect" id="node74" href="$classtetgenmesh.xhtml#affc448708b6df2b57048544d3efd6e3c" title="tetgenmesh::suppresssteinerpoints" alt="" coords="468,1037,692,1067"/>
+<area shape="rect" id="node76" href="$classtetgenmesh.xhtml#a85e17b620820cbcb6cb47b565f822062" title="tetgenmesh::meshcoarsening" alt="" coords="484,1091,676,1120"/>
+<area shape="rect" id="node78" href="$classtetgenmesh.xhtml#a4f6f365744005e9d9da43a7d8a1fbba8" title="tetgenmesh::recoverdelaunay" alt="" coords="484,1144,676,1173"/>
+<area shape="rect" id="node80" href="$classtetgenmesh.xhtml#ac8205cae8e16f490b80d74975934ff74" title="tetgenmesh::insertconstrainedpoints" alt="" coords="464,1197,696,1227"/>
+<area shape="rect" id="node82" href="$classtetgenmesh.xhtml#a477bbfde72103de66546d4ea3343b4a1" title="tetgenmesh::delaunayrefinement" alt="" coords="475,1251,685,1280"/>
+<area shape="rect" id="node84" href="$classtetgenmesh.xhtml#a8bb5c6ad8ccfa57f2a84e5a78295b263" title="tetgenmesh::optimizemesh" alt="" coords="491,1304,669,1333"/>
+<area shape="rect" id="node87" href="$classtetgenmesh.xhtml#a2442f784a429111586a323a185009e68" title="tetgenmesh::highorder" alt="" coords="505,1357,655,1387"/>
+<area shape="rect" id="node89" href="$classtetgenmesh.xhtml#a5c66b2436d9a9600ce2bfcb164eb4057" title="tetgenmesh::outelements" alt="" coords="496,1411,664,1440"/>
+<area shape="rect" id="node91" href="$classtetgenmesh.xhtml#a66e4aa0af0703d1cb1a88e6d5f5a7fe6" title="tetgenmesh::outfaces" alt="" coords="507,1464,653,1493"/>
+<area shape="rect" id="node93" href="$classtetgenmesh.xhtml#a761d7284859037c6060a3526bff309b9" title="tetgenmesh::outhullfaces" alt="" coords="496,1517,664,1547"/>
 </map>

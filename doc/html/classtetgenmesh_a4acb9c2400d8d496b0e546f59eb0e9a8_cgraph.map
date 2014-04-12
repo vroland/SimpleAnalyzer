@@ -1,0 +1,27 @@
+<map id="tetgenmesh::checkregular" name="tetgenmesh::checkregular">
+<area shape="rect" id="node3" href="$classtetgenmesh_1_1memorypool.xhtml#a623b101e4e2f249d8b7e5dba65c3f7e2" title="tetgenmesh::memorypool\l::traversalinit" alt="" coords="248,5,416,51"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#a11da430cc44475b41fdbfc80de511192" title="tetgenmesh::tetrahedrontraverse" alt="" coords="227,75,437,104"/>
+<area shape="rect" id="node9" href="$classtetgenmesh.xhtml#ab53db19d6ec094dfcd35dcfc02270d72" title="tetgenmesh::fsym" alt="" coords="269,128,395,157"/>
+<area shape="rect" id="node13" href="$classtetgenmesh.xhtml#ae2d4d27d7babd7b0e60956cc00bca89a" title="tetgenmesh::org" alt="" coords="275,181,389,211"/>
+<area shape="rect" id="node15" href="$classtetgenmesh.xhtml#ad56ef3448cd57e637acf373622bfb769" title="tetgenmesh::dest" alt="" coords="271,235,393,264"/>
+<area shape="rect" id="node17" href="$classtetgenmesh.xhtml#a9287d941f7f432ca846d5c004603af40" title="tetgenmesh::apex" alt="" coords="269,288,395,317"/>
+<area shape="rect" id="node19" href="$classtetgenmesh.xhtml#a2ff33d38976a7bc134380ef8f15c4519" title="tetgenmesh::oppo" alt="" coords="269,341,395,371"/>
+<area shape="rect" id="node21" href="$predicates_8cxx.xhtml#a6856d0058088615e8f10f983a6bdef08" title="insphere" alt="" coords="536,393,605,423"/>
+<area shape="rect" id="node35" href="$classtetgenmesh.xhtml#ae0d6ddfffb8154c7658b8dd17fc51412" title="tetgenmesh::insphere_s" alt="" coords="252,445,412,475"/>
+<area shape="rect" id="node38" href="$classtetgenmesh.xhtml#a46fa5fabd0e8e806f7f8beb069732e21" title="tetgenmesh::pointmark" alt="" coords="493,512,648,541"/>
+<area shape="rect" id="node47" href="$predicates_8cxx.xhtml#ac18ea9102bdd2ef503dbf477748adfb5" title="orient4d" alt="" coords="537,577,604,607"/>
+<area shape="rect" id="node58" href="$classtetgenmesh.xhtml#ac73e403159c27dbb3d6cbf99f01925dd" title="tetgenmesh::orient4d_s" alt="" coords="253,549,411,579"/>
+<area shape="rect" id="node63" href="$classtetgenmesh.xhtml#a9f17777c1c04712dfa0ac34e8fbd0a4a" title="tetgenmesh::tspivot" alt="" coords="264,653,400,683"/>
+<area shape="rect" id="node7" href="$classtetgenmesh_1_1memorypool.xhtml#a151fe73459d0fa9a7262d0030fecf291" title="tetgenmesh::memorypool\l::traverse" alt="" coords="487,62,655,109"/>
+<area shape="rect" id="node11" href="$classtetgenmesh.xhtml#a809cfdec35ae9a52670e045823a302c0" title="tetgenmesh::decode" alt="" coords="501,132,640,161"/>
+<area shape="rect" id="node23" href="$predicates_8cxx.xhtml#aff1beabe144889954e1a63692f0f4d00" title="insphereadapt" alt="" coords="705,383,807,412"/>
+<area shape="rect" id="node25" href="$predicates_8cxx.xhtml#abdcdaa8948d9a2937154d9d67f67da8d" title="scale_expansion_zeroelim" alt="" coords="1009,588,1183,617"/>
+<area shape="rect" id="node27" href="$predicates_8cxx.xhtml#a37646a7e0014e10c612e946bc95aeeea" title="fast_expansion_sum\l_zeroelim" alt="" coords="1025,478,1167,525"/>
+<area shape="rect" id="node29" href="$predicates_8cxx.xhtml#a3487d9f90ea72da543d5d38b3dab1fbc" title="estimate" alt="" coords="872,435,944,464"/>
+<area shape="rect" id="node31" href="$predicates_8cxx.xhtml#a1b7f36a00bcca4ab972133f190d07b35" title="insphereexact" alt="" coords="857,331,959,360"/>
+<area shape="rect" id="node40" href="$predicates_8cxx.xhtml#a701f35178b28c7bbb94644665c0b058a" title="orient3d" alt="" coords="537,459,604,488"/>
+<area shape="rect" id="node42" href="$predicates_8cxx.xhtml#ae16b246ccaad9f1d90f37590816c5fde" title="orient3dadapt" alt="" coords="707,477,805,507"/>
+<area shape="rect" id="node49" href="$predicates_8cxx.xhtml#a3dfeb25725cfe0223d6f12b2a42e1bee" title="orient4dadapt" alt="" coords="707,577,805,607"/>
+<area shape="rect" id="node54" href="$predicates_8cxx.xhtml#a791d324c7c5cbf5c78da3488d54495a6" title="orient4dexact" alt="" coords="859,640,957,669"/>
+<area shape="rect" id="node65" href="$classtetgenmesh.xhtml#ac5a50a5f6e277b5b95d58e40f3d58c2f" title="tetgenmesh::sdecode" alt="" coords="497,653,644,683"/>
+</map>

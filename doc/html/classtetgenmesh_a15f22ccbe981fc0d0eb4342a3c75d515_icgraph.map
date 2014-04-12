@@ -1,0 +1,16 @@
+<map id="tetgenmesh::segsegadjacent" name="tetgenmesh::segsegadjacent">
+<area shape="rect" id="node3" href="$classtetgenmesh.xhtml#a6394d7b4d386e8d08077c39cd8983e0e" title="tetgenmesh::splitsegment" alt="" coords="244,60,415,89"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#a7af360f1ae413f9e0d7803ccae55b6d6" title="tetgenmesh::repairencsegs" alt="" coords="464,60,643,89"/>
+<area shape="rect" id="node7" href="$classtetgenmesh.xhtml#a3a8404870ab3c2e8ce4312d48c2b29f4" title="tetgenmesh::splitsubface" alt="" coords="691,112,859,141"/>
+<area shape="rect" id="node11" href="$classtetgenmesh.xhtml#aa752155eb1d18550a212dd40297f122e" title="tetgenmesh::splittetrahedron" alt="" coords="1131,75,1317,104"/>
+<area shape="rect" id="node15" href="$classtetgenmesh.xhtml#a477bbfde72103de66546d4ea3343b4a1" title="tetgenmesh::delaunayrefinement" alt="" coords="1587,75,1797,104"/>
+<area shape="rect" id="node9" href="$classtetgenmesh.xhtml#a701d4f317ed66df6a2e2b7b237e2386a" title="tetgenmesh::repairencfacs" alt="" coords="907,163,1083,192"/>
+<area shape="rect" id="node13" href="$classtetgenmesh.xhtml#a7c46c82d83099214115fa9719aefbd78" title="tetgenmesh::repairbadtets" alt="" coords="1365,75,1539,104"/>
+<area shape="rect" id="node17" href="$tetgen_8h.xhtml#ad3637eb4ffe7fda90667e67b7771d964" title="tetrahedralize" alt="" coords="1847,75,1945,104"/>
+<area shape="rect" id="node19" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="1999,5,2153,51"/>
+<area shape="rect" id="node23" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="1995,75,2157,104"/>
+<area shape="rect" id="node29" href="$tetgen_8cxx.xhtml#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="2051,128,2101,157"/>
+<area shape="rect" id="node21" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="2228,5,2383,51"/>
+<area shape="rect" id="node25" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="2205,127,2405,174"/>
+<area shape="rect" id="node27" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="2215,75,2396,104"/>
+</map>

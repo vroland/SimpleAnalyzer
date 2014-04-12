@@ -6,7 +6,7 @@
 <area shape="rect" id="node26" href="$classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0" title="Überträgt die Eigenschaften des aktiven Objekts in die GUI. " alt="" coords="261,303,467,350"/>
 <area shape="rect" id="node28" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="520,367,701,396"/>
 <area shape="rect" id="node30" href="$classAnalyzer.xhtml#a2a7b5f169f664ccd9f206e508cba78ef" title="Ermittelt Daten für ein Objekt. " alt="" coords="283,424,445,453"/>
-<area shape="rect" id="node37" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. " alt="" coords="287,485,441,515"/>
+<area shape="rect" id="node35" href="$classAnalyzer.xhtml#a8f73ee0aa71ae395a74b43dc76b35458" title="Ermittelt Daten für einen Punkt am aktuell ausgewählten Zeitpunkt. " alt="" coords="287,485,441,515"/>
 <area shape="rect" id="node5" href="$classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d" title="Lädt ein Objekt und erste Sensordaten. " alt="" coords="525,59,696,88"/>
 <area shape="rect" id="node9" href="$classObjectData.xhtml#a351c17608005c849cb0f26e44beee2ec" title="Lädt einfache Sensordaten und verknüpft sie mit dem Objekt. " alt="" coords="517,5,704,35"/>
 <area shape="rect" id="node7" href="$classGUIMainWindow.xhtml#a9fd9f2be8f45cb5433193f5d28c924bc" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="756,59,991,88"/>
@@ -15,6 +15,5 @@
 <area shape="rect" id="node18" href="$classGUIMainWindow.xhtml#ab6b1fb242c4b529764093a092349f560" title="Öffnet den Dialog zum Importieren zeitbezogener Sensordaten. " alt="" coords="752,112,995,141"/>
 <area shape="rect" id="node22" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="533,165,688,211"/>
 <area shape="rect" id="node32" href="$classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc" title="Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die aktualisierten ..." alt="" coords="521,419,700,466"/>
-<area shape="rect" id="node34" href="$classGUIAnalyzeOutputWindow.xhtml#af9407245a6b2a0478579c4d592a31e63" title="Der Konstruktor. " alt="" coords="780,419,967,466"/>
-<area shape="rect" id="node39" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="525,489,696,535"/>
+<area shape="rect" id="node37" href="$classGUIAnalyzePointWindow.xhtml#aa84ea9958e8b41423f01316d01ba5151" title="Event&#45;Tabellendeklaration für wxWidgets. " alt="" coords="525,489,696,535"/>
 </map>

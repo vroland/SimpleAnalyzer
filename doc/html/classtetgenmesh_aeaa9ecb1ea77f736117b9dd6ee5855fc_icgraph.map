@@ -1,0 +1,13 @@
+<map id="tetgenmesh::gettetrahedron" name="tetgenmesh::gettetrahedron">
+<area shape="rect" id="node3" href="$classtetgenmesh.xhtml#a3d724f195ed9c3f5e1378d1f4f0c5282" title="tetgenmesh::improvequalitybyflips" alt="" coords="253,29,472,59"/>
+<area shape="rect" id="node21" href="$classtetgenmesh.xhtml#a1d652618e67ac4ff3057373e15016181" title="tetgenmesh::improvequalitybysmoothing" alt="" coords="235,83,491,112"/>
+<area shape="rect" id="node24" href="$classtetgenmesh.xhtml#ad5c46c2f6c9adeed23fc8c64b682778d" title="tetgenmesh::removeslivers" alt="" coords="273,136,452,165"/>
+<area shape="rect" id="node5" href="$classtetgenmesh.xhtml#a8bb5c6ad8ccfa57f2a84e5a78295b263" title="tetgenmesh::optimizemesh" alt="" coords="539,83,717,112"/>
+<area shape="rect" id="node7" href="$tetgen_8h.xhtml#ad3637eb4ffe7fda90667e67b7771d964" title="tetrahedralize" alt="" coords="767,83,865,112"/>
+<area shape="rect" id="node9" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="919,9,1073,55"/>
+<area shape="rect" id="node13" href="$classObjectData.xhtml#af3a850833d08eb9b45357449f455e24d" title="Zerlegt das Objekt in Tetraeder (Schnittstelle zur Tetgen&#45;Bibliothek) und Berechnet die Temperaturver..." alt="" coords="915,83,1077,112"/>
+<area shape="rect" id="node19" href="$tetgen_8cxx.xhtml#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="971,136,1021,165"/>
+<area shape="rect" id="node11" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="1148,5,1303,51"/>
+<area shape="rect" id="node15" href="$classGUIMainWindow.xhtml#a0c2de30274c7f52ff74ec1217e47a9e5" title="Berechnet die 3D&#45;Temperaturverteilung neu. " alt="" coords="1125,74,1325,121"/>
+<area shape="rect" id="node17" href="$classGUITimeline.xhtml#a099f3654aa6e7ea04df861851a0e9ec8" title="Sucht den Zeitpunkt zwischen zwei markierten Stellen auf der Sensordaten&#45;Zeitleiste, für den der Wäremeenergiegehalt maximal wird. " alt="" coords="1135,144,1316,173"/>
+</map>
