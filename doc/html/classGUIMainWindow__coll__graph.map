@@ -1,27 +1,21 @@
 <map id="GUIMainWindow" name="GUIMainWindow">
-<area shape="rect" id="node52" href="$classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. " alt="" coords="1927,99,2081,128"/>
-<area shape="rect" id="node60" href="$classGUIAnalyzeOutputWindow.xhtml" title="Übersichtsfenster über die Analysedaten. " alt="" coords="1915,45,2093,75"/>
-<area shape="rect" id="node4" href="$classPropertiesBox.xhtml" title="Oberfläche zum Verändern/Anzeigen der Eigenschaften eines Objekts. " alt="" coords="1952,152,2056,181"/>
-<area shape="rect" id="node63" href="$classViewpropBox.xhtml" title="Oberfläche zum Verändern/Anzeigen der Visualisierungsoptionen. " alt="" coords="1955,213,2053,243"/>
-<area shape="rect" id="node8" href="$classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. " alt="" coords="1673,145,1767,175"/>
-<area shape="rect" id="node55" href="$classGUIRenderCutCanvas.xhtml" title="Zeichenfläche für die 2D&#45;Temperaturverteilung. " alt="" coords="1643,77,1797,107"/>
-<area shape="rect" id="node12" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; string \&gt;" alt="" coords="1313,197,1452,227"/>
-<area shape="rect" id="node14" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; int \&gt;" alt="" coords="1321,144,1444,173"/>
-<area shape="rect" id="node16" href="$classGUIGLCanvas.xhtml" title="Zeichenfläche für das 3D&#45;Fenster. " alt="" coords="1951,281,2057,311"/>
-<area shape="rect" id="node20" href="$classRenderer.xhtml" title="Zeichnet den Inhalt der 3D&#45;Fensters. " alt="" coords="1683,281,1757,311"/>
-<area shape="rect" id="node22" href="$structRenderer_1_1Viewport__info.xhtml" title="Informationen über die Ansicht des Modells (Virtuelle Kamera) und welche Elemente dargestellt werden..." alt="" coords="1301,251,1464,280"/>
-<area shape="rect" id="node24" href="$classTriangle.xhtml" title="Ein durch 3 Ortsvektoren beschriebenes Dreieck. " alt="" coords="1037,281,1104,311"/>
-<area shape="rect" id="node49" href="$structUtils_1_1CutRender__info.xhtml" title="Daten zur Darstellung einer 2D&#45;Temperaturverteilungs&#45;Ebene. " alt="" coords="1309,304,1456,333"/>
-<area shape="rect" id="node26" href="$classVector3D.xhtml" title="3D&#45;Vektorklasse mit nützlichen Operationen. " alt="" coords="759,239,836,268"/>
-<area shape="rect" id="node29" href="$classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. " alt="" coords="1339,357,1427,387"/>
-<area shape="rect" id="node31" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData\l::MaterialData \&gt;" alt="" coords="989,407,1152,454"/>
-<area shape="rect" id="node33" href="$structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. " alt="" coords="712,416,883,445"/>
-<area shape="rect" id="node35" href="$classtetgenio.xhtml" title="tetgenio" alt="" coords="519,416,585,445"/>
-<area shape="rect" id="node37" href="$structtetgenio_1_1vorofacet.xhtml" title="tetgenio::vorofacet" alt="" coords="248,336,379,365"/>
-<area shape="rect" id="node39" href="$structtetgenio_1_1facet.xhtml" title="tetgenio::facet" alt="" coords="261,389,365,419"/>
-<area shape="rect" id="node41" href="$structtetgenio_1_1polygon.xhtml" title="tetgenio::polygon" alt="" coords="7,389,127,419"/>
-<area shape="rect" id="node43" href="$structtetgenio_1_1pointparam.xhtml" title="tetgenio::pointparam" alt="" coords="244,443,383,472"/>
-<area shape="rect" id="node45" href="$structtetgenio_1_1voroedge.xhtml" title="tetgenio::voroedge" alt="" coords="249,496,377,525"/>
-<area shape="rect" id="node47" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; SensorData \&gt;" alt="" coords="983,355,1159,384"/>
-<area shape="rect" id="node58" href="$classGUIColorScalePanel.xhtml" title="Farbige Temperaturskala für zweidimensionale Temperaturverteilung. " alt="" coords="1312,32,1453,61"/>
+<area shape="rect" id="node40" href="$classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. " alt="" coords="1220,99,1375,128"/>
+<area shape="rect" id="node48" href="$classGUIAnalyzeOutputWindow.xhtml" title="Übersichtsfenster über die Analysedaten. " alt="" coords="1208,45,1387,75"/>
+<area shape="rect" id="node4" href="$classPropertiesBox.xhtml" title="Oberfläche zum Verändern/Anzeigen der Eigenschaften eines Objekts. " alt="" coords="1245,152,1349,181"/>
+<area shape="rect" id="node51" href="$classViewpropBox.xhtml" title="Oberfläche zum Verändern/Anzeigen der Visualisierungsoptionen. " alt="" coords="1248,213,1347,243"/>
+<area shape="rect" id="node8" href="$classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. " alt="" coords="967,145,1060,175"/>
+<area shape="rect" id="node43" href="$classGUIRenderCutCanvas.xhtml" title="Zeichenfläche für die 2D&#45;Temperaturverteilung. " alt="" coords="936,77,1091,107"/>
+<area shape="rect" id="node12" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; string \&gt;" alt="" coords="607,197,745,227"/>
+<area shape="rect" id="node14" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; int \&gt;" alt="" coords="615,144,737,173"/>
+<area shape="rect" id="node16" href="$classGUIGLCanvas.xhtml" title="Zeichenfläche für das 3D&#45;Fenster. " alt="" coords="1244,281,1351,311"/>
+<area shape="rect" id="node20" href="$classRenderer.xhtml" title="Zeichnet den Inhalt der 3D&#45;Fensters. " alt="" coords="976,281,1051,311"/>
+<area shape="rect" id="node22" href="$structRenderer_1_1Viewport__info.xhtml" title="Informationen über die Ansicht des Modells (Virtuelle Kamera) und welche Elemente dargestellt werden..." alt="" coords="595,251,757,280"/>
+<area shape="rect" id="node24" href="$classTriangle.xhtml" title="Ein durch 3 Ortsvektoren beschriebenes Dreieck. " alt="" coords="331,281,397,311"/>
+<area shape="rect" id="node37" href="$structUtils_1_1CutRender__info.xhtml" title="Daten zur Darstellung einer 2D&#45;Temperaturverteilungs&#45;Ebene. " alt="" coords="603,304,749,333"/>
+<area shape="rect" id="node26" href="$classVector3D.xhtml" title="3D&#45;Vektorklasse mit nützlichen Operationen. " alt="" coords="52,239,129,268"/>
+<area shape="rect" id="node29" href="$classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. " alt="" coords="632,357,720,387"/>
+<area shape="rect" id="node31" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData\l::MaterialData \&gt;" alt="" coords="283,407,445,454"/>
+<area shape="rect" id="node33" href="$structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. " alt="" coords="5,416,176,445"/>
+<area shape="rect" id="node35" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; SensorData \&gt;" alt="" coords="276,355,452,384"/>
+<area shape="rect" id="node46" href="$classGUIColorScalePanel.xhtml" title="Farbige Temperaturskala für zweidimensionale Temperaturverteilung. " alt="" coords="605,32,747,61"/>
 </map>

@@ -1,11 +1,5 @@
 <map id="ObjectData" name="ObjectData">
-<area shape="rect" id="node2" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData\l::MaterialData \&gt;" alt="" coords="219,406,381,453"/>
-<area shape="rect" id="node4" href="$structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. " alt="" coords="215,309,385,339"/>
-<area shape="rect" id="node6" href="$classtetgenio.xhtml" title="tetgenio" alt="" coords="267,197,333,227"/>
-<area shape="rect" id="node8" href="$structtetgenio_1_1vorofacet.xhtml" title="tetgenio::vorofacet" alt="" coords="5,101,136,131"/>
-<area shape="rect" id="node10" href="$structtetgenio_1_1facet.xhtml" title="tetgenio::facet" alt="" coords="160,101,264,131"/>
-<area shape="rect" id="node12" href="$structtetgenio_1_1polygon.xhtml" title="tetgenio::polygon" alt="" coords="152,5,272,35"/>
-<area shape="rect" id="node14" href="$structtetgenio_1_1pointparam.xhtml" title="tetgenio::pointparam" alt="" coords="288,101,427,131"/>
-<area shape="rect" id="node16" href="$structtetgenio_1_1voroedge.xhtml" title="tetgenio::voroedge" alt="" coords="451,101,579,131"/>
-<area shape="rect" id="node18" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; SensorData \&gt;" alt="" coords="405,415,581,444"/>
+<area shape="rect" id="node2" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData\l::MaterialData \&gt;" alt="" coords="9,102,172,149"/>
+<area shape="rect" id="node4" href="$structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. " alt="" coords="5,5,176,35"/>
+<area shape="rect" id="node6" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; SensorData \&gt;" alt="" coords="196,111,372,140"/>
 </map>

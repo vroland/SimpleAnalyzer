@@ -1,25 +1,10 @@
 var searchData=
 [
-  ['o2edgelist',['o2edgelist',['../classtetgenio.xhtml#a0bf45168ac1af3d5b5ccaf8fe4cb13e3',1,'tetgenio']]],
-  ['o2facelist',['o2facelist',['../classtetgenio.xhtml#aad1e2f66ad5c438fb2bee5d510fdca19',1,'tetgenio']]],
-  ['object',['object',['../classRenderer.xhtml#a4ad4a42fe6bfd32ff3ef4bb1d59f8f96',1,'Renderer::object()'],['../classtetgenbehavior.xhtml#ae01337ff20025a815a4f2e4d8c3d2871',1,'tetgenbehavior::object()']]],
-  ['objectbytes',['objectbytes',['../classtetgenmesh_1_1arraypool.xhtml#a469ac2a2833a25faa0f99ab011122e2d',1,'tetgenmesh::arraypool']]],
-  ['objects',['objects',['../classtetgenmesh_1_1arraypool.xhtml#a23345232309fd68d2e3afa6d017299b0',1,'tetgenmesh::arraypool']]],
-  ['objectsperblock',['objectsperblock',['../classtetgenmesh_1_1arraypool.xhtml#a2b6ba46461d5c8f0e6043bdd111246dd',1,'tetgenmesh::arraypool']]],
-  ['objectsperblockmark',['objectsperblockmark',['../classtetgenmesh_1_1arraypool.xhtml#a662031b2a9978bfc3be39ce90bd3bf0a',1,'tetgenmesh::arraypool']]],
+  ['object',['object',['../classRenderer.xhtml#a4ad4a42fe6bfd32ff3ef4bb1d59f8f96',1,'Renderer']]],
   ['objnameedit',['objNameEdit',['../classPropertiesBox.xhtml#a7bb26289d5da39d7996c794216f4d89b',1,'PropertiesBox']]],
   ['objnamelbl',['objNameLbl',['../classPropertiesBox.xhtml#ac281563a94d4cdffd51084d88cafc692',1,'PropertiesBox']]],
   ['objwidth',['objwidth',['../structOdisiToSdConverter_1_1Options.xhtml#a88d153166692e5bb6a4a37d453b2193c',1,'OdisiToSdConverter::Options']]],
   ['offset',['offset',['../structTsdMerger_1_1Options.xhtml#a01b3881ab882a6ec9690220bef2207b8',1,'TsdMerger::Options']]],
-  ['oppopivot',['oppopivot',['../classtetgenmesh.xhtml#a6ca1afb964b1b34272d978ddbc0686a9',1,'tetgenmesh']]],
   ['optionslbl',['optionslbl',['../classGUICutRenderWindow.xhtml#a3317d0e8526d4a11168e86f673576ee3',1,'GUICutRenderWindow']]],
-  ['optlevel',['optlevel',['../classtetgenbehavior.xhtml#ae6d1777b2e5f9dad3921c778fc735717',1,'tetgenbehavior']]],
-  ['optmaxdihedral',['optmaxdihedral',['../classtetgenbehavior.xhtml#a191cab44548550697e3d672c9966c61b',1,'tetgenbehavior']]],
-  ['optminslidihed',['optminslidihed',['../classtetgenbehavior.xhtml#a7298676875d7609798023ec2df17ccb9',1,'tetgenbehavior']]],
-  ['optminsmtdihed',['optminsmtdihed',['../classtetgenbehavior.xhtml#a3f4246164c85bd2d1f88ed4e9c739398',1,'tetgenbehavior']]],
-  ['opts',['opts',['../classCsvToSdConverter.xhtml#aed83889861a110c9913adb5b9f4d9eb3',1,'CsvToSdConverter::opts()'],['../classTsdMerger.xhtml#a974c4c249c8a33dd1030bb0c83a94afc',1,'TsdMerger::opts()'],['../classOdisiToSdConverter.xhtml#a032865606668d520887b2b164913539d',1,'OdisiToSdConverter::opts()']]],
-  ['optscheme',['optscheme',['../classtetgenbehavior.xhtml#a4e5be08acac6b661a03e57efedd83ac9',1,'tetgenbehavior']]],
-  ['order',['order',['../classtetgenbehavior.xhtml#a47550f681968e6674f3c78b395d59df8',1,'tetgenbehavior']]],
-  ['orgpivot',['orgpivot',['../classtetgenmesh.xhtml#a65e14fb4bf9fa6a240a9441ab73bdec5',1,'tetgenmesh']]],
-  ['outfilename',['outfilename',['../classtetgenbehavior.xhtml#aa066e0b8f2b5b3d0f9e5c6b74e8eadc4',1,'tetgenbehavior']]]
+  ['opts',['opts',['../classCsvToSdConverter.xhtml#aed83889861a110c9913adb5b9f4d9eb3',1,'CsvToSdConverter::opts()'],['../classTsdMerger.xhtml#a974c4c249c8a33dd1030bb0c83a94afc',1,'TsdMerger::opts()'],['../classOdisiToSdConverter.xhtml#a032865606668d520887b2b164913539d',1,'OdisiToSdConverter::opts()']]]
 ];

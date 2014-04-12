@@ -1,14 +1,8 @@
 <map id="SimpleAnalyzerApp" name="SimpleAnalyzerApp">
-<area shape="rect" id="node4" href="$structUtils_1_1Visualization__info.xhtml" title="Informationen über die Farbgebung bei der Visualisierung. " alt="" coords="172,616,329,645"/>
-<area shape="rect" id="node6" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData * \&gt;" alt="" coords="353,616,535,645"/>
-<area shape="rect" id="node8" href="$classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. " alt="" coords="400,520,488,549"/>
-<area shape="rect" id="node10" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData\l::MaterialData \&gt;" alt="" coords="219,406,381,453"/>
-<area shape="rect" id="node12" href="$structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. " alt="" coords="215,309,385,339"/>
-<area shape="rect" id="node14" href="$classtetgenio.xhtml" title="tetgenio" alt="" coords="267,197,333,227"/>
-<area shape="rect" id="node16" href="$structtetgenio_1_1vorofacet.xhtml" title="tetgenio::vorofacet" alt="" coords="5,101,136,131"/>
-<area shape="rect" id="node18" href="$structtetgenio_1_1facet.xhtml" title="tetgenio::facet" alt="" coords="160,101,264,131"/>
-<area shape="rect" id="node20" href="$structtetgenio_1_1polygon.xhtml" title="tetgenio::polygon" alt="" coords="152,5,272,35"/>
-<area shape="rect" id="node22" href="$structtetgenio_1_1pointparam.xhtml" title="tetgenio::pointparam" alt="" coords="288,101,427,131"/>
-<area shape="rect" id="node24" href="$structtetgenio_1_1voroedge.xhtml" title="tetgenio::voroedge" alt="" coords="451,101,579,131"/>
-<area shape="rect" id="node26" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; SensorData \&gt;" alt="" coords="405,415,581,444"/>
+<area shape="rect" id="node4" href="$structUtils_1_1Visualization__info.xhtml" title="Informationen über die Farbgebung bei der Visualisierung. " alt="" coords="91,312,248,341"/>
+<area shape="rect" id="node6" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData * \&gt;" alt="" coords="272,312,453,341"/>
+<area shape="rect" id="node8" href="$classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. " alt="" coords="319,216,407,245"/>
+<area shape="rect" id="node10" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData\l::MaterialData \&gt;" alt="" coords="137,102,300,149"/>
+<area shape="rect" id="node12" href="$structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. " alt="" coords="133,5,304,35"/>
+<area shape="rect" id="node14" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; SensorData \&gt;" alt="" coords="324,111,500,140"/>
 </map>

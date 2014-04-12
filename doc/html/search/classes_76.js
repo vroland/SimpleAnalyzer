@@ -12,7 +12,5 @@ var searchData=
   ['vector_3c_20vector_3c_20utils_3a_3asensorpoint_20_3e_20_3e',['vector&lt; vector&lt; Utils::SensorPoint &gt; &gt;',['../classstd_1_1vector.xhtml',1,'std']]],
   ['viewport_5finfo',['Viewport_info',['../structRenderer_1_1Viewport__info.xhtml',1,'Renderer']]],
   ['viewpropbox',['ViewpropBox',['../classViewpropBox.xhtml',1,'']]],
-  ['visualization_5finfo',['Visualization_info',['../structUtils_1_1Visualization__info.xhtml',1,'Utils']]],
-  ['voroedge',['voroedge',['../structtetgenio_1_1voroedge.xhtml',1,'tetgenio']]],
-  ['vorofacet',['vorofacet',['../structtetgenio_1_1vorofacet.xhtml',1,'tetgenio']]]
+  ['visualization_5finfo',['Visualization_info',['../structUtils_1_1Visualization__info.xhtml',1,'Utils']]]
 ];
