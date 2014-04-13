@@ -35,3 +35,4 @@
 \contentsline {subsubsection}{\numberline {3.8.1}Anzeige des 3D-Fensters}{48}{subsubsection.3.8.1}
 \contentsline {subsubsection}{\numberline {3.8.2}VTK-Datei}{49}{subsubsection.3.8.2}
 \contentsline {section}{\numberline {4}Generelles Vorgehen}{50}{section.4}
+\contentsline {section}{\numberline {5}Lizenzbestimmungen}{52}{section.5}

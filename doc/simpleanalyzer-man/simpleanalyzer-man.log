@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.19)  12 APR 2014 16:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.1.19)  13 APR 2014 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -752,7 +752,7 @@ LaTeX Info: Redefining \nameref on input line 85.
 \openout3 = `simpleanalyzer-man.out'.
 
 
-<doc_icon.png, id=148, 513.92pt x 513.92pt>
+<doc_icon.png, id=152, 513.92pt x 513.92pt>
 File: doc_icon.png Graphic file (type png)
  <use doc_icon.png>
 Package pdftex.def Info: doc_icon.png used on input line 91.
@@ -909,7 +909,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 153.
 
 [7]
-<sam-screens/Ubuntu_Software_Center_002.png, id=247, 734.745pt x 500.87125pt>
+<sam-screens/Ubuntu_Software_Center_002.png, id=252, 734.745pt x 500.87125pt>
 File: sam-screens/Ubuntu_Software_Center_002.png Graphic file (type png)
 
 <use sam-screens/Ubuntu_Software_Center_002.png>
@@ -1294,7 +1294,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 458--460
 
  []
 
-<sam-screens/Blender_006.png, id=394, 1548.78625pt x 879.285pt>
+<sam-screens/Blender_006.png, id=399, 1548.78625pt x 879.285pt>
 File: sam-screens/Blender_006.png Graphic file (type png)
 
 <use sam-screens/Blender_006.png>
@@ -1320,7 +1320,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 482.
  [26 <./sam-screens/Blender_006.png>]
-<sam-screens/blender_house_subdiv.png, id=413, 160.6pt x 527.9725pt>
+<sam-screens/blender_house_subdiv.png, id=418, 160.6pt x 527.9725pt>
 File: sam-screens/blender_house_subdiv.png Graphic file (type png)
 
 <use sam-screens/blender_house_subdiv.png>
@@ -1328,7 +1328,7 @@ Package pdftex.def Info: sam-screens/blender_house_subdiv.png used on input lin
 e 488.
 (pdftex.def)             Requested size: 65.797pt x 216.30899pt.
 
-<sam-screens/Blender_house_select.png, id=414, 545.03625pt x 279.0425pt>
+<sam-screens/Blender_house_select.png, id=419, 545.03625pt x 279.0425pt>
 File: sam-screens/Blender_house_select.png Graphic file (type png)
 
 <use sam-screens/Blender_house_select.png>
@@ -1336,7 +1336,7 @@ Package pdftex.def Info: sam-screens/Blender_house_select.png used on input lin
 e 495.
 (pdftex.def)             Requested size: 131.59401pt x 67.3718pt.
 
-<sam-screens/blender_house.png, id=415, 605.26125pt x 605.26125pt>
+<sam-screens/blender_house.png, id=420, 605.26125pt x 605.26125pt>
 File: sam-screens/blender_house.png Graphic file (type png)
 
 <use sam-screens/blender_house.png>
@@ -1372,7 +1372,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 519.
  [28 <./sam-screens/blender_house_subdiv.png> <./sam-screens/Blender_house_sele
 ct.png> <./sam-screens/blender_house.png>]
-<sam-screens/blender_newmat.png, id=427, 630.355pt x 513.92pt>
+<sam-screens/blender_newmat.png, id=432, 630.355pt x 513.92pt>
 File: sam-screens/blender_newmat.png Graphic file (type png)
 
 <use sam-screens/blender_newmat.png>
@@ -1380,7 +1380,7 @@ Package pdftex.def Info: sam-screens/blender_newmat.png used on input line 526.
 
 (pdftex.def)             Requested size: 252.13753pt x 205.56435pt.
 
-<sam-screens/blender_mat_col.png, id=429, 444.66125pt x 434.62375pt>
+<sam-screens/blender_mat_col.png, id=434, 444.66125pt x 434.62375pt>
 File: sam-screens/blender_mat_col.png Graphic file (type png)
 
 <use sam-screens/blender_mat_col.png>
@@ -1406,7 +1406,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 545.
 
 [30 <./sam-screens/blender_mat_col.png>]
-<sam-screens/blender_export_dlog.png, id=447, 780.9175pt x 490.83376pt>
+<sam-screens/blender_export_dlog.png, id=452, 780.9175pt x 490.83376pt>
 File: sam-screens/blender_export_dlog.png Graphic file (type png)
 
 <use sam-screens/blender_export_dlog.png>
@@ -1443,7 +1443,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 573.
 
-<sam-screens/Simple_Analyzer_toolbar.png, id=458, 496.85625pt x 46.1725pt>
+<sam-screens/Simple_Analyzer_toolbar.png, id=463, 496.85625pt x 46.1725pt>
 File: sam-screens/Simple_Analyzer_toolbar.png Graphic file (type png)
 
 <use sam-screens/Simple_Analyzer_toolbar.png>
@@ -1482,7 +1482,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 606.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 606.
- <sam-screens/Simple_Analyzer_objprops.png, id=481, 1204.5pt x 724.7075pt>
+ <sam-screens/Simple_Analyzer_objprops.png, id=486, 1204.5pt x 724.7075pt>
 File: sam-screens/Simple_Analyzer_objprops.png Graphic file (type png)
 
 <use sam-screens/Simple_Analyzer_objprops.png>
@@ -1503,7 +1503,7 @@ Overfull \hbox (4.8893pt too wide) in paragraph at lines 619--620
 Vo-lu-men,
  []
 
-<sam-screens/Simple_Analyzer_timeline.png, id=489, 281.05pt x 158.5925pt>
+<sam-screens/Simple_Analyzer_timeline.png, id=494, 281.05pt x 158.5925pt>
 File: sam-screens/Simple_Analyzer_timeline.png Graphic file (type png)
 
 <use sam-screens/Simple_Analyzer_timeline.png>
@@ -1536,7 +1536,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 648.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 648.
-<sam-screens/Simple_Analyzer_viewprops.png, id=505, 1204.5pt x 724.7075pt>
+<sam-screens/Simple_Analyzer_viewprops.png, id=510, 1204.5pt x 724.7075pt>
 File: sam-screens/Simple_Analyzer_viewprops.png Graphic file (type png)
 
 <use sam-screens/Simple_Analyzer_viewprops.png>
@@ -1619,7 +1619,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 688.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 688.
- <sam-screens/SA_overview.png, id=528, 856.19875pt x 323.2075pt>
+ <sam-screens/SA_overview.png, id=533, 856.19875pt x 323.2075pt>
 File: sam-screens/SA_overview.png Graphic file (type png)
 
 <use sam-screens/SA_overview.png>
@@ -1646,7 +1646,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 707.
 
-<sam-screens/SA_analyze_point.png, id=539, 1204.5pt x 724.7075pt>
+<sam-screens/SA_analyze_point.png, id=545, 1204.5pt x 724.7075pt>
 File: sam-screens/SA_analyze_point.png Graphic file (type png)
 
 <use sam-screens/SA_analyze_point.png>
@@ -1667,14 +1667,14 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 719.
 
-<sam-screens/SA_render_cut.png, id=549, 803.0pt x 624.3325pt>
+<sam-screens/SA_render_cut.png, id=554, 803.0pt x 624.3325pt>
 File: sam-screens/SA_render_cut.png Graphic file (type png)
 
 <use sam-screens/SA_render_cut.png>
 Package pdftex.def Info: sam-screens/SA_render_cut.png used on input line 724.
 (pdftex.def)             Requested size: 240.90186pt x 187.3012pt.
 
-<sam-screens/render_cut_vis.png, id=553, 604.2575pt x 632.3625pt>
+<sam-screens/render_cut_vis.png, id=558, 604.2575pt x 632.3625pt>
 File: sam-screens/render_cut_vis.png Graphic file (type png)
 
 <use sam-screens/render_cut_vis.png>
@@ -1768,7 +1768,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 767.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 767.
- <sam-screens/SA_export_view.png, id=583, 602.25pt x 552.0625pt>
+ <sam-screens/SA_export_view.png, id=588, 602.25pt x 552.0625pt>
 File: sam-screens/SA_export_view.png Graphic file (type png)
 
 <use sam-screens/SA_export_view.png>
@@ -1780,7 +1780,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 774.
 
-<sam-screens/vtk_paraview.png, id=585, 861.2175pt x 739.76375pt>
+<sam-screens/vtk_paraview.png, id=590, 861.2175pt x 739.76375pt>
 File: sam-screens/vtk_paraview.png Graphic file (type png)
 
 <use sam-screens/vtk_paraview.png>
@@ -1829,33 +1829,62 @@ Overfull \hbox (1.06203pt too wide) in paragraph at lines 831--832
 []\T1/lmr/m/n/10 die Tem-pe-ra-tur-ver-tei-lung oder die An-zei-ge des 3D-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 835.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 835.
+(babel)             in language  on input line 836.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 835.
+(babel)             in language  on input line 836.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 835.
+(babel)             in language  on input line 836.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 835.
+(babel)             in language  on input line 836.
 [51]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 835.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 837.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 837.
+
+Underfull \hbox (badness 10000) in paragraph at lines 839--841
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 842--846
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 847--851
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--853
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 856.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 856.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 856.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 856.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 856.
+[52]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 856.
  (./simpleanalyzer-man.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 835.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 835.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 856.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 856.
 Package rerunfilecheck Info: File `simpleanalyzer-man.out' has not changed.
-(rerunfilecheck)             Checksum: DE165AD782E24307BE5EAABB9CE290E3;2777.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 835.
+(rerunfilecheck)             Checksum: 9DC96654C3C72DFD2BFC75AA1BA45C4E;2831.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 856.
  ) 
 Here is how much of TeX's memory you used:
- 11455 strings out of 494979
- 172022 string characters out of 6179171
+ 11458 strings out of 494979
+ 172049 string characters out of 6179171
  314724 words of memory out of 5000000
- 14307 multiletter control sequences out of 15000+600000
+ 14308 multiletter control sequences out of 15000+600000
  51746 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  40i,12n,75p,804b,1862s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1874,10 +1903,10 @@ hare/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/pub
 lic/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/courier/ucrr8a.pfb>
-Output written on simpleanalyzer-man.pdf (51 pages, 1765749 bytes).
+Output written on simpleanalyzer-man.pdf (52 pages, 1767469 bytes).
 PDF statistics:
- 747 PDF objects out of 1000 (max. 8388607)
- 633 compressed objects within 7 object streams
- 182 named destinations out of 1000 (max. 500000)
- 474 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 758 PDF objects out of 1000 (max. 8388607)
+ 643 compressed objects within 7 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 482 words of extra memory for PDF output out of 10000 (max. 10000000)
 

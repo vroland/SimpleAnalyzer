@@ -17,7 +17,7 @@ BEGIN_EVENT_TABLE(GUIGLCanvas, wxGLCanvas)
 END_EVENT_TABLE()
 
 //Liste der Attribute zum erstellen des OpenGL-Context
-int attrib_list[] = { WX_GL_RGBA, WX_GL_DOUBLEBUFFER, WX_GL_DEPTH_SIZE, 24, 0 };
+int attrib_list[] = { WX_GL_RGBA, WX_GL_DOUBLEBUFFER, WX_GL_DEPTH_SIZE, 16, 0 };
 
 GUIGLCanvas::GUIGLCanvas(wxFrame *parent) :
 		wxGLCanvas(parent, wxID_ANY, wxDefaultPosition, wxDefaultSize, 0,
