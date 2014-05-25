@@ -472,403 +472,403 @@
 \contentsline {subsubsection}{\numberline {8.23.2.10}read\discretionary {-}{}{}Sensor\discretionary {-}{}{}Definitions}{150}{subsubsection.8.23.2.10}
 \contentsline {subsubsection}{\numberline {8.23.2.11}replace\discretionary {-}{}{}All}{150}{subsubsection.8.23.2.11}
 \contentsline {subsubsection}{\numberline {8.23.2.12}write\discretionary {-}{}{}Output\discretionary {-}{}{}File}{151}{subsubsection.8.23.2.12}
-\contentsline {subsection}{\numberline {8.23.3}Dokumentation der Datenelemente}{152}{subsection.8.23.3}
-\contentsline {subsubsection}{\numberline {8.23.3.1}configpaths}{152}{subsubsection.8.23.3.1}
-\contentsline {subsubsection}{\numberline {8.23.3.2}N\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}F\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}S}{152}{subsubsection.8.23.3.2}
-\contentsline {subsubsection}{\numberline {8.23.3.3}opts}{152}{subsubsection.8.23.3.3}
+\contentsline {subsection}{\numberline {8.23.3}Dokumentation der Datenelemente}{151}{subsection.8.23.3}
+\contentsline {subsubsection}{\numberline {8.23.3.1}configpaths}{151}{subsubsection.8.23.3.1}
+\contentsline {subsubsection}{\numberline {8.23.3.2}N\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}F\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}S}{151}{subsubsection.8.23.3.2}
+\contentsline {subsubsection}{\numberline {8.23.3.3}opts}{151}{subsubsection.8.23.3.3}
 \contentsline {section}{\numberline {8.24}Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}:\discretionary {-}{}{}:Options Strukturreferenz}{152}{section.8.24}
-\contentsline {subsection}{\numberline {8.24.1}Ausf\IeC {\"u}hrliche Beschreibung}{153}{subsection.8.24.1}
-\contentsline {subsection}{\numberline {8.24.2}Dokumentation der Datenelemente}{153}{subsection.8.24.2}
-\contentsline {subsubsection}{\numberline {8.24.2.1}max\discretionary {-}{}{}\_\discretionary {-}{}{}time}{153}{subsubsection.8.24.2.1}
-\contentsline {subsubsection}{\numberline {8.24.2.2}min\discretionary {-}{}{}\_\discretionary {-}{}{}time}{153}{subsubsection.8.24.2.2}
-\contentsline {subsubsection}{\numberline {8.24.2.3}namecol}{153}{subsubsection.8.24.2.3}
+\contentsline {subsection}{\numberline {8.24.1}Ausf\IeC {\"u}hrliche Beschreibung}{152}{subsection.8.24.1}
+\contentsline {subsection}{\numberline {8.24.2}Dokumentation der Datenelemente}{152}{subsection.8.24.2}
+\contentsline {subsubsection}{\numberline {8.24.2.1}max\discretionary {-}{}{}\_\discretionary {-}{}{}time}{152}{subsubsection.8.24.2.1}
+\contentsline {subsubsection}{\numberline {8.24.2.2}min\discretionary {-}{}{}\_\discretionary {-}{}{}time}{152}{subsubsection.8.24.2.2}
+\contentsline {subsubsection}{\numberline {8.24.2.3}namecol}{152}{subsubsection.8.24.2.3}
 \contentsline {subsubsection}{\numberline {8.24.2.4}replace\discretionary {-}{}{}\_\discretionary {-}{}{}comma\discretionary {-}{}{}\_\discretionary {-}{}{}with\discretionary {-}{}{}\_\discretionary {-}{}{}point}{153}{subsubsection.8.24.2.4}
-\contentsline {subsubsection}{\numberline {8.24.2.5}separator}{154}{subsubsection.8.24.2.5}
-\contentsline {subsubsection}{\numberline {8.24.2.6}start\discretionary {-}{}{}\_\discretionary {-}{}{}col}{154}{subsubsection.8.24.2.6}
-\contentsline {subsubsection}{\numberline {8.24.2.7}time\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}{154}{subsubsection.8.24.2.7}
-\contentsline {subsubsection}{\numberline {8.24.2.8}timecol}{154}{subsubsection.8.24.2.8}
-\contentsline {section}{\numberline {8.25}Tsd\discretionary {-}{}{}Merger\discretionary {-}{}{}:\discretionary {-}{}{}:Options Strukturreferenz}{154}{section.8.25}
-\contentsline {subsection}{\numberline {8.25.1}Ausf\IeC {\"u}hrliche Beschreibung}{154}{subsection.8.25.1}
+\contentsline {subsubsection}{\numberline {8.24.2.5}separator}{153}{subsubsection.8.24.2.5}
+\contentsline {subsubsection}{\numberline {8.24.2.6}start\discretionary {-}{}{}\_\discretionary {-}{}{}col}{153}{subsubsection.8.24.2.6}
+\contentsline {subsubsection}{\numberline {8.24.2.7}time\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}{153}{subsubsection.8.24.2.7}
+\contentsline {subsubsection}{\numberline {8.24.2.8}timecol}{153}{subsubsection.8.24.2.8}
+\contentsline {section}{\numberline {8.25}Tsd\discretionary {-}{}{}Merger\discretionary {-}{}{}:\discretionary {-}{}{}:Options Strukturreferenz}{153}{section.8.25}
+\contentsline {subsection}{\numberline {8.25.1}Ausf\IeC {\"u}hrliche Beschreibung}{153}{subsection.8.25.1}
 \contentsline {subsection}{\numberline {8.25.2}Dokumentation der Datenelemente}{154}{subsection.8.25.2}
 \contentsline {subsubsection}{\numberline {8.25.2.1}auto\discretionary {-}{}{}\_\discretionary {-}{}{}delta}{154}{subsubsection.8.25.2.1}
-\contentsline {subsubsection}{\numberline {8.25.2.2}delta}{155}{subsubsection.8.25.2.2}
-\contentsline {subsubsection}{\numberline {8.25.2.3}max\discretionary {-}{}{}\_\discretionary {-}{}{}dt}{155}{subsubsection.8.25.2.3}
-\contentsline {subsubsection}{\numberline {8.25.2.4}offset}{155}{subsubsection.8.25.2.4}
-\contentsline {section}{\numberline {8.26}Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}:\discretionary {-}{}{}:Options Strukturreferenz}{155}{section.8.26}
-\contentsline {subsection}{\numberline {8.26.1}Ausf\IeC {\"u}hrliche Beschreibung}{156}{subsection.8.26.1}
-\contentsline {subsection}{\numberline {8.26.2}Dokumentation der Datenelemente}{156}{subsection.8.26.2}
-\contentsline {subsubsection}{\numberline {8.26.2.1}basetemp}{156}{subsubsection.8.26.2.1}
-\contentsline {subsubsection}{\numberline {8.26.2.2}error\discretionary {-}{}{}\_\discretionary {-}{}{}threshold}{156}{subsubsection.8.26.2.2}
-\contentsline {subsubsection}{\numberline {8.26.2.3}fiber\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}{156}{subsubsection.8.26.2.3}
-\contentsline {subsubsection}{\numberline {8.26.2.4}flipobj}{156}{subsubsection.8.26.2.4}
-\contentsline {subsubsection}{\numberline {8.26.2.5}height}{156}{subsubsection.8.26.2.5}
+\contentsline {subsubsection}{\numberline {8.25.2.2}delta}{154}{subsubsection.8.25.2.2}
+\contentsline {subsubsection}{\numberline {8.25.2.3}max\discretionary {-}{}{}\_\discretionary {-}{}{}dt}{154}{subsubsection.8.25.2.3}
+\contentsline {subsubsection}{\numberline {8.25.2.4}offset}{154}{subsubsection.8.25.2.4}
+\contentsline {section}{\numberline {8.26}Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}:\discretionary {-}{}{}:Options Strukturreferenz}{154}{section.8.26}
+\contentsline {subsection}{\numberline {8.26.1}Ausf\IeC {\"u}hrliche Beschreibung}{155}{subsection.8.26.1}
+\contentsline {subsection}{\numberline {8.26.2}Dokumentation der Datenelemente}{155}{subsection.8.26.2}
+\contentsline {subsubsection}{\numberline {8.26.2.1}basetemp}{155}{subsubsection.8.26.2.1}
+\contentsline {subsubsection}{\numberline {8.26.2.2}error\discretionary {-}{}{}\_\discretionary {-}{}{}threshold}{155}{subsubsection.8.26.2.2}
+\contentsline {subsubsection}{\numberline {8.26.2.3}fiber\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}{155}{subsubsection.8.26.2.3}
+\contentsline {subsubsection}{\numberline {8.26.2.4}flipobj}{155}{subsubsection.8.26.2.4}
+\contentsline {subsubsection}{\numberline {8.26.2.5}height}{155}{subsubsection.8.26.2.5}
 \contentsline {subsubsection}{\numberline {8.26.2.6}max\discretionary {-}{}{}\_\discretionary {-}{}{}time}{156}{subsubsection.8.26.2.6}
-\contentsline {subsubsection}{\numberline {8.26.2.7}maxfwcount}{157}{subsubsection.8.26.2.7}
-\contentsline {subsubsection}{\numberline {8.26.2.8}min\discretionary {-}{}{}\_\discretionary {-}{}{}time}{157}{subsubsection.8.26.2.8}
-\contentsline {subsubsection}{\numberline {8.26.2.9}objwidth}{157}{subsubsection.8.26.2.9}
-\contentsline {subsubsection}{\numberline {8.26.2.10}replace\discretionary {-}{}{}\_\discretionary {-}{}{}comma\discretionary {-}{}{}\_\discretionary {-}{}{}with\discretionary {-}{}{}\_\discretionary {-}{}{}point}{157}{subsubsection.8.26.2.10}
-\contentsline {subsubsection}{\numberline {8.26.2.11}separator}{157}{subsubsection.8.26.2.11}
-\contentsline {subsubsection}{\numberline {8.26.2.12}startrow}{157}{subsubsection.8.26.2.12}
-\contentsline {subsubsection}{\numberline {8.26.2.13}tab\discretionary {-}{}{}\_\discretionary {-}{}{}space\discretionary {-}{}{}\_\discretionary {-}{}{}count}{157}{subsubsection.8.26.2.13}
-\contentsline {subsubsection}{\numberline {8.26.2.14}time\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}{157}{subsubsection.8.26.2.14}
+\contentsline {subsubsection}{\numberline {8.26.2.7}maxfwcount}{156}{subsubsection.8.26.2.7}
+\contentsline {subsubsection}{\numberline {8.26.2.8}min\discretionary {-}{}{}\_\discretionary {-}{}{}time}{156}{subsubsection.8.26.2.8}
+\contentsline {subsubsection}{\numberline {8.26.2.9}objwidth}{156}{subsubsection.8.26.2.9}
+\contentsline {subsubsection}{\numberline {8.26.2.10}replace\discretionary {-}{}{}\_\discretionary {-}{}{}comma\discretionary {-}{}{}\_\discretionary {-}{}{}with\discretionary {-}{}{}\_\discretionary {-}{}{}point}{156}{subsubsection.8.26.2.10}
+\contentsline {subsubsection}{\numberline {8.26.2.11}separator}{156}{subsubsection.8.26.2.11}
+\contentsline {subsubsection}{\numberline {8.26.2.12}startrow}{156}{subsubsection.8.26.2.12}
+\contentsline {subsubsection}{\numberline {8.26.2.13}tab\discretionary {-}{}{}\_\discretionary {-}{}{}space\discretionary {-}{}{}\_\discretionary {-}{}{}count}{156}{subsubsection.8.26.2.13}
+\contentsline {subsubsection}{\numberline {8.26.2.14}time\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}{156}{subsubsection.8.26.2.14}
 \contentsline {subsubsection}{\numberline {8.26.2.15}timecol}{157}{subsubsection.8.26.2.15}
-\contentsline {section}{\numberline {8.27}Properties\discretionary {-}{}{}Box Klassenreferenz}{158}{section.8.27}
-\contentsline {subsection}{\numberline {8.27.1}Ausf\IeC {\"u}hrliche Beschreibung}{161}{subsection.8.27.1}
-\contentsline {subsection}{\numberline {8.27.2}Beschreibung der Konstruktoren und Destruktoren}{161}{subsection.8.27.2}
-\contentsline {subsubsection}{\numberline {8.27.2.1}Properties\discretionary {-}{}{}Box}{161}{subsubsection.8.27.2.1}
-\contentsline {subsubsection}{\numberline {8.27.2.2}$\sim $\discretionary {-}{}{}Properties\discretionary {-}{}{}Box}{161}{subsubsection.8.27.2.2}
-\contentsline {subsection}{\numberline {8.27.3}Dokumentation der Elementfunktionen}{161}{subsection.8.27.3}
-\contentsline {subsubsection}{\numberline {8.27.3.1}get\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{161}{subsubsection.8.27.3.1}
-\contentsline {subsubsection}{\numberline {8.27.3.2}get\discretionary {-}{}{}Auto\discretionary {-}{}{}Update\discretionary {-}{}{}Ceck\discretionary {-}{}{}Box}{161}{subsubsection.8.27.3.2}
-\contentsline {subsubsection}{\numberline {8.27.3.3}get\discretionary {-}{}{}Clear\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{162}{subsubsection.8.27.3.3}
-\contentsline {subsubsection}{\numberline {8.27.3.4}get\discretionary {-}{}{}Current\discretionary {-}{}{}Material}{162}{subsubsection.8.27.3.4}
-\contentsline {subsubsection}{\numberline {8.27.3.5}get\discretionary {-}{}{}Density\discretionary {-}{}{}Edit}{162}{subsubsection.8.27.3.5}
-\contentsline {subsubsection}{\numberline {8.27.3.6}get\discretionary {-}{}{}Find\discretionary {-}{}{}Max\discretionary {-}{}{}Bt}{162}{subsubsection.8.27.3.6}
-\contentsline {subsubsection}{\numberline {8.27.3.7}get\discretionary {-}{}{}Interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}List}{162}{subsubsection.8.27.3.7}
-\contentsline {subsubsection}{\numberline {8.27.3.8}get\discretionary {-}{}{}Mat\discretionary {-}{}{}List\discretionary {-}{}{}Box}{162}{subsubsection.8.27.3.8}
-\contentsline {subsubsection}{\numberline {8.27.3.9}get\discretionary {-}{}{}Mat\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}{162}{subsubsection.8.27.3.9}
-\contentsline {subsubsection}{\numberline {8.27.3.10}get\discretionary {-}{}{}Mat\discretionary {-}{}{}Prop\discretionary {-}{}{}Box}{162}{subsubsection.8.27.3.10}
-\contentsline {subsubsection}{\numberline {8.27.3.11}get\discretionary {-}{}{}Max\discretionary {-}{}{}Volume\discretionary {-}{}{}Edit}{162}{subsubsection.8.27.3.11}
-\contentsline {subsubsection}{\numberline {8.27.3.12}get\discretionary {-}{}{}Next\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{163}{subsubsection.8.27.3.12}
-\contentsline {subsubsection}{\numberline {8.27.3.13}get\discretionary {-}{}{}Obj\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}{163}{subsubsection.8.27.3.13}
-\contentsline {subsubsection}{\numberline {8.27.3.14}get\discretionary {-}{}{}Prev\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{163}{subsubsection.8.27.3.14}
-\contentsline {subsubsection}{\numberline {8.27.3.15}get\discretionary {-}{}{}Quality\discretionary {-}{}{}Edit}{163}{subsubsection.8.27.3.15}
-\contentsline {subsubsection}{\numberline {8.27.3.16}get\discretionary {-}{}{}Recalc\discretionary {-}{}{}Button}{163}{subsubsection.8.27.3.16}
-\contentsline {subsubsection}{\numberline {8.27.3.17}get\discretionary {-}{}{}Sd\discretionary {-}{}{}Timeline}{163}{subsubsection.8.27.3.17}
-\contentsline {subsubsection}{\numberline {8.27.3.18}get\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data\discretionary {-}{}{}List}{163}{subsubsection.8.27.3.18}
-\contentsline {subsubsection}{\numberline {8.27.3.19}get\discretionary {-}{}{}Specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Edit}{163}{subsubsection.8.27.3.19}
-\contentsline {subsubsection}{\numberline {8.27.3.20}get\discretionary {-}{}{}Up\discretionary {-}{}{}To\discretionary {-}{}{}Date\discretionary {-}{}{}Lbl}{164}{subsubsection.8.27.3.20}
-\contentsline {subsubsection}{\numberline {8.27.3.21}resize}{164}{subsubsection.8.27.3.21}
-\contentsline {subsubsection}{\numberline {8.27.3.22}set\discretionary {-}{}{}Current\discretionary {-}{}{}Material}{164}{subsubsection.8.27.3.22}
-\contentsline {subsection}{\numberline {8.27.4}Dokumentation der Datenelemente}{164}{subsection.8.27.4}
-\contentsline {subsubsection}{\numberline {8.27.4.1}analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{164}{subsubsection.8.27.4.1}
-\contentsline {subsubsection}{\numberline {8.27.4.2}auto\discretionary {-}{}{}Update\discretionary {-}{}{}Ceck\discretionary {-}{}{}Box}{164}{subsubsection.8.27.4.2}
-\contentsline {subsubsection}{\numberline {8.27.4.3}clear\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{165}{subsubsection.8.27.4.3}
-\contentsline {subsubsection}{\numberline {8.27.4.4}current\discretionary {-}{}{}\_\discretionary {-}{}{}material}{165}{subsubsection.8.27.4.4}
-\contentsline {subsubsection}{\numberline {8.27.4.5}density\discretionary {-}{}{}Edit}{165}{subsubsection.8.27.4.5}
-\contentsline {subsubsection}{\numberline {8.27.4.6}density\discretionary {-}{}{}Lbl}{165}{subsubsection.8.27.4.6}
-\contentsline {subsubsection}{\numberline {8.27.4.7}find\discretionary {-}{}{}Max\discretionary {-}{}{}Bt}{165}{subsubsection.8.27.4.7}
-\contentsline {subsubsection}{\numberline {8.27.4.8}interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}Lbl}{165}{subsubsection.8.27.4.8}
-\contentsline {subsubsection}{\numberline {8.27.4.9}interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}List}{165}{subsubsection.8.27.4.9}
-\contentsline {subsubsection}{\numberline {8.27.4.10}mat\discretionary {-}{}{}List\discretionary {-}{}{}Box}{165}{subsubsection.8.27.4.10}
-\contentsline {subsubsection}{\numberline {8.27.4.11}mat\discretionary {-}{}{}List\discretionary {-}{}{}Box\discretionary {-}{}{}Lbl}{165}{subsubsection.8.27.4.11}
-\contentsline {subsubsection}{\numberline {8.27.4.12}mat\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}{166}{subsubsection.8.27.4.12}
-\contentsline {subsubsection}{\numberline {8.27.4.13}mat\discretionary {-}{}{}Name\discretionary {-}{}{}Lbl}{166}{subsubsection.8.27.4.13}
-\contentsline {subsubsection}{\numberline {8.27.4.14}mat\discretionary {-}{}{}Prop\discretionary {-}{}{}Box}{166}{subsubsection.8.27.4.14}
-\contentsline {subsubsection}{\numberline {8.27.4.15}max\discretionary {-}{}{}Volume\discretionary {-}{}{}Edit}{166}{subsubsection.8.27.4.15}
-\contentsline {subsubsection}{\numberline {8.27.4.16}max\discretionary {-}{}{}Volume\discretionary {-}{}{}Lbl}{166}{subsubsection.8.27.4.16}
-\contentsline {subsubsection}{\numberline {8.27.4.17}next\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{166}{subsubsection.8.27.4.17}
-\contentsline {subsubsection}{\numberline {8.27.4.18}obj\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}{166}{subsubsection.8.27.4.18}
-\contentsline {subsubsection}{\numberline {8.27.4.19}obj\discretionary {-}{}{}Name\discretionary {-}{}{}Lbl}{166}{subsubsection.8.27.4.19}
-\contentsline {subsubsection}{\numberline {8.27.4.20}prev\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{166}{subsubsection.8.27.4.20}
-\contentsline {subsubsection}{\numberline {8.27.4.21}quality\discretionary {-}{}{}Edit}{167}{subsubsection.8.27.4.21}
-\contentsline {subsubsection}{\numberline {8.27.4.22}quality\discretionary {-}{}{}Lbl}{167}{subsubsection.8.27.4.22}
-\contentsline {subsubsection}{\numberline {8.27.4.23}recalc\discretionary {-}{}{}Button}{167}{subsubsection.8.27.4.23}
-\contentsline {subsubsection}{\numberline {8.27.4.24}sd\discretionary {-}{}{}Timeline}{167}{subsubsection.8.27.4.24}
-\contentsline {subsubsection}{\numberline {8.27.4.25}sensor\discretionary {-}{}{}Data\discretionary {-}{}{}Lbl}{167}{subsubsection.8.27.4.25}
-\contentsline {subsubsection}{\numberline {8.27.4.26}sensor\discretionary {-}{}{}Data\discretionary {-}{}{}List}{167}{subsubsection.8.27.4.26}
-\contentsline {subsubsection}{\numberline {8.27.4.27}specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Edit}{167}{subsubsection.8.27.4.27}
-\contentsline {subsubsection}{\numberline {8.27.4.28}specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Lbl}{167}{subsubsection.8.27.4.28}
-\contentsline {subsubsection}{\numberline {8.27.4.29}up\discretionary {-}{}{}To\discretionary {-}{}{}Date\discretionary {-}{}{}Lbl}{167}{subsubsection.8.27.4.29}
-\contentsline {section}{\numberline {8.28}Renderer Klassenreferenz}{168}{section.8.28}
-\contentsline {subsection}{\numberline {8.28.1}Ausf\IeC {\"u}hrliche Beschreibung}{169}{subsection.8.28.1}
-\contentsline {subsection}{\numberline {8.28.2}Dokumentation der Aufz\IeC {\"a}hlungstypen}{169}{subsection.8.28.2}
-\contentsline {subsubsection}{\numberline {8.28.2.1}Render\discretionary {-}{}{}Mode}{169}{subsubsection.8.28.2.1}
-\contentsline {subsection}{\numberline {8.28.3}Beschreibung der Konstruktoren und Destruktoren}{170}{subsection.8.28.3}
-\contentsline {subsubsection}{\numberline {8.28.3.1}Renderer}{170}{subsubsection.8.28.3.1}
-\contentsline {subsubsection}{\numberline {8.28.3.2}$\sim $\discretionary {-}{}{}Renderer}{170}{subsubsection.8.28.3.2}
-\contentsline {subsection}{\numberline {8.28.4}Dokumentation der Elementfunktionen}{170}{subsection.8.28.4}
-\contentsline {subsubsection}{\numberline {8.28.4.1}get\discretionary {-}{}{}Viewport}{170}{subsubsection.8.28.4.1}
-\contentsline {subsubsection}{\numberline {8.28.4.2}get\discretionary {-}{}{}Viewport\discretionary {-}{}{}Image}{170}{subsubsection.8.28.4.2}
-\contentsline {subsubsection}{\numberline {8.28.4.3}init\discretionary {-}{}{}G\discretionary {-}{}{}L}{170}{subsubsection.8.28.4.3}
-\contentsline {subsubsection}{\numberline {8.28.4.4}render}{171}{subsubsection.8.28.4.4}
-\contentsline {subsubsection}{\numberline {8.28.4.5}render\discretionary {-}{}{}Material}{172}{subsubsection.8.28.4.5}
-\contentsline {subsubsection}{\numberline {8.28.4.6}render\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}{173}{subsubsection.8.28.4.6}
-\contentsline {subsubsection}{\numberline {8.28.4.7}render\discretionary {-}{}{}Tetrahedra}{173}{subsubsection.8.28.4.7}
-\contentsline {subsubsection}{\numberline {8.28.4.8}resize}{174}{subsubsection.8.28.4.8}
-\contentsline {subsubsection}{\numberline {8.28.4.9}set\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Info}{175}{subsubsection.8.28.4.9}
-\contentsline {subsubsection}{\numberline {8.28.4.10}set\discretionary {-}{}{}Object}{175}{subsubsection.8.28.4.10}
-\contentsline {subsection}{\numberline {8.28.5}Dokumentation der Datenelemente}{176}{subsection.8.28.5}
-\contentsline {subsubsection}{\numberline {8.28.5.1}cut\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}info}{176}{subsubsection.8.28.5.1}
-\contentsline {subsubsection}{\numberline {8.28.5.2}display\discretionary {-}{}{}List}{176}{subsubsection.8.28.5.2}
-\contentsline {subsubsection}{\numberline {8.28.5.3}object}{176}{subsubsection.8.28.5.3}
-\contentsline {subsubsection}{\numberline {8.28.5.4}viewport}{176}{subsubsection.8.28.5.4}
-\contentsline {section}{\numberline {8.29}Utils\discretionary {-}{}{}:\discretionary {-}{}{}:Sensor\discretionary {-}{}{}Data Strukturreferenz}{176}{section.8.29}
-\contentsline {subsection}{\numberline {8.29.1}Ausf\IeC {\"u}hrliche Beschreibung}{177}{subsection.8.29.1}
-\contentsline {subsection}{\numberline {8.29.2}Dokumentation der Datenelemente}{177}{subsection.8.29.2}
-\contentsline {subsubsection}{\numberline {8.29.2.1}current\discretionary {-}{}{}\_\discretionary {-}{}{}time\discretionary {-}{}{}\_\discretionary {-}{}{}index}{177}{subsubsection.8.29.2.1}
-\contentsline {subsubsection}{\numberline {8.29.2.2}data}{178}{subsubsection.8.29.2.2}
-\contentsline {subsubsection}{\numberline {8.29.2.3}markers}{178}{subsubsection.8.29.2.3}
-\contentsline {subsubsection}{\numberline {8.29.2.4}name}{178}{subsubsection.8.29.2.4}
-\contentsline {subsubsection}{\numberline {8.29.2.5}subnames}{178}{subsubsection.8.29.2.5}
-\contentsline {subsubsection}{\numberline {8.29.2.6}timed}{178}{subsubsection.8.29.2.6}
-\contentsline {subsubsection}{\numberline {8.29.2.7}timestamps}{178}{subsubsection.8.29.2.7}
-\contentsline {section}{\numberline {8.30}Utils\discretionary {-}{}{}:\discretionary {-}{}{}:Sensor\discretionary {-}{}{}Point Strukturreferenz}{178}{section.8.30}
-\contentsline {subsection}{\numberline {8.30.1}Ausf\IeC {\"u}hrliche Beschreibung}{179}{subsection.8.30.1}
-\contentsline {subsection}{\numberline {8.30.2}Dokumentation der Datenelemente}{179}{subsection.8.30.2}
-\contentsline {subsubsection}{\numberline {8.30.2.1}coords}{179}{subsubsection.8.30.2.1}
-\contentsline {subsubsection}{\numberline {8.30.2.2}temperature}{179}{subsubsection.8.30.2.2}
-\contentsline {section}{\numberline {8.31}Utils\discretionary {-}{}{}:\discretionary {-}{}{}:Sensor\discretionary {-}{}{}Point\discretionary {-}{}{}Comparator Strukturreferenz}{179}{section.8.31}
-\contentsline {subsection}{\numberline {8.31.1}Ausf\IeC {\"u}hrliche Beschreibung}{179}{subsection.8.31.1}
-\contentsline {subsection}{\numberline {8.31.2}Dokumentation der Elementfunktionen}{180}{subsection.8.31.2}
-\contentsline {subsubsection}{\numberline {8.31.2.1}get\discretionary {-}{}{}Distance\discretionary {-}{}{}\_\discretionary {-}{}{}d}{180}{subsubsection.8.31.2.1}
-\contentsline {subsubsection}{\numberline {8.31.2.2}operator()}{181}{subsubsection.8.31.2.2}
-\contentsline {subsection}{\numberline {8.31.3}Dokumentation der Datenelemente}{181}{subsection.8.31.3}
-\contentsline {subsubsection}{\numberline {8.31.3.1}meshpoint}{181}{subsubsection.8.31.3.1}
-\contentsline {section}{\numberline {8.32}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App Klassenreferenz}{181}{section.8.32}
-\contentsline {subsection}{\numberline {8.32.1}Ausf\IeC {\"u}hrliche Beschreibung}{183}{subsection.8.32.1}
-\contentsline {subsection}{\numberline {8.32.2}Beschreibung der Konstruktoren und Destruktoren}{183}{subsection.8.32.2}
-\contentsline {subsubsection}{\numberline {8.32.2.1}$\sim $\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}{183}{subsubsection.8.32.2.1}
-\contentsline {subsection}{\numberline {8.32.3}Dokumentation der Elementfunktionen}{183}{subsection.8.32.3}
-\contentsline {subsubsection}{\numberline {8.32.3.1}add\discretionary {-}{}{}Object}{183}{subsubsection.8.32.3.1}
-\contentsline {subsubsection}{\numberline {8.32.3.2}get\discretionary {-}{}{}Active\discretionary {-}{}{}Object}{184}{subsubsection.8.32.3.2}
-\contentsline {subsubsection}{\numberline {8.32.3.3}get\discretionary {-}{}{}Current\discretionary {-}{}{}Data\discretionary {-}{}{}Object\discretionary {-}{}{}Index}{184}{subsubsection.8.32.3.3}
-\contentsline {subsubsection}{\numberline {8.32.3.4}get\discretionary {-}{}{}Data\discretionary {-}{}{}Objects}{184}{subsubsection.8.32.3.4}
-\contentsline {subsubsection}{\numberline {8.32.3.5}get\discretionary {-}{}{}Visualization\discretionary {-}{}{}Info}{184}{subsubsection.8.32.3.5}
-\contentsline {subsubsection}{\numberline {8.32.3.6}On\discretionary {-}{}{}Init}{184}{subsubsection.8.32.3.6}
-\contentsline {subsubsection}{\numberline {8.32.3.7}remove\discretionary {-}{}{}Current\discretionary {-}{}{}Object}{184}{subsubsection.8.32.3.7}
-\contentsline {subsubsection}{\numberline {8.32.3.8}set\discretionary {-}{}{}Current\discretionary {-}{}{}Data\discretionary {-}{}{}Object\discretionary {-}{}{}Index}{184}{subsubsection.8.32.3.8}
-\contentsline {subsection}{\numberline {8.32.4}Dokumentation der Datenelemente}{185}{subsection.8.32.4}
-\contentsline {subsubsection}{\numberline {8.32.4.1}current\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}object\discretionary {-}{}{}\_\discretionary {-}{}{}index}{185}{subsubsection.8.32.4.1}
-\contentsline {subsubsection}{\numberline {8.32.4.2}data\discretionary {-}{}{}\_\discretionary {-}{}{}objects}{185}{subsubsection.8.32.4.2}
-\contentsline {subsubsection}{\numberline {8.32.4.3}visualization\discretionary {-}{}{}\_\discretionary {-}{}{}info}{185}{subsubsection.8.32.4.3}
-\contentsline {section}{\numberline {8.33}Utils\discretionary {-}{}{}:\discretionary {-}{}{}:Sort\discretionary {-}{}{}Struct Strukturreferenz}{185}{section.8.33}
-\contentsline {subsection}{\numberline {8.33.1}Ausf\IeC {\"u}hrliche Beschreibung}{185}{subsection.8.33.1}
-\contentsline {subsection}{\numberline {8.33.2}Dokumentation der Datenelemente}{186}{subsection.8.33.2}
-\contentsline {subsubsection}{\numberline {8.33.2.1}distance}{186}{subsubsection.8.33.2.1}
-\contentsline {subsubsection}{\numberline {8.33.2.2}point\discretionary {-}{}{}Index}{186}{subsubsection.8.33.2.2}
-\contentsline {section}{\numberline {8.34}Tetrahedron Klassenreferenz}{186}{section.8.34}
-\contentsline {subsection}{\numberline {8.34.1}Ausf\IeC {\"u}hrliche Beschreibung}{187}{subsection.8.34.1}
-\contentsline {subsection}{\numberline {8.34.2}Beschreibung der Konstruktoren und Destruktoren}{187}{subsection.8.34.2}
-\contentsline {subsubsection}{\numberline {8.34.2.1}Tetrahedron}{187}{subsubsection.8.34.2.1}
-\contentsline {subsection}{\numberline {8.34.3}Dokumentation der Elementfunktionen}{187}{subsection.8.34.3}
-\contentsline {subsubsection}{\numberline {8.34.3.1}get\discretionary {-}{}{}V1}{187}{subsubsection.8.34.3.1}
-\contentsline {subsubsection}{\numberline {8.34.3.2}get\discretionary {-}{}{}V2}{187}{subsubsection.8.34.3.2}
-\contentsline {subsubsection}{\numberline {8.34.3.3}get\discretionary {-}{}{}V3}{188}{subsubsection.8.34.3.3}
-\contentsline {subsubsection}{\numberline {8.34.3.4}get\discretionary {-}{}{}V4}{188}{subsubsection.8.34.3.4}
-\contentsline {subsubsection}{\numberline {8.34.3.5}get\discretionary {-}{}{}Vert}{188}{subsubsection.8.34.3.5}
-\contentsline {subsection}{\numberline {8.34.4}Dokumentation der Datenelemente}{189}{subsection.8.34.4}
-\contentsline {subsubsection}{\numberline {8.34.4.1}verts}{189}{subsubsection.8.34.4.1}
-\contentsline {section}{\numberline {8.35}Triangle Klassenreferenz}{189}{section.8.35}
-\contentsline {subsection}{\numberline {8.35.1}Ausf\IeC {\"u}hrliche Beschreibung}{190}{subsection.8.35.1}
-\contentsline {subsection}{\numberline {8.35.2}Beschreibung der Konstruktoren und Destruktoren}{190}{subsection.8.35.2}
-\contentsline {subsubsection}{\numberline {8.35.2.1}Triangle}{190}{subsubsection.8.35.2.1}
-\contentsline {subsubsection}{\numberline {8.35.2.2}$\sim $\discretionary {-}{}{}Triangle}{190}{subsubsection.8.35.2.2}
-\contentsline {subsection}{\numberline {8.35.3}Dokumentation der Elementfunktionen}{190}{subsection.8.35.3}
-\contentsline {subsubsection}{\numberline {8.35.3.1}get\discretionary {-}{}{}Normal}{190}{subsubsection.8.35.3.1}
-\contentsline {subsubsection}{\numberline {8.35.3.2}get\discretionary {-}{}{}V1}{191}{subsubsection.8.35.3.2}
-\contentsline {subsubsection}{\numberline {8.35.3.3}get\discretionary {-}{}{}V2}{191}{subsubsection.8.35.3.3}
-\contentsline {subsubsection}{\numberline {8.35.3.4}get\discretionary {-}{}{}V3}{192}{subsubsection.8.35.3.4}
-\contentsline {subsubsection}{\numberline {8.35.3.5}get\discretionary {-}{}{}Vert}{192}{subsubsection.8.35.3.5}
-\contentsline {subsubsection}{\numberline {8.35.3.6}print}{193}{subsubsection.8.35.3.6}
-\contentsline {subsection}{\numberline {8.35.4}Dokumentation der Datenelemente}{193}{subsection.8.35.4}
-\contentsline {subsubsection}{\numberline {8.35.4.1}verts}{193}{subsubsection.8.35.4.1}
-\contentsline {section}{\numberline {8.36}Tsd\discretionary {-}{}{}Merger Klassenreferenz}{193}{section.8.36}
-\contentsline {subsection}{\numberline {8.36.1}Ausf\IeC {\"u}hrliche Beschreibung}{194}{subsection.8.36.1}
-\contentsline {subsection}{\numberline {8.36.2}Dokumentation der Elementfunktionen}{194}{subsection.8.36.2}
-\contentsline {subsubsection}{\numberline {8.36.2.1}get\discretionary {-}{}{}Text\discretionary {-}{}{}Block}{194}{subsubsection.8.36.2.1}
-\contentsline {subsubsection}{\numberline {8.36.2.2}merge}{194}{subsubsection.8.36.2.2}
-\contentsline {subsubsection}{\numberline {8.36.2.3}parse\discretionary {-}{}{}Arguments}{195}{subsubsection.8.36.2.3}
-\contentsline {subsubsection}{\numberline {8.36.2.4}parse\discretionary {-}{}{}File}{195}{subsubsection.8.36.2.4}
-\contentsline {subsubsection}{\numberline {8.36.2.5}write\discretionary {-}{}{}Output\discretionary {-}{}{}File}{196}{subsubsection.8.36.2.5}
-\contentsline {subsection}{\numberline {8.36.3}Dokumentation der Datenelemente}{196}{subsection.8.36.3}
-\contentsline {subsubsection}{\numberline {8.36.3.1}opts}{196}{subsubsection.8.36.3.1}
-\contentsline {section}{\numberline {8.37}std\discretionary {-}{}{}:\discretionary {-}{}{}:vector$<$ T $>$ Template-\/\discretionary {-}{}{}Klassenreferenz}{196}{section.8.37}
-\contentsline {subsection}{\numberline {8.37.1}Ausf\IeC {\"u}hrliche Beschreibung}{197}{subsection.8.37.1}
-\contentsline {subsection}{\numberline {8.37.2}Dokumentation der Datenelemente}{197}{subsection.8.37.2}
-\contentsline {subsubsection}{\numberline {8.37.2.1}element}{197}{subsubsection.8.37.2.1}
-\contentsline {section}{\numberline {8.38}Vector3\discretionary {-}{}{}D Klassenreferenz}{197}{section.8.38}
-\contentsline {subsection}{\numberline {8.38.1}Ausf\IeC {\"u}hrliche Beschreibung}{199}{subsection.8.38.1}
-\contentsline {subsection}{\numberline {8.38.2}Beschreibung der Konstruktoren und Destruktoren}{199}{subsection.8.38.2}
-\contentsline {subsubsection}{\numberline {8.38.2.1}Vector3\discretionary {-}{}{}D}{199}{subsubsection.8.38.2.1}
-\contentsline {subsubsection}{\numberline {8.38.2.2}Vector3\discretionary {-}{}{}D}{199}{subsubsection.8.38.2.2}
-\contentsline {subsubsection}{\numberline {8.38.2.3}Vector3\discretionary {-}{}{}D}{199}{subsubsection.8.38.2.3}
-\contentsline {subsubsection}{\numberline {8.38.2.4}$\sim $\discretionary {-}{}{}Vector3\discretionary {-}{}{}D}{200}{subsubsection.8.38.2.4}
-\contentsline {subsection}{\numberline {8.38.3}Dokumentation der Elementfunktionen}{200}{subsection.8.38.3}
-\contentsline {subsubsection}{\numberline {8.38.3.1}add}{200}{subsubsection.8.38.3.1}
-\contentsline {subsubsection}{\numberline {8.38.3.2}copy}{200}{subsubsection.8.38.3.2}
-\contentsline {subsubsection}{\numberline {8.38.3.3}cross\discretionary {-}{}{}Product}{201}{subsubsection.8.38.3.3}
-\contentsline {subsubsection}{\numberline {8.38.3.4}dot\discretionary {-}{}{}Product}{202}{subsubsection.8.38.3.4}
-\contentsline {subsubsection}{\numberline {8.38.3.5}equals}{202}{subsubsection.8.38.3.5}
-\contentsline {subsubsection}{\numberline {8.38.3.6}get\discretionary {-}{}{}Angle\discretionary {-}{}{}To}{203}{subsubsection.8.38.3.6}
-\contentsline {subsubsection}{\numberline {8.38.3.7}get\discretionary {-}{}{}Distance\discretionary {-}{}{}To}{204}{subsubsection.8.38.3.7}
-\contentsline {subsubsection}{\numberline {8.38.3.8}get\discretionary {-}{}{}Length}{205}{subsubsection.8.38.3.8}
-\contentsline {subsubsection}{\numberline {8.38.3.9}get\discretionary {-}{}{}X}{206}{subsubsection.8.38.3.9}
-\contentsline {subsubsection}{\numberline {8.38.3.10}get\discretionary {-}{}{}X\discretionary {-}{}{}Y\discretionary {-}{}{}Z}{206}{subsubsection.8.38.3.10}
-\contentsline {subsubsection}{\numberline {8.38.3.11}get\discretionary {-}{}{}Y}{207}{subsubsection.8.38.3.11}
-\contentsline {subsubsection}{\numberline {8.38.3.12}get\discretionary {-}{}{}Z}{207}{subsubsection.8.38.3.12}
-\contentsline {subsubsection}{\numberline {8.38.3.13}mult}{208}{subsubsection.8.38.3.13}
-\contentsline {subsubsection}{\numberline {8.38.3.14}normalize}{208}{subsubsection.8.38.3.14}
-\contentsline {subsubsection}{\numberline {8.38.3.15}print}{209}{subsubsection.8.38.3.15}
-\contentsline {subsubsection}{\numberline {8.38.3.16}print\discretionary {-}{}{}To}{209}{subsubsection.8.38.3.16}
-\contentsline {subsubsection}{\numberline {8.38.3.17}sub}{209}{subsubsection.8.38.3.17}
-\contentsline {subsection}{\numberline {8.38.4}Freundbeziehungen und Funktionsdokumentation}{210}{subsection.8.38.4}
-\contentsline {subsubsection}{\numberline {8.38.4.1}operator$<$$<$}{210}{subsubsection.8.38.4.1}
-\contentsline {subsection}{\numberline {8.38.5}Dokumentation der Datenelemente}{210}{subsection.8.38.5}
-\contentsline {subsubsection}{\numberline {8.38.5.1}coords}{210}{subsubsection.8.38.5.1}
-\contentsline {section}{\numberline {8.39}Renderer\discretionary {-}{}{}:\discretionary {-}{}{}:Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info Strukturreferenz}{211}{section.8.39}
-\contentsline {subsection}{\numberline {8.39.1}Ausf\IeC {\"u}hrliche Beschreibung}{212}{subsection.8.39.1}
-\contentsline {subsection}{\numberline {8.39.2}Dokumentation der Datenelemente}{212}{subsection.8.39.2}
-\contentsline {subsubsection}{\numberline {8.39.2.1}camera\discretionary {-}{}{}Position}{212}{subsubsection.8.39.2.1}
-\contentsline {subsubsection}{\numberline {8.39.2.2}cut}{212}{subsubsection.8.39.2.2}
-\contentsline {subsubsection}{\numberline {8.39.2.3}height}{212}{subsubsection.8.39.2.3}
-\contentsline {subsubsection}{\numberline {8.39.2.4}invertcut}{212}{subsubsection.8.39.2.4}
-\contentsline {subsubsection}{\numberline {8.39.2.5}rotation\discretionary {-}{}{}X}{212}{subsubsection.8.39.2.5}
-\contentsline {subsubsection}{\numberline {8.39.2.6}rotation\discretionary {-}{}{}Y}{212}{subsubsection.8.39.2.6}
-\contentsline {subsubsection}{\numberline {8.39.2.7}scale}{213}{subsubsection.8.39.2.7}
-\contentsline {subsubsection}{\numberline {8.39.2.8}show\discretionary {-}{}{}\_\discretionary {-}{}{}extrapolated}{213}{subsubsection.8.39.2.8}
-\contentsline {subsubsection}{\numberline {8.39.2.9}show\discretionary {-}{}{}\_\discretionary {-}{}{}sensordata}{213}{subsubsection.8.39.2.9}
-\contentsline {subsubsection}{\numberline {8.39.2.10}show\discretionary {-}{}{}Edges}{213}{subsubsection.8.39.2.10}
-\contentsline {subsubsection}{\numberline {8.39.2.11}show\discretionary {-}{}{}Faces}{213}{subsubsection.8.39.2.11}
-\contentsline {subsubsection}{\numberline {8.39.2.12}show\discretionary {-}{}{}Points}{213}{subsubsection.8.39.2.12}
-\contentsline {subsubsection}{\numberline {8.39.2.13}width}{213}{subsubsection.8.39.2.13}
-\contentsline {subsubsection}{\numberline {8.39.2.14}zoom}{213}{subsubsection.8.39.2.14}
-\contentsline {section}{\numberline {8.40}Viewprop\discretionary {-}{}{}Box Klassenreferenz}{213}{section.8.40}
-\contentsline {subsection}{\numberline {8.40.1}Ausf\IeC {\"u}hrliche Beschreibung}{215}{subsection.8.40.1}
-\contentsline {subsection}{\numberline {8.40.2}Beschreibung der Konstruktoren und Destruktoren}{215}{subsection.8.40.2}
-\contentsline {subsubsection}{\numberline {8.40.2.1}Viewprop\discretionary {-}{}{}Box}{215}{subsubsection.8.40.2.1}
-\contentsline {subsubsection}{\numberline {8.40.2.2}$\sim $\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box}{216}{subsubsection.8.40.2.2}
-\contentsline {subsection}{\numberline {8.40.3}Dokumentation der Elementfunktionen}{216}{subsection.8.40.3}
-\contentsline {subsubsection}{\numberline {8.40.3.1}get\discretionary {-}{}{}Color\discretionary {-}{}{}Range\discretionary {-}{}{}Max\discretionary {-}{}{}Edit}{216}{subsubsection.8.40.3.1}
-\contentsline {subsubsection}{\numberline {8.40.3.2}get\discretionary {-}{}{}Color\discretionary {-}{}{}Range\discretionary {-}{}{}Min\discretionary {-}{}{}Edit}{216}{subsubsection.8.40.3.2}
-\contentsline {subsubsection}{\numberline {8.40.3.3}get\discretionary {-}{}{}Edges\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{216}{subsubsection.8.40.3.3}
-\contentsline {subsubsection}{\numberline {8.40.3.4}get\discretionary {-}{}{}Faces\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{216}{subsubsection.8.40.3.4}
-\contentsline {subsubsection}{\numberline {8.40.3.5}get\discretionary {-}{}{}Mat\discretionary {-}{}{}Visibility\discretionary {-}{}{}List\discretionary {-}{}{}Box}{216}{subsubsection.8.40.3.5}
-\contentsline {subsubsection}{\numberline {8.40.3.6}get\discretionary {-}{}{}Points\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{216}{subsubsection.8.40.3.6}
-\contentsline {subsubsection}{\numberline {8.40.3.7}get\discretionary {-}{}{}Show\discretionary {-}{}{}Extrapolated\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{216}{subsubsection.8.40.3.7}
-\contentsline {subsubsection}{\numberline {8.40.3.8}get\discretionary {-}{}{}Show\discretionary {-}{}{}Show\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}{217}{subsubsection.8.40.3.8}
-\contentsline {subsubsection}{\numberline {8.40.3.9}get\discretionary {-}{}{}View\discretionary {-}{}{}Scale\discretionary {-}{}{}Edit}{217}{subsubsection.8.40.3.9}
-\contentsline {subsubsection}{\numberline {8.40.3.10}resize}{217}{subsubsection.8.40.3.10}
-\contentsline {subsection}{\numberline {8.40.4}Dokumentation der Datenelemente}{217}{subsection.8.40.4}
-\contentsline {subsubsection}{\numberline {8.40.4.1}color\discretionary {-}{}{}Range\discretionary {-}{}{}Lbl}{217}{subsubsection.8.40.4.1}
-\contentsline {subsubsection}{\numberline {8.40.4.2}color\discretionary {-}{}{}Range\discretionary {-}{}{}Max\discretionary {-}{}{}Edit}{217}{subsubsection.8.40.4.2}
-\contentsline {subsubsection}{\numberline {8.40.4.3}color\discretionary {-}{}{}Range\discretionary {-}{}{}Min\discretionary {-}{}{}Edit}{217}{subsubsection.8.40.4.3}
-\contentsline {subsubsection}{\numberline {8.40.4.4}edges\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{217}{subsubsection.8.40.4.4}
-\contentsline {subsubsection}{\numberline {8.40.4.5}faces\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{217}{subsubsection.8.40.4.5}
-\contentsline {subsubsection}{\numberline {8.40.4.6}mat\discretionary {-}{}{}Visibility\discretionary {-}{}{}List\discretionary {-}{}{}Box}{217}{subsubsection.8.40.4.6}
-\contentsline {subsubsection}{\numberline {8.40.4.7}mat\discretionary {-}{}{}Visualization\discretionary {-}{}{}Lbl}{218}{subsubsection.8.40.4.7}
-\contentsline {subsubsection}{\numberline {8.40.4.8}points\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{218}{subsubsection.8.40.4.8}
-\contentsline {subsubsection}{\numberline {8.40.4.9}show\discretionary {-}{}{}Extrapolated\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{218}{subsubsection.8.40.4.9}
-\contentsline {subsubsection}{\numberline {8.40.4.10}show\discretionary {-}{}{}Show\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}{218}{subsubsection.8.40.4.10}
-\contentsline {subsubsection}{\numberline {8.40.4.11}view\discretionary {-}{}{}Scale\discretionary {-}{}{}Edit}{218}{subsubsection.8.40.4.11}
-\contentsline {subsubsection}{\numberline {8.40.4.12}view\discretionary {-}{}{}Scale\discretionary {-}{}{}Lbl}{218}{subsubsection.8.40.4.12}
-\contentsline {section}{\numberline {8.41}Utils\discretionary {-}{}{}:\discretionary {-}{}{}:Visualization\discretionary {-}{}{}\_\discretionary {-}{}{}info Strukturreferenz}{218}{section.8.41}
-\contentsline {subsection}{\numberline {8.41.1}Ausf\IeC {\"u}hrliche Beschreibung}{219}{subsection.8.41.1}
-\contentsline {subsection}{\numberline {8.41.2}Dokumentation der Datenelemente}{219}{subsection.8.41.2}
-\contentsline {subsubsection}{\numberline {8.41.2.1}max\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}temp}{219}{subsubsection.8.41.2.1}
-\contentsline {subsubsection}{\numberline {8.41.2.2}min\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}temp}{219}{subsubsection.8.41.2.2}
-\contentsline {chapter}{\numberline {9}Datei-\/\discretionary {-}{}{}Dokumentation}{221}{chapter.9}
-\contentsline {section}{\numberline {9.1}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/csvtosd/main.cpp-\/\discretionary {-}{}{}Dateireferenz}{221}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Dokumentation der Funktionen}{221}{subsection.9.1.1}
-\contentsline {subsubsection}{\numberline {9.1.1.1}main}{221}{subsubsection.9.1.1.1}
-\contentsline {section}{\numberline {9.2}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/odisitosd/main.cpp-\/\discretionary {-}{}{}Dateireferenz}{222}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}Dokumentation der Funktionen}{222}{subsection.9.2.1}
-\contentsline {subsubsection}{\numberline {9.2.1.1}main}{222}{subsubsection.9.2.1.1}
-\contentsline {section}{\numberline {9.3}doxygen\discretionary {-}{}{}\_\discretionary {-}{}{}dep\discretionary {-}{}{}\_\discretionary {-}{}{}dummy.\discretionary {-}{}{}h-\/\discretionary {-}{}{}Dateireferenz}{223}{section.9.3}
-\contentsline {section}{\numberline {9.4}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/mergetsd/src/mergetsd.cpp-\/\discretionary {-}{}{}Dateireferenz}{223}{section.9.4}
-\contentsline {subsection}{\numberline {9.4.1}Dokumentation der Funktionen}{224}{subsection.9.4.1}
-\contentsline {subsubsection}{\numberline {9.4.1.1}main}{224}{subsubsection.9.4.1.1}
-\contentsline {section}{\numberline {9.5}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}M\discretionary {-}{}{}E.md-\/\discretionary {-}{}{}Dateireferenz}{224}{section.9.5}
-\contentsline {section}{\numberline {9.6}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Exporter.cpp-\/\discretionary {-}{}{}Dateireferenz}{224}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}Variablen-\/\discretionary {-}{}{}Dokumentation}{225}{subsection.9.6.1}
-\contentsline {subsubsection}{\numberline {9.6.1.1}tetface\discretionary {-}{}{}\_\discretionary {-}{}{}indices}{225}{subsubsection.9.6.1.1}
-\contentsline {section}{\numberline {9.7}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Exporter.h-\/\discretionary {-}{}{}Dateireferenz}{225}{section.9.7}
-\contentsline {section}{\numberline {9.8}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Importer.cpp-\/\discretionary {-}{}{}Dateireferenz}{226}{section.9.8}
-\contentsline {subsection}{\numberline {9.8.1}Makro-\/\discretionary {-}{}{}Dokumentation}{227}{subsection.9.8.1}
-\contentsline {subsubsection}{\numberline {9.8.1.1}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}{227}{subsubsection.9.8.1.1}
-\contentsline {subsection}{\numberline {9.8.2}Dokumentation der Funktionen}{227}{subsection.9.8.2}
-\contentsline {subsubsection}{\numberline {9.8.2.1}get\discretionary {-}{}{}Face\discretionary {-}{}{}Index}{227}{subsubsection.9.8.2.1}
-\contentsline {subsubsection}{\numberline {9.8.2.2}get\discretionary {-}{}{}Text\discretionary {-}{}{}Block}{228}{subsubsection.9.8.2.2}
-\contentsline {section}{\numberline {9.9}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Importer.h-\/\discretionary {-}{}{}Dateireferenz}{228}{section.9.9}
-\contentsline {section}{\numberline {9.10}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/constants.h-\/\discretionary {-}{}{}Dateireferenz}{229}{section.9.10}
-\contentsline {subsection}{\numberline {9.10.1}Dokumentation der Aufz\IeC {\"a}hlungstypen}{230}{subsection.9.10.1}
-\contentsline {subsubsection}{\numberline {9.10.1.1}Event\discretionary {-}{}{}I\discretionary {-}{}{}D}{231}{subsubsection.9.10.1.1}
-\contentsline {subsection}{\numberline {9.10.2}Variablen-\/\discretionary {-}{}{}Dokumentation}{232}{subsection.9.10.2}
-\contentsline {subsubsection}{\numberline {9.10.2.1}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}G\discretionary {-}{}{}S}{232}{subsubsection.9.10.2.1}
-\contentsline {subsubsection}{\numberline {9.10.2.2}N\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}O\discretionary {-}{}{}F\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}S}{232}{subsubsection.9.10.2.2}
-\contentsline {section}{\numberline {9.11}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window.cpp-\/\discretionary {-}{}{}Dateireferenz}{232}{section.9.11}
-\contentsline {section}{\numberline {9.12}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window.h-\/\discretionary {-}{}{}Dateireferenz}{232}{section.9.12}
-\contentsline {section}{\numberline {9.13}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Point\discretionary {-}{}{}Window.cpp-\/\discretionary {-}{}{}Dateireferenz}{233}{section.9.13}
-\contentsline {section}{\numberline {9.14}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Point\discretionary {-}{}{}Window.h-\/\discretionary {-}{}{}Dateireferenz}{234}{section.9.14}
-\contentsline {section}{\numberline {9.15}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.cpp-\/\discretionary {-}{}{}Dateireferenz}{235}{section.9.15}
-\contentsline {subsection}{\numberline {9.15.1}Makro-\/\discretionary {-}{}{}Dokumentation}{235}{subsection.9.15.1}
-\contentsline {subsubsection}{\numberline {9.15.1.1}M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}{235}{subsubsection.9.15.1.1}
-\contentsline {subsubsection}{\numberline {9.15.1.2}M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}{235}{subsubsection.9.15.1.2}
-\contentsline {section}{\numberline {9.16}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.h-\/\discretionary {-}{}{}Dateireferenz}{236}{section.9.16}
-\contentsline {section}{\numberline {9.17}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window.cpp-\/\discretionary {-}{}{}Dateireferenz}{236}{section.9.17}
-\contentsline {subsection}{\numberline {9.17.1}Dokumentation der Funktionen}{237}{subsection.9.17.1}
-\contentsline {subsubsection}{\numberline {9.17.1.1}render\discretionary {-}{}{}\_\discretionary {-}{}{}thread}{237}{subsubsection.9.17.1.1}
-\contentsline {section}{\numberline {9.18}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window.h-\/\discretionary {-}{}{}Dateireferenz}{239}{section.9.18}
-\contentsline {section}{\numberline {9.19}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas.cpp-\/\discretionary {-}{}{}Dateireferenz}{240}{section.9.19}
-\contentsline {subsection}{\numberline {9.19.1}Variablen-\/\discretionary {-}{}{}Dokumentation}{241}{subsection.9.19.1}
-\contentsline {subsubsection}{\numberline {9.19.1.1}attrib\discretionary {-}{}{}\_\discretionary {-}{}{}list}{241}{subsubsection.9.19.1.1}
-\contentsline {section}{\numberline {9.20}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas.h-\/\discretionary {-}{}{}Dateireferenz}{241}{section.9.20}
-\contentsline {section}{\numberline {9.21}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.cpp-\/\discretionary {-}{}{}Dateireferenz}{242}{section.9.21}
-\contentsline {subsection}{\numberline {9.21.1}Makro-\/\discretionary {-}{}{}Dokumentation}{242}{subsection.9.21.1}
-\contentsline {subsubsection}{\numberline {9.21.1.1}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}{242}{subsubsection.9.21.1.1}
-\contentsline {subsubsection}{\numberline {9.21.1.2}P\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}{242}{subsubsection.9.21.1.2}
-\contentsline {subsubsection}{\numberline {9.21.1.3}V\discretionary {-}{}{}I\discretionary {-}{}{}E\discretionary {-}{}{}W\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}{242}{subsubsection.9.21.1.3}
-\contentsline {section}{\numberline {9.22}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.h-\/\discretionary {-}{}{}Dateireferenz}{243}{section.9.22}
-\contentsline {section}{\numberline {9.23}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas.cpp-\/\discretionary {-}{}{}Dateireferenz}{243}{section.9.23}
-\contentsline {section}{\numberline {9.24}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas.h-\/\discretionary {-}{}{}Dateireferenz}{244}{section.9.24}
-\contentsline {section}{\numberline {9.25}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.cpp-\/\discretionary {-}{}{}Dateireferenz}{245}{section.9.25}
-\contentsline {subsection}{\numberline {9.25.1}Makro-\/\discretionary {-}{}{}Dokumentation}{246}{subsection.9.25.1}
-\contentsline {subsubsection}{\numberline {9.25.1.1}S\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}S}{246}{subsubsection.9.25.1.1}
-\contentsline {subsection}{\numberline {9.25.2}Variablen-\/\discretionary {-}{}{}Dokumentation}{246}{subsection.9.25.2}
-\contentsline {subsubsection}{\numberline {9.25.2.1}refine\discretionary {-}{}{}\_\discretionary {-}{}{}factors}{246}{subsubsection.9.25.2.1}
-\contentsline {subsubsection}{\numberline {9.25.2.2}wx\discretionary {-}{}{}E\discretionary {-}{}{}V\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}G\discretionary {-}{}{}E}{246}{subsubsection.9.25.2.2}
-\contentsline {section}{\numberline {9.26}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.h-\/\discretionary {-}{}{}Dateireferenz}{246}{section.9.26}
-\contentsline {subsection}{\numberline {9.26.1}Variablen-\/\discretionary {-}{}{}Dokumentation}{247}{subsection.9.26.1}
-\contentsline {subsubsection}{\numberline {9.26.1.1}wx\discretionary {-}{}{}E\discretionary {-}{}{}V\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}G\discretionary {-}{}{}E}{247}{subsubsection.9.26.1.1}
-\contentsline {section}{\numberline {9.27}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Properties\discretionary {-}{}{}Box.cpp-\/\discretionary {-}{}{}Dateireferenz}{247}{section.9.27}
-\contentsline {subsection}{\numberline {9.27.1}Variablen-\/\discretionary {-}{}{}Dokumentation}{248}{subsection.9.27.1}
-\contentsline {subsubsection}{\numberline {9.27.1.1}sdfilestring}{248}{subsubsection.9.27.1.1}
-\contentsline {section}{\numberline {9.28}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Properties\discretionary {-}{}{}Box.h-\/\discretionary {-}{}{}Dateireferenz}{248}{section.9.28}
-\contentsline {section}{\numberline {9.29}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Renderer.cpp-\/\discretionary {-}{}{}Dateireferenz}{249}{section.9.29}
-\contentsline {subsection}{\numberline {9.29.1}Dokumentation der Funktionen}{250}{subsection.9.29.1}
-\contentsline {subsubsection}{\numberline {9.29.1.1}draw\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Info}{250}{subsubsection.9.29.1.1}
-\contentsline {subsubsection}{\numberline {9.29.1.2}draw\discretionary {-}{}{}Vector}{251}{subsubsection.9.29.1.2}
-\contentsline {subsubsection}{\numberline {9.29.1.3}point\discretionary {-}{}{}Behind\discretionary {-}{}{}Cut}{252}{subsubsection.9.29.1.3}
-\contentsline {subsubsection}{\numberline {9.29.1.4}render\discretionary {-}{}{}Grid}{253}{subsubsection.9.29.1.4}
-\contentsline {section}{\numberline {9.30}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Renderer.h-\/\discretionary {-}{}{}Dateireferenz}{254}{section.9.30}
-\contentsline {section}{\numberline {9.31}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box.cpp-\/\discretionary {-}{}{}Dateireferenz}{255}{section.9.31}
-\contentsline {subsection}{\numberline {9.31.1}Variablen-\/\discretionary {-}{}{}Dokumentation}{256}{subsection.9.31.1}
-\contentsline {subsubsection}{\numberline {9.31.1.1}renderchoices}{256}{subsubsection.9.31.1.1}
-\contentsline {section}{\numberline {9.32}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box.h-\/\discretionary {-}{}{}Dateireferenz}{256}{section.9.32}
-\contentsline {section}{\numberline {9.33}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Geometry\discretionary {-}{}{}Classes.cpp-\/\discretionary {-}{}{}Dateireferenz}{257}{section.9.33}
-\contentsline {subsection}{\numberline {9.33.1}Makro-\/\discretionary {-}{}{}Dokumentation}{258}{subsection.9.33.1}
-\contentsline {subsubsection}{\numberline {9.33.1.1}E\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}N}{258}{subsubsection.9.33.1.1}
-\contentsline {subsection}{\numberline {9.33.2}Dokumentation der Funktionen}{258}{subsection.9.33.2}
-\contentsline {subsubsection}{\numberline {9.33.2.1}operator$<$$<$}{258}{subsubsection.9.33.2.1}
-\contentsline {subsubsection}{\numberline {9.33.2.2}sqr}{259}{subsubsection.9.33.2.2}
-\contentsline {section}{\numberline {9.34}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Geometry\discretionary {-}{}{}Classes.h-\/\discretionary {-}{}{}Dateireferenz}{259}{section.9.34}
-\contentsline {subsection}{\numberline {9.34.1}Dokumentation der Funktionen}{260}{subsection.9.34.1}
-\contentsline {subsubsection}{\numberline {9.34.1.1}operator$<$$<$}{260}{subsubsection.9.34.1.1}
-\contentsline {section}{\numberline {9.35}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Interpolator.cpp-\/\discretionary {-}{}{}Dateireferenz}{260}{section.9.35}
-\contentsline {subsection}{\numberline {9.35.1}Makro-\/\discretionary {-}{}{}Dokumentation}{261}{subsection.9.35.1}
-\contentsline {subsubsection}{\numberline {9.35.1.1}P\discretionary {-}{}{}I}{261}{subsubsection.9.35.1.1}
-\contentsline {subsection}{\numberline {9.35.2}Dokumentation der Funktionen}{261}{subsection.9.35.2}
-\contentsline {subsubsection}{\numberline {9.35.2.1}get\discretionary {-}{}{}Sign}{261}{subsubsection.9.35.2.1}
-\contentsline {subsubsection}{\numberline {9.35.2.2}sqr}{262}{subsubsection.9.35.2.2}
-\contentsline {section}{\numberline {9.36}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Interpolator.h-\/\discretionary {-}{}{}Dateireferenz}{262}{section.9.36}
-\contentsline {section}{\numberline {9.37}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Analyzer.cpp-\/\discretionary {-}{}{}Dateireferenz}{263}{section.9.37}
-\contentsline {subsection}{\numberline {9.37.1}Dokumentation der Funktionen}{263}{subsection.9.37.1}
-\contentsline {subsubsection}{\numberline {9.37.1.1}operator$<$$<$}{264}{subsubsection.9.37.1.1}
-\contentsline {section}{\numberline {9.38}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Analyzer.h-\/\discretionary {-}{}{}Dateireferenz}{264}{section.9.38}
-\contentsline {section}{\numberline {9.39}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Mesh\discretionary {-}{}{}Processor.cpp-\/\discretionary {-}{}{}Dateireferenz}{265}{section.9.39}
-\contentsline {subsection}{\numberline {9.39.1}Dokumentation der Funktionen}{265}{subsection.9.39.1}
-\contentsline {subsubsection}{\numberline {9.39.1.1}interpolate\discretionary {-}{}{}Point}{265}{subsubsection.9.39.1.1}
-\contentsline {section}{\numberline {9.40}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Mesh\discretionary {-}{}{}Processor.h-\/\discretionary {-}{}{}Dateireferenz}{266}{section.9.40}
-\contentsline {section}{\numberline {9.41}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Object\discretionary {-}{}{}Data.cpp-\/\discretionary {-}{}{}Dateireferenz}{267}{section.9.41}
-\contentsline {subsection}{\numberline {9.41.1}Makro-\/\discretionary {-}{}{}Dokumentation}{268}{subsection.9.41.1}
-\contentsline {subsubsection}{\numberline {9.41.1.1}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}{268}{subsubsection.9.41.1.1}
-\contentsline {section}{\numberline {9.42}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Object\discretionary {-}{}{}Data.h-\/\discretionary {-}{}{}Dateireferenz}{268}{section.9.42}
-\contentsline {subsection}{\numberline {9.42.1}Makro-\/\discretionary {-}{}{}Dokumentation}{269}{subsection.9.42.1}
-\contentsline {subsubsection}{\numberline {9.42.1.1}N\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}F\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}B\discretionary {-}{}{}U\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}S}{269}{subsubsection.9.42.1.1}
-\contentsline {section}{\numberline {9.43}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/utils.cpp-\/\discretionary {-}{}{}Dateireferenz}{269}{section.9.43}
-\contentsline {subsection}{\numberline {9.43.1}Makro-\/\discretionary {-}{}{}Dokumentation}{270}{subsection.9.43.1}
-\contentsline {subsubsection}{\numberline {9.43.1.1}E\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}N}{270}{subsubsection.9.43.1.1}
-\contentsline {section}{\numberline {9.44}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/utils.h-\/\discretionary {-}{}{}Dateireferenz}{270}{section.9.44}
-\contentsline {section}{\numberline {9.45}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App.cpp-\/\discretionary {-}{}{}Dateireferenz}{272}{section.9.45}
-\contentsline {section}{\numberline {9.46}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App.h-\/\discretionary {-}{}{}Dateireferenz}{273}{section.9.46}
-\contentsline {part}{Index}{275}{section*.162}
+\contentsline {section}{\numberline {8.27}Properties\discretionary {-}{}{}Box Klassenreferenz}{157}{section.8.27}
+\contentsline {subsection}{\numberline {8.27.1}Ausf\IeC {\"u}hrliche Beschreibung}{160}{subsection.8.27.1}
+\contentsline {subsection}{\numberline {8.27.2}Beschreibung der Konstruktoren und Destruktoren}{160}{subsection.8.27.2}
+\contentsline {subsubsection}{\numberline {8.27.2.1}Properties\discretionary {-}{}{}Box}{160}{subsubsection.8.27.2.1}
+\contentsline {subsubsection}{\numberline {8.27.2.2}$\sim $\discretionary {-}{}{}Properties\discretionary {-}{}{}Box}{160}{subsubsection.8.27.2.2}
+\contentsline {subsection}{\numberline {8.27.3}Dokumentation der Elementfunktionen}{160}{subsection.8.27.3}
+\contentsline {subsubsection}{\numberline {8.27.3.1}get\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{160}{subsubsection.8.27.3.1}
+\contentsline {subsubsection}{\numberline {8.27.3.2}get\discretionary {-}{}{}Auto\discretionary {-}{}{}Update\discretionary {-}{}{}Ceck\discretionary {-}{}{}Box}{160}{subsubsection.8.27.3.2}
+\contentsline {subsubsection}{\numberline {8.27.3.3}get\discretionary {-}{}{}Clear\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{161}{subsubsection.8.27.3.3}
+\contentsline {subsubsection}{\numberline {8.27.3.4}get\discretionary {-}{}{}Current\discretionary {-}{}{}Material}{161}{subsubsection.8.27.3.4}
+\contentsline {subsubsection}{\numberline {8.27.3.5}get\discretionary {-}{}{}Density\discretionary {-}{}{}Edit}{161}{subsubsection.8.27.3.5}
+\contentsline {subsubsection}{\numberline {8.27.3.6}get\discretionary {-}{}{}Find\discretionary {-}{}{}Max\discretionary {-}{}{}Bt}{161}{subsubsection.8.27.3.6}
+\contentsline {subsubsection}{\numberline {8.27.3.7}get\discretionary {-}{}{}Interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}List}{161}{subsubsection.8.27.3.7}
+\contentsline {subsubsection}{\numberline {8.27.3.8}get\discretionary {-}{}{}Mat\discretionary {-}{}{}List\discretionary {-}{}{}Box}{161}{subsubsection.8.27.3.8}
+\contentsline {subsubsection}{\numberline {8.27.3.9}get\discretionary {-}{}{}Mat\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}{161}{subsubsection.8.27.3.9}
+\contentsline {subsubsection}{\numberline {8.27.3.10}get\discretionary {-}{}{}Mat\discretionary {-}{}{}Prop\discretionary {-}{}{}Box}{161}{subsubsection.8.27.3.10}
+\contentsline {subsubsection}{\numberline {8.27.3.11}get\discretionary {-}{}{}Max\discretionary {-}{}{}Volume\discretionary {-}{}{}Edit}{161}{subsubsection.8.27.3.11}
+\contentsline {subsubsection}{\numberline {8.27.3.12}get\discretionary {-}{}{}Next\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{162}{subsubsection.8.27.3.12}
+\contentsline {subsubsection}{\numberline {8.27.3.13}get\discretionary {-}{}{}Obj\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}{162}{subsubsection.8.27.3.13}
+\contentsline {subsubsection}{\numberline {8.27.3.14}get\discretionary {-}{}{}Prev\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{162}{subsubsection.8.27.3.14}
+\contentsline {subsubsection}{\numberline {8.27.3.15}get\discretionary {-}{}{}Quality\discretionary {-}{}{}Edit}{162}{subsubsection.8.27.3.15}
+\contentsline {subsubsection}{\numberline {8.27.3.16}get\discretionary {-}{}{}Recalc\discretionary {-}{}{}Button}{162}{subsubsection.8.27.3.16}
+\contentsline {subsubsection}{\numberline {8.27.3.17}get\discretionary {-}{}{}Sd\discretionary {-}{}{}Timeline}{162}{subsubsection.8.27.3.17}
+\contentsline {subsubsection}{\numberline {8.27.3.18}get\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data\discretionary {-}{}{}List}{162}{subsubsection.8.27.3.18}
+\contentsline {subsubsection}{\numberline {8.27.3.19}get\discretionary {-}{}{}Specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Edit}{162}{subsubsection.8.27.3.19}
+\contentsline {subsubsection}{\numberline {8.27.3.20}get\discretionary {-}{}{}Up\discretionary {-}{}{}To\discretionary {-}{}{}Date\discretionary {-}{}{}Lbl}{163}{subsubsection.8.27.3.20}
+\contentsline {subsubsection}{\numberline {8.27.3.21}resize}{163}{subsubsection.8.27.3.21}
+\contentsline {subsubsection}{\numberline {8.27.3.22}set\discretionary {-}{}{}Current\discretionary {-}{}{}Material}{163}{subsubsection.8.27.3.22}
+\contentsline {subsection}{\numberline {8.27.4}Dokumentation der Datenelemente}{163}{subsection.8.27.4}
+\contentsline {subsubsection}{\numberline {8.27.4.1}analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{163}{subsubsection.8.27.4.1}
+\contentsline {subsubsection}{\numberline {8.27.4.2}auto\discretionary {-}{}{}Update\discretionary {-}{}{}Ceck\discretionary {-}{}{}Box}{163}{subsubsection.8.27.4.2}
+\contentsline {subsubsection}{\numberline {8.27.4.3}clear\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{164}{subsubsection.8.27.4.3}
+\contentsline {subsubsection}{\numberline {8.27.4.4}current\discretionary {-}{}{}\_\discretionary {-}{}{}material}{164}{subsubsection.8.27.4.4}
+\contentsline {subsubsection}{\numberline {8.27.4.5}density\discretionary {-}{}{}Edit}{164}{subsubsection.8.27.4.5}
+\contentsline {subsubsection}{\numberline {8.27.4.6}density\discretionary {-}{}{}Lbl}{164}{subsubsection.8.27.4.6}
+\contentsline {subsubsection}{\numberline {8.27.4.7}find\discretionary {-}{}{}Max\discretionary {-}{}{}Bt}{164}{subsubsection.8.27.4.7}
+\contentsline {subsubsection}{\numberline {8.27.4.8}interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}Lbl}{164}{subsubsection.8.27.4.8}
+\contentsline {subsubsection}{\numberline {8.27.4.9}interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}List}{164}{subsubsection.8.27.4.9}
+\contentsline {subsubsection}{\numberline {8.27.4.10}mat\discretionary {-}{}{}List\discretionary {-}{}{}Box}{164}{subsubsection.8.27.4.10}
+\contentsline {subsubsection}{\numberline {8.27.4.11}mat\discretionary {-}{}{}List\discretionary {-}{}{}Box\discretionary {-}{}{}Lbl}{164}{subsubsection.8.27.4.11}
+\contentsline {subsubsection}{\numberline {8.27.4.12}mat\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}{165}{subsubsection.8.27.4.12}
+\contentsline {subsubsection}{\numberline {8.27.4.13}mat\discretionary {-}{}{}Name\discretionary {-}{}{}Lbl}{165}{subsubsection.8.27.4.13}
+\contentsline {subsubsection}{\numberline {8.27.4.14}mat\discretionary {-}{}{}Prop\discretionary {-}{}{}Box}{165}{subsubsection.8.27.4.14}
+\contentsline {subsubsection}{\numberline {8.27.4.15}max\discretionary {-}{}{}Volume\discretionary {-}{}{}Edit}{165}{subsubsection.8.27.4.15}
+\contentsline {subsubsection}{\numberline {8.27.4.16}max\discretionary {-}{}{}Volume\discretionary {-}{}{}Lbl}{165}{subsubsection.8.27.4.16}
+\contentsline {subsubsection}{\numberline {8.27.4.17}next\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{165}{subsubsection.8.27.4.17}
+\contentsline {subsubsection}{\numberline {8.27.4.18}obj\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}{165}{subsubsection.8.27.4.18}
+\contentsline {subsubsection}{\numberline {8.27.4.19}obj\discretionary {-}{}{}Name\discretionary {-}{}{}Lbl}{165}{subsubsection.8.27.4.19}
+\contentsline {subsubsection}{\numberline {8.27.4.20}prev\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}{165}{subsubsection.8.27.4.20}
+\contentsline {subsubsection}{\numberline {8.27.4.21}quality\discretionary {-}{}{}Edit}{166}{subsubsection.8.27.4.21}
+\contentsline {subsubsection}{\numberline {8.27.4.22}quality\discretionary {-}{}{}Lbl}{166}{subsubsection.8.27.4.22}
+\contentsline {subsubsection}{\numberline {8.27.4.23}recalc\discretionary {-}{}{}Button}{166}{subsubsection.8.27.4.23}
+\contentsline {subsubsection}{\numberline {8.27.4.24}sd\discretionary {-}{}{}Timeline}{166}{subsubsection.8.27.4.24}
+\contentsline {subsubsection}{\numberline {8.27.4.25}sensor\discretionary {-}{}{}Data\discretionary {-}{}{}Lbl}{166}{subsubsection.8.27.4.25}
+\contentsline {subsubsection}{\numberline {8.27.4.26}sensor\discretionary {-}{}{}Data\discretionary {-}{}{}List}{166}{subsubsection.8.27.4.26}
+\contentsline {subsubsection}{\numberline {8.27.4.27}specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Edit}{166}{subsubsection.8.27.4.27}
+\contentsline {subsubsection}{\numberline {8.27.4.28}specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Lbl}{166}{subsubsection.8.27.4.28}
+\contentsline {subsubsection}{\numberline {8.27.4.29}up\discretionary {-}{}{}To\discretionary {-}{}{}Date\discretionary {-}{}{}Lbl}{166}{subsubsection.8.27.4.29}
+\contentsline {section}{\numberline {8.28}Renderer Klassenreferenz}{167}{section.8.28}
+\contentsline {subsection}{\numberline {8.28.1}Ausf\IeC {\"u}hrliche Beschreibung}{168}{subsection.8.28.1}
+\contentsline {subsection}{\numberline {8.28.2}Dokumentation der Aufz\IeC {\"a}hlungstypen}{168}{subsection.8.28.2}
+\contentsline {subsubsection}{\numberline {8.28.2.1}Render\discretionary {-}{}{}Mode}{168}{subsubsection.8.28.2.1}
+\contentsline {subsection}{\numberline {8.28.3}Beschreibung der Konstruktoren und Destruktoren}{169}{subsection.8.28.3}
+\contentsline {subsubsection}{\numberline {8.28.3.1}Renderer}{169}{subsubsection.8.28.3.1}
+\contentsline {subsubsection}{\numberline {8.28.3.2}$\sim $\discretionary {-}{}{}Renderer}{169}{subsubsection.8.28.3.2}
+\contentsline {subsection}{\numberline {8.28.4}Dokumentation der Elementfunktionen}{169}{subsection.8.28.4}
+\contentsline {subsubsection}{\numberline {8.28.4.1}get\discretionary {-}{}{}Viewport}{169}{subsubsection.8.28.4.1}
+\contentsline {subsubsection}{\numberline {8.28.4.2}get\discretionary {-}{}{}Viewport\discretionary {-}{}{}Image}{169}{subsubsection.8.28.4.2}
+\contentsline {subsubsection}{\numberline {8.28.4.3}init\discretionary {-}{}{}G\discretionary {-}{}{}L}{169}{subsubsection.8.28.4.3}
+\contentsline {subsubsection}{\numberline {8.28.4.4}render}{170}{subsubsection.8.28.4.4}
+\contentsline {subsubsection}{\numberline {8.28.4.5}render\discretionary {-}{}{}Material}{171}{subsubsection.8.28.4.5}
+\contentsline {subsubsection}{\numberline {8.28.4.6}render\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}{172}{subsubsection.8.28.4.6}
+\contentsline {subsubsection}{\numberline {8.28.4.7}render\discretionary {-}{}{}Tetrahedra}{172}{subsubsection.8.28.4.7}
+\contentsline {subsubsection}{\numberline {8.28.4.8}resize}{173}{subsubsection.8.28.4.8}
+\contentsline {subsubsection}{\numberline {8.28.4.9}set\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Info}{174}{subsubsection.8.28.4.9}
+\contentsline {subsubsection}{\numberline {8.28.4.10}set\discretionary {-}{}{}Object}{174}{subsubsection.8.28.4.10}
+\contentsline {subsection}{\numberline {8.28.5}Dokumentation der Datenelemente}{175}{subsection.8.28.5}
+\contentsline {subsubsection}{\numberline {8.28.5.1}cut\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}info}{175}{subsubsection.8.28.5.1}
+\contentsline {subsubsection}{\numberline {8.28.5.2}display\discretionary {-}{}{}List}{175}{subsubsection.8.28.5.2}
+\contentsline {subsubsection}{\numberline {8.28.5.3}object}{175}{subsubsection.8.28.5.3}
+\contentsline {subsubsection}{\numberline {8.28.5.4}viewport}{175}{subsubsection.8.28.5.4}
+\contentsline {section}{\numberline {8.29}Utils\discretionary {-}{}{}:\discretionary {-}{}{}:Sensor\discretionary {-}{}{}Data Strukturreferenz}{175}{section.8.29}
+\contentsline {subsection}{\numberline {8.29.1}Ausf\IeC {\"u}hrliche Beschreibung}{176}{subsection.8.29.1}
+\contentsline {subsection}{\numberline {8.29.2}Dokumentation der Datenelemente}{176}{subsection.8.29.2}
+\contentsline {subsubsection}{\numberline {8.29.2.1}current\discretionary {-}{}{}\_\discretionary {-}{}{}time\discretionary {-}{}{}\_\discretionary {-}{}{}index}{176}{subsubsection.8.29.2.1}
+\contentsline {subsubsection}{\numberline {8.29.2.2}data}{177}{subsubsection.8.29.2.2}
+\contentsline {subsubsection}{\numberline {8.29.2.3}markers}{177}{subsubsection.8.29.2.3}
+\contentsline {subsubsection}{\numberline {8.29.2.4}name}{177}{subsubsection.8.29.2.4}
+\contentsline {subsubsection}{\numberline {8.29.2.5}subnames}{177}{subsubsection.8.29.2.5}
+\contentsline {subsubsection}{\numberline {8.29.2.6}timed}{177}{subsubsection.8.29.2.6}
+\contentsline {subsubsection}{\numberline {8.29.2.7}timestamps}{177}{subsubsection.8.29.2.7}
+\contentsline {section}{\numberline {8.30}Utils\discretionary {-}{}{}:\discretionary {-}{}{}:Sensor\discretionary {-}{}{}Point Strukturreferenz}{177}{section.8.30}
+\contentsline {subsection}{\numberline {8.30.1}Ausf\IeC {\"u}hrliche Beschreibung}{178}{subsection.8.30.1}
+\contentsline {subsection}{\numberline {8.30.2}Dokumentation der Datenelemente}{178}{subsection.8.30.2}
+\contentsline {subsubsection}{\numberline {8.30.2.1}coords}{178}{subsubsection.8.30.2.1}
+\contentsline {subsubsection}{\numberline {8.30.2.2}temperature}{178}{subsubsection.8.30.2.2}
+\contentsline {section}{\numberline {8.31}Utils\discretionary {-}{}{}:\discretionary {-}{}{}:Sensor\discretionary {-}{}{}Point\discretionary {-}{}{}Comparator Strukturreferenz}{178}{section.8.31}
+\contentsline {subsection}{\numberline {8.31.1}Ausf\IeC {\"u}hrliche Beschreibung}{178}{subsection.8.31.1}
+\contentsline {subsection}{\numberline {8.31.2}Dokumentation der Elementfunktionen}{179}{subsection.8.31.2}
+\contentsline {subsubsection}{\numberline {8.31.2.1}get\discretionary {-}{}{}Distance\discretionary {-}{}{}\_\discretionary {-}{}{}d}{179}{subsubsection.8.31.2.1}
+\contentsline {subsubsection}{\numberline {8.31.2.2}operator()}{180}{subsubsection.8.31.2.2}
+\contentsline {subsection}{\numberline {8.31.3}Dokumentation der Datenelemente}{180}{subsection.8.31.3}
+\contentsline {subsubsection}{\numberline {8.31.3.1}meshpoint}{180}{subsubsection.8.31.3.1}
+\contentsline {section}{\numberline {8.32}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App Klassenreferenz}{180}{section.8.32}
+\contentsline {subsection}{\numberline {8.32.1}Ausf\IeC {\"u}hrliche Beschreibung}{182}{subsection.8.32.1}
+\contentsline {subsection}{\numberline {8.32.2}Beschreibung der Konstruktoren und Destruktoren}{182}{subsection.8.32.2}
+\contentsline {subsubsection}{\numberline {8.32.2.1}$\sim $\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}{182}{subsubsection.8.32.2.1}
+\contentsline {subsection}{\numberline {8.32.3}Dokumentation der Elementfunktionen}{182}{subsection.8.32.3}
+\contentsline {subsubsection}{\numberline {8.32.3.1}add\discretionary {-}{}{}Object}{182}{subsubsection.8.32.3.1}
+\contentsline {subsubsection}{\numberline {8.32.3.2}get\discretionary {-}{}{}Active\discretionary {-}{}{}Object}{183}{subsubsection.8.32.3.2}
+\contentsline {subsubsection}{\numberline {8.32.3.3}get\discretionary {-}{}{}Current\discretionary {-}{}{}Data\discretionary {-}{}{}Object\discretionary {-}{}{}Index}{183}{subsubsection.8.32.3.3}
+\contentsline {subsubsection}{\numberline {8.32.3.4}get\discretionary {-}{}{}Data\discretionary {-}{}{}Objects}{183}{subsubsection.8.32.3.4}
+\contentsline {subsubsection}{\numberline {8.32.3.5}get\discretionary {-}{}{}Visualization\discretionary {-}{}{}Info}{183}{subsubsection.8.32.3.5}
+\contentsline {subsubsection}{\numberline {8.32.3.6}On\discretionary {-}{}{}Init}{183}{subsubsection.8.32.3.6}
+\contentsline {subsubsection}{\numberline {8.32.3.7}remove\discretionary {-}{}{}Current\discretionary {-}{}{}Object}{183}{subsubsection.8.32.3.7}
+\contentsline {subsubsection}{\numberline {8.32.3.8}set\discretionary {-}{}{}Current\discretionary {-}{}{}Data\discretionary {-}{}{}Object\discretionary {-}{}{}Index}{183}{subsubsection.8.32.3.8}
+\contentsline {subsection}{\numberline {8.32.4}Dokumentation der Datenelemente}{184}{subsection.8.32.4}
+\contentsline {subsubsection}{\numberline {8.32.4.1}current\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}object\discretionary {-}{}{}\_\discretionary {-}{}{}index}{184}{subsubsection.8.32.4.1}
+\contentsline {subsubsection}{\numberline {8.32.4.2}data\discretionary {-}{}{}\_\discretionary {-}{}{}objects}{184}{subsubsection.8.32.4.2}
+\contentsline {subsubsection}{\numberline {8.32.4.3}visualization\discretionary {-}{}{}\_\discretionary {-}{}{}info}{184}{subsubsection.8.32.4.3}
+\contentsline {section}{\numberline {8.33}Utils\discretionary {-}{}{}:\discretionary {-}{}{}:Sort\discretionary {-}{}{}Struct Strukturreferenz}{184}{section.8.33}
+\contentsline {subsection}{\numberline {8.33.1}Ausf\IeC {\"u}hrliche Beschreibung}{184}{subsection.8.33.1}
+\contentsline {subsection}{\numberline {8.33.2}Dokumentation der Datenelemente}{185}{subsection.8.33.2}
+\contentsline {subsubsection}{\numberline {8.33.2.1}distance}{185}{subsubsection.8.33.2.1}
+\contentsline {subsubsection}{\numberline {8.33.2.2}point\discretionary {-}{}{}Index}{185}{subsubsection.8.33.2.2}
+\contentsline {section}{\numberline {8.34}Tetrahedron Klassenreferenz}{185}{section.8.34}
+\contentsline {subsection}{\numberline {8.34.1}Ausf\IeC {\"u}hrliche Beschreibung}{186}{subsection.8.34.1}
+\contentsline {subsection}{\numberline {8.34.2}Beschreibung der Konstruktoren und Destruktoren}{186}{subsection.8.34.2}
+\contentsline {subsubsection}{\numberline {8.34.2.1}Tetrahedron}{186}{subsubsection.8.34.2.1}
+\contentsline {subsection}{\numberline {8.34.3}Dokumentation der Elementfunktionen}{186}{subsection.8.34.3}
+\contentsline {subsubsection}{\numberline {8.34.3.1}get\discretionary {-}{}{}V1}{186}{subsubsection.8.34.3.1}
+\contentsline {subsubsection}{\numberline {8.34.3.2}get\discretionary {-}{}{}V2}{186}{subsubsection.8.34.3.2}
+\contentsline {subsubsection}{\numberline {8.34.3.3}get\discretionary {-}{}{}V3}{187}{subsubsection.8.34.3.3}
+\contentsline {subsubsection}{\numberline {8.34.3.4}get\discretionary {-}{}{}V4}{187}{subsubsection.8.34.3.4}
+\contentsline {subsubsection}{\numberline {8.34.3.5}get\discretionary {-}{}{}Vert}{187}{subsubsection.8.34.3.5}
+\contentsline {subsection}{\numberline {8.34.4}Dokumentation der Datenelemente}{188}{subsection.8.34.4}
+\contentsline {subsubsection}{\numberline {8.34.4.1}verts}{188}{subsubsection.8.34.4.1}
+\contentsline {section}{\numberline {8.35}Triangle Klassenreferenz}{188}{section.8.35}
+\contentsline {subsection}{\numberline {8.35.1}Ausf\IeC {\"u}hrliche Beschreibung}{189}{subsection.8.35.1}
+\contentsline {subsection}{\numberline {8.35.2}Beschreibung der Konstruktoren und Destruktoren}{189}{subsection.8.35.2}
+\contentsline {subsubsection}{\numberline {8.35.2.1}Triangle}{189}{subsubsection.8.35.2.1}
+\contentsline {subsubsection}{\numberline {8.35.2.2}$\sim $\discretionary {-}{}{}Triangle}{189}{subsubsection.8.35.2.2}
+\contentsline {subsection}{\numberline {8.35.3}Dokumentation der Elementfunktionen}{189}{subsection.8.35.3}
+\contentsline {subsubsection}{\numberline {8.35.3.1}get\discretionary {-}{}{}Normal}{189}{subsubsection.8.35.3.1}
+\contentsline {subsubsection}{\numberline {8.35.3.2}get\discretionary {-}{}{}V1}{190}{subsubsection.8.35.3.2}
+\contentsline {subsubsection}{\numberline {8.35.3.3}get\discretionary {-}{}{}V2}{190}{subsubsection.8.35.3.3}
+\contentsline {subsubsection}{\numberline {8.35.3.4}get\discretionary {-}{}{}V3}{191}{subsubsection.8.35.3.4}
+\contentsline {subsubsection}{\numberline {8.35.3.5}get\discretionary {-}{}{}Vert}{191}{subsubsection.8.35.3.5}
+\contentsline {subsubsection}{\numberline {8.35.3.6}print}{192}{subsubsection.8.35.3.6}
+\contentsline {subsection}{\numberline {8.35.4}Dokumentation der Datenelemente}{192}{subsection.8.35.4}
+\contentsline {subsubsection}{\numberline {8.35.4.1}verts}{192}{subsubsection.8.35.4.1}
+\contentsline {section}{\numberline {8.36}Tsd\discretionary {-}{}{}Merger Klassenreferenz}{192}{section.8.36}
+\contentsline {subsection}{\numberline {8.36.1}Ausf\IeC {\"u}hrliche Beschreibung}{193}{subsection.8.36.1}
+\contentsline {subsection}{\numberline {8.36.2}Dokumentation der Elementfunktionen}{193}{subsection.8.36.2}
+\contentsline {subsubsection}{\numberline {8.36.2.1}get\discretionary {-}{}{}Text\discretionary {-}{}{}Block}{193}{subsubsection.8.36.2.1}
+\contentsline {subsubsection}{\numberline {8.36.2.2}merge}{193}{subsubsection.8.36.2.2}
+\contentsline {subsubsection}{\numberline {8.36.2.3}parse\discretionary {-}{}{}Arguments}{194}{subsubsection.8.36.2.3}
+\contentsline {subsubsection}{\numberline {8.36.2.4}parse\discretionary {-}{}{}File}{194}{subsubsection.8.36.2.4}
+\contentsline {subsubsection}{\numberline {8.36.2.5}write\discretionary {-}{}{}Output\discretionary {-}{}{}File}{195}{subsubsection.8.36.2.5}
+\contentsline {subsection}{\numberline {8.36.3}Dokumentation der Datenelemente}{195}{subsection.8.36.3}
+\contentsline {subsubsection}{\numberline {8.36.3.1}opts}{195}{subsubsection.8.36.3.1}
+\contentsline {section}{\numberline {8.37}std\discretionary {-}{}{}:\discretionary {-}{}{}:vector$<$ T $>$ Template-\/\discretionary {-}{}{}Klassenreferenz}{195}{section.8.37}
+\contentsline {subsection}{\numberline {8.37.1}Ausf\IeC {\"u}hrliche Beschreibung}{196}{subsection.8.37.1}
+\contentsline {subsection}{\numberline {8.37.2}Dokumentation der Datenelemente}{196}{subsection.8.37.2}
+\contentsline {subsubsection}{\numberline {8.37.2.1}element}{196}{subsubsection.8.37.2.1}
+\contentsline {section}{\numberline {8.38}Vector3\discretionary {-}{}{}D Klassenreferenz}{196}{section.8.38}
+\contentsline {subsection}{\numberline {8.38.1}Ausf\IeC {\"u}hrliche Beschreibung}{198}{subsection.8.38.1}
+\contentsline {subsection}{\numberline {8.38.2}Beschreibung der Konstruktoren und Destruktoren}{198}{subsection.8.38.2}
+\contentsline {subsubsection}{\numberline {8.38.2.1}Vector3\discretionary {-}{}{}D}{198}{subsubsection.8.38.2.1}
+\contentsline {subsubsection}{\numberline {8.38.2.2}Vector3\discretionary {-}{}{}D}{198}{subsubsection.8.38.2.2}
+\contentsline {subsubsection}{\numberline {8.38.2.3}Vector3\discretionary {-}{}{}D}{198}{subsubsection.8.38.2.3}
+\contentsline {subsubsection}{\numberline {8.38.2.4}$\sim $\discretionary {-}{}{}Vector3\discretionary {-}{}{}D}{199}{subsubsection.8.38.2.4}
+\contentsline {subsection}{\numberline {8.38.3}Dokumentation der Elementfunktionen}{199}{subsection.8.38.3}
+\contentsline {subsubsection}{\numberline {8.38.3.1}add}{199}{subsubsection.8.38.3.1}
+\contentsline {subsubsection}{\numberline {8.38.3.2}copy}{199}{subsubsection.8.38.3.2}
+\contentsline {subsubsection}{\numberline {8.38.3.3}cross\discretionary {-}{}{}Product}{200}{subsubsection.8.38.3.3}
+\contentsline {subsubsection}{\numberline {8.38.3.4}dot\discretionary {-}{}{}Product}{201}{subsubsection.8.38.3.4}
+\contentsline {subsubsection}{\numberline {8.38.3.5}equals}{201}{subsubsection.8.38.3.5}
+\contentsline {subsubsection}{\numberline {8.38.3.6}get\discretionary {-}{}{}Angle\discretionary {-}{}{}To}{202}{subsubsection.8.38.3.6}
+\contentsline {subsubsection}{\numberline {8.38.3.7}get\discretionary {-}{}{}Distance\discretionary {-}{}{}To}{203}{subsubsection.8.38.3.7}
+\contentsline {subsubsection}{\numberline {8.38.3.8}get\discretionary {-}{}{}Length}{204}{subsubsection.8.38.3.8}
+\contentsline {subsubsection}{\numberline {8.38.3.9}get\discretionary {-}{}{}X}{205}{subsubsection.8.38.3.9}
+\contentsline {subsubsection}{\numberline {8.38.3.10}get\discretionary {-}{}{}X\discretionary {-}{}{}Y\discretionary {-}{}{}Z}{205}{subsubsection.8.38.3.10}
+\contentsline {subsubsection}{\numberline {8.38.3.11}get\discretionary {-}{}{}Y}{206}{subsubsection.8.38.3.11}
+\contentsline {subsubsection}{\numberline {8.38.3.12}get\discretionary {-}{}{}Z}{206}{subsubsection.8.38.3.12}
+\contentsline {subsubsection}{\numberline {8.38.3.13}mult}{207}{subsubsection.8.38.3.13}
+\contentsline {subsubsection}{\numberline {8.38.3.14}normalize}{207}{subsubsection.8.38.3.14}
+\contentsline {subsubsection}{\numberline {8.38.3.15}print}{208}{subsubsection.8.38.3.15}
+\contentsline {subsubsection}{\numberline {8.38.3.16}print\discretionary {-}{}{}To}{208}{subsubsection.8.38.3.16}
+\contentsline {subsubsection}{\numberline {8.38.3.17}sub}{208}{subsubsection.8.38.3.17}
+\contentsline {subsection}{\numberline {8.38.4}Freundbeziehungen und Funktionsdokumentation}{209}{subsection.8.38.4}
+\contentsline {subsubsection}{\numberline {8.38.4.1}operator$<$$<$}{209}{subsubsection.8.38.4.1}
+\contentsline {subsection}{\numberline {8.38.5}Dokumentation der Datenelemente}{209}{subsection.8.38.5}
+\contentsline {subsubsection}{\numberline {8.38.5.1}coords}{209}{subsubsection.8.38.5.1}
+\contentsline {section}{\numberline {8.39}Renderer\discretionary {-}{}{}:\discretionary {-}{}{}:Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info Strukturreferenz}{210}{section.8.39}
+\contentsline {subsection}{\numberline {8.39.1}Ausf\IeC {\"u}hrliche Beschreibung}{211}{subsection.8.39.1}
+\contentsline {subsection}{\numberline {8.39.2}Dokumentation der Datenelemente}{211}{subsection.8.39.2}
+\contentsline {subsubsection}{\numberline {8.39.2.1}camera\discretionary {-}{}{}Position}{211}{subsubsection.8.39.2.1}
+\contentsline {subsubsection}{\numberline {8.39.2.2}cut}{211}{subsubsection.8.39.2.2}
+\contentsline {subsubsection}{\numberline {8.39.2.3}height}{211}{subsubsection.8.39.2.3}
+\contentsline {subsubsection}{\numberline {8.39.2.4}invertcut}{211}{subsubsection.8.39.2.4}
+\contentsline {subsubsection}{\numberline {8.39.2.5}rotation\discretionary {-}{}{}X}{211}{subsubsection.8.39.2.5}
+\contentsline {subsubsection}{\numberline {8.39.2.6}rotation\discretionary {-}{}{}Y}{211}{subsubsection.8.39.2.6}
+\contentsline {subsubsection}{\numberline {8.39.2.7}scale}{212}{subsubsection.8.39.2.7}
+\contentsline {subsubsection}{\numberline {8.39.2.8}show\discretionary {-}{}{}\_\discretionary {-}{}{}extrapolated}{212}{subsubsection.8.39.2.8}
+\contentsline {subsubsection}{\numberline {8.39.2.9}show\discretionary {-}{}{}\_\discretionary {-}{}{}sensordata}{212}{subsubsection.8.39.2.9}
+\contentsline {subsubsection}{\numberline {8.39.2.10}show\discretionary {-}{}{}Edges}{212}{subsubsection.8.39.2.10}
+\contentsline {subsubsection}{\numberline {8.39.2.11}show\discretionary {-}{}{}Faces}{212}{subsubsection.8.39.2.11}
+\contentsline {subsubsection}{\numberline {8.39.2.12}show\discretionary {-}{}{}Points}{212}{subsubsection.8.39.2.12}
+\contentsline {subsubsection}{\numberline {8.39.2.13}width}{212}{subsubsection.8.39.2.13}
+\contentsline {subsubsection}{\numberline {8.39.2.14}zoom}{212}{subsubsection.8.39.2.14}
+\contentsline {section}{\numberline {8.40}Viewprop\discretionary {-}{}{}Box Klassenreferenz}{212}{section.8.40}
+\contentsline {subsection}{\numberline {8.40.1}Ausf\IeC {\"u}hrliche Beschreibung}{214}{subsection.8.40.1}
+\contentsline {subsection}{\numberline {8.40.2}Beschreibung der Konstruktoren und Destruktoren}{214}{subsection.8.40.2}
+\contentsline {subsubsection}{\numberline {8.40.2.1}Viewprop\discretionary {-}{}{}Box}{214}{subsubsection.8.40.2.1}
+\contentsline {subsubsection}{\numberline {8.40.2.2}$\sim $\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box}{215}{subsubsection.8.40.2.2}
+\contentsline {subsection}{\numberline {8.40.3}Dokumentation der Elementfunktionen}{215}{subsection.8.40.3}
+\contentsline {subsubsection}{\numberline {8.40.3.1}get\discretionary {-}{}{}Color\discretionary {-}{}{}Range\discretionary {-}{}{}Max\discretionary {-}{}{}Edit}{215}{subsubsection.8.40.3.1}
+\contentsline {subsubsection}{\numberline {8.40.3.2}get\discretionary {-}{}{}Color\discretionary {-}{}{}Range\discretionary {-}{}{}Min\discretionary {-}{}{}Edit}{215}{subsubsection.8.40.3.2}
+\contentsline {subsubsection}{\numberline {8.40.3.3}get\discretionary {-}{}{}Edges\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{215}{subsubsection.8.40.3.3}
+\contentsline {subsubsection}{\numberline {8.40.3.4}get\discretionary {-}{}{}Faces\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{215}{subsubsection.8.40.3.4}
+\contentsline {subsubsection}{\numberline {8.40.3.5}get\discretionary {-}{}{}Mat\discretionary {-}{}{}Visibility\discretionary {-}{}{}List\discretionary {-}{}{}Box}{215}{subsubsection.8.40.3.5}
+\contentsline {subsubsection}{\numberline {8.40.3.6}get\discretionary {-}{}{}Points\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{215}{subsubsection.8.40.3.6}
+\contentsline {subsubsection}{\numberline {8.40.3.7}get\discretionary {-}{}{}Show\discretionary {-}{}{}Extrapolated\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{215}{subsubsection.8.40.3.7}
+\contentsline {subsubsection}{\numberline {8.40.3.8}get\discretionary {-}{}{}Show\discretionary {-}{}{}Show\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}{216}{subsubsection.8.40.3.8}
+\contentsline {subsubsection}{\numberline {8.40.3.9}get\discretionary {-}{}{}View\discretionary {-}{}{}Scale\discretionary {-}{}{}Edit}{216}{subsubsection.8.40.3.9}
+\contentsline {subsubsection}{\numberline {8.40.3.10}resize}{216}{subsubsection.8.40.3.10}
+\contentsline {subsection}{\numberline {8.40.4}Dokumentation der Datenelemente}{216}{subsection.8.40.4}
+\contentsline {subsubsection}{\numberline {8.40.4.1}color\discretionary {-}{}{}Range\discretionary {-}{}{}Lbl}{216}{subsubsection.8.40.4.1}
+\contentsline {subsubsection}{\numberline {8.40.4.2}color\discretionary {-}{}{}Range\discretionary {-}{}{}Max\discretionary {-}{}{}Edit}{216}{subsubsection.8.40.4.2}
+\contentsline {subsubsection}{\numberline {8.40.4.3}color\discretionary {-}{}{}Range\discretionary {-}{}{}Min\discretionary {-}{}{}Edit}{216}{subsubsection.8.40.4.3}
+\contentsline {subsubsection}{\numberline {8.40.4.4}edges\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{216}{subsubsection.8.40.4.4}
+\contentsline {subsubsection}{\numberline {8.40.4.5}faces\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{216}{subsubsection.8.40.4.5}
+\contentsline {subsubsection}{\numberline {8.40.4.6}mat\discretionary {-}{}{}Visibility\discretionary {-}{}{}List\discretionary {-}{}{}Box}{216}{subsubsection.8.40.4.6}
+\contentsline {subsubsection}{\numberline {8.40.4.7}mat\discretionary {-}{}{}Visualization\discretionary {-}{}{}Lbl}{217}{subsubsection.8.40.4.7}
+\contentsline {subsubsection}{\numberline {8.40.4.8}points\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{217}{subsubsection.8.40.4.8}
+\contentsline {subsubsection}{\numberline {8.40.4.9}show\discretionary {-}{}{}Extrapolated\discretionary {-}{}{}Check\discretionary {-}{}{}Box}{217}{subsubsection.8.40.4.9}
+\contentsline {subsubsection}{\numberline {8.40.4.10}show\discretionary {-}{}{}Show\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}{217}{subsubsection.8.40.4.10}
+\contentsline {subsubsection}{\numberline {8.40.4.11}view\discretionary {-}{}{}Scale\discretionary {-}{}{}Edit}{217}{subsubsection.8.40.4.11}
+\contentsline {subsubsection}{\numberline {8.40.4.12}view\discretionary {-}{}{}Scale\discretionary {-}{}{}Lbl}{217}{subsubsection.8.40.4.12}
+\contentsline {section}{\numberline {8.41}Utils\discretionary {-}{}{}:\discretionary {-}{}{}:Visualization\discretionary {-}{}{}\_\discretionary {-}{}{}info Strukturreferenz}{217}{section.8.41}
+\contentsline {subsection}{\numberline {8.41.1}Ausf\IeC {\"u}hrliche Beschreibung}{218}{subsection.8.41.1}
+\contentsline {subsection}{\numberline {8.41.2}Dokumentation der Datenelemente}{218}{subsection.8.41.2}
+\contentsline {subsubsection}{\numberline {8.41.2.1}max\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}temp}{218}{subsubsection.8.41.2.1}
+\contentsline {subsubsection}{\numberline {8.41.2.2}min\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}temp}{218}{subsubsection.8.41.2.2}
+\contentsline {chapter}{\numberline {9}Datei-\/\discretionary {-}{}{}Dokumentation}{219}{chapter.9}
+\contentsline {section}{\numberline {9.1}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/csvtosd/main.cpp-\/\discretionary {-}{}{}Dateireferenz}{219}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Dokumentation der Funktionen}{219}{subsection.9.1.1}
+\contentsline {subsubsection}{\numberline {9.1.1.1}main}{219}{subsubsection.9.1.1.1}
+\contentsline {section}{\numberline {9.2}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/odisitosd/main.cpp-\/\discretionary {-}{}{}Dateireferenz}{220}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Dokumentation der Funktionen}{220}{subsection.9.2.1}
+\contentsline {subsubsection}{\numberline {9.2.1.1}main}{220}{subsubsection.9.2.1.1}
+\contentsline {section}{\numberline {9.3}doxygen\discretionary {-}{}{}\_\discretionary {-}{}{}dep\discretionary {-}{}{}\_\discretionary {-}{}{}dummy.\discretionary {-}{}{}h-\/\discretionary {-}{}{}Dateireferenz}{221}{section.9.3}
+\contentsline {section}{\numberline {9.4}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/mergetsd/src/mergetsd.cpp-\/\discretionary {-}{}{}Dateireferenz}{221}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Dokumentation der Funktionen}{222}{subsection.9.4.1}
+\contentsline {subsubsection}{\numberline {9.4.1.1}main}{222}{subsubsection.9.4.1.1}
+\contentsline {section}{\numberline {9.5}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}M\discretionary {-}{}{}E.md-\/\discretionary {-}{}{}Dateireferenz}{222}{section.9.5}
+\contentsline {section}{\numberline {9.6}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Exporter.cpp-\/\discretionary {-}{}{}Dateireferenz}{222}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}Variablen-\/\discretionary {-}{}{}Dokumentation}{223}{subsection.9.6.1}
+\contentsline {subsubsection}{\numberline {9.6.1.1}tetface\discretionary {-}{}{}\_\discretionary {-}{}{}indices}{223}{subsubsection.9.6.1.1}
+\contentsline {section}{\numberline {9.7}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Exporter.h-\/\discretionary {-}{}{}Dateireferenz}{223}{section.9.7}
+\contentsline {section}{\numberline {9.8}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Importer.cpp-\/\discretionary {-}{}{}Dateireferenz}{224}{section.9.8}
+\contentsline {subsection}{\numberline {9.8.1}Makro-\/\discretionary {-}{}{}Dokumentation}{224}{subsection.9.8.1}
+\contentsline {subsubsection}{\numberline {9.8.1.1}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}{224}{subsubsection.9.8.1.1}
+\contentsline {subsection}{\numberline {9.8.2}Dokumentation der Funktionen}{224}{subsection.9.8.2}
+\contentsline {subsubsection}{\numberline {9.8.2.1}get\discretionary {-}{}{}Face\discretionary {-}{}{}Index}{224}{subsubsection.9.8.2.1}
+\contentsline {subsubsection}{\numberline {9.8.2.2}get\discretionary {-}{}{}Text\discretionary {-}{}{}Block}{225}{subsubsection.9.8.2.2}
+\contentsline {section}{\numberline {9.9}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Importer.h-\/\discretionary {-}{}{}Dateireferenz}{225}{section.9.9}
+\contentsline {section}{\numberline {9.10}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/constants.h-\/\discretionary {-}{}{}Dateireferenz}{226}{section.9.10}
+\contentsline {subsection}{\numberline {9.10.1}Dokumentation der Aufz\IeC {\"a}hlungstypen}{227}{subsection.9.10.1}
+\contentsline {subsubsection}{\numberline {9.10.1.1}Event\discretionary {-}{}{}I\discretionary {-}{}{}D}{228}{subsubsection.9.10.1.1}
+\contentsline {subsection}{\numberline {9.10.2}Variablen-\/\discretionary {-}{}{}Dokumentation}{229}{subsection.9.10.2}
+\contentsline {subsubsection}{\numberline {9.10.2.1}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}G\discretionary {-}{}{}S}{229}{subsubsection.9.10.2.1}
+\contentsline {subsubsection}{\numberline {9.10.2.2}N\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}O\discretionary {-}{}{}F\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}M\discretionary {-}{}{}O\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}S}{229}{subsubsection.9.10.2.2}
+\contentsline {section}{\numberline {9.11}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window.cpp-\/\discretionary {-}{}{}Dateireferenz}{229}{section.9.11}
+\contentsline {section}{\numberline {9.12}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window.h-\/\discretionary {-}{}{}Dateireferenz}{229}{section.9.12}
+\contentsline {section}{\numberline {9.13}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Point\discretionary {-}{}{}Window.cpp-\/\discretionary {-}{}{}Dateireferenz}{230}{section.9.13}
+\contentsline {section}{\numberline {9.14}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Point\discretionary {-}{}{}Window.h-\/\discretionary {-}{}{}Dateireferenz}{231}{section.9.14}
+\contentsline {section}{\numberline {9.15}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.cpp-\/\discretionary {-}{}{}Dateireferenz}{232}{section.9.15}
+\contentsline {subsection}{\numberline {9.15.1}Makro-\/\discretionary {-}{}{}Dokumentation}{232}{subsection.9.15.1}
+\contentsline {subsubsection}{\numberline {9.15.1.1}M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}{232}{subsubsection.9.15.1.1}
+\contentsline {subsubsection}{\numberline {9.15.1.2}M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}{232}{subsubsection.9.15.1.2}
+\contentsline {section}{\numberline {9.16}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.h-\/\discretionary {-}{}{}Dateireferenz}{233}{section.9.16}
+\contentsline {section}{\numberline {9.17}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window.cpp-\/\discretionary {-}{}{}Dateireferenz}{233}{section.9.17}
+\contentsline {subsection}{\numberline {9.17.1}Dokumentation der Funktionen}{234}{subsection.9.17.1}
+\contentsline {subsubsection}{\numberline {9.17.1.1}render\discretionary {-}{}{}\_\discretionary {-}{}{}thread}{234}{subsubsection.9.17.1.1}
+\contentsline {section}{\numberline {9.18}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window.h-\/\discretionary {-}{}{}Dateireferenz}{236}{section.9.18}
+\contentsline {section}{\numberline {9.19}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas.cpp-\/\discretionary {-}{}{}Dateireferenz}{237}{section.9.19}
+\contentsline {subsection}{\numberline {9.19.1}Variablen-\/\discretionary {-}{}{}Dokumentation}{238}{subsection.9.19.1}
+\contentsline {subsubsection}{\numberline {9.19.1.1}attrib\discretionary {-}{}{}\_\discretionary {-}{}{}list}{238}{subsubsection.9.19.1.1}
+\contentsline {section}{\numberline {9.20}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas.h-\/\discretionary {-}{}{}Dateireferenz}{238}{section.9.20}
+\contentsline {section}{\numberline {9.21}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.cpp-\/\discretionary {-}{}{}Dateireferenz}{239}{section.9.21}
+\contentsline {subsection}{\numberline {9.21.1}Makro-\/\discretionary {-}{}{}Dokumentation}{239}{subsection.9.21.1}
+\contentsline {subsubsection}{\numberline {9.21.1.1}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}{239}{subsubsection.9.21.1.1}
+\contentsline {subsubsection}{\numberline {9.21.1.2}P\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}{239}{subsubsection.9.21.1.2}
+\contentsline {subsubsection}{\numberline {9.21.1.3}V\discretionary {-}{}{}I\discretionary {-}{}{}E\discretionary {-}{}{}W\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}{239}{subsubsection.9.21.1.3}
+\contentsline {section}{\numberline {9.22}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.h-\/\discretionary {-}{}{}Dateireferenz}{240}{section.9.22}
+\contentsline {section}{\numberline {9.23}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas.cpp-\/\discretionary {-}{}{}Dateireferenz}{240}{section.9.23}
+\contentsline {section}{\numberline {9.24}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas.h-\/\discretionary {-}{}{}Dateireferenz}{241}{section.9.24}
+\contentsline {section}{\numberline {9.25}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.cpp-\/\discretionary {-}{}{}Dateireferenz}{242}{section.9.25}
+\contentsline {subsection}{\numberline {9.25.1}Makro-\/\discretionary {-}{}{}Dokumentation}{243}{subsection.9.25.1}
+\contentsline {subsubsection}{\numberline {9.25.1.1}S\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}S}{243}{subsubsection.9.25.1.1}
+\contentsline {subsection}{\numberline {9.25.2}Variablen-\/\discretionary {-}{}{}Dokumentation}{243}{subsection.9.25.2}
+\contentsline {subsubsection}{\numberline {9.25.2.1}refine\discretionary {-}{}{}\_\discretionary {-}{}{}factors}{243}{subsubsection.9.25.2.1}
+\contentsline {subsubsection}{\numberline {9.25.2.2}wx\discretionary {-}{}{}E\discretionary {-}{}{}V\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}G\discretionary {-}{}{}E}{243}{subsubsection.9.25.2.2}
+\contentsline {section}{\numberline {9.26}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.h-\/\discretionary {-}{}{}Dateireferenz}{243}{section.9.26}
+\contentsline {subsection}{\numberline {9.26.1}Variablen-\/\discretionary {-}{}{}Dokumentation}{244}{subsection.9.26.1}
+\contentsline {subsubsection}{\numberline {9.26.1.1}wx\discretionary {-}{}{}E\discretionary {-}{}{}V\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}L\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}H\discretionary {-}{}{}A\discretionary {-}{}{}N\discretionary {-}{}{}G\discretionary {-}{}{}E}{244}{subsubsection.9.26.1.1}
+\contentsline {section}{\numberline {9.27}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Properties\discretionary {-}{}{}Box.cpp-\/\discretionary {-}{}{}Dateireferenz}{244}{section.9.27}
+\contentsline {subsection}{\numberline {9.27.1}Variablen-\/\discretionary {-}{}{}Dokumentation}{245}{subsection.9.27.1}
+\contentsline {subsubsection}{\numberline {9.27.1.1}sdfilestring}{245}{subsubsection.9.27.1.1}
+\contentsline {section}{\numberline {9.28}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Properties\discretionary {-}{}{}Box.h-\/\discretionary {-}{}{}Dateireferenz}{245}{section.9.28}
+\contentsline {section}{\numberline {9.29}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Renderer.cpp-\/\discretionary {-}{}{}Dateireferenz}{246}{section.9.29}
+\contentsline {subsection}{\numberline {9.29.1}Dokumentation der Funktionen}{247}{subsection.9.29.1}
+\contentsline {subsubsection}{\numberline {9.29.1.1}draw\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Info}{247}{subsubsection.9.29.1.1}
+\contentsline {subsubsection}{\numberline {9.29.1.2}draw\discretionary {-}{}{}Vector}{248}{subsubsection.9.29.1.2}
+\contentsline {subsubsection}{\numberline {9.29.1.3}point\discretionary {-}{}{}Behind\discretionary {-}{}{}Cut}{249}{subsubsection.9.29.1.3}
+\contentsline {subsubsection}{\numberline {9.29.1.4}render\discretionary {-}{}{}Grid}{250}{subsubsection.9.29.1.4}
+\contentsline {section}{\numberline {9.30}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Renderer.h-\/\discretionary {-}{}{}Dateireferenz}{251}{section.9.30}
+\contentsline {section}{\numberline {9.31}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box.cpp-\/\discretionary {-}{}{}Dateireferenz}{252}{section.9.31}
+\contentsline {subsection}{\numberline {9.31.1}Variablen-\/\discretionary {-}{}{}Dokumentation}{253}{subsection.9.31.1}
+\contentsline {subsubsection}{\numberline {9.31.1.1}renderchoices}{253}{subsubsection.9.31.1.1}
+\contentsline {section}{\numberline {9.32}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box.h-\/\discretionary {-}{}{}Dateireferenz}{253}{section.9.32}
+\contentsline {section}{\numberline {9.33}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Geometry\discretionary {-}{}{}Classes.cpp-\/\discretionary {-}{}{}Dateireferenz}{254}{section.9.33}
+\contentsline {subsection}{\numberline {9.33.1}Makro-\/\discretionary {-}{}{}Dokumentation}{255}{subsection.9.33.1}
+\contentsline {subsubsection}{\numberline {9.33.1.1}E\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}N}{255}{subsubsection.9.33.1.1}
+\contentsline {subsection}{\numberline {9.33.2}Dokumentation der Funktionen}{255}{subsection.9.33.2}
+\contentsline {subsubsection}{\numberline {9.33.2.1}operator$<$$<$}{255}{subsubsection.9.33.2.1}
+\contentsline {subsubsection}{\numberline {9.33.2.2}sqr}{256}{subsubsection.9.33.2.2}
+\contentsline {section}{\numberline {9.34}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Geometry\discretionary {-}{}{}Classes.h-\/\discretionary {-}{}{}Dateireferenz}{256}{section.9.34}
+\contentsline {subsection}{\numberline {9.34.1}Dokumentation der Funktionen}{257}{subsection.9.34.1}
+\contentsline {subsubsection}{\numberline {9.34.1.1}operator$<$$<$}{257}{subsubsection.9.34.1.1}
+\contentsline {section}{\numberline {9.35}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Interpolator.cpp-\/\discretionary {-}{}{}Dateireferenz}{257}{section.9.35}
+\contentsline {subsection}{\numberline {9.35.1}Makro-\/\discretionary {-}{}{}Dokumentation}{258}{subsection.9.35.1}
+\contentsline {subsubsection}{\numberline {9.35.1.1}P\discretionary {-}{}{}I}{258}{subsubsection.9.35.1.1}
+\contentsline {subsection}{\numberline {9.35.2}Dokumentation der Funktionen}{258}{subsection.9.35.2}
+\contentsline {subsubsection}{\numberline {9.35.2.1}get\discretionary {-}{}{}Sign}{258}{subsubsection.9.35.2.1}
+\contentsline {subsubsection}{\numberline {9.35.2.2}sqr}{259}{subsubsection.9.35.2.2}
+\contentsline {section}{\numberline {9.36}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Interpolator.h-\/\discretionary {-}{}{}Dateireferenz}{259}{section.9.36}
+\contentsline {section}{\numberline {9.37}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Analyzer.cpp-\/\discretionary {-}{}{}Dateireferenz}{260}{section.9.37}
+\contentsline {subsection}{\numberline {9.37.1}Dokumentation der Funktionen}{261}{subsection.9.37.1}
+\contentsline {subsubsection}{\numberline {9.37.1.1}operator$<$$<$}{261}{subsubsection.9.37.1.1}
+\contentsline {section}{\numberline {9.38}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Analyzer.h-\/\discretionary {-}{}{}Dateireferenz}{261}{section.9.38}
+\contentsline {section}{\numberline {9.39}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Mesh\discretionary {-}{}{}Processor.cpp-\/\discretionary {-}{}{}Dateireferenz}{262}{section.9.39}
+\contentsline {subsection}{\numberline {9.39.1}Dokumentation der Funktionen}{263}{subsection.9.39.1}
+\contentsline {subsubsection}{\numberline {9.39.1.1}interpolate\discretionary {-}{}{}Point}{263}{subsubsection.9.39.1.1}
+\contentsline {section}{\numberline {9.40}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Mesh\discretionary {-}{}{}Processor.h-\/\discretionary {-}{}{}Dateireferenz}{264}{section.9.40}
+\contentsline {section}{\numberline {9.41}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Object\discretionary {-}{}{}Data.cpp-\/\discretionary {-}{}{}Dateireferenz}{265}{section.9.41}
+\contentsline {subsection}{\numberline {9.41.1}Makro-\/\discretionary {-}{}{}Dokumentation}{266}{subsection.9.41.1}
+\contentsline {subsubsection}{\numberline {9.41.1.1}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}{266}{subsubsection.9.41.1.1}
+\contentsline {section}{\numberline {9.42}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Object\discretionary {-}{}{}Data.h-\/\discretionary {-}{}{}Dateireferenz}{266}{section.9.42}
+\contentsline {subsection}{\numberline {9.42.1}Makro-\/\discretionary {-}{}{}Dokumentation}{267}{subsection.9.42.1}
+\contentsline {subsubsection}{\numberline {9.42.1.1}N\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}F\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}O\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}B\discretionary {-}{}{}U\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}S}{267}{subsubsection.9.42.1.1}
+\contentsline {section}{\numberline {9.43}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/utils.cpp-\/\discretionary {-}{}{}Dateireferenz}{267}{section.9.43}
+\contentsline {subsection}{\numberline {9.43.1}Makro-\/\discretionary {-}{}{}Dokumentation}{268}{subsection.9.43.1}
+\contentsline {subsubsection}{\numberline {9.43.1.1}E\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}N}{268}{subsubsection.9.43.1.1}
+\contentsline {section}{\numberline {9.44}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/utils.h-\/\discretionary {-}{}{}Dateireferenz}{268}{section.9.44}
+\contentsline {section}{\numberline {9.45}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App.cpp-\/\discretionary {-}{}{}Dateireferenz}{270}{section.9.45}
+\contentsline {section}{\numberline {9.46}/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App.h-\/\discretionary {-}{}{}Dateireferenz}{271}{section.9.46}
+\contentsline {chapter}{Index}{273}{section*.160}

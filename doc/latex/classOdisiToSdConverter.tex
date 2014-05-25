@@ -44,11 +44,11 @@ bool \hyperlink{classOdisiToSdConverter_a8c6bc01ae2c063d89dc64c0a7d68c033}{read\
 \begin{DoxyCompactList}\small\item\em Liest und setzt die Programmkonfiguration aus der Konfigurationsdatei. \end{DoxyCompactList}\item 
 bool \hyperlink{classOdisiToSdConverter_ac8d40f3edad9af5004d516809e0e40a2}{parse\-Arguments} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, string \&def\-\_\-filename, string \&data\-\_\-filename, string \&out\-\_\-filename, string \&err\-\_\-filename)
 \begin{DoxyCompactList}\small\item\em Wertet die Programmargumente aus. \end{DoxyCompactList}\item 
-bool \hyperlink{classOdisiToSdConverter_a436916f864cbfc7a9cefa5e0f640c683}{read\-Sensor\-Definitions} (string path, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&inlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&outlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&in\-\_\-x, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&out\-\_\-x)
+bool \hyperlink{classOdisiToSdConverter_a8db961a716d43b3d4de4f2e4e19b0706}{read\-Sensor\-Definitions} (string path, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&inlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&outlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&in\-\_\-x, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&out\-\_\-x, \hyperlink{classstd_1_1vector}{vector}$<$ bool $>$ \&dirlist)
 \begin{DoxyCompactList}\small\item\em Liest die Daten aus der Sensordefinitionsdatei. \end{DoxyCompactList}\item 
 bool \hyperlink{classOdisiToSdConverter_a270932ed908757ac477370eef64db442}{read\-Input\-File} (string path, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ $>$ \&values, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $>$ \&debug\-\_\-positions, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&times, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&lin\-\_\-positions)
 \begin{DoxyCompactList}\small\item\em Liest die Daten aus der Eingabedatei. \end{DoxyCompactList}\item 
-bool \hyperlink{classOdisiToSdConverter_a869a2571e5788922826f4bc63adbbe18}{write\-Output\-File} (string path, string logpath, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ $>$ \&values, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $>$ \&debug\-\_\-positions, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&times, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&lin\-\_\-positions, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&inlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&outlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&in\-\_\-x, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&out\-\_\-x)
+bool \hyperlink{classOdisiToSdConverter_a58c9836341b5aa5d8fa8eb28021b070b}{write\-Output\-File} (string path, string logpath, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ $>$ \&values, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{classstd_1_1vector}{vector}$<$ int $>$ $>$ \&debug\-\_\-positions, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&times, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&lin\-\_\-positions, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&inlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&outlist, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&in\-\_\-x, \hyperlink{classstd_1_1vector}{vector}$<$ float $>$ \&out\-\_\-x, \hyperlink{classstd_1_1vector}{vector}$<$ bool $>$ \&dirlist)
 \begin{DoxyCompactList}\small\item\em Schreibt die Ausgabedatei. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Geschützte Attribute}
 \begin{DoxyCompactItemize}
@@ -147,7 +147,7 @@ die Daten der O\-Di\-S\-I-\/\-Datei ein eine .tsd-\/\-Datei umzuwandeln. Wird du
 \end{DoxyParams}
 
 
-Definiert in Zeile 868 der Datei main.\-cpp.
+Definiert in Zeile 908 der Datei main.\-cpp.
 
 
 
@@ -346,9 +346,9 @@ War das Einlesen erfolgreich?
 \end{DoxyReturn}
 
 
-Definiert in Zeile 568 der Datei main.\-cpp.
+Definiert in Zeile 587 der Datei main.\-cpp.
 
-\hypertarget{classOdisiToSdConverter_a436916f864cbfc7a9cefa5e0f640c683}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!read\-Sensor\-Definitions@{read\-Sensor\-Definitions}}
+\hypertarget{classOdisiToSdConverter_a8db961a716d43b3d4de4f2e4e19b0706}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!read\-Sensor\-Definitions@{read\-Sensor\-Definitions}}
 \index{read\-Sensor\-Definitions@{read\-Sensor\-Definitions}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
 \subsubsection[{read\-Sensor\-Definitions}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::read\-Sensor\-Definitions (
 \begin{DoxyParamCaption}
@@ -356,9 +356,10 @@ Definiert in Zeile 568 der Datei main.\-cpp.
 \item[{{\bf vector}$<$ float $>$ \&}]{inlist, }
 \item[{{\bf vector}$<$ float $>$ \&}]{outlist, }
 \item[{{\bf vector}$<$ float $>$ \&}]{in\-\_\-x, }
-\item[{{\bf vector}$<$ float $>$ \&}]{out\-\_\-x}
+\item[{{\bf vector}$<$ float $>$ \&}]{out\-\_\-x, }
+\item[{{\bf vector}$<$ bool $>$ \&}]{dirlist}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a436916f864cbfc7a9cefa5e0f640c683}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a8db961a716d43b3d4de4f2e4e19b0706}
 
 
 Liest die Daten aus der Sensordefinitionsdatei. 
@@ -375,21 +376,24 @@ Liest die Daten aus der Sensordefinitionsdatei.
 \hline
 {\em out\-\_\-x} & Liste für die X-\/\-Positionen der Faserausgänge. \\
 \hline
+{\em dirlist} & Liste für die Richtungen der Faser zwischen Ein-\/und Ausgang bezüglich der Z-\/\-Richtung. \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Rückgabe}
 War das Einlesen erfolgreich? 
 \end{DoxyReturn}
 
 
-Definiert in Zeile 480 der Datei main.\-cpp.
+Definiert in Zeile 481 der Datei main.\-cpp.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=310pt]{classOdisiToSdConverter_a436916f864cbfc7a9cefa5e0f640c683_cgraph}
+\includegraphics[width=310pt]{classOdisiToSdConverter_a8db961a716d43b3d4de4f2e4e19b0706_cgraph}
 \end{center}
 \end{figure}
 
@@ -420,7 +424,7 @@ Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen.
 
 Definiert in Zeile 97 der Datei main.\-cpp.
 
-\hypertarget{classOdisiToSdConverter_a869a2571e5788922826f4bc63adbbe18}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!write\-Output\-File@{write\-Output\-File}}
+\hypertarget{classOdisiToSdConverter_a58c9836341b5aa5d8fa8eb28021b070b}{\index{Odisi\-To\-Sd\-Converter@{Odisi\-To\-Sd\-Converter}!write\-Output\-File@{write\-Output\-File}}
 \index{write\-Output\-File@{write\-Output\-File}!OdisiToSdConverter@{Odisi\-To\-Sd\-Converter}}
 \subsubsection[{write\-Output\-File}]{\setlength{\rightskip}{0pt plus 5cm}bool Odisi\-To\-Sd\-Converter\-::write\-Output\-File (
 \begin{DoxyParamCaption}
@@ -433,9 +437,10 @@ Definiert in Zeile 97 der Datei main.\-cpp.
 \item[{{\bf vector}$<$ float $>$ \&}]{inlist, }
 \item[{{\bf vector}$<$ float $>$ \&}]{outlist, }
 \item[{{\bf vector}$<$ float $>$ \&}]{in\-\_\-x, }
-\item[{{\bf vector}$<$ float $>$ \&}]{out\-\_\-x}
+\item[{{\bf vector}$<$ float $>$ \&}]{out\-\_\-x, }
+\item[{{\bf vector}$<$ bool $>$ \&}]{dirlist}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a869a2571e5788922826f4bc63adbbe18}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classOdisiToSdConverter_a58c9836341b5aa5d8fa8eb28021b070b}
 
 
 Schreibt die Ausgabedatei. 
@@ -462,13 +467,15 @@ Schreibt die Ausgabedatei.
 \hline
 {\em out\-\_\-x} & X-\/\-Positionen der Faserausgänge. \\
 \hline
+{\em dirlist} & Liste für die Richtungen der Faser zwischen Ein-\/und Ausgang bezüglich der Z-\/\-Richtung. \\
+\hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Rückgabe}
 War das Schreiben erfolgreich? 
 \end{DoxyReturn}
 
 
-Definiert in Zeile 667 der Datei main.\-cpp.
+Definiert in Zeile 687 der Datei main.\-cpp.
 
 
 

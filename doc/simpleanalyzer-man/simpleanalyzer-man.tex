@@ -382,18 +382,20 @@
 	Die maximale Temperaturdifferenz und die maximale Suchweite können in der Konfigurationsdatei angegeben werden. (s. \ref{subsec:conf_odisitosd})
 	\subsubsection{Die Sensordefinitionsdatei}
 	\label{subsec:sdef_odisitosd}
-	Neben der Eingabedatei müssen Sie auch hier eine Sensordefinitionsdatei angeben, in der Informationen zu der in der Eingabedatei genutzten Sensoren abgelegt sind. Die Sensordefinitionsdatei ist eine Textdatei und ist nach folgendem Schema aufgebaut:\\
+	Neben der Eingabedatei müssen Sie auch hier eine Sensordefinitionsdatei angeben, in der Informationen zum Faserverlauf abgelegt sind. Die Sensordefinitionsdatei ist eine Textdatei und ist nach folgendem Schema aufgebaut:\\
 	\begin{lstlisting}
 	i l1 x1
 	o l2 x2
 	i l3 x3
 	o l4 x4
 	...
+	d +-+-
 	\end{lstlisting}
 	\begin{hinweis}
 	Sie können Zeilen als Kommentar markieren, indem Sie diese Zeile mit \emph{\#} beginnen. Die betreffende Zeile wird dadurch nicht ausgewertet.
 	\end{hinweis}
-	In der Datei wird der Verlauf der Faser beschrieben. Es werden in zwei aufeinander folgenden Zeilen stets Ein- und Ausgangspunkt der Faser beschrieben (durch \emph{i} bzw \emph{o} markiert). $l_1...l_n$ ist dabei die Position auf der Faser, also die Länge des Verlaufs der Faser bis zu diesem Punkt. $x_1...x_n$ ist die Position auf der X-Achse. Das für den Versuch verwendete Koordinatensystem muss ggf. entsprechend des Faserverlaufs festgelegt werden.	
+	Es werden in zwei aufeinander folgenden Zeilen stets Ein- und Ausgangspunkt der Faser beschrieben (durch \emph{i} bzw \emph{o} markiert). $l_1...l_n$ ist dabei die Position auf der Faser, also die Länge des Verlaufs der Faser bis zu diesem Punkt. $x_1...x_n$ ist die Position auf der X-Achse. Das für den Versuch verwendete Koordinatensystem muss ggf. entsprechend des Faserverlaufs festgelegt werden.	\\
+	Optional können Sie für alle Faserdurchläufe durch das Material, die jeweils durch Ein- und Ausgangspunkt eingegrenzt sind, die Richtung des Faserverlaufes fest legen. Fügen Sie dazu eine Zeile hinzu, die mit \emph{d} eingeleitet wird. Nach einem Leerzeichen folgt für jeden Faserdurchlauf dessen (Fädel-)Richtung als positiv (+) oder negativ (-). Wird die Faser also bspw. abwechselnd von vorn und  hinten durch das Versuchsobjekt gefädelt, ergibt sich Abwechseln der Faserrichtung (+-+-).
 	\subsubsection{Die Konfigurationsdatei}
 	\label{subsec:conf_odisitosd}
 	Zusätzlich sind allgemeine Einstellungen zum Programm in einer Konfigurationsdatei gespeichert. Sie befindet sich, sofern Sie die in \ref{subsec:install} beschriebenen Schritte befolgt haben, in folgendem Verzeichnis:

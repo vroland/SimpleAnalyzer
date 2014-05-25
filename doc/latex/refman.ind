@@ -37,108 +37,108 @@
   \item {$\sim $\discretionary {-}{}{}Object\discretionary {-}{}{}Data}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{137}
   \item {$\sim $\discretionary {-}{}{}Properties\discretionary {-}{}{}Box}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{160}
   \item {$\sim $\discretionary {-}{}{}Renderer}
-    \subitem {Renderer}, \hyperpage{170}
+    \subitem {Renderer}, \hyperpage{169}
   \item {$\sim $\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{183}
+		\hyperpage{182}
   \item {$\sim $\discretionary {-}{}{}Triangle}
-    \subitem {Triangle}, \hyperpage{190}
+    \subitem {Triangle}, \hyperpage{189}
   \item {$\sim $\discretionary {-}{}{}Vector3\discretionary {-}{}{}D}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{199}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{198}
   \item {$\sim $\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
   \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}M\discretionary {-}{}{}E.\discretionary {-}{}{}md}, 
-		\hyperpage{224}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/csvtosd/main.\discretionary {-}{}{}cpp}, 
-		\hyperpage{221}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/mergetsd/src/mergetsd.\discretionary {-}{}{}cpp}, 
-		\hyperpage{223}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/odisitosd/main.\discretionary {-}{}{}cpp}, 
 		\hyperpage{222}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/csvtosd/main.\discretionary {-}{}{}cpp}, 
+		\hyperpage{219}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/mergetsd/src/mergetsd.\discretionary {-}{}{}cpp}, 
+		\hyperpage{221}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/odisitosd/main.\discretionary {-}{}{}cpp}, 
+		\hyperpage{220}
   \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
-		\hyperpage{232}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window.\discretionary {-}{}{}h}, 
-		\hyperpage{232}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Point\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
-		\hyperpage{233}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Point\discretionary {-}{}{}Window.\discretionary {-}{}{}h}, 
-		\hyperpage{234}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.\discretionary {-}{}{}cpp}, 
-		\hyperpage{235}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.\discretionary {-}{}{}h}, 
-		\hyperpage{236}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
-		\hyperpage{236}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window.\discretionary {-}{}{}h}, 
-		\hyperpage{239}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas.\discretionary {-}{}{}cpp}, 
-		\hyperpage{240}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas.\discretionary {-}{}{}h}, 
-		\hyperpage{241}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
-		\hyperpage{242}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.\discretionary {-}{}{}h}, 
-		\hyperpage{243}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas.\discretionary {-}{}{}cpp}, 
-		\hyperpage{243}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas.\discretionary {-}{}{}h}, 
-		\hyperpage{244}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.\discretionary {-}{}{}cpp}, 
-		\hyperpage{245}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.\discretionary {-}{}{}h}, 
-		\hyperpage{246}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Properties\discretionary {-}{}{}Box.\discretionary {-}{}{}cpp}, 
-		\hyperpage{247}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Properties\discretionary {-}{}{}Box.\discretionary {-}{}{}h}, 
-		\hyperpage{248}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Renderer.\discretionary {-}{}{}cpp}, 
-		\hyperpage{249}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Renderer.\discretionary {-}{}{}h}, 
-		\hyperpage{254}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box.\discretionary {-}{}{}cpp}, 
-		\hyperpage{255}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box.\discretionary {-}{}{}h}, 
-		\hyperpage{256}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/constants.\discretionary {-}{}{}h}, 
 		\hyperpage{229}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App.\discretionary {-}{}{}cpp}, 
-		\hyperpage{272}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App.\discretionary {-}{}{}h}, 
-		\hyperpage{273}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Exporter.\discretionary {-}{}{}cpp}, 
-		\hyperpage{224}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Exporter.\discretionary {-}{}{}h}, 
-		\hyperpage{225}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Importer.\discretionary {-}{}{}cpp}, 
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window.\discretionary {-}{}{}h}, 
+		\hyperpage{229}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Point\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
+		\hyperpage{230}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Point\discretionary {-}{}{}Window.\discretionary {-}{}{}h}, 
+		\hyperpage{231}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.\discretionary {-}{}{}cpp}, 
+		\hyperpage{232}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.\discretionary {-}{}{}h}, 
+		\hyperpage{233}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
+		\hyperpage{233}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window.\discretionary {-}{}{}h}, 
+		\hyperpage{236}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas.\discretionary {-}{}{}cpp}, 
+		\hyperpage{237}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas.\discretionary {-}{}{}h}, 
+		\hyperpage{238}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
+		\hyperpage{239}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.\discretionary {-}{}{}h}, 
+		\hyperpage{240}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas.\discretionary {-}{}{}cpp}, 
+		\hyperpage{240}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas.\discretionary {-}{}{}h}, 
+		\hyperpage{241}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.\discretionary {-}{}{}cpp}, 
+		\hyperpage{242}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.\discretionary {-}{}{}h}, 
+		\hyperpage{243}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Properties\discretionary {-}{}{}Box.\discretionary {-}{}{}cpp}, 
+		\hyperpage{244}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Properties\discretionary {-}{}{}Box.\discretionary {-}{}{}h}, 
+		\hyperpage{245}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Renderer.\discretionary {-}{}{}cpp}, 
+		\hyperpage{246}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Renderer.\discretionary {-}{}{}h}, 
+		\hyperpage{251}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box.\discretionary {-}{}{}cpp}, 
+		\hyperpage{252}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box.\discretionary {-}{}{}h}, 
+		\hyperpage{253}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I/constants.\discretionary {-}{}{}h}, 
 		\hyperpage{226}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Importer.\discretionary {-}{}{}h}, 
-		\hyperpage{228}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Geometry\discretionary {-}{}{}Classes.\discretionary {-}{}{}cpp}, 
-		\hyperpage{257}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Geometry\discretionary {-}{}{}Classes.\discretionary {-}{}{}h}, 
-		\hyperpage{259}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Interpolator.\discretionary {-}{}{}cpp}, 
-		\hyperpage{260}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Interpolator.\discretionary {-}{}{}h}, 
-		\hyperpage{262}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Analyzer.\discretionary {-}{}{}cpp}, 
-		\hyperpage{263}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Analyzer.\discretionary {-}{}{}h}, 
-		\hyperpage{264}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Mesh\discretionary {-}{}{}Processor.\discretionary {-}{}{}cpp}, 
-		\hyperpage{265}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Mesh\discretionary {-}{}{}Processor.\discretionary {-}{}{}h}, 
-		\hyperpage{266}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Object\discretionary {-}{}{}Data.\discretionary {-}{}{}cpp}, 
-		\hyperpage{267}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Object\discretionary {-}{}{}Data.\discretionary {-}{}{}h}, 
-		\hyperpage{268}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/utils.\discretionary {-}{}{}cpp}, 
-		\hyperpage{269}
-  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/utils.\discretionary {-}{}{}h}, 
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App.\discretionary {-}{}{}cpp}, 
 		\hyperpage{270}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App.\discretionary {-}{}{}h}, 
+		\hyperpage{271}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Exporter.\discretionary {-}{}{}cpp}, 
+		\hyperpage{222}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Exporter.\discretionary {-}{}{}h}, 
+		\hyperpage{223}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Importer.\discretionary {-}{}{}cpp}, 
+		\hyperpage{224}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/file\discretionary {-}{}{}I\discretionary {-}{}{}O/\discretionary {-}{}{}Importer.\discretionary {-}{}{}h}, 
+		\hyperpage{225}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Geometry\discretionary {-}{}{}Classes.\discretionary {-}{}{}cpp}, 
+		\hyperpage{254}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Geometry\discretionary {-}{}{}Classes.\discretionary {-}{}{}h}, 
+		\hyperpage{256}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Interpolator.\discretionary {-}{}{}cpp}, 
+		\hyperpage{257}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/libraries/interpolate/\discretionary {-}{}{}Interpolator.\discretionary {-}{}{}h}, 
+		\hyperpage{259}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Analyzer.\discretionary {-}{}{}cpp}, 
+		\hyperpage{260}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Analyzer.\discretionary {-}{}{}h}, 
+		\hyperpage{261}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Mesh\discretionary {-}{}{}Processor.\discretionary {-}{}{}cpp}, 
+		\hyperpage{262}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Mesh\discretionary {-}{}{}Processor.\discretionary {-}{}{}h}, 
+		\hyperpage{264}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Object\discretionary {-}{}{}Data.\discretionary {-}{}{}cpp}, 
+		\hyperpage{265}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/\discretionary {-}{}{}Object\discretionary {-}{}{}Data.\discretionary {-}{}{}h}, 
+		\hyperpage{266}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/utils.\discretionary {-}{}{}cpp}, 
+		\hyperpage{267}
+  \item {/daten/\discretionary {-}{}{}Projekte/eclipse\discretionary {-}{}{}\_\discretionary {-}{}{}workspace/simpleanalyzer-\/gui/src/processing/utils.\discretionary {-}{}{}h}, 
+		\hyperpage{268}
 
   \indexspace
 
@@ -147,12 +147,12 @@
   \item {A\-L\-G\-O\-R\-I\-T\-H\-M\-\_\-\-T\-E\-T\-R\-A\-H\-E\-D\-R\-O\-N\-S}
     \subitem {Utils}, \hyperpage{14}
   \item {add}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{200}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{199}
   \item {add\discretionary {-}{}{}Object}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{88}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{183}
+		\hyperpage{182}
   \item {add\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{137}
   \item {add\discretionary {-}{}{}Timed\discretionary {-}{}{}Data}
@@ -161,7 +161,7 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{96}
   \item {analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Check\discretionary {-}{}{}Box}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
   \item {analyze\discretionary {-}{}{}Object}
     \subitem {Analyzer}, \hyperpage{28}
   \item {analyze\discretionary {-}{}{}Point}
@@ -175,7 +175,7 @@
     \subitem {Analyzer}, \hyperpage{28}
     \subitem {operator$<$$<$}, \hyperpage{30}
   \item {Analyzer.\discretionary {-}{}{}cpp}
-    \subitem {operator$<$$<$}, \hyperpage{263}
+    \subitem {operator$<$$<$}, \hyperpage{261}
   \item {Analyzer\discretionary {-}{}{}::\discretionary {-}{}{}Analyzer\discretionary {-}{}{}Data\discretionary {-}{}{}\_\discretionary {-}{}{}dataset}, 
 		\hyperpage{31}
     \subitem {heat\discretionary {-}{}{}\_\discretionary {-}{}{}energy}, 
@@ -209,18 +209,18 @@
 		\hyperpage{88}
   \item {attrib\discretionary {-}{}{}\_\discretionary {-}{}{}list}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas.\discretionary {-}{}{}cpp}, 
-		\hyperpage{241}
+		\hyperpage{238}
   \item {auto\discretionary {-}{}{}\_\discretionary {-}{}{}delta}
     \subitem {Tsd\discretionary {-}{}{}Merger\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
 		\hyperpage{154}
   \item {auto\discretionary {-}{}{}Update\discretionary {-}{}{}Ceck\discretionary {-}{}{}Box}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
 
   \indexspace
 
   \item {basetemp}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{156}
+		\hyperpage{155}
 
   \indexspace
 
@@ -238,14 +238,14 @@
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{138}
   \item {camera\discretionary {-}{}{}Position}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{212}
+		\hyperpage{211}
   \item {canvas}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
 		\hyperpage{75}
   \item {clamp\discretionary {-}{}{}Hue}
     \subitem {Utils}, \hyperpage{14}
   \item {clear\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
   \item {clear\discretionary {-}{}{}Markers}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{109}
@@ -253,87 +253,87 @@
     \subitem {Object\discretionary {-}{}{}Data\discretionary {-}{}{}::\discretionary {-}{}{}Material\discretionary {-}{}{}Data}, 
 		\hyperpage{127}
   \item {color\discretionary {-}{}{}Range\discretionary {-}{}{}Lbl}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
   \item {color\discretionary {-}{}{}Range\discretionary {-}{}{}Max\discretionary {-}{}{}Edit}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
   \item {color\discretionary {-}{}{}Range\discretionary {-}{}{}Min\discretionary {-}{}{}Edit}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
   \item {configpaths}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{41}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{97}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
-		\hyperpage{152}
+		\hyperpage{151}
   \item {constants.\-h}
-    \subitem {I\-D\-\_\-\-A\-B\-O\-U\-T}, \hyperpage{231}
-    \subitem {I\-D\-\_\-\-A\-N\-A\-L\-Y\-Z\-E}, \hyperpage{231}
+    \subitem {I\-D\-\_\-\-A\-B\-O\-U\-T}, \hyperpage{228}
+    \subitem {I\-D\-\_\-\-A\-N\-A\-L\-Y\-Z\-E}, \hyperpage{228}
     \subitem {I\-D\-\_\-\-A\-N\-A\-L\-Y\-Z\-E\-\_\-\-M\-A\-R\-K\-E\-R\-\_\-\-C\-B}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-A\-N\-A\-L\-Y\-Z\-E\-\_\-\-P\-O\-I\-N\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-A\-N\-A\-L\-Y\-Z\-E\-\_\-\-P\-O\-I\-N\-T\-\_\-\-B\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-A\-U\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-C\-B}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-C\-H\-A\-N\-G\-E\-\_\-\-A\-C\-T\-I\-V\-E\-\_\-\-O\-B\-J}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-C\-H\-E\-C\-K\-L\-I\-S\-T\-B\-O\-X\-\_\-\-V\-I\-E\-W\-\_\-\-P\-R\-O\-P}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-C\-L\-E\-A\-R\-\_\-\-M\-A\-R\-K\-E\-R\-\_\-\-B\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-C\-O\-L\-O\-R\-S\-C\-A\-L\-E\-\_\-\-C\-O\-L\-O\-R\-B\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-C\-O\-L\-O\-R\-S\-C\-A\-L\-E\-\_\-\-P\-R\-O\-P}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-C\-U\-T\-\_\-\-C\-A\-N\-V\-A\-S}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-C\-U\-T\-\_\-\-T\-R\-I\-\_\-\-E\-D\-I\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-A\-C\-T\-I\-V\-E\-\_\-\-O\-B\-J}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-E\-X\-P\-O\-R\-T\-\_\-\-C\-U\-T\-\_\-\-C\-S\-V\-\_\-\-B\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-E\-X\-P\-O\-R\-T\-\_\-\-C\-U\-T\-\_\-\-I\-M\-G\-\_\-\-B\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-E\-X\-P\-O\-R\-T\-\_\-\-V\-I\-E\-W\-P\-O\-R\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-E\-X\-P\-O\-R\-T\-\_\-\-V\-T\-K}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-F\-I\-N\-D\-\_\-\-M\-A\-X\-\_\-\-B\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-G\-E\-N\-E\-R\-A\-L\-\_\-\-P\-R\-O\-P}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-G\-E\-N\-E\-R\-A\-L\-\_\-\-V\-I\-E\-W\-\_\-\-P\-R\-O\-P}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-I\-M\-M\-E\-D\-I\-A\-T\-E\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-P\-R\-O\-P}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-I\-M\-P\-O\-R\-T\-\_\-\-O\-B\-J}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-I\-M\-P\-O\-R\-T\-\_\-\-S\-D}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-I\-M\-P\-O\-R\-T\-\_\-\-T\-S\-D}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-M\-A\-R\-K\-E\-R\-\_\-\-N\-E\-X\-T\-\_\-\-B\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-M\-A\-R\-K\-E\-R\-\_\-\-P\-R\-E\-V\-\_\-\-B\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-M\-A\-T\-E\-R\-I\-A\-L\-B\-O\-X}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-O\-P\-E\-N\-\_\-\-M\-A\-N\-U\-A\-L}, 
-		\hyperpage{231}
-    \subitem {I\-D\-\_\-\-R\-E\-C\-A\-L\-C\-B\-T}, \hyperpage{231}
+		\hyperpage{228}
+    \subitem {I\-D\-\_\-\-R\-E\-C\-A\-L\-C\-B\-T}, \hyperpage{228}
     \subitem {I\-D\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-C\-U\-T}, 
-		\hyperpage{231}
+		\hyperpage{228}
     \subitem {I\-D\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-C\-U\-T\-\_\-\-B\-T}, 
-		\hyperpage{231}
-    \subitem {I\-D\-\_\-\-S\-D\-\_\-\-B\-O\-X}, \hyperpage{231}
+		\hyperpage{228}
+    \subitem {I\-D\-\_\-\-S\-D\-\_\-\-B\-O\-X}, \hyperpage{228}
     \subitem {I\-D\-\_\-\-S\-D\-\_\-\-T\-I\-M\-E\-L\-I\-N\-E}, 
-		\hyperpage{231}
-    \subitem {I\-D\-\_\-\-T\-E\-S\-T}, \hyperpage{231}
+		\hyperpage{228}
+    \subitem {I\-D\-\_\-\-T\-E\-S\-T}, \hyperpage{228}
   \item {constants.\discretionary {-}{}{}h}
     \subitem {Event\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
-		\hyperpage{230}
+		\hyperpage{227}
   \item {contains}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{36, 37}
@@ -346,17 +346,17 @@
 		\hyperpage{147}
   \item {coords}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Point}, 
-		\hyperpage{179}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{210}
+		\hyperpage{178}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{209}
   \item {copy}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{200}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{199}
   \item {copy\discretionary {-}{}{}Sensor\discretionary {-}{}{}Point}
     \subitem {Utils}, \hyperpage{15}
   \item {core\discretionary {-}{}{}\_\discretionary {-}{}{}count}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
 		\hyperpage{75}
   \item {cross\discretionary {-}{}{}Product}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{201}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{200}
   \item {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{35}
     \subitem {configpaths}, \hyperpage{41}
@@ -380,25 +380,25 @@
   \item {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
 		\hyperpage{152}
     \subitem {max\discretionary {-}{}{}\_\discretionary {-}{}{}time}, 
-		\hyperpage{153}
+		\hyperpage{152}
     \subitem {min\discretionary {-}{}{}\_\discretionary {-}{}{}time}, 
-		\hyperpage{153}
-    \subitem {namecol}, \hyperpage{153}
+		\hyperpage{152}
+    \subitem {namecol}, \hyperpage{152}
     \subitem {replace\discretionary {-}{}{}\_\discretionary {-}{}{}comma\discretionary {-}{}{}\_\discretionary {-}{}{}with\discretionary {-}{}{}\_\discretionary {-}{}{}point}, 
-		\hyperpage{153}
+		\hyperpage{152}
     \subitem {separator}, \hyperpage{153}
     \subitem {start\discretionary {-}{}{}\_\discretionary {-}{}{}col}, 
-		\hyperpage{154}
+		\hyperpage{153}
     \subitem {time\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}, 
-		\hyperpage{154}
-    \subitem {timecol}, \hyperpage{154}
+		\hyperpage{153}
+    \subitem {timecol}, \hyperpage{153}
   \item {csvtosd/main.\discretionary {-}{}{}cpp}
-    \subitem {main}, \hyperpage{221}
+    \subitem {main}, \hyperpage{219}
   \item {current\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}object\discretionary {-}{}{}\_\discretionary {-}{}{}index}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{185}
+		\hyperpage{184}
   \item {current\discretionary {-}{}{}\_\discretionary {-}{}{}material}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
   \item {current\discretionary {-}{}{}\_\discretionary {-}{}{}mx}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{60}
@@ -413,30 +413,30 @@
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{144}
   \item {current\discretionary {-}{}{}\_\discretionary {-}{}{}time\discretionary {-}{}{}\_\discretionary {-}{}{}index}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{177}
+		\hyperpage{176}
   \item {cut}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{212}
+		\hyperpage{211}
   \item {cut\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}info}
-    \subitem {Renderer}, \hyperpage{176}
+    \subitem {Renderer}, \hyperpage{175}
 
   \indexspace
 
   \item {data}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{177}
+		\hyperpage{176}
   \item {data\discretionary {-}{}{}\_\discretionary {-}{}{}directory}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{97}
   \item {data\discretionary {-}{}{}\_\discretionary {-}{}{}objects}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{185}
+		\hyperpage{184}
   \item {data\discretionary {-}{}{}\_\discretionary {-}{}{}sets}
     \subitem {Analyzer\discretionary {-}{}{}::\discretionary {-}{}{}Analyzer\discretionary {-}{}{}Data\discretionary {-}{}{}\_\discretionary {-}{}{}object}, 
 		\hyperpage{34}
   \item {delta}
     \subitem {Tsd\discretionary {-}{}{}Merger\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{155}
+		\hyperpage{154}
   \item {delta\discretionary {-}{}{}\_\discretionary {-}{}{}v\discretionary {-}{}{}\_\discretionary {-}{}{}view}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{117}
@@ -450,45 +450,45 @@
     \subitem {Object\discretionary {-}{}{}Data\discretionary {-}{}{}::\discretionary {-}{}{}Material\discretionary {-}{}{}Data}, 
 		\hyperpage{127}
   \item {density\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
   \item {density\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
   \item {display\discretionary {-}{}{}List}
-    \subitem {Renderer}, \hyperpage{176}
+    \subitem {Renderer}, \hyperpage{175}
   \item {distance}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sort\discretionary {-}{}{}Struct}, 
-		\hyperpage{186}
+		\hyperpage{185}
   \item {do\discretionary {-}{}{}\_\discretionary {-}{}{}refresh}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas}, 
 		\hyperpage{83}
   \item {dot\discretionary {-}{}{}Product}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{202}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{201}
   \item {doxygen\discretionary {-}{}{}\_\discretionary {-}{}{}dep\discretionary {-}{}{}\_\discretionary {-}{}{}dummy.\discretionary {-}{}{}h}, 
-		\hyperpage{223}
+		\hyperpage{221}
   \item {draw\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Info}
-    \subitem {Renderer.\discretionary {-}{}{}cpp}, \hyperpage{250}
+    \subitem {Renderer.\discretionary {-}{}{}cpp}, \hyperpage{247}
   \item {draw\discretionary {-}{}{}Vector}
-    \subitem {Renderer.\discretionary {-}{}{}cpp}, \hyperpage{251}
+    \subitem {Renderer.\discretionary {-}{}{}cpp}, \hyperpage{248}
 
   \indexspace
 
   \item {E\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}N}
     \subitem {Geometry\discretionary {-}{}{}Classes.\discretionary {-}{}{}cpp}, 
-		\hyperpage{258}
-    \subitem {utils.\discretionary {-}{}{}cpp}, \hyperpage{270}
+		\hyperpage{255}
+    \subitem {utils.\discretionary {-}{}{}cpp}, \hyperpage{268}
   \item {edges\discretionary {-}{}{}Check\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
   \item {element}
-    \subitem {std\discretionary {-}{}{}::vector}, \hyperpage{197}
+    \subitem {std\discretionary {-}{}{}::vector}, \hyperpage{196}
   \item {elements}
     \subitem {Matrix3\discretionary {-}{}{}D}, \hyperpage{132}
   \item {equals}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{202}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{201}
   \item {error\discretionary {-}{}{}\_\discretionary {-}{}{}threshold}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{156}
+		\hyperpage{155}
   \item {Event\discretionary {-}{}{}I\discretionary {-}{}{}D}
-    \subitem {constants.\discretionary {-}{}{}h}, \hyperpage{230}
+    \subitem {constants.\discretionary {-}{}{}h}, \hyperpage{227}
   \item {export\discretionary {-}{}{}\_\discretionary {-}{}{}csv\discretionary {-}{}{}\_\discretionary {-}{}{}bt}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
 		\hyperpage{75}
@@ -510,7 +510,7 @@
     \subitem {Exporter}, \hyperpage{44}
   \item {Exporter.\discretionary {-}{}{}cpp}
     \subitem {tetface\discretionary {-}{}{}\_\discretionary {-}{}{}indices}, 
-		\hyperpage{225}
+		\hyperpage{223}
   \item {extrapolated}
     \subitem {Analyzer\discretionary {-}{}{}::\discretionary {-}{}{}Analyzer\discretionary {-}{}{}Data\discretionary {-}{}{}\_\discretionary {-}{}{}point}, 
 		\hyperpage{35}
@@ -520,12 +520,12 @@
   \indexspace
 
   \item {faces\discretionary {-}{}{}Check\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
   \item {fiber\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{156}
+		\hyperpage{155}
   \item {find\discretionary {-}{}{}Max\discretionary {-}{}{}Bt}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
   \item {find\discretionary {-}{}{}Max\discretionary {-}{}{}Value}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{109}
@@ -534,7 +534,7 @@
 		\hyperpage{54}
   \item {flipobj}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{156}
+		\hyperpage{155}
   \item {floattostr}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{148}
@@ -647,9 +647,9 @@
     \subitem {y}, \hyperpage{61}
   \item {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.\discretionary {-}{}{}cpp}
     \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}, 
-		\hyperpage{235}
+		\hyperpage{232}
     \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}, 
-		\hyperpage{235}
+		\hyperpage{232}
   \item {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
 		\hyperpage{62}
     \subitem {$\sim $\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
@@ -725,7 +725,7 @@
     \subitem {width\discretionary {-}{}{}Heightlbl}, \hyperpage{78}
   \item {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}
     \subitem {render\discretionary {-}{}{}\_\discretionary {-}{}{}thread}, 
-		\hyperpage{237}
+		\hyperpage{234}
   \item {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas}, 
 		\hyperpage{79}
     \subitem {$\sim $\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas}, 
@@ -755,7 +755,7 @@
 		\hyperpage{83}
   \item {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas.\discretionary {-}{}{}cpp}
     \subitem {attrib\discretionary {-}{}{}\_\discretionary {-}{}{}list}, 
-		\hyperpage{241}
+		\hyperpage{238}
   \item {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{84}
     \subitem {$\sim $\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
@@ -874,11 +874,11 @@
     \subitem {viewbox}, \hyperpage{99}
   \item {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}
     \subitem {P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
-		\hyperpage{242}
+		\hyperpage{239}
     \subitem {P\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}, 
-		\hyperpage{242}
+		\hyperpage{239}
     \subitem {V\discretionary {-}{}{}I\discretionary {-}{}{}E\discretionary {-}{}{}W\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}, 
-		\hyperpage{242}
+		\hyperpage{239}
   \item {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas}, 
 		\hyperpage{99}
     \subitem {$\sim $\discretionary {-}{}{}G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas}, 
@@ -972,34 +972,34 @@
     \subitem {zoom}, \hyperpage{118}
   \item {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.\discretionary {-}{}{}cpp}
     \subitem {refine\discretionary {-}{}{}\_\discretionary {-}{}{}factors}, 
-		\hyperpage{246}
+		\hyperpage{243}
   \item {Geometry\discretionary {-}{}{}Classes.\discretionary {-}{}{}cpp}
     \subitem {E\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}N}, 
-		\hyperpage{258}
-    \subitem {operator$<$$<$}, \hyperpage{258}
-    \subitem {sqr}, \hyperpage{259}
+		\hyperpage{255}
+    \subitem {operator$<$$<$}, \hyperpage{255}
+    \subitem {sqr}, \hyperpage{256}
   \item {Geometry\discretionary {-}{}{}Classes.\discretionary {-}{}{}h}
-    \subitem {operator$<$$<$}, \hyperpage{260}
+    \subitem {operator$<$$<$}, \hyperpage{257}
   \item {get\discretionary {-}{}{}Active\discretionary {-}{}{}Object}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{183}
+		\hyperpage{182}
   \item {get\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Check\discretionary {-}{}{}Box}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{160}
   \item {get\discretionary {-}{}{}Angle\discretionary {-}{}{}To}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{203}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{202}
   \item {get\discretionary {-}{}{}Auto\discretionary {-}{}{}Update\discretionary {-}{}{}Ceck\discretionary {-}{}{}Box}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{160}
   \item {get\discretionary {-}{}{}Clear\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{160}
   \item {get\discretionary {-}{}{}Color\discretionary {-}{}{}Range\discretionary {-}{}{}Max\discretionary {-}{}{}Edit}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
   \item {get\discretionary {-}{}{}Color\discretionary {-}{}{}Range\discretionary {-}{}{}Min\discretionary {-}{}{}Edit}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
   \item {get\discretionary {-}{}{}Current\discretionary {-}{}{}Data\discretionary {-}{}{}Object\discretionary {-}{}{}Index}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{184}
+		\hyperpage{183}
   \item {get\discretionary {-}{}{}Current\discretionary {-}{}{}Material}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
   \item {get\discretionary {-}{}{}Current\discretionary {-}{}{}Sensor\discretionary {-}{}{}Index}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{139}
   \item {get\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Properties}
@@ -1007,25 +1007,25 @@
 		\hyperpage{66}
   \item {get\discretionary {-}{}{}Data\discretionary {-}{}{}Objects}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{184}
+		\hyperpage{183}
   \item {get\discretionary {-}{}{}Density\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
   \item {get\discretionary {-}{}{}Display\discretionary {-}{}{}Area}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{55}
   \item {get\discretionary {-}{}{}Distance\discretionary {-}{}{}\_\discretionary {-}{}{}d}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Point\discretionary {-}{}{}Comparator}, 
-		\hyperpage{180}
+		\hyperpage{179}
   \item {get\discretionary {-}{}{}Distance\discretionary {-}{}{}To}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{204}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{203}
   \item {get\discretionary {-}{}{}Edges\discretionary {-}{}{}Check\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
   \item {get\discretionary {-}{}{}Face\discretionary {-}{}{}Index}
-    \subitem {Importer.\discretionary {-}{}{}cpp}, \hyperpage{227}
+    \subitem {Importer.\discretionary {-}{}{}cpp}, \hyperpage{224}
   \item {get\discretionary {-}{}{}Faces\discretionary {-}{}{}Check\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
   \item {get\discretionary {-}{}{}Find\discretionary {-}{}{}Max\discretionary {-}{}{}Bt}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
   \item {get\discretionary {-}{}{}Font\discretionary {-}{}{}Size}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{55}
@@ -1036,27 +1036,27 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{55}
   \item {get\discretionary {-}{}{}Interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}List}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
   \item {get\discretionary {-}{}{}Length}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{205}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{204}
   \item {get\discretionary {-}{}{}Markers}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{110}
   \item {get\discretionary {-}{}{}Mat\discretionary {-}{}{}List\discretionary {-}{}{}Box}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
   \item {get\discretionary {-}{}{}Mat\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
   \item {get\discretionary {-}{}{}Mat\discretionary {-}{}{}Prop\discretionary {-}{}{}Box}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
   \item {get\discretionary {-}{}{}Mat\discretionary {-}{}{}Visibility\discretionary {-}{}{}List\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
   \item {get\discretionary {-}{}{}Materials}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{140}
   \item {get\discretionary {-}{}{}Max\discretionary {-}{}{}Value}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{110}
   \item {get\discretionary {-}{}{}Max\discretionary {-}{}{}Volume\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
   \item {get\discretionary {-}{}{}Maxvolume}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{140}
   \item {get\discretionary {-}{}{}Min\discretionary {-}{}{}Value}
@@ -1068,23 +1068,23 @@
   \item {get\discretionary {-}{}{}Name}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{141}
   \item {get\discretionary {-}{}{}Next\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
   \item {get\discretionary {-}{}{}Normal}
-    \subitem {Triangle}, \hyperpage{190}
+    \subitem {Triangle}, \hyperpage{189}
   \item {get\discretionary {-}{}{}Obj\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
   \item {get\discretionary {-}{}{}Point\discretionary {-}{}{}Value}
     \subitem {Utils}, \hyperpage{18}
   \item {get\discretionary {-}{}{}Points\discretionary {-}{}{}Check\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
   \item {get\discretionary {-}{}{}Prev\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
   \item {get\discretionary {-}{}{}Quality}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{141}
   \item {get\discretionary {-}{}{}Quality\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
   \item {get\discretionary {-}{}{}Recalc\discretionary {-}{}{}Button}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
   \item {get\discretionary {-}{}{}Renderer}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas}, 
 		\hyperpage{81}
@@ -1092,71 +1092,71 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas}, 
 		\hyperpage{101}
   \item {get\discretionary {-}{}{}Sd\discretionary {-}{}{}Timeline}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
   \item {get\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data\discretionary {-}{}{}List}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{141}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
   \item {get\discretionary {-}{}{}Show\discretionary {-}{}{}Extrapolated\discretionary {-}{}{}Check\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
   \item {get\discretionary {-}{}{}Show\discretionary {-}{}{}Show\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
   \item {get\discretionary {-}{}{}Sign}
-    \subitem {Interpolator.\discretionary {-}{}{}cpp}, \hyperpage{261}
+    \subitem {Interpolator.\discretionary {-}{}{}cpp}, \hyperpage{258}
   \item {get\discretionary {-}{}{}Specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
   \item {get\discretionary {-}{}{}Step\discretionary {-}{}{}Width}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{55}
   \item {get\discretionary {-}{}{}Text\discretionary {-}{}{}Block}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{37}
-    \subitem {Importer.\discretionary {-}{}{}cpp}, \hyperpage{228}
+    \subitem {Importer.\discretionary {-}{}{}cpp}, \hyperpage{225}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{148}
-    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{194}
+    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{193}
   \item {get\discretionary {-}{}{}Text\discretionary {-}{}{}Color}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{56}
   \item {get\discretionary {-}{}{}Up\discretionary {-}{}{}To\discretionary {-}{}{}Date\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{162}
   \item {get\discretionary {-}{}{}V1}
-    \subitem {Tetrahedron}, \hyperpage{187}
-    \subitem {Triangle}, \hyperpage{191}
+    \subitem {Tetrahedron}, \hyperpage{186}
+    \subitem {Triangle}, \hyperpage{190}
   \item {get\discretionary {-}{}{}V2}
+    \subitem {Tetrahedron}, \hyperpage{186}
+    \subitem {Triangle}, \hyperpage{190}
+  \item {get\discretionary {-}{}{}V3}
     \subitem {Tetrahedron}, \hyperpage{187}
     \subitem {Triangle}, \hyperpage{191}
-  \item {get\discretionary {-}{}{}V3}
-    \subitem {Tetrahedron}, \hyperpage{188}
-    \subitem {Triangle}, \hyperpage{192}
   \item {get\discretionary {-}{}{}V4}
-    \subitem {Tetrahedron}, \hyperpage{188}
+    \subitem {Tetrahedron}, \hyperpage{187}
   \item {get\discretionary {-}{}{}Value}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{111}
   \item {get\discretionary {-}{}{}Vert}
-    \subitem {Tetrahedron}, \hyperpage{188}
-    \subitem {Triangle}, \hyperpage{192}
+    \subitem {Tetrahedron}, \hyperpage{187}
+    \subitem {Triangle}, \hyperpage{191}
   \item {get\discretionary {-}{}{}View\discretionary {-}{}{}Scale\discretionary {-}{}{}Edit}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
   \item {get\discretionary {-}{}{}Viewport}
-    \subitem {Renderer}, \hyperpage{170}
+    \subitem {Renderer}, \hyperpage{169}
   \item {get\discretionary {-}{}{}Viewport\discretionary {-}{}{}Image}
-    \subitem {Renderer}, \hyperpage{170}
+    \subitem {Renderer}, \hyperpage{169}
   \item {get\discretionary {-}{}{}Visualization\discretionary {-}{}{}Info}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{184}
+		\hyperpage{183}
   \item {get\discretionary {-}{}{}X}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{56}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{206}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{205}
   \item {get\discretionary {-}{}{}X\discretionary {-}{}{}Y\discretionary {-}{}{}Z}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{206}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{205}
   \item {get\discretionary {-}{}{}Y}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{56}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{207}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{206}
   \item {get\discretionary {-}{}{}Z}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{207}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{206}
   \item {gl\discretionary {-}{}{}\_\discretionary {-}{}{}context}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{97}
@@ -1175,84 +1175,84 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{60}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{156}
+		\hyperpage{155}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{212}
+		\hyperpage{211}
   \item {hsv\discretionary {-}{}{}To\discretionary {-}{}{}Rgb}
     \subitem {Utils}, \hyperpage{19}
 
   \indexspace
 
   \item {I\-D\-\_\-\-A\-B\-O\-U\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-A\-N\-A\-L\-Y\-Z\-E}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-A\-N\-A\-L\-Y\-Z\-E\-\_\-\-M\-A\-R\-K\-E\-R\-\_\-\-C\-B}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-A\-N\-A\-L\-Y\-Z\-E\-\_\-\-P\-O\-I\-N\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-A\-N\-A\-L\-Y\-Z\-E\-\_\-\-P\-O\-I\-N\-T\-\_\-\-B\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-A\-U\-T\-O\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-C\-B}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-C\-H\-A\-N\-G\-E\-\_\-\-A\-C\-T\-I\-V\-E\-\_\-\-O\-B\-J}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-C\-H\-E\-C\-K\-L\-I\-S\-T\-B\-O\-X\-\_\-\-V\-I\-E\-W\-\_\-\-P\-R\-O\-P}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-C\-L\-E\-A\-R\-\_\-\-M\-A\-R\-K\-E\-R\-\_\-\-B\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-C\-O\-L\-O\-R\-S\-C\-A\-L\-E\-\_\-\-C\-O\-L\-O\-R\-B\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-C\-O\-L\-O\-R\-S\-C\-A\-L\-E\-\_\-\-P\-R\-O\-P}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-C\-U\-T\-\_\-\-C\-A\-N\-V\-A\-S}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-C\-U\-T\-\_\-\-T\-R\-I\-\_\-\-E\-D\-I\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-D\-E\-L\-E\-T\-E\-\_\-\-A\-C\-T\-I\-V\-E\-\_\-\-O\-B\-J}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-E\-X\-P\-O\-R\-T\-\_\-\-C\-U\-T\-\_\-\-C\-S\-V\-\_\-\-B\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-E\-X\-P\-O\-R\-T\-\_\-\-C\-U\-T\-\_\-\-I\-M\-G\-\_\-\-B\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-E\-X\-P\-O\-R\-T\-\_\-\-V\-I\-E\-W\-P\-O\-R\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-E\-X\-P\-O\-R\-T\-\_\-\-V\-T\-K}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-F\-I\-N\-D\-\_\-\-M\-A\-X\-\_\-\-B\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-G\-E\-N\-E\-R\-A\-L\-\_\-\-P\-R\-O\-P}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-G\-E\-N\-E\-R\-A\-L\-\_\-\-V\-I\-E\-W\-\_\-\-P\-R\-O\-P}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-I\-M\-M\-E\-D\-I\-A\-T\-E\-\_\-\-U\-P\-D\-A\-T\-E\-\_\-\-P\-R\-O\-P}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-I\-M\-P\-O\-R\-T\-\_\-\-O\-B\-J}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-I\-M\-P\-O\-R\-T\-\_\-\-S\-D}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-I\-M\-P\-O\-R\-T\-\_\-\-T\-S\-D}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-M\-A\-R\-K\-E\-R\-\_\-\-N\-E\-X\-T\-\_\-\-B\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-M\-A\-R\-K\-E\-R\-\_\-\-P\-R\-E\-V\-\_\-\-B\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-M\-A\-T\-E\-R\-I\-A\-L\-B\-O\-X}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-O\-P\-E\-N\-\_\-\-M\-A\-N\-U\-A\-L}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-R\-E\-C\-A\-L\-C\-B\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-C\-U\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-R\-E\-N\-D\-E\-R\-\_\-\-C\-U\-T\-\_\-\-B\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-S\-D\-\_\-\-B\-O\-X}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-S\-D\-\_\-\-T\-I\-M\-E\-L\-I\-N\-E}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {I\-D\-\_\-\-T\-E\-S\-T}
-    \subitem {constants.\-h}, \hyperpage{231}
+    \subitem {constants.\-h}, \hyperpage{228}
   \item {image}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{60}
@@ -1284,19 +1284,19 @@
 		\hyperpage{120}
   \item {Importer.\discretionary {-}{}{}cpp}
     \subitem {get\discretionary {-}{}{}Face\discretionary {-}{}{}Index}, 
-		\hyperpage{227}
+		\hyperpage{224}
     \subitem {get\discretionary {-}{}{}Text\discretionary {-}{}{}Block}, 
-		\hyperpage{228}
+		\hyperpage{225}
     \subitem {P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
-		\hyperpage{227}
+		\hyperpage{224}
   \item {in\discretionary {-}{}{}\_\discretionary {-}{}{}volume\discretionary {-}{}{}\_\discretionary {-}{}{}algorithm}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
 		\hyperpage{43}
   \item {init\discretionary {-}{}{}G\discretionary {-}{}{}L}
-    \subitem {Renderer}, \hyperpage{170}
+    \subitem {Renderer}, \hyperpage{169}
   \item {interpolate\discretionary {-}{}{}Point}
     \subitem {Mesh\discretionary {-}{}{}Processor.\discretionary {-}{}{}cpp}, 
-		\hyperpage{265}
+		\hyperpage{263}
   \item {interpolate\discretionary {-}{}{}Tet}
     \subitem {Interpolator}, \hyperpage{123}
   \item {interpolate\discretionary {-}{}{}Tri}
@@ -1310,11 +1310,11 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Point\discretionary {-}{}{}Window}, 
 		\hyperpage{51}
   \item {interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
   \item {interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}List}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Point\discretionary {-}{}{}Window}, 
 		\hyperpage{51}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
   \item {Interpolator}, \hyperpage{121}
     \subitem {$\sim $\discretionary {-}{}{}Interpolator}, 
 		\hyperpage{122}
@@ -1327,12 +1327,12 @@
     \subitem {mode}, \hyperpage{126}
     \subitem {set\discretionary {-}{}{}Mode}, \hyperpage{125}
   \item {Interpolator.\discretionary {-}{}{}cpp}
-    \subitem {get\discretionary {-}{}{}Sign}, \hyperpage{261}
-    \subitem {P\discretionary {-}{}{}I}, \hyperpage{261}
-    \subitem {sqr}, \hyperpage{262}
+    \subitem {get\discretionary {-}{}{}Sign}, \hyperpage{258}
+    \subitem {P\discretionary {-}{}{}I}, \hyperpage{258}
+    \subitem {sqr}, \hyperpage{259}
   \item {invertcut}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{212}
+		\hyperpage{211}
   \item {is\discretionary {-}{}{}\_\discretionary {-}{}{}initialized}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas}, 
 		\hyperpage{83}
@@ -1360,37 +1360,37 @@
 
   \item {M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}H\discretionary {-}{}{}E\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}H\discretionary {-}{}{}T}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.\discretionary {-}{}{}cpp}, 
-		\hyperpage{235}
+		\hyperpage{232}
   \item {M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel.\discretionary {-}{}{}cpp}, 
-		\hyperpage{235}
+		\hyperpage{232}
   \item {main}
-    \subitem {csvtosd/main.\discretionary {-}{}{}cpp}, \hyperpage{221}
-    \subitem {mergetsd.\discretionary {-}{}{}cpp}, \hyperpage{224}
+    \subitem {csvtosd/main.\discretionary {-}{}{}cpp}, \hyperpage{219}
+    \subitem {mergetsd.\discretionary {-}{}{}cpp}, \hyperpage{222}
     \subitem {odisitosd/main.\discretionary {-}{}{}cpp}, 
-		\hyperpage{222}
+		\hyperpage{220}
   \item {markers}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{117}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{178}
+		\hyperpage{177}
   \item {mat\discretionary {-}{}{}\_\discretionary {-}{}{}data}
     \subitem {Analyzer\discretionary {-}{}{}::\discretionary {-}{}{}Analyzer\discretionary {-}{}{}Data\discretionary {-}{}{}\_\discretionary {-}{}{}dataset}, 
 		\hyperpage{31}
   \item {mat\discretionary {-}{}{}List\discretionary {-}{}{}Box}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
   \item {mat\discretionary {-}{}{}List\discretionary {-}{}{}Box\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
   \item {mat\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
   \item {mat\discretionary {-}{}{}Name\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
   \item {mat\discretionary {-}{}{}Prop\discretionary {-}{}{}Box}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
   \item {mat\discretionary {-}{}{}Visibility\discretionary {-}{}{}List\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
   \item {mat\discretionary {-}{}{}Visualization\discretionary {-}{}{}Lbl}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
   \item {materials}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{144}
   \item {Matrix3\discretionary {-}{}{}D}, \hyperpage{128}
@@ -1405,19 +1405,19 @@
     \subitem {transpose}, \hyperpage{132}
   \item {max\discretionary {-}{}{}\_\discretionary {-}{}{}dt}
     \subitem {Tsd\discretionary {-}{}{}Merger\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{155}
+		\hyperpage{154}
   \item {max\discretionary {-}{}{}\_\discretionary {-}{}{}time}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{153}
+		\hyperpage{152}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{156}
+		\hyperpage{155}
   \item {max\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}temp}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Visualization\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{219}
+		\hyperpage{218}
   \item {max\discretionary {-}{}{}Volume\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
   \item {max\discretionary {-}{}{}Volume\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
   \item {maxdigits}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{117}
@@ -1430,9 +1430,9 @@
   \item {maxvolume}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{144}
   \item {merge}
-    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{194}
+    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{193}
   \item {mergetsd.\discretionary {-}{}{}cpp}
-    \subitem {main}, \hyperpage{224}
+    \subitem {main}, \hyperpage{222}
   \item {Mesh\discretionary {-}{}{}Processor}, \hyperpage{133}
     \subitem {$\sim $\discretionary {-}{}{}Mesh\discretionary {-}{}{}Processor}, 
 		\hyperpage{133}
@@ -1440,18 +1440,18 @@
     \subitem {Mesh\discretionary {-}{}{}Processor}, \hyperpage{133}
     \subitem {process}, \hyperpage{133}
   \item {Mesh\discretionary {-}{}{}Processor.\discretionary {-}{}{}cpp}
-    \subitem {interpolate\discretionary {-}{}{}Point}, \hyperpage{265}
+    \subitem {interpolate\discretionary {-}{}{}Point}, \hyperpage{263}
   \item {meshpoint}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Point\discretionary {-}{}{}Comparator}, 
-		\hyperpage{181}
+		\hyperpage{180}
   \item {min\discretionary {-}{}{}\_\discretionary {-}{}{}time}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{153}
+		\hyperpage{152}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{157}
+		\hyperpage{156}
   \item {min\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}temp}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Visualization\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{219}
+		\hyperpage{218}
   \item {minvalue}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{117}
@@ -1476,7 +1476,7 @@
 		\hyperpage{57}
   \item {mult}
     \subitem {Matrix3\discretionary {-}{}{}D}, \hyperpage{129}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{208}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{207}
   \item {mw\discretionary {-}{}{}Analyze\discretionary {-}{}{}Menu}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{97}
@@ -1507,7 +1507,7 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{98}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
-		\hyperpage{152}
+		\hyperpage{151}
   \item {name}
     \subitem {Analyzer\discretionary {-}{}{}::\discretionary {-}{}{}Analyzer\discretionary {-}{}{}Data\discretionary {-}{}{}\_\discretionary {-}{}{}dataset}, 
 		\hyperpage{32}
@@ -1517,19 +1517,19 @@
     \subitem {Object\discretionary {-}{}{}Data\discretionary {-}{}{}::\discretionary {-}{}{}Material\discretionary {-}{}{}Data}, 
 		\hyperpage{127}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{178}
+		\hyperpage{177}
   \item {namecol}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{153}
+		\hyperpage{152}
   \item {names}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{117}
   \item {next\discretionary {-}{}{}Combination}
     \subitem {Utils}, \hyperpage{20}
   \item {next\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
   \item {normalize}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{208}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{207}
 
   \indexspace
 
@@ -1544,11 +1544,11 @@
   \item {O\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S}
     \subitem {Object\-Data}, \hyperpage{137}
   \item {obj\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
   \item {obj\discretionary {-}{}{}Name\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
   \item {object}
-    \subitem {Renderer}, \hyperpage{176}
+    \subitem {Renderer}, \hyperpage{175}
   \item {Object\-Data}
     \subitem {O\-D\-\_\-\-F\-A\-I\-L\-U\-R\-E}, \hyperpage{137}
     \subitem {O\-D\-\_\-\-L\-O\-A\-D\-\_\-\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-L\-O\-A\-D\-E\-D}, 
@@ -1596,7 +1596,7 @@
     \subitem {set\discretionary {-}{}{}Quality}, \hyperpage{144}
   \item {Object\discretionary {-}{}{}Data.\discretionary {-}{}{}cpp}
     \subitem {P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}, 
-		\hyperpage{268}
+		\hyperpage{266}
   \item {Object\discretionary {-}{}{}Data\discretionary {-}{}{}::\discretionary {-}{}{}Material\discretionary {-}{}{}Data}, 
 		\hyperpage{126}
     \subitem {color}, \hyperpage{127}
@@ -1613,18 +1613,18 @@
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{136}
   \item {objwidth}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{157}
+		\hyperpage{156}
   \item {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{145}
-    \subitem {configpaths}, \hyperpage{152}
+    \subitem {configpaths}, \hyperpage{151}
     \subitem {contains}, \hyperpage{147}
     \subitem {convert}, \hyperpage{147}
     \subitem {floattostr}, \hyperpage{148}
     \subitem {get\discretionary {-}{}{}Text\discretionary {-}{}{}Block}, 
 		\hyperpage{148}
     \subitem {N\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}F\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}S}, 
-		\hyperpage{152}
-    \subitem {opts}, \hyperpage{152}
+		\hyperpage{151}
+    \subitem {opts}, \hyperpage{151}
     \subitem {parse\discretionary {-}{}{}Arguments}, \hyperpage{148}
     \subitem {parse\discretionary {-}{}{}Line}, \hyperpage{148}
     \subitem {read\discretionary {-}{}{}Configuration}, \hyperpage{149}
@@ -1634,36 +1634,36 @@
 		\hyperpage{150}
     \subitem {replace\discretionary {-}{}{}All}, \hyperpage{150}
     \subitem {write\discretionary {-}{}{}Output\discretionary {-}{}{}File}, 
-		\hyperpage{150}
+		\hyperpage{151}
   \item {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{155}
-    \subitem {basetemp}, \hyperpage{156}
+		\hyperpage{154}
+    \subitem {basetemp}, \hyperpage{155}
     \subitem {error\discretionary {-}{}{}\_\discretionary {-}{}{}threshold}, 
-		\hyperpage{156}
+		\hyperpage{155}
     \subitem {fiber\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}, 
-		\hyperpage{156}
-    \subitem {flipobj}, \hyperpage{156}
-    \subitem {height}, \hyperpage{156}
+		\hyperpage{155}
+    \subitem {flipobj}, \hyperpage{155}
+    \subitem {height}, \hyperpage{155}
     \subitem {max\discretionary {-}{}{}\_\discretionary {-}{}{}time}, 
-		\hyperpage{156}
+		\hyperpage{155}
     \subitem {maxfwcount}, \hyperpage{156}
     \subitem {min\discretionary {-}{}{}\_\discretionary {-}{}{}time}, 
-		\hyperpage{157}
-    \subitem {objwidth}, \hyperpage{157}
+		\hyperpage{156}
+    \subitem {objwidth}, \hyperpage{156}
     \subitem {replace\discretionary {-}{}{}\_\discretionary {-}{}{}comma\discretionary {-}{}{}\_\discretionary {-}{}{}with\discretionary {-}{}{}\_\discretionary {-}{}{}point}, 
-		\hyperpage{157}
-    \subitem {separator}, \hyperpage{157}
-    \subitem {startrow}, \hyperpage{157}
+		\hyperpage{156}
+    \subitem {separator}, \hyperpage{156}
+    \subitem {startrow}, \hyperpage{156}
     \subitem {tab\discretionary {-}{}{}\_\discretionary {-}{}{}space\discretionary {-}{}{}\_\discretionary {-}{}{}count}, 
-		\hyperpage{157}
+		\hyperpage{156}
     \subitem {time\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}, 
-		\hyperpage{157}
-    \subitem {timecol}, \hyperpage{157}
+		\hyperpage{156}
+    \subitem {timecol}, \hyperpage{156}
   \item {odisitosd/main.\discretionary {-}{}{}cpp}
-    \subitem {main}, \hyperpage{222}
+    \subitem {main}, \hyperpage{220}
   \item {offset}
     \subitem {Tsd\discretionary {-}{}{}Merger\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{155}
+		\hyperpage{154}
   \item {On\discretionary {-}{}{}Active\discretionary {-}{}{}Object\discretionary {-}{}{}Change}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{89}
@@ -1723,7 +1723,7 @@
 		\hyperpage{91}
   \item {On\discretionary {-}{}{}Init}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{184}
+		\hyperpage{183}
   \item {On\discretionary {-}{}{}Key\discretionary {-}{}{}Down}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{112}
@@ -1818,15 +1818,15 @@
 		\hyperpage{94}
   \item {operator$<$$<$}
     \subitem {Analyzer}, \hyperpage{30}
-    \subitem {Analyzer.\discretionary {-}{}{}cpp}, \hyperpage{263}
+    \subitem {Analyzer.\discretionary {-}{}{}cpp}, \hyperpage{261}
     \subitem {Geometry\discretionary {-}{}{}Classes.\discretionary {-}{}{}cpp}, 
-		\hyperpage{258}
+		\hyperpage{255}
     \subitem {Geometry\discretionary {-}{}{}Classes.\discretionary {-}{}{}h}, 
-		\hyperpage{260}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{210}
+		\hyperpage{257}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{209}
   \item {operator()}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Point\discretionary {-}{}{}Comparator}, 
-		\hyperpage{181}
+		\hyperpage{180}
   \item {optionslbl}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
 		\hyperpage{75}
@@ -1834,8 +1834,8 @@
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{41}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
-		\hyperpage{152}
-    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{196}
+		\hyperpage{151}
+    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{195}
 
   \indexspace
 
@@ -1877,17 +1877,17 @@
 		\hyperpage{77}
   \item {P\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}H\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}R\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}O\discretionary {-}{}{}R}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
-		\hyperpage{242}
-    \subitem {Importer.\discretionary {-}{}{}cpp}, \hyperpage{227}
+		\hyperpage{239}
+    \subitem {Importer.\discretionary {-}{}{}cpp}, \hyperpage{224}
     \subitem {Object\discretionary {-}{}{}Data.\discretionary {-}{}{}cpp}, 
-		\hyperpage{268}
+		\hyperpage{266}
   \item {P\discretionary {-}{}{}I}
-    \subitem {Interpolator.\discretionary {-}{}{}cpp}, \hyperpage{261}
+    \subitem {Interpolator.\discretionary {-}{}{}cpp}, \hyperpage{258}
   \item {P\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}\_\discretionary {-}{}{}algorithm}
     \subitem {Utils}, \hyperpage{14}
   \item {P\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
-		\hyperpage{242}
+		\hyperpage{239}
   \item {paint\discretionary {-}{}{}To}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{57}
@@ -1896,25 +1896,25 @@
 		\hyperpage{38}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{148}
-    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{195}
+    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{194}
   \item {parse\discretionary {-}{}{}File}
-    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{195}
+    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{194}
   \item {parse\discretionary {-}{}{}Line}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{38}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{148}
   \item {point\discretionary {-}{}{}Behind\discretionary {-}{}{}Cut}
-    \subitem {Renderer.\discretionary {-}{}{}cpp}, \hyperpage{252}
+    \subitem {Renderer.\discretionary {-}{}{}cpp}, \hyperpage{249}
   \item {point\discretionary {-}{}{}Index}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sort\discretionary {-}{}{}Struct}, 
-		\hyperpage{186}
+		\hyperpage{185}
   \item {point\discretionary {-}{}{}Inside\discretionary {-}{}{}Mesh}
     \subitem {Utils}, \hyperpage{21}
   \item {point\discretionary {-}{}{}Inside\discretionary {-}{}{}Tetrahedron}
     \subitem {Utils}, \hyperpage{22, 23}
   \item {points\discretionary {-}{}{}Check\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{218}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
   \item {pos\discretionary {-}{}{}To\discretionary {-}{}{}Val}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{113}
@@ -1930,13 +1930,13 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas}, 
 		\hyperpage{83}
   \item {prev\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
   \item {print}
     \subitem {Matrix3\discretionary {-}{}{}D}, \hyperpage{131}
-    \subitem {Triangle}, \hyperpage{192}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{209}
+    \subitem {Triangle}, \hyperpage{191}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{208}
   \item {print\discretionary {-}{}{}To}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{209}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{208}
   \item {process}
     \subitem {Mesh\discretionary {-}{}{}Processor}, \hyperpage{133}
   \item {prop\discretionary {-}{}{}\_\discretionary {-}{}{}scroll\discretionary {-}{}{}\_\discretionary {-}{}{}win}
@@ -1945,126 +1945,126 @@
   \item {propbox}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{98}
-  \item {Properties\discretionary {-}{}{}Box}, \hyperpage{158}
+  \item {Properties\discretionary {-}{}{}Box}, \hyperpage{157}
     \subitem {$\sim $\discretionary {-}{}{}Properties\discretionary {-}{}{}Box}, 
-		\hyperpage{161}
+		\hyperpage{160}
     \subitem {analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
-		\hyperpage{164}
+		\hyperpage{163}
     \subitem {auto\discretionary {-}{}{}Update\discretionary {-}{}{}Ceck\discretionary {-}{}{}Box}, 
-		\hyperpage{164}
+		\hyperpage{163}
     \subitem {clear\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
-		\hyperpage{164}
+		\hyperpage{163}
     \subitem {current\discretionary {-}{}{}\_\discretionary {-}{}{}material}, 
-		\hyperpage{165}
-    \subitem {density\discretionary {-}{}{}Edit}, \hyperpage{165}
-    \subitem {density\discretionary {-}{}{}Lbl}, \hyperpage{165}
-    \subitem {find\discretionary {-}{}{}Max\discretionary {-}{}{}Bt}, 
-		\hyperpage{165}
-    \subitem {get\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
-		\hyperpage{161}
-    \subitem {get\discretionary {-}{}{}Auto\discretionary {-}{}{}Update\discretionary {-}{}{}Ceck\discretionary {-}{}{}Box}, 
-		\hyperpage{161}
-    \subitem {get\discretionary {-}{}{}Clear\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
-		\hyperpage{161}
-    \subitem {get\discretionary {-}{}{}Current\discretionary {-}{}{}Material}, 
-		\hyperpage{162}
-    \subitem {get\discretionary {-}{}{}Density\discretionary {-}{}{}Edit}, 
-		\hyperpage{162}
-    \subitem {get\discretionary {-}{}{}Find\discretionary {-}{}{}Max\discretionary {-}{}{}Bt}, 
-		\hyperpage{162}
-    \subitem {get\discretionary {-}{}{}Interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}List}, 
-		\hyperpage{162}
-    \subitem {get\discretionary {-}{}{}Mat\discretionary {-}{}{}List\discretionary {-}{}{}Box}, 
-		\hyperpage{162}
-    \subitem {get\discretionary {-}{}{}Mat\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}, 
-		\hyperpage{162}
-    \subitem {get\discretionary {-}{}{}Mat\discretionary {-}{}{}Prop\discretionary {-}{}{}Box}, 
-		\hyperpage{162}
-    \subitem {get\discretionary {-}{}{}Max\discretionary {-}{}{}Volume\discretionary {-}{}{}Edit}, 
-		\hyperpage{162}
-    \subitem {get\discretionary {-}{}{}Next\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
-		\hyperpage{162}
-    \subitem {get\discretionary {-}{}{}Obj\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}, 
-		\hyperpage{163}
-    \subitem {get\discretionary {-}{}{}Prev\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
-		\hyperpage{163}
-    \subitem {get\discretionary {-}{}{}Quality\discretionary {-}{}{}Edit}, 
-		\hyperpage{163}
-    \subitem {get\discretionary {-}{}{}Recalc\discretionary {-}{}{}Button}, 
-		\hyperpage{163}
-    \subitem {get\discretionary {-}{}{}Sd\discretionary {-}{}{}Timeline}, 
-		\hyperpage{163}
-    \subitem {get\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data\discretionary {-}{}{}List}, 
-		\hyperpage{163}
-    \subitem {get\discretionary {-}{}{}Specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Edit}, 
-		\hyperpage{163}
-    \subitem {get\discretionary {-}{}{}Up\discretionary {-}{}{}To\discretionary {-}{}{}Date\discretionary {-}{}{}Lbl}, 
-		\hyperpage{163}
-    \subitem {interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}Lbl}, 
-		\hyperpage{165}
-    \subitem {interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}List}, 
-		\hyperpage{165}
-    \subitem {mat\discretionary {-}{}{}List\discretionary {-}{}{}Box}, 
-		\hyperpage{165}
-    \subitem {mat\discretionary {-}{}{}List\discretionary {-}{}{}Box\discretionary {-}{}{}Lbl}, 
-		\hyperpage{165}
-    \subitem {mat\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}, 
-		\hyperpage{165}
-    \subitem {mat\discretionary {-}{}{}Name\discretionary {-}{}{}Lbl}, 
-		\hyperpage{166}
-    \subitem {mat\discretionary {-}{}{}Prop\discretionary {-}{}{}Box}, 
-		\hyperpage{166}
-    \subitem {max\discretionary {-}{}{}Volume\discretionary {-}{}{}Edit}, 
-		\hyperpage{166}
-    \subitem {max\discretionary {-}{}{}Volume\discretionary {-}{}{}Lbl}, 
-		\hyperpage{166}
-    \subitem {next\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
-		\hyperpage{166}
-    \subitem {obj\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}, 
-		\hyperpage{166}
-    \subitem {obj\discretionary {-}{}{}Name\discretionary {-}{}{}Lbl}, 
-		\hyperpage{166}
-    \subitem {prev\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
-		\hyperpage{166}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{161}
-    \subitem {quality\discretionary {-}{}{}Edit}, \hyperpage{166}
-    \subitem {quality\discretionary {-}{}{}Lbl}, \hyperpage{167}
-    \subitem {recalc\discretionary {-}{}{}Button}, \hyperpage{167}
-    \subitem {resize}, \hyperpage{164}
-    \subitem {sd\discretionary {-}{}{}Timeline}, \hyperpage{167}
-    \subitem {sensor\discretionary {-}{}{}Data\discretionary {-}{}{}Lbl}, 
-		\hyperpage{167}
-    \subitem {sensor\discretionary {-}{}{}Data\discretionary {-}{}{}List}, 
-		\hyperpage{167}
-    \subitem {set\discretionary {-}{}{}Current\discretionary {-}{}{}Material}, 
 		\hyperpage{164}
+    \subitem {density\discretionary {-}{}{}Edit}, \hyperpage{164}
+    \subitem {density\discretionary {-}{}{}Lbl}, \hyperpage{164}
+    \subitem {find\discretionary {-}{}{}Max\discretionary {-}{}{}Bt}, 
+		\hyperpage{164}
+    \subitem {get\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
+		\hyperpage{160}
+    \subitem {get\discretionary {-}{}{}Auto\discretionary {-}{}{}Update\discretionary {-}{}{}Ceck\discretionary {-}{}{}Box}, 
+		\hyperpage{160}
+    \subitem {get\discretionary {-}{}{}Clear\discretionary {-}{}{}Analyze\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
+		\hyperpage{160}
+    \subitem {get\discretionary {-}{}{}Current\discretionary {-}{}{}Material}, 
+		\hyperpage{161}
+    \subitem {get\discretionary {-}{}{}Density\discretionary {-}{}{}Edit}, 
+		\hyperpage{161}
+    \subitem {get\discretionary {-}{}{}Find\discretionary {-}{}{}Max\discretionary {-}{}{}Bt}, 
+		\hyperpage{161}
+    \subitem {get\discretionary {-}{}{}Interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}List}, 
+		\hyperpage{161}
+    \subitem {get\discretionary {-}{}{}Mat\discretionary {-}{}{}List\discretionary {-}{}{}Box}, 
+		\hyperpage{161}
+    \subitem {get\discretionary {-}{}{}Mat\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}, 
+		\hyperpage{161}
+    \subitem {get\discretionary {-}{}{}Mat\discretionary {-}{}{}Prop\discretionary {-}{}{}Box}, 
+		\hyperpage{161}
+    \subitem {get\discretionary {-}{}{}Max\discretionary {-}{}{}Volume\discretionary {-}{}{}Edit}, 
+		\hyperpage{161}
+    \subitem {get\discretionary {-}{}{}Next\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
+		\hyperpage{161}
+    \subitem {get\discretionary {-}{}{}Obj\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}, 
+		\hyperpage{162}
+    \subitem {get\discretionary {-}{}{}Prev\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
+		\hyperpage{162}
+    \subitem {get\discretionary {-}{}{}Quality\discretionary {-}{}{}Edit}, 
+		\hyperpage{162}
+    \subitem {get\discretionary {-}{}{}Recalc\discretionary {-}{}{}Button}, 
+		\hyperpage{162}
+    \subitem {get\discretionary {-}{}{}Sd\discretionary {-}{}{}Timeline}, 
+		\hyperpage{162}
+    \subitem {get\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data\discretionary {-}{}{}List}, 
+		\hyperpage{162}
+    \subitem {get\discretionary {-}{}{}Specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Edit}, 
+		\hyperpage{162}
+    \subitem {get\discretionary {-}{}{}Up\discretionary {-}{}{}To\discretionary {-}{}{}Date\discretionary {-}{}{}Lbl}, 
+		\hyperpage{162}
+    \subitem {interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}Lbl}, 
+		\hyperpage{164}
+    \subitem {interpolation\discretionary {-}{}{}Mode\discretionary {-}{}{}List}, 
+		\hyperpage{164}
+    \subitem {mat\discretionary {-}{}{}List\discretionary {-}{}{}Box}, 
+		\hyperpage{164}
+    \subitem {mat\discretionary {-}{}{}List\discretionary {-}{}{}Box\discretionary {-}{}{}Lbl}, 
+		\hyperpage{164}
+    \subitem {mat\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}, 
+		\hyperpage{164}
+    \subitem {mat\discretionary {-}{}{}Name\discretionary {-}{}{}Lbl}, 
+		\hyperpage{165}
+    \subitem {mat\discretionary {-}{}{}Prop\discretionary {-}{}{}Box}, 
+		\hyperpage{165}
+    \subitem {max\discretionary {-}{}{}Volume\discretionary {-}{}{}Edit}, 
+		\hyperpage{165}
+    \subitem {max\discretionary {-}{}{}Volume\discretionary {-}{}{}Lbl}, 
+		\hyperpage{165}
+    \subitem {next\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
+		\hyperpage{165}
+    \subitem {obj\discretionary {-}{}{}Name\discretionary {-}{}{}Edit}, 
+		\hyperpage{165}
+    \subitem {obj\discretionary {-}{}{}Name\discretionary {-}{}{}Lbl}, 
+		\hyperpage{165}
+    \subitem {prev\discretionary {-}{}{}Marker\discretionary {-}{}{}Bt}, 
+		\hyperpage{165}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{160}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{160}
+    \subitem {quality\discretionary {-}{}{}Edit}, \hyperpage{165}
+    \subitem {quality\discretionary {-}{}{}Lbl}, \hyperpage{166}
+    \subitem {recalc\discretionary {-}{}{}Button}, \hyperpage{166}
+    \subitem {resize}, \hyperpage{163}
+    \subitem {sd\discretionary {-}{}{}Timeline}, \hyperpage{166}
+    \subitem {sensor\discretionary {-}{}{}Data\discretionary {-}{}{}Lbl}, 
+		\hyperpage{166}
+    \subitem {sensor\discretionary {-}{}{}Data\discretionary {-}{}{}List}, 
+		\hyperpage{166}
+    \subitem {set\discretionary {-}{}{}Current\discretionary {-}{}{}Material}, 
+		\hyperpage{163}
     \subitem {specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Edit}, 
-		\hyperpage{167}
+		\hyperpage{166}
     \subitem {specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Lbl}, 
-		\hyperpage{167}
+		\hyperpage{166}
     \subitem {up\discretionary {-}{}{}To\discretionary {-}{}{}Date\discretionary {-}{}{}Lbl}, 
-		\hyperpage{167}
+		\hyperpage{166}
   \item {Properties\discretionary {-}{}{}Box.\discretionary {-}{}{}cpp}
-    \subitem {sdfilestring}, \hyperpage{248}
+    \subitem {sdfilestring}, \hyperpage{245}
 
   \indexspace
 
   \item {quality}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{145}
   \item {quality\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{165}
   \item {quality\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{167}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
 
   \indexspace
 
   \item {R\-M\-\_\-\-M\-A\-T\-E\-R\-I\-A\-L\-C\-O\-L\-O\-R}
-    \subitem {Renderer}, \hyperpage{169}
+    \subitem {Renderer}, \hyperpage{168}
   \item {R\-M\-\_\-\-N\-O\-N\-E}
-    \subitem {Renderer}, \hyperpage{169}
+    \subitem {Renderer}, \hyperpage{168}
   \item {R\-M\-\_\-\-V\-A\-L\-U\-E\-C\-O\-L\-O\-R}
-    \subitem {Renderer}, \hyperpage{169}
+    \subitem {Renderer}, \hyperpage{168}
   \item {ray\discretionary {-}{}{}Intersects\discretionary {-}{}{}Triangle}
     \subitem {Utils}, \hyperpage{24}
   \item {read\discretionary {-}{}{}Configuration}
@@ -2083,10 +2083,10 @@
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{150}
   \item {recalc\discretionary {-}{}{}Button}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{167}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
   \item {refine\discretionary {-}{}{}\_\discretionary {-}{}{}factors}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.\discretionary {-}{}{}cpp}, 
-		\hyperpage{246}
+		\hyperpage{243}
   \item {refresh}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{58}
@@ -2097,107 +2097,107 @@
 		\hyperpage{71}
   \item {remove\discretionary {-}{}{}Current\discretionary {-}{}{}Object}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{184}
+		\hyperpage{183}
   \item {render}
-    \subitem {Renderer}, \hyperpage{171}
+    \subitem {Renderer}, \hyperpage{170}
   \item {render\discretionary {-}{}{}\_\discretionary {-}{}{}cut\discretionary {-}{}{}\_\discretionary {-}{}{}window\discretionary {-}{}{}\_\discretionary {-}{}{}valid}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{98}
   \item {render\discretionary {-}{}{}\_\discretionary {-}{}{}thread}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
-		\hyperpage{237}
+		\hyperpage{234}
   \item {render\discretionary {-}{}{}Cut\discretionary {-}{}{}Bt\discretionary {-}{}{}Click}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
 		\hyperpage{72}
   \item {render\discretionary {-}{}{}Grid}
-    \subitem {Renderer.\discretionary {-}{}{}cpp}, \hyperpage{253}
+    \subitem {Renderer.\discretionary {-}{}{}cpp}, \hyperpage{250}
   \item {render\discretionary {-}{}{}Image}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
 		\hyperpage{73}
   \item {render\discretionary {-}{}{}Material}
-    \subitem {Renderer}, \hyperpage{171}
+    \subitem {Renderer}, \hyperpage{170}
   \item {Render\discretionary {-}{}{}Mode}
-    \subitem {Renderer}, \hyperpage{169}
+    \subitem {Renderer}, \hyperpage{168}
   \item {render\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}
-    \subitem {Renderer}, \hyperpage{173}
+    \subitem {Renderer}, \hyperpage{172}
   \item {render\discretionary {-}{}{}Tetrahedra}
-    \subitem {Renderer}, \hyperpage{173}
+    \subitem {Renderer}, \hyperpage{172}
   \item {renderchoices}
     \subitem {Viewprop\discretionary {-}{}{}Box.\discretionary {-}{}{}cpp}, 
-		\hyperpage{256}
+		\hyperpage{253}
   \item {rendercutwindow}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{98}
-  \item {Renderer}, \hyperpage{168}
-    \subitem {$\sim $\discretionary {-}{}{}Renderer}, \hyperpage{170}
+  \item {Renderer}, \hyperpage{167}
+    \subitem {$\sim $\discretionary {-}{}{}Renderer}, \hyperpage{169}
     \subitem {cut\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{176}
-    \subitem {display\discretionary {-}{}{}List}, \hyperpage{176}
-    \subitem {get\discretionary {-}{}{}Viewport}, \hyperpage{170}
+		\hyperpage{175}
+    \subitem {display\discretionary {-}{}{}List}, \hyperpage{175}
+    \subitem {get\discretionary {-}{}{}Viewport}, \hyperpage{169}
     \subitem {get\discretionary {-}{}{}Viewport\discretionary {-}{}{}Image}, 
-		\hyperpage{170}
+		\hyperpage{169}
     \subitem {init\discretionary {-}{}{}G\discretionary {-}{}{}L}, 
-		\hyperpage{170}
-    \subitem {object}, \hyperpage{176}
+		\hyperpage{169}
+    \subitem {object}, \hyperpage{175}
     \subitem {R\-M\-\_\-\-M\-A\-T\-E\-R\-I\-A\-L\-C\-O\-L\-O\-R}, 
-		\hyperpage{169}
-    \subitem {R\-M\-\_\-\-N\-O\-N\-E}, \hyperpage{169}
+		\hyperpage{168}
+    \subitem {R\-M\-\_\-\-N\-O\-N\-E}, \hyperpage{168}
     \subitem {R\-M\-\_\-\-V\-A\-L\-U\-E\-C\-O\-L\-O\-R}, 
-		\hyperpage{169}
-    \subitem {render}, \hyperpage{171}
-    \subitem {render\discretionary {-}{}{}Material}, \hyperpage{171}
-    \subitem {Render\discretionary {-}{}{}Mode}, \hyperpage{169}
+		\hyperpage{168}
+    \subitem {render}, \hyperpage{170}
+    \subitem {render\discretionary {-}{}{}Material}, \hyperpage{170}
+    \subitem {Render\discretionary {-}{}{}Mode}, \hyperpage{168}
     \subitem {render\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{173}
-    \subitem {render\discretionary {-}{}{}Tetrahedra}, \hyperpage{173}
-    \subitem {Renderer}, \hyperpage{170}
-    \subitem {resize}, \hyperpage{174}
+		\hyperpage{172}
+    \subitem {render\discretionary {-}{}{}Tetrahedra}, \hyperpage{172}
+    \subitem {Renderer}, \hyperpage{169}
+    \subitem {resize}, \hyperpage{173}
     \subitem {set\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Info}, 
-		\hyperpage{174}
-    \subitem {set\discretionary {-}{}{}Object}, \hyperpage{175}
-    \subitem {viewport}, \hyperpage{176}
+		\hyperpage{173}
+    \subitem {set\discretionary {-}{}{}Object}, \hyperpage{174}
+    \subitem {viewport}, \hyperpage{175}
   \item {renderer}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}Canvas}, 
 		\hyperpage{83}
   \item {Renderer.\discretionary {-}{}{}cpp}
     \subitem {draw\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Info}, 
-		\hyperpage{250}
-    \subitem {draw\discretionary {-}{}{}Vector}, \hyperpage{251}
+		\hyperpage{247}
+    \subitem {draw\discretionary {-}{}{}Vector}, \hyperpage{248}
     \subitem {point\discretionary {-}{}{}Behind\discretionary {-}{}{}Cut}, 
-		\hyperpage{252}
-    \subitem {render\discretionary {-}{}{}Grid}, \hyperpage{253}
+		\hyperpage{249}
+    \subitem {render\discretionary {-}{}{}Grid}, \hyperpage{250}
   \item {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{211}
-    \subitem {camera\discretionary {-}{}{}Position}, \hyperpage{212}
-    \subitem {cut}, \hyperpage{212}
-    \subitem {height}, \hyperpage{212}
-    \subitem {invertcut}, \hyperpage{212}
-    \subitem {rotation\discretionary {-}{}{}X}, \hyperpage{212}
-    \subitem {rotation\discretionary {-}{}{}Y}, \hyperpage{212}
-    \subitem {scale}, \hyperpage{212}
+		\hyperpage{210}
+    \subitem {camera\discretionary {-}{}{}Position}, \hyperpage{211}
+    \subitem {cut}, \hyperpage{211}
+    \subitem {height}, \hyperpage{211}
+    \subitem {invertcut}, \hyperpage{211}
+    \subitem {rotation\discretionary {-}{}{}X}, \hyperpage{211}
+    \subitem {rotation\discretionary {-}{}{}Y}, \hyperpage{211}
+    \subitem {scale}, \hyperpage{211}
     \subitem {show\discretionary {-}{}{}\_\discretionary {-}{}{}extrapolated}, 
-		\hyperpage{213}
+		\hyperpage{212}
     \subitem {show\discretionary {-}{}{}\_\discretionary {-}{}{}sensordata}, 
-		\hyperpage{213}
-    \subitem {show\discretionary {-}{}{}Edges}, \hyperpage{213}
-    \subitem {show\discretionary {-}{}{}Faces}, \hyperpage{213}
-    \subitem {show\discretionary {-}{}{}Points}, \hyperpage{213}
-    \subitem {width}, \hyperpage{213}
-    \subitem {zoom}, \hyperpage{213}
+		\hyperpage{212}
+    \subitem {show\discretionary {-}{}{}Edges}, \hyperpage{212}
+    \subitem {show\discretionary {-}{}{}Faces}, \hyperpage{212}
+    \subitem {show\discretionary {-}{}{}Points}, \hyperpage{212}
+    \subitem {width}, \hyperpage{212}
+    \subitem {zoom}, \hyperpage{212}
   \item {replace\discretionary {-}{}{}\_\discretionary {-}{}{}comma\discretionary {-}{}{}\_\discretionary {-}{}{}with\discretionary {-}{}{}\_\discretionary {-}{}{}point}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{153}
+		\hyperpage{152}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{157}
+		\hyperpage{156}
   \item {replace\discretionary {-}{}{}All}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{39}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{150}
   \item {resize}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
-    \subitem {Renderer}, \hyperpage{174}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
+    \subitem {Renderer}, \hyperpage{173}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{216}
   \item {rotate\discretionary {-}{}{}X}
     \subitem {Matrix3\discretionary {-}{}{}D}, \hyperpage{131}
   \item {rotate\discretionary {-}{}{}Y}
@@ -2206,10 +2206,10 @@
     \subitem {Matrix3\discretionary {-}{}{}D}, \hyperpage{132}
   \item {rotation\discretionary {-}{}{}X}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{212}
+		\hyperpage{211}
   \item {rotation\discretionary {-}{}{}Y}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{212}
+		\hyperpage{211}
 
   \indexspace
 
@@ -2221,10 +2221,10 @@
     \subitem {G\-U\-I\-Color\-Scale\-Panel}, \hyperpage{54}
   \item {S\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}F\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}S}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline.\discretionary {-}{}{}cpp}, 
-		\hyperpage{246}
+		\hyperpage{243}
   \item {scale}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{212}
+		\hyperpage{211}
   \item {Scale\discretionary {-}{}{}Mode}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{54}
@@ -2259,10 +2259,10 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
 		\hyperpage{78}
   \item {sd\discretionary {-}{}{}Timeline}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{167}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
   \item {sdfilestring}
     \subitem {Properties\discretionary {-}{}{}Box.\discretionary {-}{}{}cpp}, 
-		\hyperpage{248}
+		\hyperpage{245}
   \item {Select\discretionary {-}{}{}All}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window}, 
 		\hyperpage{47}
@@ -2270,15 +2270,15 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{114}
   \item {sensor\discretionary {-}{}{}Data\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{167}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
   \item {sensor\discretionary {-}{}{}Data\discretionary {-}{}{}List}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{145}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{167}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
   \item {separator}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
 		\hyperpage{153}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{157}
+		\hyperpage{156}
   \item {set\discretionary {-}{}{}Active\discretionary {-}{}{}Object}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{94}
@@ -2287,13 +2287,13 @@
 		\hyperpage{94}
   \item {set\discretionary {-}{}{}Current\discretionary {-}{}{}Data\discretionary {-}{}{}Object\discretionary {-}{}{}Index}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{184}
+		\hyperpage{183}
   \item {set\discretionary {-}{}{}Current\discretionary {-}{}{}Material}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{164}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{163}
   \item {set\discretionary {-}{}{}Current\discretionary {-}{}{}Sensor\discretionary {-}{}{}Index}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{143}
   \item {set\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Info}
-    \subitem {Renderer}, \hyperpage{174}
+    \subitem {Renderer}, \hyperpage{173}
   \item {set\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window\discretionary {-}{}{}Status}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{95}
@@ -2330,7 +2330,7 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{116}
   \item {set\discretionary {-}{}{}Object}
-    \subitem {Renderer}, \hyperpage{175}
+    \subitem {Renderer}, \hyperpage{174}
   \item {set\discretionary {-}{}{}Quality}
     \subitem {Object\discretionary {-}{}{}Data}, \hyperpage{144}
   \item {set\discretionary {-}{}{}Render\discretionary {-}{}{}Object}
@@ -2350,105 +2350,105 @@
 		\hyperpage{104}
   \item {show\discretionary {-}{}{}\_\discretionary {-}{}{}extrapolated}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{213}
+		\hyperpage{212}
   \item {show\discretionary {-}{}{}\_\discretionary {-}{}{}sensordata}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{213}
+		\hyperpage{212}
   \item {show\discretionary {-}{}{}Edges}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{213}
+		\hyperpage{212}
   \item {show\discretionary {-}{}{}Extrapolated\discretionary {-}{}{}Check\discretionary {-}{}{}Box}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{218}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
   \item {show\discretionary {-}{}{}Faces}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{213}
+		\hyperpage{212}
   \item {show\discretionary {-}{}{}Points}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{213}
+		\hyperpage{212}
   \item {show\discretionary {-}{}{}Show\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{218}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
   \item {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{181}
+		\hyperpage{180}
     \subitem {$\sim $\discretionary {-}{}{}Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{183}
-    \subitem {add\discretionary {-}{}{}Object}, \hyperpage{183}
+		\hyperpage{182}
+    \subitem {add\discretionary {-}{}{}Object}, \hyperpage{182}
     \subitem {current\discretionary {-}{}{}\_\discretionary {-}{}{}data\discretionary {-}{}{}\_\discretionary {-}{}{}object\discretionary {-}{}{}\_\discretionary {-}{}{}index}, 
-		\hyperpage{185}
+		\hyperpage{184}
     \subitem {data\discretionary {-}{}{}\_\discretionary {-}{}{}objects}, 
-		\hyperpage{185}
+		\hyperpage{184}
     \subitem {get\discretionary {-}{}{}Active\discretionary {-}{}{}Object}, 
-		\hyperpage{183}
+		\hyperpage{182}
     \subitem {get\discretionary {-}{}{}Current\discretionary {-}{}{}Data\discretionary {-}{}{}Object\discretionary {-}{}{}Index}, 
-		\hyperpage{184}
+		\hyperpage{183}
     \subitem {get\discretionary {-}{}{}Data\discretionary {-}{}{}Objects}, 
-		\hyperpage{184}
+		\hyperpage{183}
     \subitem {get\discretionary {-}{}{}Visualization\discretionary {-}{}{}Info}, 
-		\hyperpage{184}
-    \subitem {On\discretionary {-}{}{}Init}, \hyperpage{184}
+		\hyperpage{183}
+    \subitem {On\discretionary {-}{}{}Init}, \hyperpage{183}
     \subitem {remove\discretionary {-}{}{}Current\discretionary {-}{}{}Object}, 
-		\hyperpage{184}
+		\hyperpage{183}
     \subitem {set\discretionary {-}{}{}Current\discretionary {-}{}{}Data\discretionary {-}{}{}Object\discretionary {-}{}{}Index}, 
-		\hyperpage{184}
+		\hyperpage{183}
     \subitem {visualization\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{185}
+		\hyperpage{184}
   \item {specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Edit}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{167}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
   \item {specific\discretionary {-}{}{}Heat\discretionary {-}{}{}Cap\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{167}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
   \item {specificheatcapacity}
     \subitem {Object\discretionary {-}{}{}Data\discretionary {-}{}{}::\discretionary {-}{}{}Material\discretionary {-}{}{}Data}, 
 		\hyperpage{127}
   \item {sqr}
     \subitem {Geometry\discretionary {-}{}{}Classes.\discretionary {-}{}{}cpp}, 
-		\hyperpage{259}
-    \subitem {Interpolator.\discretionary {-}{}{}cpp}, \hyperpage{262}
+		\hyperpage{256}
+    \subitem {Interpolator.\discretionary {-}{}{}cpp}, \hyperpage{259}
     \subitem {Utils}, \hyperpage{25}
   \item {start\discretionary {-}{}{}\_\discretionary {-}{}{}col}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{154}
+		\hyperpage{153}
   \item {startrow}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{157}
+		\hyperpage{156}
   \item {std}, \hyperpage{13}
   \item {std\discretionary {-}{}{}::vector}
-    \subitem {element}, \hyperpage{197}
-  \item {std\discretionary {-}{}{}::vector$<$ T $>$}, \hyperpage{196}
+    \subitem {element}, \hyperpage{196}
+  \item {std\discretionary {-}{}{}::vector$<$ T $>$}, \hyperpage{195}
   \item {step\discretionary {-}{}{}\_\discretionary {-}{}{}width}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{61}
   \item {sub}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{209}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{208}
   \item {subnames}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{178}
+		\hyperpage{177}
 
   \indexspace
 
   \item {tab\discretionary {-}{}{}\_\discretionary {-}{}{}space\discretionary {-}{}{}\_\discretionary {-}{}{}count}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{157}
+		\hyperpage{156}
   \item {table}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window}, 
 		\hyperpage{48}
   \item {temperature}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Point}, 
-		\hyperpage{179}
+		\hyperpage{178}
   \item {tetface\discretionary {-}{}{}\_\discretionary {-}{}{}indices}
-    \subitem {Exporter.\discretionary {-}{}{}cpp}, \hyperpage{225}
+    \subitem {Exporter.\discretionary {-}{}{}cpp}, \hyperpage{223}
   \item {tetgeninput}
     \subitem {Object\discretionary {-}{}{}Data\discretionary {-}{}{}::\discretionary {-}{}{}Material\discretionary {-}{}{}Data}, 
 		\hyperpage{127}
   \item {tetgenoutput}
     \subitem {Object\discretionary {-}{}{}Data\discretionary {-}{}{}::\discretionary {-}{}{}Material\discretionary {-}{}{}Data}, 
 		\hyperpage{127}
-  \item {Tetrahedron}, \hyperpage{186}
-    \subitem {get\discretionary {-}{}{}V1}, \hyperpage{187}
-    \subitem {get\discretionary {-}{}{}V2}, \hyperpage{187}
-    \subitem {get\discretionary {-}{}{}V3}, \hyperpage{188}
-    \subitem {get\discretionary {-}{}{}V4}, \hyperpage{188}
-    \subitem {get\discretionary {-}{}{}Vert}, \hyperpage{188}
-    \subitem {Tetrahedron}, \hyperpage{187}
-    \subitem {verts}, \hyperpage{189}
+  \item {Tetrahedron}, \hyperpage{185}
+    \subitem {get\discretionary {-}{}{}V1}, \hyperpage{186}
+    \subitem {get\discretionary {-}{}{}V2}, \hyperpage{186}
+    \subitem {get\discretionary {-}{}{}V3}, \hyperpage{187}
+    \subitem {get\discretionary {-}{}{}V4}, \hyperpage{187}
+    \subitem {get\discretionary {-}{}{}Vert}, \hyperpage{187}
+    \subitem {Tetrahedron}, \hyperpage{186}
+    \subitem {verts}, \hyperpage{188}
   \item {text\discretionary {-}{}{}\_\discretionary {-}{}{}color}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{61}
@@ -2460,20 +2460,20 @@
 		\hyperpage{78}
   \item {time\discretionary {-}{}{}\_\discretionary {-}{}{}step\discretionary {-}{}{}\_\discretionary {-}{}{}delta}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{154}
+		\hyperpage{153}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{157}
+		\hyperpage{156}
   \item {timecol}
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{154}
+		\hyperpage{153}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{157}
+		\hyperpage{156}
   \item {timed}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{178}
+		\hyperpage{177}
   \item {timestamps}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{178}
+		\hyperpage{177}
   \item {To\discretionary {-}{}{}Clipboard}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window}, 
 		\hyperpage{48}
@@ -2488,41 +2488,41 @@
   \item {tri}
     \subitem {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
 		\hyperpage{43}
-  \item {Triangle}, \hyperpage{189}
-    \subitem {$\sim $\discretionary {-}{}{}Triangle}, \hyperpage{190}
-    \subitem {get\discretionary {-}{}{}Normal}, \hyperpage{190}
-    \subitem {get\discretionary {-}{}{}V1}, \hyperpage{191}
-    \subitem {get\discretionary {-}{}{}V2}, \hyperpage{191}
-    \subitem {get\discretionary {-}{}{}V3}, \hyperpage{192}
-    \subitem {get\discretionary {-}{}{}Vert}, \hyperpage{192}
-    \subitem {print}, \hyperpage{192}
-    \subitem {Triangle}, \hyperpage{190}
-    \subitem {verts}, \hyperpage{193}
+  \item {Triangle}, \hyperpage{188}
+    \subitem {$\sim $\discretionary {-}{}{}Triangle}, \hyperpage{189}
+    \subitem {get\discretionary {-}{}{}Normal}, \hyperpage{189}
+    \subitem {get\discretionary {-}{}{}V1}, \hyperpage{190}
+    \subitem {get\discretionary {-}{}{}V2}, \hyperpage{190}
+    \subitem {get\discretionary {-}{}{}V3}, \hyperpage{191}
+    \subitem {get\discretionary {-}{}{}Vert}, \hyperpage{191}
+    \subitem {print}, \hyperpage{191}
+    \subitem {Triangle}, \hyperpage{189}
+    \subitem {verts}, \hyperpage{192}
   \item {trilabel}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
 		\hyperpage{78}
-  \item {Tsd\discretionary {-}{}{}Merger}, \hyperpage{193}
+  \item {Tsd\discretionary {-}{}{}Merger}, \hyperpage{192}
     \subitem {get\discretionary {-}{}{}Text\discretionary {-}{}{}Block}, 
-		\hyperpage{194}
-    \subitem {merge}, \hyperpage{194}
-    \subitem {opts}, \hyperpage{196}
-    \subitem {parse\discretionary {-}{}{}Arguments}, \hyperpage{195}
-    \subitem {parse\discretionary {-}{}{}File}, \hyperpage{195}
+		\hyperpage{193}
+    \subitem {merge}, \hyperpage{193}
+    \subitem {opts}, \hyperpage{195}
+    \subitem {parse\discretionary {-}{}{}Arguments}, \hyperpage{194}
+    \subitem {parse\discretionary {-}{}{}File}, \hyperpage{194}
     \subitem {write\discretionary {-}{}{}Output\discretionary {-}{}{}File}, 
-		\hyperpage{196}
+		\hyperpage{195}
   \item {Tsd\discretionary {-}{}{}Merger\discretionary {-}{}{}::\discretionary {-}{}{}Options}, 
-		\hyperpage{154}
+		\hyperpage{153}
     \subitem {auto\discretionary {-}{}{}\_\discretionary {-}{}{}delta}, 
 		\hyperpage{154}
-    \subitem {delta}, \hyperpage{155}
+    \subitem {delta}, \hyperpage{154}
     \subitem {max\discretionary {-}{}{}\_\discretionary {-}{}{}dt}, 
-		\hyperpage{155}
-    \subitem {offset}, \hyperpage{155}
+		\hyperpage{154}
+    \subitem {offset}, \hyperpage{154}
 
   \indexspace
 
   \item {up\discretionary {-}{}{}To\discretionary {-}{}{}Date\discretionary {-}{}{}Lbl}
-    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{167}
+    \subitem {Properties\discretionary {-}{}{}Box}, \hyperpage{166}
   \item {Update}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Analyze\discretionary {-}{}{}Output\discretionary {-}{}{}Window}, 
 		\hyperpage{48}
@@ -2560,7 +2560,7 @@
     \subitem {sqr}, \hyperpage{25}
   \item {utils.\discretionary {-}{}{}cpp}
     \subitem {E\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}I\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}N}, 
-		\hyperpage{270}
+		\hyperpage{268}
   \item {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
 		\hyperpage{42}
     \subitem {img\discretionary {-}{}{}\_\discretionary {-}{}{}height}, 
@@ -2572,41 +2572,41 @@
     \subitem {mmperpixel}, \hyperpage{43}
     \subitem {tri}, \hyperpage{43}
   \item {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{176}
+		\hyperpage{175}
     \subitem {current\discretionary {-}{}{}\_\discretionary {-}{}{}time\discretionary {-}{}{}\_\discretionary {-}{}{}index}, 
-		\hyperpage{177}
-    \subitem {data}, \hyperpage{177}
-    \subitem {markers}, \hyperpage{178}
-    \subitem {name}, \hyperpage{178}
-    \subitem {subnames}, \hyperpage{178}
-    \subitem {timed}, \hyperpage{178}
-    \subitem {timestamps}, \hyperpage{178}
+		\hyperpage{176}
+    \subitem {data}, \hyperpage{176}
+    \subitem {markers}, \hyperpage{177}
+    \subitem {name}, \hyperpage{177}
+    \subitem {subnames}, \hyperpage{177}
+    \subitem {timed}, \hyperpage{177}
+    \subitem {timestamps}, \hyperpage{177}
   \item {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Point}, 
-		\hyperpage{178}
-    \subitem {coords}, \hyperpage{179}
-    \subitem {temperature}, \hyperpage{179}
+		\hyperpage{177}
+    \subitem {coords}, \hyperpage{178}
+    \subitem {temperature}, \hyperpage{178}
   \item {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sensor\discretionary {-}{}{}Point\discretionary {-}{}{}Comparator}, 
-		\hyperpage{179}
+		\hyperpage{178}
     \subitem {get\discretionary {-}{}{}Distance\discretionary {-}{}{}\_\discretionary {-}{}{}d}, 
-		\hyperpage{180}
-    \subitem {meshpoint}, \hyperpage{181}
-    \subitem {operator()}, \hyperpage{181}
+		\hyperpage{179}
+    \subitem {meshpoint}, \hyperpage{180}
+    \subitem {operator()}, \hyperpage{180}
   \item {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Sort\discretionary {-}{}{}Struct}, 
-		\hyperpage{185}
-    \subitem {distance}, \hyperpage{186}
-    \subitem {point\discretionary {-}{}{}Index}, \hyperpage{186}
+		\hyperpage{184}
+    \subitem {distance}, \hyperpage{185}
+    \subitem {point\discretionary {-}{}{}Index}, \hyperpage{185}
   \item {Utils\discretionary {-}{}{}::\discretionary {-}{}{}Visualization\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{218}
+		\hyperpage{217}
     \subitem {max\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}temp}, 
-		\hyperpage{219}
+		\hyperpage{218}
     \subitem {min\discretionary {-}{}{}\_\discretionary {-}{}{}visualisation\discretionary {-}{}{}\_\discretionary {-}{}{}temp}, 
-		\hyperpage{219}
+		\hyperpage{218}
 
   \indexspace
 
   \item {V\discretionary {-}{}{}I\discretionary {-}{}{}E\discretionary {-}{}{}W\discretionary {-}{}{}B\discretionary {-}{}{}O\discretionary {-}{}{}X\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}T\discretionary {-}{}{}H}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window.\discretionary {-}{}{}cpp}, 
-		\hyperpage{242}
+		\hyperpage{239}
   \item {value}
     \subitem {Analyzer\discretionary {-}{}{}::\discretionary {-}{}{}Analyzer\discretionary {-}{}{}Data\discretionary {-}{}{}\_\discretionary {-}{}{}point}, 
 		\hyperpage{35}
@@ -2617,104 +2617,104 @@
 		\hyperpage{78}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Render\discretionary {-}{}{}Cut\discretionary {-}{}{}Canvas}, 
 		\hyperpage{105}
-  \item {Vector3\discretionary {-}{}{}D}, \hyperpage{197}
+  \item {Vector3\discretionary {-}{}{}D}, \hyperpage{196}
     \subitem {$\sim $\discretionary {-}{}{}Vector3\discretionary {-}{}{}D}, 
-		\hyperpage{199}
-    \subitem {add}, \hyperpage{200}
-    \subitem {coords}, \hyperpage{210}
-    \subitem {copy}, \hyperpage{200}
-    \subitem {cross\discretionary {-}{}{}Product}, \hyperpage{201}
-    \subitem {dot\discretionary {-}{}{}Product}, \hyperpage{202}
-    \subitem {equals}, \hyperpage{202}
+		\hyperpage{198}
+    \subitem {add}, \hyperpage{199}
+    \subitem {coords}, \hyperpage{209}
+    \subitem {copy}, \hyperpage{199}
+    \subitem {cross\discretionary {-}{}{}Product}, \hyperpage{200}
+    \subitem {dot\discretionary {-}{}{}Product}, \hyperpage{201}
+    \subitem {equals}, \hyperpage{201}
     \subitem {get\discretionary {-}{}{}Angle\discretionary {-}{}{}To}, 
-		\hyperpage{203}
+		\hyperpage{202}
     \subitem {get\discretionary {-}{}{}Distance\discretionary {-}{}{}To}, 
-		\hyperpage{204}
-    \subitem {get\discretionary {-}{}{}Length}, \hyperpage{205}
-    \subitem {get\discretionary {-}{}{}X}, \hyperpage{206}
+		\hyperpage{203}
+    \subitem {get\discretionary {-}{}{}Length}, \hyperpage{204}
+    \subitem {get\discretionary {-}{}{}X}, \hyperpage{205}
     \subitem {get\discretionary {-}{}{}X\discretionary {-}{}{}Y\discretionary {-}{}{}Z}, 
-		\hyperpage{206}
-    \subitem {get\discretionary {-}{}{}Y}, \hyperpage{207}
-    \subitem {get\discretionary {-}{}{}Z}, \hyperpage{207}
-    \subitem {mult}, \hyperpage{208}
-    \subitem {normalize}, \hyperpage{208}
-    \subitem {operator$<$$<$}, \hyperpage{210}
-    \subitem {print}, \hyperpage{209}
-    \subitem {print\discretionary {-}{}{}To}, \hyperpage{209}
-    \subitem {sub}, \hyperpage{209}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{199}
-    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{199}
+		\hyperpage{205}
+    \subitem {get\discretionary {-}{}{}Y}, \hyperpage{206}
+    \subitem {get\discretionary {-}{}{}Z}, \hyperpage{206}
+    \subitem {mult}, \hyperpage{207}
+    \subitem {normalize}, \hyperpage{207}
+    \subitem {operator$<$$<$}, \hyperpage{209}
+    \subitem {print}, \hyperpage{208}
+    \subitem {print\discretionary {-}{}{}To}, \hyperpage{208}
+    \subitem {sub}, \hyperpage{208}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{198}
+    \subitem {Vector3\discretionary {-}{}{}D}, \hyperpage{198}
   \item {verts}
-    \subitem {Tetrahedron}, \hyperpage{189}
-    \subitem {Triangle}, \hyperpage{193}
+    \subitem {Tetrahedron}, \hyperpage{188}
+    \subitem {Triangle}, \hyperpage{192}
   \item {view\discretionary {-}{}{}\_\discretionary {-}{}{}scroll\discretionary {-}{}{}\_\discretionary {-}{}{}win}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{99}
   \item {view\discretionary {-}{}{}Scale\discretionary {-}{}{}Edit}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{218}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
   \item {view\discretionary {-}{}{}Scale\discretionary {-}{}{}Lbl}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{218}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{217}
   \item {viewbox}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Main\discretionary {-}{}{}Window}, 
 		\hyperpage{99}
   \item {viewport}
-    \subitem {Renderer}, \hyperpage{176}
-  \item {Viewprop\discretionary {-}{}{}Box}, \hyperpage{213}
+    \subitem {Renderer}, \hyperpage{175}
+  \item {Viewprop\discretionary {-}{}{}Box}, \hyperpage{212}
     \subitem {$\sim $\discretionary {-}{}{}Viewprop\discretionary {-}{}{}Box}, 
-		\hyperpage{216}
+		\hyperpage{215}
     \subitem {color\discretionary {-}{}{}Range\discretionary {-}{}{}Lbl}, 
-		\hyperpage{217}
+		\hyperpage{216}
     \subitem {color\discretionary {-}{}{}Range\discretionary {-}{}{}Max\discretionary {-}{}{}Edit}, 
-		\hyperpage{217}
+		\hyperpage{216}
     \subitem {color\discretionary {-}{}{}Range\discretionary {-}{}{}Min\discretionary {-}{}{}Edit}, 
-		\hyperpage{217}
+		\hyperpage{216}
     \subitem {edges\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
-		\hyperpage{217}
+		\hyperpage{216}
     \subitem {faces\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
-		\hyperpage{217}
+		\hyperpage{216}
     \subitem {get\discretionary {-}{}{}Color\discretionary {-}{}{}Range\discretionary {-}{}{}Max\discretionary {-}{}{}Edit}, 
-		\hyperpage{216}
+		\hyperpage{215}
     \subitem {get\discretionary {-}{}{}Color\discretionary {-}{}{}Range\discretionary {-}{}{}Min\discretionary {-}{}{}Edit}, 
-		\hyperpage{216}
+		\hyperpage{215}
     \subitem {get\discretionary {-}{}{}Edges\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
-		\hyperpage{216}
+		\hyperpage{215}
     \subitem {get\discretionary {-}{}{}Faces\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
-		\hyperpage{216}
+		\hyperpage{215}
     \subitem {get\discretionary {-}{}{}Mat\discretionary {-}{}{}Visibility\discretionary {-}{}{}List\discretionary {-}{}{}Box}, 
-		\hyperpage{216}
+		\hyperpage{215}
     \subitem {get\discretionary {-}{}{}Points\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
-		\hyperpage{216}
+		\hyperpage{215}
     \subitem {get\discretionary {-}{}{}Show\discretionary {-}{}{}Extrapolated\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
-		\hyperpage{216}
+		\hyperpage{215}
     \subitem {get\discretionary {-}{}{}Show\discretionary {-}{}{}Show\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{216}
+		\hyperpage{215}
     \subitem {get\discretionary {-}{}{}View\discretionary {-}{}{}Scale\discretionary {-}{}{}Edit}, 
-		\hyperpage{217}
+		\hyperpage{216}
     \subitem {mat\discretionary {-}{}{}Visibility\discretionary {-}{}{}List\discretionary {-}{}{}Box}, 
-		\hyperpage{217}
+		\hyperpage{216}
     \subitem {mat\discretionary {-}{}{}Visualization\discretionary {-}{}{}Lbl}, 
-		\hyperpage{217}
+		\hyperpage{216}
     \subitem {points\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
-		\hyperpage{218}
-    \subitem {resize}, \hyperpage{217}
+		\hyperpage{217}
+    \subitem {resize}, \hyperpage{216}
     \subitem {show\discretionary {-}{}{}Extrapolated\discretionary {-}{}{}Check\discretionary {-}{}{}Box}, 
-		\hyperpage{218}
+		\hyperpage{217}
     \subitem {show\discretionary {-}{}{}Show\discretionary {-}{}{}Sensor\discretionary {-}{}{}Data}, 
-		\hyperpage{218}
+		\hyperpage{217}
     \subitem {view\discretionary {-}{}{}Scale\discretionary {-}{}{}Edit}, 
-		\hyperpage{218}
+		\hyperpage{217}
     \subitem {view\discretionary {-}{}{}Scale\discretionary {-}{}{}Lbl}, 
-		\hyperpage{218}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
-    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{215}
+		\hyperpage{217}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{214}
+    \subitem {Viewprop\discretionary {-}{}{}Box}, \hyperpage{214}
   \item {Viewprop\discretionary {-}{}{}Box.\discretionary {-}{}{}cpp}
-    \subitem {renderchoices}, \hyperpage{256}
+    \subitem {renderchoices}, \hyperpage{253}
   \item {visible}
     \subitem {Object\discretionary {-}{}{}Data\discretionary {-}{}{}::\discretionary {-}{}{}Material\discretionary {-}{}{}Data}, 
 		\hyperpage{128}
   \item {visualization\discretionary {-}{}{}\_\discretionary {-}{}{}info}
     \subitem {Simple\discretionary {-}{}{}Analyzer\discretionary {-}{}{}App}, 
-		\hyperpage{185}
+		\hyperpage{184}
   \item {volume}
     \subitem {Analyzer\discretionary {-}{}{}::\discretionary {-}{}{}Analyzer\discretionary {-}{}{}Data\discretionary {-}{}{}\_\discretionary {-}{}{}material}, 
 		\hyperpage{32}
@@ -2727,7 +2727,7 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Color\discretionary {-}{}{}Scale\discretionary {-}{}{}Panel}, 
 		\hyperpage{61}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{213}
+		\hyperpage{212}
   \item {width\discretionary {-}{}{}Heightlbl}
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Cut\discretionary {-}{}{}Render\discretionary {-}{}{}Window}, 
 		\hyperpage{78}
@@ -2735,8 +2735,8 @@
     \subitem {Csv\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
 		\hyperpage{41}
     \subitem {Odisi\discretionary {-}{}{}To\discretionary {-}{}{}Sd\discretionary {-}{}{}Converter}, 
-		\hyperpage{150}
-    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{196}
+		\hyperpage{151}
+    \subitem {Tsd\discretionary {-}{}{}Merger}, \hyperpage{195}
 
   \indexspace
 
@@ -2767,6 +2767,6 @@
     \subitem {G\discretionary {-}{}{}U\discretionary {-}{}{}I\discretionary {-}{}{}Timeline}, 
 		\hyperpage{118}
     \subitem {Renderer\discretionary {-}{}{}::\discretionary {-}{}{}Viewport\discretionary {-}{}{}\_\discretionary {-}{}{}info}, 
-		\hyperpage{213}
+		\hyperpage{212}
 
 \end{theindex}

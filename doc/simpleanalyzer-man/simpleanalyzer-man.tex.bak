@@ -382,18 +382,20 @@
 	Die maximale Temperaturdifferenz und die maximale Suchweite können in der Konfigurationsdatei angegeben werden. (s. \ref{subsec:conf_odisitosd})
 	\subsubsection{Die Sensordefinitionsdatei}
 	\label{subsec:sdef_odisitosd}
-	Neben der Eingabedatei müssen Sie auch hier eine Sensordefinitionsdatei angeben, in der Informationen zu der in der Eingabedatei genutzten Sensoren abgelegt sind. Die Sensordefinitionsdatei ist eine Textdatei und ist nach folgendem Schema aufgebaut:\\
+	Neben der Eingabedatei müssen Sie auch hier eine Sensordefinitionsdatei angeben, in der Informationen zum Faserverlauf abgelegt sind. Die Sensordefinitionsdatei ist eine Textdatei und ist nach folgendem Schema aufgebaut:\\
 	\begin{lstlisting}
 	i l1 x1
 	o l2 x2
 	i l3 x3
 	o l4 x4
 	...
+	d +-+-
 	\end{lstlisting}
 	\begin{hinweis}
 	Sie können Zeilen als Kommentar markieren, indem Sie diese Zeile mit \emph{\#} beginnen. Die betreffende Zeile wird dadurch nicht ausgewertet.
 	\end{hinweis}
-	In der Datei wird der Verlauf der Faser beschrieben. Es werden in zwei aufeinander folgenden Zeilen stets Ein- und Ausgangspunkt der Faser beschrieben (durch \emph{i} bzw \emph{o} markiert). $l_1...l_n$ ist dabei die Position auf der Faser, also die Länge des Verlaufs der Faser bis zu diesem Punkt. $x_1...x_n$ ist die Position auf der X-Achse. Das für den Versuch verwendete Koordinatensystem muss ggf. entsprechend des Faserverlaufs festgelegt werden.	
+	Es werden in zwei aufeinander folgenden Zeilen stets Ein- und Ausgangspunkt der Faser beschrieben (durch \emph{i} bzw \emph{o} markiert). $l_1...l_n$ ist dabei die Position auf der Faser, also die Länge des Verlaufs der Faser bis zu diesem Punkt. $x_1...x_n$ ist die Position auf der X-Achse. Das für den Versuch verwendete Koordinatensystem muss ggf. entsprechend des Faserverlaufs festgelegt werden.	\\
+	Optional kann für alle Faserdurchläufe durch das Material, die jeweils durch Ein- und Ausgangspunkt eingegrenzt sind, die Richtung des Faserverlaufes festgelegt werden. Fügen Sie dazu eine Zeile hinzu, die mit \emph{d} eingeleitet wird. Nach einem Leerzeichen folgt für jeden Faserdurchlauf dessen (Fädel-)Richtung als positiv (+) oder negativ (-). Wird die Faser also abwechselnd von vorn und wieder von hinten durch das Versuchsobjekt gefädelt, ergibt sich 
 	\subsubsection{Die Konfigurationsdatei}
 	\label{subsec:conf_odisitosd}
 	Zusätzlich sind allgemeine Einstellungen zum Programm in einer Konfigurationsdatei gespeichert. Sie befindet sich, sofern Sie die in \ref{subsec:install} beschriebenen Schritte befolgt haben, in folgendem Verzeichnis:
@@ -842,9 +844,9 @@
 \vspace{1em}&\vspace{1em}\\
 csvtosd oder odisitosd stürzt ab & Prüfen Sie, ob das Format der jeweiligen Ausgangsdatei oder Sensordefinitionsdatei korrekt ist und mit der Konfigurationsdatei übereinstimmt.\\
 & Prüfen Sie, ob alle verwendeten Dateien ASCII-Codiert und mit Linux-Zeilenenden versehen sind. Um dies zu testen, können sie den Befehl
-\begin{verbatim}
-file <Datei>
-\end{verbatim}
+
+\texttt{file <Datei>}
+
 verwenden. Um eine Datei ggf. entsprechend umzuwandeln, verwenden Sie \textbf{dos2unix} (s. \ref{subsec:csvtosd}).\\
 \vspace{1em}&\vspace{1em}\\
 csvtosd findet Sensordefinitionen nicht & Prüfen Sie, ob die Sensornamen in Datendatei und Sensordefinitionsdatei einheitlich sind. Wenn Sie Sensornamen mit Leerzeichen verwenden, müssen \textbf{nur} in der Sensordefinitionsdatei in Anführungszeichen gesetzt werden! Prüfen Sie auch die Zeichencodierung der Datei (s. o.).\vspace{1em}\\

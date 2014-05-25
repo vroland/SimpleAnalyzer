@@ -20,22 +20,22 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Fehlerkorrektur}{20}{subsubsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.3}Die Sensordefinitionsdatei}{20}{subsubsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.4}Die Konfigurationsdatei}{21}{subsubsection.3.2.4}
-\contentsline {subsection}{\numberline {3.3}Zusammenf\IeC {\"u}gen von .tsd-Dateien}{22}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Erstellung des 3D-Modells}{24}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Erstellung mit Blender}{24}{subsubsection.3.4.1}
-\contentsline {subsection}{\numberline {3.5}Auswertung und Visualisierung}{32}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Laden von Modellen und Sensordaten}{32}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}Berechnen der Temperaturverteilung}{34}{subsubsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.3}Das Modell betrachten}{38}{subsubsection.3.5.3}
-\contentsline {subsection}{\numberline {3.6}Analyse des Modells}{41}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}Die Analysedaten\IeC {\"u}bersicht}{41}{subsubsection.3.6.1}
-\contentsline {subsubsection}{\numberline {3.6.2}Analyse f\IeC {\"u}r einen Punkt}{42}{subsubsection.3.6.2}
-\contentsline {subsection}{\numberline {3.7}Temperaturverteilung einer Ebene}{43}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Exportm\IeC {\"o}glichkeiten}{48}{subsection.3.8}
-\contentsline {subsubsection}{\numberline {3.8.1}Anzeige des 3D-Fensters}{48}{subsubsection.3.8.1}
-\contentsline {subsubsection}{\numberline {3.8.2}VTK-Datei}{49}{subsubsection.3.8.2}
-\contentsline {section}{\numberline {4}Generelles Vorgehen}{50}{section.4}
-\contentsline {section}{\numberline {5}Fehlerbehebung}{52}{section.5}
-\contentsline {subsection}{\numberline {5.1}Bei der Konvertierung}{52}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Bei der Auswertung}{53}{subsection.5.2}
-\contentsline {section}{\numberline {6}Lizenzbestimmungen}{54}{section.6}
+\contentsline {subsection}{\numberline {3.3}Zusammenf\IeC {\"u}gen von .tsd-Dateien}{23}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Erstellung des 3D-Modells}{25}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Erstellung mit Blender}{25}{subsubsection.3.4.1}
+\contentsline {subsection}{\numberline {3.5}Auswertung und Visualisierung}{33}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Laden von Modellen und Sensordaten}{33}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Berechnen der Temperaturverteilung}{35}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}Das Modell betrachten}{39}{subsubsection.3.5.3}
+\contentsline {subsection}{\numberline {3.6}Analyse des Modells}{42}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Die Analysedaten\IeC {\"u}bersicht}{42}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}Analyse f\IeC {\"u}r einen Punkt}{43}{subsubsection.3.6.2}
+\contentsline {subsection}{\numberline {3.7}Temperaturverteilung einer Ebene}{44}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Exportm\IeC {\"o}glichkeiten}{49}{subsection.3.8}
+\contentsline {subsubsection}{\numberline {3.8.1}Anzeige des 3D-Fensters}{49}{subsubsection.3.8.1}
+\contentsline {subsubsection}{\numberline {3.8.2}VTK-Datei}{50}{subsubsection.3.8.2}
+\contentsline {section}{\numberline {4}Generelles Vorgehen}{51}{section.4}
+\contentsline {section}{\numberline {5}Fehlerbehebung}{53}{section.5}
+\contentsline {subsection}{\numberline {5.1}Bei der Konvertierung}{53}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Bei der Auswertung}{54}{subsection.5.2}
+\contentsline {section}{\numberline {6}Lizenzbestimmungen}{55}{section.6}

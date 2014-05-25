@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.4"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/libraries/interpolate/Interpolator.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -31,7 +31,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Erzeugt von Doxygen 1.8.4 -->
+<!-- Erzeugt von Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </script>
@@ -103,31 +103,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="classInterpolator.xhtml">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInterpolator.xhtml" title="2- und 3-dimensionale Inter-/Extrapolation ">Interpolator</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classInterpolator.xhtml">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInterpolator.xhtml">Interpolator</a> {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2aa7167350eb8c3b4e2d5cb800587a725b">   25</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2" title="Der Typ der verwendeten Interpolationsfunktion. ">InterpolationMode</a> {LINEAR,LOGARITHMIC};</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2aa7167350eb8c3b4e2d5cb800587a725b">   25</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2">InterpolationMode</a> {LINEAR,LOGARITHMIC};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classInterpolator.xhtml" title="2- und 3-dimensionale Inter-/Extrapolation ">Interpolator</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classInterpolator.xhtml">Interpolator</a>();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">double</span> interpolateTri(<a class="code" href="classTriangle.xhtml" title="Ein durch 3 Ortsvektoren beschriebenes Dreieck. ">Triangle</a>* tri,<a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* pos,<span class="keywordtype">double</span>* values);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">double</span> interpolateTri(<a class="code" href="classTriangle.xhtml">Triangle</a>* tri,<a class="code" href="classVector3D.xhtml">Vector3D</a>* pos,<span class="keywordtype">double</span>* values);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">double</span> interpolateTet(<a class="code" href="classTetrahedron.xhtml" title="Ein durch 4 Ortsvektoren beschriebener Tetraeder. ">Tetrahedron</a>* tet,<a class="code" href="classVector3D.xhtml" title="3D-Vektorklasse mit nützlichen Operationen. ">Vector3D</a>* pos,<span class="keywordtype">double</span>* values);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">double</span> interpolateTet(<a class="code" href="classTetrahedron.xhtml">Tetrahedron</a>* tet,<a class="code" href="classVector3D.xhtml">Vector3D</a>* pos,<span class="keywordtype">double</span>* values);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> setMode(InterpolationMode mode);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classInterpolator.xhtml" title="2- und 3-dimensionale Inter-/Extrapolation ">Interpolator</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classInterpolator.xhtml">Interpolator</a>();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="classInterpolator.xhtml#ace34e7696bdf4a1f0544b145efee898e">   69</a></span>&#160;    <a class="code" href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2" title="Der Typ der verwendeten Interpolationsfunktion. ">InterpolationMode</a> <a class="code" href="classInterpolator.xhtml#ace34e7696bdf4a1f0544b145efee898e" title="Der verwendete Interpolationsmodus bzw. ">mode</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classInterpolator.xhtml#ace34e7696bdf4a1f0544b145efee898e">   69</a></span>&#160;    <a class="code" href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2">InterpolationMode</a> <a class="code" href="classInterpolator.xhtml#ace34e7696bdf4a1f0544b145efee898e">mode</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INTERPOLATOR_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classInterpolator_xhtml_adb733b1439a2903feae57fa734ced0c2"><div class="ttname"><a href="classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2">Interpolator::InterpolationMode</a></div><div class="ttdeci">InterpolationMode</div><div class="ttdoc">Der Typ der verwendeten Interpolationsfunktion. </div><div class="ttdef"><b>Definition:</b> <a href="Interpolator_8h_source.xhtml#l00025">Interpolator.h:25</a></div></div>
+<div class="ttc" id="classInterpolator_xhtml_ace34e7696bdf4a1f0544b145efee898e"><div class="ttname"><a href="classInterpolator.xhtml#ace34e7696bdf4a1f0544b145efee898e">Interpolator::mode</a></div><div class="ttdeci">InterpolationMode mode</div><div class="ttdoc">Der verwendete Interpolationsmodus bzw. </div><div class="ttdef"><b>Definition:</b> <a href="Interpolator_8h_source.xhtml#l00069">Interpolator.h:69</a></div></div>
+<div class="ttc" id="classTetrahedron_xhtml"><div class="ttname"><a href="classTetrahedron.xhtml">Tetrahedron</a></div><div class="ttdoc">Ein durch 4 Ortsvektoren beschriebener Tetraeder. </div><div class="ttdef"><b>Definition:</b> <a href="GeometryClasses_8h_source.xhtml#l00285">GeometryClasses.h:285</a></div></div>
+<div class="ttc" id="GeometryClasses_8h_xhtml"><div class="ttname"><a href="GeometryClasses_8h.xhtml">GeometryClasses.h</a></div></div>
+<div class="ttc" id="classInterpolator_xhtml"><div class="ttname"><a href="classInterpolator.xhtml">Interpolator</a></div><div class="ttdoc">2- und 3-dimensionale Inter-/Extrapolation </div><div class="ttdef"><b>Definition:</b> <a href="Interpolator_8h_source.xhtml#l00020">Interpolator.h:20</a></div></div>
+<div class="ttc" id="classVector3D_xhtml"><div class="ttname"><a href="classVector3D.xhtml">Vector3D</a></div><div class="ttdoc">3D-Vektorklasse mit nützlichen Operationen. </div><div class="ttdef"><b>Definition:</b> <a href="GeometryClasses_8h_source.xhtml#l00013">GeometryClasses.h:13</a></div></div>
+<div class="ttc" id="classTriangle_xhtml"><div class="ttname"><a href="classTriangle.xhtml">Triangle</a></div><div class="ttdoc">Ein durch 3 Ortsvektoren beschriebenes Dreieck. </div><div class="ttdef"><b>Definition:</b> <a href="GeometryClasses_8h_source.xhtml#l00228">GeometryClasses.h:228</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Apr 13 2014 12:33:56 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Mai 25 2014 18:26:41 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.4
+</a> 1.8.6
 </small></address>
 </body>
 </html>

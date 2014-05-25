@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.4"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Simple Analyzer: /daten/Projekte/eclipse_workspace/simpleanalyzer-gui/src/SimpleAnalyzerApp.cpp Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -31,7 +31,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Erzeugt von Doxygen 1.8.4 -->
+<!-- Erzeugt von Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </script>
@@ -106,33 +106,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;IMPLEMENT_APP(<a class="code" href="classSimpleAnalyzerApp.xhtml" title="Regelt den allgemeinen Ablauf des Programms. ">SimpleAnalyzerApp</a>)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;IMPLEMENT_APP(<a class="code" href="classSimpleAnalyzerApp.xhtml">SimpleAnalyzerApp</a>)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="classSimpleAnalyzerApp.xhtml#ad759c546dadd12d8072f373c48a0e230">   33</a></span>&#160;int <a class="code" href="classSimpleAnalyzerApp.xhtml" title="Regelt den allgemeinen Ablauf des Programms. ">SimpleAnalyzerApp</a>::getCurrentDataObjectIndex() {</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classSimpleAnalyzerApp.xhtml#ad759c546dadd12d8072f373c48a0e230">   33</a></span>&#160;int <a class="code" href="classSimpleAnalyzerApp.xhtml">SimpleAnalyzerApp</a>::getCurrentDataObjectIndex() {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> current_data_object_index;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classSimpleAnalyzerApp.xhtml#a613955c888ef6b8f014504986951e2b9">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSimpleAnalyzerApp.xhtml#a613955c888ef6b8f014504986951e2b9" title="Setzt den Index des aktiven Objekts. ">SimpleAnalyzerApp::setCurrentDataObjectIndex</a>(<span class="keywordtype">int</span> currentDataObjectIndex) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classSimpleAnalyzerApp.xhtml#a613955c888ef6b8f014504986951e2b9">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSimpleAnalyzerApp.xhtml#a613955c888ef6b8f014504986951e2b9">SimpleAnalyzerApp::setCurrentDataObjectIndex</a>(<span class="keywordtype">int</span> currentDataObjectIndex) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    current_data_object_index = currentDataObjectIndex;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classSimpleAnalyzerApp.xhtml#a977aa8cde1479c495e01caf25b6e8a1c">   41</a></span>&#160;<a class="code" href="classstd_1_1vector.xhtml">vector&lt;ObjectData*&gt;</a>* <a class="code" href="classSimpleAnalyzerApp.xhtml#a977aa8cde1479c495e01caf25b6e8a1c" title="Gibt einen Verweis auf die Liste der geladenen Objekte zurück. ">SimpleAnalyzerApp::getDataObjects</a>() {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classSimpleAnalyzerApp.xhtml#a977aa8cde1479c495e01caf25b6e8a1c">   41</a></span>&#160;<a class="code" href="classstd_1_1vector.xhtml">vector&lt;ObjectData*&gt;</a>* <a class="code" href="classSimpleAnalyzerApp.xhtml#a977aa8cde1479c495e01caf25b6e8a1c">SimpleAnalyzerApp::getDataObjects</a>() {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> &amp;data_objects;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classSimpleAnalyzerApp.xhtml#aa0149bf3fcedd1ff880817a16e1e1574">   45</a></span>&#160;<a class="code" href="structUtils_1_1Visualization__info.xhtml" title="Informationen über die Farbgebung bei der Visualisierung. ">Utils::Visualization_info</a>* <a class="code" href="classSimpleAnalyzerApp.xhtml#aa0149bf3fcedd1ff880817a16e1e1574" title="Gibt einen Verweis auf verwendeten Visualisierungsoptionen zurück. ">SimpleAnalyzerApp::getVisualizationInfo</a>() {</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classSimpleAnalyzerApp.xhtml#aa0149bf3fcedd1ff880817a16e1e1574">   45</a></span>&#160;<a class="code" href="structUtils_1_1Visualization__info.xhtml">Utils::Visualization_info</a>* <a class="code" href="classSimpleAnalyzerApp.xhtml#aa0149bf3fcedd1ff880817a16e1e1574">SimpleAnalyzerApp::getVisualizationInfo</a>() {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> &amp;visualization_info;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classSimpleAnalyzerApp.xhtml#a9bf75442c8ccb79cc735cf922de83bdc">   49</a></span>&#160;<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* <a class="code" href="classSimpleAnalyzerApp.xhtml#a9bf75442c8ccb79cc735cf922de83bdc" title="Gibt einen Verweis auf das aktuell aktive Objekt zurück. ">SimpleAnalyzerApp::getActiveObject</a>() {</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classSimpleAnalyzerApp.xhtml#a9bf75442c8ccb79cc735cf922de83bdc">   49</a></span>&#160;<a class="code" href="classObjectData.xhtml">ObjectData</a>* <a class="code" href="classSimpleAnalyzerApp.xhtml#a9bf75442c8ccb79cc735cf922de83bdc">SimpleAnalyzerApp::getActiveObject</a>() {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> data_objects.at(current_data_object_index);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classSimpleAnalyzerApp.xhtml#acedd76089853323687a3ac9cfeed1540">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSimpleAnalyzerApp.xhtml#acedd76089853323687a3ac9cfeed1540" title="Fügt ein Objekt zur Objektliste hinzu. ">SimpleAnalyzerApp::addObject</a>(<a class="code" href="classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. ">ObjectData</a>* obj) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classSimpleAnalyzerApp.xhtml#acedd76089853323687a3ac9cfeed1540">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSimpleAnalyzerApp.xhtml#acedd76089853323687a3ac9cfeed1540">SimpleAnalyzerApp::addObject</a>(<a class="code" href="classObjectData.xhtml">ObjectData</a>* obj) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    data_objects.resize(data_objects.size() + 1, obj);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classSimpleAnalyzerApp.xhtml#ac78a3ea0f527414f0617d32ab54043f7">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSimpleAnalyzerApp.xhtml#ac78a3ea0f527414f0617d32ab54043f7" title="Löscht das aktuelle Objekt aus der Objektliste. ">SimpleAnalyzerApp::removeCurrentObject</a>() {</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classSimpleAnalyzerApp.xhtml#ac78a3ea0f527414f0617d32ab54043f7">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classSimpleAnalyzerApp.xhtml#ac78a3ea0f527414f0617d32ab54043f7">SimpleAnalyzerApp::removeCurrentObject</a>() {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//Sind mehrere Objekte vorhanden?</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (data_objects.size() &gt; 1) {</div>
@@ -147,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="classSimpleAnalyzerApp.xhtml#ac98b58650811c7e744eac6cd11d7c157">   72</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classSimpleAnalyzerApp.xhtml#ac98b58650811c7e744eac6cd11d7c157" title="Wird beim Start der Anwendung ausgeführt und öffnet das Hauptfenster. ">SimpleAnalyzerApp::OnInit</a>() {</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classSimpleAnalyzerApp.xhtml#ac98b58650811c7e744eac6cd11d7c157">   72</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classSimpleAnalyzerApp.xhtml#ac98b58650811c7e744eac6cd11d7c157">SimpleAnalyzerApp::OnInit</a>() {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//nötig zum Ausgeben auf dem std-Stream unter Windows</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::cout &lt;&lt; std::flush;</div>
@@ -156,26 +156,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    wxMilliSleep(100);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//erstellen des Hauptfensters</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classGUIMainWindow.xhtml" title="Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen. ">GUIMainWindow</a> *frame = <span class="keyword">new</span> <a class="code" href="classGUIMainWindow.xhtml" title="Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen. ">GUIMainWindow</a>(wxT(<span class="stringliteral">&quot;Simple Analyzer&quot;</span>), 100, 100,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classGUIMainWindow.xhtml">GUIMainWindow</a> *frame = <span class="keyword">new</span> <a class="code" href="classGUIMainWindow.xhtml">GUIMainWindow</a>(wxT(<span class="stringliteral">&quot;Simple Analyzer&quot;</span>), 100, 100,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            1200, 700);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    frame-&gt;Show(TRUE);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    SetTopWindow(frame);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="classSimpleAnalyzerApp.xhtml#ae0330ceb4781668e020614f5b659766b">   88</a></span>&#160;<a class="code" href="classSimpleAnalyzerApp.xhtml#ae0330ceb4781668e020614f5b659766b" title="Der Destruktor. ">SimpleAnalyzerApp::~SimpleAnalyzerApp</a>() {</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classSimpleAnalyzerApp.xhtml#ae0330ceb4781668e020614f5b659766b">   88</a></span>&#160;<a class="code" href="classSimpleAnalyzerApp.xhtml#ae0330ceb4781668e020614f5b659766b">SimpleAnalyzerApp::~SimpleAnalyzerApp</a>() {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//löschen aller Objekte</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; data_objects.size(); i++) {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">delete</span> data_objects.at(i);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="ttc" id="structUtils_1_1Visualization__info_xhtml"><div class="ttname"><a href="structUtils_1_1Visualization__info.xhtml">Utils::Visualization_info</a></div><div class="ttdoc">Informationen über die Farbgebung bei der Visualisierung. </div><div class="ttdef"><b>Definition:</b> <a href="utils_8h_source.xhtml#l00047">utils.h:47</a></div></div>
+<div class="ttc" id="classSimpleAnalyzerApp_xhtml"><div class="ttname"><a href="classSimpleAnalyzerApp.xhtml">SimpleAnalyzerApp</a></div><div class="ttdoc">Regelt den allgemeinen Ablauf des Programms. </div><div class="ttdef"><b>Definition:</b> <a href="SimpleAnalyzerApp_8h_source.xhtml#l00023">SimpleAnalyzerApp.h:23</a></div></div>
+<div class="ttc" id="classObjectData_xhtml"><div class="ttname"><a href="classObjectData.xhtml">ObjectData</a></div><div class="ttdoc">Die Daten eines Versuchsobjekts. </div><div class="ttdef"><b>Definition:</b> <a href="ObjectData_8h_source.xhtml#l00027">ObjectData.h:27</a></div></div>
+<div class="ttc" id="classSimpleAnalyzerApp_xhtml_aa0149bf3fcedd1ff880817a16e1e1574"><div class="ttname"><a href="classSimpleAnalyzerApp.xhtml#aa0149bf3fcedd1ff880817a16e1e1574">SimpleAnalyzerApp::getVisualizationInfo</a></div><div class="ttdeci">Utils::Visualization_info * getVisualizationInfo()</div><div class="ttdoc">Gibt einen Verweis auf verwendeten Visualisierungsoptionen zurück. </div><div class="ttdef"><b>Definition:</b> <a href="SimpleAnalyzerApp_8cpp_source.xhtml#l00045">SimpleAnalyzerApp.cpp:45</a></div></div>
+<div class="ttc" id="classstd_1_1vector_xhtml"><div class="ttname"><a href="classstd_1_1vector.xhtml">std::vector&lt; ObjectData * &gt;</a></div></div>
+<div class="ttc" id="classSimpleAnalyzerApp_xhtml_ae0330ceb4781668e020614f5b659766b"><div class="ttname"><a href="classSimpleAnalyzerApp.xhtml#ae0330ceb4781668e020614f5b659766b">SimpleAnalyzerApp::~SimpleAnalyzerApp</a></div><div class="ttdeci">virtual ~SimpleAnalyzerApp()</div><div class="ttdoc">Der Destruktor. </div><div class="ttdef"><b>Definition:</b> <a href="SimpleAnalyzerApp_8cpp_source.xhtml#l00088">SimpleAnalyzerApp.cpp:88</a></div></div>
+<div class="ttc" id="classSimpleAnalyzerApp_xhtml_ac78a3ea0f527414f0617d32ab54043f7"><div class="ttname"><a href="classSimpleAnalyzerApp.xhtml#ac78a3ea0f527414f0617d32ab54043f7">SimpleAnalyzerApp::removeCurrentObject</a></div><div class="ttdeci">void removeCurrentObject()</div><div class="ttdoc">Löscht das aktuelle Objekt aus der Objektliste. </div><div class="ttdef"><b>Definition:</b> <a href="SimpleAnalyzerApp_8cpp_source.xhtml#l00057">SimpleAnalyzerApp.cpp:57</a></div></div>
+<div class="ttc" id="classSimpleAnalyzerApp_xhtml_acedd76089853323687a3ac9cfeed1540"><div class="ttname"><a href="classSimpleAnalyzerApp.xhtml#acedd76089853323687a3ac9cfeed1540">SimpleAnalyzerApp::addObject</a></div><div class="ttdeci">void addObject(ObjectData *obj)</div><div class="ttdoc">Fügt ein Objekt zur Objektliste hinzu. </div><div class="ttdef"><b>Definition:</b> <a href="SimpleAnalyzerApp_8cpp_source.xhtml#l00053">SimpleAnalyzerApp.cpp:53</a></div></div>
+<div class="ttc" id="GUIMainWindow_8h_xhtml"><div class="ttname"><a href="GUIMainWindow_8h.xhtml">GUIMainWindow.h</a></div></div>
+<div class="ttc" id="classSimpleAnalyzerApp_xhtml_a9bf75442c8ccb79cc735cf922de83bdc"><div class="ttname"><a href="classSimpleAnalyzerApp.xhtml#a9bf75442c8ccb79cc735cf922de83bdc">SimpleAnalyzerApp::getActiveObject</a></div><div class="ttdeci">ObjectData * getActiveObject()</div><div class="ttdoc">Gibt einen Verweis auf das aktuell aktive Objekt zurück. </div><div class="ttdef"><b>Definition:</b> <a href="SimpleAnalyzerApp_8cpp_source.xhtml#l00049">SimpleAnalyzerApp.cpp:49</a></div></div>
+<div class="ttc" id="classSimpleAnalyzerApp_xhtml_ac98b58650811c7e744eac6cd11d7c157"><div class="ttname"><a href="classSimpleAnalyzerApp.xhtml#ac98b58650811c7e744eac6cd11d7c157">SimpleAnalyzerApp::OnInit</a></div><div class="ttdeci">virtual bool OnInit()</div><div class="ttdoc">Wird beim Start der Anwendung ausgeführt und öffnet das Hauptfenster. </div><div class="ttdef"><b>Definition:</b> <a href="SimpleAnalyzerApp_8cpp_source.xhtml#l00072">SimpleAnalyzerApp.cpp:72</a></div></div>
+<div class="ttc" id="classSimpleAnalyzerApp_xhtml_a977aa8cde1479c495e01caf25b6e8a1c"><div class="ttname"><a href="classSimpleAnalyzerApp.xhtml#a977aa8cde1479c495e01caf25b6e8a1c">SimpleAnalyzerApp::getDataObjects</a></div><div class="ttdeci">vector&lt; ObjectData * &gt; * getDataObjects()</div><div class="ttdoc">Gibt einen Verweis auf die Liste der geladenen Objekte zurück. </div><div class="ttdef"><b>Definition:</b> <a href="SimpleAnalyzerApp_8cpp_source.xhtml#l00041">SimpleAnalyzerApp.cpp:41</a></div></div>
+<div class="ttc" id="classGUIMainWindow_xhtml"><div class="ttname"><a href="classGUIMainWindow.xhtml">GUIMainWindow</a></div><div class="ttdoc">Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen. </div><div class="ttdef"><b>Definition:</b> <a href="GUIMainWindow_8h_source.xhtml#l00028">GUIMainWindow.h:28</a></div></div>
+<div class="ttc" id="utils_8h_xhtml"><div class="ttname"><a href="utils_8h.xhtml">utils.h</a></div></div>
+<div class="ttc" id="classSimpleAnalyzerApp_xhtml_a613955c888ef6b8f014504986951e2b9"><div class="ttname"><a href="classSimpleAnalyzerApp.xhtml#a613955c888ef6b8f014504986951e2b9">SimpleAnalyzerApp::setCurrentDataObjectIndex</a></div><div class="ttdeci">void setCurrentDataObjectIndex(int currentDataObjectIndex)</div><div class="ttdoc">Setzt den Index des aktiven Objekts. </div><div class="ttdef"><b>Definition:</b> <a href="SimpleAnalyzerApp_8cpp_source.xhtml#l00037">SimpleAnalyzerApp.cpp:37</a></div></div>
+<div class="ttc" id="ObjectData_8h_xhtml"><div class="ttname"><a href="ObjectData_8h.xhtml">ObjectData.h</a></div></div>
+<div class="ttc" id="SimpleAnalyzerApp_8h_xhtml"><div class="ttname"><a href="SimpleAnalyzerApp_8h.xhtml">SimpleAnalyzerApp.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Apr 13 2014 12:33:56 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Son Mai 25 2014 18:26:41 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.4
+</a> 1.8.6
 </small></address>
 </body>
 </html>
