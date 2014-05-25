@@ -548,7 +548,7 @@ protected:
 				//Gesamtwert auslesen
 				string dirs = getTextBlock(line, 1);
 
-				cout << "Faserrichtungen: " << endl;
+				cout << "fibre directions: " << endl;
 
 				//Einzelne Richtungen auslesen
 				for (int i = 0; i < int(dirs.size()); i++) {
@@ -765,7 +765,16 @@ protected:
 						l_out = outlist.at(li);
 						x_in = in_x.at(li);
 						x_out = out_x.at(li);
-						flip_z = dirlist.at(li);
+
+						//Suchen der Faserrichtungsinformationen
+						if (dirlist.size()!=0) {
+							if (dirlist.size()>li) {
+								flip_z = dirlist.at(li);
+							} else {
+								cerr << "WARNING: fibre direction information not found for pass " << li+1 << endl<<"!";
+							}
+						}
+
 						break;
 					}
 
