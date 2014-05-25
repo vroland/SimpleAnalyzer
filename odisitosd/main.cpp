@@ -475,10 +475,12 @@ protected:
 	 * @param outlist Liste für die Positionen der Faserausgänge auf der Faser.
 	 * @param in_x Liste für die X-Positionen der Fasereingänge.
 	 * @param out_x Liste für die X-Positionen der Faserausgänge.
+	 * @param dirlist Liste für die Richtungen der Faser zwischen Ein-und Ausgang bezüglich der Z-Richtung.
 	 * @return War das Einlesen erfolgreich?
 	 */
 	bool readSensorDefinitions(string path, vector<float>& inlist,
-			vector<float>& outlist, vector<float>& in_x, vector<float>& out_x) {
+			vector<float>& outlist, vector<float>& in_x, vector<float>& out_x,
+			vector<bool>& dirlist) {
 
 		ifstream deffile;
 		//Öffnen der Sensordefinitionsdatei
@@ -539,6 +541,23 @@ protected:
 					out_x.at(out_x.size() - 1) = opts.objwidth
 							- out_x.at(out_x.size() - 1);
 				}
+			}
+
+			//Faserrichtungen
+			if (line.at(0) == 'd') {
+				//Gesamtwert auslesen
+				string dirs = getTextBlock(line, 1);
+
+				cout << "Faserrichtungen: " << endl;
+
+				//Einzelne Richtungen auslesen
+				for (int i = 0; i < int(dirs.size()); i++) {
+					dirlist.resize(dirlist.size() + 1,
+							(dirs.at(i) == '+') ? false : true);
+					cout << ((dirs.at(i) == '+') ? "►" : "◄") << endl;
+				}
+
+				cout << endl;
 			}
 		}
 
@@ -662,13 +681,15 @@ protected:
 	 * @param outlist Positionen der Faserausgänge auf der Faser.
 	 * @param in_x X-Positionen der Fasereingänge.
 	 * @param out_x X-Positionen der Faserausgänge.
+	 * @param dirlist Liste für die Richtungen der Faser zwischen Ein-und Ausgang bezüglich der Z-Richtung.
 	 * @return War das Schreiben erfolgreich?
 	 */
 	bool writeOutputFile(string path, string logpath,
 			vector<vector<float> >& values,
 			vector<vector<int> >& debug_positions, vector<float>& times,
 			vector<float>& lin_positions, vector<float>& inlist,
-			vector<float>& outlist, vector<float>& in_x, vector<float>& out_x) {
+			vector<float>& outlist, vector<float>& in_x, vector<float>& out_x,
+			vector<bool>& dirlist) {
 
 		ofstream errfile;
 		ofstream outfile;
@@ -733,6 +754,8 @@ protected:
 				float x_out = 0;
 				//Ist der Punkt außerhalb des Objekts?
 				bool outside = false;
+				//Verläuft die Faserrichtung entgegen der Z-Achse?
+				bool flip_z = false;
 
 				//Suchen des eingrenzenden Faser-Ein- und Ausgangs
 				for (size_t li = 0; li < inlist.size(); li++) {
@@ -742,7 +765,7 @@ protected:
 						l_out = outlist.at(li);
 						x_in = in_x.at(li);
 						x_out = out_x.at(li);
-						//cout << l_pos << endl;
+						flip_z = dirlist.at(li);
 						break;
 					}
 
@@ -821,10 +844,18 @@ protected:
 					float x = x_in
 							+ ((x_out - x_in) / (l_out - l_in))
 									* (l_pos - l_in);
+
 					float y = opts.height;
-					float z = cos(asin(((x_out - x_in) / (l_out - l_in))))
-							* (l_pos - l_in);
-					//cout << x_in << " "<< x_out << endl;
+					//Winkel der Faserrichtung zur Z-Achse
+					float z_angle = cos(
+							asin(((x_out - x_in) / (l_out - l_in))));
+					float z = z_angle * (l_pos - l_in);
+
+					//Richtung der Faser umkehren?
+					if (flip_z) {
+						z = z_angle * (l_out - l_in) - z;
+					}
+
 					//Schreiben des Messpunktes
 					outfile << "s " << x << " " << y << " " << z << " "
 							<< opts.basetemp + values.at(i).at(j) << endl;
@@ -916,10 +947,12 @@ public:
 		//Liste für die X-Positionen der Ein- und Ausgänge
 		vector<float> in_x;
 		vector<float> out_x;
+		//Liste für die Richtungen der Faser zwischen Ein-und Ausgang bezüglich der Z-Richtung.
+		vector<bool> dirlist;
 
 		//Einlesen der Sensordefinitionen erfolgreich?
 		if (!readSensorDefinitions(def_filename, inlist, outlist, in_x,
-				out_x)) {
+				out_x, dirlist)) {
 			return 1;
 		}
 
@@ -941,7 +974,7 @@ public:
 		//Schreiben der Ausgabe- und Logdatei erfolgreich?
 		if (!writeOutputFile(out_filename, err_filename, dataset_values,
 				debug_positions, dataset_times, lin_positions, inlist, outlist,
-				in_x, out_x)) {
+				in_x, out_x, dirlist)) {
 			return 1;
 		}
 

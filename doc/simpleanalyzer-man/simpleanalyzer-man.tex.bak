@@ -421,6 +421,7 @@
 	z.B. Die \emph{3.} Spalte hat den Index \emph{2}.
 	\end{hinweis}
 	\subsection{Zusammenfügen von .tsd-Dateien}
+	\label{subsec:mergetsd}
 	Um die nun im .tsd-Format vorliegenden Messdaten zusammenzuführen, verwenden Sie das Werkzeug \emph{mergetsd}. Dabei fügt das Programm Datensätze aus beiden Eingabedateien zusammen, deren Zeitstempel annähernd gleich sind.\\
 	Der Aufruf erfolgt nach dem bereits in \ref{subsec:csvtosd} gezeigten Muster:
 	\begin{lstlisting}
@@ -833,6 +834,35 @@
 	\end{enumerate}
 	\label{sec:example}
 	
+\section{Fehlerbehebung}
+\subsection{Bei der Konvertierung}
+\begin{tabular}{p{2.cm}|p{6.3cm}}
+\textsc{Problem} & \textsc{Lösungsansatz}\\
+\hline
+\vspace{1em}&\vspace{1em}\\
+csvtosd oder odisitosd stürzt ab & Prüfen Sie, ob das Format der jeweiligen Ausgangsdatei oder Sensordefinitionsdatei korrekt ist und mit der Konfigurationsdatei übereinstimmt.\\
+& Prüfen Sie, ob alle verwendeten Dateien ASCII-Codiert und mit Linux-Zeilenenden versehen sind. Um dies zu testen, können sie den Befehl
+\begin{verbatim}
+file <Datei>
+\end{verbatim}
+verwenden. Um eine Datei ggf. entsprechend umzuwandeln, verwenden Sie \textbf{dos2unix} (s. \ref{subsec:csvtosd}).\\
+\vspace{1em}&\vspace{1em}\\
+csvtosd findet Sensordefinitionen nicht & Prüfen Sie, ob die Sensornamen in Datendatei und Sensordefinitionsdatei einheitlich sind. Wenn Sie Sensornamen mit Leerzeichen verwenden, müssen \textbf{nur} in der Sensordefinitionsdatei in Anführungszeichen gesetzt werden! Prüfen Sie auch die Zeichencodierung der Datei (s. o.).\vspace{1em}\\
+
+mergetsd fügt die Dateien Zeitversetzt zusammen & Verändern Sie die zeitliche Verschiebung der Dateien (-offset). Siehe \ref{subsec:mergetsd}.\\
+\end{tabular}
+
+\subsection{Bei der Auswertung}
+\begin{tabular}{p{2cm}|p{6.3cm}}
+\textsc{Problem} & \textsc{Lösungsansatz}\\
+\hline
+\vspace{1em}&\vspace{1em}\\
+Dichte und spezifische Wärmekapazität des Materials werden nicht übernommen &
+Nach jeder Änderung an den Objekteigenschaften muss dieses neu Berechnet werden, um die Änderungen zu speichern. Dies gilt auch, wenn ein anderes Material in den Objekteigenschaften ausgewählt wird und die Eigenschaften des vorher Ausgewählten gespeichert werden sollen.\\
+\vspace{1em}&\vspace{1em}\\
+
+Das Objekt ist in der 3D-Ansicht bei hohem Zoom nur Teilweise zu sehen. & Das Objekt kann nur bis zu einer bestimmten nähe der virtuellen Kamera dargestellt werden. Um dennoch Details am Objekt erkennen zu können, können Sie das Objekt in den Visualisierungsoptionen optisch skalieren. (Siehe \ref{subsec:sa_viewprops})
+\end{tabular}
 \newpage
 \section{Lizenzbestimmungen}
 

@@ -174,7 +174,7 @@ double Interpolator::interpolateTet(Tetrahedron* tet, Vector3D* pos,
 		up->mult(-1);
 	}
 
-	double delta = gs1->getAngleTo(up);  //Winkel zwischen Grundflächennormale und gs1
+	double delta = gs1->getAngleTo(up);
 	double h = cos(delta) * gs1->getLength();
 	Vector3D* v1ToV4InGround = tet->getV4()->copy();
 	Vector3D* tUp = up->copy();
