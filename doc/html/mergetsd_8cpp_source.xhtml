@@ -111,10 +111,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structTsdMerger_1_1Options.xhtml">   27</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structTsdMerger_1_1Options.xhtml">Options</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structTsdMerger_1_1Options.xhtml#a01b3881ab882a6ec9690220bef2207b8">   28</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#a01b3881ab882a6ec9690220bef2207b8">offset</a>;             </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structTsdMerger_1_1Options.xhtml#a01b3881ab882a6ec9690220bef2207b8">   28</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#a01b3881ab882a6ec9690220bef2207b8">offset</a>;         </div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structTsdMerger_1_1Options.xhtml#aa8403cbade9ca78ab6f5be07ad270c15">   29</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#aa8403cbade9ca78ab6f5be07ad270c15">max_dt</a>;    </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structTsdMerger_1_1Options.xhtml#ac64f16f7048749aceb1f3368344ea8a8">   30</a></span>&#160;        <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#ac64f16f7048749aceb1f3368344ea8a8">delta</a>;         </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structTsdMerger_1_1Options.xhtml#a34cacae19241161f15637c7fcab5ac0a">   31</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#a34cacae19241161f15637c7fcab5ac0a">auto_delta</a>;        </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structTsdMerger_1_1Options.xhtml#ac64f16f7048749aceb1f3368344ea8a8">   30</a></span>&#160;        <span class="keywordtype">long</span> <span class="keywordtype">int</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#ac64f16f7048749aceb1f3368344ea8a8">delta</a>;     </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structTsdMerger_1_1Options.xhtml#a34cacae19241161f15637c7fcab5ac0a">   31</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="structTsdMerger_1_1Options.xhtml#a34cacae19241161f15637c7fcab5ac0a">auto_delta</a>;    </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    } opts; </div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classTsdMerger.xhtml#a413e3835ebd34a810a19465525bb6cbb">   40</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classTsdMerger.xhtml#a413e3835ebd34a810a19465525bb6cbb">getTextBlock</a>(<span class="keywordtype">string</span> data, <span class="keywordtype">int</span> n) {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
@@ -328,8 +328,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; timestamps2.size(); j++) {</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="comment">//Zeitdifferenz zwischen den Datensätzen</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordtype">int</span> delta_t = (timestamps1.at(i) - (timestamps2.at(j))</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        + opts.offset) - opts.delta;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordtype">int</span> delta_t = timestamps1.at(i) - (timestamps2.at(j) </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                    + opts.offset + opts.delta);</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="comment">//kleiner als das maximum?</span></div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) abs(delta_t) &lt;= opts.max_dt) {</div>
@@ -429,7 +429,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Mai 25 2014 18:26:41 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Fre Mai 30 2014 10:51:08 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

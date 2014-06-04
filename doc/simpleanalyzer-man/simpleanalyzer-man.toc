@@ -19,7 +19,7 @@
 \contentsline {subsubsection}{\numberline {3.2.1}Die Eingabedatei}{19}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Fehlerkorrektur}{20}{subsubsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.3}Die Sensordefinitionsdatei}{20}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Die Konfigurationsdatei}{21}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.4}Die Konfigurationsdatei}{22}{subsubsection.3.2.4}
 \contentsline {subsection}{\numberline {3.3}Zusammenf\IeC {\"u}gen von .tsd-Dateien}{23}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Erstellung des 3D-Modells}{25}{subsection.3.4}
 \contentsline {subsubsection}{\numberline {3.4.1}Erstellung mit Blender}{25}{subsubsection.3.4.1}

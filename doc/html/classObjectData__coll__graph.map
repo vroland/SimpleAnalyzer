@@ -1,5 +1,5 @@
 <map id="ObjectData" name="ObjectData">
-<area shape="rect" id="node2" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData\l::MaterialData \&gt;" alt="" coords="9,102,172,149"/>
-<area shape="rect" id="node4" href="$structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. " alt="" coords="5,5,176,35"/>
-<area shape="rect" id="node6" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; SensorData \&gt;" alt="" coords="196,111,372,140"/>
+<area shape="rect" id="node2" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData\l::MaterialData \&gt;" alt="" coords="9,97,172,138"/>
+<area shape="rect" id="node3" href="$structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. " alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node4" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; SensorData \&gt;" alt="" coords="197,104,373,131"/>
 </map>

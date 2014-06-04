@@ -25,10 +25,10 @@ protected:
 	 * @brief Strunktur für die Programmeinstellungen.
 	 */
 	struct Options {
-		int offset; 			/**< Ein zusätzlicher Versatz, der zu den Zeitstempeln der zweiten Datei addiert wird. */
+		int offset; 		/**< Ein zusätzlicher Versatz, der zu den Zeitstempeln der zweiten Datei addiert wird. */
 		unsigned int max_dt; 	/**< Maximale Zeitdifferenz zwischen den Zeitstempeln um die Datensätze zusammenführen zu können. */
-		long int delta; 		/**< Ein Versatz, der zu den Zeitstempeln der zweiten Datei addiert wird. */
-		bool auto_delta; 		/**< Delta automatisch aus der Differenz der jeweils ersten Zeitstempel der Eingabedateien ermitteln. */
+		long int delta; 	/**< Ein Versatz, der zu den Zeitstempeln der zweiten Datei addiert wird. */
+		bool auto_delta; 	/**< Delta automatisch aus der Differenz der jeweils ersten Zeitstempel der Eingabedateien ermitteln. */
 	} opts; /**< Hält die verwendeten Programmeinstellungen. */
 
 	/**
@@ -277,8 +277,8 @@ protected:
 			for (size_t j = 0; j < timestamps2.size(); j++) {
 
 				//Zeitdifferenz zwischen den Datensätzen
-				int delta_t = (timestamps1.at(i) - (timestamps2.at(j))
-						+ opts.offset) - opts.delta;
+				int delta_t = timestamps1.at(i) - (timestamps2.at(j) 
+					+ opts.offset + opts.delta);
 
 				//kleiner als das maximum?
 				if ((unsigned int) abs(delta_t) <= opts.max_dt) {

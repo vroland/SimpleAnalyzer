@@ -44,7 +44,6 @@ GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent, const wxChar *title,
 	trilabel = new wxStaticText(scroll_pane, wxID_ANY,
 			wxT("Dreiecksebene (Punkt1 ist Mittelpunkt):"));
 	p1label = new wxStaticText(scroll_pane, wxID_ANY, wxT("Punkt 1:"));
-	p1label = new wxStaticText(scroll_pane, wxID_ANY, wxT("Punkt 1:"));
 	p1xedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
 	p1yedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
 	p1zedit = new wxTextCtrl(scroll_pane, ID_CUT_TRI_EDIT);
@@ -462,7 +461,7 @@ void GUICutRenderWindow::OnResize(wxSizeEvent &event) {
 	widthHeightlbl->SetSize(320, 30, 200, 20);
 	imgWidthEdit->SetSize(320, 50, 70, 20);
 	imgHeightEdit->SetSize(390, 50, 70, 20);
-	mmperpixellabel->SetSize(320, 70, 100, 20);
+	mmperpixellabel->SetSize(320, 70, 200, 20);
 	mmperpixeledit->SetSize(320, 90, 140, 20);
 	scalelbl->SetSize(470, 10, 140, 20);
 	scalemodelbl->SetSize(480, 30, 140, 20);

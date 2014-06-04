@@ -70,7 +70,7 @@ void MeshProcessor::process(ObjectData* object) {
 
 			//Statusinformationen ausgeben
 			cout << "\rmaterial " << i + 1 << ": " << j + 1 << "/"
-					<< io->numberofpoints;
+					<< io->numberofpoints << endl;
 
 			SensorData* sd = &object->getSensorDataList()->at(
 					object->getCurrentSensorIndex());

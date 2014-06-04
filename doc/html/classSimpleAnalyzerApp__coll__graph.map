@@ -1,8 +1,8 @@
 <map id="SimpleAnalyzerApp" name="SimpleAnalyzerApp">
-<area shape="rect" id="node4" href="$structUtils_1_1Visualization__info.xhtml" title="Informationen über die Farbgebung bei der Visualisierung. " alt="" coords="91,312,248,341"/>
-<area shape="rect" id="node6" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData * \&gt;" alt="" coords="272,312,453,341"/>
-<area shape="rect" id="node8" href="$classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. " alt="" coords="319,216,407,245"/>
-<area shape="rect" id="node10" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData\l::MaterialData \&gt;" alt="" coords="137,102,300,149"/>
-<area shape="rect" id="node12" href="$structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. " alt="" coords="133,5,304,35"/>
-<area shape="rect" id="node14" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; SensorData \&gt;" alt="" coords="324,111,500,140"/>
+<area shape="rect" id="node3" href="$structUtils_1_1Visualization__info.xhtml" title="Informationen über die Farbgebung bei der Visualisierung. " alt="" coords="91,293,249,320"/>
+<area shape="rect" id="node4" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData * \&gt;" alt="" coords="274,293,456,320"/>
+<area shape="rect" id="node5" href="$classObjectData.xhtml" title="Die Daten eines Versuchsobjekts. " alt="" coords="321,203,409,229"/>
+<area shape="rect" id="node6" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; ObjectData\l::MaterialData \&gt;" alt="" coords="139,97,301,138"/>
+<area shape="rect" id="node7" href="$structObjectData_1_1MaterialData.xhtml" title="Die Daten eines Materials. " alt="" coords="135,5,305,32"/>
+<area shape="rect" id="node8" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; SensorData \&gt;" alt="" coords="326,104,503,131"/>
 </map>

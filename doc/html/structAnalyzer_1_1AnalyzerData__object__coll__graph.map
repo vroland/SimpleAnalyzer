@@ -1,6 +1,6 @@
 <map id="Analyzer::AnalyzerData_object" name="Analyzer::AnalyzerData_object">
-<area shape="rect" id="node2" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; Analyzer\l::AnalyzerData_dataset \&gt;" alt="" coords="7,350,177,397"/>
-<area shape="rect" id="node4" href="$structAnalyzer_1_1AnalyzerData__dataset.xhtml" title="Analyseergebnisse für einen Sensordatensatz. " alt="" coords="12,235,172,282"/>
-<area shape="rect" id="node6" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; Analyzer\l::AnalyzerData_material \&gt;" alt="" coords="5,121,179,167"/>
-<area shape="rect" id="node8" href="$structAnalyzer_1_1AnalyzerData__material.xhtml" title="Analyseergebnisse für ein Material. " alt="" coords="12,6,172,53"/>
+<area shape="rect" id="node2" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; Analyzer\l::AnalyzerData_dataset \&gt;" alt="" coords="7,326,177,367"/>
+<area shape="rect" id="node3" href="$structAnalyzer_1_1AnalyzerData__dataset.xhtml" title="Analyseergebnisse für einen Sensordatensatz. " alt="" coords="12,219,171,261"/>
+<area shape="rect" id="node4" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; Analyzer\l::AnalyzerData_material \&gt;" alt="" coords="5,113,179,154"/>
+<area shape="rect" id="node5" href="$structAnalyzer_1_1AnalyzerData__material.xhtml" title="Analyseergebnisse für ein Material. " alt="" coords="12,6,171,47"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="Renderer::Viewport_info" name="Renderer::Viewport_info">
-<area shape="rect" id="node2" href="$classTriangle.xhtml" title="Ein durch 3 Ortsvektoren beschriebenes Dreieck. " alt="" coords="157,101,224,131"/>
-<area shape="rect" id="node4" href="$classVector3D.xhtml" title="3D&#45;Vektorklasse mit nützlichen Operationen. " alt="" coords="48,5,125,35"/>
+<area shape="rect" id="node2" href="$classTriangle.xhtml" title="Ein durch 3 Ortsvektoren beschriebenes Dreieck. " alt="" coords="157,96,224,123"/>
+<area shape="rect" id="node3" href="$classVector3D.xhtml" title="3D&#45;Vektorklasse mit nützlichen Operationen. " alt="" coords="48,5,124,32"/>
 </map>

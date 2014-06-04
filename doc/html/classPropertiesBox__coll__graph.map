@@ -1,5 +1,5 @@
 <map id="PropertiesBox" name="PropertiesBox">
-<area shape="rect" id="node4" href="$classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. " alt="" coords="125,101,219,131"/>
-<area shape="rect" id="node8" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; string \&gt;" alt="" coords="103,5,241,35"/>
-<area shape="rect" id="node10" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; int \&gt;" alt="" coords="265,5,388,35"/>
+<area shape="rect" id="node3" href="$classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. " alt="" coords="126,96,220,123"/>
+<area shape="rect" id="node5" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; string \&gt;" alt="" coords="103,5,243,32"/>
+<area shape="rect" id="node6" href="$classstd_1_1vector.xhtml" title="std::vector\&lt; int \&gt;" alt="" coords="268,5,391,32"/>
 </map>
