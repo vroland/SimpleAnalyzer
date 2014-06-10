@@ -339,7 +339,6 @@ ObjectData::ObjectDataStatus Importer::ImportObj(string filename,
 	//Objekt und Materialdaten erfolgreich geladen
 	return ObjectData::OD_SUCCESS;
 }
-
 ObjectData::ObjectDataStatus Importer::LoadSensorData(string filename,
 		ObjectData* data) {
 

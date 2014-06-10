@@ -12,7 +12,7 @@
 \usepackage{courier}
 \parindent 0pt
 \usepackage[pdfborder={0 0 0}]{hyperref}
-\usepackage[hyphenbreaks]{breakurl}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \usepackage{floatflt} 
 \usepackage[font=small,font=sf,labelfont=sf]{caption}
 \usepackage{float}
@@ -95,8 +95,8 @@
 	\tableofcontents
 	\newpage
 	\section{Einführung}
-	Das \pkname -Softwarepaket enthält Programme zur Auswertung physikalischer Versuche für debianbasierte Betriebssysteme. 
-	Mithilfe der enthaltenen Software sind Sie im Stande, Temperaturmessdaten aus einer .csv-Datei oder Messwerte des ODiSI-Instruments von Luna in ein einheitliches Format umzuwandeln und zusammenzuführen.\\
+	Das \pkname -Softwarepaket enthält Programme zur Auswertung von Versuchen zur Materialerwärmung für debianbasierte Betriebssysteme. 
+	Die der enthaltene Software ermöglicht es Ihnen, Temperaturmessdaten aus einer .csv-Datei oder Messwerte des ODiSI-Instruments von Luna Inc. in ein einheitliches Format umzuwandeln und zusammenzuführen.\\
 	Über eine grafische Oberfläche ist es möglich, mithilfe der so aufbereiteten Daten Auswertungen wie eine Temperaturverteilung über ein dreidimensionales Modell oder das Bestimmen des Wärmegehalts vorzunehmen und den Versuch zu visualisieren.\\
 	Zur weiteren Nutzung der Ergebnisse können diese, beispielsweise als VTK-Datei oder PNG-Grafik, exportiert werden.
 	\newpage
@@ -125,14 +125,16 @@
 	\ref{subsec:download_code} fort.
 	\subsubsection{Download des Quellcodes}
 	\label{subsec:download_code}
-	Benötigen Sie auch Beispieldateien, Quellcode oder existiert kein fertiges Paket für ihr System, müssen Sie alle Dateien aus dem \pkname-Repository herunterladen. Folgen Sie dazu dem Link	\url{https://github.com/vroland/SimpleAnalyzer/archive/master.zip}
-	und laden Sie das die Zip-Datei herunter. Extrahieren Sie die Datei anschließend mithilfe der Archivverwaltungssoftware ihres Systems in ein Verzeichnis ihrer Wahl. Wenn Sie später auf Beispiele oder Quelltext zurückgreifen wollen, bietet sich hierfür Ihr HOME-Verzeichnis an. Informationen zum Entpacken von Archiven für die meisten debianbasierten Distributione finden Sie unter \url{http://wiki.ubuntuusers.de/Archivmanager}.\\
+	\begin{sloppypar}
+	Benötigen Sie auch Beispieldateien und Quellcode oder existiert kein fertiges Paket für ihr System, müssen Sie alle Dateien aus dem \pkname-Repository herunterladen. Folgen Sie dazu dem Link	\url{https://github.com/vroland/SimpleAnalyzer/archive/master.zip}
+	und laden Sie die Zip-Datei herunter. Extrahieren Sie die Datei anschließend mithilfe der Archivverwaltungssoftware ihres Systems in ein Verzeichnis ihrer Wahl. Wenn Sie später auf Beispiele oder Quelltext zurückgreifen wollen, bietet sich hierfür Ihr HOME-Verzeichnis an. Informationen zum Entpacken von Archiven für die meisten debianbasierten Distributionen finden Sie unter \url{http://wiki.ubuntuusers.de/Archivmanager}.
+	\end{sloppypar}
 	Wenn sie mit der Nutzung des Programms \emph{git} vertraut sind, können Sie alternativ auch folgende clone-URL verwenden:\\
 	
 	\url{https://github.com/vroland/SimpleAnalyzer.git}
 	\subsection{Installation Im Dateisystem}
 	\label{subsec:install}
-	Zur Installation des \pkname -Programmpakets haben Sie mehrere Möglichkeiten. 
+	Zur Installation des \pkname -Programmpakets haben Sie mehrere Möglichkeiten:
 	\begin{hinweis}
 	Um die Installation durchführen zu können benötigen Sie Administrator(Superuser)-Rechte (zu erkennen an der Verwendung des \emph{sudo}-Schlüsselworts). Wenn Sie das während der Installation abgefragte Passwort nicht kennen, wenden Sie sich an Ihren Systemadministrator. 
 	\end{hinweis}
@@ -152,15 +154,16 @@
 	sudo dpkg -i simpleanalyzer_<version>_<architektur>.deb
 	\end{lstlisting}
 	aus und geben sie gegebenenfalls erfragte Informationen ein.
-	Nun sind die alle benötigten Programme installiert.
+	Nun sind alle benötigten Programme installiert.
 	\begin{hinweis}
-	Wenn sich die Paket-Datei auf einem NTFS- oder FAT-formatierten Datenträger befindet, wird auf manchen Systemen eine Warnung ausgegeben, nach der das Paket von  	\emph{schlechter Qualität} sei. Um dies zu vermeiden, sollte sich die Datei nicht auf einem solchen Datenträger befinden.
+	Wenn sich die Paket-Datei auf einem NTFS- oder FAT-formatierten Datenträger befindet, wird auf manchen Systemen eine Warnung ausgegeben, nach der das Paket von  	\emph{schlechter Qualität} sei. Um dies zu vermeiden, sollten Sie die Datei nicht auf einem solchen Datenträger speichern.
 	\end{hinweis}	
-	Unter manchen Distributionen genügt es, wenn sie einen Doppelklick auf das Paket durchführen und auf \textbf{[Installieren]}-Button im sich öffnenden Fenster zu klicken.
+	Bei manchen Distributionen genügt es, wenn sie einen Doppelklick auf das Paket durchführen und auf \textbf{[Installieren]}-Button im sich öffnenden Fenster zu klicken (s. Abb. \ref{fig:install_ubuntu}).
 	
 	\begin{figure}
 	\centering	\includegraphics[clip=true,trim=0 5cm 0 0,scale=.3]{Ubuntu_Software_Center_002.png}
 	\caption{Installation im Ubuntu Software Center}
+	\label{fig:install_ubuntu}
 	\end{figure}
 		
 	\subsubsection{Installation aus dem Quellcode}
@@ -284,7 +287,7 @@
 	\end{hinweis}
 	\subsubsection{Die Sensordefinitionsdatei}
 	\label{subsec:sdef_csvtosd}
-	Neben der Eingabedatei müssen Sie auch eine Sensordefinitionsdatei angeben, in der Informationen zu der in der Eingabedatei genutzten Sensoren abgelegt sind. Die Sensordefinitionsdatei ist eine Textdatei und ist nach folgendem Schema aufgebaut:\\
+	Neben der Eingabedatei müssen Sie auch eine Sensordefinitionsdatei angeben, in der Informationen zu den in der Eingabedatei enthaltenen Sensoren abgelegt sind. Die Sensordefinitionsdatei ist eine Textdatei und ist nach folgendem Schema aufgebaut:\\
 	\begin{lstlisting}
 	name1 x1 y1 z1
 	name2 x1 y1 z1
@@ -293,15 +296,15 @@
 	\begin{hinweis}
 	Sie können Zeilen als Kommentar markieren, indem Sie diese Zeile mit \emph{\#} beginnen. Die betreffende Zeile wird dadurch nicht ausgewertet.
 	\end{hinweis}
-	Nach dem Sensornamen folgt die Position des Sensors in kartesischen Koordinaten, jeweils durch Leerzeichen getrennt.
-	\textbf{Die Sensornamen müssen dabei den entsprechenden Spaltennamen in der umzuwandelnden .csv-Datei entsprechen!}
+	Nach einem Sensornamen folgt die Position des Sensors in kartesischen Koordinaten, jeweils durch Leerzeichen getrennt.
+	\textbf{Die Sensornamen müssen dabei den Spaltennamen in der umzuwandelnden .csv-Datei entsprechen!}
 	\begin{hinweis}
 	Wenn die Sensornamen Leerzeichen enthalten, müssen Sie diese in Anführungszeichen setzen.\\
 	z.B. Sensor 1 1.5 0.5 1.0 $\rightarrow$ \dq Sensor 1\dq \space 1.5 0.5 1.0
 	\end{hinweis}
 	\subsubsection{Die Konfigurationsdatei}
 	\label{subsec:conf_csvtosd}
-	Zusätzlich sind allgemeine Einstellungen zum Programm in einer Konfigurationsdatei gespeichert. Sie befindet sich, sofern Sie die in \ref{subsec:install} beschriebenen Schritte befolgt haben, in folgendem Verzeichnis:
+	Zusätzlich sind allgemeine Einstellungen zum Programm in einer Konfigurationsdatei gespeichert. Sie befindet sich, sofern Sie die in \ref{subsec:install} beschriebenen Schritte befolgt haben, unter folgendem Pfad:
 	\begin{lstlisting}
 	/etc/simpleanalyzer/csvtosd.conf
 	\end{lstlisting}
@@ -325,8 +328,8 @@
 	\newpage
 	\subsection{Umwandeln von ODiSI-Dateien}
 	\label{subsec:odisitosd}
-	Um Messwerte aus einer ODiSI-Dateien vorliegen in das von \emph{simple\-analyzer-gui} genutzte .tsd-Format (timed sensor data-Format) umzuwandeln, verwenden Sie das Programm \emph{odisitosd}.
-	\emph{Zusätzlich können Ausreißer in den Messdaten korrigiert werden.}
+	Um Messwerte aus einer ODiSI-Datei in das von \emph{simple\-analyzer-gui} genutzte .tsd-Format (timed sensor data-Format) umzuwandeln, verwenden Sie das Programm \emph{odisitosd}.
+	Zusätzlich können Ausreißer in den Messdaten korrigiert werden.
 	Der Aufruf erfolgt wie bei csvtosd (s. \ref{subsec:csvtosd}):
 	\begin{lstlisting}
 	odisitosd <argument1> <wert1> <argument2> <wert2> ...
@@ -377,12 +380,12 @@
 	
 	\subsubsection{Fehlerkorrektur}
 	Das odisitosd-Werkzeug ist in der Lage, Ausreißer in den Messwerten zu erkennen und zu bereinigen.
-	Dazu wird für jeden Messwert geprüft, ob die Temperaturdifferenz zum vorherigen Wert an dieser Stelle eine bestimmte Schwelle überschreitet. Wenn dies der Fall ist, sucht das Programm unter den nächsten Messwerten einen Wert, für den die Temperaturdifferenz nicht größer als der \textbf{Schwellenwert mal maximale Differenz} ist.\\
+	Dazu wird für jeden Messwert geprüft, ob die Temperaturdifferenz zum vorherigen Wert an dieser Stelle eine bestimmte Schwelle überschreitet. Wenn dies der Fall ist, sucht das Programm unter den nächsten Messwerten einen Wert, für den die Temperaturdifferenz nicht größer als der \textbf{Schwellenwert mal Anzahl der bisherigen Suchschritte} ist.\\
 	Wird ein solcher Wert gefunden, werden die dazwischen liegenden Ausreißer-werte durch \textbf{linear zwischen den beiden gültigen Punkten interpoliert}.
 	Die maximale Temperaturdifferenz und die maximale Suchweite können in der Konfigurationsdatei angegeben werden. (s. \ref{subsec:conf_odisitosd})
 	\subsubsection{Die Sensordefinitionsdatei}
 	\label{subsec:sdef_odisitosd}
-	Neben der Eingabedatei müssen Sie auch hier eine Sensordefinitionsdatei angeben, in der Informationen zum Faserverlauf abgelegt sind. Die Sensordefinitionsdatei ist eine Textdatei und ist nach folgendem Schema aufgebaut:\\
+	Neben der Eingabedatei müssen Sie auch hier eine Sensordefinitionsdatei angeben, in der Informationen zum Faserverlauf abgelegt sind. Die Sensordefinitionsdatei ist eine Textdatei und nach folgendem Schema aufgebaut:\\
 	\begin{lstlisting}
 	#Kommentar
 	i l1 x1
@@ -395,8 +398,8 @@
 	\begin{warnung}
 	Die Ein- und Ausgänge der Faser müssen nach aufsteigender Position auf der Faser (Länge) sortiert werden. Der Faserausgang besitzt dabei immer eine größere Länge als der Eingang.
 	\end{warnung}
-	Es werden in zwei aufeinander folgenden Zeilen stets Ein- und Ausgangspunkt der Faser beschrieben (durch \emph{i} bzw \emph{o} markiert). $l_1...l_n$ ist dabei die Position auf der Faser, also die Länge des Verlaufs der Faser bis zu diesem Punkt. $x_1...x_n$ ist die Position auf der X-Achse. Das für den Versuch verwendete Koordinatensystem muss ggf. entsprechend des Faserverlaufs festgelegt werden.	\\
-	Optional können Sie für alle Faserdurchläufe durch das Material, die jeweils durch Ein- und Ausgangspunkt eingegrenzt sind, die Richtung des Faserverlaufes fest legen. Fügen Sie dazu eine Zeile hinzu, die mit \emph{d} eingeleitet wird. Nach einem Leerzeichen folgt für jeden Faserdurchlauf dessen (Fädel-)Richtung als positiv (+) oder negativ (-). Wird die Faser also bspw. abwechselnd von vorn und  hinten durch das Versuchsobjekt gefädelt, ergibt sich Abwechseln der Faserrichtung (+-+-).
+	Es werden in zwei aufeinander folgenden Zeilen stets Ein- und Ausgangspunkt der Faser beschrieben (durch \emph{i} bzw \emph{o} markiert). $l_1...l_n$ ist dabei die Position auf der Faser, also die Länge des Verlaufs der Faser bis zu diesem Punkt. $x_1...x_n$ ist die Position auf der X-Achse, die Faser liegt dabei immer in X-Z-Ebene. Das für den Versuch verwendete Koordinatensystem muss ggf. entsprechend des Faserverlaufs festgelegt werden.\\
+	Optional können Sie für alle Faserdurchläufe durch das Material, die jeweils durch Ein- und Ausgangspunkt eingegrenzt sind, die Richtung des Faserverlaufes festlegen. Fügen Sie dazu eine Zeile hinzu, die mit \emph{d} eingeleitet wird. Nach einem Leerzeichen folgt für jeden Faserdurchlauf dessen Fädelrichtung als positiv (+) oder negativ (-), bezogen auf die Richtung der Z-Achse. Wird die Faser also bspw. abwechselnd von vorn und  hinten durch das Versuchsobjekt gefädelt, ergibt sich Abwechseln der Faserrichtung (+-+-).
 	\subsubsection{Die Konfigurationsdatei}
 	\label{subsec:conf_odisitosd}
 	Zusätzlich sind allgemeine Einstellungen zum Programm in einer Konfigurationsdatei gespeichert. Sie befindet sich, sofern Sie die in \ref{subsec:install} beschriebenen Schritte befolgt haben, in folgendem Verzeichnis:
@@ -436,7 +439,6 @@
 	-in1 & -i1 & \textbf{[benötigt]} Pfad zur ersten .tsd-Datei. Aus dieser Datei werden die Namen für die zusammengeführten Datensätze entnommen.\\
 	-in2 & -i2 & \textbf{[benötigt]} Pfad zur zweiten .tsd-Datei.\\
 	-out & -o & \textbf{[benötigt]} Pfad zur Ausgabedatei\\
-	-height & & [optional][Standardwert in der Konfigurationsdatei festgelegt]\\&& Die Höhe der Faserebene\\
 	-max-dt & & [optional] Maximale Zeitdifferenz zwischen den Zeitstempeln (Standardwert: 3)\\
 	-auto-offset & & [optional] Zu den Zeitstempeln der zweiten Datei die Differenz der jeweils ersten Datensätze addieren (true/false oder 1/0, Standardwert: true)\\
 	-offset & & [optional] Ein zusätzlicher Versatz, der zu den Zeitstempeln der zweiten Datei addiert wird\\
@@ -446,8 +448,8 @@
 	\newpage
 	\subsection{Erstellung des 3D-Modells}
 	\label{subsec:usage_model}
-	Zur Auswertung des Versuchs wird auch ein Modell des zu untersuchenden Objekts benötigt. Um dieses zu erstellen können Sie ein beliebiges Werkzeug verwenden, wenn dieses in der Lage ist, Modelle im \textbf{Wavefront (.obj)-Format} zu erstellen. Zur .obj-Datei muss eine Materialbibliothek-Datei (.mtl) mit Informationen über die verwendeten Materialien vorliegen.\\
-	\emph{Objekte mit mehreren Materialien müssen durch mehrere geschlossene Teilobjekte mit jeweils eigenem Material erstellt werden.}
+	Zur Auswertung des Versuchs wird auch ein Modell des zu untersuchenden Objekts benötigt. Um dieses zu erstellen können Sie ein beliebiges Werkzeug verwenden, wenn dieses in der Lage ist, Modelle im \textbf{Wavefront (.obj)-Format} zu erstellen. Zur .obj-Datei muss eine Materialbibliotheks-Datei (.mtl) mit Informationen über die verwendeten Materialien vorliegen.\\
+	\emph{Objekte mit mehreren Materialien müssen durch mehrere abgeschlossene Teilobjekte mit jeweils eigenem Material erstellt werden.}
 	\begin{hinweis}
 	Informationen zum Aufbau dieser Dateien finden Sie unter \url{http://en.wikipedia.org/wiki/Wavefront_.obj_file}.
 	\end{hinweis}
@@ -457,8 +459,10 @@
 	\end{hinweis}
 	\subsubsection{Erstellung mit Blender}
 	\label{subsec:3dmodel_blender}
+	\begin{sloppypar}
 	Im folgenden wird das Erstellen eines einfachen Modells am Beispiel der freien Software \emph{Blender} gezeigt. Diese können Sie kostenlos von \url{http://www.blender.org/download/} herunterladen.
 	Die Beschreibung bezieht sich auf die Version 2.69.1.
+	\end{sloppypar}
 	\begin{hinweis}
 	Eine umfangreichere Einführung in die Benutzung von Blender finden Sie unter \url{http://wiki.blender.org/index.php/Doc:2.6/Manual}. In diesem Handbuch werden nur die für die Erstellung eines einfachen Modells benötigten Schritte erläutert.\\
 	\end{hinweis}
@@ -518,10 +522,10 @@
 	Falls das Objekt in mehrere Materialien untergliedert ist, müssen Sie die Teile, die aus einem bestimmten Material bestehen als einzelne Objekte modellieren. So fügen Sie ein weiteres Objekt hinzu:
 	\begin{itemize}
 	\item Wechseln Sie durch drücken von \textbf{[TAB]} wieder in den \emph{Object Mode}.
-	\item Drücken Sie nun \textbf{[Shift]} und \textbf{[a]} und navigieren sie in das Untermenu \emph{Mesh}.
+	\item Drücken Sie nun \textbf{[Shift]} und \textbf{[a]} und navigieren sie in das Untermenü \emph{Mesh}.
 	\item Wählen Sie mit Klick auf die \textbf{[linke Maustaste]} ein Grundobjekt aus.
 	\item Wählen Sie das gerade hinzugefügte Objekt mit Klick auf die  \textbf{[rechte Maustaste]} aus.
-	\item Wechseln Sie durch drücken von \textbf{[TAB]} wieder in den \emph{Edit Mode}.
+	\item Wechseln Sie durch Drücken von \textbf{[TAB]} wieder in den \emph{Edit Mode}.
 	\item Modellieren Sie das Teilobjekt wie oben beschrieben.
 	\end{itemize}
 	
@@ -540,7 +544,7 @@
 	
 	Haben Sie alle Teilobjekte erstellt, müssen Sie diesen Materialien zuweisen:
 	\begin{itemize}
-	\item Wechseln Sie durch drücken von \textbf{[TAB]} wieder in den \emph{Object Mode}.
+	\item Wechseln Sie durch Drücken von \textbf{[TAB]} wieder in den \emph{Object Mode}.
 	\item Wählen Sie mit \textbf{[rechte Maustaste]} ein Teilobjekt aus.
 	\item Wechseln Sie zum Reiter \dq Material\dq in den Objekteigenschaften. (\textbf{2} in Abbildung \ref{fig:blender_create_mat}) Wenn dieser nicht zu sehen ist, vergrößern Sie das Eigenschaften-Fenster, indem Sie mit \textbf{[linke Maustaste]} auf die mit \textbf{1} markierte Stelle in Abbildung \ref{fig:blender_create_mat} klicken und die Trennleiste zur Seite ziehen.
 	\item Klicken Sie auf \textbf{[New]} (\textbf{3} in Abbildung \ref{fig:blender_create_mat}) und geben Sie einen Namen für das Material ein.
@@ -572,7 +576,7 @@
 	\end{lstlisting}
 	starten, oder indem Sie die Anwendungsverwaltung der Distribution verwenden.
 	\begin{hinweis}
-	Wenn Sie das Hauptmenü von Programmen in Ubuntu statt am oberen Bildschirmrand direkt unter der oberen Fensterleiste angezeigt haben möchten, deinstallieren Sie das Paket \emph{indicator-appmenu} und melden Sie sich neu an.
+	Wenn Sie das Hauptmenü von Programmen in Ubuntu 12.04 statt am oberen Bildschirmrand direkt unter der oberen Fensterleiste angezeigt haben möchten, deinstallieren Sie das Paket \emph{indicator-appmenu} und melden Sie sich neu an. Dies deaktiviert jedoch auch das Ubuntu HUD.
 	\end{hinweis}
 	\subsubsection{Laden von Modellen und Sensordaten}
 	\label{subsec:toolbar_and_loading}
@@ -593,15 +597,16 @@
 	Klicken Sie auf das in Abbildung \ref{fig:sa_toolbar} mit \textbf{1} markierte Symbol oder wählen Sie \textbf{Datei - Import - Modell und Sensordaten}. Daraufhin öffnet sich ein Dialog, in dem Sie eine .obj-Datei auswählen können. \\\textbf{WICHTIG:} Zusätzlich zur .obj-Datei muss eine .sd- oder .tsd-Datei mit dem selben Namen vor der Dateiendung im selben Verzeichnis wie die .obj-Datei liegen!
 	\item \textbf{Einfache Sensordaten importieren:}\\
 	Klicken Sie auf das in Abbildung \ref{fig:sa_toolbar} mit \textbf{2} markierte Symbol oder wählen Sie \textbf{Datei - Import - Sensordaten}. Im sich öffnenden Dialog können Sie eine .sd-Datei auswählen und laden.
-	\item \textbf{Zeit-bezogene Sensordaten importieren:}\\
+	\item \begin{sloppypar}\textbf{Zeit-bezogene Sensordaten importieren:}\\
 	Klicken Sie auf das in Abbildung \ref{fig:sa_toolbar} mit \textbf{3} markierte Symbol oder wählen Sie \textbf{Datei - Import - Sensordaten-Paket}. Im sich öffnenden Dialog können Sie eine .tsd-Datei auswählen und laden.
+	\end{sloppypar}
 	\end{itemize}
-	Nachdem Sie ein 3D-Modell und erste Sensordaten geladen haben, berechnet das Programm automatisch eine Temperaturverteilung mit Standardeinstellungen. Sie sehen im in Abbildung \ref{fig:sa_toolbar} mit \textbf{4} markierten Feld den Namen des Objekts, auf das sich alle späteren Operationen beziehen. Wenn Sie mehrere Objekte gleichzeitig untersuchen, können Sie \textbf{zwischen den Objekten umschalten}, indem Sie auf dieses Feld klicken. Nun öffnet sich ein Menü, in dem Sie das Objekt auswählen, mit dem Sie arbeiten möchten.\\
+	Nachdem Sie ein 3D-Modell und erste Sensordaten geladen haben, berechnet das Programm automatisch eine Temperaturverteilung mit Standardeinstellungen. Sie sehen im in Abbildung \ref{fig:sa_toolbar} mit \textbf{4} markierten Feld den Namen des Objekts, auf das sich alle späteren Operationen beziehen. Wenn Sie mehrere Objekte gleichzeitig untersuchen, können Sie \textbf{zwischen den Objekten umschalten}, indem Sie auf dieses Feld klicken. Nun öffnet sich ein Menü, in dem Sie das Objekt auswählen können, mit dem Sie arbeiten möchten.\\
 	\begin{hinweis}
 	Die Sensordaten sind mit dem Objekt verknüpft, das aktiv war, als diese geladen wurden. Wollen Sie also Sensordaten mit mehreren Objekten nutzen, müssen Sie diese für die betreffenden Objekte jeweils einzeln laden.
 	\end{hinweis}
 	Wollen Sie ein Objekt wieder löschen, klicken Sie auf das in Abbildung \ref{fig:sa_toolbar} mit \textbf{5} markierte Symbol, um das aktive Objekt zu entfernen. Alternativ kann ein Objekt auch über das Menü unter \textbf{Bearbeiten - Aktives Objekt löschen} entfernt werden.  Wenn das Objekt das einzige geladene Objekt ist, können Sie es nicht löschen!\\
-	Durch klicken auf die Symbole \textbf{6} bis \textbf{8} gelangen Sie zu verschiedenen Analysewerkzeugen:
+	Durch das Klicken auf die Symbole \textbf{6} bis \textbf{8} gelangen Sie zu verschiedenen Analysewerkzeugen:
 	\begin{itemize}
 	\item \textbf{6:} Die Analysedatenübersicht. Siehe \ref{subsec:data_overview}.
 	\item \textbf{7:} Die Analyse für einen Punkt. Siehe \ref{subsec:analyze_point}.
@@ -618,23 +623,23 @@
 	Nachdem Sie ein Objekt geladen haben, wird automatisch eine Temperaturverteilung mit Standardeinstellungen berechnet. Dabei wird das Objekt in Tetraeder zerlegt, für deren Eckpunkte anschließend eine Temperatur errechnet wird. Um diese erneut mit veränderten Einstellungen zu berechnen, verwenden Sie die in Abbildung \ref{fig:sa_objprops} markierte Seitenleiste:
 	\begin{itemize}
 	\item \textbf{[neu berechnen]:} Klicken Sie hier, um die Temperaturverteilung neu zu berechnen.
-	\item \textbf{Automatisch neu berechnen:} Die Temperaturverteilung automatisch nach jeder Änderung an den Einstellungen automatisch neu berechnen.
+	\item \textbf{Automatisch neu berechnen:} Die Temperaturverteilung nach jeder Änderung an den Einstellungen automatisch neu berechnen.
 	\item \textbf{Objektname:} Der Name des aktuellen Objekts.
 	\item \textbf{Maximales Tetraedervolumen:} Maximales Volumen, dass ein Tetraeder bei der Zerlegung haben darf.
-	\item \textbf{Min. Radius-Kantenlänge-Verhältnis:} Minimales Verhältnis $\frac{Umkreisradius}{k\ddot{u}rzeste Kantenl\ddot{a}nge}$.
-	\item \textbf{Sensordaten:} Wählen Sie hier die zu verwendenden Sensordaten aus. Wenn Sie Zeit-bezogene Sensordaten auswählen, wird eine Zeitleiste eingeblendet. (s. Abbildung \ref{fig:sa_timeline})
+	\item \textbf{Min. Radius-Kantenlänge-Verhältnis:} Minimales Verhältnis $\frac{Umkreisradius}{k\ddot{u}rzeste Kantenl\ddot{a}nge}$ eines Tetraeders.
+	\item \textbf{Sensordaten:} Wählen Sie hier die zu verwendenden Sensordaten aus. Wenn Sie Zeit-bezogene Sensordaten auswählen, wird eine Zeitleiste eingeblendet (s. Abbildung \ref{fig:sa_timeline}). 
 	\begin{figure}
 	\centering
 	\includegraphics[trim=0cm 0cm 0cm 0cm,clip=true,scale=.54]{Simple_Analyzer_timeline.png}
-	\caption{Zeitleiste für eines .tsd-Datensatzes}
+	\caption{Zeitleiste für einen .tsd-Datensatz}
 	\label{fig:sa_timeline}
 	\end{figure}
 	Mit der \textbf{[linken Maustaste]} oder mit den \textbf{Pfeiltasten} können Sie den Zeitpunkt auswählen, für den die Temperaturverteilung berechnet werden soll. Der aktuelle Zeitpunkt wird mit Name und Index als grüner Balken angezeigt.\\
 	Des Weiteren können Sie den Ausschnitt der Zeitleiste anpassen:
 	Verwenden Sie das \textbf{[Mausrad]} um den hinein und hinaus zu zoomen und halten Sie die \textbf{[mittlere Maustaste]} und bewegen Sie die Maus, um den Ausschnitt zu verschieben.\\
-	Um für die Auswertung relevante Zeitpunkte zu markieren, aktivieren Sie \textbf{[Analysieren]}. An dieser Stelle wird dadurch eine Markierung gesetzt. Die markierten Zeitpunkte werden in der Analysedatenübersicht (\ref{subsec:data_overview}) angezeigt.
+	Um für die Auswertung relevante Zeitpunkte zu markieren, drücken Sie \textbf{[Analysieren]}. An dieser Stelle wird dadurch eine Markierung gesetzt. Die markierten Zeitpunkte werden in der Analysedatenübersicht (\ref{subsec:data_overview}) angezeigt.
 	\begin{itemize}
-	\item Klicken Sie die Buttons \textbf{[$<$]} bzw. \textbf{[$>$]} um in die jeweilige Richtung zu einer markierten Stelle zu springen.
+	\item Klicken Sie die Buttons \textbf{[$<$]} bzw. \textbf{[$>$]} um in die jeweilige Richtung zur nächsten markierten Stelle zu springen.
 	\item Klicken Sie auf \textbf{[Max]}, um den Zeitpunkt, zu dem das Objekt die größte Wärmeenergie enthält, zwischen zwei markierten Stellen zu berechnen. Dazu haben Sie die Wahl zwischen zwei Verfahren: Entweder wird die Temperaturverteilung für jeden Zeitpunkt zwischen den markierten Stellen neu berechnet, oder es wird nur der Durchschnitt der Messwerte verglichen (schneller).
 	\item Mit \textbf{[Clear]} können Sie alle Markierungen aufheben.
 	\end{itemize}
@@ -642,8 +647,8 @@
 	\begin{itemize}
 	\item \textbf{Materialname:} Hier können Sie einen neuen Namen für das Material angeben.
 	\item \textbf{Interpolationsmodus:} Wählen Sie hier den Interpolationsmodus für das Material aus.
-	\item \textbf{Dichte:} Geben Sie hier die Dichte des Materials in $\frac{kg}{m^3}$ ein.
-	\item \textbf{Spez. Wärmekapazität:} Geben Sie hier die spezifische Wärmekapazität der Materials in $\frac{kJ}{kg*K}$ ein.
+	\item \textbf{Dichte:} Geben Sie hier die Dichte des Materials mit einem Punkt als Dezimaltrennzeichen in $\frac{kg}{m^3}$ ein.
+	\item \textbf{Spez. Wärmekapazität:} Geben Sie hier die spezifische Wärmekapazität der Materials mit einem Punkt als Dezimaltrennzeichen in $\frac{kJ}{kg*K}$ ein.
 	\end{itemize}
 	\end{itemize}
 	\begin{hinweis}
@@ -679,16 +684,16 @@
 	\item \textbf{Material:} Diese Art von Elementen wird in der Farbe des Materials angezeigt.
 	\item \textbf{Material:} Diese Art von Elementen wird der Temperatur entsprechend eingefärbt.
 	\end{itemize}
-	\item \textbf{zeige extrapolierte Punkte:} Es werden auch Elemente angezeigt, deren Temperatur aus den Messwerten Interpoliert werden musste.
+	\item \textbf{zeige extrapolierte Punkte:} Es werden auch Elemente angezeigt, deren Temperatur aus den Messwerten extrapoliert werden musste.
 	\item \textbf{zeige Sensordaten:} Die Sensordaten werden als große farbige Punkte mit im Modell angezeigt.
-	\item \textbf{sichtbare Materialien:} Es werden nur die Elemente angezeigt, die zu einem der mit einem Haken versehenen Materialien gehören. Möchten Sie ein Material ausblenden, entfernen Sie den Haken vor dem entsprechenden Material.
-	\item \textbf{Farbbereich:} Die Temperatur im linken Feld entspricht in der Visualisierung der Farbe Blau (geringste Temperatur), die im rechten Feld der Farbe rot (höchste Temperatur). Durch verändern dieser Werte können Sie beeinflussen, wie die Temperatur eines Elements farblich dargestellt wird.
+	\item \textbf{sichtbare Materialien:} Es werden nur die Elemente angezeigt, die zu einem mit einem Haken versehenen Materialien gehören. Möchten Sie ein Material ausblenden, entfernen Sie den Haken vor dem entsprechenden Material.
+	\item \textbf{Farbbereich:} Die Temperatur im linken Feld entspricht in der Visualisierung der Farbe Blau (geringste Temperatur), die im rechten Feld der Farbe rot (höchste Temperatur). Durch Verändern dieser Werte können Sie beeinflussen, wie die Temperatur eines Elements farblich dargestellt wird.
 	\item \textbf{Objektskalierung:} Das Objekt um diesen Faktor vergrößert darstellen. Die Skalierung ist dabei rein optisch.
 	\end{itemize}
 	\newpage
 	\subsection{Analyse des Modells}
 	\label{subsec:sa_analyze}
-	Das Programm auch Möglichkeiten zur Analyse der berechneten Temperaturverteilung. 
+	Das Programm bietet verschiedene Möglichkeiten zur Analyse der berechneten Temperaturverteilung. 
 	\subsubsection{Die Analysedatenübersicht}
 	\label{subsec:data_overview}
 	\begin{figure}
@@ -697,8 +702,8 @@
 	\caption{Das Übersichtsfenster}
 	\label{fig:sa_data_overview}
 	\end{figure}
-	Navigieren Sie im Hauptmenü zu \textbf{Analysieren - Übersicht} oder wählen Sie das entsprechende Symbol auf der Toolbar (s. \ref{subsec:toolbar_and_loading}), um eine Übersicht über den \textbf{Wärmeenergiegehalt} aller geladenen Objekte angezeigt zu bekommen. Angezeigt werden der \emph{des Objekts, Energiegehalt der einzelnen Materialien für alle mit diesem Objekt verknüpften Datensätze und das Volumen dieser}.
-	Wenn ein Objekt Zeit-bezogene Sensordaten besitzt, müssen Sie die zu analysierenden Zeitpunkte erst markieren(s. \ref{subsec:temp_vert}). 
+	Navigieren Sie im Hauptmenü zu \textbf{Analysieren - Übersicht} oder wählen Sie das entsprechende Symbol auf der Toolbar (s. \ref{subsec:toolbar_and_loading}), um eine Übersicht über den \textbf{Wärmeenergiegehalt} aller geladenen Objekte angezeigt zu bekommen. Angezeigt werden der \emph{Name des Objekts und Energiegehalt sowie Volumina der einzelnen Materialien und des Gesamtobjekts für alle mit diesem Objekt verknüpften Datensätze}.
+	Wenn ein Objekt Zeit-bezogene Sensordaten besitzt, müssen Sie die zu analysierenden Zeitpunkte erst markieren (s. \ref{subsec:temp_vert}). 
 	\begin{hinweis}
 	Um die Analysedaten z.B. in ein Tabellenkalkulationsprogramm zu übernehmen, markieren Sie alle Zellen der Tabelle, indem Sie in diese klicken und anschließend die Tasten \textbf{[Strg]} + \textbf{[a]} drücken. Kopieren Sie nun deren Inhalte mit \textbf{[Strg]} + \textbf{[c]}. Die Werte sind nun in der Zwischenablage ihres Systems gespeichert und können in andere Programme wieder eingefügt werden.
 	\end{hinweis}
@@ -737,12 +742,12 @@
 	\caption{Visualisierung im Hauptfenster}
 	\label{fig:sa_vis_cut}
 	\end{figure}	
-	Die Eigenschaften der Ebene und der resultierenden Grafik können Sie im Fenster zur Schnittberechnung einstellen:
+	Die Eigenschaften der Ebene und der resultierenden Grafik können Sie im Fenster zur Schnittberechnung einstellen (s. Abb. \ref{fig:sa_render_cut}:
 	\begin{itemize}
 	\item \textbf{Dreiecksebene:} Legen Sie hier die Eckpunkte des Dreiecks fest, das die Ebene beschreibt. Dabei ist der erste Punkt die Mitte des untersuchten Bereichs. \textbf{Die Lage der Ebene wird im Hauptfenster visualisiert.}
 	\item \textbf{Optionen:} Hier finden Sie weitere Einstellungen zur resultierenden Grafik:
 	\begin{itemize}
-	\item \textbf{Breite/Höhe:} Die Maße der Grafik.
+	\item \textbf{Breite/Höhe:} Die Auflösung der Grafik.
 	\item \textbf{Maßstab (mm/px):} Der Maßstab der Grafik zum Objekt in $\frac{mm}{Pixel}$. 
 	\end{itemize}
 	\item \textbf{Temperaturskala:} 
@@ -751,11 +756,11 @@
 	\item \textbf{Modus/$\Delta T$}: Ausrichtungsmodus der Temperatur"=skala (\emph{horizontal, vertikal, keine}) und Schrittweite der Beschriftung in $K$.
 	\item \textbf{Schriftgröße/Farbe}: Schriftgröße und Schriftfarbe.  Klicken Sie auf \textbf{[Text]}, um einen Dialog zur Auswahl der Schriftfarbe zu öffnen.
 	\end{itemize}
-	Um die \textbf{Position} der Temperaturskala zu ändern, klicken Sie auf eine Farbige stelle der Skala, halten sie die \textbf{[linke Maustaste]} gedrückt und ziehen Sie sie an den gewünschten Ort.\\
+	Um die \textbf{Position} der Temperaturskala zu ändern, klicken Sie auf das Farbband der Skala, halten sie die \textbf{[linke Maustaste]} gedrückt und ziehen Sie sie an den gewünschten Ort.\\
 	Zum ändern der \textbf{Größe} klicken Sie auf das weiße Rechteck mit schwarzem Rahmen und Pfeil an der unteren rechten Ecke der Skala und ziehen Sie die diese mit gedrückter \textbf{[linker Maustaste]} in die gewünschte Größe.
 	\item \textbf{CPU-Threads:} Geben Sie hier die Anzahl der Threads an, die zum berechnen Verwendet werden sollen. Um die kleinste Rechendauer zu erreichen, sollte dieser Wert der Anzahl ihrer Prozessorkerne entsprechen.
 	\end{itemize}
-	Das berechnete Bild wird nun im unteren Teil des Fensters angezeigt. Durch gedrückt halten der \textbf{[linken Maustaste]} und ziehen mit der Maus können Sie die Ansicht auf das Bild verschieben. Mit dem \textbf{[Mausrad]} können Sie hinein und hinaus zoomen.\\
+	Das berechnete Bild wird im unteren Teil des Fensters angezeigt werden. Durch gedrückt halten der \textbf{[linken Maustaste]} und ziehen mit der Maus können Sie die Ansicht auf das Bild verschieben. Mit dem \textbf{[Mausrad]} können Sie hinein und hinaus zoomen.\\
 	In der Statusleiste am unteren Rand des Fensters finden Sie die Position des Mauszeigers auf dem Bild und den entsprechenden Temperaturwert, falls sich der Mauszeiger über dem Objekt befindet.
 	\begin{hinweis}
 	Für die Einfärbung der Grafik wird der selbe Farbbereich wie auch für das 3D-Fenster verwendet. (s. \ref{subsec:sa_viewprops})
@@ -774,7 +779,7 @@
 	\includegraphics[trim=0cm 0cm 0cm 0cm,clip=true,scale=.3]{SA_export_view.png}
 	\caption{Aus dem 3D-Fenster exportiertes Bild}
 	\end{figure}	
-	Wählen Sie \textbf{Datei - Export - Screenshot (Viewport)}, um das Bild, dass das 3D-Fenster gerade anzeigt, als Bilddatei zu Speichern. Um einen transparenten Hintergrund zu erzeugen, speichern Sie das Bild als .png-Datei.
+	Wählen Sie \textbf{Datei - Export - Screenshot (Viewport)}, um das Bild, das das 3D-Fenster gerade anzeigt, als Bilddatei zu speichern. Um einen transparenten Hintergrund zu erzeugen, speichern Sie das Bild als .png-Datei.
 	\subsubsection{VTK-Datei}
 	\begin{figure}
 	\centering
@@ -782,7 +787,7 @@
 	]{vtk_paraview.png}
 	\caption{Die exportierte VTK-Datei in ParaView}
 	\end{figure}	
-	Wählen Sie \textbf{Datei - Export - Legacy VTK-Datei}, um das Objekt als Visualisation-Toolkit-Datei zu exportieren. Diese Dateien können in vielen Programmen zur Visualisierung verwendet werden (bspw. \emph{ParaView}).
+	Wählen Sie \textbf{Datei - Export - Legacy VTK-Datei}, um das Objekt als Visualisation-Toolkit-Datei zu exportieren. Diese Dateien können in vielen Visualisierungsprogrammen verwendet werden (bspw. \emph{ParaView}).
 	\newpage
 	\section{Generelles Vorgehen}
 	Im Folgenden finden Sie das allgemeine Vorgehen zur Auswertung der meisten Versuche.
@@ -850,9 +855,9 @@ csvtosd oder odisitosd stürzt ab & Prüfen Sie, ob das Format der jeweiligen Au
 
 verwenden. Um eine Datei ggf. entsprechend umzuwandeln, verwenden Sie \textbf{dos2unix} (s. \ref{subsec:csvtosd}).\\
 \vspace{1em}&\vspace{1em}\\
-csvtosd findet Sensordefinitionen nicht & Prüfen Sie, ob die Sensornamen in Datendatei und Sensordefinitionsdatei einheitlich sind. Wenn Sie Sensornamen mit Leerzeichen verwenden, müssen \textbf{nur} in der Sensordefinitionsdatei in Anführungszeichen gesetzt werden! Prüfen Sie auch die Zeichencodierung der Datei (s. o.).\vspace{1em}\\
+csvtosd findet Sensordefinitionen nicht & Prüfen Sie, ob die Sensornamen in Datendatei und Sensordefinitionsdatei einheitlich sind. Wenn Sie Sensornamen mit Leerzeichen verwenden, müssen \textbf{nur} in der Sensordefinitionsdatei Anführungszeichen gesetzt werden! Prüfen Sie auch die Zeichencodierung der Datei (s. o.).\vspace{1em}\\
 
-mergetsd fügt die Dateien Zeitversetzt zusammen & Verändern Sie die zeitliche Verschiebung der Dateien (-offset). Siehe \ref{subsec:mergetsd}.\\
+mergetsd fügt die Dateien zeitversetzt zusammen & Verändern Sie die zeitliche Verschiebung der Dateien (-offset). Siehe \ref{subsec:mergetsd}.\\
 \end{tabular}
 
 \subsection{Bei der Auswertung}
@@ -862,9 +867,10 @@ mergetsd fügt die Dateien Zeitversetzt zusammen & Verändern Sie die zeitliche 
 \vspace{1em}&\vspace{1em}\\
 Dichte und spezifische Wärmekapazität des Materials werden nicht übernommen &
 Nach jeder Änderung an den Objekteigenschaften muss dieses neu Berechnet werden, um die Änderungen zu speichern. Dies gilt auch, wenn ein anderes Material in den Objekteigenschaften ausgewählt wird und die Eigenschaften des vorher Ausgewählten gespeichert werden sollen.\\
+& Stellen Sie auch sicher, dass Sie die Werte mit einem Punkt als Dezimaltrennzeichen eingegeben haben.\\
 \vspace{1em}&\vspace{1em}\\
 
-Das Objekt ist in der 3D-Ansicht bei hohem Zoom nur Teilweise zu sehen. & Das Objekt kann nur bis zu einer bestimmten nähe der virtuellen Kamera dargestellt werden. Um dennoch Details am Objekt erkennen zu können, können Sie das Objekt in den Visualisierungsoptionen optisch skalieren. (Siehe \ref{subsec:sa_viewprops})
+Das Objekt ist in der 3D-Ansicht bei hohem Zoom nur Teilweise zu sehen. & Das Objekt kann nur bis zu einer bestimmten Nähe der virtuellen Kamera dargestellt werden. Um dennoch Details am Objekt erkennen zu können, können Sie das Objekt in den Visualisierungsoptionen optisch skalieren. (Siehe \ref{subsec:sa_viewprops})
 \end{tabular}
 \newpage
 \section{Lizenzbestimmungen}
@@ -884,6 +890,6 @@ Affero General Public License for more details.\\
 
 You can find a copy of the GNU Affero General Public License in the LICENSE file provided in the SimpleAnalyzer repository or at \url{http://www.gnu.org/licenses/}.\\
 
-This software makes use of the version 1.5 of the tetgen library, which is licensed under the terms of the GNU Affero General Public License. (see \url{www.tetgen.org})
+This software makes use of version 1.5 of the tetgen library, which is licensed under the terms of the GNU Affero General Public License. (see \url{www.tetgen.org})
 
 \end{document}
