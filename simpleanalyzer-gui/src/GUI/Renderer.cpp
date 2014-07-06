@@ -345,9 +345,24 @@ void Renderer::renderMaterial(ObjectData::MaterialData* mat) {
 
 void Renderer::initGL(int width, int height) {
 	//Hintergrundfarbe initialisieren
-	glClearColor(.5, .5, .5, 1);
+	glClearColor(.5, .5, .5, 0);
 	//Viewport und Projektion setzen
 	resize(width,height);
+
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LESS);
+
+	//Objektskalierung, Licht
+	glScalef(viewport.scale, viewport.scale, viewport.scale);
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+	glEnable(GL_COLOR_MATERIAL);
+	GLfloat DiffuseLight[] = { 1.0, 1.0, 1.0, 1.0 };
+	GLfloat AmbientLight[] = { .1, .1, .1 };
+	GLfloat LightPosition[] = { -1, 1, 1, 0 };
+	glLightfv(GL_LIGHT0, GL_POSITION, LightPosition);
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, DiffuseLight);
+	glLightfv(GL_LIGHT0, GL_AMBIENT, AmbientLight);
 }
 
 void Renderer::resize(int width, int height) {
@@ -536,22 +551,27 @@ wxImage* Renderer::getViewportImage() {
 	glGetIntegerv(GL_VIEWPORT, view);
 
 	//Auslesen des Bildes aus Opengl
-	void* pixels = malloc(3 * view[2] * view[3]); //OpenGL setzt malloc voraus
+	void* pixels = malloc(4 * view[2] * view[3]); //OpenGL setzt malloc voraus
 	glPixelStorei(GL_PACK_ALIGNMENT, 1);
 	glReadBuffer(GL_BACK_LEFT);
-	glReadPixels(0, 0, view[2], view[3], GL_RGB, GL_UNSIGNED_BYTE, pixels);
+	glReadPixels(0, 0, view[2], view[3], GL_RGBA, GL_UNSIGNED_BYTE, pixels);
 
 	//Die Ausgelesenen Farbinformationen in ein wxImage schreiben
 	wxImage* img = new wxImage((int) view[2], (int) view[3]);
+	img->InitAlpha();
+
 	for (int i = 0; i < view[2] * view[3]; i++) {
 		img->SetRGB(i % view[2], view[3] - i / view[2] - 1,
-				((unsigned char*) pixels)[3 * i],
-				((unsigned char*) pixels)[3 * i + 1],
-				((unsigned char*) pixels)[3 * i + 2]);
+				((unsigned char*) pixels)[4 * i],
+				((unsigned char*) pixels)[4 * i + 1],
+				((unsigned char*) pixels)[4 * i + 2]);
+		if (((unsigned char*) pixels)[4 * i + 3]==0) {
+			img->SetAlpha(i % view[2], view[3] - i / view[2] - 1, 0);
+		}
 	}
 	free(pixels);
 
-	//Auslesen der Tiefeninformationen aus Opengl
+	/*//Auslesen der Tiefeninformationen aus Opengl
 	void* depth_buff = malloc(view[2] * view[3]); //OpenGL setzt malloc voraus
 	glReadPixels(0, 0, view[2], view[3], GL_DEPTH_COMPONENT, GL_UNSIGNED_BYTE,
 			depth_buff);
@@ -564,7 +584,7 @@ wxImage* Renderer::getViewportImage() {
 		}
 	}
 
-	free(depth_buff);
+	free(depth_buff);*/
 
 	return img;
 }
@@ -657,7 +677,7 @@ void drawCutRenderInfo(CutRender_info* info) {
 void Renderer::render() {
 
 	//Löschen der Farb- und Tiefeninformationen
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	//Transformieren der Kamera
 	glLoadIdentity();
 	glTranslatef(0, 0, -viewport.zoom * viewport.zoom);
@@ -669,20 +689,9 @@ void Renderer::render() {
 	//zeichnen der Orientierungslinien
 	glDisable(GL_LIGHTING);
 	renderGrid();
-
-	//Objektskalierung, Licht
-	glScalef(viewport.scale, viewport.scale, viewport.scale);
-	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_LIGHTING);
-	glEnable(GL_LIGHT0);
-	glEnable(GL_COLOR_MATERIAL);
-	GLfloat DiffuseLight[] = { 1.0, 1.0, 1.0, 1.0 };
-	GLfloat AmbientLight[] = { .1, .1, .1 };
-	GLfloat LightPosition[] = { -1, 1, 1, 0 };
-	glLightfv(GL_LIGHT0, GL_POSITION, LightPosition);
-	glLightfv(GL_LIGHT0, GL_DIFFUSE, DiffuseLight);
-	glLightfv(GL_LIGHT0, GL_AMBIENT, AmbientLight);
 
+	glEnable(GL_DEPTH_TEST);
 	//Ist die Geometrie auf der Grafikkarte gespeichert?
 	if (displayList > -1) {
 		//zeichnen der Objektgeometrie
