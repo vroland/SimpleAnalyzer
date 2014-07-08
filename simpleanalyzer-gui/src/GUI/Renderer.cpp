@@ -353,7 +353,6 @@ void Renderer::initGL(int width, int height) {
 	glDepthFunc(GL_LESS);
 
 	//Objektskalierung, Licht
-	glScalef(viewport.scale, viewport.scale, viewport.scale);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
 	glEnable(GL_COLOR_MATERIAL);
@@ -565,26 +564,11 @@ wxImage* Renderer::getViewportImage() {
 				((unsigned char*) pixels)[4 * i],
 				((unsigned char*) pixels)[4 * i + 1],
 				((unsigned char*) pixels)[4 * i + 2]);
-		if (((unsigned char*) pixels)[4 * i + 3]==0) {
-			img->SetAlpha(i % view[2], view[3] - i / view[2] - 1, 0);
-		}
+
+		img->SetAlpha(i % view[2], view[3] - i / view[2] - 1, ((unsigned char*) pixels)[4 * i + 3]);
 	}
+
 	free(pixels);
-
-	/*//Auslesen der Tiefeninformationen aus Opengl
-	void* depth_buff = malloc(view[2] * view[3]); //OpenGL setzt malloc voraus
-	glReadPixels(0, 0, view[2], view[3], GL_DEPTH_COMPONENT, GL_UNSIGNED_BYTE,
-			depth_buff);
-
-	//Maskieren aller umbeschriebenen Bereiche im Bild
-	img->InitAlpha();
-	for (int i = 0; i < view[2] * view[3]; i++) {
-		if (((unsigned char*) depth_buff)[i] == 255) {
-			img->SetAlpha(i % view[2], view[3] - i / view[2] - 1, 0);
-		}
-	}
-
-	free(depth_buff);*/
 
 	return img;
 }
@@ -691,7 +675,8 @@ void Renderer::render() {
 	renderGrid();
 	glEnable(GL_LIGHTING);
 
-	glEnable(GL_DEPTH_TEST);
+	glScalef(viewport.scale, viewport.scale, viewport.scale);
+
 	//Ist die Geometrie auf der Grafikkarte gespeichert?
 	if (displayList > -1) {
 		//zeichnen der Objektgeometrie
