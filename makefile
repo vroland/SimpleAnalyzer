@@ -58,6 +58,8 @@ install: all
 	install --mode=755 odisitosd/Debug/odisitosd $(prefix)/bin
 	install --mode=755 odisitosd/Debug/odisitosd.conf $(DESTDIR)/etc/simpleanalyzer/
 	
+	install --mode=755 simpleanalyzer-gui/Debug/simpleanalyzer-gui.conf $(DESTDIR)/etc/simpleanalyzer/
+	
 	install --mode=755 mergetsd/build/mergetsd $(prefix)/bin
 	
 	install --mode=755 simpleanalyzer-gui/Debug/simpleanalyzer-gui $(prefix)/bin
