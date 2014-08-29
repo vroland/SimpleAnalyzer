@@ -1,8 +1,8 @@
 <map id="Utils::clampHue" name="Utils::clampHue">
-<area shape="rect" id="node3" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="215,13,316,43"/>
-<area shape="rect" id="node9" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Zeichnet die Tetraeder eines Materials des Objekts. " alt="" coords="175,67,356,96"/>
-<area shape="rect" id="node11" href="$classRenderer.xhtml#ad2eac0343aef1abd05ed95b1b364785f" title="Zeichnet Sensordaten als Punkte. " alt="" coords="172,120,359,149"/>
-<area shape="rect" id="node13" href="$classRenderer.xhtml#acb6c468b92221cf8a121b87a70a3da0c" title="Zeichnet die Elemente eines Materials des Objekts. " alt="" coords="183,173,348,203"/>
-<area shape="rect" id="node5" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="409,5,564,51"/>
-<area shape="rect" id="node7" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="615,5,769,51"/>
+<area shape="rect" id="node2" href="$classRenderer.xhtml#a927f376a6283de3181b86f65b927386c" title="Zeichnet die Tetraeder eines Materials des Objekts. " alt="" coords="175,5,356,32"/>
+<area shape="rect" id="node3" href="$classRenderer.xhtml#ad2eac0343aef1abd05ed95b1b364785f" title="Zeichnet Sensordaten als Punkte. " alt="" coords="171,56,359,83"/>
+<area shape="rect" id="node4" href="$classRenderer.xhtml#acb6c468b92221cf8a121b87a70a3da0c" title="Zeichnet die Elemente eines Materials des Objekts. " alt="" coords="183,107,348,133"/>
+<area shape="rect" id="node5" href="$GUICutRenderWindow_8cpp.xhtml#aeaaae4c8452680389d221d0e60a6fc33" title="Funktion zum verteilten berechnen der 2D&#45;Temperaturverteilung. " alt="" coords="215,157,316,184"/>
+<area shape="rect" id="node6" href="$classGUICutRenderWindow.xhtml#a9eedb7088ad31f4680a77ed3a06fa60c" title="Berechnet die 2D&#45;Temperaturverteilung als Grafik. " alt="" coords="409,150,565,191"/>
+<area shape="rect" id="node7" href="$classGUICutRenderWindow.xhtml#a7cd1bfbec53756a1cbbe1616b4d46c7a" title="Behandelt das Drücken des Buttons zur Berechnung der zweidimensionalen Temperaturverteilung. " alt="" coords="614,150,770,191"/>
 </map>

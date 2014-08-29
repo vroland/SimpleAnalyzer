@@ -1,9 +1,10 @@
 <map id="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUIColorScalePanel.cpp" name="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/GUIColorScalePanel.cpp">
-<area shape="rect" id="node3" href="$GUIColorScalePanel_8h.xhtml" title="GUIColorScalePanel.h" alt="" coords="748,117,903,147"/>
-<area shape="rect" id="node24" href="$utils_8h.xhtml" title="utils.h" alt="" coords="275,349,331,379"/>
-<area shape="rect" id="node43" href="$SimpleAnalyzerApp_8h.xhtml" title="../SimpleAnalyzerApp.h" alt="" coords="551,195,708,224"/>
-<area shape="rect" id="node5" href="$Renderer_8h.xhtml" title="Renderer.h" alt="" coords="739,195,824,224"/>
-<area shape="rect" id="node11" href="$GeometryClasses_8h.xhtml" title="../libraries/interpolate\l/GeometryClasses.h" alt="" coords="352,523,494,570"/>
-<area shape="rect" id="node15" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="414,272,592,301"/>
-<area shape="rect" id="node19" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="352,427,494,474"/>
+<area shape="rect" id="node2" href="$GUIColorScalePanel_8h.xhtml" title="GUIColorScalePanel.h" alt="" coords="947,184,1100,211"/>
+<area shape="rect" id="node11" href="$simpleanalyzer-gui_2src_2processing_2utils_8h.xhtml" title="utils.h" alt="" coords="329,408,385,435"/>
+<area shape="rect" id="node16" href="$SimpleAnalyzerApp_8h.xhtml" title="../SimpleAnalyzerApp.h" alt="" coords="382,109,540,136"/>
+<area shape="rect" id="node3" href="$simpleanalyzer-gui_2src_2GUI_2Renderer_8h.xhtml" title="Renderer.h" alt="" coords="721,259,807,285"/>
+<area shape="rect" id="node6" href="$GeometryClasses_8h.xhtml" title="../libraries/interpolate\l/GeometryClasses.h" alt="" coords="394,574,536,615"/>
+<area shape="rect" id="node8" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="473,333,652,360"/>
+<area shape="rect" id="node9" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="419,483,561,525"/>
+<area shape="rect" id="node17" href="$DefaultValues_8h.xhtml" title="DefaultValues.h" alt="" coords="589,184,704,211"/>
 </map>

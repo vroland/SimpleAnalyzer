@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['objectdatastatus',['ObjectDataStatus',['../classObjectData.xhtml#a20e8cd3cd0f8af3b571b9393aa9e6484',1,'ObjectData']]]
+  ['interpolationmode',['InterpolationMode',['../classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2',1,'Interpolator']]]
 ];

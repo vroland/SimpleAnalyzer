@@ -37,6 +37,8 @@ float \hyperlink{namespaceUtils_abb647325616858e0fad55290c36ea03b}{clamp\-Hue} (
 \begin{DoxyCompactList}\small\item\em Begrenzt einen Wert auf den Bereich 0..1. \end{DoxyCompactList}\item 
 string \hyperlink{namespaceUtils_a76b506eef525971ab3ccb328f4ca879d}{floattostr} (double val)
 \begin{DoxyCompactList}\small\item\em Hilfsfunktion zur Umwandlung einer Zahl in einen String. \end{DoxyCompactList}\item 
+string \hyperlink{namespaceUtils_ab5711927eff2cdd7123d98d343f0dfad}{get\-Text\-Block} (string data, int n)
+\begin{DoxyCompactList}\small\item\em Gibt den n-\/ten durch Leerzeichen oder Tabulator abgetrennten Block aus einem String zurück. \end{DoxyCompactList}\item 
 wx\-String \hyperlink{namespaceUtils_a233ff9a0b34b10195a434f1ff66323b8}{floattowxstr} (double val)
 \begin{DoxyCompactList}\small\item\em Wandelt eine Fließkommazahl in einen wx\-Widgets-\/\-String um. \end{DoxyCompactList}\item 
 wx\-String \hyperlink{namespaceUtils_ac47160b3665d77f9e1a49a4045053add}{floattowxstr} (double val, int digits)
@@ -45,9 +47,9 @@ int \hyperlink{namespaceUtils_a5f216cc7011a901130db81321b565334}{ray\-Intersects
 \begin{DoxyCompactList}\small\item\em Testet, ob ein Strahl ein Dreieck schneidet. \end{DoxyCompactList}\item 
 int \hyperlink{namespaceUtils_af8fc5d6dab27f759ab5d76757a53023f}{point\-Inside\-Mesh} (\hyperlink{classVector3D}{Vector3\-D} $\ast$p, tetgenio $\ast$io, \hyperlink{namespaceUtils_ad369b0127cabda0d6871ce1ae7e6c862}{P\-I\-M\-\_\-algorithm} algorithm)
 \begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Körpers befindet. \end{DoxyCompactList}\item 
-int \hyperlink{namespaceUtils_a9b995a1220a78be108b19bda4b776332}{point\-Inside\-Tetrahedron} (\hyperlink{classVector3D}{Vector3\-D} $\ast$pges, \hyperlink{classVector3D}{Vector3\-D} $\ast$v1, \hyperlink{classVector3D}{Vector3\-D} $\ast$v2, \hyperlink{classVector3D}{Vector3\-D} $\ast$v3, \hyperlink{classVector3D}{Vector3\-D} $\ast$v4)
+int \hyperlink{namespaceUtils_a9b995a1220a78be108b19bda4b776332}{point\-Inside\-Tetrahedron} (\hyperlink{classVector3D}{Vector3\-D} $\ast$pges, \hyperlink{classVector3D}{Vector3\-D} $\ast$\hyperlink{particle__sim_2ParticleSystem_8h_a8d89db3c6515289b4df99467371c544f}{v1}, \hyperlink{classVector3D}{Vector3\-D} $\ast$\hyperlink{particle__sim_2ParticleSystem_8h_aadda57ca88b1f7b495ff17bc402bb584}{v2}, \hyperlink{classVector3D}{Vector3\-D} $\ast$\hyperlink{particle__sim_2ParticleSystem_8h_ac3e04ab93bb7f4e1e62ac7311bf75293}{v3}, \hyperlink{classVector3D}{Vector3\-D} $\ast$\hyperlink{particle__sim_2ParticleSystem_8h_a601d75fa74098fd47a857d5afddb6830}{v4})
 \begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
-int \hyperlink{namespaceUtils_a8f7379e1915d2a04907eb9d99d0a56ad}{point\-Inside\-Tetrahedron} (double $\ast$pges, double $\ast$v1, double $\ast$v2, double $\ast$v3, double $\ast$v4)
+int \hyperlink{namespaceUtils_a8f7379e1915d2a04907eb9d99d0a56ad}{point\-Inside\-Tetrahedron} (double $\ast$pges, double $\ast$\hyperlink{particle__sim_2ParticleSystem_8h_a8d89db3c6515289b4df99467371c544f}{v1}, double $\ast$\hyperlink{particle__sim_2ParticleSystem_8h_aadda57ca88b1f7b495ff17bc402bb584}{v2}, double $\ast$\hyperlink{particle__sim_2ParticleSystem_8h_ac3e04ab93bb7f4e1e62ac7311bf75293}{v3}, double $\ast$\hyperlink{particle__sim_2ParticleSystem_8h_a601d75fa74098fd47a857d5afddb6830}{v4})
 \begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
 int \hyperlink{namespaceUtils_a40eaef4d22da849a5deb2f1153d88bbc}{point\-Inside\-Tetrahedron} (double $\ast$p, \hyperlink{classstd_1_1vector}{vector}$<$ \hyperlink{structUtils_1_1SensorPoint}{Sensor\-Point} $\ast$ $>$ $\ast$tet)
 \begin{DoxyCompactList}\small\item\em Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet. \end{DoxyCompactList}\item 
@@ -109,11 +111,12 @@ Der den Grenzen entsprechende Wert.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 39 der Datei utils.\-cpp.
+Definiert in Zeile 78 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -143,7 +146,7 @@ Kopiert die Eigenschaften eines Sensorpunktes in einen Anderen.
 \end{DoxyParams}
 
 
-Definiert in Zeile 97 der Datei utils.\-cpp.
+Definiert in Zeile 136 der Datei utils.\-cpp.
 
 
 
@@ -211,7 +214,7 @@ Der entstandene String.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 49 der Datei utils.\-cpp.
+Definiert in Zeile 88 der Datei utils.\-cpp.
 
 
 
@@ -248,7 +251,7 @@ Der entstandene String.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 55 der Datei utils.\-cpp.
+Definiert in Zeile 94 der Datei utils.\-cpp.
 
 \hypertarget{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2}{\index{Utils@{Utils}!get\-Point\-Value@{get\-Point\-Value}}
 \index{get\-Point\-Value@{get\-Point\-Value}!Utils@{Utils}}
@@ -286,7 +289,7 @@ Temperatur des gesuchten Punktes.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 354 der Datei utils.\-cpp.
+Definiert in Zeile 393 der Datei utils.\-cpp.
 
 
 
@@ -306,6 +309,44 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{namespaceUtils_a6a0ae18a42e2d206bc1b43da27820fe2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{namespaceUtils_ab5711927eff2cdd7123d98d343f0dfad}{\index{Utils@{Utils}!get\-Text\-Block@{get\-Text\-Block}}
+\index{get\-Text\-Block@{get\-Text\-Block}!Utils@{Utils}}
+\subsubsection[{get\-Text\-Block}]{\setlength{\rightskip}{0pt plus 5cm}string Utils\-::get\-Text\-Block (
+\begin{DoxyParamCaption}
+\item[{string}]{data, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{namespaceUtils_ab5711927eff2cdd7123d98d343f0dfad}
+
+
+Gibt den n-\/ten durch Leerzeichen oder Tabulator abgetrennten Block aus einem String zurück. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em data} & Der Ausgansstring. \\
+\hline
+{\em n} & Index des zu findenden Blocks. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der n-\/te durch Leerzeichen getrennte Teilstring. \char`\"{}\char`\"{} Bei ungültigem Index. 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 16 der Datei utils.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceUtils_ab5711927eff2cdd7123d98d343f0dfad_icgraph}
 \end{center}
 \end{figure}
 
@@ -337,11 +378,12 @@ R\-G\-B-\/\-Farbe als Liste mit 3 Werten im Bereich 0..1. Muss manuell mit delet
 \end{DoxyReturn}
 
 
-Definiert in Zeile 61 der Datei utils.\-cpp.
+Definiert in Zeile 100 der Datei utils.\-cpp.
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -384,7 +426,7 @@ Die Indices der Plätze, die die Elemente jeweils besetzten stehen in indices. V
 \end{DoxyParams}
 
 
-Definiert in Zeile 16 der Datei utils.\-cpp.
+Definiert in Zeile 55 der Datei utils.\-cpp.
 
 
 
@@ -424,7 +466,7 @@ Testet, ob sich ein Punkt innerhalb eines Körpers befindet.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 170 der Datei utils.\-cpp.
+Definiert in Zeile 209 der Datei utils.\-cpp.
 
 
 
@@ -481,7 +523,7 @@ Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 249 der Datei utils.\-cpp.
+Definiert in Zeile 288 der Datei utils.\-cpp.
 
 
 
@@ -538,7 +580,7 @@ Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 343 der Datei utils.\-cpp.
+Definiert in Zeile 382 der Datei utils.\-cpp.
 
 
 
@@ -575,7 +617,7 @@ Testet, ob sich ein Punkt innerhalb eines Tetraeders befindet.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 333 der Datei utils.\-cpp.
+Definiert in Zeile 372 der Datei utils.\-cpp.
 
 
 
@@ -618,7 +660,7 @@ Gibt 1 zurück, wenn es einen Schnittpunkt gibt, ansonsten 0.
 \end{DoxyReturn}
 
 
-Definiert in Zeile 105 der Datei utils.\-cpp.
+Definiert in Zeile 144 der Datei utils.\-cpp.
 
 
 

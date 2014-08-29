@@ -1,27 +1,10 @@
 <map id="GUIGLCanvas::OnPaint" name="GUIGLCanvas::OnPaint">
-<area shape="rect" id="node3" href="$classRenderer.xhtml#a01887363ad27267e44c1ea0f63761a5c" title="Initialisiert die OpenGL&#45;Bibliothek. " alt="" coords="227,5,344,35"/>
-<area shape="rect" id="node5" href="$classRenderer.xhtml#a9f4493c538688adaad4e4f0575fd3b8d" title="Verändert die Größe des Anzeigebereichs. " alt="" coords="227,59,344,88"/>
-<area shape="rect" id="node7" href="$classRenderer.xhtml#a9db67fbbd309875b564ca1df08daf372" title="Setzt das zu zeichnende Objekt. " alt="" coords="216,112,355,141"/>
-<area shape="rect" id="node11" href="$classRenderer.xhtml#af7e5f8f68742f198e315fb4683a605a4" title="Zeichnet das Objekt (Attribut object). " alt="" coords="227,165,344,195"/>
-<area shape="rect" id="node9" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="404,112,569,141"/>
-<area shape="rect" id="node13" href="$Renderer_8cpp.xhtml#ac35d259852428046b123c635864e2197" title="Zeichnet markante Linien zum leichteren Erfassen des Koordinatensystems. " alt="" coords="445,165,528,195"/>
-<area shape="rect" id="node45" href="$Renderer_8cpp.xhtml#a608a02845726b8844beac12e5154c500" title="Visualisiert Informationen über eine 2D&#45;Temperaturverteilung. " alt="" coords="420,295,553,324"/>
-<area shape="rect" id="node15" href="$Renderer_8cpp.xhtml#a4225af4db7b633515f133a4f40c72b33" title="Zeichnet einen Vektor als Pfeil. " alt="" coords="643,88,731,117"/>
-<area shape="rect" id="node17" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Normalisiert den Vektor. " alt="" coords="813,292,955,321"/>
-<area shape="rect" id="node19" href="$classVector3D.xhtml#ac83e936757114f32bc9d868ea5fabbc2" title="Testet, ob zwei Vektoren identisch sind. " alt="" coords="823,132,945,161"/>
-<area shape="rect" id="node27" href="$classVector3D.xhtml#a89aeff2092d6a954cd449aca97c59197" title="Gibt eine Referenz auf die Vektorelemente zurück (Vor allem zur Übergabe an OpenGL verwendet)..." alt="" coords="820,185,948,215"/>
-<area shape="rect" id="node29" href="$classVector3D.xhtml#a2e3aa1d244483abcb1a8e48e47e79512" title="Gibt die Länge des Vektors zurück. " alt="" coords="813,25,955,55"/>
-<area shape="rect" id="node33" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="803,399,965,428"/>
-<area shape="rect" id="node38" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. " alt="" coords="831,79,937,108"/>
-<area shape="rect" id="node43" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="829,239,939,268"/>
-<area shape="rect" id="node21" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="1013,152,1125,181"/>
-<area shape="rect" id="node23" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="1013,285,1125,315"/>
-<area shape="rect" id="node25" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="1015,379,1124,408"/>
-<area shape="rect" id="node31" href="$GeometryClasses_8cpp.xhtml#a73527f20206c906e9f333e0f233de13e" title="sqr" alt="" coords="1049,25,1089,55"/>
-<area shape="rect" id="node47" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="619,397,755,427"/>
-<area shape="rect" id="node49" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="828,345,940,375"/>
-<area shape="rect" id="node51" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="831,452,937,481"/>
-<area shape="rect" id="node59" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="632,501,741,531"/>
-<area shape="rect" id="node61" href="$classTriangle.xhtml#a6de5f8560482f4130bdbb96b25aa1b58" title="Gibt eine Referenz auf den Ortsvektor zum zweiten Punkt des Dreiecks zurück. " alt="" coords="632,555,741,584"/>
-<area shape="rect" id="node63" href="$classTriangle.xhtml#a792a627dc42adad87c0b30e16a6b5824" title="Gibt eine Referenz auf den Ortsvektor zum dritten Punkt des Dreiecks zurück. " alt="" coords="632,192,741,221"/>
+<area shape="rect" id="node2" href="$classRenderer.xhtml#a01887363ad27267e44c1ea0f63761a5c" title="Initialisiert die OpenGL&#45;Bibliothek. " alt="" coords="227,5,344,32"/>
+<area shape="rect" id="node3" href="$classRenderer.xhtml#a9f4493c538688adaad4e4f0575fd3b8d" title="Renderer::resize" alt="" coords="226,56,345,83"/>
+<area shape="rect" id="node4" href="$classRenderer.xhtml#a9db67fbbd309875b564ca1df08daf372" title="Setzt das zu zeichnende Objekt. " alt="" coords="216,107,355,133"/>
+<area shape="rect" id="node6" href="$classRenderer.xhtml#a0580ba6864ba731290380740c0a470e3" title="Renderer::render" alt="" coords="226,157,345,184"/>
+<area shape="rect" id="node5" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="403,107,570,133"/>
+<area shape="rect" id="node7" href="$classParticleSystem.xhtml#a6908575021b0f12f4bf4d7298acf4900" title="ParticleSystem::calc" alt="" coords="415,157,558,184"/>
+<area shape="rect" id="node9" href="$CLGL__test_2utils_8cpp.xhtml#acd0aed8d85538d84a97258e97cd65668" title="checkGLError" alt="" coords="435,208,538,235"/>
+<area shape="rect" id="node8" href="$CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d" title="get_error_string" alt="" coords="619,157,731,184"/>
 </map>

@@ -1,0 +1,14 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$classMain.xhtml#ad596be0813b2b7316edf614debd21d2d" title="Main::init" alt="" coords="124,31,199,57"/>
+<area shape="rect" id="node4" href="$classMain.xhtml#a2c54a5b5efdb5e02be834319c494620c" title="Main::mainLoop" alt="" coords="104,132,219,159"/>
+<area shape="rect" id="node13" href="$classMain.xhtml#a802cbb1fe1633d0711854588731df519" title="Main::quit" alt="" coords="122,183,201,209"/>
+<area shape="rect" id="node3" href="$CLGL__test_2utils_8cpp.xhtml#ac3a24d9f29663b21bfa7bfa837d701fc" title="checkSDLError" alt="" coords="291,5,402,32"/>
+<area shape="rect" id="node5" href="$classRenderer.xhtml#a7727c7b56e9dd7c665c969e9ce2611e4" title="Renderer::glInit" alt="" coords="291,56,402,83"/>
+<area shape="rect" id="node6" href="$classCLHandler.xhtml#aa43428623da161d648d5e7e127cb6839" title="CLHandler::isValid" alt="" coords="281,107,412,133"/>
+<area shape="rect" id="node7" href="$classParticleSystem.xhtml#af1962b233fb096b8907b112812fc94e0" title="ParticleSystem::isValid" alt="" coords="267,157,426,184"/>
+<area shape="rect" id="node8" href="$classEventHandler.xhtml#aa4fd84f9bcf3b254a9c400aeab5a4b1a" title="EventHandler::poll" alt="" coords="282,208,411,235"/>
+<area shape="rect" id="node9" href="$classRenderer.xhtml#a0580ba6864ba731290380740c0a470e3" title="Renderer::render" alt="" coords="287,259,406,285"/>
+<area shape="rect" id="node10" href="$classParticleSystem.xhtml#a6908575021b0f12f4bf4d7298acf4900" title="ParticleSystem::calc" alt="" coords="475,233,618,260"/>
+<area shape="rect" id="node12" href="$CLGL__test_2utils_8cpp.xhtml#acd0aed8d85538d84a97258e97cd65668" title="checkGLError" alt="" coords="495,284,598,311"/>
+<area shape="rect" id="node11" href="$CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d" title="get_error_string" alt="" coords="667,233,779,260"/>
+</map>

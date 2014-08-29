@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['name',['name',['../structAnalyzer_1_1AnalyzerData__material.xhtml#a0a6b01fc900ce677ae8403d3a85b829b',1,'Analyzer::AnalyzerData_material::name()'],['../structAnalyzer_1_1AnalyzerData__dataset.xhtml#a53f3c1896123de4dc00f01e593d5f70d',1,'Analyzer::AnalyzerData_dataset::name()'],['../structObjectData_1_1MaterialData.xhtml#a795f1265218b9a125559bbe9231f3c8d',1,'ObjectData::MaterialData::name()'],['../classObjectData.xhtml#a6d900f11952e9d50e6660a3695fad99d',1,'ObjectData::name()'],['../structUtils_1_1SensorData.xhtml#a52474d0fe0dce0d3ee73c007a150a507',1,'Utils::SensorData::name()']]],
-  ['namecol',['namecol',['../structCsvToSdConverter_1_1Options.xhtml#a49f5541b593cb8df87547d16a1738dc5',1,'CsvToSdConverter::Options']]],
-  ['names',['names',['../classGUITimeline.xhtml#adcdd8d58db7851c24ab9dfdfe1377ffb',1,'GUITimeline']]],
-  ['nextcombination',['nextCombination',['../namespaceUtils.xhtml#af4ba26e928c7cef5269c51bfac49d547',1,'Utils']]],
-  ['nextmarkerbt',['nextMarkerBt',['../classPropertiesBox.xhtml#ad4a347a273ab780cf1ab941a5cf6d4b0',1,'PropertiesBox']]],
-  ['normalize',['normalize',['../classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c',1,'Vector3D']]],
-  ['number_5fof_5finterpolation_5fmodes',['NUMBER_OF_INTERPOLATION_MODES',['../constants_8h.xhtml#a3671997d94de57843bd6162844cd140a',1,'constants.h']]],
-  ['numberofpaths',['NUMBEROFPATHS',['../classCsvToSdConverter.xhtml#ad2278682506407d3172e8fca834891fe',1,'CsvToSdConverter::NUMBEROFPATHS()'],['../classOdisiToSdConverter.xhtml#a6f59f3670356c1588b736af33d59532a',1,'OdisiToSdConverter::NUMBEROFPATHS()'],['../classGUIMainWindow.xhtml#ae3eb6747c8ffa9e20e54c2d34f58bd40',1,'GUIMainWindow::NUMBEROFPATHS()']]],
-  ['numberofsensorattributes',['NUMBEROFSENSORATTRIBUTES',['../ObjectData_8h.xhtml#ae1ab794432671246bc2c417b5a6562f1',1,'ObjectData.h']]]
+  ['label',['label',['../classGUIAnalyzePointWindow.xhtml#ae3f474800a7f7d9e4a897bdf33510f01',1,'GUIAnalyzePointWindow']]],
+  ['lasttime',['lastTime',['../classParticleSystem.xhtml#a7742c69f3c78fb025a3a8f0cb56aa272',1,'ParticleSystem::lastTime()'],['../classRenderer.xhtml#aab05ebe51ff8677cce3019aa1f4236b1',1,'Renderer::lastTime()']]],
+  ['linear',['LINEAR',['../classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2a3a3f536edbfcc38cea69d59eb5709769',1,'Interpolator']]],
+  ['loadfromfile',['loadFromFile',['../classObjectData.xhtml#ab2fabb02de2ac4b5ff09b73beb15223d',1,'ObjectData']]],
+  ['loadsensordata',['LoadSensorData',['../classImporter.xhtml#ae837d750c92450f8e83b2d93eb099f79',1,'Importer']]],
+  ['loadtimeddata',['LoadTimedData',['../classImporter.xhtml#ad8dec9ce375155ca130453632530eb52',1,'Importer']]],
+  ['logarithmic',['LOGARITHMIC',['../classInterpolator.xhtml#adb733b1439a2903feae57fa734ced0c2aa7167350eb8c3b4e2d5cb800587a725b',1,'Interpolator']]]
 ];

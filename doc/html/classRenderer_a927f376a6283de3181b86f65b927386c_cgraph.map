@@ -1,17 +1,17 @@
 <map id="Renderer::renderTetrahedra" name="Renderer::renderTetrahedra">
-<area shape="rect" id="node3" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. " alt="" coords="612,145,719,175"/>
-<area shape="rect" id="node11" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="239,48,348,77"/>
-<area shape="rect" id="node13" href="$Renderer_8cpp.xhtml#a17ef754a4f478e115d6e7fb813702639" title="pointBehindCut" alt="" coords="239,331,348,360"/>
-<area shape="rect" id="node17" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="609,252,721,281"/>
-<area shape="rect" id="node19" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="612,199,719,228"/>
-<area shape="rect" id="node24" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="584,359,747,388"/>
-<area shape="rect" id="node29" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Normalisiert den Vektor. " alt="" coords="595,305,736,335"/>
-<area shape="rect" id="node35" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Gibt das Skalarprodukt mit einem anderen Vektor. " alt="" coords="592,412,739,441"/>
-<area shape="rect" id="node45" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Wandelt eine Farbe im HSV&#45;Format ins RGB&#45;Format um. " alt="" coords="235,613,352,643"/>
-<area shape="rect" id="node47" href="$namespaceUtils.xhtml#abb647325616858e0fad55290c36ea03b" title="Begrenzt einen Wert auf den Bereich 0..1. " alt="" coords="236,667,351,696"/>
-<area shape="rect" id="node5" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="795,285,907,315"/>
-<area shape="rect" id="node7" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="795,352,907,381"/>
-<area shape="rect" id="node9" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="796,205,905,235"/>
-<area shape="rect" id="node15" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="400,304,536,333"/>
-<area shape="rect" id="node33" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="413,357,523,387"/>
+<area shape="rect" id="node2" href="$classVector3D.xhtml#a0d14ff1f789254ff90adc22628eb8347" title="Addiert einen Vektor zu diesem Vektor. " alt="" coords="612,149,719,176"/>
+<area shape="rect" id="node6" href="$classVector3D.xhtml#a3dec11494c99de7370e3877054c3ef13" title="Multipliziert den Vektor mit einem Skalar. " alt="" coords="238,48,349,74"/>
+<area shape="rect" id="node7" href="$simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp.xhtml#a17ef754a4f478e115d6e7fb813702639" title="pointBehindCut" alt="" coords="238,326,349,353"/>
+<area shape="rect" id="node9" href="$classVector3D.xhtml#a46dd0d9a849809a3857783102959e788" title="Gibt eine Kopie des Vektors zurück. " alt="" coords="609,250,722,277"/>
+<area shape="rect" id="node10" href="$classVector3D.xhtml#a02364a41693ac080f5adadd776df74b4" title="Subtrahiert einen Vektor von diesem Vektor. " alt="" coords="612,200,719,226"/>
+<area shape="rect" id="node11" href="$classVector3D.xhtml#a482cd77ce44ea7dd71fd7a43cb7b1cf5" title="Gibt das Kreuzprodukt mit einem anderen Vektor zurück. " alt="" coords="584,352,747,378"/>
+<area shape="rect" id="node12" href="$classVector3D.xhtml#abfb12ecb9c9beb88e095cc4a1a512d3c" title="Normalisiert den Vektor. " alt="" coords="595,301,736,328"/>
+<area shape="rect" id="node14" href="$classVector3D.xhtml#a0808a8e6004a347d82f9214778b5968f" title="Gibt das Skalarprodukt mit einem anderen Vektor. " alt="" coords="591,402,739,429"/>
+<area shape="rect" id="node15" href="$namespaceUtils.xhtml#a5d6523eb946892eee52c9c74efd016de" title="Wandelt eine Farbe im HSV&#45;Format ins RGB&#45;Format um. " alt="" coords="235,605,352,632"/>
+<area shape="rect" id="node16" href="$namespaceUtils.xhtml#abb647325616858e0fad55290c36ea03b" title="Begrenzt einen Wert auf den Bereich 0..1. " alt="" coords="235,656,351,682"/>
+<area shape="rect" id="node3" href="$classVector3D.xhtml#aa9eaf29045bf32b95c5c7bcb2b8b68d7" title="Gibt das X&#45;Element des Vektors zurück. " alt="" coords="795,282,907,309"/>
+<area shape="rect" id="node4" href="$classVector3D.xhtml#aa3ffff17b886274a58417dfe4bb4c4a2" title="Gibt das Y&#45;Element des Vektors zurück. " alt="" coords="795,345,907,372"/>
+<area shape="rect" id="node5" href="$classVector3D.xhtml#ab0dcbf253ff78856eccb5ea74d080fc7" title="Gibt das Z&#45;Element des Vektors zurück. " alt="" coords="795,206,906,233"/>
+<area shape="rect" id="node8" href="$classTriangle.xhtml#a3c72b19f316fa9ffb0a2f206e3558790" title="Gibt die Normale des Dreiecks zurück. " alt="" coords="400,301,536,328"/>
+<area shape="rect" id="node13" href="$classTriangle.xhtml#ae054a0eae5dae026c5af69274c5f277e" title="Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück. " alt="" coords="413,352,523,378"/>
 </map>

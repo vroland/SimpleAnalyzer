@@ -1,3 +1,4 @@
 <map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
-<area shape="rect" id="node1" href="$classMatrix3D.xhtml" title="3x3&#45;Matrixklasse mit Operationen. " alt="" coords="5,5,80,35"/>
+<area shape="rect" id="node2" href="$classGUIRenderCutCanvas.xhtml" title="Zeichenfläche für die 2D&#45;Temperaturverteilung. " alt="" coords="125,5,280,32"/>
+<area shape="rect" id="node3" href="$classGUITimeline.xhtml" title="Eine Zeitleistenkomponente. " alt="" coords="155,56,250,83"/>
 </map>

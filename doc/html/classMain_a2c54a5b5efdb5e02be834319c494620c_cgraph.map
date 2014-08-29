@@ -1,0 +1,10 @@
+<map id="Main::mainLoop" name="Main::mainLoop">
+<area shape="rect" id="node2" href="$classRenderer.xhtml#a7727c7b56e9dd7c665c969e9ce2611e4" title="Renderer::glInit" alt="" coords="193,5,303,32"/>
+<area shape="rect" id="node3" href="$classCLHandler.xhtml#aa43428623da161d648d5e7e127cb6839" title="CLHandler::isValid" alt="" coords="183,56,313,83"/>
+<area shape="rect" id="node4" href="$classParticleSystem.xhtml#af1962b233fb096b8907b112812fc94e0" title="ParticleSystem::isValid" alt="" coords="169,107,327,133"/>
+<area shape="rect" id="node5" href="$classEventHandler.xhtml#aa4fd84f9bcf3b254a9c400aeab5a4b1a" title="EventHandler::poll" alt="" coords="183,157,313,184"/>
+<area shape="rect" id="node6" href="$classRenderer.xhtml#a0580ba6864ba731290380740c0a470e3" title="Renderer::render" alt="" coords="189,208,307,235"/>
+<area shape="rect" id="node7" href="$classParticleSystem.xhtml#a6908575021b0f12f4bf4d7298acf4900" title="ParticleSystem::calc" alt="" coords="377,183,519,209"/>
+<area shape="rect" id="node9" href="$CLGL__test_2utils_8cpp.xhtml#acd0aed8d85538d84a97258e97cd65668" title="checkGLError" alt="" coords="397,233,499,260"/>
+<area shape="rect" id="node8" href="$CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d" title="get_error_string" alt="" coords="568,183,680,209"/>
+</map>

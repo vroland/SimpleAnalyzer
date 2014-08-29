@@ -1,23 +1,9 @@
 var searchData=
 [
-  ['p1label',['p1label',['../classGUICutRenderWindow.xhtml#ac28961397f75c1d67dd1d983cda586f8',1,'GUICutRenderWindow']]],
-  ['p1xedit',['p1xedit',['../classGUICutRenderWindow.xhtml#a509b5ca573c287e3863e952ec629fa7b',1,'GUICutRenderWindow']]],
-  ['p1yedit',['p1yedit',['../classGUICutRenderWindow.xhtml#a93e837c15d8c6e7f420fd457c49024f2',1,'GUICutRenderWindow']]],
-  ['p1zedit',['p1zedit',['../classGUICutRenderWindow.xhtml#a5843efcb13e1d56ea95932d052e5666a',1,'GUICutRenderWindow']]],
-  ['p2label',['p2label',['../classGUICutRenderWindow.xhtml#adc1202b42f220ea7b8a8830f4d9d322a',1,'GUICutRenderWindow']]],
-  ['p2xedit',['p2xedit',['../classGUICutRenderWindow.xhtml#a5d2bcd96c6fdb8d629583c5d40ccdbcc',1,'GUICutRenderWindow']]],
-  ['p2yedit',['p2yedit',['../classGUICutRenderWindow.xhtml#a8ec4550ec7d30a8ad3c4c1e5dfcb8dce',1,'GUICutRenderWindow']]],
-  ['p2zedit',['p2zedit',['../classGUICutRenderWindow.xhtml#affad4d5ff6cf42dd585a1a5f0e050075',1,'GUICutRenderWindow']]],
-  ['p3label',['p3label',['../classGUICutRenderWindow.xhtml#a6d1f742f0a78f84882f543f0cbbd6357',1,'GUICutRenderWindow']]],
-  ['p3xedit',['p3xedit',['../classGUICutRenderWindow.xhtml#a3382e7bd629988774c4f5e81bf66ca7e',1,'GUICutRenderWindow']]],
-  ['p3yedit',['p3yedit',['../classGUICutRenderWindow.xhtml#a5f908b41a4d9db847cd89c0a3c52b61a',1,'GUICutRenderWindow']]],
-  ['p3zedit',['p3zedit',['../classGUICutRenderWindow.xhtml#ac4c2f8825a9596f32093f0ac08a7848d',1,'GUICutRenderWindow']]],
-  ['pointindex',['pointIndex',['../structUtils_1_1SortStruct.xhtml#ad470a3f9a230e66a47fd022bf7a4a70e',1,'Utils::SortStruct']]],
-  ['pointscheckbox',['pointsCheckBox',['../classViewpropBox.xhtml#a706dfcdceaa1afff899f51eb2ebded81',1,'ViewpropBox']]],
-  ['prev_5fmouse_5fdown',['prev_mouse_down',['../classGUIColorScalePanel.xhtml#ac7050aa7729236561154b0b9be894ed6',1,'GUIColorScalePanel']]],
-  ['prev_5fmouse_5fx',['prev_mouse_x',['../classGUIGLCanvas.xhtml#afc22c47a62b8d5b165a22d059816ee22',1,'GUIGLCanvas::prev_mouse_x()'],['../classGUITimeline.xhtml#a16d456832948e97e9364856f92d97f5c',1,'GUITimeline::prev_mouse_x()']]],
-  ['prev_5fmouse_5fy',['prev_mouse_y',['../classGUIGLCanvas.xhtml#a684c82bd591f01b5f600c9589158e0e0',1,'GUIGLCanvas']]],
-  ['prevmarkerbt',['prevMarkerBt',['../classPropertiesBox.xhtml#ab315d0ce0bda89ebe2c003d141df2891',1,'PropertiesBox']]],
-  ['prop_5fscroll_5fwin',['prop_scroll_win',['../classGUIMainWindow.xhtml#a1c120efb232cf3d371a3a6231619b808',1,'GUIMainWindow']]],
-  ['propbox',['propbox',['../classGUIMainWindow.xhtml#a4959774563543927a492bf06e441920e',1,'GUIMainWindow']]]
+  ['name',['name',['../structAnalyzer_1_1AnalyzerData__material.xhtml#a0a6b01fc900ce677ae8403d3a85b829b',1,'Analyzer::AnalyzerData_material::name()'],['../structAnalyzer_1_1AnalyzerData__dataset.xhtml#a53f3c1896123de4dc00f01e593d5f70d',1,'Analyzer::AnalyzerData_dataset::name()'],['../structObjectData_1_1MaterialData.xhtml#a795f1265218b9a125559bbe9231f3c8d',1,'ObjectData::MaterialData::name()'],['../classObjectData.xhtml#a6d900f11952e9d50e6660a3695fad99d',1,'ObjectData::name()'],['../structUtils_1_1SensorData.xhtml#a52474d0fe0dce0d3ee73c007a150a507',1,'Utils::SensorData::name()']]],
+  ['namecol',['namecol',['../structCsvToSdConverter_1_1Options.xhtml#a49f5541b593cb8df87547d16a1738dc5',1,'CsvToSdConverter::Options']]],
+  ['names',['names',['../classGUITimeline.xhtml#adcdd8d58db7851c24ab9dfdfe1377ffb',1,'GUITimeline']]],
+  ['nextmarkerbt',['nextMarkerBt',['../classPropertiesBox.xhtml#ad4a347a273ab780cf1ab941a5cf6d4b0',1,'PropertiesBox']]],
+  ['number_5fof_5finterpolation_5fmodes',['NUMBER_OF_INTERPOLATION_MODES',['../simpleanalyzer-gui_2src_2GUI_2constants_8h.xhtml#a3671997d94de57843bd6162844cd140a',1,'constants.h']]],
+  ['numberofpaths',['NUMBEROFPATHS',['../classCsvToSdConverter.xhtml#ad2278682506407d3172e8fca834891fe',1,'CsvToSdConverter::NUMBEROFPATHS()'],['../classOdisiToSdConverter.xhtml#a6f59f3670356c1588b736af33d59532a',1,'OdisiToSdConverter::NUMBEROFPATHS()'],['../classDefaultValues.xhtml#a22795666a3d9f21c2767babec8a49a7a',1,'DefaultValues::NUMBEROFPATHS()'],['../classGUIMainWindow.xhtml#ae3eb6747c8ffa9e20e54c2d34f58bd40',1,'GUIMainWindow::NUMBEROFPATHS()']]]
 ];

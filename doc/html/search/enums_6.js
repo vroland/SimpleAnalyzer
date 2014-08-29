@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scalemode',['ScaleMode',['../classGUIColorScalePanel.xhtml#a56a63e898188b90b82295ff7c3ebc265',1,'GUIColorScalePanel']]]
+  ['rendermode',['RenderMode',['../classRenderer.xhtml#aa9844470f59e9fdf3aed088936100863',1,'Renderer']]]
 ];

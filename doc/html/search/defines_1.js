@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['min_5fheight',['MIN_HEIGHT',['../GUIColorScalePanel_8cpp.xhtml#a1610a21b358c3531db64b3208fa70e5b',1,'GUIColorScalePanel.cpp']]],
-  ['min_5fwidth',['MIN_WIDTH',['../GUIColorScalePanel_8cpp.xhtml#ad3ee0cc681d736cb6d41c4ebb04c0ae4',1,'GUIColorScalePanel.cpp']]]
+  ['epsilon',['EPSILON',['../GeometryClasses_8cpp.xhtml#a002b2f4894492820fe708b1b7e7c5e70',1,'EPSILON():&#160;GeometryClasses.cpp'],['../simpleanalyzer-gui_2src_2processing_2utils_8cpp.xhtml#a002b2f4894492820fe708b1b7e7c5e70',1,'EPSILON():&#160;utils.cpp']]]
 ];

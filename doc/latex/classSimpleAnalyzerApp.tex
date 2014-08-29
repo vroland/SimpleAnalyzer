@@ -12,8 +12,7 @@ Regelt den allgemeinen Ablauf des Programms.
 
 
 
-Klassendiagramm für Simple\-Analyzer\-App\-:
-\nopagebreak
+Klassendiagramm für Simple\-Analyzer\-App\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -45,6 +44,8 @@ void \hyperlink{classSimpleAnalyzerApp_a613955c888ef6b8f014504986951e2b9}{set\-C
 \begin{DoxyCompactList}\small\item\em Gibt einen Verweis auf das aktuell aktive Objekt zurück. \end{DoxyCompactList}\item 
 void \hyperlink{classSimpleAnalyzerApp_acedd76089853323687a3ac9cfeed1540}{add\-Object} (\hyperlink{classObjectData}{Object\-Data} $\ast$obj)
 \begin{DoxyCompactList}\small\item\em Fügt ein Objekt zur Objektliste hinzu. \end{DoxyCompactList}\item 
+\hyperlink{classDefaultValues}{Default\-Values} $\ast$ \hyperlink{classSimpleAnalyzerApp_a32262dd2c3ff89fd9b3c23097b7e1a07}{get\-Defaults} ()
+\begin{DoxyCompactList}\small\item\em Gibt einen Verweis auf die geladenen Standardwerte zurück. \end{DoxyCompactList}\item 
 void \hyperlink{classSimpleAnalyzerApp_ac78a3ea0f527414f0617d32ab54043f7}{remove\-Current\-Object} ()
 \begin{DoxyCompactList}\small\item\em Löscht das aktuelle Objekt aus der Objektliste. \end{DoxyCompactList}\item 
 virtual \hyperlink{classSimpleAnalyzerApp_ae0330ceb4781668e020614f5b659766b}{$\sim$\-Simple\-Analyzer\-App} ()
@@ -62,7 +63,9 @@ virtual bool \hyperlink{classSimpleAnalyzerApp_ac98b58650811c7e744eac6cd11d7c157
 int \hyperlink{classSimpleAnalyzerApp_a79ee2f69d43e2a32ba3c33c2560966e2}{current\-\_\-data\-\_\-object\-\_\-index} = -\/1
 \begin{DoxyCompactList}\small\item\em Index des aktuellen Objekts. \end{DoxyCompactList}\item 
 \hyperlink{structUtils_1_1Visualization__info}{Utils\-::\-Visualization\-\_\-info} \hyperlink{classSimpleAnalyzerApp_a6cfd36a56cc92ee6cd25512744c6adda}{visualization\-\_\-info}
-\begin{DoxyCompactList}\small\item\em Die allgemein verwendeten Visualisierungsoptionen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Die allgemein verwendeten Visualisierungsoptionen. \end{DoxyCompactList}\item 
+\hyperlink{classDefaultValues}{Default\-Values} $\ast$ \hyperlink{classSimpleAnalyzerApp_a390466834bd2a526740c6afd946f88ad}{defaults}
+\begin{DoxyCompactList}\small\item\em Standardwertobjekt. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -70,7 +73,7 @@ Regelt den allgemeinen Ablauf des Programms.
 
 Eine eigene Anwendungsklasse wird von wx\-Widgets gefordert. Das zugrunde liegende System organisiert über diese Klasse den Programmablauf (Main\-Loop) und Events. 
 
-Definiert in Zeile 23 der Datei Simple\-Analyzer\-App.\-h.
+Definiert in Zeile 24 der Datei Simple\-Analyzer\-App.\-h.
 
 
 
@@ -88,7 +91,7 @@ Der Destruktor.
 
 
 
-Definiert in Zeile 88 der Datei Simple\-Analyzer\-App.\-cpp.
+Definiert in Zeile 94 der Datei Simple\-Analyzer\-App.\-cpp.
 
 
 
@@ -167,6 +170,24 @@ Pointer zur Liste der geladenen Objekte.
 
 Definiert in Zeile 41 der Datei Simple\-Analyzer\-App.\-cpp.
 
+\hypertarget{classSimpleAnalyzerApp_a32262dd2c3ff89fd9b3c23097b7e1a07}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!get\-Defaults@{get\-Defaults}}
+\index{get\-Defaults@{get\-Defaults}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{get\-Defaults}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Default\-Values} $\ast$ Simple\-Analyzer\-App\-::get\-Defaults (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSimpleAnalyzerApp_a32262dd2c3ff89fd9b3c23097b7e1a07}
+
+
+Gibt einen Verweis auf die geladenen Standardwerte zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Pointer auf das Defaults\-Values-\/\-Objekt 
+\end{DoxyReturn}
+
+
+Definiert in Zeile 57 der Datei Simple\-Analyzer\-App.\-cpp.
+
 \hypertarget{classSimpleAnalyzerApp_aa0149bf3fcedd1ff880817a16e1e1574}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!get\-Visualization\-Info@{get\-Visualization\-Info}}
 \index{get\-Visualization\-Info@{get\-Visualization\-Info}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
 \subsubsection[{get\-Visualization\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Utils\-::\-Visualization\-\_\-info} $\ast$ Simple\-Analyzer\-App\-::get\-Visualization\-Info (
@@ -198,7 +219,7 @@ Wird beim Start der Anwendung ausgeführt und öffnet das Hauptfenster.
 
 
 
-Definiert in Zeile 72 der Datei Simple\-Analyzer\-App.\-cpp.
+Definiert in Zeile 76 der Datei Simple\-Analyzer\-App.\-cpp.
 
 \hypertarget{classSimpleAnalyzerApp_ac78a3ea0f527414f0617d32ab54043f7}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!remove\-Current\-Object@{remove\-Current\-Object}}
 \index{remove\-Current\-Object@{remove\-Current\-Object}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
@@ -213,7 +234,7 @@ Löscht das aktuelle Objekt aus der Objektliste.
 
 
 
-Definiert in Zeile 57 der Datei Simple\-Analyzer\-App.\-cpp.
+Definiert in Zeile 61 der Datei Simple\-Analyzer\-App.\-cpp.
 
 \hypertarget{classSimpleAnalyzerApp_a613955c888ef6b8f014504986951e2b9}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!set\-Current\-Data\-Object\-Index@{set\-Current\-Data\-Object\-Index}}
 \index{set\-Current\-Data\-Object\-Index@{set\-Current\-Data\-Object\-Index}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
@@ -247,7 +268,7 @@ Index des aktuellen Objekts.
 
 
 
-Definiert in Zeile 79 der Datei Simple\-Analyzer\-App.\-h.
+Definiert in Zeile 86 der Datei Simple\-Analyzer\-App.\-h.
 
 \hypertarget{classSimpleAnalyzerApp_a99bb49d6e0ec4d6f03ad08c29cf63288}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!data\-\_\-objects@{data\-\_\-objects}}
 \index{data\-\_\-objects@{data\-\_\-objects}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
@@ -258,7 +279,18 @@ Liste aller geladenen Objekte.
 
 
 
-Definiert in Zeile 74 der Datei Simple\-Analyzer\-App.\-h.
+Definiert in Zeile 81 der Datei Simple\-Analyzer\-App.\-h.
+
+\hypertarget{classSimpleAnalyzerApp_a390466834bd2a526740c6afd946f88ad}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!defaults@{defaults}}
+\index{defaults@{defaults}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
+\subsubsection[{defaults}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Default\-Values}$\ast$ Simple\-Analyzer\-App\-::defaults\hspace{0.3cm}{\ttfamily [private]}}}\label{classSimpleAnalyzerApp_a390466834bd2a526740c6afd946f88ad}
+
+
+Standardwertobjekt. 
+
+
+
+Definiert in Zeile 96 der Datei Simple\-Analyzer\-App.\-h.
 
 \hypertarget{classSimpleAnalyzerApp_a6cfd36a56cc92ee6cd25512744c6adda}{\index{Simple\-Analyzer\-App@{Simple\-Analyzer\-App}!visualization\-\_\-info@{visualization\-\_\-info}}
 \index{visualization\-\_\-info@{visualization\-\_\-info}!SimpleAnalyzerApp@{Simple\-Analyzer\-App}}
@@ -269,7 +301,7 @@ Die allgemein verwendeten Visualisierungsoptionen.
 
 
 
-Definiert in Zeile 84 der Datei Simple\-Analyzer\-App.\-h.
+Definiert in Zeile 91 der Datei Simple\-Analyzer\-App.\-h.
 
 
 

@@ -1,11 +1,11 @@
 <map id="ObjectData::loadFromFile" name="ObjectData::loadFromFile">
-<area shape="rect" id="node3" href="$classImporter.xhtml#aaa567a75272f300157648ffaa9b101c2" title="Lädt Objektdaten aus einer .obj&#45;Datei. " alt="" coords="245,85,379,115"/>
-<area shape="rect" id="node11" href="$classImporter.xhtml#ae837d750c92450f8e83b2d93eb099f79" title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. " alt="" coords="225,219,399,248"/>
-<area shape="rect" id="node20" href="$classImporter.xhtml#ad8dec9ce375155ca130453632530eb52" title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. " alt="" coords="227,165,397,195"/>
-<area shape="rect" id="node5" href="$Importer_8cpp.xhtml#a0903d5717f5c64c86b68bf17c4783e91" title="Extrahiert den Index einer Fläche aus einem Textblock einer Zeile der .obj&#45;Datei. ..." alt="" coords="500,5,601,35"/>
-<area shape="rect" id="node7" href="$Importer_8cpp.xhtml#a0dd0686c00e64af27b47b4c16399d747" title="Gibt den n&#45;ten durch Leerzeichen abgetrennten Block aus einem String zurück. " alt="" coords="501,112,600,141"/>
-<area shape="rect" id="node9" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="468,59,633,88"/>
-<area shape="rect" id="node13" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. " alt="" coords="449,165,652,195"/>
-<area shape="rect" id="node16" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. " alt="" coords="452,218,649,265"/>
-<area shape="rect" id="node18" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="Setzt den Index des aktuell verwendeten Sensordatensatzes. " alt="" coords="452,287,649,334"/>
+<area shape="rect" id="node2" href="$classImporter.xhtml#aaa567a75272f300157648ffaa9b101c2" title="Lädt Objektdaten aus einer .obj&#45;Datei. " alt="" coords="245,81,379,108"/>
+<area shape="rect" id="node6" href="$classImporter.xhtml#ae837d750c92450f8e83b2d93eb099f79" title="Lädt von einfache Sensordaten (ohne Zeit) und Verknüpft diese mit dem Objekt. " alt="" coords="225,208,399,235"/>
+<area shape="rect" id="node10" href="$classImporter.xhtml#ad8dec9ce375155ca130453632530eb52" title="Lädt zeitgesteuerte Sensordaten und Verknüpft diese mit dem Objekt. " alt="" coords="227,157,397,184"/>
+<area shape="rect" id="node3" href="$Importer_8cpp.xhtml#a0903d5717f5c64c86b68bf17c4783e91" title="Extrahiert den Index einer Fläche aus einem Textblock einer Zeile der .obj&#45;Datei. ..." alt="" coords="500,5,601,32"/>
+<area shape="rect" id="node4" href="$namespaceUtils.xhtml#ab5711927eff2cdd7123d98d343f0dfad" title="Gibt den n&#45;ten durch Leerzeichen oder Tabulator abgetrennten Block aus einem String zurück..." alt="" coords="483,107,618,133"/>
+<area shape="rect" id="node5" href="$classObjectData.xhtml#afda67d7524b83780e431dd3a9c5ac23a" title="Gibt eine Referenz auf die Liste der Materialien (mit Materialdaten) des Objekts zurück. " alt="" coords="467,56,634,83"/>
+<area shape="rect" id="node7" href="$classObjectData.xhtml#a72ac93213382f67b4d5b40c011eb1656" title="Gibt eine Referenz auf die Sensordaten des Objekts zurück. " alt="" coords="449,157,653,184"/>
+<area shape="rect" id="node8" href="$classObjectData.xhtml#a503d63160a3afe2ea517449f78f8ac42" title="Gibt den Index des aktuell verwendeten Sensordatensatzes zurück. " alt="" coords="451,209,650,250"/>
+<area shape="rect" id="node9" href="$classObjectData.xhtml#a65bc706c460a62f98e6c24959df04c76" title="Setzt den Index des aktuell verwendeten Sensordatensatzes. " alt="" coords="451,274,650,315"/>
 </map>

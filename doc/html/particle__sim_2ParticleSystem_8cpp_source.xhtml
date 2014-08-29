@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Simple Analyzer: /daten/Projekte/eclipse_workspace/particle_sim/ParticleSystem.cpp Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="doc_icon.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simple Analyzer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.xhtml"><span>Hauptseite</span></a></li>
+      <li><a href="pages.xhtml"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="namespaces.xhtml"><span>Namensbereiche</span></a></li>
+      <li><a href="annotated.xhtml"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.xhtml"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.xhtml"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.xhtml"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b709d135b479b28985e7be366880aaa9.xhtml">particle_sim</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ParticleSystem.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="particle__sim_2ParticleSystem_8cpp.xhtml">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * ParticleSystem.cpp</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 01.07.2014</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: valentin</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="particle__sim_2ParticleSystem_8h.xhtml">ParticleSystem.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="particle__sim_2utils_8h.xhtml">utils.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="particle__sim_2ParticleSystem_8cpp.xhtml#aedbdbe13dd4d3d4bc18a6754d5c47459">   15</a></span>&#160;cl_float <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#aedbdbe13dd4d3d4bc18a6754d5c47459">grav_obj_init</a>[][4] = {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {0,0,0, 10},</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {3,3,1, 20},</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {-3, 2, .4, 15},</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {-1, -2, -3, 13},</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="particle__sim_2ParticleSystem_8cpp.xhtml#a8cab84cc5fe4972692fbdae513a78f6f">   22</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#a8cab84cc5fe4972692fbdae513a78f6f">sqr</a>(<span class="keywordtype">float</span> <a class="code" href="CLGL__test_2ParticleSystem_8h.xhtml#a4877d316febdb87e52d19e4382a938fc">x</a>) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> x*<a class="code" href="CLGL__test_2ParticleSystem_8h.xhtml#a4877d316febdb87e52d19e4382a938fc">x</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="particle__sim_2ParticleSystem_8cpp.xhtml#a95a9d42c55f364a99f5a5db7a3ebca43">   25</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#a95a9d42c55f364a99f5a5db7a3ebca43">checkCompileStatus</a>(GLuint shaderObject) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    GLint compiled;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    glGetShaderiv(shaderObject, GL_COMPILE_STATUS, &amp;compiled);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (!compiled) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        GLint blen = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        GLsizei slen = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        glGetShaderiv(shaderObject, GL_INFO_LOG_LENGTH, &amp;blen);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        GLchar* compiler_log = (GLchar*) malloc(blen);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        glGetShaderInfoLog(shaderObject, blen, &amp;slen, compiler_log);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;compiler_log:\n&quot;</span> &lt;&lt; compiler_log &lt;&lt; endl;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        free(compiler_log);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="classParticleSystem.xhtml#aff6f56273d7a4332b015b20abbe68ecb">ParticleSystem::ParticleSystem</a>(<a class="code" href="classCLHandler.xhtml">CLHandler</a>* clHandle, <span class="keywordtype">size_t</span> sphere_layers, <span class="keywordtype">float</span> radius, <span class="keywordtype">float</span> point_dist) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    glFinish();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    valid = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    cl_int status = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> o = 0; o &lt; <span class="keyword">sizeof</span>(<a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#aedbdbe13dd4d3d4bc18a6754d5c47459">grav_obj_init</a>) / (4 * <span class="keyword">sizeof</span>(cl_float)); o++) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        GravObj obj;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        obj.x = <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#aedbdbe13dd4d3d4bc18a6754d5c47459">grav_obj_init</a>[o][0];</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        obj.y = <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#aedbdbe13dd4d3d4bc18a6754d5c47459">grav_obj_init</a>[o][1];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        obj.z = <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#aedbdbe13dd4d3d4bc18a6754d5c47459">grav_obj_init</a>[o][2];</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        obj.mass = <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#aedbdbe13dd4d3d4bc18a6754d5c47459">grav_obj_init</a>[o][3];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        grav_obs.resize(grav_obs.size()+1,obj);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">size_t</span> p_count = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> layer = 0; layer &lt; sphere_layers; layer++) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">float</span> layer_radius = sqrt(1. - <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#a8cab84cc5fe4972692fbdae513a78f6f">sqr</a>(2 * (.5 - (<span class="keywordtype">float</span>) layer / sphere_layers))) * radius;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        p_count += layer_radius * 2 * M_PI / point_dist;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    particleCount = p_count;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;particle count: &quot;</span> &lt;&lt; p_count &lt;&lt; endl;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    ticks = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    tick_time = 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    birthTime = SDL_GetTicks();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    device = clHandle-&gt;<a class="code" href="classCLHandler.xhtml#ac09363db47da2dc8bce9c5f6352e02c1">devices</a>.at(0);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    glGenBuffers(1, &amp;vbo);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, vbo);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    glEnableClientState(GL_VERTEX_ARRAY);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    glBufferData(GL_ARRAY_BUFFER, particleCount*<span class="keyword">sizeof</span>(Particle), NULL, GL_STATIC_DRAW);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="CLGL__test_2utils_8cpp.xhtml#acd0aed8d85538d84a97258e97cd65668">checkGLError</a>(__LINE__);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    Particle* vbo_pointer = (Particle*) glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//input = new cl_float[particleCount * PARTICLE_ATTRIBUTE_COUNT];</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> layer=0;layer&lt;sphere_layers;layer++) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">float</span> layer_radius = sqrt(1. - <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#a8cab84cc5fe4972692fbdae513a78f6f">sqr</a>(2 * (.5 - (<span class="keywordtype">float</span>) layer / sphere_layers))) * radius;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">int</span> point_count = layer_radius * 2 * M_PI / point_dist;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> point = 0; point &lt; point_count; point++) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="comment">//position</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            vbo_pointer-&gt;x = -5+sin((<span class="keywordtype">float</span>)point/point_count*2*M_PI)*layer_radius +rand() % 100 / 10000. * radius;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            vbo_pointer-&gt;y = -5+(float)layer/sphere_layers * 2 *radius          +rand() % 100 / 10000. * radius;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            vbo_pointer-&gt;z = cos((<span class="keywordtype">float</span>)point/point_count*2*M_PI)*layer_radius +rand() % 100 / 10000. * radius;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            vbo_pointer-&gt;w = 0;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="comment">//velocity</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            vbo_pointer-&gt;v1 = 0; <span class="comment">//(rand()%1000/1000.-.5)*.1;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            vbo_pointer-&gt;v2 = 0; <span class="comment">//(rand()%1000/1000.-.5)*.1;</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            vbo_pointer-&gt;v3 = 0; <span class="comment">//(rand()%1000/1000.-.5)*.1;</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            vbo_pointer-&gt;v4 = 0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="comment">//attributes</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            vbo_pointer-&gt;m = .01;   <span class="comment">//mass rand() % 1000 / 10000. +</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            vbo_pointer-&gt;r = 1.;    <span class="comment">//r</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            vbo_pointer-&gt;g = .1;    <span class="comment">//g</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            vbo_pointer-&gt;b = 0; <span class="comment">//b</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="comment">//cout &lt;&lt; ((float*) vbo_pointer)[0]&lt;&lt; &quot; &quot;&lt;&lt;((float*) vbo_pointer)[1]&lt;&lt;&quot; &quot;&lt;&lt;((float*) vbo_pointer)[2] &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            vbo_pointer++;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    glUnmapBuffer(GL_ARRAY_BUFFER);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, 0);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    vertexShaderObject = glCreateShader(GL_VERTEX_SHADER);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    fragmentShaderObject = glCreateShader(GL_FRAGMENT_SHADER);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">string</span> VertexShaderSource = <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a641b1885ea55a98d94a8063c5413a92c">convertToString</a>(<span class="stringliteral">&quot;vertex_shader.glsl&quot;</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">string</span> FragmentShaderSource = <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a641b1885ea55a98d94a8063c5413a92c">convertToString</a>(<span class="stringliteral">&quot;fragment_shader.glsl&quot;</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *vertShaderSrc = VertexShaderSource.c_str();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *fragShaderSrc = FragmentShaderSource.c_str();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    glShaderSource(vertexShaderObject, 1, &amp;vertShaderSrc, NULL);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    glShaderSource(fragmentShaderObject, 1, &amp;fragShaderSrc, NULL);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    glCompileShader(vertexShaderObject);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    glCompileShader(fragmentShaderObject);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#a95a9d42c55f364a99f5a5db7a3ebca43">checkCompileStatus</a>(vertexShaderObject);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="CLGL__test_2ParticleSystem_8cpp.xhtml#a95a9d42c55f364a99f5a5db7a3ebca43">checkCompileStatus</a>(fragmentShaderObject);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    particleProgram = glCreateProgram();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    glAttachShader(particleProgram, vertexShaderObject);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    glAttachShader(particleProgram, fragmentShaderObject);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, vbo);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">//glEnableVertexAttribArray(0);</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">//glEnableVertexAttribArray(1);</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    glEnableVertexAttribArray(1);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    glEnableVertexAttribArray(2);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    glEnableVertexAttribArray(3);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="CLGL__test_2utils_8cpp.xhtml#acd0aed8d85538d84a97258e97cd65668">checkGLError</a>(__LINE__);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, <span class="keyword">sizeof</span>(<a class="code" href="structParticleSystem_1_1Particle.xhtml">ParticleSystem::Particle</a>), (<span class="keywordtype">void</span>*)(<span class="keyword">sizeof</span>(GL_FLOAT)*4)); <span class="comment">//velocity</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    glVertexAttribPointer(2, 1, GL_FLOAT, GL_FALSE, <span class="keyword">sizeof</span>(<a class="code" href="structParticleSystem_1_1Particle.xhtml">ParticleSystem::Particle</a>), (<span class="keywordtype">void</span>*)(<span class="keyword">sizeof</span>(GL_FLOAT)*8)); <span class="comment">//mass</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, <span class="keyword">sizeof</span>(<a class="code" href="structParticleSystem_1_1Particle.xhtml">ParticleSystem::Particle</a>), (<span class="keywordtype">void</span>*)(<span class="keyword">sizeof</span>(GL_FLOAT)*9)); <span class="comment">//color</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="CLGL__test_2utils_8cpp.xhtml#acd0aed8d85538d84a97258e97cd65668">checkGLError</a>(__LINE__);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    glBindAttribLocation(particleProgram, 1, <span class="stringliteral">&quot;particleVelocity&quot;</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    glBindAttribLocation(particleProgram, 2, <span class="stringliteral">&quot;particleMass&quot;</span>);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    glBindAttribLocation(particleProgram, 3, <span class="stringliteral">&quot;particleColor&quot;</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="CLGL__test_2utils_8cpp.xhtml#acd0aed8d85538d84a97258e97cd65668">checkGLError</a>(__LINE__);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    glLinkProgram(particleProgram);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    GLint linked;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    glGetProgramiv(particleProgram, GL_LINK_STATUS, &amp;linked);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span> (!linked) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="CLGL__test_2utils_8cpp.xhtml#acd0aed8d85538d84a97258e97cd65668">checkGLError</a>(__LINE__);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;shader link error!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <a class="code" href="CLGL__test_2utils_8cpp.xhtml#acd0aed8d85538d84a97258e97cd65668">checkGLError</a>(__LINE__);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    glBindBuffer(GL_ARRAY_BUFFER, 0);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    data_buffer = cl::BufferGL(clHandle-&gt;<a class="code" href="classCLHandler.xhtml#af9c48260d7411e0657d6d991d99b32e0">context</a>, CL_MEM_READ_WRITE, vbo, &amp;status);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">if</span>(status != CL_SUCCESS)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        cout &lt;&lt; <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d">get_error_string</a>(status) &lt;&lt; endl;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Error: clCreateBuffer (data_buffer)\n&quot;</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    grav_obj_buffer = cl::Buffer(grav_obs.begin(),grav_obs.end(),<span class="keyword">true</span>,CL_MEM_USE_HOST_PTR, &amp;status);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">if</span> (status != CL_SUCCESS) {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        cout &lt;&lt; <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d">get_error_string</a>(status) &lt;&lt; endl;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Error: clCreateBuffer (grav_obj_buffer)\n&quot;</span>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="comment">// STEP 6. Building Kernel</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">//      6.1 Load CL file, using basic file i/o</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="comment">//      6.2 Build CL program object</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">//      6.3 Create CL kernel object</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> * filename  = <span class="stringliteral">&quot;ParticleKernel.cl&quot;</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    std::string  sourceStr = <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a641b1885ea55a98d94a8063c5413a92c">convertToString</a>(filename);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    program = cl::Program(clHandle-&gt;<a class="code" href="classCLHandler.xhtml#af9c48260d7411e0657d6d991d99b32e0">context</a>, sourceStr);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    status = program.build(clHandle-&gt;<a class="code" href="classCLHandler.xhtml#ac09363db47da2dc8bce9c5f6352e02c1">devices</a>,NULL,NULL,NULL);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span> (status != CL_SUCCESS) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Build Status: &quot;</span> &lt;&lt; program.getBuildInfo&lt;CL_PROGRAM_BUILD_STATUS&gt;(cl::Device::getDefault()) &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Build Options:\t&quot;</span> &lt;&lt; program.getBuildInfo&lt;CL_PROGRAM_BUILD_OPTIONS&gt;(cl::Device::getDefault()) &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Build Log:\t &quot;</span> &lt;&lt; program.getBuildInfo&lt;CL_PROGRAM_BUILD_LOG&gt;(cl::Device::getDefault()) &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    kernel = cl::Kernel(program, <span class="stringliteral">&quot;templateKernel&quot;</span>, &amp;status);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">// get a kernel object handle for a kernel with the given name</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">if</span>(status != CL_SUCCESS)</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        std::cout &lt;&lt; <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d">get_error_string</a>(status) &lt;&lt;<span class="stringliteral">&quot;Error: Creating Kernel from program. (clCreateKernel)\n&quot;</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">// the output array to the kernel</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    status = kernel.setArg(0,data_buffer);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    status = kernel.setArg(1,tick_time);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    status = kernel.setArg(2,0);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    status = kernel.setArg(3,particleCount);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    status = kernel.setArg(4,grav_obj_buffer);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    status = kernel.setArg(5,grav_obs.size());</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    commandQueue = cl::CommandQueue(clHandle-&gt;<a class="code" href="classCLHandler.xhtml#af9c48260d7411e0657d6d991d99b32e0">context</a>, device, 0, &amp;status);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">if</span> (status != CL_SUCCESS) {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;command queue\n&quot;</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    lastTime = SDL_GetTicks();</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classParticleSystem.xhtml#af1962b233fb096b8907b112812fc94e0">ParticleSystem::isValid</a>() {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">return</span> valid;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keywordtype">void</span> <a class="code" href="classParticleSystem.xhtml#a6908575021b0f12f4bf4d7298acf4900">ParticleSystem::calc</a>() {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    cl_int status;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    ticks++;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    glFinish();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    cl::Event event;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="classstd_1_1vector.xhtml">vector&lt;cl::Memory&gt;</a> buffers = <a class="code" href="classstd_1_1vector.xhtml">vector&lt;cl::Memory&gt;</a>(1);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    buffers.at(0) = (cl::Memory) data_buffer;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    status = commandQueue.enqueueAcquireGLObjects(&amp;buffers,NULL,NULL);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">if</span> (status != CL_SUCCESS) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        std::cout &lt;&lt; <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d">get_error_string</a>(status) &lt;&lt; endl;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        std::cout</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;Error: Enqueueing acquisition of GL objects. \</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="stringliteral">               (clEnqueueReleaseGLObjects)\n&quot;</span>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    status = commandQueue.finish();</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span> (status != CL_SUCCESS) {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        std::cout &lt;&lt; <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d">get_error_string</a>(status) &lt;&lt; endl;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        std::cout</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;Error: Enqueueing acquisition of GL objects. \</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="stringliteral">                   (clEnqueueReleaseGLObjects)\n&quot;</span>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">if</span> (!(ticks%20)) {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        tick_time = (SDL_GetTicks()-lastTime)/20000.f;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        lastTime = SDL_GetTicks();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        status = kernel.setArg(1,tick_time);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">if</span>(status != CL_SUCCESS)</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Error: Setting kernel argument. (multiplier)\n&quot;</span>;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">size_t</span> age = SDL_GetTicks()-birthTime;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    status = kernel.setArg(2,age);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">// STEP 9 Enqueue a kernel run call.</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">//          Wait till the event completes and release the event</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment"></span>    status = commandQueue.enqueueNDRangeKernel(kernel, cl::NullRange, cl::NDRange(particleCount), cl::NullRange, NULL, &amp;event);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">if</span>(status != CL_SUCCESS)</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        std::cout &lt;&lt; <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d">get_error_string</a>(status) &lt;&lt; endl;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        std::cout &lt;&lt;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="stringliteral">&quot;Error: Enqueueing kernel onto command queue. \</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="stringliteral">            (clEnqueueNDRangeKernel)\n&quot;</span>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    }</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">// wait for the kernel call to finish execution</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    status = <span class="keyword">event</span>.wait();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">if</span> (status != CL_SUCCESS) {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        std::cout &lt;&lt; <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d">get_error_string</a>(status) &lt;&lt; endl;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Error: finishing kernel\n&quot;</span>;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    status = commandQueue.enqueueReleaseGLObjects(&amp;buffers, NULL, NULL);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordflow">if</span> (status != CL_SUCCESS) {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        std::cout &lt;&lt; <a class="code" href="CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d">get_error_string</a>(status) &lt;&lt; endl;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        std::cout</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;Error: Enqueueing release of GL objects. \</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="stringliteral">           (clEnqueueReleaseGLObjects)\n&quot;</span>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    commandQueue.finish();</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;}</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<a class="code" href="classParticleSystem.xhtml#a6bc725349a763b9d6817950cde16a93f">ParticleSystem::~ParticleSystem</a>() {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    glDetachShader(particleProgram,vertexShaderObject);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    glDetachShader(particleProgram,fragmentShaderObject);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    glDeleteProgram(particleProgram);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    glDeleteShader (vertexShaderObject);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    glDeleteShader (fragmentShaderObject);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    glFinish();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    glDeleteBuffers(1, &amp;vbo);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="ttc" id="CLGL__test_2utils_8cpp_xhtml_acd0aed8d85538d84a97258e97cd65668"><div class="ttname"><a href="CLGL__test_2utils_8cpp.xhtml#acd0aed8d85538d84a97258e97cd65668">checkGLError</a></div><div class="ttdeci">void checkGLError(int line)</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2utils_8cpp_source.xhtml#l00031">utils.cpp:31</a></div></div>
+<div class="ttc" id="particle__sim_2utils_8h_xhtml"><div class="ttname"><a href="particle__sim_2utils_8h.xhtml">utils.h</a></div></div>
+<div class="ttc" id="CLGL__test_2ParticleSystem_8cpp_xhtml_a95a9d42c55f364a99f5a5db7a3ebca43"><div class="ttname"><a href="CLGL__test_2ParticleSystem_8cpp.xhtml#a95a9d42c55f364a99f5a5db7a3ebca43">checkCompileStatus</a></div><div class="ttdeci">int checkCompileStatus(GLuint shaderObject)</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2ParticleSystem_8cpp_source.xhtml#l00025">ParticleSystem.cpp:25</a></div></div>
+<div class="ttc" id="classstd_1_1vector_xhtml"><div class="ttname"><a href="classstd_1_1vector.xhtml">std::vector</a></div><div class="ttdef"><b>Definition:</b> <a href="doxygen__dep__dummy_8h_source.xhtml#l00003">doxygen_dep_dummy.h:3</a></div></div>
+<div class="ttc" id="CLGL__test_2ParticleSystem_8h_xhtml_a4877d316febdb87e52d19e4382a938fc"><div class="ttname"><a href="CLGL__test_2ParticleSystem_8h.xhtml#a4877d316febdb87e52d19e4382a938fc">x</a></div><div class="ttdeci">cl_float x</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2ParticleSystem_8h_source.xhtml#l00033">ParticleSystem.h:33</a></div></div>
+<div class="ttc" id="classParticleSystem_xhtml_aff6f56273d7a4332b015b20abbe68ecb"><div class="ttname"><a href="classParticleSystem.xhtml#aff6f56273d7a4332b015b20abbe68ecb">ParticleSystem::ParticleSystem</a></div><div class="ttdeci">ParticleSystem(CLHandler *clHandle, size_t sphere_layers, float radius, float point_dist)</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2ParticleSystem_8cpp_source.xhtml#l00043">ParticleSystem.cpp:43</a></div></div>
+<div class="ttc" id="classCLHandler_xhtml"><div class="ttname"><a href="classCLHandler.xhtml">CLHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2CLHandler_8h_source.xhtml#l00016">CLHandler.h:16</a></div></div>
+<div class="ttc" id="classParticleSystem_xhtml_af1962b233fb096b8907b112812fc94e0"><div class="ttname"><a href="classParticleSystem.xhtml#af1962b233fb096b8907b112812fc94e0">ParticleSystem::isValid</a></div><div class="ttdeci">bool isValid()</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2ParticleSystem_8cpp_source.xhtml#l00242">ParticleSystem.cpp:242</a></div></div>
+<div class="ttc" id="CLGL__test_2ParticleSystem_8cpp_xhtml_aedbdbe13dd4d3d4bc18a6754d5c47459"><div class="ttname"><a href="CLGL__test_2ParticleSystem_8cpp.xhtml#aedbdbe13dd4d3d4bc18a6754d5c47459">grav_obj_init</a></div><div class="ttdeci">cl_float grav_obj_init[][4]</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2ParticleSystem_8cpp_source.xhtml#l00015">ParticleSystem.cpp:15</a></div></div>
+<div class="ttc" id="CLGL__test_2utils_8cpp_xhtml_a0ad38b3024e8b403c440e818c8e7ee5d"><div class="ttname"><a href="CLGL__test_2utils_8cpp.xhtml#a0ad38b3024e8b403c440e818c8e7ee5d">get_error_string</a></div><div class="ttdeci">const char * get_error_string(int err)</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2utils_8cpp_source.xhtml#l00095">utils.cpp:95</a></div></div>
+<div class="ttc" id="CLGL__test_2utils_8cpp_xhtml_a641b1885ea55a98d94a8063c5413a92c"><div class="ttname"><a href="CLGL__test_2utils_8cpp.xhtml#a641b1885ea55a98d94a8063c5413a92c">convertToString</a></div><div class="ttdeci">std::string convertToString(const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2utils_8cpp_source.xhtml#l00060">utils.cpp:60</a></div></div>
+<div class="ttc" id="classCLHandler_xhtml_af9c48260d7411e0657d6d991d99b32e0"><div class="ttname"><a href="classCLHandler.xhtml#af9c48260d7411e0657d6d991d99b32e0">CLHandler::context</a></div><div class="ttdeci">cl::Context context</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2CLHandler_8h_source.xhtml#l00022">CLHandler.h:22</a></div></div>
+<div class="ttc" id="classParticleSystem_xhtml_a6908575021b0f12f4bf4d7298acf4900"><div class="ttname"><a href="classParticleSystem.xhtml#a6908575021b0f12f4bf4d7298acf4900">ParticleSystem::calc</a></div><div class="ttdeci">void calc()</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2ParticleSystem_8cpp_source.xhtml#l00245">ParticleSystem.cpp:245</a></div></div>
+<div class="ttc" id="classParticleSystem_xhtml_a6bc725349a763b9d6817950cde16a93f"><div class="ttname"><a href="classParticleSystem.xhtml#a6bc725349a763b9d6817950cde16a93f">ParticleSystem::~ParticleSystem</a></div><div class="ttdeci">virtual ~ParticleSystem()</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2ParticleSystem_8cpp_source.xhtml#l00328">ParticleSystem.cpp:328</a></div></div>
+<div class="ttc" id="particle__sim_2ParticleSystem_8h_xhtml"><div class="ttname"><a href="particle__sim_2ParticleSystem_8h.xhtml">ParticleSystem.h</a></div></div>
+<div class="ttc" id="classCLHandler_xhtml_ac09363db47da2dc8bce9c5f6352e02c1"><div class="ttname"><a href="classCLHandler.xhtml#ac09363db47da2dc8bce9c5f6352e02c1">CLHandler::devices</a></div><div class="ttdeci">std::vector&lt; cl::Device &gt; devices</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2CLHandler_8h_source.xhtml#l00023">CLHandler.h:23</a></div></div>
+<div class="ttc" id="structParticleSystem_1_1Particle_xhtml"><div class="ttname"><a href="structParticleSystem_1_1Particle.xhtml">ParticleSystem::Particle</a></div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2ParticleSystem_8h_source.xhtml#l00034">ParticleSystem.h:34</a></div></div>
+<div class="ttc" id="CLGL__test_2ParticleSystem_8cpp_xhtml_a8cab84cc5fe4972692fbdae513a78f6f"><div class="ttname"><a href="CLGL__test_2ParticleSystem_8cpp.xhtml#a8cab84cc5fe4972692fbdae513a78f6f">sqr</a></div><div class="ttdeci">float sqr(float x)</div><div class="ttdef"><b>Definition:</b> <a href="CLGL__test_2ParticleSystem_8cpp_source.xhtml#l00022">ParticleSystem.cpp:22</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Fre Aug 29 2014 16:36:14 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

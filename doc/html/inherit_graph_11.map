@@ -1,3 +1,5 @@
 <map id="Grafische Darstellung der Klassenhierarchie" name="Grafische Darstellung der Klassenhierarchie">
-<area shape="rect" id="node3" href="$classGUIGLCanvas.xhtml" title="Zeichenfläche für das 3D&#45;Fenster. " alt="" coords="156,5,263,35"/>
+<area shape="rect" id="node2" href="$classGUIAnalyzeOutputWindow.xhtml" title="Übersichtsfenster über die Analysedaten. " alt="" coords="131,5,309,32"/>
+<area shape="rect" id="node3" href="$classGUICutRenderWindow.xhtml" title="Fenster zum erstellen zweidimensionaler Temperaturverteilungen. " alt="" coords="142,56,298,83"/>
+<area shape="rect" id="node4" href="$classGUIMainWindow.xhtml" title="Hauptfenster mit Hauptmenü und Zugriff auf die einzelnen Programmfunktionen. " alt="" coords="159,107,281,133"/>
 </map>

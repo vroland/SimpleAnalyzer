@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['scm_5fhorizontal',['SCM_HORIZONTAL',['../classGUIColorScalePanel.xhtml#a56a63e898188b90b82295ff7c3ebc265a2a91733dc30cc826d816f7f558f3781e',1,'GUIColorScalePanel']]],
-  ['scm_5fnone',['SCM_NONE',['../classGUIColorScalePanel.xhtml#a56a63e898188b90b82295ff7c3ebc265a341cbf92114357f8101219493b2e8b37',1,'GUIColorScalePanel']]],
-  ['scm_5fvertical',['SCM_VERTICAL',['../classGUIColorScalePanel.xhtml#a56a63e898188b90b82295ff7c3ebc265aa3e90f467c8f641f72ee863bc29a4032',1,'GUIColorScalePanel']]]
+  ['rm_5fmaterialcolor',['RM_MATERIALCOLOR',['../classRenderer.xhtml#aa9844470f59e9fdf3aed088936100863a5b763e13120b7189e59806712789556b',1,'Renderer']]],
+  ['rm_5fnone',['RM_NONE',['../classRenderer.xhtml#aa9844470f59e9fdf3aed088936100863a117f4ca0fdddef6e71774540e331efe9',1,'Renderer']]],
+  ['rm_5fvaluecolor',['RM_VALUECOLOR',['../classRenderer.xhtml#aa9844470f59e9fdf3aed088936100863aff17440f3de9508b77d4762742c00c07',1,'Renderer']]]
 ];

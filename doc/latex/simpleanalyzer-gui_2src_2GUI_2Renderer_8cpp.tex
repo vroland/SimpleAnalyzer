@@ -1,0 +1,185 @@
+\hypertarget{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp}{\section{/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.cpp-\/\-Dateireferenz}
+\label{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp}\index{/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp@{/daten/\-Projekte/eclipse\-\_\-workspace/simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Renderer.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include \char`\"{}../\-Simple\-Analyzer\-App.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$G\-L/gl.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/glext.\-h$>$}\\*
+Include-\/\-Abhängigkeitsdiagramm für Renderer.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Funktionen}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a17ef754a4f478e115d6e7fb813702639}{point\-Behind\-Cut} (\hyperlink{classVector3D}{Vector3\-D} $\ast$point, \hyperlink{classTriangle}{Triangle} $\ast$cut)
+\item 
+void \hyperlink{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33}{draw\-Vector} (\hyperlink{classVector3D}{Vector3\-D} $\ast$pos, \hyperlink{classVector3D}{Vector3\-D} $\ast$dir)
+\begin{DoxyCompactList}\small\item\em Zeichnet einen Vektor als Pfeil. \end{DoxyCompactList}\item 
+void \hyperlink{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_ac35d259852428046b123c635864e2197}{render\-Grid} ()
+\begin{DoxyCompactList}\small\item\em Zeichnet markante Linien zum leichteren Erfassen des Koordinatensystems. \end{DoxyCompactList}\item 
+void \hyperlink{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a608a02845726b8844beac12e5154c500}{draw\-Cut\-Render\-Info} (\hyperlink{structUtils_1_1CutRender__info}{Cut\-Render\-\_\-info} $\ast$info)
+\begin{DoxyCompactList}\small\item\em Visualisiert Informationen über eine 2\-D-\/\-Temperaturverteilung. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentation der Funktionen}
+\hypertarget{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a608a02845726b8844beac12e5154c500}{\index{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp@{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp}!draw\-Cut\-Render\-Info@{draw\-Cut\-Render\-Info}}
+\index{draw\-Cut\-Render\-Info@{draw\-Cut\-Render\-Info}!simpleanalyzer-gui/src/GUI/Renderer.cpp@{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp}}
+\subsubsection[{draw\-Cut\-Render\-Info}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Cut\-Render\-Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Cut\-Render\-\_\-info} $\ast$}]{info}
+\end{DoxyParamCaption}
+)}}\label{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a608a02845726b8844beac12e5154c500}
+
+
+Visualisiert Informationen über eine 2\-D-\/\-Temperaturverteilung. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em info} & Die zu visualisierenden Informationen. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 581 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a608a02845726b8844beac12e5154c500_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a608a02845726b8844beac12e5154c500_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33}{\index{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp@{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp}!draw\-Vector@{draw\-Vector}}
+\index{draw\-Vector@{draw\-Vector}!simpleanalyzer-gui/src/GUI/Renderer.cpp@{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp}}
+\subsubsection[{draw\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3\-D} $\ast$}]{pos, }
+\item[{{\bf Vector3\-D} $\ast$}]{dir}
+\end{DoxyParamCaption}
+)}}\label{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33}
+
+
+Zeichnet einen Vektor als Pfeil. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em pos} & Startpunkt des Pfeils. \\
+\hline
+{\em dir} & Richtung und Länge des Pfeils. \\
+\hline
+\end{DoxyParams}
+
+
+Definiert in Zeile 388 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a4225af4db7b633515f133a4f40c72b33_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a17ef754a4f478e115d6e7fb813702639}{\index{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp@{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp}!point\-Behind\-Cut@{point\-Behind\-Cut}}
+\index{point\-Behind\-Cut@{point\-Behind\-Cut}!simpleanalyzer-gui/src/GUI/Renderer.cpp@{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp}}
+\subsubsection[{point\-Behind\-Cut}]{\setlength{\rightskip}{0pt plus 5cm}bool point\-Behind\-Cut (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3\-D} $\ast$}]{point, }
+\item[{{\bf Triangle} $\ast$}]{cut}
+\end{DoxyParamCaption}
+)}}\label{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a17ef754a4f478e115d6e7fb813702639}
+
+
+Definiert in Zeile 47 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a17ef754a4f478e115d6e7fb813702639_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_a17ef754a4f478e115d6e7fb813702639_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_ac35d259852428046b123c635864e2197}{\index{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp@{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp}!render\-Grid@{render\-Grid}}
+\index{render\-Grid@{render\-Grid}!simpleanalyzer-gui/src/GUI/Renderer.cpp@{simpleanalyzer-\/gui/src/\-G\-U\-I/\-Renderer.\-cpp}}
+\subsubsection[{render\-Grid}]{\setlength{\rightskip}{0pt plus 5cm}void render\-Grid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_ac35d259852428046b123c635864e2197}
+
+
+Zeichnet markante Linien zum leichteren Erfassen des Koordinatensystems. 
+
+
+
+Definiert in Zeile 470 der Datei Renderer.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simpleanalyzer-gui_2src_2GUI_2Renderer_8cpp_ac35d259852428046b123c635864e2197_cgraph}
+\end{center}
+\end{figure}
+
+

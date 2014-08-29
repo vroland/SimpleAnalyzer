@@ -101,13 +101,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="dynheader">
 Klassendiagramm für SimpleAnalyzerApp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classSimpleAnalyzerApp__inherit__graph.svg" width="144" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classSimpleAnalyzerApp__inherit__graph.svg" width="144" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a href="graph_legend.xhtml">Legende</a>]</span></center></div>
 <div class="dynheader">
 Zusammengehörigkeiten von SimpleAnalyzerApp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classSimpleAnalyzerApp__coll__graph.svg" width="508" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classSimpleAnalyzerApp__coll__graph.svg" width="591" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.xhtml">Legende</a>]</span></center></div>
 <table class="memberdecls">
@@ -131,6 +130,9 @@ Zusammengehörigkeiten von SimpleAnalyzerApp:</div>
 <tr class="memitem:acedd76089853323687a3ac9cfeed1540"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleAnalyzerApp.xhtml#acedd76089853323687a3ac9cfeed1540">addObject</a> (<a class="el" href="classObjectData.xhtml">ObjectData</a> *obj)</td></tr>
 <tr class="memdesc:acedd76089853323687a3ac9cfeed1540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fügt ein Objekt zur Objektliste hinzu.  <a href="#acedd76089853323687a3ac9cfeed1540">Mehr ...</a><br/></td></tr>
 <tr class="separator:acedd76089853323687a3ac9cfeed1540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32262dd2c3ff89fd9b3c23097b7e1a07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDefaultValues.xhtml">DefaultValues</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleAnalyzerApp.xhtml#a32262dd2c3ff89fd9b3c23097b7e1a07">getDefaults</a> ()</td></tr>
+<tr class="memdesc:a32262dd2c3ff89fd9b3c23097b7e1a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt einen Verweis auf die geladenen Standardwerte zurück.  <a href="#a32262dd2c3ff89fd9b3c23097b7e1a07">Mehr ...</a><br/></td></tr>
+<tr class="separator:a32262dd2c3ff89fd9b3c23097b7e1a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac78a3ea0f527414f0617d32ab54043f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleAnalyzerApp.xhtml#ac78a3ea0f527414f0617d32ab54043f7">removeCurrentObject</a> ()</td></tr>
 <tr class="memdesc:ac78a3ea0f527414f0617d32ab54043f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Löscht das aktuelle Objekt aus der Objektliste.  <a href="#ac78a3ea0f527414f0617d32ab54043f7">Mehr ...</a><br/></td></tr>
 <tr class="separator:ac78a3ea0f527414f0617d32ab54043f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,12 +157,15 @@ Private Attribute</h2></td></tr>
 <tr class="memitem:a6cfd36a56cc92ee6cd25512744c6adda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structUtils_1_1Visualization__info.xhtml">Utils::Visualization_info</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleAnalyzerApp.xhtml#a6cfd36a56cc92ee6cd25512744c6adda">visualization_info</a></td></tr>
 <tr class="memdesc:a6cfd36a56cc92ee6cd25512744c6adda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Die allgemein verwendeten Visualisierungsoptionen.  <a href="#a6cfd36a56cc92ee6cd25512744c6adda">Mehr ...</a><br/></td></tr>
 <tr class="separator:a6cfd36a56cc92ee6cd25512744c6adda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390466834bd2a526740c6afd946f88ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDefaultValues.xhtml">DefaultValues</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleAnalyzerApp.xhtml#a390466834bd2a526740c6afd946f88ad">defaults</a></td></tr>
+<tr class="memdesc:a390466834bd2a526740c6afd946f88ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standardwertobjekt.  <a href="#a390466834bd2a526740c6afd946f88ad">Mehr ...</a><br/></td></tr>
+<tr class="separator:a390466834bd2a526740c6afd946f88ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock"><p>Regelt den allgemeinen Ablauf des Programms. </p>
 <p>Eine eigene Anwendungsklasse wird von wxWidgets gefordert. Das zugrunde liegende System organisiert über diese Klasse den Programmablauf (MainLoop) und Events. </p>
 
-<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml#l00023">23</a> der Datei <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml">SimpleAnalyzerApp.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml#l00024">24</a> der Datei <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml">SimpleAnalyzerApp.h</a>.</p>
 </div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
 <a class="anchor" id="ae0330ceb4781668e020614f5b659766b"></a>
 <div class="memitem">
@@ -185,7 +190,7 @@ Private Attribute</h2></td></tr>
 
 <p>Der Destruktor. </p>
 
-<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml#l00088">88</a> der Datei <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml">SimpleAnalyzerApp.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml#l00094">94</a> der Datei <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml">SimpleAnalyzerApp.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,6 +281,26 @@ Private Attribute</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a32262dd2c3ff89fd9b3c23097b7e1a07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDefaultValues.xhtml">DefaultValues</a> * SimpleAnalyzerApp::getDefaults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gibt einen Verweis auf die geladenen Standardwerte zurück. </p>
+<dl class="section return"><dt>Rückgabe</dt><dd>Pointer auf das DefaultsValues-Objekt </dd></dl>
+
+<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml#l00057">57</a> der Datei <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml">SimpleAnalyzerApp.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa0149bf3fcedd1ff880817a16e1e1574"></a>
 <div class="memitem">
 <div class="memproto">
@@ -319,7 +344,7 @@ Private Attribute</h2></td></tr>
 
 <p>Wird beim Start der Anwendung ausgeführt und öffnet das Hauptfenster. </p>
 
-<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml#l00072">72</a> der Datei <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml">SimpleAnalyzerApp.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml#l00076">76</a> der Datei <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml">SimpleAnalyzerApp.cpp</a>.</p>
 
 </div>
 </div>
@@ -338,7 +363,7 @@ Private Attribute</h2></td></tr>
 
 <p>Löscht das aktuelle Objekt aus der Objektliste. </p>
 
-<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml#l00057">57</a> der Datei <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml">SimpleAnalyzerApp.cpp</a>.</p>
+<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml#l00061">61</a> der Datei <a class="el" href="SimpleAnalyzerApp_8cpp_source.xhtml">SimpleAnalyzerApp.cpp</a>.</p>
 
 </div>
 </div>
@@ -389,7 +414,7 @@ Private Attribute</h2></td></tr>
 
 <p>Index des aktuellen Objekts. </p>
 
-<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml#l00079">79</a> der Datei <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml">SimpleAnalyzerApp.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml#l00086">86</a> der Datei <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml">SimpleAnalyzerApp.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +438,31 @@ Private Attribute</h2></td></tr>
 
 <p>Liste aller geladenen Objekte. </p>
 
-<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml#l00074">74</a> der Datei <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml">SimpleAnalyzerApp.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml#l00081">81</a> der Datei <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml">SimpleAnalyzerApp.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a390466834bd2a526740c6afd946f88ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDefaultValues.xhtml">DefaultValues</a>* SimpleAnalyzerApp::defaults</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Standardwertobjekt. </p>
+
+<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml#l00096">96</a> der Datei <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml">SimpleAnalyzerApp.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +486,7 @@ Private Attribute</h2></td></tr>
 
 <p>Die allgemein verwendeten Visualisierungsoptionen. </p>
 
-<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml#l00084">84</a> der Datei <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml">SimpleAnalyzerApp.h</a>.</p>
+<p>Definiert in Zeile <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml#l00091">91</a> der Datei <a class="el" href="SimpleAnalyzerApp_8h_source.xhtml">SimpleAnalyzerApp.h</a>.</p>
 
 </div>
 </div>
@@ -448,7 +497,7 @@ Private Attribute</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Fre Mai 30 2014 10:51:09 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Fre Aug 29 2014 16:36:24 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,10 +1,12 @@
 <map id="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/PropertiesBox.cpp" name="/daten/Projekte/eclipse_workspace/simpleanalyzer&#45;gui/src/GUI/PropertiesBox.cpp">
-<area shape="rect" id="node3" href="$PropertiesBox_8h.xhtml" title="PropertiesBox.h" alt="" coords="772,117,887,147"/>
-<area shape="rect" id="node14" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="459,272,637,301"/>
-<area shape="rect" id="node27" href="$utils_8h.xhtml" title="utils.h" alt="" coords="323,349,379,379"/>
-<area shape="rect" id="node41" href="$constants_8h.xhtml" title="constants.h" alt="" coords="920,117,1011,147"/>
-<area shape="rect" id="node45" href="$SimpleAnalyzerApp_8h.xhtml" title="../SimpleAnalyzerApp.h" alt="" coords="595,195,752,224"/>
-<area shape="rect" id="node7" href="$GUITimeline_8h.xhtml" title="GUITimeline.h" alt="" coords="776,195,883,224"/>
-<area shape="rect" id="node19" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="523,427,664,474"/>
-<area shape="rect" id="node21" href="$GeometryClasses_8h.xhtml" title="GeometryClasses.h" alt="" coords="336,523,475,552"/>
+<area shape="rect" id="node2" href="$PropertiesBox_8h.xhtml" title="PropertiesBox.h" alt="" coords="1051,184,1165,211"/>
+<area shape="rect" id="node7" href="$ObjectData_8h.xhtml" title="../processing/ObjectData.h" alt="" coords="429,333,608,360"/>
+<area shape="rect" id="node13" href="$simpleanalyzer-gui_2src_2processing_2utils_8h.xhtml" title="utils.h" alt="" coords="287,408,344,435"/>
+<area shape="rect" id="node17" href="$simpleanalyzer-gui_2src_2GUI_2constants_8h.xhtml" title="constants.h" alt="" coords="1087,109,1177,136"/>
+<area shape="rect" id="node18" href="$SimpleAnalyzerApp_8h.xhtml" title="../SimpleAnalyzerApp.h" alt="" coords="594,109,752,136"/>
+<area shape="rect" id="node4" href="$GUITimeline_8h.xhtml" title="GUITimeline.h" alt="" coords="936,259,1043,285"/>
+<area shape="rect" id="node9" href="$Interpolator_8h.xhtml" title="../libraries/interpolate\l/Interpolator.h" alt="" coords="419,483,561,525"/>
+<area shape="rect" id="node10" href="$GeometryClasses_8h.xhtml" title="GeometryClasses.h" alt="" coords="367,573,505,600"/>
+<area shape="rect" id="node19" href="$DefaultValues_8h.xhtml" title="DefaultValues.h" alt="" coords="635,184,749,211"/>
+<area shape="rect" id="node20" href="$simpleanalyzer-gui_2src_2GUI_2Renderer_8h.xhtml" title="GUI/Renderer.h" alt="" coords="635,259,749,285"/>
 </map>

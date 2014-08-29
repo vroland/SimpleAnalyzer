@@ -1,0 +1,386 @@
+\hypertarget{classParticleSystem}{\section{Particle\-System Klassenreferenz}
+\label{classParticleSystem}\index{Particle\-System@{Particle\-System}}
+}
+
+
+{\ttfamily \#include $<$Particle\-System.\-h$>$}
+
+
+
+Zusammengehörigkeiten von Particle\-System\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classParticleSystem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Klassen}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structParticleSystem_1_1GravObj}{Grav\-Obj}
+\item 
+struct \hyperlink{structParticleSystem_1_1Particle}{Particle}
+\end{DoxyCompactItemize}
+\subsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParticleSystem_aff6f56273d7a4332b015b20abbe68ecb}{Particle\-System} (\hyperlink{classCLHandler}{C\-L\-Handler} $\ast$cl\-Handle, size\-\_\-t sphere\-\_\-layers, float radius, float point\-\_\-dist)
+\item 
+void \hyperlink{classParticleSystem_a6908575021b0f12f4bf4d7298acf4900}{calc} ()
+\item 
+bool \hyperlink{classParticleSystem_af1962b233fb096b8907b112812fc94e0}{is\-Valid} ()
+\item 
+struct \hyperlink{structParticleSystem_1_1Particle}{Particle\-System\-::\-Particle} \hyperlink{classParticleSystem_aa147f50c142991990d579e19de89510c}{\-\_\-\-\_\-attribute\-\_\-\-\_\-} ((packed))
+\item 
+struct \hyperlink{structParticleSystem_1_1GravObj}{Particle\-System\-::\-Grav\-Obj} \hyperlink{classParticleSystem_a48018f3c6fb2eb6f94b2b69552af1120}{\-\_\-\-\_\-attribute\-\_\-\-\_\-} ((packed))
+\item 
+virtual \hyperlink{classParticleSystem_a6bc725349a763b9d6817950cde16a93f}{$\sim$\-Particle\-System} ()
+\item 
+\hyperlink{classParticleSystem_aff6f56273d7a4332b015b20abbe68ecb}{Particle\-System} (\hyperlink{classCLHandler}{C\-L\-Handler} $\ast$cl\-Handle, size\-\_\-t sphere\-\_\-layers, float radius, float point\-\_\-dist)
+\item 
+void \hyperlink{classParticleSystem_a6908575021b0f12f4bf4d7298acf4900}{calc} ()
+\item 
+bool \hyperlink{classParticleSystem_af1962b233fb096b8907b112812fc94e0}{is\-Valid} ()
+\item 
+struct \hyperlink{structParticleSystem_1_1Particle}{Particle\-System\-::\-Particle} \hyperlink{classParticleSystem_aa147f50c142991990d579e19de89510c}{\-\_\-\-\_\-attribute\-\_\-\-\_\-} ((packed))
+\item 
+struct \hyperlink{structParticleSystem_1_1GravObj}{Particle\-System\-::\-Grav\-Obj} \hyperlink{classParticleSystem_a48018f3c6fb2eb6f94b2b69552af1120}{\-\_\-\-\_\-attribute\-\_\-\-\_\-} ((packed))
+\item 
+virtual \hyperlink{classParticleSystem_a3745e42099638f5abf9b924a81ad0d23}{$\sim$\-Particle\-System} ()
+\end{DoxyCompactItemize}
+\subsection*{Öffentliche Attribute}
+\begin{DoxyCompactItemize}
+\item 
+G\-Luint \hyperlink{classParticleSystem_a817935d44dad68d336c6806bb764fa8a}{particle\-Program}
+\item 
+size\-\_\-t \hyperlink{classParticleSystem_a23f9a394b3c1eeb10f67a78daa2d47b6}{particle\-Count}
+\item 
+G\-Luint \hyperlink{classParticleSystem_afde2a8d8d82c9c569de9424610bd3da6}{vbo}
+\item 
+\hyperlink{classstd_1_1vector}{std\-::vector}$<$ \hyperlink{structParticleSystem_1_1GravObj}{Grav\-Obj} $>$ \hyperlink{classParticleSystem_ac4cc696d0bf251930d64b668be9c3d37}{grav\-\_\-obs}
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classParticleSystem_a6541039a541fddd38220c8bde2b4f4ac}{valid}
+\item 
+G\-Luint \hyperlink{classParticleSystem_ac269ed2dcffba188047f99bab97a70cf}{vertex\-Shader\-Object}
+\item 
+G\-Luint \hyperlink{classParticleSystem_a251373b8c7051e8a67562d16114329fa}{fragment\-Shader\-Object}
+\item 
+cl\-::\-Command\-Queue \hyperlink{classParticleSystem_a6662c30fc239f2598b0d35f4be1ebb9e}{command\-Queue}
+\item 
+cl\-::\-Buffer\-G\-L \hyperlink{classParticleSystem_a30d6a0f710c6f8412415491214b3fb38}{data\-\_\-buffer}
+\item 
+cl\-::\-Device \hyperlink{classParticleSystem_a4772219c2578dfc5cfbe01cacec8a4c4}{device}
+\item 
+cl\-::\-Program \hyperlink{classParticleSystem_ab2149ec3d27d4e7db0f94d70bcfe092b}{program}
+\item 
+cl\-::\-Kernel \hyperlink{classParticleSystem_a706e75308abfa8ee7ffd7661de81791b}{kernel}
+\item 
+cl\-::\-Buffer \hyperlink{classParticleSystem_a311fcb97909db73f9096b663df952dce}{grav\-\_\-obj\-\_\-buffer}
+\item 
+size\-\_\-t \hyperlink{classParticleSystem_a7742c69f3c78fb025a3a8f0cb56aa272}{last\-Time}
+\item 
+size\-\_\-t \hyperlink{classParticleSystem_ad01d21eff34d51267b5ec1b67abcd450}{birth\-Time}
+\item 
+size\-\_\-t \hyperlink{classParticleSystem_a32d3efc1966cace76ec11e581716777b}{ticks}
+\item 
+float \hyperlink{classParticleSystem_a74f4d4516a33478923b79766c54cbb13}{tick\-\_\-time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Ausführliche Beschreibung}
+
+
+Definiert in Zeile 22 der Datei Particle\-System.\-h.
+
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{classParticleSystem_aff6f56273d7a4332b015b20abbe68ecb}{\index{Particle\-System@{Particle\-System}!Particle\-System@{Particle\-System}}
+\index{Particle\-System@{Particle\-System}!ParticleSystem@{Particle\-System}}
+\subsubsection[{Particle\-System}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-System\-::\-Particle\-System (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-L\-Handler} $\ast$}]{cl\-Handle, }
+\item[{size\-\_\-t}]{sphere\-\_\-layers, }
+\item[{float}]{radius, }
+\item[{float}]{point\-\_\-dist}
+\end{DoxyParamCaption}
+)}}\label{classParticleSystem_aff6f56273d7a4332b015b20abbe68ecb}
+
+
+Definiert in Zeile 43 der Datei Particle\-System.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classParticleSystem_aff6f56273d7a4332b015b20abbe68ecb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classParticleSystem_a6bc725349a763b9d6817950cde16a93f}{\index{Particle\-System@{Particle\-System}!$\sim$\-Particle\-System@{$\sim$\-Particle\-System}}
+\index{$\sim$\-Particle\-System@{$\sim$\-Particle\-System}!ParticleSystem@{Particle\-System}}
+\subsubsection[{$\sim$\-Particle\-System}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-System\-::$\sim$\-Particle\-System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classParticleSystem_a6bc725349a763b9d6817950cde16a93f}
+
+
+Definiert in Zeile 328 der Datei Particle\-System.\-cpp.
+
+\hypertarget{classParticleSystem_aff6f56273d7a4332b015b20abbe68ecb}{\index{Particle\-System@{Particle\-System}!Particle\-System@{Particle\-System}}
+\index{Particle\-System@{Particle\-System}!ParticleSystem@{Particle\-System}}
+\subsubsection[{Particle\-System}]{\setlength{\rightskip}{0pt plus 5cm}Particle\-System\-::\-Particle\-System (
+\begin{DoxyParamCaption}
+\item[{{\bf C\-L\-Handler} $\ast$}]{cl\-Handle, }
+\item[{size\-\_\-t}]{sphere\-\_\-layers, }
+\item[{float}]{radius, }
+\item[{float}]{point\-\_\-dist}
+\end{DoxyParamCaption}
+)}}\label{classParticleSystem_aff6f56273d7a4332b015b20abbe68ecb}
+\hypertarget{classParticleSystem_a3745e42099638f5abf9b924a81ad0d23}{\index{Particle\-System@{Particle\-System}!$\sim$\-Particle\-System@{$\sim$\-Particle\-System}}
+\index{$\sim$\-Particle\-System@{$\sim$\-Particle\-System}!ParticleSystem@{Particle\-System}}
+\subsubsection[{$\sim$\-Particle\-System}]{\setlength{\rightskip}{0pt plus 5cm}virtual Particle\-System\-::$\sim$\-Particle\-System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classParticleSystem_a3745e42099638f5abf9b924a81ad0d23}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{classParticleSystem_aa147f50c142991990d579e19de89510c}{\index{Particle\-System@{Particle\-System}!\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}!ParticleSystem@{Particle\-System}}
+\subsubsection[{\-\_\-\-\_\-attribute\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Particle\-System\-::\-Particle} Particle\-System\-::\-\_\-\-\_\-attribute\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{(packed)}]{}
+\end{DoxyParamCaption}
+)}}\label{classParticleSystem_aa147f50c142991990d579e19de89510c}
+\hypertarget{classParticleSystem_a48018f3c6fb2eb6f94b2b69552af1120}{\index{Particle\-System@{Particle\-System}!\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}!ParticleSystem@{Particle\-System}}
+\subsubsection[{\-\_\-\-\_\-attribute\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Particle\-System\-::\-Grav\-Obj} Particle\-System\-::\-\_\-\-\_\-attribute\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{(packed)}]{}
+\end{DoxyParamCaption}
+)}}\label{classParticleSystem_a48018f3c6fb2eb6f94b2b69552af1120}
+\hypertarget{classParticleSystem_a48018f3c6fb2eb6f94b2b69552af1120}{\index{Particle\-System@{Particle\-System}!\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}!ParticleSystem@{Particle\-System}}
+\subsubsection[{\-\_\-\-\_\-attribute\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Particle\-System\-::\-Grav\-Obj} Particle\-System\-::\-\_\-\-\_\-attribute\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{(packed)}]{}
+\end{DoxyParamCaption}
+)}}\label{classParticleSystem_a48018f3c6fb2eb6f94b2b69552af1120}
+\hypertarget{classParticleSystem_aa147f50c142991990d579e19de89510c}{\index{Particle\-System@{Particle\-System}!\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-attribute\-\_\-\-\_\-@{\-\_\-\-\_\-attribute\-\_\-\-\_\-}!ParticleSystem@{Particle\-System}}
+\subsubsection[{\-\_\-\-\_\-attribute\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Particle\-System\-::\-Particle} Particle\-System\-::\-\_\-\-\_\-attribute\-\_\-\-\_\- (
+\begin{DoxyParamCaption}
+\item[{(packed)}]{}
+\end{DoxyParamCaption}
+)}}\label{classParticleSystem_aa147f50c142991990d579e19de89510c}
+\hypertarget{classParticleSystem_a6908575021b0f12f4bf4d7298acf4900}{\index{Particle\-System@{Particle\-System}!calc@{calc}}
+\index{calc@{calc}!ParticleSystem@{Particle\-System}}
+\subsubsection[{calc}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-System\-::calc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticleSystem_a6908575021b0f12f4bf4d7298acf4900}
+\hypertarget{classParticleSystem_a6908575021b0f12f4bf4d7298acf4900}{\index{Particle\-System@{Particle\-System}!calc@{calc}}
+\index{calc@{calc}!ParticleSystem@{Particle\-System}}
+\subsubsection[{calc}]{\setlength{\rightskip}{0pt plus 5cm}void Particle\-System\-::calc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticleSystem_a6908575021b0f12f4bf4d7298acf4900}
+
+
+Definiert in Zeile 245 der Datei Particle\-System.\-cpp.
+
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classParticleSystem_a6908575021b0f12f4bf4d7298acf4900_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classParticleSystem_a6908575021b0f12f4bf4d7298acf4900_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classParticleSystem_af1962b233fb096b8907b112812fc94e0}{\index{Particle\-System@{Particle\-System}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!ParticleSystem@{Particle\-System}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Particle\-System\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticleSystem_af1962b233fb096b8907b112812fc94e0}
+\hypertarget{classParticleSystem_af1962b233fb096b8907b112812fc94e0}{\index{Particle\-System@{Particle\-System}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!ParticleSystem@{Particle\-System}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Particle\-System\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParticleSystem_af1962b233fb096b8907b112812fc94e0}
+
+
+Definiert in Zeile 242 der Datei Particle\-System.\-cpp.
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classParticleSystem_af1962b233fb096b8907b112812fc94e0_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{classParticleSystem_ad01d21eff34d51267b5ec1b67abcd450}{\index{Particle\-System@{Particle\-System}!birth\-Time@{birth\-Time}}
+\index{birth\-Time@{birth\-Time}!ParticleSystem@{Particle\-System}}
+\subsubsection[{birth\-Time}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t Particle\-System\-::birth\-Time\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_ad01d21eff34d51267b5ec1b67abcd450}
+
+
+Definiert in Zeile 72 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a6662c30fc239f2598b0d35f4be1ebb9e}{\index{Particle\-System@{Particle\-System}!command\-Queue@{command\-Queue}}
+\index{command\-Queue@{command\-Queue}!ParticleSystem@{Particle\-System}}
+\subsubsection[{command\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}cl\-::\-Command\-Queue Particle\-System\-::command\-Queue\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_a6662c30fc239f2598b0d35f4be1ebb9e}
+
+
+Definiert in Zeile 64 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a30d6a0f710c6f8412415491214b3fb38}{\index{Particle\-System@{Particle\-System}!data\-\_\-buffer@{data\-\_\-buffer}}
+\index{data\-\_\-buffer@{data\-\_\-buffer}!ParticleSystem@{Particle\-System}}
+\subsubsection[{data\-\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}cl\-::\-Buffer\-G\-L Particle\-System\-::data\-\_\-buffer\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_a30d6a0f710c6f8412415491214b3fb38}
+
+
+Definiert in Zeile 65 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a4772219c2578dfc5cfbe01cacec8a4c4}{\index{Particle\-System@{Particle\-System}!device@{device}}
+\index{device@{device}!ParticleSystem@{Particle\-System}}
+\subsubsection[{device}]{\setlength{\rightskip}{0pt plus 5cm}cl\-::\-Device Particle\-System\-::device\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_a4772219c2578dfc5cfbe01cacec8a4c4}
+
+
+Definiert in Zeile 66 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a251373b8c7051e8a67562d16114329fa}{\index{Particle\-System@{Particle\-System}!fragment\-Shader\-Object@{fragment\-Shader\-Object}}
+\index{fragment\-Shader\-Object@{fragment\-Shader\-Object}!ParticleSystem@{Particle\-System}}
+\subsubsection[{fragment\-Shader\-Object}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Particle\-System\-::fragment\-Shader\-Object\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_a251373b8c7051e8a67562d16114329fa}
+
+
+Definiert in Zeile 63 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a311fcb97909db73f9096b663df952dce}{\index{Particle\-System@{Particle\-System}!grav\-\_\-obj\-\_\-buffer@{grav\-\_\-obj\-\_\-buffer}}
+\index{grav\-\_\-obj\-\_\-buffer@{grav\-\_\-obj\-\_\-buffer}!ParticleSystem@{Particle\-System}}
+\subsubsection[{grav\-\_\-obj\-\_\-buffer}]{\setlength{\rightskip}{0pt plus 5cm}cl\-::\-Buffer Particle\-System\-::grav\-\_\-obj\-\_\-buffer\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_a311fcb97909db73f9096b663df952dce}
+
+
+Definiert in Zeile 69 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_ac4cc696d0bf251930d64b668be9c3d37}{\index{Particle\-System@{Particle\-System}!grav\-\_\-obs@{grav\-\_\-obs}}
+\index{grav\-\_\-obs@{grav\-\_\-obs}!ParticleSystem@{Particle\-System}}
+\subsubsection[{grav\-\_\-obs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf std\-::vector}$<$ {\bf Grav\-Obj} $>$ Particle\-System\-::grav\-\_\-obs}}\label{classParticleSystem_ac4cc696d0bf251930d64b668be9c3d37}
+
+
+Definiert in Zeile 56 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a706e75308abfa8ee7ffd7661de81791b}{\index{Particle\-System@{Particle\-System}!kernel@{kernel}}
+\index{kernel@{kernel}!ParticleSystem@{Particle\-System}}
+\subsubsection[{kernel}]{\setlength{\rightskip}{0pt plus 5cm}cl\-::\-Kernel Particle\-System\-::kernel\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_a706e75308abfa8ee7ffd7661de81791b}
+
+
+Definiert in Zeile 68 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a7742c69f3c78fb025a3a8f0cb56aa272}{\index{Particle\-System@{Particle\-System}!last\-Time@{last\-Time}}
+\index{last\-Time@{last\-Time}!ParticleSystem@{Particle\-System}}
+\subsubsection[{last\-Time}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t Particle\-System\-::last\-Time\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_a7742c69f3c78fb025a3a8f0cb56aa272}
+
+
+Definiert in Zeile 71 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a23f9a394b3c1eeb10f67a78daa2d47b6}{\index{Particle\-System@{Particle\-System}!particle\-Count@{particle\-Count}}
+\index{particle\-Count@{particle\-Count}!ParticleSystem@{Particle\-System}}
+\subsubsection[{particle\-Count}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t Particle\-System\-::particle\-Count}}\label{classParticleSystem_a23f9a394b3c1eeb10f67a78daa2d47b6}
+
+
+Definiert in Zeile 29 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a817935d44dad68d336c6806bb764fa8a}{\index{Particle\-System@{Particle\-System}!particle\-Program@{particle\-Program}}
+\index{particle\-Program@{particle\-Program}!ParticleSystem@{Particle\-System}}
+\subsubsection[{particle\-Program}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Particle\-System\-::particle\-Program}}\label{classParticleSystem_a817935d44dad68d336c6806bb764fa8a}
+
+
+Definiert in Zeile 28 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_ab2149ec3d27d4e7db0f94d70bcfe092b}{\index{Particle\-System@{Particle\-System}!program@{program}}
+\index{program@{program}!ParticleSystem@{Particle\-System}}
+\subsubsection[{program}]{\setlength{\rightskip}{0pt plus 5cm}cl\-::\-Program Particle\-System\-::program\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_ab2149ec3d27d4e7db0f94d70bcfe092b}
+
+
+Definiert in Zeile 67 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a74f4d4516a33478923b79766c54cbb13}{\index{Particle\-System@{Particle\-System}!tick\-\_\-time@{tick\-\_\-time}}
+\index{tick\-\_\-time@{tick\-\_\-time}!ParticleSystem@{Particle\-System}}
+\subsubsection[{tick\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}float Particle\-System\-::tick\-\_\-time\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_a74f4d4516a33478923b79766c54cbb13}
+
+
+Definiert in Zeile 74 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a32d3efc1966cace76ec11e581716777b}{\index{Particle\-System@{Particle\-System}!ticks@{ticks}}
+\index{ticks@{ticks}!ParticleSystem@{Particle\-System}}
+\subsubsection[{ticks}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t Particle\-System\-::ticks\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_a32d3efc1966cace76ec11e581716777b}
+
+
+Definiert in Zeile 73 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_a6541039a541fddd38220c8bde2b4f4ac}{\index{Particle\-System@{Particle\-System}!valid@{valid}}
+\index{valid@{valid}!ParticleSystem@{Particle\-System}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Particle\-System\-::valid\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_a6541039a541fddd38220c8bde2b4f4ac}
+
+
+Definiert in Zeile 61 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_afde2a8d8d82c9c569de9424610bd3da6}{\index{Particle\-System@{Particle\-System}!vbo@{vbo}}
+\index{vbo@{vbo}!ParticleSystem@{Particle\-System}}
+\subsubsection[{vbo}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Particle\-System\-::vbo}}\label{classParticleSystem_afde2a8d8d82c9c569de9424610bd3da6}
+
+
+Definiert in Zeile 30 der Datei Particle\-System.\-h.
+
+\hypertarget{classParticleSystem_ac269ed2dcffba188047f99bab97a70cf}{\index{Particle\-System@{Particle\-System}!vertex\-Shader\-Object@{vertex\-Shader\-Object}}
+\index{vertex\-Shader\-Object@{vertex\-Shader\-Object}!ParticleSystem@{Particle\-System}}
+\subsubsection[{vertex\-Shader\-Object}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint Particle\-System\-::vertex\-Shader\-Object\hspace{0.3cm}{\ttfamily [private]}}}\label{classParticleSystem_ac269ed2dcffba188047f99bab97a70cf}
+
+
+Definiert in Zeile 63 der Datei Particle\-System.\-h.
+
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
+\item 
+/daten/\-Projekte/eclipse\-\_\-workspace/\-C\-L\-G\-L\-\_\-test/\hyperlink{CLGL__test_2ParticleSystem_8h}{Particle\-System.\-h}\item 
+/daten/\-Projekte/eclipse\-\_\-workspace/\-C\-L\-G\-L\-\_\-test/\hyperlink{CLGL__test_2ParticleSystem_8cpp}{Particle\-System.\-cpp}\end{DoxyCompactItemize}

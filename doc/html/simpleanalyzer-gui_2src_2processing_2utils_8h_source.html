@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Simple Analyzer: simpleanalyzer-gui/src/processing/utils.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simple Analyzer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="namespaces.html"><span>Namensbereiche</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c77ee61374efdb50c23b8fd1bc609a29.html">simpleanalyzer-gui</a></li><li class="navelem"><a class="el" href="dir_fc69cc80a9959f5f4d9fc5f3e2f537ca.html">src</a></li><li class="navelem"><a class="el" href="dir_bee17b6d98f1147c834a49f1eb486f67.html">processing</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">utils.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * utils.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 21.09.2013</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: valentin</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef UTILS_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UTILS_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;wx/wx.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../libraries/tetgen/tetgen.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../libraries/interpolate/GeometryClasses.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;../libraries/interpolate/Interpolator.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespaceUtils.html">   25</a></span>&#160;<span class="keyword">namespace </span>Utils {</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespaceUtils.html#ad369b0127cabda0d6871ce1ae7e6c862">   31</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespaceUtils.html#ad369b0127cabda0d6871ce1ae7e6c862">PIM_algorithm</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ALGORITHM_TETRAHEDRONS = 0, ALGORITHM_RAY,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespaceUtils.html#afac34330dde6235ee7395a4fd412ae0d">   40</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">double</span> sqr(<span class="keywordtype">double</span> d) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> d * d;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structUtils_1_1Visualization__info.html">   47</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structUtils_1_1Visualization__info.html">Visualization_info</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structUtils_1_1Visualization__info.html#a5327787a12634166ecc00f2224d3f39f">   48</a></span>&#160;    <span class="keywordtype">int</span> max_visualisation_temp = 100;   </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structUtils_1_1Visualization__info.html#a6e192352d1f00709f8ef963206ff2653">   49</a></span>&#160;    <span class="keywordtype">int</span> min_visualisation_temp = 0;     </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structUtils_1_1SortStruct.html">   55</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structUtils_1_1SortStruct.html">SortStruct</a> {</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structUtils_1_1SortStruct.html#aca911abd52b034a588bab7b414cf93cb">   56</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structUtils_1_1SortStruct.html#aca911abd52b034a588bab7b414cf93cb">distance</a>;    </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structUtils_1_1SortStruct.html#ad470a3f9a230e66a47fd022bf7a4a70e">   57</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structUtils_1_1SortStruct.html#ad470a3f9a230e66a47fd022bf7a4a70e">pointIndex</a>;     </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">float</span> <a class="code" href="namespaceUtils.html#abb647325616858e0fad55290c36ea03b">clampHue</a>(<span class="keywordtype">float</span> h);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorPoint.html">   70</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structUtils_1_1SensorPoint.html">SensorPoint</a> {</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorPoint.html#aedff5493c2f6c36e9552dc3807c8ce24">   71</a></span>&#160;    <span class="keywordtype">double</span> coords[3];   </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorPoint.html#a764d6572f865138b36cb46c910001e9a">   72</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structUtils_1_1SensorPoint.html#a764d6572f865138b36cb46c910001e9a">temperature</a>; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structUtils_1_1CutRender__info.html">   78</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structUtils_1_1CutRender__info.html">CutRender_info</a> {</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structUtils_1_1CutRender__info.html#a2998343c733073b317fdd04bd341ce1f">   79</a></span>&#160;    <a class="code" href="classTriangle.html">Triangle</a>* <a class="code" href="structUtils_1_1CutRender__info.html#a2998343c733073b317fdd04bd341ce1f">tri</a>;                  </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structUtils_1_1CutRender__info.html#aca49d9537a774906b88f3fd7059d2dcb">   80</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structUtils_1_1CutRender__info.html#aca49d9537a774906b88f3fd7059d2dcb">mmperpixel</a>;               </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structUtils_1_1CutRender__info.html#ac7a1e2c64129630affaf208808a190eb">   81</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structUtils_1_1CutRender__info.html#ac7a1e2c64129630affaf208808a190eb">img_width</a>;                  </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="structUtils_1_1CutRender__info.html#abac1c3e4edb7183017ecfa7b69c40d25">   82</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structUtils_1_1CutRender__info.html#abac1c3e4edb7183017ecfa7b69c40d25">img_height</a>;                 </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="structUtils_1_1CutRender__info.html#af2ee1118ac14a73a2a350a05102013ab">   83</a></span>&#160;    <a class="code" href="namespaceUtils.html#ad369b0127cabda0d6871ce1ae7e6c862">PIM_algorithm</a> <a class="code" href="structUtils_1_1CutRender__info.html#af2ee1118ac14a73a2a350a05102013ab">in_volume_algorithm</a>; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorData.html">   89</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structUtils_1_1SensorData.html">SensorData</a> {</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorData.html#ae94e7645dc0b6adfd21571b0abd5e309">   90</a></span>&#160;    <a class="code" href="classstd_1_1vector.html">vector&lt;vector&lt;SensorPoint&gt;</a> &gt; <a class="code" href="structUtils_1_1SensorData.html#ae94e7645dc0b6adfd21571b0abd5e309">data</a>;  </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorData.html#ad5875ab7e8ebdc9dc41a7b9ef1c063ba">   91</a></span>&#160;    <a class="code" href="classstd_1_1vector.html">vector&lt;string&gt;</a> <a class="code" href="structUtils_1_1SensorData.html#ad5875ab7e8ebdc9dc41a7b9ef1c063ba">subnames</a>;            </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorData.html#a654f9606c3ddc6e93afb86a116d11ea5">   92</a></span>&#160;    <a class="code" href="classstd_1_1vector.html">vector&lt;int&gt;</a> <a class="code" href="structUtils_1_1SensorData.html#a654f9606c3ddc6e93afb86a116d11ea5">timestamps</a>;             </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorData.html#ac2d7e037f39affd6ad9d4aa29ed579da">   93</a></span>&#160;    <a class="code" href="classstd_1_1vector.html">vector&lt;int&gt;</a> <a class="code" href="structUtils_1_1SensorData.html#ac2d7e037f39affd6ad9d4aa29ed579da">markers</a>;                </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorData.html#aca94c3ec7e8f2e719f7cfcff4e9da41b">   94</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structUtils_1_1SensorData.html#aca94c3ec7e8f2e719f7cfcff4e9da41b">timed</a>;                         </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorData.html#a177d53154d56fcf1962f969ece1e7d9d">   95</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structUtils_1_1SensorData.html#a177d53154d56fcf1962f969ece1e7d9d">current_time_index</a>;             </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorData.html#a52474d0fe0dce0d3ee73c007a150a507">   96</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="structUtils_1_1SensorData.html#a52474d0fe0dce0d3ee73c007a150a507">name</a>;                        </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorPointComparator.html">  107</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structUtils_1_1SensorPointComparator.html">SensorPointComparator</a> {</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorPointComparator.html#a2b31195024a7ec123551b2bb87043a68">  113</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> <a class="code" href="structUtils_1_1SensorPointComparator.html#a2b31195024a7ec123551b2bb87043a68">getDistance_d</a>(<span class="keywordtype">double</span>* p1, <span class="keywordtype">double</span>* p2) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">return</span> sqrt(</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                sqr(p1[0] - p2[0]) + sqr(p1[1] - p2[1]) + sqr(p1[2] - p2[2]));</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorPointComparator.html#a51335aca914559e34d9202b67d90b143">  116</a></span>&#160;    };</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">double</span> meshpoint[3]; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="structUtils_1_1SensorPointComparator.html#a92795eac49f9ea851c04a623c5a3d6b6">  120</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structUtils_1_1SensorPointComparator.html#a92795eac49f9ea851c04a623c5a3d6b6">operator()</a>(<a class="code" href="structUtils_1_1SensorPoint.html">SensorPoint</a> p1, <a class="code" href="structUtils_1_1SensorPoint.html">SensorPoint</a> p2) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> (getDistance_d(meshpoint, p1.<a class="code" href="structUtils_1_1SensorPoint.html#aedff5493c2f6c36e9552dc3807c8ce24">coords</a>)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                &lt; getDistance_d(meshpoint, p2.<a class="code" href="structUtils_1_1SensorPoint.html#aedff5493c2f6c36e9552dc3807c8ce24">coords</a>));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    } </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="namespaceUtils.html#a76b506eef525971ab3ccb328f4ca879d">  130</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="namespaceUtils.html#a76b506eef525971ab3ccb328f4ca879d">floattostr</a>(<span class="keywordtype">double</span> val) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    ostringstream ss;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    ss &lt;&lt; val;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> ss.str();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keywordtype">string</span> getTextBlock(<span class="keywordtype">string</span> data, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;wxString floattowxstr(<span class="keywordtype">double</span> val);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;wxString floattowxstr(<span class="keywordtype">double</span> val, <span class="keywordtype">int</span> digits);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keywordtype">int</span> rayIntersectsTriangle(<a class="code" href="classVector3D.html">Vector3D</a>* p, <a class="code" href="classVector3D.html">Vector3D</a>* direction, <a class="code" href="classTriangle.html">Triangle</a>* tri,</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordtype">double</span>* depth);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keywordtype">int</span> pointInsideMesh(<a class="code" href="classVector3D.html">Vector3D</a>* p, <a class="code" href="classtetgenio.html">tetgenio</a>* io, PIM_algorithm algorithm);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keywordtype">int</span> pointInsideTetrahedron(<a class="code" href="classVector3D.html">Vector3D</a>* pges, <a class="code" href="classVector3D.html">Vector3D</a>* v1, <a class="code" href="classVector3D.html">Vector3D</a>* v2,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <a class="code" href="classVector3D.html">Vector3D</a>* v3, <a class="code" href="classVector3D.html">Vector3D</a>* v4);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keywordtype">int</span> pointInsideTetrahedron(<span class="keywordtype">double</span>* pges, <span class="keywordtype">double</span>* v1, <span class="keywordtype">double</span>* v2, <span class="keywordtype">double</span>* v3,</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordtype">double</span>* v4);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keywordtype">int</span> pointInsideTetrahedron(<span class="keywordtype">double</span>* p, <a class="code" href="classstd_1_1vector.html">vector&lt;SensorPoint*&gt;</a>* tet);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="keywordtype">void</span> nextCombination(<a class="code" href="classstd_1_1vector.html">vector&lt;int&gt;</a>* indices, <span class="keywordtype">int</span> depth, <span class="keywordtype">int</span> dataPointCount);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keywordtype">double</span> getPointValue(<span class="keywordtype">int</span> &amp;status, <a class="code" href="classstd_1_1vector.html">vector&lt;SensorPoint&gt;</a>* sensorpoints, <span class="keywordtype">double</span>* p,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="classInterpolator.html">Interpolator</a>* interpolator, <a class="code" href="classstd_1_1vector.html">vector&lt;SensorPoint*&gt;</a>* prev_tet = NULL,</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <a class="code" href="classstd_1_1vector.html">vector&lt;SensorPoint*&gt;</a>* current_tet = NULL);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keywordtype">float</span>* hsvToRgb(<span class="keywordtype">float</span> h, <span class="keywordtype">float</span> s, <span class="keywordtype">float</span> v);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keywordtype">void</span> copySensorPoint(SensorPoint* from, SensorPoint* to);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* UTILS_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classtetgenio_html"><div class="ttname"><a href="classtetgenio.html">tetgenio</a></div><div class="ttdef"><b>Definition:</b> tetgen.h:114</div></div>
+<div class="ttc" id="structUtils_1_1SensorPoint_html_aedff5493c2f6c36e9552dc3807c8ce24"><div class="ttname"><a href="structUtils_1_1SensorPoint.html#aedff5493c2f6c36e9552dc3807c8ce24">Utils::SensorPoint::coords</a></div><div class="ttdeci">double coords[3]</div><div class="ttdef"><b>Definition:</b> utils.h:71</div></div>
+<div class="ttc" id="structUtils_1_1SensorData_html_a52474d0fe0dce0d3ee73c007a150a507"><div class="ttname"><a href="structUtils_1_1SensorData.html#a52474d0fe0dce0d3ee73c007a150a507">Utils::SensorData::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> utils.h:96</div></div>
+<div class="ttc" id="structUtils_1_1CutRender__info_html_ac7a1e2c64129630affaf208808a190eb"><div class="ttname"><a href="structUtils_1_1CutRender__info.html#ac7a1e2c64129630affaf208808a190eb">Utils::CutRender_info::img_width</a></div><div class="ttdeci">int img_width</div><div class="ttdef"><b>Definition:</b> utils.h:81</div></div>
+<div class="ttc" id="structUtils_1_1CutRender__info_html_abac1c3e4edb7183017ecfa7b69c40d25"><div class="ttname"><a href="structUtils_1_1CutRender__info.html#abac1c3e4edb7183017ecfa7b69c40d25">Utils::CutRender_info::img_height</a></div><div class="ttdeci">int img_height</div><div class="ttdef"><b>Definition:</b> utils.h:82</div></div>
+<div class="ttc" id="structUtils_1_1SensorData_html_ae94e7645dc0b6adfd21571b0abd5e309"><div class="ttname"><a href="structUtils_1_1SensorData.html#ae94e7645dc0b6adfd21571b0abd5e309">Utils::SensorData::data</a></div><div class="ttdeci">vector&lt; vector&lt; SensorPoint &gt; &gt; data</div><div class="ttdef"><b>Definition:</b> utils.h:90</div></div>
+<div class="ttc" id="structUtils_1_1Visualization__info_html"><div class="ttname"><a href="structUtils_1_1Visualization__info.html">Utils::Visualization_info</a></div><div class="ttdoc">Informationen über die Farbgebung bei der Visualisierung. </div><div class="ttdef"><b>Definition:</b> utils.h:47</div></div>
+<div class="ttc" id="namespaceUtils_html_a76b506eef525971ab3ccb328f4ca879d"><div class="ttname"><a href="namespaceUtils.html#a76b506eef525971ab3ccb328f4ca879d">Utils::floattostr</a></div><div class="ttdeci">string floattostr(double val)</div><div class="ttdef"><b>Definition:</b> utils.h:130</div></div>
+<div class="ttc" id="structUtils_1_1SensorData_html_aca94c3ec7e8f2e719f7cfcff4e9da41b"><div class="ttname"><a href="structUtils_1_1SensorData.html#aca94c3ec7e8f2e719f7cfcff4e9da41b">Utils::SensorData::timed</a></div><div class="ttdeci">bool timed</div><div class="ttdef"><b>Definition:</b> utils.h:94</div></div>
+<div class="ttc" id="structUtils_1_1SensorData_html_ad5875ab7e8ebdc9dc41a7b9ef1c063ba"><div class="ttname"><a href="structUtils_1_1SensorData.html#ad5875ab7e8ebdc9dc41a7b9ef1c063ba">Utils::SensorData::subnames</a></div><div class="ttdeci">vector&lt; string &gt; subnames</div><div class="ttdef"><b>Definition:</b> utils.h:91</div></div>
+<div class="ttc" id="structUtils_1_1SensorPointComparator_html_a2b31195024a7ec123551b2bb87043a68"><div class="ttname"><a href="structUtils_1_1SensorPointComparator.html#a2b31195024a7ec123551b2bb87043a68">Utils::SensorPointComparator::getDistance_d</a></div><div class="ttdeci">double getDistance_d(double *p1, double *p2)</div><div class="ttdef"><b>Definition:</b> utils.h:113</div></div>
+<div class="ttc" id="classstd_1_1vector_html"><div class="ttname"><a href="classstd_1_1vector.html">std::vector</a></div><div class="ttdef"><b>Definition:</b> doxygen_dep_dummy.h:3</div></div>
+<div class="ttc" id="structUtils_1_1SortStruct_html_aca911abd52b034a588bab7b414cf93cb"><div class="ttname"><a href="structUtils_1_1SortStruct.html#aca911abd52b034a588bab7b414cf93cb">Utils::SortStruct::distance</a></div><div class="ttdeci">double distance</div><div class="ttdef"><b>Definition:</b> utils.h:56</div></div>
+<div class="ttc" id="namespaceUtils_html_ad369b0127cabda0d6871ce1ae7e6c862"><div class="ttname"><a href="namespaceUtils.html#ad369b0127cabda0d6871ce1ae7e6c862">Utils::PIM_algorithm</a></div><div class="ttdeci">PIM_algorithm</div><div class="ttdoc">Zum Punkt-in-Volumen Testen verwendeter Algorithmus. Dies wird bei ALGORITHM_TETRAHEDRONS über alle T...</div><div class="ttdef"><b>Definition:</b> utils.h:31</div></div>
+<div class="ttc" id="namespaceUtils_html_abb647325616858e0fad55290c36ea03b"><div class="ttname"><a href="namespaceUtils.html#abb647325616858e0fad55290c36ea03b">Utils::clampHue</a></div><div class="ttdeci">float clampHue(float h)</div><div class="ttdoc">Begrenzt einen Wert auf den Bereich 0..1. </div><div class="ttdef"><b>Definition:</b> utils.cpp:78</div></div>
+<div class="ttc" id="structUtils_1_1SortStruct_html_ad470a3f9a230e66a47fd022bf7a4a70e"><div class="ttname"><a href="structUtils_1_1SortStruct.html#ad470a3f9a230e66a47fd022bf7a4a70e">Utils::SortStruct::pointIndex</a></div><div class="ttdeci">int pointIndex</div><div class="ttdef"><b>Definition:</b> utils.h:57</div></div>
+<div class="ttc" id="classVector3D_html"><div class="ttname"><a href="classVector3D.html">Vector3D</a></div><div class="ttdoc">3D-Vektorklasse mit nützlichen Operationen. </div><div class="ttdef"><b>Definition:</b> GeometryClasses.h:13</div></div>
+<div class="ttc" id="structUtils_1_1SensorData_html_a654f9606c3ddc6e93afb86a116d11ea5"><div class="ttname"><a href="structUtils_1_1SensorData.html#a654f9606c3ddc6e93afb86a116d11ea5">Utils::SensorData::timestamps</a></div><div class="ttdeci">vector&lt; int &gt; timestamps</div><div class="ttdef"><b>Definition:</b> utils.h:92</div></div>
+<div class="ttc" id="structUtils_1_1SensorPoint_html"><div class="ttname"><a href="structUtils_1_1SensorPoint.html">Utils::SensorPoint</a></div><div class="ttdoc">Daten eines Sensordatenpunktes. </div><div class="ttdef"><b>Definition:</b> utils.h:70</div></div>
+<div class="ttc" id="structUtils_1_1CutRender__info_html_aca49d9537a774906b88f3fd7059d2dcb"><div class="ttname"><a href="structUtils_1_1CutRender__info.html#aca49d9537a774906b88f3fd7059d2dcb">Utils::CutRender_info::mmperpixel</a></div><div class="ttdeci">float mmperpixel</div><div class="ttdef"><b>Definition:</b> utils.h:80</div></div>
+<div class="ttc" id="structUtils_1_1CutRender__info_html_a2998343c733073b317fdd04bd341ce1f"><div class="ttname"><a href="structUtils_1_1CutRender__info.html#a2998343c733073b317fdd04bd341ce1f">Utils::CutRender_info::tri</a></div><div class="ttdeci">Triangle * tri</div><div class="ttdef"><b>Definition:</b> utils.h:79</div></div>
+<div class="ttc" id="structUtils_1_1SensorPointComparator_html"><div class="ttname"><a href="structUtils_1_1SensorPointComparator.html">Utils::SensorPointComparator</a></div><div class="ttdoc">Hilfsstruktur zum Vergleichen des Abstands von Messpunkten. Der Punkt, zu dem der Abstand berechnet w...</div><div class="ttdef"><b>Definition:</b> utils.h:107</div></div>
+<div class="ttc" id="structUtils_1_1SortStruct_html"><div class="ttname"><a href="structUtils_1_1SortStruct.html">Utils::SortStruct</a></div><div class="ttdoc">Hilfsstruktur zum Sortieren von Punkten nach dem Abstand zu einem anderen Punkt. </div><div class="ttdef"><b>Definition:</b> utils.h:55</div></div>
+<div class="ttc" id="structUtils_1_1SensorData_html"><div class="ttname"><a href="structUtils_1_1SensorData.html">Utils::SensorData</a></div><div class="ttdoc">Ein Sensordatensatz. </div><div class="ttdef"><b>Definition:</b> utils.h:89</div></div>
+<div class="ttc" id="classInterpolator_html"><div class="ttname"><a href="classInterpolator.html">Interpolator</a></div><div class="ttdoc">2- und 3-dimensionale Inter-/Extrapolation </div><div class="ttdef"><b>Definition:</b> Interpolator.h:20</div></div>
+<div class="ttc" id="structUtils_1_1SensorData_html_a177d53154d56fcf1962f969ece1e7d9d"><div class="ttname"><a href="structUtils_1_1SensorData.html#a177d53154d56fcf1962f969ece1e7d9d">Utils::SensorData::current_time_index</a></div><div class="ttdeci">int current_time_index</div><div class="ttdef"><b>Definition:</b> utils.h:95</div></div>
+<div class="ttc" id="structUtils_1_1CutRender__info_html"><div class="ttname"><a href="structUtils_1_1CutRender__info.html">Utils::CutRender_info</a></div><div class="ttdoc">Daten zur Darstellung einer 2D-Temperaturverteilungs-Ebene. </div><div class="ttdef"><b>Definition:</b> utils.h:78</div></div>
+<div class="ttc" id="classTriangle_html"><div class="ttname"><a href="classTriangle.html">Triangle</a></div><div class="ttdoc">Ein durch 3 Ortsvektoren beschriebenes Dreieck. </div><div class="ttdef"><b>Definition:</b> GeometryClasses.h:228</div></div>
+<div class="ttc" id="structUtils_1_1CutRender__info_html_af2ee1118ac14a73a2a350a05102013ab"><div class="ttname"><a href="structUtils_1_1CutRender__info.html#af2ee1118ac14a73a2a350a05102013ab">Utils::CutRender_info::in_volume_algorithm</a></div><div class="ttdeci">PIM_algorithm in_volume_algorithm</div><div class="ttdef"><b>Definition:</b> utils.h:83</div></div>
+<div class="ttc" id="structUtils_1_1SensorPoint_html_a764d6572f865138b36cb46c910001e9a"><div class="ttname"><a href="structUtils_1_1SensorPoint.html#a764d6572f865138b36cb46c910001e9a">Utils::SensorPoint::temperature</a></div><div class="ttdeci">double temperature</div><div class="ttdef"><b>Definition:</b> utils.h:72</div></div>
+<div class="ttc" id="structUtils_1_1SensorPointComparator_html_a92795eac49f9ea851c04a623c5a3d6b6"><div class="ttname"><a href="structUtils_1_1SensorPointComparator.html#a92795eac49f9ea851c04a623c5a3d6b6">Utils::SensorPointComparator::operator()</a></div><div class="ttdeci">bool operator()(SensorPoint p1, SensorPoint p2)</div><div class="ttdef"><b>Definition:</b> utils.h:120</div></div>
+<div class="ttc" id="structUtils_1_1SensorData_html_ac2d7e037f39affd6ad9d4aa29ed579da"><div class="ttname"><a href="structUtils_1_1SensorData.html#ac2d7e037f39affd6ad9d4aa29ed579da">Utils::SensorData::markers</a></div><div class="ttdeci">vector&lt; int &gt; markers</div><div class="ttdef"><b>Definition:</b> utils.h:93</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Fre Aug 29 2014 16:35:44 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

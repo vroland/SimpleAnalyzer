@@ -1,0 +1,892 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Simple Analyzer: OdisiToSdConverter Klassenreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simple Analyzer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="pages.html"><span>Zusätzliche&#160;Informationen</span></a></li>
+      <li><a href="namespaces.html"><span>Namensbereiche</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klassen</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Auflistung&#160;der&#160;Klassen</span></a></li>
+      <li><a href="classes.html"><span>Klassen-Verzeichnis</span></a></li>
+      <li><a href="hierarchy.html"><span>Klassenhierarchie</span></a></li>
+      <li><a href="functions.html"><span>Klassen-Elemente</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Freundbeziehungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Seiten</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Klassen</a> &#124;
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#pro-methods">Geschützte Methoden</a> &#124;
+<a href="#pro-attribs">Geschützte Attribute</a> &#124;
+<a href="#pro-static-attribs">Statische, geschützte Attribute</a> &#124;
+<a href="classOdisiToSdConverter-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">OdisiToSdConverter Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Konverter von ODiSI zu .tsd.  
+ <a href="classOdisiToSdConverter.html#details">Mehr ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Klassen</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOdisiToSdConverter_1_1Options.html">Options</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strunktur für die Programmeinstellungen.  <a href="structOdisiToSdConverter_1_1Options.html#details">Mehr ...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:ab4e518bcb8d7588180bb4e1edec50c06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#ab4e518bcb8d7588180bb4e1edec50c06">convert</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:ab4e518bcb8d7588180bb4e1edec50c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Geschützte Methoden</h2></td></tr>
+<tr class="memitem:ad851e258c9aad4ab07887fc19f9cc89d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#ad851e258c9aad4ab07887fc19f9cc89d">contains</a> (<a class="el" href="classstd_1_1vector.html">std::vector</a>&lt; string &gt; &amp;Vec, const string &amp;Element)</td></tr>
+<tr class="separator:ad851e258c9aad4ab07887fc19f9cc89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b9cc047c31d81b84e74d68d69ba2c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#a22b9cc047c31d81b84e74d68d69ba2c6">contains</a> (<a class="el" href="classstd_1_1vector.html">std::vector</a>&lt; int &gt; &amp;Vec, const int &amp;Element)</td></tr>
+<tr class="separator:a22b9cc047c31d81b84e74d68d69ba2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf5e68acbe7e6388db98b1e1d321709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#a8bf5e68acbe7e6388db98b1e1d321709">replaceAll</a> (string &amp;str, const string from, const string to)</td></tr>
+<tr class="separator:a8bf5e68acbe7e6388db98b1e1d321709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01498491495ce740686843f6575859fd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#a01498491495ce740686843f6575859fd">floattostr</a> (float val)</td></tr>
+<tr class="separator:a01498491495ce740686843f6575859fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ff6a5280429bfa3ade6202e4651e25"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#af7ff6a5280429bfa3ade6202e4651e25">getTextBlock</a> (string data, int n)</td></tr>
+<tr class="separator:af7ff6a5280429bfa3ade6202e4651e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0497baba5fd610c206b57a80154425b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#a0497baba5fd610c206b57a80154425b8">parseLine</a> (string line, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; *out, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; *times, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; int &gt; *debug_positions, size_t row_count)</td></tr>
+<tr class="separator:a0497baba5fd610c206b57a80154425b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6bc01ae2c063d89dc64c0a7d68c033"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#a8c6bc01ae2c063d89dc64c0a7d68c033">readConfiguration</a> (string binary_path)</td></tr>
+<tr class="separator:a8c6bc01ae2c063d89dc64c0a7d68c033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d40f3edad9af5004d516809e0e40a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#ac8d40f3edad9af5004d516809e0e40a2">parseArguments</a> (int argc, char *argv[], string &amp;def_filename, string &amp;data_filename, string &amp;out_filename, string &amp;err_filename)</td></tr>
+<tr class="separator:ac8d40f3edad9af5004d516809e0e40a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db961a716d43b3d4de4f2e4e19b0706"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#a8db961a716d43b3d4de4f2e4e19b0706">readSensorDefinitions</a> (string path, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;inlist, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;outlist, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;in_x, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;out_x, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; bool &gt; &amp;dirlist)</td></tr>
+<tr class="separator:a8db961a716d43b3d4de4f2e4e19b0706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270932ed908757ac477370eef64db442"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#a270932ed908757ac477370eef64db442">readInputFile</a> (string path, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &gt; &amp;values, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; <a class="el" href="classstd_1_1vector.html">vector</a>&lt; int &gt; &gt; &amp;debug_positions, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;times, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;lin_positions)</td></tr>
+<tr class="separator:a270932ed908757ac477370eef64db442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c9836341b5aa5d8fa8eb28021b070b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#a58c9836341b5aa5d8fa8eb28021b070b">writeOutputFile</a> (string path, string logpath, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &gt; &amp;values, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; <a class="el" href="classstd_1_1vector.html">vector</a>&lt; int &gt; &gt; &amp;debug_positions, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;times, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;lin_positions, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;inlist, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;outlist, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;in_x, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;out_x, <a class="el" href="classstd_1_1vector.html">vector</a>&lt; bool &gt; &amp;dirlist)</td></tr>
+<tr class="separator:a58c9836341b5aa5d8fa8eb28021b070b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Geschützte Attribute</h2></td></tr>
+<tr class="memitem:aeecf67d22a4b6333ceabe5f1a1036736"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#aeecf67d22a4b6333ceabe5f1a1036736">configpaths</a> [<a class="el" href="classOdisiToSdConverter.html#a6f59f3670356c1588b736af33d59532a">NUMBEROFPATHS</a>]</td></tr>
+<tr class="separator:aeecf67d22a4b6333ceabe5f1a1036736"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032865606668d520887b2b164913539d"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structOdisiToSdConverter_1_1Options.html">OdisiToSdConverter::Options</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#a032865606668d520887b2b164913539d">opts</a></td></tr>
+<tr class="separator:a032865606668d520887b2b164913539d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Statische, geschützte Attribute</h2></td></tr>
+<tr class="memitem:a6f59f3670356c1588b736af33d59532a"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOdisiToSdConverter.html#a6f59f3670356c1588b736af33d59532a">NUMBEROFPATHS</a> = 3</td></tr>
+<tr class="separator:a6f59f3670356c1588b736af33d59532a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Konverter von ODiSI zu .tsd. </p>
+<p>Zusätzlich können Ausreißerwerte erkannt und eliminiert werden. </p>
+</div><h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a class="anchor" id="ad851e258c9aad4ab07887fc19f9cc89d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OdisiToSdConverter::contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">std::vector</a>&lt; string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>Vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>Element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Testet, ob sich ein String in einer Liste von Strings befindet. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Vec</td><td>Liste der Strings. </td></tr>
+    <tr><td class="paramname">Element</td><td>Der zu suchende String. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>true, wenn das Element gefunden wurde, sonst false. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a22b9cc047c31d81b84e74d68d69ba2c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OdisiToSdConverter::contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">std::vector</a>&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>Vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>Element</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Testet, ob sich eine Ganzzahl in einer Liste von Ganzzahlen befindet. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Vec</td><td>Liste der Ganzzahlen. </td></tr>
+    <tr><td class="paramname">Element</td><td>Die zu suchende Ganzzahl. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>true, wenn das Element gefunden wurde, sonst false. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab4e518bcb8d7588180bb4e1edec50c06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int OdisiToSdConverter::convert </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Liest die Programmargumente, die Konfiguration, die Sensordefinitionsdatei und die ODiSI-Datei um eine .tsd-Datei zu generieren, bzw. die Daten der ODiSI-Datei ein eine .tsd-Datei umzuwandeln. Wird duch die Funktion main() von außerhalb des Namespaces aufgerufen. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Anzahl der Programmargumente. </td></tr>
+    <tr><td class="paramname">argv</td><td>Die Programmargumente. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a01498491495ce740686843f6575859fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OdisiToSdConverter::floattostr </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wandelt eine Zeichenkette (String) um. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>Die umzuwandelnde Zahl. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>Die Entsprechung der Zahl als String. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af7ff6a5280429bfa3ade6202e4651e25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OdisiToSdConverter::getTextBlock </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Der Ausgansstring. </td></tr>
+    <tr><td class="paramname">n</td><td>Index des zu findenden Blocks. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>Der n-te durch Leerzeichen getrennte Teilstring. "" Bei ungültigem Index. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac8d40f3edad9af5004d516809e0e40a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OdisiToSdConverter::parseArguments </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>def_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>data_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>out_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>err_filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wertet die Programmargumente aus. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Anzahl der Programmargumente. </td></tr>
+    <tr><td class="paramname">argv</td><td>Die Programmargumente. </td></tr>
+    <tr><td class="paramname">def_filename</td><td>Ausgabe für den Pfad zur Sensordefinitionsdatei. </td></tr>
+    <tr><td class="paramname">data_filename</td><td>Ausgabe für den Pfad zur Eingabedatei. </td></tr>
+    <tr><td class="paramname">out_filename</td><td>Ausgabe für den Pfad zur Ausgabedatei. </td></tr>
+    <tr><td class="paramname">err_filename</td><td>Ausgabe für den Pfad zur Logdatei. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>Soll das Programm weiter ablaufen? </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0497baba5fd610c206b57a80154425b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OdisiToSdConverter::parseLine </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>times</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; int &gt; *&#160;</td>
+          <td class="paramname"><em>debug_positions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>row_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sammelt Daten aus einer Textzeile (string). </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>Die zu untersuchende Textzeile. </td></tr>
+    <tr><td class="paramname">out</td><td>Ausgabevariable für die Sensordaten der Zeile. Alle Spalten nach opts.start_col werden als Sensordatenspalten betrachtet. Wenn row_count == opts.startrow ist, werden statt der Sensordaten die Faserpositionen eingelesen! </td></tr>
+    <tr><td class="paramname">times</td><td>Wenn nicht NULL, Ausgabevariable für den Zeitstempel der Zeile (opts.timecol). Der Zeitstempel wird an die übergebene Liste angehängt. </td></tr>
+    <tr><td class="paramname">debug_positions</td><td>Wenn nicht NULL, Ausgabevariable für die Position der einzelnen Messwerte in der Datei. Diese Positionen werden in der Logdatei zur Fehlerkorrektur angegeben, um ein Wiederfinden der Werte für den Nutzer einfacher zu machen. </td></tr>
+    <tr><td class="paramname">row_count</td><td>Nummer der aktuellen Zeile (Index+1). </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Komma mit Punkt als Dezimaltrennzeichen ersetzen? </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c6bc01ae2c063d89dc64c0a7d68c033"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OdisiToSdConverter::readConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>binary_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Liest und setzt die Programmkonfiguration aus der Konfigurationsdatei. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">binary_path</td><td>Pfad zur Binärdatei. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>War das Einlesen erfolgreich? </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a270932ed908757ac477370eef64db442"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OdisiToSdConverter::readInputFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; <a class="el" href="classstd_1_1vector.html">vector</a>&lt; int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>debug_positions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>times</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lin_positions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Liest die Daten aus der Eingabedatei. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Der Pfad zur Eingabedatei. </td></tr>
+    <tr><td class="paramname">values</td><td>Liste für die extrahierten Sensorwerte. </td></tr>
+    <tr><td class="paramname">times</td><td>Liste für die Zeitstempel der Messwerte. </td></tr>
+    <tr><td class="paramname">debug_positions</td><td>Liste für die Positionen der Messwerte in der Datei. </td></tr>
+    <tr><td class="paramname">lin_positions</td><td>Liste für die Positionen auf der Faser. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>War das Einlesen erfolgreich? </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8db961a716d43b3d4de4f2e4e19b0706"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OdisiToSdConverter::readSensorDefinitions </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inlist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outlist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dirlist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Liest die Daten aus der Sensordefinitionsdatei. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Pfad zur Binärdatei. </td></tr>
+    <tr><td class="paramname">inlist</td><td>Liste für die Positionen der Fasereingänge auf der Faser. </td></tr>
+    <tr><td class="paramname">outlist</td><td>Liste für die Positionen der Faserausgänge auf der Faser. </td></tr>
+    <tr><td class="paramname">in_x</td><td>Liste für die X-Positionen der Fasereingänge. </td></tr>
+    <tr><td class="paramname">out_x</td><td>Liste für die X-Positionen der Faserausgänge. </td></tr>
+    <tr><td class="paramname">dirlist</td><td>Liste für die Richtungen der Faser zwischen Ein-und Ausgang bezüglich der Z-Richtung. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>War das Einlesen erfolgreich? </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8bf5e68acbe7e6388db98b1e1d321709"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OdisiToSdConverter::replaceAll </td>
+          <td>(</td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ersetzt in einem String alle Vorkommen eines Teilstrings durch einen Anderen. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Der zu durchsuchende String. </td></tr>
+    <tr><td class="paramname">from</td><td>Der zu ersetzende Teilstring. </td></tr>
+    <tr><td class="paramname">to</td><td>Der Teilstring, durch den ersetzt werden soll. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a58c9836341b5aa5d8fa8eb28021b070b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OdisiToSdConverter::writeOutputFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>logpath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; <a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; <a class="el" href="classstd_1_1vector.html">vector</a>&lt; int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>debug_positions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>times</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lin_positions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inlist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outlist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstd_1_1vector.html">vector</a>&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dirlist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Schreibt die Ausgabedatei. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Der Pfad zur Ausgabedatei. </td></tr>
+    <tr><td class="paramname">logpath</td><td>Der Pfad zur Logdatei. Bei "" wird keine Logdatei angelegt. </td></tr>
+    <tr><td class="paramname">debug_positions</td><td>Liste der Positionen der Sensorwerte in der Eingabedatei. </td></tr>
+    <tr><td class="paramname">values</td><td>Die extrahierten Sensorwerte. </td></tr>
+    <tr><td class="paramname">times</td><td>Zeitstempel der Datensätze. </td></tr>
+    <tr><td class="paramname">lin_positions</td><td>Die Position der Messstellen auf der Faser. </td></tr>
+    <tr><td class="paramname">inlist</td><td>Positionen der Fasereingänge auf der Faser. </td></tr>
+    <tr><td class="paramname">outlist</td><td>Positionen der Faserausgänge auf der Faser. </td></tr>
+    <tr><td class="paramname">in_x</td><td>X-Positionen der Fasereingänge. </td></tr>
+    <tr><td class="paramname">out_x</td><td>X-Positionen der Faserausgänge. </td></tr>
+    <tr><td class="paramname">dirlist</td><td>Liste für die Richtungen der Faser zwischen Ein-und Ausgang bezüglich der Z-Richtung. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>War das Schreiben erfolgreich? </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a class="anchor" id="aeecf67d22a4b6333ceabe5f1a1036736"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string OdisiToSdConverter::configpaths[<a class="el" href="classOdisiToSdConverter.html#a6f59f3670356c1588b736af33d59532a">NUMBEROFPATHS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initialisierung:</b><div class="fragment"><div class="line">{</div>
+<div class="line">            <span class="stringliteral">&quot;/etc/simpleanalyzer/odisitosd.conf&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;/usr/local/share/simpleanalyzer/odisitosd.conf&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;/usr/share/simpleanalyzer/odisitosd.conf&quot;</span> }</div>
+</div><!-- fragment --><p>Suchpfade für die Konfigurationsdatei. Das Verzeichnis der ausführbaren Datei wird immer geprüft. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6f59f3670356c1588b736af33d59532a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int OdisiToSdConverter::NUMBEROFPATHS = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Anzahl der Suchpfade für die Konfigurationsdatei. </p>
+
+</div>
+</div>
+<a class="anchor" id="a032865606668d520887b2b164913539d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structOdisiToSdConverter_1_1Options.html">OdisiToSdConverter::Options</a>  OdisiToSdConverter::opts</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Hält die verwendeten Programmeinstellungen. </p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>odisitosd/main.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Fre Aug 29 2014 16:35:47 für Simple Analyzer von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

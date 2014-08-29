@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['writeoutputfile',['writeOutputFile',['../classCsvToSdConverter.xhtml#a5a1749027e2c4dbe00feecc55b823226',1,'CsvToSdConverter::writeOutputFile()'],['../classTsdMerger.xhtml#af88a04f92aed868a58740f5d9ecd2eda',1,'TsdMerger::writeOutputFile()'],['../classOdisiToSdConverter.xhtml#a58c9836341b5aa5d8fa8eb28021b070b',1,'OdisiToSdConverter::writeOutputFile()']]]
+  ['update',['Update',['../classGUIAnalyzeOutputWindow.xhtml#a9ea5a7cf46d6189f368315903508cecc',1,'GUIAnalyzeOutputWindow']]],
+  ['updateobjectpropgui',['updateObjectPropGUI',['../classGUIMainWindow.xhtml#a4c520b8716196fa1e88a7bea5ec34ef0',1,'GUIMainWindow']]],
+  ['updateviewpropgui',['updateViewPropGUI',['../classGUIMainWindow.xhtml#a2af54fc375be6b0fb938b8562980e723',1,'GUIMainWindow']]]
 ];

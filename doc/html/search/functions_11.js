@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['vector3d',['Vector3D',['../classVector3D.xhtml#abd851542da40b1168edcad11fa83b7c2',1,'Vector3D::Vector3D(double x, double y, double z)'],['../classVector3D.xhtml#abd023faf726edb3919c84fd8329a1f8f',1,'Vector3D::Vector3D(const double *values)'],['../classVector3D.xhtml#a010bd55f41a082eccb1a7f513db29e69',1,'Vector3D::Vector3D(Vector3D *other)']]],
-  ['viewpropbox',['ViewpropBox',['../classViewpropBox.xhtml#a4cac75d99079134622f57e35f1e47229',1,'ViewpropBox']]]
+  ['tetrahedron',['Tetrahedron',['../classTetrahedron.xhtml#a84e19dba5735a455269abca8229b4bb4',1,'Tetrahedron']]],
+  ['toclipboard',['ToClipboard',['../classGUIAnalyzeOutputWindow.xhtml#a9a25abd50d7d0bd163143924594385f4',1,'GUIAnalyzeOutputWindow']]],
+  ['transpose',['transpose',['../classMatrix3D.xhtml#a0d59cb6ea927264477a10b9d427966d6',1,'Matrix3D']]],
+  ['triangle',['Triangle',['../classTriangle.xhtml#aa25e2e56ac291e4366474fcbdcc6901b',1,'Triangle']]]
 ];
