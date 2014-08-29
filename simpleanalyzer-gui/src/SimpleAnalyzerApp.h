@@ -11,6 +11,7 @@
 #include <vector>
 #include "processing/utils.h"
 #include "processing/ObjectData.h"
+#include "DefaultValues.h"
 
 using namespace std;
 
@@ -59,6 +60,12 @@ public:
 	void addObject(ObjectData* obj);
 
 	/**
+	 * Gibt einen Verweis auf die geladenen Standardwerte zurück.
+	 * @return Pointer auf das DefaultsValues-Objekt
+	 */
+	DefaultValues* getDefaults();
+
+	/**
 	 * Löscht das aktuelle Objekt aus der Objektliste.
 	 */
 	void removeCurrentObject();
@@ -82,6 +89,11 @@ private:
 	 * Die allgemein verwendeten Visualisierungsoptionen.
 	 */
 	Utils::Visualization_info visualization_info;
+
+	/**
+	 * Standardwertobjekt
+	 */
+	DefaultValues* defaults;
 
 	/**
 	 * Wird beim Start der Anwendung ausgeführt und öffnet das Hauptfenster.

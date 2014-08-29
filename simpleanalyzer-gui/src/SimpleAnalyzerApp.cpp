@@ -54,6 +54,10 @@ void SimpleAnalyzerApp::addObject(ObjectData* obj) {
 	data_objects.resize(data_objects.size() + 1, obj);
 }
 
+DefaultValues* SimpleAnalyzerApp::getDefaults() {
+	return defaults;
+}
+
 void SimpleAnalyzerApp::removeCurrentObject() {
 
 	//Sind mehrere Objekte vorhanden?
@@ -70,6 +74,8 @@ void SimpleAnalyzerApp::removeCurrentObject() {
 }
 
 bool SimpleAnalyzerApp::OnInit() {
+
+	defaults = new DefaultValues();
 
 	//nötig zum Ausgeben auf dem std-Stream unter Windows
 	std::cout << std::flush;

@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/DefaultValues.cpp \
 ../src/SimpleAnalyzerApp.cpp 
 
 OBJS += \
+./src/DefaultValues.o \
 ./src/SimpleAnalyzerApp.o 
 
 CPP_DEPS += \
+./src/DefaultValues.d \
 ./src/SimpleAnalyzerApp.d 
 
 

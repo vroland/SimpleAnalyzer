@@ -26,8 +26,8 @@ ObjectData::ObjectData() {
 	 * Die Daten werden erst durch das Laden einer Datei (loadFromFile) hinzugefügt.
 	 */
 	current_sensor_index = -1;
-	maxvolume = .001;
-	quality = 2;
+	maxvolume = wxGetApp().getDefaults()->obj_maxvolume;
+	quality = wxGetApp().getDefaults()->obj_quality;
 }
 
 int ObjectData::loadFromFile(wxString &path) {
@@ -143,9 +143,12 @@ int ObjectData::calculateIO() {
 
 		//Die neue Geometrie mit tetgen erzeugen
 		stringstream ss(stringstream::in | stringstream::out);
-		ss << "Qpq1.414a";
+		ss << "Qpq";
+		ss << quality;
+		ss << "a";
 		ss << maxvolume;
 		string args = ss.str(); //"Qpq1.414a0.001";
+		cout << args << endl;
 		tetrahedralize(const_cast<char*>(args.c_str()), data->tetgeninput,
 				data->tetgenoutput, NULL, NULL);
 	}

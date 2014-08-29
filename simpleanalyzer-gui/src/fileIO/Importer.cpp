@@ -42,44 +42,6 @@ int getFaceIndex(string data,bool withUV) {
 	}
 }
 
-/**
- * Gibt den n-ten durch Leerzeichen abgetrennten Block aus einem String zurück.
- * @param data Der Ausgansstring.
- * @param n Index des zu findenden Blocks.
- * @return Der n-te durch Leerzeichen getrennte Teilstring. "" Bei ungültigem Index.
- */
-string getTextBlock(string data, int n) {
-
-	//Position des abschließenden Leerzeichens für den ersten Block
-	size_t position = data.find(" ");
-	//Speicher für das Ende des vorherigen Blocks
-	size_t previousPos = 0;
-
-	//Ist der String Leerzeichenlos?
-	if (position == data.npos) {
-		return "";
-	}
-
-	//Durchlaufen aller Textblöcke bis zum gewünschten Index
-	for (int i = 0; i < n; i++) {
-
-		//aus Ende des verherigen Blocks den Anfang des aktuellen Berechnen.
-		previousPos = position + 1;
-		//Position des nächsten Blocks suchen
-		position = data.find(" ", position + 1);
-		//Ende der Zeile erreicht?
-		if (position == data.npos) {
-			//Ist der Index außerhalb des möglichen Bereichs?
-			if (n - 1 > i) {
-				return "";
-			}
-		}
-	}
-
-	//Zurückgeben des aktuellen Textblocks
-	return data.substr(previousPos, position - (previousPos));
-}
-
 ObjectData::ObjectDataStatus Importer::ImportObj(string filename,
 		ObjectData* data) {
 

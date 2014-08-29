@@ -134,6 +134,14 @@ inline string floattostr(double val) {
 }
 
 /**
+ * Gibt den n-ten durch Leerzeichen oder Tabulator abgetrennten Block aus einem String zurück.
+ * @param data Der Ausgansstring.
+ * @param n Index des zu findenden Blocks.
+ * @return Der n-te durch Leerzeichen getrennte Teilstring. "" Bei ungültigem Index.
+ */
+string getTextBlock(string data, int n);
+
+/**
  * Wandelt eine Fließkommazahl in einen wxWidgets-String um.
  * @param val Die umzuwandelnde Zahl.
  * @return Der entstandene String.

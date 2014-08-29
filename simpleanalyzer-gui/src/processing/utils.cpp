@@ -13,6 +13,45 @@ using namespace std;
 //Epsilon für die Epsilonumgebung zum Test auf Gleichheit.
 #define EPSILON 0.000001
 
+string Utils::getTextBlock(string data, int n) {
+
+	//Tabulatoren mit Leerzeichen ersetzen
+	for (size_t c=0;c<data.size();c++) {
+		if (data.at(c)=='\t') {
+			data.at(c) = ' ';
+		}
+	}
+
+	//Position des abschließenden Leerzeichens für den ersten Block
+	size_t position = data.find(" ");
+	//Speicher für das Ende des vorherigen Blocks
+	size_t previousPos = 0;
+
+	//Ist der String Leerzeichenlos?
+	if (position == data.npos) {
+		return "";
+	}
+
+	//Durchlaufen aller Textblöcke bis zum gewünschten Index
+	for (int i = 0; i < n; i++) {
+
+		//aus Ende des verherigen Blocks den Anfang des aktuellen Berechnen.
+		previousPos = position + 1;
+		//Position des nächsten Blocks suchen
+		position = data.find(" ", position + 1);
+		//Ende der Zeile erreicht?
+		if (position == data.npos) {
+			//Ist der Index außerhalb des möglichen Bereichs?
+			if (n - 1 > i) {
+				return "";
+			}
+		}
+	}
+
+	//Zurückgeben des aktuellen Textblocks
+	return data.substr(previousPos, position - (previousPos));
+}
+
 void Utils::nextCombination(vector<int>* indices, int depth,
 		int dataPointCount) {
 
