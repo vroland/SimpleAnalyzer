@@ -88,7 +88,7 @@ int ObjectData::loadFromFile(wxString &path) {
 		if (!found) {
 			unique = true;
 		} else {
-			//Objekt eine Nummer zu Identifisierung an den Namen geben
+			//Objekt eine Nummer zu Identifizierung an den Namen geben
 			count++;
 			stringstream ss(stringstream::in | stringstream::out);
 			ss << obj_name;

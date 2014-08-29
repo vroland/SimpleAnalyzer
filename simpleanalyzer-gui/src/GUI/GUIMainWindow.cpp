@@ -361,6 +361,11 @@ void GUIMainWindow::OnSensorDataChange(wxCommandEvent &event) {
 	//gleiches Update wie für alle Attribute
 	OnGeneralPropChange(event);
 
+	//Anzeigen der Sensordaten als Preview
+	wxGetApp().getActiveObject()->setCurrentSensorIndex(propbox->getSensorDataList()->GetSelection());
+	//aktualisieren des 3D-Fensters
+	gl_context->refresh();
+
 	//aktualisieren der Objekteigenschaftenoberfläche (evtl. durch einblenden der Timeline nötig)
 	propbox->resize();
 	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,
