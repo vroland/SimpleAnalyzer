@@ -2,7 +2,7 @@
  * Interpolator.h
  *
  *  Created on: 22.07.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef INTERPOLATOR_H_
@@ -22,7 +22,10 @@ public:
 	/**
 	 * Der Typ der verwendeten Interpolationsfunktion.
 	 */
-	enum InterpolationMode {LINEAR,LOGARITHMIC};
+	enum InterpolationMode {
+		LINEAR, LOGARITHMIC
+	};
+
 public:
 	/**
 	 * Der Konstruktor.
@@ -39,7 +42,7 @@ public:
 	 * Dabei ist values[0] der Wert des ersten Punktes des Dreiecks, values[0] der Zweite usw.
 	 * @return Der Wert für den angegebenen Punkt (pos).
 	 */
-	double interpolateTri(Triangle* tri,Vector3D* pos,double* values);
+	double interpolateTri(Triangle* tri, Vector3D* pos, double* values);
 
 	/**
 	 * Ermittelt den Wert für einen beliebigen Punkt im Raum.
@@ -51,7 +54,7 @@ public:
 	 * Dabei ist values[0] der Wert des ersten Punktes des Tetraeders, values[0] der Zweite usw.
 	 * @return Der Wert für den angegebenen Punkt (pos).
 	 */
-	double interpolateTet(Tetrahedron* tet,Vector3D* pos,double* values);
+	double interpolateTet(Tetrahedron* tet, Vector3D* pos, double* values);
 
 	/**
 	 * Setzt den verwendeten Interpolationsmodus (die Interpolationsfunktion).
@@ -62,12 +65,12 @@ public:
 	 * Der Destruktor.
 	 */
 	virtual ~Interpolator();
+
 private:
 	/**
 	 * Der verwendete Interpolationsmodus bzw. die Interpolationsfunktion.
 	 */
 	InterpolationMode mode;
 };
-
 
 #endif /* INTERPOLATOR_H_ */

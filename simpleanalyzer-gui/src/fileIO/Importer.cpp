@@ -2,7 +2,7 @@
  * Importer.cpp
  *
  *  Created on: 31.08.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "Importer.h"
@@ -31,12 +31,12 @@ Importer::Importer() {
  * @param withUV Enthält die obj-Datei auch Texturdatenindices?
  * @return Der Flächenindex.
  */
-int getFaceIndex(string data,bool withUV) {
+int getFaceIndex(string data, bool withUV) {
 
 	//Enthält die obj-Datei auch Texturdatenindices?
 	if (withUV) {
 		//Nur den Fächenindex, nicht den UV-Index auslesen
-		return int(atof(data.substr(0,data.find("/")).c_str()));
+		return int(atof(data.substr(0, data.find("/")).c_str()));
 	} else {
 		return int(atof(data.c_str()));
 	}
@@ -153,7 +153,8 @@ ObjectData::ObjectDataStatus Importer::ImportObj(string filename,
 			//Wurde ein Pfadseparatorzeichen gefunden?
 			if (lastps != string::npos) {
 				//Extrahieren des Ordners der .obj-Datei
-				filedir = filedir.substr(0, filedir.find_last_of(PATH_SEPARATOR) + 1);
+				filedir = filedir.substr(0,
+						filedir.find_last_of(PATH_SEPARATOR) + 1);
 			}
 
 			ifstream mtlfile;
@@ -376,6 +377,7 @@ ObjectData::ObjectDataStatus Importer::LoadSensorData(string filename,
 	//Laden der Sensordatendatei erfolgreich
 	return ObjectData::OD_SUCCESS;
 }
+
 ObjectData::ObjectDataStatus Importer::LoadTimedData(string filename,
 		ObjectData* data) {
 
@@ -464,6 +466,7 @@ ObjectData::ObjectDataStatus Importer::LoadTimedData(string filename,
 	//Laden der Sensordatendatei erfolgreich
 	return ObjectData::OD_SUCCESS;
 }
+
 Importer::~Importer() {
 }
 

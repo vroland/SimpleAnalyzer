@@ -2,7 +2,7 @@
  * MeshProcessor.cpp
  *
  *  Created on: 31.08.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "MeshProcessor.h"
@@ -60,7 +60,6 @@ void MeshProcessor::process(ObjectData* object) {
 		mat->tetgenoutput->pointattributelist =
 				new REAL[NUMBEROFSENSORATTRIBUTES
 						* mat->tetgenoutput->numberofpoints];
-
 
 		Interpolator interpolator;
 		interpolator.setMode(mat->interpolation_mode);

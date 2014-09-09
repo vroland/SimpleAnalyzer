@@ -2,7 +2,7 @@
  * Importer.h
  *
  *  Created on: 31.08.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef IMPORTER_H_
@@ -28,21 +28,23 @@ public:
 	 * diese mit dem Objekt.
 	 * @return Der Fehlercode.
 	 */
-	ObjectData::ObjectDataStatus LoadSensorData(string filename,ObjectData* data);
+	ObjectData::ObjectDataStatus LoadSensorData(string filename,
+			ObjectData* data);
 
 	/**
 	 * Lädt zeitgesteuerte Sensordaten und Verknüpft
 	 * diese mit dem Objekt.
 	 * @return Der Fehlercode.
 	 */
-	ObjectData::ObjectDataStatus LoadTimedData(string filename,ObjectData* data);
+	ObjectData::ObjectDataStatus LoadTimedData(string filename,
+			ObjectData* data);
 
 	/**
 	 * Lädt Objektdaten aus einer .obj-Datei. Das Objekt
 	 * ist zwar schon im Speicher erstellt, wird aber erst durch diese Methode mit Daten gefüllt.
 	 * @return Der Fehlercode.
 	 */
-	ObjectData::ObjectDataStatus ImportObj(string filename,ObjectData* data);
+	ObjectData::ObjectDataStatus ImportObj(string filename, ObjectData* data);
 
 	/**
 	 * Der Destruktor.

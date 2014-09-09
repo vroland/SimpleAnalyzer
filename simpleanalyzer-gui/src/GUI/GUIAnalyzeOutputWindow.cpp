@@ -2,7 +2,7 @@
  * GUIAnalyzeOutputWindow.cpp
  *
  *  Created on: 12.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "GUIAnalyzeOutputWindow.h"
@@ -17,13 +17,13 @@ using namespace std;
 
 //Eventtabelle zum Verknüpfen der Events
 BEGIN_EVENT_TABLE(GUIAnalyzeOutputWindow, wxFrame)
-	EVT_KEY_DOWN(GUIAnalyzeOutputWindow::OnKeyPress)
+EVT_KEY_DOWN(GUIAnalyzeOutputWindow::OnKeyPress)
 END_EVENT_TABLE()
 
 GUIAnalyzeOutputWindow::GUIAnalyzeOutputWindow(wxWindow * parent,
 		const wxChar *title, int xpos, int ypos, int width, int height) :
 		wxFrame(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height),
-				wxDEFAULT_FRAME_STYLE | wxFRAME_FLOAT_ON_PARENT) {
+		wxDEFAULT_FRAME_STYLE | wxFRAME_FLOAT_ON_PARENT) {
 
 	//Format für die Zahlendarstellung auf Punkt als Dezimaltrennzeichen setzen
 	setlocale(LC_NUMERIC, "C");
@@ -61,7 +61,8 @@ void GUIAnalyzeOutputWindow::Update() {
 	const int MATERIAL_PROPERTY_COUNT = 3;
 
 	//erstellen der Zeilen der Tabelle
-	table->AppendRows(OBJECT_PROPERTY_COUNT + MATERIAL_PROPERTY_COUNT + 1, true);
+	table->AppendRows(OBJECT_PROPERTY_COUNT + MATERIAL_PROPERTY_COUNT + 1,
+			true);
 
 	//Breite der Tabelle in Zellen (für Zellenindices benötigt)
 	int all_mat_cell_count = 0;
@@ -118,12 +119,14 @@ void GUIAnalyzeOutputWindow::Update() {
 			table->SetCellValue(2, all_mat_cell_count + s * matcount,
 					wxString::FromAscii(floattostr(data.volume).c_str()));
 			table->SetCellValue(3, all_mat_cell_count + s * matcount,
-					wxString::FromAscii(floattostr(data_set->heat_energy).c_str()));
+					wxString::FromAscii(
+							floattostr(data_set->heat_energy).c_str()));
 
 			//Für alle Materialien...
 			for (int i = 0; i < matcount; i++) {
 				//Analysedaten für einen Material
-				Analyzer::AnalyzerData_material* mat = &data_set->mat_data.at(i);
+				Analyzer::AnalyzerData_material* mat = &data_set->mat_data.at(
+						i);
 				//Zelle Mitzählen
 				materialcells++;
 				//Materialnamen eintragen
@@ -131,7 +134,8 @@ void GUIAnalyzeOutputWindow::Update() {
 						all_mat_cell_count + s * matcount + i,
 						wxString::FromAscii(mat->name.c_str()));
 				//Materialnamen zentrieren
-				table->SetCellAlignment(wxALIGN_CENTRE, OBJECT_PROPERTY_COUNT + 1,
+				table->SetCellAlignment(wxALIGN_CENTRE,
+						OBJECT_PROPERTY_COUNT + 1,
 						all_mat_cell_count + s * matcount + i);
 
 				//Die Analyseergebnisse für das Material eintragen
@@ -140,7 +144,8 @@ void GUIAnalyzeOutputWindow::Update() {
 						wxString::FromAscii(floattostr(mat->volume).c_str()));
 				table->SetCellValue(OBJECT_PROPERTY_COUNT + 3,
 						all_mat_cell_count + s * matcount + i,
-						wxString::FromAscii(floattostr(mat->heat_energy).c_str()));
+						wxString::FromAscii(
+								floattostr(mat->heat_energy).c_str()));
 			}
 		}
 		//Materialzellen mitzählen
@@ -150,46 +155,46 @@ void GUIAnalyzeOutputWindow::Update() {
 
 void GUIAnalyzeOutputWindow::ToClipboard() {
 
-    wxString copy_data;
-    bool something_in_this_line;
+	wxString copy_data;
+	bool something_in_this_line;
 
-    copy_data.Clear();
+	copy_data.Clear();
 
-    //Kopieren der Tabelleninhalte
-    for (int i=0; i<table->GetRows();i++) {
+	//Kopieren der Tabelleninhalte
+	for (int i = 0; i < table->GetRows(); i++) {
 
-        something_in_this_line = false;
-        for (int j=0; j<table->GetCols(); j++) {
+		something_in_this_line = false;
+		for (int j = 0; j < table->GetCols(); j++) {
 
-            if (table->IsInSelection(i,j)) {
+			if (table->IsInSelection(i, j)) {
 
-                if (something_in_this_line == false) {
+				if (something_in_this_line == false) {
 
-                	if (copy_data.IsEmpty() == false) {
-                        copy_data.Append(wxT("\r\n"));  // in windows if copy to notepad need \r\n to newline
-                    }
+					if (copy_data.IsEmpty() == false) {
+						copy_data.Append(wxT("\r\n")); // in windows if copy to notepad need \r\n to newline
+					}
 
-                    something_in_this_line = true;
-                } else {
-                    copy_data.Append(wxT("\t"));
-                }
+					something_in_this_line = true;
+				} else {
+					copy_data.Append(wxT("\t"));
+				}
 
-                copy_data = copy_data + table->GetCellValue(i,j);
-            }
-        }
-    }
+				copy_data = copy_data + table->GetCellValue(i, j);
+			}
+		}
+	}
 
-    //Schreiben in die Zwischenablage
-    if (wxTheClipboard->Open()) {
-    	wxTheClipboard->SetData(new wxTextDataObject(copy_data));
-    	wxTheClipboard->Close();
-    }
+	//Schreiben in die Zwischenablage
+	if (wxTheClipboard->Open()) {
+		wxTheClipboard->SetData(new wxTextDataObject(copy_data));
+		wxTheClipboard->Close();
+	}
 }
 
 void GUIAnalyzeOutputWindow::SelectAll() {
 
 	//Alle Zeilen zur Selektion hinzufügen
-	for (int i=0; i<table->GetRows();i++) {
+	for (int i = 0; i < table->GetRows(); i++) {
 		table->SelectRow(i, true);
 	}
 }

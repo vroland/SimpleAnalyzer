@@ -2,7 +2,7 @@
  * Exporter.cpp
  *
  *  Created on: 18.12.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "Exporter.h"
@@ -165,6 +165,7 @@ ObjectData::ObjectDataStatus Exporter::ExportCutCSV(string filename,
 	//.csv-Datei erfolgreich geschrieben
 	return ObjectData::OD_SUCCESS;
 }
+
 Exporter::~Exporter() {
 }
 

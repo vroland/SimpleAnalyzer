@@ -1,8 +1,8 @@
 /*
- * event_ids.h
+ * constants.h
  *
  *  Created on: 07.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef EVENT_IDS_H_
@@ -18,8 +18,8 @@ const int NUMBER_OF_INTERPOLATION_MODES = 2;
 /**
  * Bezeichnungen für die von "Interpolator" verwendeten Interpolationsmodi.
  */
-const wxString INTERPOLATION_MODE_STRINGS[NUMBER_OF_INTERPOLATION_MODES] = {wxT("Linear"),wxT("Logarithmisch")};
-
+const wxString INTERPOLATION_MODE_STRINGS[NUMBER_OF_INTERPOLATION_MODES] = {
+		wxT("Linear"), wxT("Logarithmisch") };
 
 /**
  * \enum EventID

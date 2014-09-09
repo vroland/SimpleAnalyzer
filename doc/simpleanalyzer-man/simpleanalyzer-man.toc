@@ -7,7 +7,7 @@
 \contentsline {subsection}{\numberline {2.2}Installation Im Dateisystem}{6}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Installation des Debian-Pakets}{7}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Installation aus dem Quellcode}{9}{subsubsection.2.2.2}
-\contentsline {subsection}{\numberline {2.3}Deinstallation}{10}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Deinstallation}{11}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Deinstallation des Debian-Pakets}{11}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Deinstallation durch den Quellcode}{11}{subsubsection.2.3.2}
 \contentsline {section}{\numberline {3}Verwendung}{12}{section.3}
@@ -20,7 +20,7 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Fehlerkorrektur}{20}{subsubsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.3}Die Sensordefinitionsdatei}{20}{subsubsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.4}Die Konfigurationsdatei}{22}{subsubsection.3.2.4}
-\contentsline {subsection}{\numberline {3.3}Zusammenf\IeC {\"u}gen von .tsd-Dateien}{23}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Zusammenf\IeC {\"u}gen von .tsd-Dateien}{24}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Erstellung des 3D-Modells}{25}{subsection.3.4}
 \contentsline {subsubsection}{\numberline {3.4.1}Erstellung mit Blender}{25}{subsubsection.3.4.1}
 \contentsline {subsection}{\numberline {3.5}Auswertung und Visualisierung}{33}{subsection.3.5}
@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {3.8}Exportm\IeC {\"o}glichkeiten}{49}{subsection.3.8}
 \contentsline {subsubsection}{\numberline {3.8.1}Anzeige des 3D-Fensters}{49}{subsubsection.3.8.1}
 \contentsline {subsubsection}{\numberline {3.8.2}VTK-Datei}{50}{subsubsection.3.8.2}
-\contentsline {section}{\numberline {4}Generelles Vorgehen}{51}{section.4}
+\contentsline {section}{\numberline {4}Schritt f\IeC {\"u}r Schritt}{51}{section.4}
 \contentsline {section}{\numberline {5}Fehlerbehebung}{53}{section.5}
 \contentsline {subsection}{\numberline {5.1}Bei der Konvertierung}{53}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Bei der Auswertung}{54}{subsection.5.2}

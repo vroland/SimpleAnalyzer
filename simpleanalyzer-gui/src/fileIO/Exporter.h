@@ -2,7 +2,7 @@
  * Exporter.h
  *
  *  Created on: 18.12.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef EXPORTER_H_
@@ -30,13 +30,15 @@ public:
 	 * Exportiert die aktuell berechnete dreidimensionale Temperaturverteilung und das Modell als VTK-Datei.
 	 * @return Der Fehlercode.
 	 */
-	ObjectData::ObjectDataStatus ExportLegacyVTK(string filename,ObjectData* data);
+	ObjectData::ObjectDataStatus ExportLegacyVTK(string filename,
+			ObjectData* data);
 
 	/**
 	 * Exportiert die zweidimensionale Temperaturverteilung (Schnitt durch das Modell) als csv-Datei.
 	 * @return Der Fehlercode.
 	 */
-	ObjectData::ObjectDataStatus ExportCutCSV(string filename,float* values,CutRender_info* info);
+	ObjectData::ObjectDataStatus ExportCutCSV(string filename, float* values,
+			CutRender_info* info);
 
 	/**
 	 * Der Destruktor.

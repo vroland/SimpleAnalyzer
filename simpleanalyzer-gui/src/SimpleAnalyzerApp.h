@@ -2,7 +2,7 @@
  * SimpleAnalyzerApp.h
  *
  *  Created on: 04.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef GUIAPPLICATION_H_
@@ -73,6 +73,7 @@ public:
 	 * Der Destruktor.
 	 */
 	virtual ~SimpleAnalyzerApp();
+
 private:
 
 	/**

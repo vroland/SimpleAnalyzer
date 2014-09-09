@@ -2,8 +2,9 @@
  * GeometryClasses.h
  *
  *  Created on: 24.07.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
+
 #include <iostream>
 #ifndef GEOMETRYCLASSES_H_
 #define GEOMETRYCLASSES_H_
@@ -11,8 +12,11 @@
  * @brief 3D-Vektorklasse mit nützlichen Operationen.
  */
 class Vector3D {
+
 public:
-	friend std::ostream &operator<< (std::ostream &out, const Vector3D &vec);
+
+	friend std::ostream &operator<<(std::ostream &out, const Vector3D &vec);
+
 public:
 	/**
 	 * Konstruktor für Konstruktion aus einzelnen Koordinaten.
@@ -20,7 +24,7 @@ public:
 	 * @param y Y-Element des Vektors.
 	 * @param z Z-Element des Vektors.
 	 */
-	Vector3D(double x,double y,double z);
+	Vector3D(double x, double y, double z);
 
 	/**
 	 * Konstruktor für Konstruktion aus einer Koordinatenliste.
@@ -132,6 +136,7 @@ public:
 	 * Der Destruktor.
 	 */
 	virtual ~Vector3D();
+
 private:
 	/**
 	 * Die Elemente des Vektors.
@@ -142,8 +147,7 @@ private:
 /**
  * Definition des <<-Operators für die Ausgabe eines Vektors.
  */
-std::ostream &operator<< (std::ostream &out, const Vector3D &vec);
-
+std::ostream &operator<<(std::ostream &out, const Vector3D &vec);
 
 /**
  * @brief 3x3-Matrixklasse mit Operationen.
@@ -153,24 +157,23 @@ public:
 	/**
 	 * Der Standardkonstruktor. Erzeugt eine Standardmatrix:\n
 	 \f{eqnarray*}{
-        1 & 0 & 0 \\
+	 1 & 0 & 0 \\
         0 & 1 & 0 \\
         0 & 0 & 1 \\
    	   \f}
-   	*/
+	 */
 	Matrix3D();
 
 	/**
 	 * Erzeugt eine Matrix mit den gegebenen Elementen.\n
 	 \f{eqnarray*}{
-        x1 & y1 & z1 \\
+	 x1 & y1 & z1 \\
         x2 & y2 & z2 \\
         x3 & y3 & z3 \\
    	   \f}
 	 */
-	Matrix3D(double x1, double y1, double z1,
-			 double x2, double y2, double z2,
-			 double x3, double y3, double z3);
+	Matrix3D(double x1, double y1, double z1, double x2, double y2, double z2,
+			double x3, double y3, double z3);
 
 	/**
 	 * Multipliziert die Matrix mit einer anderen Matrix.
@@ -213,6 +216,7 @@ public:
 	 * Gibt die Matrix auf dem cout-Stream aus.
 	 */
 	void print();
+
 private:
 
 	/**
@@ -220,7 +224,6 @@ private:
 	 */
 	double elements[9];
 };
-
 
 /**
  * @brief Ein durch 3 Ortsvektoren beschriebenes Dreieck.
@@ -234,7 +237,7 @@ public:
 	 * @param v2 Ortsvektor zum 2. Punkt des Dreiecks.
 	 * @param v3 Ortsvektor zum 3. Punkt des Dreiecks.
 	 */
-	Triangle(Vector3D* v1,Vector3D* v2, Vector3D* v3);
+	Triangle(Vector3D* v1, Vector3D* v2, Vector3D* v3);
 
 	/**
 	 * Gibt eine Referenz auf den Ortsvektor zum ersten Punkt des Dreiecks zurück.
@@ -271,13 +274,13 @@ public:
 	 * Der Destruktor.
 	 */
 	~Triangle();
+
 private:
 	/**
 	 * Die Referenzen auf die Ortsvektoren zu den Eckpunkten des Dreiecks.
 	 */
 	Vector3D* verts[3];
 };
-
 
 /**
  * @brief Ein durch 4 Ortsvektoren beschriebener Tetraeder.
@@ -292,7 +295,7 @@ public:
 	 * @param v3 Ortsvektor zum 3. Punkt des Tetraeders.
 	 * @param v4 Ortsvektor zum 4. Punkt des Tetraeders.
 	 */
-	Tetrahedron(Vector3D* v1,Vector3D* v2,Vector3D* v3,Vector3D* v4);
+	Tetrahedron(Vector3D* v1, Vector3D* v2, Vector3D* v3, Vector3D* v4);
 
 	/**
 	 * Gibt eine Referenz auf den Ortsvektor zum 1. Punkt des Tetraeders zurück.
@@ -319,6 +322,7 @@ public:
 	 * @param index Der Index des gesuchten Punktes (0..3).
 	 */
 	Vector3D* getVert(int index);
+
 private:
 	/**
 	 * Die Referenzen auf die Ortsvektoren zu den Eckpunkten des Tetraeders.

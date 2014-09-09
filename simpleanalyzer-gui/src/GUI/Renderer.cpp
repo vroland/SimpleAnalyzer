@@ -2,7 +2,7 @@
  * Renderer.cpp
  *
  *  Created on: 27.07.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "Renderer.h"
@@ -120,9 +120,12 @@ void Renderer::renderTetrahedra(ObjectData::MaterialData* mat,
 
 		//Die Eckpunkte des Tetraeders
 		Vector3D v1 = Vector3D(&io->pointlist[3 * io->tetrahedronlist[4 * j]]);
-		Vector3D v2 = Vector3D(&io->pointlist[3 * io->tetrahedronlist[4 * j + 1]]);
-		Vector3D v3 = Vector3D(&io->pointlist[3 * io->tetrahedronlist[4 * j + 2]]);
-		Vector3D v4 = Vector3D(&io->pointlist[3 * io->tetrahedronlist[4 * j + 3]]);
+		Vector3D v2 = Vector3D(
+				&io->pointlist[3 * io->tetrahedronlist[4 * j + 1]]);
+		Vector3D v3 = Vector3D(
+				&io->pointlist[3 * io->tetrahedronlist[4 * j + 2]]);
+		Vector3D v4 = Vector3D(
+				&io->pointlist[3 * io->tetrahedronlist[4 * j + 3]]);
 
 		//Wird die Anzeige der Tetraeder durch eine Schnittebene eingeschränkt?
 		if (viewport.cut != NULL) {
@@ -185,7 +188,8 @@ void Renderer::renderTetrahedra(ObjectData::MaterialData* mat,
 				float inverse_hue = (value - vis_info->min_visualisation_temp)
 						/ (vis_info->max_visualisation_temp
 								- vis_info->min_visualisation_temp);
-				colors[k] = hsvToRgb((1.0 - clampHue(inverse_hue)) * .666, 1, 1);
+				colors[k] = hsvToRgb((1.0 - clampHue(inverse_hue)) * .666, 1,
+						1);
 			}
 		}
 
@@ -258,12 +262,12 @@ void Renderer::renderSensorData(vector<SensorPoint>* data) {
 		glPointSize(6.0);
 		glColor3f(0, 0, 0);
 		glBegin(GL_POINTS);
-			glVertex3dv(point->coords);
+		glVertex3dv(point->coords);
 		glEnd();
 		glPointSize(4.0);
 		glColor3fv(color);
 		glBegin(GL_POINTS);
-			glVertex3dv(point->coords);
+		glVertex3dv(point->coords);
 		glEnd();
 		delete[] color;
 	}
@@ -307,7 +311,8 @@ void Renderer::renderMaterial(ObjectData::MaterialData* mat) {
 				float inverse_hue = (value - vis_info->min_visualisation_temp)
 						/ (vis_info->max_visualisation_temp
 								- vis_info->min_visualisation_temp);
-				float* color = hsvToRgb((1.0 - clampHue(inverse_hue)) * .666, 1, 1);
+				float* color = hsvToRgb((1.0 - clampHue(inverse_hue)) * .666, 1,
+						1);
 
 				//Zeichnen des Punktes
 				glColor3fv(color);
@@ -348,7 +353,7 @@ void Renderer::initGL(int width, int height) {
 	//Hintergrundfarbe initialisieren
 	glClearColor(.5, .5, .5, 0);
 	//Viewport und Projektion setzen
-	resize(width,height);
+	resize(width, height);
 
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
@@ -401,9 +406,9 @@ void drawVector(Vector3D* pos, Vector3D* dir) {
 	}
 
 	//Radius der Vektorspitze
-	float radius = .012*dir->getLength();
+	float radius = .012 * dir->getLength();
 	//Länge der Vektorspitze
-	float length = .024*dir->getLength();
+	float length = .024 * dir->getLength();
 
 	//Zwei Referenzvektoren, die zum Ausgansvektor und zueinander einen Winkel von 90° einschließen
 	Vector3D* refvec = ndir.crossProduct(&refdir);
@@ -515,6 +520,7 @@ void Renderer::setCutRenderInfo(CutRender_info* info) {
 
 	cut_visualisation_info = info;
 }
+
 void Renderer::setObject(ObjectData* obj) {
 
 	object = obj;
@@ -544,6 +550,7 @@ void Renderer::setObject(ObjectData* obj) {
 	}
 	glEndList();
 }
+
 wxImage* Renderer::getViewportImage() {
 
 	//Auslesen des OpenGL-Viewports
@@ -566,7 +573,8 @@ wxImage* Renderer::getViewportImage() {
 				((unsigned char*) pixels)[4 * i + 1],
 				((unsigned char*) pixels)[4 * i + 2]);
 
-		img->SetAlpha(i % view[2], view[3] - i / view[2] - 1, ((unsigned char*) pixels)[4 * i + 3]);
+		img->SetAlpha(i % view[2], view[3] - i / view[2] - 1,
+				((unsigned char*) pixels)[4 * i + 3]);
 	}
 
 	free(pixels);
@@ -592,11 +600,11 @@ void drawCutRenderInfo(CutRender_info* info) {
 	Triangle* tri = info->tri;
 	glColor4f(.5, 0, 0, .5);
 	glBegin(GL_TRIANGLES);
-		Vector3D* nor = tri->getNormal();
-		glNormal3dv(nor->getXYZ());
-		glVertex3dv(tri->getV1()->getXYZ());
-		glVertex3dv(tri->getV2()->getXYZ());
-		glVertex3dv(tri->getV3()->getXYZ());
+	Vector3D* nor = tri->getNormal();
+	glNormal3dv(nor->getXYZ());
+	glVertex3dv(tri->getV1()->getXYZ());
+	glVertex3dv(tri->getV2()->getXYZ());
+	glVertex3dv(tri->getV3()->getXYZ());
 	glEnd();
 	glDisable(GL_BLEND);
 
@@ -606,12 +614,8 @@ void drawCutRenderInfo(CutRender_info* info) {
 	Vector3D* yvec = nor->crossProduct(xvec);
 	xvec->normalize();
 	yvec->normalize();
-	xvec->mult(
-			info->img_width / 2
-					* info->mmperpixel / 1000.);
-	yvec->mult(
-			info->img_height / 2
-					* info->mmperpixel / 1000.);
+	xvec->mult(info->img_width / 2 * info->mmperpixel / 1000.);
+	yvec->mult(info->img_height / 2 * info->mmperpixel / 1000.);
 
 	//Zeichnen der Achsen als Pfeile
 	glColor3f(1, 0, 0);
@@ -635,17 +639,17 @@ void drawCutRenderInfo(CutRender_info* info) {
 	br->sub(yvec);
 
 	glBegin(GL_LINES);
-		glVertex3dv(tl->getXYZ());
-		glVertex3dv(tr->getXYZ());
+	glVertex3dv(tl->getXYZ());
+	glVertex3dv(tr->getXYZ());
 
-		glVertex3dv(tl->getXYZ());
-		glVertex3dv(bl->getXYZ());
+	glVertex3dv(tl->getXYZ());
+	glVertex3dv(bl->getXYZ());
 
-		glVertex3dv(br->getXYZ());
-		glVertex3dv(tr->getXYZ());
+	glVertex3dv(br->getXYZ());
+	glVertex3dv(tr->getXYZ());
 
-		glVertex3dv(br->getXYZ());
-		glVertex3dv(bl->getXYZ());
+	glVertex3dv(br->getXYZ());
+	glVertex3dv(bl->getXYZ());
 	glEnd();
 
 	delete tl;
@@ -659,6 +663,7 @@ void drawCutRenderInfo(CutRender_info* info) {
 	//normaler Tiefentest
 	glDepthFunc(GL_LESS);
 }
+
 void Renderer::render() {
 
 	//Löschen der Farb- und Tiefeninformationen

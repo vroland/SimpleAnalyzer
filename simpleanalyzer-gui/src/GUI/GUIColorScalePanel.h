@@ -2,7 +2,7 @@
  * GUIColorScalePanel.h
  *
  *  Created on: 23.12.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef GUICOLORSCALEPANEL_H_
@@ -24,9 +24,9 @@ public:
 	 * Modus der Skalendarstellung.
 	 */
 	enum ScaleMode {
-		SCM_NONE = 0,	/**< Keine Skala. */
-		SCM_HORIZONTAL,	/**< Eine horizontal ausgerichtete Skala. */
-		SCM_VERTICAL,	/**< Eine vertikal ausgerichtete Skala. */
+		SCM_NONE = 0, /**< Keine Skala. */
+		SCM_HORIZONTAL, /**< Eine horizontal ausgerichtete Skala. */
+		SCM_VERTICAL, /**< Eine vertikal ausgerichtete Skala. */
 	};
 
 	/**
@@ -39,7 +39,7 @@ public:
 	 * @param img_width Breite des Bildes, für das die Skala gezeichnet wird.
 	 * @param img_height Höhe des Bildes, für das die Skala gezeichnet wird.
 	 */
-	void refresh(int img_width,int img_height);
+	void refresh(int img_width, int img_height);
 
 	/**
 	 * Zeichnet die Temperaturskala mit einem bestimmten device context.
@@ -47,7 +47,7 @@ public:
 	 * @param zoom Faktor zum Skalieren der Skala.
 	 * @param img_coords Position der Grafik auf der Zeichenfläche.
 	 */
-	void paintTo(wxDC& dc,float zoom,wxPoint& img_coords);
+	void paintTo(wxDC& dc, float zoom, wxPoint& img_coords);
 
 	/**
 	 * Behandelt die Mausaktionen und verändert ggf. Größe oder Position des Skala.
@@ -56,19 +56,20 @@ public:
 	 * @param img_dim Größe der Grafik.
 	 * @param zoom aktueller Vergrößerungsfaktor des Betrachtungsfensters.
 	 */
-	void handleMouse(wxMouseEvent& event,wxPoint& img_coords,wxPoint& img_dim,float zoom);
+	void handleMouse(wxMouseEvent& event, wxPoint& img_coords, wxPoint& img_dim,
+			float zoom);
 
 	/**
 	 * Gibt die bei einem bestimmten Zoomfaktor eingenommene Fläche zurück.
 	 */
-	void getDisplayArea(wxRect* rect,float zoom);
+	void getDisplayArea(wxRect* rect, float zoom);
 
 	/**
 	 * Passt die Größe und Position der Skala an die Größe der Grafik an.
 	 * @param img_dim Größe der Grafik.
 	 * @param to_scale Größe statt der Position verändern.
 	 */
-	void fitBounds(wxPoint& img_dim,bool to_scale);
+	void fitBounds(wxPoint& img_dim, bool to_scale);
 
 	/**
 	 * Gibt zurück, ob sich die Maus über der Fläche der Skala befindet.
@@ -76,7 +77,8 @@ public:
 	 * @param zoom aktueller Vergrößerungsfaktor des Betrachtungsfensters.
 	 * @param mouse_pos Position der Maus auf der Zeichenfläche.
 	 */
-	bool mouseOnDisplayArea(wxPoint& img_coords,float zoom,wxPoint& mouse_pos);
+	bool mouseOnDisplayArea(wxPoint& img_coords, float zoom,
+			wxPoint& mouse_pos);
 
 	/**
 	 * @return horizontale Position auf der Zeichenfläche.
@@ -97,7 +99,6 @@ public:
 	 * Setzt die Schriftgröße der Skala.
 	 */
 	void setFontSize(int fontSize);
-
 
 	/**
 	 * @return Modus der Skala.
@@ -138,6 +139,7 @@ public:
 	 * Der Destruktor.
 	 */
 	virtual ~GUIColorScalePanel();
+
 private:
 	/**
 	 * Schrittweite der Beschriftung.

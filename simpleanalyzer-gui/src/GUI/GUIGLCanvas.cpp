@@ -2,18 +2,19 @@
  * GUIGLCanvas.cpp
  *
  *  Created on: 05.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
+
 #include "GUIGLCanvas.h"
 #include "../SimpleAnalyzerApp.h"
 #include "../libraries/interpolate/GeometryClasses.h"
 
 //Eventtabelle zum Verknüpfen der Events
 BEGIN_EVENT_TABLE(GUIGLCanvas, wxGLCanvas)
-	EVT_PAINT (GUIGLCanvas::OnPaint)
-	EVT_MOUSEWHEEL(GUIGLCanvas::OnMouseWheel)
-	EVT_MOTION (GUIGLCanvas::OnMouseMove)
-	EVT_SIZE (GUIGLCanvas::OnResize)
+EVT_PAINT (GUIGLCanvas::OnPaint)
+EVT_MOUSEWHEEL(GUIGLCanvas::OnMouseWheel)
+EVT_MOTION (GUIGLCanvas::OnMouseMove)
+EVT_SIZE (GUIGLCanvas::OnResize)
 END_EVENT_TABLE()
 
 //Liste der Attribute zum erstellen des OpenGL-Context

@@ -2,7 +2,7 @@
  * GUIMainWindow.cpp
  *
  *  Created on: 04.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "GUIMainWindow.h"
@@ -39,41 +39,42 @@ using namespace Utils;
 
 //Eventtabelle zum Verknüpfen der Events von Menü, Objekteigenschaftenfenster und Visualisierungseigenschaftenfenster
 BEGIN_EVENT_TABLE(GUIMainWindow, wxFrame)
-	EVT_MENU(ID_IMPORT_OBJ, GUIMainWindow::OnMenuImportObj)
-	EVT_MENU(ID_IMPORT_SD, GUIMainWindow::OnMenuImportSD)
-	EVT_MENU(wxID_EXIT, GUIMainWindow::OnMenuFileQuit)
-	EVT_MENU(ID_ABOUT, GUIMainWindow::OnMenuHelpAbout)
-	EVT_MENU(ID_OPEN_MANUAL, GUIMainWindow::OnMenuOpenManual)
-	EVT_MENU(ID_ANALYZE, GUIMainWindow::OnAnalyze)
-	EVT_LISTBOX(ID_MATERIALBOX, GUIMainWindow::OnMaterialSelect)
-	EVT_BUTTON(ID_RECALCBT,GUIMainWindow::OnRecalcBtClick)
-	EVT_SIZE(GUIMainWindow::OnResize)
-	EVT_TEXT(ID_IMMEDIATE_UPDATE_PROP,GUIMainWindow::OnImmediateUpdatePropChange)
-	EVT_TEXT(ID_GENERAL_PROP,GUIMainWindow::OnGeneralPropChange)
-	EVT_RADIOBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
-	EVT_TEXT(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
-	EVT_CHECKLISTBOX(ID_CHECKLISTBOX_VIEW_PROP,GUIMainWindow::OnViewPropChange)
-	EVT_CHECKBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
-	EVT_SPINCTRL(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropSpinChange)
-	EVT_MENU(ID_CHANGE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectChange)
-	EVT_MENU(ID_ANALYZE_POINT,GUIMainWindow::OnAnalyzePoint)
-	EVT_MENU(ID_RENDER_CUT,GUIMainWindow::OnRenderCut)
-	EVT_MENU(ID_DELETE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectDelete)
-	EVT_MENU(ID_IMPORT_TSD,GUIMainWindow::OnMenuImportTSD)
-	EVT_COMBOBOX(ID_SD_BOX,GUIMainWindow::OnSensorDataChange)
-	EVT_COMMAND(ID_SD_TIMELINE, wxEVT_TIMELINE_CHANGE,GUIMainWindow::OnSDTimelineChange)
-	EVT_CHECKBOX(ID_ANALYZE_MARKER_CB,GUIMainWindow::OnAnalyzeMarkerChange)
-	EVT_BUTTON(ID_CLEAR_MARKER_BT,GUIMainWindow::OnSDTLMarkerClear)
-	EVT_BUTTON(ID_MARKER_NEXT_BT,GUIMainWindow::OnSDTLNextMarker)
-	EVT_BUTTON(ID_MARKER_PREV_BT,GUIMainWindow::OnSDTLPrevMarker)
-	EVT_MENU(ID_EXPORT_VIEWPORT,GUIMainWindow::OnExportViewportImage)
-	EVT_BUTTON(ID_FIND_MAX_BT,GUIMainWindow::OnFindMaxTSD)
-	EVT_CHECKBOX(ID_AUTO_UPDATE_CB,GUIMainWindow::OnAutoUpdateChange)
-	EVT_MENU(ID_EXPORT_VTK,GUIMainWindow::OnExportVTK)
+EVT_MENU(ID_IMPORT_OBJ, GUIMainWindow::OnMenuImportObj)
+EVT_MENU(ID_IMPORT_SD, GUIMainWindow::OnMenuImportSD)
+EVT_MENU(wxID_EXIT, GUIMainWindow::OnMenuFileQuit)
+EVT_MENU(ID_ABOUT, GUIMainWindow::OnMenuHelpAbout)
+EVT_MENU(ID_OPEN_MANUAL, GUIMainWindow::OnMenuOpenManual)
+EVT_MENU(ID_ANALYZE, GUIMainWindow::OnAnalyze)
+EVT_LISTBOX(ID_MATERIALBOX, GUIMainWindow::OnMaterialSelect)
+EVT_BUTTON(ID_RECALCBT,GUIMainWindow::OnRecalcBtClick)
+EVT_SIZE(GUIMainWindow::OnResize)
+EVT_TEXT(ID_IMMEDIATE_UPDATE_PROP,GUIMainWindow::OnImmediateUpdatePropChange)
+EVT_TEXT(ID_GENERAL_PROP,GUIMainWindow::OnGeneralPropChange)
+EVT_RADIOBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
+EVT_TEXT(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
+EVT_CHECKLISTBOX(ID_CHECKLISTBOX_VIEW_PROP,GUIMainWindow::OnViewPropChange)
+EVT_CHECKBOX(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropChange)
+EVT_SPINCTRL(ID_GENERAL_VIEW_PROP,GUIMainWindow::OnViewPropSpinChange)
+EVT_MENU(ID_CHANGE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectChange)
+EVT_MENU(ID_ANALYZE_POINT,GUIMainWindow::OnAnalyzePoint)
+EVT_MENU(ID_RENDER_CUT,GUIMainWindow::OnRenderCut)
+EVT_MENU(ID_DELETE_ACTIVE_OBJ,GUIMainWindow::OnActiveObjectDelete)
+EVT_MENU(ID_IMPORT_TSD,GUIMainWindow::OnMenuImportTSD)
+EVT_COMBOBOX(ID_SD_BOX,GUIMainWindow::OnSensorDataChange)
+EVT_COMMAND(ID_SD_TIMELINE, wxEVT_TIMELINE_CHANGE,GUIMainWindow::OnSDTimelineChange)
+EVT_CHECKBOX(ID_ANALYZE_MARKER_CB,GUIMainWindow::OnAnalyzeMarkerChange)
+EVT_BUTTON(ID_CLEAR_MARKER_BT,GUIMainWindow::OnSDTLMarkerClear)
+EVT_BUTTON(ID_MARKER_NEXT_BT,GUIMainWindow::OnSDTLNextMarker)
+EVT_BUTTON(ID_MARKER_PREV_BT,GUIMainWindow::OnSDTLPrevMarker)
+EVT_MENU(ID_EXPORT_VIEWPORT,GUIMainWindow::OnExportViewportImage)
+EVT_BUTTON(ID_FIND_MAX_BT,GUIMainWindow::OnFindMaxTSD)
+EVT_CHECKBOX(ID_AUTO_UPDATE_CB,GUIMainWindow::OnAutoUpdateChange)
+EVT_MENU(ID_EXPORT_VTK,GUIMainWindow::OnExportVTK)
 END_EVENT_TABLE()
 
 GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
-		int height) : wxFrame((wxFrame *) NULL, -1, title, wxPoint(xpos, ypos),
+		int height) :
+		wxFrame((wxFrame *) NULL, -1, title, wxPoint(xpos, ypos),
 				wxSize(width, height)) {
 
 	/**
@@ -114,7 +115,8 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	mwAnalyzeMenu = new wxMenu();
 	mwAnalyzeMenu->Append(ID_ANALYZE, wxT("Übersicht..."));
 	mwAnalyzeMenu->Append(ID_ANALYZE_POINT, wxT("Punkt..."));
-	mwAnalyzeMenu->Append(ID_RENDER_CUT, wxT("2D-Temperaturverteilung berechnen..."));
+	mwAnalyzeMenu->Append(ID_RENDER_CUT,
+			wxT("2D-Temperaturverteilung berechnen..."));
 	mwMenuBar->Append(mwAnalyzeMenu, wxT("Analysieren"));
 
 	// Das "Hilfe"-Untermenü
@@ -127,7 +129,6 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	prop_scroll_win = new wxScrolledWindow(this, wxID_ANY);
 	//Scrollbares Unterfenster für die Visualisierungsoptionen
 	view_scroll_win = new wxScrolledWindow(this, wxID_ANY);
-
 
 	prop_scroll_win->SetScrollRate(10, 10);
 	view_scroll_win->SetScrollRate(10, 10);
@@ -155,19 +156,23 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	 * Finden des Datenverzeichnisses
 	 */
 
-	data_directory = string(wxStandardPaths::Get().GetExecutablePath().BeforeLast(PATH_SEPARATOR[0]).ToUTF8().data());
+	data_directory = string(
+			wxStandardPaths::Get().GetExecutablePath().BeforeLast(
+					PATH_SEPARATOR[0]).ToUTF8().data());
 
 	//Datei zum Testen, ob ein Icon geladen werden kann.
 	ifstream testfile;
-	testfile.open(data_directory + PATH_SEPARATOR + "icons" + PATH_SEPARATOR + "analyze_point.png");
+	testfile.open(
+			data_directory + PATH_SEPARATOR + "icons" + PATH_SEPARATOR
+					+ "analyze_point.png");
 
 	//Liegt die Datei nicht im Verzeichnis der ausführbaren Datei?
 	if (!testfile.is_open()) {
 		//Die zusätzlichen Pfade versuchen
 		for (int i = 0; i < NUMBEROFPATHS; i++) {
 			data_directory = configpaths[i];
-			testfile.open(data_directory + string("icons")
-					+ string(PATH_SEPARATOR)
+			testfile.open(
+					data_directory + string("icons") + string(PATH_SEPARATOR)
 							+ string("analyze_point.png"));
 
 			//Unter diesem Pfad gefunden?
@@ -241,8 +246,7 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 	wxImage analyze_point_icon(
 			wxString::FromUTF8(
 					(data_directory + PATH_SEPARATOR + "icons" + PATH_SEPARATOR
-							+ "analyze_point.png").c_str()),
-			wxBITMAP_TYPE_PNG);
+							+ "analyze_point.png").c_str()), wxBITMAP_TYPE_PNG);
 	analyze_point_icon = analyze_point_icon.Scale(
 			toolbar->GetToolBitmapSize().x, toolbar->GetToolBitmapSize().y,
 			wxIMAGE_QUALITY_HIGH);
@@ -267,8 +271,10 @@ GUIMainWindow::GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
 #if defined (__WIN32__)
 	SetIcon(wxICON(program_icon));
 #else
-	SetIcon(wxIcon(wxString::FromUTF8(data_directory.c_str())
-		+ wxT("icons/prgm-icon.png")));
+	SetIcon(
+			wxIcon(
+					wxString::FromUTF8(
+							data_directory.c_str()) + wxT("icons/prgm-icon.png")));
 #endif
 
 	//Fenster auf dem Bildschirm zentrieren
@@ -315,7 +321,8 @@ void GUIMainWindow::OnActiveObjectDelete(wxCommandEvent &event) {
 		setActiveObject(wxGetApp().getCurrentDataObjectIndex());
 	} else {
 		wxMessageBox(
-				wxT("Das aktuelle Objekt ist das Einzige, kann also nicht gelöscht werden!"),
+				wxT(
+						"Das aktuelle Objekt ist das Einzige, kann also nicht gelöscht werden!"),
 				wxT("Fehler"), wxICON_ERROR);
 	}
 }
@@ -327,11 +334,11 @@ void GUIMainWindow::OnResize(wxSizeEvent &event) {
 
 	//Objekteigenschaften repositionieren
 	propbox->SetSize(propbox->GetPosition().x, propbox->GetPosition().y,
-			PROPBOXWIDTH - 10, 0, 0);
+	PROPBOXWIDTH - 10, 0, 0);
 	propbox->resize();
 	//Größe des Scrollfensters für die Objekteigenschaften anpassen
 	prop_scroll_win->SetSize(GetSize().x - PROPBOXWIDTH + 5, 0,
-			PROPBOXWIDTH - 10, GetSize().y - 25, 0);
+	PROPBOXWIDTH - 10, GetSize().y - 25, 0);
 	prop_scroll_win->SetVirtualSize(propbox->GetSize().x,
 			propbox->GetSize().y + 30);
 
@@ -362,7 +369,8 @@ void GUIMainWindow::OnSensorDataChange(wxCommandEvent &event) {
 	OnGeneralPropChange(event);
 
 	//Anzeigen der Sensordaten als Preview
-	wxGetApp().getActiveObject()->setCurrentSensorIndex(propbox->getSensorDataList()->GetSelection());
+	wxGetApp().getActiveObject()->setCurrentSensorIndex(
+			propbox->getSensorDataList()->GetSelection());
 	//aktualisieren des 3D-Fensters
 	gl_context->refresh();
 
@@ -403,7 +411,8 @@ void GUIMainWindow::OnFindMaxTSD(wxCommandEvent &event) {
 		if (obj->getCurrentSensorIndex()
 				!= propbox->getSensorDataList()->GetSelection()) {
 			wxMessageBox(
-					wxT("Das Objekt wurde noch nicht neu berechnet!\nBitte berechnen sie das Objekt neu, um die Maximumssuche fortzusetzen!"),
+					wxT(
+							"Das Objekt wurde noch nicht neu berechnet!\nBitte berechnen sie das Objekt neu, um die Maximumssuche fortzusetzen!"),
 					wxT("Fehler"));
 			return;
 		}
@@ -860,8 +869,7 @@ void GUIMainWindow::OnMenuImportTSD(wxCommandEvent &event) {
 
 	//Dialog zur Dateiauswahl
 	wxFileDialog *OpenDialog = new wxFileDialog(this, wxT("Datei öffnen..."),
-			_(""), _(""), _("Sensordaten-Pakete (*.tsd)|*.tsd"),
-			wxFD_OPEN);
+			_(""), _(""), _("Sensordaten-Pakete (*.tsd)|*.tsd"), wxFD_OPEN);
 
 	//Öffnen bestätigt?
 	if (OpenDialog->ShowModal() == wxID_OK) {
@@ -880,7 +888,7 @@ void GUIMainWindow::OnMenuImportTSD(wxCommandEvent &event) {
 void GUIMainWindow::OnExportViewportImage(wxCommandEvent &event) {
 
 	//Ist ein Objekt geladen?
-	if (wxGetApp().getCurrentDataObjectIndex()<0) {
+	if (wxGetApp().getCurrentDataObjectIndex() < 0) {
 		cerr << "no object loaded!" << endl;
 		return;
 	}
@@ -909,7 +917,7 @@ void GUIMainWindow::OnExportViewportImage(wxCommandEvent &event) {
 void GUIMainWindow::OnExportVTK(wxCommandEvent &event) {
 
 	//Ist ein Objekt geladen?
-	if (wxGetApp().getCurrentDataObjectIndex()<0) {
+	if (wxGetApp().getCurrentDataObjectIndex() < 0) {
 		cerr << "no object loaded!" << endl;
 		return;
 	}
@@ -973,7 +981,7 @@ void GUIMainWindow::OnMenuOpenManual(wxCommandEvent &event) {
 	ShellExecute(NULL, NULL, wxString::FromUTF8(
 					(data_directory + PATH_SEPARATOR
 							+ "simpleanalyzer-man.pdf").c_str()).wc_str(),
-								NULL, NULL, SW_SHOWNORMAL);
+			NULL, NULL, SW_SHOWNORMAL);
 #else
 	system(
 			string(

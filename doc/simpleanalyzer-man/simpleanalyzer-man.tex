@@ -96,8 +96,8 @@
 	\newpage
 	\section{Einführung}
 	Das \pkname -Softwarepaket enthält Programme zur Auswertung von Versuchen zur Materialerwärmung für debianbasierte Betriebssysteme. 
-	Die der enthaltene Software ermöglicht es Ihnen, Temperaturmessdaten aus einer .csv-Datei oder Messwerte des ODiSI-Instruments von Luna Inc. in ein einheitliches Format umzuwandeln und zusammenzuführen.\\
-	Über eine grafische Oberfläche ist es möglich, mithilfe der so aufbereiteten Daten Auswertungen wie eine Temperaturverteilung über ein dreidimensionales Modell oder das Bestimmen des Wärmegehalts vorzunehmen und den Versuch zu visualisieren.\\
+	Die enthaltene Software ermöglicht es Ihnen, Temperaturmessdaten aus einer .csv-Datei oder Messwerte des ODiSI-Instruments von Luna Inc. in ein einheitliches Format umzuwandeln und zusammenzuführen.\\
+	Über eine grafische Oberfläche ist es möglich, mithilfe der so aufbereiteten Daten eine Temperaturverteilung über ein dreidimensionales Modell oder eine Schnittebene zu berechnen sowie den Wärmegehalt zu bestimmen. Sowohl zwei- als auch dreidimensionale Temperaturverteilung können im Programm visualisiert werden. \\
 	Zur weiteren Nutzung der Ergebnisse können diese, beispielsweise als VTK-Datei oder PNG-Grafik, exportiert werden.
 	\newpage
 	\section{Installation}
@@ -200,6 +200,7 @@
 	\begin{hinweis}
 	Die Pakete \emph{build-essential, wx2.8-headers, libwxgtk2.8-dev} und \emph{libwxbase2.8-dev} werden nicht zum Betrieb des Programms benötigt, könnten also später wieder entfernt werden. Die übrigen hingegen sind für das Funktionieren der Programme essentiell.
 	\end{hinweis}
+	\newpage
 	\subsection{Deinstallation}
 	Wenn Sie das \pkname -Programmpaket wieder deinstallieren möchten hängt ihr Vorgehen von der verwendeten Installationsmethode ab.
 	\begin{warnung}
@@ -278,7 +279,7 @@
 	\begin{warnung}
 	Die Werte der Zeitspalte werden als Ganzzahl interpretiert. Die Einheit sollte also entsprechend genau gewählt werden, bspw. $Sekunden$.
 	\end{warnung}
-	\item Es können beliebig viele zusätzliche Spalten vor und nach den Sensordatenspalten stehen, wie z.B. Namen für die Datensätze. Sie müssen jedoch sicherstellen, dass ihre Konfigurationsdatei (s. \ref{subsec:conf_csvtosd}) die dementsprechenden Einstellungen enthält.
+	\item Es können beliebig viele zusätzliche Spalten vor und nach den Sensordatenspalten stehen, wie z.B. Namen für die Datensätze. Sie müssen jedoch sicherstellen, dass ihre Konfigurationsdatei (s. \ref{subsec:conf_csvtosd}) dementsprechend angepasst ist.
 	\item Unter der Kopfzeile folgen die Datensätze zeilenweise mit den jeweiligen Daten für alle Spalten.
 	\item Während sich vor der Kopfzeile noch zusätzliche Zeilen befinden können (s. \ref{subsec:conf_csvtosd}), darf die Datei nach der letzten Sensordatenzeile keinen Eintrag mehr enthalten.
 	\end{itemize}
@@ -381,7 +382,7 @@
 	\subsubsection{Fehlerkorrektur}
 	Das odisitosd-Werkzeug ist in der Lage, Ausreißer in den Messwerten zu erkennen und zu bereinigen.
 	Dazu wird für jeden Messwert geprüft, ob die Temperaturdifferenz zum vorherigen Wert an dieser Stelle eine bestimmte Schwelle überschreitet. Wenn dies der Fall ist, sucht das Programm unter den nächsten Messwerten einen Wert, für den die Temperaturdifferenz nicht größer als der \textbf{Schwellenwert mal Anzahl der bisherigen Suchschritte} ist.\\
-	Wird ein solcher Wert gefunden, werden die dazwischen liegenden Ausreißer-werte durch \textbf{linear zwischen den beiden gültigen Punkten interpoliert}.
+	Wird ein solcher Wert gefunden, werden die dazwischen liegenden Ausreißer-werte \textbf{linear zwischen den beiden gültigen Punkten interpoliert}.
 	Die maximale Temperaturdifferenz und die maximale Suchweite können in der Konfigurationsdatei angegeben werden. (s. \ref{subsec:conf_odisitosd})
 	\subsubsection{Die Sensordefinitionsdatei}
 	\label{subsec:sdef_odisitosd}
@@ -399,7 +400,7 @@
 	Die Ein- und Ausgänge der Faser müssen nach aufsteigender Position auf der Faser (Länge) sortiert werden. Der Faserausgang besitzt dabei immer eine größere Länge als der Eingang.
 	\end{warnung}
 	Es werden in zwei aufeinander folgenden Zeilen stets Ein- und Ausgangspunkt der Faser beschrieben (durch \emph{i} bzw \emph{o} markiert). $l_1...l_n$ ist dabei die Position auf der Faser, also die Länge des Verlaufs der Faser bis zu diesem Punkt. $x_1...x_n$ ist die Position auf der X-Achse, die Faser liegt dabei immer in X-Z-Ebene. Das für den Versuch verwendete Koordinatensystem muss ggf. entsprechend des Faserverlaufs festgelegt werden.\\
-	Optional können Sie für alle Faserdurchläufe durch das Material, die jeweils durch Ein- und Ausgangspunkt eingegrenzt sind, die Richtung des Faserverlaufes festlegen. Fügen Sie dazu eine Zeile hinzu, die mit \emph{d} eingeleitet wird. Nach einem Leerzeichen folgt für jeden Faserdurchlauf dessen Fädelrichtung als positiv (+) oder negativ (-), bezogen auf die Richtung der Z-Achse. Wird die Faser also bspw. abwechselnd von vorn und  hinten durch das Versuchsobjekt gefädelt, ergibt sich Abwechseln der Faserrichtung (+-+-).
+	Optional können Sie für alle Faserdurchläufe durch das Material, die jeweils durch Ein- und Ausgangspunkt eingegrenzt sind, die Richtung des Faserverlaufes festlegen. Fügen Sie dazu eine Zeile hinzu, die mit \emph{d} eingeleitet wird. Nach einem Leerzeichen folgt für jeden Faserdurchlauf dessen Fädelrichtung als positiv (+) oder negativ (-), bezogen auf die Richtung der Z-Achse. Wird die Faser also bspw. abwechselnd von vorn und  hinten durch das Versuchsobjekt gefädelt, ergibt sich auch ein Abwechseln der Faserrichtung (+-+-).
 	\subsubsection{Die Konfigurationsdatei}
 	\label{subsec:conf_odisitosd}
 	Zusätzlich sind allgemeine Einstellungen zum Programm in einer Konfigurationsdatei gespeichert. Sie befindet sich, sofern Sie die in \ref{subsec:install} beschriebenen Schritte befolgt haben, in folgendem Verzeichnis:
@@ -418,7 +419,7 @@
 	\addtocounter{rownum}{1}\arabic{rownum} & 10 & Maximale Schrittanzahl zum finden eines gültigen Messwertes\\
 	\addtocounter{rownum}{1}\arabic{rownum} & 8 & Anzahl der Leerzeichen für TAB (Für die Positionsangabe in der Log-Datei)\\
 	\addtocounter{rownum}{1}\arabic{rownum} & 20 & Temperatur zu Beginn des Versuches (Die ODiSI-Daten sind Differenzen zu dieser Anfangstemperatur)\\
-	\addtocounter{rownum}{1}\arabic{rownum} & 1 & Position auf der X-Achse spiegeln\\
+	\addtocounter{rownum}{1}\arabic{rownum} & 0 & Position auf der X-Achse spiegeln\\
 	\addtocounter{rownum}{1}\arabic{rownum} & .06 & Standardwert für die Höhe der Faserebene\\
 	\addtocounter{rownum}{1}\arabic{rownum} & .5 & Position auf der X-Achse um diesen Wert verschieben\\
 	\end{tabular}
@@ -426,6 +427,7 @@
 	Indices werden Null-basiert angegeben. \\
 	z.B. Die \emph{3.} Spalte hat den Index \emph{2}.
 	\end{hinweis}
+	\newpage
 	\subsection{Zusammenfügen von .tsd-Dateien}
 	\label{subsec:mergetsd}
 	Um die nun im .tsd-Format vorliegenden Messdaten zusammenzuführen, verwenden Sie das Werkzeug \emph{mergetsd}. Dabei fügt das Programm Datensätze aus beiden Eingabedateien zusammen, deren Zeitstempel annähernd gleich sind.\\
@@ -454,7 +456,7 @@
 	Informationen zum Aufbau dieser Dateien finden Sie unter \url{http://en.wikipedia.org/wiki/Wavefront_.obj_file}.
 	\end{hinweis}
 	\begin{hinweis}
-	Über das Attribut \emph{density} in der .mtl-Datei können Sie die  Dichte eines Materials in $\frac{kg}{m^3}$ und mit \emph{spezcap} seine spezifische Wärmekapazität in $\frac{kJ}{kg*K}$ hinterlegen.\\
+	Über das Attribut \emph{density} in der .mtl-Datei können Sie die  Dichte eines Materials in $\frac{kg}{m^3}$ und mit \emph{spezcap} seine spezifische Wärmekapazität in $\frac{kJ}{kg \cdot K}$ hinterlegen.\\
 	Außer der Farbe und des Materialnamens werden keine weiteren Materialattribute aus der Datei verwendet.
 	\end{hinweis}
 	\subsubsection{Erstellung mit Blender}
@@ -648,11 +650,11 @@
 	\item \textbf{Materialname:} Hier können Sie einen neuen Namen für das Material angeben.
 	\item \textbf{Interpolationsmodus:} Wählen Sie hier den Interpolationsmodus für das Material aus.
 	\item \textbf{Dichte:} Geben Sie hier die Dichte des Materials mit einem Punkt als Dezimaltrennzeichen in $\frac{kg}{m^3}$ ein.
-	\item \textbf{Spez. Wärmekapazität:} Geben Sie hier die spezifische Wärmekapazität der Materials mit einem Punkt als Dezimaltrennzeichen in $\frac{kJ}{kg*K}$ ein.
+	\item \textbf{Spez. Wärmekapazität:} Geben Sie hier die spezifische Wärmekapazität der Materials mit einem Punkt als Dezimaltrennzeichen in $\frac{kJ}{kg \cdot K}$ ein.
 	\end{itemize}
 	\end{itemize}
 	\begin{hinweis}
-	Wenn eine große Anzahl an Messpunkten vorliegt, kann das Extrapolieren sehr lange dauern. Dies können Sie durch zusätzliche Messpunkte vermeiden. Dies gilt auch für die Analyse des Modells (s. \ref{subsec:sa_analyze}).
+	Wenn eine große Anzahl an Messpunkten vorliegt, kann das Extrapolieren sehr lange dauern. Dies können Sie durch hinzufügen von Messpunkten, die möglichst viel vom Modell umschließen, vermeiden. Dies gilt auch für die Analyse des Modells (s. \ref{subsec:sa_analyze}).
 	\end{hinweis}
 	\subsubsection{Das Modell betrachten}
 	\label{subsec:sa_viewprops}
@@ -682,10 +684,10 @@
 	\begin{itemize}
 	\item \textbf{Kein:} Diese Art von Elementen (Punkte/Kanten/Flächen) wird nicht angezeigt.
 	\item \textbf{Material:} Diese Art von Elementen wird in der Farbe des Materials angezeigt.
-	\item \textbf{Material:} Diese Art von Elementen wird der Temperatur entsprechend eingefärbt.
+	\item \textbf{Wert:} Diese Art von Elementen wird der Temperatur entsprechend eingefärbt.
 	\end{itemize}
 	\item \textbf{zeige extrapolierte Punkte:} Es werden auch Elemente angezeigt, deren Temperatur aus den Messwerten extrapoliert werden musste.
-	\item \textbf{zeige Sensordaten:} Die Sensordaten werden als große farbige Punkte mit im Modell angezeigt.
+	\item \textbf{zeige Sensordaten:} Die Sensordaten werden als große farbige Punkte im Modell angezeigt.
 	\item \textbf{sichtbare Materialien:} Es werden nur die Elemente angezeigt, die zu einem mit einem Haken versehenen Materialien gehören. Möchten Sie ein Material ausblenden, entfernen Sie den Haken vor dem entsprechenden Material.
 	\item \textbf{Farbbereich:} Die Temperatur im linken Feld entspricht in der Visualisierung der Farbe Blau (geringste Temperatur), die im rechten Feld der Farbe rot (höchste Temperatur). Durch Verändern dieser Werte können Sie beeinflussen, wie die Temperatur eines Elements farblich dargestellt wird.
 	\item \textbf{Objektskalierung:} Das Objekt um diesen Faktor vergrößert darstellen. Die Skalierung ist dabei rein optisch.
@@ -789,7 +791,7 @@
 	\end{figure}	
 	Wählen Sie \textbf{Datei - Export - Legacy VTK-Datei}, um das Objekt als Visualisation-Toolkit-Datei zu exportieren. Diese Dateien können in vielen Visualisierungsprogrammen verwendet werden (bspw. \emph{ParaView}).
 	\newpage
-	\section{Generelles Vorgehen}
+	\section{Schritt für Schritt}
 	Im Folgenden finden Sie das allgemeine Vorgehen zur Auswertung der meisten Versuche.
 	\begin{enumerate}
 	\item Wandeln Sie die Messwerte der Punktsensoren aus den .csv-Dateien in .tsd-Dateien um und passen Sie wenn nötig das Format der Eingabedatei an. z.B.:\\
@@ -870,7 +872,7 @@ Nach jeder Änderung an den Objekteigenschaften muss dieses neu Berechnet werden
 & Stellen Sie auch sicher, dass Sie die Werte mit einem Punkt als Dezimaltrennzeichen eingegeben haben.\\
 \vspace{1em}&\vspace{1em}\\
 
-Das Objekt ist in der 3D-Ansicht bei hohem Zoom nur Teilweise zu sehen. & Das Objekt kann nur bis zu einer bestimmten Nähe der virtuellen Kamera dargestellt werden. Um dennoch Details am Objekt erkennen zu können, können Sie das Objekt in den Visualisierungsoptionen optisch skalieren. (Siehe \ref{subsec:sa_viewprops})
+Das Objekt ist in der 3D-Ansicht bei hohem Zoom nur Teilweise zu sehen. & Das Objekt kann nur bis zu einer bestimmten Nähe zur virtuellen Kamera dargestellt werden. Um dennoch Details am Objekt erkennen zu können, verwenden Sie die optische Objektskalierung in den Visualisierungsoptionen. (s. \ref{subsec:sa_viewprops})
 \end{tabular}
 \newpage
 \section{Lizenzbestimmungen}

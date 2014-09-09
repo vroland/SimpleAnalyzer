@@ -2,7 +2,7 @@
  * Analyzer.cpp
  *
  *  Created on: 11.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "Analyzer.h"
@@ -22,7 +22,6 @@ Analyzer::Analyzer() {
  * Wird von s
  */
 //SensorPointComparator spcomparator;
-
 void Analyzer::analyzeObject(ObjectData* obj, AnalyzerData_object* out,
 		bool use_markers, int sdindex) {
 
@@ -36,7 +35,9 @@ void Analyzer::analyzeObject(ObjectData* obj, AnalyzerData_object* out,
 
 	//für alle Sensordaten des Objekt bzw. für den evtl. festgelegten Sensordatensatz
 	for (unsigned int s = (sdindex > -1) ? sdindex : 0;
-			s < ((sdindex > -1) ? sdindex + 1 : obj->getSensorDataList()->size());
+			s
+					< ((sdindex > -1) ?
+							sdindex + 1 : obj->getSensorDataList()->size());
 			s++) {
 
 		//der aktualle Sensordatensatz
@@ -88,7 +89,8 @@ void Analyzer::analyzeObject(ObjectData* obj, AnalyzerData_object* out,
 				double matenergy = 0;
 
 				//für alle Tetraeder...
-				for (int j = 0; j < mat->tetgenoutput->numberoftetrahedra; j++) {
+				for (int j = 0; j < mat->tetgenoutput->numberoftetrahedra;
+						j++) {
 					int* indices = &mat->tetgenoutput->tetrahedronlist[4 * j];
 					Vector3D v1 = Vector3D(
 							&mat->tetgenoutput->pointlist[3 * indices[0]]);

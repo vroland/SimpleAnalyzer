@@ -2,8 +2,9 @@
  * GUICutRenderWindow.cpp
  *
  *  Created on: 01.10.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
+
 #include "GUICutRenderWindow.h"
 #include "constants.h"
 #include <vector>
@@ -21,21 +22,21 @@
 
 //Eventtabelle zum Verknüpfen der Events
 BEGIN_EVENT_TABLE(GUICutRenderWindow, wxFrame)
-	EVT_BUTTON(ID_RENDER_CUT_BT, GUICutRenderWindow::renderCutBtClick)
-	EVT_BUTTON(ID_EXPORT_CUT_IMG_BT, GUICutRenderWindow::OnExportImage)
-	EVT_BUTTON(ID_EXPORT_CUT_CSV_BT, GUICutRenderWindow::OnExportCSV)
-	EVT_TEXT(ID_CUT_TRI_EDIT, GUICutRenderWindow::OnCutPropsChanged)
-	EVT_SPINCTRL(ID_CUT_TRI_EDIT, GUICutRenderWindow::OnSCutPropsChanged_spin)
-	EVT_SIZE(GUICutRenderWindow::OnResize)
-	EVT_COMBOBOX(ID_COLORSCALE_PROP,GUICutRenderWindow::OnColorScaleChanged)
-	EVT_SPINCTRL(ID_COLORSCALE_PROP,GUICutRenderWindow::OnColorScaleChanged_spin)
-	EVT_BUTTON(ID_COLORSCALE_COLORBT,GUICutRenderWindow::OnCSColorBtClick)
+EVT_BUTTON(ID_RENDER_CUT_BT, GUICutRenderWindow::renderCutBtClick)
+EVT_BUTTON(ID_EXPORT_CUT_IMG_BT, GUICutRenderWindow::OnExportImage)
+EVT_BUTTON(ID_EXPORT_CUT_CSV_BT, GUICutRenderWindow::OnExportCSV)
+EVT_TEXT(ID_CUT_TRI_EDIT, GUICutRenderWindow::OnCutPropsChanged)
+EVT_SPINCTRL(ID_CUT_TRI_EDIT, GUICutRenderWindow::OnSCutPropsChanged_spin)
+EVT_SIZE(GUICutRenderWindow::OnResize)
+EVT_COMBOBOX(ID_COLORSCALE_PROP,GUICutRenderWindow::OnColorScaleChanged)
+EVT_SPINCTRL(ID_COLORSCALE_PROP,GUICutRenderWindow::OnColorScaleChanged_spin)
+EVT_BUTTON(ID_COLORSCALE_COLORBT,GUICutRenderWindow::OnCSColorBtClick)
 END_EVENT_TABLE()
 
 GUICutRenderWindow::GUICutRenderWindow(wxWindow * parent, const wxChar *title,
 		int xpos, int ypos, int width, int height) :
 		wxFrame(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height),
-				wxDEFAULT_FRAME_STYLE | wxFRAME_FLOAT_ON_PARENT) {
+		wxDEFAULT_FRAME_STYLE | wxFRAME_FLOAT_ON_PARENT) {
 
 	//erstellen der Komponenten und setzen der Standardwerte
 	canvas = new GUIRenderCutCanvas(this);
@@ -215,7 +216,8 @@ void render_thread(bool* status_flag, float* value_img, wxImage* image,
 				ObjectData::MaterialData* mat = &obj->getMaterials()->at(m);
 
 				//Befindet sich der Punkt im aktuellen Material?
-				if (pointInsideMesh(p, bases->at(m), info->in_volume_algorithm)) {
+				if (pointInsideMesh(p, bases->at(m),
+						info->in_volume_algorithm)) {
 
 					//Ermitteln des Wertes für den Punkt
 					int status = 0;
@@ -236,10 +238,12 @@ void render_thread(bool* status_flag, float* value_img, wxImage* image,
 					value_img[y * width + x] = value;
 
 					//Berechnen der Farbe zum Temperaturwert
-					float inverse_hue = (value - vis_info->min_visualisation_temp)
+					float inverse_hue = (value
+							- vis_info->min_visualisation_temp)
 							/ (vis_info->max_visualisation_temp
 									+ vis_info->min_visualisation_temp);
-					float* color = hsvToRgb((1.0 - clampHue(inverse_hue)) * .666, 1, 1);
+					float* color = hsvToRgb(
+							(1.0 - clampHue(inverse_hue)) * .666, 1, 1);
 
 					//Speichern des Wertes in der Grafik
 					image->SetRGB(x, y, (unsigned char) (color[0] * 255),
@@ -412,7 +416,9 @@ void GUICutRenderWindow::renderImage(wxImage* image) {
 			+ (tm2.tv_usec - tm1.tv_usec) / 1000;
 
 	//Ausgeben der Berechnungsdauer auf
-	SetTitle(wxT("Berechnung abgeschlossen. ( ") + floattowxstr(t / 1000.)+wxT( "s )"));
+	SetTitle(
+			wxT(
+					"Berechnung abgeschlossen. ( ") + floattowxstr(t / 1000.)+wxT( "s )"));
 
 	//Freigeben der Ressourcen
 	delete xvec;

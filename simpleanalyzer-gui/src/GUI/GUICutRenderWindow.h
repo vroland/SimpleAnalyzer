@@ -2,7 +2,7 @@
  * GUICutRenderWindow.h
  *
  *  Created on: 01.10.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef GUICUTRENDERWINDOW_H_
@@ -32,7 +32,8 @@ public:
 	 * @param width Breite des Fensters.
 	 * @param height Höhe des Fenster
 	 */
-	GUICutRenderWindow(wxWindow * parent,const wxChar *title, int xpos, int ypos, int width, int height);
+	GUICutRenderWindow(wxWindow * parent, const wxChar *title, int xpos,
+			int ypos, int width, int height);
 
 	/**
 	 * Der Destruktor.
@@ -42,7 +43,8 @@ protected:
 	/**
 	 * Event-Tabellendeklaration für wxWidgets.
 	 */
-	DECLARE_EVENT_TABLE();
+DECLARE_EVENT_TABLE()
+	;
 private:
 	/**
 	 * Gibt die aktuell eingestellten Eigenschaften für die zweidimensionale Temperaturverteilung zurück, damit Sie
@@ -285,4 +287,5 @@ private:
 	 */
 	int core_count;
 };
+
 #endif /* GUICUTRENDERWINDOW_H_ */

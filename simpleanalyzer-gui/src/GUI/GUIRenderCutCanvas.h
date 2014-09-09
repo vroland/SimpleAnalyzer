@@ -2,7 +2,7 @@
  * GUIRenderCutCanvas.h
  *
  *  Created on: 03.10.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef GUIRENDERCUTCANVAS_H_
@@ -49,6 +49,7 @@ protected:
 	 * Event-Tabellendeklaration für wxWidgets.
 	 */
 	DECLARE_EVENT_TABLE()
+
 private:
 	/**
 	 * Zeichnet die Temperaturverteilung und die Anzeigeelemente (Informationsleiste, Skala).

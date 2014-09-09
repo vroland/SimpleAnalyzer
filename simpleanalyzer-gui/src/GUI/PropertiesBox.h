@@ -2,7 +2,7 @@
  * PropertiesBox.h
  *
  *  Created on: 07.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef PROPERTIESBOX_H_
@@ -140,6 +140,7 @@ public:
 	 * Der Destruktor.
 	 */
 	virtual ~PropertiesBox();
+
 private:
 	/**
 	 * Button zum Neuberechnen der Temperaturverteilung.

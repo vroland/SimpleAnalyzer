@@ -2,7 +2,7 @@
  * Renderer.h
  *
  *  Created on: 27.07.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef RENDERER_H_
@@ -27,30 +27,29 @@ public:
 	 * Darstellungsmodus für Elemente /Punkte, Kanten, Flächen) des 3D-Objekts.
 	 */
 	enum RenderMode {
-		RM_NONE = 0,
-		RM_MATERIALCOLOR,
-		RM_VALUECOLOR,
+		RM_NONE = 0, RM_MATERIALCOLOR, RM_VALUECOLOR,
 	};
 
 	/**
 	 * @brief Informationen über die Ansicht des Modells (Virtuelle Kamera) und welche Elemente dargestellt werden.
 	 */
 	struct Viewport_info {
-		float zoom;	/**< Aktueller Zoomfaktor */
-		float rotationY; 			/**< Rotation der Ansicht um die Y-Achse */
-		float rotationX; 			/**< Rotation der Ansicht um die (Kameralokale) X-Achse */
-		Vector3D* cameraPosition; 	/**< position der Virtuellen Kamera */
-		Triangle* cut;				/**< Dreieck der Schnittebene, wenn nicht NULL, werden nur Elemente oberhalb der Dreiecksebene dargestellt (Momentan nicht verwendet). */
-		bool invertcut;				/**< Nur Elemente unterhalb der durch cut definierte Ebene darstellen (Momentan nicht verwendet). */
-		RenderMode showPoints;		/**< Modus der Darstellung von Punkten des 3D-Objekts. */
-		RenderMode showEdges;		/**< Modus der Darstellung von Kanten des 3D-Objekts. */
-		RenderMode showFaces;		/**< Modus der Darstellung von Flächen des 3D-Objekts. */
-		bool show_extrapolated;		/**< Extrapolierte Elemente anzeigen */
-		bool show_sensordata;		/**< Sensordaten als Punkte anzeigen */
-		int width;					/**< Breite des dargestellten Bereichs */
-		int height;					/**< Höhe des dargestellten Bereichs */
-		float scale;				/**< Skalierungsfaktor für das 3D-Objekt. */
+		float zoom; /**< Aktueller Zoomfaktor */
+		float rotationY; /**< Rotation der Ansicht um die Y-Achse */
+		float rotationX; /**< Rotation der Ansicht um die (Kameralokale) X-Achse */
+		Vector3D* cameraPosition; /**< position der Virtuellen Kamera */
+		Triangle* cut; /**< Dreieck der Schnittebene, wenn nicht NULL, werden nur Elemente oberhalb der Dreiecksebene dargestellt (Momentan nicht verwendet). */
+		bool invertcut; /**< Nur Elemente unterhalb der durch cut definierte Ebene darstellen (Momentan nicht verwendet). */
+		RenderMode showPoints; /**< Modus der Darstellung von Punkten des 3D-Objekts. */
+		RenderMode showEdges; /**< Modus der Darstellung von Kanten des 3D-Objekts. */
+		RenderMode showFaces; /**< Modus der Darstellung von Flächen des 3D-Objekts. */
+		bool show_extrapolated; /**< Extrapolierte Elemente anzeigen */
+		bool show_sensordata; /**< Sensordaten als Punkte anzeigen */
+		int width; /**< Breite des dargestellten Bereichs */
+		int height; /**< Höhe des dargestellten Bereichs */
+		float scale; /**< Skalierungsfaktor für das 3D-Objekt. */
 	};
+
 public:
 	/**
 	 * Der Konstruktor.
@@ -104,6 +103,7 @@ public:
 	 * Der Destruktor.
 	 */
 	virtual ~Renderer();
+
 private:
 	/**
 	 * Zeichnet die Elemente eines Materials des Objekts.
@@ -116,7 +116,7 @@ private:
 	 * @param mat Das zu zeichnende Material.
 	 * @param rendermode Der zu verwendende Zeichenmodus.
 	 */
-	void renderTetrahedra(ObjectData::MaterialData* mat,RenderMode rendermode);
+	void renderTetrahedra(ObjectData::MaterialData* mat, RenderMode rendermode);
 
 	/**
 	 * Zeichnet Sensordaten als Punkte.
@@ -146,6 +146,5 @@ private:
 	 */
 	int displayList;
 };
-
 
 #endif /* RENDERER_H_ */

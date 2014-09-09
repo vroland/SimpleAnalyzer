@@ -2,7 +2,7 @@
  * GUIAnalyzePoint.cpp
  *
  *  Created on: 21.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "GUIAnalyzePointWindow.h"
@@ -16,13 +16,13 @@ using namespace std;
 
 //Eventtabelle zum Verknüpfen der Events
 BEGIN_EVENT_TABLE(GUIAnalyzePointWindow, wxDialog)
-	EVT_BUTTON(ID_ANALYZE_POINT_BT, GUIAnalyzePointWindow::analyzePoint)
+EVT_BUTTON(ID_ANALYZE_POINT_BT, GUIAnalyzePointWindow::analyzePoint)
 END_EVENT_TABLE()
 
 GUIAnalyzePointWindow::GUIAnalyzePointWindow(wxWindow * parent,
 		const wxChar *title, int xpos, int ypos, int width, int height) :
 		wxDialog(parent, -1, title, wxPoint(xpos, ypos), wxSize(width, height),
-				wxCAPTION | wxCLOSE_BOX) {
+		wxCAPTION | wxCLOSE_BOX) {
 
 	//Erstellen der Fensterkomponenten
 	label = new wxStaticText(this, wxID_ANY, wxT("Punktkoordinaten:"));
@@ -72,7 +72,8 @@ void GUIAnalyzePointWindow::analyzePoint(wxCommandEvent &event) {
 			atof(zedit->GetValue().ToAscii()));
 
 	//Analysieren des Punktes
-	analyzer.analyzePoint(wxGetApp().getActiveObject(), &point, &data, &interpolator);
+	analyzer.analyzePoint(wxGetApp().getActiveObject(), &point, &data,
+			&interpolator);
 
 	//Sammeln der gewonnenen Informationen als Text
 	wxString message = wxT("Analysedaten des Punktes (");

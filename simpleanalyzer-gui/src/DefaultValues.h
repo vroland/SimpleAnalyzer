@@ -2,7 +2,7 @@
  * DefaultValues.h
  *
  *  Created on: 29.08.2014
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef DEFAULTVALUES_H_

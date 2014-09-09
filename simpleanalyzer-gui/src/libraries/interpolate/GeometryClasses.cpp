@@ -2,7 +2,7 @@
  * GeometryClasses.cpp
  *
  *  Created on: 24.07.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "GeometryClasses.h"
@@ -11,6 +11,7 @@
 using namespace std;
 
 #define EPSILON 0.0000001
+
 inline double sqr(double v) {
 	return v * v;
 }
@@ -150,9 +151,8 @@ Matrix3D::Matrix3D() {
 	elements[8] = 1.0;
 }
 
-Matrix3D::Matrix3D(double x1, double y1, double z1,
-				   double x2, double y2, double z2,
-				   double x3, double y3, double z3) {
+Matrix3D::Matrix3D(double x1, double y1, double z1, double x2, double y2,
+		double z2, double x3, double y3, double z3) {
 
 	elements[0] = x1;
 	elements[1] = y1;
@@ -183,6 +183,7 @@ void Matrix3D::mult(Matrix3D* other) {
 		}
 	}
 }
+
 Vector3D* Matrix3D::mult(Vector3D* other) {
 
 	Vector3D* nvec = new Vector3D(0, 0, 0);
@@ -195,23 +196,20 @@ Vector3D* Matrix3D::mult(Vector3D* other) {
 }
 
 void Matrix3D::rotateX(double angle) {
-	Matrix3D mat = Matrix3D(1, 0, 0,
-							0, cos(angle), -sin(angle),
-							0, sin(angle), cos(angle));
+	Matrix3D mat = Matrix3D(1, 0, 0, 0, cos(angle), -sin(angle), 0, sin(angle),
+			cos(angle));
 	this->mult(&mat);
 }
 
 void Matrix3D::rotateY(double angle) {
-	Matrix3D mat = Matrix3D(cos(angle), 0, sin(angle),
-							0, 1, 0,
-							-sin(angle), 0, cos(angle));
+	Matrix3D mat = Matrix3D(cos(angle), 0, sin(angle), 0, 1, 0, -sin(angle), 0,
+			cos(angle));
 	this->mult(&mat);
 }
 
 void Matrix3D::rotateZ(double angle) {
-	Matrix3D mat = Matrix3D(cos(angle), -sin(angle), 0,
-							sin(angle), cos(angle), 0,
-							0, 0, 1);
+	Matrix3D mat = Matrix3D(cos(angle), -sin(angle), 0, sin(angle), cos(angle),
+			0, 0, 0, 1);
 	this->mult(&mat);
 }
 
@@ -280,6 +278,7 @@ void Triangle::print() {
 	cout << "(" << verts[2]->getX() << " " << verts[2]->getY() << " "
 			<< verts[2]->getZ() << ")" << endl;
 }
+
 Triangle::~Triangle() {
 }
 

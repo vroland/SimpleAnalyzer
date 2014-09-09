@@ -2,7 +2,7 @@
  * GUIMainWindow.h
  *
  *  Created on: 04.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef GUIMAINWINDOW_H_
@@ -35,7 +35,8 @@ public:
 	 * @param width Breite des Fensters.
 	 * @param height Höhe des Fensters.
 	 */
-	GUIMainWindow(const wxChar *title, int xpos, int ypos, int width, int height);
+	GUIMainWindow(const wxChar *title, int xpos, int ypos, int width,
+			int height);
 
 	/**
 	 * Setzt den Status des Übersichstfensters über die Analysedaten.
@@ -64,20 +65,18 @@ protected:
 	 */
 	static const int NUMBEROFPATHS = 2;
 
-
 	/**
 	 * Suchpfade für die Anwendungsdaten.
 	 * Das Verzeichnis der ausführbaren Datei wird immer und zuerst geprüft.
 	 */
-	string configpaths[NUMBEROFPATHS] {
-			"/usr/local/share/simpleanalyzer/",
-			"/usr/share/simpleanalyzer/",
-	};
+	string configpaths[NUMBEROFPATHS] { "/usr/local/share/simpleanalyzer/",
+			"/usr/share/simpleanalyzer/", };
 
 	/**
 	 * Event-Tabellendeklaration für wxWidgets.
 	 */
 	DECLARE_EVENT_TABLE()
+
 private:
 	/**
 	 * Öffnet den Dialog zum Importieren eines Objekts.
@@ -258,7 +257,6 @@ private:
 	 * Lädt die Visualisierungsoptionen in die GUI.
 	 */
 	void updateViewPropGUI();
-
 
 	/**
 	 * Die Zeichenfläche für das 3D-Fenster.

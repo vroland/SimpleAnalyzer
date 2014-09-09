@@ -2,7 +2,7 @@
  * GUIColorScalePanel.cpp
  *
  *  Created on: 23.12.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "GUIColorScalePanel.h"
@@ -50,8 +50,9 @@ void GUIColorScalePanel::paintTo(wxDC& dc, float zoom, wxPoint& img_coords) {
 		//Zeichnen des Overlay-Bildes mit der Skala
 		wxImage drawimg = image->Copy();
 
-		drawimg.Rescale(drawimg.GetWidth() * zoom, drawimg.GetHeight() * zoom, wxIMAGE_QUALITY_NORMAL);
-        dc.DrawBitmap(wxBitmap(drawimg), img_coords.x, img_coords.y);
+		drawimg.Rescale(drawimg.GetWidth() * zoom, drawimg.GetHeight() * zoom,
+				wxIMAGE_QUALITY_NORMAL);
+		dc.DrawBitmap(wxBitmap(drawimg), img_coords.x, img_coords.y);
 
 		//obere linke Ecke des Rechtecks zum Skalieren
 		wxPoint scale_rect_topleft(
@@ -168,7 +169,9 @@ void GUIColorScalePanel::refresh(int img_width, int img_height) {
 		//Beschriftung der Skala:
 
 		//So viele Schritte, wie mit der angegebenen Schrittweite auf die Skala passen...
-		for (int i = 0; i <= (delta_t_vis - delta_t_vis % step_width) / step_width; i++) {
+		for (int i = 0;
+				i <= (delta_t_vis - delta_t_vis % step_width) / step_width;
+				i++) {
 
 			//Beschriftungstext an dieser Stelle
 			wxString text = floattowxstr(
@@ -242,6 +245,7 @@ void GUIColorScalePanel::refresh(int img_width, int img_height) {
 				image->SetAlpha(x, y, alpha_img.GetRed(x, y));
 			}
 		}
+
 	} else {
 		//zurücksetzen des Ausgabebilds
 		delete image;
@@ -357,6 +361,7 @@ void GUIColorScalePanel::fitBounds(wxPoint& img_dim, bool to_scale) {
 		refresh(img_dim.x, img_dim.y);
 	}
 }
+
 void GUIColorScalePanel::handleMouse(wxMouseEvent& event, wxPoint& img_coords,
 		wxPoint& img_dim, float zoom) {
 

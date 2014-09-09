@@ -2,7 +2,7 @@
  * SimpleAnalyzerApp.cpp
  *
  *  Created on: 04.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 /**

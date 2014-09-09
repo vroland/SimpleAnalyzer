@@ -2,7 +2,7 @@
  * utils.cpp
  *
  *  Created on: 21.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "utils.h"
@@ -16,8 +16,8 @@ using namespace std;
 string Utils::getTextBlock(string data, int n) {
 
 	//Tabulatoren mit Leerzeichen ersetzen
-	for (size_t c=0;c<data.size();c++) {
-		if (data.at(c)=='\t') {
+	for (size_t c = 0; c < data.size(); c++) {
+		if (data.at(c) == '\t') {
 			data.at(c) = ' ';
 		}
 	}
@@ -64,8 +64,8 @@ void Utils::nextCombination(vector<int>* indices, int depth,
 	int beforeNext = indices->at(depth) < dataPointCount - 4 + depth;
 	if (beforeNext) {
 		//erhöhen des Index
-		indices->at(depth)++;
-	} else {
+		indices->at(depth)++;}
+	else {
 		//es muss der vorhergehende index (depth - 1) verändert werden, um eine neue Kombination zu generieren
 		nextCombination(indices, depth - 1, dataPointCount);
 		//Index auf den um eins erhöhten Wert der vorhergehenden stelle setzen
@@ -93,7 +93,7 @@ wxString Utils::floattowxstr(double val) {
 
 wxString Utils::floattowxstr(double val, int digits) {
 	ostringstream ss;
-	ss << int(val * pow(10,digits)) / (float) pow(10,digits);
+	ss << int(val * pow(10, digits)) / (float) pow(10, digits);
 	return wxString::FromAscii(ss.str().c_str());
 }
 
@@ -139,7 +139,6 @@ void Utils::copySensorPoint(SensorPoint* from, SensorPoint* to) {
 	to->coords[2] = from->coords[2];
 	to->temperature = from->temperature;
 }
-
 
 int Utils::rayIntersectsTriangle(Vector3D* point, Vector3D* direction,
 		Triangle* tri, double* depth) {
@@ -463,7 +462,8 @@ double Utils::getPointValue(int &status, vector<SensorPoint>* sensorpoints,
 		if (status < 1) {
 			//vorgemerkte Indices in den aktuellen Messwerttetraeder übertragen
 			for (int i = 0; i < 4; i++) {
-				interpolation_tet.at(i) = &sensorpoints->at(extrapolationIndices->at(i));
+				interpolation_tet.at(i) = &sensorpoints->at(
+						extrapolationIndices->at(i));
 			}
 		}
 

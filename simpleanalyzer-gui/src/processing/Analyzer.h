@@ -2,7 +2,7 @@
  * Analyzer.h
  *
  *  Created on: 11.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef ANALYZER_H_

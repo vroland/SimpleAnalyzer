@@ -2,7 +2,7 @@
  * PropertiesBox.cpp
  *
  *  Created on: 07.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "PropertiesBox.h"
@@ -157,6 +157,7 @@ wxTextCtrl* PropertiesBox::getSpecificHeatCapEdit() {
 int PropertiesBox::getCurrentMaterial() {
 	return current_material;
 }
+
 void PropertiesBox::setCurrentMaterial(int index) {
 	current_material = index;
 }

@@ -2,7 +2,7 @@
  * ViewpropBox.h
  *
  *  Created on: 17.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef VIEWPROPBOX_H_
@@ -78,6 +78,7 @@ public:
 	 * Der Destruktor.
 	 */
 	virtual ~ViewpropBox();
+
 private:
 	/**
 	 * Auswahlfeld für den Darstellungsmodus von Punkten.

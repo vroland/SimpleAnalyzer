@@ -1,3 +1,10 @@
+/*
+ * Interpolator.cpp
+ *
+ *  Created on: 22.07.2013
+ *      Author: Valentin Roland
+ */
+
 #include "Interpolator.h"
 #include  <iostream>
 #include <cmath>
@@ -174,7 +181,7 @@ double Interpolator::interpolateTet(Tetrahedron* tet, Vector3D* pos,
 		up->mult(-1);
 	}
 
-	double delta = gs1->getAngleTo(up);  //Winkel zwischen Grundflächennormale und gs1
+	double delta = gs1->getAngleTo(up); //Winkel zwischen Grundflächennormale und gs1
 	double h = cos(delta) * gs1->getLength();
 	Vector3D* v1ToV4InGround = tet->getV4()->copy();
 	Vector3D* tUp = up->copy();
@@ -312,6 +319,7 @@ double Interpolator::interpolateTet(Tetrahedron* tet, Vector3D* pos,
 	delete v1ToPos;
 	return val;
 }
+
 Interpolator::~Interpolator() {
 }
 

@@ -2,7 +2,7 @@
  * utils.h
  *
  *  Created on: 21.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef UTILS_H_
@@ -45,16 +45,16 @@ inline double sqr(double d) {
  * @brief Informationen über die Farbgebung bei der Visualisierung.
  */
 struct Visualization_info {
-	int max_visualisation_temp = 100; 	/**< maximal Visualisierte Temperatur (entspricht der Farbe Rot). */
-	int min_visualisation_temp = 0; 	/**< minimal Visualisierte Temperatur (entspricht der Farbe Blau). */
+	int max_visualisation_temp = 100; /**< maximal Visualisierte Temperatur (entspricht der Farbe Rot). */
+	int min_visualisation_temp = 0; /**< minimal Visualisierte Temperatur (entspricht der Farbe Blau). */
 };
 
 /**
  * @brief Hilfsstruktur zum Sortieren von Punkten nach dem Abstand zu einem anderen Punkt.
  */
 struct SortStruct {
-	double distance; 	/**< Abstand des Punktes. */
-	int pointIndex; 	/**< Index des entsprechenden Sensordatenpuntkes. */
+	double distance; /**< Abstand des Punktes. */
+	int pointIndex; /**< Index des entsprechenden Sensordatenpuntkes. */
 };
 
 /**
@@ -68,7 +68,7 @@ float clampHue(float h);
  * @brief Daten eines Sensordatenpunktes.
  */
 struct SensorPoint {
-	double coords[3]; 	/**< Koordinaten des Punktes. */
+	double coords[3]; /**< Koordinaten des Punktes. */
 	double temperature; /**< Temperatur des Punktes. */
 };
 
@@ -76,10 +76,10 @@ struct SensorPoint {
  * @brief Daten zur Darstellung einer 2D-Temperaturverteilungs-Ebene.
  */
 struct CutRender_info {
-	Triangle* tri; 					/**< Das die Ebene beschreibende Dreieck. Der erste Punkt ist dabei das Zentrum der später ermittelten Temperaturverteilung. */
-	float mmperpixel; 				/**< Maßstab der Darstellung der Temperaturverteilung in \f$\frac{mm}{Pixel}\f$. */
-	int img_width; 					/**< Breite der Darstellung der Temperaturverteilung. */
-	int img_height; 				/**< Höhe der Darstellung der Temperaturverteilung. */
+	Triangle* tri; /**< Das die Ebene beschreibende Dreieck. Der erste Punkt ist dabei das Zentrum der später ermittelten Temperaturverteilung. */
+	float mmperpixel; /**< Maßstab der Darstellung der Temperaturverteilung in \f$\frac{mm}{Pixel}\f$. */
+	int img_width; /**< Breite der Darstellung der Temperaturverteilung. */
+	int img_height; /**< Höhe der Darstellung der Temperaturverteilung. */
 	PIM_algorithm in_volume_algorithm; /**< Der zu verwendende Punkt-in-Volumen-Testalgorithmus. Immer ALGORITHM_TETRAHEDRONS. */
 };
 
@@ -87,13 +87,13 @@ struct CutRender_info {
  * @brief Ein Sensordatensatz.
  */
 struct SensorData {
-	vector<vector<SensorPoint> > data; 	/**< Daten des Datensatzes (Sensorpunkte zu versch. Zeitpunkten).*/
-	vector<string> subnames; 		   	/**< Namen der einzelnen Zeitpunkte. */
-	vector<int> timestamps; 			/**< Zeitstempel der einzelnen Zeitpunkte. */
-	vector<int> markers; 				/**< Markierte Zeitpunkte. */
-	bool timed;							/**< Sind die Sensordaten zeitbezogen? Wenn nein, ist die Länge von data 1. */
-	int current_time_index; 			/**< Index des aktuell ausgewählten Zeitpunkts. */
-	string name; 						/**< Name des Sensordatensatzes. */
+	vector<vector<SensorPoint> > data; /**< Daten des Datensatzes (Sensorpunkte zu versch. Zeitpunkten).*/
+	vector<string> subnames; /**< Namen der einzelnen Zeitpunkte. */
+	vector<int> timestamps; /**< Zeitstempel der einzelnen Zeitpunkte. */
+	vector<int> markers; /**< Markierte Zeitpunkte. */
+	bool timed; /**< Sind die Sensordaten zeitbezogen? Wenn nein, ist die Länge von data 1. */
+	int current_time_index; /**< Index des aktuell ausgewählten Zeitpunkts. */
+	string name; /**< Name des Sensordatensatzes. */
 };
 
 /**
@@ -113,7 +113,8 @@ struct SensorPointComparator {
 	inline double getDistance_d(double* p1, double* p2) {
 		return sqrt(
 				sqr(p1[0] - p2[0]) + sqr(p1[1] - p2[1]) + sqr(p1[2] - p2[2]));
-	};
+	}
+	;
 
 	double meshpoint[3]; /**< Punkt, zu dem der Abstand ermittelt werden soll. */
 
@@ -122,6 +123,7 @@ struct SensorPointComparator {
 				< getDistance_d(meshpoint, p2.coords));
 	} /**<  Vergleichsoperator für den Abstand zum Punkt meshpoint. */
 };
+
 /**
  * Hilfsfunktion zur Umwandlung einer Zahl in einen String.
  * @param val Die umzuwandelnde Zahl.

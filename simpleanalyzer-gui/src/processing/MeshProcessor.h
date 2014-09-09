@@ -2,7 +2,7 @@
  * MeshProcessor.h
  *
  *  Created on: 31.08.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef MESHPROCESSOR_H_
@@ -10,6 +10,7 @@
 #include "../libraries/tetgen/tetgen.h"
 #include "ObjectData.h"
 #include "utils.h"
+
 /**
  * @brief Errechnet die Temperaturverteilung für ein Objekt.
  */

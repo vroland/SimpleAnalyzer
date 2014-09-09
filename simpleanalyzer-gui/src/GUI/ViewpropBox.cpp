@@ -2,7 +2,7 @@
  * ViewpropBox.cpp
  *
  *  Created on: 17.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "ViewpropBox.h"
@@ -19,14 +19,14 @@ ViewpropBox::ViewpropBox(wxWindow *parent) :
 
 	//Erstellen und initialisieren aller Komponenten für die Visualisierungsoptionen-Oberfläche
 	pointsCheckBox = new wxRadioBox(parent, ID_GENERAL_VIEW_PROP,
-			wxT("Punkte:"), wxDefaultPosition, wxDefaultSize, 3,
-			renderchoices);
+			wxT("Punkte:"), wxDefaultPosition, wxDefaultSize, 3, renderchoices);
 	edgesCheckBox = new wxRadioBox(parent, ID_GENERAL_VIEW_PROP, wxT("Kanten:"),
 			wxDefaultPosition, wxDefaultSize, 3, renderchoices);
 	facesCheckBox = new wxRadioBox(parent, ID_GENERAL_VIEW_PROP,
 			wxT("Flächen:"), wxDefaultPosition, wxDefaultSize, 3,
 			renderchoices);
-	matVisibilityListBox = new wxCheckListBox(parent, ID_CHECKLISTBOX_VIEW_PROP);
+	matVisibilityListBox = new wxCheckListBox(parent,
+			ID_CHECKLISTBOX_VIEW_PROP);
 	matVisualizationLbl = new wxStaticText(parent, wxID_ANY,
 			wxT("sichtbare Materialien:"));
 	showExtrapolatedCheckBox = new wxCheckBox(parent, ID_GENERAL_VIEW_PROP,

@@ -2,7 +2,7 @@
  * ObjectData.cpp
  *
  *  Created on: 07.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "ObjectData.h"

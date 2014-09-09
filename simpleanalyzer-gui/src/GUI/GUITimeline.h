@@ -2,7 +2,7 @@
  * Timeline.h
  *
  *  Created on: 22.10.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef TIMELINE_H_
@@ -135,11 +135,13 @@ public:
 	 * Der Destruktor.
 	 */
 	virtual ~GUITimeline();
+
 protected:
 	/**
 	 * Event-Tabellendeklaration für wxWidgets.
 	 */
 	DECLARE_EVENT_TABLE()
+
 private:
 	/**
 	 * Zeichnet die Zeitleiste.

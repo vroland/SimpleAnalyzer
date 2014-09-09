@@ -2,7 +2,7 @@
  * GUITimeline.cpp
  *
  *  Created on: 22.10.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "GUITimeline.h"
@@ -19,12 +19,12 @@ const wxEventType wxEVT_TIMELINE_CHANGE = wxNewEventType();
 
 //Eventtabelle zum Verknüpfen der Events
 BEGIN_EVENT_TABLE(GUITimeline, wxPanel)
-    EVT_PAINT    (GUITimeline::OnPaint)
-    EVT_MOUSEWHEEL(GUITimeline::OnMouseWheel)
-    EVT_MOTION   (GUITimeline::OnMouseMove)
-    EVT_SIZE   (GUITimeline::OnResize)
-    EVT_LEFT_DOWN(GUITimeline::OnMouseDown)
-    EVT_KEY_DOWN(GUITimeline::OnKeyDown)
+EVT_PAINT (GUITimeline::OnPaint)
+EVT_MOUSEWHEEL(GUITimeline::OnMouseWheel)
+EVT_MOTION (GUITimeline::OnMouseMove)
+EVT_SIZE (GUITimeline::OnResize)
+EVT_LEFT_DOWN(GUITimeline::OnMouseDown)
+EVT_KEY_DOWN(GUITimeline::OnKeyDown)
 END_EVENT_TABLE()
 
 //Anzahl der Schritte für die verfeinerung der Skaleneinteilung beim Zoom
@@ -124,7 +124,8 @@ void GUITimeline::findMaxValue(ObjectData* obj, bool fast) {
 		//ist der aktuelle Zeitpunkt markiert?
 		if (val == marker) {
 			wxMessageBox(
-					wxT("Der Cursor muss sich zwischen zwei Markierungen befinden!"),
+					wxT(
+							"Der Cursor muss sich zwischen zwei Markierungen befinden!"),
 					wxT("Fehler"));
 			return;
 		}
@@ -142,7 +143,8 @@ void GUITimeline::findMaxValue(ObjectData* obj, bool fast) {
 	//eingrenzende markierte Stellen im gültigen Bereich?
 	if (marker1 == getMinValue() - 1 || marker2 == getMaxValue() + 1) {
 		wxMessageBox(
-				wxT("Der Cursor muss sich zwischen zwei Markierungen befinden!"),
+				wxT(
+						"Der Cursor muss sich zwischen zwei Markierungen befinden!"),
 				wxT("Fehler"));
 		return;
 	}
@@ -211,7 +213,7 @@ void GUITimeline::findMaxValue(ObjectData* obj, bool fast) {
 int GUITimeline::calcStepWidth() {
 
 	//Zehnerpotenz des beim aktuellen Zoom dargestellten Bereichs (zoom * maxvalue)
-	int to_ten = int(pow(10,int(log10(maxvalue * zoom))));
+	int to_ten = int(pow(10, int(log10(maxvalue * zoom))));
 	//faktor zur Verfeinerung der kleinsten Skaleneinteilung
 	float refine_factor = 1;
 	//Device Context zum ermitteln zur ausdehnung des dargestellten Texts
@@ -408,18 +410,19 @@ void GUITimeline::OnPaint(wxPaintEvent&) {
 			cerr << "name vector has wrong size!" << endl;
 		} else {
 			//Beschriften des aktuellen Zeitpunkts mit Index und Namen
-			wxString str = wxString::FromAscii((names->at(value - minvalue)).c_str())
-				+ wxT(" (") + floattowxstr(value) + wxT(")");
+			wxString str =
+					wxString::FromAscii(
+							(names->at(value - minvalue)).c_str()) + wxT(" (") + floattowxstr(value) + wxT(")");
 
 			int text_width = dc.GetTextExtent(str).x;
-			int text_x = viewstart+(float)value*pixelsperstep;
+			int text_x = viewstart + (float) value * pixelsperstep;
 
 			//Text zu besseren Lesbarkeit verschieben?
-			if (text_x+text_width>width) {
-				text_x -= text_width+10;
+			if (text_x + text_width > width) {
+				text_x -= text_width + 10;
 			}
 
-			dc.DrawText(str,text_x,10);
+			dc.DrawText(str, text_x, 10);
 		}
 	}
 }

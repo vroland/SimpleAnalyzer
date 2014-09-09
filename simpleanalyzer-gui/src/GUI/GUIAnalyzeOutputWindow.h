@@ -2,7 +2,7 @@
  * GUIAnalyzeOutputWindow.h
  *
  *  Created on: 12.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef GUIANALYZEOUTPUTWINDOW_H_
@@ -25,7 +25,8 @@ public:
 	/**
 	 * Der Konstruktor.
 	 */
-	GUIAnalyzeOutputWindow(wxWindow * parent,const wxChar *title, int xpos, int ypos, int width, int height);
+	GUIAnalyzeOutputWindow(wxWindow * parent, const wxChar *title, int xpos,
+			int ypos, int width, int height);
 
 	/**
 	 * Methode zum aktualisieren des Fensters, alle Objekte werden erneut analysiert und die
@@ -42,6 +43,7 @@ protected:
 	 * Event-Tabellendeklaration für wxWidgets.
 	 */
 	DECLARE_EVENT_TABLE()
+
 private:
 	/**
 	 * Behandelt das Drücken von Strg+C und Strg+A.

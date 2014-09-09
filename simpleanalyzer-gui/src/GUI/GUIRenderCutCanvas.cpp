@@ -2,7 +2,7 @@
  * GUIRenderCutCanvas.cpp
  *
  *  Created on: 03.10.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #include "GUIRenderCutCanvas.h"
@@ -16,11 +16,11 @@
 
 //Eventtabelle zum Verknüpfen der Events
 BEGIN_EVENT_TABLE(GUIRenderCutCanvas, wxPanel)
-	EVT_PAINT    (GUIRenderCutCanvas::onCanvasPaint)
-	EVT_MOUSEWHEEL(GUIRenderCutCanvas::OnMouseWheel)
-	EVT_MOTION   (GUIRenderCutCanvas::OnMouseMove)
-	EVT_SIZE   (GUIRenderCutCanvas::OnResize)
-	EVT_LEFT_DOWN(GUIRenderCutCanvas::OnMouseDown)
+EVT_PAINT (GUIRenderCutCanvas::onCanvasPaint)
+EVT_MOUSEWHEEL(GUIRenderCutCanvas::OnMouseWheel)
+EVT_MOTION (GUIRenderCutCanvas::OnMouseMove)
+EVT_SIZE (GUIRenderCutCanvas::OnResize)
+EVT_LEFT_DOWN(GUIRenderCutCanvas::OnMouseDown)
 END_EVENT_TABLE()
 
 using namespace std;
@@ -218,8 +218,9 @@ void GUIRenderCutCanvas::onCanvasPaint(wxPaintEvent &event) {
 			val_str = wxT(" - ");
 		}
 		value = int(value * 100.) / 100.;
-		dc.DrawText(wxT("X:") + floattowxstr(x) + wxT(" Y: ") + floattowxstr(y)
-				+ wxT(" Wert: ") + val_str, 20, height - 25);
+		dc.DrawText(
+				wxT("X:") + floattowxstr(x) + wxT(" Y: ") + floattowxstr(y)
+						+ wxT(" Wert: ") + val_str, 20, height - 25);
 	}
 }
 

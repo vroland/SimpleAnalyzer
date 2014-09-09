@@ -2,7 +2,7 @@
  * GUIGLCanvas.h
  *
  *  Created on: 05.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef GUIGLCANVAS_H_
@@ -47,11 +47,13 @@ public:
 	 * Der Destruktor.
 	 */
 	virtual ~GUIGLCanvas();
+
 protected:
 	/**
 	 * Event-Tabellendeklaration für wxWidgets.
 	 */
-    DECLARE_EVENT_TABLE()
+	DECLARE_EVENT_TABLE()
+
 private:
 	/**
 	 * Behandelt das Zeichenevent und zeichnet die Inhalte des 3D-Fensters.
@@ -81,24 +83,24 @@ private:
 	/**
 	 * Initialisiertungsstatus des Objekts.
 	 */
-    bool is_initialized;
+	bool is_initialized;
 
-    /**
-     * Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird.
-     * Dies tritt beispielsweise bei Größenänderungen oder Änderungen am Objekt ein, da
-     * die Daten teilweise neu an den Renderer übermittelt werden müssen.
-     */
-    bool do_refresh;
+	/**
+	 * Statusvariable, gibt an ob beim Zeichnen auch der Renderer aktualisiert wird.
+	 * Dies tritt beispielsweise bei Größenänderungen oder Änderungen am Objekt ein, da
+	 * die Daten teilweise neu an den Renderer übermittelt werden müssen.
+	 */
+	bool do_refresh;
 
-    /**
-     * Zwischenspeicher für die vorherige Mausposition (X).
-     */
-    int prev_mouse_x;
+	/**
+	 * Zwischenspeicher für die vorherige Mausposition (X).
+	 */
+	int prev_mouse_x;
 
-    /**
+	/**
 	 * Zwischenspeicher für die vorherige Mausposition (Y).
 	 */
-    int prev_mouse_y;
+	int prev_mouse_y;
 };
 
 #endif /* GUIGLCANVAS_H_ */

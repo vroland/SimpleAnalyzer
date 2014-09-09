@@ -2,7 +2,7 @@
  * GUIAnalyzePoint.h
  *
  *  Created on: 21.09.2013
- *      Author: valentin
+ *      Author: Valentin Roland
  */
 
 #ifndef GUIANALYZEPOINT_H_
@@ -19,7 +19,8 @@ public:
 	/**
 	 * Der Konstruktor.
 	 */
-	GUIAnalyzePointWindow(wxWindow * parent,const wxChar *title, int xpos, int ypos, int width, int height);
+	GUIAnalyzePointWindow(wxWindow * parent, const wxChar *title, int xpos,
+			int ypos, int width, int height);
 
 	/**
 	 * Der Destruktor.
@@ -30,6 +31,7 @@ protected:
 	 * Event-Tabellendeklaration für wxWidgets.
 	 */
 	DECLARE_EVENT_TABLE()
+
 private:
 	/**
 	 * Ermittelt Temperatur und Art des Punktes (Interpoliert/Extrapoliert). Wird durch Event ausgelöst.
