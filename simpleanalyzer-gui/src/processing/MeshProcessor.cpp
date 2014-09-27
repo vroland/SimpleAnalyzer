@@ -36,7 +36,7 @@ void MeshProcessor::process(ObjectData* object) {
 
 	//Statusinformationen ausgeben
 	cout << "calculating temperature distribution for \"" << object->getName()
-			<< "..." << endl;
+			<< "\"..." << endl;
 
 	//Für alle Materialien...
 	for (unsigned int i = 0; i < object->getMaterials()->size(); i++) {

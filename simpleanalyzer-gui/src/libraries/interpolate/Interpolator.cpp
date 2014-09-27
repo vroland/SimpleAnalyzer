@@ -234,6 +234,12 @@ double Interpolator::interpolateTet(Tetrahedron* tet, Vector3D* pos,
 	posInGround->sub(tet->getV1()); //rel. zu Vert0
 	delete tempUp;
 	double pBeta = e1->getAngleTo(posInGround);
+
+	//Punkt über V1
+	if (posInGround->getLength()==0) {
+		pBeta = 0;
+	}
+
 	sign = (lot->dotProduct(v1ToPos) > 0) ? 1 : -1;
 	Vector3D* localPos = new Vector3D(cos(pBeta) * posInGround->getLength(),
 			sign * sin(pBeta) * posInGround->getLength(), ph);

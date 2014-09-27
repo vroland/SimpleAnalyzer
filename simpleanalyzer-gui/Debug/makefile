@@ -49,7 +49,7 @@ all: simpleanalyzer-gui
 simpleanalyzer-gui: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++ -o "simpleanalyzer-gui" $(OBJS) $(USER_OBJS) $(LIBS) -static-libgcc -static-libstdc++ `wx-config --cxxflags --libs --gl-libs`
+	g++ -o "simpleanalyzer-gui" $(OBJS) $(USER_OBJS) $(LIBS) -L/usr/lib/x86_64-linux-gnu/ -static-libgcc -static-libstdc++ `wx-config --cxxflags --libs --gl-libs`
 	@echo 'Finished building target: $@'
 	@echo ' '
 
